@@ -128,3 +128,20 @@
 - https://www.britannica.com/topic/pirtizas
 - https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013
 - https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf
+
+## 增补传统（雅兹迪、菲律宾原住民、纳瓦霍祝福道）
+
+- https://www.britannica.com/topic/Yazidi
+- https://whc.unesco.org/en/tentativelists/6467/
+- https://referenceworks.brill.com/display/entries/EIRO/COM-1252.xml
+- https://www.bbc.com/travel/article/20230803-in-pictures-the-protectors-of-a-7000-year-old-faith
+- https://ich.unesco.org/en/USL/buklog-thanksgiving-ritual-system-of-the-subanen-01495
+- https://ich.unesco.org/en/RL/hudhud-chants-of-the-ifugao-00015
+- https://www.britannica.com/topic/Igorot
+- https://www.britannica.com/place/Banaue-rice-terraces
+- https://whc.unesco.org/en/list/722/
+- https://www.britannica.com/topic/Blessingway
+- https://www.britannica.com/topic/hogan
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/navajo-religious-traditions
+- https://baskets.nhmu.utah.edu/collections/culture-history/blessing-way
+

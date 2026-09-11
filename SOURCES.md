@@ -179,3 +179,18 @@
 - https://www.britannica.com/science/four-sacred-medicines
 - https://thecanadianencyclopedia.ca/en/article/midewiwin
 - https://carleton.ca/indigenous/policies-procedures/tobacco-offering-protocol/
+
+## 增补传统（苯教、坎东布莱、凯尔特）
+
+- https://www.britannica.com/topic/Bon-Tibetan-religion
+- https://rubinmuseum.org/cultures/bon/
+- https://www.pbs.org/wgbh/pages/frontline/shows/tibet/understand/bon.html
+- https://www.britannica.com/topic/Candomble
+- https://www.britannica.com/topic/Macumba
+- https://www.britannica.com/topic/orisha
+- https://www.britannica.com/topic/Brazil/Religion
+- https://www.britannica.com/topic/Celtic-religion
+- https://www.britannica.com/topic/druid
+- https://www.britannica.com/topic/Samhain
+- https://www.britannica.com/topic/Beltane
+- https://www.worldhistory.org/ancient_celtic_religion/

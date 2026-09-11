@@ -162,3 +162,20 @@
 - https://peabody.harvard.edu/OE-rainmakers-gods
 - https://peabody.harvard.edu/galleries/rainmakers-gods-ceremonies-powamuya-bean-dance
 - https://kids.britannica.com/scholars/article/kachina/44268
+
+
+## 增补传统（苗族／赫蒙、阿马齐格／柏柏尔、阿尼什纳贝／奥吉布韦）
+
+- https://www.britannica.com/topic/Hmong
+- https://www.britannica.com/topic/Miao
+- https://ethnomed.org/culture/hmong/
+- https://religionsmn.carleton.edu/exhibits/show/hmong-religiosity/hmong-shamanism
+- https://www.britannica.com/topic/Berber
+- https://www.britannica.com/topic/barakah
+- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/berbers
+- https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256
+- https://www.britannica.com/topic/Ojibwe
+- https://www.britannica.com/topic/medicine-society
+- https://www.britannica.com/science/four-sacred-medicines
+- https://thecanadianencyclopedia.ca/en/article/midewiwin
+- https://carleton.ca/indigenous/policies-procedures/tobacco-offering-protocol/

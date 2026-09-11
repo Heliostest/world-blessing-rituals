@@ -194,3 +194,17 @@
 - https://www.britannica.com/topic/Samhain
 - https://www.britannica.com/topic/Beltane
 - https://www.worldhistory.org/ancient_celtic_religion/
+
+## 增补传统（曼达教、巴厘印度教、伊博传统宗教）
+
+- https://www.britannica.com/topic/Mandaeanism
+- https://www.britannica.com/topic/Sabians
+- https://www.iranicaonline.org/articles/mandaeans/mandaeans-ii-the-mandaean-religion/
+- https://www.britannica.com/topic/gnosticism/Influence
+- https://www.britannica.com/topic/Balinese-people
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/balinese-religion
+- https://whc.unesco.org/en/list/1194/
+- https://www.britannica.com/topic/Hinduism
+- https://www.britannica.com/topic/Igbo
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/igbo-religion
+- https://www.britannica.com/topic/African-religions

@@ -67,3 +67,29 @@
 - https://encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/thai-religion
 - https://doi.org/10.1515/cdc-2015-0008
 - https://buddhiststudies.utoronto.ca/wp-content/uploads/2021/10/Shiu_Stokes_2008_Animal-Release.pdf
+
+
+## 增补传统（阿肯、伏都、Ubuntu、亚马孙、美拉尼西亚、密克罗尼西亚、太阳舞、比较）
+
+- https://www.britannica.com/topic/Adae
+- https://www.britannica.com/topic/Akan
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/akan-religion
+- https://www.britannica.com/topic/Vodou
+- https://www.britannica.com/topic/lwa-Vodou
+- https://www.britannica.com/topic/veve
+- https://ich.unesco.org/en/assistances/vodun-beliefs-social-practices-and-ways-of-living-02386
+- https://www.newworldencyclopedia.org/entry/Ubuntu_(philosophy)
+- https://sahistory.org.za/article/african-traditional-religion
+- https://hdl.handle.net/2152/4521
+- https://ich.unesco.org/en/RL/traditional-knowledge-of-the-jaguar-shamans-of-yurupari-00574
+- https://revistasojs.ucaldas.edu.co/index.php/culturaydroga/article/view/7264
+- https://ich.unesco.org/en/RL/vanuatu-sand-drawings-00073
+- https://www.britannica.com/topic/cargo-cult
+- https://www.britannica.com/topic/John-Frum-cargo-cult
+- http://anthroencyclopedia.com/entry/cargo-cults
+- https://ich.unesco.org/en/USL/carolinian-wayfinding-and-canoe-making-01735
+- https://ich.unesco.org/en/decisions/16.COM/8.A.4
+- https://www.britannica.com/topic/Sun-Dance
+- https://plainshumanities.unl.edu/encyclopedia/doc/egp.rel.046.html
+- https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492
+- https://whc.unesco.org/en/list/35/

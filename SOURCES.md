@@ -110,3 +110,21 @@
 - https://aiatsis.gov.au/explore/welcome-country
 - https://www.indigenous.gov.au/welcome-to-country
 - https://www.ngarrngga.org/curriculum/understanding-smoking-ceremonies
+
+## 增补传统（蒙古腾格里、马普切、波罗的海）
+
+- https://www.britannica.com/topic/Mongolian-religion
+- https://whc.unesco.org/en/list/1440/
+- https://www.unesco.org/archives/multimedia/document-2188
+- https://doi.org/10.4000/emscat.2740
+- https://doi.org/10.1093/acrefore/9780190277727.013.829
+- https://www.britannica.com/topic/Mapuche
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/mapuche-religion
+- https://web.uchile.cl/cultura/mapa/artesamapuche/ingles/histor.htm
+- https://doi.org/10.7770/actasteol-v6n1-art66
+- https://research.ed.ac.uk/en/publications/726d6b24-7c4f-417f-bcbd-58f27d42cd53
+- https://www.britannica.com/topic/Baltic-religion
+- https://www.britannica.com/topic/gabija
+- https://www.britannica.com/topic/pirtizas
+- https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013
+- https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf

@@ -42,45 +42,48 @@
 19. [蒙古萨满与腾格里传统](traditions/mongolian-tengriism.md)
 20. [菲律宾原住民信仰（阿尼托／巴巴兰）](traditions/philippine-indigenous.md)
 21. [苗族／赫蒙祖先与萨满祈福传统](traditions/hmong-miao.md)
+22. [曼达教](traditions/mandaean.md)
+23. [巴厘印度教（圣水之宗教）](traditions/balinese-hindu.md)
 
 ### 欧洲与北极圈
 
-22. [萨米](traditions/sami.md)
-23. [波罗的海民间信仰（立陶宛／拉脱维亚）](traditions/baltic-folk.md)
-24. [凯尔特宗教与民俗祈福](traditions/celtic-folk.md)
+24. [萨米](traditions/sami.md)
+25. [波罗的海民间信仰（立陶宛／拉脱维亚）](traditions/baltic-folk.md)
+26. [凯尔特宗教与民俗祈福](traditions/celtic-folk.md)
 
 ### 非洲与非洲离散地
 
-25. [西非约鲁巴及相关传统](traditions/yoruba-and-west-african.md)
-26. [阿肯／阿散蒂](traditions/akan-asante.md)
-27. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
-28. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
-29. [马赛](traditions/maasai.md)
-30. [阿马齐格／柏柏尔民间祝福与圣地实践](traditions/amazigh-berber.md)
-31. [巴西坎东布莱](traditions/candomble.md)
+27. [西非约鲁巴及相关传统](traditions/yoruba-and-west-african.md)
+28. [阿肯／阿散蒂](traditions/akan-asante.md)
+29. [伊博传统宗教（Odinani）](traditions/igbo-odinani.md)
+30. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
+31. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
+32. [马赛](traditions/maasai.md)
+33. [阿马齐格／柏柏尔民间祝福与圣地实践](traditions/amazigh-berber.md)
+34. [巴西坎东布莱](traditions/candomble.md)
 
 ### 美洲
 
-32. [安第斯/印加余绪](traditions/andean.md)
-33. [中美洲土著余绪](traditions/mesoamerican.md)
-34. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
-35. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
-36. [纳瓦霍／迪内祝福道](traditions/navajo-blessingway.md)
-37. [马普切](traditions/mapuche.md)
-38. [霍皮与 katsina 传统](traditions/hopi.md)
-39. [因纽特](traditions/inuit.md)
-40. [阿尼什纳贝／奥吉布韦祈祷、烟草奉献与大药会](traditions/anishinaabe-ojibwe.md)
+35. [安第斯/印加余绪](traditions/andean.md)
+36. [中美洲土著余绪](traditions/mesoamerican.md)
+37. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
+38. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
+39. [纳瓦霍／迪内祝福道](traditions/navajo-blessingway.md)
+40. [马普切](traditions/mapuche.md)
+41. [霍皮与 katsina 传统](traditions/hopi.md)
+42. [因纽特](traditions/inuit.md)
+43. [阿尼什纳贝／奥吉布韦祈祷、烟草奉献与大药会](traditions/anishinaabe-ojibwe.md)
 
 ### 大洋洲
 
-41. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
-42. [美拉尼西亚](traditions/melanesia.md)
-43. [密克罗尼西亚](traditions/micronesia.md)
-44. [澳大利亚原住民](traditions/australian-aboriginal.md)
+44. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
+45. [美拉尼西亚](traditions/melanesia.md)
+46. [密克罗尼西亚](traditions/micronesia.md)
+47. [澳大利亚原住民](traditions/australian-aboriginal.md)
 
 ### 比较
 
-45. [比较总览](traditions/comparative-overview.md)
+48. [比较总览](traditions/comparative-overview.md)
 
 完整 URL 清单见 [SOURCES.md](SOURCES.md)。研究笔记：[Google Notebook](https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492)。
 

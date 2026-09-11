@@ -4,7 +4,7 @@
 
 ## 范围与方法
 
-- **范围**：公开可查的民俗、礼仪与宗教实践中的祝福、功德与祈祷；涵盖东亚、南亚、中东、非洲与非洲离散地、美洲与大洋洲等代表性传统；并含比较总览。
+- **范围**：公开可查的民俗、礼仪与宗教实践中的祝福、功德与祈祷；涵盖东亚、南亚、中东、欧洲与北极圈原住民、非洲与非洲离散地、美洲与大洋洲等代表性传统；并含比较总览。
 - **方法**：案头研究与二手资料综合（博物馆、百科全书、大学、联合国教科文组织、官方宗教机构、史密森尼等），**非田野民族志**。文稿为原创综合，非逐字转载百科或网页。
 - **篇幅**：各传统条目约 800–1600 汉字，提供可比较的结构，而非详尽民族志。
 - **用途**：教育性概览。**不是**封闭/秘传/入会制仪式的操作手册；不对限制性仪轨提供可复现步骤。
@@ -36,30 +36,36 @@
 13. [琐罗亚斯德教](traditions/zoroastrianism.md)
 14. [韩国巫俗与祭祀](traditions/korean-musok.md)
 15. [越南民间信仰](traditions/vietnamese-folk.md)
+16. [阿伊努](traditions/ainu.md)
+
+### 欧洲与北极圈
+
+17. [萨米](traditions/sami.md)
 
 ### 非洲与非洲离散地
 
-16. [西非约鲁巴及相关传统](traditions/yoruba-and-west-african.md)
-17. [阿肯／阿散蒂](traditions/akan-asante.md)
-18. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
-19. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
+18. [西非约鲁巴及相关传统](traditions/yoruba-and-west-african.md)
+19. [阿肯／阿散蒂](traditions/akan-asante.md)
+20. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
+21. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
 
 ### 美洲
 
-20. [安第斯/印加余绪](traditions/andean.md)
-21. [中美洲土著余绪](traditions/mesoamerican.md)
-22. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
-23. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
+22. [安第斯/印加余绪](traditions/andean.md)
+23. [中美洲土著余绪](traditions/mesoamerican.md)
+24. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
+25. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
 
 ### 大洋洲
 
-24. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
-25. [美拉尼西亚](traditions/melanesia.md)
-26. [密克罗尼西亚](traditions/micronesia.md)
+26. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
+27. [美拉尼西亚](traditions/melanesia.md)
+28. [密克罗尼西亚](traditions/micronesia.md)
+29. [澳大利亚原住民](traditions/australian-aboriginal.md)
 
 ### 比较
 
-27. [比较总览](traditions/comparative-overview.md)
+30. [比较总览](traditions/comparative-overview.md)
 
 完整 URL 清单见 [SOURCES.md](SOURCES.md)。研究笔记：[Google Notebook](https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492)。
 

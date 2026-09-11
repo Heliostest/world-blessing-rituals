@@ -93,3 +93,20 @@
 - https://plainshumanities.unl.edu/encyclopedia/doc/egp.rel.046.html
 - https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492
 - https://whc.unesco.org/en/list/35/
+
+
+## 增补传统（萨米、阿伊努、澳大利亚原住民）
+
+- https://www.britannica.com/topic/Sami
+- https://www.britannica.com/topic/noaide
+- https://www.britannica.com/topic/seide
+- https://www.britannica.com/topic/Veralden-radien
+- https://www.britannica.com/topic/Ainu
+- https://hokkaido-digital-museum.jp/en/hokkaido/ainu/a-03/
+- https://www.ff-ainu.or.jp/web/learn/culture/together/files/rekishitobunka_EN.pdf
+- https://ich.unesco.org/en/RL/traditional-ainu-dance-00278
+- https://www.daisetsu-kamikawa-ainu.jp/en/story/chinomishiri/
+- https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology
+- https://aiatsis.gov.au/explore/welcome-country
+- https://www.indigenous.gov.au/welcome-to-country
+- https://www.ngarrngga.org/curriculum/understanding-smoking-ceremonies

@@ -208,3 +208,19 @@
 - https://www.britannica.com/topic/Igbo
 - https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/igbo-religion
 - https://www.britannica.com/topic/African-religions
+
+
+## 增补传统（琉球御嶽、斯拉夫民间、高台教）
+
+- https://whc.unesco.org/en/list/972/
+- https://visitokinawajapan.com/travel-inspiration/sefa-utaki-okinawa-spiritual-heart/
+- https://visitokinawajapan.com/discover/world-heritage-top/sefa-utaki/
+- https://sefa.okinawa/en/
+- https://kids.britannica.com/scholars/article/Ryukyu-Islands/64566
+- https://www.britannica.com/topic/Slavic-religion
+- https://www.britannica.com/topic/Slavic-religion/Folk-conceptions
+- https://www.britannica.com/topic/Slavic-religion/Communal-banquets-and-related-practices
+- https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CK%5CU%5CKupalofestival.htm
+- https://www.britannica.com/topic/Cao-Dai
+- https://www.caodaicenter.org/rituals
+- https://www.daocaodai.info/english1/caodai.htm

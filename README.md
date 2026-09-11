@@ -52,26 +52,29 @@
 23. [阿肯／阿散蒂](traditions/akan-asante.md)
 24. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
 25. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
+26. [马赛](traditions/maasai.md)
 
 ### 美洲
 
-26. [安第斯/印加余绪](traditions/andean.md)
-27. [中美洲土著余绪](traditions/mesoamerican.md)
-28. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
-29. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
-30. [纳瓦霍／迪内祝福道](traditions/navajo-blessingway.md)
-31. [马普切](traditions/mapuche.md)
+27. [安第斯/印加余绪](traditions/andean.md)
+28. [中美洲土著余绪](traditions/mesoamerican.md)
+29. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
+30. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
+31. [纳瓦霍／迪内祝福道](traditions/navajo-blessingway.md)
+32. [马普切](traditions/mapuche.md)
+33. [霍皮与 katsina 传统](traditions/hopi.md)
+34. [因纽特](traditions/inuit.md)
 
 ### 大洋洲
 
-32. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
-33. [美拉尼西亚](traditions/melanesia.md)
-34. [密克罗尼西亚](traditions/micronesia.md)
-35. [澳大利亚原住民](traditions/australian-aboriginal.md)
+35. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
+36. [美拉尼西亚](traditions/melanesia.md)
+37. [密克罗尼西亚](traditions/micronesia.md)
+38. [澳大利亚原住民](traditions/australian-aboriginal.md)
 
 ### 比较
 
-36. [比较总览](traditions/comparative-overview.md)
+39. [比较总览](traditions/comparative-overview.md)
 
 完整 URL 清单见 [SOURCES.md](SOURCES.md)。研究笔记：[Google Notebook](https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492)。
 

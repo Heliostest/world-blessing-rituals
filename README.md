@@ -34,41 +34,44 @@
 11. [犹太教](traditions/judaism.md)
 12. [基督教](traditions/christianity.md)
 13. [琐罗亚斯德教](traditions/zoroastrianism.md)
-14. [韩国巫俗与祭祀](traditions/korean-musok.md)
-15. [越南民间信仰](traditions/vietnamese-folk.md)
-16. [阿伊努](traditions/ainu.md)
-17. [蒙古萨满与腾格里传统](traditions/mongolian-tengriism.md)
+14. [雅兹迪](traditions/yazidi.md)
+15. [韩国巫俗与祭祀](traditions/korean-musok.md)
+16. [越南民间信仰](traditions/vietnamese-folk.md)
+17. [阿伊努](traditions/ainu.md)
+18. [蒙古萨满与腾格里传统](traditions/mongolian-tengriism.md)
+19. [菲律宾原住民信仰（阿尼托／巴巴兰）](traditions/philippine-indigenous.md)
 
 ### 欧洲与北极圈
 
-18. [萨米](traditions/sami.md)
-19. [波罗的海民间信仰（立陶宛／拉脱维亚）](traditions/baltic-folk.md)
+20. [萨米](traditions/sami.md)
+21. [波罗的海民间信仰（立陶宛／拉脱维亚）](traditions/baltic-folk.md)
 
 ### 非洲与非洲离散地
 
-20. [西非约鲁巴及相关传统](traditions/yoruba-and-west-african.md)
-21. [阿肯／阿散蒂](traditions/akan-asante.md)
-22. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
-23. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
+22. [西非约鲁巴及相关传统](traditions/yoruba-and-west-african.md)
+23. [阿肯／阿散蒂](traditions/akan-asante.md)
+24. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
+25. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
 
 ### 美洲
 
-24. [安第斯/印加余绪](traditions/andean.md)
-25. [中美洲土著余绪](traditions/mesoamerican.md)
-26. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
-27. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
-28. [马普切](traditions/mapuche.md)
+26. [安第斯/印加余绪](traditions/andean.md)
+27. [中美洲土著余绪](traditions/mesoamerican.md)
+28. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
+29. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
+30. [纳瓦霍／迪内祝福道](traditions/navajo-blessingway.md)
+31. [马普切](traditions/mapuche.md)
 
 ### 大洋洲
 
-29. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
-30. [美拉尼西亚](traditions/melanesia.md)
-31. [密克罗尼西亚](traditions/micronesia.md)
-32. [澳大利亚原住民](traditions/australian-aboriginal.md)
+32. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
+33. [美拉尼西亚](traditions/melanesia.md)
+34. [密克罗尼西亚](traditions/micronesia.md)
+35. [澳大利亚原住民](traditions/australian-aboriginal.md)
 
 ### 比较
 
-33. [比较总览](traditions/comparative-overview.md)
+36. [比较总览](traditions/comparative-overview.md)
 
 完整 URL 清单见 [SOURCES.md](SOURCES.md)。研究笔记：[Google Notebook](https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492)。
 

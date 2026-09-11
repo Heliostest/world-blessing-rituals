@@ -145,3 +145,20 @@
 - https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/navajo-religious-traditions
 - https://baskets.nhmu.utah.edu/collections/culture-history/blessing-way
 
+## 增补传统（因纽特、马赛、霍皮）
+
+- https://www.britannica.com/topic/angakok
+- https://www.britannica.com/topic/shamanism/Shamans-outside-of-northern-Asia
+- https://www.britannica.com/place/Arctic/Seasonally-migratory-peoples-the-northern-Yupiit-and-the-Inuit
+- https://www.britannica.com/topic/Inuit-people
+- https://www.historymuseum.ca/capedorsetprints/themes/myths.php
+- https://www.spri.cam.ac.uk/museum/news/collections/2019/03/28/the-mother-of-the-sea-creatures/
+- https://www.britannica.com/topic/Maasai
+- https://www.britannica.com/topic/Oloiboni
+- https://ich.unesco.org/en/USL/enkipaata-eunoto-and-olng-esherr-three-male-rites-of-passage-of-the-maasai-community-01390
+- https://ich.unesco.org/en/decisions/13.COM/10.A.5
+- https://www.unesco.org/archives/multimedia/document-2212
+- https://www.britannica.com/topic/kachina
+- https://peabody.harvard.edu/OE-rainmakers-gods
+- https://peabody.harvard.edu/galleries/rainmakers-gods-ceremonies-powamuya-bean-dance
+- https://kids.britannica.com/scholars/article/kachina/44268

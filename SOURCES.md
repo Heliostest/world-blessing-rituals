@@ -238,3 +238,16 @@
 - https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/sakha
 - https://archaeology.columbia.edu/facing-the-mannequin/sakha-shaman/
 - https://tourism.arctic-russia.ru/en/articles/ysyakh-the-festival-of-the-awakening-nature/
+
+## 增补传统（巴哈伊、托拉查、德鲁兹）
+
+- https://www.britannica.com/topic/Bahai-Faith
+- https://www.britannica.com/topic/mashriq-al-adhkar
+- https://www.bahai.org/beliefs/life-spirit/devotion
+- https://www.bahai.org/beliefs/life-spirit/devotion/prayer
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/toraja
+- https://whc.unesco.org/en/tentativelists/5462/
+- https://whc.unesco.org/en/intassistance/1453/
+- https://www.britannica.com/topic/Druze
+- https://www.britannica.com/topic/uqqal
+- https://www.encyclopedia.com/philosophy-and-religion/islam/islam/druze

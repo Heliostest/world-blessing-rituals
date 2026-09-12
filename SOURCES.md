@@ -224,3 +224,17 @@
 - https://www.britannica.com/topic/Cao-Dai
 - https://www.caodaicenter.org/rituals
 - https://www.daocaodai.info/english1/caodai.htm
+
+## 增补传统（阿列维／贝克塔什、拉斯塔法里、萨哈／雅库特）
+
+- https://www.britannica.com/topic/Alevi
+- https://www.britannica.com/story/who-are-the-alevis-in-turkey
+- https://www.britannica.com/topic/Bektashi
+- https://ich.unesco.org/en/RL/semah-alevi-bektai-ritual-00384
+- https://www.britannica.com/topic/Rastafari
+- https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398
+- https://ich.unesco.org/en/decisions/13.COM/10.B.18
+- https://www.britannica.com/topic/Sakha-people
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/sakha
+- https://archaeology.columbia.edu/facing-the-mannequin/sakha-shaman/
+- https://tourism.arctic-russia.ru/en/articles/ysyakh-the-festival-of-the-awakening-nature/

@@ -51,48 +51,51 @@
 28. [巴哈伊信仰](traditions/bahai.md)
 29. [德鲁兹](traditions/druze.md)
 30. [托拉查／祖先之道](traditions/toraja.md)
+31. [爪哇克贾文／爪哇教](traditions/kejawen.md)
+32. [卡拉什](traditions/kalasha.md)
 
 ### 欧洲与北极圈
 
-31. [萨米](traditions/sami.md)
-32. [波罗的海民间信仰（立陶宛／拉脱维亚）](traditions/baltic-folk.md)
-33. [凯尔特宗教与民俗祈福](traditions/celtic-folk.md)
-34. [斯拉夫民间信仰与祈福](traditions/slavic-folk.md)
+33. [萨米](traditions/sami.md)
+34. [波罗的海民间信仰（立陶宛／拉脱维亚）](traditions/baltic-folk.md)
+35. [凯尔特宗教与民俗祈福](traditions/celtic-folk.md)
+36. [斯拉夫民间信仰与祈福](traditions/slavic-folk.md)
 
 ### 非洲与非洲离散地
 
-35. [西非约鲁巴及相关传统](traditions/yoruba-and-west-african.md)
-36. [阿肯／阿散蒂](traditions/akan-asante.md)
-37. [伊博传统宗教（Odinani）](traditions/igbo-odinani.md)
-38. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
-39. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
-40. [马赛](traditions/maasai.md)
-41. [阿马齐格／柏柏尔民间祝福与圣地实践](traditions/amazigh-berber.md)
-42. [巴西坎东布莱](traditions/candomble.md)
-43. [拉斯塔法里](traditions/rastafari.md)
+37. [西非约鲁巴及相关传统](traditions/yoruba-and-west-african.md)
+38. [阿肯／阿散蒂](traditions/akan-asante.md)
+39. [伊博传统宗教（Odinani）](traditions/igbo-odinani.md)
+40. [西非沃敦与海地伏都](traditions/vodun-vodou.md)
+41. [班图语境中的乌班图与祖先礼仪](traditions/bantu-ubuntu.md)
+42. [马赛](traditions/maasai.md)
+43. [阿马齐格／柏柏尔民间祝福与圣地实践](traditions/amazigh-berber.md)
+44. [塞雷尔](traditions/serer.md)
+45. [巴西坎东布莱](traditions/candomble.md)
+46. [拉斯塔法里](traditions/rastafari.md)
 
 ### 美洲
 
-44. [安第斯/印加余绪](traditions/andean.md)
-45. [中美洲土著余绪](traditions/mesoamerican.md)
-46. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
-47. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
-48. [纳瓦霍／迪内祝福道](traditions/navajo-blessingway.md)
-49. [马普切](traditions/mapuche.md)
-50. [霍皮与 katsina 传统](traditions/hopi.md)
-51. [因纽特](traditions/inuit.md)
-52. [阿尼什纳贝／奥吉布韦祈祷、烟草奉献与大药会](traditions/anishinaabe-ojibwe.md)
+47. [安第斯/印加余绪](traditions/andean.md)
+48. [中美洲土著余绪](traditions/mesoamerican.md)
+49. [亚马孙萨满／传统知识](traditions/amazon-shamanism.md)
+50. [拉科塔与平原太阳舞](traditions/lakota-sundance.md)
+51. [纳瓦霍／迪内祝福道](traditions/navajo-blessingway.md)
+52. [马普切](traditions/mapuche.md)
+53. [霍皮与 katsina 传统](traditions/hopi.md)
+54. [因纽特](traditions/inuit.md)
+55. [阿尼什纳贝／奥吉布韦祈祷、烟草奉献与大药会](traditions/anishinaabe-ojibwe.md)
 
 ### 大洋洲
 
-53. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
-54. [美拉尼西亚](traditions/melanesia.md)
-55. [密克罗尼西亚](traditions/micronesia.md)
-56. [澳大利亚原住民](traditions/australian-aboriginal.md)
+56. [大洋洲/毛利/波利尼西亚](traditions/oceania.md)
+57. [美拉尼西亚](traditions/melanesia.md)
+58. [密克罗尼西亚](traditions/micronesia.md)
+59. [澳大利亚原住民](traditions/australian-aboriginal.md)
 
 ### 比较
 
-57. [比较总览](traditions/comparative-overview.md)
+60. [比较总览](traditions/comparative-overview.md)
 
 完整 URL 清单见 [SOURCES.md](SOURCES.md)。研究笔记：[Google Notebook](https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492)。
 

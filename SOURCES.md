@@ -251,3 +251,18 @@
 - https://www.britannica.com/topic/Druze
 - https://www.britannica.com/topic/uqqal
 - https://www.encyclopedia.com/philosophy-and-religion/islam/islam/druze
+
+## 增补传统（爪哇克贾文、卡拉什、塞雷尔）
+
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/javanese-religion
+- https://www.britannica.com/place/Indonesia/Religions
+- https://www.britannica.com/place/Indonesia/Muslims-in-Java
+- https://kids.britannica.com/scholars/article/Javanese/43433
+- https://kulturnistudia.cz/kejawen-as-the-traditional-mystical-belief-on-the-contemporary-java-island/
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/kalasha
+- https://www.worldhistory.org/Kalasha/
+- https://whc.unesco.org/en/tentativelists/6965/
+- https://www.britannica.com/topic/Serer
+- https://ich.unesco.org/en/RL/xooy-a-divination-ceremony-among-the-serer-of-senegal-00878
+- https://www.britannica.com/topic/African-religions
+- https://www.britannica.com/place/Senegal

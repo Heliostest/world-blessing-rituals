@@ -321,3 +321,18 @@
 - https://russianlife.com/magazine/september-october-2020/god-in-nature/
 - https://ojs.utlib.ee/index.php/JEF/article/download/22714/17248/31338
 - https://acta.bibl.u-szeged.hu/70035/1/szegedi_vallasi_002_143-149.pdf
+
+## 增补传统（圣特里亚／卢库米、东方亚述教会、桑人／喀拉哈里）
+
+- https://www.britannica.com/topic/Santeria
+- https://pluralism.org/%E2%80%9Csanter%C3%ADa%E2%80%9D-the-lucumi-way
+- https://hwpi.harvard.edu/files/pluralism/files/santeria-the_lucumi_way_0.pdf
+- https://kids.britannica.com/scholars/article/Santer%C3%ADa/65626
+- https://www.britannica.com/topic/Chaldean-rite
+- https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/east-syrian-liturgy
+- https://www.assyrianchurch.org/liturgical-texts/
+- https://www.assyrianchurch.org/calendar/
+- https://www.britannica.com/topic/San
+- https://www.britannica.com/topic/Kung
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/khoi-and-san-religion
+- https://jangplatvoet.nl/wp-content/uploads/2017/03/ChasingOffGod.pdf

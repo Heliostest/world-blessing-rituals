@@ -302,3 +302,22 @@
 - https://www.britannica.com/event/Donghak-Uprising
 - https://www.britannica.com/topic/Pochongyo
 
+## 增补传统（维哈里卡／惠乔尔、亚美尼亚使徒教会、马里传统宗教）
+
+- https://whc.unesco.org/en/list/1704/
+- https://www.unesco.org/en/articles/wixarika-route-mexico-joins-unesco-world-heritage-list
+- https://www.britannica.com/topic/Huichol
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/huichol
+- https://www.scielo.cl/pdf/bmchap/v28n1/0718-6894-bmchap-28-01-83.pdf
+- https://www.britannica.com/topic/Armenian-rite
+- https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/armenian-liturgy
+- https://armenianchurch.us/the-little-church-in-every-home-7/
+- https://stnersess.edu/resources/liturgical-services/services-of-blessing/
+- https://www.armenianchurch.org/en/news/en-12-02-2026/12131
+- https://ism.yale.edu/sites/default/files/2023-11/Shokhikyan%20-%20Presentation%20Handout%201%20-%20%E2%80%8BWater%20Blessing.pdf
+- https://www.britannica.com/topic/Mari-people
+- https://www.britannica.com/topic/mer
+- https://www.rferl.org/a/mari-el-republic-tatarstan-religion/28366260.html
+- https://russianlife.com/magazine/september-october-2020/god-in-nature/
+- https://ojs.utlib.ee/index.php/JEF/article/download/22714/17248/31338
+- https://acta.bibl.u-szeged.hu/70035/1/szegedi_vallasi_002_143-149.pdf

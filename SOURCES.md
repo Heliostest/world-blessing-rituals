@@ -284,3 +284,21 @@
 - https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/dogon-religion
 - https://www.britannica.com/video/Kanaga-Dogon-dancers-relatives-Mali-rites-masks/-168939
 
+## 增补传统（科普特正教会、天理教、天道教）
+
+- https://www.britannica.com/topic/Coptic-Orthodox-Church-of-Alexandria
+- https://www.britannica.com/topic/Copt
+- https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/coptic-liturgy
+- https://www.lacopts.org/orthodoxy/coptic-orthodox-church/liturgies-of-the-coptic-orthodox-church/
+- https://www.loc.gov/collections/coptic-orthodox-liturgical-chant/articles-and-essays/collection-galleries/
+- https://www.britannica.com/topic/Tenrikyo
+- https://www.britannica.com/biography/Nakayama-Miki
+- https://www.britannica.com/place/Tenri
+- https://www.tenrikyo.or.jp/eng/word/word6/
+- https://online.tenrikyo.or.jp/?p=4814
+- https://www.britannica.com/topic/Chondogyo
+- https://www.britannica.com/topic/In-Nae-Chon
+- https://www.britannica.com/biography/Choe-Je-u
+- https://www.britannica.com/event/Donghak-Uprising
+- https://www.britannica.com/topic/Pochongyo
+

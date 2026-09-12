@@ -266,3 +266,21 @@
 - https://ich.unesco.org/en/RL/xooy-a-divination-ceremony-among-the-serer-of-senegal-00878
 - https://www.britannica.com/topic/African-religions
 - https://www.britannica.com/place/Senegal
+
+## 增补传统（埃塞俄比亚正教会／特瓦希多、雅尔桑／艾赫勒·哈克、多贡）
+
+- https://www.britannica.com/topic/Ethiopian-Orthodox-Tewahedo-Church
+- https://ich.unesco.org/en/RL/ethiopian-epiphany-01491
+- https://www.unesco.org/en/articles/unesco-message-ethiopian-timkat
+- https://www.ethiopianorthodox.org/english/ethiopian/worship.html
+- https://www.britannica.com/topic/Ahl-e-Haqq
+- https://www.iranicaonline.org/articles/jam-religious-ceremony/
+- https://www.iranicaonline.org/articles/ahl-e-haqq/
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ahl-e-haqq
+- https://journal.oraltradition.org/the-religious-textual-heritage-of-the-yarsan-ahl-e-haqq/
+- https://www.britannica.com/topic/Dogon
+- https://www.britannica.com/topic/hogon
+- https://whc.unesco.org/en/list/516/
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/dogon-religion
+- https://www.britannica.com/video/Kanaga-Dogon-dancers-relatives-Mali-rites-masks/-168939
+

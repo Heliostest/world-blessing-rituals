@@ -465,3 +465,27 @@
 - https://encyclopediaofalabama.org/article/green-corn-ceremony/
 - https://kids.britannica.com/students/article/Cherokee/319437
 - https://kids.britannica.com/kids/article/Cherokee/352944
+
+
+## 增补传统（图瓦萨满、卡西尼阿姆、绍纳姆瓦里、撒玛利亚、白族本主）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/tuvans-0
+- https://www.britannica.com/topic/shamanism
+- https://doi.org/10.1515/modi-2023-2003
+- https://doi.org/10.1556/aethn.48.2003.3-4.9
+- https://www.britannica.com/topic/Khasi
+- https://www.meghalayatourism.in/explore/about-meghalaya/mythology-and-legends/
+- https://theshillongtimes.com/2016/01/19/essence-of-niam-tynrainiamtre/
+- https://doi.org/10.1007/978-981-97-3933-2_5
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/shona-religion
+- https://www.encyclopedia.com/places/africa/zimbabwe-political-geography/shona
+- https://www.britannica.com/topic/Shona
+- https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FJournal+of+the+University+of+Zimbabwe%2Fvol1n1%2Fjuz001001005.pdf
+- https://www.britannica.com/topic/Samaritan
+- https://www.britannica.com/place/Mount-Gerizim
+- https://www.nationalgeographic.com/culture/article/samaritan-passover
+- https://www.bibleodyssey.org/articles/the-samaritans/
+- https://www.britannica.com/topic/Bai-people
+- https://kids.britannica.com/scholars/article/Bai/58000
+- http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm
+- https://www.yunnanexplorer.com/festivals/benzhu/

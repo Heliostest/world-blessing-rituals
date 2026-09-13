@@ -36,6 +36,15 @@
 
 切勿在未获传统所有者邀请与报酬安排的情况下“举办”烟熏礼或 Welcome。圣地、岩画、葬礼与入会知识常禁止拍摄或外传。植物采集与用火须遵守当地法律与生态伦理。Acknowledgement of Country 不能替代 Welcome。将数百个原住民族传统写成单一条目必然简化——具体实践请以当地 Nation 的说明为准。
 
+## 手机互动适合度（Three.js 评估草稿）
+
+- **档位：** A 不可做成关卡
+- **敏感度：** 高
+- **判断：** 烟熏礼与 Welcome to Country 须由传统所有者主持；Dreaming／圣地仪典常性别年龄限制。文件禁止未获邀请举办烟熏或 Welcome。
+- **若做成互动：** 不提供操作步骤。
+- **红线：** 禁止自办烟熏礼、进入圣地、复现入会知识或以 Country 仪名通关。
+- **评估状态：** 待后期统一评估
+
 ## 参考来源
 
 - https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology

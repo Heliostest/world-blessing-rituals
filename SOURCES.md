@@ -489,3 +489,26 @@
 - https://kids.britannica.com/scholars/article/Bai/58000
 - http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm
 - https://www.yunnanexplorer.com/festivals/benzhu/
+
+## 增补传统（松巴马拉普、加里富纳、涅涅茨、基库尤恩盖、乌德穆尔特）
+
+- https://www.britannica.com/place/Sumba
+- https://doi.org/10.31385/jl.v24i2.647.227-243
+- https://doi.org/10.46222/pharosjot.106.521
+- https://ich.unesco.org/en/decisions/8.COM/7.A.6
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/garifuna-religion
+- https://ich.unesco.org/en/RL/language-dance-and-music-of-the-garifuna-00001
+- https://www.belize-glessimaresearch.org/wp-content/uploads/bsk-pdf-manager/2020/01/What-is-Dugu.pdf
+- https://www.warasadrumschool.com/dugu-garifuna-spirituality/
+- https://www.britannica.com/topic/Nenets-people
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nentsy
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/samoyed-religion
+- https://www.museums.cam.ac.uk/magic/syadei-sacred-objects
+- https://www.britannica.com/topic/Kikuyu
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/gikuyu
+- https://www.cambridge.org/core/journals/africa/article/abs/kikuyu-religion-ancestorworship-and-sacrificial-practices/6CFD176DD79B1911B0E3F152DDBA59BF
+- https://doi.org/10.1080/13696810802159339
+- https://www.britannica.com/topic/vorsud
+- https://www.britannica.com/topic/lud
+- https://doi.org/10.2478/jef-2024-0009
+- https://doi.org/10.7592/sator.2021.22.09

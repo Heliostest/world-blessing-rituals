@@ -512,3 +512,29 @@
 - https://www.britannica.com/topic/lud
 - https://doi.org/10.2478/jef-2024-0009
 - https://doi.org/10.7592/sator.2021.22.09
+
+
+## 增补传统（博多巴托、马达加斯加、满族萨满、丁卡、切尔克斯）
+
+- https://www.britannica.com/topic/Bodo-people
+- https://doi.org/10.9790/0837-2912041120
+- https://www.academia.edu/51913207/Revivalism_of_Bathouism_Among_the_Bodos
+- https://www.academia.edu/69852816/Bathou_Religion_and_Its_Philosophical_Significance
+- https://www.britannica.com/topic/famadihana
+- https://www.britannica.com/place/Madagascar
+- https://www.countrystudies.us/madagascar/17.htm
+- https://doi.org/10.1215/00141801-48-1-2-123
+- https://whc.unesco.org/en/list/950/
+- https://www.britannica.com/topic/shamanism
+- https://www.mdpi.com/2077-1444/9/12/400
+- https://www.mdpi.com/2077-1444/14/4/496
+- http://www.chinaknowledge.de/Literature/Historiography/manzhoujishenjitiandianli.html
+- https://www.britannica.com/topic/Dinka
+- https://www.britannica.com/topic/Nhial
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/nuer-and-dinka-religion
+- https://www.encyclopedia.com/history/asia-and-africa/middle-eastern-history/dinka
+- https://www.britannica.com/topic/Circassian
+- https://www.britannica.com/topic/Adyghian
+- http://apsnyteka.org/file/Chirikba_Between_Christianity_and_Islam_Heathen_Heritage_in_the_Caucasus.pdf
+- http://jaimoukha.synthasite.com/resources/Circassian%20Religion.pdf
+- https://www.britannica.com/place/Caucasus/People

@@ -336,3 +336,36 @@
 - https://www.britannica.com/topic/Kung
 - https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/khoi-and-san-religion
 - https://jangplatvoet.nl/wp-content/uploads/2017/03/ChasingOffGod.pdf
+
+
+## 增补传统（妈祖、泰国神屋、缅甸纳特、修验道、夏威夷、翁班达、Kaharingan、和好教、圆佛教）
+
+- https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227
+- https://www.britannica.com/topic/Matsu
+- https://www.fujian.gov.cn/english/cultureandtravel/cultureandarts/202508/t20250807_6988988.htm
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/thai-religion
+- https://hdl.handle.net/1813/33431
+- https://doi.org/10.65959/eaa.1020
+- https://www.britannica.com/topic/nat
+- https://www.encyclopedia.com/philosophy-and-religion/eastern-religions/buddhism/nats
+- https://www.britannica.com/topic/Shugen-do
+- https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9838
+- https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9347
+- https://whc.unesco.org/en/list/1142/
+- https://www.nps.gov/hale/learn/historyculture/makahiki.htm
+- https://www.nps.gov/puho/learn/historyculture/kau-makalii.htm
+- https://kaiwakiloumoku.ksbe.edu/article/essays-makahiki-an-overview
+- https://www.britannica.com/topic/Pele-Hawaiian-deity
+- https://www.britannica.com/topic/Macumba
+- https://www.britannica.com/topic/Candomble
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/afro-brazilian-religions
+- https://www.britannica.com/topic/Dayak
+- https://online.ucpress.edu/nr/article/25/4/64/168635/Kaharingan-or-Hindu-KaharinganWhat-s-in-a-Name-in
+- https://doi.org/10.1525/nr.2022.25.4.64
+- https://jayapanguspress.penerbit.org/index.php/JPAH/article/view/1523
+- https://global.oup.com/academic/product/small-sacrifices-9780195095586
+- https://www.britannica.com/topic/Hoa-Hao-Vietnamese-religious-movement
+- https://kids.britannica.com/scholars/article/Huynh-Phu-So/41661
+- https://hoahao.org/a352/biography-and-teachings-of-prophet-huynh-phu-so
+- https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/wonbulgyo
+- https://wonbuddhism.org/sotaesan/

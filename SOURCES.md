@@ -369,3 +369,26 @@
 - https://hoahao.org/a352/biography-and-teachings-of-prophet-huynh-phu-so
 - https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/wonbulgyo
 - https://wonbuddhism.org/sotaesan/
+
+
+## 增补传统（Neak Ta、巽他 Wiwitan、贵格会、宗庙祭礼、格鲁吉亚正教会）
+
+- https://ich.unesco.org/en/USL/lkhon-khol-wat-svay-andet-01374
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/khmer-religion
+- https://doi.org/10.1080/14442213.2018.1553205
+- https://doi.org/10.1017/s0022463413000623
+- https://www.britannica.com/topic/Sundanese
+- https://doi.org/10.15575/jw.v5i1.8069
+- https://journal.uinsgd.ac.id/index.php/jw/article/view/8069
+- https://doi.org/10.25216/jhp.8.3.2019.391-406
+- https://www.britannica.com/topic/Society-of-Friends
+- https://www.britannica.com/topic/Inner-Light
+- https://www.britannica.com/topic/Society-of-Friends/Teachings
+- https://kids.britannica.com/students/article/Quakers/276607
+- https://www.quaker.org.uk/faith/our-faith/how-quakers-worship
+- https://www.pym.org/faith-and-practice/experience-and-faith/meeting-worship/
+- https://ich.unesco.org/en/RL/royal-ancestral-ritual-in-the-jongmyo-shrine-and-its-music-00016
+- https://whc.unesco.org/en/list/738/
+- https://www.britannica.com/topic/Georgian-Orthodox-church
+- https://whc.unesco.org/en/list/708/
+- https://www.britannica.com/topic/Eastern-Orthodoxy

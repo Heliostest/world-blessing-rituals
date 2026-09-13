@@ -417,3 +417,27 @@
 - https://www.britannica.com/topic/Liturgy-of-Saint-James
 - https://syriacpatriarchate.org/
 - https://malankara.com/prayer-preface.html
+
+
+## 增补传统（萨那马希、穆里德、豪德诺索尼、阿美族、瓦克法纳）
+
+- https://www.britannica.com/topic/Meitei
+- https://doi.org/10.3390/rel12121041
+- https://www.mdpi.com/2077-1444/12/12/1041
+- https://oaji.net/articles/2017/1330-1530776098.pdf
+- https://www.britannica.com/topic/Muridiyyah
+- https://berkleycenter.georgetown.edu/publications/the-mouride-sufi-order
+- https://doi.org/10.1093/oxfordjournals.afraf.a008007
+- https://www.britannica.com/place/Touba
+- https://www.britannica.com/topic/Haudenosaunee-Confederacy
+- https://americanindian.si.edu/nk360/resources/Haudenosaunee-Guide-for-Educators
+- https://americanindian.si.edu/environment/pdf/01_02_thanksgiving_address.pdf
+- https://americanindian.si.edu/sites/1/files/pdf/education/HaudenosauneeGuide.pdf
+- https://en.tacp.gov.tw/Indigenous/ItemDetail?ID=aaeb31ee-23e5-4b1d-9a80-454cb166a861
+- https://taiwangods.moi.gov.tw/html/landscape_EN/1_0011.aspx?i=94
+- https://twh.boch.gov.tw/non_material/intro.aspx?id=748
+- https://discover.taitung.gov.tw/indigenous-festivals-en/taitung-amis-harvest-festival/
+- https://ich.unesco.org/en/RL/gada-system-an-indigenous-democratic-socio-political-system-of-the-oromo-01164
+- https://doi.org/10.1080/09637494.2017.1348016
+- https://epub.uni-bayreuth.de/2059
+- https://rsisinternational.org/IJRSI/Issue26/01-08.pdf

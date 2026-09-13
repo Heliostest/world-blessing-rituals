@@ -441,3 +441,27 @@
 - https://doi.org/10.1080/09637494.2017.1348016
 - https://epub.uni-bayreuth.de/2059
 - https://rsisinternational.org/IJRSI/Issue26/01-08.pdf
+
+
+## 增补传统（纳西东巴、彝族毕摩、奥塞梯乌茨金、巴塔克帕马林、切罗基）
+
+- https://www.britannica.com/topic/Dongba
+- https://www.britannica.com/topic/Naxi
+- https://www.unesco.org/en/memory-world
+- https://digitalcollections.sit.edu/cgi/viewcontent.cgi?article=2567&context=isp_collection
+- https://www.britannica.com/topic/Yi-people
+- https://uw.manifoldapp.org/read/the-nuosu-book-of-origins/section/d4a9bced-a51f-4461-aded-87df07e9a0fa
+- https://doi.org/10.1515/9780295745701-005
+- https://journals.pan.pl/Content/82323/mainfile.pdf?handler=pdf
+- https://www.britannica.com/topic/Ossete
+- https://oc-media.org/how-ossetian-uatsdin-became-the-most-successful-pagan-faith-in-the-world/
+- http://ossetians.com/eng/news.php?newsid=597
+- https://musalm.ru/en/52-3-1.html
+- https://www.britannica.com/topic/Batak
+- https://doi.org/10.4102/hts.v80i1.9167
+- https://hts.org.za/index.php/hts/article/view/9167
+- https://doi.org/10.15575/jis.v5i3.43073
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/cherokee-religious-traditions
+- https://encyclopediaofalabama.org/article/green-corn-ceremony/
+- https://kids.britannica.com/students/article/Cherokee/319437
+- https://kids.britannica.com/kids/article/Cherokee/352944

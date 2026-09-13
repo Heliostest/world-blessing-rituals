@@ -392,3 +392,28 @@
 - https://www.britannica.com/topic/Georgian-Orthodox-church
 - https://whc.unesco.org/en/list/708/
 - https://www.britannica.com/topic/Eastern-Orthodoxy
+
+
+## 增补传统（毛利、布里亚特、瓜拉尼、祖鲁／恩古尼、叙利亚正教会）
+
+- https://teara.govt.nz/en/tangihanga-death-customs/page-1
+- https://governance.aucklandcouncil.govt.nz/9-civic-roles-ceremonies-and-maori-customs-at-auckland-council/powhiri-whakatau-tangihanga-and-karakia-at-auckland-council
+- https://www.britannica.com/topic/Maori
+- https://hdl.handle.net/10289/7968
+- https://www.britannica.com/topic/Buryat
+- https://doi.org/10.3390/rel10050306
+- https://www.mdpi.com/2077-1444/10/5/306
+- http://www.drustvo-antropologov.si/AN/PDF/2013_3/Anthropological_Notebooks_XIX_3_Wierucka.pdf
+- https://www.unesco.org/en/articles/indigenous-peoples-mbaracayu-forest-confronting-change-upper-parana-paraguay
+- https://www.britannica.com/topic/Guarani
+- https://doi.org/10.1590/s1809-43412011000100014
+- https://revistas.usp.br/ra/en/article/view/168618
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/zulu-religion
+- https://www.britannica.com/science/sangoma
+- https://www.britannica.com/topic/Zulu
+- https://www.southafrica.net/us/en/travel/article/african-ancestors-and-amadlozi
+- https://www.britannica.com/topic/Syriac-Orthodox-Patriarchate-of-Antioch-and-All-the-East
+- https://www.britannica.com/topic/Antiochene-rite
+- https://www.britannica.com/topic/Liturgy-of-Saint-James
+- https://syriacpatriarchate.org/
+- https://malankara.com/prayer-preface.html

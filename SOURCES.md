@@ -538,3 +538,27 @@
 - http://apsnyteka.org/file/Chirikba_Between_Christianity_and_Islam_Heathen_Heritage_in_the_Caucasus.pdf
 - http://jaimoukha.synthasite.com/resources/Circassian%20Religion.pdf
 - https://www.britannica.com/place/Caucasus/People
+
+
+## 增补传统（切瓦尼奥、阿尔泰白教、雷布查Mun、占族婆罗门、巴斯克民俗）
+
+- https://ich.unesco.org/en/RL/gule-wamkulu-00142
+- https://www.britannica.com/topic/Gule-Wamkulu
+- https://www.britannica.com/topic/Nyanja
+- https://www.britannica.com/place/Malawi/People
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/altaians
+- https://doi.org/10.1080/1361736042000245295
+- https://studybuddhism.com/en/advanced-studies/history-culture/buddhism-in-russia/the-pre-soviet-history-of-buddhism-in-the-russian-empire/the-pre-soviet-history-of-buddhism-in-altai
+- https://www.britannica.com/topic/shamanism
+- https://www.britannica.com/topic/Lepcha
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/lepchas
+- http://hdl.handle.net/10535/3156
+- https://www.britannica.com/place/Kanchenjunga
+- https://www.britannica.com/place/Champa-ancient-kingdom-Indochina
+- https://doi.org/10.4000/extremeorient.2723
+- https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/228404/1/ciasdp03_7.pdf
+- https://en.vietnamplus.vn/kate-festival-2025-spreads-vibrant-colors-unity-of-cham-people-post330850.vnp
+- https://www.britannica.com/summary/Basque
+- https://www.britannica.com/topic/Basque-language
+- https://kids.britannica.com/students/article/Basque/273123
+- https://buber.net/Basque/2020/05/17/basque-fact-of-the-week-mari-the-basque-mother-earth/

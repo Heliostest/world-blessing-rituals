@@ -769,3 +769,24 @@
 - https://ich.unesco.org/en/RL/calus-ritual-00090
 - https://www.cultura.ro/unesco/
 - https://www.cnr-unesco.ro/uploads/media/f782__2023-patrimoniu-imaterial-engl.pdf
+
+
+## 增补传统（卡尔梅克、茨瓦纳、老挝巴希、马龙派、塔希提马奥希）
+
+- https://www.britannica.com/topic/Kalmyk
+- https://www.britannica.com/place/Kalmykiya
+- https://www.kalmykheritage.socanth.cam.ac.uk/common/kalmyksinrussia.php?classif=25&language=en
+- https://khurul.ru/
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/tswana-religion
+- https://www.britannica.com/topic/Tswana
+- https://www.sheppard.me.uk/botswana/life-cycle/ancestors.html
+- https://www.britannica.com/place/Laos/Religion
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lao-religion
+- https://www.bbc.com/travel/article/20200819-laos-collective-approach-to-healthcare
+- https://www.britannica.com/topic/Maronite-church
+- https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/maronite-liturgy
+- https://www.stmaron.org/liturgy-guide
+- https://www.stmaron.org/maronite-faith
+- https://whc.unesco.org/en/list/1529/
+- https://www.britannica.com/topic/marae
+- https://paulturnbull.org/project/southseas/biogs/P000309b.htm

@@ -728,3 +728,23 @@
 - https://asatru.is/um-asatruarfelagid/
 - https://www.bbc.com/travel/article/20190602-how-iceland-recreated-a-viking-age-religion
 - https://www.britannica.com/topic/Germanic-religion-and-mythology
+
+
+## 增补传统（纽瓦尔、海达、不丹竹巴、芬兰—卡累利阿、伊班）
+
+- https://whc.unesco.org/en/list/121/
+- https://www.britannica.com/topic/Newar
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/newars
+- https://www.britannica.com/topic/Haida
+- https://www.britannica.com/topic/potlatch
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/haida-religious-traditions
+- https://www.everyculture.com/North-America/Haida-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/place/Bhutan
+- https://www.britannica.com/topic/prayer-flag
+- https://ich.unesco.org/en/RL/mask-dance-of-the-drums-from-drametse-00161
+- https://www.britannica.com/topic/Finno-Ugric-religion
+- https://www.britannica.com/topic/Finno-Ugric-religion/System-of-spirits
+- https://www.britannica.com/topic/sacred-grove
+- https://www.encyclopedia.com/places/asia/malaysia-and-singapore-political-geography/iban
+- https://www.everyculture.com/East-Southeast-Asia/Iban-Religion-and-Expressive-Culture.html
+- https://www.tourism.gov.my/media/view/gawai-dayak-festival

@@ -562,3 +562,27 @@
 - https://www.britannica.com/topic/Basque-language
 - https://kids.britannica.com/students/article/Basque/273123
 - https://buber.net/Basque/2020/05/17/basque-fact-of-the-week-mari-the-basque-mother-earth/
+
+
+## 增补传统（基拉特Mundhum、萨尔纳桑塔尔、巴刚果、特林吉特、楚瓦什）
+
+- https://www.britannica.com/topic/Kirat
+- https://www.eva.mpg.de/documents/Cambridge%20Scholars%20Publishing/Rai_Mundum_Locality-history-memory_2009_1554259.pdf
+- https://archive.unesco-ichcap.org/eng/ek/sub1/pdf_file/south_asia/Nepal_2010_06_Profiles_of_selected_intangible_cultural_heritage_of_Nepal.pdf
+- https://doi.org/10.3126/jns.v16i1.71795
+- https://www.britannica.com/topic/forest-societies-in-India
+- https://www.britannica.com/event/Santhal-rebellion
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/santals
+- https://doi.org/10.1017/s0026749x2100024x
+- https://www.britannica.com/topic/Kongo-people
+- https://www.britannica.com/art/nkisi
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/kongo-religion
+- https://www.encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/bakongo
+- https://www.britannica.com/topic/potlatch
+- https://americanindian.si.edu/exhibitions/circleofdance/tlingit.html
+- https://www.amnh.org/exhibitions/permanent/northwest-coast/lingit-tlingit
+- https://americanindian.si.edu/
+- https://www.britannica.com/topic/Chuvash
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/chuvash-religion
+- https://src-h.slav.hokudai.ac.jp/publictn/acta/24/goto.pdf
+- https://doi.org/10.2478/jef-2020-0007

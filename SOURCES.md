@@ -857,3 +857,23 @@
 - https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/veddas
 - https://vedda.org/wanniyalaeto.htm
 - https://www.britannica.com/topic/Vedda
+
+
+## 增补传统（瑶族勉、文达、科米、雅基、约尔努）
+
+- https://yaodao.hku.hk/daoism-among-the-yao/
+- https://en.wikipedia.org/wiki/Yao_Taoism
+- https://factsanddetails.com/china/cat5/sub30/item180.html
+- https://www.encyclopedia.com/history/asia-and-africa/southern-african-history/venda
+- https://era.anthropology.ac.uk/Era_Resources/Era/VendaGirls/Definitions/DefDomba.html
+- https://www.britannica.com/topic/Mwari
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/komi-religion
+- https://www.everyculture.com/Russia-Eurasia-China/Komi-Religion-and-Expressive-Culture.html
+- https://en.wikipedia.org/wiki/Komi_mythology
+- https://www.britannica.com/topic/Yaqui
+- https://americanindian.si.edu/exhibitions/infinityofnations/introduction/112382.html
+- https://www.everyculture.com/Middle-America-Caribbean/Yaqui-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Australian-Aboriginal/Traditional-sociocultural-patterns
+- https://www.nfsa.gov.au/collection/item/instruments-ceremony
+- https://www.abc.net.au/news/2023-08-06/garma-festival-bunggul-ceremony/102674470
+- https://journals.vu.edu.au/index.php/vulj/article/view/40

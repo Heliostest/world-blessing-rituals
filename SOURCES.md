@@ -586,3 +586,25 @@
 - https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/chuvash-religion
 - https://src-h.slav.hokudai.ac.jp/publictn/acta/24/goto.pdf
 - https://doi.org/10.2478/jef-2020-0007
+
+## 增补传统（阿豪姆、韦图特卢、汉特曼西、巴干达、黑足）
+
+- https://kids.britannica.com/students/article/Ahom/623552
+- https://www.britannica.com/topic/moidams-of-the-Ahom-dynasty
+- https://whc.unesco.org/en/list/1711/
+- https://assam.gov.in/about-us/399
+- https://www.britannica.com/topic/Sasak
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/sasak-0
+- https://doi.org/10.15575/jassr.v4i2.66
+- https://doi.org/10.14710/sabda.19.2.111-124
+- https://www.britannica.com/topic/Khanty
+- https://www.britannica.com/topic/Finno-Ugric-religion/System-of-spirits
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/khanty-and-mansi-religion
+- https://doi.org/10.2478/jef-2022-0013
+- https://eloka.nsidc.org/bears/bear-festivals
+- https://www.britannica.com/topic/Ganda-people
+- https://www.encyclopedia.com/places/africa/uganda-political-geography/ganda
+- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/baganda
+- https://www.britannica.com/topic/Blackfoot-people
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/blackfeet-religious-traditions
+- https://americanindian.si.edu/

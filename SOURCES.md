@@ -983,3 +983,25 @@
 - https://www.britannica.com/place/Kiribati
 - https://www.shimajournal.org/issues/v4n1/k.-Whincup-Shima-v4n1-113-130.pdf
 - https://repository.usp.ac.fj/id/eprint/7832/1/Kiribati_Vol_3_pg_228_to_236.pdf
+
+
+## 增补传统（托达、库克群岛毛利、迪奥拉／乔拉、匈牙利民间、维吾尔麻扎）
+
+- https://www.britannica.com/topic/Toda-people-India
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/todas
+- https://www.everyculture.com/South-Asia/Toda-Religion-and-Expressive-Culture.html
+- https://archive.org/details/SACREDDAIRIESDAIRYMENANDBUFFALOESOFTHENILGIRIMOUNTAINSINSOUTHINDIA
+- https://www.britannica.com/place/Cook-Islands
+- https://www.britannica.com/place/Rarotonga
+- https://www.britannica.com/topic/marae
+- https://whc.unesco.org/en/tentativelists/6700/
+- https://www.britannica.com/topic/Dyola
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/diola-religion
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/jola
+- https://szentkut.hu/en/history-of-the-shrine
+- https://szentkut.hu/en
+- https://www.britannica.com/place/Hungary
+- https://real.mtak.hu/157720/1/MKI_kingsandsaints_B5_012.pdf
+- https://edspace.american.edu/silkroadjournal/wp-content/uploads/sites/984/2017/09/Shrine-Pilgrimage-Among-the-Uighurs.pdf
+- https://journal.fi/scripta/article/view/67364
+- https://doi.org/10.1080/09681220208567330

@@ -790,3 +790,23 @@
 - https://whc.unesco.org/en/list/1529/
 - https://www.britannica.com/topic/marae
 - https://paulturnbull.org/project/southseas/biogs/P000309b.htm
+
+
+## 增补传统（涅斯蒂纳尔、帕米尔伊斯玛仪、那加、温蒂、卡纳克）
+
+- https://ich.unesco.org/en/RL/nestinarstvo-messages-from-the-past-the-panagyr-of-saints-constantine-and-helena-in-the-village-of-bulgari-00191
+- https://ich.unesco.org/en/decisions/4.COM/13.05
+- https://www.burgasmuseums.bg/en/encdetail/nestinarstvo-60
+- https://www.britannica.com/topic/Mountain-Tajik
+- https://www.britannica.com/place/Pamirs
+- https://www.britannica.com/place/Gorno-Badakhshan
+- https://pamirs.org/about/the-pamiri-house/
+- https://www.britannica.com/place/Nagaland
+- https://www.southasianist.ed.ac.uk/southasianist/article/download/1670/2487/7467
+- https://sacredart.caaar.duke.edu/religions/surinamese-and-dutch-winti/
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/afro-surinamese-religions
+- https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/winti-suriname
+- https://www.britannica.com/topic/kanak
+- https://www.britannica.com/place/New-Caledonia-French-unique-collectivity-Pacific-Ocean/People
+- https://www.newcaledonia.travel/travel-guide/traditions/
+- https://whc.unesco.org/en/decisions/1470/

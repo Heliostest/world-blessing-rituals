@@ -925,3 +925,23 @@
 - https://idese.cultura.gov.it/en/place/discesa-dei-candelieri-la-faradda/
 - https://www.sardegnaturismo.it/en/sardinia-festival-sacred
 - https://www.sardegnaturismo.it/en/redentore-festival-religion-and-folklore
+
+
+## 增补传统（艾马拉、威尔士、沃洛夫、巴什基尔、马绍尔）
+
+- https://www.britannica.com/topic/Aymara
+- https://www.encyclopedia.com/history/latin-america-and-caribbean/mesoamerican-indigenous-peoples/aymara
+- https://ich.unesco.org/en/RL/ritual-journeys-in-la-paz-during-alasita-01182
+- https://apnews.com/article/pachamama-mother-earth-bolivia-aymara-spirituality-3ff0b82f0324e9fef5cd24a4b6a6552d
+- https://museum.wales/blog/1187/Christmas-Traditions-The-Mari-Lwyd/
+- https://museum.wales/curatorial/social-cultural-history/online-collections/what-is-the-eisteddfod/
+- https://eisteddfod.wales/
+- https://eisteddfod.wales/festival/2025/programme/honouring-new-members-gorsedd-cymru
+- https://www.britannica.com/topic/Wolof
+- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/wolof
+- https://www.everyculture.com/Africa-Middle-East/Wolof-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bashkirs-0
+- https://en.wikipedia.org/wiki/Sabantuy
+- https://www.britannica.com/place/Marshall-Islands
+- https://micsem.org/article/religion-in-the-marshall-islands/
+- https://www.britannica.com/topic/flag-of-the-Marshall-Islands

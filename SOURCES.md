@@ -748,3 +748,24 @@
 - https://www.encyclopedia.com/places/asia/malaysia-and-singapore-political-geography/iban
 - https://www.everyculture.com/East-Southeast-Asia/Iban-Religion-and-Expressive-Culture.html
 - https://www.tourism.gov.my/media/view/gawai-dayak-festival
+
+
+## 增补传统（托雷斯海峡、尤皮克、米南加保、图阿雷格、罗马尼亚卡鲁什）
+
+- https://www.britannica.com/topic/Torres-Strait-Islander-people
+- https://www.qcaa.qld.edu.au/about/k-12-policies/aboriginal-torres-strait-islander-perspectives/resources/spirituality-religion
+- https://torresstraitsoe.org.au/people/traditional-ecological-knowledge-tek/
+- https://www.britannica.com/topic/Yupik
+- https://www.britannica.com/topic/angakok
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC4119478/
+- https://www.britannica.com/topic/Minangkabau
+- https://www.britannica.com/topic/adat
+- https://whc.unesco.org/en/tentativelists/6059/
+- https://www.indonesia.travel/in/en/travel-ideas/culture/rumah-gadang/
+- https://www.britannica.com/topic/Tuareg
+- https://www.unesco.org/en/articles/tuareg-culture-and-spirituality-sacred-connection-environment?hub=701
+- https://www.everyculture.com/Africa-Middle-East/Tuareg-Religion-and-Expressive-Culture.html
+- https://whc.unesco.org/en/list/573/
+- https://ich.unesco.org/en/RL/calus-ritual-00090
+- https://www.cultura.ro/unesco/
+- https://www.cnr-unesco.ro/uploads/media/f782__2023-patrimoniu-imaterial-engl.pdf

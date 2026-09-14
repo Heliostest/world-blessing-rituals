@@ -690,3 +690,22 @@
 - https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions
 - https://www.britannica.com/topic/Finno-Ugric-religion
 - https://www.britannica.com/topic/sacred-grove
+
+
+## 增补传统（布农、努尔、玛丽亚·利昂萨、斐济 vanua、羌族）
+
+- https://www.cip.gov.tw/en/tribe/grid-list/7F4BACB58C965B51D0636733C6861689/info.html
+- https://www.ysnp.gov.tw/En/StaticPage/CultureEn
+- https://eng.taiwan.net.tw/m1.aspx?sNo=0002023
+- https://www.britannica.com/topic/Nuer
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/nuer-and-dinka-religion
+- https://www.britannica.com/topic/monotheism/The-spectrum-of-views-monotheisms-and-quasi-monotheisms
+- https://www.aljazeera.com/features/2011/11/18/the-cult-of-maria-lionza
+- https://www.minec.gob.ve/monumento-natural-cerro-maria-lionza-cumple-66-anos/
+- https://revues.ulaval.ca/ojs/index.php/anthropen/en/article/view/30597
+- https://culturalatlas.sbs.com.au/fijian-culture/fijian-culture-core-concepts
+- https://culturalatlas.sbs.com.au/fijian-culture/fijian-culture-etiquette
+- https://press-files.anu.edu.au/downloads/press/p289571/html/ch03.xhtml?page=9
+- http://en.chinaculture.org/2011-07/19/content_421754.htm
+- http://www.china.org.cn/china/earthquake_reconstruction/2010-02/02/content_19354450.htm
+- https://ich.unesco.org/en/USL/qiang-new-year-festival-00305

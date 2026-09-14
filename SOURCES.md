@@ -964,3 +964,22 @@
 - https://www.britannica.com/topic/Choco-people
 - https://www.everyculture.com/South-America/Ember-Religion-and-Expressive-Culture.html
 - https://sicultura.gob.pa/manifestaciones-culturales/el-jaibanismo-como-ritual-espiritual-y-medicinal-en-la-cultura-embera
+
+
+## 增补传统（侗族、葡萄牙罗马里亚、卢奥、米斯特克、基里巴斯）
+
+- https://www.britannica.com/topic/Dong
+- https://ich.unesco.org/en/RL/grand-song-of-the-dong-ethnic-group-00202
+- https://news.cgtn.com/news/32456a4d79677a6333566d54/index.html
+- https://www.britannica.com/event/Our-Lady-of-Fatima
+- https://www.fatima.pt/en/pages/organizing-a-pilgrimage-to-the-shrine
+- https://folkways-media.si.edu/docs/folkways/artwork/UNES08317.pdf
+- https://www.britannica.com/topic/Luo-people
+- https://www.everyculture.com/Africa-Middle-East/Luo.html
+- https://www.everyculture.com/wc/Japan-to-Mali/Luo.html
+- https://www.britannica.com/topic/Mixtec
+- https://www.everyculture.com/Middle-America-Caribbean/Mixtec-Religion-and-Expressive-Culture.html
+- https://doi.org/10.1007/s12685-016-0174-x
+- https://www.britannica.com/place/Kiribati
+- https://www.shimajournal.org/issues/v4n1/k.-Whincup-Shima-v4n1-113-130.pdf
+- https://repository.usp.ac.fj/id/eprint/7832/1/Kiribati_Vol_3_pg_228_to_236.pdf

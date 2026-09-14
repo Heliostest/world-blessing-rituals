@@ -608,3 +608,23 @@
 - https://www.britannica.com/topic/Blackfoot-people
 - https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/blackfeet-religious-traditions
 - https://americanindian.si.edu/
+
+
+## 增补传统（布吉斯比苏、埃文基、排湾、班巴拉、克里）
+
+- https://www.britannica.com/topic/Bugis
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/bugis-religion
+- https://www.bbc.com/travel/article/20210411-asias-isle-of-five-separate-genders
+- https://www.britannica.com/topic/Evenk-people
+- https://www.everyculture.com/Russia-Eurasia-China/Evenki-Northern-Tungus-Religion-and-Expressive-Culture.html
+- https://www.museum.state.il.us/exhibits/changing/journey/hunters-spiritual.html
+- https://www.cip.gov.tw/en/tribe/grid-list/E8D1B17F6A81D678D0636733C6861689/info.html
+- https://en.tacp.gov.tw/Indigenous/ItemDetail?ID=eadc0c5d-dd0c-4031-a1a2-af085c9b71b4
+- https://www.taipeitimes.com/News/feat/archives/2023/11/03/2003808614
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/bambara-religion
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bamana
+- https://www.britannica.com/topic/Chiwara
+- https://www.britannica.com/topic/Cree
+- https://www.thecanadianencyclopedia.ca/en/article/cree
+- https://www.britannica.com/topic/Sacred-Pipe
+- https://www2.uregina.ca/education/news/nehiyaw-cree-pipe-ceremony/

@@ -668,3 +668,25 @@
 - https://ich.unesco.org/en/RL/ie-samoa-fine-mat-and-its-cultural-value-01499
 - https://americansamoa.noaa.gov/learn/faa-samoa.html
 - https://culturalatlas.sbs.com.au/samoan-culture/samoan-culture-core-concepts
+
+
+## 增补传统（吉尔吉斯、科萨、泰雅、汤加、爱沙尼亚马阿乌斯克）
+
+- https://www.britannica.com/topic/Kyrgyz-people
+- https://ich.unesco.org/en/RL/kyrgyz-epic-trilogy-manas-semetey-seytek-00876
+- https://www.everyculture.com/Russia-Eurasia-China/Kyrgyz-Religion-and-Expressive-Culture.html
+- https://ich.unesco.org/en/RL/art-of-akyns-kyrgyz-epic-tellers-00065
+- https://www.britannica.com/topic/Xhosa
+- https://sahistory.org.za/article/xhosa
+- https://www.encyclopedia.com/places/africa/south-african-political-geography/xhosa
+- https://www.cip.gov.tw/en/tribe/grid-list/A7F31083995F0E60D0636733C6861689/info.html
+- https://en.tacp.gov.tw/Indigenous/
+- https://doi.org/10.1007/s13157-021-01473-y
+- https://www.britannica.com/place/Tonga/History
+- https://ich.unesco.org/en/RL/lakalaka-dances-and-sung-speeches-of-tonga-00072
+- https://kids.britannica.com/students/article/Tonga/277387
+- https://press-files.anu.edu.au/downloads/press/p63751/html/ch15s02.html
+- https://www.maavald.ee/en/about-maavalla-koda
+- https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions
+- https://www.britannica.com/topic/Finno-Ugric-religion
+- https://www.britannica.com/topic/sacred-grove

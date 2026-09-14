@@ -945,3 +945,22 @@
 - https://www.britannica.com/place/Marshall-Islands
 - https://micsem.org/article/religion-in-the-marshall-islands/
 - https://www.britannica.com/topic/flag-of-the-Marshall-Islands
+
+
+## 增补传统（特耶姆、布列塔尼赦罪礼、金班古、普雷佩查、恩贝拉）
+
+- https://www.keralatourism.org/artforms/theyyam-ritual/1/
+- http://intangibleheritage.intach.org/documentation-of-theyyam-kerala/
+- https://www.bbc.com/travel/article/20230628-theyyam-the-indian-trance-where-men-become-gods
+- https://www.newadvent.org/cathen/11477b.htm
+- https://www.bcd.bzh/becedia/en/brittany-land-of-pardons
+- https://www.everyculture.com/Europe/Bretons-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Kimbanguist-Church
+- https://apnews.com/article/congo-kimbanguism-politics-rebellion-black-liberation-c7ba1dfff9e99e74d91840d9ba75f6f7
+- https://doi.org/10.7833/113-0-101
+- https://www.britannica.com/topic/Tarasco
+- https://www.everyculture.com/Middle-America-Caribbean/Tarascans-Religion-and-Expressive-Culture.html
+- https://www.latimes.com/archives/la-xpm-1995-09-02-me-41473-story.html
+- https://www.britannica.com/topic/Choco-people
+- https://www.everyculture.com/South-America/Ember-Religion-and-Expressive-Culture.html
+- https://sicultura.gob.pa/manifestaciones-culturales/el-jaibanismo-como-ritual-espiritual-y-medicinal-en-la-cultura-embera

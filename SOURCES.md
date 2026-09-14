@@ -709,3 +709,22 @@
 - http://en.chinaculture.org/2011-07/19/content_421754.htm
 - http://www.china.org.cn/china/earthquake_reconstruction/2010-02/02/content_19354450.htm
 - https://ich.unesco.org/en/USL/qiang-new-year-festival-00305
+
+
+## 增补传统（格纳瓦、阿帕奇、拉帕努伊、克伦、冰岛阿萨特鲁）
+
+- https://ich.unesco.org/en/RL/gnawa-01170
+- https://ich.unesco.org/en/decisions/14.COM/10.B.26
+- https://www.aljazeera.com/features/2015/12/3/gnawa-music-from-slavery-to-prominence
+- https://mescaleroapachetribe.com/our-culture/
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/apache-religious-traditions
+- https://www.britannica.com/topic/Apache-people
+- https://whc.unesco.org/en/list/715/
+- https://www.britannica.com/place/Easter-Island
+- https://imaginarapanui.com/en/rapa-nui-culture/rapa-nui-religion-and-beliefs/
+- https://www.everyculture.com/East-Southeast-Asia/Karen-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Telakhon
+- https://thesiamsociety.org/wp-content/uploads/1991/03/JSS_079_2k_Kumiko_ReligionInHillKarenCommunityChiangMai.pdf
+- https://asatru.is/um-asatruarfelagid/
+- https://www.bbc.com/travel/article/20190602-how-iceland-recreated-a-viking-age-religion
+- https://www.britannica.com/topic/Germanic-religion-and-mythology

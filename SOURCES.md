@@ -810,3 +810,28 @@
 - https://www.britannica.com/place/New-Caledonia-French-unique-collectivity-Pacific-Ocean/People
 - https://www.newcaledonia.travel/travel-guide/traditions/
 - https://whc.unesco.org/en/decisions/1470/
+
+
+## 增补传统（豪萨博里、瓦努阿图卡斯托姆、希腊正教、加罗宋萨雷克、查莫罗）
+
+- https://www.britannica.com/topic/Bori-cult
+- https://www.britannica.com/topic/Hausa
+- https://www.britannica.com/topic/Maguzawa
+- https://dukeupress.edu/prayer-has-spoiled-everything
+- https://ich.unesco.org/en/RL/vanuatu-sand-drawings-00073
+- https://ich.unesco.org/en/state/vanuatu-VU
+- https://www.abc.net.au/news/2020-01-12/vanuatu-death-defying-nagol-bungee-jumping-tribal-initiation/11855016
+- https://www.wipo.int/edocs/mdocs/tk/en/wipo_grtkf_ic_9/wipo_grtkf_ic_9_inf_7_b.pdf
+- https://www.britannica.com/topic/Epiphany
+- https://www.greeknewsagenda.gr/theophania/
+- https://www.goarch.org/-/the-order-for-the-lesser-sanctification-of-the-water
+- https://www.goarch.org/-/feast-of-the-holy-theophany-of-our-lord-god-and-savior-jesus-christ
+- https://eastgarohills.gov.in/about-district/people-culture/
+- https://www.everyculture.com/South-Asia/Garo-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Garo
+- https://www.britannica.com/place/Meghalaya
+- https://www.britannica.com/topic/Chamorro
+- https://www.guampedia.com/inafamaolek/
+- https://www.guampedia.com/taotaomona-taotaomona/
+- https://www.guampedia.com/chamorro-ancestor-worship/
+- https://www.guampedia.com/animism/

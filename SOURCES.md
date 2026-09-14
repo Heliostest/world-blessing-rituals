@@ -877,3 +877,26 @@
 - https://www.nfsa.gov.au/collection/item/instruments-ceremony
 - https://www.abc.net.au/news/2023-08-06/garma-festival-bunggul-ceremony/102674470
 - https://journals.vu.edu.au/index.php/vulj/article/view/40
+
+
+## 增补传统（克丘亚、希皮博、明打威、富拉尼、罗姆）
+
+- https://www.britannica.com/topic/Quechua
+- https://www.britannica.com/topic/Pachamama
+- https://ich.unesco.org/en/RL/pilgrimage-to-the-sanctuary-of-the-lord-of-qoyllurit-i-00567
+- https://ich.unesco.org/en/RL/andean-cosmovision-of-the-kallawaya-00048
+- https://bdpi.cultura.gob.pe/pueblos/shipibo-konibo
+- https://americanindian.si.edu/exhibitions/infinityofnations/amazon/239608.html
+- https://digitalcommons.trinity.edu/tipiti/vol4/iss1/5/
+- https://www.unesco.org/en/mab/siberut
+- https://www.britannica.com/place/Siberut-Island
+- https://www.bbc.com/indonesia/articles/c80ryjgyejvo
+- https://doi.org/10.34044/j.kjss.2022.43.1.14
+- https://www.britannica.com/topic/Fulani
+- https://ich.unesco.org/en/RL/cultural-space-of-the-yaaral-and-degal-00132
+- https://hdl.handle.net/1808/5816
+- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/fulani
+- https://www.nationalgeographic.com/travel/article/saint-sara-la-kali-romani-pilgrimage-camargue-france
+- https://rm.coe.int/factsheets-on-romani-culture-1-0-romani-culture-an-introduction/1680aac363
+- https://en.wikipedia.org/wiki/Bibi_(Romani_cult)
+- https://eriac.org/

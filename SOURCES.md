@@ -628,3 +628,23 @@
 - https://www.thecanadianencyclopedia.ca/en/article/cree
 - https://www.britannica.com/topic/Sacred-Pipe
 - https://www2.uregina.ca/education/news/nehiyaw-cree-pipe-ceremony/
+
+
+## 增补传统（斯拉瓦、卡达山杜顺、鲍尔、祖尼、希姆巴）
+
+- https://ich.unesco.org/en/RL/slava-celebration-of-family-saint-patron-s-day-01010
+- https://ich.unesco.org/en/decisions/9.COM/10.39
+- https://nkns.rs/en/popis-nkns/saint-patrons-day
+- https://www.britannica.com/topic/Kadazan-people
+- https://sabahtourism.com/article/harvest-festival-pesta-kaamatan/
+- https://sabahtourism.com/article/kaamatan-a-celebration-of-culture/
+- https://kdca.org.my/
+- https://ich.unesco.org/en/RL/baul-songs-00107
+- https://www.britannica.com/art/Baul
+- https://www.unesco.org/archives/multimedia/document-612
+- https://www.britannica.com/topic/AShiwi
+- https://www.everyculture.com/North-America/Zuni-Religion-and-Expressive-Culture.html
+- https://americanindian.si.edu/
+- https://www.britannica.com/topic/Herero
+- https://www.lcfn.info/ovahimba/information/ethnology
+- https://ich.unesco.org/doc/download.php?versionID=83949

@@ -1005,3 +1005,24 @@
 - https://edspace.american.edu/silkroadjournal/wp-content/uploads/sites/984/2017/09/Shrine-Pilgrimage-Among-the-Uighurs.pdf
 - https://journal.fi/scripta/article/view/67364
 - https://doi.org/10.1080/09681220208567330
+
+
+## 增补传统（土家、瓦伦西亚法雅、芳人／布维蒂、瓦尤、所罗门群岛习惯法）
+
+- https://www.britannica.com/topic/Tujia
+- http://english.scio.gov.cn/chinafacts/2017-06/06/content_40975371.htm
+- http://whhlyt.hunan.gov.cn/whhlyt/english/Culture/IntangibleCulturalHeritage/202206/t20220609_25442116.html
+- https://ich.unesco.org/en/RL/valencia-fallas-festivity-00859
+- https://cultural.valencia.es/en/patrimonio-cultural/fallas-festival-unesco-world-heritage-site/
+- https://www.britannica.com/place/Valencia-Spain
+- https://www.britannica.com/topic/Bwiti
+- https://www.britannica.com/place/Gabon
+- https://www.britannica.com/topic/African-religions
+- https://www.everyculture.com/South-America/Guajiro-Religion-and-Expressive-Culture.html
+- https://www.everyculture.com/wc/Tajikistan-to-Zimbabwe/Guajiros.html
+- https://www.britannica.com/place/La-Guajira-Peninsula
+- https://doi.org/10.21676/16574923.3643
+- https://www.britannica.com/place/Solomon-Islands
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/solomon-islands-religions
+- https://www.penn.museum/sites/expedition/wogosia/
+- https://ecologyandsociety.org/vol19/iss4/art41/

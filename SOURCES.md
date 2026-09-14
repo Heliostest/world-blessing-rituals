@@ -900,3 +900,28 @@
 - https://rm.coe.int/factsheets-on-romani-culture-1-0-romani-culture-an-introduction/1680aac363
 - https://en.wikipedia.org/wiki/Bibi_(Romani_cult)
 - https://eriac.org/
+
+
+## 增补传统（米克马克、帕劳贝拉乌、莫西、阿布哈兹、撒丁）
+
+- https://thecanadianencyclopedia.ca/en/article/mikmaq
+- https://micmac-nsn.gov/mawiomi
+- https://www.britannica.com/topic/American-Indian
+- https://muiniskw.org/pgCulture2f.htm
+- https://www.britannica.com/place/Micronesia-cultural-region-Pacific-Ocean
+- https://www.britannica.com/place/Palau
+- https://whc.unesco.org/en/tentativelists/1931/
+- https://minpaku.repo.nii.ac.jp/record/3266/files/SES21_016.pdf
+- https://www.britannica.com/topic/Mossi
+- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/mossi
+- https://www.everyculture.com/Africa-Middle-East/Mossi-Religion-and-Expressive-Culture.html
+- https://doi.org/10.26806/modafr.v13i1.540
+- https://www.britannica.com/topic/Abkhaz
+- https://www.discoverabkhazia.org/religion
+- https://doi.org/10.31250/2618-8619-2023-1(19)-112-120
+- https://abaza.org/en/sanctuaries
+- https://ich.unesco.org/en/RL/celebrations-of-big-shoulder-borne-processional-structures-00721
+- https://www.sardegnaturismo.it/en/descent-candlesticks-solemnity-authenticity-and-exhibition
+- https://idese.cultura.gov.it/en/place/discesa-dei-candelieri-la-faradda/
+- https://www.sardegnaturismo.it/en/sardinia-festival-sacred
+- https://www.sardegnaturismo.it/en/redentore-festival-religion-and-folklore

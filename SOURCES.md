@@ -648,3 +648,23 @@
 - https://www.britannica.com/topic/Herero
 - https://www.lcfn.info/ovahimba/information/ethnology
 - https://ich.unesco.org/doc/download.php?versionID=83949
+
+## 增补传统（壮族麽教、哈萨克、楚科奇、巴索托、萨摩亚）
+
+- https://www.britannica.com/topic/Zhuang
+- http://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40636697.htm
+- https://journals.sagepub.com/doi/10.1177/186810261404300208
+- https://www.britannica.com/topic/Kazakh
+- https://www.everyculture.com/Russia-Eurasia-China/Kazakhs-Religion-and-Expressive-Culture.html
+- https://festival.si.edu/blog/kazakh-tengri-rituals
+- https://e-history.kz/en/e-resources/show/13453
+- https://www.britannica.com/topic/Chukchi
+- https://www.everyculture.com/wc/Norway-to-Russia/Chukchi.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/chukchee
+- https://www.britannica.com/topic/Sotho
+- https://www.britannica.com/place/Lesotho/Cultural-life
+- https://www.encyclopedia.com/places/africa/south-african-political-geography/sotho
+- https://www.britannica.com/place/Samoa-island-nation-Pacific-Ocean/Cultural-life
+- https://ich.unesco.org/en/RL/ie-samoa-fine-mat-and-its-cultural-value-01499
+- https://americansamoa.noaa.gov/learn/faa-samoa.html
+- https://culturalatlas.sbs.com.au/samoan-culture/samoan-culture-core-concepts

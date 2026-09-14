@@ -835,3 +835,25 @@
 - https://www.guampedia.com/taotaomona-taotaomona/
 - https://www.guampedia.com/chamorro-ancestor-worship/
 - https://www.guampedia.com/animism/
+
+
+## 增补传统（达悟雅美、斯威士因夸拉、梅夫莱维苏菲、拉拉姆里、维达）
+
+- https://www.cip.gov.tw/en/tribe/grid-list/6521E76602C72C42D0636733C6861689/info.html
+- https://en.tacp.gov.tw/Indigenous/ItemDetail?ID=b192f770-9ad9-4163-9d6e-562e16565dc7
+- https://www.rti.org.tw/en/news?pid=143890&uid=3
+- https://www.britannica.com/topic/Incwala
+- https://www.britannica.com/place/Eswatini
+- https://www.britannica.com/topic/first-fruits-ceremony
+- https://www.thekingdomofeswatini.com/eswatini-experiences/events/incwala-festival/
+- https://ich.unesco.org/en/RL/mevlevi-sema-ceremony-00100
+- https://www.britannica.com/topic/Mawlawiyah
+- https://www.britannica.com/topic/Islamic-arts/Dervish-dancing
+- https://yakegm.ktb.gov.tr/TR-345100/mevlevi-sema-ceremony.html
+- https://www.britannica.com/topic/Tarahumara
+- https://www.mpm.edu/research-collections/anthropology/online-collections-research/tarahumara/culture-and-history
+- https://www.everyculture.com/Middle-America-Caribbean/Tarahumara-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/history/latin-america-and-caribbean/mesoamerican-indigenous-peoples/tarahumara
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/veddas
+- https://vedda.org/wanniyalaeto.htm
+- https://www.britannica.com/topic/Vedda

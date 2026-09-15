@@ -1918,3 +1918,35 @@
 - https://www.britannica.com/topic/Kanjobal
 - https://www.britannica.com/place/Guatemala
 - https://www.britannica.com/topic/Maya-people
+
+## 增补传统（基西、林巴、苏苏、格巴亚、巴兰塔、卡拉布里亚、翁布里亚、维普斯、努库奥罗、苏库马）
+
+- https://www.britannica.com/topic/Kissi
+- https://www.britannica.com/place/Guinea
+- https://www.britannica.com/place/Liberia
+- https://www.britannica.com/topic/Limba
+- https://www.britannica.com/place/Sierra-Leone
+- https://www.britannica.com/topic/Islam
+- https://www.britannica.com/topic/Susu
+- https://www.britannica.com/place/Conakry
+- https://www.britannica.com/topic/Gbaya
+- https://www.britannica.com/place/Central-African-Republic
+- https://www.britannica.com/place/Cameroon
+- https://www.britannica.com/topic/Balanta
+- https://www.britannica.com/place/Guinea-Bissau
+- https://www.britannica.com/place/West-Africa
+- https://www.britannica.com/place/Calabria-region-Italy
+- https://www.britannica.com/place/Reggio-di-Calabria
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/place/Umbria
+- https://www.britannica.com/place/Assisi
+- https://www.britannica.com/biography/Saint-Francis-of-Assisi
+- https://www.britannica.com/topic/Veps
+- https://www.britannica.com/place/Karelia
+- https://www.britannica.com/topic/Finno-Ugric-languages
+- https://www.britannica.com/place/Nukuoro
+- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
+- https://www.britannica.com/place/Polynesia
+- https://www.britannica.com/topic/Sukuma
+- https://www.britannica.com/place/Tanzania
+- https://www.britannica.com/place/Lake-Victoria

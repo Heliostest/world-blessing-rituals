@@ -1502,3 +1502,36 @@
 - https://www.britannica.com/topic/Dani
 - https://www.britannica.com/place/Papua
 - https://www.britannica.com/place/New-Guinea
+
+## 增补传统（米佐、撒拉、锡伯、莫肯、加泰罗尼亚、乌克兰、阿瓦尔、阿努阿克、马奇根卡、纳瓦）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mizo
+- https://en.wikipedia.org/wiki/Mizo_religion
+- https://en.wikipedia.org/wiki/Christianity_in_Mizoram
+- https://www.britannica.com/topic/Salar
+- https://www.britannica.com/place/Qinghai
+- https://www.britannica.com/topic/Islam
+- https://www.britannica.com/topic/Sibo
+- https://www.britannica.com/place/Xinjiang
+- https://www.britannica.com/topic/shamanism
+- https://www.britannica.com/topic/Moken
+- https://www.britannica.com/place/Andaman-Sea
+- https://www.britannica.com/place/Surin-Islands
+- https://www.britannica.com/place/Catalonia
+- https://www.britannica.com/topic/Montserrat-monastery-Catalonia-Spain
+- https://www.britannica.com/art/castell
+- https://www.britannica.com/topic/Eastern-Orthodoxy
+- https://www.britannica.com/place/Ukraine
+- https://www.britannica.com/topic/Slavic-religion
+- https://www.britannica.com/topic/Avar
+- https://www.britannica.com/place/Dagestan
+- https://www.britannica.com/topic/Sufism
+- https://www.britannica.com/topic/Anuak
+- https://www.britannica.com/place/South-Sudan
+- https://www.britannica.com/place/Gambela
+- https://www.everyculture.com/South-America/Matsigenka-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/matsigenka-0
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/Nahua
+- https://www.britannica.com/topic/Aztec
+- https://www.britannica.com/place/Mexico

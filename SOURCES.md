@@ -1863,3 +1863,27 @@
 - https://www.britannica.com/place/Savoy-region-France
 - https://www.britannica.com/place/Alps
 - https://www.britannica.com/topic/Roman-Catholicism
+
+## 增补传统（赫马尔、唐库尔、波姆、诺克特、托霍拉瓦尔、哈卡尔特克、波科姆奇、艾米利亚、弗里堡、赫雷罗）
+
+- https://www.britannica.com/place/Manipur
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Chin-people
+- https://www.britannica.com/topic/Naga-people
+- https://www.britannica.com/place/Nagaland
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://www.britannica.com/topic/Tojolabal
+- https://www.britannica.com/place/Chiapas
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/topic/Jacaltec
+- https://www.britannica.com/place/Guatemala
+- https://www.britannica.com/topic/Pokomam
+- https://www.britannica.com/place/Emilia-Romagna
+- https://www.britannica.com/place/Bologna-Italy
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/place/Fribourg-canton-Switzerland
+- https://www.britannica.com/place/Fribourg-Switzerland
+- https://www.britannica.com/place/Switzerland
+- https://www.britannica.com/topic/Herero
+- https://www.britannica.com/place/Namibia
+- https://www.britannica.com/event/German-Herero-conflict-of-1904-1907

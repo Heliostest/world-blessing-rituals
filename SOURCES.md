@@ -1157,3 +1157,37 @@
 - https://english.radio.cz/believers-go-pilgrimage-velehrad-cyril-and-methodius-celebrations-8553001
 - https://english.radio.cz/bystrice-pod-hostynem-8612067
 - https://www.south-moravia.com/en/pilgrimage-through-south-moravia/cyril-and-methodius-routes/
+
+## 增补传统（那乃、绍尔、本巴、库巴、阿沙宁卡）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nanais
+- https://doi.org/10.15021/00002606
+- https://factsanddetails.com/world/cat55/sub350/item1919.html
+- https://www.culturalsurvival.org/publications/cultural-survival-quarterly/fight-preserve-shor-culture
+- https://www.britannica.com/place/Siberia
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/bemba-religion
+- https://www.britannica.com/topic/Bemba
+- https://www.britannica.com/place/Zambia
+- https://www.britannica.com/topic/Kuba-people
+- https://kids.britannica.com/scholars/article/Kuba/46332
+- https://www.metmuseum.org/toah/hd/kuba/hd_kuba.htm
+- https://www.everyculture.com/wc/Norway-to-Russia/Ash-ninka.html
+- https://www.britannica.com/place/Amazon-Rainforest
+
+## 增补传统（奥托米、雅浦、傈僳、佤族、阿尔巴尼亚民间／托莫尔）
+
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/otomi-religion
+- https://www.revistas.inah.gob.mx/index.php/diariodecampo/en/article/view/17213
+- https://digitalrepository.unm.edu/el_centro_cbrli/2
+- https://www.everyculture.com/Oceania/Yap-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/place/Yap
+- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
+- https://www.britannica.com/topic/Lisu
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/lisu
+- https://www.britannica.com/place/Yunnan
+- https://www.encyclopedia.com/places/asia/chinese-political-geography/wa
+- https://doi.org/10.2991/essaeme-17.2017.56
+- https://www.britannica.com/place/Albania
+- https://www.britannica.com/topic/Bektashi
+- https://www.britannica.com/topic/Sufism
+- https://balkaninsight.com/2016/05/18/quarries-make-hellish-mess-of-albania-s-holy-mountain-05-16-2016/

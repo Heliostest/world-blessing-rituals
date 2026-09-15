@@ -2211,3 +2211,34 @@
 - https://www.britannica.com/topic/Huave
 - https://www.britannica.com/place/Tehuantepec
 - https://www.britannica.com/place/Oaxaca-state-Mexico
+
+## 增补传统（西奥纳、科凡、卡马尤拉、萨特雷—马韦、埃莱马、阿努瓦克、古西、吉雷尔、涅吉达尔、奎卡特克）
+
+- https://www.britannica.com/topic/Siona
+- https://www.britannica.com/place/Putumayo-River
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/Cofan
+- https://www.britannica.com/place/Ecuador
+- https://www.britannica.com/topic/Xinguanos
+- https://www.britannica.com/place/Xingu-River
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/topic/Satere-Mawe
+- https://www.britannica.com/topic/guarana
+- https://www.britannica.com/topic/Elema
+- https://www.britannica.com/place/Gulf-Province
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Anyuak
+- https://www.britannica.com/place/Gambela
+- https://www.britannica.com/place/South-Sudan
+- https://www.britannica.com/topic/Gusii
+- https://www.britannica.com/place/Kisii
+- https://www.britannica.com/place/Kenya
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/place/Himalayas
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/topic/Negidal
+- https://www.britannica.com/place/Amur-River
+- https://www.britannica.com/place/Siberia
+- https://www.britannica.com/topic/Cuicatec
+- https://www.britannica.com/place/Oaxaca-state-Mexico
+- https://www.britannica.com/place/Mexico

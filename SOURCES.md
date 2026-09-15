@@ -1716,3 +1716,30 @@
 - https://www.britannica.com/place/El-Rocio
 - https://www.britannica.com/place/Asturias
 - https://www.britannica.com/place/Covadonga
+
+## 增补传统（塔金、米辛、迪马萨、康沃尔、马恩岛、阿乔利、卢格巴拉、马萨特克、米赫、瓦斯特克）
+
+- https://en.wikipedia.org/wiki/Tagin_people
+- https://en.wikipedia.org/wiki/Donyi-Polo
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://en.wikipedia.org/wiki/Mising_people
+- https://www.iosrjournals.org/iosr-jhss/papers/Vol.%2024%20Issue11/Series-3/C2411031315.pdf
+- https://en.wikipedia.org/wiki/Dimasa_people
+- https://www.britannica.com/place/Assam
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/place/Cornwall-county-England
+- https://www.britannica.com/topic/holy-well
+- https://www.britannica.com/topic/Church-of-England
+- https://www.britannica.com/place/Isle-of-Man
+- https://www.britannica.com/place/Irish-Sea
+- https://www.britannica.com/topic/Acholi
+- https://www.britannica.com/place/Uganda
+- https://www.britannica.com/place/Northern-Uganda
+- https://www.britannica.com/topic/Lugbara
+- https://www.britannica.com/place/West-Nile
+- https://www.britannica.com/topic/Mazatec
+- https://www.britannica.com/place/Oaxaca-state-Mexico
+- https://www.britannica.com/place/Mexico
+- https://www.britannica.com/topic/Mixe
+- https://www.britannica.com/topic/Huastec
+- https://www.britannica.com/place/San-Luis-Potosi-state-Mexico

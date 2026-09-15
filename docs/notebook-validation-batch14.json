@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "abkhaz-traditional",
+    "title": "阿布哈兹传统宗教与圣所祈福（Abkhaz／Apsua）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Dydrypsh 与七大 Anykha 命名（公开圣所层）",
+      "Ashtw'ashyra 家庭祈祷（家族概念层）",
+      "Ankhabyu 圣所伦理与东正教／伊斯兰并存（当代概念层）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Dydrypsh & seven Anykha naming; Ashtw'ashyra; Ankhabyu ethics CONCEPT — viewing only, no vows how-to."
+    ],
+    "actions": [
+      "Reframed rituals to Dydrypsh/seven Anykha, Ashtw'ashyra, and Ankhabyu ethics CONCEPT (viewing only, no vows how-to).",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "acehnese-traditional",
+    "title": "亚齐伊斯兰与圣墓—习俗法祈福（Acehnese）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Kanduri 共餐宴饮（公开社群层）",
+      "Tengku Syiah Kuala 等圣墓朝谒（概念层）",
+      "Pawang 禁忌余绪（高度敏感，CONCEPT ONLY）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Kanduri communal feast; Tengku Syiah Kuala shrine; Pawang taboos CONCEPT ONLY."
+    ],
+    "actions": [
+      "Reframed rituals to Kanduri, Tengku Syiah Kuala shrine, and Pawang taboos CONCEPT ONLY.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+    ]
+  },
+  {
+    "slug": "acholi-traditional",
+    "title": "阿乔利传统宗教与祖灵祈福（Acholi）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Mato Oput 和解叙事（CONCEPT — non-operational）",
+      "Jok／Keno 圣所概念（CONCEPT — non-operational）",
+      "教堂崇拜（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Mato Oput reconciliation narrative CONCEPT; Jok/Keno shrines CONCEPT — non-operational; church."
+    ],
+    "actions": [
+      "Reframed rituals to Mato Oput CONCEPT non-operational, Jok/Keno CONCEPT non-operational, and church.",
+      "Emphasized atmosphere-only / no user-officiating; grade B; no trauma gamification."
+    ]
+  },
+  {
+    "slug": "adi-traditional",
+    "title": "阿迪传统信仰与东尼—波罗祈福（Adi）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Solung 丰收节（公开节庆层）",
+      "Gangging 公共祈祷场所；Aran／Mirü（概念层）",
+      "血奉献与基督教并行（CONCEPT ONLY／概念层）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Solung; Gangging; Aran; Mirü; blood offerings CONCEPT ONLY."
+    ],
+    "actions": [
+      "Reframed rituals to Solung, Gangging/Aran/Mirü, and blood offerings CONCEPT ONLY + church parallel.",
+      "Emphasized atmosphere-only / no user-officiating; grade B."
+    ]
+  },
+  {
+    "slug": "aleut-unangan-traditional",
+    "title": "阿留申／乌南干传统信仰与东正教祈福（Aleut／Unangan）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "东正教礼仪与命名日（概念层）",
+      "Iqyaq／Baidarka 文化与猎物敬意（概念层）",
+      "Qugaq 记忆与萨满面具历史（高度敏感，CONCEPT）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Iqyaq/Baidarka cultural; Qugaq memory CONCEPT; Orthodox; prey respect; shaman mask history CONCEPT."
+    ],
+    "actions": [
+      "Reframed rituals to Orthodox, Iqyaq/Baidarka + prey respect, and Qugaq/shaman mask history CONCEPT.",
+      "Emphasized atmosphere-only / no user-officiating; grade B."
+    ]
+  },
+  {
+    "slug": "altai-burkhanism",
+    "title": "阿尔泰／白教布尔汗信仰（Ak Jang／Burkhanism）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Jalama 白丝带与 Sang 杜松／乳品奉献（概念层）",
+      "Kai／Kaichi 喉音史诗（公共文化层）",
+      "Kam 鼓（限制性公共知识层，CONCEPT ONLY）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Jalama white ribbons; Sang juniper/milk CONCEPT; Kai/Kaichi throat epic; Kam drum CONCEPT ONLY restricted."
+    ],
+    "actions": [
+      "Reframed rituals to Jalama/Sang CONCEPT, Kai/Kaichi throat epic, and Kam drum CONCEPT ONLY restricted.",
+      "Emphasized atmosphere-only / no user-officiating; grade B."
+    ]
+  },
+  {
+    "slug": "alur-traditional",
+    "title": "阿卢尔传统信仰与艾伯特湖祈福（Alur）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Rwoth 求雨／酋长叙事（CONCEPT — non-operational）",
+      "Jok 圣所概念（CONCEPT — non-operational）",
+      "湖泊生计祝福叙事与基督教公开礼拜（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Rwoth rain/chief narrative CONCEPT; Jok shrines CONCEPT; lake livelihood blessing narrative — non-operational."
+    ],
+    "actions": [
+      "Reframed rituals to Rwoth CONCEPT non-operational, Jok CONCEPT non-operational, and lake livelihood blessing + church.",
+      "Emphasized atmosphere-only / no user-officiating; grade B."
+    ]
+  },
+  {
+    "slug": "abaza-traditional",
+    "title": "阿巴扎民间伊斯兰与高加索习惯祈福（Abaza）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Apswara／Khabze 好客伦理（概念／公共伦理层）",
+      "清真寺与 Mawlid 公开诵念层（概念层）",
+      "苏菲圣地朝谒（敏感，仅 CONCEPT）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Apswara/Khabze hospitality; Mawlid recitation public layer; mosque; Sufi shrines CONCEPT."
+    ],
+    "actions": [
+      "Enriched Apswara/Khabze, Mawlid public layer + mosque, Sufi shrines CONCEPT.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+    ]
+  },
+  {
+    "slug": "acoma-traditional",
+    "title": "阿科马普韦布洛传统信仰与新墨西哥祈福（Acoma）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "San Esteban 瞻礼公开层（概念）",
+      "陶瓷与大地灵性公开层（概念）",
+      "Katsina／Kiva 保持封存（极高敏感，仅概念）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich San Esteban feast public; pottery/earth spirituality public; Katsina/Kiva stay sealed."
+    ],
+    "actions": [
+      "Enriched San Esteban public feast, pottery/earth spirituality public; kept Katsina/Kiva sealed.",
+      "Emphasized atmosphere-only / no user-officiating; grade B."
+    ]
+  },
+  {
+    "slug": "afar-traditional",
+    "title": "阿法尔牧民信仰与祈福传统（Afar）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Mawlid 与伊斯兰公共祈祷层",
+      "Rabena 求雨山／山顶圣所记忆（库希特余绪，CONCEPT）",
+      "Jenile 神谕／附体舞蹈（敏感层，CONCEPT ONLY）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Mawlid; Rabena rain mountain CONCEPT; Jenile possession dance CONCEPT ONLY."
+    ],
+    "actions": [
+      "Enriched Mawlid, Rabena rain mountain CONCEPT, Jenile possession dance CONCEPT ONLY.",
+      "Emphasized atmosphere-only / no user-officiating; grade B."
+    ]
+  },
+  {
+    "slug": "ahom-phuralung",
+    "title": "阿豪姆／普拉隆传统与祭祖节（Tai-Ahom Phuralung／Me-Dam-Me-Phi）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Me-Dam-Me-Phi 祭祖节（概念层）",
+      "Phuralung 与 Deodhai 祭司概念（限制性公共知识层）",
+      "2024 UNESCO Moidams 坟丘与王权记忆（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Deodhai priests CONCEPT; 2024 UNESCO Moidams; Me-Dam-Me-Phi; Phuralung."
+    ],
+    "actions": [
+      "Enriched Deodhai CONCEPT, 2024 UNESCO Moidams, Me-Dam-Me-Phi, Phuralung naming.",
+      "Emphasized atmosphere-only / no user-officiating; grade B."
+    ]
+  },
+  {
+    "slug": "alevi",
+    "title": "阿列维／贝克塔什（Alevi–Bektaşi）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Dede 与 Cem（聚会礼）— 概念／非用户主持",
+      "Semah 与 Nefes（概念／文化传承层）",
+      "Lokma 文化展示与十二服务／sohbet（文化展示层）"
+    ],
+    "validated_at": "2026-09-15T10:59:48Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Dede; Nefes; Lokma cultural display — NO user Cem/Semah officiating; keep B."
+    ],
+    "actions": [
+      "Enriched Dede, Nefes, Lokma cultural display; explicitly NO user Cem/Semah officiating; kept grade B.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度."
+    ]
+  }
+]

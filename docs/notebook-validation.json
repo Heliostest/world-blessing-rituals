@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 581,
-    "passed_after_fix": 87,
-    "passed": 57,
+    "pending": 569,
+    "passed_after_fix": 95,
+    "passed": 61,
     "skipped": 1
   },
   "items": [
@@ -10454,46 +10454,61 @@
       "slug": "uzbek-folk",
       "title": "乌兹别克民间伊斯兰与诺鲁孜祈福传统（Uzbek folk／Navruz）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "Navruz 春节与播种—食物供奉（公开节庆层）",
-        "圣地朝拜（ziyorat）与圣徒陵寝（朝圣—民间层）",
-        "生命礼仪与地方仪式歌唱（社区层，概念）"
+        "Navruz 与 Sumalak 共煮（公开节庆层）",
+        "Bahauddin Naqshband／Shah-i Zinda 等 ziyorat（朝圣—民间层）",
+        "Bibiseshanba 妇女祝福与生命礼仪（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Sumalak; Bahauddin Naqshband / Shah-i Zinda ziyarat; Bibiseshanba women's blessing; Navruz; life rites high-level."
+      ],
+      "actions": [
+        "Reframed rituals to Navruz/Sumalak, Naqshband/Shah-i Zinda ziyarat, and Bibiseshanba + life rites high-level.",
+        "Preserved 手机互动适合度 C; educational; no shaman/驱邪 how-to."
+      ]
     },
     {
       "slug": "valdostano-folk",
       "title": "瓦莱达奥斯塔民间天主教与阿尔卑斯祈福（Valdostano）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "高山圣母朝圣（概念层）",
-        "主保节与村社巡游（概念层）",
-        "牧季／牲畜祝福（概念层）"
+        "Notre-Dame de la Guérison 高山圣母朝圣（概念层）",
+        "Saint-Bernard 阿尔卑斯庇护与主保节（概念层）",
+        "Alpine pasture blessing；Bataille des Reines（文化节庆，非核心仪轨）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Notre-Dame de la Guérison; Saint-Bernard alpine patronage; Bataille des Reines as cultural cattle festival (not core rite); Alpine pasture blessing."
+      ],
+      "actions": [
+        "Reframed rituals to Notre-Dame de la Guérison, Saint-Bernard patronage, Alpine pasture blessing; noted Bataille des Reines as cultural festival not core rite.",
+        "Preserved 手机互动适合度 C; educational; no clerical how-to."
+      ]
     },
     {
       "slug": "valencian-fallas",
       "title": "瓦伦西亚法雅节与民间天主教节庆（Valencian Fallas／Falles）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "竖立 falla 与社区讽刺雕塑（公共创意层）",
-        "向圣若瑟献花与主保敬礼（民间天主教层）",
-        "Cremà（焚烧）与烟火更新（节庆高潮层）"
+        "Plantà：竖立 falla 与社区讽刺雕塑（公共创意层）",
+        "Ofrenda de Flores 向 Virgen de los Desamparados；Mascletà（民间天主教／公共层）",
+        "La Cremà（焚烧）于圣若瑟日（节庆高潮层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "CORRECT Ofrenda de Flores to Virgen de los Desamparados (NOT St Joseph); Plantà; Mascletà; La Cremà on St Joseph day — keep Fallas structure."
+      ],
+      "actions": [
+        "Corrected Ofrenda to Virgen de los Desamparados (not St Joseph); reframed Plantà, Mascletà, La Cremà on St Joseph day.",
+        "Preserved Fallas structure and 手机互动适合度 C; educational; no dangerous fireworks how-to."
+      ]
     },
     {
       "slug": "vanuatu-kastom",
@@ -10544,16 +10559,21 @@
       "slug": "veps-folk",
       "title": "维普斯民间东正教与森林祈福（Veps）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "东正教礼拜与节期（概念层）",
-        "语言—文化日感恩（概念层）",
-        "森林—湖泊敬意（概念层）"
+        "Elämän puu 等语言—文化节日（公共文化层）",
+        "Metsiine／Veziine 自然灵概念（CONCEPT ONLY）",
+        "东正教堂区节庆（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Elämän puu festival; Metsiine forest spirit CONCEPT; Veziine water spirit CONCEPT; Orthodox parish feasts — no shaman how-to."
+      ],
+      "actions": [
+        "Reframed rituals to Elämän puu, Metsiine/Veziine CONCEPT ONLY, and Orthodox parish feasts.",
+        "Preserved 手机互动适合度 C; educational; no shaman how-to."
+      ]
     },
     {
       "slug": "vietnamese-folk",
@@ -10604,16 +10624,21 @@
       "slug": "volga-tatar-traditional",
       "title": "伏尔加鞑靼伊斯兰与民间祈福传统（Volga Tatar）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与两大节日（公共层）",
-        "生命礼仪：命名、婚礼与丧葬（部分敏感）",
-        "妇女学习圈与通俗护佑叙事（概念层）"
+        "Sabantuy 与 Koresh 摔跤（公共节庆层）",
+        "Bolgar 朝圣／White Mosque；Kul Sharif（朝圣—公共层）",
+        "Nardugan 冬季节庆（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Sabantuy; Koresh wrestling; Bolgar pilgrimage / White Mosque; Kul Sharif; Nardugan winter festival."
+      ],
+      "actions": [
+        "Reframed rituals to Sabantuy/Koresh, Bolgar/White Mosque + Kul Sharif, and Nardugan.",
+        "Preserved 手机互动适合度 C; educational; no amulet/驱邪 how-to."
+      ]
     },
     {
       "slug": "wa-traditional",
@@ -10679,31 +10704,41 @@
       "slug": "walloon-folk",
       "title": "瓦隆民间天主教与朝圣祈福（Walloon）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母朝圣地朝圣（概念层）",
-        "主保节与村社巡游（概念层）",
-        "生命礼仪（概念层）"
+        "Marches de l'Entre-Sambre-et-Meuse（UNESCO／公共层）",
+        "Banneux 与 Beauraing 圣母朝圣（概念层）",
+        "堂区还愿弥撒（votive Masses）（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Marches de l'Entre-Sambre-et-Meuse UNESCO escort processions; Banneux & Beauraing Marian details; parish votive Masses."
+      ],
+      "actions": [
+        "Reframed rituals to Marches UNESCO, Banneux & Beauraing Marian details, and parish votive Masses.",
+        "Preserved 手机互动适合度 C; educational; no clerical how-to."
+      ]
     },
     {
       "slug": "walser-folk",
       "title": "瓦尔瑟民间基督教与阿尔卑斯祈福（Walser）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "堂区礼拜（概念层）",
-        "牧季与山居祝福（概念层）",
-        "语言—文化节认同（概念层）"
+        "Maria Schnee 小堂敬礼（概念层）",
+        "Alpabfahrt 与 Alpsegen 牧季祝福（概念层）",
+        "Walser culture days（公共文化层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Maria Schnee chapels; Alpabfahrt; Alpsegen pasture blessing; Walser culture days."
+      ],
+      "actions": [
+        "Reframed rituals to Maria Schnee, Alpabfahrt/Alpsegen, and Walser culture days.",
+        "Preserved 手机互动适合度 C; educational; no clerical how-to."
+      ]
     },
     {
       "slug": "wancho-traditional",
@@ -10814,31 +10849,41 @@
       "slug": "welsh-folk",
       "title": "威尔士民间祈福与节庆（Welsh Folk／Cymru）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Mari Lwyd 逐户祝岁（公开民俗层）",
-        "National Eisteddfod 与 Gorsedd 公开典礼（公共文化层）",
-        "圣井、教堂与地方岁时祝福（概念层）"
+        "St Winefride's Well（Holywell）与 St David's Day（概念层）",
+        "Mari Lwyd 与 Pwnco 对歌（公开民俗层）",
+        "National Eisteddfod 与 Gorsedd 公开典礼（公共文化层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich St Winefride's Well Holywell; St David's Day Mar 1; Mari Lwyd Pwnco; Eisteddfod/Gorsedd."
+      ],
+      "actions": [
+        "Enriched with St Winefride's Well, St David's Day Mar 1, Mari Lwyd Pwnco, and Eisteddfod/Gorsedd.",
+        "Preserved 手机互动适合度 C; educational; no initiation how-to."
+      ]
     },
     {
       "slug": "wetu-telu-sasak",
       "title": "萨萨克韦图特卢／龙目岛地方伊斯兰传统（Sasak Wetu Telu）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "地方礼拜与斋月节奏（概念层）",
-        "祖先、圣地与林贾尼山意象（概念层）",
-        "Pujawali／Perang topat 等公开节庆（概念层）"
+        "Pura Lingsar 与 Perang Topat（公开节庆层）",
+        "Segara Anak 供奉概念；Bayan 古清真寺（概念层）",
+        "祖先礼仪（CONCEPT）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Pura Lingsar; Perang Topat; Segara Anak offering CONCEPT ONLY strong respect; Bayan old mosque; ancestral rites CONCEPT."
+      ],
+      "actions": [
+        "Enriched with Pura Lingsar, Perang Topat, Segara Anak CONCEPT ONLY strong respect, Bayan old mosque, ancestral rites CONCEPT.",
+        "Preserved 手机互动适合度 C; educational; no initiation/sacrifice how-to."
+      ]
     },
     {
       "slug": "wichi-traditional",
@@ -10934,16 +10979,21 @@
       "slug": "won-buddhism",
       "title": "韩国圆佛教（Won Buddhism / Wŏnbulgyo）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "周日法会（概念层）",
-        "四恩实践与日常随时禅（概念层）",
-        "年中纪念与报恩礼仪（概念层）"
+        "一圆相（Irwonsang）与周日法会（概念层）",
+        "四恩实践与随时禅（概念层）",
+        "4 月 28 日大觉／创教日与年中纪念（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Irwonsang one-circle symbol; Apr 28 Great Enlightenment / Founding Day; Sunday service; Four Graces; anytime meditation."
+      ],
+      "actions": [
+        "Enriched Irwonsang, Apr 28 Great Enlightenment/Founding Day, Sunday service, Four Graces, anytime meditation.",
+        "Preserved 手机互动适合度 C; educational; no clerical impersonation."
+      ]
     },
     {
       "slug": "wounaan-traditional",
@@ -11144,16 +11194,21 @@
       "slug": "yapese-traditional",
       "title": "雅浦传统信仰与村社祈福余绪（Yapese）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "天主教礼拜与教会日历（公共层）",
-        "渔捞与园艺戒忌／防护余绪（概念层）",
-        "坐舞与神话公共展演（公共文化层）"
+        "Rai 石币交换文化与 Yap Day（公共文化层）",
+        "Churu' 坐舞公共展演（公共文化层）",
+        "Faluw 男子会所（CONCEPT ONLY，受限）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Rai stone-money exchange cultural; Yap Day; Churu' dance; Faluw men's house CONCEPT ONLY restricted — no how-to."
+      ],
+      "actions": [
+        "Reframed rituals to Rai/Yap Day, Churu' dance, and Faluw CONCEPT ONLY restricted.",
+        "Preserved 手机互动适合度 C; educational; no initiation/magic how-to."
+      ]
     },
     {
       "slug": "yaqui-yoeme",
@@ -11204,16 +11259,21 @@
       "slug": "yazidi",
       "title": "雅兹迪（Yazidi / Êzidî）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "拉利什朝觐与谢赫·阿迪陵寝敬礼",
-        "结祈愿结与灯光敬礼（概念层）",
-        "圣诗吟诵与孔雀圣标（sanjaq）巡回（概念层）"
+        "Çarşema Sor（红星期三）新年命名与 Melek Taus 敬礼（概念层）",
+        "Lalish 365 油灯概念；结祈愿结（CONCEPT）",
+        "Qawwal 圣诗与 Peacock Sanjaq（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:48:39Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Çarşema Sor (Red Wednesday) New Year naming; Melek Taus; 365 oil lamps at Lalish CONCEPT; Qawwal hymns; Peacock Sanjaq — HIGH SENSITIVITY, educational only, NO how-to; reinforce 注意与尊重 / persecution context briefly."
+      ],
+      "actions": [
+        "Enriched Çarşema Sor, Melek Taus, 365 oil lamps CONCEPT, Qawwal, Peacock Sanjaq; reinforced HIGH SENSITIVITY, persecution context, no how-to in 注意与尊重.",
+        "Preserved 手机互动适合度 C; educational only."
+      ]
     },
     {
       "slug": "yekuana-traditional",

@@ -1690,3 +1690,29 @@
 - https://www.britannica.com/place/Mediterranean-Sea
 - https://www.britannica.com/place/Chimbu
 - https://www.britannica.com/place/Papua-New-Guinea
+
+## 增补传统（尼西、阿迪、米什米、舍杜克彭、巴尔蒂、布纳克、本都希腊、瓦隆、安达卢西亚、阿斯图里亚斯）
+
+- https://en.wikipedia.org/wiki/Donyi-Polo
+- https://asianethnology.org/article/149718-the-institutionalization-of-tribal-religion-recasting-the-donyi-polo-movement-in-arunachal-pradesh/attachment/313629.pdf
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://en.wikipedia.org/wiki/Adi_people
+- https://joshuaproject.net/people_groups/16165/IN
+- https://www.academia.edu/52422685/SUPERNATURAL_WORLD_AND_FOLK_TAXONOMY_CASE_STUDY_ON_FEW_TRIBES_OF_SIANG_AND_DIBANG_VALLEYS_OF_ARUNACHAL_PRADESH
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/place/Baltistan
+- https://www.britannica.com/topic/Balti
+- https://www.britannica.com/topic/Shiiah
+- https://www.britannica.com/place/East-Timor
+- https://www.britannica.com/place/Timor
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/topic/Pontic-Greek
+- https://www.britannica.com/place/Pontus-ancient-district-Turkey
+- https://www.britannica.com/topic/Eastern-Orthodoxy
+- https://www.britannica.com/place/Wallonia
+- https://www.britannica.com/place/Beauraing
+- https://www.britannica.com/place/Andalusia-region-Spain
+- https://www.britannica.com/topic/Semana-Santa
+- https://www.britannica.com/place/El-Rocio
+- https://www.britannica.com/place/Asturias
+- https://www.britannica.com/place/Covadonga

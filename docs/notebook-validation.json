@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 605,
-    "passed_after_fix": 70,
-    "passed": 50,
+    "pending": 593,
+    "passed_after_fix": 79,
+    "passed": 53,
     "skipped": 1
   },
   "items": [
@@ -8549,16 +8549,21 @@
       "slug": "serbian-slava",
       "title": "塞尔维亚斯拉瓦／家庭主保圣人日（Slava）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "点燃斯拉瓦蜡烛与家庭祈祷（概念层）",
-        "切割斯拉瓦面包（slavski kolač）（概念层）",
-        "宴席与祝酒（zdravica）（概念层）"
+        "Sveća、Kolač 与 Žito／Koljivo（无血奉献层／概念层）",
+        "Lomljenje kolača（切割／掰开斯拉瓦面包）（概念层）",
+        "Zdravica 祝酒与宴席（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kolač, Sveća, Žito/Koljivo; Lomljenje kolača; Zdravica — keep bloodless offering framing."
+      ],
+      "actions": [
+        "Reframed rituals to Sveća/Kolač/Žito–Koljivo, Lomljenje kolača, and Zdravica with bloodless-offering framing.",
+        "Preserved 手机互动适合度 C; educational; no sacramental how-to."
+      ]
     },
     {
       "slug": "serer",
@@ -8594,16 +8599,21 @@
       "slug": "seto-traditional",
       "title": "塞托东正教与民间祈福传统（Seto／Setomaa）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "东正教瞻礼与修道院游行（公共层）",
-        "墓园共餐纪念（部分敏感）",
-        "Leelo 多声部歌唱（公共文化层）"
+        "Pechory 修道院游行与东正教瞻礼（公共层）",
+        "Radonitsa 类墓园共餐纪念（部分敏感）",
+        "Leelo 多声部歌唱与 Peko 民俗记忆（公共文化层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrichment: Peko folk memory; Pechory procession; Radonitsa cemetery meal; Leelo."
+      ],
+      "actions": [
+        "Enriched rituals with Pechory procession, Radonitsa cemetery meal, and Leelo + Peko folk memory.",
+        "Preserved 手机互动适合度 C; educational; no sacramental/cemetery how-to."
+      ]
     },
     {
       "slug": "shambaa-traditional",
@@ -8639,16 +8649,21 @@
       "slug": "she-traditional",
       "title": "畲族传统信仰与祭祖祈福（She）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祭祖与祖图敬礼（部分敏感）",
-        "岁时节庆与山歌（公共层）",
-        "佛道影响与地方神灵叙事（概念层）"
+        "盘瓠（Panhu）叙事与祖图／龙头杖敬礼（CONCEPT）",
+        "三月三乌饭／黑米节与山歌岁时（公共层）",
+        "师公传统与佛道影响（CONCEPT ONLY）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Panhu/盘瓠 king rites + ancestral charts/staff CONCEPT; March 3 black-rice festival; 师公 CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Panhu + ancestral charts/staff CONCEPT, March 3 black-rice festival, and 师公 CONCEPT ONLY.",
+        "Preserved 手机互动适合度 C; educational; no initiation/sacrifice/exorcism how-to."
+      ]
     },
     {
       "slug": "sherdukpen-traditional",
@@ -8699,16 +8714,21 @@
       "slug": "shinto",
       "title": "神道",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "参拜（参拝 *sanpai*）",
-        "御守、神札与绘马",
-        "神乐（神楽 *kagura*）"
+        "Temizuya 与参拜 sanpai（二拜二拍手一拜）",
+        "御守 omamori、神札 ofuda 与绘马 ema",
+        "初诣 hatsumōde 与神乐 kagura"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrichment: Temizuya; sanpai 2-2-1; omamori/ofuda/ema; hatsumode; kagura."
+      ],
+      "actions": [
+        "Enriched rituals with Temizuya, sanpai 2-2-1, omamori/ofuda/ema, and hatsumōde + kagura.",
+        "Preserved 手机互动适合度 C; educational; no secret-kagura how-to."
+      ]
     },
     {
       "slug": "shipibo-konibo",
@@ -8804,31 +8824,41 @@
       "slug": "sicilian-santa-rosalia",
       "title": "西西里圣罗萨莉亚朝圣与民间天主教祈福（Santa Rosalia）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "七月 Fistinu 公共巡游（概念层）",
-        "蒙佩莱格里诺朝圣（概念层）",
-        "堂区弥撒与主保敬礼（概念层）"
+        "Festino 与 Carro Trionfale（七月公共巡游层）",
+        "Acchianata 赤足登山朝圣（9 月 4 日）（概念层）",
+        "圣骸敬礼、誓言与堂区弥撒（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Carro Trionfale; Acchianata barefoot climb Sep 4; Festino Jul; relics/vows."
+      ],
+      "actions": [
+        "Reframed rituals to Carro Trionfale/Festino, Acchianata Sep 4, and relics/vows + parish Mass.",
+        "Preserved 手机互动适合度 C; educational; no clerical how-to."
+      ]
     },
     {
       "slug": "sidama-traditional",
       "title": "锡达马传统信仰与菲切—尚巴拉拉新年祈福（Sidama）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
         "Fichee-Chambalaalla 新年节（公共层）",
-        "天神／Magano 与祖灵敬奉（高度敏感，仅概念）",
-        "口述传承与妇女食物—妆饰知识传递（公共文化层）"
+        "Qocho 共享与口述食物—妆饰知识（公共文化层）",
+        "Woma 长老与 Magano 敬奉（CONCEPT ONLY）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrichment: Qocho sharing; Woma elders to Magano CONCEPT ONLY; Fichee-Chambalaalla."
+      ],
+      "actions": [
+        "Enriched rituals with Fichee-Chambalaalla, Qocho sharing, and Woma→Magano CONCEPT ONLY.",
+        "Preserved 手机互动适合度 C; educational; no initiation/sacrifice how-to."
+      ]
     },
     {
       "slug": "sikhism",
@@ -8894,46 +8924,61 @@
       "slug": "slavic-folk",
       "title": "斯拉夫民间信仰与祈福（Slavic folk religion）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "共同体宴饮与家族圣日（*slava* 等）",
-        "仲夏洁净与保护民俗（Kupala／Ivan Kupala）",
-        "家灵与时令保护祈求"
+        "Badnjak 与冬季节庆记忆（民俗文化层）",
+        "Ivan Kupala：花环与跃火（FOLK CULTURE 命名）",
+        "Domovoy CONCEPT 与 Perun 记忆层"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Badnjak; Ivan Kupala wreaths/fire-jump as FOLK CULTURE naming (no how-to as magic); Domovoy CONCEPT; Perun memory."
+      ],
+      "actions": [
+        "Reframed rituals to Badnjak, Ivan Kupala as FOLK CULTURE naming, and Domovoy CONCEPT + Perun memory.",
+        "Preserved 手机互动适合度 C; educational; no magic/sacrifice how-to."
+      ]
     },
     {
       "slug": "slovak-folk",
       "title": "斯洛伐克民间天主教与朝圣祈福（Slovak）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母朝圣（概念层）",
+        "Mariánska hora（Levoča）圣母朝圣（概念层）",
         "主保节与村社巡游（概念层）",
-        "复活节／圣诞民俗祝福（概念层）"
+        "Šibačka／Oblievačka 与节日食物祝福（公共民俗层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Mariánska hora Levoča; Šibačka/Oblievačka Easter; patron processions; food blessing."
+      ],
+      "actions": [
+        "Reframed rituals to Mariánska hora Levoča, patron processions, and Šibačka/Oblievačka + food blessing.",
+        "Preserved 手机互动适合度 C; educational; no sacramental how-to."
+      ]
     },
     {
       "slug": "slovene-folk",
       "title": "斯洛文尼亚民间天主教与朝圣祈福（Slovene）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母朝圣（概念层）",
-        "主保节与山村巡游（概念层）",
-        "复活节／圣诞民俗祝福（概念层）"
+        "Brezje — Marija Pomagaj 圣母朝圣（概念层）",
+        "UNESCO Kurentovanje（Ptuj）与山村主保 feste（公共文化层）",
+        "复活节祝福与礼仪年民俗（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Brezje Marija Pomagaj; UNESCO Kurentovanje (Ptuj); mountain patron feste; Easter blessings."
+      ],
+      "actions": [
+        "Reframed rituals to Brezje Marija Pomagaj, UNESCO Kurentovanje (Ptuj) + mountain patron feste, and Easter blessings.",
+        "Preserved 手机互动适合度 C; educational; no sacramental/magic how-to."
+      ]
     },
     {
       "slug": "solomon-islands-kastom",
@@ -9014,31 +9059,41 @@
       "slug": "sorbian-folk",
       "title": "索布族民间天主教与复活节骑乘祈福（Sorbian／Lusatian）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "复活节骑乘 Osterreiten（公共层）",
+        "复活节骑乘 Osterreiten（公共层｜上卢萨蒂亚天主教）",
         "复活节家户民俗（公共民俗层）",
         "礼仪年弥撒与索布语祈祷（公共层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Osterreiten (tails/top hats/hymns on horseback); note Catholic Upper Lusatia focus; cross-link to sorbs-folk."
+      ],
+      "actions": [
+        "Enriched Osterreiten with tails/top hats/hymns; noted Catholic Upper Lusatia focus; cross-linked sister card sorbs-folk.",
+        "Preserved 手机互动适合度 C; educational; no sacramental how-to."
+      ]
     },
     {
       "slug": "sorbs-folk",
       "title": "索布民间基督教与卢萨蒂亚祈福（Sorbs／Wends）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "堂区弥撒／礼拜（概念层）",
-        "复活节骑行等公开民俗（概念层）",
-        "语言—文化节认同（概念层）"
+        "Vogelhochzeit（鸟婚）公共民俗（概念层）",
+        "Zapust 嘉年华（公共民俗层）",
+        "索布语崇拜与文化节认同（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "存疑 overlap with sorbian-folk; rework to differentiate: Lutheran/Wendish public customs — Vogelhochzeit, Zapust, Sorbian-language worship & culture festivals; sister note for Catholic Osterreiten on sorbian-folk. Do NOT delete."
+      ],
+      "actions": [
+        "Reworked (not deleted): differentiated from sorbian-folk; focus Vogelhochzeit, Zapust, Sorbian-language worship & culture festivals; README-style sister note at top.",
+        "Validation note: prior overlap marked; preserved 手机互动适合度 C; educational; no sacramental how-to."
+      ]
     },
     {
       "slug": "soyot-traditional",
@@ -9269,16 +9324,21 @@
       "slug": "tajik-folk",
       "title": "塔吉克民间伊斯兰与诺鲁孜祈福传统（Tajik folk）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
         "清真寺礼拜与两大节日（公共层）",
-        "诺鲁孜春节（公共层）",
-        "圣地朝拜与生命礼仪（部分敏感）"
+        "Navruz：Haft Sin／Haft Shin、Sumanak 与春季光明（公共层）",
+        "Mazar 圣地朝拜与生命礼仪（部分敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:13:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Navruz Haft Sin/Haft Shin; Sumanak; Chodhona spring light (careful Pamiri overlap — high-level); mosque; mazar."
+      ],
+      "actions": [
+        "Reframed rituals to mosque festivals, Navruz Haft Sin/Haft Shin + Sumanak + high-level Chodhona, and mazar.",
+        "Noted careful Pamiri overlap; preserved 手机互动适合度 C; no amulet/initiation how-to."
+      ]
     },
     {
       "slug": "tamang-traditional",
@@ -11367,21 +11427,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-10",
-    "validated_at": "2026-09-15T10:08:42Z",
+    "name": "batch-11",
+    "validated_at": "2026-09-15T10:13:32Z",
     "slugs": [
-      "romagnol-folk",
-      "romansh-folk",
-      "rotuman-traditional",
-      "salentino-folk",
-      "sammarinese-folk",
-      "samoan-faa-samoa",
-      "savoyard-folk",
-      "scanian-folk",
-      "scottish-folk",
-      "purepecha",
-      "quaker",
-      "sardinian-folk"
+      "serbian-slava",
+      "she-traditional",
+      "sicilian-santa-rosalia",
+      "slavic-folk",
+      "slovak-folk",
+      "slovene-folk",
+      "sorbian-folk",
+      "tajik-folk",
+      "seto-traditional",
+      "shinto",
+      "sidama-traditional",
+      "sorbs-folk"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

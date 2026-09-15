@@ -1121,3 +1121,39 @@
 - https://www.britannica.com/topic/Nivkh
 - https://www.everyculture.com/Russia-Eurasia-China/Nivkh-Religion-and-Expressive-Cultures.html
 - https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nivkhs
+
+## 增补传统（卡拉卡尔帕克、哈卡斯、列兹金、科吉、舒阿尔）
+
+- https://www.britannica.com/place/Karakalpakstan
+- https://www.everyculture.com/Russia-Eurasia-China/Karakalpaks-Religion-and-Expressive-Culture.html
+- https://www.everyculture.com/wc/Tajikistan-to-Zimbabwe/Karakalpaks.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/khakass
+- https://www.everyculture.com/Russia-Eurasia-China/Khakas-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/khakas
+- https://www.everyculture.com/Russia-Eurasia-China/Lezgins-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/topic/Lezgians.aspx
+- https://doi.org/10.21779/2077-8155-2024-15-3-94-105
+- https://ich.unesco.org/en/RL/ancestral-system-of-knowledge-of-the-four-indigenous-peoples-arhuaco-kankuamo-kogui-and-wiwa-of-the-sierra-nevada-de-santa-marta-01886
+- https://ich.unesco.org/en/decisions/17.COM/7.B.3
+- https://www.culturalsurvival.org/publications/cultural-survival-quarterly/kogi-urgent-call-guardians-heart-world
+- https://flacso.edu.ec/lenguas-culturas/lenguas/shuar-chicham/general-information/?lang=en
+- https://cultureandmind.sites.sheffield.ac.uk/fieldsites/shuar
+- https://www.culturalsurvival.org/publications/cultural-survival-quarterly/meeting-arutam
+
+## 增补传统（托克劳、阿赞德、康索、拉祜、捷克—摩拉维亚民间天主教）
+
+- https://www.everyculture.com/Oceania/Tokelau-Religion-and-Expressive-Culture.html
+- https://nzetc.victoria.ac.nz/tm/scholarly/tei-MacToke-t1-body-d1-d4-d2.html
+- https://www.britannica.com/place/Polynesia
+- https://www.britannica.com/topic/Witchcraft-Oracles-and-Magic-Among-the-Azande
+- https://www.everyculture.com/Africa-Middle-East/Zande-Religion-and-Expressive-Culture.html
+- https://www.haujournal.org/index.php/hau/article/view/1896
+- https://whc.unesco.org/en/list/1333/
+- https://www.everyculture.com/Africa-Middle-East/Konso-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/konso
+- https://www.britannica.com/topic/Lahu
+- https://www.encyclopedia.com/places/asia/chinese-political-geography/lahu
+- https://thesiamsociety.org/wp-content/uploads/1970/03/JSS_058_1b_Walker_LahuNyiNewYearCelebrations.pdf
+- https://english.radio.cz/believers-go-pilgrimage-velehrad-cyril-and-methodius-celebrations-8553001
+- https://english.radio.cz/bystrice-pod-hostynem-8612067
+- https://www.south-moravia.com/en/pilgrimage-through-south-moravia/cyril-and-methodius-routes/

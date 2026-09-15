@@ -2429,3 +2429,30 @@
 - https://www.britannica.com/topic/Kaqchikel
 - https://www.britannica.com/topic/Maya-people
 - https://www.britannica.com/place/Guatemala
+
+## 增补传统（瓦扬皮、佩蒙、耶库阿纳、马鲁博、阿雷阿雷、纳西奥伊、库纳马、埃涅茨、斯皮蒂、楚图希尔）
+
+- https://www.britannica.com/place/French-Guiana
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Guiana-Highlands
+- https://www.britannica.com/place/Venezuela
+- https://www.britannica.com/place/Orinoco-River
+- https://www.britannica.com/place/Acre
+- https://www.britannica.com/place/Solomon-Islands
+- https://www.britannica.com/place/Malaita
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/Bougainville-Island
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/place/Eritrea
+- https://www.britannica.com/place/Ethiopia
+- https://www.britannica.com/topic/Kunama
+- https://www.britannica.com/topic/Enets
+- https://www.britannica.com/place/Taymyr-Peninsula
+- https://www.britannica.com/topic/Samoyedic-languages
+- https://www.britannica.com/place/Himachal-Pradesh
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/place/India
+- https://www.britannica.com/topic/Tzutujil
+- https://www.britannica.com/place/Lake-Atitlan
+- https://www.britannica.com/topic/Maya-people

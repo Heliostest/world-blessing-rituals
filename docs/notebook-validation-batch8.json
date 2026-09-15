@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "manx-folk",
+    "title": "马恩岛民间基督教与海岛祈福（Manx）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Tynwald Day（7 月 5 日）露天议会与教会祝福（公共层）",
+      "Hop-tu-Naa 芜菁灯笼民俗（公共文化层）",
+      "圣莫尔德圣井与海上还愿（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Tynwald Day (5 Jul) open-air parliament + church blessing; Hop-tu-Naa turnip lanterns; St Maughold holy well; sea votives."
+    ],
+    "actions": [
+      "Reframed rituals to Tynwald Day, Hop-tu-Naa turnip lanterns, and St Maughold holy well + sea votives.",
+      "Kept educational overview; preserved 手机互动适合度 C; no clerical how-to."
+    ]
+  },
+  {
+    "slug": "marchigiano-folk",
+    "title": "马尔凯民间天主教与洛雷托朝圣祈福（Marchigiano）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "洛雷托圣母朝圣（概念层）",
+      "Festa della Venuta（12 月 10 日）篝火（公共层）",
+      "城村主保节巡游（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Loreto pilgrimage; Festa della Venuta (10 Dec) fires; city patron processions."
+    ],
+    "actions": [
+      "Reframed rituals to Loreto pilgrimage, Festa della Venuta (10 Dec) fires, and city patron processions.",
+      "Kept educational overview; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "mazu",
+    "title": "妈祖信仰与进香（Mazu / Matsu）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "大甲／白沙屯进香命名与分灵／过炉（概念层）",
+      "农历三月廿三诞辰庙会（公共层）",
+      "日常庙祠上香与家庭礼拜（公共—家庭层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Dajia/Baishatun pilgrimage naming; fenling/guolu; Mar 23 birthday festa; daily temple incense."
+    ],
+    "actions": [
+      "Reframed rituals to Dajia/Baishatun pilgrimage + fenling/guolu, lunar Mar 23 birthday festa, and daily temple incense.",
+      "No fenling/sacrifice how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "meru-traditional",
+    "title": "梅鲁传统宗教与穆伦古／穆格韦祈福（Meru／Ameru）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Njuri Ncheke 神圣长老会（CONCEPT）",
+      "Mugwe／Murungu 求雨祈请（CONCEPT）",
+      "Nkoma 祖灵供奉（CONCEPT ONLY）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Njuri Ncheke sacred council CONCEPT; Mugwe/Murungu rain petition CONCEPT; Nkoma ancestral offerings CONCEPT ONLY."
+    ],
+    "actions": [
+      "Reframed rituals to Njuri Ncheke CONCEPT, Mugwe/Murungu rain petition CONCEPT, and Nkoma ancestral offerings CONCEPT ONLY.",
+      "No sacrifice/initiation how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "mevlevi-sufi",
+    "title": "梅夫莱维苏菲／旋转苦修者（Mevlevi Sufi）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Sema／Semahane／Sikke 公开文化结构（概念层）",
+      "Shab-e Arus（12 月 17 日）朝圣纪念（公共层）",
+      "Dergah 道堂教育记忆（CONCEPT — 无苏菲入门 how-to）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Sema/Semahane/Sikke public cultural structure; Shab-e Arus (17 Dec) pilgrimage; Dergah education CONCEPT — no Sufi initiation how-to."
+    ],
+    "actions": [
+      "Reframed rituals to Sema/Semahane/Sikke public structure, Shab-e Arus (17 Dec), and Dergah education CONCEPT only.",
+      "No Sufi initiation how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "minangkabau-adat",
+    "title": "米南加保习俗法与伊斯兰祈福传统（Minangkabau）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Turun mandi 新生儿感恩初浴（家庭公共层，概念）",
+      "Balimau 斋月前洁净浴与 Khatam Al-Qur’an（公共／家庭层）",
+      "Rumah Gadang 大屋祝福与 adat—伊斯兰互基（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Turun mandi; Balimau pre-Ramadan purification bath; Khatam Al-Qur’an; Rumah Gadang blessing."
+    ],
+    "actions": [
+      "Reframed rituals to Turun mandi, Balimau + Khatam Al-Qur’an, and Rumah Gadang blessing.",
+      "No infant-bath/sacrifice how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "molisan-folk",
+    "title": "莫利塞民间天主教与朝圣祈福（Molisan）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "La Ndocciata（Agnone）火把游行（公共层）",
+      "Carrese 牛车圣物竞赛（公共层）",
+      "圣母朝圣（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed La Ndocciata (Agnone); Carrese ox-cart relics race; Marian pilgrimage."
+    ],
+    "actions": [
+      "Reframed rituals to La Ndocciata (Agnone), Carrese ox-cart relics race, and Marian pilgrimage.",
+      "Kept educational overview; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "monegasque-folk",
+    "title": "摩纳哥民间天主教与海岸朝圣祈福（Monegasque）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Sainte Dévote（1 月 27 日）烧船（公共层）",
+      "国庆 Te Deum（11 月 19 日）（公共层）",
+      "海岸还愿（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Sainte Dévote (27 Jan) boat-burning; National Day Te Deum (19 Nov); coastal votives."
+    ],
+    "actions": [
+      "Reframed rituals to Sainte Dévote boat-burning (27 Jan), National Day Te Deum (19 Nov), and coastal votives.",
+      "Kept educational overview; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "mouride",
+    "title": "穆里德／穆里迪耶兄弟会朝圣与赞念（Mouride／Murīdiyya）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Grand Magal de Touba／图巴大马加尔（公开朝圣层）",
+      "Khassida 赞诗歌诵（概念层）",
+      "Baye Fall 劳动／服务伦理（公共层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Grand Magal Touba; Khassida; Baye Fall labor/service ethic public layer."
+    ],
+    "actions": [
+      "Reframed rituals to Grand Magal Touba, Khassida recitation, and Baye Fall labor/service ethic public layer.",
+      "No bayʿa/initiation how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "nauruan-traditional",
+    "title": "瑙鲁传统信仰与村社祈福余绪（Nauruan）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Angam Day（10 月 26 日）人口重生纪念（公共层）",
+      "军舰鸟文化象征（公共文化层）",
+      "教会礼拜与 Tabuarik 神话记忆（公共／概念层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Angam Day (26 Oct); frigatebird cultural symbolism; church + Tabuarik myth memory."
+    ],
+    "actions": [
+      "Reframed rituals to Angam Day (26 Oct), frigatebird cultural symbolism, and church + Tabuarik myth memory.",
+      "No spirit-calling how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "ndebele-traditional",
+    "title": "恩德贝莱传统宗教与祖灵祈福（Ndebele）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Ingoma 入会（CONCEPT ONLY＋强烈注意与尊重）",
+      "Ikhazi 聘礼牛只祖先告知（CONCEPT）",
+      "Umuzi 壁画与珠饰公共文化（公共层）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Ingoma initiation CONCEPT ONLY with strong 注意与尊重; Ikhazi bridal cattle ancestral notice CONCEPT; Umuzi mural/bead public culture."
+    ],
+    "actions": [
+      "Reframed rituals to Ingoma CONCEPT ONLY with strong respect, Ikhazi ancestral notice CONCEPT, and Umuzi mural/bead public culture.",
+      "No initiation/sacrifice how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "niuean-traditional",
+    "title": "纽埃传统信仰与村社祈福余绪（Niuean）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Hair Cutting／Ta Tilinga 馈赠礼仪（部分敏感，概念）",
+      "Ekalesia 与 Takai 村社教会生活（公共层）",
+      "Tokamotu／mana 记忆（CONCEPT）"
+    ],
+    "validated_at": "2026-09-15T09:42:53Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Hair Cutting / Ta Tilinga gift ceremonies; Ekalesia & Takai; Tokamotu/mana memory CONCEPT."
+    ],
+    "actions": [
+      "Reframed rituals to Hair Cutting/Ta Tilinga gift ceremonies, Ekalesia & Takai, and Tokamotu/mana memory CONCEPT.",
+      "No tapu-cave or body-modification how-to; preserved 手机互动适合度 C."
+    ]
+  }
+]

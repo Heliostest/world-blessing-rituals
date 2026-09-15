@@ -1299,3 +1299,39 @@
 - https://www.britannica.com/place/Saintes-Maries-de-la-Mer
 - https://www.villes-sanctuaires.com/en/villes-sanctuaires/saintes-maries-mer
 - https://www.britannica.com/topic/Romani
+
+## 增补传统（凯特、埃文、塔吉克民间、卡伦金、洛齐）
+
+- https://www.everyculture.com/Russia-Eurasia-China/Ket-Religion-and-Expressive-Cultures.html
+- https://www.atlaskmns.ru/page/en/people_kety_spirit.html
+- https://www.britannica.com/topic/Ket
+- https://www.everyculture.com/Russia-Eurasia-China/Even-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Even
+- https://www.britannica.com/place/Siberia
+- https://www.britannica.com/topic/Tajik-people
+- https://www.britannica.com/place/Tajikistan
+- https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-00261
+- https://www.everyculture.com/Africa-Middle-East/Nandi-and-Other-Kalenjin-Peoples-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Kalenjin
+- https://www.britannica.com/place/Kenya
+- https://www.everyculture.com/Africa-Middle-East/Lozi-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/lozi
+- https://www.britannica.com/topic/Lozi
+
+## 增补传统（蒙杜鲁库、察奇拉、罗图马、帕朗／德昂、弗里西）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mundurucu
+- https://www.britannica.com/place/Tapajos-River
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/Tsachila
+- https://www.everyculture.com/South-America/Colorado.html
+- https://www.britannica.com/place/Ecuador
+- https://www.britannica.com/place/Rotuma
+- http://www.rotuma.net/os/Publications/Island_Legacy/Chapter06.pdf
+- https://www.britannica.com/place/Fiji-republic-Pacific-Ocean
+- https://www.everyculture.com/East-Southeast-Asia/Palaung-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/palaung
+- https://factsanddetails.com/southeast-asia/Myanmar/sub5_5d/entry-6658.html
+- https://www.britannica.com/biography/Saint-Boniface
+- https://www.britannica.com/topic/Frisian
+- https://www.britannica.com/place/Dokkum

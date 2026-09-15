@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 473,
-    "passed_after_fix": 153,
-    "passed": 99,
+    "pending": 461,
+    "passed_after_fix": 162,
+    "passed": 102,
     "skipped": 1
   },
   "items": [
@@ -3986,31 +3986,41 @@
       "slug": "hazara-traditional",
       "title": "哈扎拉十二伊玛目什叶与阿富汗民间祈福（Hazara）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "日常礼拜与聚礼（概念层）",
-        "阿舒拉与穆哈兰姆纪念（敏感，仅概念）",
-        "流散地堂区与教育（概念层）"
+        "Hosseiniyeh／Takyakhana 与 Nazar 祝福食物（公开／概念层）",
+        "Ziyarat-e Sakhi（圣地朝谒概念层）",
+        "Ashura viewing-only sensitive"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Hosseiniyeh/Takyakhana; Nazar blessing food; Ziyarat-e Sakhi; Ashura viewing-only sensitive."
+      ],
+      "actions": [
+        "Reframed rituals to Hosseiniyeh/Takyakhana + Nazar, Ziyarat-e Sakhi, and Ashura viewing-only sensitive.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "hehe-traditional",
       "title": "赫赫传统信仰与祖灵—基督教祈福（Hehe）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先敬礼（概念层）",
-        "教堂崇拜（概念层）",
-        "丰收与社群感恩（概念层）"
+        "Kalenga／Mkwawa heritage（公开遗产／概念层）",
+        "Kuhongela harvest（公开节庆层）",
+        "Mahoka ancestral CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kalenga/Mkwawa heritage; Kuhongela harvest; Mahoka ancestral CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Kalenga/Mkwawa heritage, Kuhongela harvest, and Mahoka ancestral CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "hemba-traditional",
@@ -4078,31 +4088,41 @@
       "slug": "hlai-traditional",
       "title": "黎族传统信仰与祖先—动物灵祈福（Hlai／Li）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与家屋敬礼（概念层）",
-        "牛魂／牛日民俗（概念层）",
-        "自然神与神话传承（概念层）"
+        "Sanyuesan March 3（公开节庆层）",
+        "Cattle-soul festival 与 bamboo-pole dance（公开／概念层）",
+        "Household ancestor incense（家屋概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Sanyuesan March 3; cattle-soul festival; bamboo-pole dance; household ancestor incense."
+      ],
+      "actions": [
+        "Reframed rituals to Sanyuesan, cattle-soul/bamboo-pole dance, and household ancestor incense.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "hmar-traditional",
       "title": "赫马尔基督教与佐米传统祈福余绪（Hmar）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "基督教崇拜（概念层）",
-        "生命礼仪（概念层）",
-        "文化节与传统记忆（敏感，仅概念）"
+        "Sikpui Ruoi harvest peace festival（公开／概念层）",
+        "Church choir（公开教会层）",
+        "Traditional song／dance（认同／概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Sikpui Ruoi harvest peace festival; church choir; traditional song/dance."
+      ],
+      "actions": [
+        "Reframed rituals to Sikpui Ruoi, church choir, and traditional song/dance.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "hmong-miao",
@@ -4158,46 +4178,61 @@
       "slug": "hrusso-traditional",
       "title": "赫鲁索／阿卡传统信仰与东尼—波罗—基督教祈福（Hrusso／Aka）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "仪者中介与农事／疗愈礼仪（高度敏感，仅概念）",
-        "本土信仰公共层（概念层）",
-        "基督教堂会实践（概念层）"
+        "Nechi Dau／Nechido harvest festival（公开／概念层）",
+        "Niji priest mountain rites viewing-only",
+        "基督教堂会与本土公共层（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Nechi Dau/Nechido harvest festival; Niji priest mountain rites viewing-only."
+      ],
+      "actions": [
+        "Reframed rituals to Nechi Dau/Nechido, Niji priest mountain rites viewing-only, and church/indigenous public layer.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "huastec-traditional",
       "title": "瓦斯特克／特内克民间天主教与山灵祈福（Huastec／Teenek）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与天主教礼仪（概念层）",
-        "地方灵与农事祈请（概念层）",
-        "福音派并行（概念层）"
+        "Xantolo 与 patron processions（公开节庆层）",
+        "Voladores de Tamaletón UNESCO（公开遗产层）",
+        "Mountain／maize CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Xantolo; Voladores de Tamaletón UNESCO; patron processions; mountain/maize CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Xantolo/patron processions, Voladores de Tamaletón UNESCO, and mountain/maize CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "huave-traditional",
       "title": "瓦韦民间天主教与潟湖祈福（Huave／Ikoots）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "潟湖—渔捞伦理（概念层）",
-        "疗愈中介（高度敏感，仅概念）"
+        "San Mateo del Mar 主保节与教堂礼仪（公开观礼层）",
+        "Danza de la Serpiente 与 Ikoot lagoon ethics（公开／伦理层）",
+        "Curandero CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed San Mateo del Mar; Danza de la Serpiente rain/wind dance; Ikoot lagoon ethics; Curandero CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to San Mateo del Mar, Danza de la Serpiente/Ikoot lagoon ethics, and Curandero CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "huitoto-traditional",
@@ -4253,31 +4288,41 @@
       "slug": "hyolmo-traditional",
       "title": "约尔莫传统信仰与藏传佛教祈福（Hyolmo／Helambu）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "寺院法会与节期（概念层）",
-        "神山—地方保护神敬礼（概念层）",
-        "家屋烟供／简单供养（概念层）"
+        "Yangri Ri pilgrimage 与 Guru Rinpoche caves（公开朝圣／概念层）",
+        "Sang smoke offering CONCEPT 与 prayer flags（概念／公开层）",
+        "Lhosar monastery（公开节期层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Yangri Ri pilgrimage; Guru Rinpoche caves; Sang smoke offering CONCEPT; Lhosar monastery; prayer flags."
+      ],
+      "actions": [
+        "Reframed rituals to Yangri Ri/Guru Rinpoche caves, Sang CONCEPT + prayer flags, and Lhosar monastery.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "iban-sarawak",
       "title": "沙捞越伊班传统信仰与加威节祈福（Iban）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Gawai Dayak 丰收公共节（公共文化层）",
-        "农事与供奉类 gawai／miring（概念层）",
-        "疗愈、悼亡与历史勇武类礼仪名称（限制性概念层）"
+        "Gawai Dayak 公共丰收节（公共文化层）",
+        "Tuai Rumah／Tuai Gawai／Lemambang 与 Miring（概念层——用户不主持）",
+        "Gawai Antu 与疗愈／勇武类礼仪名称（限制性概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Tuai Rumah; Tuai Gawai/Lemambang host Miring/Gawai Antu — users don't officiate; Gawai Dayak public."
+      ],
+      "actions": [
+        "Enriched Tuai Rumah, Tuai Gawai/Lemambang host Miring/Gawai Antu (users don't officiate), and Gawai Dayak public.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "ibibio-traditional",
@@ -4320,31 +4365,41 @@
       "slug": "ifugao-traditional",
       "title": "伊富高稻作—祖灵祈福传统（Ifugao）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Hudhud 吟唱与稻作—守夜公共文化层",
-        "Bulul 谷仓守护与稻作周期礼仪（概念层）",
-        "宴请、米酒与求愈召请（高度敏感层，仅概念）"
+        "Hudhud UNESCO 与 Punnuk UNESCO tug-of-war blessing（公共文化遗产层）",
+        "Bulul 谷仓守护（概念层）",
+        "Mumbaki viewing-only"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Hudhud UNESCO; Punnuk UNESCO tug-of-war blessing; Bulul; Mumbaki viewing-only."
+      ],
+      "actions": [
+        "Enriched Hudhud UNESCO, Punnuk UNESCO tug-of-war blessing, Bulul, and Mumbaki viewing-only.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "igbo-odinani",
       "title": "伊博传统宗教（Igbo / Odinani）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "家庭晨祷与奠酒",
-        "神龛献祭与问询（概念层）",
-        "新薯节（Iri Ji／Iwa Ji／New Yam Festival）"
+        "Iri Ji（新薯节，公开社群层）",
+        "Ikenga 与 Ala earth goddess（概念层）",
+        "Dibia CONCEPT ONLY 与 morning libation CONCEPT high-level"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Iri Ji; Ikenga; Ala earth goddess; Dibia CONCEPT ONLY; morning libation CONCEPT high-level."
+      ],
+      "actions": [
+        "Enriched Iri Ji, Ikenga, Ala earth goddess, Dibia CONCEPT ONLY, and morning libation CONCEPT high-level.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "ikpeng-traditional",
@@ -4365,16 +4420,21 @@
       "slug": "ingush-traditional",
       "title": "印古什民间伊斯兰与高加索塔楼祈福（Ingush）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与伊斯兰节日（概念层）",
-        "苏菲圣地朝谒（敏感，仅概念）",
-        "塔楼景观与祖先记忆（概念层）"
+        "Tkhaba-Erdy shrine（公开圣地／概念层）",
+        "Egikal／Erzi towers 与 Ezdanga hospitality（遗产／伦理层）",
+        "Sufi Zikr viewing-only"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:59:14Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Tkhaba-Erdy shrine; Egikal/Erzi towers; Ezdanga hospitality; Sufi Zikr viewing-only."
+      ],
+      "actions": [
+        "Reframed rituals to Tkhaba-Erdy, Egikal/Erzi + Ezdanga, and Sufi Zikr viewing-only.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "inuit",

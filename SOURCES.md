@@ -2330,3 +2330,30 @@
 - https://www.britannica.com/topic/Chontal
 - https://www.britannica.com/place/Oaxaca-state-Mexico
 - https://www.britannica.com/place/Mexico
+
+## 增补传统（博罗罗、卡拉贾、帕纳拉、尤贾、苏鲁伊、梅克、戈戈达拉、恩班迪、卢巴、特佩瓦内）
+
+- https://www.britannica.com/topic/Bororo
+- https://www.britannica.com/place/Mato-Grosso
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/topic/Karaja
+- https://www.britannica.com/place/Araguaia-River
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Xingu-River
+- https://www.britannica.com/topic/Xinguanos
+- https://www.britannica.com/place/Rondonia
+- https://www.britannica.com/place/Papua
+- https://www.britannica.com/place/New-Guinea
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/place/Fly-River
+- https://www.britannica.com/topic/Ngbandi
+- https://www.britannica.com/place/Ubangi-River
+- https://www.britannica.com/place/Central-African-Republic
+- https://www.britannica.com/topic/Luba-people
+- https://www.britannica.com/topic/Luba-Kasai
+- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britannica.com/topic/Tepehuan
+- https://www.britannica.com/place/Durango-state-Mexico
+- https://www.britannica.com/place/Mexico

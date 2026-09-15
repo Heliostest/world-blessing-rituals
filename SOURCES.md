@@ -2009,3 +2009,33 @@
 - https://www.britannica.com/place/Arunachal-Pradesh
 - https://www.britannica.com/place/Northeast-India
 - https://www.britannica.com/topic/Donyi-Polo
+
+## 增补传统（尼亚姆韦齐、恩戈尼、通布卡、莫利塞、巴西利卡塔、安道尔、圣马力诺、波科曼、翁通爪哇、赫鲁索）
+
+- https://www.britannica.com/topic/Nyamwezi
+- https://www.britannica.com/place/Tabora
+- https://www.britannica.com/place/Tanzania
+- https://www.britannica.com/topic/Ngoni
+- https://www.britannica.com/place/Malawi
+- https://www.britannica.com/topic/Mfecane
+- https://www.britannica.com/topic/Tumbuka
+- https://www.britannica.com/place/Zambia
+- https://www.britannica.com/place/Molise
+- https://www.britannica.com/place/Campobasso
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/place/Basilicata
+- https://www.britannica.com/place/Matera
+- https://www.britannica.com/place/Andorra
+- https://www.britannica.com/topic/Our-Lady-of-Meritxell
+- https://www.britannica.com/place/Pyrenees
+- https://www.britannica.com/place/San-Marino-republic-Europe
+- https://www.britannica.com/topic/Saint-Marinus
+- https://www.britannica.com/topic/Pokomam
+- https://www.britannica.com/place/Guatemala
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/place/Ontong-Java-Atoll
+- https://www.britannica.com/place/Solomon-Islands
+- https://www.britannica.com/place/Polynesia
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Donyi-Polo

@@ -1887,3 +1887,34 @@
 - https://www.britannica.com/topic/Herero
 - https://www.britannica.com/place/Namibia
 - https://www.britannica.com/event/German-Herero-conflict-of-1904-1907
+
+## 增补传统（门德、滕内、奥温本杜、博佐、索宁克、罗马涅、利沃尼亚、索布、卡平加马朗吉、坎霍瓦尔）
+
+- https://www.britannica.com/topic/Mende-people
+- https://www.britannica.com/place/Sierra-Leone
+- https://www.britannica.com/topic/Poro
+- https://www.britannica.com/topic/Temne
+- https://www.britannica.com/topic/Islam
+- https://www.britannica.com/topic/Ovimbundu
+- https://www.britannica.com/place/Angola
+- https://www.britannica.com/place/Benguela
+- https://www.britannica.com/topic/Bozo
+- https://www.britannica.com/place/Niger-River
+- https://www.britannica.com/place/Mali
+- https://www.britannica.com/topic/Soninke
+- https://www.britannica.com/topic/Ghana-historical-West-African-empire
+- https://www.britannica.com/place/Emilia-Romagna
+- https://www.britannica.com/place/Ravenna-Italy
+- https://www.britannica.com/place/Rimini
+- https://www.britannica.com/topic/Liv
+- https://www.britannica.com/place/Latvia
+- https://www.britannica.com/topic/Finno-Ugric-languages
+- https://www.britannica.com/topic/Sorb
+- https://www.britannica.com/place/Lusatia
+- https://www.britannica.com/place/Germany
+- https://www.britannica.com/place/Kapingamarangi-Atoll
+- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
+- https://www.britannica.com/place/Polynesia
+- https://www.britannica.com/topic/Kanjobal
+- https://www.britannica.com/place/Guatemala
+- https://www.britannica.com/topic/Maya-people

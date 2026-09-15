@@ -1102,3 +1102,22 @@
 - https://www.britannica.com/place/Faroe-Islands-Atlantic-Ocean
 - https://www.tjodsavnid.fo/english-skrain-livandi-mentan/the-faroese-chaindance
 - https://www.faroeislands.fo/the-big-picture/national-symbols/national-day
+
+
+## 增补传统（阿卡、塞努福、布里布里、波兰民间天主教、尼夫赫）
+
+- https://www.britannica.com/topic/Akha
+- https://thesiamsociety.org/knowledge-hub/research/267?lang=en
+- https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/
+- https://www.britannica.com/topic/Senufo
+- https://www.britannica.com/art/African-art/Senufo
+- https://www.metmuseum.org/en/essays/senufo-arts-and-poro-initiation-in-northern-cote-divoire
+- https://www.britannica.com/topic/Bribri
+- https://doi.org/10.30674/scripta.67318
+- https://doi.org/10.15517/rfl.v42i0.26464
+- https://www.polskieradio.pl/395/7784/artykul/3669724,poles-flock-to-churches-for-traditional-easter-food-blessing
+- https://www.vaticannews.va/en/world/news/2026-09/from-grain-to-bread-pope-reflects-on-poland-s-harvest-tradition.html
+- https://www.osvnews.com/a-basket-filled-with-faith-eastern-europe-easter-tradition-explained/
+- https://www.britannica.com/topic/Nivkh
+- https://www.everyculture.com/Russia-Eurasia-China/Nivkh-Religion-and-Expressive-Cultures.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nivkhs

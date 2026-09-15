@@ -2273,3 +2273,29 @@
 - https://www.britannica.com/topic/Popoluca
 - https://www.britannica.com/place/Veracruz
 - https://www.britannica.com/place/Mexico
+
+## 增补传统（梅希纳库、伊克彭、坎多希、卡卡泰博、马南、多布、特莱福勒、埃翁多、赫姆巴、约科坦）
+
+- https://www.britannica.com/topic/Xinguanos
+- https://www.britannica.com/place/Xingu-River
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Ucayali
+- https://www.britannica.com/place/Manam
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/place/Madang
+- https://www.britannica.com/place/Dobu-Island
+- https://www.britannica.com/topic/Kula
+- https://www.britannica.com/place/Sandaun
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/topic/Ewondo
+- https://www.britannica.com/place/Yaounde
+- https://www.britannica.com/place/Cameroon
+- https://www.britannica.com/topic/Hemba
+- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britannica.com/topic/African-art
+- https://www.britannica.com/topic/Chontal
+- https://www.britannica.com/place/Tabasco-state-Mexico
+- https://www.britannica.com/topic/Maya-people

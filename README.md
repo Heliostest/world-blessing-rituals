@@ -22,6 +22,14 @@
 
 本作品采用 [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE) 许可。引用请注明本档案名称与修订信息；下游使用请保留许可声明。
 
+
+## 时间轴地图
+
+交互式世界地图（时间滑条）见 [`docs/timeline-map.html`](docs/timeline-map.html)（需本地静态服务打开，说明见 [`docs/README.md`](docs/README.md)）。数据文件：[`docs/map-data.json`](docs/map-data.json)。
+
+**年代与地点免责**：各点 `year_start` 为形成、首次文献或民族志记载的**概略**年份（公元前为负整数），非精确考古测年；`lat`/`lon` 为核心文化区近似坐标。可见规则：`year_start ≤ 当前年` 且（`year_end` 为空或 `≥ 当前年`）。低置信（confidence=low）条目约 11 条仍保留在地图上，不静默丢弃。
+
+
 ## 目录（传统条目）
 
 ## 目录（传统条目）

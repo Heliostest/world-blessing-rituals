@@ -1,0 +1,2022 @@
+{
+  "hinduism": [
+    "印度次大陆",
+    25.3,
+    82.9,
+    -1500,
+    null,
+    "formation",
+    "吠陀—印度教传统约前1500年起；当代仍实践",
+    "high"
+  ],
+  "judaism": [
+    "以色列／黎凡特",
+    31.8,
+    35.2,
+    -1000,
+    null,
+    "formation",
+    "古代以色列宗教传统约前10世纪起；当代仍实践",
+    "high"
+  ],
+  "zoroastrianism": [
+    "伊朗高原",
+    29.6,
+    52.5,
+    -1000,
+    null,
+    "formation",
+    "琐罗亚斯德教传统约前1000年起；当代仍实践",
+    "high"
+  ],
+  "jainism": [
+    "印度（古吉拉特／拉贾斯坦）",
+    23.0,
+    72.6,
+    -500,
+    null,
+    "formation",
+    "耆那教传统约前5世纪起；当代仍实践",
+    "high"
+  ],
+  "theravada-buddhism": [
+    "斯里兰卡／东南亚大陆",
+    15.0,
+    100.5,
+    -250,
+    null,
+    "formation",
+    "上座部传统形成约前3世纪起；当代仍实践",
+    "high"
+  ],
+  "chinese-buddhism": [
+    "中国",
+    34.3,
+    108.9,
+    100,
+    null,
+    "attestation",
+    "汉传佛教约1世纪传入中国后本土化；当代仍实践",
+    "high"
+  ],
+  "tibetan-buddhism": [
+    "青藏高原",
+    29.7,
+    91.1,
+    700,
+    null,
+    "formation",
+    "藏传佛教约7世纪起形成；当代仍实践",
+    "high"
+  ],
+  "bon": [
+    "西藏",
+    31.5,
+    92.0,
+    700,
+    null,
+    "attestation",
+    "苯教与藏传互动的文献传统约中古起；当代仍实践",
+    "medium"
+  ],
+  "daoism": [
+    "中国",
+    32.0,
+    112.0,
+    -400,
+    null,
+    "formation",
+    "早期道家／道教形成约前4世纪起；当代仍实践",
+    "high"
+  ],
+  "chinese-folk-and-confucian": [
+    "中国",
+    34.3,
+    108.9,
+    -1000,
+    null,
+    "formation",
+    "祭祖与礼制传统可追溯商周以降；当代民间仍实践",
+    "medium"
+  ],
+  "shinto": [
+    "日本",
+    34.7,
+    135.8,
+    500,
+    null,
+    "attestation",
+    "神社神道礼仪文献传统约古坟—奈良期起；当代仍实践",
+    "medium"
+  ],
+  "shugendo": [
+    "日本（近畿山地）",
+    34.2,
+    135.9,
+    700,
+    null,
+    "formation",
+    "修验道约奈良—平安期形成；当代仍实践",
+    "medium"
+  ],
+  "islam": [
+    "阿拉伯半岛／全球",
+    21.4,
+    39.8,
+    610,
+    null,
+    "formation",
+    "伊斯兰教约7世纪初兴起；当代仍实践",
+    "high"
+  ],
+  "christianity": [
+    "黎凡特／全球",
+    31.8,
+    35.2,
+    30,
+    null,
+    "formation",
+    "基督教约1世纪兴起；当代仍实践",
+    "high"
+  ],
+  "sikhism": [
+    "旁遮普",
+    31.6,
+    74.9,
+    1500,
+    null,
+    "formation",
+    "锡克教约15世纪末纳那克时代兴起；当代仍实践",
+    "high"
+  ],
+  "mazu": [
+    "闽台沿海",
+    24.4,
+    118.3,
+    1000,
+    null,
+    "attestation",
+    "妈祖信仰约宋元起盛传；当代仍实践",
+    "high"
+  ],
+  "thai-spirit-houses": [
+    "泰国",
+    13.8,
+    100.5,
+    1300,
+    null,
+    "ethnographic",
+    "泰国神屋／土地灵实践有长期民俗记载；当代仍实践",
+    "medium"
+  ],
+  "burmese-nat": [
+    "缅甸",
+    21.9,
+    96.1,
+    1000,
+    null,
+    "attestation",
+    "缅甸纳特崇拜中古以降有记载；当代仍实践",
+    "medium"
+  ],
+  "khmer-neak-ta": [
+    "柬埔寨",
+    11.6,
+    104.9,
+    800,
+    null,
+    "attestation",
+    "高棉土地守护灵信仰中古以降；当代仍实践",
+    "medium"
+  ],
+  "yazidi": [
+    "伊拉克库尔德斯坦",
+    36.8,
+    43.3,
+    1100,
+    null,
+    "formation",
+    "雅兹迪传统约中世纪形成；当代仍实践",
+    "medium"
+  ],
+  "druze": [
+    "黎凡特山区",
+    33.8,
+    35.6,
+    1017,
+    null,
+    "formation",
+    "德鲁兹约11世纪形成；当代仍实践",
+    "high"
+  ],
+  "alevi": [
+    "安纳托利亚",
+    39.0,
+    35.0,
+    1300,
+    null,
+    "formation",
+    "阿列维传统约中古晚期形成；当代仍实践",
+    "medium"
+  ],
+  "mandaean": [
+    "伊拉克／伊朗南部",
+    31.0,
+    47.4,
+    200,
+    null,
+    "attestation",
+    "曼达派约古代晚期有记载；当代仍实践",
+    "medium"
+  ],
+  "samaritan": [
+    "纳布卢斯／以色列",
+    32.2,
+    35.3,
+    -400,
+    null,
+    "formation",
+    "撒玛利亚人传统与古代以色列宗教相关；当代仍实践",
+    "high"
+  ],
+  "yarsanism": [
+    "伊朗西部／伊拉克",
+    34.5,
+    45.8,
+    1400,
+    null,
+    "formation",
+    "亚尔桑／阿赫勒哈克约中古晚期形成；当代仍实践",
+    "medium"
+  ],
+  "bahai": [
+    "伊朗／全球（海法中心）",
+    32.8,
+    34.98,
+    1844,
+    null,
+    "formation",
+    "巴哈伊信仰1844年起；当代仍实践",
+    "high"
+  ],
+  "cao-dai": [
+    "越南南部（西宁）",
+    11.3,
+    106.1,
+    1926,
+    null,
+    "formation",
+    "高台教1926年正式创立；当代仍实践",
+    "high"
+  ],
+  "tenrikyo": [
+    "日本奈良县天理市",
+    34.6,
+    135.8,
+    1838,
+    null,
+    "formation",
+    "天理教约1838年中山美伎受启后兴起；当代仍实践",
+    "high"
+  ],
+  "hoa-hao": [
+    "越南南部",
+    10.4,
+    105.4,
+    1939,
+    null,
+    "formation",
+    "和好教1939年兴起；当代仍实践",
+    "high"
+  ],
+  "cheondoism": [
+    "朝鲜半岛",
+    37.5,
+    127.0,
+    1860,
+    null,
+    "formation",
+    "天道教／东学约19世纪中叶兴起；当代仍实践",
+    "high"
+  ],
+  "won-buddhism": [
+    "韩国",
+    35.8,
+    127.1,
+    1916,
+    null,
+    "formation",
+    "圆佛教1916年前后创立；当代仍实践",
+    "high"
+  ],
+  "konkokyo": [
+    "日本冈山",
+    34.7,
+    133.8,
+    1859,
+    null,
+    "formation",
+    "金光教约1859年兴起；当代仍实践",
+    "high"
+  ],
+  "quaker": [
+    "英格兰／全球",
+    52.5,
+    -1.9,
+    1650,
+    null,
+    "formation",
+    "贵格会约17世纪中叶兴起；当代仍实践",
+    "high"
+  ],
+  "rastafari": [
+    "牙买加",
+    18.0,
+    -76.8,
+    1930,
+    null,
+    "formation",
+    "拉斯塔法里运动约1930年代兴起；当代仍实践",
+    "high"
+  ],
+  "kimbanguism": [
+    "刚果民主共和国",
+    -4.3,
+    15.3,
+    1921,
+    null,
+    "formation",
+    "金邦古教会约1921年兴起；当代仍实践",
+    "high"
+  ],
+  "candomble": [
+    "巴西巴伊亚",
+    -12.97,
+    -38.51,
+    1800,
+    null,
+    "formation",
+    "康东布雷约19世纪在巴西形成；当代仍实践",
+    "high"
+  ],
+  "santeria-lucumi": [
+    "古巴",
+    23.1,
+    -82.4,
+    1800,
+    null,
+    "formation",
+    "萨泰里阿／卢库米约殖民后期古巴形成；当代仍实践",
+    "high"
+  ],
+  "umbanda": [
+    "巴西",
+    -22.9,
+    -43.2,
+    1908,
+    null,
+    "formation",
+    "乌班达约20世纪初巴西形成；当代仍实践",
+    "high"
+  ],
+  "vodun-vodou": [
+    "贝宁／海地",
+    6.5,
+    2.6,
+    1600,
+    null,
+    "formation",
+    "西非伏都与海地伏都殖民时期以降；当代仍实践",
+    "medium"
+  ],
+  "winti": [
+    "苏里南",
+    5.8,
+    -55.2,
+    1700,
+    null,
+    "formation",
+    "温蒂约殖民时期苏里南非裔形成；当代仍实践",
+    "medium"
+  ],
+  "maria-lionza": [
+    "委内瑞拉",
+    10.2,
+    -67.0,
+    1900,
+    null,
+    "ethnographic",
+    "玛丽亚·利昂萨崇拜约近现代记载；当代仍实践",
+    "medium"
+  ],
+  "armenian-apostolic": [
+    "亚美尼亚",
+    40.2,
+    44.5,
+    301,
+    null,
+    "formation",
+    "亚美尼亚使徒教会约4世纪初国教化；当代仍实践",
+    "high"
+  ],
+  "assyrian-church-of-the-east": [
+    "美索不达米亚北部",
+    36.2,
+    43.9,
+    400,
+    null,
+    "formation",
+    "东方亚述教会传统古代晚期形成；当代仍实践",
+    "high"
+  ],
+  "coptic-orthodox": [
+    "埃及",
+    30.0,
+    31.2,
+    50,
+    null,
+    "formation",
+    "科普特正教传统约1–4世纪起；当代仍实践",
+    "high"
+  ],
+  "ethiopian-orthodox": [
+    "埃塞俄比亚高原",
+    9.0,
+    38.7,
+    330,
+    null,
+    "formation",
+    "埃塞俄比亚正教约4世纪国教化；当代仍实践",
+    "high"
+  ],
+  "georgian-orthodox": [
+    "格鲁吉亚",
+    41.7,
+    44.8,
+    330,
+    null,
+    "formation",
+    "格鲁吉亚正教约4世纪起；当代仍实践",
+    "high"
+  ],
+  "greek-orthodox": [
+    "希腊／东正教世界",
+    37.98,
+    23.73,
+    50,
+    null,
+    "formation",
+    "希腊正教传统承早期教会；当代仍实践",
+    "high"
+  ],
+  "syriac-orthodox": [
+    "叙利亚／黎凡特",
+    37.1,
+    38.8,
+    500,
+    null,
+    "formation",
+    "叙利亚正教传统古代晚期形成；当代仍实践",
+    "high"
+  ],
+  "maronite-church": [
+    "黎巴嫩",
+    34.0,
+    35.7,
+    400,
+    null,
+    "formation",
+    "马龙派传统古代晚期起；当代仍实践",
+    "high"
+  ],
+  "mevlevi-sufi": [
+    "科尼亚／安纳托利亚",
+    37.9,
+    32.5,
+    1273,
+    null,
+    "formation",
+    "梅夫莱维教团约鲁米时代（13世纪）形成；当代仍实践",
+    "high"
+  ],
+  "mouride": [
+    "塞内加尔",
+    14.8,
+    -16.9,
+    1883,
+    null,
+    "formation",
+    "穆里德教团约1883年艾哈迈杜·班巴创立；当代仍实践",
+    "high"
+  ],
+  "icelandic-asatru": [
+    "冰岛",
+    64.1,
+    -21.9,
+    1972,
+    null,
+    "formation",
+    "现代阿萨特鲁复兴约1972年冰岛正式承认；当代仍实践",
+    "high"
+  ],
+  "estonian-maausk": [
+    "爱沙尼亚",
+    58.4,
+    26.7,
+    1980,
+    null,
+    "formation",
+    "现代土著信仰复兴约20世纪末；当代仍实践",
+    "medium"
+  ],
+  "altai-burkhanism": [
+    "阿尔泰",
+    50.3,
+    86.0,
+    1904,
+    null,
+    "formation",
+    "布尔汗教约1904年兴起；当代仍有复兴",
+    "high"
+  ],
+  "balinese-hindu": [
+    "巴厘岛",
+    -8.4,
+    115.2,
+    1400,
+    null,
+    "formation",
+    "巴厘印度教约中古晚期定型；当代仍实践",
+    "high"
+  ],
+  "kejawen": [
+    "爪哇",
+    -7.8,
+    110.4,
+    1500,
+    null,
+    "ethnographic",
+    "爪哇凯贾文民俗—密修传统长期延续；当代仍实践",
+    "medium"
+  ],
+  "kaharingan": [
+    "加里曼丹",
+    -2.2,
+    113.9,
+    1500,
+    null,
+    "ethnographic",
+    "卡哈林岸达雅克传统长期延续；当代仍实践",
+    "medium"
+  ],
+  "sunda-wiwitan": [
+    "西爪哇",
+    -6.8,
+    107.1,
+    1500,
+    null,
+    "ethnographic",
+    "巽他维维坦传统长期延续；当代仍实践",
+    "medium"
+  ],
+  "batak-parmalim": [
+    "北苏门答腊",
+    2.3,
+    99.0,
+    1800,
+    null,
+    "attestation",
+    "巴塔克帕尔马林约近现代记载／改革；当代仍实践",
+    "medium"
+  ],
+  "bugis-bissu": [
+    "南苏拉威西",
+    -4.0,
+    119.6,
+    1500,
+    null,
+    "ethnographic",
+    "武吉斯比苏祭司传统长期记载；当代仍实践",
+    "medium"
+  ],
+  "toraja": [
+    "苏拉威西高地",
+    -2.9,
+    119.9,
+    1500,
+    null,
+    "ethnographic",
+    "托拉查丧葬与祖先礼仪民族志记载丰富；当代仍实践",
+    "medium"
+  ],
+  "marapu-sumba": [
+    "松巴岛",
+    -9.7,
+    120.0,
+    1500,
+    null,
+    "ethnographic",
+    "松巴马拉普信仰民族志记载；当代仍实践",
+    "medium"
+  ],
+  "mentawai-arat-sabulungan": [
+    "明打威群岛",
+    -1.4,
+    99.1,
+    1800,
+    null,
+    "ethnographic",
+    "明打威阿拉特萨布隆安民族志记载；当代仍实践",
+    "medium"
+  ],
+  "wetu-telu-sasak": [
+    "龙目岛",
+    -8.6,
+    116.3,
+    1600,
+    null,
+    "ethnographic",
+    "萨萨克韦图特鲁伊斯兰—民俗混合传统；当代仍实践",
+    "medium"
+  ],
+  "ryukyuan": [
+    "琉球／冲绳",
+    26.2,
+    127.7,
+    1200,
+    null,
+    "attestation",
+    "琉球御岳与祝女传统中古以降；当代仍实践",
+    "medium"
+  ],
+  "ainu": [
+    "北海道",
+    43.1,
+    141.4,
+    1800,
+    null,
+    "ethnographic",
+    "阿伊努礼仪民族志约近代起系统记载；传统更早，当代仍复兴实践",
+    "medium"
+  ],
+  "jongmyo": [
+    "韩国首尔",
+    37.6,
+    126.99,
+    1394,
+    null,
+    "formation",
+    "宗庙祭礼与朝鲜王朝礼制相关；当代仍举行",
+    "high"
+  ],
+  "korean-musok": [
+    "朝鲜半岛",
+    37.5,
+    127.0,
+    500,
+    null,
+    "attestation",
+    "韩国巫俗长期延续；当代仍实践",
+    "medium"
+  ],
+  "vietnamese-folk": [
+    "越南",
+    21.0,
+    105.8,
+    1000,
+    null,
+    "ethnographic",
+    "越南民间信仰与母道等长期延续；当代仍实践",
+    "medium"
+  ],
+  "naxi-dongba": [
+    "云南丽江",
+    26.9,
+    100.2,
+    1000,
+    null,
+    "attestation",
+    "纳西东巴传统中古以降有文献；当代仍实践",
+    "medium"
+  ],
+  "yi-bimoism": [
+    "川滇黔彝区",
+    27.9,
+    102.3,
+    1000,
+    null,
+    "attestation",
+    "彝族毕摩传统长期延续；当代仍实践",
+    "medium"
+  ],
+  "zhuang-mo": [
+    "广西",
+    23.5,
+    108.3,
+    1000,
+    null,
+    "ethnographic",
+    "壮族麽教传统民族志记载；当代仍实践",
+    "medium"
+  ],
+  "bai-benzhu": [
+    "云南大理",
+    25.7,
+    100.2,
+    1000,
+    null,
+    "ethnographic",
+    "白族本主信仰长期延续；当代仍实践",
+    "medium"
+  ],
+  "hmong-miao": [
+    "中国西南／东南亚山地",
+    26.5,
+    106.7,
+    1500,
+    null,
+    "ethnographic",
+    "苗／赫蒙仪式传统民族志记载；当代仍实践",
+    "medium"
+  ],
+  "yao-mien": [
+    "中国华南／东南亚",
+    24.0,
+    110.0,
+    1500,
+    null,
+    "ethnographic",
+    "瑶族勉系仪式传统；当代仍实践",
+    "medium"
+  ],
+  "dong-kam": [
+    "黔桂侗区",
+    26.0,
+    109.2,
+    1500,
+    null,
+    "ethnographic",
+    "侗族萨玛等传统；当代仍实践",
+    "medium"
+  ],
+  "manchu-shamanism": [
+    "中国东北",
+    43.8,
+    125.3,
+    1600,
+    null,
+    "attestation",
+    "满族萨满传统清代有记载；当代仍有实践／复兴",
+    "medium"
+  ],
+  "mongolian-tengriism": [
+    "蒙古高原",
+    47.9,
+    106.9,
+    -300,
+    null,
+    "attestation",
+    "腾格里信仰与蒙古萨满长期传统；当代仍实践／复兴",
+    "medium"
+  ],
+  "tuvan-shamanism": [
+    "图瓦",
+    51.7,
+    94.4,
+    1700,
+    null,
+    "ethnographic",
+    "图瓦萨满民族志记载；当代仍实践",
+    "medium"
+  ],
+  "evenki-shamanism": [
+    "西伯利亚／中国东北",
+    52.0,
+    120.0,
+    1700,
+    null,
+    "ethnographic",
+    "鄂温克萨满民族志记载；当代仍实践",
+    "medium"
+  ],
+  "sakha-yakut": [
+    "萨哈（雅库特）",
+    62.0,
+    129.7,
+    1700,
+    null,
+    "ethnographic",
+    "雅库特传统礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "buryat": [
+    "布里亚特／贝加尔",
+    51.8,
+    107.6,
+    1600,
+    null,
+    "ethnographic",
+    "布里亚特萨满与藏传并行传统；当代仍实践",
+    "medium"
+  ],
+  "kalmyk-buddhism": [
+    "卡尔梅克",
+    46.3,
+    44.3,
+    1600,
+    null,
+    "formation",
+    "卡尔梅克藏传佛教约17世纪定居于伏尔加；当代仍实践",
+    "high"
+  ],
+  "sami": [
+    "萨米地区（北欧）",
+    69.0,
+    23.0,
+    1700,
+    null,
+    "ethnographic",
+    "萨米萨满／自然礼仪民族志记载；当代仍实践／复兴",
+    "medium"
+  ],
+  "nenets": [
+    "涅涅茨冻原",
+    67.5,
+    53.0,
+    1700,
+    null,
+    "ethnographic",
+    "涅涅茨驯鹿游牧礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "khanty-mansi": [
+    "西西伯利亚",
+    61.0,
+    69.0,
+    1700,
+    null,
+    "ethnographic",
+    "汉特—曼西传统民族志记载；当代仍实践",
+    "medium"
+  ],
+  "inuit": [
+    "北极圈",
+    70.0,
+    -40.0,
+    1800,
+    null,
+    "ethnographic",
+    "因纽特萨满与命名礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "yupik-traditional": [
+    "阿拉斯加／楚科奇",
+    60.5,
+    -165.0,
+    1800,
+    null,
+    "ethnographic",
+    "尤皮克传统民族志记载；当代仍实践",
+    "medium"
+  ],
+  "australian-aboriginal": [
+    "澳大利亚",
+    -25.0,
+    135.0,
+    -1000,
+    null,
+    "uncertain",
+    "原住民礼仪为深时传统；地图用深时代理年，置信度低",
+    "low"
+  ],
+  "yolngu": [
+    "阿纳姆地",
+    -12.3,
+    136.8,
+    1800,
+    null,
+    "ethnographic",
+    "约尔恩古礼仪民族志记载；传统更早，当代仍实践",
+    "medium"
+  ],
+  "maori": [
+    "新西兰",
+    -38.7,
+    176.0,
+    1800,
+    null,
+    "ethnographic",
+    "毛利礼仪民族志／口述记载；当代仍实践",
+    "medium"
+  ],
+  "hawaiian": [
+    "夏威夷",
+    19.6,
+    -155.5,
+    1800,
+    null,
+    "ethnographic",
+    "夏威夷卡纳卡礼仪民族志记载；当代仍实践／复兴",
+    "medium"
+  ],
+  "rapa-nui": [
+    "拉帕努伊",
+    -27.1,
+    -109.4,
+    1700,
+    null,
+    "ethnographic",
+    "拉帕努伊传统民族志记载；当代仍实践",
+    "medium"
+  ],
+  "fijian-vanua": [
+    "斐济",
+    -17.8,
+    178.0,
+    1800,
+    null,
+    "ethnographic",
+    "斐济瓦努亚礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "samoan-faa-samoa": [
+    "萨摩亚",
+    -13.8,
+    -172.1,
+    1800,
+    null,
+    "ethnographic",
+    "萨摩亚法阿萨摩亚传统；当代仍实践",
+    "medium"
+  ],
+  "tongan-faa-tonga": [
+    "汤加",
+    -21.1,
+    -175.2,
+    1800,
+    null,
+    "ethnographic",
+    "汤加法阿汤加传统；当代仍实践",
+    "medium"
+  ],
+  "vanuatu-kastom": [
+    "瓦努阿图",
+    -16.5,
+    167.5,
+    1800,
+    null,
+    "ethnographic",
+    "瓦努阿图卡斯通传统民族志记载；当代仍实践",
+    "medium"
+  ],
+  "solomon-islands-kastom": [
+    "所罗门群岛",
+    -9.5,
+    160.0,
+    1800,
+    null,
+    "ethnographic",
+    "所罗门卡斯通传统；当代仍实践",
+    "medium"
+  ],
+  "kanak-customary": [
+    "新喀里多尼亚",
+    -21.5,
+    165.5,
+    1800,
+    null,
+    "ethnographic",
+    "卡纳克习惯法与礼仪；当代仍实践",
+    "medium"
+  ],
+  "melanesia": [
+    "美拉尼西亚",
+    -8.0,
+    155.0,
+    1800,
+    null,
+    "uncertain",
+    "美拉尼西亚通论条目；年代与地点为区域代理",
+    "low"
+  ],
+  "micronesia": [
+    "密克罗尼西亚",
+    7.0,
+    152.0,
+    1800,
+    null,
+    "uncertain",
+    "密克罗尼西亚通论条目；年代与地点为区域代理",
+    "low"
+  ],
+  "oceania": [
+    "大洋洲",
+    -15.0,
+    170.0,
+    1800,
+    null,
+    "uncertain",
+    "大洋洲通论条目；年代与地点为区域代理",
+    "low"
+  ],
+  "andean": [
+    "安第斯",
+    -13.5,
+    -72.0,
+    -500,
+    null,
+    "attestation",
+    "安第斯礼仪可追溯前哥伦布文明；当代仍实践",
+    "medium"
+  ],
+  "quechua-andean": [
+    "秘鲁安第斯",
+    -13.5,
+    -72.0,
+    -500,
+    null,
+    "attestation",
+    "克丘亚安第斯礼仪前哥伦布以降；当代仍实践",
+    "medium"
+  ],
+  "aymara": [
+    "的的喀喀湖区",
+    -16.5,
+    -68.2,
+    -500,
+    null,
+    "attestation",
+    "艾马拉礼仪前哥伦布以降；当代仍实践",
+    "medium"
+  ],
+  "mapuche": [
+    "智利／阿根廷南部",
+    -38.7,
+    -72.5,
+    1500,
+    null,
+    "ethnographic",
+    "马普切礼仪殖民以降民族志记载；传统更早",
+    "medium"
+  ],
+  "guarani": [
+    "巴拉圭／巴西南部",
+    -25.3,
+    -57.6,
+    1600,
+    null,
+    "ethnographic",
+    "瓜拉尼礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "amazon-shamanism": [
+    "亚马逊流域",
+    -3.1,
+    -60.0,
+    1800,
+    null,
+    "uncertain",
+    "亚马逊萨满通论；年代为民族志代理",
+    "low"
+  ],
+  "mesoamerican": [
+    "中美洲",
+    19.4,
+    -99.1,
+    -1000,
+    null,
+    "attestation",
+    "中美洲礼仪可追溯前哥伦布文明；当代仍有延续",
+    "medium"
+  ],
+  "yucatec-maya": [
+    "尤卡坦",
+    20.7,
+    -88.6,
+    -500,
+    null,
+    "attestation",
+    "尤卡坦玛雅礼仪前哥伦布以降；当代仍实践",
+    "medium"
+  ],
+  "kiche-maya": [
+    "危地马拉高地",
+    15.0,
+    -91.2,
+    -500,
+    null,
+    "attestation",
+    "基切玛雅礼仪前哥伦布以降；当代仍实践",
+    "medium"
+  ],
+  "qeqchi-maya": [
+    "危地马拉／伯利兹",
+    15.5,
+    -90.0,
+    -500,
+    null,
+    "attestation",
+    "凯克奇玛雅礼仪；当代仍实践",
+    "medium"
+  ],
+  "tzotzil-maya": [
+    "恰帕斯",
+    16.7,
+    -92.7,
+    -500,
+    null,
+    "attestation",
+    "佐齐尔玛雅礼仪；当代仍实践",
+    "medium"
+  ],
+  "mam-maya": [
+    "危地马拉西部",
+    15.3,
+    -91.8,
+    -500,
+    null,
+    "attestation",
+    "马姆玛雅礼仪；当代仍实践",
+    "medium"
+  ],
+  "hopi": [
+    "美国亚利桑那东北",
+    35.9,
+    -110.5,
+    1500,
+    null,
+    "ethnographic",
+    "霍皮礼仪长期口述／民族志记载；当代仍实践",
+    "medium"
+  ],
+  "zuni-ashiwi": [
+    "新墨西哥",
+    35.1,
+    -108.8,
+    1500,
+    null,
+    "ethnographic",
+    "祖尼礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "navajo-blessingway": [
+    "美国西南纳瓦霍地",
+    36.1,
+    -109.5,
+    1800,
+    null,
+    "ethnographic",
+    "纳瓦霍祝福道礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "lakota-sundance": [
+    "北美大平原",
+    43.5,
+    -100.5,
+    1800,
+    null,
+    "ethnographic",
+    "拉科塔太阳舞等礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "haudenosaunee": [
+    "美国东北／加拿大",
+    43.0,
+    -76.1,
+    1500,
+    null,
+    "ethnographic",
+    "豪德诺索尼礼仪与口述宪法传统；当代仍实践",
+    "medium"
+  ],
+  "anishinaabe-ojibwe": [
+    "北美大湖区",
+    46.5,
+    -84.0,
+    1700,
+    null,
+    "ethnographic",
+    "安尼希纳贝礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "cherokee": [
+    "美国东南／俄克拉荷马",
+    35.5,
+    -83.0,
+    1700,
+    null,
+    "ethnographic",
+    "切罗基礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "apache-traditional": [
+    "美国西南",
+    33.5,
+    -109.5,
+    1700,
+    null,
+    "ethnographic",
+    "阿帕奇礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "blackfoot-niitsitapi": [
+    "北美大平原北部",
+    49.0,
+    -112.0,
+    1800,
+    null,
+    "ethnographic",
+    "黑脚礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "cree-nehiyaw": [
+    "加拿大草原／林地",
+    54.0,
+    -105.0,
+    1800,
+    null,
+    "ethnographic",
+    "克里礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "tlingit": [
+    "阿拉斯加东南",
+    58.3,
+    -134.4,
+    1800,
+    null,
+    "ethnographic",
+    "特林吉特礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "haida-traditional": [
+    "海达瓜依",
+    53.3,
+    -132.0,
+    1800,
+    null,
+    "ethnographic",
+    "海达礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "acoma-traditional": [
+    "新墨西哥阿科马",
+    34.9,
+    -107.6,
+    1500,
+    null,
+    "ethnographic",
+    "阿科马普韦布洛礼仪；当代仍实践",
+    "medium"
+  ],
+  "dogon": [
+    "马里邦贾加拉",
+    14.3,
+    -3.6,
+    1500,
+    null,
+    "ethnographic",
+    "多贡礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "yoruba-and-west-african": [
+    "尼日利亚西南／西非",
+    7.4,
+    3.9,
+    1500,
+    null,
+    "ethnographic",
+    "约鲁巴与西非传统宗教长期延续；当代仍实践",
+    "medium"
+  ],
+  "akan-asante": [
+    "加纳阿散蒂",
+    6.7,
+    -1.6,
+    1600,
+    null,
+    "ethnographic",
+    "阿肯／阿散蒂礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "serer": [
+    "塞内加尔",
+    14.5,
+    -16.0,
+    1500,
+    null,
+    "ethnographic",
+    "塞雷尔传统；当代仍实践",
+    "medium"
+  ],
+  "san-khoisan": [
+    "南部非洲",
+    -24.0,
+    20.0,
+    -1000,
+    null,
+    "uncertain",
+    "桑／科伊桑礼仪为深时狩猎采集传统代理年",
+    "low"
+  ],
+  "maasai": [
+    "肯尼亚／坦桑尼亚",
+    -2.5,
+    36.0,
+    1700,
+    null,
+    "ethnographic",
+    "马赛礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "dinka-nhialic": [
+    "南苏丹",
+    7.0,
+    30.0,
+    1800,
+    null,
+    "ethnographic",
+    "丁卡恩希亚利克信仰民族志记载；当代仍实践",
+    "medium"
+  ],
+  "shona-mwari": [
+    "津巴布韦",
+    -18.0,
+    31.0,
+    1500,
+    null,
+    "ethnographic",
+    "绍纳姆瓦里崇拜；当代仍实践",
+    "medium"
+  ],
+  "zulu-nguni": [
+    "南非夸祖鲁",
+    -28.5,
+    31.0,
+    1700,
+    null,
+    "ethnographic",
+    "祖鲁恩古尼礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "himba-okuruwo": [
+    "纳米比亚西北",
+    -18.0,
+    13.5,
+    1800,
+    null,
+    "ethnographic",
+    "希姆巴奥库鲁沃圣火传统；当代仍实践",
+    "medium"
+  ],
+  "amazigh-berber": [
+    "北非马格里布",
+    31.8,
+    -6.0,
+    1000,
+    null,
+    "ethnographic",
+    "阿马齐格民俗—伊斯兰并行传统；当代仍实践",
+    "medium"
+  ],
+  "gnawa": [
+    "摩洛哥",
+    31.6,
+    -8.0,
+    1600,
+    null,
+    "ethnographic",
+    "格纳瓦仪式传统；当代仍实践",
+    "medium"
+  ],
+  "tuareg-traditional": [
+    "萨赫勒／撒哈拉",
+    17.0,
+    8.0,
+    1500,
+    null,
+    "ethnographic",
+    "图阿雷格传统；当代仍实践",
+    "medium"
+  ],
+  "fang-bwiti": [
+    "加蓬／赤道几内亚",
+    0.4,
+    9.5,
+    1800,
+    null,
+    "ethnographic",
+    "芳人布维蒂仪礼民族志记载；当代仍实践",
+    "medium"
+  ],
+  "bakongo-kongo": [
+    "刚果盆地西部",
+    -4.8,
+    14.5,
+    1500,
+    null,
+    "ethnographic",
+    "刚果人传统宗教；当代仍实践",
+    "medium"
+  ],
+  "chewa-nyau": [
+    "马拉维／赞比亚",
+    -13.5,
+    33.5,
+    1700,
+    null,
+    "ethnographic",
+    "切瓦尼亚乌秘密社群礼仪；当代仍实践",
+    "medium"
+  ],
+  "swazi-incwala": [
+    "埃斯瓦蒂尼",
+    -26.5,
+    31.5,
+    1700,
+    null,
+    "ethnographic",
+    "斯威士因瓦拉王室年祭；当代仍实践",
+    "medium"
+  ],
+  "waaqeffanna": [
+    "埃塞俄比亚奥罗莫",
+    9.0,
+    38.7,
+    1500,
+    null,
+    "ethnographic",
+    "瓦盖法纳奥罗莫传统信仰；当代仍实践／复兴",
+    "medium"
+  ],
+  "kalasha": [
+    "巴基斯坦吉德拉尔",
+    35.7,
+    71.7,
+    1500,
+    null,
+    "ethnographic",
+    "卡拉什多神传统；当代仍实践",
+    "medium"
+  ],
+  "ossetian-uatsdin": [
+    "北奥塞梯",
+    43.0,
+    44.7,
+    1800,
+    null,
+    "ethnographic",
+    "奥塞梯乌阿茨丁传统复兴／民俗；当代仍实践",
+    "medium"
+  ],
+  "udmurt-traditional": [
+    "乌德穆尔特",
+    57.0,
+    53.0,
+    1700,
+    null,
+    "ethnographic",
+    "乌德穆尔特传统礼仪；当代仍实践",
+    "medium"
+  ],
+  "mari-traditional": [
+    "马里埃尔",
+    56.6,
+    47.9,
+    1700,
+    null,
+    "ethnographic",
+    "马里人传统信仰；当代仍实践",
+    "medium"
+  ],
+  "chuvash-traditional": [
+    "楚瓦什",
+    55.5,
+    47.0,
+    1700,
+    null,
+    "ethnographic",
+    "楚瓦什传统礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "newar-nepal": [
+    "尼泊尔加德满都谷地",
+    27.7,
+    85.3,
+    400,
+    null,
+    "attestation",
+    "尼瓦尔佛教—印度教礼仪中古以降；当代仍实践",
+    "high"
+  ],
+  "sherpa-buddhist": [
+    "尼泊尔喜马拉雅",
+    27.8,
+    86.7,
+    1500,
+    null,
+    "formation",
+    "夏尔巴藏传佛教传统；当代仍实践",
+    "medium"
+  ],
+  "bhutanese-drukpa": [
+    "不丹",
+    27.5,
+    90.5,
+    1600,
+    null,
+    "formation",
+    "不丹竹巴噶举传统；当代仍实践",
+    "high"
+  ],
+  "ladakh-buddhist": [
+    "拉达克",
+    34.2,
+    77.6,
+    1000,
+    null,
+    "attestation",
+    "拉达克藏传佛教中古以降；当代仍实践",
+    "high"
+  ],
+  "theyyam-kerala": [
+    "印度喀拉拉",
+    11.9,
+    75.4,
+    1500,
+    null,
+    "ethnographic",
+    "特亚姆仪式表演传统；当代仍实践",
+    "medium"
+  ],
+  "sarna-santal": [
+    "印度贾坎德／孟加拉",
+    23.5,
+    86.5,
+    1500,
+    null,
+    "ethnographic",
+    "萨尔纳／桑塔尔传统；当代仍实践",
+    "medium"
+  ],
+  "sanamahism": [
+    "曼尼普尔",
+    24.8,
+    93.9,
+    1500,
+    null,
+    "ethnographic",
+    "萨纳马希教传统；当代仍实践／复兴",
+    "medium"
+  ],
+  "bathou-bodo": [
+    "阿萨姆／博多",
+    26.4,
+    90.3,
+    1500,
+    null,
+    "ethnographic",
+    "巴图博多传统；当代仍实践",
+    "medium"
+  ],
+  "kirati-mundhum": [
+    "尼泊尔东部",
+    27.2,
+    87.3,
+    1500,
+    null,
+    "ethnographic",
+    "基拉特蒙杜姆传统；当代仍实践",
+    "medium"
+  ],
+  "ahom-phuralung": [
+    "阿萨姆",
+    26.7,
+    94.1,
+    1200,
+    null,
+    "attestation",
+    "阿豪姆普拉隆传统；当代仍实践",
+    "medium"
+  ],
+  "baul-bengal": [
+    "孟加拉",
+    23.8,
+    90.4,
+    1500,
+    null,
+    "ethnographic",
+    "鲍乌尔游方传统；当代仍实践",
+    "medium"
+  ],
+  "vedda": [
+    "斯里兰卡",
+    7.5,
+    81.0,
+    1800,
+    null,
+    "ethnographic",
+    "维达人传统民族志记载；当代仍有延续",
+    "medium"
+  ],
+  "cham-balamon": [
+    "越南中南部占族",
+    11.6,
+    108.9,
+    800,
+    null,
+    "attestation",
+    "占婆婆罗门／湿婆传统中古以降；当代仍实践",
+    "medium"
+  ],
+  "dai-xishuangbanna": [
+    "云南西双版纳",
+    22.0,
+    100.8,
+    1200,
+    null,
+    "attestation",
+    "傣族上座部佛教—民俗；当代仍实践",
+    "medium"
+  ],
+  "amis-taiwan": [
+    "台湾花东",
+    23.5,
+    121.4,
+    1800,
+    null,
+    "ethnographic",
+    "阿美族礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "atayal-taiwan": [
+    "台湾北部山地",
+    24.6,
+    121.3,
+    1800,
+    null,
+    "ethnographic",
+    "泰雅族礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "bunun-taiwan": [
+    "台湾中部山地",
+    23.7,
+    121.0,
+    1800,
+    null,
+    "ethnographic",
+    "布农族礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "paiwan-taiwan": [
+    "台湾南部",
+    22.6,
+    120.8,
+    1800,
+    null,
+    "ethnographic",
+    "排湾族礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "tao-yami": [
+    "兰屿",
+    22.05,
+    121.55,
+    1800,
+    null,
+    "ethnographic",
+    "达悟／雅美礼仪民族志记载；当代仍实践",
+    "medium"
+  ],
+  "philippine-indigenous": [
+    "菲律宾",
+    12.0,
+    122.0,
+    1800,
+    null,
+    "uncertain",
+    "菲律宾原住民通论；区域代理坐标",
+    "low"
+  ],
+  "ifugao-traditional": [
+    "吕宋科迪勒拉",
+    16.9,
+    121.1,
+    1500,
+    null,
+    "ethnographic",
+    "伊富高梯田礼仪；当代仍实践",
+    "medium"
+  ],
+  "kadazan-dusun-momolianism": [
+    "沙巴",
+    5.9,
+    116.1,
+    1800,
+    null,
+    "ethnographic",
+    "卡达山杜顺莫莫利亚南；当代仍实践",
+    "medium"
+  ],
+  "iban-sarawak": [
+    "砂拉越",
+    2.0,
+    113.0,
+    1800,
+    null,
+    "ethnographic",
+    "伊班传统；当代仍实践",
+    "medium"
+  ],
+  "malagasy-traditional": [
+    "马达加斯加",
+    -18.9,
+    47.5,
+    1500,
+    null,
+    "ethnographic",
+    "马达加斯加祖先崇拜传统；当代仍实践",
+    "medium"
+  ],
+  "maldivian-islam": [
+    "马尔代夫",
+    4.2,
+    73.5,
+    1153,
+    null,
+    "formation",
+    "马尔代夫伊斯兰化约12世纪；当代仍实践",
+    "high"
+  ],
+  "somali-folk-islam": [
+    "索马里",
+    2.0,
+    45.3,
+    1200,
+    null,
+    "ethnographic",
+    "索马里民间伊斯兰与苏非；当代仍实践",
+    "medium"
+  ],
+  "pamiri-ismaili": [
+    "帕米尔",
+    37.5,
+    71.6,
+    1000,
+    null,
+    "formation",
+    "帕米尔伊斯玛仪派传统；当代仍实践",
+    "medium"
+  ],
+  "uyghur-mazar": [
+    "新疆",
+    39.5,
+    76.0,
+    1000,
+    null,
+    "ethnographic",
+    "维吾尔麻扎朝拜传统；当代仍实践",
+    "medium"
+  ],
+  "hazara-traditional": [
+    "阿富汗哈扎拉贾特",
+    34.5,
+    67.0,
+    1500,
+    null,
+    "ethnographic",
+    "哈扎拉民俗—什叶传统；当代仍实践",
+    "medium"
+  ],
+  "pashtun-traditional": [
+    "阿富汗／巴基斯坦普什图",
+    33.5,
+    70.0,
+    1500,
+    null,
+    "ethnographic",
+    "普什图瓦利与民俗实践；当代仍实践",
+    "medium"
+  ],
+  "baloch-traditional": [
+    "俾路支",
+    28.0,
+    64.0,
+    1500,
+    null,
+    "ethnographic",
+    "俾路支传统；当代仍实践",
+    "medium"
+  ],
+  "kazakh-traditional": [
+    "哈萨克草原",
+    48.0,
+    67.0,
+    1500,
+    null,
+    "ethnographic",
+    "哈萨克民俗与腾格里残余；当代仍实践",
+    "medium"
+  ],
+  "kyrgyz-traditional": [
+    "吉尔吉斯斯坦",
+    41.2,
+    74.8,
+    1500,
+    null,
+    "ethnographic",
+    "吉尔吉斯民俗传统；当代仍实践",
+    "medium"
+  ],
+  "turkmen-traditional": [
+    "土库曼斯坦",
+    39.0,
+    58.0,
+    1500,
+    null,
+    "ethnographic",
+    "土库曼民俗传统；当代仍实践",
+    "medium"
+  ],
+  "uzbek-folk": [
+    "乌兹别克斯坦",
+    41.3,
+    69.2,
+    1400,
+    null,
+    "ethnographic",
+    "乌兹别克民俗；当代仍实践",
+    "medium"
+  ],
+  "tajik-folk": [
+    "塔吉克斯坦",
+    38.6,
+    68.8,
+    1400,
+    null,
+    "ethnographic",
+    "塔吉克民俗；当代仍实践",
+    "medium"
+  ],
+  "garifuna": [
+    "中美洲加勒比沿岸",
+    15.8,
+    -86.0,
+    1700,
+    null,
+    "formation",
+    "加里富纳约18世纪形成；当代仍实践",
+    "high"
+  ],
+  "breton-pardons": [
+    "布列塔尼",
+    48.2,
+    -3.0,
+    1500,
+    null,
+    "ethnographic",
+    "布列塔尼赦罪礼民俗天主教；当代仍实践",
+    "medium"
+  ],
+  "portuguese-romarias": [
+    "葡萄牙",
+    39.5,
+    -8.0,
+    1500,
+    null,
+    "ethnographic",
+    "葡萄牙朝圣民俗；当代仍实践",
+    "medium"
+  ],
+  "valencian-fallas": [
+    "西班牙瓦伦西亚",
+    39.5,
+    -0.4,
+    1700,
+    null,
+    "ethnographic",
+    "法亚节民俗；当代仍实践",
+    "medium"
+  ],
+  "sicilian-santa-rosalia": [
+    "西西里巴勒莫",
+    38.1,
+    13.4,
+    1624,
+    null,
+    "attestation",
+    "圣罗萨利亚崇拜约1624年瘟疫后盛传；当代仍实践",
+    "high"
+  ],
+  "serbian-slava": [
+    "塞尔维亚",
+    44.8,
+    20.5,
+    900,
+    null,
+    "attestation",
+    "塞尔维亚斯拉瓦家庭主保圣人节；当代仍实践",
+    "high"
+  ],
+  "romanian-calus": [
+    "罗马尼亚",
+    45.9,
+    24.0,
+    1600,
+    null,
+    "ethnographic",
+    "卡鲁什仪式舞；当代仍实践",
+    "medium"
+  ],
+  "bulgarian-nestinarstvo": [
+    "保加利亚斯特兰贾",
+    42.1,
+    27.7,
+    1500,
+    null,
+    "ethnographic",
+    "尼斯提纳尔火舞传统；当代仍实践",
+    "medium"
+  ],
+  "irish-folk-catholic": [
+    "爱尔兰",
+    53.3,
+    -7.7,
+    600,
+    null,
+    "ethnographic",
+    "爱尔兰民俗天主教与圣井等；当代仍实践",
+    "medium"
+  ],
+  "polish-folk-catholic": [
+    "波兰",
+    52.1,
+    19.4,
+    1000,
+    null,
+    "ethnographic",
+    "波兰民俗天主教；当代仍实践",
+    "medium"
+  ],
+  "maltese-festa": [
+    "马耳他",
+    35.9,
+    14.4,
+    1500,
+    null,
+    "ethnographic",
+    "马耳他村节圣者瞻礼；当代仍实践",
+    "medium"
+  ],
+  "greek-folk": [
+    "希腊",
+    39.0,
+    22.0,
+    1000,
+    null,
+    "ethnographic",
+    "希腊民俗正教与地方节庆；当代仍实践",
+    "medium"
+  ],
+  "ukrainian-folk": [
+    "乌克兰",
+    49.0,
+    32.0,
+    1000,
+    null,
+    "ethnographic",
+    "乌克兰民俗；当代仍实践",
+    "medium"
+  ],
+  "slavic-folk": [
+    "斯拉夫地区",
+    52.0,
+    30.0,
+    900,
+    null,
+    "uncertain",
+    "斯拉夫民俗通论；区域代理",
+    "low"
+  ],
+  "baltic-folk": [
+    "波罗的海",
+    56.0,
+    24.0,
+    1200,
+    null,
+    "ethnographic",
+    "波罗的海民俗；当代仍实践／复兴",
+    "medium"
+  ],
+  "celtic-folk": [
+    "凯尔特地区",
+    53.0,
+    -6.0,
+    500,
+    null,
+    "uncertain",
+    "凯尔特民俗通论；年代为概略",
+    "low"
+  ]
+}

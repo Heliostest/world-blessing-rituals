@@ -2357,3 +2357,26 @@
 - https://www.britannica.com/topic/Tepehuan
 - https://www.britannica.com/place/Durango-state-Mexico
 - https://www.britannica.com/place/Mexico
+
+## 增补传统（瓦乌拉、塔皮拉佩、瓦亚纳、马策斯、巴尼瓦、梅尔帕、巴鲁亚、奥罗凯瓦、伦达、乔尔）
+
+- https://www.britannica.com/topic/Xinguanos
+- https://www.britannica.com/place/Xingu-River
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Araguaia-River
+- https://www.britannica.com/place/Mato-Grosso
+- https://www.britannica.com/place/Guiana-Highlands
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Rio-Negro-river-South-America
+- https://www.britannica.com/topic/Arawakan-languages
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/New-Guinea
+- https://www.britannica.com/topic/Lunda
+- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britannica.com/place/Angola
+- https://www.britannica.com/topic/Chol
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/place/Chiapas

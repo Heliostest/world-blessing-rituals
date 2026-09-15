@@ -1600,3 +1600,31 @@
 - https://www.britannica.com/place/Mangareva
 - https://www.britannica.com/place/Gambier-Islands
 - https://www.britannica.com/place/French-Polynesia
+
+## 增补传统（克拉比特、伊瓦坦、特博利、马诺博、门巴、俾路支、马尔代夫、印古什、斯洛文尼亚、科罗威）
+
+- https://en.wikipedia.org/wiki/Kelabit_people
+- https://doi.org/10.1080/00664670903278429
+- https://publisher.unimas.my/ojs/index.php/BJK/article/view/4401
+- https://www.britannica.com/place/Batan-Islands
+- https://www.britannica.com/place/Philippines
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/topic/Tboli
+- https://www.britannica.com/place/Mindanao
+- https://www.britannica.com/topic/Manobo
+- https://www.britannica.com/topic/Monpa
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/topic/Baloch
+- https://www.britannica.com/place/Balochistan
+- https://www.britannica.com/topic/Islam
+- https://www.britannica.com/place/Maldives
+- https://www.britannica.com/place/Indian-Ocean
+- https://www.britannica.com/topic/Ingush
+- https://www.britannica.com/place/Ingushetiya
+- https://www.britannica.com/topic/Sufism
+- https://www.britannica.com/place/Slovenia
+- https://www.britannica.com/place/Alps
+- https://www.britannica.com/topic/Korowai
+- https://www.britannica.com/place/Papua
+- https://www.britannica.com/place/New-Guinea

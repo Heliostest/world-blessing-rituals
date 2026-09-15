@@ -1568,3 +1568,35 @@
 - https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/qeqchi
 - https://en.wikipedia.org/wiki/Qʼeqchiʼ_people
 - https://www.britannica.com/place/Guatemala
+
+## 增补传统（独龙、黎族、东帝汶、哈扎拉、卡林加、克罗地亚、库梅克、哈迪亚、马姆、曼加雷瓦）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/drung
+- https://en.wikipedia.org/wiki/Derung_people
+- http://english.scio.gov.cn/m/chinafacts/2017-06/06/content_40974205.htm
+- https://en.wikipedia.org/wiki/Hlai_people
+- https://www.britannica.com/place/Hainan
+- https://www.britannica.com/place/Hainan/Cultural-life
+- https://www.britannica.com/place/East-Timor
+- https://kids.britannica.com/students/article/East-Timor/384947
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/topic/Hazara
+- https://www.britannica.com/topic/Shiiah
+- https://www.britannica.com/place/Afghanistan
+- https://www.britannica.com/topic/Kalinga-people
+- https://www.britannica.com/place/Cordillera-Central-Philippines
+- https://www.britannica.com/place/Philippines
+- https://www.britannica.com/place/Croatia
+- https://www.britannica.com/place/Dalmatia
+- https://www.britannica.com/topic/Kumyk
+- https://www.britannica.com/place/Dagestan
+- https://www.britannica.com/topic/Islam
+- https://en.sewasew.com/p/fandaanano
+- https://doi.org/10.15460/aethiopica.18.1.766
+- https://www.uni-goettingen.de/en/fandaanano%3A+the+traditional+socio-religious+system+of+the+hadiyya+in+southern+ethhiopia./121112.html
+- https://www.britannica.com/topic/Mam
+- https://www.britannica.com/place/Guatemala
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/place/Mangareva
+- https://www.britannica.com/place/Gambier-Islands
+- https://www.britannica.com/place/French-Polynesia

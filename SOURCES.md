@@ -1535,3 +1535,36 @@
 - https://www.britannica.com/topic/Nahua
 - https://www.britannica.com/topic/Aztec
 - https://www.britannica.com/place/Mexico
+
+## 增补传统（普米、拉达克、特里普里、本南、米纳哈萨、卡拉恰伊、斯洛伐克、希腊民间、沃莱塔、凯克奇）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/pumi
+- https://en.wikipedia.org/wiki/Pumi_people
+- https://www.britannica.com/place/Yunnan
+- https://www.britannica.com/place/Ladakh
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/topic/Bon
+- https://www.britannica.com/topic/Tripuri
+- https://www.britannica.com/place/Tripura
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Penan
+- https://www.britannica.com/place/Sarawak
+- https://www.britannica.com/place/Borneo
+- https://en.wikipedia.org/wiki/Minahasan_people
+- https://digitalcollections.sit.edu/isp_collection/2191
+- https://www.britannica.com/place/North-Sulawesi
+- https://www.britannica.com/topic/Karachay
+- https://www.britannica.com/place/Karachay-Cherkessia
+- https://www.britannica.com/topic/Islam
+- https://www.britannica.com/place/Slovakia
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/place/Levoca
+- https://www.britannica.com/topic/Greek-Orthodox-Church
+- https://www.britannica.com/place/Greece
+- https://www.britannica.com/place/Mount-Athos
+- https://joshuaproject.net/people_groups/15835/ET
+- https://ijitee.org/wp-content/uploads/papers/v8i7c/G10120587C19.pdf
+- https://www.britannica.com/place/Ethiopia
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/qeqchi
+- https://en.wikipedia.org/wiki/Qʼeqchiʼ_people
+- https://www.britannica.com/place/Guatemala

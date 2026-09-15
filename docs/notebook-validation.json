@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 689,
-    "passed_after_fix": 13,
-    "passed": 23,
+    "pending": 677,
+    "passed_after_fix": 17,
+    "passed": 31,
     "skipped": 1
   },
   "items": [
@@ -2408,16 +2408,21 @@
       "slug": "dalecarlian-folk",
       "title": "达拉纳民间基督教与节期祈福（Dalecarlian／Dalarna）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "路德宗礼拜与教会节期（概念层）",
-        "仲夏等公共民俗层（概念层）",
-        "丰收与家庭感恩（概念层）"
+        "路德宗礼拜与 Kyrkbåtar 湖区教会记忆（概念层）",
+        "Midsommarstång 仲夏花柱等公共民俗层（概念层）",
+        "丰收感恩与 Dalahäst 文化象征（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Kyrkbåtar lake church boats, Midsommarstång naming, and Dalahäst as cultural/protective symbol (not magic recipe)."
+      ],
+      "actions": [
+        "Added Kyrkbåtar, Midsommarstång, and Dalahäst as cultural/protective symbol (explicitly not magic recipe).",
+        "Kept educational overview; no operational how-to."
+      ]
     },
     {
       "slug": "dani-papua",
@@ -2708,16 +2713,21 @@
       "slug": "emilian-folk",
       "title": "艾米利亚民间天主教与朝圣祈福（Emilian）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母／城市圣人朝圣（概念层）",
-        "主保节巡游（概念层）",
-        "还愿与家庭祈祷（概念层）"
+        "Madonna di San Luca 拱廊朝圣（概念层）",
+        "San Geminiano／Sant’Ilario 主保巡游（概念层）",
+        "Ex-voto 还愿与家庭祈祷（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Madonna di San Luca (Bologna) arcade pilgrimage, San Geminiano/Sant’Ilario processions, and Ex-voto naming."
+      ],
+      "actions": [
+        "Added Madonna di San Luca arcade pilgrimage, San Geminiano/Sant’Ilario processions, and Ex-voto naming.",
+        "Kept concept-only educational tone."
+      ]
     },
     {
       "slug": "enets-traditional",
@@ -2753,16 +2763,18 @@
       "slug": "estonian-maausk",
       "title": "爱沙尼亚地信仰／马阿乌斯克与塔阿拉信仰（Estonian Maausk／Taaraism）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "圣林与自然圣地敬奉（概念层）",
-        "亡灵季、岁时刻度与家庭民俗（民俗层）",
+        "Hiis 圣林与彩带敬奉（概念层）",
+        "Hingedeaeg 亡灵季、桑拿净化与岁时民俗（民俗层）",
         "Maavalla Koda 公共组织与文化教育（公共文化层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Hiis sacred grove/ribbons; Hingedeaeg; Sauna as spiritual cleansing cultural note."
+      ]
     },
     {
       "slug": "ethiopian-orthodox",
@@ -2813,16 +2825,18 @@
       "slug": "ewe-traditional",
       "title": "埃维族传统信仰与霍格贝措索节祈福（Ewe）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Hogbetsotso 出走纪念节（公共层）",
-        "世系祖先、凳子与倾奠（高度敏感，仅概念）",
+        "Anloga Hogbetsotso 与 Agbadza／Misego（公共层）",
+        "世系祖先、Zikpui 凳子倾奠（高度敏感，仅概念）",
         "Mawu、tro／vodu 与日常护佑叙事（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Anloga Hogbetsotso; Agbadza/Misego; Zikpui stool libation CONCEPT ONLY."
+      ]
     },
     {
       "slug": "ewondo-traditional",
@@ -2858,46 +2872,52 @@
       "slug": "faroese-folk",
       "title": "法罗民间祈福与链舞—奥拉夫节传统（Faroese）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Ólavsøka 国庆与议会开幕（公共层）",
+        "7 月 29 日 Ólavsøka 与 Løgting 议会游行（公共层）",
         "法罗链舞与 kvæði 民谣（公共文化层）",
-        "教会年节与生命礼仪中的祝福（概念层）"
+        "教会年节、航海祈祷叙事与生命礼仪祝福（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: July 29 Ólavsøka; Løgting procession; chain dance/kvæði; seafaring prayer narrative."
+      ]
     },
     {
       "slug": "fijian-vanua",
       "title": "斐济传统 vanua 宇宙观与祖先祝福礼仪（Fijian Traditional／Veiqaraqaravi Vakavanua）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
         "Sevusevu 呈献与迎宾（公共礼仪层）",
         "Yaqona vakaturaga 与公共卡瓦礼（概念层）",
-        "祖先圣地、bete 与和解呈献（限制性名称层）"
+        "Bulubulu 和解呈献与 bete／yavutū（公共文化＋限制性名称层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Bulubulu reconciliation/gift apology as public cultural layer; kept bete/yavutū restricted naming."
+      ]
     },
     {
       "slug": "finnish-karelian-folk",
       "title": "芬兰—卡累利阿民间信仰与熊礼记忆／苏奥梅努斯科（Finnish–Karelian folk）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "熊的纪念宴与头骨礼仪（历史—概念层）",
-        "森林边界与牲畜保护咒语传统（民俗概念层）",
+        "熊的纪念宴、Honka 头骨树与 Tapio（历史—概念层）",
+        "Loitsut／Runo 与森林边界护卫文类（民俗概念层）",
         "当代 Suomenusko 岁时敬自然（公共复兴层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Tapio; Honka bear skull tree; Loitsut/Runo as folklore CONCEPT not spell recipes."
+      ]
     },
     {
       "slug": "fore-traditional",
@@ -2918,61 +2938,75 @@
       "slug": "fribourg-folk",
       "title": "弗里堡民间天主教与双语朝圣祈福（Fribourg／Freiburg）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母朝圣（概念层）",
-        "主保节与村社巡游（概念层）",
-        "双语堂区公共崇拜（概念层）"
+        "堂区／圣母朝圣（概念层）",
+        "Fête de Saint-Nicolas 与主保／村社巡游（概念层）",
+        "Désalpe 牲畜转场祝福与双语堂区崇拜（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Fête de Saint-Nicolas, Désalpe livestock blessing, and parish/Marian pilgrimage naming; check text-boundary corruption with Frisian."
+      ],
+      "actions": [
+        "Verified no Fribourg↔Frisian text-boundary corruption; clarified content boundary vs Frisian.",
+        "Added Fête de Saint-Nicolas, Désalpe livestock blessing, and parish/Marian pilgrimage naming."
+      ]
     },
     {
       "slug": "frisian-folk",
       "title": "弗里西民间基督教与博尼法斯朝圣记忆（Frisian folk）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
         "主日礼拜与教会年（公共层）",
-        "多克曲博尼法斯朝圣／纪念（公共层）",
-        "海堤—语言公共文化中的祝福叙事（公共文化层）"
+        "Dokkum 博尼法斯小堂／圣井朝圣纪念（公共层）",
+        "Terp、海堤与祈祷叙事（公共文化层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Dokkum Boniface chapel/well; Terp; dike prayer narrative."
+      ]
     },
     {
       "slug": "friulian-folk",
       "title": "弗留利民间天主教与朝圣祈福（Friulian）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母／圣地朝圣（概念层）",
-        "主保节与村社巡游（概念层）",
-        "复活节民俗祝福（概念层）"
+        "Castelmonte Madonna 圣母朝圣（概念层）",
+        "主保节巡游与 Pignarûl 主显节岁火（概念层）",
+        "复活节祝福与 Benandanti 历史民俗记忆（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Castelmonte Madonna, Pignarûl Epiphany fires; Benandanti needed framing as historical folklore memory only (no folk-magic how-to)."
+      ],
+      "actions": [
+        "Added Castelmonte Madonna and Pignarûl Epiphany fires.",
+        "Framed Benandanti as historical folklore memory only; explicitly no folk-magic how-to."
+      ]
     },
     {
       "slug": "fulani-peul",
       "title": "富拉尼／颇尔牧养祝福传统（Fulani／Peul／Fulɓe）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Yaaral 与 Degal 转场节庆（公开遗产层）",
+        "尼日尔内陆三角洲渡河与牧群选美（公开遗产层）",
         "牧养伦理与 pulaaku（概念层）",
-        "伊斯兰节日祈祷与牧民祝福观（概念层）"
+        "Tabaski 等高阶伊斯兰节日与牧民祝福观（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Niger inland delta cattle crossing; cattle beauty contest; Tabaski high-level."
+      ]
     },
     {
       "slug": "fur-traditional",
@@ -2993,16 +3027,18 @@
       "slug": "ga-traditional",
       "title": "加族传统信仰与霍莫沃节祈福（Ga）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Homowo 丰收—嘲饥节（公共层）",
-        "城镇凳子、神灵层级与倾奠（高度敏感，仅概念）",
+        "Homowo、Kpokpoi 抛洒与 Wulomo 禁鼓（公共＋概念层）",
+        "城镇凳子概念、神灵层级与倾奠（高度敏感，仅概念）",
         "生命礼仪与公共讽谏舞（部分城镇）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:54:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Kpokpoi sprinkle CONCEPT; Wulomo ban on drumming; public satirical dance; stool CONCEPT ONLY."
+      ]
     },
     {
       "slug": "gagauz-traditional",
@@ -11001,21 +11037,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-3",
-    "validated_at": "2026-09-15T08:46:00Z",
+    "name": "batch-4",
+    "validated_at": "2026-09-15T08:54:00Z",
     "slugs": [
-      "celtic-folk",
-      "chagga-traditional",
-      "chuukese-traditional",
-      "circassian-traditional",
-      "corsican-folk",
-      "crimean-tatar-traditional",
-      "croatian-folk",
-      "chinese-buddhism",
-      "chinese-folk-and-confucian",
-      "cornish-folk",
-      "cypriot-folk",
-      "czech-moravian-folk"
+      "dalecarlian-folk",
+      "emilian-folk",
+      "fribourg-folk",
+      "friulian-folk",
+      "estonian-maausk",
+      "ewe-traditional",
+      "faroese-folk",
+      "fijian-vanua",
+      "finnish-karelian-folk",
+      "frisian-folk",
+      "fulani-peul",
+      "ga-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

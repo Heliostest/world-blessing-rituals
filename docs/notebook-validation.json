@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 401,
-    "passed_after_fix": 202,
-    "passed": 122,
+    "pending": 389,
+    "passed_after_fix": 210,
+    "passed": 126,
     "skipped": 1
   },
   "items": [
@@ -6659,31 +6659,43 @@
       "slug": "manobo-traditional",
       "title": "马诺博传统信仰与棉兰老祖灵祈福（Manobo）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "农事与家屋敬礼（概念层）",
-        "疗愈与中介（高度敏感，仅概念）",
-        "基督教并行（概念层）"
+        "Magbabaya high god CONCEPT",
+        "Kaamulan/Samaya harvest public",
+        "Baylan/Baylanon HIGH SENSITIVITY CONCEPT/viewing; Dagmay weaving cultural — users don't officiate Baylan"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Magbabaya CONCEPT; Kaamulan/Samaya public; Baylan CONCEPT/viewing; Dagmay cultural — users don't officiate Baylan."
+      ],
+      "actions": [
+        "Reframed rituals to Magbabaya CONCEPT, Kaamulan/Samaya public, Baylan CONCEPT/viewing, and Dagmay cultural; users don't officiate Baylan.",
+        "Replaced generic Britannica place pages with PIA Kaamulan, NCCA Mandaya/Dagmay, and Bukidnon festival sources.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "manus-traditional",
       "title": "马努斯传统信仰与海军群岛祈福（Manus）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "航海与海洋伦理（概念层）",
-        "交换与展示（公开／敏感交界）",
-        "基督教与丧礼（敏感，仅概念）"
+        "Lapan chiefs; Titan/Usiai maritime trade",
+        "Moen Palit guardian ancestors HIGH SENSITIVITY CONCEPT",
+        "Lapan wealth exchange viewing; funeral CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Lapan; Moen Palit HIGH SENSITIVITY CONCEPT; Titan/Usiai trade; wealth exchange viewing; funeral CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Lapan, Moen Palit CONCEPT, Titan/Usiai trade, wealth exchange viewing, and funeral CONCEPT; users don't officiate.",
+        "Added ANU Press DOI, everyculture Manus religion, and ANU chapter sources.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "manx-folk",
@@ -6709,16 +6721,22 @@
       "slug": "maori",
       "title": "毛利人祈福与马拉埃礼仪（Māori）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "*Pōwhiri*／欢迎入 *marae*（公开可见层）",
-        "*Karakia*（祝祷／吟诵）（概念层）",
-        "*Tangihanga*（守灵与送葬）（概念层）"
+        "Tikanga Māori; Wharenui; Pōwhiri/Haka public cultural",
+        "Tohunga CONCEPT; Karakia/marae ethics",
+        "Tangihanga respect/viewing — Kaumātua/Tohunga host, users don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Tikanga Māori; Tohunga CONCEPT; Wharenui; Pōwhiri/Haka public; Karakia/marae ethics; Tangihanga respect/viewing — Kaumātua/Tohunga host, users don't officiate."
+      ],
+      "actions": [
+        "Enriched Tikanga, Tohunga CONCEPT, Wharenui, Pōwhiri/Haka, Karakia/marae ethics, Tangihanga viewing; Kaumātua/Tohunga host, users don't officiate.",
+        "Sources: Te Ara tangihanga, Te Ara marae kawa/pōwhiri, Te Ara tohunga/karakia, University of Otago karakia.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "mapuche",
@@ -6739,16 +6757,22 @@
       "slug": "marapu-sumba",
       "title": "松巴马拉普信仰（Marapu，Sumba）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "祖先祭坛与槟榔／石灰供奉（公开民俗层）",
-        "岁时与公共节庆（如帕索拉等文化层）",
-        "丧葬与祖先过渡礼仪（概念层）"
+        "Pasola national ICH viewing",
+        "Uma Mbatangu houses",
+        "Rato priests CONCEPT — users don't officiate altar/funerary rites"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Pasola national ICH viewing; Uma Mbatangu; Rato CONCEPT — users don't officiate altar/funerary rites."
+      ],
+      "actions": [
+        "Enriched Pasola national ICH viewing, Uma Mbatangu, Rato CONCEPT; users don't officiate altar/funerary rites.",
+        "Sources: Hikmah DOI Pasola, prior Marapu DOIs, Kemdikbud WBTB Indonesia page.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "marchigiano-folk",
@@ -6774,16 +6798,22 @@
       "slug": "mari-traditional",
       "title": "马里传统宗教（Mari traditional religion／Cheremis）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "圣林公共祈祷（küisoto／kusoto）",
-        "跨村 *mer* 级节庆与献祭聚会",
-        "英雄／祖灵纪念朝圣（如楚姆布拉特相关纪念）"
+        "Küsooto sacred grove",
+        "Kart priest CONCEPT; Mer/Kurupto inter-village",
+        "Chumbylat pilgrimage — outsiders don't officiate grove rites"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "FIX bleed from Marquesan; enrich Küsooto; Kart CONCEPT; Mer/Kurupto; Chumbylat — outsiders don't officiate grove rites."
+      ],
+      "actions": [
+        "Verified Mari-only file (no Marquesas bleed); enriched Küsooto, Kart CONCEPT, Mer/Kurupto, Chumbylat; outsiders don't officiate grove rites.",
+        "Kept specific sources: RFE/RL, Russian Life, JEF article PDF, Szeged acta PDF; removed generic Britannica topic pages.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "maria-lionza",
@@ -6849,31 +6879,43 @@
       "slug": "marquesan-traditional",
       "title": "马克萨斯传统信仰与 meʻae—天主教祈福（Marquesas／ʻEnata）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "天主教堂区礼仪（概念层）",
-        "遗址致敬与文化遗产节（概念层）",
-        "历史祭司—萨满制度（高度敏感，仅概念）"
+        "Matavaa o te Henua Enana arts festival（公共／文化层）",
+        "Me'ae sanctuaries CONCEPT; Tiki",
+        "Tatau; Tuhuka masters CONCEPT — users don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "FIX bleed from Mari; needed Matavaa festival; Me'ae CONCEPT; Tiki; Tatau; Tuhuka CONCEPT — users don't officiate."
+      ],
+      "actions": [
+        "Verified standalone Marquesas file (no Mari bleed); enriched Matavaa, Me'ae, Tiki, Tatau, Tuhuka CONCEPT; users don't officiate.",
+        "Sources: UNESCO WHC 1707, matavaa.org, patrimoine.pf Matavaa, everyculture Marquesas.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "marshallese-traditional",
       "title": "马绍尔群岛传统信仰与航海祈福余绪（Marshallese／Aelōñ Kein）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "航海与造舟祈祷（历史—概念层）",
-        "收获季与食物加工礼仪（历史—概念层）",
-        "丧礼、祖灵与地点禁忌（概念层）"
+        "Kāāitōk/Wāwa stick charts; navigation blessing CONCEPT",
+        "Iroij/Iroijlaplap chiefs; Weto clan land",
+        "Nonieb CONCEPT; Kemem/Kamool community celebration viewing — users don't host chiefly rites"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed stick charts; Iroij/Weto; Nonieb CONCEPT; Kemem/Kamool viewing; navigation blessing CONCEPT — users don't host chiefly rites."
+      ],
+      "actions": [
+        "Reframed rituals to stick charts, Iroij/Weto, Nonieb, Kemem/Kamool viewing, navigation blessing CONCEPT; users don't host chiefly rites.",
+        "Sources: Micronesian Seminar, Smithsonian Ocean stick charts, RMG museum stick chart, DOI navigation study.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "marubo-traditional",
@@ -6894,16 +6936,22 @@
       "slug": "matlatzinca-traditional",
       "title": "马特拉钦卡民间天主教与托卢卡谷祈福（Matlatzinca）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保圣人节（公开层）",
-        "农作与十字伦理（概念层）",
-        "山灵与更封闭实践（敏感，仅概念）"
+        "Nevado de Toluca/Xinantécatl sacred volcano viewing",
+        "San Francisco Oxtotilpan; Mayordomía fiesta public",
+        "Herbal healing HIGH SENSITIVITY CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Xinantécatl viewing; Oxtotilpan; Mayordomía public; herbal healing HIGH SENSITIVITY CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Xinantécatl viewing, Oxtotilpan Mayordomía public, and herbal healing CONCEPT; users don't officiate.",
+        "Replaced Britannica place pages with INPI atlas, Tlalocan DOI, Temascaltepec municipal page, Redalyc.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "matses-traditional",
@@ -6939,31 +6987,43 @@
       "slug": "mayo-traditional",
       "title": "马约传统信仰与鹿舞—天主教祈福（Mayo／Yoreme）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节／圣周与天主教礼仪（概念层）",
-        "鹿舞与节庆展演层（敏感，仅概念）",
-        "圣地与地方伦理（概念层）"
+        "主保节／圣周天主教礼仪（公开层）",
+        "Danza del Venado and Pascola as public ICH/performance — users don't dance as ritual specialists",
+        "Juya Ania flower world CONCEPT; Sewa sacred flower CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "FIX bleed from Melanesia; needed deer dance/Pascola public ICH; Juya Ania/Sewa CONCEPT — users don't dance as ritual specialists."
+      ],
+      "actions": [
+        "Verified Mayo-only file (no Melanesia bleed); reframed Danza del Venado/Pascola as public ICH/performance; Juya Ania/Sewa CONCEPT; users don't dance as ritual specialists.",
+        "Replaced Britannica place pages with INAH deer dance, UNAM Anales Antropología, INAH pajko/Semana Santa article.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "mazahua-traditional",
       "title": "马萨瓦民间天主教与山灵祈福（Mazahua）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "农事与山灵祈请（概念层）",
-        "疗愈中介（高度敏感，仅概念）"
+        "Romería al Señor de Chalma pilgrimage public",
+        "Danza de las Pastoras; Parakata monarch butterfly ecological/ancestral symbol",
+        "Curandero HIGH SENSITIVITY CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Chalma romería; Pastoras dance; Parakata symbol; Curandero HIGH SENSITIVITY CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Chalma pilgrimage public, Pastoras, Parakata symbol, and Curandero CONCEPT; users don't officiate.",
+        "Sources: INPI Mazahua atlas, Monarch Joint Venture traditions blog, everyculture Mazahua religion.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "mazatec-traditional",
@@ -7034,16 +7094,22 @@
       "slug": "melanesia",
       "title": "美拉尼西亚（kastom、社区仪式与“货物运动”语境）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "社区宴飨与交换礼",
-        "沙画与礼仪知识传习（瓦努阿图）",
-        "地方教会—kastom 融合祈祷"
+        "Vanuatu Sand Drawing UNESCO ICH",
+        "Shell Money/Pig Exchange; church–kastom public",
+        "Kastom customary law clan-restricted CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed unify layer tags; Vanuatu Sand Drawing ICH; Kastom clan-restricted CONCEPT; Shell Money/Pig Exchange; church–kastom public."
+      ],
+      "actions": [
+        "Verified Melanesia-only file (no Mayo bleed); unified layer tags; enriched sand drawing ICH, shell money/pig exchange, kastom CONCEPT, church–kastom public.",
+        "Sources: UNESCO ICH 00073, UNESCO pigs/prestige PDF, Open Encyclopedia of Anthropology cargo cults.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "melpa-traditional",
@@ -7109,16 +7175,22 @@
       "slug": "mentawai-arat-sabulungan",
       "title": "明打威／阿拉特·萨布隆安（Mentawai／Arat Sabulungan）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "sikerei 职分与公共节庆（概念层）",
-        "长屋／乌玛（uma）与村寨空间（概念层）",
-        "森林伦理与生物圈语境（当代公共层）"
+        "Punun/Pasituat gathering",
+        "Sikerei shaman HIGH SENSITIVITY CONCEPT; Uma longhouse",
+        "Tattoo/plant healing CONCEPT — users don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:24:30Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Punun/Pasituat; Sikerei HIGH SENSITIVITY CONCEPT; Uma; tattoo/plant healing CONCEPT — users don't officiate."
+      ],
+      "actions": [
+        "Enriched Punun/Pasituat, Sikerei CONCEPT, Uma, tattoo/plant healing CONCEPT; users don't officiate.",
+        "Sources: UNESCO MAB Siberut, BBC Mentawai sikerei, KJSS DOI, Jantro DOI; removed Britannica place page.",
+        "Emphasized atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "meru-traditional",
@@ -12387,21 +12459,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-27",
-    "validated_at": "2026-09-15T14:12:12Z",
+    "name": "batch-28",
+    "validated_at": "2026-09-15T14:24:30Z",
     "slugs": [
-      "magar-traditional",
-      "mailu-traditional",
-      "makua-traditional",
-      "makwe-traditional",
-      "maldivian-islam",
-      "maleku-traditional",
-      "mam-maya",
-      "manchu-shamanism",
-      "mandinka-traditional",
-      "mangareva-traditional",
-      "mangyan-traditional",
-      "manjak-traditional"
+      "manobo-traditional",
+      "manus-traditional",
+      "marquesan-traditional",
+      "marshallese-traditional",
+      "matlatzinca-traditional",
+      "mayo-traditional",
+      "mazahua-traditional",
+      "melanesia",
+      "maori",
+      "marapu-sumba",
+      "mari-traditional",
+      "mentawai-arat-sabulungan"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

@@ -1227,3 +1227,39 @@
 - https://www.domowina.de/en/lusatian-sorbs/intangible-cultural-heritage/
 - https://www.regionen.sachsen.de/en/easter-rides-5619.html
 - https://www.oberlausitz.com/en/ostern
+
+## 增补传统（多尔干、乌德盖、伏尔加鞑靼、坎巴、恩德贝莱）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/dolgany
+- https://www.atlaskmns.ru/page/en/people_dolgany_spirit.html
+- https://doi.org/10.17516/1997-1370-0424
+- https://atlaskmns.ru/page/en/people_udegeicy_spirit.html
+- https://www.britannica.com/place/Sikhote-Alin
+- https://factsanddetails.com/world/cat55/sub350/item1919.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/volga-tatars
+- https://www.britannica.com/topic/Tatar
+- https://www.britannica.com/place/Tatarstan
+- https://www.britannica.com/topic/Kamba
+- http://www.bluegecko.org/kenya/tribes/kamba/beliefs.htm
+- https://artsandculture.google.com/story/kamba-beliefs-folklore-and-magic-national-museums-of-kenya/1QUxqjxoN2UGbQ?hl=en
+- https://www.everyculture.com/Africa-Middle-East/Ndebele-Religion-and-Expressive-Culture.html
+- https://sahistory.org.za/article/ndebele
+- https://www.britannica.com/topic/Ndebele-South-African-people
+
+## 增补传统（亚诺马米、托托纳克、楚克、布依、塞托）
+
+- https://www.everyculture.com/South-America/Yanomam-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Yanomami
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/Totonac
+- https://www.everyculture.com/Middle-America-Caribbean/Totonac-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/place/Veracruz-state-Mexico
+- https://pulotu.com/culture/chuuk
+- https://www.everyculture.com/Ma-Ni/Federated-States-of-Micronesia.html
+- https://www.britannica.com/place/Chuuk-Islands
+- https://www.britannica.com/topic/Buyei
+- https://factsanddetails.com/china/cat5/sub30/entry-4379.html
+- https://www.britannica.com/place/Guizhou
+- https://ich.unesco.org/en/RL/seto-leelo-seto-polyphonic-singing-tradition-00175
+- https://www.nationalgeographic.com/culture/article/setomaa-culture-estonia-russia-photographs
+- https://www.britannica.com/place/Estonia

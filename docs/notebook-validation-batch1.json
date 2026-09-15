@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "abruzzese-folk",
+    "title": "阿布鲁佐民间天主教与朝圣祈福（Abruzzese）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "圣母／山村朝圣（概念层）",
+      "主保节巡游（概念层）",
+      "灾后纪念与公共祈祷（概念层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "akha-traditional",
+    "title": "阿卡族传统信仰与秋千节祈福（Akha）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "秋千节公共层（节庆／观光可见）",
+      "祖先供奉与家屋礼仪焦点（敏感，仅概念）",
+      "村门、秋千架与礼仪权威（高度敏感，仅概念）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "aland-folk",
+    "title": "奥兰民间基督教与群岛祈福（Åland）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "路德宗礼拜与教会节期（概念层）",
+      "航海感恩与还愿（概念层）",
+      "仲夏等公共民俗层（概念层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "albanian-folk",
+    "title": "阿尔巴尼亚民间信仰与托莫尔山朝圣祈福（Albanian folk／Bektashi Tomorr）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "托莫尔山贝克塔什朝圣（公共层）",
+      "教堂／清真寺瞻礼与家庭祝福（公共层）",
+      "民间护佑与口头祝福余绪（概念层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "amazigh-berber",
+    "title": "阿马齐格／柏柏尔（Amazigh / Berber）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "圣徒陵寝朝拜与 *baraka* 求取",
+      "求雨仪式（如 Taghonja／“雨之新娘”概念）",
+      "节庆舞蹈与社群祝福（如 Ahwach／Ahidous、Taskiwin 概念）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "andalusian-folk",
+    "title": "安达卢西亚民间天主教与罗马里亚朝圣祈福（Andalusian）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "圣周游行（概念层）",
+      "Romería 乡村朝圣（概念层）",
+      "弥撒与生命礼仪（概念层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "andorran-folk",
+    "title": "安道尔民间天主教与山地朝圣祈福（Andorran）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "Meritxell 圣母敬礼（概念层）",
+      "堂区主保节（概念层）",
+      "山地还愿（概念层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "aragonese-folk",
+    "title": "阿拉贡民间天主教与朝圣祈福（Aragonese）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "皮拉尔圣母敬礼（概念层）",
+      "主保节与兄弟会巡游（概念层）",
+      "朝圣之路支线（概念层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "aromanian-folk",
+    "title": "阿罗马尼亚／巴尔干瓦拉几东正教祈福传统（Aromanian／Vlach）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "东正教圣礼与礼仪年（公共层）",
+      "主保圣人与村镇瞻礼（公共层）",
+      "牧养—商路记忆中的家庭祝福（公共文化层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "asturian-folk",
+    "title": "阿斯图里亚斯民间天主教与凯尔特余绪祈福（Asturian）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "科瓦东加等圣地朝圣（概念层）",
+      "主保节与山村巡游（概念层）",
+      "生命礼仪与海洋／矿山纪念（概念层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "bai-benzhu",
+    "title": "白族本主信仰（Bai Benzhu）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "本主庙日常敬拜（公开民俗层）",
+      "庙会巡游与绕三灵等节庆（公共文化层）",
+      "火把节等岁时焰火象征（公共民俗层）"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  },
+  {
+    "slug": "baltic-folk",
+    "title": "波罗的海民间信仰（立陶宛／拉脱维亚传统）",
+    "grade": "C",
+    "status": "pending",
+    "rituals": [
+      "灶火／圣火照料与对 Gabija 的祈请",
+      "岁时与农事开启礼（夏至、收获、春耕）",
+      "人生礼仪与十字／路旁圣所的祈愿"
+    ],
+    "validated_at": null,
+    "notebook_url": null,
+    "issues": [],
+    "actions": []
+  }
+]

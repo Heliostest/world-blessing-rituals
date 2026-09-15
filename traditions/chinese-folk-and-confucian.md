@@ -54,3 +54,6 @@
 
 - https://www.britannica.com/topic/Qingming-Festival
 - https://kids.britannica.com/students/article/ancestor-worship/272853
+- https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227
+- https://doi.org/10.54254/2753-7048/51/20240985
+- https://doi.org/10.3389/fpsyg.2024.1471431

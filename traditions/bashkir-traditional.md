@@ -53,5 +53,7 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bashkirs-0
 - https://en.wikipedia.org/wiki/Sabantuy
+- https://doi.org/10.15405/epsbs.2020.11.98
+- https://doi.org/10.22378/2410-0765.2025-15-4.109-127
+- https://tatar-congress.org/en/news/the-26th-tatar-bashkir-national-holiday-sabantuy-was-held-in-arkhangelsk/

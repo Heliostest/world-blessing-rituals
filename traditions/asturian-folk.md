@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Asturias
-- https://www.britannica.com/place/Covadonga
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://santuariodecovadonga.es/
+- https://www.turismoasturias.es/covadonga/espiritual

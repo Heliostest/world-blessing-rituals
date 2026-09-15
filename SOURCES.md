@@ -2572,3 +2572,35 @@
 - https://www.inah.gob.mx/foto-del-dia/la-danza-del-venado-simbolismo-del-mundo-natural
 - https://www.revistas.unam.mx/index.php/antropologia/article/view/30699
 - https://www.rmg.co.uk/collections/objects/rmgc-object-670368
+
+## 增补传统（Notebook source hunt C1：耆那—巴西利卡塔）
+
+- https://doi.org/10.1017/9781009614726
+- https://doi.org/10.1080/15426432.2024.2384381
+- https://doi.org/10.15405/epsbs.2020.11.98
+- https://doi.org/10.22378/2410-0765.2025-15-4.109-127
+- https://doi.org/10.3389/fpsyg.2024.1471431
+- https://doi.org/10.54254/2753-7048/51/20240985
+- https://doi.org/10.59277/ICSUGH.SINCAI.28.15
+- https://guiadigital.iaph.es/bien/inmaterial/195121
+- https://ich.unesco.org/en/RL/august-15th-dekapentavgoustos-festivities-in-two-highland-communities-of-northern-greece-tranos-choros-grand-dance-in-vlasti-and-syrrako-festival-01726
+- https://ich.unesco.org/en/RL/celestinian-forgiveness-celebration-01276
+- https://jainpedia.org/wp-content/uploads/2021/08/Voulume-1-Catalogue-of-the-Manuscripts-of-the-British-Library.pdf
+- https://museus.ad/en/monumentos/sanctuary-of-meritxell
+- https://patrimonioculturaldearagon.es/noticias/el-gobierno-de-aragon-anima-a-apoyar-a-la-jota-en-redes-sociales-este-15-de-agosto/
+- https://patrimonioculturaldearagon.es/patrimonio/fiestas-del-pilar/
+- https://repositorio.iaph.es/handle/11532/324987
+- https://santuariodecovadonga.es/
+- https://tatar-congress.org/en/news/the-26th-tatar-bashkir-national-holiday-sabantuy-was-held-in-arkhangelsk/
+- https://visitaland.com/en/experience/midsummer-in-aland/
+- https://visitaland.com/en/experience/sights-excursions/aland-churches/
+- https://wonbuddhism.org/teachings/
+- https://www.basilicataturistica.it/scopri-la-basilicata/matera-patrimonio-mondiale-dellumanita/matera-e-la-madonna-della-bruna/
+- https://www.festadellabruna.it/cose-la-festa/come-si-svolge/
+- https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra
+- https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/que-es-el-patrimoni-immaterial/les-festes-d-interes-cultural/l-aplec-de-la-mare-de-deu-de-meritxell
+- https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/semana-santa-de-almonte
+- https://www.metmuseum.org/art/collection/search/73824
+- https://www.metmuseum.org/essays/jain-manuscript-painting
+- https://www.nordiskamuseet.se/utforska/hogtider/midsommar/
+- https://www.turismoasturias.es/covadonga/espiritual

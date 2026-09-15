@@ -52,5 +52,7 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/wonbulgyo
 - https://wonbuddhism.org/sotaesan/
+- https://wonbuddhism.org/teachings/
+- https://doi.org/10.1080/15426432.2024.2384381
+- https://doi.org/10.1017/9781009614726

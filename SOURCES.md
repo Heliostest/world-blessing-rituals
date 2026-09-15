@@ -2456,3 +2456,30 @@
 - https://www.britannica.com/topic/Tzutujil
 - https://www.britannica.com/place/Lake-Atitlan
 - https://www.britannica.com/topic/Maya-people
+
+## 增补传统（帕利库尔、科卡马、卡希博、卡纳马里、夸拉阿埃、安布里姆、安本杜、卡法、布罗克巴、乔尔蒂）
+
+- https://www.britannica.com/place/French-Guiana
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Amazon-River
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Ucayali-River
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/place/Solomon-Islands
+- https://www.britannica.com/place/Malaita
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/Ambrym
+- https://www.britannica.com/place/Vanuatu
+- https://www.britannica.com/topic/Mbundu
+- https://www.britannica.com/place/Angola
+- https://www.britannica.com/place/Luanda
+- https://www.britannica.com/place/Ethiopia
+- https://www.britannica.com/topic/Kaffa
+- https://www.britannica.com/topic/coffee
+- https://www.britannica.com/place/Ladakh
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/place/India
+- https://www.britannica.com/topic/Chorti
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/place/Copan

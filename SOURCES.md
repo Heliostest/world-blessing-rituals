@@ -1191,3 +1191,39 @@
 - https://www.britannica.com/topic/Bektashi
 - https://www.britannica.com/topic/Sufism
 - https://balkaninsight.com/2016/05/18/quarries-make-hellish-mess-of-albania-s-holy-mountain-05-16-2016/
+
+## 增补传统（尤卡吉尔、乌尔奇、奥万博、查加、蒂库纳）
+
+- https://www.britannica.com/topic/Yukaghir
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/yukagir
+- https://www.atlaskmns.ru/page/en/people_yukagiry_spirit.html
+- https://www.atlaskmns.ru/page/en/people_ulchi_spirit.html
+- https://www.britannica.com/place/Amur-River
+- https://factsanddetails.com/world/cat55/sub350/item1919.html
+- https://www.britannica.com/topic/Ambo-people
+- https://www.britannica.com/place/Namibia
+- https://www.vestiges-journal.info/CSACMonog/Davies_thesis/chap1.pdf
+- https://www.encyclopedia.com/places/africa/tanzania-political-geography/chagga
+- https://www.britannica.com/place/Kilimanjaro
+- https://www.britannica.com/place/Tanzania
+- https://www.everyculture.com/South-America/Ticuna-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/place/Brazil
+
+## 增补传统（拉坎顿、波纳佩、嘉莱、加告兹、索布）
+
+- https://www.britannica.com/topic/Lacandon
+- https://www.mpm.edu/research-collections/anthropology/online-collections-research/lacandon-collection/social-life
+- https://www.britannica.com/topic/Maya-people
+- https://www.everyculture.com/Oceania/Pohnpei-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/place/Pohnpei-island-Micronesia
+- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
+- https://www.britannica.com/place/Vietnam
+- https://doi.org/10.24821/ijcas.v3i1.1830
+- https://doi.org/10.54607/hcmue.js.21.9.4296(2024)
+- https://www.britannica.com/place/Moldova
+- https://doi.org/10.25501/soas.00029297
+- https://www.britannica.com/topic/Eastern-Orthodoxy
+- https://www.domowina.de/en/lusatian-sorbs/intangible-cultural-heritage/
+- https://www.regionen.sachsen.de/en/easter-rides-5619.html
+- https://www.oberlausitz.com/en/ostern

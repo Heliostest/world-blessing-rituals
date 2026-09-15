@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 545,
-    "passed_after_fix": 109,
-    "passed": 71,
+    "pending": 533,
+    "passed_after_fix": 115,
+    "passed": 77,
     "skipped": 1
   },
   "items": [
@@ -892,31 +892,41 @@
       "slug": "aymara",
       "title": "艾马拉祈福与大地母亲礼仪（Aymara／Pachamama）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Alasita 微型物祈愿与仪式旅程（公开遗产层）",
-        "八月 Pachamama 供桌／mesita（概念层）",
-        "日常 ch’alla 与土地许可（概念层）"
+        "Alasita 与 Ekeko 微型物祈愿（公开遗产层）",
+        "Yatiri 主持 Mesita — 用户仅观礼（观礼层）",
+        "日常 ch’alla CONCEPT（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Ekeko; Yatiri hosts Mesita — users view only; Alasita; ch’alla CONCEPT."
+      ],
+      "actions": [
+        "Enriched Ekeko/Alasita naming; Yatiri hosts Mesita (users view only); ch’alla CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "azande-traditional",
       "title": "阿赞德传统宗教与祈福概观（Azande／Zande）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "对 Mbori 与祖灵的敬奉叙述（概念层）",
-        "神谕与纠纷调解（高度敏感，禁止操作）",
+        "Mbori 与 Ataro 祖灵敬奉叙述（概念层）",
+        "Benge 毒神谕 FORBIDDEN OPS CONCEPT ONLY（高度敏感）",
         "教会生活与当代先知运动（公共／当代层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Mbori; Ataro; Benge poison oracle FORBIDDEN OPS CONCEPT ONLY."
+      ],
+      "actions": [
+        "Enriched Mbori/Ataro naming; Benge FORBIDDEN OPS CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "baganda-lubaale",
@@ -937,16 +947,21 @@
       "slug": "bahai",
       "title": "巴哈伊信仰（Baháʼí Faith）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "每日义务祷与个人灵修",
-        "十九日灵宴会（Nineteen Day Feast）",
-        "灵曦堂崇拜与灵修聚会"
+        "每日义务祷与个人灵修（概念层）",
+        "十九日灵宴会（Nineteen Day Feast）— 社区聚会",
+        "Mashriqu'l-Adhkár（灵曦堂）崇拜与灵修聚会"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Mashriqu'l-Adhkár; Nineteen Day Feast as community gathering."
+      ],
+      "actions": [
+        "Enriched Mashriqu'l-Adhkár naming; Nineteen Day Feast framed as community gathering.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bai-benzhu",
@@ -984,16 +999,21 @@
       "slug": "bajau-traditional",
       "title": "巴瑶／萨马海洋伊斯兰与海灵祈福（Bajau／Sama）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与生命礼仪（概念层）",
-        "海洋生计与海灵敬意（概念层）",
-        "通灵／占卜并行实践（高度敏感，仅概念）"
+        "Umboh Dilaut 与海洋敬意（概念层）",
+        "Duata／Magpaayau 海祝福节庆 CONCEPT（概念层）",
+        "Jinan 灵媒 HIGH SENSITIVITY CONCEPT ONLY（高度敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Umboh Dilaut; Duata/Magpaayau sea blessing festival CONCEPT; Jinan medium HIGH SENSITIVITY CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Umboh Dilaut, Duata/Magpaayau CONCEPT, and Jinan HIGH SENSITIVITY CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bakongo-kongo",
@@ -1014,76 +1034,101 @@
       "slug": "bakweri-traditional",
       "title": "巴克韦里传统信仰与火山—祖灵祈福（Bakweri／Kwe）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与山灵伦理（概念层）",
-        "教堂崇拜（概念层）",
-        "火山纪念与公共感恩（概念层）"
+        "Efasa Moto 火山守护命名（概念层）",
+        "Male 象面具社团（PUBLIC knowledge only）",
+        "教堂崇拜与火山公共纪念（公开层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Efasa Moto volcano guardian naming; Male elephant-mask society PUBLIC knowledge only — no secret ops."
+      ],
+      "actions": [
+        "Reframed rituals to Efasa Moto naming, Male PUBLIC knowledge only (no secret ops), and church/volcano public memorial.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "balanta-traditional",
       "title": "巴兰塔传统信仰与稻作祈福（Balanta）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与稻作伦理（概念层）",
-        "教堂／清真寺公开崇拜（概念层）",
-        "社群和解与命名（概念层）"
+        "Nhala 祖先与 Bolanha 潮汐稻作伦理（概念层）",
+        "Fanado 成丁／入会 HIGH SENSITIVITY CONCEPT ONLY（高度敏感）",
+        "教堂／清真寺公开崇拜与和解命名（公开层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Nhala; Fanado initiation HIGH SENSITIVITY CONCEPT ONLY; Bolanha tidal rice."
+      ],
+      "actions": [
+        "Reframed rituals to Nhala/Bolanha, Fanado HIGH SENSITIVITY CONCEPT ONLY, and church/mosque public.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "balinese-hindu",
       "title": "巴厘印度教（Agama Hindu Dharma / Agama Tirta）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "庙宇节庆与 *déwa yajña*（敬神祭）",
-        "圣水求取与洁净（*tirta*）",
-        "人生礼仪与亡者祭（*manuṣa*／*pitṛ yajña* 概念）"
+        "Canang sari 与 Odalan 庙宇节庆（公开／概念层）",
+        "Pemangku 与圣水洁净（*tirta*）（概念层）",
+        "Ngaben 火葬 — priest-led viewing only（观礼层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Canang sari; Odalan; Pemangku; Ngaben priest-led viewing only."
+      ],
+      "actions": [
+        "Enriched Canang sari/Odalan/Pemangku; Ngaben priest-led viewing only.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "baloch-traditional",
       "title": "俾路支民间伊斯兰与部落荣誉祈福（Baloch）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与伊斯兰节日（概念层）",
-        "苏菲圣地朝谒（概念层）",
-        "生命礼仪与调解伦理（概念层）"
+        "清真寺礼拜与苏菲圣地（公开／概念层）",
+        "Zikri Koh-e-Murad 朝圣命名（概念层）",
+        "Gwati 音乐疗愈 CONCEPT（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Zikri Koh-e-Murad pilgrimage; Gwati music healing CONCEPT; mosque/Sufi."
+      ],
+      "actions": [
+        "Reframed rituals to mosque/Sufi, Zikri Koh-e-Murad pilgrimage naming, and Gwati music healing CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "balti-traditional",
       "title": "巴尔蒂伊斯兰与喀喇昆仑民间祈福（Balti）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "日常礼拜与聚礼（概念层）",
-        "穆哈兰姆／阿舒拉纪念（敏感，仅概念）",
-        "高山行旅与家屋祝福（概念层）"
+        "Noorbakshia／日常礼拜与聚礼（概念层）",
+        "Lossar 巴尔蒂新年火把祝福（公开／概念层）",
+        "穆哈兰姆／阿舒拉（敏感，viewing-only）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Noorbakshia; Lossar Balti New Year torch blessing; Muharram/Ashura viewing-only sensitive."
+      ],
+      "actions": [
+        "Reframed rituals to Noorbakshia, Lossar torch blessing, and Muharram/Ashura viewing-only sensitive.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "baltic-folk",
@@ -1106,16 +1151,21 @@
       "slug": "bambara-bamana",
       "title": "班巴拉／巴马纳传统宗教（Bambara／Bamana）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Chiwara／Tyiwara 农耕纪念舞（概念层）",
-        "祖先与村落 dasiri 奉献（概念层）",
-        "启蒙社团（Ndomo、Komo 等）（限制性公共知识层）"
+        "Chiwara 羚羊头饰农耕纪念舞（概念层）",
+        "Dasiri 村落守护奉献（概念层）",
+        "Komo／Ndomo STRICT boundary CONCEPT（限制性）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Chiwara antelope headdress dance; Dasiri; Komo/Ndomo STRICT boundary CONCEPT."
+      ],
+      "actions": [
+        "Enriched Chiwara antelope headdress dance; Dasiri; Komo/Ndomo STRICT boundary CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bamileke-traditional",
@@ -1166,16 +1216,21 @@
       "slug": "bantu-ubuntu",
       "title": "班图世界观与乌班图（Ubuntu）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先沟通与家祭（概要）",
-        "和解与复原礼仪",
-        "生命周期祝福"
+        "Amadlozi／Badimo 祖灵记忆叙事（概念层）",
+        "Kgotla／Inkundla 和解伦理（NON-operational）",
+        "生命周期祝福（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed reframe as Amadlozi/Badimo ancestral memory narrative; Kgotla/Inkundla reconciliation ethics — NON-operational (not a how-to)."
+      ],
+      "actions": [
+        "Reframed rituals to Amadlozi/Badimo ancestral memory narrative and Kgotla/Inkundla reconciliation ethics (NON-operational).",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "baruya-traditional",
@@ -1236,16 +1291,21 @@
       "slug": "basotho-sotho",
       "title": "巴索托／索托祖先祝福传统（Basotho／Sotho）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "院落祭坛与祖先奉献（民俗层）",
-        "传统医者与神启者（限制性公共知识层）",
-        "成丁学校与村社生活礼仪（限制性名称层）"
+        "Badimo 院落祭坛与祖先奉献（民俗／概念层）",
+        "Mathuela／Ngaka CONCEPT（限制性公共知识层）",
+        "Lebollo CONCEPT ONLY；Seana Marena 公共文化（限制性名称层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:12:40Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Badimo; Mathuela/Ngaka CONCEPT; Lebollo CONCEPT ONLY; Seana Marena."
+      ],
+      "actions": [
+        "Enriched Badimo; Mathuela/Ngaka CONCEPT; Lebollo CONCEPT ONLY; Seana Marena public culture.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "basque-folk",
@@ -11667,21 +11727,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-15",
-    "validated_at": "2026-09-15T11:07:25Z",
+    "name": "batch-16",
+    "validated_at": "2026-09-15T11:12:40Z",
     "slugs": [
-      "ambonese-traditional",
-      "ambundu-traditional",
-      "amuzgo-traditional",
-      "andean",
-      "angami-traditional",
-      "anuak-traditional",
-      "avar-traditional",
-      "amis-taiwan",
-      "apatani-traditional",
-      "areare-traditional",
-      "ashaninka-traditional",
-      "atayal-taiwan"
+      "bajau-traditional",
+      "bakweri-traditional",
+      "balanta-traditional",
+      "baloch-traditional",
+      "balti-traditional",
+      "bantu-ubuntu",
+      "aymara",
+      "azande-traditional",
+      "bahai",
+      "balinese-hindu",
+      "bambara-bamana",
+      "basotho-sotho"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

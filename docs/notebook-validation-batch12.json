@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "thai-spirit-houses",
+    "title": "泰国神屋／土地灵（San phra phum / phi）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "日常供养：Nam Daeng 与 Phuang Malai（访客可见层）",
+      "Khuen San／Mor Khwan 安放与礼俗咨询（CONCEPT ONLY）",
+      "Erawan／四面神等公共神社礼敬（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Nam Daeng, Phuang Malai; Khuen San / Mor Khwan consecration CONCEPT ONLY; Erawan public shrine."
+    ],
+    "actions": [
+      "Reframed rituals to Nam Daeng/Phuang Malai, Khuen San/Mor Khwan CONCEPT ONLY, and Erawan public shrine.",
+      "Preserved 手机互动适合度 C; educational; no consecration/initiation how-to."
+    ]
+  },
+  {
+    "slug": "ticinese-folk",
+    "title": "提契诺民间天主教与阿尔卑斯朝圣祈福（Ticinese）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Mendrisio 圣周游行（UNESCO／公共层）",
+      "Madonna del Sasso 与主保 feste（概念层）",
+      "阿尔卑斯牧牛下山祝福（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Mendrisio Holy Week UNESCO; Madonna del Sasso; patron feste; Alpine cattle descent blessing."
+    ],
+    "actions": [
+      "Reframed rituals to Mendrisio Holy Week, Madonna del Sasso + patron feste, and Alpine cattle descent blessing.",
+      "Preserved 手机互动适合度 C; educational; no clerical how-to."
+    ]
+  },
+  {
+    "slug": "tokelauan-traditional",
+    "title": "托克劳传统信仰与村社祈福余绪（Tokelauan）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Inati 渔获分享与村社教会礼拜（公共层）",
+      "Fate 舞蹈与岛级节庆（公共文化层）",
+      "Tui Tokelau 珊瑚／圣石记忆（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Inati fish sharing; Fate dance; Tui Tokelau coral/sacred stone memory; church."
+    ],
+    "actions": [
+      "Reframed rituals to Inati + church, Fate dance, and Tui Tokelau coral/sacred stone memory.",
+      "Preserved 手机互动适合度 C; educational; no sacrifice/secret how-to."
+    ]
+  },
+  {
+    "slug": "tornedalian-folk",
+    "title": "托尔内谷民间基督教与梅安基利祈福（Tornedalian／Meänkieli）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Laestadian Seurat 与路德宗礼拜（概念层）",
+      "Kukkolaforsen lippous 渔季祝福（概念层）",
+      "Meänkieli 语言日感恩（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Laestadian Seurat; Kukkolaforsen lippous fishing-season blessing; Meänkieli language day."
+    ],
+    "actions": [
+      "Reframed rituals to Laestadian Seurat, Kukkolaforsen lippous blessing, and Meänkieli language day.",
+      "Preserved 手机互动适合度 C; educational; no clerical how-to."
+    ]
+  },
+  {
+    "slug": "totonac-traditional",
+    "title": "托托纳克民间天主教与山灵祈福（Totonac）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Danza de los Voladores（UNESCO／公共文化层）",
+      "圣徒节庆与 cargo 赞助（公共层）",
+      "Kiwikgolo 森林灵敬礼（CONCEPT）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Danza de los Voladores UNESCO; Kiwikgolo forest spirit CONCEPT; cargo saints."
+    ],
+    "actions": [
+      "Reframed rituals to Voladores UNESCO, cargo saints, and Kiwikgolo CONCEPT.",
+      "Preserved 手机互动适合度 C; educational; no sacrifice/initiation how-to."
+    ]
+  },
+  {
+    "slug": "trentino-folk",
+    "title": "特伦蒂诺民间天主教与阿尔卑斯祈福（Trentino）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "San Romedio 悬崖圣地朝圣（概念层）",
+      "Madonna di Piné 朝圣（概念层）",
+      "Desmalaiar 牧牛下山祝福（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed San Romedio cliff shrine; Madonna di Piné; Desmalaiar cattle descent."
+    ],
+    "actions": [
+      "Reframed rituals to San Romedio, Madonna di Piné, and Desmalaiar cattle descent.",
+      "Preserved 手机互动适合度 C; educational; no clerical how-to."
+    ]
+  },
+  {
+    "slug": "tuvaluan-traditional",
+    "title": "图瓦卢传统信仰与村社祈福余绪（Tuvaluan）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Fatele 与 Maneapa 村社欢庆（公共文化层）",
+      "Gospel Day／EKT 教会礼拜（公共层）",
+      "tapu 记忆（CONCEPT）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Fatele; Maneapa; Gospel Day / EKT church; tapu memory CONCEPT."
+    ],
+    "actions": [
+      "Reframed rituals to Fatele/Maneapa, Gospel Day/EKT church, and tapu memory CONCEPT.",
+      "Preserved 手机互动适合度 C; educational; no secret/sacrifice how-to."
+    ]
+  },
+  {
+    "slug": "umbrian-folk",
+    "title": "翁布里亚民间天主教与朝圣祈福（Umbrian）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Assisi Basilica di San Francesco 朝圣（概念层）",
+      "Gubbio Festa dei Ceri（公共层）",
+      "Cascia Santa Rita 玫瑰朝圣（概念层）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Assisi Basilica San Francesco; Gubbio Festa dei Ceri; Cascia Santa Rita rose pilgrimage."
+    ],
+    "actions": [
+      "Reframed rituals to Assisi Basilica, Gubbio Festa dei Ceri, and Cascia Santa Rita rose pilgrimage.",
+      "Preserved 手机互动适合度 C; educational; no clerical how-to."
+    ]
+  },
+  {
+    "slug": "theravada-buddhism",
+    "title": "上座部佛教（泰缅斯里等地）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "Pindapata 托钵与 Grot Nam 浇水回向（作福层）",
+      "Kathina 功德衣与 Songkran 浴佛（节庆层）",
+      "短期出家（CONCEPT naming only）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: Grot Nam water dedication; Pindapata; Kathina; Songkran bath; short ordination CONCEPT naming only."
+    ],
+    "actions": [
+      "Enriched rituals with Grot Nam, Pindapata, Kathina, Songkran bath, and short-ordination CONCEPT naming only.",
+      "Preserved 手机互动适合度 C; educational; no ordination/initiation how-to."
+    ]
+  },
+  {
+    "slug": "tibetan-buddhism",
+    "title": "藏传佛教",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "转经筒 mani、磕长头与绕圣 kora",
+      "风马旗 lungta 与放生",
+      "Saga Dawa 与 Chöme 酥油灯（节庆／日常层）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: Saga Dawa; Chöme butter lamps; keep kora/mani/prostrations/lungta/release."
+    ],
+    "actions": [
+      "Enriched rituals with Saga Dawa and Chöme butter lamps while retaining kora/mani/prostrations/lungta/release.",
+      "Preserved 手机互动适合度 C; educational; no empowerment/secret how-to."
+    ]
+  },
+  {
+    "slug": "tongan-faa-tonga",
+    "title": "汤加／法阿汤加村社礼仪与祝福文化（Tongan／Faʻa Tonga）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "Taʻovala 着装尊重与 Taumafa Kava（公共礼仪／限制性知识层）",
+      "Lakalaka 舞蹈与吟诵演说（公共文化／非遗层）",
+      "教会礼拜与 fonua 伦理（民俗层）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: Taʻovala; Taumafa Kava; Lakalaka; church/fonua."
+    ],
+    "actions": [
+      "Enriched rituals foregrounding Taʻovala, Taumafa Kava, Lakalaka, and church/fonua.",
+      "Preserved 手机互动适合度 C; educational; no kava-hosting/initiation how-to."
+    ]
+  },
+  {
+    "slug": "tujia-traditional",
+    "title": "土家族摆手与祖先祈福传统（Tujia／Bizika）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "摆手舞 Baishou 与社巴节 Sheba（公开节庆层）",
+      "八部大王等祖先祭祀（CONCEPT）",
+      "梯玛 Tima（CONCEPT ONLY／强尊重）"
+    ],
+    "validated_at": "2026-09-15T10:31:47Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: 梯玛 Tima CONCEPT ONLY strong respect; Sheba festival; Baishou dance; Eight Kings ancestral rites CONCEPT."
+    ],
+    "actions": [
+      "Enriched rituals with Baishou/Sheba, Eight Kings CONCEPT, and Tima CONCEPT ONLY with strong respect.",
+      "Preserved 手机互动适合度 C; educational; no initiation/sacrifice/secret how-to."
+    ]
+  }
+]

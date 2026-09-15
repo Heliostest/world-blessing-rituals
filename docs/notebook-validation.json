@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 509,
-    "passed_after_fix": 129,
-    "passed": 87,
+    "pending": 497,
+    "passed_after_fix": 134,
+    "passed": 94,
     "skipped": 1
   },
   "items": [
@@ -2299,61 +2299,81 @@
       "slug": "choctaw-traditional",
       "title": "乔克托传统宗教与青玉米礼（Choctaw）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "青玉米礼／Okissa 与跺舞（高度敏感，仅公开叙述层）",
-        "生命伦理、医者与和谐观（概念层）",
-        "社群节庆中的社会认同舞与公共文化表达"
+        "Green Corn／Okissa（公开叙述层）",
+        "Luak Pila 圣火记忆与 Stomp Dance（公共／概念层）",
+        "healers CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Enrich: Green Corn / Okissa; Luak Pila sacred fire memory; Stomp Dance public; healers CONCEPT."
+      ],
+      "actions": [
+        "Enriched Green Corn/Okissa, Luak Pila sacred fire memory, Stomp Dance public, and healers CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "chokwe-traditional",
       "title": "乔奎传统宗教与祖先—面具祈福（Chokwe）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先敬礼与家庭危机应对（概念层）",
-        "面具公共展演层（敏感，仅概念）",
-        "基督教并行（概念层）"
+        "Pwo 与 Cikunza 面具舞（公共文化层）",
+        "祖先敬礼（概念层）",
+        "Mukanda UNESCO CONCEPT ONLY sealed；教会并行"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Needed Mukanda initiation UNESCO CONCEPT ONLY sealed; Pwo & Cikunza mask dances public culture; ancestors; church."
+      ],
+      "actions": [
+        "Reframed rituals to Pwo/Cikunza public culture, ancestors CONCEPT, and Mukanda UNESCO CONCEPT ONLY sealed; church parallel.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "chol-traditional",
       "title": "乔尔玛雅民间天主教与恰帕斯祈福（Chol）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣徒节与教堂祈福（公开层）",
-        "农作与十字伦理（概念层）",
-        "洞穴与圣物传统（极高敏感，仅概念）"
+        "Señor de Tila 黑基督朝圣（公开层）",
+        "玉米与绿十字伦理（概念层）",
+        "Cueva de Don Juan 雨穴 EXTREME CONCEPT／观礼"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Needed Señor de Tila Black Christ pilgrimage; Cueva de Don Juan rain cave EXTREME CONCEPT/viewing; maize & green cross."
+      ],
+      "actions": [
+        "Reframed rituals to Señor de Tila pilgrimage, maize & green cross, and Cueva de Don Juan EXTREME CONCEPT/viewing.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "chorti-traditional",
       "title": "乔尔蒂玛雅民间天主教与危地马拉—洪都拉斯祈福（Ch'orti'）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保圣人节（公开层）",
-        "农作与雨水伦理（概念层）",
-        "更封闭的圣地实践（敏感，仅概念）"
+        "Esquipulas 黑基督朝圣／敬礼（公开层）",
+        "玉米生长伦理（概念层）",
+        "Padrinos de la Lluvia CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Needed Esquipulas Black Christ; Padrinos de la Lluvia rain godfathers CONCEPT ONLY; maize growth."
+      ],
+      "actions": [
+        "Reframed rituals to Esquipulas Black Christ, maize growth, and Padrinos de la Lluvia CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "christianity",
@@ -2374,16 +2394,21 @@
       "slug": "chuj-traditional",
       "title": "丘赫玛雅民间天主教与跨界祈福（Chuj）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "山灵与农事祈请（概念层）",
-        "日师传统（高度敏感，仅概念）"
+        "San Mateo Ixtatán 主保节与盐矿祝福叙事（公开／概念层）",
+        "山神龛／山灵圣地（概念层）",
+        "Ajk'in daykeeper CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Needed San Mateo Ixtatán feast & salt mine blessing narrative; Ajk'in daykeeper CONCEPT ONLY; mountain shrines."
+      ],
+      "actions": [
+        "Reframed rituals to San Mateo Ixtatán/salt mine narrative, mountain shrines CONCEPT, and Ajk'in CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "chukchi-traditional",
@@ -2424,16 +2449,21 @@
       "slug": "chuvash-traditional",
       "title": "楚瓦什传统信仰（Chuvash traditional religion／Tură／Kiremet）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "村社田野祈祷与历法奉献（概念层）",
-        "Kiremet 圣所敬畏规矩（概念层）",
-        "丧葬纪念与家屋祈安（概念层）"
+        "Akatuy 与 Tură 敬礼（公开／概念层）",
+        "Kiremet 圣林规矩观礼",
+        "Yupikh 祖先纪念（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Enrich: Akatuy; Tură; Kiremet sacred grove rules viewing; Yupikh ancestral memorial."
+      ],
+      "actions": [
+        "Enriched Akatuy/Tură, Kiremet sacred grove rules viewing, and Yupikh ancestral memorial.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "circassian-traditional",
@@ -2495,16 +2525,21 @@
       "slug": "cook-islands-maori",
       "title": "库克群岛毛利文化与 marae 祈福余绪（Cook Islands Māori／Māori Kūki ʻĀirani）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Marae 礼仪空间与酋长权威（历史—遗产层）",
-        "基督教礼拜与岛民节庆叠合（当代公开层）",
-        "公开文化展演与迎客礼仪（文化层）"
+        "Te Maeva Nui（公开文化层）",
+        "Turou／Peʻe 迎宾与吟诵（文化层）",
+        "Marae／Ariki 遗产（历史—遗产层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Enrich: Te Maeva Nui; Turou/Pe'e; Marae/Ariki heritage."
+      ],
+      "actions": [
+        "Enriched Te Maeva Nui, Turou/Pe'e, and Marae/Ariki heritage framing.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "coptic-orthodox",
@@ -2629,16 +2664,21 @@
       "slug": "cuicatec-traditional",
       "title": "奎卡特克民间天主教与山灵祈福（Cuicatec）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "山灵—洞穴圣地祈请（敏感，仅概念）",
-        "疗愈中介（高度敏感，仅概念）"
+        "San Juan Bautista Cuicatlán 主保节（公开／概念层）",
+        "洞穴自然灵 CONCEPT",
+        "Curandero CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Needed San Juan Bautista Cuicatlán; cave nature spirits CONCEPT; Curandero CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to San Juan Bautista Cuicatlán, cave nature spirits CONCEPT, and Curandero CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "cypriot-folk",
@@ -2678,31 +2718,41 @@
       "slug": "dagomba-traditional",
       "title": "达贡巴传统信仰与加纳北部祈福（Dagomba / Dagbamba）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "祖灵与酋长伦理（敏感，仅概念）",
-        "鼓乐与公开展演（公开／敏感交界）",
-        "伊斯兰／基督教并存（公开层）"
+        "Damba UNESCO 节庆（公开遗产层）",
+        "Ya-Na 与 Lunsi 宫廷鼓手（概念／公开交界）",
+        "祖灵观礼与伊斯兰／基督教并存"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Enrich: Damba UNESCO; Ya-Na; Lunsi court drummers; ancestors viewing."
+      ],
+      "actions": [
+        "Enriched Damba UNESCO, Ya-Na, Lunsi court drummers, and ancestors viewing.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "dai-xishuangbanna",
       "title": "傣族／西双版纳上座部与寨神祈福（Dai）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "佛寺礼佛与布施（概念层）",
-        "泼水节等岁时公共节庆（概念层）",
-        "寨神／地方灵敬礼（高度敏感，仅概念）"
+        "Tan／dana 佛寺礼佛与布施（概念层）",
+        "Songkran／Sangkran 泼水节（公开／概念层）",
+        "Pha Ban＋Pa Chang CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Enrich: Tan dana; Songkran/Sangkran; Pha Ban village spirit + Pa Chang priest CONCEPT ONLY."
+      ],
+      "actions": [
+        "Enriched Tan/dana, Songkran/Sangkran, and Pha Ban + Pa Chang CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "dalecarlian-folk",
@@ -2743,16 +2793,21 @@
       "slug": "daoism",
       "title": "道教",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "斋醮（斋醮）",
-        "上表／章奏",
-        "功德拔度仪式"
+        "斋醮（高功主持—用户观礼／参与）",
+        "上表／章奏与请愿 CONCEPT viewing",
+        "功德拔度（概念／观礼层）；无用户作为高功"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Enrich: high priest hosts zhai/jiao — users view/participate only; memorials/petitions CONCEPT viewing; no user as 高功."
+      ],
+      "actions": [
+        "Enriched high-priest-hosts/users-view framing for zhai/jiao; memorials/petitions CONCEPT viewing; no user as 高功.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "datoga-traditional",
@@ -2773,16 +2828,21 @@
       "slug": "daur-traditional",
       "title": "达斡尔传统信仰与萨满—敖包祈福（Daur）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "敖包公共祭祀（概念层）",
-        "天神与家户守护（概念层）",
-        "萨满疗愈与当代复兴（高度敏感，仅概念）"
+        "Aoboo／oboo 公共祭祀（公开／概念层）",
+        "Anian 新年（公开／概念层）",
+        "Yadgan shaman CONCEPT ONLY no ops"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "issues": [
+        "Enrich: Aoboo/oboo public; Anian New Year; Yadgan shaman CONCEPT ONLY no ops."
+      ],
+      "actions": [
+        "Enriched Aoboo/oboo public, Anian New Year, and Yadgan CONCEPT ONLY no ops.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ],
+      "validated_at": "2026-09-15T11:44:32Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
     },
     {
       "slug": "deori-traditional",

@@ -21,6 +21,10 @@
   .toolbar input[type="search"] {
     flex:1 1 160px; min-width:120px; padding:.4rem .55rem; border:1px solid #ccc; border-radius:6px; font-size:.9rem;
   }
+  .grade-filters { display:inline-flex; flex-wrap:wrap; gap:.55rem; align-items:center; font-size:.85rem; color:var(--muted); }
+  .grade-filters label { display:inline-flex; align-items:center; gap:.25rem; cursor:pointer; user-select:none; }
+  .grade-filters input { margin:0; }
+
   .year-label { font-variant-numeric: tabular-nums; font-weight:600; min-width:4.5rem; }
   .count { font-size:.85rem; color:var(--muted); }
   #map { flex:1 1 auto; min-height:200px; }
@@ -56,6 +60,11 @@
       <input type="search" id="search" placeholder="搜索标题…" autocomplete="off"/>
       <span class="year-label">年：<span id="yearNum">2026</span></span>
       <span class="count" id="countLabel">—</span>
+      <span class="grade-filters" id="gradeFilters" title="勾选显示对应档位">
+        <label><input type="checkbox" name="grade" value="A" checked/> <i class="dot A"></i>A</label>
+        <label><input type="checkbox" name="grade" value="B" checked/> <i class="dot B"></i>B</label>
+        <label><input type="checkbox" name="grade" value="C" checked/> <i class="dot C"></i>C</label>
+      </span>
     </div>
   </header>
   <div id="map"></div>
@@ -66,10 +75,8 @@
       <span style="font-size:.8rem;color:#555">2026</span>
     </div>
     <div class="legend">
-      <span><i class="dot A"></i>档位 A（高敏感）</span>
-      <span><i class="dot B"></i>档位 B</span>
-      <span><i class="dot C"></i>档位 C</span>
-      <span>可见规则：year_start ≤ 当前年，且 year_end 为空或 ≥ 当前年</span>
+      <span>上方勾选可显示／隐藏 A／B／C</span>
+      <span>可见规则：year_start ≤ 当前年，且 year_end 为空或 ≥ 当前年；并受档位勾选过滤</span>
     </div>
   </div>
 </div>
@@ -89,6 +96,7 @@
   let data = [];
   let year = 2026;
   let query = '';
+  let enabledGrades = { A: true, B: true, C: true };
 
   function fmtYear(y) {
     if (y == null) return '今';
@@ -144,6 +152,10 @@
     for (const item of data) {
       if (!visibleAt(item, year)) continue;
       if (!matchesQuery(item, query)) continue;
+      const g = item.grade || '?';
+      if (g === 'A' || g === 'B' || g === 'C') {
+        if (!enabledGrades[g]) continue;
+      }
       n++;
       const m = L.marker([item.lat, item.lon], { icon: markerIcon(item.grade) });
       m.bindPopup(popupHtml(item), { maxWidth: 280 });
@@ -161,6 +173,12 @@
   document.getElementById('search').addEventListener('input', function (e) {
     query = (e.target.value || '').trim().toLowerCase();
     render();
+  });
+  document.querySelectorAll('#gradeFilters input[name="grade"]').forEach(function (cb) {
+    cb.addEventListener('change', function () {
+      enabledGrades[cb.value] = cb.checked;
+      render();
+    });
   });
 
   fetch('./map-data.json')

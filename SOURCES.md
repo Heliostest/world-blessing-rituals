@@ -1371,3 +1371,36 @@
 - https://www.britannica.com/topic/Vlach
 - https://www.britannica.com/topic/Eastern-Orthodoxy
 - https://www.britannica.com/place/Balkans
+
+## 增补传统（特勒乌特、索约特、傣族西双版纳、阿留申、索马里、古拉格、希卢克、维奇、马克萨斯、西西里圣罗萨莉亚）
+
+- https://www.atlaskmns.ru/page/en/people_teleuty_spirit.html
+- https://en.wikipedia.org/wiki/Teleuts
+- https://www.britannica.com/place/Altai-Mountains
+- https://www.atlaskmns.ru/page/en/people_sojoty_spirit.html
+- https://joshuaproject.net/people_groups/19736/RS
+- https://brill.com/view/journals/inas/22/2/article-p237_6.xml
+- https://www.everyculture.com/Russia-Eurasia-China/Dai-Religion-and-Expressive-Culture.html
+- https://digitalcollections.sit.edu/isp_collection/2070
+- https://www.britannica.com/topic/Dai
+- https://www.everyculture.com/North-America/Aleut-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aleuts
+- http://www.amiq.org/aleuts.html
+- https://www.britannica.com/topic/Somali-people
+- https://www.hornheritage.org/sufi-shrines/
+- https://www.britannica.com/topic/Sufism
+- https://www.britannica.com/topic/Gurage
+- https://www.britannica.com/place/Ethiopia
+- https://www.britannica.com/topic/Ethiopian-Orthodox-Tewahedo-Church
+- https://www.britannica.com/topic/Shilluk
+- https://www.britannica.com/topic/divine-kingship
+- https://www.britannica.com/place/South-Sudan
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mataco
+- https://www.britannica.com/place/Gran-Chaco
+- https://www.diva-portal.org/smash/get/diva2:130447/FULLTEXT01.pdf
+- https://www.everyculture.com/Oceania/Marquesas-Islands-Religion-and-Expressive-Culture.html
+- https://whc.unesco.org/en/list/1707/
+- https://www.britannica.com/place/Marquesas-Islands
+- https://www.britannica.com/biography/Saint-Rosalia
+- https://www.britannica.com/place/Palermo-Italy
+- https://www.britannica.com/place/Monte-Pellegrino

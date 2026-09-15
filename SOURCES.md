@@ -1774,3 +1774,34 @@
 - https://www.britannica.com/place/Tikopia
 - https://www.britannica.com/topic/Tikopia
 - https://www.britannica.com/place/Solomon-Islands
+
+## 增补传统（苏米、唐萨、科尼亚克、撒哈拉威、卡拉莫琼、奇南特克、马约、诺曼底／海峡群岛、瓦尔瑟、阿努塔）
+
+- https://journals.sagepub.com/doi/10.1177/0049085714561836
+- https://www.southasianist.ed.ac.uk/southasianist/article/view/1852
+- https://www.britannica.com/place/Nagaland
+- https://doi.org/10.11588/iaf.2015.46.3708
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://www.britannica.com/place/Assam
+- https://www.britannica.com/topic/Konyak
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Sahrawi
+- https://www.britannica.com/place/Western-Sahara
+- https://www.britannica.com/topic/Islam
+- https://www.britannica.com/topic/Karamojong
+- https://www.britannica.com/place/Karamoja
+- https://www.britannica.com/place/Uganda
+- https://www.britannica.com/topic/Chinantec
+- https://www.britannica.com/place/Oaxaca-state-Mexico
+- https://www.britannica.com/place/Mexico
+- https://www.britannica.com/topic/Mayo-people
+- https://www.britannica.com/place/Sonora
+- https://www.britannica.com/place/Mont-Saint-Michel
+- https://www.britannica.com/place/Normandy
+- https://www.britannica.com/place/Channel-Islands-archipelago-English-Channel
+- https://www.britannica.com/topic/Walser
+- https://www.britannica.com/place/Alps
+- https://www.britannica.com/place/Switzerland
+- https://www.britannica.com/place/Anuta
+- https://www.britannica.com/place/Solomon-Islands
+- https://www.britannica.com/place/Polynesia

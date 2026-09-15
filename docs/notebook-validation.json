@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 557,
-    "passed_after_fix": 102,
-    "passed": 66,
+    "pending": 545,
+    "passed_after_fix": 109,
+    "passed": 71,
     "skipped": 1
   },
   "items": [
@@ -402,16 +402,21 @@
       "slug": "ambonese-traditional",
       "title": "安汶基督教／伊斯兰与马鲁古习惯法祈福（Ambonese）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "教堂或清真寺公共崇拜（概念层）",
-        "Adat 和解与生命礼仪（概念层）",
-        "和平纪念与共同节庆（概念层）"
+        "Pela Gandong 跨教结盟与和平纪念（公开／概念层）",
+        "Adat 习惯法与 Raja 祝福 CONCEPT（概念层）",
+        "清真寺／教堂公共崇拜（公开层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Pela Gandong interfaith alliance; Adat; Raja blessing CONCEPT; mosque/church public."
+      ],
+      "actions": [
+        "Reframed rituals to Pela Gandong, Adat/Raja blessing CONCEPT, and mosque/church public layer.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "ambrym-traditional",
@@ -432,46 +437,61 @@
       "slug": "ambundu-traditional",
       "title": "安本杜传统信仰与北部安哥拉祈福（Ambundu / Kimbundu）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖灵伦理（敏感，仅概念）",
+        "Mukishi／Hamba 祖灵伦理与 Nzambi 命名（敏感，仅 CONCEPT）",
         "基督教公开礼拜（公开层）",
-        "国家文化日与音乐公开层（概念）"
+        "Dikanza／Semba 公共音乐与国家文化日（公开层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Mukishi/Hamba ancestors CONCEPT; Nzambi naming; Dikanza/Semba public music; church."
+      ],
+      "actions": [
+        "Reframed rituals to Mukishi/Hamba + Nzambi CONCEPT, church public, and Dikanza/Semba public music.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "amis-taiwan",
       "title": "阿美族丰年祭／Ilisin（Amis／Pangcah，台湾）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Ilisin／丰年祭公开节庆层",
-        "年龄阶级与集体歌舞（概念层）",
-        "祖灵致谢与都市返乡（概念层）"
+        "Ilisin／Kiluma’an 公开节庆层（vs 限制性仪轨）",
+        "Cikawasay CONCEPT boundary（概念层）",
+        "年龄阶级、集体歌舞与祖灵致谢／都市返乡（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Kiluma'an; Cikawasay CONCEPT boundary; Ilisin public vs restricted rites."
+      ],
+      "actions": [
+        "Enriched Kiluma'an naming, Cikawasay CONCEPT boundary, and Ilisin public vs restricted rites.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "amuzgo-traditional",
       "title": "阿穆斯戈民间天主教与纺织—雨神祈福（Amuzgo）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "雨神—玉米祈请（概念层）",
-        "纺织与女性礼仪空间（概念层）"
+        "Huipil 纺织与女性礼仪空间（公共文化／概念层）",
+        "San Pedro 主保节与 mayordomía（公开层）",
+        "雨神—玉米祈请（CONCEPT ONLY）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Huipil; San Pedro mayordomía; rain/corn deities CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Huipil, San Pedro mayordomía, and rain/corn deities CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "andalusian-folk",
@@ -494,16 +514,21 @@
       "slug": "andean",
       "title": "安第斯／印加余绪（despacho、pago a la tierra）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "大地酬付（pago a la tierra / despacho）",
-        "洒酒祝福（ch’alla 等）",
-        "社区节庆与朝圣"
+        "Paqo 主持 Despacho／pago a la tierra（观礼层）",
+        "Kintu 古柯叶与 ch’alla 洒酒（CONCEPT）",
+        "Qoyllurit'i 朝圣命名与社区节庆（公开命名层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Paqo performs Despacho — users view only; Kintu coca leaves CONCEPT; Qoyllurit'i pilgrimage naming; ch’alla CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals so Paqo performs Despacho (users view only); Kintu/ch’alla CONCEPT; Qoyllurit'i naming.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "andorran-folk",
@@ -526,16 +551,21 @@
       "slug": "angami-traditional",
       "title": "安加米那加基督教与普夫察纳祈福余绪（Angami）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "浸信会／基督教崇拜（概念层）",
-        "Pfütsana 护持与岁时（高度敏感，仅概念）",
-        "文化节中的认同展演（概念层）"
+        "Sekrenyi 与 Hornbill Festival（公开文化层）",
+        "Feast of Merit 历史 CONCEPT（概念层）",
+        "Pfütsana 护持与基督教并存（高度敏感，CONCEPT ONLY）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Sekrenyi; Hornbill Festival; Feast of Merit historical CONCEPT; Pfütsana CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Sekrenyi/Hornbill, Feast of Merit historical CONCEPT, and Pfütsana CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "anishinaabe-ojibwe",
@@ -556,16 +586,21 @@
       "slug": "anuak-traditional",
       "title": "阿努阿克传统宗教与尼罗河岸祈福（Anuak）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与村社秩序敬礼（概念层）",
-        "河岸生计伦理（概念层）",
-        "基督教并行与当代调适（概念层）"
+        "Kwaaro 神圣领导 CONCEPT（概念层）",
+        "Juok 与祖先敬礼（概念层）",
+        "Akura 河岸生计祝福叙事与基督教并行（概念／公开层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kwaaro sacred leadership CONCEPT; Juok; Akura riverside livelihood blessing narrative."
+      ],
+      "actions": [
+        "Reframed rituals to Kwaaro CONCEPT, Juok, and Akura riverside livelihood blessing narrative.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "anuta-traditional",
@@ -631,16 +666,21 @@
       "slug": "apatani-traditional",
       "title": "阿帕塔尼传统信仰与日—月祈福（Apatani）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Dree／Myoko 等岁时节庆（概念层）",
+        "Dree／Myoko 岁时节庆与 Lapang（概念／公开命名层）",
         "日—月敬礼与家屋伦理（概念层）",
-        "萨满中介（高度敏感，仅概念）"
+        "Nyibu／占卜／血祭（高度敏感，CONCEPT ONLY — forbidden ops）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Dree; Myoko; Lapang; Nyibu/divination/blood CONCEPT ONLY forbidden ops."
+      ],
+      "actions": [
+        "Enriched Dree/Myoko/Lapang naming; Nyibu/divination/blood CONCEPT ONLY with forbidden ops.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "aragonese-folk",
@@ -663,16 +703,21 @@
       "slug": "areare-traditional",
       "title": "阿雷阿雷传统信仰与马莱塔祈福（Are'are）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "音乐与公开展演（公开／敏感交界）",
-        "贝币与交换伦理（敏感，仅概念）",
-        "基督教与丧礼（敏感，仅概念）"
+        "‘Au 排笛与公开展演（公开／敏感交界）",
+        "Tafuli’e 贝币与交换伦理（敏感，仅概念）",
+        "Akalo 祖先 CONCEPT 与基督教／丧礼边界（敏感，仅概念）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich 'Au panpipes; Tafuli'e shell money; Akalo CONCEPT."
+      ],
+      "actions": [
+        "Enriched 'Au panpipes, Tafuli'e shell money, and Akalo CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "arhuaco-traditional",
@@ -725,16 +770,21 @@
       "slug": "ashaninka-traditional",
       "title": "阿沙宁卡传统信仰与亚马孙祈福（Asháninka）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "月亮节／Kashirí 相关庆祝叙述（公共文化层）",
-        "萨满中介与善恶灵力叙事（高度敏感，仅概念）",
+        "月亮节／Kashirí 与 Masato 共享叙述（公共文化层）",
+        "Sheripiari CONCEPT（高度敏感，仅概念）",
         "丧葬迁居伦理与教会生活（部分敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Sheripiari CONCEPT; Masato; tobacco/plant spirit medicine NO ops."
+      ],
+      "actions": [
+        "Enriched Sheripiari CONCEPT, Masato naming; tobacco/plant spirit medicine NO ops.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "asmat-traditional",
@@ -787,16 +837,21 @@
       "slug": "atayal-taiwan",
       "title": "台湾泰雅族祖灵信仰与 gaga 祭仪（Atayal／Tayal）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "播种祭 smyatu（概念层）",
-        "祖灵祭 maho（限制性公共知识层）",
-        "织布、纹面文化与和解礼仪 sbalay（公共文化／概念层）"
+        "Utux／Gaga 伦理与播种祭 smyatu（概念层）",
+        "Maho 祖灵祭（internal viewing only）",
+        "Ptasan 纹面文化、织布与和解礼仪 sbalay（公共文化／概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Utux; Gaga; Ptasan tattoo culture; Maho internal viewing only."
+      ],
+      "actions": [
+        "Enriched Utux/Gaga, Ptasan tattoo culture; Maho internal viewing only.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "australian-aboriginal",
@@ -817,16 +872,21 @@
       "slug": "avar-traditional",
       "title": "阿瓦尔民间伊斯兰与达吉斯坦圣地祈福（Avar）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与伊斯兰节日（概念层）",
-        "谢赫陵／圣地朝谒（概念层）",
-        "苏菲赞念余绪（敏感，仅概念）"
+        "清真寺礼拜与 Naqshbandi／Imam Shamil 记忆（概念／公开层）",
+        "Ziyarat 谢赫陵／圣地朝谒（概念层）",
+        "Dhikr 苏菲赞念余绪（敏感，CONCEPT ONLY）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:07:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Naqshbandi; Imam Shamil memory; Ziyarat shrines; Dhikr CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Naqshbandi/Imam Shamil memory, Ziyarat shrines, and Dhikr CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "aymara",
@@ -11607,21 +11667,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-14",
-    "validated_at": "2026-09-15T10:59:48Z",
+    "name": "batch-15",
+    "validated_at": "2026-09-15T11:07:25Z",
     "slugs": [
-      "abkhaz-traditional",
-      "acehnese-traditional",
-      "acholi-traditional",
-      "adi-traditional",
-      "aleut-unangan-traditional",
-      "altai-burkhanism",
-      "alur-traditional",
-      "abaza-traditional",
-      "acoma-traditional",
-      "afar-traditional",
-      "ahom-phuralung",
-      "alevi"
+      "ambonese-traditional",
+      "ambundu-traditional",
+      "amuzgo-traditional",
+      "andean",
+      "angami-traditional",
+      "anuak-traditional",
+      "avar-traditional",
+      "amis-taiwan",
+      "apatani-traditional",
+      "areare-traditional",
+      "ashaninka-traditional",
+      "atayal-taiwan"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

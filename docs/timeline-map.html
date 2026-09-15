@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>世界祈福仪式 · 时间轴地图</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<style>
+  :root { --panel: rgba(255,255,255,.94); --ink:#1a1a1a; --muted:#555; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans SC", sans-serif; color:var(--ink); }
+  #wrap { display:flex; flex-direction:column; height:100%; }
+  header {
+    flex:0 0 auto; padding:.55rem .85rem; background:var(--panel); border-bottom:1px solid #ddd;
+    z-index:1000; position:relative;
+  }
+  header h1 { margin:0; font-size:1.05rem; font-weight:650; }
+  .disclaimer { margin:.25rem 0 0; font-size:.78rem; color:var(--muted); line-height:1.35; }
+  .toolbar { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin-top:.45rem; }
+  .toolbar input[type="search"] {
+    flex:1 1 160px; min-width:120px; padding:.4rem .55rem; border:1px solid #ccc; border-radius:6px; font-size:.9rem;
+  }
+  .year-label { font-variant-numeric: tabular-nums; font-weight:600; min-width:4.5rem; }
+  .count { font-size:.85rem; color:var(--muted); }
+  #map { flex:1 1 auto; min-height:200px; }
+  .bottom {
+    flex:0 0 auto; padding:.55rem .85rem .75rem; background:var(--panel); border-top:1px solid #ddd;
+    z-index:1000;
+  }
+  .slider-row { display:flex; align-items:center; gap:.65rem; }
+  input[type="range"] { flex:1; width:100%; }
+  .legend { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:.4rem; font-size:.8rem; color:var(--muted); }
+  .legend span { display:inline-flex; align-items:center; gap:.3rem; }
+  .dot { width:10px; height:10px; border-radius:50%; display:inline-block; border:1px solid #3333; }
+  .dot.A { background:#e74c3c; }
+  .dot.B { background:#f39c12; }
+  .dot.C { background:#27ae60; }
+  .leaflet-popup-content { margin:.6rem .8rem; font-size:.88rem; line-height:1.4; max-width:260px; }
+  .leaflet-popup-content a { color:#0b5fff; }
+  .popup-title { font-weight:650; font-size:1rem; margin-bottom:.25rem; }
+  .popup-meta { color:#444; font-size:.82rem; }
+  .err { padding:1rem; color:#a00; }
+  @media (max-width:600px) {
+    header h1 { font-size:.95rem; }
+    .disclaimer { font-size:.72rem; }
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <h1>世界祈福、功德与祈祷仪式 · 时间轴地图</h1>
+    <p class="disclaimer">年代为概略示意，非精确考古测年；地点为核心区近似坐标。多数条目以形成／首次文献或民族志记载为时间轴起点，并非“创立日”。</p>
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="搜索标题…" autocomplete="off"/>
+      <span class="year-label">年：<span id="yearNum">2026</span></span>
+      <span class="count" id="countLabel">—</span>
+    </div>
+  </header>
+  <div id="map"></div>
+  <div class="bottom">
+    <div class="slider-row">
+      <span style="font-size:.8rem;color:#555">−3000</span>
+      <input type="range" id="yearSlider" min="-3000" max="2026" value="2026" step="1"/>
+      <span style="font-size:.8rem;color:#555">2026</span>
+    </div>
+    <div class="legend">
+      <span><i class="dot A"></i>档位 A（高敏感）</span>
+      <span><i class="dot B"></i>档位 B</span>
+      <span><i class="dot C"></i>档位 C</span>
+      <span>可见规则：year_start ≤ 当前年，且 year_end 为空或 ≥ 当前年</span>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+  const GRADE_COLOR = { A: '#e74c3c', B: '#f39c12', C: '#27ae60', '?': '#888' };
+  const map = L.map('map', { worldCopyJump: true }).setView([20, 20], 2);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap &copy; CARTO',
+    subdomains: 'abcd',
+    maxZoom: 18
+  }).addTo(map);
+
+  const layer = L.layerGroup().addTo(map);
+  let data = [];
+  let year = 2026;
+  let query = '';
+
+  function fmtYear(y) {
+    if (y == null) return '今';
+    if (y < 0) return '前' + Math.abs(y);
+    return String(y);
+  }
+
+  function visibleAt(item, y) {
+    if (item.year_start > y) return false;
+    if (item.year_end != null && item.year_end < y) return false;
+    return true;
+  }
+
+  function matchesQuery(item, q) {
+    if (!q) return true;
+    return (item.title || '').toLowerCase().includes(q) ||
+           (item.slug || '').toLowerCase().includes(q) ||
+           (item.region || '').toLowerCase().includes(q);
+  }
+
+  function markerIcon(grade) {
+    const c = GRADE_COLOR[grade] || GRADE_COLOR['?'];
+    return L.divIcon({
+      className: '',
+      html: '<div style="width:12px;height:12px;border-radius:50%;background:' + c +
+            ';border:1.5px solid #fff;box-shadow:0 0 2px rgba(0,0,0,.45)"></div>',
+      iconSize: [12, 12],
+      iconAnchor: [6, 6]
+    });
+  }
+
+  function popupHtml(item) {
+    const range = fmtYear(item.year_start) + ' – ' + fmtYear(item.year_end);
+    return '<div class="popup-title">' + escapeHtml(item.title) + '</div>' +
+      '<div class="popup-meta">' +
+      '地区：' + escapeHtml(item.region) + '<br/>' +
+      '年代：' + escapeHtml(range) + '（' + escapeHtml(item.date_basis) + '）<br/>' +
+      '说明：' + escapeHtml(item.date_note) + '<br/>' +
+      '档位：' + escapeHtml(item.grade) + ' · 置信：' + escapeHtml(item.confidence) + '<br/>' +
+      '<a href="' + escapeAttr(item.github_url) + '" target="_blank" rel="noopener">GitHub 条目</a>' +
+      '</div>';
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function escapeAttr(s) { return escapeHtml(s).replace(/'/g,'&#39;'); }
+
+  function render() {
+    layer.clearLayers();
+    let n = 0;
+    for (const item of data) {
+      if (!visibleAt(item, year)) continue;
+      if (!matchesQuery(item, query)) continue;
+      n++;
+      const m = L.marker([item.lat, item.lon], { icon: markerIcon(item.grade) });
+      m.bindPopup(popupHtml(item), { maxWidth: 280 });
+      m.addTo(layer);
+    }
+    document.getElementById('countLabel').textContent = '显示 ' + n + ' / ' + data.length;
+    document.getElementById('yearNum').textContent = fmtYear(year);
+  }
+
+  const slider = document.getElementById('yearSlider');
+  slider.addEventListener('input', function () {
+    year = parseInt(slider.value, 10);
+    render();
+  });
+  document.getElementById('search').addEventListener('input', function (e) {
+    query = (e.target.value || '').trim().toLowerCase();
+    render();
+  });
+
+  fetch('./map-data.json')
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function (json) {
+      data = json;
+      let ymin = 3000, ymax = -3000;
+      for (const it of data) {
+        if (it.year_start < ymin) ymin = it.year_start;
+        const end = it.year_end == null ? 2026 : it.year_end;
+        if (end > ymax) ymax = end;
+      }
+      // keep slider ~ -3000..2026 but clamp label context
+      slider.min = String(Math.min(-3000, ymin));
+      slider.max = '2026';
+      slider.value = '2026';
+      year = 2026;
+      render();
+    })
+    .catch(function (err) {
+      document.getElementById('map').innerHTML =
+        '<p class="err">无法加载 map-data.json（' + escapeHtml(err.message) +
+        '）。请在 docs/ 目录运行：python3 -m http.server 8000 然后打开 http://localhost:8000/timeline-map.html</p>';
+    });
+})();
+</script>
+</body>
+</html>

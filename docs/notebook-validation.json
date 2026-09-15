@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 533,
-    "passed_after_fix": 115,
-    "passed": 77,
+    "pending": 521,
+    "passed_after_fix": 122,
+    "passed": 82,
     "skipped": 1
   },
   "items": [
@@ -1328,31 +1328,41 @@
       "slug": "batak-parmalim",
       "title": "巴塔克帕马林／乌加莫马林（Parmalim／Ugamo Malim）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
         "Marari Sabtu／周六礼拜（公开可见层）",
-        "Sipaha Sada 与 Sipaha Lima（年度大礼，概念层）",
-        "人生礼仪：出生、婚祝、丧葬与洁净（概念层）"
+        "Sipaha 观礼边界（年度大礼）",
+        "Debata Asiasi／Ihutan 祭司命名（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Debata Asiasi; Ihutan priests; Sipaha viewing boundaries; Marari Sabtu."
+      ],
+      "actions": [
+        "Enriched Debata Asiasi/Ihutan naming; Sipaha viewing boundaries; Marari Sabtu public layer.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bathou-bodo",
       "title": "博多／巴托信仰（Bathou）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "家庭／村落 Bathousali 与 Sijou（概念层）",
-        "Kherai 等公共祭仪（限制性公共知识层）",
-        "Garja 与农事／洁净相关礼仪（概念层）"
+        "Sijou 圣树与 Bathousali（概念层）",
+        "Kherai 限制性公共舞蹈观礼（限制性公共知识层）",
+        "Doudini medium CONCEPT 与 Garja（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Sijou sacred tree; Doudini medium CONCEPT; Kherai restricted dance viewing."
+      ],
+      "actions": [
+        "Enriched Sijou sacred tree; Doudini CONCEPT; Kherai restricted dance viewing.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "baul-bengal",
@@ -1415,31 +1425,41 @@
       "slug": "bhutanese-drukpa",
       "title": "不丹竹巴噶举／宁玛佛教与策秋节祈福传统（Bhutanese Buddhism）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "策秋节与宗教假面舞（公共朝圣层）",
-        "经幡与转经（日常功德层）",
-        "Drametse 鼓之假面舞（遗产名称层）"
+        "策秋／Throngdrel — monks perform／users view（公共朝圣层）",
+        "经幡 prayer flags 与转经（日常功德层）",
+        "Drametse Ngacham 鼓之假面舞（遗产／观礼层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Drametse Ngacham; Throngdrel; monks perform / users view; prayer flags."
+      ],
+      "actions": [
+        "Enriched Drametse Ngacham/Throngdrel; monks perform / users view; prayer flags naming.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bhutia-traditional",
       "title": "布蒂亚藏传与锡金祈福（Bhutia）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "寺院供灯与转经（公开层）",
-        "节庆与法舞公开层（概念）",
-        "密续与闭关（极高敏感，仅概念）"
+        "Pang Lhabsol／Kangchenjunga 守护法舞（概念／观礼层）",
+        "Losoong 锡金新年（公开／概念层）",
+        "密续与闭关 CONCEPT ONLY（极高敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Pang Lhabsol Kangchenjunga / guardian dances; Losoong Sikkim New Year; tantra/retreat CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Pang Lhabsol/Kangchenjunga guardian dances, Losoong, and tantra/retreat CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bijago-traditional",
@@ -1507,31 +1527,41 @@
       "slug": "bon",
       "title": "苯教（Bön / Bon）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "圣地绕行与朝山（概念层）",
-        "熏香祭与地方神灵供养（*bsang* 等，概念层）",
-        "亡者护佑与公开节庆法舞（概念层）"
+        "逆时针 Kora 与朝山（概念层）",
+        "Yungdrung 与 Bsang 熏香祭（概念层）",
+        "Cham 法舞观礼 CONCEPT（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: counterclockwise Kora; Yungdrung; Bsang; Cham viewing CONCEPT."
+      ],
+      "actions": [
+        "Enriched counterclockwise Kora; Yungdrung; Bsang; Cham viewing CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bontoc-traditional",
       "title": "邦都传统信仰与卢马维格—祖灵祈福（Bontoc）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
         "Lumawig 与祭司礼仪（概念层）",
-        "Anito 咨问与疗愈中介（高度敏感，仅概念）",
-        "基督教并行（概念层）"
+        "Ato 议事屋与 Tengao 禁忌日（概念层）",
+        "Insupak／Anito CONCEPT ONLY（高度敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Lumawig; Ato council houses; Tengao taboo days; Insupak/Anito CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Lumawig, Ato/Tengao, and Insupak/Anito CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bora-traditional",
@@ -1552,16 +1582,21 @@
       "slug": "borana-traditional",
       "title": "博拉纳传统信仰与东非牧祈福（Borana）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "盖达伦理与和平（概念层）",
-        "井泉与牧界祝福（敏感，仅概念）",
-        "伊斯兰／基督教并存（公开层）"
+        "Gadaa UNESCO 与 Waaqa 伦理（概念层）",
+        "Singing Wells 与牧界祝福（敏感，仅概念）",
+        "Kallu 精神领袖 viewing-only（观礼层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Gadaa UNESCO; Waaqa; Kallu; Singing Wells; spiritual leaders viewing-only."
+      ],
+      "actions": [
+        "Reframed rituals to Gadaa UNESCO/Waaqa, Singing Wells, and Kallu viewing-only.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bornholm-folk",
@@ -1599,31 +1634,41 @@
       "slug": "boruca-traditional",
       "title": "博鲁卡传统信仰与收获节祈福（Boruca／Brunca）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "主保节／教堂礼仪（概念层）",
-        "小魔鬼舞等认同展演（敏感，仅概念）",
-        "土地与手工艺伦理（概念层）"
+        "雕刻面具与认同展演（概念／观礼；NOT exorcism how-to）",
+        "植物染色纺织与手工艺伦理（概念层）",
+        "抵抗记忆与教堂礼仪（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: carved masks; plant-dyed textiles; resistance memory; NOT exorcism how-to."
+      ],
+      "actions": [
+        "Enriched carved masks, plant-dyed textiles, resistance memory; explicit NOT exorcism how-to.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bozo-traditional",
       "title": "博佐传统信仰与尼日尔河渔猎祈福（Bozo）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜（概念层）",
-        "水灵与渔捞伦理（敏感，仅概念）",
-        "祖先敬礼（概念层）"
+        "Sogo Bò 水上木偶／假面表演 UNESCO（公开遗产层）",
+        "Faro／Kano 水灵 CONCEPT ONLY（敏感）",
+        "清真寺礼拜与祖先敬礼（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Sogo Bò water puppetry UNESCO; Faro/Kano water spirits CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Sogo Bò UNESCO, Faro/Kano CONCEPT ONLY, and mosque/ancestor public.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "breton-pardons",
@@ -1661,16 +1706,21 @@
       "slug": "brokpa-traditional",
       "title": "布罗克巴传统信仰与拉达克—边境祈福（Brokpa）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "社区节庆公开层（概念）",
-        "寺院与地方神（公开／敏感交界）",
-        "更封闭的驱邪／神谕（极高敏感，仅概念）"
+        "Montho Tipi 花饰头饰与社区节庆（概念／观礼）",
+        "Bono-na 收获／丰饶节（概念层）",
+        "神谕／驱邪 EXTREME CONCEPT ONLY（极高敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Montho Tipi flower headdress; Bono-na harvest/fertility festival; oracle/exorcism EXTREME CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Montho Tipi, Bono-na, and oracle/exorcism EXTREME CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bugis-bissu",
@@ -1706,16 +1756,21 @@
       "slug": "bugun-traditional",
       "title": "布贡传统信仰与东尼—波罗—基督教祈福（Bugun／Khowa）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "仪者中介与农事／疗愈礼仪（高度敏感，仅概念）",
-        "本土信仰公共层（概念层）",
-        "基督教堂会实践（概念层）"
+        "Pham-Kho-Sowai 收获／水灵节庆（概念／观礼）",
+        "Phabi 祭司 CONCEPT viewing-only（高度敏感）",
+        "基督教堂会与本土信仰公共层（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Pham-Kho-Sowai harvest/water-spirit festival; Phabi priest CONCEPT viewing-only."
+      ],
+      "actions": [
+        "Reframed rituals to Pham-Kho-Sowai, Phabi CONCEPT viewing-only, and church/indigenous public.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bulgarian-nestinarstvo",
@@ -1736,16 +1791,21 @@
       "slug": "bunak-traditional",
       "title": "布纳克传统信仰与帝汶山地习惯法祈福（Bunak）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "天主教堂区礼仪（概念层）",
-        "Lulik 与习惯法和解（敏感，仅概念）",
-        "生命礼仪与共食（概念层）"
+        "Deu Lulik 圣屋（概念层）",
+        "Adat／Tarabandu 保育约定与 Lulik 和解 CONCEPT（敏感）",
+        "天主教堂区礼仪与生命礼仪（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:19:37Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Deu Lulik sacred houses; Adat/Tarabandu conservation covenants; Lulik reconciliation CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Deu Lulik, Adat/Tarabandu, and Lulik reconciliation CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "bunun-taiwan",
@@ -11727,21 +11787,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-16",
-    "validated_at": "2026-09-15T11:12:40Z",
+    "name": "batch-17",
+    "validated_at": "2026-09-15T11:19:37Z",
     "slugs": [
-      "bajau-traditional",
-      "bakweri-traditional",
-      "balanta-traditional",
-      "baloch-traditional",
-      "balti-traditional",
-      "bantu-ubuntu",
-      "aymara",
-      "azande-traditional",
-      "bahai",
-      "balinese-hindu",
-      "bambara-bamana",
-      "basotho-sotho"
+      "bhutia-traditional",
+      "bontoc-traditional",
+      "borana-traditional",
+      "bozo-traditional",
+      "brokpa-traditional",
+      "bugun-traditional",
+      "bunak-traditional",
+      "batak-parmalim",
+      "bathou-bodo",
+      "bhutanese-drukpa",
+      "bon",
+      "boruca-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

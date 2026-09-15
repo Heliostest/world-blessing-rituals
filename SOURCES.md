@@ -1660,3 +1660,33 @@
 - https://www.britannica.com/place/Tuamotu-Archipelago
 - https://www.britannica.com/place/French-Polynesia
 - https://www.britannica.com/place/Polynesia
+
+## 增补传统（阿帕塔尼、查克玛、若开、桑义赫、塔卡利、弗留利、罗曼什、阿巴扎、科西嘉、钦布）
+
+- http://intangibleheritage.intach.org/study-of-the-intangible-heritage-of-the-apatani-tribe-arunachal-pradesh/
+- https://airs.org.in/wp-content/uploads/2024/10/A-GLIMPSE-OF-SHAMANISM-AND-RELIGIOUS-WORLD-VIEW-OF-APATANI-TRIBE.pdf
+- https://www.newworldencyclopedia.org/entry/Apatani
+- https://www.britannica.com/topic/Chakma
+- https://en.wikipedia.org/wiki/Chakma_people
+- https://www.britannica.com/topic/Theravada
+- https://www.britannica.com/place/Rakhine
+- https://www.britannica.com/place/Myanmar
+- https://www.britannica.com/place/Sangihe-Islands
+- https://www.britannica.com/place/North-Sulawesi
+- https://www.britannica.com/topic/Protestantism
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/place/Mustang
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/place/Friuli-Venezia-Giulia
+- https://www.britannica.com/topic/Friulian-language
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/topic/Romansh-language
+- https://www.britannica.com/place/Graubunden
+- https://www.britannica.com/place/Switzerland
+- https://www.britannica.com/topic/Abaza
+- https://www.britannica.com/place/Karachay-Cherkessia
+- https://www.britannica.com/topic/Islam
+- https://www.britannica.com/place/Corsica
+- https://www.britannica.com/place/Mediterranean-Sea
+- https://www.britannica.com/place/Chimbu
+- https://www.britannica.com/place/Papua-New-Guinea

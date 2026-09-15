@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 665,
-    "passed_after_fix": 26,
-    "passed": 34,
+    "pending": 653,
+    "passed_after_fix": 33,
+    "passed": 39,
     "skipped": 1
   },
   "items": [
@@ -3980,16 +3980,21 @@
       "slug": "ivatan-traditional",
       "title": "伊瓦坦民间天主教与巴丹群岛祈福（Ivatan）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与弥撒（概念层）",
-        "海洋／风暴相关还愿（概念层）",
-        "生命礼仪（概念层）"
+        "Kapayvanuvanua 开海与 Anito 供奉余绪（概念层 ONLY）",
+        "Payuhuan 互助家屋祝福（概念层）",
+        "堂区主保节／fiesta 与台风还愿弥撒（公共层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kapayvanuvanua opening-sea / Anito offerings CONCEPT ONLY; Payuhuan mutual-aid house blessing; parish fiesta/typhoon votive Mass."
+      ],
+      "actions": [
+        "Reframed rituals to Kapayvanuvanua+Anito CONCEPT ONLY, Payuhuan house blessing, and parish fiesta/typhoon votive Mass.",
+        "Kept educational overview; no Anito/opening-sea how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "ixil-traditional",
@@ -4010,16 +4015,18 @@
       "slug": "jainism",
       "title": "耆那教",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "圣像普迦（Jain puja）",
-        "忏悔仪轨（pratikraman）",
-        "布施与护生实践"
+        "Tirthankara 圣像普迦（Jain puja）",
+        "Pratikraman 与 Paryushana／Samvatsari",
+        "Ahimsa 与 dāna 布施护生实践"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Paryushana; Samvatsari; Tirthankara puja; pratikraman; ahimsa/dāna naming clarified."
+      ]
     },
     {
       "slug": "jakaltek-traditional",
@@ -4040,16 +4047,21 @@
       "slug": "jamtland-folk",
       "title": "耶姆特兰民间基督教与山林祈福（Jamtland）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "路德宗礼拜与教会节期（概念层）",
-        "山林／渔猎季节伦理（概念层）",
-        "仲夏等公共民俗层（概念层）"
+        "St. Olavsleden 朝圣与圣奥拉夫瞻礼民俗（概念层）",
+        "Fäbod 夏牧场祝福与 Kulning（概念层）",
+        "仲夏与教会节期公共民俗层（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed St. Olavsleden pilgrimage; Fäbod summer pasture blessing; Kulning; midsummer & St Olav feast folklore."
+      ],
+      "actions": [
+        "Added St. Olavsleden, Fäbod+Kulning, and midsummer/St Olav feast folklore naming.",
+        "Kept educational concept-only tone; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "jarai-traditional",
@@ -4235,16 +4247,21 @@
       "slug": "kalenjin-traditional",
       "title": "卡伦金传统宗教与阿西斯祈福（Kalenjin）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "向 Asis 的公共／路边祈请（概念层）",
-        "祖灵 oiik 与雷电叙事（概念层）",
-        "教会生活与占卜余绪（公共／部分敏感）"
+        "Koros 祭坛向 Asis 求雨祈请（概念层，无献牲 how-to）",
+        "Tumdo 年龄级过渡（CONCEPT ONLY；强烈注意与尊重）",
+        "Orkoiyot 祈请领导命名与教会生活（公共／概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Koros altar Asis rain prayer CONCEPT (no sacrifice how-to); Tumdo age-set initiation CONCEPT ONLY with strong 注意与尊重; Orkoiyot prayer leadership naming."
+      ],
+      "actions": [
+        "Reframed to Koros/Asis rain CONCEPT (no sacrifice how-to); Tumdo CONCEPT ONLY with strong respect warnings; Orkoiyot naming.",
+        "No initiation/sacrifice how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "kalinga-traditional",
@@ -4295,16 +4312,21 @@
       "slug": "kamba-traditional",
       "title": "坎巴传统宗教与恩盖／穆伦古祈福（Kamba）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "播种与雨水相关祈请（概念层）",
-        "祖灵 Aimu 家庭敬礼（部分敏感）",
-        "教会生活与生命礼仪（公共／当代层）"
+        "Ithembo 猴面包树圣地倾奠（概念层）",
+        "Kuvoya Mvua 求雨祈请（概念层）",
+        "Mundu Mue 与教会生命礼仪（CONCEPT only／当代公共层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Ithembo baobab shrine libation CONCEPT; Kuvoya Mvua rain petition; Mundu Mue CONCEPT only."
+      ],
+      "actions": [
+        "Added Ithembo libation CONCEPT, Kuvoya Mvua, and Mundu Mue CONCEPT only.",
+        "No operational how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "kanak-customary",
@@ -4430,16 +4452,21 @@
       "slug": "karakalpak-traditional",
       "title": "卡拉卡尔帕克民间伊斯兰与咸海三角洲祈福（Karakalpak）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "宰牲节／古尔邦与斋月相关公共礼仪（公共层）",
-        "生命礼仪：割礼宴、婚礼与丧葬互助（部分敏感）",
-        "圣地／墓地敬礼与民间护佑叙事（概念层）"
+        "Mizdakhkan mazar 圣地朝拜（概念层）",
+        "Navruz 与 Sumalak 共食节庆（公共文化层）",
+        "清真寺礼拜与生命礼仪（公共／高阶概览）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Mizdakhkan mazar pilgrimage; Navruz Sumalak; mosque & life-cycle high-level."
+      ],
+      "actions": [
+        "Elevated Mizdakhkan pilgrimage, Navruz Sumalak, and mosque/life-cycle high-level overview.",
+        "Kept sacrifice CONCEPT ONLY; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "karamoja-traditional",
@@ -4700,31 +4727,35 @@
       "slug": "kikuyu-ngai",
       "title": "基库尤传统宗教与恩盖祈请（Gĩkũyũ／Ngai）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "面向肯尼亚山的社群祈请（概念层）",
-        "圣无树（Mũgumo）相关岁时礼仪（概念层）",
+        "面向肯尼亚山的社群祈请／Kũhoya Ngai（概念层）",
+        "Mũgumo 圣树下羔羊献礼（CONCEPT ONLY）",
         "祖先共融与家庭纪念（日常概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Mũgumo under-tree lamb offering CONCEPT ONLY; Kũhoya Ngai rain prayer; kept mountain orientation."
+      ]
     },
     {
       "slug": "kimbanguism",
       "title": "金班古教会／金班古主义祈福（Kimbanguism）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "集体崇拜与赞美（公开礼拜层）",
-        "医治与互助事工（历史—公益层）",
-        "恩坎巴朝圣与教会年历（圣地层）"
+        "绿—白唱诗班集体崇拜与赞美（公开礼拜层）",
+        "医治与互助援助事工（历史—公益层）",
+        "Nkamba 朝圣与 4 月 6 日先知纪念日（圣地层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Nkamba pilgrimage; green-white choir; Apr 6 prophet day; healing/aid."
+      ]
     },
     {
       "slug": "kinnauri-traditional",
@@ -4820,31 +4851,35 @@
       "slug": "konkokyo",
       "title": "金光教（Konkōkyō）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
         "取次（Toritsugi）中介倾听（核心，概念层）",
-        "天地书付与日常信心提醒",
-        "感谢祖先与教会节庆礼仪（概念层）"
+        "天地书付（Tenchi Kakitsuke）与日常信心提醒",
+        "感谢祖先与教团大祭／大切礼仪（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Tenchi Kane no Kami; toritsugi; Tenchi Kakitsuke; ancestor thanks / great rites."
+      ]
     },
     {
       "slug": "konso-traditional",
       "title": "康索传统宗教与文化景观祈福（Konso）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "世代纪念与公共石碑礼仪（公共／遗产层）",
-        "waka 葬礼纪念雕刻（部分敏感）",
-        "Waaq 祈雨／道德秩序与圣林敬礼（高度敏感，仅概念）"
+        "Daga-diruma／Mora 世代石与公共石碑礼仪（公共／遗产层）",
+        "Waka 葬礼纪念木雕（CONCEPT）",
+        "Waaq 祈雨／圣林敬礼（高度敏感，CONCEPT ONLY）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Daga-diruma/Mora stones; Waka funerary wood CONCEPT; Waaq rain/sacred grove CONCEPT ONLY."
+      ]
     },
     {
       "slug": "konyak-traditional",
@@ -4910,31 +4945,41 @@
       "slug": "kosraean-traditional",
       "title": "科斯雷传统信仰与村社祈福余绪（Kosraean）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "教会礼拜与安息日（公共层）",
-        "园艺丰收与共享（公共文化层）",
-        "莱鲁遗址与前基督教记忆（概念层）"
+        "Funtun 节庆歌唱（公共文化层）",
+        "Mitmit 面包果共享（公共文化层）",
+        "Lelu 遗址与 Sinlaku 神话记忆（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Funtun festival singing; Mitmit breadfruit sharing; Lelu & Sinlaku myth memory."
+      ],
+      "actions": [
+        "Reframed rituals to Funtun, Mitmit, and Lelu & Sinlaku myth memory.",
+        "Kept educational concept-only; no priestly how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "kuba-traditional",
       "title": "库巴／布雄戈王权与自然灵祈福（Kuba／Bushongo）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "王权象征与公共节庆（公共／概念层）",
-        "自然灵与女性占梦／调解叙事（部分敏感）",
-        "丧葬织物与来世伦理（概念层）"
+        "Nyim 宫廷与 Ndop 王像（公共／概念层）",
+        "Ngesh 自然灵圣地敬礼（概念层）",
+        "Shoowa 拉菲亚丧葬织物（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:11:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Nyim court / Ndop royal statues; Ngesh nature-spirit shrines CONCEPT; Shoowa raffia funerary textiles."
+      ],
+      "actions": [
+        "Reframed to Nyim/Ndop, Ngesh CONCEPT, and Shoowa funerary textiles.",
+        "No initiation/secret how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "kuikuro-traditional",
@@ -11088,21 +11133,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-5",
-    "validated_at": "2026-09-15T09:01:00Z",
+    "name": "batch-6",
+    "validated_at": "2026-09-15T09:11:00Z",
     "slugs": [
-      "gagauz-traditional",
-      "galician-folk",
-      "gascon-folk",
-      "greek-folk",
-      "gutnish-folk",
-      "hoa-hao",
-      "hungarian-folk",
-      "ibibio-traditional",
-      "irish-folk-catholic",
-      "greek-orthodox",
-      "hinduism",
-      "icelandic-asatru"
+      "ivatan-traditional",
+      "jainism",
+      "jamtland-folk",
+      "kalenjin-traditional",
+      "kamba-traditional",
+      "karakalpak-traditional",
+      "kikuyu-ngai",
+      "kimbanguism",
+      "konkokyo",
+      "konso-traditional",
+      "kosraean-traditional",
+      "kuba-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

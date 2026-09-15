@@ -1335,3 +1335,39 @@
 - https://www.britannica.com/biography/Saint-Boniface
 - https://www.britannica.com/topic/Frisian
 - https://www.britannica.com/place/Dokkum
+
+## 增补传统（科里亚克、伊捷尔缅、诺盖、贝贾、伊比比奥）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/koriak
+- https://www.atlaskmns.ru/page/en/people_koryaki_spirit.html
+- https://www.britannica.com/place/Kamchatka-Peninsula
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/itelmen
+- https://www.everyculture.com/Russia-Eurasia-China/Itelmen-Religion-and-Expressive-Culture.html
+- https://doi.org/10.3167/sib.2014.130202
+- https://www.everyculture.com/Russia-Eurasia-China/Nogays-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Nogay
+- https://www.britannica.com/place/Dagestan
+- https://www.britannica.com/topic/Beja-people
+- https://kids.britannica.com/kids/article/Beja/626388
+- https://www.britannica.com/place/Sudan
+- https://www.britannica.com/topic/Ibibio
+- https://www.everyculture.com/Africa-Middle-East/Ibibio-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ibibio
+
+## 增补传统（瓦劳、托巴／科姆、瑙鲁、布朗、阿罗马尼亚）
+
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/warao-religion
+- https://www.everyculture.com/South-America/Warao-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/place/Orinoco-River
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/south-american-indians-indians-gran-chaco
+- https://joshuaproject.net/people_groups/15517/AR
+- https://www.britannica.com/place/Gran-Chaco
+- https://www.everyculture.com/Oceania/Nauru-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/place/Nauru
+- https://www.britannica.com/place/Micronesia-culture-area
+- https://www.britannica.com/place/Yunnan
+- https://davidpublisher.com/Public/uploads/Contribute/551110d75dcb3.pdf
+- http://www.china.org.cn/english/features/EthnicGroups/136907.htm
+- https://www.britannica.com/topic/Vlach
+- https://www.britannica.com/topic/Eastern-Orthodoxy
+- https://www.britannica.com/place/Balkans

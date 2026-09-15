@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 617,
-    "passed_after_fix": 61,
-    "passed": 47,
+    "pending": 605,
+    "passed_after_fix": 70,
+    "passed": 50,
     "skipped": 1
   },
   "items": [
@@ -7814,16 +7814,21 @@
       "slug": "purepecha",
       "title": "普雷佩查民间天主教与节庆祈福（Purépecha／P'urhépecha）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "主保圣人节与 cargo 服务（公开节庆层）",
-        "亡灵节家庭祭坛与守夜（公共纪念层）",
-        "婚礼致辞与代父母纽带（生命礼仪层）"
+        "Pátzcuaro／Janitzio 亡灵节（公共纪念层）",
+        "K'uínchekua 与 cargo 主保 fiestas（公开节庆层）",
+        "代父母纽带与婚礼致辞（生命礼仪层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrichment: Pátzcuaro / Janitzio Día de Muertos; K'uínchekua; cargo fiestas; godparent ties."
+      ],
+      "actions": [
+        "Enriched rituals with Pátzcuaro/Janitzio Día de Muertos, K'uínchekua + cargo fiestas, and godparent ties.",
+        "Preserved 手机互动适合度 C; educational; no spirit-calling how-to."
+      ]
     },
     {
       "slug": "qanjobal-traditional",
@@ -7874,16 +7879,21 @@
       "slug": "quaker",
       "title": "贵格会静默崇拜与见证（Religious Society of Friends / Quakers）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "静默崇拜聚会（Meeting for Worship）",
-        "见证（Testimonies）的生活实践",
-        "事务聚会与团体辨识（概念层）"
+        "Meeting for Worship 与 Inner Light（概念层）",
+        "SPICES 见证的生活实践（伦理／公共层）",
+        "Clearness Committee 与 business meeting（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrichment: Inner Light; SPICES; Clearness Committee; Meeting for Worship; business meeting."
+      ],
+      "actions": [
+        "Enriched rituals with Inner Light + Meeting for Worship, SPICES testimonies, and Clearness Committee + business meeting.",
+        "Preserved 手机互动适合度 C; educational; no revelation how-to."
+      ]
     },
     {
       "slug": "quechua-andean",
@@ -8024,16 +8034,21 @@
       "slug": "romagnol-folk",
       "title": "罗马涅民间天主教与朝圣祈福（Romagnol）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母／海岸朝圣（概念层）",
-        "主保节巡游（概念层）",
-        "还愿传统（概念层）"
+        "Madonna del Monte（Cesena）与 Ex-Voto（概念层）",
+        "Madonna del Fuoco（Forlì）（概念层）",
+        "海岸／山地主保 feste（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Madonna del Monte (Cesena) + Ex-Voto; Madonna del Fuoco (Forlì); coastal/mountain patron feste."
+      ],
+      "actions": [
+        "Reframed rituals to Madonna del Monte + Ex-Voto, Madonna del Fuoco, and coastal/mountain patron feste.",
+        "Preserved 手机互动适合度 C; educational; no clerical how-to."
+      ]
     },
     {
       "slug": "romani-folk",
@@ -8069,16 +8084,21 @@
       "slug": "romansh-folk",
       "title": "罗曼什民间基督教与阿尔卑斯祈福（Romansh）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "堂区礼拜（改革宗／天主教）（概念层）",
-        "牧季／山居相关祝福（概念层）",
-        "语言—文化节中的认同祈福（概念层）"
+        "Ziteil 圣母朝圣地（2429 m）（概念层）",
+        "Chalandamarz（3 月 1 日）摇铃（公共民俗层）",
+        "阿尔卑斯牲畜下山祝福（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Ziteil Marian shrine (2429m); Chalandamarz (1 Mar) bells; Alpine cattle descent blessing."
+      ],
+      "actions": [
+        "Reframed rituals to Ziteil, Chalandamarz bells, and Alpine cattle descent blessing.",
+        "Preserved 手机互动适合度 C; educational; no clerical how-to."
+      ]
     },
     {
       "slug": "rotuma-traditional",
@@ -8099,16 +8119,21 @@
       "slug": "rotuman-traditional",
       "title": "罗图马传统信仰与村社祈福余绪（Rotuman）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "教会礼拜与教派节庆（公共层）",
-        "生命礼仪与村社宴饮（公共层）",
-        "前基督教 mana／灵界记忆（概念层）"
+        "Katoʻaga 宴饮与 Apei 细席（公共文化层）",
+        "Kava 礼仪场合（公共礼仪／限制性知识层）",
+        "Rotuma Day 与教会礼拜（公共／当代层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kato'aga feast; Apei fine mats; Kava ceremony; Rotuma Day."
+      ],
+      "actions": [
+        "Reframed rituals to Katoʻaga + Apei, Kava CONCEPT (no how-to), and Rotuma Day + church worship.",
+        "Kept restricted-knowledge boundary; preserved 手机互动适合度 C; no spirit-calling how-to."
+      ]
     },
     {
       "slug": "ryukyuan",
@@ -8189,16 +8214,21 @@
       "slug": "salentino-folk",
       "title": "萨伦托民间天主教与海岸朝圣祈福（Salentino）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "海岸圣母／圣徒朝圣（概念层）",
-        "主保节巡游（概念层）",
-        "圣周与公共民俗层（概念层）"
+        "Santa Maria de Finibus Terrae 朝圣（概念层）",
+        "Fòcara di Novoli（公共节庆层）",
+        "San Rocco 与 Pizzica 文化誓愿舞（公共文化层，非附体奇观）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Santa Maria de Finibus Terrae; Fòcara di Novoli; San Rocco / Pizzica as cultural vow dance (NOT possession spectacle)."
+      ],
+      "actions": [
+        "Reframed rituals to Finibus Terrae, Fòcara di Novoli, and San Rocco + Pizzica as cultural vow dance (not possession spectacle).",
+        "Preserved 手机互动适合度 C; educational; no possession/clerical how-to."
+      ]
     },
     {
       "slug": "samaritan",
@@ -8234,31 +8264,41 @@
       "slug": "sammarinese-folk",
       "title": "圣马力诺民间天主教与共和朝圣祈福（Sammarinese）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣马利诺主保敬礼（概念层）",
-        "堂区弥撒与节庆（概念层）",
-        "还愿传统（概念层）"
+        "9 月 3 日圣马利诺主保／建国日（概念层）",
+        "圣髑弥撒与 Basilica del Santo（概念层）",
+        "Capitani Reggenti 就职弥撒（公共／公民—宗教层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Sep 3 Saint Marinus / founding day; relics Mass; Capitani Reggenti inauguration Mass; Basilica del Santo."
+      ],
+      "actions": [
+        "Reframed rituals to Sep 3 Saint Marinus, Basilica del Santo relics Mass, and Capitani Reggenti inauguration Mass.",
+        "Preserved 手机互动适合度 C; educational; no clerical/state cosplay how-to."
+      ]
     },
     {
       "slug": "samoan-faa-samoa",
       "title": "萨摩亚／法阿萨摩亚村社礼仪与祝福文化（Samoan／Faʻa Sāmoa）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
         "ʻAva 礼与演说席次（公共礼仪／限制性知识层）",
-        "ʻIe Samoa 细席交换（公共文化／非遗层）",
-        "村社日常尊重、黄昏祈祷与生命礼仪（民俗层）"
+        "ʻIe Samoa 细席与 Ifoga 细席道歉 CONCEPT（公共文化／非遗层）",
+        "Lotu／Sā 黄昏祈祷与主日崇拜（民俗／教会层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Layout fix required; needed Ifoga fine-mat apology CONCEPT; Lotu/Sā evening prayer; ʻAva; ʻIe Samoa; Sunday worship; keep restricted knowledge notes. Boundary corruption risk with scottish-folk."
+      ],
+      "actions": [
+        "Fixed layout; reframed rituals to ʻAva (restricted-knowledge), ʻIe Samoa + Ifoga CONCEPT, and Lotu/Sā + Sunday worship.",
+        "Verified no Scottish bleed; preserved 手机互动适合度 C; no initiation/tattoo/ʻava how-to."
+      ]
     },
     {
       "slug": "san-khoisan",
@@ -8339,16 +8379,21 @@
       "slug": "sardinian-folk",
       "title": "撒丁民间天主教与节庆祈福（Sardinian Folk／Sardegna）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
         "Faradda／烛台下降游行（公开遗产层）",
-        "Cumbessias 九天敬礼与 gosos（乡村圣所层）",
+        "Cumbessias 九天敬礼与 S'Efisio 朝圣（乡村／城市公开层）",
         "Redentore 朝圣与高山敬礼（公开节庆层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrichment: add S'Efisio (Cagliari) pilgrimage; keep Faradda/Cumbessias/Redentore."
+      ],
+      "actions": [
+        "Added S'Efisio (Cagliari) pilgrimage alongside Faradda, Cumbessias, and Redentore.",
+        "Preserved 手机互动适合度 C; educational; no sacramental how-to."
+      ]
     },
     {
       "slug": "sarna-santal",
@@ -8384,46 +8429,61 @@
       "slug": "savoyard-folk",
       "title": "萨瓦民间天主教与阿尔卑斯朝圣祈福（Savoyard）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "高山圣母朝圣（概念层）",
-        "主保节与村社巡游（概念层）",
-        "牧季／牲畜祝福（概念层）"
+        "Notre-Dame de la Gorge 朝圣（概念层）",
+        "Notre-Dame de Myans 黑圣母（概念层）",
+        "Désalpe 与主保巡游（公共／民俗层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Notre-Dame de la Gorge; Notre-Dame de Myans Black Madonna; Désalpe; patron processions."
+      ],
+      "actions": [
+        "Reframed rituals to Notre-Dame de la Gorge, Notre-Dame de Myans, and Désalpe + patron processions.",
+        "Preserved 手机互动适合度 C; educational; no clerical how-to."
+      ]
     },
     {
       "slug": "scanian-folk",
       "title": "斯堪尼亚民间基督教与节期祈福（Scanian／Skåne）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "路德宗礼拜与教会节期（概念层）",
-        "丰收与岁时民俗（概念层）",
-        "生命礼仪（概念层）"
+        "Mårtensafton 鹅宴（公共民俗层）",
+        "Sankt Olof 圣井／教堂（概念层）",
+        "仲夏 maypole 与生命礼仪（民俗／教会层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Mårtensafton goose feast; Sankt Olof holy well/church; midsummer maypole; life rites."
+      ],
+      "actions": [
+        "Reframed rituals to Mårtensafton, Sankt Olof holy well/church, and midsummer maypole + life rites.",
+        "Preserved 手机互动适合度 C; educational; no clerical how-to."
+      ]
     },
     {
       "slug": "scottish-folk",
       "title": "苏格兰民间基督教与圣岛—圣井祈福（Scottish）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "爱奥那朝圣与礼拜（概念层）",
-        "圣井与地方还愿（概念层）",
-        "堂区崇拜与节庆（概念层）"
+        "Munlochy Clootie Well（概念层）",
+        "Hogmanay 与 First-Footing（公共民俗层）",
+        "爱奥那朝圣与堂区崇拜（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T10:08:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "CRITICAL: Samoan bleed / truncated labels; needed Munlochy Clootie Well; Hogmanay/First-Footing; Iona pilgrimage; parish worship."
+      ],
+      "actions": [
+        "Rewrote Scottish card cleanly (no Samoan content); reframed rituals to Munlochy Clootie Well, Hogmanay/First-Footing, and Iona + parish worship.",
+        "Verified boundary clean vs samoan-faa-samoa; preserved 手机互动适合度 C; no sacramental/magic how-to."
+      ]
     },
     {
       "slug": "secoya-traditional",
@@ -11307,21 +11367,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-8",
-    "validated_at": "2026-09-15T09:42:53Z",
+    "name": "batch-10",
+    "validated_at": "2026-09-15T10:08:42Z",
     "slugs": [
-      "manx-folk",
-      "marchigiano-folk",
-      "mazu",
-      "meru-traditional",
-      "mevlevi-sufi",
-      "minangkabau-adat",
-      "molisan-folk",
-      "monegasque-folk",
-      "mouride",
-      "nauruan-traditional",
-      "ndebele-traditional",
-      "niuean-traditional"
+      "romagnol-folk",
+      "romansh-folk",
+      "rotuman-traditional",
+      "salentino-folk",
+      "sammarinese-folk",
+      "samoan-faa-samoa",
+      "savoyard-folk",
+      "scanian-folk",
+      "scottish-folk",
+      "purepecha",
+      "quaker",
+      "sardinian-folk"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

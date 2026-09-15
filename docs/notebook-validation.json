@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 461,
-    "passed_after_fix": 162,
-    "passed": 102,
+    "pending": 449,
+    "passed_after_fix": 169,
+    "passed": 107,
     "skipped": 1
   },
   "items": [
@@ -4455,16 +4455,21 @@
       "slug": "iraqw-traditional",
       "title": "伊拉克伍传统信仰与库希特祈福（Iraqw）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与土地伦理（概念层）",
-        "教堂崇拜（概念层）",
-        "雨水与和解叙事（概念层）"
+        "Loo rain／purification viewing-only",
+        "Qwaslare rain specialist CONCEPT ONLY",
+        "Netlangw water spirit CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Loo rain/purification viewing-only; Qwaslare rain specialist CONCEPT ONLY; Netlangw water spirit CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Loo viewing-only, Qwaslare CONCEPT ONLY, and Netlangw CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "irish-folk-catholic",
@@ -4505,16 +4510,21 @@
       "slug": "itelmen-traditional",
       "title": "伊捷尔缅传统信仰与乌鸦—家灵祈福（Itelmen）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "地方灵献祭点与家神（高度敏感，仅概念）",
-        "秋季感恩节（历史／概念层）",
-        "女性萨满与东正教／复兴（部分敏感）"
+        "Alkhalalalai autumn thanksgiving public／ICH",
+        "Kutx raven myth & mask dance",
+        "Shaman／Orthodox CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Alkhalalalai autumn thanksgiving public/ICH; Kutx raven myth & mask dance; shaman/Orthodox CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Alkhalalalai public/ICH, Kutx myth & mask dance, and shaman/Orthodox CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "ivatan-traditional",
@@ -4572,16 +4582,21 @@
       "slug": "jakaltek-traditional",
       "title": "哈卡尔特克玛雅民间天主教与跨界祈福（Jakaltek／Popti'）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "山灵与农事祈请（概念层）",
-        "日师传统（高度敏感，仅概念）"
+        "Fiesta Patronal de Candelaria（公开主保节）",
+        "Ah'kin daykeeper CONCEPT ONLY",
+        "Mountain／maize CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Fiesta Patronal de Candelaria; Ah'kin daykeeper CONCEPT ONLY; mountain/maize."
+      ],
+      "actions": [
+        "Reframed rituals to Candelaria, Ah'kin CONCEPT ONLY, and mountain/maize CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "jamtland-folk",
@@ -4607,46 +4622,61 @@
       "slug": "jarai-traditional",
       "title": "嘉莱族传统信仰与高原祈福（Jarai／Giarai）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "新米／新屋／健康公共节庆（公共层）",
-        "Pa thi 弃墓二次葬礼仪（高度敏感，仅概念）",
-        "教会／佛邻与精神「王」叙事（概念层）"
+        "新米／新屋公共节庆（公共层）",
+        "Pa thi secondary burial CONCEPT ONLY",
+        "Pơtao Pui／Pơtao Ia CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Pơtao Pui/Pơtao Ia CONCEPT; Pa thi secondary burial CONCEPT ONLY; new rice/house public."
+      ],
+      "actions": [
+        "Enriched Pơtao Pui/Pơtao Ia CONCEPT, Pa thi CONCEPT ONLY, and new rice/house public.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "jingpo-kachin",
       "title": "景颇／克钦传统信仰与目瑙纵歌祈福（Jingpo／Kachin）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "目瑙／目瑙纵歌（公共—传统层）",
-        "村社 numshang 与农事周期献祭（高度敏感，仅概念）",
-        "生命礼仪与姻亲互惠中的礼仪支出（概念层）"
+        "Munaw Zongge public",
+        "Jaiwa epic",
+        "Numshang／Nat CONCEPT viewing"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Munaw Zongge public; Jaiwa epic; Numshang/Nat CONCEPT viewing."
+      ],
+      "actions": [
+        "Enriched Munaw Zongge public, Jaiwa epic, and Numshang/Nat CONCEPT viewing.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "jirel-traditional",
       "title": "吉雷尔传统信仰与喜马拉雅祈福（Jirel）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "寺院／贡巴公开法会（概念层）",
-        "神山—地方神敬礼（概念层）",
-        "生命礼仪（概念层）"
+        "Gomba／Lhosar（公开／观礼层）",
+        "Devithan／Yul-lha（概念层）",
+        "Phombo shaman CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Phombo shaman CONCEPT ONLY; Devithan/Yul-lha; Gomba; Lhosar."
+      ],
+      "actions": [
+        "Reframed rituals to Gomba/Lhosar, Devithan/Yul-lha, and Phombo CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "jongmyo",
@@ -4682,61 +4712,81 @@
       "slug": "kabardian-traditional",
       "title": "卡巴尔达民间伊斯兰与切尔克斯习惯祈福（Kabardian）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与伊斯兰节日（概念层）",
-        "哈布泽生命礼仪（概念层）",
-        "苏菲圣地余绪（敏感，仅概念）"
+        "Thashxwe（公开／概念层）",
+        "Adyge Khabze hospitality 与 Nart epic",
+        "Sufi zikr viewing-only"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Thashxwe; Adyge Khabze hospitality; Nart epic; Sufi zikr viewing-only."
+      ],
+      "actions": [
+        "Reframed rituals to Thashxwe, Adyge Khabze/Nart epic, and Sufi zikr viewing-only.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kadazan-dusun-momolianism",
       "title": "卡达山—杜顺／莫莫里安信仰（Kadazan-Dusun／Momolianism）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Kaamatan 丰收节（公共文化层）",
-        "Magavau／召回稻灵（限制性公共知识层）",
-        "农作与社群礼仪中的女祭司职分（概念层）"
+        "Kaamatan public 与 Sumazau dance",
+        "Bambaazon rice soul",
+        "Bobohizan hosts Magavau viewing-only"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Bambaazon rice soul; Bobohizan hosts Magavau viewing-only; Sumazau dance; Kaamatan public."
+      ],
+      "actions": [
+        "Enriched Bambaazon, Bobohizan/Magavau viewing-only, Sumazau, and Kaamatan public.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kafa-traditional",
       "title": "卡法传统信仰与埃塞西南祈福（Kafa / Kaffa）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "农作与森林伦理（概念层）",
-        "社区权威与节庆（敏感，仅概念）",
-        "基督教并存（公开层）"
+        "Mashkaro harvest（公开／概念层）",
+        "Bunno coffee offering cultural 与 Kemo sacred grove",
+        "Church coexistence（公开层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Mashkaro harvest; Bunno coffee offering cultural; Kemo sacred grove; church coexistence."
+      ],
+      "actions": [
+        "Reframed rituals to Mashkaro, Bunno/Kemo, and church coexistence.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kaharingan",
       "title": "婆罗洲达雅克 Kaharingan／祖先与二次葬仪礼",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "初次葬与灵魂护送祷唱（概念层）",
-        "Tiwah 二次葬（概念层）",
-        "家户象征与沟通祖先（概念层）"
+        "Tiwah／Sandung viewing-only restricted",
+        "Ranying Hatalla Langit",
+        "Basir CONCEPT — users don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Tiwah/Sandung viewing-only restricted; Ranying Hatalla Langit; Basir CONCEPT — users don't officiate."
+      ],
+      "actions": [
+        "Enriched Tiwah/Sandung viewing-only restricted, Ranying Hatalla Langit, and Basir CONCEPT (users don't officiate).",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kakataibo-traditional",
@@ -4772,16 +4822,21 @@
       "slug": "kalasha",
       "title": "卡拉什（Kalasha / Kalash）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "乔希节（Joshi / Chilam Joshi，春季节庆）",
-        "乌乔／乌查节（Uchaw / Uchau）与地方秋收相关仪典",
-        "乔莫斯节（Chawmos / Chaumos，冬至大节）"
+        "Chilam Joshi public",
+        "Uchaw harvest",
+        "Chawmos HIGH SENSITIVITY viewing／respect only；Dezalik CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Chilam Joshi public; Uchaw harvest; Chawmos HIGH SENSITIVITY viewing/respect only; Dezalik CONCEPT."
+      ],
+      "actions": [
+        "Enriched Chilam Joshi public, Uchaw harvest, Chawmos high-sensitivity viewing/respect, and Dezalik CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kalenjin-traditional",
@@ -4807,16 +4862,21 @@
       "slug": "kalinga-traditional",
       "title": "卡林加传统信仰与科迪勒拉祈福（Kalinga）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "丰收与家屋礼仪（概念层）",
-        "Bodong 和平与和解（概念层）",
-        "基督教并行（概念层）"
+        "Bodong peace pacts public／viewing — no simulated ritual",
+        "Ullalim epic",
+        "Whang-od tattoo heritage cultural（no tattoo how-to）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T12:27:34Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Bodong peace pacts public/viewing — no simulated ritual; Ullalim epic; Whang-od tattoo heritage cultural (no tattoo how-to)."
+      ],
+      "actions": [
+        "Reframed rituals to Bodong public/viewing (no simulated ritual), Ullalim epic, and Whang-od heritage cultural (no how-to).",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kalmyk-buddhism",
@@ -12087,21 +12147,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-21",
-    "validated_at": "2026-09-15T11:55:46Z",
+    "name": "batch-23",
+    "validated_at": "2026-09-15T12:27:34Z",
     "slugs": [
-      "galo-traditional",
-      "garo-songsarek",
-      "gogodala-traditional",
-      "gond-traditional",
-      "gorowa-traditional",
-      "gurage-traditional",
-      "gurung-traditional",
-      "gusii-traditional",
-      "hadiya-traditional",
-      "haudenosaunee",
-      "havasupai-traditional",
-      "hawaiian"
+      "iraqw-traditional",
+      "itelmen-traditional",
+      "jakaltek-traditional",
+      "jarai-traditional",
+      "jingpo-kachin",
+      "jirel-traditional",
+      "kabardian-traditional",
+      "kadazan-dusun-momolianism",
+      "kafa-traditional",
+      "kaharingan",
+      "kalasha",
+      "kalinga-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

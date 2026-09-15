@@ -1836,3 +1836,30 @@
 - https://www.britannica.com/topic/Zoque-people
 - https://www.britannica.com/place/Chiapas
 - https://www.britannica.com/place/Mexico
+
+## 增补传统（苏努瓦尔、雅克哈、派特、伦马、万乔、马萨瓦、伊希尔、丘赫、皮埃蒙特、萨瓦）
+
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/place/Sikkim
+- https://www.britannica.com/topic/Kirati
+- https://www.britannica.com/place/Himalayas
+- https://www.britannica.com/place/Manipur
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Chin-people
+- https://www.britannica.com/place/Nagaland
+- https://www.britannica.com/topic/Naga-people
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://www.britannica.com/topic/Mazahua
+- https://www.britannica.com/place/Mexico-state
+- https://www.britannica.com/place/Mexico
+- https://www.britannica.com/topic/Ixil
+- https://www.britannica.com/place/Guatemala
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/topic/Chuj
+- https://www.britannica.com/place/Chiapas
+- https://www.britannica.com/place/Piedmont-region-Italy
+- https://www.britannica.com/place/Turin-Italy
+- https://www.britannica.com/topic/Shroud-of-Turin
+- https://www.britannica.com/place/Savoy-region-France
+- https://www.britannica.com/place/Alps
+- https://www.britannica.com/topic/Roman-Catholicism

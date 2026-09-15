@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 425,
-    "passed_after_fix": 182,
-    "passed": 118,
+    "pending": 413,
+    "passed_after_fix": 191,
+    "passed": 121,
     "skipped": 1
   },
   "items": [
@@ -5785,31 +5785,41 @@
       "slug": "kwaraae-traditional",
       "title": "夸拉阿埃传统信仰与马莱塔祈福（Kwara'ae）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "土地与氏族伦理（敏感，仅概念）",
-        "基督教公开礼拜（公开层）",
-        "丧礼与祖先传统（敏感，仅概念）"
+        "Akalo ancestral spirits CONCEPT/viewing",
+        "Beu aabu sacred-house TABOO/viewing",
+        "Fataabu priest CONCEPT — users don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Akalo ancestral spirits CONCEPT/viewing; Beu aabu sacred-house TABOO/viewing; Fataabu priest CONCEPT — users don't officiate."
+      ],
+      "actions": [
+        "Reframed rituals to Akalo CONCEPT/viewing, Beu aabu TABOO/viewing, and Fataabu CONCEPT; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kyrgyz-traditional",
       "title": "吉尔吉斯传统民俗与玛纳斯—腾格里祈福文化（Kyrgyz Traditional）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "玛纳斯史诗传诵与公共抚慰（公共文化／非遗层）",
-        "祖先纪念、家庭礼俗与圣徒陵（民俗层）",
-        "腾格里相关民俗余绪与当代文化讨论（概念层）"
+        "Manaschi epic reciters（公共／非遗层）",
+        "Mazar saint tombs（观礼／概念层）",
+        "Orozo/Kurman Ait；Manas public/ICH"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Manaschi epic reciters; Mazar saint tombs; Orozo/Kurman Ait; Manas public/ICH."
+      ],
+      "actions": [
+        "Enriched Manaschi, Mazar, Orozo/Kurman Ait, and Manas public/ICH.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "lacandon-traditional",
@@ -5830,16 +5840,21 @@
       "slug": "ladakh-buddhist",
       "title": "拉达克藏传佛教与山神祈福（Ladakh）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "寺院礼佛与节庆面具舞（概念层）",
-        "山神与地方灵敬礼（概念层）",
-        "转经、玛尼堆与日常功德（概念层）"
+        "Hemis Tsechu；Cham masked dance by sangha viewing-only",
+        "Yullha mountain deities CONCEPT",
+        "gompa public layer"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Hemis Tsechu; Cham masked dance by sangha viewing-only; Yullha mountain deities CONCEPT; gompa public layer."
+      ],
+      "actions": [
+        "Reframed rituals to Hemis Tsechu, Cham sangha viewing-only, Yullha CONCEPT, and gompa public layer.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "ladin-folk",
@@ -5885,16 +5900,21 @@
       "slug": "lahul-traditional",
       "title": "拉豪尔藏传与喜马偕尔祈福（Lahul / Lahaul）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "寺院供灯与转经（公开层）",
-        "地方神与山谷节庆（公开／敏感交界）",
-        "密续与闭关（极高敏感，仅概念）"
+        "Halda Festival（公共／观礼层）",
+        "Triloknath Temple；Kardang Gompa（公开层）",
+        "tantra/retreat HIGH SENSITIVITY CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Notebook reported item 5 (lango) content embedded into item 4; needed Halda Festival; Triloknath Temple; Kardang Gompa; tantra/retreat HIGH SENSITIVITY CONCEPT ONLY."
+      ],
+      "actions": [
+        "Verified lahul-traditional.md vs lango-traditional.md; restored Lahul-only content (Halda, Triloknath, Kardang); no Lango bleed.",
+        "Reframed rituals; tantra/retreat HIGH SENSITIVITY CONCEPT ONLY; atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "lakota-sundance",
@@ -5915,16 +5935,21 @@
       "slug": "lango-traditional",
       "title": "兰戈传统宗教与祖灵祈福（Lango）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖灵家屋实践（概念层）",
-        "教堂崇拜（概念层）",
-        "农事与和解（概念层）"
+        "Jok sacred power CONCEPT",
+        "Apo ancestral shrine household/CONCEPT",
+        "Wot Jok reconciliation CONCEPT — no conflict-trauma how-to"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Jok sacred power CONCEPT; Apo ancestral shrine household/CONCEPT; Wot Jok reconciliation CONCEPT — no conflict-trauma how-to; ensure no Lahul bleed."
+      ],
+      "actions": [
+        "Reframed rituals to Jok CONCEPT, Apo household/CONCEPT, and Wot Jok CONCEPT; no conflict-trauma how-to.",
+        "Confirmed file is Lango-only (no Halda/Triloknath/Kardang); atmosphere-only; grade B."
+      ]
     },
     {
       "slug": "lao-baci-phi",
@@ -5962,16 +5987,21 @@
       "slug": "lepcha-mun",
       "title": "雷布查／Mun 信仰（Lepcha Mun／Bongthing）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "家庭仪礼中的 rum／tsandong 结构（概念层）",
-        "Cherim 等社群洁净／防病仪礼（限制性公共知识层）",
-        "丧礼与「送灵」相关礼仪（概念层）"
+        "Tendong Lho Rumfaat sacred-mountain festival（公共层）",
+        "Bongthing/Mun priest boundary — users don't officiate",
+        "Cherim restricted"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Tendong Lho Rumfaat sacred-mountain festival; Bongthing/Mun priest boundary — users don't officiate; Cherim restricted."
+      ],
+      "actions": [
+        "Enriched Tendong Lho Rumfaat, Bongthing/Mun priest boundary, and Cherim restricted.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "lezgin-traditional",
@@ -6037,31 +6067,41 @@
       "slug": "limba-traditional",
       "title": "林巴传统信仰与伊斯兰—基督教祈福（Limba）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与伊斯兰节日（概念层）",
-        "教堂崇拜（概念层）",
-        "祖先伦理（敏感，仅概念）"
+        "Saraka community offering public",
+        "Kanu high god CONCEPT",
+        "Gbangbani secret society CONCEPT ONLY — no initiation how-to"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Saraka community offering public; Kanu high god CONCEPT; Gbangbani secret society CONCEPT ONLY — no initiation how-to."
+      ],
+      "actions": [
+        "Reframed rituals to Saraka public, Kanu CONCEPT, and Gbangbani CONCEPT ONLY; no initiation how-to.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "limbu-traditional",
       "title": "林布传统信仰与蒙杜姆祈福（Limbu／Mundhum）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "蒙杜姆相关生命礼仪（概念层）",
-        "季节与祖先敬礼（概念层）",
-        "多元宗教并存层（概念层）"
+        "Chasok Tangnam harvest（公共／观礼层）",
+        "Manghim shrine",
+        "Phedangba/Samba/Yeba priests viewing/CONCEPT only"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Notebook reported text misalignment in submitted card; needed Chasok Tangnam harvest; Manghim shrine; Phedangba/Samba/Yeba priests viewing/CONCEPT only."
+      ],
+      "actions": [
+        "Verified limbu-traditional.md is Limbu/Mundhum only (not mixed with lomwe or others); restored Chasok Tangnam, Manghim, Phedangba/Samba/Yeba.",
+        "Emphasized viewing/CONCEPT only and atmosphere-only / no user-officiating; grade B."
+      ]
     },
     {
       "slug": "lisu-traditional",
@@ -6107,31 +6147,41 @@
       "slug": "lomwe-traditional",
       "title": "洛姆韦传统信仰与祖灵—基督教祈福（Lomwe）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先敬礼（概念层）",
-        "教堂崇拜（概念层）",
-        "丰收与和解（概念层）"
+        "Tchopa ritual dance as public cultural performance",
+        "Namakhwa ancestors CONCEPT；Muluku high god CONCEPT",
+        "Christian reconciliation public"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Tchopa ritual dance as public cultural performance; Namakhwa ancestors CONCEPT; Muluku high god CONCEPT; Christian reconciliation public."
+      ],
+      "actions": [
+        "Reframed rituals to Tchopa public cultural performance, Namakhwa/Muluku CONCEPT, and Christian reconciliation public.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "lotha-traditional",
       "title": "洛塔那加基督教与传统祈福余绪（Lotha）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "浸信会崇拜（概念层）",
-        "生命礼仪（概念层）",
-        "文化节与传统记忆（敏感，仅概念）"
+        "Tokhu Emong harvest thanksgiving ~Nov 6–7",
+        "Baptist choir（公开教会层）",
+        "clan reconciliation memory CONCEPT — no headhunting how-to"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Tokhu Emong harvest thanksgiving ~Nov 6–7; Baptist choir; clan reconciliation memory CONCEPT — no headhunting how-to."
+      ],
+      "actions": [
+        "Reframed rituals to Tokhu Emong ~Nov 6–7, Baptist choir, and clan reconciliation memory CONCEPT; no headhunting how-to.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "lozi-traditional",
@@ -6172,16 +6222,21 @@
       "slug": "lugbara-traditional",
       "title": "卢格巴拉传统宗教与祖灵祈福（Lugbara）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖灵家屋敬礼（概念层）",
-        "教堂／清真寺并行（概念层）",
-        "生命礼仪与和解（概念层）"
+        "Ori-jo ancestral altar household/restricted viewing",
+        "Adro/Adrastro high god CONCEPT",
+        "Adroaro forest spirits CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Ori-jo ancestral altar household/restricted viewing; Adro/Adrastro high god CONCEPT; Adroaro forest spirits CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Ori-jo household/restricted viewing, Adro/Adrastro CONCEPT, and Adroaro CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "lunda-traditional",
@@ -6202,16 +6257,21 @@
       "slug": "luo-traditional",
       "title": "卢奥传统信仰与尼雅赛／祖灵祈福（Luo／Nyasaye／Juok）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "祖先记念与梦境沟通（概念—家庭层）",
-        "生命礼仪：命名、婚丧（社群层）",
-        "传统疗愈者与 juok 叙事（概念层）"
+        "Got Ramogi sacred mountain pilgrimage public/cultural",
+        "Nyasaye（概念层）",
+        "Ajuoga healer CONCEPT — users don't host healing"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:03:25Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Got Ramogi sacred mountain pilgrimage public/cultural; Nyasaye; Ajuoga healer CONCEPT — users don't host healing."
+      ],
+      "actions": [
+        "Enriched Got Ramogi public/cultural, Nyasaye, and Ajuoga CONCEPT; users don't host healing.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "maasai",
@@ -12267,21 +12327,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-25",
-    "validated_at": "2026-09-15T13:32:15Z",
+    "name": "batch-26",
+    "validated_at": "2026-09-15T14:03:25Z",
     "slugs": [
-      "khakas-traditional",
-      "khasi-niam",
-      "khmu-traditional",
-      "kiche-maya",
-      "kinnauri-traditional",
-      "kirati-mundhum",
-      "kiribati-traditional",
-      "komi-traditional",
-      "koryak-traditional",
-      "kumyk-traditional",
-      "kunama-traditional",
-      "kuria-traditional"
+      "kwaraae-traditional",
+      "kyrgyz-traditional",
+      "ladakh-buddhist",
+      "lahul-traditional",
+      "lango-traditional",
+      "lepcha-mun",
+      "limba-traditional",
+      "limbu-traditional",
+      "lomwe-traditional",
+      "lotha-traditional",
+      "lugbara-traditional",
+      "luo-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

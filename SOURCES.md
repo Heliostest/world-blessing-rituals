@@ -2511,3 +2511,35 @@
 - https://www.britannica.com/topic/Tohono-Oodham
 - https://www.britannica.com/place/Sonoran-Desert
 - https://www.britannica.com/place/Arizona
+
+## 增补传统（沙拉纳瓦、比南代雷、彭特科斯特、罗图马、富尔、达贡巴、阿卢尔、布蒂亚、哈瓦苏派、阿科马）
+
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/New-Guinea
+- https://www.britannica.com/place/Pentecost-Island
+- https://www.britannica.com/place/Vanuatu
+- https://www.britannica.com/place/Rotuma
+- https://www.britannica.com/place/Fiji
+- https://www.britannica.com/topic/Polynesian-culture
+- https://www.britannica.com/topic/Fur-people
+- https://www.britannica.com/place/Darfur
+- https://www.britannica.com/place/Sudan
+- https://www.britannica.com/topic/Dagomba
+- https://www.britannica.com/place/Ghana
+- https://www.britannica.com/place/Tamale-Ghana
+- https://www.britannica.com/topic/Alur
+- https://www.britannica.com/place/Lake-Albert-lake-Africa
+- https://www.britannica.com/place/Uganda
+- https://www.britannica.com/place/Sikkim
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/place/India
+- https://www.britannica.com/topic/Havasupai
+- https://www.britannica.com/place/Grand-Canyon
+- https://www.britannica.com/place/Arizona
+- https://www.britannica.com/topic/Acoma
+- https://www.britannica.com/topic/Pueblo-Indians
+- https://www.britannica.com/place/New-Mexico

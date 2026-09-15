@@ -2543,3 +2543,32 @@
 - https://www.britannica.com/topic/Acoma
 - https://www.britannica.com/topic/Pueblo-Indians
 - https://www.britannica.com/place/New-Mexico
+
+## 增补传统（Notebook batch-28：马诺博—明打威）
+
+- http://atlas.inpi.gob.mx/matlazincas-etnografia/
+- http://temascaltepec.edomex.gob.mx/matlatzincas
+- https://atlas.inpi.gob.mx/mazahuas-etnografia/
+- https://bukidnononline.com/kaamulan-festival-2026-schedule-of-activities/
+- https://doi.org/10.19130/iifl.tlalocan.2025.1/00xs3r100x94
+- https://doi.org/10.22459/lf.2021.03
+- https://doi.org/10.25077/jantro.v27.n1.p133-140.2025
+- https://doi.org/10.32505/hikmah.v13i2.5055
+- https://doi.org/10.5070/sd991031888
+- https://ich.unesco.org/doc/src/00347-EN.pdf
+- https://kwriu.kemdikbud.go.id/info-budaya-indonesia/warisan-budaya-tak-benda-indonesia/
+- https://matavaa.org/matavaa-2025
+- https://monarchjointventure.org/blog/more-than-monarchs-understanding-traditions-linked-to-monarch-butterflies
+- https://ncca.gov.ph/about-ncca-3/subcommissions/subcommission-on-cultural-communities-and-traditional-arts-sccta/central-cultural-communities/the-mandaya-ethnic-group/
+- https://ocean.si.edu/human-connections/history-cultures/navigating-waters-micronesian-stick-charts
+- https://patrimoine.pf/fr/te-henua-enata-les-iles-marquises/matavaa-festival-des-arts-des-marquises/
+- https://pia.gov.ph/features/all-set-for-kaamulan-street-dancing-event-featuring-bukidnons-seven-tribes/
+- https://press-files.anu.edu.au/downloads/press/n7854/html/ch01.xhtml
+- https://redalyc.org/articulo.oa?id=67681517
+- https://revistas.inah.gob.mx/index.php/antropologia/article/view/3719
+- https://teara.govt.nz/en/te-kawa-o-te-marae/page-2
+- https://www.everyculture.com/Middle-America-Caribbean/Mazahua-Religion-and-Expressive-Culture.html
+- https://www.everyculture.com/Oceania/Manus-Religion-and-Expressive-Culture.html
+- https://www.inah.gob.mx/foto-del-dia/la-danza-del-venado-simbolismo-del-mundo-natural
+- https://www.revistas.unam.mx/index.php/antropologia/article/view/30699
+- https://www.rmg.co.uk/collections/objects/rmgc-object-670368

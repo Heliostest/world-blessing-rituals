@@ -1979,3 +1979,33 @@
 - https://www.britannica.com/place/Arunachal-Pradesh
 - https://www.britannica.com/place/Northeast-India
 - https://www.britannica.com/topic/Donyi-Polo
+
+## 增补传统（帕佩尔、比热戈斯、洛姆韦、塞纳、尚巴阿、达托加、马尔凯、特伦蒂诺、伦内尔—贝罗纳、米吉）
+
+- https://www.britannica.com/topic/Papel
+- https://www.britannica.com/place/Guinea-Bissau
+- https://www.britannica.com/place/Bissau
+- https://www.britannica.com/topic/Bijago
+- https://www.britannica.com/place/Bijagos-Islands
+- https://www.britannica.com/topic/Lomwe
+- https://www.britannica.com/place/Malawi
+- https://www.britannica.com/place/Mozambique
+- https://www.britannica.com/topic/Sena-people
+- https://www.britannica.com/place/Zambezi-River
+- https://www.britannica.com/topic/Shambaa
+- https://www.britannica.com/place/Usambara-Mountains
+- https://www.britannica.com/place/Tanzania
+- https://www.britannica.com/topic/Datoga
+- https://www.britannica.com/topic/Nilotic-languages
+- https://www.britannica.com/place/Marche
+- https://www.britannica.com/place/Loreto
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/place/Trentino-Alto-Adige
+- https://www.britannica.com/place/Trento
+- https://www.britannica.com/place/Alps
+- https://www.britannica.com/place/Rennell-Island
+- https://www.britannica.com/place/Bellona-Island
+- https://www.britannica.com/place/Solomon-Islands
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Donyi-Polo

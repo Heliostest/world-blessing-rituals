@@ -1628,3 +1628,35 @@
 - https://www.britannica.com/topic/Korowai
 - https://www.britannica.com/place/Papua
 - https://www.britannica.com/place/New-Guinea
+
+## 增补传统（邦都、卡尔比、安汶、普什图、奥朗林巴、曼吉安、塞浦路斯、卡巴尔达、胡里、土阿莫土）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bontok
+- https://en.wikipedia.org/wiki/Bontoc_people
+- https://www.britannica.com/place/Cordillera-Central-Philippines
+- https://en.wikipedia.org/wiki/Honghari
+- https://www.mdpi.com/2077-1444/13/6/510
+- https://blogs.lse.ac.uk/religionglobalsociety/2024/10/animism-among-the-karbi-a-profound-kinship-with-nature/
+- https://www.britannica.com/place/Ambon
+- https://www.britannica.com/place/Moluccas
+- https://www.britannica.com/topic/Protestantism
+- https://www.britannica.com/topic/Pashtun
+- https://www.britannica.com/topic/Pashtunwali
+- https://www.britannica.com/topic/Islam
+- https://www.britannica.com/place/Sumatra
+- https://www.britannica.com/place/Indonesia
+- https://www.britannica.com/topic/palm-oil
+- https://www.britannica.com/topic/Mangyan
+- https://www.britannica.com/place/Mindoro
+- https://www.britannica.com/place/Philippines
+- https://www.britannica.com/place/Cyprus
+- https://www.britannica.com/topic/Church-of-Cyprus
+- https://www.britannica.com/topic/Eastern-Orthodoxy
+- https://www.britannica.com/topic/Kabarda
+- https://www.britannica.com/topic/Circassian
+- https://www.britannica.com/topic/Huli
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/place/New-Guinea
+- https://www.britannica.com/place/Tuamotu-Archipelago
+- https://www.britannica.com/place/French-Polynesia
+- https://www.britannica.com/place/Polynesia

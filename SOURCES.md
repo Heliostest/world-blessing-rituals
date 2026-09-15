@@ -2069,3 +2069,27 @@
 - https://www.britannica.com/topic/Pare
 - https://www.britannica.com/place/Pare-Mountains
 - https://www.britannica.com/place/Tanzania
+
+## 增补传统（马莱库、博鲁卡、恩加贝、纳索、哥特兰、斯堪尼亚、奥兰、尼亚库萨、姚人／Yaawo、戈罗瓦）
+
+- https://www.britannica.com/place/Costa-Rica
+- https://www.britannica.com/topic/Central-American-Indian
+- https://www.britannica.com/place/Central-America
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/topic/Guaymi
+- https://www.britannica.com/place/Panama
+- https://www.britannica.com/topic/Teribe
+- https://www.britannica.com/place/Gotland
+- https://www.britannica.com/place/Visby
+- https://www.britannica.com/topic/Church-of-Sweden
+- https://www.britannica.com/place/Skane
+- https://www.britannica.com/place/Sweden
+- https://www.britannica.com/place/Aland-Islands
+- https://www.britannica.com/place/Finland
+- https://www.britannica.com/topic/Nyakyusa
+- https://www.britannica.com/place/Tanzania
+- https://www.britannica.com/place/Malawi
+- https://www.britannica.com/topic/Yao-African-people
+- https://www.britannica.com/place/Mozambique
+- https://www.britannica.com/topic/Cushitic-languages
+- https://www.britannica.com/topic/Iraqw

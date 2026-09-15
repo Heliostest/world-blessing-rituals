@@ -1263,3 +1263,39 @@
 - https://ich.unesco.org/en/RL/seto-leelo-seto-polyphonic-singing-tradition-00175
 - https://www.nationalgeographic.com/culture/article/setomaa-culture-estonia-russia-photographs
 - https://www.britannica.com/place/Estonia
+
+## 增补传统（恩加纳桑、塞尔库普、克里米亚鞑靼、梅鲁、马孔德）
+
+- https://doi.org/10.17516/1997-1370-0424
+- https://aa.uwpress.org/content/wpaa/58/1/80.full.pdf
+- https://doi.org/10.16993/bbu.i
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/selkup
+- https://atlaskmns.ru/page/en/people_selcupy_spirit.html
+- https://www.britannica.com/topic/Samoyed
+- https://www.everyculture.com/Russia-Eurasia-China/Crimean-Tatars-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Tatar
+- https://www.tataria.online/post/land-and-faith-what-is-the-specificity-of-crimean-tatar-islam
+- https://www.encyclopedia.com/places/africa/kenyan-political-geography/meru
+- https://meru.go.ke/religion-culture/
+- http://www.bluegecko.org/kenya/tribes/meru/beliefs.htm
+- https://www.britannica.com/topic/Makonde
+- https://www.britannica.com/art/African-art/Makonde
+- https://joshuaproject.net/index.php/people_groups/13427/MZ
+
+## 增补传统（卡亚波、基切玛雅、科斯雷、畲族、奥克／卡马格）
+
+- https://pib.socioambiental.org/en/Povo:Mebeng%C3%B4kre_(Kayap%C3%B3)
+- https://www.everyculture.com/wc/Brazil-to-Congo-Republic-of/Kayapos.html
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/Popol-Vuh
+- https://www.britannica.com/topic/Kiche
+- https://religionnews.com/2023/08/03/surviving-persecution-and-a-civil-war-maya-spirituality-finds-new-footing/
+- https://www.britannica.com/place/Kosrae
+- https://www.everyculture.com/Ma-Ni/Federated-States-of-Micronesia.html
+- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
+- https://www.britannica.com/topic/She-people
+- https://th.china-embassy.gov.cn/eng/ztbd/AboutChina/Ethnic/200011/t20001115_1432841.htm
+- https://www.britannica.com/place/Fujian
+- https://www.britannica.com/place/Saintes-Maries-de-la-Mer
+- https://www.villes-sanctuaires.com/en/villes-sanctuaires/saintes-maries-mer
+- https://www.britannica.com/topic/Romani

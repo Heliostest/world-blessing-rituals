@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 677,
-    "passed_after_fix": 17,
-    "passed": 31,
+    "pending": 665,
+    "passed_after_fix": 26,
+    "passed": 34,
     "skipped": 1
   },
   "items": [
@@ -3044,31 +3044,41 @@
       "slug": "gagauz-traditional",
       "title": "加告兹东正教与民间祈福传统（Gagauz）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
         "东正教圣礼与礼仪年（公共层）",
         "平信徒家庭祈祷与护佑实践（概念层）",
-        "民族节日与教会—自治公共文化（公共层）"
+        "Hederlez／Kasım／Kurban 共食节日（公共层，献牲仅概念）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Hederlez, Kasım, Kurban as feast/commensal naming; sacrifice CONCEPT ONLY (no how-to)."
+      ],
+      "actions": [
+        "Added Hederlez, Kasım, Kurban as feast/commensal naming; framed Kurban sacrifice as CONCEPT ONLY with no how-to.",
+        "Kept educational overview; no operational sacrifice."
+      ]
     },
     {
       "slug": "galician-folk",
       "title": "加利西亚民间天主教与圣地亚哥朝圣祈福（Galician）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣地亚哥朝圣（概念层）",
-        "大教堂礼仪与圣人敬礼（概念层）",
+        "圣地亚哥朝圣与 Botafumeiro（概念层）",
+        "Santa Marta de Ribarteme 假棺还愿游行与 San Andrés de Teixido（概念层）",
         "海岸／乡村圣井与还愿（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Botafumeiro; Santa Marta de Ribarteme fake-coffin vow procession; San Andrés de Teixido; coastal wells."
+      ],
+      "actions": [
+        "Added Botafumeiro, Santa Marta de Ribarteme fake-coffin vow procession, San Andrés de Teixido, and coastal wells naming.",
+        "Kept concept-only educational tone."
+      ]
     },
     {
       "slug": "galo-traditional",
@@ -3119,16 +3129,21 @@
       "slug": "gascon-folk",
       "title": "加斯科涅民间天主教与朝圣祈福（Gascon）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "卢尔德／比利牛斯朝圣（概念层）",
+        "卢尔德 Massabielle 水与 Torchlight procession（概念层）",
         "主保节与村社巡游（概念层）",
-        "农牧祝福（概念层）"
+        "Fontaines soignantes 文化注记与农牧祝福（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Lourdes Massabielle water, Torchlight procession, and Fontaines soignantes cultural note."
+      ],
+      "actions": [
+        "Added Massabielle water, Torchlight procession, and Fontaines soignantes as cultural note (not magic/medical recipe).",
+        "Kept educational overview; no operational how-to."
+      ]
     },
     {
       "slug": "gbaya-traditional",
@@ -3239,31 +3254,38 @@
       "slug": "greek-folk",
       "title": "希腊民间东正教与村社主保节祈福（Greek folk／Panigiri）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "Panigiri 主保节（概念层）",
-        "东正教大节与生命礼仪（概念层）",
-        "修道院朝圣（概念层）"
+        "Panigiri 与 Kourbani 共食（概念层）",
+        "Anastenaria 火上行走（公共民俗文化注记，非操作）",
+        "Athos 修道院朝圣命名（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kourbani communal meat at panigiri CONCEPT; Anastenaria firewalking as public folk CULTURAL note (no how-to/encourage); Athos pilgrimage naming."
+      ],
+      "actions": [
+        "Added Kourbani as communal meat CONCEPT at panigiri; Anastenaria as non-participatory cultural note with respect emphasis; Athos pilgrimage naming.",
+        "Explicitly no firewalking how-to or encouragement; no sacrifice how-to."
+      ]
     },
     {
       "slug": "greek-orthodox",
       "title": "希腊正教祈福与圣水礼仪（Greek Orthodox）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "主显节大祝圣水（Theophany Great Blessing of Waters）（礼仪—公共层，概念）",
+        "主显节大祝圣水／Agiasmos 与 Cross Diving（礼仪—公共层，概念）",
         "家屋祝福（house blessing）（牧灵层，概念）",
         "小祝圣水与日常堂区祈福（日常礼仪层，概念）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Cross Diving at Theophany; Agiasmos; house blessing."
+      ]
     },
     {
       "slug": "guarani",
@@ -3344,16 +3366,21 @@
       "slug": "gutnish-folk",
       "title": "哥特兰民间基督教与岛屿祈福（Gutnish／Gotland）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
         "路德宗礼拜与教会节期（概念层）",
-        "航海／旅途感恩（概念层）",
-        "夏至等公共民俗层（概念层）"
+        "Kyrkoskepp 教堂还愿船与航海感恩（概念层）",
+        "Stångaspelen 仲夏民俗竞赛与公共民俗层（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Kyrkoskepp votive ships and Stangaspelen midsummer games."
+      ],
+      "actions": [
+        "Added Kyrkoskepp votive ships and Stångaspelen midsummer games naming.",
+        "Kept educational overview."
+      ]
     },
     {
       "slug": "hadiya-traditional",
@@ -3554,16 +3581,18 @@
       "slug": "hinduism",
       "title": "印度教",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "普迦（puja）",
+        "普迦（puja）与 Aarti、Prasad",
         "火祭（yajna / homa）",
         "誓愿（vrata）与圣见（darshan）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Aarti; Prasad; kept puja/yajna/vrata/darshan."
+      ]
     },
     {
       "slug": "hlai-traditional",
@@ -3614,16 +3643,21 @@
       "slug": "hoa-hao",
       "title": "越南和好教（Hòa Hảo）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "在家简易礼拜（概念层）",
-        "受戒与共同体伦理生活（概念层）",
-        "纪念日与集体诵经（概念层）"
+        "Bàn Thờ Trần Dầu 红布坛与花／水简易礼拜（概念层）",
+        "Tứ Đại Ân 四恩与共同体伦理（概念层）",
+        "创教／教主纪念日与集体诵经（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Bàn Thờ Trần Dầu red cloth altar; flowers/water simple home worship; Tứ Đại Ân; founder memorial days."
+      ],
+      "actions": [
+        "Added Bàn Thờ Trần Dầu, flowers/water simple home worship, Tứ Đại Ân, and founder memorial days.",
+        "Kept educational overview; no initiation how-to."
+      ]
     },
     {
       "slug": "hopi",
@@ -3719,16 +3753,21 @@
       "slug": "hungarian-folk",
       "title": "匈牙利民间天主教与朝圣祈福（Hungarian Folk／Magyar népi vallásosság）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
         "Szentkút 全国朝圣地巡礼（公开朝圣层）",
-        "圣王与国家—民间节庆记忆（历史文化层）",
+        "Csíksomlyó 圣母朝圣与 8 月 20 日圣斯蒂芬新粮祝福（公共层）",
         "堂区岁时与家庭还愿（日常民间层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Csíksomlyó Marian pilgrimage; Aug 20 St Stephen new bread blessing; keep Szentkút."
+      ],
+      "actions": [
+        "Added Csíksomlyó Marian pilgrimage and Aug 20 St Stephen new bread blessing; retained Szentkút.",
+        "Kept educational overview; no sacramental how-to."
+      ]
     },
     {
       "slug": "hyolmo-traditional",
@@ -3764,31 +3803,38 @@
       "slug": "ibibio-traditional",
       "title": "伊比比奥传统宗教与阿巴西—祖灵祈福（Ibibio）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖灵神龛敬礼（部分敏感）",
-        "Obio Ekpo 与丧葬过渡（高度敏感，仅概念）",
+        "Abassi、祖灵神龛与 Isong 大地倾奠（概念层）",
+        "Ekpo 祖灵面具会社（高度敏感，仅概念；纠正旧称）",
         "教会生活与木雕公共文化（公共层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed CORRECT Obio Ekpo → Ekpo ancestral mask society CONCEPT ONLY with strong respect note (no secret society how-to); Isong earth libation CONCEPT; Abassi; church/woodcarving public."
+      ],
+      "actions": [
+        "Corrected Obio Ekpo → Ekpo ancestral mask society CONCEPT ONLY with strong 注意与尊重 / non-participatory education.",
+        "Added Isong earth libation CONCEPT and Abassi; retained church/woodcarving public layer; no secret-society how-to."
+      ]
     },
     {
       "slug": "icelandic-asatru",
       "title": "冰岛阿萨特鲁／北欧多神复兴（Ásatrúarfélagið）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "季节 Blót（公共社群层）",
-        "人生礼仪：婚礼、葬礼、命名（法律—宗教服务层）",
-        "开放日、讲座与拟建 hof（公共教育层）"
+        "季节 Blót（Jól／Vetranótt／Sumarblót）与角杯祝酒（公共社群层）",
+        "Allsherjargoði 与人生礼仪（法律—宗教服务层）",
+        "Reykjavík hof、开放日与讲座（公共教育层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Allsherjargoði; seasonal Blót (Jól/Vetranótt/Sumarblót); horn toast; Reykjavik hof — public Ásatrúarfélagið layer only."
+      ]
     },
     {
       "slug": "ifugao-traditional",
@@ -3884,16 +3930,21 @@
       "slug": "irish-folk-catholic",
       "title": "爱尔兰民间天主教与圣井—朝圣祈福（Irish）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "克罗帕特里克山朝圣（概念层）",
-        "圣井绕行与还愿（概念层）",
-        "堂区弥撒与圣人敬礼（概念层）"
+        "Croagh Patrick／Reek Sunday 朝圣（概念层）",
+        "Lough Derg Station Island 补赎朝圣（概念层）",
+        "Pattern Days、圣井与 clootie 还愿（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:01:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Croagh Patrick Reek Sunday; Lough Derg Station Island penitential pilgrimage; Pattern Days holy wells/clootie."
+      ],
+      "actions": [
+        "Added/clarified Croagh Patrick Reek Sunday, Lough Derg Station Island penitential pilgrimage, and Pattern Days holy wells/clootie.",
+        "Kept educational overview; no sacramental substitute how-to."
+      ]
     },
     {
       "slug": "islam",
@@ -11037,21 +11088,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-4",
-    "validated_at": "2026-09-15T08:54:00Z",
+    "name": "batch-5",
+    "validated_at": "2026-09-15T09:01:00Z",
     "slugs": [
-      "dalecarlian-folk",
-      "emilian-folk",
-      "fribourg-folk",
-      "friulian-folk",
-      "estonian-maausk",
-      "ewe-traditional",
-      "faroese-folk",
-      "fijian-vanua",
-      "finnish-karelian-folk",
-      "frisian-folk",
-      "fulani-peul",
-      "ga-traditional"
+      "gagauz-traditional",
+      "galician-folk",
+      "gascon-folk",
+      "greek-folk",
+      "gutnish-folk",
+      "hoa-hao",
+      "hungarian-folk",
+      "ibibio-traditional",
+      "irish-folk-catholic",
+      "greek-orthodox",
+      "hinduism",
+      "icelandic-asatru"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

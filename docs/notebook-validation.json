@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 437,
-    "passed_after_fix": 174,
-    "passed": 114,
+    "pending": 425,
+    "passed_after_fix": 182,
+    "passed": 118,
     "skipped": 1
   },
   "items": [
@@ -5297,16 +5297,21 @@
       "slug": "khakas-traditional",
       "title": "哈卡斯萨满与腾格里祈福传统（Khakas）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "自然主人灵祈请与社区祝祷（概念层）",
-        "家庭／氏族 tös 圣物敬礼（高度敏感，仅概念）",
-        "萨满中介与节庆聚会（高度敏感，仅概念）"
+        "Tun Pairam dairy harvest festival；Chal Pazy new year（观礼层）",
+        "Tağ tayığ mountain offering viewing-only",
+        "tös sacred objects CONCEPT ONLY；Kam shaman CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Tun Pairam dairy harvest festival; Chal Pazy new year; Tağ tayığ mountain offering viewing-only; tös sacred objects CONCEPT ONLY; Kam shaman CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Tun Pairam/Chal Pazy, Tağ tayığ viewing-only, and tös/Kam CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "khanty-mansi",
@@ -5327,16 +5332,21 @@
       "slug": "khasi-niam",
       "title": "卡西传统信仰／尼阿姆卡西（Niam Khasi）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "圣林礼敬与守护（公开教育／生态文化层）",
-        "Shad Suk Mynsiem 等节庆舞蹈（公共文化层）",
-        "氏族祖先与人生礼仪（概念层）"
+        "Shad Nongkrem（公共节庆／教育层）",
+        "Mawphlang sacred grove（公开教育／生态层）",
+        "Lyngdoh priest role — public education layer only"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Shad Nongkrem; Mawphlang sacred grove; Lyngdoh priest role — public education layer only."
+      ],
+      "actions": [
+        "Enriched Shad Nongkrem, Mawphlang sacred grove, and Lyngdoh public education layer only.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "khmer-neak-ta",
@@ -5357,31 +5367,41 @@
       "slug": "khmu-traditional",
       "title": "克木传统信仰与魂灵—稻作祈福（Khmu／Kmhmu）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "家屋／村寨精灵敬礼（概念层）",
-        "腕系／招魂重整（概念层）",
-        "稻灵与农事周期（概念层）"
+        "Boun Greh harvest festival（观礼层）",
+        "Su Kwan wrist-tying/soul-calling CONCEPT/viewing",
+        "hrôôy spirit veneration CONCEPT/viewing — users don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Boun Greh harvest festival; Su Kwan wrist-tying/soul-calling CONCEPT/viewing; hrôôy spirit veneration CONCEPT/viewing — users don't officiate."
+      ],
+      "actions": [
+        "Reframed rituals to Boun Greh, Su Kwan CONCEPT/viewing, and hrôôy CONCEPT/viewing; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kiche-maya",
       "title": "基切玛雅精神传统与日守者祈福（K'iche'／Quiché Maya）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "日守者历法咨询与祭坛礼仪（高度敏感，仅概念）",
-        "天主教圣徒节与 cofradía（公共层）",
-        "《波波尔·乌》叙事传承（公共文化层）"
+        "Chichicastenango patron feast（公共层）",
+        "Cholq'ij 260-day calendar（教育／概念层）",
+        "Ajq'ij daykeeper CONCEPT；altar rites HIGH SENSITIVITY viewing/CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Chichicastenango patron feast; Cholq'ij 260-day calendar; Ajq'ij daykeeper CONCEPT; altar rites HIGH SENSITIVITY viewing/CONCEPT."
+      ],
+      "actions": [
+        "Enriched Chichicastenango, Cholq'ij, Ajq'ij CONCEPT, and altar rites HIGH SENSITIVITY viewing/CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "kikuyu-ngai",
@@ -5421,46 +5441,61 @@
       "slug": "kinnauri-traditional",
       "title": "金瑙尔民间信仰与喜马偕尔祈福（Kinnauri）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "地方神庙会（公开层）",
-        "印度教—藏传交汇公开层（概念）",
-        "更封闭的驱邪／神谕（极高敏感，仅概念）"
+        "Phulaich/Fulech flower festival（公共层）",
+        "Devta palanquin procession public",
+        "Grokch oracle/exorcism HIGH SENSITIVITY CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Phulaich/Fulech flower festival; Devta palanquin procession public; Grokch oracle/exorcism HIGH SENSITIVITY CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Phulaich/Fulech, Devta palanquin procession, and Grokch CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kirati-mundhum",
       "title": "基拉特／Mundhum 信仰（Kirati Mundhum／Kiratism）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Sakela／Ubhauli 与 Udhauli 季节祭舞（概念层）",
-        "家屋与人生礼仪中的祭司职分（限制性公共知识层）",
-        "Mundhum 口述与萨满性仪轨框架（概念层）"
+        "Sakela（季节祭舞；公共／概念层）",
+        "Phedangba/Bijuwa priests viewing-only restricted",
+        "Manghim shrine"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Sakela; Phedangba/Bijuwa priests viewing-only restricted; Manghim shrine."
+      ],
+      "actions": [
+        "Enriched Sakela, Phedangba/Bijuwa viewing-only restricted, and Manghim shrine.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "kiribati-traditional",
       "title": "基里巴斯传统信仰与集会堂祈福余绪（Kiribati／I-Kiribati／Maneaba）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Maneaba 集会与长老议事（公共社群层）",
-        "家族祖先／anti 记念（概念—历史层）",
-        "基督教节期与岛民节庆叠合（当代公开层）"
+        "sacred Maneaba（公共社群层）",
+        "Unimwane elders（公共／制度层）",
+        "anti ancestral spirits CONCEPT；public festivals"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich sacred Maneaba; Unimwane elders; anti ancestral spirits CONCEPT; public festivals."
+      ],
+      "actions": [
+        "Enriched sacred Maneaba, Unimwane elders, anti CONCEPT, and public festivals.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "kissi-traditional",
@@ -5496,16 +5531,21 @@
       "slug": "komi-traditional",
       "title": "科米传统信仰（Komi／Zyryan–Permian）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "林主／水灵与季节奉献（概念层）",
-        "家户灵与祖先记念（概念层）",
-        "东正教叠合与公共史述（当代伦理层，概念）"
+        "Lud midsummer meadow festival（民俗／观礼层）",
+        "Vörsa forest master CONCEPT",
+        "Vasa water spirit CONCEPT — folklore/ethics layer"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Lud midsummer meadow festival; Vörsa forest master CONCEPT; Vasa water spirit CONCEPT — folklore/ethics layer."
+      ],
+      "actions": [
+        "Reframed rituals to Lud midsummer meadow festival, Vörsa CONCEPT, and Vasa CONCEPT folklore/ethics.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "konkokyo",
@@ -5590,16 +5630,21 @@
       "slug": "koryak-traditional",
       "title": "科里亚克传统信仰与乌鸦—萨满祈福（Koryak）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "火板与火灵敬礼（概念层）",
-        "乌鸦神话与渔猎／牧养祈请（概念层）",
-        "萨满中介与东正教余绪（高度敏感，仅概念）"
+        "Kilvey reindeer festival；Khololo/Hololo seal festival（观礼层）",
+        "Kilvikh fire-board CONCEPT；Quikil raven myth",
+        "shaman CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kilvey reindeer festival; Khololo/Hololo seal festival; Kilvikh fire-board CONCEPT; Quikil raven myth; shaman CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Kilvey/Khololo festivals, Kilvikh/Quikil CONCEPT, and shaman CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kosraean-traditional",
@@ -5660,46 +5705,61 @@
       "slug": "kumyk-traditional",
       "title": "库梅克民间伊斯兰与达吉斯坦低地祈福（Kumyk）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与伊斯兰节日（概念层）",
-        "生命礼仪与家庭伦理（概念层）",
-        "圣地朝谒余绪（敏感，仅概念）"
+        "Ebelzen/Navruz ploughing/new year（观礼层）",
+        "Mawlid（公开宗教层）",
+        "Ziyarat saint-tomb visiting viewing/CONCEPT only"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Ebelzen/Navruz ploughing/new year; Mawlid; Ziyarat saint-tomb visiting viewing/CONCEPT only."
+      ],
+      "actions": [
+        "Reframed rituals to Ebelzen/Navruz, Mawlid, and Ziyarat viewing/CONCEPT only.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kunama-traditional",
       "title": "库纳马传统信仰与厄立特里亚—埃塞边境祈福（Kunama）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "农作与季节伦理（概念层）",
-        "祖先与社区节庆（敏感，仅概念）",
-        "基督教／伊斯兰教并存（公开层）"
+        "Anna high god CONCEPT",
+        "Kudura rain/harvest festival viewing-only restricted",
+        "Sanger（公开／概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Anna high god CONCEPT; Kudura rain/harvest festival viewing-only restricted; Sanger."
+      ],
+      "actions": [
+        "Reframed rituals to Anna CONCEPT, Kudura viewing-only restricted, and Sanger.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kuria-traditional",
       "title": "库里亚传统信仰与湖区—祖灵祈福（Kuria）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先敬礼（概念层）",
-        "教堂崇拜（概念层）",
-        "年龄组织余绪（极高敏感，仅概念）"
+        "Weise/Esubha high god CONCEPT",
+        "Nyangi blessing rites CONCEPT",
+        "Rika age-set historical expression — users don't officiate; no initiation how-to"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T13:32:15Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Weise/Esubha high god CONCEPT; Nyangi blessing rites CONCEPT; Rika age-set historical expression — users don't officiate; no initiation how-to."
+      ],
+      "actions": [
+        "Reframed rituals to Weise/Esubha CONCEPT, Nyangi CONCEPT, and Rika historical expression; no initiation how-to.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "kven-folk",
@@ -12207,21 +12267,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-24",
-    "validated_at": "2026-09-15T13:23:23Z",
+    "name": "batch-25",
+    "validated_at": "2026-09-15T13:32:15Z",
     "slugs": [
-      "kalmyk-buddhism",
-      "kanak-customary",
-      "kanuri-traditional",
-      "kaqchikel-traditional",
-      "karachay-traditional",
-      "karbi-traditional",
-      "karen-traditional",
-      "kayapo-traditional",
-      "kazakh-traditional",
-      "kejawen",
-      "kelabit-traditional",
-      "ket-traditional"
+      "khakas-traditional",
+      "khasi-niam",
+      "khmu-traditional",
+      "kiche-maya",
+      "kinnauri-traditional",
+      "kirati-mundhum",
+      "kiribati-traditional",
+      "komi-traditional",
+      "koryak-traditional",
+      "kumyk-traditional",
+      "kunama-traditional",
+      "kuria-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

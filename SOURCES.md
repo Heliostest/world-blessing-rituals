@@ -1437,3 +1437,35 @@
 - https://www.britannica.com/place/Wallis-and-Futuna
 - https://www.britannica.com/topic/kava
 - https://www.britannica.com/place/Polynesia
+
+## 增补传统（巴瑶、古隆、塔芒、达斡尔、苏格兰、桑海、马库阿、米斯基托、塞里、阿斯马特）
+
+- https://www.everyculture.com/East-Southeast-Asia/Bajau-Religion-and-Expressive-Culture.html
+- https://doi.org/10.5901/mjss.2013.v4n9p184
+- https://www.peoplesoftheworld.org/text?people=Bajau
+- https://en.wikipedia.org/wiki/Gurung_Dharma
+- https://repository.cam.ac.uk/handle/1810/250351
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/topic/Tamang
+- https://www.britannica.com/topic/Nyingma
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/daur
+- https://doi.org/10.3390/rel14050661
+- https://doi.org/10.3390/rel10010052
+- https://www.britannica.com/place/Iona
+- https://www.britannica.com/biography/Saint-Columba
+- https://www.britannica.com/topic/holy-well
+- https://www.everyculture.com/wc/Japan-to-Mali/Songhay.html
+- https://www.britannica.com/topic/Songhai-empire
+- https://www.britannica.com/place/Niger-River
+- https://www.britannica.com/topic/Makua
+- https://en.wikipedia.org/wiki/Makua_(people)
+- https://www.britannica.com/place/Mozambique
+- https://www.everyculture.com/Middle-America-Caribbean/Miskito-Religion-and-Expressive-Culture.html
+- https://www.everyculture.com/wc/Mauritania-to-Nigeria/Sumu-and-Miskito.html
+- https://www.britannica.com/topic/Miskito
+- https://www.britannica.com/topic/Seri-people
+- https://www.britannica.com/place/Sonora
+- https://www.britannica.com/place/Gulf-of-California
+- https://www.britannica.com/topic/Asmat
+- https://www.metmuseum.org/toah/hd/asma/hd_asma.htm
+- https://www.britannica.com/place/Papua

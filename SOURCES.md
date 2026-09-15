@@ -1066,3 +1066,21 @@
 - https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/niueans
 - https://www.britannica.com/place/Polynesia
 - https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/polynesian-religions-mythic-themes
+
+## 增补传统（加族、土库曼、钦／佐米、莱纳佩、图瓦卢）
+
+- https://www.britannica.com/topic/Ga
+- https://carleton.ca/africanstudies/wp-content/uploads/Ga-People-and-Homowo-Festival.pdf
+- https://www.britannica.com/place/Ghana
+- https://www.britannica.com/place/Turkmenistan/People
+- https://www.encyclopedia.com/places/commonwealth-independent-states-and-baltic-nations/cis-and-baltic-political-geography/turkmens
+- https://www.encyclopedia.com/places/commonwealth-independent-states-and-baltic-nations/cis-and-baltic-political-geography/turkmenistan
+- https://www.britannica.com/topic/Chin-people
+- https://zomipress.com/khuado-festival-the-zomi-new-year/
+- https://www.britannica.com/place/Myanmar/Cultural-life
+- https://www.britannica.com/topic/Delaware-people
+- https://www.penn.museum/sites/journal/113/
+- https://www.gutenberg.org/files/72988/72988-h/72988-h.htm
+- https://www.britannica.com/place/Tuvalu
+- https://www.everyculture.com/Oceania/Tuvalu-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/place/Polynesia

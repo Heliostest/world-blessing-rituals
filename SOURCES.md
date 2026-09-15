@@ -1743,3 +1743,34 @@
 - https://www.britannica.com/topic/Mixe
 - https://www.britannica.com/topic/Huastec
 - https://www.britannica.com/place/San-Luis-Potosi-state-Mexico
+
+## 增补传统（安加米、提瓦、塔斗、拉丁、恩道、兰戈、特索、特拉帕内克、科拉、提科皮亚）
+
+- https://en.wikipedia.org/wiki/Angami_Naga
+- https://en.wikipedia.org/wiki/Pf%C3%BCtsana
+- https://joshuaproject.net/people_groups/16219/IN
+- https://en.wikipedia.org/wiki/Tiwa_people_(Lalung)
+- https://www.britannica.com/place/Assam
+- https://www.britannica.com/place/Meghalaya
+- https://www.britannica.com/topic/Kuki
+- https://www.britannica.com/place/Manipur
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Ladin
+- https://www.britannica.com/place/Dolomites
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/topic/Ndau
+- https://www.britannica.com/place/Mozambique
+- https://www.britannica.com/place/Zimbabwe
+- https://www.britannica.com/topic/Lango
+- https://www.britannica.com/place/Uganda
+- https://www.britannica.com/place/Northern-Uganda
+- https://www.britannica.com/topic/Teso
+- https://www.britannica.com/place/Kenya
+- https://www.britannica.com/topic/Tlapanec
+- https://www.britannica.com/place/Guerrero
+- https://www.britannica.com/place/Mexico
+- https://www.britannica.com/topic/Cora-people
+- https://www.britannica.com/place/Nayarit
+- https://www.britannica.com/place/Tikopia
+- https://www.britannica.com/topic/Tikopia
+- https://www.britannica.com/place/Solomon-Islands

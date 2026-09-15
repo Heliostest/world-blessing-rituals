@@ -2181,3 +2181,33 @@
 - https://www.britannica.com/topic/Chatino
 - https://www.britannica.com/place/Oaxaca-state-Mexico
 - https://www.britannica.com/place/Mexico
+
+## 增补传统（瓦奥拉尼、库伊库罗、亚内沙、特罗布里恩、拜宁、图尔卡纳、松格、切庞、奥罗奇、瓦韦）
+
+- https://www.britannica.com/topic/Huaorani
+- https://www.britannica.com/place/Ecuador
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/Xinguanos
+- https://www.britannica.com/place/Xingu-River
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/topic/Amuesha
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Trobriand-Islands
+- https://www.britannica.com/topic/Kula
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Baining
+- https://www.britannica.com/place/New-Britain-Island-Papua-New-Guinea
+- https://www.britannica.com/topic/Turkana-people
+- https://www.britannica.com/place/Lake-Turkana
+- https://www.britannica.com/place/Kenya
+- https://www.britannica.com/topic/Songye
+- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britannica.com/topic/African-art
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/place/Himalayas
+- https://www.britannica.com/topic/Oroch
+- https://www.britannica.com/place/Siberia
+- https://www.britannica.com/place/Russian-Far-East
+- https://www.britannica.com/topic/Huave
+- https://www.britannica.com/place/Tehuantepec
+- https://www.britannica.com/place/Oaxaca-state-Mexico

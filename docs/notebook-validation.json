@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 413,
-    "passed_after_fix": 191,
-    "passed": 121,
+    "pending": 401,
+    "passed_after_fix": 202,
+    "passed": 122,
     "skipped": 1
   },
   "items": [
@@ -6307,31 +6307,41 @@
       "slug": "magar-traditional",
       "title": "马嘉尔传统信仰与自然神—萨满祈福（Magar）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "自然神与村社圣地敬礼（概念层）",
-        "火神等岁时礼仪（概念层）",
-        "印度教／佛教并行实践（概念层）"
+        "Bhume Puja earth offering（概念层）",
+        "Maghe Sankranti harvest/new year（公共／观礼层）",
+        "Jhankri shaman CONCEPT/viewing ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Bhume Puja earth offering; Maghe Sankranti harvest/new year; Jhankri shaman CONCEPT/viewing ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Bhume Puja CONCEPT, Maghe Sankranti public/cultural, and Jhankri CONCEPT/viewing ONLY; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "mailu-traditional",
       "title": "迈卢传统信仰与航海—基督教祈福（Mailu）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "航海—贸易记忆伦理（概念层）",
-        "祖先敬礼（敏感，仅概念）",
-        "教堂崇拜（概念层）"
+        "Dubu ceremonial house viewing",
+        "Govi long-distance trade festival（公共／文化层）",
+        "elder gatherings viewing-only"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Dubu ceremonial house viewing; Govi long-distance trade festival; elder gatherings viewing-only."
+      ],
+      "actions": [
+        "Reframed rituals to Dubu viewing, Govi public/cultural, and elder gatherings viewing-only; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "makonde-traditional",
@@ -6357,31 +6367,41 @@
       "slug": "makua-traditional",
       "title": "马库阿传统宗教与穆卢库—祖灵祈福（Makua）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖灵与自然灵敬礼（概念层）",
-        "伊斯兰或基督教公共崇拜（概念层）",
-        "创世与伦理叙事传承（概念层）"
+        "Muluku high god CONCEPT",
+        "Mapiko/Midimu mask dance as cultural performance — no how-to",
+        "Islamic/Christian public worship + ancestors CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Muluku high god CONCEPT; Mapiko/Midimu mask dance as cultural performance — no how-to."
+      ],
+      "actions": [
+        "Reframed rituals to Muluku CONCEPT and Mapiko/Midimu cultural performance — no how-to; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "makwe-traditional",
       "title": "马奎传统信仰与海岸—伊斯兰祈福（Makwe）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与伊斯兰节日（概念层）",
-        "命名与生命礼仪（概念层）",
-        "祖先伦理余绪（敏感，仅概念）"
+        "Maulidi recitation public",
+        "Midimu coastal mask dance cultural",
+        "naming rites boundary CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Maulidi recitation public; Midimu coastal mask dance cultural; naming rites boundary CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Maulidi public, Midimu cultural, and naming rites boundary CONCEPT; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "malagasy-traditional",
@@ -6402,31 +6422,41 @@
       "slug": "maldivian-islam",
       "title": "马尔代夫伊斯兰与岛礁民间祈福（Maldivian／Divehi）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与主麻（概念层）",
-        "开斋节与宰牲节（概念层）",
-        "海洋生计与护佑民俗（敏感，仅概念）"
+        "Kuda/Bodu Eid（公开层）",
+        "Bodu Beru drum dance public",
+        "Fanditha protective folklore CONCEPT ONLY — no performance"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kuda/Bodu Eid; Bodu Beru drum dance public; Fanditha protective folklore CONCEPT ONLY — no performance."
+      ],
+      "actions": [
+        "Reframed rituals to Eid public, Bodu Beru public, and Fanditha CONCEPT ONLY — no performance; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "maleku-traditional",
       "title": "马莱库传统信仰与湿地祈福（Maleku／Guatuso）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "自然伦理与祖先敬礼（概念层）",
-        "教堂／传教接触层（概念层）",
-        "语言—文化复兴感恩（概念层）"
+        "Tócu high spirit CONCEPT",
+        "Caño Negro sacred wetlands",
+        "Palenque traditional home memory"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Tócu high spirit CONCEPT; Caño Negro sacred wetlands; Palenque traditional home memory."
+      ],
+      "actions": [
+        "Reframed rituals to Tócu CONCEPT, Caño Negro sacred wetlands, and Palenque traditional home memory; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "malekula-traditional",
@@ -6464,16 +6494,21 @@
       "slug": "mam-maya",
       "title": "马姆玛雅民间天主教与山灵祈福（Mam）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "山灵／圣地敬礼（概念层）",
-        "福音派并行社区（概念层）"
+        "Todos Santos Cuchumatán patron feast",
+        "Cofradía processions（公开观礼层）",
+        "Ajq'ij daykeeper CONCEPT/viewing ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Todos Santos Cuchumatán patron feast; Cofradía processions; Ajq'ij daykeeper CONCEPT/viewing ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Todos Santos patron feast, Cofradía processions, and Ajq'ij CONCEPT/viewing ONLY; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "manam-traditional",
@@ -6494,16 +6529,21 @@
       "slug": "manchu-shamanism",
       "title": "满族萨满与祭神祭天传统",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "家祭与堂子供奉（概念层）",
-        "野祭与通神（限制性公共知识层）",
-        "文本化宫廷典礼（概念层）"
+        "Wecheku household spirits CONCEPT",
+        "Tangse/tangzi hall CONCEPT",
+        "Baichima wild offering CONCEPT — shaman/elders host only, users don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich Wecheku household spirits CONCEPT; Tangse/tangzi hall CONCEPT; Baichima wild offering CONCEPT — shaman/elders host only, users don't officiate."
+      ],
+      "actions": [
+        "Enriched Wecheku, Tangse/tangzi, and Baichima CONCEPT; shaman/elders host only, users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B."
+      ]
     },
     {
       "slug": "mandaean",
@@ -6524,31 +6564,41 @@
       "slug": "mandinka-traditional",
       "title": "曼丁卡民间伊斯兰与地方灵祈福（Mandinka／Malinke）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与伊斯兰节日（概念层）",
-        "马拉布特咨询与护佑文化（敏感，仅概念）",
-        "地方灵与村社互惠（概念层）"
+        "Kankurang sacred mask ICH viewing-only",
+        "Marabout/Karamoko CONCEPT",
+        "Jali/Griot public cultural — users don't officiate mask rites"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kankurang sacred mask ICH viewing-only; Marabout/Karamoko CONCEPT; Jali/Griot public cultural; users don't officiate mask rites."
+      ],
+      "actions": [
+        "Reframed rituals to Kankurang ICH viewing-only, Marabout/Karamoko CONCEPT, and Jali/Griot public cultural; users don't officiate mask rites.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "mangareva-traditional",
       "title": "曼加雷瓦传统信仰与天主教—marae祈福余绪（Mangareva）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "天主教堂区礼仪（概念层）",
-        "Marae 遗址致敬（概念层）",
-        "航海—资源伦理叙事（概念层）"
+        "St Michael Cathedral Rikitea pilgrimage public",
+        "Marae stone platforms historical",
+        "islander festivals"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed St Michael Cathedral Rikitea pilgrimage public; Marae stone platforms historical; islander festivals."
+      ],
+      "actions": [
+        "Reframed rituals to St Michael Cathedral Rikitea pilgrimage public, Marae historical, and islander festivals; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "mangbetu-traditional",
@@ -6569,31 +6619,41 @@
       "slug": "mangyan-traditional",
       "title": "曼吉安传统信仰与民都洛祖灵祈福（Mangyan）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与山灵敬礼（概念层）",
-        "诗歌—仪式知识传承（概念层）",
-        "基督教并行（概念层）"
+        "Ambahan bamboo poetry（公共／文化层）",
+        "Panudlak/Pamago rice rites CONCEPT",
+        "Balaynan healer CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Ambahan bamboo poetry; Panudlak/Pamago rice rites CONCEPT; Balaynan healer CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Ambahan public/cultural, Panudlak/Pamago CONCEPT, and Balaynan CONCEPT ONLY; users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "manjak-traditional",
       "title": "曼雅克传统信仰与稻作—祖灵祈福（Manjak／Manjaca）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与稻作伦理（概念层）",
-        "教堂／清真寺公开崇拜（概念层）",
-        "移民还愿与命名（概念层）"
+        "Napagol ancestral shrine CONCEPT",
+        "Pano de Pente weaving heritage",
+        "Bambo coming-of-age CONCEPT — family elders host, users don't"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T14:12:12Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Napagol ancestral shrine CONCEPT; Pano de Pente weaving heritage; Bambo coming-of-age CONCEPT — family elders host, users don't."
+      ],
+      "actions": [
+        "Reframed rituals to Napagol CONCEPT, Pano de Pente weaving heritage, and Bambo CONCEPT — family elders host, users don't.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "manobo-traditional",
@@ -12327,21 +12387,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-26",
-    "validated_at": "2026-09-15T14:03:25Z",
+    "name": "batch-27",
+    "validated_at": "2026-09-15T14:12:12Z",
     "slugs": [
-      "kwaraae-traditional",
-      "kyrgyz-traditional",
-      "ladakh-buddhist",
-      "lahul-traditional",
-      "lango-traditional",
-      "lepcha-mun",
-      "limba-traditional",
-      "limbu-traditional",
-      "lomwe-traditional",
-      "lotha-traditional",
-      "lugbara-traditional",
-      "luo-traditional"
+      "magar-traditional",
+      "mailu-traditional",
+      "makua-traditional",
+      "makwe-traditional",
+      "maldivian-islam",
+      "maleku-traditional",
+      "mam-maya",
+      "manchu-shamanism",
+      "mandinka-traditional",
+      "mangareva-traditional",
+      "mangyan-traditional",
+      "manjak-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

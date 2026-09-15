@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 653,
-    "passed_after_fix": 33,
-    "passed": 39,
+    "pending": 641,
+    "passed_after_fix": 43,
+    "passed": 41,
     "skipped": 1
   },
   "items": [
@@ -5045,16 +5045,21 @@
       "slug": "kven-folk",
       "title": "克文民间基督教与极北祈福（Kven）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "路德宗礼拜与教会节期（概念层）",
-        "语言—文化日感恩（概念层）",
-        "渔农季节伦理（概念层）"
+        "莱斯塔迪乌斯派／Seurat 聚会（概念层）",
+        "极北渔农祝福叙事（概念层）",
+        "语言—文化日感恩（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Laestadianism/Seurat gatherings; Arctic fishing blessing narrative; language-culture days."
+      ],
+      "actions": [
+        "Reframed rituals to Laestadianism/Seurat, Arctic fishing blessing narrative, and language-culture days.",
+        "Kept educational overview; preserved 手机互动适合度 C; no clerical how-to."
+      ]
     },
     {
       "slug": "kwaraae-traditional",
@@ -5120,31 +5125,41 @@
       "slug": "ladin-folk",
       "title": "拉丁民间天主教与多洛米蒂祈福（Ladin）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "堂区弥撒与主保节（概念层）",
-        "圣母朝圣（概念层）",
-        "牧季／山居祝福（概念层）"
+        "Santa Crusc／Heilig Kreuz 山地圣地朝圣（概念层）",
+        "Desalpa／Almabtrieb 牲畜下山祝福（概念层）",
+        "山谷 festa／复活节民俗（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Santa Crusc/Heilig Kreuz mountain shrine; Desalpa/Almabtrieb cattle blessing; valley festa/Easter folk."
+      ],
+      "actions": [
+        "Reframed rituals to Santa Crusc/Heilig Kreuz, Desalpa/Almabtrieb, and valley festa/Easter folk.",
+        "Kept educational overview; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "lahu-traditional",
       "title": "拉祜族传统信仰与新年祈福（Lahu）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "拉祜新年（Lahu New Year）（公共层）",
-        "家屋灵力与祖先敬礼（部分敏感）",
-        "佛教实践与教会生活（公共／当代层）"
+        "Esha（G’ui sha）与 Mawpa（CONCEPT ONLY）",
+        "Kha-ty-te 新年芦笙舞与公共节庆（公共层）",
+        "葫芦节与佛教／教会生活（公共／当代层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Esha (G’ui sha); Mawpa CONCEPT; Kha-ty-te New Year reed-pipe dance; gourd festival — no secret how-to."
+      ],
+      "actions": [
+        "Reframed rituals to Esha/G’ui-sha + Mawpa CONCEPT, Kha-ty-te reed-pipe New Year, and gourd festival + Buddhist/church layer.",
+        "No secret/priest how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "lahul-traditional",
@@ -5195,16 +5210,18 @@
       "slug": "lao-baci-phi",
       "title": "老挝上座部佛教与灵魂召唤／皮灵祈福（Lao Baci / Phi）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Baci／Sou Khuan 召魂系白线（公共—家庭祝福层）",
-        "寺院功德：托钵、布施与节庆（佛教公共层）",
-        "村灵／地方守护灵供养（限制性概念层）"
+        "Baci／Sou Khuan：Pha Khuan 与 Sai Sin／32 khwan（公共—家庭祝福层）",
+        "Boun That Luang 塔銮节（佛教公共层）",
+        "村灵／地方守护灵（phi）供养（限制性概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Pha Khuan; Sai Sin / 32 khwan; Boun That Luang; phi village spirit CONCEPT."
+      ]
     },
     {
       "slug": "lenape-traditional",
@@ -5240,46 +5257,61 @@
       "slug": "lezgin-traditional",
       "title": "列兹金民间伊斯兰与圣地祈福（Lezgin／Lezgi）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与苏菲互助网络（公共／历史层）",
-        "圣地／pir 朝拜与自然圣地敬礼（部分敏感）",
-        "春季篝火与农牧周期民俗（公共文化层）"
+        "Yaran Suvar 春季篝火／彩蛋节庆（公共文化层）",
+        "Mount Shalbuzdag 与 pir ziyarat（部分敏感）",
+        "清真寺礼拜与苏菲互助网络（公共／历史层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Yaran Suvar spring fire/egg festival; Mount Shalbuzdag & pir ziyarat; mosque/Sufi networks."
+      ],
+      "actions": [
+        "Reframed rituals to Yaran Suvar, Shalbuzdag/pir ziyarat, and mosque/Sufi networks.",
+        "No sacrifice/magic how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "liechtenstein-folk",
       "title": "列支敦士登民间天主教与莱茵朝圣祈福（Liechtenstein）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "堂区弥撒与主保节（概念层）",
-        "山地／圣母朝圣（概念层）",
-        "还愿传统（概念层）"
+        "8 月 15 日 Staatsfeiertag 城堡弥撒（概念层）",
+        "Maria Trost 圣母圣地朝圣（概念层）",
+        "Alpabfahrt 牧季下山（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Aug 15 Staatsfeiertag castle Mass; Maria Trost shrine; Alpabfahrt."
+      ],
+      "actions": [
+        "Reframed rituals to Staatsfeiertag castle Mass, Maria Trost, and Alpabfahrt.",
+        "Kept educational overview; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "ligurian-folk",
       "title": "利古里亚民间天主教与海岸朝圣祈福（Ligurian）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母／海岸还愿（概念层）",
-        "主保节巡游（概念层）",
-        "海难／风暴纪念（概念层）"
+        "Madonna della Guardia 圣母朝圣（概念层）",
+        "萨沃纳 Casacce 重十字架游行（概念层）",
+        "Cristo degli Abissi 水下／海岸祝福（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Madonna della Guardia; Savona Casacce heavy-cross processions; Cristo degli Abissi underwater blessing."
+      ],
+      "actions": [
+        "Reframed rituals to Madonna della Guardia, Savona Casacce, and Cristo degli Abissi.",
+        "No trauma tourism; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "limba-traditional",
@@ -5315,31 +5347,41 @@
       "slug": "lisu-traditional",
       "title": "傈僳族传统信仰与山地祈福（Lisu）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "岁时与收获相关公共礼仪（公共层）",
-        "山灵—祖先敬礼（部分敏感）",
-        "教会礼拜与圣诗传统（公共／当代层）"
+        "阔时节（Kuoshi）新年（公共层）",
+        "刀杆／火海节庆命名与 Niba（CONCEPT ONLY）",
+        "教会礼拜与四声部圣诗传统（公共／当代层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kuoshi New Year; knife-ladder/firewalking festival as CULTURAL name only (no how-to/encourage); Niba CONCEPT; four-part hymnody church."
+      ],
+      "actions": [
+        "Reframed rituals to Kuoshi, knife-ladder/firewalking CULTURAL NAME ONLY + Niba CONCEPT, and four-part hymnody church.",
+        "Strong no-how-to/no-encourage on knife-ladder/firewalking; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "livonian-folk",
       "title": "利沃尼亚民间基督教与濒危语言祈福（Livonian）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "路德宗／基督教礼拜（概念层）",
-        "语言—文化日感恩（概念层）",
-        "海岸祖先记忆（概念层）"
+        "Mazirbe Līvlišt pīvad（利沃尼亚人日）（概念层）",
+        "Līvõd Kōd（利沃尼亚之家）文化中心（概念层）",
+        "海岸路德宗礼拜（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Mazirbe Līvlišt pīvad; Līvõd Kōd; coastal Lutheran worship."
+      ],
+      "actions": [
+        "Reframed rituals to Mazirbe Līvlišt pīvad, Līvõd Kōd, and coastal Lutheran worship.",
+        "Kept educational overview; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "lomwe-traditional",
@@ -5375,16 +5417,21 @@
       "slug": "lozi-traditional",
       "title": "洛齐／巴罗策传统宗教与尼扬贝—王陵祈福（Lozi／Barotse）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "王陵祭司礼仪（高度敏感，仅概念）",
-        "平民祖灵与疗愈／占卜叙事（部分敏感）",
-        "教会与季节性公共迁徙庆典（公共层）"
+        "Kuomboka／Nalikwanda 公共迁徙庆典（公共层）",
+        "Nayuma 王陵与 Nyambe（CONCEPT ONLY）",
+        "平民祖灵与教会生活（高阶概念／公共层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Kuomboka/Nalikwanda public ceremony; Nayuma royal tombs CONCEPT ONLY; Nyambe; commoner ancestors high-level."
+      ],
+      "actions": [
+        "Reframed rituals to Kuomboka/Nalikwanda, Nayuma+Nyambe CONCEPT ONLY, and high-level commoner ancestors + church.",
+        "No tomb/initiation/sacrifice how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "luba-traditional",
@@ -5510,16 +5557,21 @@
       "slug": "makonde-traditional",
       "title": "马孔德传统信仰与祖灵—木雕祈福（Makonde）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖灵敬礼与家庭护佑（部分敏感）",
-        "伊斯兰／基督教公共礼拜（公共层）",
-        "木雕作为纪念与认同（公共文化层）"
+        "Mapiko／Lipiko 面具舞（公共文化层）",
+        "Jando／Unyago 成年礼仪（CONCEPT ONLY＋强烈注意与尊重）",
+        "Shetani 木雕纪念与认同（公共文化层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Mapiko/Lipiko mask dance public culture; Jando/Unyago initiation CONCEPT ONLY with strong 注意与尊重 (no how-to); Shetani sculpture memorial."
+      ],
+      "actions": [
+        "Reframed rituals to Mapiko/Lipiko, Jando/Unyago CONCEPT ONLY with strong respect warnings, and Shetani sculpture memorial.",
+        "No initiation how-to; preserved 手机互动适合度 C."
+      ]
     },
     {
       "slug": "makua-traditional",
@@ -5615,16 +5667,18 @@
       "slug": "maltese-festa",
       "title": "马耳他民间天主教与村社festa祈福（Maltese）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "主保festa巡游与烟火（概念层）",
-        "弥撒与还愿（概念层）",
-        "圣母与海洋护佑敬礼（概念层）"
+        "Il-Vara 与 festa 烟火／行进乐队（概念层）",
+        "Ta' Pinu 还愿（ex-voto）（概念层）",
+        "圣保罗海难瞻礼与海洋护佑（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T09:35:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Il-Vara; Ta' Pinu ex-voto; St Paul shipwreck feast; festa fireworks/march."
+      ]
     },
     {
       "slug": "mam-maya",

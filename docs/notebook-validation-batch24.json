@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "kalmyk-buddhism",
+    "title": "卡尔梅克藏传佛教祈福传统（Kalmyk Buddhism）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Zul lantern festival（观礼层）",
+      "Burkhan Bakshin Altan Sume（Golden Abode；公共朝拜层）",
+      "Khurul liturgies by sangha, viewing-only"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Zul lantern festival; Burkhan Bakshin Altan Sume (Golden Abode of Buddha Shakyamuni); khurul liturgies by sangha, viewing-only."
+    ],
+    "actions": [
+      "Reframed rituals to Zul lantern festival, Burkhan Bakshin Altan Sume, and khurul liturgies by sangha viewing-only.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "kanak-customary",
+    "title": "卡纳克习惯法与祈福礼仪（Kanak customary）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Faire la coutume（概念／伦理层；users do not perform customary gift-giving）",
+      "Grande Case（公共／概念层）",
+      "Jean-Marie Tjibaou Cultural Centre；elder protocols"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Faire la coutume; Grande Case; Jean-Marie Tjibaou Cultural Centre; elder protocols — users do not perform customary gift-giving."
+    ],
+    "actions": [
+      "Reframed rituals to Faire la coutume, Grande Case, and Tjibaou Cultural Centre with elder protocols; users do not perform customary gift-giving.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "kanuri-traditional",
+    "title": "卡努里伊斯兰与博尔努宫廷—民间祈福（Kanuri）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Durbar／Gani（观礼／史述层）",
+      "Shehu of Borno；Malam（制度／教育概念层）",
+      "Sensitive protective practices CONCEPT ONLY"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Durbar/Gani; Shehu of Borno; Malam; sensitive protective practices CONCEPT ONLY."
+    ],
+    "actions": [
+      "Reframed rituals to Durbar/Gani, Shehu of Borno, Malam, and sensitive protective practices CONCEPT ONLY.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "kaqchikel-traditional",
+    "title": "卡克奇克尔玛雅民间天主教与危地马拉高地祈福（Kaqchikel）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Cofradía 与主保圣人节（公开层）",
+      "Maximón／San Simón shrine viewing-only",
+      "Ajq'ij daykeeper CONCEPT ONLY — users don't host"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Cofradía; Maximón/San Simón shrine viewing-only; Ajq'ij daykeeper CONCEPT ONLY — specific officiants, users don't host."
+    ],
+    "actions": [
+      "Reframed rituals to Cofradía, Maximón/San Simón shrine viewing-only, and Ajq'ij CONCEPT ONLY; users don't host.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "karachay-traditional",
+    "title": "卡拉恰伊民间伊斯兰与高加索山地祈福（Karachay）",
+    "grade": "B",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Adat／Nymys hospitality（公共伦理层）",
+      "Nart epic（文化记忆层）",
+      "Teyri／Eliya mountain-spirit memory CONCEPT；rain／mountain waters CONCEPT"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Adat/Nymys hospitality; Nart epic; Teyri/Eliya mountain-spirit memory CONCEPT; rain/mountain waters CONCEPT."
+    ],
+    "actions": [
+      "Reframed rituals to Adat/Nymys hospitality, Nart epic, and Teyri/Eliya + rain/mountain waters CONCEPT.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "karbi-traditional",
+    "title": "卡尔比传统信仰与洪哈里—祖灵祈福（Karbi）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Rongker village purification／blessing festival",
+      "Hemphu—Mukrang（主神叙事；概念层）",
+      "Chomangkan HIGH SENSITIVITY viewing-only"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Rongker village purification/blessing festival; Hemphu-Mukrang; Chomangkan HIGH SENSITIVITY viewing-only."
+    ],
+    "actions": [
+      "Enriched Rongker, Hemphu-Mukrang, and Chomangkan high-sensitivity viewing-only.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "karen-traditional",
+    "title": "克伦族传统信仰与山地灵力—佛教接触（Karen Traditional）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Khee Htoo knotted-cord blessing festival",
+      "Bgha matrilineal ancestor CONCEPT",
+      "村域灵力与佛教功德（概念／公共—历史层）"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Khee Htoo knotted-cord blessing festival; bgha matrilineal ancestor CONCEPT."
+    ],
+    "actions": [
+      "Enriched Khee Htoo knotted-cord blessing festival and bgha matrilineal ancestor CONCEPT.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "kayapo-traditional",
+    "title": "卡亚波／梅本戈克雷祈福与命名礼仪概观（Kayapó／Mebêngôkre）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Kukradjá／Biyok（概念／高度敏感边界）",
+      "Men-kradjá men's house（概念层）",
+      "Naming rites hosted by chiefs／elders — users don't officiate"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Kukradjá/Biyok; Men-kradjá men's house; naming rites hosted by chiefs/elders — users don't officiate."
+    ],
+    "actions": [
+      "Enriched Kukradjá/Biyok, Men-kradjá men's house, and naming rites hosted by chiefs/elders; users don't officiate.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "kazakh-traditional",
+    "title": "哈萨克传统民俗与腾格里—伊斯兰祈福文化（Kazakh Traditional）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Nauryz（公共节庆层）",
+      "Alas／Adraspan purification as folklore／public",
+      "Khoja Ahmed Yasawi shrine；baqsy CONCEPT"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Nauryz; Alas/Adraspan purification as folklore/public; Khoja Ahmed Yasawi shrine; baqsy CONCEPT."
+    ],
+    "actions": [
+      "Enriched Nauryz, Alas/Adraspan folklore/public, Khoja Ahmed Yasawi shrine, and baqsy CONCEPT.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "kejawen",
+    "title": "爪哇克贾文／爪哇教（Kejawen / Agami Jawi）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Bersih Desa（村落净化；概念／公共层）",
+      "Kraton Labuhan（宫廷仪典；公开文化史层）",
+      "Modin／Kaum as designated hosts — users don't officiate slametan"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Bersih Desa; Kraton Labuhan; Modin/Kaum as designated hosts — users don't officiate slametan."
+    ],
+    "actions": [
+      "Enriched Bersih Desa, Kraton Labuhan, and Modin/Kaum designated hosts; users don't officiate slametan.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "kelabit-traditional",
+    "title": "克拉比特基督教与高地巨石记忆祈福（Kelabit）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Mount Murud prayer gatherings as public Christian layer",
+      "Batu Ritong；Iraung（概念／遗产层）",
+      "Megaliths CONCEPT"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Batu Ritong; Iraung; Mount Murud prayer gatherings as public Christian layer; megaliths CONCEPT."
+    ],
+    "actions": [
+      "Enriched Batu Ritong, Iraung, Mount Murud public Christian layer, and megaliths CONCEPT.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  },
+  {
+    "slug": "ket-traditional",
+    "title": "凯特传统信仰与叶尼塞萨满祈福（Ket）",
+    "grade": "B",
+    "status": "passed",
+    "rituals": [
+      "Es；Allel（概念层；feeding TABOO to simulate）",
+      "Koy-ded bear rite CONCEPT",
+      "Senka shaman CONCEPT ONLY"
+    ],
+    "validated_at": "2026-09-15T13:23:23Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrich Es; Allel; Koy-ded bear rite CONCEPT; spirit-figure feeding TABOO to simulate; Senka shaman CONCEPT ONLY."
+    ],
+    "actions": [
+      "Enriched Es, Allel, Koy-ded bear rite CONCEPT, spirit-figure feeding TABOO, and Senka shaman CONCEPT ONLY.",
+      "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+    ]
+  }
+]

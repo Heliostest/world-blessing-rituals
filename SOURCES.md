@@ -1084,3 +1084,21 @@
 - https://www.britannica.com/place/Tuvalu
 - https://www.everyculture.com/Oceania/Tuvalu-Religion-and-Expressive-Culture.html
 - https://www.britannica.com/place/Polynesia
+
+## 增补传统（埃维、锡达马、景颇／克钦、波尼、法罗）
+
+- https://www.britannica.com/topic/Ewe-people
+- https://www.everyculture.com/Africa-Middle-East/Ewe-and-Fon-Religion-and-Expressive-Culture.html
+- https://visitghana.com/hogbetsotso-za-festival/
+- https://www.britannica.com/topic/Sidamo
+- https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054
+- https://ich.unesco.org/en/decisions/10.COM/10.B.16
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/jingpo
+- https://pjlarchive.omeka.net/exhibits/show/the-kachin-manau/about-the-manau
+- https://www.newmandala.org/wp-content/uploads/2007/09/dr-mandy-sadan-manau-chapter.pdf
+- https://www.britannica.com/topic/Pawnee-people
+- https://plainshumanities.unl.edu/encyclopedia/doc/egp.rel.035.html
+- https://repository.si.edu/handle/10088/32676
+- https://www.britannica.com/place/Faroe-Islands-Atlantic-Ocean
+- https://www.tjodsavnid.fo/english-skrain-livandi-mentan/the-faroese-chaindance
+- https://www.faroeislands.fo/the-big-picture/national-symbols/national-day

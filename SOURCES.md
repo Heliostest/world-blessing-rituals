@@ -1047,3 +1047,22 @@
 - https://www.britannica.com/topic/Afar
 - https://www.everyculture.com/Africa-Middle-East/Afar.html
 - https://www.encyclopedia.com/places/africa/ethiopia-political-geography/afar
+
+## 增补传统（乔克托、萨波特克、古纳、金光教、纽埃）
+
+- https://www.britannica.com/topic/Choctaw
+- https://www.everyculture.com/North-America/Choctaw-Religion-and-Expressive-Culture.html
+- https://www.choctawnation.com/news/iti-fabvssa/green-corn-ceremony/
+- https://www.britannica.com/topic/Zapotec
+- https://www.encyclopedia.com/history/latin-america-and-caribbean/mesoamerican-indigenous-peoples/zapotec
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/zapotecs
+- https://www.britannica.com/topic/Kuna
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/cuna-religion
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/kuna
+- https://maxwellmuseum.unm.edu/maxwell-at-home/objects/object-monday-guna-nuchu
+- https://www.britannica.com/topic/Konko-kyo
+- https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9816
+- https://www.konkokyo.jp/eng/our_faith/religious_beliefs.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/niueans
+- https://www.britannica.com/place/Polynesia
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/polynesian-religions-mythic-themes

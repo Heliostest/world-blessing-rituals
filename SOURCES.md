@@ -1404,3 +1404,36 @@
 - https://www.britannica.com/biography/Saint-Rosalia
 - https://www.britannica.com/place/Palermo-Italy
 - https://www.britannica.com/place/Monte-Pellegrino
+
+## 增补传统（鄂伦春、克木、夏尔巴、莫尔多瓦、爱尔兰、曼丁卡、聪加、阿丘尔、佐齐尔、瓦利斯与富图纳）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/oroqen
+- https://doi.org/10.3390/rel14070867
+- http://english.scio.gov.cn/m/chinafacts/2017-06/06/content_40974673.htm
+- https://www.everyculture.com/East-Southeast-Asia/Kmhmu-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/kmhmu
+- https://www.britannica.com/place/Laos
+- https://www.everyculture.com/wc/Mauritania-to-Nigeria/Sherpas.html
+- https://www.britannica.com/topic/Sherpa-people
+- https://www.britannica.com/topic/Nyingma
+- https://www.britannica.com/topic/Finno-Ugric-religion
+- https://www.britannica.com/topic/Mordvin
+- https://en.wikipedia.org/wiki/Erzyan_native_religion
+- https://www.britannica.com/place/Croagh-Patrick
+- https://www.britannica.com/topic/Saint-Patrick
+- https://www.britannica.com/topic/holy-well
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mandinka
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/malinke
+- https://www.britannica.com/topic/Mande
+- https://www.britannica.com/topic/Tsonga
+- https://iipseries.org/assets/docupload/rsl2024507B3938E05896E.pdf
+- https://www.britannica.com/place/Mozambique
+- https://en.wikipedia.org/wiki/Achuar_people
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/amazonian-quechua-religions
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.everyculture.com/Middle-America-Caribbean/Tzotzil-of-Chamula-Religion-and-Expressive-Culture.html
+- https://www.everyculture.com/Middle-America-Caribbean/Tzotzil-of-Zinacantan-Religion-and-Expressive-Culture.html
+- https://www.britannica.com/topic/Tzotzil
+- https://www.britannica.com/place/Wallis-and-Futuna
+- https://www.britannica.com/topic/kava
+- https://www.britannica.com/place/Polynesia

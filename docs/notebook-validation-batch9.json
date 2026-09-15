@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "nogai-traditional",
+    "title": "诺盖伊斯兰与草原民间祈福传统（Nogai／Nogay）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Sabantuy 春耕节庆与共餐（公共文化层）",
+      "Edige 等英雄史诗演唱（公共文化层）",
+      "Mazar ziyarat 与 Kurban CONCEPT（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Sabantuy; Edige epic; Mazar ziyarat; Kurban CONCEPT only."
+    ],
+    "actions": [
+      "Reframed rituals to Sabantuy, Edige epic singing, and Mazar ziyarat + Kurban CONCEPT.",
+      "No sacrifice how-to; preserved 手机互动适合度 C; educational tone."
+    ]
+  },
+  {
+    "slug": "norman-folk",
+    "title": "诺曼底／海峡群岛民间天主教与朝圣祈福（Norman）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "蒙圣米歇尔朝圣（概念层）",
+      "利雪圣女小德兰朝圣（概念层）",
+      "翁弗勒尔水手节船只祝福（公共层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Mont-Saint-Michel; Lisieux Thérèse; Honfleur Fête des Marins boat blessing."
+    ],
+    "actions": [
+      "Reframed rituals to Mont-Saint-Michel, Lisieux Thérèse, and Honfleur Fête des Marins boat blessing.",
+      "Kept educational overview; preserved 手机互动适合度 C; no clerical how-to."
+    ]
+  },
+  {
+    "slug": "ovambo-traditional",
+    "title": "奥万博传统宗教与卡隆加祈福（Ovambo／Ambo）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Oshituthi Shomagongo 马鲁拉节与 Kalunga（公共／概念层）",
+      "路德宗堂区礼拜与生命礼仪（公共／当代层）",
+      "Olufuko CONCEPT ONLY＋Okuruwo 邻族区分说明（高度敏感）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Oshituthi Shomagongo marula festival; Olufuko initiation CONCEPT ONLY with strong warning; Okuruwo sacred fire noted carefully as primarily Himba/Herero not Ovambo core; Kalunga; Lutheran parish."
+    ],
+    "actions": [
+      "Reframed rituals to Oshituthi Shomagongo + Kalunga, Lutheran parish, and Olufuko CONCEPT ONLY with strong warning.",
+      "Noted Okuruwo sacred fire as Himba/Herero (himba-okuruwo), not Ovambo core; no initiation/sacrifice how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "paiwan-taiwan",
+    "title": "台湾排湾族传统信仰与祭仪（Paiwan／Payuan）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "小米收获感恩祭 Masalut（概念层）",
+      "五年祭 Maljeveq／Djemuljat 刺球（概念层，强烈原住民尊重）",
+      "Puringau CONCEPT ONLY 与 Naqemati 祖灵柱（高度敏感／象征层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Maljeveq/Djemuljat ball-piercing CONCEPT with strong indigenous respect; Masalut harvest; Puringau CONCEPT ONLY; Naqemati ancestral posts — NO how-to."
+    ],
+    "actions": [
+      "Reframed rituals to Masalut, Maljeveq/Djemuljat with strong indigenous respect, and Puringau CONCEPT ONLY + Naqemati ancestral posts.",
+      "No initiation/spirit how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "palaung-traditional",
+    "title": "德昂／帕朗传统信仰与上座部—精灵祈福（Palaung／Ta'ang／De'ang）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Sangken 泼水节与佛寺 dana（公共层）",
+      "Ya-An 茶祖先叙事（概念层）",
+      "Nat 精灵礼仪 CONCEPT（部分敏感）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Sangken water festival; Ya-An tea ancestor; Nat spirit rites CONCEPT; temple dana."
+    ],
+    "actions": [
+      "Reframed rituals to Sangken + temple dana, Ya-An tea ancestor narrative, and Nat spirit rites CONCEPT.",
+      "No spirit-calling/exorcism how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "piedmontese-folk",
+    "title": "皮埃蒙特民间天主教与朝圣祈福（Piedmontese）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Sacri Monti／Varallo 圣山朝圣（概念层）",
+      "Oropa 黑圣母朝圣（概念层）",
+      "都灵圣骸布与主保节巡游（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Needed Sacri Monti/Varallo; Oropa Black Madonna; Sindone Turin; patron processions."
+    ],
+    "actions": [
+      "Reframed rituals to Sacri Monti/Varallo, Oropa Black Madonna, and Sindone Turin + patron processions.",
+      "Kept educational overview; preserved 手机互动适合度 C; no clerical how-to."
+    ]
+  },
+  {
+    "slug": "occitan-camargue-folk",
+    "title": "奥克／卡马格民间天主教与圣玛丽—萨拉朝圣（Occitan／Camargue）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "五月萨拉入海与圣女玛丽朝圣（公共层）",
+      "Gardians 牧人护卫与地下室萨拉敬礼（公共／部分敏感）",
+      "罗姆音乐／舞蹈文化层（公共文化层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: emphasize Sara into sea; Gardians escort; Roma music/dance cultural layer."
+    ],
+    "actions": [
+      "Enriched rituals with Sara into-sea blessing, gardians escort, and Roma music/dance as cultural layer (not stereotype show).",
+      "Preserved 手机互动适合度 C; educational; no sacramental how-to."
+    ]
+  },
+  {
+    "slug": "ossetian-uatsdin",
+    "title": "奥塞梯乌茨金／传统祈宴（Uatsdin／Assianism）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "Kuyvd／祈宴与三饼（公开文化层）",
+      "Dzuar 圣地巡礼（概念层）",
+      "Safat 炉灶链与家庭圣所象征（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: three pies; cattle-head offering CONCEPT; Safat hearth chain; Kuyvd; Dzuar."
+    ],
+    "actions": [
+      "Enriched Kuyvd with three pies and cattle-head offering CONCEPT only; named Safat hearth chain; kept Dzuar.",
+      "No sacrifice/full prayer how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "otomi-hnahnu",
+    "title": "奥托米／尼亚纽传统信仰与圣石祈福（Otomí／Hñähñu）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "圣徒瞻礼与民间天主教节庆（公共层）",
+      "Papel amate／San Pablito 与 Cangandho 圣石（公共／部分敏感）",
+      "Bädi 知识 CONCEPT ONLY（高度敏感）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: Papel amate/San Pablito; Cangandho; Bädi CONCEPT ONLY; Catholic fiestas."
+    ],
+    "actions": [
+      "Enriched with Papel amate/San Pablito and Cangandho; kept Bädi CONCEPT ONLY and Catholic fiestas.",
+      "No initiation/spirit how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "pohnpeian-traditional",
+    "title": "波纳佩传统信仰与村社祈福余绪（Pohnpeian）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "教会礼拜与基督教日历（公共层）",
+      "Sakau 捣制象征与首领宴饮再分配（公共文化层，部分敏感）",
+      "Nan Madol 与 Nahn Samwohl 鳗鱼记忆（概念层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: Nan Madol; Nahn Samwohl eel memory; Sakau pounding symbolism; church."
+    ],
+    "actions": [
+      "Enriched with Nan Madol, Nahn Samwohl eel memory, and Sakau pounding symbolism; kept church layer.",
+      "No priest/sorcery how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "polish-folk-catholic",
+    "title": "波兰民间天主教圣篮祝福与收获节祈福（Polish folk Catholicism）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "Święconka 圣周六食物篮祝福（公共层）",
+      "Dożynki 收获感恩与 Jasna Góra 朝圣（公共层）",
+      "Śmigus-Dyngus 湿周一泼水（公共文化层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: Jasna Góra Częstochowa; Śmigus-Dyngus; keep święconka/dożynki."
+    ],
+    "actions": [
+      "Kept święconka/dożynki; added Jasna Góra Częstochowa naming and Śmigus-Dyngus wet Monday.",
+      "No sacramental how-to; preserved 手机互动适合度 C."
+    ]
+  },
+  {
+    "slug": "portuguese-romarias",
+    "title": "葡萄牙罗马里亚朝圣与民间祈福（Portuguese Romarias／Fátima）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "法蒂玛 5／10 月 13 日朝圣与蜡烛游行（公开朝圣层）",
+      "维亚纳阿戈尼亚等地方罗马里亚（渔民—村民朝圣层）",
+      "蜡制器官等 ex-voto 还愿（民俗—虔敬层）"
+    ],
+    "validated_at": "2026-09-15T09:59:34Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Enrichment: May/Oct 13 candle procession; Viana Agonia; wax ex-voto organs."
+    ],
+    "actions": [
+      "Enriched with May/Oct 13 candle procession dating, Viana d’Agonia, and wax ex-voto organs.",
+      "No sacramental/miracle how-to; preserved 手机互动适合度 C."
+    ]
+  }
+]

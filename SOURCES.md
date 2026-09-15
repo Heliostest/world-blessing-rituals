@@ -1950,3 +1950,32 @@
 - https://www.britannica.com/topic/Sukuma
 - https://www.britannica.com/place/Tanzania
 - https://www.britannica.com/place/Lake-Victoria
+
+## 增补传统（曼雅克、赫赫、伊拉克伍、哈扎、桑达韦、阿布鲁佐、萨伦托、西帕卡彭塞、巴纳巴、布贡）
+
+- https://www.britannica.com/topic/Mandyako
+- https://www.britannica.com/place/Guinea-Bissau
+- https://www.britannica.com/place/Casamance
+- https://www.britannica.com/topic/Hehe
+- https://www.britannica.com/place/Iringa
+- https://www.britannica.com/place/Tanzania
+- https://www.britannica.com/topic/Iraqw
+- https://www.britannica.com/topic/Cushitic-languages
+- https://www.britannica.com/topic/Hadza
+- https://www.britannica.com/place/Lake-Eyasi
+- https://www.britannica.com/topic/Sandawe
+- https://www.britannica.com/topic/Khoisan-languages
+- https://www.britannica.com/place/Abruzzo
+- https://www.britannica.com/place/LAquila
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/place/Lecce
+- https://www.britannica.com/place/Puglia
+- https://www.britannica.com/place/Guatemala
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/topic/Mayan-languages
+- https://www.britannica.com/place/Banaba
+- https://www.britannica.com/place/Rabi-Island
+- https://www.britannica.com/place/Kiribati
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Donyi-Polo

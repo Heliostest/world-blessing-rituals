@@ -1026,3 +1026,24 @@
 - https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/solomon-islands-religions
 - https://www.penn.museum/sites/expedition/wogosia/
 - https://ecologyandsociety.org/vol19/iss4/art41/
+
+
+## 增补传统（伊富高、贡德、乌兹别克民间、车臣／瓦伊纳赫、阿法尔）
+
+- https://www.britannica.com/topic/Ifugao-people
+- https://ich.unesco.org/en/RL/hudhud-chants-of-the-ifugao-00015
+- https://whc.unesco.org/en/list/722/
+- https://www.nationalmuseum.gov.ph/2022/11/30/bulul-and-the-socio-cultural-significance-of-rice/
+- https://ncca.gov.ph/about-culture-and-arts/in-focus/ifugao-hudhud-local-to-global-dimension-of-the-sacred/
+- https://www.britannica.com/topic/Gond
+- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/gond
+- https://www.everyculture.com/wc/Germany-to-Jamaica/Gonds.html
+- https://www.britannica.com/place/Uzbekistan
+- https://ich.unesco.org/en/RL/cultural-space-of-boysun-district-00019
+- http://ich.uz/en/ich-of-uzbekistan/national-list/domain-4/390-boysun
+- https://www.everyculture.com/Russia-Eurasia-China/Chechen-Ingush-Religion-and-Expressive-Culture.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/chechen-ingush
+- https://www.britannica.com/topic/Chechen-people
+- https://www.britannica.com/topic/Afar
+- https://www.everyculture.com/Africa-Middle-East/Afar.html
+- https://www.encyclopedia.com/places/africa/ethiopia-political-geography/afar

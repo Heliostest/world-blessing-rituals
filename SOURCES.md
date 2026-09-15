@@ -2093,3 +2093,29 @@
 - https://www.britannica.com/place/Mozambique
 - https://www.britannica.com/topic/Cushitic-languages
 - https://www.britannica.com/topic/Iraqw
+
+## 增补传统（阿瓦科、维瓦、布格雷、克文、托尔内谷、达拉纳、博恩霍尔姆、耶姆特兰、萨夫瓦、波戈罗）
+
+- https://www.britannica.com/topic/Arhuaco
+- https://www.britannica.com/place/Sierra-Nevada-de-Santa-Marta
+- https://www.britannica.com/place/Colombia
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Panama
+- https://www.britannica.com/topic/Guaymi
+- https://www.britannica.com/topic/Central-American-Indian
+- https://www.britannica.com/topic/Kven
+- https://www.britannica.com/place/Norway
+- https://www.britannica.com/topic/Church-of-Norway
+- https://www.britannica.com/place/Torne-River
+- https://www.britannica.com/place/Sweden
+- https://www.britannica.com/place/Finland
+- https://www.britannica.com/place/Dalarna
+- https://www.britannica.com/topic/Church-of-Sweden
+- https://www.britannica.com/place/Bornholm
+- https://www.britannica.com/place/Denmark
+- https://www.britannica.com/topic/Church-of-Denmark
+- https://www.britannica.com/place/Jamtland
+- https://www.britannica.com/place/Mbeya
+- https://www.britannica.com/place/Tanzania
+- https://www.britannica.com/place/Morogoro
+- https://www.britannica.com/place/East-Africa

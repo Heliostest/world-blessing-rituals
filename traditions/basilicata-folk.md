@@ -53,6 +53,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Basilicata
-- https://www.britannica.com/place/Matera
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://www.festadellabruna.it/cose-la-festa/come-si-svolge/
+- https://www.basilicataturistica.it/scopri-la-basilicata/matera-patrimonio-mondiale-dellumanita/matera-e-la-madonna-della-bruna/

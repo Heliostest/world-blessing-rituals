@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Aragon-region-Spain
-- https://www.britannica.com/place/Zaragoza-Spain
 - https://www.britannica.com/topic/Our-Lady-of-the-Pillar
+- https://patrimonioculturaldearagon.es/patrimonio/fiestas-del-pilar/
+- https://patrimonioculturaldearagon.es/noticias/el-gobierno-de-aragon-anima-a-apoyar-a-la-jota-en-redes-sociales-este-15-de-agosto/

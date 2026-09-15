@@ -53,6 +53,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Abruzzo
-- https://www.britannica.com/place/LAquila
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://ich.unesco.org/en/RL/celestinian-forgiveness-celebration-01276

@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Aland-Islands
-- https://www.britannica.com/place/Finland
 - https://www.britannica.com/topic/Church-of-Sweden
+- https://visitaland.com/en/experience/sights-excursions/aland-churches/
+- https://visitaland.com/en/experience/midsummer-in-aland/
+- https://www.nordiskamuseet.se/utforska/hogtider/midsommar/

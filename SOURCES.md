@@ -2119,3 +2119,34 @@
 - https://www.britannica.com/place/Tanzania
 - https://www.britannica.com/place/Morogoro
 - https://www.britannica.com/place/East-Africa
+
+## 增补传统（沙万特、图卡诺、博拉、亚瓜、托莱、恩加、坦纳、巴米累克、彭德、阿穆斯戈）
+
+- https://www.britannica.com/topic/Xavante
+- https://www.britannica.com/place/Mato-Grosso
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/topic/Tucano
+- https://www.britannica.com/place/Vaupes-River
+- https://www.britannica.com/place/Amazon-River
+- https://www.britannica.com/topic/Bora-people
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/topic/Yagua
+- https://www.britannica.com/place/Iquitos
+- https://www.britannica.com/topic/Tolai
+- https://www.britannica.com/place/Rabaul
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Enga
+- https://www.britannica.com/place/Enga
+- https://www.britannica.com/place/Tanna
+- https://www.britannica.com/topic/John-Frum-cargo-cult
+- https://www.britannica.com/place/Vanuatu
+- https://www.britannica.com/topic/Bamileke
+- https://www.britannica.com/place/Cameroon
+- https://www.britannica.com/place/West-Africa
+- https://www.britannica.com/topic/Pende
+- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britannica.com/topic/African-art
+- https://www.britannica.com/topic/Amuzgo
+- https://www.britannica.com/place/Guerrero
+- https://www.britannica.com/place/Oaxaca-state-Mexico

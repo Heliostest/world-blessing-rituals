@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 497,
-    "passed_after_fix": 134,
-    "passed": 94,
+    "pending": 485,
+    "passed_after_fix": 144,
+    "passed": 96,
     "skipped": 1
   },
   "items": [
@@ -2848,16 +2848,21 @@
       "slug": "deori-traditional",
       "title": "德奥里传统信仰与昆迪—妈妈祈福（Deori）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "氏族圣地敬礼（敏感，仅概念）",
-        "祖先与自然力敬礼（概念层）",
-        "当代公共文化层（概念层）"
+        "Bohag／Ibaku Bisu（公开／概念层）",
+        "Bor Deori 主持 Thani — users view",
+        "Kundi-Mama／Kundigira／Girasi CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Bohag/Ibaku Bisu; Kundigira/Girasi; Bor Deori hosts Thani shrine — users view; Kundi-Mama CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Bohag/Ibaku Bisu, Bor Deori hosts Thani — users view, and Kundi-Mama/Kundigira/Girasi CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "derung-traditional",
@@ -2878,31 +2883,41 @@
       "slug": "dhimal-traditional",
       "title": "迪马尔传统信仰与特莱祈福（Dhimal）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与自然灵敬礼（概念层）",
-        "生命礼仪（概念层）",
-        "印度教／佛教接触层（概念层）"
+        "Siruwa Parba（公开／概念层）",
+        "Gram Puja（概念层）",
+        "Dhami priest viewing／restricted"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Siruwa Parba; Gram Puja; Dhami priest viewing/restricted."
+      ],
+      "actions": [
+        "Reframed rituals to Siruwa Parba, Gram Puja, and Dhami viewing/restricted.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "dimasa-traditional",
       "title": "迪马萨传统信仰与代科神殿祈福（Dimasa）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "Daikho 神殿敬礼（概念层）",
-        "祖先神与家屋伦理（概念层）",
-        "印度教交融实践（概念层）"
+        "Bushu Dima harvest（公开／概念层）",
+        "Hojai hosts Daikho — users view；12 Daikho naming",
+        "祖先神与印度教交融（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Bushu Dima harvest; Hojai hosts Daikho — users view; 12 Daikho naming."
+      ],
+      "actions": [
+        "Reframed rituals to Bushu Dima, Hojai hosts Daikho — users view, and 12 Daikho naming.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "dinka-nhialic",
@@ -2923,16 +2938,21 @@
       "slug": "diola-jola",
       "title": "迪奥拉／乔拉传统宗教与神龛祈福（Diola／Jola／Dyola）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "功能神龛与村社福祉（公开概念层）",
-        "向 Emitai 求雨／危机祈祷（概念层）",
-        "生命礼仪与伊斯兰／基督教叠合（当代层）"
+        "Emitai 与求雨观礼（viewing only）",
+        "Kumpo UNESCO（遗产概念层）",
+        "Bekine shrine CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Emitai; Kumpo UNESCO; Bekine shrine CONCEPT — rain prayer viewing only."
+      ],
+      "actions": [
+        "Reframed rituals to Emitai rain prayer viewing only, Kumpo UNESCO, and Bekine shrine CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "dobu-traditional",
@@ -2968,46 +2988,61 @@
       "slug": "dolgan-traditional",
       "title": "多尔干传统信仰与萨满—东正教祈福（Dolgan）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "东正教礼仪与丧葬双信仰（公共／概念层）",
-        "渔猎与自然灵敬礼（概念层）",
-        "萨满中介（高度敏感，仅概念）"
+        "Nikolayev Den（公开／概念层）",
+        "驯鹿集会与渔猎伦理（公开／概念层）",
+        "Oyuun shaman CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Nikolayev Den; reindeer gatherings; Oyuun shaman CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Nikolayev Den, reindeer gatherings, and Oyuun shaman CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "dolpo-traditional",
       "title": "多尔波藏传与山神祈福（Dolpo）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "寺院供灯与转经（公开层）",
-        "山神与地方保护（敏感，仅概念）",
-        "苯教—佛教并存公开层（概念）"
+        "Shey Gompa 供灯转经（公开层）",
+        "Riwo Palbar kora 与 Shey Festival（公开／概念层）",
+        "yul lha CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Shey Gompa; Riwo Palbar crystal mountain kora; Shey Festival; yul lha CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Shey Gompa, Riwo Palbar kora/Shey Festival, and yul lha CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "dong-kam",
       "title": "侗族／侗（Kam）萨岁信仰与鼓楼祈福（Dong／Kam）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "祭萨／萨岁岁时礼仪（公开村落层）",
-        "鼓楼集会与侗族大歌（公共文化层）",
-        "鼓楼—风雨桥与村际交往节庆（社群层）"
+        "Sam Tang Sa Sui altar；指定女性主持—outsiders don't officiate",
+        "Grand Song UNESCO 与鼓楼（公共文化层）",
+        "moon ponds／wind-rain bridges（社群层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Sam Tang Sa Sui altar; Grand Song UNESCO; moon ponds/wind-rain bridges; Sa Sui led by designated women — outsiders don't officiate."
+      ],
+      "actions": [
+        "Enriched Sam Tang Sa Sui altar, Grand Song UNESCO, moon ponds/wind-rain bridges, and designated women officiating — outsiders don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "druze",
@@ -3028,16 +3063,21 @@
       "slug": "duala-traditional",
       "title": "杜阿拉传统信仰与河口—基督教祈福（Duala）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先与水灵伦理（敏感，仅概念）",
-        "教堂崇拜（概念层）",
-        "公开文化节与酋长记忆（概念层）"
+        "Ngondo Wouri water festival（公开／概念层）",
+        "Miengu 水灵伦理（概念层）",
+        "diving oracle HIGH SENSITIVITY CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Ngondo Wouri water festival; Miengu; diving oracle HIGH SENSITIVITY CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Ngondo Wouri, Miengu, and diving oracle HIGH SENSITIVITY CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "elema-traditional",
@@ -3058,16 +3098,21 @@
       "slug": "embera-traditional",
       "title": "恩贝拉／乔科传统信仰与jaibanismo祈福（Emberá／Jaibanismo）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "玉米收获“歌唱奇恰”等农作礼仪（概念层）",
-        "疾病与“jai 之歌”疗愈（概念层）",
-        "生命礼仪与丧葬阴影观（概念层）"
+        "Chicha harvest joy（概念层）",
+        "Jaibaná／Jai songs HIGH SENSITIVITY NO OPS",
+        "life-cycle／funeral narrative（叙事／概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Chicha harvest joy; Jaibaná/Jai songs HIGH SENSITIVITY NO OPS; life-cycle/funeral narrative."
+      ],
+      "actions": [
+        "Enriched Chicha harvest joy, Jaibaná/Jai songs HIGH SENSITIVITY NO OPS, and life-cycle/funeral narrative.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "emilian-folk",
@@ -3093,16 +3138,21 @@
       "slug": "enets-traditional",
       "title": "埃涅茨传统信仰与泰梅尔祈福（Enets）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "生计与生态伦理（概念层）",
-        "萨满史传统（极高敏感，仅概念）",
-        "东正教与当代文化日（公开层）"
+        "Reindeer Herder’s Day（公开层）",
+        "Chekoro sacred sites（概念／观礼层）",
+        "Budtode shaman HISTORY CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Reindeer Herder’s Day; Chekoro sacred sites; Budtode shaman HISTORY CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Reindeer Herder’s Day, Chekoro sacred sites, and Budtode HISTORY CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "enga-traditional",
@@ -3155,16 +3205,21 @@
       "slug": "even-traditional",
       "title": "埃文人传统信仰与驯鹿—萨满祈福（Even）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "火塘与自然守护灵敬礼（概念层）",
-        "熊相关礼仪叙事（部分敏感）",
-        "萨满中介与东正教双信仰（高度敏感，仅概念）"
+        "Bakaldydyn／Evinek 与 Hedi circle dance（公开／概念层）",
+        "Togo hearth（概念层）",
+        "bear／shaman CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Bakaldydyn/Evinek midsummer; Hedi circle dance; Togo hearth; bear/shaman CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Bakaldydyn/Evinek, Hedi, Togo hearth, and bear/shaman CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "evenki-shamanism",
@@ -3202,16 +3257,21 @@
       "slug": "ewondo-traditional",
       "title": "埃翁多传统信仰与森林—基督教祈福（Ewondo）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "祖先敬礼（概念层）",
-        "教堂崇拜（概念层）",
-        "公开文化节认同（概念层）"
+        "Basilique de Mvolyé（公开层）",
+        "Abeng harp 与 Beti-Ewondo cultural festivals（公共文化层）",
+        "ancestors CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:48:27Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Basilique de Mvolyé; Abeng harp; Beti-Ewondo cultural festivals; ancestors CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Basilique de Mvolyé, Abeng harp, Beti-Ewondo festivals, and ancestors CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "fang-bwiti",
@@ -11907,21 +11967,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-18",
-    "validated_at": "2026-09-15T11:42:42Z",
+    "name": "batch-20",
+    "validated_at": "2026-09-15T11:48:27Z",
     "slugs": [
-      "chakma-traditional",
-      "cham-balamon",
-      "chamorro-traditional",
-      "chatino-traditional",
-      "chepang-traditional",
-      "chimbu-traditional",
-      "chinantec-traditional",
-      "bunun-taiwan",
-      "cao-dai",
-      "chechen-vainakh",
-      "cheondoism",
-      "chin-zomi-traditional"
+      "deori-traditional",
+      "dhimal-traditional",
+      "dimasa-traditional",
+      "diola-jola",
+      "dolgan-traditional",
+      "dolpo-traditional",
+      "duala-traditional",
+      "enets-traditional",
+      "even-traditional",
+      "ewondo-traditional",
+      "dong-kam",
+      "embera-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

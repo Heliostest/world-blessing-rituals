@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 701,
-    "passed_after_fix": 6,
-    "passed": 18,
+    "pending": 689,
+    "passed_after_fix": 13,
+    "passed": 23,
     "skipped": 1
   },
   "items": [
@@ -1745,31 +1745,41 @@
       "slug": "celtic-folk",
       "title": "凯尔特宗教与民俗祈福（Celtic religion）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣林与自然圣地崇拜（概念层）",
-        "岁时节火：Samhain 与 Beltane（概念层）",
-        "水边还愿与护身象征（概念层）"
+        "圣林（Nemeton）与自然圣地崇拜（概念层）",
+        "岁时四节点：Imbolc／Beltane／Lughnasadh／Samhain（概念层）",
+        "水边还愿、clootie wells 与护身象征（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing explicit Nemeton / clootie wells / St Brigid’s Cross naming; seasonal cycle needed full Imbolc–Beltane–Lughnasadh–Samhain naming; risk of neo-pagan how-to being read as authentic ancient rite."
+      ],
+      "actions": [
+        "Added Nemeton, clootie wells, St Brigid’s Cross; expanded Imbolc/Beltane/Lughnasadh/Samhain naming.",
+        "Kept concept-only educational tone; explicitly separated modern neo-pagan practice from ancient rite."
+      ]
     },
     {
       "slug": "chagga-traditional",
       "title": "查加人传统信仰与鲁瓦—乞力马扎罗祈福（Chagga）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
         "教会礼拜与山坡堂区生活（公共层）",
-        "Ruwa 与祖灵伦理叙事（概念层）",
-        "生命礼仪与伊斯兰邻里共处（部分敏感）"
+        "Ruwa、Masale 与祖灵圣地叙事（概念层）",
+        "Mitambiko 概念与生命礼仪／邻里信仰共处（部分敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Masale sacred plant, Kyungu/Kifunyi ancestral sites, and Mitambiko naming as concept-only layers."
+      ],
+      "actions": [
+        "Added Masale, Kyungu/Kifunyi, Mitambiko as concept-only naming; Christian overlay retained as public layer.",
+        "No sacrifice how-to."
+      ]
     },
     {
       "slug": "chakma-traditional",
@@ -1955,31 +1965,35 @@
       "slug": "chinese-buddhism",
       "title": "汉传佛教",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
         "放生（放生）",
         "礼佛诵经与诸佛菩萨名号持念",
         "大悲水加持与功德回向"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: explicit 水陆法会／梁皇宝忏 naming as professional-sangha rites; reinforced 放生／持名／大悲水 framing."
+      ]
     },
     {
       "slug": "chinese-folk-and-confucian",
       "title": "汉人民间信仰与祭祖／儒礼",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "上香／敬香（上香、敬香）",
-        "祭祖与祖先牌位供奉",
+        "上香／敬香与庙会进香还愿（上香、敬香）",
+        "家龛祭祖与祖先牌位供奉",
         "清明扫墓（清明祭）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: 庙会进香还愿、分香／分灵 high-level; 家龛／清明／冬至 naming."
+      ]
     },
     {
       "slug": "choctaw-traditional",
@@ -2090,16 +2104,21 @@
       "slug": "chuukese-traditional",
       "title": "楚克传统信仰与村社祈福余绪（Chuukese／Truk）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
         "教会礼拜与基督教日历（公共层）",
-        "祖先与地方灵叙事（概念层）",
-        "航海—渔捞相关戒忌余绪（概念层）"
+        "Itang 知识阶级与祖先／地方灵叙事（概念层）",
+        "航海戒忌与 Karak 护航概念（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Itang knowledge class, Soufo/Souro roles, and Karak voyage-charm concept naming."
+      ],
+      "actions": [
+        "Added Itang, Soufo/Souro, Karak as concept-only; church public layer retained.",
+        "No secret spell recipes."
+      ]
     },
     {
       "slug": "chuvash-traditional",
@@ -2120,16 +2139,21 @@
       "slug": "circassian-traditional",
       "title": "切尔克斯／阿迪格传统信仰与哈布泽",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣林／圣树祈请（限制性公共知识层）",
-        "职能神相关的民俗纪念（概念层）",
+        "Ch'ey 圣林／圣树祈请（限制性公共知识层）",
+        "Shible、Sozeresh 等职能神民俗纪念（概念层）",
         "Xabze 人生礼仪与公共荣誉实践（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Shible, Sozeresh, and Ch'ey sacred-grove naming within limited public knowledge; initiation how-to risk."
+      ],
+      "actions": [
+        "Named Shible, Sozeresh, Ch'ey; reinforced Xabze as moral code distinct from religion.",
+        "No initiation how-to."
+      ]
     },
     {
       "slug": "cocama-traditional",
@@ -2216,31 +2240,37 @@
       "slug": "cornish-folk",
       "title": "康沃尔民间基督教与圣井—朝圣祈福（Cornish）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "圣井朝圣与还愿（概念层）",
-        "堂区礼拜与海边节庆（概念层）",
+        "Rag／Clootie 圣井朝圣与还愿（概念层）",
+        "St Piran’s Day 与堂区／海边节庆（概念层）",
         "矿工／渔民纪念祈祷（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Rag/Clootie wells; St Piran’s Day (Mar 5)."
+      ]
     },
     {
       "slug": "corsican-folk",
       "title": "科西嘉民间天主教与朝圣祈福（Corsican）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母朝圣与还愿（概念层）",
-        "主保节与多声部歌唱（概念层）",
-        "生命礼仪（概念层）"
+        "Catenacciu（Sartène）公共忏悔巡游（公开层）",
+        "主保节与 Paghjella 多声部歌唱（概念层）",
+        "Signatoru 民俗疗愈注记与生命礼仪（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Catenacciu (Sartène) public penitential procession, Paghjella singing, and Signatoru cultural-note framing."
+      ],
+      "actions": [
+        "Added Catenacciu, Paghjella; Signatoru as cultural note only with no DIY."
+      ]
     },
     {
       "slug": "cree-nehiyaw",
@@ -2261,31 +2291,39 @@
       "slug": "crimean-tatar-traditional",
       "title": "克里米亚鞑靼伊斯兰与归乡祈福传统（Crimean Tatar）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "清真寺礼拜与斋月（公共层）",
-        "生命礼仪：割礼、婚礼与丧葬（部分敏感）",
-        "归乡纪念与朝觐愿望（公共／当代层）"
+        "清真寺礼拜与斋月（Ramadan）（公共层）",
+        "Hıdırellez、Derviza 与 Aziz 圣地 ziyarat（民俗／圣地层）",
+        "生命礼仪与归乡纪念（部分敏感／当代层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing Hıdırellez, Derviza, and Aziz shrine ziyarat naming alongside mosque/Ramadan public layer."
+      ],
+      "actions": [
+        "Added Hıdırellez, Derviza, Aziz ziyarat; kept life-cycle rites high-level/partially sensitive."
+      ]
     },
     {
       "slug": "croatian-folk",
       "title": "克罗地亚民间天主教与朝圣—节庆祈福（Croatian）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "圣母／圣地朝圣（概念层）",
-        "主保节与民俗节庆（概念层）",
-        "复活节／家庭祝福（概念层）"
+        "Marija Bistrica 圣母朝圣（概念层）",
+        "Sinjska Alka 与 Zvončari 等民俗节庆（概念层）",
+        "复活节祝福与家庭礼仪（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Missing explicit Marija Bistrica and Zvončari carnival naming alongside Sinjska Alka and Easter blessings."
+      ],
+      "actions": [
+        "Named Marija Bistrica, Sinjska Alka, Zvončari; retained Easter blessings."
+      ]
     },
     {
       "slug": "cuicatec-traditional",
@@ -2306,31 +2344,35 @@
       "slug": "cypriot-folk",
       "title": "塞浦路斯民间东正教与朝圣祈福（Cypriot）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "修道院朝圣（概念层）",
-        "村社主保节（概念层）",
-        "圣井与家庭祝福（概念层）"
+        "Panagia tou Kykkou 等修道院朝圣（概念层）",
+        "Panegyri 村社主保节（概念层）",
+        "Agiasmos 圣水与家庭祝福（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: Panagia tou Kykkou, Panegyri, Agiasmos naming."
+      ]
     },
     {
       "slug": "czech-moravian-folk",
       "title": "捷克—摩拉维亚民间天主教朝圣祈福（Czech／Moravian folk Catholicism）",
       "grade": "C",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
         "维莱赫拉德西里尔与美多德朝圣（公共层）",
         "圣霍斯廷圣母朝圣与步行路线（公共层）",
-        "家庭日历祝福：圣枝、圣诞与复活节食物（公共民俗层）"
+        "家庭日历祝福与 Jízda králů（公共民俗层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
+      "validated_at": "2026-09-15T08:46:00Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
       "issues": [],
-      "actions": []
+      "actions": [
+        "Enrichment: UNESCO Jízda králů; kept Velehrad/Hostýn pilgrimage axis."
+      ]
     },
     {
       "slug": "dagomba-traditional",
@@ -10959,21 +11001,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-1",
-    "validated_at": "2026-09-15T08:10:12Z",
+    "name": "batch-3",
+    "validated_at": "2026-09-15T08:46:00Z",
     "slugs": [
-      "abruzzese-folk",
-      "akha-traditional",
-      "aland-folk",
-      "albanian-folk",
-      "amazigh-berber",
-      "andalusian-folk",
-      "andorran-folk",
-      "aragonese-folk",
-      "aromanian-folk",
-      "asturian-folk",
-      "bai-benzhu",
-      "baltic-folk"
+      "celtic-folk",
+      "chagga-traditional",
+      "chuukese-traditional",
+      "circassian-traditional",
+      "corsican-folk",
+      "crimean-tatar-traditional",
+      "croatian-folk",
+      "chinese-buddhism",
+      "chinese-folk-and-confucian",
+      "cornish-folk",
+      "cypriot-folk",
+      "czech-moravian-folk"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

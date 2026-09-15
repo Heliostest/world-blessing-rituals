@@ -2150,3 +2150,34 @@
 - https://www.britannica.com/topic/Amuzgo
 - https://www.britannica.com/place/Guerrero
 - https://www.britannica.com/place/Oaxaca-state-Mexico
+
+## 增补传统（维托托、卡希纳瓦、马林德、莫图、福雷、雅卡、杜阿拉、约尔莫、托法拉尔、查蒂诺）
+
+- https://www.britannica.com/topic/Witoto
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/place/Colombia
+- https://www.britannica.com/topic/Cashinawa
+- https://www.britannica.com/place/Acre
+- https://www.britannica.com/topic/Marind
+- https://www.britannica.com/place/Papua
+- https://www.britannica.com/place/New-Guinea
+- https://www.britannica.com/topic/Motu
+- https://www.britannica.com/place/Port-Moresby
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Fore
+- https://www.britannica.com/science/kuru
+- https://www.britannica.com/topic/Yaka
+- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britannica.com/topic/African-art
+- https://www.britannica.com/topic/Duala
+- https://www.britannica.com/place/Douala
+- https://www.britannica.com/place/Cameroon
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/topic/Sherpa-people
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/topic/Tofalar
+- https://www.britannica.com/place/Sayan-Mountains
+- https://www.britannica.com/place/Siberia
+- https://www.britannica.com/topic/Chatino
+- https://www.britannica.com/place/Oaxaca-state-Mexico
+- https://www.britannica.com/place/Mexico

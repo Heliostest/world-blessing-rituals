@@ -2299,3 +2299,34 @@
 - https://www.britannica.com/topic/Chontal
 - https://www.britannica.com/place/Tabasco-state-Mexico
 - https://www.britannica.com/topic/Maya-people
+
+## 增补传统（亚瓦拉皮蒂、诺马齐根加、门迪、亚利、门根、维利、托波萨、库里亚、马奎、特基斯特拉特克）
+
+- https://www.britannica.com/topic/Xinguanos
+- https://www.britannica.com/place/Xingu-River
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/Arawakan-languages
+- https://www.britannica.com/place/Mendi
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/Papua
+- https://www.britannica.com/place/New-Guinea
+- https://www.britannica.com/topic/Dani
+- https://www.britannica.com/place/New-Britain-Island-Papua-New-Guinea
+- https://www.britannica.com/topic/Vili
+- https://www.britannica.com/place/Loango
+- https://www.britannica.com/place/Republic-of-the-Congo
+- https://www.britannica.com/topic/Toposa
+- https://www.britannica.com/place/South-Sudan
+- https://www.britannica.com/topic/Nilotic-languages
+- https://www.britannica.com/topic/Kuria
+- https://www.britannica.com/place/Lake-Victoria
+- https://www.britannica.com/place/Kenya
+- https://www.britannica.com/place/Mozambique
+- https://www.britannica.com/place/Tanzania
+- https://www.britannica.com/topic/Swahili-people
+- https://www.britannica.com/topic/Chontal
+- https://www.britannica.com/place/Oaxaca-state-Mexico
+- https://www.britannica.com/place/Mexico

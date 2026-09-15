@@ -2483,3 +2483,31 @@
 - https://www.britannica.com/topic/Chorti
 - https://www.britannica.com/topic/Maya-people
 - https://www.britannica.com/place/Copan
+
+## 增补传统（卡图基纳、亚米纳瓦、塔米、西瓦伊、马莱库拉、伦迪勒、蒂卡尔、拉豪尔、莫潘、托霍诺奥德姆）
+
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/place/Acre
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/place/Huon-Gulf
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/Bougainville-Island
+- https://www.britannica.com/place/Malekula
+- https://www.britannica.com/place/Vanuatu
+- https://www.britannica.com/topic/Rendille
+- https://www.britannica.com/place/Kenya
+- https://www.britannica.com/place/Lake-Turkana
+- https://www.britannica.com/place/Cameroon
+- https://www.britannica.com/topic/Tikar
+- https://www.britannica.com/topic/grassland-peoples
+- https://www.britannica.com/place/Himachal-Pradesh
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/place/India
+- https://www.britannica.com/topic/Mopan
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/place/Belize
+- https://www.britannica.com/topic/Tohono-Oodham
+- https://www.britannica.com/place/Sonoran-Desert
+- https://www.britannica.com/place/Arizona

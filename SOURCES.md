@@ -2380,3 +2380,26 @@
 - https://www.britannica.com/topic/Chol
 - https://www.britannica.com/topic/Maya-people
 - https://www.britannica.com/place/Chiapas
+
+## 增补传统（卡亚比、蒂里奥、马库希、哈拉克姆布特、凯瓦、马林、马努斯、博拉纳、多尔波、马特拉钦卡）
+
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Mato-Grosso
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/place/Guiana-Highlands
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/place/Guyana
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/New-Guinea
+- https://www.britannica.com/place/Admiralty-Islands
+- https://www.britannica.com/topic/Borana
+- https://www.britannica.com/topic/Oromo
+- https://www.britannica.com/place/Ethiopia
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.britannica.com/topic/Bon
+- https://www.britannica.com/place/Toluca
+- https://www.britannica.com/place/Mexico-state-Mexico
+- https://www.britannica.com/place/Mexico

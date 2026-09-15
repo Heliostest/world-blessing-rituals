@@ -2039,3 +2039,33 @@
 - https://www.britannica.com/place/Arunachal-Pradesh
 - https://www.britannica.com/place/Northeast-India
 - https://www.britannica.com/topic/Donyi-Polo
+
+## 增补传统（提契诺、瓦莱达奥斯塔、列支敦士登、摩纳哥、苏莫／马扬纳、拉马、卡韦卡尔、沃南、纽阿福欧、帕雷）
+
+- https://www.britannica.com/place/Ticino-canton-Switzerland
+- https://www.britannica.com/place/Switzerland
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/place/Valle-dAosta
+- https://www.britannica.com/place/Aosta
+- https://www.britannica.com/place/Alps
+- https://www.britannica.com/place/Liechtenstein
+- https://www.britannica.com/place/Vaduz
+- https://www.britannica.com/place/Monaco
+- https://www.britannica.com/place/Monte-Carlo
+- https://www.britannica.com/topic/Sumo-people
+- https://www.britannica.com/place/Mosquito-Coast
+- https://www.britannica.com/place/Nicaragua
+- https://www.britannica.com/topic/Rama-people
+- https://www.britannica.com/place/Bluefields
+- https://www.britannica.com/topic/Cabecar
+- https://www.britannica.com/place/Costa-Rica
+- https://www.britannica.com/topic/Central-American-Indian
+- https://www.britannica.com/topic/Wounaan
+- https://www.britannica.com/place/Darien-region-Panama
+- https://www.britannica.com/place/Panama
+- https://www.britannica.com/place/Niuafoou
+- https://www.britannica.com/place/Tonga
+- https://www.britannica.com/place/Polynesia
+- https://www.britannica.com/topic/Pare
+- https://www.britannica.com/place/Pare-Mountains
+- https://www.britannica.com/place/Tanzania

@@ -1805,3 +1805,34 @@
 - https://www.britannica.com/place/Anuta
 - https://www.britannica.com/place/Solomon-Islands
 - https://www.britannica.com/place/Polynesia
+
+## 增补传统（加洛、林布、德奥里、洛塔、芒贝图、加斯科涅、利古里亚、阿拉贡、特里基、索克）
+
+- https://journals.sagepub.com/doi/10.1177/0262728015598701
+- https://doi.org/10.36348/sjhss.2024.v09i07.002
+- https://www.britannica.com/place/Arunachal-Pradesh
+- https://www.britannica.com/topic/Limbu
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/place/Sikkim
+- https://www.britannica.com/place/Assam
+- https://www.britannica.com/topic/Bodo
+- https://www.britannica.com/place/Nagaland
+- https://www.britannica.com/place/Northeast-India
+- https://www.britannica.com/topic/Naga-people
+- https://www.britannica.com/topic/Mangbetu
+- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britannica.com/place/Central-Africa
+- https://www.britannica.com/place/Gascony
+- https://www.britannica.com/place/Lourdes
+- https://www.britannica.com/place/Pyrenees
+- https://www.britannica.com/place/Liguria
+- https://www.britannica.com/place/Genoa-Italy
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/place/Aragon-region-Spain
+- https://www.britannica.com/place/Zaragoza-Spain
+- https://www.britannica.com/topic/Our-Lady-of-the-Pillar
+- https://www.britannica.com/topic/Trique
+- https://www.britannica.com/place/Oaxaca-state-Mexico
+- https://www.britannica.com/topic/Zoque-people
+- https://www.britannica.com/place/Chiapas
+- https://www.britannica.com/place/Mexico

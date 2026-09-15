@@ -1469,3 +1469,36 @@
 - https://www.britannica.com/topic/Asmat
 - https://www.metmuseum.org/toah/hd/asma/hd_asma.htm
 - https://www.britannica.com/place/Papua
+
+## 增补传统（亚齐、马嘉尔、塔鲁、裕固、加利西亚、马耳他、卡努里、乔奎、尤卡坦玛雅、达尼）
+
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/acehnese-0
+- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/acehnese-religion
+- https://www.everyculture.com/East-Southeast-Asia/Acehnese.html
+- https://doi.org/10.3126/dsaj.v19i2.84709
+- https://www.britannica.com/place/Nepal
+- https://www.everyculture.com/Ma-Ni/Nepal.html
+- https://www.britannica.com/topic/Tharu
+- https://en.wikipedia.org/wiki/Tharu_people
+- https://ideas.repec.org/a/kqi/journl/2019-3-2-3.html
+- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/yugur
+- https://real.mtak.hu/48975/1/ShamanVol24_final_DSK_u.pdf
+- https://www.britannica.com/place/Gansu
+- https://www.britannica.com/place/Santiago-de-Compostela
+- https://www.britannica.com/topic/Santiago-de-Compostela-pilgrimage
+- https://www.britannica.com/place/Galicia-region-Spain
+- https://www.britannica.com/place/Malta
+- https://www.britannica.com/topic/Roman-Catholicism
+- https://www.britannica.com/topic/feast-religion
+- https://www.britannica.com/topic/Kanuri
+- https://www.britannica.com/place/Kanem-Bornu
+- https://www.britannica.com/place/Lake-Chad
+- https://www.britannica.com/topic/Chokwe
+- https://www.metmuseum.org/toah/hd/chok/hd_chok.htm
+- https://www.britannica.com/place/Angola
+- https://www.britannica.com/topic/Yucatec-people
+- https://www.britannica.com/topic/Day-of-the-Dead
+- https://www.britannica.com/place/Yucatan-Peninsula
+- https://www.britannica.com/topic/Dani
+- https://www.britannica.com/place/Papua
+- https://www.britannica.com/place/New-Guinea

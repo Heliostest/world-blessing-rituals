@@ -2242,3 +2242,34 @@
 - https://www.britannica.com/topic/Cuicatec
 - https://www.britannica.com/place/Oaxaca-state-Mexico
 - https://www.britannica.com/place/Mexico
+
+## 增补传统（塞科亚、卡拉帕洛、迈卢、苏尔卡、特特拉、永贝、巴克韦里、迪马尔、奥罗克、波波卢卡）
+
+- https://www.britannica.com/topic/Secoya
+- https://www.britannica.com/place/Napo-River
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/Xinguanos
+- https://www.britannica.com/place/Xingu-River
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/place/Central-Province-Papua-New-Guinea
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/topic/Sulka
+- https://www.britannica.com/place/New-Britain-Island-Papua-New-Guinea
+- https://www.britannica.com/topic/Tetela
+- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britannica.com/place/Sankuru
+- https://www.britannica.com/topic/Yombe
+- https://www.britannica.com/topic/nkisi
+- https://www.britannica.com/topic/Bakweri
+- https://www.britannica.com/place/Mount-Cameroon
+- https://www.britannica.com/place/Cameroon
+- https://www.britannica.com/place/Nepal
+- https://www.britannica.com/place/Terai
+- https://www.britannica.com/place/West-Bengal
+- https://www.britannica.com/topic/Orok
+- https://www.britannica.com/place/Sakhalin-Island
+- https://www.britannica.com/place/Siberia
+- https://www.britannica.com/topic/Popoluca
+- https://www.britannica.com/place/Veracruz
+- https://www.britannica.com/place/Mexico

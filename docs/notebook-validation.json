@@ -4,9 +4,9 @@
   "policy": "Gemini Notebook validation of tradition cards not previously Notebook-checked. All cards start pending.",
   "counts": {
     "total": 726,
-    "pending": 521,
-    "passed_after_fix": 122,
-    "passed": 82,
+    "pending": 509,
+    "passed_after_fix": 129,
+    "passed": 87,
     "skipped": 1
   },
   "items": [
@@ -1811,16 +1811,21 @@
       "slug": "bunun-taiwan",
       "title": "台湾布农族山地农猎祭仪与祖灵信仰（Bunun）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "打耳祭 malahodaigian（公共复振／概念层）",
-        "小米播种与丰收祈祷歌 pasibutbut（公共文化层）",
-        "除疫、收穫与生命节点祭（名称层）"
+        "malahodaigian 打耳祭（公共复振／概念层）",
+        "Pasibutbut 丰收祈祷歌（公共文化层）",
+        "Samu 禁忌伦理；elders lead — outsiders don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Pasibutbut; Samu taboo ethics; elders lead — outsiders don't officiate; malahodaigian."
+      ],
+      "actions": [
+        "Enriched Pasibutbut/Samu naming; elders lead — outsiders don't officiate; malahodaigian framing.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "burmese-nat",
@@ -1923,16 +1928,21 @@
       "slug": "cao-dai",
       "title": "高台教（Cao Đài / Caodaism）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "每日四时礼拜（Tứ thời）",
-        "朔望月礼与听道",
-        "年度大庆与朝圣（概念）"
+        "Tứ thời viewing（每日四时）",
+        "Tòa Thánh Tây Ninh／Thiên Nhãn（朝圣／象征层）",
+        "hierarchical liturgy — users don't officiate"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Thiên Nhãn; Tòa Thánh Tây Ninh; Tứ thời viewing; hierarchical liturgy — users don't officiate."
+      ],
+      "actions": [
+        "Enriched Thiên Nhãn/Tòa Thánh Tây Ninh; Tứ thời viewing; hierarchical liturgy — users don't officiate.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "cashibo-traditional",
@@ -2025,106 +2035,141 @@
       "slug": "chakma-traditional",
       "title": "查克玛上座部佛教与丘陵祈福（Chakma）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "佛寺礼佛与布施（概念层）",
-        "岁时与生命礼仪（概念层）",
-        "地方灵力余绪（敏感，仅概念）"
+        "Bizhu／Biju 新年水节（公开／概念层）",
+        "Kiyang 佛寺礼佛与布施（概念层）",
+        "丘陵灵力 CONCEPT ONLY（敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Bizhu/Biju New Year water festival; Kiyang temples; hill spirits CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Bizhu/Biju, Kiyang temples, and hill spirits CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "cham-balamon",
       "title": "占族婆罗门／阿希埃传统（Cham Balamon／Ahier）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "塔祠敬礼与神王纪念（概念层）",
-        "凯特节（Kate）等岁時礼仪（概念层）",
-        "家屋祖先与生命礼仪（限制性公共知识层）"
+        "Po Klong Garai 塔祠敬礼（概念／观礼层）",
+        "Katé UNESCO 岁時礼仪（公开遗产层）",
+        "Po Adhia／Kadhar 主持—用户观礼（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Katé UNESCO; Po Klong Garai tower; Po Adhia priests host — users view; Kadhar."
+      ],
+      "actions": [
+        "Reframed rituals to Katé UNESCO, Po Klong Garai, Po Adhia host/users view, and Kadhar naming.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "chamorro-traditional",
       "title": "查莫罗传统信仰与和谐伦理（Chamorro traditional）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "请求许可与场所尊重（日常伦理层，概念）",
-        "长者祝福与人生／社区聚会（公共文化层，概念）",
-        "Latte 遗产与祖先记忆的公共呈现（当代遗产层）"
+        "Inafa’maolek 与 Guelo yan Guela 森林许可（概念层）",
+        "长者祝福 elder blessing（公共文化层）",
+        "Latte 遗产与 Taotaomo’na（当代遗产／概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Inafa'maolek; Taotaomo'na; Guelo yan Guela forest permission; Latte; elder blessing."
+      ],
+      "actions": [
+        "Reframed rituals to Inafa'maolek/Guelo yan Guela, elder blessing, and Latte/Taotaomo'na.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "chatino-traditional",
       "title": "查蒂诺民间天主教与山灵祈福（Chatino）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "山灵与农事祈请（概念层）",
-        "疗愈中介（高度敏感，仅概念）"
+        "Virgen de Juquila 圣所与朝圣（公开／概念层）",
+        "Mayordomía 主保职分（概念层）",
+        "Curandero HIGH SENSITIVITY CONCEPT ONLY"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Virgen de Juquila sanctuary; Mayordomía; Curandero HIGH SENSITIVITY CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Virgen de Juquila, Mayordomía, and Curandero HIGH SENSITIVITY CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "chechen-vainakh",
       "title": "车臣／瓦伊纳赫传统信仰与苏菲祈福余绪（Chechen／Vainakh）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "苏菲兄弟会与清真寺公共礼拜层（概念）",
-        "祖先记忆、火塘与多阶段丧礼（高度敏感层）",
-        "塔楼景观、舞蹈与史诗歌唱（公开文化层）"
+        "Loud Zikr circle CONCEPT viewing／Kunta-Haji",
+        "Galsh 塔楼景观（公开文化层）",
+        "hearth／funeral HIGH SENSITIVITY（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Loud Zikr circle CONCEPT viewing; Kunta-Haji; Galsh towers; hearth/funeral HIGH SENSITIVITY."
+      ],
+      "actions": [
+        "Enriched Loud Zikr/Kunta-Haji CONCEPT viewing; Galsh towers; hearth/funeral HIGH SENSITIVITY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "cheondoism",
       "title": "天道教（Ch’ŏndogyo／Cheondoism）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "清水奉献（ch’ŏngsu）",
-        "出入门祈祷（kido）与默想",
-        "周日教会崇拜与咒文持诵"
+        "ch’ŏngsu／kido（daily devotion framing）",
+        "21-syllable Jumun 与 Innaecheon（概念层）",
+        "Sunday service viewing"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Innaecheon; 21-syllable Jumun; ch’ŏngsu; kido; Sunday service viewing/daily devotion framing."
+      ],
+      "actions": [
+        "Enriched Innaecheon/Jumun/ch’ŏngsu/kido; Sunday service viewing and daily devotion framing.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "chepang-traditional",
       "title": "切庞传统信仰与山林祈福（Chepang）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "山林—祖先伦理（概念层）",
-        "生命礼仪（概念层）",
-        "印度教／基督教接触层（概念层）"
+        "Nwagi／Chonam 初穗／首获祭（概念层）",
+        "Pande 萨满 CONCEPT ONLY no ops（高度敏感）",
+        "印度教／基督教接触层与生命礼仪（概念层）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Nwagi/Chonam first-fruits; Pande shaman CONCEPT ONLY no ops."
+      ],
+      "actions": [
+        "Reframed rituals to Nwagi/Chonam first-fruits and Pande CONCEPT ONLY no ops.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "cherokee",
@@ -2160,46 +2205,61 @@
       "slug": "chimbu-traditional",
       "title": "钦布／辛布传统信仰与高地基督教祈福（Chimbu／Simbu）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "教堂崇拜与生命礼仪（概念层）",
-        "赔偿—交换与和解（概念层）",
-        "祖先／自然灵余绪（高度敏感，仅概念）"
+        "Bugla Oku／Singsing 文化命名与观礼层",
+        "Bugla Yagu 猪只赔偿（概念层）",
+        "spirits CONCEPT ONLY（高度敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Bugla Oku skull dance cultural naming; Singsing; Bugla Yagu pig compensation; spirits CONCEPT."
+      ],
+      "actions": [
+        "Reframed rituals to Bugla Oku/Singsing cultural naming, Bugla Yagu, and spirits CONCEPT.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "chin-zomi-traditional",
       "title": "钦／佐米传统信仰与夸多节祈福（Chin／Zomi）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed",
       "rituals": [
-        "Khuado 收获—新年节（公共／文化层）",
-        "传统灵力观与村落祭司职能（高度敏感，仅概念）",
-        "生命礼仪与氏族伦理（概念层）"
+        "Khuado public culture（公共／文化层）",
+        "Puithiam／Pasian CONCEPT",
+        "torch-driving evil CONCEPT"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Enrich: Puithiam CONCEPT; Pasian; torch-driving evil CONCEPT; Khuado public culture."
+      ],
+      "actions": [
+        "Enriched Puithiam/Pasian CONCEPT; torch-driving evil CONCEPT; Khuado public culture.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "chinantec-traditional",
       "title": "奇南特克民间天主教与山灵祈福（Chinantec）",
       "grade": "B",
-      "status": "pending",
+      "status": "passed_after_fix",
       "rituals": [
-        "主保节与教堂礼仪（概念层）",
-        "山灵与农事祈请（概念层）",
-        "疗愈中介（高度敏感，仅概念）"
+        "主保节／Mayordomía（概念层）",
+        "Dueño del Monte 与农事祈请（概念层）",
+        "Curandero CONCEPT ONLY（高度敏感）"
       ],
-      "validated_at": null,
-      "notebook_url": null,
-      "issues": [],
-      "actions": []
+      "validated_at": "2026-09-15T11:42:42Z",
+      "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+      "issues": [
+        "Needed Dueño del Monte; Mayordomía; Curandero CONCEPT ONLY."
+      ],
+      "actions": [
+        "Reframed rituals to Dueño del Monte, Mayordomía, and Curandero CONCEPT ONLY.",
+        "Emphasized atmosphere-only / no user-officiating in 手机互动适合度; grade B; educational only."
+      ]
     },
     {
       "slug": "chinese-buddhism",
@@ -11787,21 +11847,21 @@
     }
   ],
   "last_batch": {
-    "name": "batch-17",
-    "validated_at": "2026-09-15T11:19:37Z",
+    "name": "batch-18",
+    "validated_at": "2026-09-15T11:42:42Z",
     "slugs": [
-      "bhutia-traditional",
-      "bontoc-traditional",
-      "borana-traditional",
-      "bozo-traditional",
-      "brokpa-traditional",
-      "bugun-traditional",
-      "bunak-traditional",
-      "batak-parmalim",
-      "bathou-bodo",
-      "bhutanese-drukpa",
-      "bon",
-      "boruca-traditional"
+      "chakma-traditional",
+      "cham-balamon",
+      "chamorro-traditional",
+      "chatino-traditional",
+      "chepang-traditional",
+      "chimbu-traditional",
+      "chinantec-traditional",
+      "bunun-taiwan",
+      "cao-dai",
+      "chechen-vainakh",
+      "cheondoism",
+      "chin-zomi-traditional"
     ],
     "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492"
   }

@@ -2403,3 +2403,29 @@
 - https://www.britannica.com/place/Toluca
 - https://www.britannica.com/place/Mexico-state-Mexico
 - https://www.britannica.com/place/Mexico
+
+## 增补传统（苏亚、阿帕莱、瓦伊瓦伊、皮亚罗亚、伊内、吉米、西阿西、穆尔勒、金瑙尔、卡克奇克尔）
+
+- https://www.britannica.com/topic/Xinguanos
+- https://www.britannica.com/place/Xingu-River
+- https://www.britannica.com/place/Brazil
+- https://www.britannica.com/place/Guiana-Highlands
+- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.britannica.com/topic/South-American-Indian
+- https://www.britannica.com/place/Guyana
+- https://www.britannica.com/place/Orinoco-River
+- https://www.britannica.com/place/Peru
+- https://www.britannica.com/place/Ucayali-River
+- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.britannica.com/topic/Melanesian-culture
+- https://www.britannica.com/place/New-Guinea
+- https://www.britannica.com/place/Huon-Gulf
+- https://www.britannica.com/place/South-Sudan
+- https://www.britannica.com/topic/Surmic-languages
+- https://www.britannica.com/place/East-African-lakes
+- https://www.britannica.com/place/Himachal-Pradesh
+- https://www.britannica.com/place/India
+- https://www.britannica.com/topic/Hinduism
+- https://www.britannica.com/topic/Kaqchikel
+- https://www.britannica.com/topic/Maya-people
+- https://www.britannica.com/place/Guatemala

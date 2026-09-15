@@ -1,0 +1,221 @@
+[
+  {
+    "slug": "bashkir-traditional",
+    "title": "巴什基尔伊斯兰与民俗祈福（Bashkir／Bashkort）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "Qorban Bayramï／宰牲节纪念（公开伊斯兰节日层）",
+      "Sabantuy 犁节（公开民俗／农事节庆层）",
+      "圣徒墓朝拜与亡者纪念筵席（概念层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Missing notable public / folk layers: Kargatuy (spring women’s/girls’ gathering narrative) and Auliya shrine/spring pilgrimage naming."
+    ],
+    "actions": [
+      "Added Kargatuy as public folk concept and Auliya shrines/springs naming in 概述 and 典型仪式.",
+      "Kept educational overview tone; no amulet/exorcism how-to."
+    ]
+  },
+  {
+    "slug": "basilicata-folk",
+    "title": "巴西利卡塔民间天主教与岩城朝圣祈福（Basilicata／Lucania）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "岩穴教堂／圣母朝圣（概念层）",
+      "主保节巡游（概念层）",
+      "圣周公共礼仪（概念层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Missing notable public rituals: Matera Festa della Bruna (Strazzo) and Maggio di Accettura tree-marriage conceptual layer."
+    ],
+    "actions": [
+      "Added Festa della Bruna／Strazzo and Maggio di Accettura tree marriage as public ritual concepts in 概述 and 典型仪式.",
+      "Kept educational overview tone; no operational how-to."
+    ]
+  },
+  {
+    "slug": "basque-folk",
+    "title": "巴斯克民间信仰与玛丽女神传说（Basque folk／Mari）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "山洞穴居传说中的敬畏规矩（概念层）",
+      "天气与农牧相关的民俗祈请（概念层）",
+      "节庆、舞蹈与地方文化记忆（概念层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [],
+    "actions": [
+      "Enrichment applied: Eguzkilore sun-thistle amulet naming; Zugarramurdi witch-hunt memory as memorial/cultural layer in 概述／典型仪式."
+    ]
+  },
+  {
+    "slug": "baul-bengal",
+    "title": "孟加拉鲍尔／行吟密契传统（Baul）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "行吟演唱与乐器伴奏（公共文化层）",
+      "以歌传道／口传哲学（概念层）",
+      "身体为神殿的密契取向（限制性公共知识层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [],
+    "actions": [
+      "Enrichment applied: Kenduli Mela, Ektara emphasis, Maner Manush, Deha-sadhana high-level concept-only in 概述／典型仪式."
+    ]
+  },
+  {
+    "slug": "beja-traditional",
+    "title": "贝贾牧民伊斯兰与红海山地祈福传统（Beja）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "伊斯兰礼拜与斋月（公共层）",
+      "生命礼仪与部族互助（公共层）",
+      "牧养伦理与求雨叙事（概念层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Missing notable layers: Khatmiyya Sufi influence, Kassala shrines, and Dhaff／Sababla sword-dance conceptual naming."
+    ],
+    "actions": [
+      "Added Khatmiyya, Kassala shrine pilgrimage, and Dhaff／Sababla sword dance as conceptual/public layers in 概述 and 典型仪式.",
+      "Kept educational tone; no combat or initiation how-to."
+    ]
+  },
+  {
+    "slug": "bemba-traditional",
+    "title": "本巴传统宗教与莱萨—祖灵祈福（Bemba）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "旱灾等危机中的 Lesa 集体祈请（概念层）",
+      "祖灵与王室圣地敬礼（部分敏感）",
+      "教会生活与生命礼仪（公共／当代层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Missing conceptual naming for Chisungu／Mbusa (no how-to) and Ituna／Mbabala royal ancestral sites."
+    ],
+    "actions": [
+      "Added Chisungu／Mbusa as concept-only naming (explicitly no how-to) and Ituna／Mbabala royal ancestral sites conceptual naming.",
+      "Kept educational tone; no initiation or sacrifice how-to."
+    ]
+  },
+  {
+    "slug": "blang-traditional",
+    "title": "布朗族传统信仰与上座部—自然灵祈福（Blang／Bulang）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "上座部佛寺日历（公共层）",
+      "祭龙／接木龙等寨神自然礼仪（概念层）",
+      "祭祖与茶—蜂生态伦理（公共文化层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [],
+    "actions": [
+      "Enrichment applied: Jingmai tea ancestor, 帕哎冷, 桑康比／浴佛 naming in 概述／典型仪式."
+    ]
+  },
+  {
+    "slug": "bornholm-folk",
+    "title": "博恩霍尔姆民间基督教与岛屿祈福（Bornholm）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "路德宗礼拜与教会节期（概念层）",
+      "航海感恩（概念层）",
+      "岁时公共民俗层（概念层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [],
+    "actions": [
+      "Enrichment applied: Østerlars round church, Kirkeskib votive ships, Sankt Hans midsummer naming in 概述／典型仪式."
+    ]
+  },
+  {
+    "slug": "breton-pardons",
+    "title": "布列塔尼赦罪朝圣与民间祈福（Breton Pardons）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "教区主保 pardon 日（公开朝圣层）",
+      "长距巡行 troménie（概念—公开层）",
+      "还愿与“神迹游行”叙事（历史—民俗层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [],
+    "actions": [
+      "Enrichment applied: sacred wells and banners naming in 概述／典型仪式."
+    ]
+  },
+  {
+    "slug": "buyei-traditional",
+    "title": "布依族传统信仰与三月三祈福（Buyei／Bouyei）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "三月三等岁时节庆（公共层）",
+      "祭祖与自然圣物敬礼（部分敏感）",
+      "扫寨／清洁寨落叙事（概念层，禁止操作）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [],
+    "actions": [
+      "Enrichment applied: 六月六稻魂; Mo 经 conceptual naming; 扫寨 kept concept-only with no ops."
+    ]
+  },
+  {
+    "slug": "calabrian-folk",
+    "title": "卡拉布里亚民间天主教与朝圣祈福（Calabrian）",
+    "grade": "C",
+    "status": "passed_after_fix",
+    "rituals": [
+      "圣母朝圣与还愿（概念层）",
+      "主保节巡游（概念层）",
+      "圣周公共礼仪（概念层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [
+      "Missing Madonna di Polsi pilgrimage naming; Vattenti self-flagellation needed as public cultural note only with strong respect warnings (no how-to, no glorification)."
+    ],
+    "actions": [
+      "Added Madonna di Polsi; documented Vattenti only as public cultural note with strong 注意与尊重 (no how-to, no glorification).",
+      "Kept educational tone; grades stay C."
+    ]
+  },
+  {
+    "slug": "catalan-folk",
+    "title": "加泰罗尼亚民间天主教与巨人巡游祈福（Catalan）",
+    "grade": "C",
+    "status": "passed",
+    "rituals": [
+      "主保节与巨人／巡游（概念层）",
+      "蒙特塞拉特等圣地朝圣（概念层）",
+      "弥撒与生命礼仪（概念层）"
+    ],
+    "validated_at": "2026-09-15T08:18:37Z",
+    "notebook_url": "https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492",
+    "issues": [],
+    "actions": [
+      "Enrichment applied: La Moreneta, La Patum, castells／gegants／correfoc naming in 概述／典型仪式."
+    ]
+  }
+]

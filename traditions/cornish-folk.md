@@ -47,6 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Cornwall-county-England
 - https://www.britannica.com/topic/holy-well
 - https://www.britannica.com/topic/Church-of-England
+- https://www.english-heritage.org.uk/visit/places/dupath-well/history/
+- https://www.cornwall.gov.uk/council-news/environment-culture-and-planning/cornish-culture-is-thriving-across-the-duchy/
+- https://museumofcornishlife.co.uk/projects/
+- https://doi.org/10.1080/14649365.2015.1066840

@@ -2604,3 +2604,46 @@
 - https://www.metmuseum.org/essays/jain-manuscript-painting
 - https://www.nordiskamuseet.se/utforska/hogtider/midsommar/
 - https://www.turismoasturias.es/covadonga/espiritual
+
+## 增补传统（Notebook source hunt C2：贝贾—艾米利亚）
+
+- http://danmarkskirker.natmus.dk/
+- https://altezzatravel.com/articles/chagga-tribe
+- https://bornholm.info/en/oesterlars-round-church/
+- https://bornholm.info/en/round-churches-on-bornholm/
+- https://calabriastraordinaria.it/en/news/jubilee-2025-in-the-dioceses-of-calabria-sites-paths-and-festivities
+- https://calabriastraordinaria.it/storage/files/02_L%27arte_e_la_Cultura_EN.pdf
+- https://cedejsudan.hypotheses.org/2791
+- https://dati.beniculturali.it/lodview-arco/resource/ArchitecturalOrLandscapeHeritage/0800241610
+- https://doi.org/10.1080/14649365.2015.1066840
+- https://doi.org/10.1093/acref/9780195301731.013.48534
+- https://doi.org/10.1371/journal.pone.0253511
+- https://doi.org/10.17159/2309-9585/2026/v52a7
+- https://doi.org/10.37892/2686-8946-2022-3-2-368-388
+- https://dx.doi.org/10.3389/fenvs.2025.1538921
+- https://emiliaromagnaturismo.it/it/arte-cultura/citta-darte/bologna-portici
+- https://emiliaromagnaturismo.it/it/itinerari/siti-unesco-a-bologna-e-modena
+- https://ethnology.pitt.edu/ojs/Ethnology/article/view/6061/6247
+- https://ich.unesco.org/en/RL/celebration-of-big-votive-structures-processions-00882
+- https://ich.unesco.org/en/RL/human-towers-00364
+- https://ich.unesco.org/en/RL/la-patum-de-berga-00156
+- https://ich.unesco.org/en/RL/sinjska-alka-a-knights-tournament-in-sinj-00357
+- https://ich.unesco.org/en/USL/cantu-in-paghjella-a-secular-and-liturgical-oral-tradition-of-corsica-00315
+- https://min-kulture.gov.hr/?id=16460
+- https://museumofcornishlife.co.uk/projects/
+- https://patrimoni.gencat.cat/es/coleccion/castells
+- https://patrimoni.gencat.cat/es/coleccion/la-patum
+- https://repository.up.ac.za/server/api/core/bitstreams/644905d8-357e-4d23-b318-2c400436484a/content
+- https://revues.imist.ma/index.php/AJLP-GS/article/download/34573/17859/92979
+- https://visitmarija-bistrica.croatia.hr/hr-hr/dogadanja/ljeto-u-mariji-bistrici
+- https://webbshop.nordiskamuseet.se/collections/dalahastar
+- https://www.cornwall.gov.uk/council-news/environment-culture-and-planning/cornish-culture-is-thriving-across-the-duchy/
+- https://www.english-heritage.org.uk/visit/places/dupath-well/history/
+- https://www.isula.corsica/culture/agenda/Scola-di-cantu-Venachese-Cours-de-chant-Cantu-in-Paghjella-e-Cantu-sacru-Canti-cu-Ghitara-Mairie-Venacu_ae1957142.html
+- https://www.unesco.org.cy/News-PROSKLISI__Eortastiki_ekdilosi_gia_tin_eggrafi_tis_PSaltikis_technis_ston_Antiprosopeytiko_Katalogo_Aylis_Politistikis_Klironomias_tis_UNESCO,4226,EN
+- https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Cultural-inspirations/U-Catenacciu-in-Sartene-experience-the-Good-Friday-procession-in-the-heart-of-Corsica
+- https://www.visitcyprus.com/discover-cyprus/culture/museums-galleries/museum-of-kykkos-monastery/
+- https://www.visitcyprus.com/discover-cyprus/culture/sites-and-monuments/kykkos-monastery/
+- https://www.visitdalarna.se/artikel/allt-om-midsommar-i-dalarna
+- https://www.visitdalarna.se/artikel/midsommardrommen-vantar
+- https://www.visitdenmark.com/denmark/destinations/bornholm/attractions

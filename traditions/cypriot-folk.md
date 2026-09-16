@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Cyprus
 - https://www.britannica.com/topic/Church-of-Cyprus
 - https://www.britannica.com/topic/Eastern-Orthodoxy
+- https://www.visitcyprus.com/discover-cyprus/culture/sites-and-monuments/kykkos-monastery/
+- https://www.visitcyprus.com/discover-cyprus/culture/museums-galleries/museum-of-kykkos-monastery/
+- https://www.unesco.org.cy/News-PROSKLISI__Eortastiki_ekdilosi_gia_tin_eggrafi_tis_PSaltikis_technis_ston_Antiprosopeytiko_Katalogo_Aylis_Politistikis_Klironomias_tis_UNESCO,4226,EN

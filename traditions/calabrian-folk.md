@@ -49,6 +49,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Calabria-region-Italy
-- https://www.britannica.com/place/Reggio-di-Calabria
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://calabriastraordinaria.it/en/news/jubilee-2025-in-the-dioceses-of-calabria-sites-paths-and-festivities
+- https://calabriastraordinaria.it/storage/files/02_L%27arte_e_la_Cultura_EN.pdf
+- https://ich.unesco.org/en/RL/celebration-of-big-votive-structures-processions-00882

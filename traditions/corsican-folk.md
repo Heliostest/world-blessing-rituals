@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Corsica
 - https://www.britannica.com/topic/Roman-Catholicism
-- https://www.britannica.com/place/Mediterranean-Sea
+- https://ich.unesco.org/en/USL/cantu-in-paghjella-a-secular-and-liturgical-oral-tradition-of-corsica-00315
+- https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Cultural-inspirations/U-Catenacciu-in-Sartene-experience-the-Good-Friday-procession-in-the-heart-of-Corsica
+- https://www.isula.corsica/culture/agenda/Scola-di-cantu-Venachese-Cours-de-chant-Cantu-in-Paghjella-e-Cantu-sacru-Canti-cu-Ghitara-Mairie-Venacu_ae1957142.html

@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/topic/Beja-people
 - https://kids.britannica.com/kids/article/Beja/626388
-- https://www.britannica.com/place/Sudan
+- https://doi.org/10.1371/journal.pone.0253511
+- https://doi.org/10.37892/2686-8946-2022-3-2-368-388
+- https://cedejsudan.hypotheses.org/2791

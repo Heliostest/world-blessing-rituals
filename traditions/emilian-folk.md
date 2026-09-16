@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Emilia-Romagna
-- https://www.britannica.com/place/Bologna-Italy
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://emiliaromagnaturismo.it/it/arte-cultura/citta-darte/bologna-portici
+- https://emiliaromagnaturismo.it/it/itinerari/siti-unesco-a-bologna-e-modena
+- https://dati.beniculturali.it/lodview-arco/resource/ArchitecturalOrLandscapeHeritage/0800241610

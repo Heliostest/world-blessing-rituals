@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Croatia
 - https://www.britannica.com/topic/Roman-Catholicism
-- https://www.britannica.com/place/Dalmatia
+- https://ich.unesco.org/en/RL/sinjska-alka-a-knights-tournament-in-sinj-00357
+- https://min-kulture.gov.hr/?id=16460
+- https://visitmarija-bistrica.croatia.hr/hr-hr/dogadanja/ljeto-u-mariji-bistrici

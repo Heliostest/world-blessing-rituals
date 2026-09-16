@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/places/africa/tanzania-political-geography/chagga
-- https://www.britannica.com/place/Kilimanjaro
-- https://www.britannica.com/place/Tanzania
+- https://ethnology.pitt.edu/ojs/Ethnology/article/view/6061/6247
+- https://altezzatravel.com/articles/chagga-tribe
+- https://revues.imist.ma/index.php/AJLP-GS/article/download/34573/17859/92979

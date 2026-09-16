@@ -53,6 +53,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/bemba-religion
 - https://www.britannica.com/topic/Bemba
-- https://www.britannica.com/place/Zambia
+- https://doi.org/10.17159/2309-9585/2026/v52a7
+- https://doi.org/10.1093/acref/9780195301731.013.48534
+- https://dx.doi.org/10.3389/fenvs.2025.1538921
+- https://repository.up.ac.za/server/api/core/bitstreams/644905d8-357e-4d23-b318-2c400436484a/content

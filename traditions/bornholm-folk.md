@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Bornholm
-- https://www.britannica.com/place/Denmark
 - https://www.britannica.com/topic/Church-of-Denmark
+- https://bornholm.info/en/oesterlars-round-church/
+- https://bornholm.info/en/round-churches-on-bornholm/
+- https://www.visitdenmark.com/denmark/destinations/bornholm/attractions
+- http://danmarkskirker.natmus.dk/

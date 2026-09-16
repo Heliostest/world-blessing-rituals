@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Dalarna
-- https://www.britannica.com/place/Sweden
 - https://www.britannica.com/topic/Church-of-Sweden
+- https://www.visitdalarna.se/artikel/allt-om-midsommar-i-dalarna
+- https://www.visitdalarna.se/artikel/midsommardrommen-vantar
+- https://webbshop.nordiskamuseet.se/collections/dalahastar

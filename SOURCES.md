@@ -2647,3 +2647,20 @@
 - https://www.visitdalarna.se/artikel/allt-om-midsommar-i-dalarna
 - https://www.visitdalarna.se/artikel/midsommardrommen-vantar
 - https://www.visitdenmark.com/denmark/destinations/bornholm/attractions
+
+## 增补传统（Notebook source hunt C3a partial：芬兰—弗留利）
+
+- https://fribourg.ch/fr/fribourg/evenements/la-saint-nicolas/
+- https://fribourg.ch/fr/traditions/desalpes/
+- https://grado.it/it/eventi/sabo-grando-e-perdon-di-barbana/
+- https://helda.helsinki.fi/server/api/core/bitstreams/19485fd9-c2a6-4423-bb1d-80bc114cd4ae/content
+- https://journal.fi/ethnolfenn/article/view/84255
+- https://qsr.waddensea-worldheritage.org/reports/landscape-and-culture
+- https://samanthagarner.ca/sacred-bear-spirit-finnish-paganism/
+- https://www.bonifatiuskapel.nl/Pelgrimeren.html
+- https://www.friesmuseum.nl/te-zien-en-te-doen/tentoonstellingen/de-terp
+- https://www.lebendige-traditionen.ch/fr/les-poyas
+- https://www.lebendige-traditionen.ch/it/san-nicola-a-friborgo
+- https://www.santuariodibarbana.it/storia/
+- https://www.turismofvg.it/eventi/autunno-col-ciavedal-streghe-e-benandanti-di-confine
+- https://www.turismofvg.it/fvglivexperience/castelmonte

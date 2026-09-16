@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Ibibio
-- https://www.everyculture.com/Africa-Middle-East/Ibibio-Religion-and-Expressive-Culture.html
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ibibio
+- https://www.britishmuseum.org/collection/object/E_Af1956-27-232
+- https://www.britishmuseum.org/collection/term/x83593
+- https://dx.doi.org/10.1179/nam.1978.26.3.271
+- https://doi.org/10.1080/10646175.2023.2264227

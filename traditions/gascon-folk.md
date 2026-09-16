@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Gascony
-- https://www.britannica.com/place/Lourdes
-- https://www.britannica.com/place/Pyrenees
+- https://www.lourdes-france.org/la-grotte-des-apparitions/
+- https://pop.culture.gouv.fr/notice/merimee/PA00135471
+- https://escolagastonfebus.com/non-classe/fontaines-sacrees-fontaines-guerisseuses/
+- https://www.tourisme-valdeleyre.com/les-incontournables-valdeleyre/patrimoine-bati/les-fontaines-guerisseuses/

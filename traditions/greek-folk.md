@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Greek-Orthodox-Church
-- https://www.britannica.com/place/Greece
-- https://www.britannica.com/place/Mount-Athos
+- https://ayla.culture.gr/catalogue/ta-panigiria-tis-ikarias-2022/
+- https://ayla.culture.gr/catalogue/to-panigyri-tou-agiou-petrou-sta-spata/
+- https://ayla.culture.gr/6731-2/
+- https://archivecollections.visitgreece.gr/entities/multimedia/ea58cdf6-6b8c-4c99-9832-46dacf489541

@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Batan-Islands
-- https://www.britannica.com/place/Philippines
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/
+- https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/

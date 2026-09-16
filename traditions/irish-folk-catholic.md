@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Croagh-Patrick
 - https://www.britannica.com/topic/Saint-Patrick
 - https://www.britannica.com/topic/holy-well
+- https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/seasonal-festivals/autumn
+- https://www.museum.ie/en-IE/Collections-Research/Folklife-Collections/Folklife-Collections-List-(1)/Other/The-Great-Irish-Famine/Penal-Cross
+- https://www.heritagecouncil.ie/news/news-features/7-new-sites-selected-for-the-heritage-councils-adopt-a-monument-programme

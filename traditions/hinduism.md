@@ -59,3 +59,6 @@
 - https://www.britannica.com/topic/puja
 - https://www.britannica.com/topic/yajna
 - https://www.britannica.com/topic/Hinduism/Practical-Hinduism
+- https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703
+- https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/sseasia.pdf
+- https://www.britishmuseum.org/collection/object/A_2026-3006-1-56

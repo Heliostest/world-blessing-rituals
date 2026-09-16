@@ -2664,3 +2664,33 @@
 - https://www.santuariodibarbana.it/storia/
 - https://www.turismofvg.it/eventi/autunno-col-ciavedal-streghe-e-benandanti-di-confine
 - https://www.turismofvg.it/fvglivexperience/castelmonte
+
+## 增补传统（Notebook source hunt C3b：加利西亚—伊瓦坦）
+
+- https://archivecollections.visitgreece.gr/entities/multimedia/ea58cdf6-6b8c-4c99-9832-46dacf489541
+- https://ayla.culture.gr/6731-2/
+- https://ayla.culture.gr/catalogue/ta-panigiria-tis-ikarias-2022/
+- https://ayla.culture.gr/catalogue/to-panigyri-tou-agiou-petrou-sta-spata/
+- https://blog.turismo.gal/san-andres-de-teixido-lugar-de-ritos-y-leyendas-acoge-una-nueva-romeria/
+- https://doi.org/10.1080/10646175.2023.2264227
+- https://dx.doi.org/10.1179/nam.1978.26.3.271
+- https://escolagastonfebus.com/non-classe/fontaines-sacrees-fontaines-guerisseuses/
+- https://gotland.com/stangaspelen/
+- https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703
+- https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/
+- https://patrimoniogalego.net/index.php/2031/2011/06/amilladoiros-no-camino-a-san-andres-de-teixido/
+- https://pop.culture.gouv.fr/notice/merimee/PA00135471
+- https://www.britishmuseum.org/collection/object/A_2026-3006-1-56
+- https://www.britishmuseum.org/collection/object/E_Af1956-27-232
+- https://www.britishmuseum.org/collection/term/x83593
+- https://www.caminodesantiago.gal/es/descubre/origenes-y-evolucion/el-ano-santo-compostelano
+- https://www.heritagecouncil.ie/news/news-features/7-new-sites-selected-for-the-heritage-councils-adopt-a-monument-programme
+- https://www.lourdes-france.org/la-grotte-des-apparitions/
+- https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/sseasia.pdf
+- https://www.museum.ie/en-IE/Collections-Research/Folklife-Collections/Folklife-Collections-List-(1)/Other/The-Great-Irish-Famine/Penal-Cross
+- https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/seasonal-festivals/autumn
+- https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/
+- https://www.svenskakyrkan.se/platser/679-visby-domkyrkoforsamling-visby-domkyrka-sankta-maria
+- https://www.svenskakyrkan.se/visbydomkyrka/besok-and-visningar
+- https://www.tourisme-valdeleyre.com/les-incontournables-valdeleyre/patrimoine-bati/les-fontaines-guerisseuses/
+- https://www.turismo.gal/recurso/-/detalle/200312000146/romaria-de-santa-marta-de-ribarteme

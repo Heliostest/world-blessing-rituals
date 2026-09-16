@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/biography/Saint-Boniface
 - https://www.britannica.com/topic/Frisian
-- https://www.britannica.com/place/Dokkum
+- https://www.bonifatiuskapel.nl/Pelgrimeren.html
+- https://www.friesmuseum.nl/te-zien-en-te-doen/tentoonstellingen/de-terp
+- https://qsr.waddensea-worldheritage.org/reports/landscape-and-culture

@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Fribourg-canton-Switzerland
-- https://www.britannica.com/place/Fribourg-Switzerland
-- https://www.britannica.com/place/Switzerland
+- https://www.lebendige-traditionen.ch/it/san-nicola-a-friborgo
+- https://www.lebendige-traditionen.ch/fr/les-poyas
+- https://fribourg.ch/fr/fribourg/evenements/la-saint-nicolas/
+- https://fribourg.ch/fr/traditions/desalpes/

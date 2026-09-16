@@ -47,6 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Friuli-Venezia-Giulia
 - https://www.britannica.com/topic/Friulian-language
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://www.turismofvg.it/fvglivexperience/castelmonte
+- https://grado.it/it/eventi/sabo-grando-e-perdon-di-barbana/
+- https://www.santuariodibarbana.it/storia/
+- https://www.turismofvg.it/eventi/autunno-col-ciavedal-streghe-e-benandanti-di-confine

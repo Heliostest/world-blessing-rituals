@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Slovakia
 - https://www.britannica.com/topic/Roman-Catholicism
-- https://www.britannica.com/place/Levoca
+- https://slovakia.travel/en/levoca-marian-pilgrimage
+- https://slovakia.travel/en/easter-whipping-or-bathing-march-or-april
+- https://slovakia.travel/en/levoca

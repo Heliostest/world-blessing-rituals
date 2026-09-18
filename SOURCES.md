@@ -2772,3 +2772,45 @@
 - https://www.viaggiareinpuglia.it/de/dettaglio-attrattore/basilica-santuario-santa-maria-de-finibus-terrae
 - https://www.visitisleofman.com/blog/read/2024/10/fun-facts-about-hop-tu-naa-on-the-isle-of-man-the-original-halloween-festival-b113
 - https://www.visitisleofman.com/experience/kirk-maughold-church-p1312271
+
+## 增补传统（Notebook source hunt C6：圣马力诺—图瓦卢）
+
+- https://doi.org/10.21313/hawaii/9780824867805.003.0004
+- https://doi.org/10.21313/hawaii/9780824867805.003.0005
+- https://doi.org/10.26034/LU.JGB.2025.7155
+- https://doi.org/10.4000/129ck
+- https://dx.doi.org/10.1590/s1981-81222012000200011
+- https://forestryandland.gov.scot/visit/destinations/munlochy-clootie-well
+- https://ich.unesco.org/doc/src/44473-EN.pdf
+- https://ich.unesco.org/en/BSP/xtaxkgakget-makgkaxtlawana-the-centre-for-indigenous-arts-and-its-contribution-to-safeguarding-the-intangible-cultural-heritage-of-the-totonac-people-of-veracruz-mexico-00666
+- https://ich.unesco.org/en/RL/holy-week-processions-in-mendrisio-01460
+- https://ich.unesco.org/en/RL/ritual-ceremony-of-the-voladores-00175
+- https://ich.unesco.org/en/RL/songkran-in-thailand-traditional-thai-new-year-festival-01719
+- https://patrimoines.savoie.fr/upload/docs/application/pdf/2020-08/la-rubrique-33_2020-08-31_11-25-36_781.pdf
+- https://patrimoines.savoie.fr/upload/docs/application/pdf/2025-06/adulte_francais.pdf
+- https://repository.comune.palermo.it/storia-festino-santa-rosalia-palermo.php
+- https://revistas.inah.gob.mx/index.php/cuicuilco/es/article/view/23503
+- https://slovakia.travel/en/easter-whipping-or-bathing-march-or-april
+- https://slovakia.travel/en/levoca
+- https://slovakia.travel/en/levoca-marian-pilgrimage
+- https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=43070
+- https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=43323
+- https://www.chamonix-guides.com/fr/nos-engagements/solidarite/fete-des-guides
+- https://www.historicenvironment.scot/visit/all/iona-abbey-and-nunnery/history-and-stories/
+- https://www.inah.gob.mx/index.php/foto-del-dia/ceremonia-ritual-de-los-voladores-patrimonio-vivo
+- https://www.isof.se/folkminnen/amnesomraden/nationella-minoriteters-kultur/tornedalsk-kultur
+- https://www.isof.se/nationella-minoritetssprak/meankieli/lar-dig-mer-om-meankieli/meankieli-nu-och-da
+- https://www.isof.se/utforska/kunskapsbanker/lar-dig-mer-om-arets-namn-och-handelser/handelser/martensafton
+- https://www.lebendige-traditionen.ch/it/processioni-della-settimana-santa-di-mendrisio
+- https://www.madonnadelsasso.org/
+- https://www.svenskakyrkan.se/lundsstift/pilgrim
+- https://www.svenskakyrkan.se/platser/21226-simrishamns-forsamling-st-olofs-kyrka
+- https://www.ticino.ch/it/commons/details/Sacro-Monte-Madonna-del-Sasso/2693.html
+- https://www.visitsanmarino.com/pub1/VisitSM/en/evento/20261001_1%C2%B0ottobre-cerimonia-di-investitura-dei-capitani-reggenti.html
+- https://www.visitsanmarino.com/pub2/VisitSM/evento/20250205_Festa_di_santagata.html
+- https://www.visitsanmarino.com/pub2/VisitSM/evento/20260903_Festa_di_San_Marino.html
+- https://www.visitsanmarino.com/pub2/VisitSM/luogo/Arte-e-cultura/Basilica-del-Santo.html
+- https://www.visitscotland.com/things-to-do/events/christmas-winter-festivals/hogmanay
+- https://www.visittrentino.info/en/guide/desmontegade
+- https://www.visittrentino.info/en/guide/must-see/churches-sanctuaries/santuario-della-madonna-di-pine_md_2437
+- https://www.visittrentino.info/it/guida/da-vedere/chiese-santuari/santuario-di-san-romedio_md_2567

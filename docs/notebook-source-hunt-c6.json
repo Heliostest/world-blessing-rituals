@@ -1,0 +1,183 @@
+[
+  {
+    "slug": "sammarinese-folk",
+    "title": "圣马力诺民间天主教与共和朝圣祈福（Sammarinese）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/place/San-Marino-republic-Europe",
+      "https://www.britannica.com/topic/Saint-Marinus",
+      "https://www.britannica.com/topic/Roman-Catholicism"
+    ],
+    "rituals": [
+      "9 月 3 日圣马利诺主保／建国日（概念层）",
+      "圣髑弥撒与 Basilica del Santo（概念层）",
+      "Capitani Reggenti 就职弥撒（公共／公民—宗教层）"
+    ]
+  },
+  {
+    "slug": "savoyard-folk",
+    "title": "萨瓦民间天主教与阿尔卑斯朝圣祈福（Savoyard）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/place/Savoy-region-France",
+      "https://www.britannica.com/place/Alps",
+      "https://www.britannica.com/topic/Roman-Catholicism"
+    ],
+    "rituals": [
+      "Notre-Dame de la Gorge 朝圣（概念层）",
+      "Notre-Dame de Myans 黑圣母（概念层）",
+      "Désalpe 与主保巡游（公共／民俗层）"
+    ]
+  },
+  {
+    "slug": "scanian-folk",
+    "title": "斯堪尼亚民间基督教与节期祈福（Scanian／Skåne）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/place/Skane",
+      "https://www.britannica.com/place/Sweden",
+      "https://www.britannica.com/topic/Church-of-Sweden"
+    ],
+    "rituals": [
+      "Mårtensafton 鹅宴（公共民俗层）",
+      "Sankt Olof 圣井／教堂（概念层）",
+      "仲夏 maypole 与生命礼仪（民俗／教会层）"
+    ]
+  },
+  {
+    "slug": "scottish-folk",
+    "title": "苏格兰民间基督教与圣岛—圣井祈福（Scottish）",
+    "n": 4,
+    "urls": [
+      "https://www.britannica.com/place/Iona",
+      "https://www.britannica.com/biography/Saint-Columba",
+      "https://www.britannica.com/topic/holy-well",
+      "https://www.britannica.com/topic/Hogmanay"
+    ],
+    "rituals": [
+      "Munlochy Clootie Well（概念层）",
+      "Hogmanay 与 First-Footing（公共民俗层）",
+      "爱奥那朝圣与堂区崇拜（概念层）"
+    ]
+  },
+  {
+    "slug": "sicilian-santa-rosalia",
+    "title": "西西里圣罗萨莉亚朝圣与民间天主教祈福（Santa Rosalia）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/biography/Saint-Rosalia",
+      "https://www.britannica.com/place/Palermo-Italy",
+      "https://www.britannica.com/place/Monte-Pellegrino"
+    ],
+    "rituals": [
+      "Festino 与 Carro Trionfale（七月公共巡游层）",
+      "Acchianata 赤足登山朝圣（9 月 4 日）（概念层）",
+      "圣骸敬礼、誓言与堂区弥撒（概念层）"
+    ]
+  },
+  {
+    "slug": "slovak-folk",
+    "title": "斯洛伐克民间天主教与朝圣祈福（Slovak）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/place/Slovakia",
+      "https://www.britannica.com/topic/Roman-Catholicism",
+      "https://www.britannica.com/place/Levoca"
+    ],
+    "rituals": [
+      "Mariánska hora（Levoča）圣母朝圣（概念层）",
+      "主保节与村社巡游（概念层）",
+      "Šibačka／Oblievačka 与节日食物祝福（公共民俗层）"
+    ]
+  },
+  {
+    "slug": "theravada-buddhism",
+    "title": "上座部佛教（泰缅斯里等地）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/topic/Theravada",
+      "https://www.britannica.com/topic/Buddhism/Popular-religious-practices",
+      "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/thai-religion"
+    ],
+    "rituals": [
+      "Pindapata 托钵与 Grot Nam 浇水回向（作福层）",
+      "Kathina 功德衣与 Songkran 浴佛（节庆层）",
+      "短期出家（CONCEPT naming only）"
+    ]
+  },
+  {
+    "slug": "ticinese-folk",
+    "title": "提契诺民间天主教与阿尔卑斯朝圣祈福（Ticinese）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/place/Ticino-canton-Switzerland",
+      "https://www.britannica.com/place/Switzerland",
+      "https://www.britannica.com/topic/Roman-Catholicism"
+    ],
+    "rituals": [
+      "Mendrisio 圣周游行（UNESCO／公共层）",
+      "Madonna del Sasso 与主保 feste（概念层）",
+      "阿尔卑斯牧牛下山祝福（概念层）"
+    ]
+  },
+  {
+    "slug": "tornedalian-folk",
+    "title": "托尔内谷民间基督教与梅安基利祈福（Tornedalian／Meänkieli）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/place/Torne-River",
+      "https://www.britannica.com/place/Sweden",
+      "https://www.britannica.com/place/Finland"
+    ],
+    "rituals": [
+      "Laestadian Seurat 与路德宗礼拜（概念层）",
+      "Kukkolaforsen lippous 渔季祝福（概念层）",
+      "Meänkieli 语言日感恩（概念层）"
+    ]
+  },
+  {
+    "slug": "totonac-traditional",
+    "title": "托托纳克民间天主教与山灵祈福（Totonac）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/topic/Totonac",
+      "https://www.everyculture.com/Middle-America-Caribbean/Totonac-Religion-and-Expressive-Culture.html",
+      "https://www.britannica.com/place/Veracruz-state-Mexico"
+    ],
+    "rituals": [
+      "Danza de los Voladores（UNESCO／公共文化层）",
+      "圣徒节庆与 cargo 赞助（公共层）",
+      "Kiwikgolo 森林灵敬礼（CONCEPT）"
+    ]
+  },
+  {
+    "slug": "trentino-folk",
+    "title": "特伦蒂诺民间天主教与阿尔卑斯祈福（Trentino）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/place/Trentino-Alto-Adige",
+      "https://www.britannica.com/place/Trento",
+      "https://www.britannica.com/place/Alps"
+    ],
+    "rituals": [
+      "San Romedio 悬崖圣地朝圣（概念层）",
+      "Madonna di Piné 朝圣（概念层）",
+      "Desmalaiar 牧牛下山祝福（概念层）"
+    ]
+  },
+  {
+    "slug": "tuvaluan-traditional",
+    "title": "图瓦卢传统信仰与村社祈福余绪（Tuvaluan）",
+    "n": 3,
+    "urls": [
+      "https://www.britannica.com/place/Tuvalu",
+      "https://www.everyculture.com/Oceania/Tuvalu-Religion-and-Expressive-Culture.html",
+      "https://www.britannica.com/place/Polynesia"
+    ],
+    "rituals": [
+      "Fatele 与 Maneapa 村社欢庆（公共文化层）",
+      "Gospel Day／EKT 教会礼拜（公共层）",
+      "tapu 记忆（CONCEPT）"
+    ]
+  }
+]

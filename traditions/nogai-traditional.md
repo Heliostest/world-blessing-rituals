@@ -50,6 +50,7 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Russia-Eurasia-China/Nogays-Religion-and-Expressive-Culture.html
 - https://www.britannica.com/topic/Nogay
-- https://www.britannica.com/place/Dagestan
+- https://doi.org/10.47500/2025.v24.i4.05
+- https://doi.org/10.22378/2313-6197.2024-12-4.897-914
+- https://dx.doi.org/10.3389/fcomm.2025.1693748

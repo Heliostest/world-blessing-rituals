@@ -49,6 +49,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Isle-of-Man
 - https://www.britannica.com/topic/Church-of-England
-- https://www.britannica.com/place/Irish-Sea
+- https://manxnationalheritage.im/visit-2/about-the-isle-of-man/tynwald/
+- https://www.visitisleofman.com/blog/read/2024/10/fun-facts-about-hop-tu-naa-on-the-isle-of-man-the-original-halloween-festival-b113
+- https://manxnationalheritage.im/whats-on/detail/hop-tu-naa-festival/
+- https://www.visitisleofman.com/experience/kirk-maughold-church-p1312271

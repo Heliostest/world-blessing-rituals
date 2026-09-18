@@ -49,6 +49,6 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/niueans
-- https://www.britannica.com/place/Polynesia
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/polynesian-religions-mythic-themes
+- https://www.gov.nu/our-history
+- https://teara.govt.nz/en/photograph/717/a-young-niuean-at-his-hair-cutting-ceremony
+- https://www.aucklandmuseum.com/collection/object/1134301

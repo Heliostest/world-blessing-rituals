@@ -49,6 +49,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Molise
-- https://www.britannica.com/place/Campobasso
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/2459
+- https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18667
+- http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_9951412152541/MODI

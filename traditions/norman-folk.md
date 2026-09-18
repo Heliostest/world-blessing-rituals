@@ -50,6 +50,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Mont-Saint-Michel
-- https://www.britannica.com/place/Normandy
-- https://www.britannica.com/place/Channel-Islands-archipelago-English-Channel
+- https://www.therese-de-lisieux.catholique.fr/en/
+- https://www.normandie-tourisme.fr/agenda/jep-2026-visite-guidee-a-la-decouverte-de-la-cote-de-grace/
+- https://www.pelerin-montsaintmichel.org/le-sanctuaire-mont-saint-michel/

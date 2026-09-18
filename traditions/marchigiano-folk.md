@@ -49,6 +49,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Marche
-- https://www.britannica.com/place/Loreto
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://www.santuarioloreto.va/it/storia.html
+- https://www.santuarioloreto.va/it/venuta-e-b-v-di-loreto.html
+- https://www.turismo.marche.it/it_it/

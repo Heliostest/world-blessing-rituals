@@ -49,6 +49,6 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Oceania/Nauru-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/place/Nauru
-- https://www.britannica.com/place/Micronesia-culture-area
+- https://www.nauru.gov.nr/about-naoero/dei-naoero's-stories/angam-day.aspx
+- https://www.nauru.gov.nr/about-naoero/national-days.aspx
+- https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-67269.pdf

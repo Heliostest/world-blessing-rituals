@@ -50,6 +50,6 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Oceania/Pohnpei-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/place/Pohnpei-island-Micronesia
-- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
+- https://doi.org/10.1515/9780824837495-008
+- https://doi.org/10.2307/j.ctvp2n4g9.12
+- https://doi.org/10.1017/9781009232517.009

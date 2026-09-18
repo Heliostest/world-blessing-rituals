@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Lecce
-- https://www.britannica.com/place/Puglia
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://www.viaggiareinpuglia.it/de/dettaglio-attrattore/basilica-santuario-santa-maria-de-finibus-terrae
+- https://viaggiareinpuglia.it/fr/dettaglio-tipicita/focara-novoli
+- https://viaggiareinpuglia.it/it/dettaglio-itinerario/terre-taranta

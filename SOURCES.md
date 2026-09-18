@@ -2732,3 +2732,43 @@
 - https://www.tapinu.org/index.php/museums
 - https://www.visitmalta.com/en/a/maltese-festa/
 - https://www.zambiatourism.com/date-set-for-2026-kuomboka-ceremony/
+
+## 增补传统（Notebook source hunt C5：马恩岛—萨伦托）
+
+- http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_9951412152541/MODI
+- https://doi.org/10.1017/9781009232517.009
+- https://doi.org/10.1515/9780824837495-008
+- https://doi.org/10.22378/2313-6197.2024-12-4.897-914
+- https://doi.org/10.2307/j.ctvp2n4g9.12
+- https://doi.org/10.47500/2025.v24.i4.05
+- https://dx.doi.org/10.3389/fcomm.2025.1693748
+- https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-67269.pdf
+- https://manxnationalheritage.im/visit-2/about-the-isle-of-man/tynwald/
+- https://manxnationalheritage.im/whats-on/detail/hop-tu-naa-festival/
+- https://sindone.org/
+- https://teara.govt.nz/en/photograph/717/a-young-niuean-at-his-hair-cutting-ceremony
+- https://viaggiareinpuglia.it/fr/dettaglio-tipicita/focara-novoli
+- https://viaggiareinpuglia.it/it/dettaglio-itinerario/terre-taranta
+- https://www.aucklandmuseum.com/collection/object/1134301
+- https://www.gouv.mc/actualites/les-celebrations-de-la-sainte-devote2
+- https://www.gouv.mc/gouvernement-et-institutions/histoire-et-patrimoine/les-differents-symboles/fete-de-sainte-devote
+- https://www.gov.nu/our-history
+- https://www.graubuenden.ch/en/graubuenden/general-information/customs-traditions/chalandamarz
+- https://www.graubuenden.ch/en/tours/ziteil-bike
+- https://www.lebendige-traditionen.ch/en/chalandamarz-5
+- https://www.nauru.gov.nr/about-naoero/dei-naoero's-stories/angam-day.aspx
+- https://www.nauru.gov.nr/about-naoero/national-days.aspx
+- https://www.normandie-tourisme.fr/agenda/jep-2026-visite-guidee-a-la-decouverte-de-la-cote-de-grace/
+- https://www.palais.mc/fr/actualites/s-a-s-le-prince-albert-ii/article/2020/janvier/celebrations-de-la-sainte-devote-2020-3473.html
+- https://www.pelerin-montsaintmichel.org/le-sanctuaire-mont-saint-michel/
+- https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18667
+- https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/2459
+- https://www.sacrimonti.org/en/home
+- https://www.santuariodioropa.it/en/la-storia-del-santuario-2/
+- https://www.santuarioloreto.va/it/storia.html
+- https://www.santuarioloreto.va/it/venuta-e-b-v-di-loreto.html
+- https://www.therese-de-lisieux.catholique.fr/en/
+- https://www.turismo.marche.it/it_it/
+- https://www.viaggiareinpuglia.it/de/dettaglio-attrattore/basilica-santuario-santa-maria-de-finibus-terrae
+- https://www.visitisleofman.com/blog/read/2024/10/fun-facts-about-hop-tu-naa-on-the-isle-of-man-the-original-halloween-festival-b113
+- https://www.visitisleofman.com/experience/kirk-maughold-church-p1312271

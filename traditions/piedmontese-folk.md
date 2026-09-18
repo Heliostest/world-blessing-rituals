@@ -50,6 +50,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Piedmont-region-Italy
-- https://www.britannica.com/place/Turin-Italy
 - https://www.britannica.com/topic/Shroud-of-Turin
+- https://www.sacrimonti.org/en/home
+- https://www.santuariodioropa.it/en/la-storia-del-santuario-2/
+- https://sindone.org/

@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Africa-Middle-East/Lozi-Religion-and-Expressive-Culture.html
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/lozi
 - https://www.britannica.com/topic/Lozi
+- https://www.zambiatourism.com/date-set-for-2026-kuomboka-ceremony/
+- https://ich.unesco.org/doc/src/00209-EN.pdf
+- https://doi.org/10.47772/IJRISS.2023.7012149

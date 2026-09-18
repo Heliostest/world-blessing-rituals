@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Liguria
-- https://www.britannica.com/place/Genoa-Italy
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://www.santuarioguardia.it/la-nostra-storia/
+- https://www.santuarioguardia.it/visita-il-santuario/ex-voto-e-sala-ceri/
+- https://www.santuarioguardia.it/guardia-nel-mondo/

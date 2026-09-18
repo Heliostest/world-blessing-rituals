@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Kven
-- https://www.britannica.com/place/Norway
 - https://www.britannica.com/topic/Church-of-Norway
+- https://snl.no/kvener
+- https://snl.no/l%C3%A6stadianere
+- https://snl.no/Kvendrakta

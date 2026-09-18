@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Kosrae
-- https://www.everyculture.com/Ma-Ni/Federated-States-of-Micronesia.html
-- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
+- https://doi.org/10.21313/hawaii/9780824832032.003.0005
+- https://ich.unesco.org/en/decisions/16.COM/8.A.4
+- https://doi.org/10.1176/appi.ps.202100327

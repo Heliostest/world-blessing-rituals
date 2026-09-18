@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Liechtenstein
-- https://www.britannica.com/place/Vaduz
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://tourismus.li/reiseland/unser-land/brauchtum.html
+- https://tourismus.li/reiseland/unser-land/feiertage-brauchtum/jahrmarkt.html
+- https://www.balzers.li/de/balzers-erleben/kultur-und-geschichte/burg-gutenberg/tblid/343

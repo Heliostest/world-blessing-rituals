@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Ladin
-- https://www.britannica.com/place/Dolomites
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://www.altabadia.org/en/alta-badia-events/detail/event/esaltaziun-dla-santa-crusc-elevation-of-the-holy-cross
+- https://www.altabadia.org/en/alta-badia-events/detail/event/traslaziun-dla-santa-crusc-translation-of-the-holy-cross
+- https://www.altabadia.org/de/poi/sehenswertes-alta-badia/detail/poi/wallfahrtskirche-la-crusc-heiligkreuz

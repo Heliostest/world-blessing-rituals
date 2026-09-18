@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Liv
-- https://www.britannica.com/place/Latvia
 - https://www.britannica.com/topic/Finno-Ugric-languages
+- https://www.latvia.travel/en/sight/liiv-peoples-house
+- https://livones.net/18-novembris-mazirbe/
+- https://www.latvia.travel/en/culture-and-traditions-latvia

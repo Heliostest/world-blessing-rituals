@@ -2694,3 +2694,41 @@
 - https://www.svenskakyrkan.se/visbydomkyrka/besok-and-visningar
 - https://www.tourisme-valdeleyre.com/les-incontournables-valdeleyre/patrimoine-bati/les-fontaines-guerisseuses/
 - https://www.turismo.gal/recurso/-/detalle/200312000146/romaria-de-santa-marta-de-ribarteme
+
+## 增补传统（Notebook source hunt C4：耶姆特兰—马耳他festa）
+
+- https://doi.org/10.1176/appi.ps.202100327
+- https://doi.org/10.15021/00004305
+- https://doi.org/10.21313/hawaii/9780824832032.003.0005
+- https://doi.org/10.33619/2414-2948/64/44
+- https://doi.org/10.47772/IJRISS.2023.7012149
+- https://dx.doi.org/10.4000/11ta1
+- https://govt.chinadaily.com.cn/s/202412/25/WS676ba1c0498eec7e1f72b986/performance-highlights-lisu-peoples-history-and-heritage.html
+- https://ich.unesco.org/doc/src/00209-EN.pdf
+- https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336
+- https://ich.unesco.org/en/RL/maltese-festa-an-inclusive-community-celebration-01980
+- https://livones.net/18-novembris-mazirbe/
+- https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2023000300003
+- https://snl.no/Kvendrakta
+- https://snl.no/kvener
+- https://snl.no/l%C3%A6stadianere
+- https://stolavsleden.com/
+- https://tourismus.li/reiseland/unser-land/brauchtum.html
+- https://tourismus.li/reiseland/unser-land/feiertage-brauchtum/jahrmarkt.html
+- https://uzbekistan.travel/en/o/navruz-and-spring-equinox/
+- https://www.altabadia.org/de/poi/sehenswertes-alta-badia/detail/poi/wallfahrtskirche-la-crusc-heiligkreuz
+- https://www.altabadia.org/en/alta-badia-events/detail/event/esaltaziun-dla-santa-crusc-elevation-of-the-holy-cross
+- https://www.altabadia.org/en/alta-badia-events/detail/event/traslaziun-dla-santa-crusc-translation-of-the-holy-cross
+- https://www.balzers.li/de/balzers-erleben/kultur-und-geschichte/burg-gutenberg/tblid/343
+- https://www.chinadaily.com.cn/life/2012-03/05/content_14760786.htm
+- https://www.chinadaily.com.cn/m/dehong/2010-07/27/content_11055531.htm
+- https://www.isof.se/folkminnen/amnesomraden/vardagsliv-nu-och-da/i-fabodarnas-land/folktro-runt-faboden
+- https://www.isof.se/utforska/levande-traditioner/forslag/2024-10-04-fabodkultur
+- https://www.latvia.travel/en/culture-and-traditions-latvia
+- https://www.latvia.travel/en/sight/liiv-peoples-house
+- https://www.santuarioguardia.it/guardia-nel-mondo/
+- https://www.santuarioguardia.it/la-nostra-storia/
+- https://www.santuarioguardia.it/visita-il-santuario/ex-voto-e-sala-ceri/
+- https://www.tapinu.org/index.php/museums
+- https://www.visitmalta.com/en/a/maltese-festa/
+- https://www.zambiatourism.com/date-set-for-2026-kuomboka-ceremony/

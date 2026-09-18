@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Africa-Middle-East/Nandi-and-Other-Kalenjin-Peoples-Religion-and-Expressive-Culture.html
 - https://www.britannica.com/topic/Kalenjin
-- https://www.britannica.com/place/Kenya
+- https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2023000300003
+- https://dx.doi.org/10.4000/11ta1
+- https://doi.org/10.15021/00004305

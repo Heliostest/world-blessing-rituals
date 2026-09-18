@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Lisu
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/lisu
-- https://www.britannica.com/place/Yunnan
+- https://www.chinadaily.com.cn/life/2012-03/05/content_14760786.htm
+- https://govt.chinadaily.com.cn/s/202412/25/WS676ba1c0498eec7e1f72b986/performance-highlights-lisu-peoples-history-and-heritage.html
+- https://www.chinadaily.com.cn/m/dehong/2010-07/27/content_11055531.htm

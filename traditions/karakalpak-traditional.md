@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Karakalpakstan
-- https://www.everyculture.com/Russia-Eurasia-China/Karakalpaks-Religion-and-Expressive-Culture.html
-- https://www.everyculture.com/wc/Tajikistan-to-Zimbabwe/Karakalpaks.html
+- https://doi.org/10.33619/2414-2948/64/44
+- https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336
+- https://uzbekistan.travel/en/o/navruz-and-spring-equinox/

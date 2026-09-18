@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Torne-River
-- https://www.britannica.com/place/Sweden
-- https://www.britannica.com/place/Finland
+- https://www.isof.se/folkminnen/amnesomraden/nationella-minoriteters-kultur/tornedalsk-kultur
+- https://www.isof.se/nationella-minoritetssprak/meankieli/lar-dig-mer-om-meankieli/meankieli-nu-och-da
+- https://snl.no/l%C3%A6stadianere

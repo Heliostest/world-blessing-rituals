@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Totonac
-- https://www.everyculture.com/Middle-America-Caribbean/Totonac-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/place/Veracruz-state-Mexico
+- https://ich.unesco.org/en/RL/ritual-ceremony-of-the-voladores-00175
+- https://ich.unesco.org/en/BSP/xtaxkgakget-makgkaxtlawana-the-centre-for-indigenous-arts-and-its-contribution-to-safeguarding-the-intangible-cultural-heritage-of-the-totonac-people-of-veracruz-mexico-00666
+- https://www.inah.gob.mx/index.php/foto-del-dia/ceremonia-ritual-de-los-voladores-patrimonio-vivo
+- https://revistas.inah.gob.mx/index.php/cuicuilco/es/article/view/23503

@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Ticino-canton-Switzerland
-- https://www.britannica.com/place/Switzerland
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://ich.unesco.org/en/RL/holy-week-processions-in-mendrisio-01460
+- https://www.lebendige-traditionen.ch/it/processioni-della-settimana-santa-di-mendrisio
+- https://www.ticino.ch/it/commons/details/Sacro-Monte-Madonna-del-Sasso/2693.html
+- https://www.madonnadelsasso.org/

@@ -59,4 +59,7 @@
 
 - https://www.britannica.com/topic/Theravada
 - https://www.britannica.com/topic/Buddhism/Popular-religious-practices
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/thai-religion
+- https://ich.unesco.org/en/RL/songkran-in-thailand-traditional-thai-new-year-festival-01719
+- https://doi.org/10.21313/hawaii/9780824867805.003.0005
+- https://doi.org/10.21313/hawaii/9780824867805.003.0004
+- https://doi.org/10.26034/LU.JGB.2025.7155

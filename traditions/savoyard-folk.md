@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Savoy-region-France
-- https://www.britannica.com/place/Alps
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://patrimoines.savoie.fr/upload/docs/application/pdf/2025-06/adulte_francais.pdf
+- https://patrimoines.savoie.fr/upload/docs/application/pdf/2020-08/la-rubrique-33_2020-08-31_11-25-36_781.pdf
+- https://www.chamonix-guides.com/fr/nos-engagements/solidarite/fete-des-guides

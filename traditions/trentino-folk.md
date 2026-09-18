@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Trentino-Alto-Adige
-- https://www.britannica.com/place/Trento
-- https://www.britannica.com/place/Alps
+- https://www.visittrentino.info/it/guida/da-vedere/chiese-santuari/santuario-di-san-romedio_md_2567
+- https://www.visittrentino.info/en/guide/must-see/churches-sanctuaries/santuario-della-madonna-di-pine_md_2437
+- https://www.visittrentino.info/en/guide/desmontegade

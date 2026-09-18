@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Tuvalu
-- https://www.everyculture.com/Oceania/Tuvalu-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/place/Polynesia
+- https://ich.unesco.org/doc/src/44473-EN.pdf
+- https://doi.org/10.4000/129ck
+- https://dx.doi.org/10.1590/s1981-81222012000200011

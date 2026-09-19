@@ -46,7 +46,5 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/topic/Chontal
-- https://www.britannica.com/place/Tabasco-state-Mexico
-- https://www.britannica.com/topic/Maya-people
+- https://www.loc.gov/collections/?fa=subject:Chontal%20Maya
+- https://www.britishmuseum.org/collection/search?keyword=Chontal%20Maya

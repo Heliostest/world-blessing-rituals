@@ -46,7 +46,5 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/topic/Yucatec-people
-- https://www.britannica.com/topic/Day-of-the-Dead
-- https://www.britannica.com/place/Yucatan-Peninsula
+- https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00540
+- https://www.loc.gov/collections/?fa=subject:yucatec%20maya

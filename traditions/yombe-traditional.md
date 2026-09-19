@@ -46,7 +46,5 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/topic/Yombe
-- https://www.britannica.com/topic/nkisi
-- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.britishmuseum.org/collection/search?keyword=Yombe
+- https://www.loc.gov/collections/?fa=subject:yombe

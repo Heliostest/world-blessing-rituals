@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/topic/Yaqui
 - https://americanindian.si.edu/exhibitions/infinityofnations/introduction/112382.html
-- https://www.everyculture.com/Middle-America-Caribbean/Yaqui-Religion-and-Expressive-Culture.html
+- https://americanindian.si.edu/nk360/invaders/yaqui
+- https://www.loc.gov/collections/?fa=subject:yaqui

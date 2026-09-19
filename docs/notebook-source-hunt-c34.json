@@ -1,0 +1,18 @@
+{
+  "batch": "notebook-source-hunt-c34",
+  "cycle": 34,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄 C 级卡；接 yucatec-maya 后按字母序续选，排除 C1–C33 全部已处理 slug；不以 4+ 来源卡填充，不用已良好卡片凑数；无候选则标记池耗尽。",
+  "previous_cycles_slugs_processed": 383,
+  "exclusion_metadata_slug_union_count": 383,
+  "pool_after_yucatec_count": 0,
+  "pool_exhausted": true,
+  "slugs": [],
+  "cards": [],
+  "prompt_constraints": [
+    "每卡通过联网检索补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／遗产机构页面、博物馆与档案馆、学术 DOI 或民族志。",
+    "禁止采用 Britannica 地名／主题总览页（/place/、/topic/）、encyclopedia.com、everyculture.com、Wikipedia、Factsanddetails 等弱总览站，以及旅游博客或无署名聚合页；不要用弱来源凑数。",
+    "仅做来源补强，不改档位、卡片正文或仪式内容，不写可复现操演步骤；敏感传统只做公开文化与概念层。",
+    "每条来源附一句中文说明其覆盖内容与可信度；搜不到足够强来源时写明检索关键词，不要用弱来源填充。"
+  ]
+}

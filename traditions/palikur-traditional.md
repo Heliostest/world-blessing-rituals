@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/French-Guiana
-- https://www.britannica.com/place/Amazon-Rainforest
 - https://www.britannica.com/topic/South-American-Indian
+- https://journals.openedition.org/ethnoecologie/2701
+- https://www.scielo.br/j/vb/a/D8xL5ytr88bKhVz4rNwCZwp/?lang=en
+- https://doi.org/10.3389/fnut.2023.1061611

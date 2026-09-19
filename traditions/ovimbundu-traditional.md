@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Ovimbundu
-- https://www.britannica.com/place/Angola
-- https://www.britannica.com/place/Benguela
+- https://doi.org/10.2307/1156407
+- https://journals.openedition.org/mulemba/1542
+- https://www.scielo.br/j/mana/a/DT3cZVrbytSnSwrR73XBddx/?lang=pt

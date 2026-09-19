@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/oroqen
 - https://doi.org/10.3390/rel14070867
 - http://english.scio.gov.cn/m/chinafacts/2017-06/06/content_40974673.htm
+- https://doi.org/10.3390/rel15040415
+- https://doi.org/10.3390/h13060155
+- https://doi.org/10.3138/uram.30.3.232

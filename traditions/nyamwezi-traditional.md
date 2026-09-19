@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Nyamwezi
-- https://www.britannica.com/place/Tabora
-- https://www.britannica.com/place/Tanzania
+- https://doi.org/10.1086/725199
+- https://doi.org/10.47772/IJRISS.2024.804111

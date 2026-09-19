@@ -49,4 +49,4 @@
 
 - https://en.wikipedia.org/wiki/Donyi-Polo
 - https://asianethnology.org/article/149718-the-institutionalization-of-tribal-religion-recasting-the-donyi-polo-movement-in-arunachal-pradesh/attachment/313629.pdf
-- https://www.britannica.com/place/Arunachal-Pradesh
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf

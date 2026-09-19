@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Orok
-- https://www.britannica.com/place/Sakhalin-Island
-- https://www.britannica.com/place/Siberia
+- https://doi.org/10.22459/ofh.2020.08
+- https://atlaskmns.ru/page/en/people_oroki_common.html
+- https://doi.org/10.15021/00001201

@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Sumatra
-- https://www.britannica.com/place/Indonesia
 - https://www.britannica.com/topic/palm-oil
+- https://doi.org/10.65844/2549-4333.1257
+- https://doi.org/10.14710/endogami.1.1.1-13
+- https://doi.org/10.15408/sd.v1i2.1258

@@ -3304,3 +3304,38 @@
 - https://www.metmuseum.org/exhibitions/listings/2009/barbier-mueller-museum/photo-gallery
 - https://doi.org/10.47772/IJRISS.2025.903SEDU0049
 - https://doi.org/10.1163/9789004412255_016
+
+## 增补传统（Notebook source hunt C20：尼亚姆韦齐—帕利库尔）
+
+- https://doi.org/10.1086/725199
+- https://doi.org/10.47772/IJRISS.2024.804111
+- https://teara.govt.nz/en/traditional-maori-religion-nga-karakia-a-te-maori/print
+- https://www.tepapa.govt.nz/digital-museum/explore-digital-museum/matariki-maori-new-year/what-is-a-hautapu
+- https://doi.org/10.1080/00223344.2026.2613309
+- https://doi.org/10.1017/ehs.2024.45
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/026d01e1-a96f-4547-8a2a-c5c61aac3720/content
+- https://doi.org/10.65844/2549-4333.1257
+- https://doi.org/10.14710/endogami.1.1.1-13
+- https://doi.org/10.15408/sd.v1i2.1258
+- https://atlaskmns.ru/page/en/people_orochi_spirit.html
+- https://doi.org/10.15405/epsbs.2019.12.04.52
+- https://doi.org/10.3390/rel11020055
+- https://doi.org/10.22459/ofh.2020.08
+- https://atlaskmns.ru/page/en/people_oroki_common.html
+- https://doi.org/10.15021/00001201
+- https://doi.org/10.4000/books.editionsmsh.5816
+- https://doi.org/10.1017/s0010417516000311
+- https://journals.openedition.org/jso/pdf/724
+- https://journals.openedition.org/assr/23633
+- https://doi.org/10.3390/rel15040415
+- https://doi.org/10.3390/h13060155
+- https://doi.org/10.3138/uram.30.3.232
+- https://doi.org/10.2307/1156407
+- https://journals.openedition.org/mulemba/1542
+- https://www.scielo.br/j/mana/a/DT3cZVrbytSnSwrR73XBddx/?lang=pt
+- https://doi.org/10.21659/rupkatha.v14n2.ne17
+- https://doi.org/10.63635/mrj.v1i1.12
+- https://doi.org/10.29328/journal.japch.1001005
+- https://journals.openedition.org/ethnoecologie/2701
+- https://www.scielo.br/j/vb/a/D8xL5ytr88bKhVz4rNwCZwp/?lang=en
+- https://doi.org/10.3389/fnut.2023.1061611

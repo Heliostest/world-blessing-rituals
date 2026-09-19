@@ -52,3 +52,5 @@
 - https://www.otago.ac.nz/maori/world/te-reo-maori/karakia-prayers
 - https://maoridictionary.co.nz/word/2275
 - https://teara.govt.nz/en/traditional-maori-religion-nga-karakia-a-te-maori/page-4
+- https://teara.govt.nz/en/traditional-maori-religion-nga-karakia-a-te-maori/print
+- https://www.tepapa.govt.nz/digital-museum/explore-digital-museum/matariki-maori-new-year/what-is-a-hautapu

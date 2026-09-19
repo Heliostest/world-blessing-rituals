@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Chontal
-- https://www.britannica.com/place/Oaxaca-state-Mexico
-- https://www.britannica.com/place/Mexico
+- https://catalogo.inpi.gob.mx/chontal-de-oaxaca/
+- https://www.gob.mx/inpi/articulos/etnografia-de-los-chontales-de-oaxaca-slijuala-xanuc
+- https://sic.cultura.gob.mx/ficha.php?table=inali_li&table_id=20

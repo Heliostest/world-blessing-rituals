@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tetela
-- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
-- https://www.britannica.com/place/Sankuru
+- https://www.britishmuseum.org/collection/object/E_Af1979-01-2397
+- https://journals.openedition.org/gc/14141
+- https://www.africamuseum.be/fr/learn/provenance/storms

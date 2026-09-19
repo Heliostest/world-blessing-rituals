@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Teso
-- https://www.britannica.com/place/Uganda
-- https://www.britannica.com/place/Kenya
+- https://doi.org/10.1093/oso/9780198231011.001.0001
+- https://doi.org/10.1080/21681392.2021.1931383
+- https://doi.org/10.4000/eastafrica.473

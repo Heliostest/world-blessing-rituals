@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Tanna
 - https://www.britannica.com/topic/John-Frum-cargo-cult
-- https://www.britannica.com/place/Vanuatu
+- https://www.vanuatu.travel/en/things-to-do/events/event/3-john-frum-festival
+- https://journals.openedition.org/jso/10513
+- https://www.vanuatu.travel/en/about-vanuatu/provinces/tafea/tanna/cultural-information-on-tanna
+- https://doi.org/10.1371/journal.pone.0313997

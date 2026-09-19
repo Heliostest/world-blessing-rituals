@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.atlaskmns.ru/page/en/people_teleuty_spirit.html
-- https://en.wikipedia.org/wiki/Teleuts
-- https://www.britannica.com/place/Altai-Mountains
+- https://mobile.atlaskmns.ru/page/en/people_teleuty_spirit.html
+- https://atlaskmns.ru/page/en/lang_teleuty_all.html
+- https://www.folklore.ee/folklore/vol62/kharitonova.pdf

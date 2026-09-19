@@ -3630,3 +3630,44 @@
 - https://doi.org/10.14318/hau2.2.015
 - https://atlaskmns.ru/page/en/lang_tofalary_all.html
 - https://doi.org/10.1080/15230430.2025.2493391
+
+## 增补传统（Notebook source hunt C29：托霍诺奥德姆—通布卡）
+
+- https://doi.org/10.1525/gfc.2012.12.2.14
+- https://www.nps.gov/articles/oodham.htm
+- https://aildi.arizona.edu/sites/default/files/aildi-30-year-book-06-bahidaj-saguaro-fruit-harvest.pdf
+- https://www.nps.gov/orpi/learn/nature/water-in-the-desert.htm
+- https://catalogo.inpi.gob.mx/tojolabal/
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742019000200255
+- https://nuevaescuelamexicana.sep.gob.mx/contenido/recurso/41500/
+- https://blog.qm.qld.gov.au/2021/07/01/150th-anniversary-of-the-coming-of-the-light/
+- https://www.slq.qld.gov.au/blog/coming-light
+- https://tsirc.qld.gov.au/our-work/community/holidays-and-celebrations/
+- https://nidhi.tourism.gov.in/home/attraction-details/15d101d7-7ff7-4828-8821-df255a8c2272
+- https://ignca.gov.in/online-digital-resources/archaeological-sites/introduction-tripura/
+- https://www.niti.gov.in/node/2250
+- https://catalogo.inpi.gob.mx/triqui/
+- https://revistas-filologicas.unam.mx/tlalocan/index.php/tl/article/view/502/545
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2448-84882018000300069
+- https://www.metmuseum.org/art/collection/search/311225
+- https://doi.org/10.1075/clu.5.01dea
+- https://journals.openedition.org/jso/7182
+- https://journals.openedition.org/nuevomundo/61200
+- https://journals.openedition.org/jsa/12840
+- https://www.redalyc.org/pdf/509/50925659011.pdf
+- https://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2074-77052023000100041
+- https://doi.org/10.1080/13527258.2023.2211976
+- https://doi.org/10.3390/genealogy10020065
+- https://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S1011-76012016000200003
+- https://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S1017-04992014000100100
+- https://doi.org/10.1163/15700666-12340013
+- https://journals.openedition.org/jso/7894
+- https://journals.openedition.org/jso/11070
+- https://journals.openedition.org/jso/pdf/829
+- https://doi.org/10.70845/2572-3626.1392
+- https://journals.openedition.org/revestudsoc/22391
+- https://www.scielo.br/j/bgoeldi/a/bY9PwXG6Dq4LfBTfvcsWj9S/
+- https://doi.org/10.22380/2539472X.1865
+- https://ich.unesco.org/en/RL/vimbuza-healing-dance-00158
+- https://doi.org/10.2979/RAL.2001.32.2.213
+- https://doi.org/10.3366/E0001972009000904

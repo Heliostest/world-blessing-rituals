@@ -50,3 +50,6 @@
 - https://www.britannica.com/topic/Torres-Strait-Islander-people
 - https://www.qcaa.qld.edu.au/about/k-12-policies/aboriginal-torres-strait-islander-perspectives/resources/spirituality-religion
 - https://torresstraitsoe.org.au/people/traditional-ecological-knowledge-tek/
+- https://blog.qm.qld.gov.au/2021/07/01/150th-anniversary-of-the-coming-of-the-light/
+- https://www.slq.qld.gov.au/blog/coming-light
+- https://tsirc.qld.gov.au/our-work/community/holidays-and-celebrations/

@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/tswana-religion
 - https://www.britannica.com/topic/Tswana
 - https://www.sheppard.me.uk/botswana/life-cycle/ancestors.html
+- https://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S1011-76012016000200003
+- https://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S1017-04992014000100100
+- https://doi.org/10.1163/15700666-12340013

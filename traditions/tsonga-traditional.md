@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/topic/Tsonga
 - https://iipseries.org/assets/docupload/rsl2024507B3938E05896E.pdf
-- https://www.britannica.com/place/Mozambique
+- https://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2074-77052023000100041
+- https://doi.org/10.1080/13527258.2023.2211976
+- https://doi.org/10.3390/genealogy10020065

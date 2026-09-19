@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Tuamotu-Archipelago
-- https://www.britannica.com/place/French-Polynesia
-- https://www.britannica.com/place/Polynesia
+- https://journals.openedition.org/jso/7894
+- https://journals.openedition.org/jso/11070
+- https://journals.openedition.org/jso/pdf/829

@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tripuri
-- https://www.britannica.com/place/Tripura
-- https://www.britannica.com/place/Northeast-India
+- https://nidhi.tourism.gov.in/home/attraction-details/15d101d7-7ff7-4828-8821-df255a8c2272
+- https://ignca.gov.in/online-digital-resources/archaeological-sites/introduction-tripura/
+- https://www.niti.gov.in/node/2250

@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tohono-Oodham
-- https://www.britannica.com/place/Sonoran-Desert
-- https://www.britannica.com/place/Arizona
+- https://doi.org/10.1525/gfc.2012.12.2.14
+- https://www.nps.gov/articles/oodham.htm
+- https://aildi.arizona.edu/sites/default/files/aildi-30-year-book-06-bahidaj-saguaro-fruit-harvest.pdf
+- https://www.nps.gov/orpi/learn/nature/water-in-the-desert.htm

@@ -1,0 +1,208 @@
+{
+  "batch": "notebook-source-hunt-c30",
+  "cycle": 30,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 tumbuka-traditional 后按字母序续选，排除 C1–C29 已处理 slug 及已补强卡片；不以 4+ 来源卡填充，不用已良好卡片凑数",
+  "previous_cycles_slugs_processed": 335,
+  "slugs": [
+    "turkana-traditional",
+    "turkmen-traditional",
+    "tzotzil-maya",
+    "tzutujil-traditional",
+    "udege-traditional",
+    "ukrainian-folk",
+    "ulchi-traditional",
+    "umbanda",
+    "uyghur-mazar",
+    "vedda",
+    "venda-traditional",
+    "vietnamese-folk"
+  ],
+  "cards": [
+    {
+      "slug": "turkana-traditional",
+      "title": "图尔卡纳传统信仰与牧畜祈福（Turkana）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Turkana-people",
+        "https://www.britannica.com/place/Lake-Turkana",
+        "https://www.britannica.com/place/Kenya"
+      ],
+      "rituals": [
+        "1. 牲畜—祖先伦理（概念层）",
+        "2. 雨水与预言叙事（敏感，仅概念）",
+        "3. 教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "turkmen-traditional",
+      "title": "土库曼民间伊斯兰与圣地祈福传统（Turkmen）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Turkmenistan/People",
+        "https://www.encyclopedia.com/places/commonwealth-independent-states-and-baltic-nations/cis-and-baltic-political-geography/turkmens",
+        "https://www.encyclopedia.com/places/commonwealth-independent-states-and-baltic-nations/cis-and-baltic-political-geography/turkmenistan"
+      ],
+      "rituals": [
+        "1. 圣徒圣地朝拜（ziyarat／ovliya）（中高敏感）",
+        "2. 伊斯兰年节与诺鲁孜等公共节庆",
+        "3. 生命礼仪中的祝福与护佑民俗（概念层）"
+      ]
+    },
+    {
+      "slug": "tzotzil-maya",
+      "title": "佐齐尔玛雅民间天主教与山灵祈福（Tzotzil）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.everyculture.com/Middle-America-Caribbean/Tzotzil-of-Chamula-Religion-and-Expressive-Culture.html",
+        "https://www.everyculture.com/Middle-America-Caribbean/Tzotzil-of-Zinacantan-Religion-and-Expressive-Culture.html",
+        "https://www.britannica.com/topic/Tzotzil"
+      ],
+      "rituals": [
+        "1. 圣徒节与 cargos 公共礼仪（概念层）",
+        "2. 圣山与四角田地仪式电路（概念层）",
+        "3. Ilol 疗愈（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "tzutujil-traditional",
+      "title": "楚图希尔玛雅民间天主教与阿蒂特兰祈福（Tz'utujil）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tzutujil",
+        "https://www.britannica.com/place/Lake-Atitlan",
+        "https://www.britannica.com/topic/Maya-people"
+      ],
+      "rituals": [
+        "1. 主保圣人节（公开层）",
+        "2. 纺织与社区伦理（概念层）",
+        "3. 更封闭的地方圣徒／圣地实践（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "udege-traditional",
+      "title": "乌德盖传统信仰与泰加萨满祈福（Udege）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://atlaskmns.ru/page/en/people_udegeicy_spirit.html",
+        "https://www.britannica.com/place/Sikhote-Alin",
+        "https://factsanddetails.com/world/cat55/sub350/item1919.html"
+      ],
+      "rituals": [
+        "1. 渔猎前后对主人灵的祈请（概念层）",
+        "2. 火灵与家屋护佑（概念层）",
+        "3. 萨满中介与东正教余绪（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "ukrainian-folk",
+      "title": "乌克兰民间东正教与朝圣—节日祈福（Ukrainian）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Eastern-Orthodoxy",
+        "https://www.britannica.com/place/Ukraine",
+        "https://www.britannica.com/topic/Slavic-religion"
+      ],
+      "rituals": [
+        "1. 东正教礼仪年与圣礼（概念层）",
+        "2. 修道院／圣井朝圣（概念层）",
+        "3. 圣诞—丰收民俗祈福（概念层）"
+      ]
+    },
+    {
+      "slug": "ulchi-traditional",
+      "title": "乌尔奇传统信仰与阿穆尔河萨满祈福（Ulchi／Ulch）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.atlaskmns.ru/page/en/people_ulchi_spirit.html",
+        "https://www.britannica.com/place/Amur-River",
+        "https://factsanddetails.com/world/cat55/sub350/item1919.html"
+      ],
+      "rituals": [
+        "1. 自然主人灵与渔猎物候礼仪（概念层）",
+        "2. 萨满与送灵叙事（高度敏感，禁止操作）",
+        "3. 祖先／氏族敬礼与东正教并存（部分敏感）"
+      ]
+    },
+    {
+      "slug": "umbanda",
+      "title": "巴西翁班达（Umbanda）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Macumba",
+        "https://www.britannica.com/topic/Candomble",
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/afro-brazilian-religions"
+      ],
+      "rituals": [
+        "1. 公共通灵会（会话／gira，概念层）",
+        "2. 供养与慈善工作（概念层）",
+        "3. 纪念日与灵类节日（概念层）"
+      ]
+    },
+    {
+      "slug": "uyghur-mazar",
+      "title": "维吾尔麻扎朝拜与民间祈福传统（Uyghur Mazar／Ziyarat）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://edspace.american.edu/silkroadjournal/wp-content/uploads/sites/984/2017/09/Shrine-Pilgrimage-Among-the-Uighurs.pdf",
+        "https://journal.fi/scripta/article/view/67364",
+        "https://doi.org/10.1080/09681220208567330"
+      ],
+      "rituals": [
+        "1. Ziyarat 谒陵祈祷（概念—历史层）",
+        "2. 麻扎节日与社群聚会（历史公共层）",
+        "3. 苏非记忆与绿洲圣地理（文化史层）"
+      ]
+    },
+    {
+      "slug": "vedda",
+      "title": "维达人／瓦尼亚拉埃托（Vedda / Wanniyalaeto）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/veddas",
+        "https://vedda.org/wanniyalaeto.htm",
+        "https://www.britannica.com/topic/Vedda"
+      ],
+      "rituals": [
+        "1. 祖先灵咨问与狩猎相关奉献（概念层）",
+        "2. Kiri Koraha 等仪式舞的公共史述（核心神圣层，概念）",
+        "3. 佛教／印度教叠合与土地伦理（当代伦理层，概念）"
+      ]
+    },
+    {
+      "slug": "venda-traditional",
+      "title": "文达／瓦文达传统宗教（Venda / Vhavenda）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/history/asia-and-africa/southern-african-history/venda",
+        "https://era.anthropology.ac.uk/Era_Resources/Era/VendaGirls/Definitions/DefDomba.html",
+        "https://www.britannica.com/topic/Mwari"
+      ],
+      "rituals": [
+        "1. 家户祖先敬拜与祈雨（概念层）",
+        "2. Domba 等入会序列（核心神圣层，概念）",
+        "3. Tshikona 与公共文化伦理（当代伦理层，概念）"
+      ]
+    },
+    {
+      "slug": "vietnamese-folk",
+      "title": "越南民间信仰",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://en.vietnamplus.vn/ancestral-altar-quintessence-of-vietnamese-lunar-new-year-post205454.vnp",
+        "https://english.vov.vn/en/culture/how-do-vietnamese-families-decorate-ancestral-altar-during-tet-836780.vov",
+        "https://kids.britannica.com/students/article/ancestor-worship/272853"
+      ],
+      "rituals": [
+        "1. 家庭祭祖与上香",
+        "2. 农历新年祭坛布置与迎祖",
+        "3. 庙祠祈福与还愿"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／朝圣页、博物馆／民俗档案、学术 DOI 或民族志。",
+    "不要采用 Britannica /place/、encyclopedia.com 总览、everyculture.com 总览或 Wikipedia 总览；不要改档位或写操演步骤。",
+    "如搜不到足够强来源，写明检索关键词，不要用弱来源填充。"
+  ]
+}

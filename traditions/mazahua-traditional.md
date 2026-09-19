@@ -49,4 +49,6 @@
 
 - https://atlas.inpi.gob.mx/mazahuas-etnografia/
 - https://monarchjointventure.org/blog/more-than-monarchs-understanding-traditions-linked-to-monarch-butterflies
-- https://www.everyculture.com/Middle-America-Caribbean/Mazahua-Religion-and-Expressive-Culture.html
+- https://doi.org/10.4000/13as9
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-16592011000200012
+- https://doi.org/10.22201/ceide.16076079e.2024.25.4.11

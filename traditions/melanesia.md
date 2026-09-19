@@ -50,3 +50,7 @@
 - https://ich.unesco.org/en/RL/vanuatu-sand-drawings-00073
 - https://ich.unesco.org/doc/src/00347-EN.pdf
 - http://anthroencyclopedia.com/entry/cargo-cults
+- https://doi.org/10.7454/jai.v45i1.1049
+- https://doi.org/10.1080/08941920.2014.905896
+- https://doi.org/10.22459/KPI.03.2017
+- https://books.openedition.org/pacific/159

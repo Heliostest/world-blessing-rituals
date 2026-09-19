@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Amazon-Rainforest
-- https://www.britannica.com/place/Acre
 - https://www.britannica.com/topic/South-American-Indian
+- https://doi.org/10.4000/books.oep.817
+- https://www.scielo.br/j/ea/a/s56DzM3Nx5CSk86nBs6Lz8b/?lang=pt
+- https://www.scielo.br/j/nec/a/zzHGYHMcMnvJ9SCMLSXtCvF/?lang=pt

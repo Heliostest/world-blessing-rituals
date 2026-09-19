@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Amazon-Rainforest
-- https://www.britannica.com/place/Peru
 - https://www.britannica.com/topic/South-American-Indian
+- https://doi.org/10.3390/toxins15030194
+- https://www.scielo.br/j/mana/a/xQL4zg7kD8qtcYCBz9vnZKx/?lang=pt
+- https://www.scielo.br/j/bpsr/a/K5TxPcpHB3WVpx5spy8wNSN/?format=pdf&lang=en

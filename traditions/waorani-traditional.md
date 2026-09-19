@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Huaorani
-- https://www.britannica.com/place/Ecuador
-- https://www.britannica.com/place/Amazon-Rainforest
+- https://pubmed.ncbi.nlm.nih.gov/6677819/
+- https://frompoverty.oxfam.org.uk/maps-in-court-how-the-waorani-are-upholding-their-rights-in-ecuador/
+- https://waoresist.amazonfrontlines.org/explore/
+- https://pubmed.ncbi.nlm.nih.gov/22234246/

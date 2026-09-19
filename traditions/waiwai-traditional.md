@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Guiana-Highlands
-- https://www.britannica.com/place/Guyana
-- https://www.britannica.com/topic/South-American-Indian
+- https://doi.org/10.1590/s0103-4014.2024.38112.008
+- https://doi.org/10.1590/2178-2547-BGOELDI-2019-0140
+- https://doi.org/10.11606/issn.2316-9036.v11i2p503-547

@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Wallis-and-Futuna
-- https://www.britannica.com/topic/kava
-- https://www.britannica.com/place/Polynesia
+- https://doi.org/10.4000/jso.16161
+- https://doi.org/10.4000/jso.593
+- https://doi.org/10.3917/ethn.024.0637

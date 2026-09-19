@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mataco
-- https://www.britannica.com/place/Gran-Chaco
 - https://www.diva-portal.org/smash/get/diva2:130447/FULLTEXT01.pdf
+- https://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2077-33232023000100111
+- https://doi.org/10.1016/j.jep.2018.10.026
+- https://doi.org/10.4000/caravelle.2897

@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/places/asia/chinese-political-geography/wa
 - https://doi.org/10.2991/essaeme-17.2017.56
-- https://www.britannica.com/place/Yunnan
+- https://doi.org/10.1177/21582440221117806
+- https://doi.org/10.1177/0097700412445348
+- https://doi.org/10.1177/02557614221132550
+- https://doi.org/10.1080/17411912.2024.2339174

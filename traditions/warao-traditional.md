@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/warao-religion
-- https://www.everyculture.com/South-America/Warao-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/place/Orinoco-River
+- https://doi.org/10.1086/jar.30.2.3629642
+- https://doi.org/10.1177/13591835211052463
+- https://doi.org/10.1371/journal.pone.0216302
+- https://doi.org/10.1007/978-3-032-09109-3_4

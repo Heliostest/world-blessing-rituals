@@ -3715,3 +3715,45 @@
 - https://doi.org/10.18848/2154-8633/CGP/v15i02/113-137
 - https://journals.openedition.org/moussons/9539
 - https://dx.doi.org/10.12691/education-6-5-29
+
+## 增补传统（Notebook source hunt C31：维利—温蒂）
+
+- https://africanarchive.org/en/staemme/kongo-vili
+- https://doi.org/10.1017/9781108564823
+- https://doi.org/10.1080/10609164.2013.792067
+- https://doi.org/10.1177/21582440221117806
+- https://doi.org/10.1177/0097700412445348
+- https://doi.org/10.1177/02557614221132550
+- https://doi.org/10.1080/17411912.2024.2339174
+- https://doi.org/10.1590/s0103-4014.2024.38112.008
+- https://doi.org/10.1590/2178-2547-BGOELDI-2019-0140
+- https://doi.org/10.11606/issn.2316-9036.v11i2p503-547
+- https://doi.org/10.4000/jso.16161
+- https://doi.org/10.4000/jso.593
+- https://doi.org/10.3917/ethn.024.0637
+- http://longding.nic.in
+- https://unicode.org/charts/PDF/U11E00.pdf
+- https://doi.org/10.1007/978-981-15-5370-7
+- https://pubmed.ncbi.nlm.nih.gov/6677819/
+- https://frompoverty.oxfam.org.uk/maps-in-court-how-the-waorani-are-upholding-their-rights-in-ecuador/
+- https://waoresist.amazonfrontlines.org/explore/
+- https://pubmed.ncbi.nlm.nih.gov/22234246/
+- https://doi.org/10.1086/jar.30.2.3629642
+- https://doi.org/10.1177/13591835211052463
+- https://doi.org/10.1371/journal.pone.0216302
+- https://doi.org/10.1007/978-3-032-09109-3_4
+- https://peoplespalaceprojects.org.uk/en/projects/kamukuwaka-vr/
+- https://doi.org/10.14318/hau4.2.004
+- https://www.bbc.com/portuguese/brasil-45660301
+- https://www.scielo.br/j/bgoeldi/a/zmZrTNGrbKkNtXcyxr9hx4j/?format=pdf&lang=en
+- https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-the-traditional-knowledge-oral-and-graphic-expressions-of-the-wajapi-in-amapa-00056
+- https://ich.unesco.org/doc/src/62107.pdf?t=1699223351
+- https://www.megazap.fr/Le-musee-du-quai-Branly-Jacques-Chirac-en-partenariat-avec-le-musee-des-cultures-guyanaises-presentent-une-exposition_a5623.html
+- http://www.watau.fr
+- https://hdl.handle.net/1887/18153
+- https://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2077-33232023000100111
+- https://doi.org/10.1016/j.jep.2018.10.026
+- https://doi.org/10.4000/caravelle.2897
+- http://hdl.handle.net/1887.1/item:927762
+- https://hdl.handle.net/1887/3275069
+- https://www.kitlv.nl/news/winners-15th-subsidy-round-silvia-de-groot-fund/

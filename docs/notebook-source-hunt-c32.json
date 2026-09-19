@@ -1,0 +1,210 @@
+{
+  "batch": "notebook-source-hunt-c32",
+  "cycle": 32,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 winti 后按字母序续选，排除 C1–C31 全部已处理 slug；不以 4+ 来源卡填充，不用已良好卡片凑数。",
+  "previous_cycles_slugs_processed": 359,
+  "exclusion_metadata_slug_union_count": 371,
+  "slugs": [
+    "wiwa-traditional",
+    "wolaita-traditional",
+    "wolof-traditional",
+    "wounaan-traditional",
+    "xavante-traditional",
+    "xhosa-traditional",
+    "xibe-traditional",
+    "yaawo-traditional",
+    "yagua-traditional",
+    "yaka-traditional",
+    "yakkha-traditional",
+    "yali-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "wiwa-traditional",
+      "title": "维瓦传统信仰与雪峰祈福（Wiwa）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Sierra-Nevada-de-Santa-Marta",
+        "https://www.britannica.com/place/Colombia",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "rituals": [
+        "1. 山灵与律法伦理（高度敏感，仅概念）",
+        "2. 生命礼仪（概念层）",
+        "3. 公共文化与权利叙事（概念层）"
+      ]
+    },
+    {
+      "slug": "wolaita-traditional",
+      "title": "沃莱塔基督教与托萨传统祈福余绪（Wolaita／Wolaitta）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://joshuaproject.net/people_groups/15835/ET",
+        "https://ijitee.org/wp-content/uploads/papers/v8i7c/G10120587C19.pdf",
+        "https://www.britannica.com/place/Ethiopia"
+      ],
+      "rituals": [
+        "1. 福音派／东正教公共崇拜（概念层）",
+        "2. Ţossa 与 ayana 历史记忆（高度敏感，仅概念）",
+        "3. 生命礼仪与社群互惠（概念层）"
+      ]
+    },
+    {
+      "slug": "wolof-traditional",
+      "title": "沃洛夫民间伊斯兰与生命礼仪祈福（Wolof／Ouolof）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Wolof",
+        "https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/wolof",
+        "https://www.everyculture.com/Africa-Middle-East/Wolof-Religion-and-Expressive-Culture.html"
+      ],
+      "rituals": [
+        "1. 命名礼 nggentée（生命礼仪层）",
+        "2. 开斋节 Korité 与宰牲节 Tabaski（公开伊斯兰节日层）",
+        "3. 护身符与民间疗愈专长（概念层）"
+      ]
+    },
+    {
+      "slug": "wounaan-traditional",
+      "title": "沃南传统信仰与雨林祈福（Wounaan）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Wounaan",
+        "https://www.britannica.com/place/Darien-region-Panama",
+        "https://www.britannica.com/place/Panama"
+      ],
+      "rituals": [
+        "1. 森林伦理与祖先敬礼（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 疗愈中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "xavante-traditional",
+      "title": "沙万特传统信仰与草原—祖灵祈福（Xavante）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Xavante",
+        "https://www.britannica.com/place/Mato-Grosso",
+        "https://www.britannica.com/place/Brazil"
+      ],
+      "rituals": [
+        "1. 命名与半族伦理（敏感，仅概念）",
+        "2. 祖灵敬礼（概念层）",
+        "3. 基督教接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "xhosa-traditional",
+      "title": "科萨传统祖先敬拜与生命礼仪（Xhosa Traditional）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Xhosa",
+        "https://sahistory.org.za/article/xhosa",
+        "https://www.encyclopedia.com/places/africa/south-african-political-geography/xhosa"
+      ],
+      "rituals": [
+        "1. 祖先敬奉与院落宴礼（民俗层）",
+        "2. 生命礼仪与成丁学校（限制性名称层）",
+        "3. 梦境沟通、占卜与教会并存（概念层）"
+      ]
+    },
+    {
+      "slug": "xibe-traditional",
+      "title": "锡伯传统信仰与萨满—西迁记忆祈福（Xibe／Sibe）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sibo",
+        "https://www.britannica.com/place/Xinjiang",
+        "https://www.britannica.com/topic/shamanism"
+      ],
+      "rituals": [
+        "1. 西迁节公共纪念（概念层）",
+        "2. 祖先敬礼与家屋伦理（概念层）",
+        "3. 萨满传统余绪（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "yaawo-traditional",
+      "title": "姚人（马拉维／莫桑比克）传统信仰与伊斯兰—祖灵祈福（Yaawo／Yao）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Yao-African-people",
+        "https://www.britannica.com/place/Malawi",
+        "https://www.britannica.com/place/Mozambique"
+      ],
+      "rituals": [
+        "1. 清真寺礼拜与伊斯兰节日（概念层）",
+        "2. 命名与生命礼仪（概念层）",
+        "3. 祖先伦理余绪（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "yagua-traditional",
+      "title": "亚瓜传统信仰与亚马逊河祈福（Yagua）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Yagua",
+        "https://www.britannica.com/place/Iquitos",
+        "https://www.britannica.com/place/Amazon-River"
+      ],
+      "rituals": [
+        "1. 森林—河流伦理（概念层）",
+        "2. 生命礼仪（概念层）",
+        "3. 教堂／城镇接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "yaka-traditional",
+      "title": "雅卡传统信仰与面具—祖灵祈福（Yaka）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Yaka",
+        "https://www.britannica.com/place/Democratic-Republic-of-the-Congo",
+        "https://www.britannica.com/topic/African-art"
+      ],
+      "rituals": [
+        "1. 面具—会社公共层（极高敏感，仅概念）",
+        "2. 祖灵敬礼（概念层）",
+        "3. 教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "yakkha-traditional",
+      "title": "雅克哈传统信仰与蒙图姆祈福（Yakkha）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Nepal",
+        "https://www.britannica.com/topic/Kirati",
+        "https://www.britannica.com/place/Himalayas"
+      ],
+      "rituals": [
+        "1. Muntum 相关礼仪（概念层）",
+        "2. 家灵与地方灵敬礼（敏感，仅概念）",
+        "3. 多元宗教并存层（概念层）"
+      ]
+    },
+    {
+      "slug": "yali-traditional",
+      "title": "亚利传统信仰与巴布亚高地祈福（Yali）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Papua",
+        "https://www.britannica.com/place/New-Guinea",
+        "https://www.britannica.com/topic/Dani"
+      ],
+      "rituals": [
+        "1. 祖先与园圃伦理（概念层）",
+        "2. 猪只互惠（敏感，仅概念）",
+        "3. 教堂崇拜（概念层）"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡通过联网检索补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／遗产机构页面、博物馆与档案馆、学术 DOI 或民族志。",
+    "禁止采用 Britannica 地名／主题总览页（/place/、/topic/）、encyclopedia.com、everyculture.com、Wikipedia、Factsanddetails 等弱总览站，以及旅游博客或无署名聚合页凑数。",
+    "仅做来源补强，不改档位、卡片正文或仪式内容，不写可复现操演步骤；敏感传统只做公开文化与概念层。",
+    "每条来源附一句中文说明其覆盖内容与可信度；搜不到足够强来源时写明检索关键词，不要用弱来源填充。"
+  ]
+}

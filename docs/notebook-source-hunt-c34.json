@@ -2,17 +2,441 @@
   "batch": "notebook-source-hunt-c34",
   "cycle": 34,
   "date": "2026-09-19",
-  "selection_rule": "n=3 未处理薄 C 级卡；接 yucatec-maya 后按字母序续选，排除 C1–C33 全部已处理 slug；不以 4+ 来源卡填充，不用已良好卡片凑数；无候选则标记池耗尽。",
+  "selection_rule": "本批按输入清单处理 12 张薄 C 级卡片；仅做来源补强，不改正文、档位或仪式内容。",
   "previous_cycles_slugs_processed": 383,
   "exclusion_metadata_slug_union_count": 383,
-  "pool_after_yucatec_count": 0,
-  "pool_exhausted": true,
-  "slugs": [],
-  "cards": [],
+  "slugs": [
+    "aragonese-folk",
+    "asturian-folk",
+    "basilicata-folk",
+    "chagga-traditional",
+    "ivatan-traditional",
+    "karakalpak-traditional",
+    "konso-traditional",
+    "nauruan-traditional",
+    "niuean-traditional",
+    "norman-folk",
+    "pohnpeian-traditional",
+    "tornedalian-folk"
+  ],
+  "cards": [
+    {
+      "slug": "aragonese-folk",
+      "title": "阿拉贡民间天主教与朝圣祈福（Aragonese）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Our-Lady-of-the-Pillar",
+        "https://patrimonioculturaldearagon.es/patrimonio/fiestas-del-pilar/",
+        "https://patrimonioculturaldearagon.es/noticias/el-gobierno-de-aragon-anima-a-apoyar-a-la-jota-en-redes-sociales-este-15-de-agosto/"
+      ],
+      "rituals": [
+        "1. 皮拉尔圣母敬礼（Ofrenda de Flores，概念层）",
+        "2. 主保节与兄弟会巡游（含 jota 民俗层，概念层）",
+        "3. 朝圣之路支线（概念层）"
+      ],
+      "applied_urls": [
+        "https://www.catedralbasilicadelpilar.es/",
+        "https://torreciudad.org/galeria-mariana/nuestra-senora-del-pilar/",
+        "https://patrimonioculturaldearagon.es/patrimonio/fiestas-del-pilar/",
+        "https://www.turismodearagon.com/ficha/santuario-de-nuestra-senora-de-los-angeles-torreciudad/"
+      ],
+      "added_urls": [
+        "https://www.catedralbasilicadelpilar.es/",
+        "https://torreciudad.org/galeria-mariana/nuestra-senora-del-pilar/",
+        "https://www.turismodearagon.com/ficha/santuario-de-nuestra-senora-de-los-angeles-torreciudad/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Our-Lady-of-the-Pillar"
+      ],
+      "final_urls": [
+        "https://patrimonioculturaldearagon.es/patrimonio/fiestas-del-pilar/",
+        "https://patrimonioculturaldearagon.es/noticias/el-gobierno-de-aragon-anima-a-apoyar-a-la-jota-en-redes-sociales-este-15-de-agosto/",
+        "https://www.catedralbasilicadelpilar.es/",
+        "https://torreciudad.org/galeria-mariana/nuestra-senora-del-pilar/",
+        "https://www.turismodearagon.com/ficha/santuario-de-nuestra-senora-de-los-angeles-torreciudad/"
+      ],
+      "final_source_count": 5
+    },
+    {
+      "slug": "asturian-folk",
+      "title": "阿斯图里亚斯民间天主教与凯尔特余绪祈福（Asturian）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://santuariodecovadonga.es/",
+        "https://www.turismoasturias.es/covadonga/espiritual"
+      ],
+      "rituals": [
+        "1. 科瓦东加洞穴朝圣（9 月 8 日，概念层）",
+        "2. 主保节与山村巡游（含 gaita 民俗层，概念层）",
+        "3. 生命礼仪与海洋／矿山纪念（Santa Bárbara，概念层）"
+      ],
+      "applied_urls": [
+        "https://santuariodecovadonga.es/",
+        "https://www.turismoasturias.es/covadonga/espiritual",
+        "https://dialnet.unirioja.es/descarga/articulo/253589.pdf",
+        "https://www.museodelpuebloasturiano.es/"
+      ],
+      "added_urls": [
+        "https://dialnet.unirioja.es/descarga/articulo/253589.pdf",
+        "https://www.museodelpuebloasturiano.es/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://santuariodecovadonga.es/",
+        "https://www.turismoasturias.es/covadonga/espiritual",
+        "https://dialnet.unirioja.es/descarga/articulo/253589.pdf",
+        "https://www.museodelpuebloasturiano.es/"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "basilicata-folk",
+      "title": "巴西利卡塔民间天主教与岩城朝圣祈福（Basilicata／Lucania）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.festadellabruna.it/cose-la-festa/come-si-svolge/",
+        "https://www.basilicataturistica.it/scopri-la-basilicata/matera-patrimonio-mondiale-dellumanita/matera-e-la-madonna-della-bruna/"
+      ],
+      "rituals": [
+        "1. 岩穴教堂／圣母朝圣（概念层）",
+        "2. 主保节巡游（概念层）",
+        "2b. Maggio di Accettura「树婚」（概念层）",
+        "3. 圣周公共礼仪（概念层）"
+      ],
+      "applied_urls": [
+        "https://www.festadellabruna.it/cose-la-festa/come-si-svolge/",
+        "https://www.basilicataturistica.it/en/discover-basilicata/abbeys-and-sanctuaries-in-basilicata/the-sanctuary-of-sacro-monte-di-viggiano-and-the-black-madonna/",
+        "https://www.basilicataturistica.it/scopri-la-basilicata/matera-patrimonio-mondiale-dellumanita/matera-e-la-madonna-della-bruna/",
+        "https://www.basilicataturistica.it/val-dagri/viggiano-e-la-madonna-nera/"
+      ],
+      "added_urls": [
+        "https://www.basilicataturistica.it/en/discover-basilicata/abbeys-and-sanctuaries-in-basilicata/the-sanctuary-of-sacro-monte-di-viggiano-and-the-black-madonna/",
+        "https://www.basilicataturistica.it/val-dagri/viggiano-e-la-madonna-nera/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://www.festadellabruna.it/cose-la-festa/come-si-svolge/",
+        "https://www.basilicataturistica.it/scopri-la-basilicata/matera-patrimonio-mondiale-dellumanita/matera-e-la-madonna-della-bruna/",
+        "https://www.basilicataturistica.it/en/discover-basilicata/abbeys-and-sanctuaries-in-basilicata/the-sanctuary-of-sacro-monte-di-viggiano-and-the-black-madonna/",
+        "https://www.basilicataturistica.it/val-dagri/viggiano-e-la-madonna-nera/"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "chagga-traditional",
+      "title": "查加人传统信仰与鲁瓦—乞力马扎罗祈福（Chagga）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://ethnology.pitt.edu/ojs/Ethnology/article/view/6061/6247",
+        "https://altezzatravel.com/articles/chagga-tribe",
+        "https://revues.imist.ma/index.php/AJLP-GS/article/download/34573/17859/92979"
+      ],
+      "rituals": [
+        "1. 教会礼拜与山坡堂区生活（公共层）",
+        "2. Ruwa、Masale 与祖灵圣地叙事（概念层）",
+        "3. Mitambiko 概念与生命礼仪／邻里信仰共处（部分敏感）"
+      ],
+      "applied_urls": [
+        "https://ethnology.pitt.edu/ojs/Ethnology/article/view/6061/6247",
+        "https://revues.imist.ma/index.php/AJLP-GS/article/download/34573/17859/92979",
+        "https://www.jstor.org/stable/1158162",
+        "https://whc.unesco.org/en/list/403"
+      ],
+      "added_urls": [
+        "https://www.jstor.org/stable/1158162",
+        "https://whc.unesco.org/en/list/403"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://ethnology.pitt.edu/ojs/Ethnology/article/view/6061/6247",
+        "https://altezzatravel.com/articles/chagga-tribe",
+        "https://revues.imist.ma/index.php/AJLP-GS/article/download/34573/17859/92979",
+        "https://www.jstor.org/stable/1158162",
+        "https://whc.unesco.org/en/list/403"
+      ],
+      "final_source_count": 5
+    },
+    {
+      "slug": "ivatan-traditional",
+      "title": "伊瓦坦民间天主教与巴丹群岛祈福（Ivatan）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/",
+        "https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/"
+      ],
+      "rituals": [
+        "1. Kapayvanuvanua 开海与 Anito 供奉余绪（概念层 ONLY）",
+        "2. Payuhuan 互助家屋祝福（概念层）",
+        "3. 堂区主保节／fiesta 与台风还愿弥撒（公共层）"
+      ],
+      "applied_urls": [
+        "https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/",
+        "https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/",
+        "https://doi.org/10.1353/asi.2003.0030"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1353/asi.2003.0030"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/",
+        "https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/",
+        "https://doi.org/10.1353/asi.2003.0030"
+      ],
+      "final_source_count": 3
+    },
+    {
+      "slug": "karakalpak-traditional",
+      "title": "卡拉卡尔帕克民间伊斯兰与咸海三角洲祈福（Karakalpak）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://doi.org/10.33619/2414-2948/64/44",
+        "https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336",
+        "https://uzbekistan.travel/en/o/navruz-and-spring-equinox/"
+      ],
+      "rituals": [
+        "1. Mizdakhkan mazar 圣地朝拜（概念层）",
+        "2. Navruz 与 Sumalak 共食节庆（公共文化层）",
+        "3. 清真寺礼拜与生命礼仪（公共／高阶概览）"
+      ],
+      "applied_urls": [
+        "https://doi.org/10.33619/2414-2948/64/44",
+        "https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336",
+        "https://inlibrary.uz/index.php/science-research/article/view/22221",
+        "https://geniusjournals.org/index.php/esh/article/view/980/866"
+      ],
+      "added_urls": [
+        "https://inlibrary.uz/index.php/science-research/article/view/22221",
+        "https://geniusjournals.org/index.php/esh/article/view/980/866"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://doi.org/10.33619/2414-2948/64/44",
+        "https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336",
+        "https://uzbekistan.travel/en/o/navruz-and-spring-equinox/",
+        "https://inlibrary.uz/index.php/science-research/article/view/22221",
+        "https://geniusjournals.org/index.php/esh/article/view/980/866"
+      ],
+      "final_source_count": 5
+    },
+    {
+      "slug": "konso-traditional",
+      "title": "康索传统宗教与文化景观祈福（Konso）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://whc.unesco.org/en/list/1333/",
+        "https://visitethiopia.et/space/konso-cultural-landscape",
+        "https://www.persee.fr/doc/ethio_0066-2127_2016_num_31_1_1628"
+      ],
+      "rituals": [
+        "1. Daga-diruma／Mora 世代石与公共石碑礼仪（公共／遗产层）",
+        "2. Waka 葬礼纪念木雕（CONCEPT）",
+        "3. Waaq 祈雨／圣林敬礼（高度敏感，CONCEPT ONLY）"
+      ],
+      "applied_urls": [
+        "https://whc.unesco.org/en/list/1333/",
+        "https://www.persee.fr/doc/ethio_0066-2127_2016_num_31_1_1628",
+        "https://visitethiopia.et/space/konso-cultural-landscape",
+        "https://doi.org/10.1080/0067270X.2014.982231"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1080/0067270X.2014.982231"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://whc.unesco.org/en/list/1333/",
+        "https://visitethiopia.et/space/konso-cultural-landscape",
+        "https://www.persee.fr/doc/ethio_0066-2127_2016_num_31_1_1628",
+        "https://doi.org/10.1080/0067270X.2014.982231"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "nauruan-traditional",
+      "title": "瑙鲁传统信仰与村社祈福余绪（Nauruan）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.nauru.gov.nr/about-naoero/dei-naoero's-stories/angam-day.aspx",
+        "https://www.nauru.gov.nr/about-naoero/national-days.aspx",
+        "https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-67269.pdf"
+      ],
+      "rituals": [
+        "1. Angam Day（10 月 26 日）人口重生纪念（公共层）",
+        "2. 军舰鸟文化象征（公共文化层）",
+        "3. 教会礼拜与 Tabuarik 神话记忆（公共／概念层）"
+      ],
+      "applied_urls": [
+        "https://www.nauru.gov.nr/about-naoero/dei-naoero",
+        "https://www.nauru.gov.nr/about-naoero/national-days.aspx",
+        "https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-67269.pdf",
+        "https://doi.org/10.1080/00223344.2019.1601000"
+      ],
+      "added_urls": [
+        "https://www.nauru.gov.nr/about-naoero/dei-naoero",
+        "https://doi.org/10.1080/00223344.2019.1601000"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://www.nauru.gov.nr/about-naoero/dei-naoero's-stories/angam-day.aspx",
+        "https://www.nauru.gov.nr/about-naoero/national-days.aspx",
+        "https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-67269.pdf",
+        "https://www.nauru.gov.nr/about-naoero/dei-naoero",
+        "https://doi.org/10.1080/00223344.2019.1601000"
+      ],
+      "final_source_count": 5
+    },
+    {
+      "slug": "niuean-traditional",
+      "title": "纽埃传统信仰与村社祈福余绪（Niuean）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.gov.nu/our-history",
+        "https://teara.govt.nz/en/photograph/717/a-young-niuean-at-his-hair-cutting-ceremony",
+        "https://www.aucklandmuseum.com/collection/object/1134301"
+      ],
+      "rituals": [
+        "1. Hair Cutting／Ta Tilinga 馈赠礼仪（部分敏感，概念）",
+        "2. Ekalesia 与 Takai 村社教会生活（公共层）",
+        "3. Tokamotu／mana 记忆（CONCEPT）"
+      ],
+      "applied_urls": [
+        "https://www.gov.nu/our-history",
+        "https://teara.govt.nz/en/photograph/717/a-young-niuean-at-his-hair-cutting-ceremony",
+        "https://www.aucklandmuseum.com/collection/object/1134301",
+        "https://teara.govt.nz/en/pacific-arts-in-new-zealand/page-1"
+      ],
+      "added_urls": [
+        "https://teara.govt.nz/en/pacific-arts-in-new-zealand/page-1"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://www.gov.nu/our-history",
+        "https://teara.govt.nz/en/photograph/717/a-young-niuean-at-his-hair-cutting-ceremony",
+        "https://www.aucklandmuseum.com/collection/object/1134301",
+        "https://teara.govt.nz/en/pacific-arts-in-new-zealand/page-1"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "norman-folk",
+      "title": "诺曼底／海峡群岛民间天主教与朝圣祈福（Norman）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.therese-de-lisieux.catholique.fr/en/",
+        "https://www.normandie-tourisme.fr/agenda/jep-2026-visite-guidee-a-la-decouverte-de-la-cote-de-grace/",
+        "https://www.pelerin-montsaintmichel.org/le-sanctuaire-mont-saint-michel/"
+      ],
+      "rituals": [
+        "1. 蒙圣米歇尔朝圣（概念层）",
+        "2. 利雪圣女小德兰朝圣（概念层）",
+        "3. 翁弗勒尔水手节船只祝福（公共层）"
+      ],
+      "applied_urls": [
+        "https://www.therese-de-lisieux.catholique.fr/en/",
+        "https://www.pelerin-montsaintmichel.org/",
+        "https://www.normandie-tourisme.fr/agenda/jep-2026-visite-guidee-a-la-decouverte-de-la-cote-de-grace/",
+        "https://www.culture.gouv.fr/Demarches-en-ligne/Inventaire-du-patrimoine-culturel-immateriel"
+      ],
+      "added_urls": [
+        "https://www.pelerin-montsaintmichel.org/",
+        "https://www.culture.gouv.fr/Demarches-en-ligne/Inventaire-du-patrimoine-culturel-immateriel"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://www.therese-de-lisieux.catholique.fr/en/",
+        "https://www.normandie-tourisme.fr/agenda/jep-2026-visite-guidee-a-la-decouverte-de-la-cote-de-grace/",
+        "https://www.pelerin-montsaintmichel.org/le-sanctuaire-mont-saint-michel/",
+        "https://www.pelerin-montsaintmichel.org/",
+        "https://www.culture.gouv.fr/Demarches-en-ligne/Inventaire-du-patrimoine-culturel-immateriel"
+      ],
+      "final_source_count": 5
+    },
+    {
+      "slug": "pohnpeian-traditional",
+      "title": "波纳佩传统信仰与村社祈福余绪（Pohnpeian）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://doi.org/10.1515/9780824837495-008",
+        "https://doi.org/10.2307/j.ctvp2n4g9.12",
+        "https://doi.org/10.1017/9781009232517.009"
+      ],
+      "rituals": [
+        "1. 教会礼拜与基督教日历（公共层）",
+        "2. Sakau 捣制象征与首领宴饮再分配（公共文化层，部分敏感）",
+        "3. Nan Madol 与 Nahn Samwohl 鳗鱼记忆（概念层）"
+      ],
+      "applied_urls": [
+        "https://doi.org/10.1515/9780824837495-008",
+        "https://doi.org/10.2307/j.ctvp2n4g9.12",
+        "https://doi.org/10.1017/9781009232517.009",
+        "https://whc.unesco.org/en/list/824"
+      ],
+      "added_urls": [
+        "https://whc.unesco.org/en/list/824"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://doi.org/10.1515/9780824837495-008",
+        "https://doi.org/10.2307/j.ctvp2n4g9.12",
+        "https://doi.org/10.1017/9781009232517.009",
+        "https://whc.unesco.org/en/list/824"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "tornedalian-folk",
+      "title": "托尔内谷民间基督教与梅安基利祈福（Tornedalian／Meänkieli）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.isof.se/folkminnen/amnesomraden/nationella-minoriteters-kultur/tornedalsk-kultur",
+        "https://www.isof.se/nationella-minoritetssprak/meankieli/lar-dig-mer-om-meankieli/meankieli-nu-och-da",
+        "https://snl.no/l%C3%A6stadianere"
+      ],
+      "rituals": [
+        "1. Laestadian Seurat 与路德宗礼拜（概念层）",
+        "2. Kukkolaforsen lippous 渔季祝福（概念层）",
+        "3. Meänkieli 语言日感恩（概念层）"
+      ],
+      "applied_urls": [
+        "https://www.isof.se/folkminnen/amnesomraden/nationella-minoriteters-kultur/tornedalsk-kultur",
+        "https://www.isof.se/nationella-minoritetssprak/meankieli/lar-dig-mer-om-meankieli/meankieli-nu-och-da",
+        "https://www.svenskakyrkan.se/default.aspx?id=2946221",
+        "https://www.svenskakyrkan.se/filer/587615/Motion%202025%20103%20Inkludera%20laestadianska%20v%C3%A4ckelser%C3%B6relsen%20i%20f%C3%B6rsoningsprocessen.pdf"
+      ],
+      "added_urls": [
+        "https://www.svenskakyrkan.se/default.aspx?id=2946221",
+        "https://www.svenskakyrkan.se/filer/587615/Motion%202025%20103%20Inkludera%20laestadianska%20v%C3%A4ckelser%C3%B6relsen%20i%20f%C3%B6rsoningsprocessen.pdf"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://www.isof.se/folkminnen/amnesomraden/nationella-minoriteters-kultur/tornedalsk-kultur",
+        "https://www.isof.se/nationella-minoritetssprak/meankieli/lar-dig-mer-om-meankieli/meankieli-nu-och-da",
+        "https://snl.no/l%C3%A6stadianere",
+        "https://www.svenskakyrkan.se/default.aspx?id=2946221",
+        "https://www.svenskakyrkan.se/filer/587615/Motion%202025%20103%20Inkludera%20laestadianska%20v%C3%A4ckelser%C3%B6relsen%20i%20f%C3%B6rsoningsprocessen.pdf"
+      ],
+      "final_source_count": 5
+    }
+  ],
   "prompt_constraints": [
     "每卡通过联网检索补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／遗产机构页面、博物馆与档案馆、学术 DOI 或民族志。",
     "禁止采用 Britannica 地名／主题总览页（/place/、/topic/）、encyclopedia.com、everyculture.com、Wikipedia、Factsanddetails 等弱总览站，以及旅游博客或无署名聚合页；不要用弱来源凑数。",
     "仅做来源补强，不改档位、卡片正文或仪式内容，不写可复现操演步骤；敏感传统只做公开文化与概念层。",
     "每条来源附一句中文说明其覆盖内容与可信度；搜不到足够强来源时写明检索关键词，不要用弱来源填充。"
-  ]
+  ],
+  "card_url_input_count": 47,
+  "card_url_added_count": 21,
+  "card_url_removed_count": 4,
+  "sources_index_new_count": 19,
+  "sources_index_existing_count": 28,
+  "card_url_input_assignment_count": 47
 }

@@ -50,3 +50,5 @@
 - https://ethnology.pitt.edu/ojs/Ethnology/article/view/6061/6247
 - https://altezzatravel.com/articles/chagga-tribe
 - https://revues.imist.ma/index.php/AJLP-GS/article/download/34573/17859/92979
+- https://www.jstor.org/stable/1158162
+- https://whc.unesco.org/en/list/403

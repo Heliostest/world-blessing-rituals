@@ -50,3 +50,5 @@
 - https://doi.org/10.33619/2414-2948/64/44
 - https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336
 - https://uzbekistan.travel/en/o/navruz-and-spring-equinox/
+- https://inlibrary.uz/index.php/science-research/article/view/22221
+- https://geniusjournals.org/index.php/esh/article/view/980/866

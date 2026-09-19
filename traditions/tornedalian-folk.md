@@ -50,3 +50,5 @@
 - https://www.isof.se/folkminnen/amnesomraden/nationella-minoriteters-kultur/tornedalsk-kultur
 - https://www.isof.se/nationella-minoritetssprak/meankieli/lar-dig-mer-om-meankieli/meankieli-nu-och-da
 - https://snl.no/l%C3%A6stadianere
+- https://www.svenskakyrkan.se/default.aspx?id=2946221
+- https://www.svenskakyrkan.se/filer/587615/Motion%202025%20103%20Inkludera%20laestadianska%20v%C3%A4ckelser%C3%B6relsen%20i%20f%C3%B6rsoningsprocessen.pdf

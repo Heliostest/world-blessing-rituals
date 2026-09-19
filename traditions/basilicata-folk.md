@@ -53,6 +53,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://www.festadellabruna.it/cose-la-festa/come-si-svolge/
 - https://www.basilicataturistica.it/scopri-la-basilicata/matera-patrimonio-mondiale-dellumanita/matera-e-la-madonna-della-bruna/
+- https://www.basilicataturistica.it/en/discover-basilicata/abbeys-and-sanctuaries-in-basilicata/the-sanctuary-of-sacro-monte-di-viggiano-and-the-black-madonna/
+- https://www.basilicataturistica.it/val-dagri/viggiano-e-la-madonna-nera/

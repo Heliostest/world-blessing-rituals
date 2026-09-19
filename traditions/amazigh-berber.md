@@ -52,7 +52,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Berber
-- https://www.britannica.com/topic/barakah
 - https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256
 - https://pop.culture.gouv.fr/notice/joconde/M0903002336
+- https://ich.unesco.org/en/RL/ahellil-of-gourara-00121
+- https://ich.unesco.org/es/asistencias/01052
+- https://ich.unesco.org/en/RL/gnawa-01170
+- https://doi.org/10.1080/13629387.2015.1084102

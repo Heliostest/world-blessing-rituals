@@ -47,8 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/biography/Saint-Boniface
-- https://www.britannica.com/topic/Frisian
 - https://www.bonifatiuskapel.nl/Pelgrimeren.html
 - https://www.friesmuseum.nl/te-zien-en-te-doen/tentoonstellingen/de-terp
 - https://qsr.waddensea-worldheritage.org/reports/landscape-and-culture
+- https://ich.unesco.org/en/RL/craft-of-the-millwright-operating-windmills-and-watermills-01264
+- https://www.friesmuseum.nl/en
+- https://www.immaterieelerfgoed.nl/en/
+- https://doi.org/10.1080/01434632.2017.1389947

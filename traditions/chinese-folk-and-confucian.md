@@ -52,8 +52,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Qingming-Festival
-- https://kids.britannica.com/students/article/ancestor-worship/272853
 - https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227
 - https://doi.org/10.54254/2753-7048/51/20240985
 - https://doi.org/10.3389/fpsyg.2024.1471431
+- https://ich.unesco.org/en/RL/dragon-boat-festival-00225
+- https://www.ihchina.cn/project_details/12185.html
+- https://doi.org/10.1163/23521341-12340052

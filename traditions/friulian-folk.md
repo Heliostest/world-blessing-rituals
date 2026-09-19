@@ -47,9 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Friulian-language
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://www.turismofvg.it/fvglivexperience/castelmonte
 - https://grado.it/it/eventi/sabo-grando-e-perdon-di-barbana/
 - https://www.santuariodibarbana.it/storia/
 - https://www.turismofvg.it/eventi/autunno-col-ciavedal-streghe-e-benandanti-di-confine
+- https://ich.unesco.org/en/RL/transhumance-the-seasonal-drove-of-livestock-01964
+- https://www.civicimuseiudine.it/
+- https://doi.org/10.1007/s10745-016-9878-5
+- https://doi.org/10.1186/s13002-019-0339-9

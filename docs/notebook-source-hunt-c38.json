@@ -2,21 +2,842 @@
   "batch": "notebook-source-hunt-c38",
   "cycle": 38,
   "date": "2026-09-19",
-  "status": "prepared_no_candidates",
-  "selection_rule": "排除 C1–C37 已处理 slug；优先 n=3，其次按 Britannica／encyclopedia.com／everyculture.com 弱链接数量排序，最多 12 张。当前无剩余合格候选。",
-  "previous_cycles_slugs_processed": 409,
-  "exclusion_metadata_slug_union_count": 409,
+  "status": "completed",
+  "selection_rule": "按用户提供的 /tmp/c38-urls.json 对 12 个 C 级卡片执行弱链接清理；不排除早期批次，输入 URL 去重后追加，移除选中卡片参考来源中的 Britannica、encyclopedia.com、everyculture.com 弱链接。",
+  "previous_cycles_slugs_processed": null,
+  "exclusion_metadata_slug_union_count": null,
   "c_grade_card_count": 156,
-  "eligible_remaining_count": 0,
-  "selected_count": 0,
-  "slugs": [],
-  "prompt": "请为 Notebook source hunt C38 准备下一批 C 级祈福／祈祷仪式资料卡的联网来源搜寻。\n\n选择规则：排除 C1–C37 已处理的全部 slug；在剩余 C 级卡片中优先选择参考来源恰为 n=3 的卡片，其次选择仍含 Britannica、encyclopedia.com 或 everyculture.com 来源的卡片，再按弱链接数量从多到少排序，最多 12 张。当前仓库中全部 C 级卡片均已被 C1–C37 覆盖，因此本批没有可合法选择的 slug；不要重复已处理卡片，也不要为了凑数改选其他档位。\n\n若后续出现未处理候选，对每个 slug 给出 2–4 条新的、公开可核验的 URL，并附一句中文说明覆盖内容与可信度理由。来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。\n\n明确禁止：Britannica 地点（/place/）或泛概览页及其他 Britannica 泛概览、encyclopedia.com、everyculture.com、Wikipedia 或任何 wiki 概览页、101lasttribes／joshuaproject 等部族目录页、与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。硬性要求：URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或 SOURCES.md 已有 URL 重复；宁缺毋滥；只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n输出格式：\nslug:\n建议新增 URL（每行一条，附一句中文说明）：\n- <URL> — <说明>\n\n当前选择结果：无（remaining_candidates=0）。",
-  "prompt_constraints": [
-    "仅选择未被 C1–C37 处理的 C 级卡片。",
-    "优先 n=3，其次最多弱链接数；不凑数。",
-    "禁止 Britannica 地点／泛概览、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页与离题泛泛报告。",
-    "只补来源，不改卡片正文、档位或仪式内容；URL、DOI、网页与 PDF 均须公开可核验。"
+  "selected_count": 12,
+  "slugs": [
+    "amazigh-berber",
+    "aromanian-folk",
+    "bai-benzhu",
+    "beja-traditional",
+    "catalan-folk",
+    "chinese-folk-and-confucian",
+    "cornish-folk",
+    "crimean-tatar-traditional",
+    "cypriot-folk",
+    "estonian-maausk",
+    "frisian-folk",
+    "friulian-folk"
   ],
-  "remaining_estimate": 0,
-  "source_map": "/tmp/nb-source-hunt-c38.txt"
+  "input_url_count": 48,
+  "input_unique_url_count": 48,
+  "card_url_added_count": 44,
+  "card_url_removed_count": 24,
+  "sources_unique_url_added_count": 43,
+  "cards": [
+    {
+      "slug": "amazigh-berber",
+      "title": "阿马齐格／柏柏尔（Amazigh / Berber）",
+      "n": 3,
+      "rituals": [
+        "圣徒陵寝朝拜与 *baraka* 求取",
+        "求雨仪式（如 Taghonja／“雨之新娘”概念）",
+        "节庆舞蹈与社群祝福（如 Ahwach／Ahidous、Taskiwin 概念）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Berber",
+        "https://www.britannica.com/topic/barakah",
+        "https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903002336"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/ahellil-of-gourara-00121",
+        "https://ich.unesco.org/es/asistencias/01052",
+        "https://ich.unesco.org/en/RL/gnawa-01170",
+        "https://doi.org/10.1080/13629387.2015.1084102"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/ahellil-of-gourara-00121",
+        "https://ich.unesco.org/es/asistencias/01052",
+        "https://ich.unesco.org/en/RL/gnawa-01170",
+        "https://doi.org/10.1080/13629387.2015.1084102"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Berber",
+        "https://www.britannica.com/topic/barakah"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903002336",
+        "https://ich.unesco.org/en/RL/ahellil-of-gourara-00121",
+        "https://ich.unesco.org/es/asistencias/01052",
+        "https://ich.unesco.org/en/RL/gnawa-01170",
+        "https://doi.org/10.1080/13629387.2015.1084102"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Berber",
+        "https://www.britannica.com/topic/barakah"
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903002336",
+        "https://ich.unesco.org/en/RL/ahellil-of-gourara-00121",
+        "https://ich.unesco.org/es/asistencias/01052",
+        "https://ich.unesco.org/en/RL/gnawa-01170",
+        "https://doi.org/10.1080/13629387.2015.1084102"
+      ]
+    },
+    {
+      "slug": "aromanian-folk",
+      "title": "阿罗马尼亚／巴尔干瓦拉几东正教祈福传统（Aromanian／Vlach）",
+      "n": 3,
+      "rituals": [
+        "东正教圣礼与礼仪年（公共层）",
+        "主保圣人与村镇瞻礼（公共层）",
+        "牧养—商路记忆中的家庭祝福（公共文化层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Vlach",
+        "https://www.britannica.com/topic/Eastern-Orthodoxy",
+        "https://ich.unesco.org/en/RL/august-15th-dekapentavgoustos-festivities-in-two-highland-communities-of-northern-greece-tranos-choros-grand-dance-in-vlasti-and-syrrako-festival-01726",
+        "https://doi.org/10.59277/ICSUGH.SINCAI.28.15"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/august-15th-dekapentavgoustos-festivities-in-two-highland-communities-of-northern-greece-tranos-choros-grand-dance-in-vlasti-and-syrrako-festival-01726",
+        "https://doi.org/10.1080/01472520802402739",
+        "https://doi.org/10.1080/01426397.2016.1229461",
+        "https://ayla.culture.gr/en/"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1080/01472520802402739",
+        "https://doi.org/10.1080/01426397.2016.1229461",
+        "https://ayla.culture.gr/en/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Vlach",
+        "https://www.britannica.com/topic/Eastern-Orthodoxy"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/august-15th-dekapentavgoustos-festivities-in-two-highland-communities-of-northern-greece-tranos-choros-grand-dance-in-vlasti-and-syrrako-festival-01726",
+        "https://doi.org/10.59277/ICSUGH.SINCAI.28.15",
+        "https://doi.org/10.1080/01472520802402739",
+        "https://doi.org/10.1080/01426397.2016.1229461",
+        "https://ayla.culture.gr/en/"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 5,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Vlach",
+        "https://www.britannica.com/topic/Eastern-Orthodoxy"
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/august-15th-dekapentavgoustos-festivities-in-two-highland-communities-of-northern-greece-tranos-choros-grand-dance-in-vlasti-and-syrrako-festival-01726",
+        "https://doi.org/10.59277/ICSUGH.SINCAI.28.15",
+        "https://doi.org/10.1080/01472520802402739",
+        "https://doi.org/10.1080/01426397.2016.1229461",
+        "https://ayla.culture.gr/en/"
+      ]
+    },
+    {
+      "slug": "bai-benzhu",
+      "title": "白族本主信仰（Bai Benzhu）",
+      "n": 3,
+      "rituals": [
+        "本主庙日常敬拜（公开民俗层）",
+        "庙会巡游与绕三灵等节庆（公共文化层）",
+        "火把节等岁时焰火象征（公共民俗层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Bai-people",
+        "https://kids.britannica.com/scholars/article/Bai/58000",
+        "http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm",
+        "https://www.yunnanexplorer.com/festivals/benzhu/",
+        "https://www.ihchina.cn/project_details/14999.html",
+        "https://www.ihchina.cn/Article/Index/detail?id=23505",
+        "https://mz.yn.gov.cn/html/2018/gongzuodongtai_0727/29121.html",
+        "https://www.ihchina.cn/project_details/11083.html"
+      ],
+      "input_urls": [
+        "https://doi.org/10.1080/14631369.2015.1013174",
+        "https://doi.org/10.1186/s13002-018-0266-z",
+        "https://www.ihchina.cn/project_details/15220.html",
+        "http://www.ynmuseum.org/"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1080/14631369.2015.1013174",
+        "https://doi.org/10.1186/s13002-018-0266-z",
+        "https://www.ihchina.cn/project_details/15220.html",
+        "http://www.ynmuseum.org/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Bai-people",
+        "https://kids.britannica.com/scholars/article/Bai/58000"
+      ],
+      "final_urls": [
+        "http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm",
+        "https://www.yunnanexplorer.com/festivals/benzhu/",
+        "https://www.ihchina.cn/project_details/14999.html",
+        "https://www.ihchina.cn/Article/Index/detail?id=23505",
+        "https://mz.yn.gov.cn/html/2018/gongzuodongtai_0727/29121.html",
+        "https://www.ihchina.cn/project_details/11083.html",
+        "https://doi.org/10.1080/14631369.2015.1013174",
+        "https://doi.org/10.1186/s13002-018-0266-z",
+        "https://www.ihchina.cn/project_details/15220.html",
+        "http://www.ynmuseum.org/"
+      ],
+      "current_source_count": 8,
+      "final_source_count": 10,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Bai-people",
+        "https://kids.britannica.com/scholars/article/Bai/58000"
+      ],
+      "applied_urls": [
+        "http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm",
+        "https://www.yunnanexplorer.com/festivals/benzhu/",
+        "https://www.ihchina.cn/project_details/14999.html",
+        "https://www.ihchina.cn/Article/Index/detail?id=23505",
+        "https://mz.yn.gov.cn/html/2018/gongzuodongtai_0727/29121.html",
+        "https://www.ihchina.cn/project_details/11083.html",
+        "https://doi.org/10.1080/14631369.2015.1013174",
+        "https://doi.org/10.1186/s13002-018-0266-z",
+        "https://www.ihchina.cn/project_details/15220.html",
+        "http://www.ynmuseum.org/"
+      ]
+    },
+    {
+      "slug": "beja-traditional",
+      "title": "贝贾牧民伊斯兰与红海山地祈福传统（Beja）",
+      "n": 3,
+      "rituals": [
+        "伊斯兰礼拜与斋月（公共层）",
+        "生命礼仪与部族互助（公共层）",
+        "牧养伦理与求雨叙事（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Beja-people",
+        "https://kids.britannica.com/kids/article/Beja/626388",
+        "https://doi.org/10.1371/journal.pone.0253511",
+        "https://doi.org/10.37892/2686-8946-2022-3-2-368-388",
+        "https://cedejsudan.hypotheses.org/2791"
+      ],
+      "input_urls": [
+        "https://doi.org/10.1371/journal.pone.0253511",
+        "https://doi.org/10.1080/13648470.2011.646945",
+        "https://doi.org/10.1075/sl.00003.van",
+        "https://doi.org/10.1080/00934690.2025.2479290"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1080/13648470.2011.646945",
+        "https://doi.org/10.1075/sl.00003.van",
+        "https://doi.org/10.1080/00934690.2025.2479290"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Beja-people",
+        "https://kids.britannica.com/kids/article/Beja/626388"
+      ],
+      "final_urls": [
+        "https://doi.org/10.1371/journal.pone.0253511",
+        "https://doi.org/10.37892/2686-8946-2022-3-2-368-388",
+        "https://cedejsudan.hypotheses.org/2791",
+        "https://doi.org/10.1080/13648470.2011.646945",
+        "https://doi.org/10.1075/sl.00003.van",
+        "https://doi.org/10.1080/00934690.2025.2479290"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 6,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Beja-people",
+        "https://kids.britannica.com/kids/article/Beja/626388"
+      ],
+      "applied_urls": [
+        "https://doi.org/10.1371/journal.pone.0253511",
+        "https://doi.org/10.37892/2686-8946-2022-3-2-368-388",
+        "https://cedejsudan.hypotheses.org/2791",
+        "https://doi.org/10.1080/13648470.2011.646945",
+        "https://doi.org/10.1075/sl.00003.van",
+        "https://doi.org/10.1080/00934690.2025.2479290"
+      ]
+    },
+    {
+      "slug": "catalan-folk",
+      "title": "加泰罗尼亚民间天主教与巨人巡游祈福（Catalan）",
+      "n": 3,
+      "rituals": [
+        "主保节与巨人／巡游（概念层）",
+        "蒙特塞拉特等圣地朝圣（概念层）",
+        "弥撒与生命礼仪（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Montserrat-monastery-Catalonia-Spain",
+        "https://www.britannica.com/art/castell",
+        "https://ich.unesco.org/en/RL/la-patum-de-berga-00156",
+        "https://ich.unesco.org/en/RL/human-towers-00364",
+        "https://patrimoni.gencat.cat/es/coleccion/la-patum",
+        "https://patrimoni.gencat.cat/es/coleccion/castells"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/human-towers-00364",
+        "https://ich.unesco.org/en/RL/patum-of-berga-00156",
+        "https://doi.org/10.1007/978-1-349-00400-3",
+        "https://doi.org/10.1080/16549716.2017.1355604"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/patum-of-berga-00156",
+        "https://doi.org/10.1007/978-1-349-00400-3",
+        "https://doi.org/10.1080/16549716.2017.1355604"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Montserrat-monastery-Catalonia-Spain",
+        "https://www.britannica.com/art/castell"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/la-patum-de-berga-00156",
+        "https://ich.unesco.org/en/RL/human-towers-00364",
+        "https://patrimoni.gencat.cat/es/coleccion/la-patum",
+        "https://patrimoni.gencat.cat/es/coleccion/castells",
+        "https://ich.unesco.org/en/RL/patum-of-berga-00156",
+        "https://doi.org/10.1007/978-1-349-00400-3",
+        "https://doi.org/10.1080/16549716.2017.1355604"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 7,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Montserrat-monastery-Catalonia-Spain",
+        "https://www.britannica.com/art/castell"
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/la-patum-de-berga-00156",
+        "https://ich.unesco.org/en/RL/human-towers-00364",
+        "https://patrimoni.gencat.cat/es/coleccion/la-patum",
+        "https://patrimoni.gencat.cat/es/coleccion/castells",
+        "https://ich.unesco.org/en/RL/patum-of-berga-00156",
+        "https://doi.org/10.1007/978-1-349-00400-3",
+        "https://doi.org/10.1080/16549716.2017.1355604"
+      ]
+    },
+    {
+      "slug": "chinese-folk-and-confucian",
+      "title": "汉人民间信仰与祭祖／儒礼",
+      "n": 3,
+      "rituals": [
+        "上香／敬香与庙会进香还愿（上香、敬香）",
+        "家龛祭祖与祖先牌位供奉",
+        "清明扫墓（清明祭）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Qingming-Festival",
+        "https://kids.britannica.com/students/article/ancestor-worship/272853",
+        "https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227",
+        "https://doi.org/10.54254/2753-7048/51/20240985",
+        "https://doi.org/10.3389/fpsyg.2024.1471431"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227",
+        "https://ich.unesco.org/en/RL/dragon-boat-festival-00225",
+        "https://www.ihchina.cn/project_details/12185.html",
+        "https://doi.org/10.1163/23521341-12340052"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/dragon-boat-festival-00225",
+        "https://www.ihchina.cn/project_details/12185.html",
+        "https://doi.org/10.1163/23521341-12340052"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Qingming-Festival",
+        "https://kids.britannica.com/students/article/ancestor-worship/272853"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227",
+        "https://doi.org/10.54254/2753-7048/51/20240985",
+        "https://doi.org/10.3389/fpsyg.2024.1471431",
+        "https://ich.unesco.org/en/RL/dragon-boat-festival-00225",
+        "https://www.ihchina.cn/project_details/12185.html",
+        "https://doi.org/10.1163/23521341-12340052"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 6,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Qingming-Festival",
+        "https://kids.britannica.com/students/article/ancestor-worship/272853"
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227",
+        "https://doi.org/10.54254/2753-7048/51/20240985",
+        "https://doi.org/10.3389/fpsyg.2024.1471431",
+        "https://ich.unesco.org/en/RL/dragon-boat-festival-00225",
+        "https://www.ihchina.cn/project_details/12185.html",
+        "https://doi.org/10.1163/23521341-12340052"
+      ]
+    },
+    {
+      "slug": "cornish-folk",
+      "title": "康沃尔民间基督教与圣井—朝圣祈福（Cornish）",
+      "n": 3,
+      "rituals": [
+        "Rag／Clootie 圣井朝圣与还愿（概念层）",
+        "St Piran’s Day 与堂区／海边节庆（概念层）",
+        "矿工／渔民纪念祈祷（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/holy-well",
+        "https://www.britannica.com/topic/Church-of-England",
+        "https://www.english-heritage.org.uk/visit/places/dupath-well/history/",
+        "https://www.cornwall.gov.uk/council-news/environment-culture-and-planning/cornish-culture-is-thriving-across-the-duchy/",
+        "https://museumofcornishlife.co.uk/projects/",
+        "https://doi.org/10.1080/14649365.2015.1066840"
+      ],
+      "input_urls": [
+        "https://www.cornishculture.co.uk/",
+        "https://www.royalcornwallmuseum.org.uk/",
+        "https://doi.org/10.1080/0015587X.2015.1093874",
+        "https://doi.org/10.1080/17438730903180426"
+      ],
+      "added_urls": [
+        "https://www.cornishculture.co.uk/",
+        "https://www.royalcornwallmuseum.org.uk/",
+        "https://doi.org/10.1080/0015587X.2015.1093874",
+        "https://doi.org/10.1080/17438730903180426"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/holy-well",
+        "https://www.britannica.com/topic/Church-of-England"
+      ],
+      "final_urls": [
+        "https://www.english-heritage.org.uk/visit/places/dupath-well/history/",
+        "https://www.cornwall.gov.uk/council-news/environment-culture-and-planning/cornish-culture-is-thriving-across-the-duchy/",
+        "https://museumofcornishlife.co.uk/projects/",
+        "https://doi.org/10.1080/14649365.2015.1066840",
+        "https://www.cornishculture.co.uk/",
+        "https://www.royalcornwallmuseum.org.uk/",
+        "https://doi.org/10.1080/0015587X.2015.1093874",
+        "https://doi.org/10.1080/17438730903180426"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 8,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/holy-well",
+        "https://www.britannica.com/topic/Church-of-England"
+      ],
+      "applied_urls": [
+        "https://www.english-heritage.org.uk/visit/places/dupath-well/history/",
+        "https://www.cornwall.gov.uk/council-news/environment-culture-and-planning/cornish-culture-is-thriving-across-the-duchy/",
+        "https://museumofcornishlife.co.uk/projects/",
+        "https://doi.org/10.1080/14649365.2015.1066840",
+        "https://www.cornishculture.co.uk/",
+        "https://www.royalcornwallmuseum.org.uk/",
+        "https://doi.org/10.1080/0015587X.2015.1093874",
+        "https://doi.org/10.1080/17438730903180426"
+      ]
+    },
+    {
+      "slug": "crimean-tatar-traditional",
+      "title": "克里米亚鞑靼伊斯兰与归乡祈福传统（Crimean Tatar）",
+      "n": 3,
+      "rituals": [
+        "清真寺礼拜与斋月（Ramadan）（公共层）",
+        "Hıdırellez、Derviza 与 Aziz 圣地 ziyarat（民俗／圣地层）",
+        "生命礼仪与归乡纪念（部分敏感／当代层）"
+      ],
+      "current_urls": [
+        "https://www.everyculture.com/Russia-Eurasia-China/Crimean-Tatars-Religion-and-Expressive-Culture.html",
+        "https://www.britannica.com/topic/Tatar",
+        "https://www.tataria.online/post/land-and-faith-what-is-the-specificity-of-crimean-tatar-islam",
+        "https://dx.doi.org/10.4000/assr.18403"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/ornek-a-crimean-tatar-ornament-and-knowledge-about-it-01601",
+        "https://handvorec.ru/en/",
+        "https://doi.org/10.1017/nps.2020.92",
+        "https://doi.org/10.1080/09668136.2015.1124851"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/ornek-a-crimean-tatar-ornament-and-knowledge-about-it-01601",
+        "https://handvorec.ru/en/",
+        "https://doi.org/10.1017/nps.2020.92",
+        "https://doi.org/10.1080/09668136.2015.1124851"
+      ],
+      "removed_urls": [
+        "https://www.everyculture.com/Russia-Eurasia-China/Crimean-Tatars-Religion-and-Expressive-Culture.html",
+        "https://www.britannica.com/topic/Tatar"
+      ],
+      "final_urls": [
+        "https://www.tataria.online/post/land-and-faith-what-is-the-specificity-of-crimean-tatar-islam",
+        "https://dx.doi.org/10.4000/assr.18403",
+        "https://ich.unesco.org/en/RL/ornek-a-crimean-tatar-ornament-and-knowledge-about-it-01601",
+        "https://handvorec.ru/en/",
+        "https://doi.org/10.1017/nps.2020.92",
+        "https://doi.org/10.1080/09668136.2015.1124851"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.everyculture.com/Russia-Eurasia-China/Crimean-Tatars-Religion-and-Expressive-Culture.html",
+        "https://www.britannica.com/topic/Tatar"
+      ],
+      "applied_urls": [
+        "https://www.tataria.online/post/land-and-faith-what-is-the-specificity-of-crimean-tatar-islam",
+        "https://dx.doi.org/10.4000/assr.18403",
+        "https://ich.unesco.org/en/RL/ornek-a-crimean-tatar-ornament-and-knowledge-about-it-01601",
+        "https://handvorec.ru/en/",
+        "https://doi.org/10.1017/nps.2020.92",
+        "https://doi.org/10.1080/09668136.2015.1124851"
+      ]
+    },
+    {
+      "slug": "cypriot-folk",
+      "title": "塞浦路斯民间东正教与朝圣祈福（Cypriot）",
+      "n": 3,
+      "rituals": [
+        "Panagia tou Kykkou 等修道院朝圣（概念层）",
+        "Panegyri 村社主保节（概念层）",
+        "Agiasmos 圣水与家庭祝福（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Church-of-Cyprus",
+        "https://www.britannica.com/topic/Eastern-Orthodoxy",
+        "https://www.visitcyprus.com/discover-cyprus/culture/sites-and-monuments/kykkos-monastery/",
+        "https://www.visitcyprus.com/discover-cyprus/culture/museums-galleries/museum-of-kykkos-monastery/",
+        "https://www.unesco.org.cy/News-PROSKLISI__Eortastiki_ekdilosi_gia_tin_eggrafi_tis_PSaltikis_technis_ston_Antiprosopeytiko_Katalogo_Aylis_Politistikis_Klironomias_tis_UNESCO,4226,EN"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/tsiattista-poetic-duelling-00536",
+        "https://ich.unesco.org/en/RL/lefkara-laces-or-lefkaritika-00255",
+        "https://www.unesco.org.cy/",
+        "https://doi.org/10.1353/mgs.2018.0004"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/tsiattista-poetic-duelling-00536",
+        "https://ich.unesco.org/en/RL/lefkara-laces-or-lefkaritika-00255",
+        "https://www.unesco.org.cy/",
+        "https://doi.org/10.1353/mgs.2018.0004"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Church-of-Cyprus",
+        "https://www.britannica.com/topic/Eastern-Orthodoxy"
+      ],
+      "final_urls": [
+        "https://www.visitcyprus.com/discover-cyprus/culture/sites-and-monuments/kykkos-monastery/",
+        "https://www.visitcyprus.com/discover-cyprus/culture/museums-galleries/museum-of-kykkos-monastery/",
+        "https://www.unesco.org.cy/News-PROSKLISI__Eortastiki_ekdilosi_gia_tin_eggrafi_tis_PSaltikis_technis_ston_Antiprosopeytiko_Katalogo_Aylis_Politistikis_Klironomias_tis_UNESCO,4226,EN",
+        "https://ich.unesco.org/en/RL/tsiattista-poetic-duelling-00536",
+        "https://ich.unesco.org/en/RL/lefkara-laces-or-lefkaritika-00255",
+        "https://www.unesco.org.cy/",
+        "https://doi.org/10.1353/mgs.2018.0004"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Church-of-Cyprus",
+        "https://www.britannica.com/topic/Eastern-Orthodoxy"
+      ],
+      "applied_urls": [
+        "https://www.visitcyprus.com/discover-cyprus/culture/sites-and-monuments/kykkos-monastery/",
+        "https://www.visitcyprus.com/discover-cyprus/culture/museums-galleries/museum-of-kykkos-monastery/",
+        "https://www.unesco.org.cy/News-PROSKLISI__Eortastiki_ekdilosi_gia_tin_eggrafi_tis_PSaltikis_technis_ston_Antiprosopeytiko_Katalogo_Aylis_Politistikis_Klironomias_tis_UNESCO,4226,EN",
+        "https://ich.unesco.org/en/RL/tsiattista-poetic-duelling-00536",
+        "https://ich.unesco.org/en/RL/lefkara-laces-or-lefkaritika-00255",
+        "https://www.unesco.org.cy/",
+        "https://doi.org/10.1353/mgs.2018.0004"
+      ]
+    },
+    {
+      "slug": "estonian-maausk",
+      "title": "爱沙尼亚地信仰／马阿乌斯克与塔阿拉信仰（Estonian Maausk／Taaraism）",
+      "n": 3,
+      "rituals": [
+        "Hiis 圣林与彩带敬奉（概念层）",
+        "Hingedeaeg 亡灵季、桑拿净化与岁时民俗（民俗层）",
+        "Maavalla Koda 公共组织与文化教育（公共文化层）"
+      ],
+      "current_urls": [
+        "https://www.maavald.ee/en/about-maavalla-koda",
+        "https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions",
+        "https://www.britannica.com/topic/Finno-Ugric-religion",
+        "https://www.britannica.com/topic/sacred-grove",
+        "https://www.maavald.ee/maausk",
+        "https://blog.erm.ee/?p=11330",
+        "https://www.maavald.ee/en/religion-and-culture/382-native-estonian-calendar"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/smoke-sauna-tradition-in-vromaa-00951",
+        "https://www.maavald.ee/",
+        "https://www.kirmus.ee/en",
+        "https://doi.org/10.7592/FEJF2014.58.jonuks"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/smoke-sauna-tradition-in-vromaa-00951",
+        "https://www.maavald.ee/",
+        "https://www.kirmus.ee/en",
+        "https://doi.org/10.7592/FEJF2014.58.jonuks"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Finno-Ugric-religion",
+        "https://www.britannica.com/topic/sacred-grove"
+      ],
+      "final_urls": [
+        "https://www.maavald.ee/en/about-maavalla-koda",
+        "https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions",
+        "https://www.maavald.ee/maausk",
+        "https://blog.erm.ee/?p=11330",
+        "https://www.maavald.ee/en/religion-and-culture/382-native-estonian-calendar",
+        "https://ich.unesco.org/en/RL/smoke-sauna-tradition-in-vromaa-00951",
+        "https://www.maavald.ee/",
+        "https://www.kirmus.ee/en",
+        "https://doi.org/10.7592/FEJF2014.58.jonuks"
+      ],
+      "current_source_count": 7,
+      "final_source_count": 9,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Finno-Ugric-religion",
+        "https://www.britannica.com/topic/sacred-grove"
+      ],
+      "applied_urls": [
+        "https://www.maavald.ee/en/about-maavalla-koda",
+        "https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions",
+        "https://www.maavald.ee/maausk",
+        "https://blog.erm.ee/?p=11330",
+        "https://www.maavald.ee/en/religion-and-culture/382-native-estonian-calendar",
+        "https://ich.unesco.org/en/RL/smoke-sauna-tradition-in-vromaa-00951",
+        "https://www.maavald.ee/",
+        "https://www.kirmus.ee/en",
+        "https://doi.org/10.7592/FEJF2014.58.jonuks"
+      ]
+    },
+    {
+      "slug": "frisian-folk",
+      "title": "弗里西民间基督教与博尼法斯朝圣记忆（Frisian folk）",
+      "n": 3,
+      "rituals": [
+        "主日礼拜与教会年（公共层）",
+        "Dokkum 博尼法斯小堂／圣井朝圣纪念（公共层）",
+        "Terp、海堤与祈祷叙事（公共文化层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/biography/Saint-Boniface",
+        "https://www.britannica.com/topic/Frisian",
+        "https://www.bonifatiuskapel.nl/Pelgrimeren.html",
+        "https://www.friesmuseum.nl/te-zien-en-te-doen/tentoonstellingen/de-terp",
+        "https://qsr.waddensea-worldheritage.org/reports/landscape-and-culture"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/craft-of-the-millwright-operating-windmills-and-watermills-01264",
+        "https://www.friesmuseum.nl/en",
+        "https://www.immaterieelerfgoed.nl/en/",
+        "https://doi.org/10.1080/01434632.2017.1389947"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/craft-of-the-millwright-operating-windmills-and-watermills-01264",
+        "https://www.friesmuseum.nl/en",
+        "https://www.immaterieelerfgoed.nl/en/",
+        "https://doi.org/10.1080/01434632.2017.1389947"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/biography/Saint-Boniface",
+        "https://www.britannica.com/topic/Frisian"
+      ],
+      "final_urls": [
+        "https://www.bonifatiuskapel.nl/Pelgrimeren.html",
+        "https://www.friesmuseum.nl/te-zien-en-te-doen/tentoonstellingen/de-terp",
+        "https://qsr.waddensea-worldheritage.org/reports/landscape-and-culture",
+        "https://ich.unesco.org/en/RL/craft-of-the-millwright-operating-windmills-and-watermills-01264",
+        "https://www.friesmuseum.nl/en",
+        "https://www.immaterieelerfgoed.nl/en/",
+        "https://doi.org/10.1080/01434632.2017.1389947"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/biography/Saint-Boniface",
+        "https://www.britannica.com/topic/Frisian"
+      ],
+      "applied_urls": [
+        "https://www.bonifatiuskapel.nl/Pelgrimeren.html",
+        "https://www.friesmuseum.nl/te-zien-en-te-doen/tentoonstellingen/de-terp",
+        "https://qsr.waddensea-worldheritage.org/reports/landscape-and-culture",
+        "https://ich.unesco.org/en/RL/craft-of-the-millwright-operating-windmills-and-watermills-01264",
+        "https://www.friesmuseum.nl/en",
+        "https://www.immaterieelerfgoed.nl/en/",
+        "https://doi.org/10.1080/01434632.2017.1389947"
+      ]
+    },
+    {
+      "slug": "friulian-folk",
+      "title": "弗留利民间天主教与朝圣祈福（Friulian）",
+      "n": 3,
+      "rituals": [
+        "Castelmonte Madonna 圣母朝圣（概念层）",
+        "主保节巡游与 Pignarûl 主显节岁火（概念层）",
+        "复活节祝福与 Benandanti 历史民俗记忆（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Friulian-language",
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.turismofvg.it/fvglivexperience/castelmonte",
+        "https://grado.it/it/eventi/sabo-grando-e-perdon-di-barbana/",
+        "https://www.santuariodibarbana.it/storia/",
+        "https://www.turismofvg.it/eventi/autunno-col-ciavedal-streghe-e-benandanti-di-confine"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/transhumance-the-seasonal-drove-of-livestock-01964",
+        "https://www.civicimuseiudine.it/",
+        "https://doi.org/10.1007/s10745-016-9878-5",
+        "https://doi.org/10.1186/s13002-019-0339-9"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/transhumance-the-seasonal-drove-of-livestock-01964",
+        "https://www.civicimuseiudine.it/",
+        "https://doi.org/10.1007/s10745-016-9878-5",
+        "https://doi.org/10.1186/s13002-019-0339-9"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Friulian-language",
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://www.turismofvg.it/fvglivexperience/castelmonte",
+        "https://grado.it/it/eventi/sabo-grando-e-perdon-di-barbana/",
+        "https://www.santuariodibarbana.it/storia/",
+        "https://www.turismofvg.it/eventi/autunno-col-ciavedal-streghe-e-benandanti-di-confine",
+        "https://ich.unesco.org/en/RL/transhumance-the-seasonal-drove-of-livestock-01964",
+        "https://www.civicimuseiudine.it/",
+        "https://doi.org/10.1007/s10745-016-9878-5",
+        "https://doi.org/10.1186/s13002-019-0339-9"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 8,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Friulian-language",
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "applied_urls": [
+        "https://www.turismofvg.it/fvglivexperience/castelmonte",
+        "https://grado.it/it/eventi/sabo-grando-e-perdon-di-barbana/",
+        "https://www.santuariodibarbana.it/storia/",
+        "https://www.turismofvg.it/eventi/autunno-col-ciavedal-streghe-e-benandanti-di-confine",
+        "https://ich.unesco.org/en/RL/transhumance-the-seasonal-drove-of-livestock-01964",
+        "https://www.civicimuseiudine.it/",
+        "https://doi.org/10.1007/s10745-016-9878-5",
+        "https://doi.org/10.1186/s13002-019-0339-9"
+      ]
+    }
+  ],
+  "source_map": "/tmp/c38-urls.json",
+  "applied_urls": {
+    "amazigh-berber": [
+      "https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256",
+      "https://pop.culture.gouv.fr/notice/joconde/M0903002336",
+      "https://ich.unesco.org/en/RL/ahellil-of-gourara-00121",
+      "https://ich.unesco.org/es/asistencias/01052",
+      "https://ich.unesco.org/en/RL/gnawa-01170",
+      "https://doi.org/10.1080/13629387.2015.1084102"
+    ],
+    "aromanian-folk": [
+      "https://ich.unesco.org/en/RL/august-15th-dekapentavgoustos-festivities-in-two-highland-communities-of-northern-greece-tranos-choros-grand-dance-in-vlasti-and-syrrako-festival-01726",
+      "https://doi.org/10.59277/ICSUGH.SINCAI.28.15",
+      "https://doi.org/10.1080/01472520802402739",
+      "https://doi.org/10.1080/01426397.2016.1229461",
+      "https://ayla.culture.gr/en/"
+    ],
+    "bai-benzhu": [
+      "http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm",
+      "https://www.yunnanexplorer.com/festivals/benzhu/",
+      "https://www.ihchina.cn/project_details/14999.html",
+      "https://www.ihchina.cn/Article/Index/detail?id=23505",
+      "https://mz.yn.gov.cn/html/2018/gongzuodongtai_0727/29121.html",
+      "https://www.ihchina.cn/project_details/11083.html",
+      "https://doi.org/10.1080/14631369.2015.1013174",
+      "https://doi.org/10.1186/s13002-018-0266-z",
+      "https://www.ihchina.cn/project_details/15220.html",
+      "http://www.ynmuseum.org/"
+    ],
+    "beja-traditional": [
+      "https://doi.org/10.1371/journal.pone.0253511",
+      "https://doi.org/10.37892/2686-8946-2022-3-2-368-388",
+      "https://cedejsudan.hypotheses.org/2791",
+      "https://doi.org/10.1080/13648470.2011.646945",
+      "https://doi.org/10.1075/sl.00003.van",
+      "https://doi.org/10.1080/00934690.2025.2479290"
+    ],
+    "catalan-folk": [
+      "https://ich.unesco.org/en/RL/la-patum-de-berga-00156",
+      "https://ich.unesco.org/en/RL/human-towers-00364",
+      "https://patrimoni.gencat.cat/es/coleccion/la-patum",
+      "https://patrimoni.gencat.cat/es/coleccion/castells",
+      "https://ich.unesco.org/en/RL/patum-of-berga-00156",
+      "https://doi.org/10.1007/978-1-349-00400-3",
+      "https://doi.org/10.1080/16549716.2017.1355604"
+    ],
+    "chinese-folk-and-confucian": [
+      "https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227",
+      "https://doi.org/10.54254/2753-7048/51/20240985",
+      "https://doi.org/10.3389/fpsyg.2024.1471431",
+      "https://ich.unesco.org/en/RL/dragon-boat-festival-00225",
+      "https://www.ihchina.cn/project_details/12185.html",
+      "https://doi.org/10.1163/23521341-12340052"
+    ],
+    "cornish-folk": [
+      "https://www.english-heritage.org.uk/visit/places/dupath-well/history/",
+      "https://www.cornwall.gov.uk/council-news/environment-culture-and-planning/cornish-culture-is-thriving-across-the-duchy/",
+      "https://museumofcornishlife.co.uk/projects/",
+      "https://doi.org/10.1080/14649365.2015.1066840",
+      "https://www.cornishculture.co.uk/",
+      "https://www.royalcornwallmuseum.org.uk/",
+      "https://doi.org/10.1080/0015587X.2015.1093874",
+      "https://doi.org/10.1080/17438730903180426"
+    ],
+    "crimean-tatar-traditional": [
+      "https://www.tataria.online/post/land-and-faith-what-is-the-specificity-of-crimean-tatar-islam",
+      "https://dx.doi.org/10.4000/assr.18403",
+      "https://ich.unesco.org/en/RL/ornek-a-crimean-tatar-ornament-and-knowledge-about-it-01601",
+      "https://handvorec.ru/en/",
+      "https://doi.org/10.1017/nps.2020.92",
+      "https://doi.org/10.1080/09668136.2015.1124851"
+    ],
+    "cypriot-folk": [
+      "https://www.visitcyprus.com/discover-cyprus/culture/sites-and-monuments/kykkos-monastery/",
+      "https://www.visitcyprus.com/discover-cyprus/culture/museums-galleries/museum-of-kykkos-monastery/",
+      "https://www.unesco.org.cy/News-PROSKLISI__Eortastiki_ekdilosi_gia_tin_eggrafi_tis_PSaltikis_technis_ston_Antiprosopeytiko_Katalogo_Aylis_Politistikis_Klironomias_tis_UNESCO,4226,EN",
+      "https://ich.unesco.org/en/RL/tsiattista-poetic-duelling-00536",
+      "https://ich.unesco.org/en/RL/lefkara-laces-or-lefkaritika-00255",
+      "https://www.unesco.org.cy/",
+      "https://doi.org/10.1353/mgs.2018.0004"
+    ],
+    "estonian-maausk": [
+      "https://www.maavald.ee/en/about-maavalla-koda",
+      "https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions",
+      "https://www.maavald.ee/maausk",
+      "https://blog.erm.ee/?p=11330",
+      "https://www.maavald.ee/en/religion-and-culture/382-native-estonian-calendar",
+      "https://ich.unesco.org/en/RL/smoke-sauna-tradition-in-vromaa-00951",
+      "https://www.maavald.ee/",
+      "https://www.kirmus.ee/en",
+      "https://doi.org/10.7592/FEJF2014.58.jonuks"
+    ],
+    "frisian-folk": [
+      "https://www.bonifatiuskapel.nl/Pelgrimeren.html",
+      "https://www.friesmuseum.nl/te-zien-en-te-doen/tentoonstellingen/de-terp",
+      "https://qsr.waddensea-worldheritage.org/reports/landscape-and-culture",
+      "https://ich.unesco.org/en/RL/craft-of-the-millwright-operating-windmills-and-watermills-01264",
+      "https://www.friesmuseum.nl/en",
+      "https://www.immaterieelerfgoed.nl/en/",
+      "https://doi.org/10.1080/01434632.2017.1389947"
+    ],
+    "friulian-folk": [
+      "https://www.turismofvg.it/fvglivexperience/castelmonte",
+      "https://grado.it/it/eventi/sabo-grando-e-perdon-di-barbana/",
+      "https://www.santuariodibarbana.it/storia/",
+      "https://www.turismofvg.it/eventi/autunno-col-ciavedal-streghe-e-benandanti-di-confine",
+      "https://ich.unesco.org/en/RL/transhumance-the-seasonal-drove-of-livestock-01964",
+      "https://www.civicimuseiudine.it/",
+      "https://doi.org/10.1007/s10745-016-9878-5",
+      "https://doi.org/10.1186/s13002-019-0339-9"
+    ]
+  }
 }

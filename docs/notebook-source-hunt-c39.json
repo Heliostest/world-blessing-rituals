@@ -1,0 +1,305 @@
+{
+  "batch": "notebook-source-hunt-c39",
+  "cycle": 39,
+  "date": "2026-09-19",
+  "status": "prepared",
+  "selection_rule": "不排除任何早期批次；重算全部 grade=C 卡片当前来源段中的弱链接，按弱链接数量从多到少、slug 字母序选择前 12 张。",
+  "previous_cycles_excluded": false,
+  "c_grade_card_count": 156,
+  "weak_link_c_count_after_c38": 79,
+  "selected_count": 12,
+  "slugs": [
+    "hoa-hao",
+    "irish-folk-catholic",
+    "kuba-traditional",
+    "kven-folk",
+    "ladin-folk",
+    "lao-baci-phi",
+    "livonian-folk",
+    "makonde-traditional",
+    "maltese-festa",
+    "sammarinese-folk",
+    "theravada-buddhism",
+    "veps-folk"
+  ],
+  "cards": [
+    {
+      "slug": "hoa-hao",
+      "title": "越南和好教（Hòa Hảo）",
+      "rituals": [
+        "Bàn Thờ Trần Dầu 红布坛与花／水简易礼拜（概念层）",
+        "Tứ Đại Ân 四恩与共同体伦理（概念层）",
+        "创教／教主纪念日与集体诵经（概念层）"
+      ],
+      "n": 6,
+      "current_urls": [
+        "https://www.britannica.com/topic/Hoa-Hao-Vietnamese-religious-movement",
+        "https://kids.britannica.com/scholars/article/Huynh-Phu-So/41661",
+        "https://hoahao.org/a352/biography-and-teachings-of-prophet-huynh-phu-so",
+        "https://doi.org/10.1525/vs.2022.17.4.18",
+        "https://doi.org/10.32388/T8IX52",
+        "https://cms.btgcp.gov.vn/upload/documents/03_11_2021/tai-lieu-boi-duong-de-an-2021-11-03-16-41-27.pdf"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Hoa-Hao-Vietnamese-religious-movement",
+        "https://kids.britannica.com/scholars/article/Huynh-Phu-So/41661"
+      ]
+    },
+    {
+      "slug": "irish-folk-catholic",
+      "title": "爱尔兰民间天主教与圣井—朝圣祈福（Irish）",
+      "rituals": [
+        "Croagh Patrick／Reek Sunday 朝圣（概念层）",
+        "Lough Derg Station Island 补赎朝圣（概念层）",
+        "Pattern Days、圣井与 clootie 还愿（概念层）"
+      ],
+      "n": 5,
+      "current_urls": [
+        "https://www.britannica.com/topic/Saint-Patrick",
+        "https://www.britannica.com/topic/holy-well",
+        "https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/seasonal-festivals/autumn",
+        "https://www.museum.ie/en-IE/Collections-Research/Folklife-Collections/Folklife-Collections-List-(1)/Other/The-Great-Irish-Famine/Penal-Cross",
+        "https://www.heritagecouncil.ie/news/news-features/7-new-sites-selected-for-the-heritage-councils-adopt-a-monument-programme"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Saint-Patrick",
+        "https://www.britannica.com/topic/holy-well"
+      ]
+    },
+    {
+      "slug": "kuba-traditional",
+      "title": "库巴／布雄戈王权与自然灵祈福（Kuba／Bushongo）",
+      "rituals": [
+        "Nyim 宫廷与 Ndop 王像（公共／概念层）",
+        "Ngesh 自然灵圣地敬礼（概念层）",
+        "Shoowa 拉菲亚丧葬织物（概念层）"
+      ],
+      "n": 6,
+      "current_urls": [
+        "https://www.britannica.com/topic/Kuba-people",
+        "https://kids.britannica.com/scholars/article/Kuba/46332",
+        "https://www.metmuseum.org/toah/hd/kuba/hd_kuba.htm",
+        "https://www.metmuseum.org/essays/kingdoms-of-the-savanna-the-kuba-kingdom",
+        "https://www.britishmuseum.org/collection/object/E_Af1909-1210-1",
+        "https://www.metmuseum.org/art/collection/search/768372"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Kuba-people",
+        "https://kids.britannica.com/scholars/article/Kuba/46332"
+      ]
+    },
+    {
+      "slug": "kven-folk",
+      "title": "克文民间基督教与极北祈福（Kven）",
+      "rituals": [
+        "莱斯塔迪乌斯派／Seurat 聚会（概念层）",
+        "极北渔农祝福叙事（概念层）",
+        "语言—文化日感恩（概念层）"
+      ],
+      "n": 5,
+      "current_urls": [
+        "https://www.britannica.com/topic/Kven",
+        "https://www.britannica.com/topic/Church-of-Norway",
+        "https://snl.no/kvener",
+        "https://snl.no/l%C3%A6stadianere",
+        "https://snl.no/Kvendrakta"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Kven",
+        "https://www.britannica.com/topic/Church-of-Norway"
+      ]
+    },
+    {
+      "slug": "ladin-folk",
+      "title": "拉丁民间天主教与多洛米蒂祈福（Ladin）",
+      "rituals": [
+        "Santa Crusc／Heilig Kreuz 山地圣地朝圣（概念层）",
+        "Desalpa／Almabtrieb 牲畜下山祝福（概念层）",
+        "山谷 festa／复活节民俗（概念层）"
+      ],
+      "n": 5,
+      "current_urls": [
+        "https://www.britannica.com/topic/Ladin",
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.altabadia.org/en/alta-badia-events/detail/event/esaltaziun-dla-santa-crusc-elevation-of-the-holy-cross",
+        "https://www.altabadia.org/en/alta-badia-events/detail/event/traslaziun-dla-santa-crusc-translation-of-the-holy-cross",
+        "https://www.altabadia.org/de/poi/sehenswertes-alta-badia/detail/poi/wallfahrtskirche-la-crusc-heiligkreuz"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Ladin",
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ]
+    },
+    {
+      "slug": "lao-baci-phi",
+      "title": "老挝上座部佛教与灵魂召唤／皮灵祈福（Lao Baci / Phi）",
+      "rituals": [
+        "Baci／Sou Khuan：Pha Khuan 与 Sai Sin／32 khwan（公共—家庭祝福层）",
+        "Boun That Luang 塔銮节（佛教公共层）",
+        "村灵／地方守护灵（phi）供养（限制性概念层）"
+      ],
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/place/Laos/Religion",
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lao-religion",
+        "https://www.bbc.com/travel/article/20200819-laos-collective-approach-to-healthcare",
+        "https://www.watbuddhavong.org/wlb-updates/boun-that-luang/"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/place/Laos/Religion",
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lao-religion"
+      ]
+    },
+    {
+      "slug": "livonian-folk",
+      "title": "利沃尼亚民间基督教与濒危语言祈福（Livonian）",
+      "rituals": [
+        "Mazirbe Līvlišt pīvad（利沃尼亚人日）（概念层）",
+        "Līvõd Kōd（利沃尼亚之家）文化中心（概念层）",
+        "海岸路德宗礼拜（概念层）"
+      ],
+      "n": 5,
+      "current_urls": [
+        "https://www.britannica.com/topic/Liv",
+        "https://www.britannica.com/topic/Finno-Ugric-languages",
+        "https://www.latvia.travel/en/sight/liiv-peoples-house",
+        "https://livones.net/18-novembris-mazirbe/",
+        "https://www.latvia.travel/en/culture-and-traditions-latvia"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Liv",
+        "https://www.britannica.com/topic/Finno-Ugric-languages"
+      ]
+    },
+    {
+      "slug": "makonde-traditional",
+      "title": "马孔德传统信仰与祖灵—木雕祈福（Makonde）",
+      "rituals": [
+        "Mapiko／Lipiko 面具舞（公共文化层）",
+        "Jando／Unyago 成年礼仪（CONCEPT ONLY＋强烈注意与尊重）",
+        "Shetani 木雕纪念与认同（公共文化层）"
+      ],
+      "n": 7,
+      "current_urls": [
+        "https://www.britannica.com/topic/Makonde",
+        "https://www.britannica.com/art/African-art/Makonde",
+        "https://joshuaproject.net/index.php/people_groups/13427/MZ",
+        "https://ich.unesco.org/en/USL/ingoma-ya-mapiko-01996",
+        "https://doi.org/10.1162/afar_a_00599",
+        "https://doi.org/10.1162/AFAR_r_00292",
+        "https://www.metmuseum.org/art/collection/search/318344"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Makonde",
+        "https://www.britannica.com/art/African-art/Makonde"
+      ]
+    },
+    {
+      "slug": "maltese-festa",
+      "title": "马耳他民间天主教与村社festa祈福（Maltese）",
+      "rituals": [
+        "Il-Vara 与 festa 烟火／行进乐队（概念层）",
+        "Ta' Pinu 还愿（ex-voto）（概念层）",
+        "圣保罗海难瞻礼与海洋护佑（概念层）"
+      ],
+      "n": 5,
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.britannica.com/topic/feast-religion",
+        "https://ich.unesco.org/en/RL/maltese-festa-an-inclusive-community-celebration-01980",
+        "https://www.visitmalta.com/en/a/maltese-festa/",
+        "https://www.tapinu.org/index.php/museums"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.britannica.com/topic/feast-religion"
+      ]
+    },
+    {
+      "slug": "sammarinese-folk",
+      "title": "圣马力诺民间天主教与共和朝圣祈福（Sammarinese）",
+      "rituals": [
+        "9 月 3 日圣马利诺主保／建国日（概念层）",
+        "圣髑弥撒与 Basilica del Santo（概念层）",
+        "Capitani Reggenti 就职弥撒（公共／公民—宗教层）"
+      ],
+      "n": 6,
+      "current_urls": [
+        "https://www.britannica.com/topic/Saint-Marinus",
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.visitsanmarino.com/pub2/VisitSM/evento/20260903_Festa_di_San_Marino.html",
+        "https://www.visitsanmarino.com/pub1/VisitSM/en/evento/20261001_1%C2%B0ottobre-cerimonia-di-investitura-dei-capitani-reggenti.html",
+        "https://www.visitsanmarino.com/pub2/VisitSM/evento/20250205_Festa_di_santagata.html",
+        "https://www.visitsanmarino.com/pub2/VisitSM/luogo/Arte-e-cultura/Basilica-del-Santo.html"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Saint-Marinus",
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ]
+    },
+    {
+      "slug": "theravada-buddhism",
+      "title": "上座部佛教（泰缅斯里等地）",
+      "rituals": [
+        "Pindapata 托钵与 Grot Nam 浇水回向（作福层）",
+        "Kathina 功德衣与 Songkran 浴佛（节庆层）",
+        "短期出家（CONCEPT naming only）"
+      ],
+      "n": 6,
+      "current_urls": [
+        "https://www.britannica.com/topic/Theravada",
+        "https://www.britannica.com/topic/Buddhism/Popular-religious-practices",
+        "https://ich.unesco.org/en/RL/songkran-in-thailand-traditional-thai-new-year-festival-01719",
+        "https://doi.org/10.21313/hawaii/9780824867805.003.0005",
+        "https://doi.org/10.21313/hawaii/9780824867805.003.0004",
+        "https://doi.org/10.26034/LU.JGB.2025.7155"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Theravada",
+        "https://www.britannica.com/topic/Buddhism/Popular-religious-practices"
+      ]
+    },
+    {
+      "slug": "veps-folk",
+      "title": "维普斯民间东正教与森林祈福（Veps）",
+      "rituals": [
+        "Elämän puu 等语言—文化节日（公共文化层）",
+        "Metsiine／Veziine 自然灵概念（CONCEPT ONLY）",
+        "东正教堂区节庆（概念层）"
+      ],
+      "n": 5,
+      "current_urls": [
+        "https://www.britannica.com/topic/Veps",
+        "https://www.britannica.com/topic/Finno-Ugric-languages",
+        "https://www.folklore.ee/folklore/vol15/news.htm",
+        "https://dea.digar.ee/?a=d&d=JVethnolandfolklor202406.1.118&l=ru",
+        "https://ojs.utlib.ee/index.php/jeful/article/download/jeful.2015.6.1.09/10193/14973"
+      ],
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Veps",
+        "https://www.britannica.com/topic/Finno-Ugric-languages"
+      ]
+    }
+  ],
+  "prompt": "请为 Notebook source hunt C39 准备下一批 C 级祈福／祈祷仪式资料卡的联网来源搜寻。\n\n本轮是在 C38 来源清理已经应用之后，对 docs/notebook-validation.json 中全部 grade=C 卡片的「## 参考来源」重新计数；不得因为某卡曾出现在 C1–C38 的早期批次就排除它。仍含 britannica.com、encyclopedia.com 或 everyculture.com 的弱链接均须计入。当前 C 级卡片共 156 张，仍含弱链接的卡片共 79 张。\n\n选择规则：在全部仍含上述弱链接的 C 级卡片中，按弱链接数量从多到少排序；并列时按 slug 字母序排序；选择前 12 张。不要为了凑数选择无弱链接的卡片，也不要排除先前批次出现过的卡片。\n\n选择结果（按优先顺序）：\n1. hoa-hao（弱链接 2 条；当前来源 6 条）\n2. irish-folk-catholic（弱链接 2 条；当前来源 5 条）\n3. kuba-traditional（弱链接 2 条；当前来源 6 条）\n4. kven-folk（弱链接 2 条；当前来源 5 条）\n5. ladin-folk（弱链接 2 条；当前来源 5 条）\n6. lao-baci-phi（弱链接 2 条；当前来源 4 条）\n7. livonian-folk（弱链接 2 条；当前来源 5 条）\n8. makonde-traditional（弱链接 2 条；当前来源 7 条）\n9. maltese-festa（弱链接 2 条；当前来源 5 条）\n10. sammarinese-folk（弱链接 2 条；当前来源 6 条）\n11. theravada-buddhism（弱链接 2 条；当前来源 6 条）\n12. veps-folk（弱链接 2 条；当前来源 5 条）\n\n对每个选中 slug 给出 2–4 条新的、公开可核验的 URL，并附一句中文说明覆盖内容与可信度理由。来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。\n\n明确禁止：Britannica 地点（/place/）或泛概览页及其他 Britannica 泛概览、encyclopedia.com、everyculture.com、Wikipedia 或任何 wiki 概览页、101lasttribes／joshuaproject 等部族目录页、与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。硬性要求：URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或 SOURCES.md 已有 URL 重复；宁缺毋滥；只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n输出格式：\nslug:\n建议新增 URL（每行一条，附一句中文说明）：\n- <URL> — <说明>",
+  "prompt_constraints": [
+    "不因 C1–C38 曾处理过而排除卡片；遗留弱链接仍计数。",
+    "按弱链接数量降序、slug 字母序选择前 12 张。",
+    "禁止 Britannica 地点／泛概览、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页与离题泛泛报告。",
+    "只补来源，不改卡片正文、档位或仪式内容；URL、DOI、网页与 PDF 均须公开可核验。"
+  ],
+  "remaining_estimate": 79,
+  "source_map": "/tmp/nb-source-hunt-c39.txt"
+}

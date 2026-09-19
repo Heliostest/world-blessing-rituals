@@ -47,8 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Beja-people
-- https://kids.britannica.com/kids/article/Beja/626388
 - https://doi.org/10.1371/journal.pone.0253511
 - https://doi.org/10.37892/2686-8946-2022-3-2-368-388
 - https://cedejsudan.hypotheses.org/2791
+- https://doi.org/10.1080/13648470.2011.646945
+- https://doi.org/10.1075/sl.00003.van
+- https://doi.org/10.1080/00934690.2025.2479290

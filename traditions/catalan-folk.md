@@ -47,9 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Montserrat-monastery-Catalonia-Spain
-- https://www.britannica.com/art/castell
 - https://ich.unesco.org/en/RL/la-patum-de-berga-00156
 - https://ich.unesco.org/en/RL/human-towers-00364
 - https://patrimoni.gencat.cat/es/coleccion/la-patum
 - https://patrimoni.gencat.cat/es/coleccion/castells
+- https://ich.unesco.org/en/RL/patum-of-berga-00156
+- https://doi.org/10.1007/978-1-349-00400-3
+- https://doi.org/10.1080/16549716.2017.1355604

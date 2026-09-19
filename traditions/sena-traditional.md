@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Sena-people
-- https://www.britannica.com/place/Zambezi-River
-- https://www.britannica.com/place/Mozambique
+- https://dx.doi.org/10.5772/intechopen.105727
+- https://doi.org/10.3390/su13116478
+- https://doi.org/10.6092/issn.2785-0943/16685

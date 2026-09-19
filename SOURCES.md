@@ -3455,3 +3455,28 @@
 - https://doi.org/10.52980/revistaamazonaperuana.vi15.179
 - https://doi.org/10.3390/land8120182
 - https://journals.openedition.org/horizontes/4647
+
+## 增补传统（Notebook source hunt C24：塞尔库普—舒阿尔）
+
+- https://atlaskmns.ru/page/en/people_selcupy_modart.html
+- https://dx.doi.org/10.5772/intechopen.105727
+- https://doi.org/10.3390/su13116478
+- https://doi.org/10.6092/issn.2785-0943/16685
+- https://www.metmuseum.org/essays/senufo-arts-and-poro-initiation-in-northern-cote-divoire
+- https://www.metmuseum.org/art/collection/search/312223
+- https://www.gob.mx/inpi/articulos/ano-nuevo-comcaac-seri-cultura-y-tradicion-en-el-desierto-sonorense
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-16592015000100003
+- https://doi.org/10.1080/17531055.2012.669572
+- https://journals.openedition.org/hybrid/807
+- https://www.scielo.br/j/ra/a/qHzDLSdNrxfPKbtJv33C7hh/?format=html&lang=en&ilang=es
+- https://whc.unesco.org/en/list/120
+- https://doi.org/10.3390/rel11080396
+- https://doi.org/10.1016/j.annals.2020.103024
+- https://doi.org/10.1080/17531055.2019.1640505
+- https://ich.unesco.org/en/USL/kene-knowledge-and-aesthetics-of-the-shipibo-konibo-people-02107
+- https://dx.doi.org/10.1108/QMR-05-2023-0071
+- https://atlaskmns.ru/page/en/people_shorcy_spirit.html
+- https://atlaskmns.ru/page/en/people_shorcy_common.html
+- https://doi.org/10.3390/rel14040496
+- https://doi.org/10.3389/fclim.2026.1695925
+- https://doi.org/10.3390/plants7030067

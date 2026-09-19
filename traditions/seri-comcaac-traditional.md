@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Seri-people
-- https://www.britannica.com/place/Sonora
-- https://www.britannica.com/place/Gulf-of-California
+- https://www.gob.mx/inpi/articulos/ano-nuevo-comcaac-seri-cultura-y-tradicion-en-el-desierto-sonorense
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-16592015000100003

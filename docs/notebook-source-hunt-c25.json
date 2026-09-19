@@ -1,0 +1,208 @@
+{
+  "batch": "notebook-source-hunt-c25",
+  "cycle": 25,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 shuar-traditional 后按字母序续选，排除 C1–C24 已处理 slug 及已补强卡片；不以 4+ 来源卡填充，不用已良好卡片凑数",
+  "previous_cycles_slugs_processed": 287,
+  "slugs": [
+    "siassi-traditional",
+    "siona-traditional",
+    "sipakapense-traditional",
+    "siwai-traditional",
+    "somali-folk-islam",
+    "songhai-traditional",
+    "songye-traditional",
+    "soninke-traditional",
+    "soyot-traditional",
+    "spiti-traditional",
+    "sukuma-traditional",
+    "sulka-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "siassi-traditional",
+      "title": "西阿西传统信仰与休恩湾祈福（Siassi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture",
+        "https://www.britannica.com/place/Huon-Gulf"
+      ],
+      "rituals": [
+        "1. 航海与贸易伦理（概念层）",
+        "2. 展示与节庆（公开／敏感交界）",
+        "3. 基督教与丧礼（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "siona-traditional",
+      "title": "西奥纳传统信仰与雨林祈福（Siona）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Siona",
+        "https://www.britannica.com/place/Putumayo-River",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "rituals": [
+        "1. 河流—主人灵伦理（概念层）",
+        "2. 治疗中介（极高敏感，仅概念）",
+        "3. 基督教接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "sipakapense-traditional",
+      "title": "西帕卡彭塞玛雅民间天主教与祖灵祈福（Sipakapense）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Guatemala",
+        "https://www.britannica.com/topic/Maya-people",
+        "https://www.britannica.com/topic/Mayan-languages"
+      ],
+      "rituals": [
+        "1. 主保节与教堂礼仪（概念层）",
+        "2. 山灵与农事祈请（概念层）",
+        "3. 日师传统（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "siwai-traditional",
+      "title": "西瓦伊传统信仰与布干维尔祈福（Siwai）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Bougainville-Island",
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture"
+      ],
+      "rituals": [
+        "1. 土地与氏族伦理（敏感，仅概念）",
+        "2. 基督教与和解公开层（概念）",
+        "3. 入会／丧礼传统（极高敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "somali-folk-islam",
+      "title": "索马里民间伊斯兰与圣徒朝谒祈福（Somali）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Somali-people",
+        "https://www.hornheritage.org/sufi-shrines/",
+        "https://www.britannica.com/topic/Sufism"
+      ],
+      "rituals": [
+        "1. 日常五功与聚礼（概念层）",
+        "2. Siyaaro 圣陵朝谒与纪念（概念层）",
+        "3. 苏菲赞念集会（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "songhai-traditional",
+      "title": "桑海民间伊斯兰与宁日尔河灵力祈福（Songhai／Songhay）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.everyculture.com/wc/Japan-to-Mali/Songhay.html",
+        "https://www.britannica.com/topic/Songhai-empire",
+        "https://www.britannica.com/place/Niger-River"
+      ],
+      "rituals": [
+        "1. 伊斯兰节日与日常礼拜（概念层）",
+        "2. 口述英雄与雷电神叙事（概念层）",
+        "3. 传统灵力专家咨询（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "songye-traditional",
+      "title": "松格传统信仰与面具—祖灵祈福（Songye）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Songye",
+        "https://www.britannica.com/place/Democratic-Republic-of-the-Congo",
+        "https://www.britannica.com/topic/African-art"
+      ],
+      "rituals": [
+        "1. 面具—权力象征公共层（极高敏感，仅概念）",
+        "2. 祖灵敬礼（概念层）",
+        "3. 教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "soninke-traditional",
+      "title": "索宁克传统信仰与伊斯兰祈福（Soninke）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Soninke",
+        "https://www.britannica.com/topic/Ghana-historical-West-African-empire",
+        "https://www.britannica.com/place/Mali"
+      ],
+      "rituals": [
+        "1. 清真寺礼拜与伊斯兰节日（概念层）",
+        "2. 命名与生命礼仪（概念层）",
+        "3. 氏族—祖先伦理余绪（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "soyot-traditional",
+      "title": "索约特传统信仰与山灵—佛教祈福（Soyot）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.atlaskmns.ru/page/en/people_sojoty_spirit.html",
+        "https://joshuaproject.net/people_groups/19736/RS",
+        "https://brill.com/view/journals/inas/22/2/article-p237_6.xml"
+      ],
+      "rituals": [
+        "1. 圣山朝拜与山主敬礼（概念层）",
+        "2. 佛教寺院与圣地巡礼（概念层）",
+        "3. 牧猎伦理与「平衡」叙事（概念层）"
+      ]
+    },
+    {
+      "slug": "spiti-traditional",
+      "title": "斯皮蒂藏传与山谷祈福（Spiti）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Himachal-Pradesh",
+        "https://www.britannica.com/topic/Tibetan-Buddhism",
+        "https://www.britannica.com/place/India"
+      ],
+      "rituals": [
+        "1. 寺院供灯与转经（公开层）",
+        "2. 山谷节庆公开层（概念）",
+        "3. 密续与闭关（极高敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "sukuma-traditional",
+      "title": "苏库马传统信仰与祖灵—基督教祈福（Sukuma）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sukuma",
+        "https://www.britannica.com/place/Tanzania",
+        "https://www.britannica.com/place/Lake-Victoria"
+      ],
+      "rituals": [
+        "1. 祖先敬礼（概念层）",
+        "2. 教堂／清真寺公开崇拜（概念层）",
+        "3. 歌舞—会社公共文化层（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "sulka-traditional",
+      "title": "苏尔卡传统信仰与面具—祖先祈福（Sulka）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sulka",
+        "https://www.britannica.com/place/New-Britain-Island-Papua-New-Guinea",
+        "https://www.britannica.com/place/Papua-New-Guinea"
+      ],
+      "rituals": [
+        "1. 面具礼仪（极高敏感，仅概念）",
+        "2. 祖先敬礼（概念层）",
+        "3. 教堂崇拜（概念层）"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／朝圣页、博物馆／民俗档案、学术 DOI 或民族志。",
+    "不要采用 Britannica /place/、encyclopedia.com 总览、everyculture.com 总览或 Wikipedia 总览；不要改档位或写操演步骤。",
+    "如搜不到足够强来源，写明检索关键词，不要用弱来源填充。"
+  ]
+}

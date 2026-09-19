@@ -50,3 +50,5 @@
 - https://bdpi.cultura.gob.pe/pueblos/shipibo-konibo
 - https://americanindian.si.edu/exhibitions/infinityofnations/amazon/239608.html
 - https://digitalcommons.trinity.edu/tipiti/vol4/iss1/5/
+- https://ich.unesco.org/en/USL/kene-knowledge-and-aesthetics-of-the-shipibo-konibo-people-02107
+- https://dx.doi.org/10.1108/QMR-05-2023-0071

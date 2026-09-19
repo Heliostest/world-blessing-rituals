@@ -49,4 +49,6 @@
 
 - https://www.culturalsurvival.org/publications/cultural-survival-quarterly/fight-preserve-shor-culture
 - https://factsanddetails.com/world/cat55/sub350/item1919.html
-- https://www.britannica.com/place/Siberia
+- https://atlaskmns.ru/page/en/people_shorcy_spirit.html
+- https://atlaskmns.ru/page/en/people_shorcy_common.html
+- https://doi.org/10.3390/rel14040496

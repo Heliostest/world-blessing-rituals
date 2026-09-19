@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/selkup
 - https://atlaskmns.ru/page/en/people_selcupy_spirit.html
 - https://www.britannica.com/topic/Samoyed
+- https://atlaskmns.ru/page/en/people_selcupy_modart.html

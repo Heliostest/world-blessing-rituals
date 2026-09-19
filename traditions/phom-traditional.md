@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Nagaland
 - https://www.britannica.com/topic/Naga-people
-- https://www.britannica.com/place/Northeast-India
+- https://ipr.nagaland.gov.in/STORY-OF-PHOM-MONYI%C3%9C
+- https://ipr.nagaland.gov.in/phom
+- https://tourism.nagaland.gov.in/tribes/

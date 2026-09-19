@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Brazil
-- https://www.britannica.com/place/Amazon-Rainforest
 - https://www.britannica.com/topic/South-American-Indian
+- https://pib.socioambiental.org/en/Povo:Panar%C3%A1
+- https://www.scielo.br/j/vb/a/ddY63qsqfpCvdRzpqCkQkVd/?lang=en
+- https://dx.doi.org/10.1098/rstb.2012.0164

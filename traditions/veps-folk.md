@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Veps
-- https://www.britannica.com/place/Karelia
 - https://www.britannica.com/topic/Finno-Ugric-languages
+- https://www.folklore.ee/folklore/vol15/news.htm
+- https://dea.digar.ee/?a=d&d=JVethnolandfolklor202406.1.118&l=ru
+- https://ojs.utlib.ee/index.php/jeful/article/download/jeful.2015.6.1.09/10193/14973

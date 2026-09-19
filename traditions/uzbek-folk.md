@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Uzbekistan
 - https://ich.unesco.org/en/RL/cultural-space-of-boysun-district-00019
 - http://ich.uz/en/ich-of-uzbekistan/national-list/domain-4/390-boysun
+- https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336
+- https://uzbekistan.travel/en/o/navruz-and-spring-equinox/
+- https://doi.org/10.33619/2414-2948/64/44

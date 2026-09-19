@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Walser
-- https://www.britannica.com/place/Alps
-- https://www.britannica.com/place/Switzerland
+- https://library.oapen.org/bitstream/handle/20.500.12657/75910/978-88-6046-194-0.pdf
+- https://aggesellschaft.ch/wp-content/uploads/2023/05/App_Jahrbuch_2015.pdf

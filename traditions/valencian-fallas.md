@@ -49,4 +49,5 @@
 
 - https://ich.unesco.org/en/RL/valencia-fallas-festivity-00859
 - https://cultural.valencia.es/en/patrimonio-cultural/fallas-festival-unesco-world-heritage-site/
-- https://www.britannica.com/place/Valencia-Spain
+- https://ich.unesco.org/en/decisions/11.COM/10.B.30
+- https://ich.unesco.org/es/10b-lista-representativa-00891?include=slideshow_inc.php&id=00859&width=620&call=slideshow&mode=scroll

@@ -1,0 +1,238 @@
+{
+  "batch": "notebook-source-hunt-c12",
+  "cycle": 12,
+  "date": "2026-09-19",
+  "selection_rule": "C 级、现有来源 3–4 条（n≈3）；按字母序从 toraja 之后循环选择 12 张；排除 C1–C11 的 132 个 slug；不纳入已补强的 4-source 卡片。因 toraja 之后未处理的 n=3 卡不足，本批为未处理的 n=4 卡。",
+  "previous_cycles_slugs_processed": 132,
+  "slugs": [
+    "welsh-folk",
+    "wetu-telu-sasak",
+    "yazidi",
+    "albanian-folk",
+    "amazigh-berber",
+    "bai-benzhu",
+    "basque-folk",
+    "estonian-maausk",
+    "fulani-peul",
+    "greek-orthodox",
+    "hungarian-folk",
+    "kikuyu-ngai"
+  ],
+  "prompt": "请为下列 12 个祈福／祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C12）。目标：为仍然薄的 C 级卡片补充 2–4 条高质量、可公开核验的新参考来源。这里的“n≈3”按现有来源 3–4 条理解；由于 toraja 之后尚未处理的 n=3 卡已被 C1–C11 排除，本批采用未处理的 n=4 卡，绝不以已经补强过的 4-source 卡片凑数。\n\n按每个 slug 输出：\nslug:\n建议新增 URL（每行一条，附一句中文说明其覆盖内容与可信度理由）：\n- <URL> — <说明>\n\n来源优先级：\n1. UNESCO 非遗（ich.unesco.org）名录页、申报文件、优秀保护实践，以及各国国家级非遗名录官方页面；\n2. 与具体传统、节庆或朝圣直接相关的文化部、地方政府、教团／堂区、博物馆或官方节庆网站；\n3. 博物馆、大学、档案馆、科研机构页面（藏品页、特展、档案、学位论文库）；\n4. 可由 Crossref 核验、主题确切相关的同行评审论文或 DOI 图书章节（优先 doi.org / dx.doi.org）。\n\n明确禁止：Britannica 的地点（/place/）概览页与其他 Britannica 概览页；encyclopedia.com 与 everyculture.com 概览页；Wikipedia 或任何 wiki 概览页；101lasttribes、joshuaproject 一类部族目录页；与该传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。\n\n硬性要求：每条 URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL或仓库 SOURCES.md 已有 URL重复；每个 slug 给 2–4 条，宁缺毋滥，找不到合格来源时写“未找到”。不得改动卡片正文、档位与仪式内容，只补“## 参考来源”。\n\n---\n1. slug=welsh-folk（现有来源 4 条）\n标题: 威尔士民间祈福与节庆（Welsh Folk／Cymru）\n典型仪式名: 1. St Winefride's Well（Holywell）与 St David's Day（概念层）；2. Mari Lwyd 与 Pwnco 对歌（公开民俗层）；3. National Eisteddfod 与 Gorsedd 公开典礼（公共文化层）\n现有 URL（勿重复）:\n- https://museum.wales/blog/1187/Christmas-Traditions-The-Mari-Lwyd/\n- https://museum.wales/curatorial/social-cultural-history/online-collections/what-is-the-eisteddfod/\n- https://eisteddfod.wales/\n- https://eisteddfod.wales/festival/2025/programme/honouring-new-members-gorsedd-cymru\n\n2. slug=wetu-telu-sasak（现有来源 4 条）\n标题: 萨萨克韦图特卢／龙目岛地方伊斯兰传统（Sasak Wetu Telu）\n典型仪式名: 1. Pura Lingsar 与 Perang Topat（公开节庆层）；2. Segara Anak 供奉概念；Bayan 古清真寺（概念层）；3. 祖先礼仪（CONCEPT）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Sasak\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/sasak-0\n- https://doi.org/10.15575/jassr.v4i2.66\n- https://doi.org/10.14710/sabda.19.2.111-124\n\n3. slug=yazidi（现有来源 4 条）\n标题: 雅兹迪（Yazidi / Êzidî）\n典型仪式名: 1. Çarşema Sor（红星期三）新年命名与 Melek Taus 敬礼（概念层）；2. Lalish 365 油灯概念；结祈愿结（CONCEPT）；3. Qawwal 圣诗与 Peacock Sanjaq（概念层）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Yazidi\n- https://whc.unesco.org/en/tentativelists/6467/\n- https://referenceworks.brill.com/display/entries/EIRO/COM-1252.xml\n- https://www.bbc.com/travel/article/20230803-in-pictures-the-protectors-of-a-7000-year-old-faith\n\n4. slug=albanian-folk（现有来源 4 条）\n标题: 阿尔巴尼亚民间信仰与托莫尔山朝圣祈福（Albanian folk／Bektashi Tomorr）\n典型仪式名: 1. 托莫尔山贝克塔什朝圣（公共层；八月高峰）；2. 教堂／清真寺瞻礼与家庭祝福（公共层）；3. 民间护佑与口头祝福余绪（Dordolec 等，概念层）\n现有 URL（勿重复）:\n- https://www.britannica.com/place/Albania\n- https://www.britannica.com/topic/Bektashi\n- https://www.britannica.com/topic/Sufism\n- https://balkaninsight.com/2016/05/18/quarries-make-hellish-mess-of-albania-s-holy-mountain-05-16-2016/\n\n5. slug=amazigh-berber（现有来源 4 条）\n标题: 阿马齐格／柏柏尔（Amazigh / Berber）\n典型仪式名: 1. 圣徒陵寝朝拜与 *baraka* 求取；2. 求雨仪式（Taghonja／Anzar 概念）；3. 节庆舞蹈与社群祝福（Ahwach／Ahidous、Taskiwin；Moussem 场合）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Berber\n- https://www.britannica.com/topic/barakah\n- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/berbers\n- https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256\n\n6. slug=bai-benzhu（现有来源 4 条）\n标题: 白族本主信仰（Bai Benzhu）\n典型仪式名: 1. 本主庙日常敬拜（公开民俗层）；2. 庙会巡游与绕三灵等节庆（接本主／送本主；农历四月，公共文化层）；3. 火把节等岁时焰火象征（公共民俗层）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Bai-people\n- https://kids.britannica.com/scholars/article/Bai/58000\n- http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm\n- https://www.yunnanexplorer.com/festivals/benzhu/\n\n7. slug=basque-folk（现有来源 4 条）\n标题: 巴斯克民间信仰与玛丽女神传说（Basque folk／Mari）\n典型仪式名: 1. 山洞穴居传说中的敬畏规矩（概念层）；2. 天气与农牧相关的民俗祈请（概念层）；3. 节庆、舞蹈与地方文化记忆（概念层）\n现有 URL（勿重复）:\n- https://www.britannica.com/summary/Basque\n- https://www.britannica.com/topic/Basque-language\n- https://kids.britannica.com/students/article/Basque/273123\n- https://buber.net/Basque/2020/05/17/basque-fact-of-the-week-mari-the-basque-mother-earth/\n\n8. slug=estonian-maausk（现有来源 4 条）\n标题: 爱沙尼亚地信仰／马阿乌斯克与塔阿拉信仰（Estonian Maausk／Taaraism）\n典型仪式名: 1. Hiis 圣林与彩带敬奉（概念层）；2. Hingedeaeg 亡灵季、桑拿净化与岁时民俗（民俗层）；3. Maavalla Koda 公共组织与文化教育（公共文化层）\n现有 URL（勿重复）:\n- https://www.maavald.ee/en/about-maavalla-koda\n- https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions\n- https://www.britannica.com/topic/Finno-Ugric-religion\n- https://www.britannica.com/topic/sacred-grove\n\n9. slug=fulani-peul（现有来源 4 条）\n标题: 富拉尼／颇尔牧养祝福传统（Fulani／Peul／Fulɓe）\n典型仪式名: 1. 尼日尔内陆三角洲渡河与牧群选美（公开遗产层）；2. 牧养伦理与 pulaaku（概念层）；3. Tabaski 等高阶伊斯兰节日与牧民祝福观（概念层）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Fulani\n- https://ich.unesco.org/en/RL/cultural-space-of-the-yaaral-and-degal-00132\n- https://hdl.handle.net/1808/5816\n- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/fulani\n\n10. slug=greek-orthodox（现有来源 4 条）\n标题: 希腊正教祈福与圣水礼仪（Greek Orthodox）\n典型仪式名: 1. 主显节大祝圣水／Agiasmos 与 Cross Diving（礼仪—公共层，概念）；2. 家屋祝福（house blessing）（牧灵层，概念）；3. 小祝圣水与日常堂区祈福（日常礼仪层，概念）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Epiphany\n- https://www.greeknewsagenda.gr/theophania/\n- https://www.goarch.org/-/the-order-for-the-lesser-sanctification-of-the-water\n- https://www.goarch.org/-/feast-of-the-holy-theophany-of-our-lord-god-and-savior-jesus-christ\n\n11. slug=hungarian-folk（现有来源 4 条）\n标题: 匈牙利民间天主教与朝圣祈福（Hungarian Folk／Magyar népi vallásosság）\n典型仪式名: 1. Szentkút 全国朝圣地巡礼（公开朝圣层）；2. Csíksomlyó 圣母朝圣与圣王—新粮节庆（历史文化／公共层）；3. 堂区岁时与家庭还愿（日常民间层）\n现有 URL（勿重复）:\n- https://szentkut.hu/en/history-of-the-shrine\n- https://szentkut.hu/en\n- https://www.britannica.com/place/Hungary\n- https://real.mtak.hu/157720/1/MKI_kingsandsaints_B5_012.pdf\n\n12. slug=kikuyu-ngai（现有来源 4 条）\n标题: 基库尤传统宗教与恩盖祈请（Gĩkũyũ／Ngai）\n典型仪式名: 1. 面向肯尼亚山的社群祈请／Kũhoya Ngai（概念层）；2. Mũgumo 圣树下羔羊献礼（CONCEPT ONLY）；3. 祖先共融与家庭纪念（日常概念层）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Kikuyu\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/gikuyu\n- https://www.cambridge.org/core/journals/africa/article/abs/kikuyu-religion-ancestorworship-and-sacrificial-practices/6CFD176DD79B1911B0E3F152DDBA59BF\n- https://doi.org/10.1080/13696810802159339\n",
+  "cards": [
+    {
+      "slug": "welsh-folk",
+      "title": "威尔士民间祈福与节庆（Welsh Folk／Cymru）",
+      "n": 4,
+      "current_urls": [
+        "https://museum.wales/blog/1187/Christmas-Traditions-The-Mari-Lwyd/",
+        "https://museum.wales/curatorial/social-cultural-history/online-collections/what-is-the-eisteddfod/",
+        "https://eisteddfod.wales/",
+        "https://eisteddfod.wales/festival/2025/programme/honouring-new-members-gorsedd-cymru"
+      ],
+      "rituals": [
+        "1. St Winefride's Well（Holywell）与 St David's Day（概念层）",
+        "2. Mari Lwyd 与 Pwnco 对歌（公开民俗层）",
+        "3. National Eisteddfod 与 Gorsedd 公开典礼（公共文化层）"
+      ]
+    },
+    {
+      "slug": "wetu-telu-sasak",
+      "title": "萨萨克韦图特卢／龙目岛地方伊斯兰传统（Sasak Wetu Telu）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sasak",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/sasak-0",
+        "https://doi.org/10.15575/jassr.v4i2.66",
+        "https://doi.org/10.14710/sabda.19.2.111-124"
+      ],
+      "rituals": [
+        "1. Pura Lingsar 与 Perang Topat（公开节庆层）",
+        "2. Segara Anak 供奉概念；Bayan 古清真寺（概念层）",
+        "3. 祖先礼仪（CONCEPT）"
+      ]
+    },
+    {
+      "slug": "yazidi",
+      "title": "雅兹迪（Yazidi / Êzidî）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Yazidi",
+        "https://whc.unesco.org/en/tentativelists/6467/",
+        "https://referenceworks.brill.com/display/entries/EIRO/COM-1252.xml",
+        "https://www.bbc.com/travel/article/20230803-in-pictures-the-protectors-of-a-7000-year-old-faith"
+      ],
+      "rituals": [
+        "1. Çarşema Sor（红星期三）新年命名与 Melek Taus 敬礼（概念层）",
+        "2. Lalish 365 油灯概念；结祈愿结（CONCEPT）",
+        "3. Qawwal 圣诗与 Peacock Sanjaq（概念层）"
+      ]
+    },
+    {
+      "slug": "albanian-folk",
+      "title": "阿尔巴尼亚民间信仰与托莫尔山朝圣祈福（Albanian folk／Bektashi Tomorr）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/place/Albania",
+        "https://www.britannica.com/topic/Bektashi",
+        "https://www.britannica.com/topic/Sufism",
+        "https://balkaninsight.com/2016/05/18/quarries-make-hellish-mess-of-albania-s-holy-mountain-05-16-2016/"
+      ],
+      "rituals": [
+        "1. 托莫尔山贝克塔什朝圣（公共层；八月高峰）",
+        "2. 教堂／清真寺瞻礼与家庭祝福（公共层）",
+        "3. 民间护佑与口头祝福余绪（Dordolec 等，概念层）"
+      ]
+    },
+    {
+      "slug": "amazigh-berber",
+      "title": "阿马齐格／柏柏尔（Amazigh / Berber）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Berber",
+        "https://www.britannica.com/topic/barakah",
+        "https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/berbers",
+        "https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256"
+      ],
+      "rituals": [
+        "1. 圣徒陵寝朝拜与 *baraka* 求取",
+        "2. 求雨仪式（Taghonja／Anzar 概念）",
+        "3. 节庆舞蹈与社群祝福（Ahwach／Ahidous、Taskiwin；Moussem 场合）"
+      ]
+    },
+    {
+      "slug": "bai-benzhu",
+      "title": "白族本主信仰（Bai Benzhu）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Bai-people",
+        "https://kids.britannica.com/scholars/article/Bai/58000",
+        "http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm",
+        "https://www.yunnanexplorer.com/festivals/benzhu/"
+      ],
+      "rituals": [
+        "1. 本主庙日常敬拜（公开民俗层）",
+        "2. 庙会巡游与绕三灵等节庆（接本主／送本主；农历四月，公共文化层）",
+        "3. 火把节等岁时焰火象征（公共民俗层）"
+      ]
+    },
+    {
+      "slug": "basque-folk",
+      "title": "巴斯克民间信仰与玛丽女神传说（Basque folk／Mari）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/summary/Basque",
+        "https://www.britannica.com/topic/Basque-language",
+        "https://kids.britannica.com/students/article/Basque/273123",
+        "https://buber.net/Basque/2020/05/17/basque-fact-of-the-week-mari-the-basque-mother-earth/"
+      ],
+      "rituals": [
+        "1. 山洞穴居传说中的敬畏规矩（概念层）",
+        "2. 天气与农牧相关的民俗祈请（概念层）",
+        "3. 节庆、舞蹈与地方文化记忆（概念层）"
+      ]
+    },
+    {
+      "slug": "estonian-maausk",
+      "title": "爱沙尼亚地信仰／马阿乌斯克与塔阿拉信仰（Estonian Maausk／Taaraism）",
+      "n": 4,
+      "current_urls": [
+        "https://www.maavald.ee/en/about-maavalla-koda",
+        "https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions",
+        "https://www.britannica.com/topic/Finno-Ugric-religion",
+        "https://www.britannica.com/topic/sacred-grove"
+      ],
+      "rituals": [
+        "1. Hiis 圣林与彩带敬奉（概念层）",
+        "2. Hingedeaeg 亡灵季、桑拿净化与岁时民俗（民俗层）",
+        "3. Maavalla Koda 公共组织与文化教育（公共文化层）"
+      ]
+    },
+    {
+      "slug": "fulani-peul",
+      "title": "富拉尼／颇尔牧养祝福传统（Fulani／Peul／Fulɓe）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Fulani",
+        "https://ich.unesco.org/en/RL/cultural-space-of-the-yaaral-and-degal-00132",
+        "https://hdl.handle.net/1808/5816",
+        "https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/fulani"
+      ],
+      "rituals": [
+        "1. 尼日尔内陆三角洲渡河与牧群选美（公开遗产层）",
+        "2. 牧养伦理与 pulaaku（概念层）",
+        "3. Tabaski 等高阶伊斯兰节日与牧民祝福观（概念层）"
+      ]
+    },
+    {
+      "slug": "greek-orthodox",
+      "title": "希腊正教祈福与圣水礼仪（Greek Orthodox）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Epiphany",
+        "https://www.greeknewsagenda.gr/theophania/",
+        "https://www.goarch.org/-/the-order-for-the-lesser-sanctification-of-the-water",
+        "https://www.goarch.org/-/feast-of-the-holy-theophany-of-our-lord-god-and-savior-jesus-christ"
+      ],
+      "rituals": [
+        "1. 主显节大祝圣水／Agiasmos 与 Cross Diving（礼仪—公共层，概念）",
+        "2. 家屋祝福（house blessing）（牧灵层，概念）",
+        "3. 小祝圣水与日常堂区祈福（日常礼仪层，概念）"
+      ]
+    },
+    {
+      "slug": "hungarian-folk",
+      "title": "匈牙利民间天主教与朝圣祈福（Hungarian Folk／Magyar népi vallásosság）",
+      "n": 4,
+      "current_urls": [
+        "https://szentkut.hu/en/history-of-the-shrine",
+        "https://szentkut.hu/en",
+        "https://www.britannica.com/place/Hungary",
+        "https://real.mtak.hu/157720/1/MKI_kingsandsaints_B5_012.pdf"
+      ],
+      "rituals": [
+        "1. Szentkút 全国朝圣地巡礼（公开朝圣层）",
+        "2. Csíksomlyó 圣母朝圣与圣王—新粮节庆（历史文化／公共层）",
+        "3. 堂区岁时与家庭还愿（日常民间层）"
+      ]
+    },
+    {
+      "slug": "kikuyu-ngai",
+      "title": "基库尤传统宗教与恩盖祈请（Gĩkũyũ／Ngai）",
+      "n": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Kikuyu",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/gikuyu",
+        "https://www.cambridge.org/core/journals/africa/article/abs/kikuyu-religion-ancestorworship-and-sacrificial-practices/6CFD176DD79B1911B0E3F152DDBA59BF",
+        "https://doi.org/10.1080/13696810802159339"
+      ],
+      "rituals": [
+        "1. 面向肯尼亚山的社群祈请／Kũhoya Ngai（概念层）",
+        "2. Mũgumo 圣树下羔羊献礼（CONCEPT ONLY）",
+        "3. 祖先共融与家庭纪念（日常概念层）"
+      ]
+    }
+  ],
+  "constraints": {
+    "prioritize": [
+      "UNESCO ICH（ich.unesco.org）",
+      "具体节庆／朝圣／教团／文化部／博物馆官方页面",
+      "大学／档案馆／科研机构",
+      "Crossref 可核验 DOI"
+    ],
+    "forbidden": [
+      "Britannica 地点页（/place/）及其他概览页",
+      "encyclopedia.com 与 everyculture.com 概览页",
+      "Wikipedia/wiki 概览页",
+      "101lasttribes、joshuaproject 等部族目录页",
+      "与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页"
+    ],
+    "requirements": [
+      "每个 slug 给出 2–4 条新 URL",
+      "网页 HTTP 200、PDF 关键词、DOI Crossref 主题核验",
+      "不得重复卡片或 SOURCES.md URL",
+      "宁缺毋滥；无合格来源写未找到",
+      "只补 ## 参考来源，不改卡片正文、档位与仪式内容"
+    ]
+  }
+}

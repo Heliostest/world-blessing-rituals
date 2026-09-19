@@ -47,6 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Rotuma
 - http://www.rotuma.net/os/Publications/Island_Legacy/Chapter06.pdf
-- https://www.britannica.com/place/Fiji-republic-Pacific-Ocean
+
+- http://www.hawaii.edu/oceanic/rotuma/os/ceremonies/mamasa.htm
+- http://www.hawaii.edu/oceanic/rotuma/os/ceremonies/spirituality.htm
+- http://www.hawaii.edu/oceanic/rotuma/os/ceremonies/preface.htm
+- https://doi.org/10.1080/00223344.2018.1512369

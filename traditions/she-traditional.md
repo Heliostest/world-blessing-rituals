@@ -49,4 +49,8 @@
 
 - https://www.britannica.com/topic/She-people
 - https://th.china-embassy.gov.cn/eng/ztbd/AboutChina/Ethnic/200011/t20001115_1432841.htm
-- https://www.britannica.com/place/Fujian
+
+- https://www.ihchina.cn/project_details/15094/
+- http://wlt.fujian.gov.cn/hdjl/wdxd/202305/t20230512_6168252.htm
+- http://www.chongyi.gov.cn/cyxrmzf/c103589/202008/cabb5c36cb02408884cb0ab4b1d36df2.shtml
+- http://www.zc.gov.cn/gk/zdly/whggwgk/content/post_10977181.html

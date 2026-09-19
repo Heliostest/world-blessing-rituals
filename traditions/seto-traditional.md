@@ -49,4 +49,7 @@
 
 - https://ich.unesco.org/en/RL/seto-leelo-seto-polyphonic-singing-tradition-00175
 - https://www.nationalgeographic.com/culture/article/setomaa-culture-estonia-russia-photographs
-- https://www.britannica.com/place/Estonia
+
+- https://ich.unesco.org/en/RL/seto-leelo-seto-polyphonic-singing-tradition-00173
+- https://visitestonia.com/en/what-to-do/five-reasons-to-spend-a-long-weekend-in-setomaa
+- https://doi.org/10.15826/csp.2025.9.1.318

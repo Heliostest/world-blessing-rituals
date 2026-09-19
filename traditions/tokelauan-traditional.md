@@ -47,6 +47,9 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Oceania/Tokelau-Religion-and-Expressive-Culture.html
 - https://nzetc.victoria.ac.nz/tm/scholarly/tei-MacToke-t1-body-d1-d4-d2.html
-- https://www.britannica.com/place/Polynesia
+
+- https://www.tokelau.org.nz/About+Us/Fishing+and+Canoes.html
+- https://www.tokelau.org.nz/About+Us/Government/Self+Determination+Package/Constitution+of+Tokelau.html
+- https://www.tokelau.org.nz/Bulletin/July+2017/EnvDay-NN.html
+- https://dx.doi.org/10.3889/fmars.2021.684303

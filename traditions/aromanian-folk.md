@@ -47,7 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Vlach
-- https://www.britannica.com/topic/Eastern-Orthodoxy
 - https://ich.unesco.org/en/RL/august-15th-dekapentavgoustos-festivities-in-two-highland-communities-of-northern-greece-tranos-choros-grand-dance-in-vlasti-and-syrrako-festival-01726
 - https://doi.org/10.59277/ICSUGH.SINCAI.28.15
+- https://doi.org/10.1080/01472520802402739
+- https://doi.org/10.1080/01426397.2016.1229461
+- https://ayla.culture.gr/en/

@@ -47,8 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Church-of-Cyprus
-- https://www.britannica.com/topic/Eastern-Orthodoxy
 - https://www.visitcyprus.com/discover-cyprus/culture/sites-and-monuments/kykkos-monastery/
 - https://www.visitcyprus.com/discover-cyprus/culture/museums-galleries/museum-of-kykkos-monastery/
 - https://www.unesco.org.cy/News-PROSKLISI__Eortastiki_ekdilosi_gia_tin_eggrafi_tis_PSaltikis_technis_ston_Antiprosopeytiko_Katalogo_Aylis_Politistikis_Klironomias_tis_UNESCO,4226,EN
+- https://ich.unesco.org/en/RL/tsiattista-poetic-duelling-00536
+- https://ich.unesco.org/en/RL/lefkara-laces-or-lefkaritika-00255
+- https://www.unesco.org.cy/
+- https://doi.org/10.1353/mgs.2018.0004

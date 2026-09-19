@@ -49,8 +49,10 @@
 
 - https://www.maavald.ee/en/about-maavalla-koda
 - https://www.maavald.ee/en/religion-and-culture/436-old-estonian-religions
-- https://www.britannica.com/topic/Finno-Ugric-religion
-- https://www.britannica.com/topic/sacred-grove
 - https://www.maavald.ee/maausk
 - https://blog.erm.ee/?p=11330
 - https://www.maavald.ee/en/religion-and-culture/382-native-estonian-calendar
+- https://ich.unesco.org/en/RL/smoke-sauna-tradition-in-vromaa-00951
+- https://www.maavald.ee/
+- https://www.kirmus.ee/en
+- https://doi.org/10.7592/FEJF2014.58.jonuks

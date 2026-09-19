@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Russia-Eurasia-China/Crimean-Tatars-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/topic/Tatar
 - https://www.tataria.online/post/land-and-faith-what-is-the-specificity-of-crimean-tatar-islam
 - https://dx.doi.org/10.4000/assr.18403
+- https://ich.unesco.org/en/RL/ornek-a-crimean-tatar-ornament-and-knowledge-about-it-01601
+- https://handvorec.ru/en/
+- https://doi.org/10.1017/nps.2020.92
+- https://doi.org/10.1080/09668136.2015.1124851

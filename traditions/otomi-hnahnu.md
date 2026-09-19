@@ -50,6 +50,11 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/otomi-religion
 - https://www.revistas.inah.gob.mx/index.php/diariodecampo/en/article/view/17213
 - https://digitalrepository.unm.edu/el_centro_cbrli/2
+
+- https://www.gob.mx/cultura/prensa/la-vision-otomi-de-la-vision-otomi-de-la-pandemia-se-expone-en-el-museo-nacional-de-las-culturas-populares
+
+- https://www.revistas.inah.gob.mx/index.php/narrativasantropologicas/en/article/view/21417
+
+- https://catalogo.inpi.gob.mx/otomi/

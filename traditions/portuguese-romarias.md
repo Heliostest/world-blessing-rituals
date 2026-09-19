@@ -53,3 +53,11 @@
 - https://www.britannica.com/event/Our-Lady-of-Fatima
 - https://www.fatima.pt/en/pages/organizing-a-pilgrimage-to-the-shrine
 - https://folkways-media.si.edu/docs/folkways/artwork/UNES08317.pdf
+
+- https://www.fatima.pt/pt/news/d-jose-manuel-imbamba-preside-a-peregrinacao-internacional-aniversaria-de-setembro
+
+- https://www.patrimoniocultural.gov.pt/2025/02/patrimonio-cultural-ip-inscreve-romaria-de-s-bento-do-cando-no-inventario-nacional-do-patrimonio-cultural-imaterial/
+
+- https://www.patrimoniocultural.gov.pt/2026/06/vela-votiva-de-santa-marta-de-portuzelo-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/
+
+- https://matrizpci.patrimoniocultural.gov.pt/InventarioNacional/DetalheFicha/640?dirPesq=3

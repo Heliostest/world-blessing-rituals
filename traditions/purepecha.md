@@ -48,5 +48,10 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tarasco
-- https://www.everyculture.com/Middle-America-Caribbean/Tarascans-Religion-and-Expressive-Culture.html
 - https://www.latimes.com/archives/la-xpm-1995-09-02-me-41473-story.html
+
+- https://ich.unesco.org/en/RL/pirekua-traditional-song-of-the-p-urhepecha-00398
+
+- https://www.gob.mx/sectur/articulos/plan-michoacan-presentan-en-sectur-la-edicion-de-la-k-uinchekua-2026-una-celebracion-de-identidad-purepecha
+
+- https://cultura.michoacan.gob.mx/noticias/danza-de-las-palmeras-un-legado-de-tradicion-purepecha-en-la-kuinchekua/

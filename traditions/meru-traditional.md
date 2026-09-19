@@ -49,6 +49,11 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/places/africa/kenyan-political-geography/meru
 - https://meru.go.ke/religion-culture/
 - http://www.bluegecko.org/kenya/tribes/meru/beliefs.htm
+
+- https://doi.org/10.4000/africanistes.228
+
+- https://doi.org/10.4000/books.africae.3432
+
+- https://doi.org/10.1080/17531055.2014.984828

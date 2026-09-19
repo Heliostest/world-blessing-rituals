@@ -53,3 +53,9 @@
 - https://www.polskieradio.pl/395/7784/artykul/3669724,poles-flock-to-churches-for-traditional-easter-food-blessing
 - https://www.vaticannews.va/en/world/news/2026-09/from-grain-to-bread-pope-reflects-on-poland-s-harvest-tradition.html
 - https://www.osvnews.com/a-basket-filled-with-faith-eastern-europe-easter-tradition-explained/
+
+- https://ich.unesco.org/en/RL/flower-carpets-tradition-for-corpus-christi-processions-01743
+
+- https://news.jasnagora.pl/aktualno%C3%B3ci/trwaj%C4%85-jasnog%C3%B3rskie-do%C5%BCynki-dzi%C4%99kczynienie-modlitw%C4%85-i-wie%C5%84cem-%C5%BCniwnym-utkane/
+
+- https://news.jasnagora.pl/aktualno%C3%B3ci-2026/drugi-szczyt-pielgrzymkowy-na-imieniny-do-maryi/

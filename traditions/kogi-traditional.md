@@ -46,7 +46,9 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://ich.unesco.org/en/RL/ancestral-system-of-knowledge-of-the-four-indigenous-peoples-arhuaco-kankuamo-kogui-and-wiwa-of-the-sierra-nevada-de-santa-marta-01886
 - https://ich.unesco.org/en/decisions/17.COM/7.B.3
 - https://www.culturalsurvival.org/publications/cultural-survival-quarterly/kogi-urgent-call-guardians-heart-world
+- https://publicaciones.icanh.gov.co/index.php/picanh/catalog/book/256
+- https://revistas.icanh.gov.co/index.php/rca/article/view/1670
+- https://www.banrepcultural.org/multimedia/conferencia-el-rio-rancheria-y-sus-guardianes-oficios-y-vocaciones-ancestrales

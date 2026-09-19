@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Kissi
-- https://www.britannica.com/place/Guinea
-- https://www.britannica.com/place/Liberia
+- https://www.metmuseum.org/essays/nomoli-pomdo-stone-figures
+- https://www.metmuseum.org/art/collection/search/310813
+- https://dx.doi.org/10.4000/aaa.2753

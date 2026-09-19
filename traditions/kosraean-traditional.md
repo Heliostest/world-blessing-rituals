@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://doi.org/10.21313/hawaii/9780824832032.003.0005
 - https://ich.unesco.org/en/decisions/16.COM/8.A.4
 - https://doi.org/10.1176/appi.ps.202100327
+- https://doi.org/10.1093/pnasnexus/pgae399

@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Korowai
-- https://www.britannica.com/place/Papua
-- https://www.britannica.com/place/New-Guinea
+- https://doi.org/10.4000/actesbranly.669
+- https://doi.org/10.29164/16feasting
+- https://doi.org/10.1525/california/9780520256859.003.0006

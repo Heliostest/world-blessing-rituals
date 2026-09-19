@@ -3040,3 +3040,37 @@
 - https://www.maavald.ee/en/religion-and-culture/382-native-estonian-calendar
 - https://www.maavald.ee/maausk
 - https://www.stwinefrideswell.org.uk/
+
+## 增补传统（Notebook source hunt C13：金瑙尔—库纳马）
+
+- https://doi.org/10.1017/s1356186324000518
+- https://doi.org/10.1093/pnasnexus/pgae399
+- https://doi.org/10.1108/DPM-06-2018-0182
+- https://doi.org/10.1525/california/9780520256859.003.0006
+- https://doi.org/10.15405/epsbs.2022.12.61
+- https://doi.org/10.21690/foge.2019.62.4p
+- https://doi.org/10.29164/16feasting
+- https://doi.org/10.3390/rel12111021
+- https://doi.org/10.4000/actesbranly.669
+- https://doi.org/10.4000/books.cfee.1197
+- https://doi.org/10.4000/cy.33
+- https://doi.org/10.4000/terrain.22467
+- https://dx.doi.org/10.4000/aaa.2753
+- https://ehrafworldcultures.yale.edu/cultures/ry04/summary
+- https://ich.unesco.org/doc/src/44470-EN.pdf
+- https://ipr.nagaland.gov.in/konyak
+- https://kulludussehra.hp.gov.in/devtas-of-sainj/ananu-mahabeer/
+- https://nagaland.gov.in/people-culture
+- https://nopr.niscpr.res.in/handle/123456789/64280
+- https://ojs.utlib.ee/index.php/JEF/article/download/22584/17129
+- https://publicaciones.icanh.gov.co/index.php/picanh/catalog/book/256
+- https://revistas.icanh.gov.co/index.php/rca/article/view/1670
+- https://tourism.nagaland.gov.in/tribes/
+- https://www.banrepcultural.org/multimedia/conferencia-el-rio-rancheria-y-sus-guardianes-oficios-y-vocaciones-ancestrales
+- https://www.folklore.ee/folklore/vol30/limerov.pdf
+- https://www.folklore.ee/folklore/vol76/limerov.pdf
+- https://www.metmuseum.org/art/collection/search/310813
+- https://www.metmuseum.org/essays/nomoli-pomdo-stone-figures
+- https://www.scielo.br/j/mana/a/bqC4yd4XTwSf6vpk58cqBvf/abstract/?lang=en
+- https://www.scielo.br/j/mana/a/wWFsdqD7jwrFQtVBZCht6Wk/?lang=pt
+- https://www.scielo.br/j/vb/a/43GvpdD7Zd996zvDGYKMYns/?lang=en

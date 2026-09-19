@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Himachal-Pradesh
-- https://www.britannica.com/place/India
 - https://www.britannica.com/topic/Hinduism
+- https://nopr.niscpr.res.in/handle/123456789/64280
+- https://kulludussehra.hp.gov.in/devtas-of-sainj/ananu-mahabeer/
+- https://doi.org/10.3390/rel12111021

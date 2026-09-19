@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/komi-religion
-- https://www.everyculture.com/Russia-Eurasia-China/Komi-Religion-and-Expressive-Culture.html
-- https://en.wikipedia.org/wiki/Komi_mythology
+- https://www.folklore.ee/folklore/vol76/limerov.pdf
+- https://www.folklore.ee/folklore/vol30/limerov.pdf
+- https://ojs.utlib.ee/index.php/JEF/article/download/22584/17129

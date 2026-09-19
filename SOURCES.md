@@ -3831,3 +3831,36 @@
 - https://whc.unesco.org/en/list/824
 - https://www.svenskakyrkan.se/default.aspx?id=2946221
 - https://www.svenskakyrkan.se/filer/587615/Motion%202025%20103%20Inkludera%20laestadianska%20v%C3%A4ckelser%C3%B6relsen%20i%20f%C3%B6rsoningsprocessen.pdf
+
+
+## 增补传统（Notebook source hunt C35：斯拉夫—切尔克斯）
+
+- https://doi.org/10.3390/arts12020080
+- https://brill.com/display/book/9789004688810/BP000013.xml
+- https://ich.unesco.org/en/RL/skofja-loka-passion-play-01203
+- https://ich.unesco.org/en/RL/door-to-door-rounds-of-kurenti-00177
+- https://isn2.zrc-sazu.si/en/publikacije/od-ajda-do-zlatoroga-1
+- https://ojs.zrc-sazu.si/traditiones/article/download/13544/11891/38457
+- https://www.domowina.de/en/domowina/members/regional-members/regional-association-jan-arnost-smoler/regional-highlights/customs/
+- https://serbski-institut.de/
+- https://brill.com/display/book/edcoll/9789004352841/B9789004352841_009.xml
+- https://doi.org/10.1017/CBO9781139839082
+- https://doi.org/10.30829/juspi.v9i1.22448
+- https://dx.doi.org/10.24127/gdn.v10i1.2775
+- https://doi.org/10.1093/afraf/adag004
+- https://doi.org/10.3390/ijerph19159526
+- https://doi.org/10.3917/kart.four.2005.01.0501
+- https://brill.com/view/journals/ic/24/1/article-p38_4.xml
+- https://doi.org/10.1080/0966369X.2021.1873744
+- https://doi.org/10.1093/heapol/czag009
+- https://patrimonioculturale.regione.emilia-romagna.it/novita/notizie/2025/patrimonio-unesco-su-pater
+- https://notizie.regione.emilia-romagna.it/comunicati/2023/luglio/cultura-201cvai-liscio201d-l2019emilia-romagna-fa-squadra-per-valorizzare-una-delle-sue-piu-importanti-espressioni-e-traditions-popolari-online-il-sito-www-vailiscio-it-per-favorire-la-condivisione-e-la-raccolta-di-notizie-video-fotografie-documenti-e
+- http://rivista.ibc.regione.emilia-romagna.it/xw-201301/xw-201301-a0001
+- https://notizie.regione.emilia-romagna.it/comunicati/2026/cultura-il-liscio-dellemilia-romagna-muove-i-primi-passi-verso-il-riconoscimento-unesco-avviato-in-regione-il-percorso-condiviso-volto-a-promuovere-la-proposta-di-candidatura-a-patrimonio-immateriale-lassessora-allegni-espressione-viva-dellidentita
+- https://www.cambridge.org/core/books/cambridge-history-of-religions-in-the-ancient-world/celtic-religion-in-western-and-central-europe/02590D10A0BB7E647CFC95F25C00261A
+- https://dx.doi.org/10.30674/scripta.67183
+- https://daily.jstor.org/from-samhain-to-halloween/
+- https://daily.jstor.org/how-irish-holidays-blend-catholic-and-pagan-traditions/
+- https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087
+- https://doi.org/10.15405/epsbs.2021.11.87
+- https://www.europeanproceedings.com/article/10.15405/epsbs.2021.11.87

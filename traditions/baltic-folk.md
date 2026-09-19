@@ -52,8 +52,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Baltic-religion
-- https://www.britannica.com/topic/gabija
-- https://www.britannica.com/topic/pirtizas
 - https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013
 - https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf
+- https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087

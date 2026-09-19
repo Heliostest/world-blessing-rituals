@@ -47,7 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Slovenia
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://ich.unesco.org/en/RL/door-to-door-rounds-of-kurenti-00177
-- https://www.britannica.com/place/Alps
+- https://ich.unesco.org/en/RL/skofja-loka-passion-play-01203
+- https://isn2.zrc-sazu.si/en/publikacije/od-ajda-do-zlatoroga-1
+- https://ojs.zrc-sazu.si/traditiones/article/download/13544/11891/38457

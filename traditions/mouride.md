@@ -49,7 +49,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Muridiyyah
 - https://berkleycenter.georgetown.edu/publications/the-mouride-sufi-order
 - https://doi.org/10.1093/oxfordjournals.afraf.a008007
-- https://www.britannica.com/place/Touba
+- https://doi.org/10.1093/afraf/adag004
+- https://doi.org/10.3390/ijerph19159526
+- https://doi.org/10.3917/kart.four.2005.01.0501

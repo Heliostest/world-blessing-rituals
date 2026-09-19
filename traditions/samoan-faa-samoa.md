@@ -49,7 +49,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Samoa-island-nation-Pacific-Ocean/Cultural-life
 - https://ich.unesco.org/en/RL/ie-samoa-fine-mat-and-its-cultural-value-01499
 - https://americansamoa.noaa.gov/learn/faa-samoa.html
 - https://culturalatlas.sbs.com.au/samoan-culture/samoan-culture-core-concepts
+- https://doi.org/10.1093/heapol/czag009

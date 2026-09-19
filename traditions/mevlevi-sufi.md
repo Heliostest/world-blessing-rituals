@@ -50,6 +50,6 @@
 ## 参考来源
 
 - https://ich.unesco.org/en/RL/mevlevi-sema-ceremony-00100
-- https://www.britannica.com/topic/Mawlawiyah
-- https://www.britannica.com/topic/Islamic-arts/Dervish-dancing
 - https://yakegm.ktb.gov.tr/TR-345100/mevlevi-sema-ceremony.html
+- https://brill.com/display/book/edcoll/9789004352841/B9789004352841_009.xml
+- https://doi.org/10.1017/CBO9781139839082

@@ -47,6 +47,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Arunachal-Pradesh
 - https://www.britannica.com/topic/Tibetan-Buddhism
-- https://en.wikipedia.org/wiki/Donyi-Polo
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf

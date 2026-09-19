@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Peru
-- https://www.britannica.com/place/Amazon-Rainforest
 - https://www.britannica.com/topic/South-American-Indian
+- https://journals.openedition.org/hybrid/807
+- https://www.scielo.br/j/ra/a/qHzDLSdNrxfPKbtJv33C7hh/?format=html&lang=en&ilang=es
+- https://doi.org/10.1086/711607

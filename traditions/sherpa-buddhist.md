@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/wc/Mauritania-to-Nigeria/Sherpas.html
 - https://www.britannica.com/topic/Sherpa-people
 - https://www.britannica.com/topic/Nyingma
+- https://whc.unesco.org/en/list/120
+- https://doi.org/10.3390/rel11080396
+- https://doi.org/10.1016/j.annals.2020.103024

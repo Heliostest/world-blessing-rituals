@@ -50,3 +50,6 @@
 - https://flacso.edu.ec/lenguas-culturas/lenguas/shuar-chicham/general-information/?lang=en
 - https://cultureandmind.sites.sheffield.ac.uk/fieldsites/shuar
 - https://www.culturalsurvival.org/publications/cultural-survival-quarterly/meeting-arutam
+- https://doi.org/10.3389/fclim.2026.1695925
+- https://doi.org/10.3390/land8120182
+- https://doi.org/10.3390/plants7030067

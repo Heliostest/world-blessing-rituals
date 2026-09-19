@@ -50,3 +50,5 @@
 - https://www.britannica.com/topic/Senufo
 - https://www.britannica.com/art/African-art/Senufo
 - https://www.metmuseum.org/en/essays/senufo-arts-and-poro-initiation-in-northern-cote-divoire
+- https://www.metmuseum.org/essays/senufo-arts-and-poro-initiation-in-northern-cote-divoire
+- https://www.metmuseum.org/art/collection/search/312223

@@ -49,4 +49,5 @@
 
 - https://www.britannica.com/topic/Shilluk
 - https://www.britannica.com/topic/divine-kingship
-- https://www.britannica.com/place/South-Sudan
+- https://doi.org/10.1080/17531055.2019.1640505
+- https://doi.org/10.3389/fitd.2023.1007480

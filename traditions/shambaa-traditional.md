@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Shambaa
-- https://www.britannica.com/place/Usambara-Mountains
-- https://www.britannica.com/place/Tanzania
+- https://doi.org/10.2982/0012-8317(1998)87[279:TPFANC]2.0.CO;2
+- https://doi.org/10.1080/17531055.2012.669572
+- https://doi.org/10.1108/978-1-83608-216-320251018

@@ -52,3 +52,5 @@
 - https://www.nauru.gov.nr/about-naoero/dei-naoero's-stories/angam-day.aspx
 - https://www.nauru.gov.nr/about-naoero/national-days.aspx
 - https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-67269.pdf
+- https://www.nauru.gov.nr/about-naoero/dei-naoero
+- https://doi.org/10.1080/00223344.2019.1601000

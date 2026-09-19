@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Our-Lady-of-the-Pillar
 - https://patrimonioculturaldearagon.es/patrimonio/fiestas-del-pilar/
 - https://patrimonioculturaldearagon.es/noticias/el-gobierno-de-aragon-anima-a-apoyar-a-la-jota-en-redes-sociales-este-15-de-agosto/
+- https://www.catedralbasilicadelpilar.es/
+- https://torreciudad.org/galeria-mariana/nuestra-senora-del-pilar/
+- https://www.turismodearagon.com/ficha/santuario-de-nuestra-senora-de-los-angeles-torreciudad/

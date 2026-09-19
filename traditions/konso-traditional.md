@@ -50,3 +50,4 @@
 - https://whc.unesco.org/en/list/1333/
 - https://visitethiopia.et/space/konso-cultural-landscape
 - https://www.persee.fr/doc/ethio_0066-2127_2016_num_31_1_1628
+- https://doi.org/10.1080/0067270X.2014.982231

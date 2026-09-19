@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://santuariodecovadonga.es/
 - https://www.turismoasturias.es/covadonga/espiritual
+- https://dialnet.unirioja.es/descarga/articulo/253589.pdf
+- https://www.museodelpuebloasturiano.es/

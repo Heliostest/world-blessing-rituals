@@ -3809,3 +3809,25 @@
 - https://www.loc.gov/collections/?fa=subject:yombe
 - https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00540
 - https://www.loc.gov/collections/?fa=subject:yucatec%20maya
+
+## 增补传统（Notebook source hunt C34：阿拉贡—托尔内谷）
+
+- https://www.catedralbasilicadelpilar.es/
+- https://torreciudad.org/galeria-mariana/nuestra-senora-del-pilar/
+- https://www.turismodearagon.com/ficha/santuario-de-nuestra-senora-de-los-angeles-torreciudad/
+- https://dialnet.unirioja.es/descarga/articulo/253589.pdf
+- https://www.museodelpuebloasturiano.es/
+- https://www.basilicataturistica.it/en/discover-basilicata/abbeys-and-sanctuaries-in-basilicata/the-sanctuary-of-sacro-monte-di-viggiano-and-the-black-madonna/
+- https://www.basilicataturistica.it/val-dagri/viggiano-e-la-madonna-nera/
+- https://www.jstor.org/stable/1158162
+- https://whc.unesco.org/en/list/403
+- https://doi.org/10.1353/asi.2003.0030
+- https://inlibrary.uz/index.php/science-research/article/view/22221
+- https://geniusjournals.org/index.php/esh/article/view/980/866
+- https://doi.org/10.1080/0067270X.2014.982231
+- https://doi.org/10.1080/00223344.2019.1601000
+- https://teara.govt.nz/en/pacific-arts-in-new-zealand/page-1
+- https://www.culture.gouv.fr/Demarches-en-ligne/Inventaire-du-patrimoine-culturel-immateriel
+- https://whc.unesco.org/en/list/824
+- https://www.svenskakyrkan.se/default.aspx?id=2946221
+- https://www.svenskakyrkan.se/filer/587615/Motion%202025%20103%20Inkludera%20laestadianska%20v%C3%A4ckelser%C3%B6relsen%20i%20f%C3%B6rsoningsprocessen.pdf

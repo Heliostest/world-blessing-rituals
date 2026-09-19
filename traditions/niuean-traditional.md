@@ -52,3 +52,4 @@
 - https://www.gov.nu/our-history
 - https://teara.govt.nz/en/photograph/717/a-young-niuean-at-his-hair-cutting-ceremony
 - https://www.aucklandmuseum.com/collection/object/1134301
+- https://teara.govt.nz/en/pacific-arts-in-new-zealand/page-1

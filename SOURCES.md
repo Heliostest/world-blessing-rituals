@@ -3589,3 +3589,44 @@
 - https://www.africamuseum.be/fr/learn/provenance/storms
 - https://journals.openedition.org/eces/5298
 - https://dx.doi.org/10.1163/22134379-17102006
+
+## 增补传统（Notebook source hunt C28：塔斗—托法拉尔）
+
+- https://doi.org/10.5194/isprs-archives-XLVIII-M-9-2025-1413-2025
+- https://doi.org/10.1108/IJSSP-02-2025-0087
+- https://www.nepjol.info/index.php/gipan/article/download/98721/74751/285336
+- https://doi.org/10.3390/su5041387
+- https://www.nepjol.info/index.php/HR/article/view/4508/3756
+- https://doi.org/10.3126/pragya.v5i1.30440
+- https://www.nepjol.info/index.php/nc/article/download/94911/71928/274664
+- https://www.nepjol.info/index.php/fwr/article/download/92840/70500/266813
+- https://doi.org/10.3390/rel16121503
+- https://doi.org/10.4236/jss.2016.43032
+- https://dx.doi.org/10.4000/books.editionsehess.26292
+- https://www.metmuseum.org/art/collection/search/309790
+- https://doi.org/10.3390/arts14050104
+- https://doi.org/10.52846/AUCSI.2025.1.06
+- https://doi.org/10.4324/9781003136156
+- https://doi.org/10.4324/9780203145449
+- https://dx.doi.org/10.3853/j.0812-7387.29.2004.1400
+- https://www.scielo.br/j/bgoeldi/a/SFjBfTNcDFgMxB3BVRHGGrk/
+- https://doi.org/10.4000/etnografica.7214
+- https://pib.socioambiental.org/en/Povo:Ticuna
+- https://pib.socioambiental.org/en/Povo:Tiriy%C3%B3
+- https://journals.openedition.org/jsa/11332
+- https://www.scielo.br/j/ea/a/pV5SKfbbYtpfgMfHkJxT5Qb/?lang=en
+- https://censusindia.gov.in/nada/index.php/catalog/44033/download/47698/DH_18_2001_MAR.pdf
+- https://oralliterature.org/collaborations/lokaratna/Lokaratna_14_2.pdf
+- https://www.niti.gov.in/hi/node/2250
+- https://revistas.inah.gob.mx/index.php/dimension/article/download/945/4489/7101
+- https://catalogo.inpi.gob.mx/mephaa-tlapaneco/
+- https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=715
+- https://doi.org/10.4000/nuevomundo.67391
+- https://doi.org/10.11144/javeriana.mavae16-2.rptp
+- https://journals.openedition.org/etnografica/6913
+- https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S1852-48262024000300271
+- https://dx.doi.org/10.20396/maloca.v3i00.13816
+- https://atlaskmns.ru/page/en/people_tofalary_spirit.html
+- https://doi.org/10.14318/hau2.2.015
+- https://atlaskmns.ru/page/en/lang_tofalary_all.html
+- https://doi.org/10.1080/15230430.2025.2493391

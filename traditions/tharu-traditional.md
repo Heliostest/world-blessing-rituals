@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tharu
-- https://en.wikipedia.org/wiki/Tharu_people
 - https://ideas.repec.org/a/kqi/journl/2019-3-2-3.html
+- https://doi.org/10.3126/pragya.v5i1.30440
+- https://www.nepjol.info/index.php/nc/article/download/94911/71928/274664
+- https://www.nepjol.info/index.php/fwr/article/download/92840/70500/266813

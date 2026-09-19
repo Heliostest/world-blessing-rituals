@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Tikopia
 - https://www.britannica.com/topic/Tikopia
-- https://www.britannica.com/place/Solomon-Islands
+- https://doi.org/10.4324/9781003136156
+- https://doi.org/10.4324/9780203145449
+- https://dx.doi.org/10.3853/j.0812-7387.29.2004.1400

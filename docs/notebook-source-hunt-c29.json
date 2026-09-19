@@ -1,0 +1,208 @@
+{
+  "batch": "notebook-source-hunt-c29",
+  "cycle": 29,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 tofalar-traditional 后按字母序续选，排除 C1–C28 已处理 slug 及已补强卡片；不以 4+ 来源卡填充，不用已良好卡片凑数",
+  "previous_cycles_slugs_processed": 323,
+  "slugs": [
+    "tohono-oodham-traditional",
+    "tojolabal-traditional",
+    "torres-strait-ailan-kastom",
+    "tripuri-traditional",
+    "triqui-traditional",
+    "trobriand-traditional",
+    "tsachila-traditional",
+    "tsonga-traditional",
+    "tswana-traditional",
+    "tuamotu-traditional",
+    "tukano-traditional",
+    "tumbuka-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "tohono-oodham-traditional",
+      "title": "托霍诺奥德姆传统信仰与索诺兰祈福（Tohono O'odham）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tohono-Oodham",
+        "https://www.britannica.com/place/Sonoran-Desert",
+        "https://www.britannica.com/place/Arizona"
+      ],
+      "rituals": [
+        "雨水与沙漠农作伦理（概念层）",
+        "教会与圣徒节公开层（概念）",
+        "更封闭的传统仪轨（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "tojolabal-traditional",
+      "title": "托霍拉瓦尔玛雅民间天主教与祖灵祈福（Tojolabal）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tojolabal",
+        "https://www.britannica.com/place/Chiapas",
+        "https://www.britannica.com/topic/Maya-people"
+      ],
+      "rituals": [
+        "主保节与教堂礼仪（概念层）",
+        "山灵与农事祈请（概念层）",
+        "日师传统（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "torres-strait-ailan-kastom",
+      "title": "托雷斯海峡岛民／Ailan Kastom 祈福传统（Torres Strait Islanders）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Torres-Strait-Islander-people",
+        "https://www.qcaa.qld.edu.au/about/k-12-policies/aboriginal-torres-strait-islander-perspectives/resources/spirituality-religion",
+        "https://torresstraitsoe.org.au/people/traditional-ecological-knowledge-tek/"
+      ],
+      "rituals": [
+        "Coming of the Light（光之降临）公共纪念（公共文化层）",
+        "歌、舞与海洋—星象叙事展演（公共—教育层）",
+        "与海猎、图腾及圣地相关的义务礼仪（限制性概念层）"
+      ]
+    },
+    {
+      "slug": "tripuri-traditional",
+      "title": "特里普里传统信仰与十四神祈福（Tripuri）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tripuri",
+        "https://www.britannica.com/place/Tripura",
+        "https://www.britannica.com/place/Northeast-India"
+      ],
+      "rituals": [
+        "十四神相关公共纪念（概念层）",
+        "印度教节庆并行（概念层）",
+        "基督教堂会实践（概念层）"
+      ]
+    },
+    {
+      "slug": "triqui-traditional",
+      "title": "特里基民间天主教与山灵祈福（Triqui）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Trique",
+        "https://www.britannica.com/place/Oaxaca-state-Mexico",
+        "https://www.britannica.com/place/Mexico"
+      ],
+      "rituals": [
+        "主保节与教堂礼仪（概念层）",
+        "山灵与农事祈请（概念层）",
+        "疗愈中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "trobriand-traditional",
+      "title": "特罗布里恩传统信仰与库拉—祖先祈福（Trobriand／Kiriwina）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Trobriand-Islands",
+        "https://www.britannica.com/topic/Kula",
+        "https://www.britannica.com/place/Papua-New-Guinea"
+      ],
+      "rituals": [
+        "Kula 交换伦理（概念层）",
+        "园圃与祖先敬礼（敏感，仅概念）",
+        "教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "tsachila-traditional",
+      "title": "察奇拉／科罗拉多传统信仰与萨满祈福（Tsáchila／Colorado）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tsachila",
+        "https://www.everyculture.com/South-America/Colorado.html",
+        "https://www.britannica.com/place/Ecuador"
+      ],
+      "rituals": [
+        "天主教礼仪与节庆（公共层）",
+        "萨满疗愈叙事（高度敏感，仅概念）",
+        "创世神话与身体认同符号（公共文化层）"
+      ]
+    },
+    {
+      "slug": "tsonga-traditional",
+      "title": "聪加传统宗教与祖灵祈福（Tsonga／Shangaan）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tsonga",
+        "https://iipseries.org/assets/docupload/rsl2024507B3938E05896E.pdf",
+        "https://www.britannica.com/place/Mozambique"
+      ],
+      "rituals": [
+        "祖灵敬礼与家庭危机应对（概念层）",
+        "教会崇拜与并行实践（概念层）",
+        "生命礼仪与社群互惠（概念层）"
+      ]
+    },
+    {
+      "slug": "tswana-traditional",
+      "title": "茨瓦纳／巴特瓦纳传统宗教与巴迪莫祈福（Tswana / Badimo）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/tswana-religion",
+        "https://www.britannica.com/topic/Tswana",
+        "https://www.sheppard.me.uk/botswana/life-cycle/ancestors.html"
+      ],
+      "rituals": [
+        "向巴迪莫的日常侍奉与份额分享（家庭伦理层）",
+        "求雨、丰收与酋长—王家祖先相关的公共祈请（历史／概念层）",
+        "治疗师 dingaka 与生命礼仪记忆（限制性概念层）"
+      ]
+    },
+    {
+      "slug": "tuamotu-traditional",
+      "title": "土阿莫土传统信仰与天主教—环礁祈福余绪（Tuamotu）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Tuamotu-Archipelago",
+        "https://www.britannica.com/place/French-Polynesia",
+        "https://www.britannica.com/place/Polynesia"
+      ],
+      "rituals": [
+        "天主教堂区礼仪（概念层）",
+        "Marae 遗址与口述神话（概念层）",
+        "海洋—风暴相关还愿（概念层）"
+      ]
+    },
+    {
+      "slug": "tukano-traditional",
+      "title": "图卡诺传统信仰与沃佩斯河祈福（Tukano）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tucano",
+        "https://www.britannica.com/place/Vaupes-River",
+        "https://www.britannica.com/place/Amazon-River"
+      ],
+      "rituals": [
+        "河流—祖先宇宙（高度敏感，仅概念）",
+        "治疗中介（极高敏感，仅概念）",
+        "教堂／传教接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "tumbuka-traditional",
+      "title": "通布卡传统信仰与祖灵—基督教祈福（Tumbuka）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tumbuka",
+        "https://www.britannica.com/place/Malawi",
+        "https://www.britannica.com/place/Zambia"
+      ],
+      "rituals": [
+        "祖先敬礼（概念层）",
+        "教堂崇拜（概念层）",
+        "丰收与和解（概念层）"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／朝圣页、博物馆／民俗档案、学术 DOI 或民族志。",
+    "不要采用 Britannica /place/、encyclopedia.com 总览、everyculture.com 总览或 Wikipedia 总览；不要改档位或写操演步骤。",
+    "如搜不到足够强来源，写明检索关键词，不要用弱来源填充。"
+  ]
+}

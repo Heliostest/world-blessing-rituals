@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/South-America/Ticuna-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/place/Amazon-Rainforest
-- https://www.britannica.com/place/Brazil
+- https://www.scielo.br/j/bgoeldi/a/SFjBfTNcDFgMxB3BVRHGGrk/
+- https://doi.org/10.4000/etnografica.7214
+- https://pib.socioambiental.org/en/Povo:Ticuna

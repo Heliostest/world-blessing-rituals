@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tlapanec
-- https://www.britannica.com/place/Guerrero
-- https://www.britannica.com/place/Mexico
+- https://revistas.inah.gob.mx/index.php/dimension/article/download/945/4489/7101
+- https://catalogo.inpi.gob.mx/mephaa-tlapaneco/
+- https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=715
+- https://doi.org/10.4000/nuevomundo.67391

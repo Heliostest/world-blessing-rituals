@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tofalar
-- https://www.britannica.com/place/Sayan-Mountains
-- https://www.britannica.com/place/Siberia
+- https://atlaskmns.ru/page/en/people_tofalary_spirit.html
+- https://doi.org/10.14318/hau2.2.015
+- https://atlaskmns.ru/page/en/lang_tofalary_all.html
+- https://doi.org/10.1080/15230430.2025.2493391

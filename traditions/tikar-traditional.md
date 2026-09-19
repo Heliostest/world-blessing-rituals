@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Cameroon
 - https://www.britannica.com/topic/Tikar
 - https://www.britannica.com/topic/grassland-peoples
+- https://www.metmuseum.org/art/collection/search/309790
+- https://doi.org/10.3390/arts14050104
+- https://doi.org/10.52846/AUCSI.2025.1.06

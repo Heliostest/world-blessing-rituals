@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Nepal
-- https://www.britannica.com/place/Mustang
 - https://www.britannica.com/topic/Tibetan-Buddhism
+- https://www.nepjol.info/index.php/gipan/article/download/98721/74751/285336
+- https://doi.org/10.3390/su5041387
+- https://www.nepjol.info/index.php/HR/article/view/4508/3756

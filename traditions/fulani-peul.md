@@ -50,4 +50,4 @@
 - https://www.britannica.com/topic/Fulani
 - https://ich.unesco.org/en/RL/cultural-space-of-the-yaaral-and-degal-00132
 - https://hdl.handle.net/1808/5816
-- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/fulani
+- https://ich.unesco.org/en/projects/safeguarding-action-plan-of-yaaral-and-degal-00037

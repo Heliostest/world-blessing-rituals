@@ -56,3 +56,7 @@
 - https://whc.unesco.org/en/tentativelists/6467/
 - https://referenceworks.brill.com/display/entries/EIRO/COM-1252.xml
 - https://www.bbc.com/travel/article/20230803-in-pictures-the-protectors-of-a-7000-year-old-faith
+- https://doi.org/10.1017/aee.2026.10148
+- https://dx.doi.org/10.1163/2330-4804_eiro_com_1252
+- https://doi.org/10.4236/jss.2019.77002
+- https://doi.org/10.3390/rel13111071

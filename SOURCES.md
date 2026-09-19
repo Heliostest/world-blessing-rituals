@@ -2999,3 +2999,44 @@
 - https://www.tokelau.org.nz/About+Us/Fishing+and+Canoes.html
 - https://www.tokelau.org.nz/About+Us/Government/Self+Determination+Package/Constitution+of+Tokelau.html
 - https://www.tokelau.org.nz/Bulletin/July+2017/EnvDay-NN.html
+
+## 增补传统（Notebook source hunt C12：威尔士—基库尤）
+
+- https://albaniaheritage.com/en/mali-i-tomorrit-dhe-baba-tomorri/
+- https://albaniandailynews.com/news/holy-pilgrimage-thousands-of-bektashi-believers-climb-mount-tomorri-
+- https://blog.erm.ee/?p=11330
+- https://chicago.goarch.org/blessing-of-the-waters-across-the-metropolis/
+- https://doi.org/10.1017/S0376892917000534
+- https://doi.org/10.1017/aee.2026.10148
+- https://doi.org/10.1201/9781003645542-73
+- https://doi.org/10.15408/insaniyat.v10i2.49550
+- https://doi.org/10.29408/jhm.v12i1.33941
+- https://doi.org/10.3366/ircl.2016.0180
+- https://doi.org/10.3390/f9080481
+- https://doi.org/10.3390/histories4010009
+- https://doi.org/10.3390/rel13111071
+- https://doi.org/10.3390/rel16020163
+- https://doi.org/10.37253/altasia.v8i1.11313
+- https://doi.org/10.4236/jss.2019.77002
+- https://dx.doi.org/10.1163/2330-4804_eiro_com_1252
+- https://ec-patr.org/en/21/02/00/00/the-sign-of-jonah-a-speech-delivered-by/
+- https://ec-patr.org/en/holy-temples/patriarchal-temple/schedule-of-divine-services/
+- https://holytrinity.ma.goarch.org/our-faith/special_services
+- https://ich.unesco.org/en/Decisions/11.COM/10.b.25
+- https://ich.unesco.org/en/projects/safeguarding-action-plan-of-yaaral-and-degal-00037
+- https://museum.wales/stfagans/whatson/12104/Christmas-Traditions-The-Mari-Lwyd-Performances/
+- https://mz.yn.gov.cn/html/2018/gongzuodongtai_0727/29121.html
+- https://pop.culture.gouv.fr/notice/joconde/M0903002336
+- https://szentkut.hu/bucsurend-2026
+- https://szentkut.hu/en/contact-information
+- https://tourism.euskadi.eus/en/agenda/olentzero/webtur00-evento/en/
+- https://tourism.euskadi.eus/en/blog/5-things-you-have-to-know-about-semana-grande-aste-nagusia-in-bilbao/webtur00-contfichapost/en/
+- https://tourism.euskadi.eus/en/blog/discovering-the-origins-of-olentzero-and-mari-domingi/webtur00-contfichapost/en/
+- https://tourism.euskadi.eus/en/natural-areas/urkiola-natural-park/webtur00-content/en/
+- https://www.gov.wales/celebrating-850-years-eisteddfod-and-inspiring-new-audiences
+- https://www.ihchina.cn/Article/Index/detail?id=23505
+- https://www.ihchina.cn/project_details/11083.html
+- https://www.ihchina.cn/project_details/14999.html
+- https://www.maavald.ee/en/religion-and-culture/382-native-estonian-calendar
+- https://www.maavald.ee/maausk
+- https://www.stwinefrideswell.org.uk/

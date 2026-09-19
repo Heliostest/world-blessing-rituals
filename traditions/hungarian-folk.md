@@ -49,5 +49,7 @@
 
 - https://szentkut.hu/en/history-of-the-shrine
 - https://szentkut.hu/en
-- https://www.britannica.com/place/Hungary
 - https://real.mtak.hu/157720/1/MKI_kingsandsaints_B5_012.pdf
+- https://szentkut.hu/bucsurend-2026
+- https://ich.unesco.org/en/Decisions/11.COM/10.b.25
+- https://szentkut.hu/en/contact-information

@@ -54,5 +54,5 @@
 
 - https://www.britannica.com/topic/Berber
 - https://www.britannica.com/topic/barakah
-- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/berbers
 - https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256
+- https://pop.culture.gouv.fr/notice/joconde/M0903002336

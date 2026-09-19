@@ -51,3 +51,6 @@ St Winefride's Well 朝圣、圣大卫日（3 月 1 日）、圣诞／新年 Mar
 - https://museum.wales/curatorial/social-cultural-history/online-collections/what-is-the-eisteddfod/
 - https://eisteddfod.wales/
 - https://eisteddfod.wales/festival/2025/programme/honouring-new-members-gorsedd-cymru
+- https://www.stwinefrideswell.org.uk/
+- https://www.gov.wales/celebrating-850-years-eisteddfod-and-inspiring-new-audiences
+- https://museum.wales/stfagans/whatson/12104/Christmas-Traditions-The-Mari-Lwyd-Performances/

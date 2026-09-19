@@ -1,0 +1,169 @@
+{
+  "batch": "notebook-source-hunt-c11",
+  "cycle": 11,
+  "date": "2026-09-19",
+  "selection_rule": "C级且已通过 Notebook 验证；优先选择当前参考来源恰好 3 条的最薄卡片，按纯粹佩查（purepecha）之后的字母序续接；因该区间仅有 9 张恰好 3 条来源的卡片，补入随后最薄的 3 张 4 条来源卡片。不得重复 C1–C10。",
+  "previous_cycles_slugs_processed": 120,
+  "slugs": [
+    "rotuman-traditional",
+    "serbian-slava",
+    "seto-traditional",
+    "she-traditional",
+    "sidama-traditional",
+    "sorbian-folk",
+    "tajik-folk",
+    "thai-spirit-houses",
+    "tokelauan-traditional",
+    "romansh-folk",
+    "salentino-folk",
+    "samoan-faa-samoa"
+  ],
+  "prompt": "请为下列 12 个祈福／祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C11）。目标是为仍然薄的 C 级卡片补充 2–4 条高质量、可公开核验的新来源；不要改写卡片正文、档位或仪式内容。请按每个 slug 输出建议新增 URL，并为每条 URL 写一句中文说明其与该传统、节庆或仪式的具体关联及可信度。\n\n来源优先级：\n1. UNESCO 非物质文化遗产（ich.unesco.org）名录、申报文件、保护实践；\n2. 国家／地方文化部、官方节庆、朝圣地、博物馆、原住民族机构或其他官方文化遗产页面；\n3. 大学、档案馆、科研机构及博物馆藏品／展览页面；\n4. 可由 Crossref 核验、主题确切相关的同行评审论文或 DOI 图书章节（优先 doi.org）。\n\n明确禁止：Britannica 地点页（/place/）及其他 Britannica 概览页；encyclopedia.com；everyculture；Wikipedia 或其他 wiki 概览页；101lasttribes、joshuaproject 等部族目录；与该传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。\n\n硬性要求：每条 URL 必须公开可访问并可独立核验；DOI 必须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL或仓库 SOURCES.md 重复；每个 slug 给 2–4 条，宁缺毋滥，找不到合格来源时写“未找到”。",
+  "cards": [
+    {
+      "slug": "rotuman-traditional",
+      "title": "罗图马传统信仰与村社祈福余绪（Rotuman）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Rotuma",
+        "http://www.rotuma.net/os/Publications/Island_Legacy/Chapter06.pdf",
+        "https://www.britannica.com/place/Fiji-republic-Pacific-Ocean"
+      ]
+    },
+    {
+      "slug": "serbian-slava",
+      "title": "塞尔维亚斯拉瓦／家庭主保圣人日（Slava）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/slava-celebration-of-family-saint-patron-s-day-01010",
+        "https://ich.unesco.org/en/decisions/9.COM/10.39",
+        "https://nkns.rs/en/popis-nkns/saint-patrons-day"
+      ]
+    },
+    {
+      "slug": "seto-traditional",
+      "title": "塞托东正教与民间祈福传统（Seto／Setomaa）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/seto-leelo-seto-polyphonic-singing-tradition-00175",
+        "https://www.nationalgeographic.com/culture/article/setomaa-culture-estonia-russia-photographs",
+        "https://www.britannica.com/place/Estonia"
+      ]
+    },
+    {
+      "slug": "she-traditional",
+      "title": "畲族传统信仰与祭祖祈福（She）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/She-people",
+        "https://th.china-embassy.gov.cn/eng/ztbd/AboutChina/Ethnic/200011/t20001115_1432841.htm",
+        "https://www.britannica.com/place/Fujian"
+      ]
+    },
+    {
+      "slug": "sidama-traditional",
+      "title": "锡达马传统信仰与菲切—尚巴拉拉新年祈福（Sidama）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sidamo",
+        "https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054",
+        "https://ich.unesco.org/en/decisions/10.COM/10.B.16"
+      ]
+    },
+    {
+      "slug": "sorbian-folk",
+      "title": "索布族民间天主教与复活节骑乘祈福（Sorbian／Lusatian）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.domowina.de/en/lusatian-sorbs/intangible-cultural-heritage/",
+        "https://www.regionen.sachsen.de/en/easter-rides-5619.html",
+        "https://www.oberlausitz.com/en/ostern"
+      ]
+    },
+    {
+      "slug": "tajik-folk",
+      "title": "塔吉克民间伊斯兰与诺鲁孜祈福传统（Tajik folk）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tajik-people",
+        "https://www.britannica.com/place/Tajikistan",
+        "https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-00261"
+      ]
+    },
+    {
+      "slug": "thai-spirit-houses",
+      "title": "泰国神屋／土地灵（San phra phum / phi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/thai-religion",
+        "https://hdl.handle.net/1813/33431",
+        "https://doi.org/10.65959/eaa.1020"
+      ]
+    },
+    {
+      "slug": "tokelauan-traditional",
+      "title": "托克劳传统信仰与村社祈福余绪（Tokelauan）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.everyculture.com/Oceania/Tokelau-Religion-and-Expressive-Culture.html",
+        "https://nzetc.victoria.ac.nz/tm/scholarly/tei-MacToke-t1-body-d1-d4-d2.html",
+        "https://www.britannica.com/place/Polynesia"
+      ]
+    },
+    {
+      "slug": "romansh-folk",
+      "title": "罗曼什民间基督教与阿尔卑斯祈福（Romansh）",
+      "current_source_count": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Romansh-language",
+        "https://www.lebendige-traditionen.ch/en/chalandamarz-5",
+        "https://www.graubuenden.ch/en/graubuenden/general-information/customs-traditions/chalandamarz",
+        "https://www.graubuenden.ch/en/tours/ziteil-bike"
+      ]
+    },
+    {
+      "slug": "salentino-folk",
+      "title": "萨伦托民间天主教与海岸朝圣祈福（Salentino）",
+      "current_source_count": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.viaggiareinpuglia.it/de/dettaglio-attrattore/basilica-santuario-santa-maria-de-finibus-terrae",
+        "https://viaggiareinpuglia.it/fr/dettaglio-tipicita/focara-novoli",
+        "https://viaggiareinpuglia.it/it/dettaglio-itinerario/terre-taranta"
+      ]
+    },
+    {
+      "slug": "samoan-faa-samoa",
+      "title": "萨摩亚／法阿萨摩亚村社礼仪与祝福文化（Samoan／Faʻa Sāmoa）",
+      "current_source_count": 4,
+      "current_urls": [
+        "https://www.britannica.com/place/Samoa-island-nation-Pacific-Ocean/Cultural-life",
+        "https://ich.unesco.org/en/RL/ie-samoa-fine-mat-and-its-cultural-value-01499",
+        "https://americansamoa.noaa.gov/learn/faa-samoa.html",
+        "https://culturalatlas.sbs.com.au/samoan-culture/samoan-culture-core-concepts"
+      ]
+    }
+  ],
+  "constraints": {
+    "prioritize": [
+      "UNESCO ICH",
+      "官方节庆／文化遗产／朝圣地／博物馆页面",
+      "大学／档案馆／科研机构",
+      "Crossref 可核验 DOI"
+    ],
+    "forbidden": [
+      "Britannica 地点页及概览页",
+      "encyclopedia.com",
+      "everyculture",
+      "Wikipedia/wiki 概览",
+      "101lasttribes、joshuaproject 部族目录",
+      "泛泛且与传统无实质关联的政府或 UNESCO 页面"
+    ],
+    "requirements": [
+      "每个 slug 2–4 条新 URL",
+      "HTTP 200／PDF 关键词／DOI Crossref 核验",
+      "不得重复卡片或 SOURCES.md URL",
+      "宁缺毋滥；无合格来源写未找到"
+    ]
+  }
+}

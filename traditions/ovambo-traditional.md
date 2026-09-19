@@ -51,5 +51,10 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Ambo-people
-- https://www.britannica.com/place/Namibia
 - https://www.vestiges-journal.info/CSACMonog/Davies_thesis/chap1.pdf
+
+- https://ich.unesco.org/en/RL/oshituthi-shomagongo-marula-fruit-festival-01089
+
+- https://repository.unam.edu.na/server/api/core/bitstreams/5ae2a1fd-0027-4b62-b4dd-6b9d7236055c/content
+
+- https://digital.unam.edu.na/bitstream/handle/11070.1/20232/Nghifikwa_2023.pdf?sequence=1&isAllowed=y

@@ -50,3 +50,11 @@
 - https://www.britannica.com/topic/Makonde
 - https://www.britannica.com/art/African-art/Makonde
 - https://joshuaproject.net/index.php/people_groups/13427/MZ
+
+- https://ich.unesco.org/en/USL/ingoma-ya-mapiko-01996
+
+- https://doi.org/10.1162/afar_a_00599
+
+- https://doi.org/10.1162/AFAR_r_00292
+
+- https://www.metmuseum.org/art/collection/search/318344

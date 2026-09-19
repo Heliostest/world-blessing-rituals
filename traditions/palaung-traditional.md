@@ -50,6 +50,10 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/East-Southeast-Asia/Palaung-Religion-and-Expressive-Culture.html
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/palaung
 - https://factsanddetails.com/southeast-asia/Myanmar/sub5_5d/entry-6658.html
+
+- https://doi.org/10.3390/soc14080154
+
+- https://doi.org/10.1080/14442213.2018.1486453
+
+- https://doi.org/10.3390/languages1020012

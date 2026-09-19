@@ -53,3 +53,11 @@
 - https://www.cip.gov.tw/en/tribe/grid-list/E8D1B17F6A81D678D0636733C6861689/info.html
 - https://en.tacp.gov.tw/Indigenous/ItemDetail?ID=eadc0c5d-dd0c-4031-a1a2-af085c9b71b4
 - https://www.taipeitimes.com/News/feat/archives/2023/11/03/2003808614
+
+- https://nchdb.boch.gov.tw/assets/overview/folklore/20090220000003
+
+- https://nchdb.boch.gov.tw/assets/overview/folklore/20180723000009
+
+- https://nchdb.boch.gov.tw/assets/overview/folklore/20120426000003
+
+- https://nchdb.boch.gov.tw/assets/overview/antiquity/20161118000013

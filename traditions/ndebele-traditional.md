@@ -49,6 +49,13 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Africa-Middle-East/Ndebele-Religion-and-Expressive-Culture.html
 - https://sahistory.org.za/article/ndebele
 - https://www.britannica.com/topic/Ndebele-South-African-people
+
+- https://www.metmuseum.org/art/collection/search/320627
+
+- https://www.vukuzenzele.gov.za/class-her-own
+
+- https://doi.org/10.1108/978-1-64802-117-620251004
+
+- https://www.metmuseum.org/art/collection/search/320630

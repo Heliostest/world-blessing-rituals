@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Nivkh
-- https://www.everyculture.com/Russia-Eurasia-China/Nivkh-Religion-and-Expressive-Cultures.html
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nivkhs
+- https://atlaskmns.ru/page/en/people_nivhi_spirit.html
+- https://doi.org/10.24412/1026-8804-2024-4-148-164
+- https://doi.org/10.3389/fpsyg.2019.03051

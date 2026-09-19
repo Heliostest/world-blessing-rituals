@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Nuer
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/nuer-and-dinka-religion
 - https://www.britannica.com/topic/monotheism/The-spectrum-of-views-monotheisms-and-quasi-monotheisms
+- https://doi.org/10.3389/past.2025.15651
+- https://doi.org/10.14318/hau6.3.034
+- https://dx.doi.org/10.1163/15700666-12340184

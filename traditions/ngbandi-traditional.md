@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Ngbandi
-- https://www.britannica.com/place/Ubangi-River
-- https://www.britannica.com/place/Central-African-Republic
+- https://journals.openedition.org/aaa/598
+- https://www.britishmuseum.org/collection/term/x91935

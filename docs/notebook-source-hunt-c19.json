@@ -2,7 +2,7 @@
   "batch": "notebook-source-hunt-c19",
   "cycle": 19,
   "date": "2026-09-19",
-  "selection_rule": "n=3 未处理薄卡；接 C18 后按字母序从 negidal-traditional 之后续选，排除 C1–C18 已处理 slug；禁止用已有 4+ 来源卡填充",
+  "selection_rule": "n=3 未处理薄卡；接 C18 后按字母序续选，排除 C1–C18 已处理 slug；跳过已补强的 niuean-traditional、norman-folk；不以 4+ 来源卡填充",
   "previous_cycles_slugs_processed": 215,
   "slugs": [
     "newar-nepal",
@@ -11,194 +11,318 @@
     "ngbandi-traditional",
     "ngoni-traditional",
     "niuafoou-traditional",
-    "niuean-traditional",
     "nivkh-traditional",
     "nocte-traditional",
     "nomatsigenga-traditional",
-    "norman-folk",
-    "nuer-traditional"
+    "nuer-traditional",
+    "nukuoro-traditional",
+    "nyakyusa-traditional"
   ],
   "cards": [
     {
       "slug": "newar-nepal",
       "title": "尼泊尔纽瓦尔／加德满都谷地印佛交融祈福传统（Newar）",
-      "current_source_count": 3,
       "current_urls": [
         "https://whc.unesco.org/en/list/121/",
         "https://www.britannica.com/topic/Newar",
         "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/newars"
       ],
-      "rituals": [
-        "1. 神舆／车辇 jatra 巡游（公共节庆层）",
-        "2. 庙宇—佛塔共拜与日常供奉（日常宗教层）",
-        "3. 岁时与悼亡相关公共礼仪名称（概念层）"
-      ]
+      "added_urls": [
+        "https://nepjol.info/index.php/nc/article/view/64398",
+        "https://www.nepjol.info/index.php/hisan/article/view/92738/70407",
+        "https://dx.doi.org/10.5772/intechopen.1002967",
+        "https://www.nepjol.info/index.php/litstud/article/download/39529/30238/115030"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/newars"
+      ],
+      "final_source_count": 6,
+      "final_urls": [
+        "https://whc.unesco.org/en/list/121/",
+        "https://www.britannica.com/topic/Newar",
+        "https://nepjol.info/index.php/nc/article/view/64398",
+        "https://www.nepjol.info/index.php/hisan/article/view/92738/70407",
+        "https://dx.doi.org/10.5772/intechopen.1002967",
+        "https://www.nepjol.info/index.php/litstud/article/download/39529/30238/115030"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "ngabe-traditional",
       "title": "恩加贝传统信仰与山地祈福（Ngäbe／Guaymí）",
-      "current_source_count": 3,
       "current_urls": [
         "https://www.britannica.com/topic/Guaymi",
         "https://www.britannica.com/place/Panama",
         "https://www.britannica.com/topic/Central-American-Indian"
       ],
-      "rituals": [
-        "1. 大地—主人灵伦理（概念层）",
-        "2. 教堂崇拜（概念层）",
-        "3. 社群集会与自治叙事（概念层）"
-      ]
+      "added_urls": [
+        "https://www.revistas.ucr.ac.cr/index.php/rreflexiones/article/download/4543/14824/53599",
+        "https://www.revistas.ucr.ac.cr/index.php/intercambio/article/download/12343/11598"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Panama"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/Guaymi",
+        "https://www.britannica.com/topic/Central-American-Indian",
+        "https://www.revistas.ucr.ac.cr/index.php/rreflexiones/article/download/4543/14824/53599",
+        "https://www.revistas.ucr.ac.cr/index.php/intercambio/article/download/12343/11598"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "nganasan-traditional",
       "title": "恩加纳桑传统信仰与自然母亲祈福（Nganasan）",
-      "current_source_count": 3,
       "current_urls": [
         "https://doi.org/10.17516/1997-1370-0424",
         "https://aa.uwpress.org/content/wpaa/58/1/80.full.pdf",
         "https://doi.org/10.16993/bbu.i"
       ],
-      "rituals": [
-        "1. 自然母亲敬礼（概念层）",
-        "2. 萨满中介（高度敏感，仅概念）",
-        "3. 口述史诗与当代文化记忆（公共层）"
-      ]
+      "added_urls": [
+        "https://www.folklore.ee/~aado/tent.htm",
+        "https://www.folklore.ee/folklore/vol2/tubinc.htm",
+        "https://atlaskmns.ru/page/en/people_nganasany_spirit.html"
+      ],
+      "removed_urls": [],
+      "final_source_count": 6,
+      "final_urls": [
+        "https://doi.org/10.17516/1997-1370-0424",
+        "https://aa.uwpress.org/content/wpaa/58/1/80.full.pdf",
+        "https://doi.org/10.16993/bbu.i",
+        "https://www.folklore.ee/~aado/tent.htm",
+        "https://www.folklore.ee/folklore/vol2/tubinc.htm",
+        "https://atlaskmns.ru/page/en/people_nganasany_spirit.html"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "ngbandi-traditional",
       "title": "恩班迪传统信仰与河岸—祖灵祈福（Ngbandi）",
-      "current_source_count": 3,
       "current_urls": [
         "https://www.britannica.com/topic/Ngbandi",
         "https://www.britannica.com/place/Ubangi-River",
         "https://www.britannica.com/place/Central-African-Republic"
       ],
-      "rituals": [
-        "1. 祖灵敬礼（概念层）",
-        "2. 教堂崇拜（概念层）",
-        "3. 河岸农事感恩（概念层）"
-      ]
+      "added_urls": [
+        "https://journals.openedition.org/aaa/598",
+        "https://www.britishmuseum.org/collection/term/x91935"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Ubangi-River",
+        "https://www.britannica.com/place/Central-African-Republic"
+      ],
+      "final_source_count": 3,
+      "final_urls": [
+        "https://www.britannica.com/topic/Ngbandi",
+        "https://journals.openedition.org/aaa/598",
+        "https://www.britishmuseum.org/collection/term/x91935"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "ngoni-traditional",
       "title": "恩戈尼传统信仰与恩古尼迁徙祈福（Ngoni）",
-      "current_source_count": 3,
       "current_urls": [
         "https://www.britannica.com/topic/Ngoni",
         "https://www.britannica.com/place/Malawi",
         "https://www.britannica.com/topic/Mfecane"
       ],
-      "rituals": [
-        "1. 祖先敬礼（概念层）",
-        "2. 教堂崇拜（概念层）",
-        "3. 文化节与迁徙记忆（敏感，仅概念）"
-      ]
+      "added_urls": [
+        "https://doi.org/10.1371/journal.pone.0315903"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Malawi"
+      ],
+      "final_source_count": 3,
+      "final_urls": [
+        "https://www.britannica.com/topic/Ngoni",
+        "https://www.britannica.com/topic/Mfecane",
+        "https://doi.org/10.1371/journal.pone.0315903"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "niuafoou-traditional",
       "title": "纽阿福欧传统信仰与火山岛—基督教祈福（Niuafo'ou）",
-      "current_source_count": 3,
       "current_urls": [
         "https://www.britannica.com/place/Niuafoou",
         "https://www.britannica.com/place/Tonga",
         "https://www.britannica.com/place/Polynesia"
       ],
-      "rituals": [
-        "1. 基督教堂区礼仪（概念层）",
-        "2. 火山—海洋敬畏（概念层）",
-        "3. 祖先记忆（高度敏感，仅概念）"
-      ]
-    },
-    {
-      "slug": "niuean-traditional",
-      "title": "纽埃传统信仰与村社祈福余绪（Niuean）",
-      "current_source_count": 3,
-      "current_urls": [
-        "https://www.gov.nu/our-history",
-        "https://teara.govt.nz/en/photograph/717/a-young-niuean-at-his-hair-cutting-ceremony",
-        "https://www.aucklandmuseum.com/collection/object/1134301"
+      "added_urls": [
+        "https://doi.org/10.25949/19440851",
+        "https://journals.openedition.org/archipel/3004"
       ],
-      "rituals": [
-        "1. Hair Cutting／Ta Tilinga 馈赠礼仪（部分敏感，概念）",
-        "2. Ekalesia 与 Takai 村社教会生活（公共层）",
-        "3. Tokamotu／mana 记忆（CONCEPT）"
-      ]
+      "removed_urls": [
+        "https://www.britannica.com/place/Niuafoou",
+        "https://www.britannica.com/place/Tonga",
+        "https://www.britannica.com/place/Polynesia"
+      ],
+      "final_source_count": 2,
+      "final_urls": [
+        "https://doi.org/10.25949/19440851",
+        "https://journals.openedition.org/archipel/3004"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "nivkh-traditional",
       "title": "尼夫赫人传统信仰与海主—熊节祈福（Nivkh）",
-      "current_source_count": 3,
       "current_urls": [
         "https://www.britannica.com/topic/Nivkh",
         "https://www.everyculture.com/Russia-Eurasia-China/Nivkh-Religion-and-Expressive-Cultures.html",
         "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nivkhs"
       ],
-      "rituals": [
-        "1. 海主／山主献谢与渔猎周期（敏感，仅概念）",
-        "2. 熊节（氏族礼仪复合体；高度敏感，仅概念）",
-        "3. 萨满诊病与鼓声中介（高度敏感，仅概念）"
-      ]
+      "added_urls": [
+        "https://atlaskmns.ru/page/en/people_nivhi_spirit.html",
+        "https://doi.org/10.24412/1026-8804-2024-4-148-164",
+        "https://doi.org/10.3389/fpsyg.2019.03051"
+      ],
+      "removed_urls": [
+        "https://www.everyculture.com/Russia-Eurasia-China/Nivkh-Religion-and-Expressive-Cultures.html",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nivkhs"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/Nivkh",
+        "https://atlaskmns.ru/page/en/people_nivhi_spirit.html",
+        "https://doi.org/10.24412/1026-8804-2024-4-148-164",
+        "https://doi.org/10.3389/fpsyg.2019.03051"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "nocte-traditional",
       "title": "诺克特传统信仰与基督教祈福余绪（Nocte）",
-      "current_source_count": 3,
       "current_urls": [
         "https://www.britannica.com/place/Arunachal-Pradesh",
         "https://www.britannica.com/place/Northeast-India",
         "https://www.britannica.com/topic/Naga-people"
       ],
-      "rituals": [
-        "1. 基督教崇拜（概念层）",
-        "2. 村寨节庆与认同展演（概念层）",
-        "3. 传统信仰记忆（极高敏感，仅概念）"
-      ]
+      "added_urls": [
+        "https://utsav.gov.in/view-event/chalo-loku-festival-1",
+        "https://arunachalgovernor.gov.in/pr/2024/241124_Governor_extends_Chalo_Loku_greetings.pdf",
+        "https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Arunachal-Pradesh",
+        "https://www.britannica.com/place/Northeast-India"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/Naga-people",
+        "https://utsav.gov.in/view-event/chalo-loku-festival-1",
+        "https://arunachalgovernor.gov.in/pr/2024/241124_Governor_extends_Chalo_Loku_greetings.pdf",
+        "https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "nomatsigenga-traditional",
       "title": "诺马齐根加传统信仰与雨林祈福（Nomatsigenga）",
-      "current_source_count": 3,
       "current_urls": [
         "https://www.britannica.com/place/Peru",
         "https://www.britannica.com/place/Amazon-Rainforest",
         "https://www.britannica.com/topic/Arawakan-languages"
       ],
-      "rituals": [
-        "1. 主人灵与森林伦理（概念层）",
-        "2. 教堂崇拜（概念层）",
-        "3. 疗愈中介（高度敏感，仅概念）"
-      ]
-    },
-    {
-      "slug": "norman-folk",
-      "title": "诺曼底／海峡群岛民间天主教与朝圣祈福（Norman）",
-      "current_source_count": 3,
-      "current_urls": [
-        "https://www.therese-de-lisieux.catholique.fr/en/",
-        "https://www.normandie-tourisme.fr/agenda/jep-2026-visite-guidee-a-la-decouverte-de-la-cote-de-grace/",
-        "https://www.pelerin-montsaintmichel.org/le-sanctuaire-mont-saint-michel/"
+      "added_urls": [
+        "https://bdpi.cultura.gob.pe/pueblos/nomatsigenga",
+        "https://doi.org/10.14318/hau2.1.021",
+        "https://doi.org/10.1086/711607"
       ],
-      "rituals": [
-        "1. 蒙圣米歇尔朝圣（概念层）",
-        "2. 利雪圣女小德兰朝圣（概念层）",
-        "3. 翁弗勒尔水手节船只祝福（公共层）"
-      ]
+      "removed_urls": [
+        "https://www.britannica.com/place/Peru",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/Arawakan-languages",
+        "https://bdpi.cultura.gob.pe/pueblos/nomatsigenga",
+        "https://doi.org/10.14318/hau2.1.021",
+        "https://doi.org/10.1086/711607"
+      ],
+      "current_source_count": 3
     },
     {
       "slug": "nuer-traditional",
       "title": "努尔传统宗教与牛群—Kwoth 祈福（Nuer Traditional）",
-      "current_source_count": 3,
       "current_urls": [
         "https://www.britannica.com/topic/Nuer",
         "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/nuer-and-dinka-religion",
         "https://www.britannica.com/topic/monotheism/The-spectrum-of-views-monotheisms-and-quasi-monotheisms"
       ],
-      "rituals": [
-        "1. 向 Kwoth 的祈祷与牛牲献祭（限制性概念层）",
-        "2. 豹皮祭司、仇杀赔偿与净化（社会—宗教层）",
-        "3. 年龄组、鬼婚与先知传统（名称／历史层）"
-      ]
+      "added_urls": [
+        "https://doi.org/10.3389/past.2025.15651",
+        "https://doi.org/10.14318/hau6.3.034",
+        "https://dx.doi.org/10.1163/15700666-12340184"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/nuer-and-dinka-religion"
+      ],
+      "final_source_count": 5,
+      "final_urls": [
+        "https://www.britannica.com/topic/Nuer",
+        "https://www.britannica.com/topic/monotheism/The-spectrum-of-views-monotheisms-and-quasi-monotheisms",
+        "https://doi.org/10.3389/past.2025.15651",
+        "https://doi.org/10.14318/hau6.3.034",
+        "https://dx.doi.org/10.1163/15700666-12340184"
+      ],
+      "current_source_count": 3
+    },
+    {
+      "slug": "nukuoro-traditional",
+      "title": "努库奥罗传统信仰与基督教—环礁祈福（Nukuoro）",
+      "current_urls": [
+        "https://www.britannica.com/place/Nukuoro",
+        "https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean",
+        "https://www.britannica.com/place/Polynesia"
+      ],
+      "added_urls": [
+        "https://www.metmuseum.org/exhibitions/listings/2009/barbier-mueller-museum/photo-gallery"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Nukuoro",
+        "https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean",
+        "https://www.britannica.com/place/Polynesia"
+      ],
+      "final_source_count": 1,
+      "final_urls": [
+        "https://www.metmuseum.org/exhibitions/listings/2009/barbier-mueller-museum/photo-gallery"
+      ],
+      "current_source_count": 3
+    },
+    {
+      "slug": "nyakyusa-traditional",
+      "title": "尼亚库萨传统信仰与祖灵—基督教祈福（Nyakyusa）",
+      "current_urls": [
+        "https://www.britannica.com/topic/Nyakyusa",
+        "https://www.britannica.com/place/Tanzania",
+        "https://www.britannica.com/place/Malawi"
+      ],
+      "added_urls": [
+        "https://doi.org/10.47772/IJRISS.2025.903SEDU0049",
+        "https://doi.org/10.1163/9789004412255_016"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Tanzania",
+        "https://www.britannica.com/place/Malawi"
+      ],
+      "final_source_count": 3,
+      "final_urls": [
+        "https://www.britannica.com/topic/Nyakyusa",
+        "https://doi.org/10.47772/IJRISS.2025.903SEDU0049",
+        "https://doi.org/10.1163/9789004412255_016"
+      ],
+      "current_source_count": 3
     }
   ],
-  "prompt": "请为下列 12 个祈福／祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C19）。目标：为仍然薄的 C 级卡片补充 2–4 条高质量、可公开核验的新参考来源。\n\n选择规则：接 C18 的 negidal-traditional 之后，按 slug 字母序选取下一批当前恰为 n=3 的薄卡；排除 C1–C18 已处理的 slug，不得用已有 4+ 来源卡片凑数。严格按字母序跳过 n≠3 卡片。\n\n对每个 slug 输出：\nslug:\n建议新增 URL（每行一条，附一句中文说明覆盖内容与可信度理由）：\n- <URL> — <说明>\n\n来源优先级：\n1. UNESCO 非遗名录、申报文件、优秀保护实践，以及各国国家级非遗名录官方页面；\n2. 与具体传统、节庆、朝圣地或社群直接相关的文化部、地方政府、原住民族／部族官方机构、博物馆、档案馆或官方节庆网站；\n3. 大学、科研机构与学术档案页面（藏品页、特展、档案、学位论文库）；\n4. 可由 Crossref 核验、主题确切相关的同行评审论文或 DOI 图书章节（优先 doi.org / dx.doi.org）。\n\n明确禁止：Britannica 的地点（/place/）概览页与泛概览页；encyclopedia.com 与 everyculture.com 概览页；Wikipedia 或任何 wiki 概览页；101lasttribes、joshuaproject 一类部族目录页；与该传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。\n\n硬性要求：每条 URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或仓库 SOURCES.md 已收录 URL 重复；每个 slug 给 2–4 条，宁缺毋滥，找不到合格来源时写“未找到”。只补 ## 参考来源，不改卡片正文、档位与仪式内容。\n\n---\n1. slug=newar-nepal（现有来源 3 条）\n标题: 尼泊尔纽瓦尔／加德满都谷地印佛交融祈福传统（Newar）\n典型仪式名: 1. 神舆／车辇 jatra 巡游（公共节庆层）；2. 庙宇—佛塔共拜与日常供奉（日常宗教层）；3. 岁时与悼亡相关公共礼仪名称（概念层）\n现有 URL（勿重复）：\n- https://whc.unesco.org/en/list/121/\n- https://www.britannica.com/topic/Newar\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/newars\n\n2. slug=ngabe-traditional（现有来源 3 条）\n标题: 恩加贝传统信仰与山地祈福（Ngäbe／Guaymí）\n典型仪式名: 1. 大地—主人灵伦理（概念层）；2. 教堂崇拜（概念层）；3. 社群集会与自治叙事（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Guaymi\n- https://www.britannica.com/place/Panama\n- https://www.britannica.com/topic/Central-American-Indian\n\n3. slug=nganasan-traditional（现有来源 3 条）\n标题: 恩加纳桑传统信仰与自然母亲祈福（Nganasan）\n典型仪式名: 1. 自然母亲敬礼（概念层）；2. 萨满中介（高度敏感，仅概念）；3. 口述史诗与当代文化记忆（公共层）\n现有 URL（勿重复）：\n- https://doi.org/10.17516/1997-1370-0424\n- https://aa.uwpress.org/content/wpaa/58/1/80.full.pdf\n- https://doi.org/10.16993/bbu.i\n\n4. slug=ngbandi-traditional（现有来源 3 条）\n标题: 恩班迪传统信仰与河岸—祖灵祈福（Ngbandi）\n典型仪式名: 1. 祖灵敬礼（概念层）；2. 教堂崇拜（概念层）；3. 河岸农事感恩（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Ngbandi\n- https://www.britannica.com/place/Ubangi-River\n- https://www.britannica.com/place/Central-African-Republic\n\n5. slug=ngoni-traditional（现有来源 3 条）\n标题: 恩戈尼传统信仰与恩古尼迁徙祈福（Ngoni）\n典型仪式名: 1. 祖先敬礼（概念层）；2. 教堂崇拜（概念层）；3. 文化节与迁徙记忆（敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Ngoni\n- https://www.britannica.com/place/Malawi\n- https://www.britannica.com/topic/Mfecane\n\n6. slug=niuafoou-traditional（现有来源 3 条）\n标题: 纽阿福欧传统信仰与火山岛—基督教祈福（Niuafo'ou）\n典型仪式名: 1. 基督教堂区礼仪（概念层）；2. 火山—海洋敬畏（概念层）；3. 祖先记忆（高度敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Niuafoou\n- https://www.britannica.com/place/Tonga\n- https://www.britannica.com/place/Polynesia\n\n7. slug=niuean-traditional（现有来源 3 条）\n标题: 纽埃传统信仰与村社祈福余绪（Niuean）\n典型仪式名: 1. Hair Cutting／Ta Tilinga 馈赠礼仪（部分敏感，概念）；2. Ekalesia 与 Takai 村社教会生活（公共层）；3. Tokamotu／mana 记忆（CONCEPT）\n现有 URL（勿重复）：\n- https://www.gov.nu/our-history\n- https://teara.govt.nz/en/photograph/717/a-young-niuean-at-his-hair-cutting-ceremony\n- https://www.aucklandmuseum.com/collection/object/1134301\n\n8. slug=nivkh-traditional（现有来源 3 条）\n标题: 尼夫赫人传统信仰与海主—熊节祈福（Nivkh）\n典型仪式名: 1. 海主／山主献谢与渔猎周期（敏感，仅概念）；2. 熊节（氏族礼仪复合体；高度敏感，仅概念）；3. 萨满诊病与鼓声中介（高度敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Nivkh\n- https://www.everyculture.com/Russia-Eurasia-China/Nivkh-Religion-and-Expressive-Cultures.html\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nivkhs\n\n9. slug=nocte-traditional（现有来源 3 条）\n标题: 诺克特传统信仰与基督教祈福余绪（Nocte）\n典型仪式名: 1. 基督教崇拜（概念层）；2. 村寨节庆与认同展演（概念层）；3. 传统信仰记忆（极高敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Arunachal-Pradesh\n- https://www.britannica.com/place/Northeast-India\n- https://www.britannica.com/topic/Naga-people\n\n10. slug=nomatsigenga-traditional（现有来源 3 条）\n标题: 诺马齐根加传统信仰与雨林祈福（Nomatsigenga）\n典型仪式名: 1. 主人灵与森林伦理（概念层）；2. 教堂崇拜（概念层）；3. 疗愈中介（高度敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Peru\n- https://www.britannica.com/place/Amazon-Rainforest\n- https://www.britannica.com/topic/Arawakan-languages\n\n11. slug=norman-folk（现有来源 3 条）\n标题: 诺曼底／海峡群岛民间天主教与朝圣祈福（Norman）\n典型仪式名: 1. 蒙圣米歇尔朝圣（概念层）；2. 利雪圣女小德兰朝圣（概念层）；3. 翁弗勒尔水手节船只祝福（公共层）\n现有 URL（勿重复）：\n- https://www.therese-de-lisieux.catholique.fr/en/\n- https://www.normandie-tourisme.fr/agenda/jep-2026-visite-guidee-a-la-decouverte-de-la-cote-de-grace/\n- https://www.pelerin-montsaintmichel.org/le-sanctuaire-mont-saint-michel/\n\n12. slug=nuer-traditional（现有来源 3 条）\n标题: 努尔传统宗教与牛群—Kwoth 祈福（Nuer Traditional）\n典型仪式名: 1. 向 Kwoth 的祈祷与牛牲献祭（限制性概念层）；2. 豹皮祭司、仇杀赔偿与净化（社会—宗教层）；3. 年龄组、鬼婚与先知传统（名称／历史层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Nuer\n- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/nuer-and-dinka-religion\n- https://www.britannica.com/topic/monotheism/The-spectrum-of-views-monotheisms-and-quasi-monotheisms"
+  "input_url_count": 30,
+  "accepted_url_count": 29,
+  "dropped_urls": [
+    "https://doi.org/10.1080/01436597.2026.2661232"
+  ],
+  "card_url_additions": 29,
+  "card_url_removals": 20,
+  "sources_unique_url_additions": 28
 }

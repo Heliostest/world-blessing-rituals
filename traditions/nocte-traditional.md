@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Arunachal-Pradesh
-- https://www.britannica.com/place/Northeast-India
 - https://www.britannica.com/topic/Naga-people
+- https://utsav.gov.in/view-event/chalo-loku-festival-1
+- https://arunachalgovernor.gov.in/pr/2024/241124_Governor_extends_Chalo_Loku_greetings.pdf
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf

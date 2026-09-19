@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Nyakyusa
-- https://www.britannica.com/place/Tanzania
-- https://www.britannica.com/place/Malawi
+- https://doi.org/10.47772/IJRISS.2025.903SEDU0049
+- https://doi.org/10.1163/9789004412255_016

@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Peru
-- https://www.britannica.com/place/Amazon-Rainforest
 - https://www.britannica.com/topic/Arawakan-languages
+- https://bdpi.cultura.gob.pe/pueblos/nomatsigenga
+- https://doi.org/10.14318/hau2.1.021
+- https://doi.org/10.1086/711607

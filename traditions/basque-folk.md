@@ -47,9 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/summary/Basque
-- https://www.britannica.com/topic/Basque-language
-- https://kids.britannica.com/students/article/Basque/273123
 - https://buber.net/Basque/2020/05/17/basque-fact-of-the-week-mari-the-basque-mother-earth/
 - https://tourism.euskadi.eus/en/natural-areas/urkiola-natural-park/webtur00-content/en/
 - https://tourism.euskadi.eus/en/blog/5-things-you-have-to-know-about-semana-grande-aste-nagusia-in-bilbao/webtur00-contfichapost/en/

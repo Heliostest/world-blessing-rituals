@@ -3880,3 +3880,7 @@
 - https://www.sardegnacultura.it/
 - https://doi.org/10.4000/etnografica.11451
 - https://ich.unesco.org/en/RL/canto-a-tenore-sardinian-pastoral-song-00165
+
+## 增补传统（Notebook source hunt C37：瓦尔瑟—阿尔巴尼亚民间）
+
+- https://walsermuseum.li/en

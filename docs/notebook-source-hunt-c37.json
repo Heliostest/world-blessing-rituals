@@ -1,0 +1,540 @@
+{
+  "batch": "notebook-source-hunt-c37",
+  "cycle": 37,
+  "date": "2026-09-19",
+  "status": "completed",
+  "selection_rule": "按用户提供的 /tmp/c37-urls.json 对 12 个 C 级卡片执行弱链接清理；允许复查先前批次卡片，不改变正文、档位或仪式内容。",
+  "previous_cycles_slugs_processed": 409,
+  "exclusion_metadata_slug_union_count": 409,
+  "pool_after_c36_count": 12,
+  "selected_count": 12,
+  "slugs": [
+    "walser-folk",
+    "baltic-folk",
+    "ivatan-traditional",
+    "trentino-folk",
+    "tuvaluan-traditional",
+    "valdostano-folk",
+    "yapese-traditional",
+    "basque-folk",
+    "finnish-karelian-folk",
+    "hinduism",
+    "scottish-folk",
+    "albanian-folk"
+  ],
+  "cards": [
+    {
+      "slug": "walser-folk",
+      "current_urls": [
+        "https://www.britannica.com/topic/Walser",
+        "https://library.oapen.org/bitstream/handle/20.500.12657/75910/978-88-6046-194-0.pdf",
+        "https://aggesellschaft.ch/wp-content/uploads/2023/05/App_Jahrbuch_2015.pdf"
+      ],
+      "input_urls": [
+        "https://library.oapen.org/bitstream/handle/20.500.12657/75910/978-88-6046-194-0.pdf",
+        "https://aggesellschaft.ch/wp-content/uploads/2023/05/App_Jahrbuch_2015.pdf",
+        "https://walsermuseum.li/en"
+      ],
+      "added_urls": [
+        "https://walsermuseum.li/en"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Walser"
+      ],
+      "final_urls": [
+        "https://library.oapen.org/bitstream/handle/20.500.12657/75910/978-88-6046-194-0.pdf",
+        "https://aggesellschaft.ch/wp-content/uploads/2023/05/App_Jahrbuch_2015.pdf",
+        "https://walsermuseum.li/en"
+      ],
+      "current_source_count": 3,
+      "final_source_count": 3,
+      "title": "瓦尔瑟民间基督教与阿尔卑斯祈福（Walser）",
+      "n": 3,
+      "weak_domain_count": 1,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Walser"
+      ],
+      "rituals": [
+        "1. Maria Schnee 小堂敬礼（概念层）",
+        "2. Alpabfahrt 与 Alpsegen 牧季祝福（概念层）",
+        "3. Walser culture days（公共文化层）"
+      ],
+      "applied_urls": [
+        "https://library.oapen.org/bitstream/handle/20.500.12657/75910/978-88-6046-194-0.pdf",
+        "https://aggesellschaft.ch/wp-content/uploads/2023/05/App_Jahrbuch_2015.pdf",
+        "https://walsermuseum.li/en"
+      ]
+    },
+    {
+      "slug": "baltic-folk",
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013",
+        "https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf",
+        "https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013",
+        "https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf",
+        "https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087"
+      ],
+      "added_urls": [],
+      "removed_urls": [],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013",
+        "https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf",
+        "https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087"
+      ],
+      "current_source_count": 3,
+      "final_source_count": 3,
+      "title": "波罗的海民间信仰（立陶宛／拉脱维亚传统）",
+      "n": 3,
+      "weak_domain_count": 0,
+      "weak_urls": [],
+      "rituals": [
+        "1. 灶火／圣火照料与对 Gabija 的祈请",
+        "2. 岁时与农事开启礼（Rasa／Līgo 仲夏火等）",
+        "3. 人生礼仪与十字／路旁圣所的祈愿（Kryždirbystė；Kryžių kalnas）"
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013",
+        "https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf",
+        "https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087"
+      ]
+    },
+    {
+      "slug": "ivatan-traditional",
+      "current_urls": [
+        "https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/",
+        "https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/",
+        "https://doi.org/10.1353/asi.2003.0030"
+      ],
+      "input_urls": [
+        "https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/",
+        "https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/",
+        "https://doi.org/10.1353/asi.2003.0030"
+      ],
+      "added_urls": [],
+      "removed_urls": [],
+      "final_urls": [
+        "https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/",
+        "https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/",
+        "https://doi.org/10.1353/asi.2003.0030"
+      ],
+      "current_source_count": 3,
+      "final_source_count": 3,
+      "title": "伊瓦坦民间天主教与巴丹群岛祈福（Ivatan）",
+      "n": 3,
+      "weak_domain_count": 0,
+      "weak_urls": [],
+      "rituals": [
+        "1. Kapayvanuvanua 开海与 Anito 供奉余绪（概念层 ONLY）",
+        "2. Payuhuan 互助家屋祝福（概念层）",
+        "3. 堂区主保节／fiesta 与台风还愿弥撒（公共层）"
+      ],
+      "applied_urls": [
+        "https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/ivatan-itbayat/",
+        "https://www.nationalmuseum.gov.ph/2022/09/13/arayu-the-ivatan-gold/",
+        "https://doi.org/10.1353/asi.2003.0030"
+      ]
+    },
+    {
+      "slug": "trentino-folk",
+      "current_urls": [
+        "https://www.visittrentino.info/it/guida/da-vedere/chiese-santuari/santuario-di-san-romedio_md_2567",
+        "https://www.visittrentino.info/en/guide/must-see/churches-sanctuaries/santuario-della-madonna-di-pine_md_2437",
+        "https://www.visittrentino.info/en/guide/desmontegade"
+      ],
+      "input_urls": [
+        "https://www.visittrentino.info/it/guida/da-vedere/chiese-santuari/santuario-di-san-romedio_md_2567",
+        "https://www.visittrentino.info/en/guide/must-see/churches-sanctuaries/santuario-della-madonna-di-pine_md_2437",
+        "https://www.visittrentino.info/en/guide/desmontegade"
+      ],
+      "added_urls": [],
+      "removed_urls": [],
+      "final_urls": [
+        "https://www.visittrentino.info/it/guida/da-vedere/chiese-santuari/santuario-di-san-romedio_md_2567",
+        "https://www.visittrentino.info/en/guide/must-see/churches-sanctuaries/santuario-della-madonna-di-pine_md_2437",
+        "https://www.visittrentino.info/en/guide/desmontegade"
+      ],
+      "current_source_count": 3,
+      "final_source_count": 3,
+      "title": "特伦蒂诺民间天主教与阿尔卑斯祈福（Trentino）",
+      "n": 3,
+      "weak_domain_count": 0,
+      "weak_urls": [],
+      "rituals": [
+        "1. San Romedio 悬崖圣地朝圣（概念层）",
+        "2. Madonna di Piné 朝圣（概念层）",
+        "3. Desmalaiar 牧牛下山祝福（概念层）"
+      ],
+      "applied_urls": [
+        "https://www.visittrentino.info/it/guida/da-vedere/chiese-santuari/santuario-di-san-romedio_md_2567",
+        "https://www.visittrentino.info/en/guide/must-see/churches-sanctuaries/santuario-della-madonna-di-pine_md_2437",
+        "https://www.visittrentino.info/en/guide/desmontegade"
+      ]
+    },
+    {
+      "slug": "tuvaluan-traditional",
+      "current_urls": [
+        "https://ich.unesco.org/doc/src/44473-EN.pdf",
+        "https://doi.org/10.4000/129ck",
+        "https://dx.doi.org/10.1590/s1981-81222012000200011"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/doc/src/44473-EN.pdf",
+        "https://doi.org/10.4000/129ck",
+        "https://dx.doi.org/10.1590/s1981-81222012000200011"
+      ],
+      "added_urls": [],
+      "removed_urls": [],
+      "final_urls": [
+        "https://ich.unesco.org/doc/src/44473-EN.pdf",
+        "https://doi.org/10.4000/129ck",
+        "https://dx.doi.org/10.1590/s1981-81222012000200011"
+      ],
+      "current_source_count": 3,
+      "final_source_count": 3,
+      "title": "图瓦卢传统信仰与村社祈福余绪（Tuvaluan）",
+      "n": 3,
+      "weak_domain_count": 0,
+      "weak_urls": [],
+      "rituals": [
+        "1. Fatele 与 Maneapa 村社欢庆（公共文化层）",
+        "2. Gospel Day／EKT 教会礼拜（公共层）",
+        "3. tapu 记忆（CONCEPT）"
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/doc/src/44473-EN.pdf",
+        "https://doi.org/10.4000/129ck",
+        "https://dx.doi.org/10.1590/s1981-81222012000200011"
+      ]
+    },
+    {
+      "slug": "valdostano-folk",
+      "current_urls": [
+        "https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/courmayeur/381",
+        "https://www.regione.vda.it/notizie/details_f.asp?id=406732",
+        "https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/brusson/371"
+      ],
+      "input_urls": [
+        "https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/courmayeur/381",
+        "https://www.regione.vda.it/notizie/details_f.asp?id=406732",
+        "https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/brusson/371"
+      ],
+      "added_urls": [],
+      "removed_urls": [],
+      "final_urls": [
+        "https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/courmayeur/381",
+        "https://www.regione.vda.it/notizie/details_f.asp?id=406732",
+        "https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/brusson/371"
+      ],
+      "current_source_count": 3,
+      "final_source_count": 3,
+      "title": "瓦莱达奥斯塔民间天主教与阿尔卑斯祈福（Valdostano）",
+      "n": 3,
+      "weak_domain_count": 0,
+      "weak_urls": [],
+      "rituals": [
+        "1. Notre-Dame de la Guérison 高山圣母朝圣（概念层）",
+        "2. Saint-Bernard 阿尔卑斯庇护与主保节（概念层）",
+        "3. Alpine pasture blessing；Bataille des Reines（文化节庆，非核心仪轨）"
+      ],
+      "applied_urls": [
+        "https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/courmayeur/381",
+        "https://www.regione.vda.it/notizie/details_f.asp?id=406732",
+        "https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/brusson/371"
+      ]
+    },
+    {
+      "slug": "yapese-traditional",
+      "current_urls": [
+        "https://doi.org/10.1080/09538259.2025.2456734",
+        "https://visityap.com/events_in_yap.php",
+        "https://www.loc.gov/collections/?fa=subject:yap"
+      ],
+      "input_urls": [
+        "https://doi.org/10.1080/09538259.2025.2456734",
+        "https://visityap.com/events_in_yap.php",
+        "https://www.loc.gov/collections/?fa=subject:yap"
+      ],
+      "added_urls": [],
+      "removed_urls": [],
+      "final_urls": [
+        "https://doi.org/10.1080/09538259.2025.2456734",
+        "https://visityap.com/events_in_yap.php",
+        "https://www.loc.gov/collections/?fa=subject:yap"
+      ],
+      "current_source_count": 3,
+      "final_source_count": 3,
+      "title": "雅浦传统信仰与村社祈福余绪（Yapese）",
+      "n": 3,
+      "weak_domain_count": 0,
+      "weak_urls": [],
+      "rituals": [
+        "1. Rai 石币交换文化与 Yap Day（公共文化层）",
+        "2. Churu' 坐舞公共展演（公共文化层）",
+        "3. Faluw 男子会所（CONCEPT ONLY，受限）"
+      ],
+      "applied_urls": [
+        "https://doi.org/10.1080/09538259.2025.2456734",
+        "https://visityap.com/events_in_yap.php",
+        "https://www.loc.gov/collections/?fa=subject:yap"
+      ]
+    },
+    {
+      "slug": "basque-folk",
+      "current_urls": [
+        "https://www.britannica.com/summary/Basque",
+        "https://www.britannica.com/topic/Basque-language",
+        "https://kids.britannica.com/students/article/Basque/273123",
+        "https://buber.net/Basque/2020/05/17/basque-fact-of-the-week-mari-the-basque-mother-earth/",
+        "https://tourism.euskadi.eus/en/natural-areas/urkiola-natural-park/webtur00-content/en/",
+        "https://tourism.euskadi.eus/en/blog/5-things-you-have-to-know-about-semana-grande-aste-nagusia-in-bilbao/webtur00-contfichapost/en/",
+        "https://tourism.euskadi.eus/en/agenda/olentzero/webtur00-evento/en/",
+        "https://tourism.euskadi.eus/en/blog/discovering-the-origins-of-olentzero-and-mari-domingi/webtur00-contfichapost/en/"
+      ],
+      "input_urls": [
+        "https://tourism.euskadi.eus/en/natural-areas/urkiola-natural-park/webtur00-content/en/",
+        "https://tourism.euskadi.eus/en/agenda/olentzero/webtur00-evento/en/",
+        "https://tourism.euskadi.eus/en/blog/discovering-the-origins-of-olentzero-and-mari-domingi/webtur00-contfichapost/en/"
+      ],
+      "added_urls": [],
+      "removed_urls": [
+        "https://www.britannica.com/summary/Basque",
+        "https://www.britannica.com/topic/Basque-language",
+        "https://kids.britannica.com/students/article/Basque/273123"
+      ],
+      "final_urls": [
+        "https://buber.net/Basque/2020/05/17/basque-fact-of-the-week-mari-the-basque-mother-earth/",
+        "https://tourism.euskadi.eus/en/natural-areas/urkiola-natural-park/webtur00-content/en/",
+        "https://tourism.euskadi.eus/en/blog/5-things-you-have-to-know-about-semana-grande-aste-nagusia-in-bilbao/webtur00-contfichapost/en/",
+        "https://tourism.euskadi.eus/en/agenda/olentzero/webtur00-evento/en/",
+        "https://tourism.euskadi.eus/en/blog/discovering-the-origins-of-olentzero-and-mari-domingi/webtur00-contfichapost/en/"
+      ],
+      "current_source_count": 8,
+      "final_source_count": 5,
+      "title": "巴斯克民间信仰与玛丽女神传说（Basque folk／Mari）",
+      "n": 8,
+      "weak_domain_count": 3,
+      "weak_urls": [
+        "https://www.britannica.com/summary/Basque",
+        "https://www.britannica.com/topic/Basque-language",
+        "https://kids.britannica.com/students/article/Basque/273123"
+      ],
+      "rituals": [
+        "1. 山洞穴居传说中的敬畏规矩（概念层）",
+        "2. 天气与农牧相关的民俗祈请（概念层）",
+        "3. 节庆、舞蹈与地方文化记忆（概念层）"
+      ],
+      "applied_urls": [
+        "https://buber.net/Basque/2020/05/17/basque-fact-of-the-week-mari-the-basque-mother-earth/",
+        "https://tourism.euskadi.eus/en/natural-areas/urkiola-natural-park/webtur00-content/en/",
+        "https://tourism.euskadi.eus/en/blog/5-things-you-have-to-know-about-semana-grande-aste-nagusia-in-bilbao/webtur00-contfichapost/en/",
+        "https://tourism.euskadi.eus/en/agenda/olentzero/webtur00-evento/en/",
+        "https://tourism.euskadi.eus/en/blog/discovering-the-origins-of-olentzero-and-mari-domingi/webtur00-contfichapost/en/"
+      ]
+    },
+    {
+      "slug": "finnish-karelian-folk",
+      "current_urls": [
+        "https://www.britannica.com/topic/Finno-Ugric-religion",
+        "https://www.britannica.com/topic/Finno-Ugric-religion/System-of-spirits",
+        "https://www.britannica.com/topic/sacred-grove",
+        "https://helda.helsinki.fi/server/api/core/bitstreams/19485fd9-c2a6-4423-bb1d-80bc114cd4ae/content",
+        "https://journal.fi/ethnolfenn/article/view/84255",
+        "https://samanthagarner.ca/sacred-bear-spirit-finnish-paganism/"
+      ],
+      "input_urls": [
+        "https://helda.helsinki.fi/server/api/core/bitstreams/19485fd9-c2a6-4423-bb1d-80bc114cd4ae/content",
+        "https://journal.fi/ethnolfenn/article/view/84255"
+      ],
+      "added_urls": [],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Finno-Ugric-religion",
+        "https://www.britannica.com/topic/Finno-Ugric-religion/System-of-spirits",
+        "https://www.britannica.com/topic/sacred-grove"
+      ],
+      "final_urls": [
+        "https://helda.helsinki.fi/server/api/core/bitstreams/19485fd9-c2a6-4423-bb1d-80bc114cd4ae/content",
+        "https://journal.fi/ethnolfenn/article/view/84255",
+        "https://samanthagarner.ca/sacred-bear-spirit-finnish-paganism/"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 3,
+      "title": "芬兰—卡累利阿民间信仰与熊礼记忆／苏奥梅努斯科（Finnish–Karelian folk）",
+      "n": 6,
+      "weak_domain_count": 3,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Finno-Ugric-religion",
+        "https://www.britannica.com/topic/Finno-Ugric-religion/System-of-spirits",
+        "https://www.britannica.com/topic/sacred-grove"
+      ],
+      "rituals": [
+        "1. 熊的纪念宴、Honka 头骨树与 Tapio（历史—概念层）",
+        "2. Loitsut／Runo 与森林边界护卫文类（民俗概念层）",
+        "3. 当代 Suomenusko 岁时敬自然（公共复兴层）"
+      ],
+      "applied_urls": [
+        "https://helda.helsinki.fi/server/api/core/bitstreams/19485fd9-c2a6-4423-bb1d-80bc114cd4ae/content",
+        "https://journal.fi/ethnolfenn/article/view/84255",
+        "https://samanthagarner.ca/sacred-bear-spirit-finnish-paganism/"
+      ]
+    },
+    {
+      "slug": "hinduism",
+      "current_urls": [
+        "https://www.britannica.com/topic/puja",
+        "https://www.britannica.com/topic/yajna",
+        "https://www.britannica.com/topic/Hinduism/Practical-Hinduism",
+        "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703",
+        "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/sseasia.pdf",
+        "https://www.britishmuseum.org/collection/object/A_2026-3006-1-56"
+      ],
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703",
+        "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/sseasia.pdf",
+        "https://www.britishmuseum.org/collection/object/A_2026-3006-1-56"
+      ],
+      "added_urls": [],
+      "removed_urls": [
+        "https://www.britannica.com/topic/puja",
+        "https://www.britannica.com/topic/yajna",
+        "https://www.britannica.com/topic/Hinduism/Practical-Hinduism"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703",
+        "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/sseasia.pdf",
+        "https://www.britishmuseum.org/collection/object/A_2026-3006-1-56"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 3,
+      "title": "印度教",
+      "n": 6,
+      "weak_domain_count": 3,
+      "weak_urls": [
+        "https://www.britannica.com/topic/puja",
+        "https://www.britannica.com/topic/yajna",
+        "https://www.britannica.com/topic/Hinduism/Practical-Hinduism"
+      ],
+      "rituals": [
+        "1. 普迦（puja）与 Aarti、Prasad",
+        "2. 火祭（yajna / homa）",
+        "3. 誓愿（vrata）与圣见（darshan）"
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703",
+        "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/sseasia.pdf",
+        "https://www.britishmuseum.org/collection/object/A_2026-3006-1-56"
+      ]
+    },
+    {
+      "slug": "scottish-folk",
+      "current_urls": [
+        "https://www.britannica.com/biography/Saint-Columba",
+        "https://www.britannica.com/topic/holy-well",
+        "https://www.britannica.com/topic/Hogmanay",
+        "https://forestryandland.gov.scot/visit/destinations/munlochy-clootie-well",
+        "https://www.visitscotland.com/things-to-do/events/christmas-winter-festivals/hogmanay",
+        "https://www.historicenvironment.scot/visit/all/iona-abbey-and-nunnery/history-and-stories/"
+      ],
+      "input_urls": [
+        "https://forestryandland.gov.scot/visit/destinations/munlochy-clootie-well",
+        "https://www.visitscotland.com/things-to-do/events/christmas-winter-festivals/hogmanay",
+        "https://www.historicenvironment.scot/visit/all/iona-abbey-and-nunnery/history-and-stories/"
+      ],
+      "added_urls": [],
+      "removed_urls": [
+        "https://www.britannica.com/biography/Saint-Columba",
+        "https://www.britannica.com/topic/holy-well",
+        "https://www.britannica.com/topic/Hogmanay"
+      ],
+      "final_urls": [
+        "https://forestryandland.gov.scot/visit/destinations/munlochy-clootie-well",
+        "https://www.visitscotland.com/things-to-do/events/christmas-winter-festivals/hogmanay",
+        "https://www.historicenvironment.scot/visit/all/iona-abbey-and-nunnery/history-and-stories/"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 3,
+      "title": "苏格兰民间基督教与圣岛—圣井祈福（Scottish）",
+      "n": 6,
+      "weak_domain_count": 3,
+      "weak_urls": [
+        "https://www.britannica.com/biography/Saint-Columba",
+        "https://www.britannica.com/topic/holy-well",
+        "https://www.britannica.com/topic/Hogmanay"
+      ],
+      "rituals": [
+        "1. Munlochy Clootie Well（概念层）",
+        "2. Hogmanay 与 First-Footing（公共民俗层）",
+        "3. 爱奥那朝圣与堂区崇拜（概念层）"
+      ],
+      "applied_urls": [
+        "https://forestryandland.gov.scot/visit/destinations/munlochy-clootie-well",
+        "https://www.visitscotland.com/things-to-do/events/christmas-winter-festivals/hogmanay",
+        "https://www.historicenvironment.scot/visit/all/iona-abbey-and-nunnery/history-and-stories/"
+      ]
+    },
+    {
+      "slug": "albanian-folk",
+      "current_urls": [
+        "https://www.britannica.com/topic/Bektashi",
+        "https://www.britannica.com/topic/Sufism",
+        "https://balkaninsight.com/2016/05/18/quarries-make-hellish-mess-of-albania-s-holy-mountain-05-16-2016/",
+        "https://doi.org/10.3390/rel16020163",
+        "https://albaniandailynews.com/news/holy-pilgrimage-thousands-of-bektashi-believers-climb-mount-tomorri-",
+        "https://albaniaheritage.com/en/mali-i-tomorrit-dhe-baba-tomorri/",
+        "https://doi.org/10.3390/histories4010009"
+      ],
+      "input_urls": [
+        "https://doi.org/10.3390/rel16020163",
+        "https://albaniandailynews.com/news/holy-pilgrimage-thousands-of-bektashi-believers-climb-mount-tomorri-",
+        "https://albaniaheritage.com/en/mali-i-tomorrit-dhe-baba-tomorri/",
+        "https://doi.org/10.3390/histories4010009"
+      ],
+      "added_urls": [],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Bektashi",
+        "https://www.britannica.com/topic/Sufism"
+      ],
+      "final_urls": [
+        "https://balkaninsight.com/2016/05/18/quarries-make-hellish-mess-of-albania-s-holy-mountain-05-16-2016/",
+        "https://doi.org/10.3390/rel16020163",
+        "https://albaniandailynews.com/news/holy-pilgrimage-thousands-of-bektashi-believers-climb-mount-tomorri-",
+        "https://albaniaheritage.com/en/mali-i-tomorrit-dhe-baba-tomorri/",
+        "https://doi.org/10.3390/histories4010009"
+      ],
+      "current_source_count": 7,
+      "final_source_count": 5,
+      "title": "阿尔巴尼亚民间信仰与托莫尔山朝圣祈福（Albanian folk／Bektashi Tomorr）",
+      "n": 7,
+      "weak_domain_count": 2,
+      "weak_urls": [
+        "https://www.britannica.com/topic/Bektashi",
+        "https://www.britannica.com/topic/Sufism"
+      ],
+      "rituals": [
+        "1. 托莫尔山贝克塔什朝圣（公共层；八月高峰）",
+        "2. 教堂／清真寺瞻礼与家庭祝福（公共层）",
+        "3. 民间护佑与口头祝福余绪（Dordolec 等，概念层）"
+      ],
+      "applied_urls": [
+        "https://balkaninsight.com/2016/05/18/quarries-make-hellish-mess-of-albania-s-holy-mountain-05-16-2016/",
+        "https://doi.org/10.3390/rel16020163",
+        "https://albaniandailynews.com/news/holy-pilgrimage-thousands-of-bektashi-believers-climb-mount-tomorri-",
+        "https://albaniaheritage.com/en/mali-i-tomorrit-dhe-baba-tomorri/",
+        "https://doi.org/10.3390/histories4010009"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "请为下列 12 个祈福／祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C37）。本轮是 C 级卡片弱链接清理：按用户提供的 URL 映射逐卡追加新 URL，卡片内去重，并在有更具体、更可靠来源替代时移除 Britannica、encyclopedia.com、everyculture.com 弱概览链接。只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。禁止 Britannica 地点或泛概览页、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页及与传统无实质关联的泛泛报告。URL 必须公开可核验；DOI 须能在 Crossref 查到且主题相符；网页须 HTTP 200，PDF 须确认正文关键词；不得与卡片现有 URL 或 SOURCES.md 已收录 URL 重复；宁缺毋滥。",
+    "仅对有更具体替代来源的卡片移除 Britannica、encyclopedia.com、everyculture.com；卡片和 SOURCES.md 均去重。"
+  ],
+  "input_url_count": 36,
+  "unique_input_url_count": 36,
+  "card_url_added_count": 1,
+  "card_url_removed_count": 15,
+  "sources_unique_added_count": 1,
+  "remaining_candidates_after_batch": [],
+  "source_map": "/tmp/c37-urls.json"
+}

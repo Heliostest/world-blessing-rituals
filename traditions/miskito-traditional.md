@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.everyculture.com/Middle-America-Caribbean/Miskito-Religion-and-Expressive-Culture.html
-- https://www.everyculture.com/wc/Mauritania-to-Nigeria/Sumu-and-Miskito.html
 - https://www.britannica.com/topic/Miskito
+- https://www.mined.gob.ni/biblioteca/wp-content/uploads/2024/08/CARTILLA.pdf
+- https://www.marena.gob.ni/wp-content/uploads/2026/04/Sistematizacion-de-las-Lecciones-Aprendidas-Gobernanza-1.pdf
+- https://journals.openedition.org/revestudsoc/20793

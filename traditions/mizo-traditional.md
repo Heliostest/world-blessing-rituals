@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mizo
 - https://en.wikipedia.org/wiki/Mizo_religion
 - https://en.wikipedia.org/wiki/Christianity_in_Mizoram
+- https://dipr.mizoram.gov.in/post/the-origin-of-the-chapchar-kut
+- https://dipr.mizoram.gov.in/page/festivals
+- https://dx.doi.org/10.3390/genealogy9030071

@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Mixe
-- https://www.britannica.com/place/Oaxaca-state-Mexico
-- https://www.britannica.com/place/Mexico
+- https://www.gob.mx/cms/uploads/attachment/file/618444/libro-leyenda-rey-kondoy-inpi-bilingue-mixe-es.pdf
+- https://sic.cultura.gob.mx/ficha.php?table=gastronomia&table_id=68
+- https://revistas.inah.gob.mx/index.php/cuicuilco/article/download/24737/26076

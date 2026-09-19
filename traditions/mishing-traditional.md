@@ -46,7 +46,9 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://en.wikipedia.org/wiki/Mising_people
 - https://www.iosrjournals.org/iosr-jhss/papers/Vol.%2024%20Issue11/Series-3/C2411031315.pdf
 - https://en.wikipedia.org/wiki/Donyi-Polo
+- https://majuli.assam.gov.in/tourist-place-detail/489
+- https://culturalaffairs.assam.gov.in/frontimpotentdata/festivals-of-assam
+- https://doi.org/10.1145/3694785

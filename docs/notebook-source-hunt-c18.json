@@ -1,0 +1,204 @@
+{
+  "batch": "notebook-source-hunt-c18",
+  "cycle": 18,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 C17 后按字母序从 moken-traditional 之后续选，排除 C1–C17 已处理 slug；禁止用已有 4+ 来源卡填充",
+  "previous_cycles_slugs_processed": 203,
+  "slugs": [
+    "monpa-traditional",
+    "mopan-traditional",
+    "mordvin-traditional",
+    "motu-traditional",
+    "munduruku-traditional",
+    "murle-traditional",
+    "nahua-traditional",
+    "nanai-traditional",
+    "nasioi-traditional",
+    "naso-traditional",
+    "ndau-traditional",
+    "negidal-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "monpa-traditional",
+      "title": "门巴传统信仰与藏传佛教—地方神祈福（Monpa）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Monpa",
+        "https://www.britannica.com/place/Arunachal-Pradesh",
+        "https://www.britannica.com/topic/Tibetan-Buddhism"
+      ],
+      "rituals": [
+        "1. 寺院礼佛与节庆（概念层）",
+        "2. 山神与地方灵敬礼（概念层）",
+        "3. 日常转经与家屋佛堂（概念层）"
+      ]
+    },
+    {
+      "slug": "mopan-traditional",
+      "title": "莫潘玛雅民间天主教与伯利兹—危地马拉祈福（Mopan）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mopan",
+        "https://www.britannica.com/topic/Maya-people",
+        "https://www.britannica.com/place/Belize"
+      ],
+      "rituals": [
+        "1. 主保圣人节（公开层）",
+        "2. 农作与社区伦理（概念层）",
+        "3. 更封闭的圣地实践（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "mordvin-traditional",
+      "title": "莫尔多瓦／厄尔齐亚—莫克沙传统信仰与东正教祈福（Mordvin）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Finno-Ugric-religion",
+        "https://www.britannica.com/topic/Mordvin",
+        "https://en.wikipedia.org/wiki/Erzyan_native_religion"
+      ],
+      "rituals": [
+        "1. 东正教礼仪与家庭主保实践（概念层）",
+        "2. 民俗岁时与家灵余绪（概念层）",
+        "3. 民族宗教复兴公开祈请（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "motu-traditional",
+      "title": "莫图传统信仰与希里贸易—基督教祈福（Motu）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Motu",
+        "https://www.britannica.com/place/Port-Moresby",
+        "https://www.britannica.com/place/Papua-New-Guinea"
+      ],
+      "rituals": [
+        "1. 希里贸易记忆与航海伦理（概念层）",
+        "2. 祖先敬礼（敏感，仅概念）",
+        "3. 教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "munduruku-traditional",
+      "title": "蒙杜鲁库传统信仰与亚马孙祈福概观（Munduruku／Mundurucú）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mundurucu",
+        "https://www.britannica.com/place/Tapajos-River",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "rituals": [
+        "1. 渔猎成功祈请（概念层）",
+        "2. 树／房屋护佑与 Karusakaibo 叙事（概念层）",
+        "3. 教会生活与反采矿公共行动（公共／当代层）"
+      ]
+    },
+    {
+      "slug": "murle-traditional",
+      "title": "穆尔勒传统信仰与苏尔牧祈福（Murle）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/South-Sudan",
+        "https://www.britannica.com/topic/Surmic-languages",
+        "https://www.britannica.com/place/East-African-lakes"
+      ],
+      "rituals": [
+        "1. 牧畜与雨水伦理（敏感，仅概念）",
+        "2. 世代与成年传统（极高敏感，仅概念）",
+        "3. 基督教与当代和平层（公开层）"
+      ]
+    },
+    {
+      "slug": "nahua-traditional",
+      "title": "纳瓦民间天主教与山灵—玉米祈福（Nahua）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Nahua",
+        "https://www.britannica.com/topic/Aztec",
+        "https://www.britannica.com/place/Mexico"
+      ],
+      "rituals": [
+        "1. 主保圣徒节与天主教礼仪（概念层）",
+        "2. 山灵／水灵与农事祈请（概念层）",
+        "3. 传统疗愈（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "nanai-traditional",
+      "title": "那乃／赫哲传统信仰与萨满祈福（Nanai／Hezhen）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nanais",
+        "https://doi.org/10.15021/00002606",
+        "https://factsanddetails.com/world/cat55/sub350/item1919.html"
+      ],
+      "rituals": [
+        "1. 自然灵敬礼与渔猎相关祈请（概念层）",
+        "2. 萨满疗愈与鼓祷（高度敏感，仅概念）",
+        "3. 丧葬相关灵魂旅程叙事（高度敏感，禁止操作）"
+      ]
+    },
+    {
+      "slug": "nasioi-traditional",
+      "title": "纳西奥伊传统信仰与布干维尔祈福（Nasioi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Bougainville-Island",
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture"
+      ],
+      "rituals": [
+        "1. 土地与氏族伦理（敏感，仅概念）",
+        "2. 基督教与和解公开层（概念）",
+        "3. 入会／丧礼传统（极高敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "naso-traditional",
+      "title": "纳索传统信仰与王国—森林祈福（Naso／Tjër Di）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Teribe",
+        "https://www.britannica.com/place/Panama",
+        "https://www.britannica.com/topic/Central-American-Indian"
+      ],
+      "rituals": [
+        "1. 森林伦理与祖先敬礼（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 公共集会与王权礼仪层（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "ndau-traditional",
+      "title": "恩道传统宗教与祖灵祈福（Ndau）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Ndau",
+        "https://www.britannica.com/place/Mozambique",
+        "https://www.britannica.com/place/Zimbabwe"
+      ],
+      "rituals": [
+        "1. 祖灵敬礼（概念层）",
+        "2. 教堂崇拜与独立教会（概念层）",
+        "3. 治疗师中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "negidal-traditional",
+      "title": "涅吉达尔传统信仰与阿穆尔—萨满祈福（Negidal）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Negidal",
+        "https://www.britannica.com/place/Amur-River",
+        "https://www.britannica.com/place/Siberia"
+      ],
+      "rituals": [
+        "1. 渔猎—水灵伦理（概念层）",
+        "2. 萨满中介（极高敏感，仅概念）",
+        "3. 东正教接触层（概念层）"
+      ]
+    }
+  ],
+  "prompt": "请为下列 12 个祈福／祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C18）。目标：为仍然薄的 C 级卡片补充 2–4 条高质量、可公开核验的新参考来源。\n\n选择规则：接 C17 的 moken-traditional 之后，按 slug 字母序选取下一批当前恰为 n=3 的薄卡；排除 C1–C17 已处理的 203 个 slug，不得用已有 4+ 来源卡片凑数。严格按字母序跳过 n≠3 卡片。\n\n对每个 slug 输出：\nslug:\n建议新增 URL（每行一条，附一句中文说明覆盖内容与可信度理由）：\n- <URL> — <说明>\n\n来源优先级：\n1. UNESCO 非遗名录、申报文件、优秀保护实践，以及各国国家级非遗名录官方页面；\n2. 与具体传统、节庆、朝圣地或社群直接相关的文化部、地方政府、原住民族／部族官方机构、博物馆、档案馆或官方节庆网站；\n3. 大学、科研机构与学术档案页面（藏品页、特展、档案、学位论文库）；\n4. 可由 Crossref 核验、主题确切相关的同行评审论文或 DOI 图书章节（优先 doi.org / dx.doi.org）。\n\n明确禁止：Britannica 的地点（/place/）概览页与泛概览页；encyclopedia.com 与 everyculture.com 概览页；Wikipedia 或任何 wiki 概览页；101lasttribes、joshuaproject 一类部族目录页；与该传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。\n\n硬性要求：每条 URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或仓库 SOURCES.md 已收录 URL 重复；每个 slug 给 2–4 条，宁缺毋滥，找不到合格来源时写“未找到”。只补 ## 参考来源，不改卡片正文、档位与仪式内容。\n\n---\n1. slug=monpa-traditional（现有来源 3 条）\n标题: 门巴传统信仰与藏传佛教—地方神祈福（Monpa）\n典型仪式名: 1. 寺院礼佛与节庆（概念层）；2. 山神与地方灵敬礼（概念层）；3. 日常转经与家屋佛堂（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Monpa\n- https://www.britannica.com/place/Arunachal-Pradesh\n- https://www.britannica.com/topic/Tibetan-Buddhism\n\n2. slug=mopan-traditional（现有来源 3 条）\n标题: 莫潘玛雅民间天主教与伯利兹—危地马拉祈福（Mopan）\n典型仪式名: 1. 主保圣人节（公开层）；2. 农作与社区伦理（概念层）；3. 更封闭的圣地实践（敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Mopan\n- https://www.britannica.com/topic/Maya-people\n- https://www.britannica.com/place/Belize\n\n3. slug=mordvin-traditional（现有来源 3 条）\n标题: 莫尔多瓦／厄尔齐亚—莫克沙传统信仰与东正教祈福（Mordvin）\n典型仪式名: 1. 东正教礼仪与家庭主保实践（概念层）；2. 民俗岁时与家灵余绪（概念层）；3. 民族宗教复兴公开祈请（敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Finno-Ugric-religion\n- https://www.britannica.com/topic/Mordvin\n- https://en.wikipedia.org/wiki/Erzyan_native_religion\n\n4. slug=motu-traditional（现有来源 3 条）\n标题: 莫图传统信仰与希里贸易—基督教祈福（Motu）\n典型仪式名: 1. 希里贸易记忆与航海伦理（概念层）；2. 祖先敬礼（敏感，仅概念）；3. 教堂崇拜（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Motu\n- https://www.britannica.com/place/Port-Moresby\n- https://www.britannica.com/place/Papua-New-Guinea\n\n5. slug=munduruku-traditional（现有来源 3 条）\n标题: 蒙杜鲁库传统信仰与亚马孙祈福概观（Munduruku／Mundurucú）\n典型仪式名: 1. 渔猎成功祈请（概念层）；2. 树／房屋护佑与 Karusakaibo 叙事（概念层）；3. 教会生活与反采矿公共行动（公共／当代层）\n现有 URL（勿重复）：\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mundurucu\n- https://www.britannica.com/place/Tapajos-River\n- https://www.britannica.com/place/Amazon-Rainforest\n\n6. slug=murle-traditional（现有来源 3 条）\n标题: 穆尔勒传统信仰与苏尔牧祈福（Murle）\n典型仪式名: 1. 牧畜与雨水伦理（敏感，仅概念）；2. 世代与成年传统（极高敏感，仅概念）；3. 基督教与当代和平层（公开层）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/South-Sudan\n- https://www.britannica.com/topic/Surmic-languages\n- https://www.britannica.com/place/East-African-lakes\n\n7. slug=nahua-traditional（现有来源 3 条）\n标题: 纳瓦民间天主教与山灵—玉米祈福（Nahua）\n典型仪式名: 1. 主保圣徒节与天主教礼仪（概念层）；2. 山灵／水灵与农事祈请（概念层）；3. 传统疗愈（高度敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Nahua\n- https://www.britannica.com/topic/Aztec\n- https://www.britannica.com/place/Mexico\n\n8. slug=nanai-traditional（现有来源 3 条）\n标题: 那乃／赫哲传统信仰与萨满祈福（Nanai／Hezhen）\n典型仪式名: 1. 自然灵敬礼与渔猎相关祈请（概念层）；2. 萨满疗愈与鼓祷（高度敏感，仅概念）；3. 丧葬相关灵魂旅程叙事（高度敏感，禁止操作）\n现有 URL（勿重复）：\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nanais\n- https://doi.org/10.15021/00002606\n- https://factsanddetails.com/world/cat55/sub350/item1919.html\n\n9. slug=nasioi-traditional（现有来源 3 条）\n标题: 纳西奥伊传统信仰与布干维尔祈福（Nasioi）\n典型仪式名: 1. 土地与氏族伦理（敏感，仅概念）；2. 基督教与和解公开层（概念）；3. 入会／丧礼传统（极高敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Bougainville-Island\n- https://www.britannica.com/place/Papua-New-Guinea\n- https://www.britannica.com/topic/Melanesian-culture\n\n10. slug=naso-traditional（现有来源 3 条）\n标题: 纳索传统信仰与王国—森林祈福（Naso／Tjër Di）\n典型仪式名: 1. 森林伦理与祖先敬礼（概念层）；2. 教堂崇拜（概念层）；3. 公共集会与王权礼仪层（敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Teribe\n- https://www.britannica.com/place/Panama\n- https://www.britannica.com/topic/Central-American-Indian\n\n11. slug=ndau-traditional（现有来源 3 条）\n标题: 恩道传统宗教与祖灵祈福（Ndau）\n典型仪式名: 1. 祖灵敬礼（概念层）；2. 教堂崇拜与独立教会（概念层）；3. 治疗师中介（高度敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Ndau\n- https://www.britannica.com/place/Mozambique\n- https://www.britannica.com/place/Zimbabwe\n\n12. slug=negidal-traditional（现有来源 3 条）\n标题: 涅吉达尔传统信仰与阿穆尔—萨满祈福（Negidal）\n典型仪式名: 1. 渔猎—水灵伦理（概念层）；2. 萨满中介（极高敏感，仅概念）；3. 东正教接触层（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Negidal\n- https://www.britannica.com/place/Amur-River\n- https://www.britannica.com/place/Siberia"
+}

@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Yunnan
 - https://davidpublisher.com/Public/uploads/Contribute/551110d75dcb3.pdf
 - http://www.china.org.cn/english/features/EthnicGroups/136907.htm
+- https://doi.org/10.18306/dlkxjz.2020.02.010
+- https://doi.org/10.3390/land13122004
+- https://doi.org/10.3390/agronomy14122913

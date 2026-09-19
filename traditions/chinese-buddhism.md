@@ -55,3 +55,6 @@
 - https://www.britannica.com/topic/Buddhism/Popular-religious-practices
 - https://buddhiststudies.utoronto.ca/wp-content/uploads/2021/10/Shiu_Stokes_2008_Animal-Release.pdf
 - https://doi.org/10.1515/cdc-2015-0008
+- https://doi.org/10.38144/TKT.2026.1.3
+- https://doi.org/10.3390/rel14010110
+- https://doi.org/10.1111/rec3.12483

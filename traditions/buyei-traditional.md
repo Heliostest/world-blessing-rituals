@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/topic/Buyei
 - https://factsanddetails.com/china/cat5/sub30/entry-4379.html
-- https://www.britannica.com/place/Guizhou
+- https://doi.org/10.1163/2210-7363_ecll_COM_000055
+- https://doi.org/10.3389/fpsyg.2019.02603
+- https://doi.org/10.3389/fpls.2024.1364481

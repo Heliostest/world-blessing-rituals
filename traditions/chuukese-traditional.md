@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://pulotu.com/culture/chuuk
-- https://www.everyculture.com/Ma-Ni/Federated-States-of-Micronesia.html
-- https://www.britannica.com/place/Chuuk-Islands
+- https://ich.unesco.org/en/decisions/16.COM/8.A.4
+- https://ich.unesco.org/en/USL/carolinian-wayfinding-and-canoe-making-01735
+- https://ich.unesco.org/en/state/micronesia-fs-FM

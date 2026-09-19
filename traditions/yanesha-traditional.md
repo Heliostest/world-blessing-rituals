@@ -46,7 +46,5 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/topic/Amuesha
-- https://www.britannica.com/place/Peru
-- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.iwgia.org/en/peru.html
+- https://www.loc.gov/collections/?fa=subject:yanesha

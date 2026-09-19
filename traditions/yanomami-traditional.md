@@ -46,7 +46,5 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.everyculture.com/South-America/Yanomam-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/topic/Yanomami
-- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.survivalinternational.org/tribes/yanomami
+- https://www.britishmuseum.org/collection/search?keyword=Yanomami

@@ -3784,3 +3784,28 @@
 - https://www.brooklynmuseum.org/en-GB/objects/4829
 - https://mundhum.com/festivals
 - https://internationalconservationfund.org/the-yali/
+
+## 增补传统（Notebook source hunt C33：亚米纳瓦—尤卡坦玛雅）
+
+- https://www.iwgia.org/en/peru.html
+- https://www.loc.gov/collections/?fa=subject:yaminahua
+- https://www.loc.gov/collections/?fa=subject:yanesha
+- https://www.survivalinternational.org/tribes/yanomami
+- https://www.britishmuseum.org/collection/search?keyword=Yanomami
+- https://www.britishmuseum.org/collection/search?keyword=Yao%20Mien
+- https://www.loc.gov/collections/?fa=subject:yao%20mien
+- https://www.loc.gov/collections/?fa=subject:yap
+- https://americanindian.si.edu/nk360/invaders/yaqui
+- https://www.loc.gov/collections/?fa=subject:yaqui
+- https://pib.socioambiental.org/en/Povo:Yawalapiti
+- https://pib.socioambiental.org/en/Povo:Yekuana
+- https://www.loc.gov/collections/?fa=subject:yekuana
+- https://www.britishmuseum.org/collection/search?keyword=Ye%27kuana
+- https://pib.socioambiental.org/en/Povo:Yine
+- https://www.loc.gov/collections/?fa=subject:yine
+- https://www.loc.gov/collections/?fa=subject:Chontal%20Maya
+- https://www.britishmuseum.org/collection/search?keyword=Chontal%20Maya
+- https://www.britishmuseum.org/collection/search?keyword=Yombe
+- https://www.loc.gov/collections/?fa=subject:yombe
+- https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00540
+- https://www.loc.gov/collections/?fa=subject:yucatec%20maya

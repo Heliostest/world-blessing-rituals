@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://doi.org/10.1080/09538259.2025.2456734
 - https://visityap.com/events_in_yap.php
-- https://mantaray.com/the-manta-ray-bay-resort/special-events-regional-partners/yap-day-2026/
+- https://www.loc.gov/collections/?fa=subject:yap

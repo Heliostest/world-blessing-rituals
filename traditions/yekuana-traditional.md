@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Orinoco-River
-- https://www.britannica.com/place/Amazon-Rainforest
-- https://www.britannica.com/topic/South-American-Indian
+- https://pib.socioambiental.org/en/Povo:Yekuana
+- https://www.loc.gov/collections/?fa=subject:yekuana
+- https://www.britishmuseum.org/collection/search?keyword=Ye%27kuana

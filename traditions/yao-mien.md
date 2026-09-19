@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://yaodao.hku.hk/daoism-among-the-yao/
-- https://en.wikipedia.org/wiki/Yao_Taoism
-- https://factsanddetails.com/china/cat5/sub30/item180.html
+- https://www.britishmuseum.org/collection/search?keyword=Yao%20Mien
+- https://www.loc.gov/collections/?fa=subject:yao%20mien

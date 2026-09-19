@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Xinguanos
-- https://www.britannica.com/place/Xingu-River
-- https://www.britannica.com/place/Brazil
+- https://www.scielo.br/j/vb/a/ws6NZTPJsPqPNQn6tdQFyBh/?lang=en
+- https://www.scielo.br/j/bgoeldi/a/zmZrTNGrbKkNtXcyxr9hx4j/?lang=en
+- https://doi.org/10.3389/fpsyg.2015.00283

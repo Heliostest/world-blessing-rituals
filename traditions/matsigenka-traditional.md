@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/South-America/Matsigenka-Religion-and-Expressive-Culture.html
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/matsigenka-0
-- https://www.britannica.com/place/Amazon-Rainforest
+- https://doi.org/10.1080/00141840903402468
+- https://dx.doi.org/10.3390/arts13040135
+- https://doi.org/10.3390/w18121497

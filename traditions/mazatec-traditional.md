@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Mazatec
-- https://www.britannica.com/place/Oaxaca-state-Mexico
-- https://www.britannica.com/place/Mexico
+- https://doi.org/10.1111/anoc.12168
+- https://revistas.inah.gob.mx/index.php/cuicuilco/article/view/14716
+- https://doi.org/10.4000/books.cemca.1271

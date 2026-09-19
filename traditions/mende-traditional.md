@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Mende-people
-- https://www.britannica.com/place/Sierra-Leone
 - https://www.britannica.com/topic/Poro
+- https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/the-art-of-africa.pdf
+- https://doi.org/10.1017/S0001972018000438
+- https://dx.doi.org/10.14318/hau6.3.011

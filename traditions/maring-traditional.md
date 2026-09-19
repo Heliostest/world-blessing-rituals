@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Papua-New-Guinea
 - https://www.britannica.com/topic/Melanesian-culture
-- https://www.britannica.com/place/New-Guinea
+- https://doi.org/10.1007/BF01531427
+- https://library.ucsd.edu/dc/object/bb00355714

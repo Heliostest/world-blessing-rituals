@@ -3160,3 +3160,41 @@
 - https://doi.org/10.1163/2405-8262_rgg4_SIM_13591
 - https://journals.openedition.org/jso/14796
 - https://journals.openedition.org/jso/6450
+
+
+## 增补传统（Notebook source hunt C16：马林—门德）
+
+- https://doi.org/10.1007/BF01531427
+- https://library.ucsd.edu/dc/object/bb00355714
+- https://doi.org/10.4000/books.oep.817
+- https://www.scielo.br/j/ea/a/s56DzM3Nx5CSk86nBs6Lz8b/?lang=pt
+- https://www.scielo.br/j/nec/a/zzHGYHMcMnvJ9SCMLSXtCvF/?lang=pt
+- https://doi.org/10.3390/toxins15030194
+- https://www.scielo.br/j/mana/a/xQL4zg7kD8qtcYCBz9vnZKx/?lang=pt
+- https://www.scielo.br/j/bpsr/a/K5TxPcpHB3WVpx5spy8wNSN/?format=pdf&lang=en
+- https://doi.org/10.1080/00141840903402468
+- https://dx.doi.org/10.3390/arts13040135
+- https://doi.org/10.3390/w18121497
+- https://revistas.inah.gob.mx/index.php/antropologia/article/view/3720
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2448-84882023000100010
+- https://sic.cultura.gob.mx/ficha.php?table=gpo_artistico&table_id=96
+- https://doi.org/10.4000/13as9
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-16592011000200012
+- https://doi.org/10.22201/ceide.16076079e.2024.25.4.11
+- https://doi.org/10.1111/anoc.12168
+- https://revistas.inah.gob.mx/index.php/cuicuilco/article/view/14716
+- https://doi.org/10.4000/books.cemca.1271
+- https://www.scielo.br/j/vb/a/ws6NZTPJsPqPNQn6tdQFyBh/?lang=en
+- https://www.scielo.br/j/bgoeldi/a/zmZrTNGrbKkNtXcyxr9hx4j/?lang=en
+- https://doi.org/10.3389/fpsyg.2015.00283
+- http://dx.doi.org/10.22459/ta46.07.2017.05
+- https://dx.doi.org/10.4000/books.pacific.1043
+- https://books.openedition.org/pacific/1028
+- https://journals.openedition.org/jso/263
+- https://doi.org/10.22459/KPI.03.2017
+- https://books.openedition.org/pacific/159
+- https://doi.org/10.4000/12ns7
+- https://dx.doi.org/10.4000/tc.17078
+- https://doi.org/10.4000/moussons.7649
+- https://doi.org/10.1017/S0001972018000438
+- https://dx.doi.org/10.14318/hau6.3.011

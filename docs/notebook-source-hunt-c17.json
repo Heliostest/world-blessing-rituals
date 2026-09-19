@@ -1,0 +1,204 @@
+{
+  "batch": "notebook-source-hunt-c17",
+  "cycle": 17,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 C16 后按字母序从 mende-traditional 之后续选，排除 C1–C16 已处理 slug；禁止用已有 4+ 源卡填充",
+  "previous_cycles_slugs_processed": 191,
+  "slugs": [
+    "mendi-traditional",
+    "mengen-traditional",
+    "mesoamerican",
+    "miji-traditional",
+    "minahasa-traditional",
+    "mishing-traditional",
+    "mishmi-traditional",
+    "miskito-traditional",
+    "mixe-traditional",
+    "mixtec-nuu-savi",
+    "mizo-traditional",
+    "moken-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "mendi-traditional",
+      "title": "门迪传统信仰与高地—祖灵祈福（Mendi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Mendi",
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture"
+      ],
+      "rituals": [
+        "祖先敬礼（概念层）",
+        "猪只互惠与和解叙事（概念层）",
+        "教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "mengen-traditional",
+      "title": "门根传统信仰与新不列颠—祖先祈福（Mengen）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/New-Britain-Island-Papua-New-Guinea",
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture"
+      ],
+      "rituals": [
+        "祖先敬礼（概念层）",
+        "面具／舞蹈公共层（极高敏感，仅概念）",
+        "教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "mesoamerican",
+      "title": "中美洲土著余绪（玛雅、纳瓦等）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054",
+        "https://americanhistory.si.edu/explore/stories/day-dead-smithsonian-its-not-halloween",
+        "https://folklife.si.edu/magazine/altered-altars-changing-traditions-dia-de-los-muertos"
+      ],
+      "rituals": [
+        "亡灵祭坛与守夜",
+        "焚香洁净与祈祷",
+        "农业与社区感恩礼"
+      ]
+    },
+    {
+      "slug": "miji-traditional",
+      "title": "米吉传统信仰与东尼—波罗—基督教祈福（Miji／Sajolang）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Arunachal-Pradesh",
+        "https://www.britannica.com/place/Northeast-India",
+        "https://www.britannica.com/topic/Donyi-Polo"
+      ],
+      "rituals": [
+        "仪者中介与农事／疗愈礼仪（高度敏感，仅概念）",
+        "本土信仰公共层（概念层）",
+        "基督教堂会实践（概念层）"
+      ]
+    },
+    {
+      "slug": "minahasa-traditional",
+      "title": "米纳哈萨基督教与马勒松传统祈福余绪（Minahasa）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://en.wikipedia.org/wiki/Minahasan_people",
+        "https://digitalcollections.sit.edu/isp_collection/2191",
+        "https://www.britannica.com/place/North-Sulawesi"
+      ],
+      "rituals": [
+        "新教／天主教堂会崇拜（概念层）",
+        "生命礼仪与社群音乐文化（概念层）",
+        "Malesung／Walian 历史与复兴讨论（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "mishing-traditional",
+      "title": "米辛传统信仰与克奥利亚—东尼波罗祈福（Mishing／Mising）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://en.wikipedia.org/wiki/Mising_people",
+        "https://www.iosrjournals.org/iosr-jhss/papers/Vol.%2024%20Issue11/Series-3/C2411031315.pdf",
+        "https://en.wikipedia.org/wiki/Donyi-Polo"
+      ],
+      "rituals": [
+        "Keoliya／萨特拉相关虔信实践（概念层）",
+        "Donyi-Polo 认同祈祷（概念层）",
+        "基督教与其他教派并行（概念层）"
+      ]
+    },
+    {
+      "slug": "mishmi-traditional",
+      "title": "米什米传统信仰与精灵—高神祈福（Mishmi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.academia.edu/52422685/SUPERNATURAL_WORLD_AND_FOLK_TAXONOMY_CASE_STUDY_ON_FEW_TRIBES_OF_SIANG_AND_DIBANG_VALLEYS_OF_ARUNACHAL_PRADESH",
+        "https://en.wikipedia.org/wiki/Donyi-Polo",
+        "https://www.britannica.com/place/Arunachal-Pradesh"
+      ],
+      "rituals": [
+        "高神与精灵伦理（概念层）",
+        "祭司中介与危机礼仪（高度敏感，仅概念）",
+        "制度化本土信仰／世界宗教并行（概念层）"
+      ]
+    },
+    {
+      "slug": "miskito-traditional",
+      "title": "米斯基托民间基督教与海岸灵力祈福（Miskito）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.everyculture.com/Middle-America-Caribbean/Miskito-Religion-and-Expressive-Culture.html",
+        "https://www.everyculture.com/wc/Mauritania-to-Nigeria/Sumu-and-Miskito.html",
+        "https://www.britannica.com/topic/Miskito"
+      ],
+      "rituals": [
+        "摩拉维亚／基督教堂区崇拜（概念层）",
+        "梦兆与灵力谨慎伦理（概念层）",
+        "历史萨满／当代疗愈余绪（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "mixe-traditional",
+      "title": "米赫传统信仰与山灵—天主教祈福（Mixe／Ayuuk）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mixe",
+        "https://www.britannica.com/place/Oaxaca-state-Mexico",
+        "https://www.britannica.com/place/Mexico"
+      ],
+      "rituals": [
+        "主保节与教堂礼仪（概念层）",
+        "山灵与农事祈请（概念层）",
+        "疗愈中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "mixtec-nuu-savi",
+      "title": "米斯特克／雨之民传统祈福（Mixtec／Ñuu Savi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mixtec",
+        "https://www.everyculture.com/Middle-America-Caribbean/Mixtec-Religion-and-Expressive-Culture.html",
+        "https://doi.org/10.1007/s12685-016-0174-x"
+      ],
+      "rituals": [
+        "迎雨／求雨与 Vehe Savi 圣所礼仪（概念—公开层）",
+        "主保圣人瞻礼与 mayordomía（民间天主教层）",
+        "生命礼仪、朝圣与收获—亡者周期（概念层）"
+      ]
+    },
+    {
+      "slug": "mizo-traditional",
+      "title": "米佐基督教与萨库阿传统祈福余绪（Mizo）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mizo",
+        "https://en.wikipedia.org/wiki/Mizo_religion",
+        "https://en.wikipedia.org/wiki/Christianity_in_Mizoram"
+      ],
+      "rituals": [
+        "主日崇拜与基督教节日（概念层）",
+        "收获首熟教会奉献（概念层）",
+        "Sakhua 历史记忆与文化复兴（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "moken-traditional",
+      "title": "莫肯传统信仰与安达曼海灵祈福（Moken）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Moken",
+        "https://www.britannica.com/place/Andaman-Sea",
+        "https://www.britannica.com/place/Surin-Islands"
+      ],
+      "rituals": [
+        "海洋生计与灵力谨慎（概念层）",
+        "疾病—厄运中介（高度敏感，仅概念）",
+        "与佛教／国家社会的接触（概念层）"
+      ]
+    }
+  ],
+  "prompt": "请为下列 12 个祈福／祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C17）。目标：为仍然薄的 C 级卡片补充 2–4 条高质量、可公开核验的新参考来源。\n\n选择规则：接 C16 的 mende-traditional 之后，按 slug 字母序选取接下来 12 张当前恰为 n=3 的薄卡；排除 C1–C16 已处理 slug，不得用已有 4+ 来源卡片凑数。严格按字母序跳过 n≠3 卡片。\n\n对每个 slug 输出：\nslug:\n建议新增 URL（每行一条，附一句中文说明覆盖内容与可信度理由）：\n- <URL> — <说明>\n\n来源优先级：\n1. UNESCO 非遗名录、申报文件、优秀保护实践，以及各国国家级非遗名录官方页面；\n2. 与具体传统、节庆、朝圣地或社群直接相关的文化部、地方政府、原住民族／部族官方机构、博物馆、档案馆或官方节庆网站；\n3. 大学、科研机构与学术档案页面（藏品页、特展、档案、学位论文库）；\n4. 可由 Crossref 核验、主题确切相关的同行评审论文或 DOI 图书章节（优先 doi.org / dx.doi.org）。\n\n明确禁止：Britannica 的地点（/place/）概览页与泛概览页；encyclopedia.com 与 everyculture.com 概览页；Wikipedia 或任何 wiki 概览页；101lasttribes、joshuaproject 一类部族目录页；与该传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。\n\n硬性要求：每条 URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或仓库 SOURCES.md 已收录 URL 重复；每个 slug 给 2–4 条，宁缺毋滥，找不到合格来源时写“未找到”。只补 ## 参考来源，不改卡片正文、档位与仪式内容。\n\n---\n1. slug=mendi-traditional（现有来源 3 条）\n标题: 门迪传统信仰与高地—祖灵祈福（Mendi）\n典型仪式名: 祖先敬礼（概念层）；猪只互惠与和解叙事（概念层）；教堂崇拜（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Mendi\n- https://www.britannica.com/place/Papua-New-Guinea\n- https://www.britannica.com/topic/Melanesian-culture\n\n2. slug=mengen-traditional（现有来源 3 条）\n标题: 门根传统信仰与新不列颠—祖先祈福（Mengen）\n典型仪式名: 祖先敬礼（概念层）；面具／舞蹈公共层（极高敏感，仅概念）；教堂崇拜（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/New-Britain-Island-Papua-New-Guinea\n- https://www.britannica.com/place/Papua-New-Guinea\n- https://www.britannica.com/topic/Melanesian-culture\n\n3. slug=mesoamerican（现有来源 3 条）\n标题: 中美洲土著余绪（玛雅、纳瓦等）\n典型仪式名: 亡灵祭坛与守夜；焚香洁净与祈祷；农业与社区感恩礼\n现有 URL（勿重复）：\n- https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054\n- https://americanhistory.si.edu/explore/stories/day-dead-smithsonian-its-not-halloween\n- https://folklife.si.edu/magazine/altered-altars-changing-traditions-dia-de-los-muertos\n\n4. slug=miji-traditional（现有来源 3 条）\n标题: 米吉传统信仰与东尼—波罗—基督教祈福（Miji／Sajolang）\n典型仪式名: 仪者中介与农事／疗愈礼仪（高度敏感，仅概念）；本土信仰公共层（概念层）；基督教堂会实践（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Arunachal-Pradesh\n- https://www.britannica.com/place/Northeast-India\n- https://www.britannica.com/topic/Donyi-Polo\n\n5. slug=minahasa-traditional（现有来源 3 条）\n标题: 米纳哈萨基督教与马勒松传统祈福余绪（Minahasa）\n典型仪式名: 新教／天主教堂会崇拜（概念层）；生命礼仪与社群音乐文化（概念层）；Malesung／Walian 历史与复兴讨论（敏感，仅概念）\n现有 URL（勿重复）：\n- https://en.wikipedia.org/wiki/Minahasan_people\n- https://digitalcollections.sit.edu/isp_collection/2191\n- https://www.britannica.com/place/North-Sulawesi\n\n6. slug=mishing-traditional（现有来源 3 条）\n标题: 米辛传统信仰与克奥利亚—东尼波罗祈福（Mishing／Mising）\n典型仪式名: Keoliya／萨特拉相关虔信实践（概念层）；Donyi-Polo 认同祈祷（概念层）；基督教与其他教派并行（概念层）\n现有 URL（勿重复）：\n- https://en.wikipedia.org/wiki/Mising_people\n- https://www.iosrjournals.org/iosr-jhss/papers/Vol.%2024%20Issue11/Series-3/C2411031315.pdf\n- https://en.wikipedia.org/wiki/Donyi-Polo\n\n7. slug=mishmi-traditional（现有来源 3 条）\n标题: 米什米传统信仰与精灵—高神祈福（Mishmi）\n典型仪式名: 高神与精灵伦理（概念层）；祭司中介与危机礼仪（高度敏感，仅概念）；制度化本土信仰／世界宗教并行（概念层）\n现有 URL（勿重复）：\n- https://www.academia.edu/52422685/SUPERNATURAL_WORLD_AND_FOLK_TAXONOMY_CASE_STUDY_ON_FEW_TRIBES_OF_SIANG_AND_DIBANG_VALLEYS_OF_ARUNACHAL_PRADESH\n- https://en.wikipedia.org/wiki/Donyi-Polo\n- https://www.britannica.com/place/Arunachal-Pradesh\n\n8. slug=miskito-traditional（现有来源 3 条）\n标题: 米斯基托民间基督教与海岸灵力祈福（Miskito）\n典型仪式名: 摩拉维亚／基督教堂区崇拜（概念层）；梦兆与灵力谨慎伦理（概念层）；历史萨满／当代疗愈余绪（高度敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.everyculture.com/Middle-America-Caribbean/Miskito-Religion-and-Expressive-Culture.html\n- https://www.everyculture.com/wc/Mauritania-to-Nigeria/Sumu-and-Miskito.html\n- https://www.britannica.com/topic/Miskito\n\n9. slug=mixe-traditional（现有来源 3 条）\n标题: 米赫传统信仰与山灵—天主教祈福（Mixe／Ayuuk）\n典型仪式名: 主保节与教堂礼仪（概念层）；山灵与农事祈请（概念层）；疗愈中介（高度敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Mixe\n- https://www.britannica.com/place/Oaxaca-state-Mexico\n- https://www.britannica.com/place/Mexico\n\n10. slug=mixtec-nuu-savi（现有来源 3 条）\n标题: 米斯特克／雨之民传统祈福（Mixtec／Ñuu Savi）\n典型仪式名: 迎雨／求雨与 Vehe Savi 圣所礼仪（概念—公开层）；主保圣人瞻礼与 mayordomía（民间天主教层）；生命礼仪、朝圣与收获—亡者周期（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Mixtec\n- https://www.everyculture.com/Middle-America-Caribbean/Mixtec-Religion-and-Expressive-Culture.html\n- https://doi.org/10.1007/s12685-016-0174-x\n\n11. slug=mizo-traditional（现有来源 3 条）\n标题: 米佐基督教与萨库阿传统祈福余绪（Mizo）\n典型仪式名: 主日崇拜与基督教节日（概念层）；收获首熟教会奉献（概念层）；Sakhua 历史记忆与文化复兴（高度敏感，仅概念）\n现有 URL（勿重复）：\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mizo\n- https://en.wikipedia.org/wiki/Mizo_religion\n- https://en.wikipedia.org/wiki/Christianity_in_Mizoram\n\n12. slug=moken-traditional（现有来源 3 条）\n标题: 莫肯传统信仰与安达曼海灵祈福（Moken）\n典型仪式名: 海洋生计与灵力谨慎（概念层）；疾病—厄运中介（高度敏感，仅概念）；与佛教／国家社会的接触（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Moken\n- https://www.britannica.com/place/Andaman-Sea\n- https://www.britannica.com/place/Surin-Islands"
+}

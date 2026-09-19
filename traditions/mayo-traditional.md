@@ -50,3 +50,6 @@
 - https://www.inah.gob.mx/foto-del-dia/la-danza-del-venado-simbolismo-del-mundo-natural
 - https://www.revistas.unam.mx/index.php/antropologia/article/view/30699
 - https://revistas.inah.gob.mx/index.php/antropologia/article/view/3719
+- https://revistas.inah.gob.mx/index.php/antropologia/article/view/3720
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2448-84882023000100010
+- https://sic.cultura.gob.mx/ficha.php?table=gpo_artistico&table_id=96

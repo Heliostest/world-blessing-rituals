@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Lahu
-- https://www.encyclopedia.com/places/asia/chinese-political-geography/lahu
 - https://thesiamsociety.org/wp-content/uploads/1970/03/JSS_058_1b_Walker_LahuNyiNewYearCelebrations.pdf
+- http://en.people.cn/n3/2016/1223/c208675-9158529.html
+- https://www.yunnanexploration.com/calabash-gourd-festival-of-luhu-ethnic-minority-in-ximeng-county-puer.html

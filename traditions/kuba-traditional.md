@@ -50,3 +50,6 @@
 - https://www.britannica.com/topic/Kuba-people
 - https://kids.britannica.com/scholars/article/Kuba/46332
 - https://www.metmuseum.org/toah/hd/kuba/hd_kuba.htm
+- https://www.metmuseum.org/essays/kingdoms-of-the-savanna-the-kuba-kingdom
+- https://www.britishmuseum.org/collection/object/E_Af1909-1210-1
+- https://www.metmuseum.org/art/collection/search/768372

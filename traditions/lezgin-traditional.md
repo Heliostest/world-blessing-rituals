@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Russia-Eurasia-China/Lezgins-Religion-and-Expressive-Culture.html
-- https://www.encyclopedia.com/topic/Lezgians.aspx
 - https://doi.org/10.21779/2077-8155-2024-15-3-94-105
+- https://religion.ranepa.ru/jour/article/view/86/0?locale=en_US
+- https://chaikhana.media/en/stories/667/dagestans-holy-mountain-pilgrimage
+- https://dergipark.org.tr/tr/download/article-file/1890781
+- https://spb.hse.ru/soc/illuminated/news/352639612.html

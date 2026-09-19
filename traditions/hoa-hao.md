@@ -55,3 +55,6 @@
 - https://www.britannica.com/topic/Hoa-Hao-Vietnamese-religious-movement
 - https://kids.britannica.com/scholars/article/Huynh-Phu-So/41661
 - https://hoahao.org/a352/biography-and-teachings-of-prophet-huynh-phu-so
+- https://doi.org/10.1525/vs.2022.17.4.18
+- https://doi.org/10.32388/T8IX52
+- https://cms.btgcp.gov.vn/upload/documents/03_11_2021/tai-lieu-boi-duong-de-an-2021-11-03-16-41-27.pdf

@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/topic/Ga
 - https://carleton.ca/africanstudies/wp-content/uploads/Ga-People-and-Homowo-Festival.pdf
-- https://www.britannica.com/place/Ghana
+- https://visitghana.com/homowo-festival/
+- https://doi.org/10.38159/ehass.2022386
+- https://doi.org/10.1080/23311886.2024.2340427

@@ -1,0 +1,227 @@
+{
+  "batch": "notebook-source-hunt-c10",
+  "cycle": 10,
+  "date": "2026-09-19",
+  "cards": "12 thin C-grade traditions (makonde-traditional → purepecha)",
+  "selection_rule": "C 级（档位 C）、已通过 Notebook 验证（docs/notebook-validation-batch*.json 中状态为 passed/passed_after_fix）、参考来源恰好 3 条（最薄档）；按字母序续接 C8（akha→fijian）与 C9（ga→lezgin）之后的下一批；不含 C1–C9 已处理的 108 个 slug",
+  "previous_cycles_slugs_processed": 108,
+  "slugs": [
+    "makonde-traditional",
+    "mazu",
+    "meru-traditional",
+    "ndebele-traditional",
+    "occitan-camargue-folk",
+    "otomi-hnahnu",
+    "ovambo-traditional",
+    "paiwan-taiwan",
+    "palaung-traditional",
+    "polish-folk-catholic",
+    "portuguese-romarias",
+    "purepecha"
+  ],
+  "prompt": "请为下列 12 个祈福/祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C10）。目标：为每张「仍然薄」的 C 级卡片补强 2–4 个高质量、可核验的新参考来源。\n\n对每个 slug 按此格式输出：\nslug:\n建议新增 URL（每行一条，附一句话说明其覆盖内容与可信度理由）：\n- <URL> — <说明>\n\n来源优先级（按序优先采用）：\n1. UNESCO 非遗（ich.unesco.org）名录页、申报文件、优秀保护实践，以及各国国家级非遗名录官方页面；\n2. 节庆／朝圣地／宫庙／堂区／教团／文化部的官方网站或官方节庆页面（含政府旅游局正式页面）；\n3. 博物馆、大学、档案馆、科研机构页面（藏品页、特展、档案、学位论文库，如 metmuseum.org、britishmuseum.org、nirc.nanzan-u.ac.jp、skemman.is、persee.fr 等）；\n4. 同行评审论文或带 DOI 的图书章节（优先给 doi.org / dx.doi.org 链接，且须能在 Crossref 查到、主题与该传统相符）。\n\n明确禁止（一律不得给出）：\n- Britannica 的地点（/place/）概览页与其他 Britannica 概览页；\n- encyclopedia.com 与 everyculture 的概览页；\n- Wikipedia 或任何 wiki 概览页；\n- 101lasttribes、joshuaproject 一类部族目录页；\n- 与该传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。\n\n硬性要求：\n- 每条 URL 必须可公开访问、可独立核验：DOI 须经 Crossref 验证主题相符；网页须返回 HTTP 200；PDF 须确认正文含该传统的关键词；\n- 不得与该卡片「现有 URL（勿重复）」清单重复，也不得与仓库 SOURCES.md 已收录 URL 重复；\n- 每个 slug 给 2–4 条，宁缺毋滥；找不到合格来源时明确写「未找到」，不要凑数；\n- 不改动卡片正文、档位与仪式内容，只补「## 参考来源」。\n\n---\n1. slug=makonde-traditional（现有来源 3 条）\n标题: 马孔德传统信仰与祖灵—木雕祈福（Makonde）\n典型仪式名: Mapiko／Lipiko 面具舞（公共文化层）, Jando／Unyago 成年礼仪（CONCEPT ONLY＋强烈注意与尊重）, Shetani 木雕纪念与认同（公共文化层）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Makonde\n- https://www.britannica.com/art/African-art/Makonde\n- https://joshuaproject.net/index.php/people_groups/13427/MZ\n\n2. slug=mazu（现有来源 3 条）\n标题: 妈祖信仰与进香（Mazu / Matsu）\n典型仪式名: 大甲／白沙屯进香命名与分灵／过炉（概念层）, 农历三月廿三诞辰庙会（公共层）, 日常庙祠上香与家庭礼拜（公共—家庭层）\n现有 URL（勿重复）:\n- https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227\n- https://www.britannica.com/topic/Matsu\n- https://www.fujian.gov.cn/english/cultureandtravel/cultureandarts/202508/t20250807_6988988.htm\n\n3. slug=meru-traditional（现有来源 3 条）\n标题: 梅鲁传统宗教与穆伦古／穆格韦祈福（Meru／Ameru）\n典型仪式名: Njuri Ncheke 神圣长老会（CONCEPT）, Mugwe／Murungu 求雨祈请（CONCEPT）, Nkoma 祖灵供奉（CONCEPT ONLY）\n现有 URL（勿重复）:\n- https://www.encyclopedia.com/places/africa/kenyan-political-geography/meru\n- https://meru.go.ke/religion-culture/\n- http://www.bluegecko.org/kenya/tribes/meru/beliefs.htm\n\n4. slug=ndebele-traditional（现有来源 3 条）\n标题: 恩德贝莱传统宗教与祖灵祈福（Ndebele）\n典型仪式名: Ingoma 入会（CONCEPT ONLY＋强烈注意与尊重）, Ikhazi 聘礼牛只祖先告知（CONCEPT）, Umuzi 壁画与珠饰公共文化（公共层）\n现有 URL（勿重复）:\n- https://www.everyculture.com/Africa-Middle-East/Ndebele-Religion-and-Expressive-Culture.html\n- https://sahistory.org.za/article/ndebele\n- https://www.britannica.com/topic/Ndebele-South-African-people\n\n5. slug=occitan-camargue-folk（现有来源 3 条）\n标题: 奥克／卡马格民间天主教与圣玛丽—萨拉朝圣（Occitan／Camargue）\n典型仪式名: 五月萨拉入海与圣女玛丽朝圣（公共层）, Gardians 牧人护卫与地下室萨拉敬礼（公共／部分敏感）, 罗姆音乐／舞蹈文化层（公共文化层）\n现有 URL（勿重复）:\n- https://www.britannica.com/place/Saintes-Maries-de-la-Mer\n- https://www.villes-sanctuaires.com/en/villes-sanctuaires/saintes-maries-mer\n- https://www.britannica.com/topic/Romani\n\n6. slug=otomi-hnahnu（现有来源 3 条）\n标题: 奥托米／尼亚纽传统信仰与圣石祈福（Otomí／Hñähñu）\n典型仪式名: 圣徒瞻礼与民间天主教节庆（公共层）, Papel amate／San Pablito 与 Cangandho 圣石（公共／部分敏感）, Bädi 知识 CONCEPT ONLY（高度敏感）\n现有 URL（勿重复）:\n- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/otomi-religion\n- https://www.revistas.inah.gob.mx/index.php/diariodecampo/en/article/view/17213\n- https://digitalrepository.unm.edu/el_centro_cbrli/2\n\n7. slug=ovambo-traditional（现有来源 3 条）\n标题: 奥万博传统宗教与卡隆加祈福（Ovambo／Ambo）\n典型仪式名: Oshituthi Shomagongo 马鲁拉节与 Kalunga 公共叙述（公共／概念层）, 路德宗堂区礼拜与生命礼仪（公共／当代层）, Olufuko 入会 CONCEPT ONLY（高度敏感）＋ Okuruwo 区分说明\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Ambo-people\n- https://www.britannica.com/place/Namibia\n- https://www.vestiges-journal.info/CSACMonog/Davies_thesis/chap1.pdf\n\n8. slug=paiwan-taiwan（现有来源 3 条）\n标题: 台湾排湾族传统信仰与祭仪（Paiwan／Payuan）\n典型仪式名: 小米收获感恩祭 Masalut（概念层）, 五年祭 Maljeveq／Djemuljat 刺球（概念层，强烈原住民尊重）, Puringau CONCEPT ONLY 与 Naqemati 祖灵柱（高度敏感／象征层）\n现有 URL（勿重复）:\n- https://www.cip.gov.tw/en/tribe/grid-list/E8D1B17F6A81D678D0636733C6861689/info.html\n- https://en.tacp.gov.tw/Indigenous/ItemDetail?ID=eadc0c5d-dd0c-4031-a1a2-af085c9b71b4\n- https://www.taipeitimes.com/News/feat/archives/2023/11/03/2003808614\n\n9. slug=palaung-traditional（现有来源 3 条）\n标题: 德昂／帕朗传统信仰与上座部—精灵祈福（Palaung／Ta'ang／De'ang）\n典型仪式名: Sangken 泼水节与佛寺 dana（公共层）, Ya-An 茶祖先叙事（概念层）, Nat 精灵礼仪 CONCEPT（部分敏感）\n现有 URL（勿重复）:\n- https://www.everyculture.com/East-Southeast-Asia/Palaung-Religion-and-Expressive-Culture.html\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/palaung\n- https://factsanddetails.com/southeast-asia/Myanmar/sub5_5d/entry-6658.html\n\n10. slug=polish-folk-catholic（现有来源 3 条）\n标题: 波兰民间天主教圣篮祝福与收获节祈福（Polish folk Catholicism）\n典型仪式名: Święconka 圣周六食物篮祝福（公共层）, Dożynki 收获感恩与 Jasna Góra 朝圣（公共层）, Śmigus-Dyngus 湿周一泼水（公共文化层）\n现有 URL（勿重复）:\n- https://www.polskieradio.pl/395/7784/artykul/3669724,poles-flock-to-churches-for-traditional-easter-food-blessing\n- https://www.vaticannews.va/en/world/news/2026-09/from-grain-to-bread-pope-reflects-on-poland-s-harvest-tradition.html\n- https://www.osvnews.com/a-basket-filled-with-faith-eastern-europe-easter-tradition-explained/\n\n11. slug=portuguese-romarias（现有来源 3 条）\n标题: 葡萄牙罗马里亚朝圣与民间祈福（Portuguese Romarias／Fátima）\n典型仪式名: 法蒂玛 5／10 月 13 日朝圣与蜡烛游行（公开朝圣层）, 维亚纳阿戈尼亚等地方罗马里亚（渔民—村民朝圣层）, 蜡制器官等 ex-voto 还愿（民俗—虔敬层）\n现有 URL（勿重复）:\n- https://www.britannica.com/event/Our-Lady-of-Fatima\n- https://www.fatima.pt/en/pages/organizing-a-pilgrimage-to-the-shrine\n- https://folkways-media.si.edu/docs/folkways/artwork/UNES08317.pdf\n\n12. slug=purepecha（现有来源 3 条）\n标题: 普雷佩查民间天主教与节庆祈福（Purépecha／P'urhépecha）\n典型仪式名: Pátzcuaro／Janitzio 亡灵节（公共纪念层）, K'uínchekua 与 cargo 主保 fiestas（公开节庆层）, 代父母纽带与婚礼致辞（生命礼仪层）\n现有 URL（勿重复）:\n- https://www.britannica.com/topic/Tarasco\n- https://www.everyculture.com/Middle-America-Caribbean/Tarascans-Religion-and-Expressive-Culture.html\n- https://www.latimes.com/archives/la-xpm-1995-09-02-me-41473-story.html\n\n",
+  "constraints": {
+    "prioritize": [
+      "UNESCO ICH (ich.unesco.org) 非遗名录页/申报文件/优秀保护实践及各国国家非遗名录官方页面",
+      "节庆/朝圣地/宫庙/堂区/教团/文化部官方网站或官方节庆页面",
+      "博物馆/大学/档案馆/科研机构页面（藏品页、特展、档案、学位论文库）",
+      "同行评审论文或带 DOI 的章节（doi.org/dx.doi.org，Crossref 可验证）"
+    ],
+    "forbidden": [
+      "Britannica 地点（/place/）概览及其他 Britannica 概览页",
+      "encyclopedia.com 概览页",
+      "everyculture 概览页",
+      "Wikipedia/wiki 概览页",
+      "101lasttribes、joshuaproject 等部族目录页",
+      "与该传统无实质关联的泛泛政府报告或通用 UNESCO 专题页"
+    ],
+    "requirements": [
+      "每个 slug 给出 2–4 条可公开核验的 URL（DOI 须经 Crossref、网页须 HTTP 200、PDF 须含该传统关键词）",
+      "不得与卡片现有来源或 SOURCES.md 已有 URL 重复",
+      "找不到合格来源时明确说明，不凑数",
+      "只补「## 参考来源」，不改档位与仪式内容"
+    ]
+  },
+  "entries": [
+    {
+      "slug": "makonde-traditional",
+      "title": "马孔德传统信仰与祖灵—木雕祈福（Makonde）",
+      "n": 3,
+      "urls": [
+        "https://www.britannica.com/topic/Makonde",
+        "https://www.britannica.com/art/African-art/Makonde",
+        "https://joshuaproject.net/index.php/people_groups/13427/MZ"
+      ],
+      "rituals": [
+        "Mapiko／Lipiko 面具舞（公共文化层）",
+        "Jando／Unyago 成年礼仪（CONCEPT ONLY＋强烈注意与尊重）",
+        "Shetani 木雕纪念与认同（公共文化层）"
+      ]
+    },
+    {
+      "slug": "mazu",
+      "title": "妈祖信仰与进香（Mazu / Matsu）",
+      "n": 3,
+      "urls": [
+        "https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227",
+        "https://www.britannica.com/topic/Matsu",
+        "https://www.fujian.gov.cn/english/cultureandtravel/cultureandarts/202508/t20250807_6988988.htm"
+      ],
+      "rituals": [
+        "大甲／白沙屯进香命名与分灵／过炉（概念层）",
+        "农历三月廿三诞辰庙会（公共层）",
+        "日常庙祠上香与家庭礼拜（公共—家庭层）"
+      ]
+    },
+    {
+      "slug": "meru-traditional",
+      "title": "梅鲁传统宗教与穆伦古／穆格韦祈福（Meru／Ameru）",
+      "n": 3,
+      "urls": [
+        "https://www.encyclopedia.com/places/africa/kenyan-political-geography/meru",
+        "https://meru.go.ke/religion-culture/",
+        "http://www.bluegecko.org/kenya/tribes/meru/beliefs.htm"
+      ],
+      "rituals": [
+        "Njuri Ncheke 神圣长老会（CONCEPT）",
+        "Mugwe／Murungu 求雨祈请（CONCEPT）",
+        "Nkoma 祖灵供奉（CONCEPT ONLY）"
+      ]
+    },
+    {
+      "slug": "ndebele-traditional",
+      "title": "恩德贝莱传统宗教与祖灵祈福（Ndebele）",
+      "n": 3,
+      "urls": [
+        "https://www.everyculture.com/Africa-Middle-East/Ndebele-Religion-and-Expressive-Culture.html",
+        "https://sahistory.org.za/article/ndebele",
+        "https://www.britannica.com/topic/Ndebele-South-African-people"
+      ],
+      "rituals": [
+        "Ingoma 入会（CONCEPT ONLY＋强烈注意与尊重）",
+        "Ikhazi 聘礼牛只祖先告知（CONCEPT）",
+        "Umuzi 壁画与珠饰公共文化（公共层）"
+      ]
+    },
+    {
+      "slug": "occitan-camargue-folk",
+      "title": "奥克／卡马格民间天主教与圣玛丽—萨拉朝圣（Occitan／Camargue）",
+      "n": 3,
+      "urls": [
+        "https://www.britannica.com/place/Saintes-Maries-de-la-Mer",
+        "https://www.villes-sanctuaires.com/en/villes-sanctuaires/saintes-maries-mer",
+        "https://www.britannica.com/topic/Romani"
+      ],
+      "rituals": [
+        "五月萨拉入海与圣女玛丽朝圣（公共层）",
+        "Gardians 牧人护卫与地下室萨拉敬礼（公共／部分敏感）",
+        "罗姆音乐／舞蹈文化层（公共文化层）"
+      ]
+    },
+    {
+      "slug": "otomi-hnahnu",
+      "title": "奥托米／尼亚纽传统信仰与圣石祈福（Otomí／Hñähñu）",
+      "n": 3,
+      "urls": [
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/otomi-religion",
+        "https://www.revistas.inah.gob.mx/index.php/diariodecampo/en/article/view/17213",
+        "https://digitalrepository.unm.edu/el_centro_cbrli/2"
+      ],
+      "rituals": [
+        "圣徒瞻礼与民间天主教节庆（公共层）",
+        "Papel amate／San Pablito 与 Cangandho 圣石（公共／部分敏感）",
+        "Bädi 知识 CONCEPT ONLY（高度敏感）"
+      ]
+    },
+    {
+      "slug": "ovambo-traditional",
+      "title": "奥万博传统宗教与卡隆加祈福（Ovambo／Ambo）",
+      "n": 3,
+      "urls": [
+        "https://www.britannica.com/topic/Ambo-people",
+        "https://www.britannica.com/place/Namibia",
+        "https://www.vestiges-journal.info/CSACMonog/Davies_thesis/chap1.pdf"
+      ],
+      "rituals": [
+        "Oshituthi Shomagongo 马鲁拉节与 Kalunga 公共叙述（公共／概念层）",
+        "路德宗堂区礼拜与生命礼仪（公共／当代层）",
+        "Olufuko 入会 CONCEPT ONLY（高度敏感）＋ Okuruwo 区分说明"
+      ]
+    },
+    {
+      "slug": "paiwan-taiwan",
+      "title": "台湾排湾族传统信仰与祭仪（Paiwan／Payuan）",
+      "n": 3,
+      "urls": [
+        "https://www.cip.gov.tw/en/tribe/grid-list/E8D1B17F6A81D678D0636733C6861689/info.html",
+        "https://en.tacp.gov.tw/Indigenous/ItemDetail?ID=eadc0c5d-dd0c-4031-a1a2-af085c9b71b4",
+        "https://www.taipeitimes.com/News/feat/archives/2023/11/03/2003808614"
+      ],
+      "rituals": [
+        "小米收获感恩祭 Masalut（概念层）",
+        "五年祭 Maljeveq／Djemuljat 刺球（概念层，强烈原住民尊重）",
+        "Puringau CONCEPT ONLY 与 Naqemati 祖灵柱（高度敏感／象征层）"
+      ]
+    },
+    {
+      "slug": "palaung-traditional",
+      "title": "德昂／帕朗传统信仰与上座部—精灵祈福（Palaung／Ta'ang／De'ang）",
+      "n": 3,
+      "urls": [
+        "https://www.everyculture.com/East-Southeast-Asia/Palaung-Religion-and-Expressive-Culture.html",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/palaung",
+        "https://factsanddetails.com/southeast-asia/Myanmar/sub5_5d/entry-6658.html"
+      ],
+      "rituals": [
+        "Sangken 泼水节与佛寺 dana（公共层）",
+        "Ya-An 茶祖先叙事（概念层）",
+        "Nat 精灵礼仪 CONCEPT（部分敏感）"
+      ]
+    },
+    {
+      "slug": "polish-folk-catholic",
+      "title": "波兰民间天主教圣篮祝福与收获节祈福（Polish folk Catholicism）",
+      "n": 3,
+      "urls": [
+        "https://www.polskieradio.pl/395/7784/artykul/3669724,poles-flock-to-churches-for-traditional-easter-food-blessing",
+        "https://www.vaticannews.va/en/world/news/2026-09/from-grain-to-bread-pope-reflects-on-poland-s-harvest-tradition.html",
+        "https://www.osvnews.com/a-basket-filled-with-faith-eastern-europe-easter-tradition-explained/"
+      ],
+      "rituals": [
+        "Święconka 圣周六食物篮祝福（公共层）",
+        "Dożynki 收获感恩与 Jasna Góra 朝圣（公共层）",
+        "Śmigus-Dyngus 湿周一泼水（公共文化层）"
+      ]
+    },
+    {
+      "slug": "portuguese-romarias",
+      "title": "葡萄牙罗马里亚朝圣与民间祈福（Portuguese Romarias／Fátima）",
+      "n": 3,
+      "urls": [
+        "https://www.britannica.com/event/Our-Lady-of-Fatima",
+        "https://www.fatima.pt/en/pages/organizing-a-pilgrimage-to-the-shrine",
+        "https://folkways-media.si.edu/docs/folkways/artwork/UNES08317.pdf"
+      ],
+      "rituals": [
+        "法蒂玛 5／10 月 13 日朝圣与蜡烛游行（公开朝圣层）",
+        "维亚纳阿戈尼亚等地方罗马里亚（渔民—村民朝圣层）",
+        "蜡制器官等 ex-voto 还愿（民俗—虔敬层）"
+      ]
+    },
+    {
+      "slug": "purepecha",
+      "title": "普雷佩查民间天主教与节庆祈福（Purépecha／P'urhépecha）",
+      "n": 3,
+      "urls": [
+        "https://www.britannica.com/topic/Tarasco",
+        "https://www.everyculture.com/Middle-America-Caribbean/Tarascans-Religion-and-Expressive-Culture.html",
+        "https://www.latimes.com/archives/la-xpm-1995-09-02-me-41473-story.html"
+      ],
+      "rituals": [
+        "Pátzcuaro／Janitzio 亡灵节（公共纪念层）",
+        "K'uínchekua 与 cargo 主保 fiestas（公开节庆层）",
+        "代父母纽带与婚礼致辞（生命礼仪层）"
+      ]
+    }
+  ]
+}

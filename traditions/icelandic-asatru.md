@@ -50,3 +50,6 @@
 - https://asatru.is/um-asatruarfelagid/
 - https://www.bbc.com/travel/article/20190602-how-iceland-recreated-a-viking-age-religion
 - https://www.britannica.com/topic/Germanic-religion-and-mythology
+- https://skemman.is/bitstream/1946/48719/1/Rozalie_Rasovska_thesis_final.pdf
+- https://austurfrett.is/frettir/asatruarfolk-i-austurlands-aetlar-adh-byggja-hof-a-heradhi
+- https://guidetoiceland.is/history-culture/vikings-and-norse-gods-in-iceland

@@ -50,3 +50,5 @@
 - https://www.britannica.com/topic/Kamba
 - http://www.bluegecko.org/kenya/tribes/kamba/beliefs.htm
 - https://artsandculture.google.com/story/kamba-beliefs-folklore-and-magic-national-museums-of-kenya/1QUxqjxoN2UGbQ?hl=en
+- https://www.easpublisher.com/get-articles/5413
+- https://lughayangu.com/post/syokimauthe-mysterious-kamba-prophetess

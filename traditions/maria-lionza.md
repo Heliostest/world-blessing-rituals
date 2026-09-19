@@ -50,3 +50,6 @@
 - https://www.aljazeera.com/features/2011/11/18/the-cult-of-maria-lionza
 - https://www.minec.gob.ve/monumento-natural-cerro-maria-lionza-cumple-66-anos/
 - https://revues.ulaval.ca/ojs/index.php/anthropen/en/article/view/30597
+- https://albaciudad.org/2025/10/maria-lionza-certificado-bien-de-interes-cultural/
+- https://journals.openedition.org/lhomme/22751
+- https://doi.org/10.1163/2405-8262_rgg4_SIM_13591

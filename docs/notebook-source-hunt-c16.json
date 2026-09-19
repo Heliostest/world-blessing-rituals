@@ -1,0 +1,204 @@
+{
+  "batch": "notebook-source-hunt-c16",
+  "cycle": 16,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 C15 后按字母序从 marind-traditional 之后续选，排除 C1–C15 已处理 slug；禁止用已有 4+ 来源卡填充",
+  "previous_cycles_slugs_processed": 179,
+  "slugs": [
+    "maring-traditional",
+    "marubo-traditional",
+    "matses-traditional",
+    "matsigenka-traditional",
+    "mayo-traditional",
+    "mazahua-traditional",
+    "mazatec-traditional",
+    "mehinaku-traditional",
+    "mek-traditional",
+    "melanesia",
+    "melpa-traditional",
+    "mende-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "maring-traditional",
+      "title": "马林传统信仰与俾斯麦山祈福（Maring）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture",
+        "https://www.britannica.com/place/New-Guinea"
+      ],
+      "rituals": [
+        "1. 仪式周期与猪祭（极高敏感，仅概念）",
+        "2. 园地与生态伦理（敏感，仅概念）",
+        "3. 基督教接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "marubo-traditional",
+      "title": "马鲁博传统信仰与朱鲁阿祈福（Marubo）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/place/Acre",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "rituals": [
+        "1. 长屋与互惠伦理（敏感，仅概念）",
+        "2. 护佑传统（极高敏感，仅概念）",
+        "3. 权利与当代表述（公开层）"
+      ]
+    },
+    {
+      "slug": "matses-traditional",
+      "title": "马策斯／马约鲁纳传统信仰与亚马逊祈福（Matsés / Mayoruna）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/place/Peru",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "rituals": [
+        "1. 狩猎与生态伦理（敏感，仅概念）",
+        "2. 护佑与身体知识（极高敏感，仅概念）",
+        "3. 边界与权利当代层（公开层）"
+      ]
+    },
+    {
+      "slug": "matsigenka-traditional",
+      "title": "马奇根卡传统信仰与萨满祈福概观（Matsigenka）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.everyculture.com/South-America/Matsigenka-Religion-and-Expressive-Culture.html",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/matsigenka-0",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "rituals": [
+        "1. 猎渔伦理与动物主灵（概念层）",
+        "2. 月祭／啤酒宴公共欢庆（概念层）",
+        "3. 萨满疗愈（极高敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "mayo-traditional",
+      "title": "马约传统信仰与鹿舞—天主教祈福（Mayo／Yoreme）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.inah.gob.mx/foto-del-dia/la-danza-del-venado-simbolismo-del-mundo-natural",
+        "https://www.revistas.unam.mx/index.php/antropologia/article/view/30699",
+        "https://revistas.inah.gob.mx/index.php/antropologia/article/view/3719"
+      ],
+      "rituals": [
+        "1. 主保节／圣周与天主教礼仪（概念／公开层）",
+        "2. Danza del Venado 与 Pascola（公共 ICH／表演观礼层）",
+        "3. Juya Ania 与 Sewa（概念层）"
+      ]
+    },
+    {
+      "slug": "mazahua-traditional",
+      "title": "马萨瓦民间天主教与山灵祈福（Mazahua）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://atlas.inpi.gob.mx/mazahuas-etnografia/",
+        "https://monarchjointventure.org/blog/more-than-monarchs-understanding-traditions-linked-to-monarch-butterflies",
+        "https://www.everyculture.com/Middle-America-Caribbean/Mazahua-Religion-and-Expressive-Culture.html"
+      ],
+      "rituals": [
+        "1. Romería al Señor de Chalma（公开朝圣层）",
+        "2. Danza de las Pastoras 与 Parakata（公共／文化层）",
+        "3. Curandero 疗愈中介（HIGH SENSITIVITY CONCEPT）"
+      ]
+    },
+    {
+      "slug": "mazatec-traditional",
+      "title": "马萨特克传统信仰与山灵祈福概观（Mazatec）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mazatec",
+        "https://www.britannica.com/place/Oaxaca-state-Mexico",
+        "https://www.britannica.com/place/Mexico"
+      ],
+      "rituals": [
+        "1. 主保节与天主教礼仪（概念层）",
+        "2. 山灵／玉米田敬礼（概念层）",
+        "3. 疗愈者中介（极高敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "mehinaku-traditional",
+      "title": "梅希纳库传统信仰与辛古祈福（Mehinaku）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Xinguanos",
+        "https://www.britannica.com/place/Xingu-River",
+        "https://www.britannica.com/place/Brazil"
+      ],
+      "rituals": [
+        "1. 村际礼仪与互惠（敏感，仅概念）",
+        "2. 祖先敬礼（概念层）",
+        "3. 生命礼仪（概念层）"
+      ]
+    },
+    {
+      "slug": "mek-traditional",
+      "title": "梅克传统信仰与巴布亚高地祈福（Mek）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Papua",
+        "https://www.britannica.com/place/New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture"
+      ],
+      "rituals": [
+        "1. 祖先与园圃伦理（概念层）",
+        "2. 猪只互惠（敏感，仅概念）",
+        "3. 教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "melanesia",
+      "title": "美拉尼西亚（kastom、社区仪式与“货物运动”语境）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/vanuatu-sand-drawings-00073",
+        "https://ich.unesco.org/doc/src/00347-EN.pdf",
+        "http://anthroencyclopedia.com/entry/cargo-cults"
+      ],
+      "rituals": [
+        "1. Shell Money／Pig Exchange 与社区宴飨（公开／概念层）",
+        "2. Vanuatu Sand Drawing（UNESCO ICH）（公共／传授限制交界）",
+        "3. Kastom 氏族受限知识与教会—kastom 公共祈祷（CONCEPT／公共层）"
+      ]
+    },
+    {
+      "slug": "melpa-traditional",
+      "title": "梅尔帕传统信仰与哈根山祈福（Melpa）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture",
+        "https://www.britannica.com/place/New-Guinea"
+      ],
+      "rituals": [
+        "1. 礼物交换与展示（敏感，仅概念）",
+        "2. 赔偿与冲突化解（敏感，仅概念）",
+        "3. 基督教与节庆并存（概念层）"
+      ]
+    },
+    {
+      "slug": "mende-traditional",
+      "title": "门德传统信仰与波罗—桑德社祈福余绪（Mende）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mende-people",
+        "https://www.britannica.com/place/Sierra-Leone",
+        "https://www.britannica.com/topic/Poro"
+      ],
+      "rituals": [
+        "1. 祖先敬礼（概念层）",
+        "2. 教堂／清真寺公开崇拜（概念层）",
+        "3. Poro／Sande 公共秩序余绪（极高敏感，仅概念）"
+      ]
+    }
+  ],
+  "prompt": "请为下列 12 个祈福／祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C16）。目标：为仍然薄的 C 级卡片补充 2–4 条高质量、可公开核验的新参考来源。按字母序接续 C15 的 marind-traditional 之后；仅选择当前恰为 n=3 且未在 C1–C15 处理过的卡片，不得用已有 4+ 来源卡片凑数。每条 URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文关键词；不得与卡片现有 URL 或仓库 SOURCES.md 已收录 URL 重复。来源优先 UNESCO 非遗、国家级名录、传统／节庆／朝圣相关官方机构、博物馆／大学／档案馆与主题确切的 Crossref DOI。禁止 Britannica 地点或泛概览页、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页及离题泛泛报告。每个 slug 输出建议新增 URL（每行一条，附一句中文说明覆盖内容与可信度理由）；只补 ## 参考来源，不改卡片正文、档位与仪式内容。"
+}

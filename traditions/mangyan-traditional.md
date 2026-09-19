@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Mangyan
-- https://www.britannica.com/place/Mindoro
-- https://www.britannica.com/place/Philippines
+- https://www.nationalmuseum.gov.ph/2022/01/03/manlilikha-ng-bayan-ginaw-bilog/
+- https://www.nationalmuseum.gov.ph/2022/02/14/courtship-and-expressions-of-love-among-the-hanunoo-mangyan-of-southern-mindoro/
+- https://doi.org/10.1163/9789004544185_020

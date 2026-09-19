@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://doi.org/10.22459/lf.2021.03
-- https://www.everyculture.com/Oceania/Manus-Religion-and-Expressive-Culture.html
 - https://press-files.anu.edu.au/downloads/press/n7854/html/ch01.xhtml
+- https://press-files.anu.edu.au/downloads/press/n7854/pdf/ch03.pdf
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/f0d4113c-5e0d-48eb-a8ff-69edb70f6469/content
+- https://doi.org/10.7454/jai.v45i1.1049

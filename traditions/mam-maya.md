@@ -48,5 +48,8 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Mam
-- https://www.britannica.com/place/Guatemala
 - https://www.britannica.com/topic/Maya-people
+- https://doi.org/10.3390/rel17030384
+- https://dx.doi.org/10.7311/itinerarios.33.2021.10
+- https://journals.openedition.org/nuevomundo/66743
+- https://journals.openedition.org/trace/1486

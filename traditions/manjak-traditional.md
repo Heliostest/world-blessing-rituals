@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Mandyako
-- https://www.britannica.com/place/Guinea-Bissau
-- https://www.britannica.com/place/Casamance
+- https://journals.openedition.org/africanistes/12718
+- https://journals.openedition.org/etudesafricaines/9762
+- https://journals.openedition.org/etnografica/2850
+- https://dx.doi.org/10.3368/aeh.43.1.162

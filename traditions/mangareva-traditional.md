@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Mangareva
-- https://www.britannica.com/place/Gambier-Islands
-- https://www.britannica.com/place/French-Polynesia
+- https://doi.org/10.70460/jpa.v13i2.347
+- https://doi.org/10.4000/jso.1535
+- https://books.openedition.org/pacific/437

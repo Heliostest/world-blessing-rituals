@@ -3118,3 +3118,45 @@
 - https://doi.org/10.4324/9781003246190
 - https://www.scielo.sa.cr/scielo.php?script=sci_arttext&pid=S2215-26362020000100211
 - https://doi.org/10.1080/14678802.2018.1532643
+
+## 增补传统（Notebook source hunt C15：马莱库拉—马林德）
+
+- https://doi.org/10.4000/ocim.4148
+- https://doi.org/10.4225/72/570A79044704B
+- https://doi.org/10.1080/08941920.2014.905896
+- https://doi.org/10.1086/740598
+- https://doi.org/10.3390/rel17030384
+- https://dx.doi.org/10.7311/itinerarios.33.2021.10
+- https://journals.openedition.org/nuevomundo/66743
+- https://journals.openedition.org/trace/1486
+- https://doi.org/10.1080/00049182.2016.1267603
+- https://publications.iom.int/system/files/pdf/another_manam_report.pdf
+- https://openresearch-repository.anu.edu.au/entities/publication/694a5671-c9bf-4a01-bfec-b5ff2cdb76eb
+- https://ich.unesco.org/en/RL/kankurang-manding-initiatory-rite-00143
+- https://doi.org/10.3366/edinburgh/9780748633197.003.0006
+- https://doi.org/10.1163/21540993-20230002
+- https://doi.org/10.1353/RAL.2001.0061
+- https://doi.org/10.70460/jpa.v13i2.347
+- https://doi.org/10.4000/jso.1535
+- https://books.openedition.org/pacific/437
+- https://www.metmuseum.org/art/collection/search/310063
+- https://doi.org/10.1163/afar_a_00775
+- https://www.nationalmuseum.gov.ph/2022/01/03/manlilikha-ng-bayan-ginaw-bilog/
+- https://www.nationalmuseum.gov.ph/2022/02/14/courtship-and-expressions-of-love-among-the-hanunoo-mangyan-of-southern-mindoro/
+- https://doi.org/10.1163/9789004544185_020
+- https://journals.openedition.org/africanistes/12718
+- https://journals.openedition.org/etudesafricaines/9762
+- https://journals.openedition.org/etnografica/2850
+- https://dx.doi.org/10.3368/aeh.43.1.162
+- https://www.nationalmuseum.gov.ph/2022/01/16/kahimunan-festival-a-ritual-of-gathering/
+- https://doi.org/10.52751/cmujs.2024.v28i1.w5ga4f58
+- https://doi.org/10.64612/ijiv.v1i6.78
+- https://talapamana.ncca.gov.ph/index.php/component/content/article/talapamana-mindanao?Itemid=101&catid=11
+- https://press-files.anu.edu.au/downloads/press/n7854/pdf/ch03.pdf
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/f0d4113c-5e0d-48eb-a8ff-69edb70f6469/content
+- https://doi.org/10.7454/jai.v45i1.1049
+- https://albaciudad.org/2025/10/maria-lionza-certificado-bien-de-interes-cultural/
+- https://journals.openedition.org/lhomme/22751
+- https://doi.org/10.1163/2405-8262_rgg4_SIM_13591
+- https://journals.openedition.org/jso/14796
+- https://journals.openedition.org/jso/6450

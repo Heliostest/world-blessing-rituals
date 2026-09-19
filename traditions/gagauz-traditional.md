@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Moldova
 - https://doi.org/10.25501/soas.00029297
 - https://www.britannica.com/topic/Eastern-Orthodoxy
+- https://doi.org/10.65324/jgs001
+- https://old.gov.md/en/content/moldovan-pm-says-dialogue-mutual-respect-represent-foundation-stones-social-cohesion
+- https://invest.gov.md/wp-content/uploads/2024/06/EN_Agenda%20de%20Evenimente%202024.pdf

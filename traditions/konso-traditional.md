@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://whc.unesco.org/en/list/1333/
-- https://www.everyculture.com/Africa-Middle-East/Konso-Religion-and-Expressive-Culture.html
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/konso
+- https://visitethiopia.et/space/konso-cultural-landscape
+- https://www.persee.fr/doc/ethio_0066-2127_2016_num_31_1_1628

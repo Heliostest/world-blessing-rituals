@@ -2881,3 +2881,38 @@
 - https://www.spc.int/DigitalLibrary/get/xe9qj
 - https://www.visitczechia.com/de-de/things-to-do/places/landmarks/religious-monuments/c-holy-hostyn
 - https://www.visitczechia.com/en-us/things-to-do/places/landmarks/religious-monuments/c-velehrad-cistercian-monastery-st-cyril-and-metho
+
+## 增补传统（Notebook source hunt C9：加族—列兹金）
+
+- http://en.people.cn/n3/2016/1223/c208675-9158529.html
+- https://austurfrett.is/frettir/asatruarfolk-i-austurlands-aetlar-adh-byggja-hof-a-heradhi
+- https://chaikhana.media/en/stories/667/dagestans-holy-mountain-pilgrimage
+- https://cms.btgcp.gov.vn/upload/documents/03_11_2021/tai-lieu-boi-duong-de-an-2021-11-03-16-41-27.pdf
+- https://dergipark.org.tr/tr/download/article-file/1890781
+- https://doi.org/10.1017/CHOL9780521815000.008
+- https://doi.org/10.1080/23311886.2024.2340427
+- https://doi.org/10.1086/728884
+- https://doi.org/10.1163/2211-2685_eco_K37
+- https://doi.org/10.1525/vs.2022.17.4.18
+- https://doi.org/10.32388/T8IX52
+- https://doi.org/10.38159/ehass.2022386
+- https://doi.org/10.65324/jgs001
+- https://guidetoiceland.is/history-culture/vikings-and-norse-gods-in-iceland
+- https://invest.gov.md/wp-content/uploads/2024/06/EN_Agenda%20de%20Evenimente%202024.pdf
+- https://konkokyo.jp/eng/our_faith/how_to_worship.html
+- https://lughayangu.com/post/syokimauthe-mysterious-kamba-prophetess
+- https://nirc.nanzan-u.ac.jp/journal/15/article/1824/pdf/download
+- https://old.gov.md/en/content/moldovan-pm-says-dialogue-mutual-respect-represent-foundation-stones-social-cohesion
+- https://religion.ranepa.ru/jour/article/view/86/0?locale=en_US
+- https://skemman.is/bitstream/1946/48719/1/Rozalie_Rasovska_thesis_final.pdf
+- https://spb.hse.ru/soc/illuminated/news/352639612.html
+- https://visitethiopia.et/space/konso-cultural-landscape
+- https://visitghana.com/homowo-festival/
+- https://www.britishmuseum.org/collection/object/E_Af1909-1210-1
+- https://www.easpublisher.com/get-articles/5413
+- https://www.konkofaith.org/what-is-konko
+- https://www.metmuseum.org/art/collection/search/768372
+- https://www.metmuseum.org/essays/kingdoms-of-the-savanna-the-kuba-kingdom
+- https://www.persee.fr/doc/ethio_0066-2127_2016_num_31_1_1628
+- https://www.watbuddhavong.org/wlb-updates/boun-that-luang/
+- https://www.yunnanexploration.com/calabash-gourd-festival-of-luhu-ethnic-minority-in-ximeng-county-puer.html

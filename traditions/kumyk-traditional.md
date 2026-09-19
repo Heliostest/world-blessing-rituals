@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Kumyk
-- https://www.britannica.com/place/Dagestan
 - https://www.britannica.com/topic/Islam
+- https://dx.doi.org/10.4000/assr.18403
+- https://doi.org/10.1017/s1356186324000518
+- https://doi.org/10.15405/epsbs.2022.12.61

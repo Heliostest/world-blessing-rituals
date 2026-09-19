@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Xinguanos
-- https://www.britannica.com/place/Xingu-River
-- https://www.britannica.com/place/Brazil
+- https://www.scielo.br/j/mana/a/bqC4yd4XTwSf6vpk58cqBvf/abstract/?lang=en
+- https://www.scielo.br/j/mana/a/wWFsdqD7jwrFQtVBZCht6Wk/?lang=pt
+- https://www.scielo.br/j/vb/a/43GvpdD7Zd996zvDGYKMYns/?lang=en

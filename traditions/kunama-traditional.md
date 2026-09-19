@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Eritrea
-- https://www.britannica.com/place/Ethiopia
 - https://www.britannica.com/topic/Kunama
+- https://doi.org/10.4000/cy.33
+- https://doi.org/10.4000/books.cfee.1197

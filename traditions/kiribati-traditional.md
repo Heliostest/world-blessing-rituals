@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Kiribati
 - https://www.shimajournal.org/issues/v4n1/k.-Whincup-Shima-v4n1-113-130.pdf
 - https://repository.usp.ac.fj/id/eprint/7832/1/Kiribati_Vol_3_pg_228_to_236.pdf
+- https://ich.unesco.org/doc/src/44470-EN.pdf
+- https://doi.org/10.1108/DPM-06-2018-0182
+- https://doi.org/10.21690/foge.2019.62.4p

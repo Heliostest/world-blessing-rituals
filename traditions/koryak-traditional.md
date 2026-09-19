@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/koriak
 - https://www.atlaskmns.ru/page/en/people_koryaki_spirit.html
-- https://www.britannica.com/place/Kamchatka-Peninsula
+- https://doi.org/10.4000/terrain.22467
+- https://ehrafworldcultures.yale.edu/cultures/ry04/summary

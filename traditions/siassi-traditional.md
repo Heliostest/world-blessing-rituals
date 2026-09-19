@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Papua-New-Guinea
 - https://www.britannica.com/topic/Melanesian-culture
-- https://www.britannica.com/place/Huon-Gulf
+- https://journals.openedition.org/jso/6687
+- https://dx.doi.org/10.21463/jmic.2024.13.1.01
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/c908932b-5ef0-484c-bcf1-26709bb26bf8/content

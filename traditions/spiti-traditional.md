@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Himachal-Pradesh
 - https://www.britannica.com/topic/Tibetan-Buddhism
-- https://www.britannica.com/place/India
+- https://dx.doi.org/10.1163/2467-9666_enbo_COM_4138
+- https://dx.doi.org/10.3390/heritage8090385
+- https://doi.org/10.3389/fsufs.2025.1718684

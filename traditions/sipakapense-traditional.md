@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Guatemala
 - https://www.britannica.com/topic/Maya-people
 - https://www.britannica.com/topic/Mayan-languages
+- https://www.sicultura.gob.gt/directory-directorio_c/listing/idioma-sipakapense/
+- https://www.scielo.org.mx/pdf/rpfd/v10n19/1870-4115-rpfd-10-19-52.pdf
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-39292023000200030

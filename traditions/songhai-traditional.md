@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.everyculture.com/wc/Japan-to-Mali/Songhay.html
 - https://www.britannica.com/topic/Songhai-empire
-- https://www.britannica.com/place/Niger-River
+- https://journals.openedition.org/span/134
+- https://doi.org/10.1080/19428200.2026.2653461
+- https://journals.openedition.org/anthrovision/2332

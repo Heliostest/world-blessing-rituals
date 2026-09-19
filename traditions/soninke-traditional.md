@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Soninke
 - https://www.britannica.com/topic/Ghana-historical-West-African-empire
-- https://www.britannica.com/place/Mali
+- https://doi.org/10.4236/aa.2022.122007
+- https://journals.openedition.org/etudesafricaines/175
+- https://journals.openedition.org/insaniyat/26849

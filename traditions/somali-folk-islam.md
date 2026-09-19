@@ -46,7 +46,9 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Somali-people
 - https://www.hornheritage.org/sufi-shrines/
 - https://www.britannica.com/topic/Sufism
+- https://doi.org/10.3390/HERITAGE5030139
+- https://doi.org/10.3390/heritage7010004
+- https://journals.openedition.org/etudesafricaines/67

@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Sukuma
-- https://www.britannica.com/place/Tanzania
-- https://www.britannica.com/place/Lake-Victoria
+- https://doi.org/10.1086/725199
+- https://doi.org/10.47772/IJRISS.2024.804111
+- https://doi.org/10.1017/CHOL9780521209816.011

@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/topic/Makua
 - https://en.wikipedia.org/wiki/Makua_(people)
-- https://www.britannica.com/place/Mozambique
+- https://doi.org/10.3390/land15010094
+- https://doi.org/10.1017/S021853714000085
+- https://doi.org/10.3390/rel10090519

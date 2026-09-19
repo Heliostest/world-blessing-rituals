@@ -1,0 +1,204 @@
+{
+  "batch": "notebook-source-hunt-c15",
+  "cycle": 15,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 C14 后按字母序从 maleku-traditional 之后续选，排除 C1–C14 已处理 slug；禁止用已有 4+ 源卡填充",
+  "previous_cycles_slugs_processed": 167,
+  "slugs": [
+    "malekula-traditional",
+    "mam-maya",
+    "manam-traditional",
+    "mandinka-traditional",
+    "mangareva-traditional",
+    "mangbetu-traditional",
+    "mangyan-traditional",
+    "manjak-traditional",
+    "manobo-traditional",
+    "manus-traditional",
+    "maria-lionza",
+    "marind-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "malekula-traditional",
+      "title": "马莱库拉传统信仰与瓦努阿图祈福（Malekula）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Malekula",
+        "https://www.britannica.com/place/Vanuatu",
+        "https://www.britannica.com/topic/Melanesian-culture"
+      ],
+      "rituals": [
+        "1. 等级与入会（极高敏感，仅概念）",
+        "2. 舞蹈与公开展演（公开／敏感交界）",
+        "3. 基督教并存（公开层）"
+      ]
+    },
+    {
+      "slug": "mam-maya",
+      "title": "马姆玛雅民间天主教与山灵祈福（Mam）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mam",
+        "https://www.britannica.com/place/Guatemala",
+        "https://www.britannica.com/topic/Maya-people"
+      ],
+      "rituals": [
+        "1. Todos Santos Cuchumatán 主保节（公开／观礼层）",
+        "2. Cofradía 游行与职分（公开观礼层）",
+        "3. Ajq'ij 日守／日计者（CONCEPT／viewing ONLY）"
+      ]
+    },
+    {
+      "slug": "manam-traditional",
+      "title": "马南岛传统信仰与火山—祖先祈福（Manam）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Manam",
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/place/Madang"
+      ],
+      "rituals": [
+        "1. 祖先与火山敬畏（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 回返与公共感恩／悼念（概念层）"
+      ]
+    },
+    {
+      "slug": "mandinka-traditional",
+      "title": "曼丁卡民间伊斯兰与地方灵祈福（Mandinka／Malinke）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mandinka",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/malinke",
+        "https://www.britannica.com/topic/Mande"
+      ],
+      "rituals": [
+        "1. Kankurang 神圣面具（ICH viewing-only）",
+        "2. Marabout／Karamoko 职分（CONCEPT）",
+        "3. Jali／Griot 公共文化与清真寺节日（公共层）"
+      ]
+    },
+    {
+      "slug": "mangareva-traditional",
+      "title": "曼加雷瓦传统信仰与天主教—marae祈福余绪（Mangareva）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Mangareva",
+        "https://www.britannica.com/place/Gambier-Islands",
+        "https://www.britannica.com/place/French-Polynesia"
+      ],
+      "rituals": [
+        "1. St Michael Cathedral（Rikitea）朝圣／堂区礼仪（公开层）",
+        "2. Marae 石砌平台（历史／致敬层）",
+        "3. 岛屿节庆与航海—资源伦理（公共／概念层）"
+      ]
+    },
+    {
+      "slug": "mangbetu-traditional",
+      "title": "芒贝图传统信仰与祖灵祈福（Mangbetu）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mangbetu",
+        "https://www.britannica.com/place/Democratic-Republic-of-the-Congo",
+        "https://www.britannica.com/place/Central-Africa"
+      ],
+      "rituals": [
+        "1. 祖灵敬礼（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 艺术—宫廷遗产记忆（概念层）"
+      ]
+    },
+    {
+      "slug": "mangyan-traditional",
+      "title": "曼吉安传统信仰与民都洛祖灵祈福（Mangyan）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mangyan",
+        "https://www.britannica.com/place/Mindoro",
+        "https://www.britannica.com/place/Philippines"
+      ],
+      "rituals": [
+        "1. Ambahan 竹诗歌传承（公共／文化层）",
+        "2. Panudlak／Pamago 稻作礼仪（CONCEPT）",
+        "3. Balaynan 疗愈者与基督教并行（CONCEPT ONLY）"
+      ]
+    },
+    {
+      "slug": "manjak-traditional",
+      "title": "曼雅克传统信仰与稻作—祖灵祈福（Manjak／Manjaca）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Mandyako",
+        "https://www.britannica.com/place/Guinea-Bissau",
+        "https://www.britannica.com/place/Casamance"
+      ],
+      "rituals": [
+        "1. Napagol 祖先祠／圣地（CONCEPT）",
+        "2. Pano de Pente 织布遗产（公共／文化层）",
+        "3. Bambo 成年礼边界与教堂／清真寺公开崇拜（CONCEPT／公开层）"
+      ]
+    },
+    {
+      "slug": "manobo-traditional",
+      "title": "马诺博传统信仰与棉兰老祖灵祈福（Manobo）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://pia.gov.ph/features/all-set-for-kaamulan-street-dancing-event-featuring-bukidnons-seven-tribes/",
+        "https://ncca.gov.ph/about-ncca-3/subcommissions/subcommission-on-cultural-communities-and-traditional-arts-sccta/central-cultural-communities/the-mandaya-ethnic-group/",
+        "https://bukidnononline.com/kaamulan-festival-2026-schedule-of-activities/"
+      ],
+      "rituals": [
+        "1. Magbabaya 高神概念与农事敬礼（概念层）",
+        "2. Kaamulan／Samaya 收获与公共节庆（公共／观礼层）",
+        "3. Baylan／Baylanon 与 Dagmay 文化层（高度敏感 CONCEPT／文化）"
+      ]
+    },
+    {
+      "slug": "manus-traditional",
+      "title": "马努斯传统信仰与海军群岛祈福（Manus）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://doi.org/10.22459/lf.2021.03",
+        "https://www.everyculture.com/Oceania/Manus-Religion-and-Expressive-Culture.html",
+        "https://press-files.anu.edu.au/downloads/press/n7854/html/ch01.xhtml"
+      ],
+      "rituals": [
+        "1. Lapan 酋长层与 Titan／Usiai 海洋—交换伦理（概念／公开交界）",
+        "2. Moen Palit 守护祖灵（HIGH SENSITIVITY CONCEPT）",
+        "3. 基督教礼拜与丧礼（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "maria-lionza",
+      "title": "玛丽亚·利昂萨民间崇拜与索尔特山朝圣（María Lionza）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.aljazeera.com/features/2011/11/18/the-cult-of-maria-lionza",
+        "https://www.minec.gob.ve/monumento-natural-cerro-maria-lionza-cumple-66-anos/",
+        "https://revues.ulaval.ca/ojs/index.php/anthropen/en/article/view/30597"
+      ],
+      "rituals": [
+        "1. 索尔特山朝圣与供奉（公共朝圣层）",
+        "2. 灵媒通灵与「宫廷」灵系（限制性概念层）",
+        "3. 炭火之舞与国家文化表述（名称／公共展演层）"
+      ]
+    },
+    {
+      "slug": "marind-traditional",
+      "title": "马林德传统信仰与沼泽—祖先祈福（Marind）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Marind",
+        "https://www.britannica.com/place/Papua",
+        "https://www.britannica.com/place/New-Guinea"
+      ],
+      "rituals": [
+        "1. 祖先敬礼（高度敏感，仅概念）",
+        "2. 成年—会社礼仪余绪（极高敏感，仅概念）",
+        "3. 基督教／现代宗教接触层（概念层）"
+      ]
+    }
+  ],
+  "prompt": "请为下列 12 个祈福／祈祷仪式资料卡做联网来源搜寻（Notebook source hunt C15）。目标：为仍然薄的 C 级卡片补充 2–4 条高质量、可公开核验的新参考来源。\n\n选择规则：接 C14 的 `maleku-traditional` 之后，按 slug 字母序选取接下来 12 张当前恰为 n=3 的薄卡；排除 C1–C14 已处理 slug（此前 167 张），不得用已有 4+ 来源卡片凑数。\n\n对每个 slug 输出：\nslug:\n建议新增 URL（每行一条，附一句中文说明覆盖内容与可信度理由）：\n- <URL> — <说明>\n\n来源优先级：\n1. UNESCO 非遗名录、申报文件、优秀保护实践，以及各国国家级非遗名录官方页面；\n2. 与具体传统、节庆、朝圣地或社群直接相关的文化部、地方政府、原住民族／部族官方机构、博物馆、档案馆或官方节庆网站；\n3. 大学、科研机构与学术档案页面（藏品页、特展、档案、学位论文库）；\n4. 可由 Crossref 核验、主题确切相关的同行评审论文或 DOI 图书章节（优先 doi.org / dx.doi.org）。\n\n明确禁止：Britannica 的地点（/place/）概览页与泛概览页；encyclopedia.com 与 everyculture.com 概览页；Wikipedia 或任何 wiki 概览页；101lasttribes、joshuaproject 一类部族目录页；与该传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。\n\n硬性要求：每条 URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或仓库 SOURCES.md 已收录 URL 重复；每个 slug 给 2–4 条，宁缺毋滥，找不到合格来源时写“未找到”。只补 `## 参考来源`，不改卡片正文、档位与仪式内容。\n\n---\n1. slug=malekula-traditional（现有来源 3 条）\n标题: 马莱库拉传统信仰与瓦努阿图祈福（Malekula）\n典型仪式名: 1. 等级与入会（极高敏感，仅概念）；2. 舞蹈与公开展演（公开／敏感交界）；3. 基督教并存（公开层）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Malekula\n- https://www.britannica.com/place/Vanuatu\n- https://www.britannica.com/topic/Melanesian-culture\n\n2. slug=mam-maya（现有来源 3 条）\n标题: 马姆玛雅民间天主教与山灵祈福（Mam）\n典型仪式名: 1. Todos Santos Cuchumatán 主保节（公开／观礼层）；2. Cofradía 游行与职分（公开观礼层）；3. Ajq'ij 日守／日计者（CONCEPT／viewing ONLY）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Mam\n- https://www.britannica.com/place/Guatemala\n- https://www.britannica.com/topic/Maya-people\n\n3. slug=manam-traditional（现有来源 3 条）\n标题: 马南岛传统信仰与火山—祖先祈福（Manam）\n典型仪式名: 1. 祖先与火山敬畏（概念层）；2. 教堂崇拜（概念层）；3. 回返与公共感恩／悼念（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Manam\n- https://www.britannica.com/place/Papua-New-Guinea\n- https://www.britannica.com/place/Madang\n\n4. slug=mandinka-traditional（现有来源 3 条）\n标题: 曼丁卡民间伊斯兰与地方灵祈福（Mandinka／Malinke）\n典型仪式名: 1. Kankurang 神圣面具（ICH viewing-only）；2. Marabout／Karamoko 职分（CONCEPT）；3. Jali／Griot 公共文化与清真寺节日（公共层）\n现有 URL（勿重复）：\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mandinka\n- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/malinke\n- https://www.britannica.com/topic/Mande\n\n5. slug=mangareva-traditional（现有来源 3 条）\n标题: 曼加雷瓦传统信仰与天主教—marae祈福余绪（Mangareva）\n典型仪式名: 1. St Michael Cathedral（Rikitea）朝圣／堂区礼仪（公开层）；2. Marae 石砌平台（历史／致敬层）；3. 岛屿节庆与航海—资源伦理（公共／概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/place/Mangareva\n- https://www.britannica.com/place/Gambier-Islands\n- https://www.britannica.com/place/French-Polynesia\n\n6. slug=mangbetu-traditional（现有来源 3 条）\n标题: 芒贝图传统信仰与祖灵祈福（Mangbetu）\n典型仪式名: 1. 祖灵敬礼（概念层）；2. 教堂崇拜（概念层）；3. 艺术—宫廷遗产记忆（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Mangbetu\n- https://www.britannica.com/place/Democratic-Republic-of-the-Congo\n- https://www.britannica.com/place/Central-Africa\n\n7. slug=mangyan-traditional（现有来源 3 条）\n标题: 曼吉安传统信仰与民都洛祖灵祈福（Mangyan）\n典型仪式名: 1. Ambahan 竹诗歌传承（公共／文化层）；2. Panudlak／Pamago 稻作礼仪（CONCEPT）；3. Balaynan 疗愈者与基督教并行（CONCEPT ONLY）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Mangyan\n- https://www.britannica.com/place/Mindoro\n- https://www.britannica.com/place/Philippines\n\n8. slug=manjak-traditional（现有来源 3 条）\n标题: 曼雅克传统信仰与稻作—祖灵祈福（Manjak／Manjaca）\n典型仪式名: 1. Napagol 祖先祠／圣地（CONCEPT）；2. Pano de Pente 织布遗产（公共／文化层）；3. Bambo 成年礼边界与教堂／清真寺公开崇拜（CONCEPT／公开层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Mandyako\n- https://www.britannica.com/place/Guinea-Bissau\n- https://www.britannica.com/place/Casamance\n\n9. slug=manobo-traditional（现有来源 3 条）\n标题: 马诺博传统信仰与棉兰老祖灵祈福（Manobo）\n典型仪式名: 1. Magbabaya 高神概念与农事敬礼（概念层）；2. Kaamulan／Samaya 收获与公共节庆（公共／观礼层）；3. Baylan／Baylanon 与 Dagmay 文化层（高度敏感 CONCEPT／文化）\n现有 URL（勿重复）：\n- https://pia.gov.ph/features/all-set-for-kaamulan-street-dancing-event-featuring-bukidnons-seven-tribes/\n- https://ncca.gov.ph/about-ncca-3/subcommissions/subcommission-on-cultural-communities-and-traditional-arts-sccta/central-cultural-communities/the-mandaya-ethnic-group/\n- https://bukidnononline.com/kaamulan-festival-2026-schedule-of-activities/\n\n10. slug=manus-traditional（现有来源 3 条）\n标题: 马努斯传统信仰与海军群岛祈福（Manus）\n典型仪式名: 1. Lapan 酋长层与 Titan／Usiai 海洋—交换伦理（概念／公开交界）；2. Moen Palit 守护祖灵（HIGH SENSITIVITY CONCEPT）；3. 基督教礼拜与丧礼（敏感，仅概念）\n现有 URL（勿重复）：\n- https://doi.org/10.22459/lf.2021.03\n- https://www.everyculture.com/Oceania/Manus-Religion-and-Expressive-Culture.html\n- https://press-files.anu.edu.au/downloads/press/n7854/html/ch01.xhtml\n\n11. slug=maria-lionza（现有来源 3 条）\n标题: 玛丽亚·利昂萨民间崇拜与索尔特山朝圣（María Lionza）\n典型仪式名: 1. 索尔特山朝圣与供奉（公共朝圣层）；2. 灵媒通灵与「宫廷」灵系（限制性概念层）；3. 炭火之舞与国家文化表述（名称／公共展演层）\n现有 URL（勿重复）：\n- https://www.aljazeera.com/features/2011/11/18/the-cult-of-maria-lionza\n- https://www.minec.gob.ve/monumento-natural-cerro-maria-lionza-cumple-66-anos/\n- https://revues.ulaval.ca/ojs/index.php/anthropen/en/article/view/30597\n\n12. slug=marind-traditional（现有来源 3 条）\n标题: 马林德传统信仰与沼泽—祖先祈福（Marind）\n典型仪式名: 1. 祖先敬礼（高度敏感，仅概念）；2. 成年—会社礼仪余绪（极高敏感，仅概念）；3. 基督教／现代宗教接触层（概念层）\n现有 URL（勿重复）：\n- https://www.britannica.com/topic/Marind\n- https://www.britannica.com/place/Papua\n- https://www.britannica.com/place/New-Guinea\n"
+}

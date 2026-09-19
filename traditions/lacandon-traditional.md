@@ -50,3 +50,7 @@
 - https://www.britannica.com/topic/Lacandon
 - https://www.mpm.edu/research-collections/anthropology/online-collections-research/lacandon-collection/social-life
 - https://www.britannica.com/topic/Maya-people
+- https://www.revistas.inah.gob.mx/index.php/narrativasantropologicas/article/view/17547
+- https://doi.org/10.19130/iifl.ecm/61.002x4856001sm8
+- https://revistas.inah.gob.mx/index.php/cuicuilco/article/view/13173
+- https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=729

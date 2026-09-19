@@ -47,8 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Circassian
-- https://www.britannica.com/topic/Adyghian
 - http://apsnyteka.org/file/Chirikba_Between_Christianity_and_Islam_Heathen_Heritage_in_the_Caucasus.pdf
 - http://jaimoukha.synthasite.com/resources/Circassian%20Religion.pdf
-- https://www.britannica.com/place/Caucasus/People
+- https://doi.org/10.15405/epsbs.2021.11.87
+- https://www.europeanproceedings.com/article/10.15405/epsbs.2021.11.87

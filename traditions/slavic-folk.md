@@ -52,7 +52,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Slavic-religion
-- https://www.britannica.com/topic/Slavic-religion/Folk-conceptions
-- https://www.britannica.com/topic/Slavic-religion/Communal-banquets-and-related-practices
 - https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CK%5CU%5CKupalofestival.htm
+- https://doi.org/10.1163/9789004688810_005
+- https://doi.org/10.3390/arts12020080
+- https://brill.com/display/book/9789004688810/BP000013.xml

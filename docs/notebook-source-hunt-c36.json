@@ -1,0 +1,88 @@
+{
+  "batch": "notebook-source-hunt-c36",
+  "cycle": 36,
+  "date": "2026-09-19",
+  "status": "prepared",
+  "selection_rule": "C35 后剩余 cleanup candidates；优先处理仍含弱总览来源或来源薄弱的卡片；本批预计 3 张。",
+  "previous_cycles_slugs_processed": 406,
+  "exclusion_metadata_slug_union_count": 406,
+  "pool_after_c35_count": 3,
+  "selected_count": 3,
+  "slugs": [
+    "shinto",
+    "quaker",
+    "sardinian-folk"
+  ],
+  "cards": [
+    {
+      "slug": "shinto",
+      "title": "神道",
+      "current_source_count": 4,
+      "current_urls": [
+        "https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9055",
+        "https://d-museum.kokugakuin.ac.jp/eos/detail/id=9175",
+        "https://d-museum.kokugakuin.ac.jp/eos/detail/id=9633",
+        "https://www.metmuseum.org/art/collection/search/54768"
+      ],
+      "weak_urls": [],
+      "n": 4,
+      "weak_domain_count": 0,
+      "rituals": [
+        "1. Temizuya 与参拜 sanpai（二拜二拍手一拜）",
+        "2. 御守 omamori、神札 ofuda 与绘马 ema",
+        "3. 初诣 hatsumōde 与神乐 kagura"
+      ],
+      "status": "待 C36 来源补强"
+    },
+    {
+      "slug": "quaker",
+      "title": "贵格会静默崇拜与见证（Religious Society of Friends / Quakers）",
+      "current_source_count": 6,
+      "current_urls": [
+        "https://www.britannica.com/topic/Society-of-Friends",
+        "https://www.britannica.com/topic/Inner-Light",
+        "https://www.britannica.com/topic/Society-of-Friends/Teachings",
+        "https://kids.britannica.com/students/article/Quakers/276607",
+        "https://www.quaker.org.uk/faith/our-faith/how-quakers-worship",
+        "https://www.pym.org/faith-and-practice/experience-and-faith/meeting-worship/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Society-of-Friends",
+        "https://www.britannica.com/topic/Inner-Light",
+        "https://www.britannica.com/topic/Society-of-Friends/Teachings",
+        "https://kids.britannica.com/students/article/Quakers/276607"
+      ],
+      "n": 6,
+      "weak_domain_count": 4,
+      "rituals": [
+        "1. Meeting for Worship 与 Inner Light（概念层）",
+        "2. SPICES 见证的生活实践（伦理／公共层）",
+        "3. Clearness Committee 与 business meeting（概念层）"
+      ],
+      "status": "待 C36 来源补强"
+    },
+    {
+      "slug": "sardinian-folk",
+      "title": "撒丁民间天主教与节庆祈福（Sardinian Folk／Sardegna）",
+      "current_source_count": 6,
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/celebrations-of-big-shoulder-borne-processional-structures-00721",
+        "https://www.sardegnaturismo.it/en/descent-candlesticks-solemnity-authenticity-and-exhibition",
+        "https://idese.cultura.gov.it/en/place/discesa-dei-candelieri-la-faradda/",
+        "https://www.sardegnaturismo.it/en/sardinia-festival-sacred",
+        "https://www.sardegnaturismo.it/en/redentore-festival-religion-and-folklore",
+        "https://www.sardegnaturismo.it/en/sant-efisio"
+      ],
+      "weak_urls": [],
+      "n": 6,
+      "weak_domain_count": 0,
+      "rituals": [
+        "1. Faradda／烛台下降游行（公开遗产层）",
+        "2. Cumbessias 九天敬礼与 S'Efisio 朝圣（乡村／城市公开层）",
+        "3. Redentore 朝圣与高山敬礼（公开节庆层）"
+      ],
+      "status": "待 C36 来源补强"
+    }
+  ],
+  "remaining_after_c36_estimate": 0
+}

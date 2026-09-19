@@ -1,0 +1,649 @@
+{
+  "batch": "notebook-source-hunt-c35",
+  "cycle": 35,
+  "date": "2026-09-19",
+  "selection_rule": "排除 C1–C34 已处理 slug；优先未处理 n=3 薄 C 卡，其次 n=4 且含 Britannica／encyclopedia.com／everyculture 弱域名者，再以 n=5 且含弱域名者补足至 12 张；按来源数量、弱域名数与 slug 排序。",
+  "previous_cycles_slugs_processed": 394,
+  "exclusion_metadata_slug_union_count": 394,
+  "pool_after_c34_count": 15,
+  "selected_count": 12,
+  "slugs": [
+    "slavic-folk",
+    "slovene-folk",
+    "sorbs-folk",
+    "mevlevi-sufi",
+    "minangkabau-adat",
+    "mouride",
+    "ossetian-uatsdin",
+    "samoan-faa-samoa",
+    "romagnol-folk",
+    "celtic-folk",
+    "baltic-folk",
+    "circassian-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "slavic-folk",
+      "title": "斯拉夫民间信仰与祈福（Slavic folk religion）",
+      "n": 4,
+      "weak_domain_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Slavic-religion",
+        "https://www.britannica.com/topic/Slavic-religion/Folk-conceptions",
+        "https://www.britannica.com/topic/Slavic-religion/Communal-banquets-and-related-practices",
+        "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CK%5CU%5CKupalofestival.htm"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Slavic-religion",
+        "https://www.britannica.com/topic/Slavic-religion/Folk-conceptions",
+        "https://www.britannica.com/topic/Slavic-religion/Communal-banquets-and-related-practices"
+      ],
+      "rituals": [
+        "1. Badnjak 与冬季节庆记忆（民俗文化层）",
+        "2. Ivan Kupala：花环与跃火（FOLK CULTURE 命名）",
+        "3. Domovoy CONCEPT 与 Perun 记忆层"
+      ],
+      "current_source_count": 4,
+      "applied_urls": [
+        "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CK%5CU%5CKupalofestival.htm",
+        "https://doi.org/10.1163/9789004688810_005",
+        "https://doi.org/10.3390/arts12020080",
+        "https://brill.com/display/book/9789004688810/BP000013.xml"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1163/9789004688810_005",
+        "https://doi.org/10.3390/arts12020080",
+        "https://brill.com/display/book/9789004688810/BP000013.xml"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Slavic-religion",
+        "https://www.britannica.com/topic/Slavic-religion/Folk-conceptions",
+        "https://www.britannica.com/topic/Slavic-religion/Communal-banquets-and-related-practices"
+      ],
+      "final_urls": [
+        "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CK%5CU%5CKupalofestival.htm",
+        "https://doi.org/10.1163/9789004688810_005",
+        "https://doi.org/10.3390/arts12020080",
+        "https://brill.com/display/book/9789004688810/BP000013.xml"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "slovene-folk",
+      "title": "斯洛文尼亚民间天主教与朝圣祈福（Slovene）",
+      "n": 4,
+      "weak_domain_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Slovenia",
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://ich.unesco.org/en/RL/door-to-door-rounds-of-kurenti-00177",
+        "https://www.britannica.com/place/Alps"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/place/Slovenia",
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.britannica.com/place/Alps"
+      ],
+      "rituals": [
+        "1. Brezje — Marija Pomagaj 圣母朝圣（概念层）",
+        "2. UNESCO Kurentovanje（Ptuj）与山村主保 feste（公共文化层）",
+        "3. 复活节祝福与礼仪年民俗（概念层）"
+      ],
+      "current_source_count": 4,
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/door-to-door-rounds-of-kurenti-00177",
+        "https://ich.unesco.org/en/RL/skofja-loka-passion-play-01203",
+        "https://isn2.zrc-sazu.si/en/publikacije/od-ajda-do-zlatoroga-1",
+        "https://ojs.zrc-sazu.si/traditiones/article/download/13544/11891/38457"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/skofja-loka-passion-play-01203",
+        "https://isn2.zrc-sazu.si/en/publikacije/od-ajda-do-zlatoroga-1",
+        "https://ojs.zrc-sazu.si/traditiones/article/download/13544/11891/38457"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Slovenia",
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.britannica.com/place/Alps"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/door-to-door-rounds-of-kurenti-00177",
+        "https://ich.unesco.org/en/RL/skofja-loka-passion-play-01203",
+        "https://isn2.zrc-sazu.si/en/publikacije/od-ajda-do-zlatoroga-1",
+        "https://ojs.zrc-sazu.si/traditiones/article/download/13544/11891/38457"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "sorbs-folk",
+      "title": "索布民间基督教与卢萨蒂亚祈福（Sorbs／Wends）",
+      "n": 4,
+      "weak_domain_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sorb",
+        "https://www.britannica.com/place/Lusatia",
+        "https://www.domowina.de/en/lusatian-sorbs/intangible-cultural-heritage/",
+        "https://www.britannica.com/place/Germany"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Sorb",
+        "https://www.britannica.com/place/Lusatia",
+        "https://www.britannica.com/place/Germany"
+      ],
+      "rituals": [
+        "1. Vogelhochzeit（鸟婚）公共民俗（概念层）",
+        "2. Zapust 嘉年华（公共民俗层）",
+        "3. 索布语崇拜与文化节认同（概念层）"
+      ],
+      "current_source_count": 4,
+      "applied_urls": [
+        "https://www.domowina.de/en/lusatian-sorbs/intangible-cultural-heritage/",
+        "https://www.regionen.sachsen.de/en/easter-rides-5619.html",
+        "https://www.domowina.de/en/domowina/members/regional-members/regional-association-jan-arnost-smoler/regional-highlights/customs/",
+        "https://serbski-institut.de/"
+      ],
+      "added_urls": [
+        "https://www.regionen.sachsen.de/en/easter-rides-5619.html",
+        "https://www.domowina.de/en/domowina/members/regional-members/regional-association-jan-arnost-smoler/regional-highlights/customs/",
+        "https://serbski-institut.de/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Sorb",
+        "https://www.britannica.com/place/Lusatia",
+        "https://www.britannica.com/place/Germany"
+      ],
+      "final_urls": [
+        "https://www.domowina.de/en/lusatian-sorbs/intangible-cultural-heritage/",
+        "https://www.regionen.sachsen.de/en/easter-rides-5619.html",
+        "https://www.domowina.de/en/domowina/members/regional-members/regional-association-jan-arnost-smoler/regional-highlights/customs/",
+        "https://serbski-institut.de/"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "mevlevi-sufi",
+      "title": "梅夫莱维苏菲／旋转苦修者（Mevlevi Sufi）",
+      "n": 4,
+      "weak_domain_count": 2,
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/mevlevi-sema-ceremony-00100",
+        "https://www.britannica.com/topic/Mawlawiyah",
+        "https://www.britannica.com/topic/Islamic-arts/Dervish-dancing",
+        "https://yakegm.ktb.gov.tr/TR-345100/mevlevi-sema-ceremony.html"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Mawlawiyah",
+        "https://www.britannica.com/topic/Islamic-arts/Dervish-dancing"
+      ],
+      "rituals": [
+        "1. Sema／Semahane／Sikke 公开文化结构（概念层）",
+        "2. Shab-e Arus（12 月 17 日）朝圣纪念（公共层）",
+        "3. Dergah 道堂教育记忆（CONCEPT — 无苏菲入门 how-to）"
+      ],
+      "current_source_count": 4,
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/mevlevi-sema-ceremony-00100",
+        "https://yakegm.ktb.gov.tr/TR-345100/mevlevi-sema-ceremony.html",
+        "https://brill.com/display/book/edcoll/9789004352841/B9789004352841_009.xml",
+        "https://doi.org/10.1017/CBO9781139839082"
+      ],
+      "added_urls": [
+        "https://brill.com/display/book/edcoll/9789004352841/B9789004352841_009.xml",
+        "https://doi.org/10.1017/CBO9781139839082"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Mawlawiyah",
+        "https://www.britannica.com/topic/Islamic-arts/Dervish-dancing"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/mevlevi-sema-ceremony-00100",
+        "https://yakegm.ktb.gov.tr/TR-345100/mevlevi-sema-ceremony.html",
+        "https://brill.com/display/book/edcoll/9789004352841/B9789004352841_009.xml",
+        "https://doi.org/10.1017/CBO9781139839082"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "minangkabau-adat",
+      "title": "米南加保习俗法与伊斯兰祈福传统（Minangkabau）",
+      "n": 4,
+      "weak_domain_count": 2,
+      "current_urls": [
+        "https://www.britannica.com/topic/Minangkabau",
+        "https://www.britannica.com/topic/adat",
+        "https://whc.unesco.org/en/tentativelists/6059/",
+        "https://www.indonesia.travel/in/en/travel-ideas/culture/rumah-gadang/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Minangkabau",
+        "https://www.britannica.com/topic/adat"
+      ],
+      "rituals": [
+        "1. Turun mandi 新生儿感恩初浴（家庭公共层，概念）",
+        "2. Balimau 斋月前洁净浴与 Khatam Al-Qur’an（公共／家庭层）",
+        "3. Rumah Gadang 大屋祝福与 adat—伊斯兰互基（概念层）"
+      ],
+      "current_source_count": 4,
+      "applied_urls": [
+        "https://whc.unesco.org/en/tentativelists/6059/",
+        "https://www.indonesia.travel/in/en/travel-ideas/culture/rumah-gadang/",
+        "https://doi.org/10.30829/juspi.v9i1.22448",
+        "https://dx.doi.org/10.24127/gdn.v10i1.2775"
+      ],
+      "added_urls": [
+        "https://doi.org/10.30829/juspi.v9i1.22448",
+        "https://dx.doi.org/10.24127/gdn.v10i1.2775"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Minangkabau",
+        "https://www.britannica.com/topic/adat"
+      ],
+      "final_urls": [
+        "https://whc.unesco.org/en/tentativelists/6059/",
+        "https://www.indonesia.travel/in/en/travel-ideas/culture/rumah-gadang/",
+        "https://doi.org/10.30829/juspi.v9i1.22448",
+        "https://dx.doi.org/10.24127/gdn.v10i1.2775"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "mouride",
+      "title": "穆里德／穆里迪耶兄弟会朝圣与赞念（Mouride／Murīdiyya）",
+      "n": 4,
+      "weak_domain_count": 2,
+      "current_urls": [
+        "https://www.britannica.com/topic/Muridiyyah",
+        "https://berkleycenter.georgetown.edu/publications/the-mouride-sufi-order",
+        "https://doi.org/10.1093/oxfordjournals.afraf.a008007",
+        "https://www.britannica.com/place/Touba"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Muridiyyah",
+        "https://www.britannica.com/place/Touba"
+      ],
+      "rituals": [
+        "1. Grand Magal de Touba／图巴大马加尔（公开朝圣层）",
+        "2. Khassida 赞诗歌诵（概念层）",
+        "3. Baye Fall 劳动／服务伦理（公共层）"
+      ],
+      "current_source_count": 4,
+      "applied_urls": [
+        "https://berkleycenter.georgetown.edu/publications/the-mouride-sufi-order",
+        "https://doi.org/10.1093/oxfordjournals.afraf.a008007",
+        "https://doi.org/10.1093/afraf/adag004",
+        "https://doi.org/10.3390/ijerph19159526",
+        "https://doi.org/10.3917/kart.four.2005.01.0501"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1093/afraf/adag004",
+        "https://doi.org/10.3390/ijerph19159526",
+        "https://doi.org/10.3917/kart.four.2005.01.0501"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Muridiyyah",
+        "https://www.britannica.com/place/Touba"
+      ],
+      "final_urls": [
+        "https://berkleycenter.georgetown.edu/publications/the-mouride-sufi-order",
+        "https://doi.org/10.1093/oxfordjournals.afraf.a008007",
+        "https://doi.org/10.1093/afraf/adag004",
+        "https://doi.org/10.3390/ijerph19159526",
+        "https://doi.org/10.3917/kart.four.2005.01.0501"
+      ],
+      "final_source_count": 5
+    },
+    {
+      "slug": "ossetian-uatsdin",
+      "title": "奥塞梯乌茨金／传统祈宴（Uatsdin／Assianism）",
+      "n": 4,
+      "weak_domain_count": 1,
+      "current_urls": [
+        "https://www.britannica.com/topic/Ossete",
+        "https://oc-media.org/how-ossetian-uatsdin-became-the-most-successful-pagan-faith-in-the-world/",
+        "http://ossetians.com/eng/news.php?newsid=597",
+        "https://musalm.ru/en/52-3-1.html"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Ossete"
+      ],
+      "rituals": [
+        "1. Kuyvd／祈宴与三饼（公开文化层）",
+        "2. Dzuar 圣地巡礼（概念层）",
+        "3. Safat 炉灶链与家庭圣所象征（概念层）"
+      ],
+      "current_source_count": 4,
+      "applied_urls": [
+        "https://oc-media.org/how-ossetian-uatsdin-became-the-most-successful-pagan-faith-in-the-world/",
+        "http://ossetians.com/eng/news.php?newsid=597",
+        "https://musalm.ru/en/52-3-1.html",
+        "https://brill.com/view/journals/ic/24/1/article-p38_4.xml",
+        "https://doi.org/10.1080/0966369X.2021.1873744"
+      ],
+      "added_urls": [
+        "https://brill.com/view/journals/ic/24/1/article-p38_4.xml",
+        "https://doi.org/10.1080/0966369X.2021.1873744"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Ossete"
+      ],
+      "final_urls": [
+        "https://oc-media.org/how-ossetian-uatsdin-became-the-most-successful-pagan-faith-in-the-world/",
+        "http://ossetians.com/eng/news.php?newsid=597",
+        "https://musalm.ru/en/52-3-1.html",
+        "https://brill.com/view/journals/ic/24/1/article-p38_4.xml",
+        "https://doi.org/10.1080/0966369X.2021.1873744"
+      ],
+      "final_source_count": 5
+    },
+    {
+      "slug": "samoan-faa-samoa",
+      "title": "萨摩亚／法阿萨摩亚村社礼仪与祝福文化（Samoan／Faʻa Sāmoa）",
+      "n": 4,
+      "weak_domain_count": 1,
+      "current_urls": [
+        "https://www.britannica.com/place/Samoa-island-nation-Pacific-Ocean/Cultural-life",
+        "https://ich.unesco.org/en/RL/ie-samoa-fine-mat-and-its-cultural-value-01499",
+        "https://americansamoa.noaa.gov/learn/faa-samoa.html",
+        "https://culturalatlas.sbs.com.au/samoan-culture/samoan-culture-core-concepts"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/place/Samoa-island-nation-Pacific-Ocean/Cultural-life"
+      ],
+      "rituals": [
+        "1. ʻAva 礼与演说席次（公共礼仪／限制性知识层）",
+        "2. ʻIe Samoa 细席与 Ifoga 细席道歉 CONCEPT（公共文化／非遗层）",
+        "3. Lotu／Sā 黄昏祈祷与主日崇拜（民俗／教会层）"
+      ],
+      "current_source_count": 4,
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/ie-samoa-fine-mat-and-its-cultural-value-01499",
+        "https://americansamoa.noaa.gov/learn/faa-samoa.html",
+        "https://culturalatlas.sbs.com.au/samoan-culture/samoan-culture-core-concepts",
+        "https://doi.org/10.1093/heapol/czag009"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1093/heapol/czag009"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Samoa-island-nation-Pacific-Ocean/Cultural-life"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/ie-samoa-fine-mat-and-its-cultural-value-01499",
+        "https://americansamoa.noaa.gov/learn/faa-samoa.html",
+        "https://culturalatlas.sbs.com.au/samoan-culture/samoan-culture-core-concepts",
+        "https://doi.org/10.1093/heapol/czag009"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "romagnol-folk",
+      "title": "罗马涅民间天主教与朝圣祈福（Romagnol）",
+      "n": 5,
+      "weak_domain_count": 5,
+      "current_urls": [
+        "https://www.britannica.com/place/Emilia-Romagna",
+        "https://www.britannica.com/place/Cesena",
+        "https://www.britannica.com/place/Forli",
+        "https://www.britannica.com/place/Ravenna-Italy",
+        "https://www.britannica.com/place/Rimini"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/place/Emilia-Romagna",
+        "https://www.britannica.com/place/Cesena",
+        "https://www.britannica.com/place/Forli",
+        "https://www.britannica.com/place/Ravenna-Italy",
+        "https://www.britannica.com/place/Rimini"
+      ],
+      "rituals": [
+        "1. Madonna del Monte（Cesena）与 Ex-Voto（概念层）",
+        "2. Madonna del Fuoco（Forlì）（概念层）",
+        "3. 海岸／山地主保 feste（概念层）"
+      ],
+      "current_source_count": 5,
+      "applied_urls": [
+        "https://patrimonioculturale.regione.emilia-romagna.it/novita/notizie/2025/patrimonio-unesco-su-pater",
+        "https://notizie.regione.emilia-romagna.it/comunicati/2023/luglio/cultura-201cvai-liscio201d-l2019emilia-romagna-fa-squadra-per-valorizzare-una-delle-sue-piu-importanti-espressioni-e-traditions-popolari-online-il-sito-www-vailiscio-it-per-favorire-la-condivisione-e-la-raccolta-di-notizie-video-fotografie-documenti-e",
+        "http://rivista.ibc.regione.emilia-romagna.it/xw-201301/xw-201301-a0001",
+        "https://notizie.regione.emilia-romagna.it/comunicati/2026/cultura-il-liscio-dellemilia-romagna-muove-i-primi-passi-verso-il-riconoscimento-unesco-avviato-in-regione-il-percorso-condiviso-volto-a-promuovere-la-proposta-di-candidatura-a-patrimonio-immateriale-lassessora-allegni-espressione-viva-dellidentita"
+      ],
+      "added_urls": [
+        "https://patrimonioculturale.regione.emilia-romagna.it/novita/notizie/2025/patrimonio-unesco-su-pater",
+        "https://notizie.regione.emilia-romagna.it/comunicati/2023/luglio/cultura-201cvai-liscio201d-l2019emilia-romagna-fa-squadra-per-valorizzare-una-delle-sue-piu-importanti-espressioni-e-traditions-popolari-online-il-sito-www-vailiscio-it-per-favorire-la-condivisione-e-la-raccolta-di-notizie-video-fotografie-documenti-e",
+        "http://rivista.ibc.regione.emilia-romagna.it/xw-201301/xw-201301-a0001",
+        "https://notizie.regione.emilia-romagna.it/comunicati/2026/cultura-il-liscio-dellemilia-romagna-muove-i-primi-passi-verso-il-riconoscimento-unesco-avviato-in-regione-il-percorso-condiviso-volto-a-promuovere-la-proposta-di-candidatura-a-patrimonio-immateriale-lassessora-allegni-espressione-viva-dellidentita"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Emilia-Romagna",
+        "https://www.britannica.com/place/Cesena",
+        "https://www.britannica.com/place/Forli",
+        "https://www.britannica.com/place/Ravenna-Italy",
+        "https://www.britannica.com/place/Rimini"
+      ],
+      "final_urls": [
+        "https://patrimonioculturale.regione.emilia-romagna.it/novita/notizie/2025/patrimonio-unesco-su-pater",
+        "https://notizie.regione.emilia-romagna.it/comunicati/2023/luglio/cultura-201cvai-liscio201d-l2019emilia-romagna-fa-squadra-per-valorizzare-una-delle-sue-piu-importanti-espressioni-e-traditions-popolari-online-il-sito-www-vailiscio-it-per-favorire-la-condivisione-e-la-raccolta-di-notizie-video-fotografie-documenti-e",
+        "http://rivista.ibc.regione.emilia-romagna.it/xw-201301/xw-201301-a0001",
+        "https://notizie.regione.emilia-romagna.it/comunicati/2026/cultura-il-liscio-dellemilia-romagna-muove-i-primi-passi-verso-il-riconoscimento-unesco-avviato-in-regione-il-percorso-condiviso-volto-a-promuovere-la-proposta-di-candidatura-a-patrimonio-immateriale-lassessora-allegni-espressione-viva-dellidentita"
+      ],
+      "final_source_count": 4
+    },
+    {
+      "slug": "celtic-folk",
+      "title": "凯尔特宗教与民俗祈福（Celtic religion）",
+      "n": 5,
+      "weak_domain_count": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Celtic-religion",
+        "https://www.britannica.com/topic/druid",
+        "https://www.britannica.com/topic/Samhain",
+        "https://www.britannica.com/topic/Beltane",
+        "https://www.worldhistory.org/ancient_celtic_religion/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Celtic-religion",
+        "https://www.britannica.com/topic/druid",
+        "https://www.britannica.com/topic/Samhain",
+        "https://www.britannica.com/topic/Beltane"
+      ],
+      "rituals": [
+        "1. 圣林与自然圣地崇拜（概念层）",
+        "2. 岁时四节点：Imbolc／Beltane／Lughnasadh／Samhain（概念层）",
+        "3. 水边还愿、clootie wells 与护身象征（概念层）"
+      ],
+      "current_source_count": 5,
+      "applied_urls": [
+        "https://www.worldhistory.org/ancient_celtic_religion/",
+        "https://www.cambridge.org/core/books/cambridge-history-of-religions-in-the-ancient-world/celtic-religion-in-western-and-central-europe/02590D10A0BB7E647CFC95F25C00261A",
+        "https://dx.doi.org/10.30674/scripta.67183",
+        "https://daily.jstor.org/from-samhain-to-halloween/",
+        "https://daily.jstor.org/how-irish-holidays-blend-catholic-and-pagan-traditions/"
+      ],
+      "added_urls": [
+        "https://www.cambridge.org/core/books/cambridge-history-of-religions-in-the-ancient-world/celtic-religion-in-western-and-central-europe/02590D10A0BB7E647CFC95F25C00261A",
+        "https://dx.doi.org/10.30674/scripta.67183",
+        "https://daily.jstor.org/from-samhain-to-halloween/",
+        "https://daily.jstor.org/how-irish-holidays-blend-catholic-and-pagan-traditions/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Celtic-religion",
+        "https://www.britannica.com/topic/druid",
+        "https://www.britannica.com/topic/Samhain",
+        "https://www.britannica.com/topic/Beltane"
+      ],
+      "final_urls": [
+        "https://www.worldhistory.org/ancient_celtic_religion/",
+        "https://www.cambridge.org/core/books/cambridge-history-of-religions-in-the-ancient-world/celtic-religion-in-western-and-central-europe/02590D10A0BB7E647CFC95F25C00261A",
+        "https://dx.doi.org/10.30674/scripta.67183",
+        "https://daily.jstor.org/from-samhain-to-halloween/",
+        "https://daily.jstor.org/how-irish-holidays-blend-catholic-and-pagan-traditions/"
+      ],
+      "final_source_count": 5
+    },
+    {
+      "slug": "baltic-folk",
+      "title": "波罗的海民间信仰（立陶宛／拉脱维亚传统）",
+      "n": 5,
+      "weak_domain_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Baltic-religion",
+        "https://www.britannica.com/topic/gabija",
+        "https://www.britannica.com/topic/pirtizas",
+        "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013",
+        "https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Baltic-religion",
+        "https://www.britannica.com/topic/gabija",
+        "https://www.britannica.com/topic/pirtizas"
+      ],
+      "rituals": [
+        "1. 灶火／圣火照料与对 Gabija 的祈请",
+        "2. 岁时与农事开启礼（Rasa／Līgo 仲夏火等）",
+        "3. 人生礼仪与十字／路旁圣所的祈愿（Kryždirbystė；Kryžių kalnas）"
+      ],
+      "current_source_count": 5,
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013",
+        "https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf",
+        "https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Baltic-religion",
+        "https://www.britannica.com/topic/gabija",
+        "https://www.britannica.com/topic/pirtizas"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013",
+        "https://tautosmenta.lt/wp-content/uploads/2013/12/Vaitkeviciene_Daiva/Vaitkeviciene_Charms_2009.pdf",
+        "https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087"
+      ],
+      "final_source_count": 3
+    },
+    {
+      "slug": "circassian-traditional",
+      "title": "切尔克斯／阿迪格传统信仰与哈布泽",
+      "n": 5,
+      "weak_domain_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Circassian",
+        "https://www.britannica.com/topic/Adyghian",
+        "http://apsnyteka.org/file/Chirikba_Between_Christianity_and_Islam_Heathen_Heritage_in_the_Caucasus.pdf",
+        "http://jaimoukha.synthasite.com/resources/Circassian%20Religion.pdf",
+        "https://www.britannica.com/place/Caucasus/People"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Circassian",
+        "https://www.britannica.com/topic/Adyghian",
+        "https://www.britannica.com/place/Caucasus/People"
+      ],
+      "rituals": [
+        "1. Ch'ey 圣林／圣树祈请（限制性公共知识层）",
+        "2. Shible、Sozeresh 等职能神民俗纪念（概念层）",
+        "3. Xabze 人生礼仪与公共荣誉实践（概念层）"
+      ],
+      "current_source_count": 5,
+      "applied_urls": [
+        "http://apsnyteka.org/file/Chirikba_Between_Christianity_and_Islam_Heathen_Heritage_in_the_Caucasus.pdf",
+        "http://jaimoukha.synthasite.com/resources/Circassian%20Religion.pdf",
+        "https://doi.org/10.15405/epsbs.2021.11.87",
+        "https://www.europeanproceedings.com/article/10.15405/epsbs.2021.11.87"
+      ],
+      "added_urls": [
+        "https://doi.org/10.15405/epsbs.2021.11.87",
+        "https://www.europeanproceedings.com/article/10.15405/epsbs.2021.11.87"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Circassian",
+        "https://www.britannica.com/topic/Adyghian",
+        "https://www.britannica.com/place/Caucasus/People"
+      ],
+      "final_urls": [
+        "http://apsnyteka.org/file/Chirikba_Between_Christianity_and_Islam_Heathen_Heritage_in_the_Caucasus.pdf",
+        "http://jaimoukha.synthasite.com/resources/Circassian%20Religion.pdf",
+        "https://doi.org/10.15405/epsbs.2021.11.87",
+        "https://www.europeanproceedings.com/article/10.15405/epsbs.2021.11.87"
+      ],
+      "final_source_count": 4
+    }
+  ],
+  "prompt_constraints": [
+    "每卡通过联网检索补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／遗产机构页面、博物馆与档案馆、学术 DOI 或民族志。",
+    "禁止采用 Britannica 地名／主题总览页（/place/、/topic/）、encyclopedia.com、everyculture.com、Wikipedia、Factsanddetails 等弱总览站，以及旅游博客或无署名聚合页；不要用弱来源凑数。",
+    "仅做来源补强，不改档位、卡片正文或仪式内容，不写可复现操演步骤；敏感传统只做公开文化与概念层。",
+    "每条来源附一句中文说明其覆盖内容与可信度；搜不到足够强来源时写明检索关键词，不要用弱来源填充。"
+  ],
+  "remaining_candidates_after_batch": [
+    {
+      "slug": "shinto",
+      "title": "神道",
+      "n": 4,
+      "weak_domain_count": 0,
+      "current_urls": [
+        "https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9055",
+        "https://d-museum.kokugakuin.ac.jp/eos/detail/id=9175",
+        "https://d-museum.kokugakuin.ac.jp/eos/detail/id=9633",
+        "https://www.metmuseum.org/art/collection/search/54768"
+      ],
+      "weak_urls": [],
+      "rituals": [
+        "1. Temizuya 与参拜 sanpai（二拜二拍手一拜）",
+        "2. 御守 omamori、神札 ofuda 与绘马 ema",
+        "3. 初诣 hatsumōde 与神乐 kagura"
+      ]
+    },
+    {
+      "slug": "quaker",
+      "title": "贵格会静默崇拜与见证（Religious Society of Friends / Quakers）",
+      "n": 6,
+      "weak_domain_count": 4,
+      "current_urls": [
+        "https://www.britannica.com/topic/Society-of-Friends",
+        "https://www.britannica.com/topic/Inner-Light",
+        "https://www.britannica.com/topic/Society-of-Friends/Teachings",
+        "https://kids.britannica.com/students/article/Quakers/276607",
+        "https://www.quaker.org.uk/faith/our-faith/how-quakers-worship",
+        "https://www.pym.org/faith-and-practice/experience-and-faith/meeting-worship/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Society-of-Friends",
+        "https://www.britannica.com/topic/Inner-Light",
+        "https://www.britannica.com/topic/Society-of-Friends/Teachings",
+        "https://kids.britannica.com/students/article/Quakers/276607"
+      ],
+      "rituals": [
+        "1. Meeting for Worship 与 Inner Light（概念层）",
+        "2. SPICES 见证的生活实践（伦理／公共层）",
+        "3. Clearness Committee 与 business meeting（概念层）"
+      ]
+    },
+    {
+      "slug": "sardinian-folk",
+      "title": "撒丁民间天主教与节庆祈福（Sardinian Folk／Sardegna）",
+      "n": 6,
+      "weak_domain_count": 0,
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/celebrations-of-big-shoulder-borne-processional-structures-00721",
+        "https://www.sardegnaturismo.it/en/descent-candlesticks-solemnity-authenticity-and-exhibition",
+        "https://idese.cultura.gov.it/en/place/discesa-dei-candelieri-la-faradda/",
+        "https://www.sardegnaturismo.it/en/sardinia-festival-sacred",
+        "https://www.sardegnaturismo.it/en/redentore-festival-religion-and-folklore",
+        "https://www.sardegnaturismo.it/en/sant-efisio"
+      ],
+      "weak_urls": [],
+      "rituals": [
+        "1. Faradda／烛台下降游行（公开遗产层）",
+        "2. Cumbessias 九天敬礼与 S'Efisio 朝圣（乡村／城市公开层）",
+        "3. Redentore 朝圣与高山敬礼（公开节庆层）"
+      ]
+    }
+  ],
+  "input_url_count": 44,
+  "unique_input_url_count": 44,
+  "card_url_added_count": 30,
+  "card_url_removed_count": 32,
+  "sources_unique_added_count": 29,
+  "source_map": "/tmp/c35-urls.json"
+}

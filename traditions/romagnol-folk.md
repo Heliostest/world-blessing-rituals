@@ -47,8 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Emilia-Romagna
-- https://www.britannica.com/place/Cesena
-- https://www.britannica.com/place/Forli
-- https://www.britannica.com/place/Ravenna-Italy
-- https://www.britannica.com/place/Rimini
+- https://patrimonioculturale.regione.emilia-romagna.it/novita/notizie/2025/patrimonio-unesco-su-pater
+- https://notizie.regione.emilia-romagna.it/comunicati/2023/luglio/cultura-201cvai-liscio201d-l2019emilia-romagna-fa-squadra-per-valorizzare-una-delle-sue-piu-importanti-espressioni-e-traditions-popolari-online-il-sito-www-vailiscio-it-per-favorire-la-condivisione-e-la-raccolta-di-notizie-video-fotografie-documenti-e
+- http://rivista.ibc.regione.emilia-romagna.it/xw-201301/xw-201301-a0001
+- https://notizie.regione.emilia-romagna.it/comunicati/2026/cultura-il-liscio-dellemilia-romagna-muove-i-primi-passi-verso-il-riconoscimento-unesco-avviato-in-regione-il-percorso-condiviso-volto-a-promuovere-la-proposta-di-candidatura-a-patrimonio-immateriale-lassessora-allegni-espressione-viva-dellidentita

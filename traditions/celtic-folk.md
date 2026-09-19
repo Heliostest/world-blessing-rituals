@@ -52,8 +52,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Celtic-religion
-- https://www.britannica.com/topic/druid
-- https://www.britannica.com/topic/Samhain
-- https://www.britannica.com/topic/Beltane
 - https://www.worldhistory.org/ancient_celtic_religion/
+- https://www.cambridge.org/core/books/cambridge-history-of-religions-in-the-ancient-world/celtic-religion-in-western-and-central-europe/02590D10A0BB7E647CFC95F25C00261A
+- https://dx.doi.org/10.30674/scripta.67183
+- https://daily.jstor.org/from-samhain-to-halloween/
+- https://daily.jstor.org/how-irish-holidays-blend-catholic-and-pagan-traditions/

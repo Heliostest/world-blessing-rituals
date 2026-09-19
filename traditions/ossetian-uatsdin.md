@@ -50,7 +50,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Ossete
 - https://oc-media.org/how-ossetian-uatsdin-became-the-most-successful-pagan-faith-in-the-world/
 - http://ossetians.com/eng/news.php?newsid=597
 - https://musalm.ru/en/52-3-1.html
+- https://brill.com/view/journals/ic/24/1/article-p38_4.xml
+- https://doi.org/10.1080/0966369X.2021.1873744

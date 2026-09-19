@@ -49,7 +49,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Minangkabau
-- https://www.britannica.com/topic/adat
 - https://whc.unesco.org/en/tentativelists/6059/
 - https://www.indonesia.travel/in/en/travel-ideas/culture/rumah-gadang/
+- https://doi.org/10.30829/juspi.v9i1.22448
+- https://dx.doi.org/10.24127/gdn.v10i1.2775

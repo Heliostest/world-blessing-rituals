@@ -52,6 +52,10 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/thai-religion
 - https://hdl.handle.net/1813/33431
 - https://doi.org/10.65959/eaa.1020
+
+- https://www.bangkokpost.com/thailand/special-reports/3074305/ever-wonder-why-thais-offer-red-fanta-to-the-spirits
+- https://www.bangkokpost.com/life/social-and-lifestyle/1187129/inside-the-thai-soul
+- http://www.aj.arch.chula.ac.th/nakhara/files/article/269_20170117075307_PB.pdf
+- https://doi.org/10.3389/fpsyg.2024.1354068

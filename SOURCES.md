@@ -2959,3 +2959,43 @@
 - https://www.patrimoniocultural.gov.pt/2026/06/vela-votiva-de-santa-marta-de-portuzelo-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/
 - https://www.revistas.inah.gob.mx/index.php/narrativasantropologicas/en/article/view/21417
 - https://www.vukuzenzele.gov.za/class-her-own
+
+## 增补传统（Notebook source hunt C11：罗图马—托拉查）
+
+- http://wlt.fujian.gov.cn/hdjl/wdxd/202305/t20230512_6168252.htm
+- http://www.aj.arch.chula.ac.th/nakhara/files/article/269_20170117075307_PB.pdf
+- http://www.chongyi.gov.cn/cyxrmzf/c103589/202008/cabb5c36cb02408884cb0ab4b1d36df2.shtml
+- http://www.hawaii.edu/oceanic/rotuma/os/ceremonies/mamasa.htm
+- http://www.hawaii.edu/oceanic/rotuma/os/ceremonies/preface.htm
+- http://www.hawaii.edu/oceanic/rotuma/os/ceremonies/spirituality.htm
+- http://www.zc.gov.cn/gk/zdly/whggwgk/content/post_10977181.html
+- https://doi.org/10.1073/pnas.2020430118
+- https://doi.org/10.1080/00141840903581576
+- https://doi.org/10.1080/00223344.2018.1512369
+- https://doi.org/10.1080/2331186X.2022.2046241
+- https://doi.org/10.1080/23311983.2025.2524932
+- https://doi.org/10.1093/inthealth/ihad089
+- https://doi.org/10.1163/15685314-04601004
+- https://doi.org/10.15826/csp.2025.9.1.318
+- https://doi.org/10.3389/fitd.2023.1007480
+- https://doi.org/10.3389/fpsyg.2024.1354068
+- https://doi.org/10.3389/past.2025.15245
+- https://doi.org/10.3390/rel15091112
+- https://doi.org/10.4000/jso.7550
+- https://dx.doi.org/10.26278/E9BQ-P208
+- https://dx.doi.org/10.3889/fmars.2021.684303
+- https://ich.unesco.org/doc/src/29563.pdf
+- https://ich.unesco.org/doc/src/32299.pdf
+- https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-02097
+- https://ich.unesco.org/en/RL/seto-leelo-seto-polyphonic-singing-tradition-00173
+- https://ich.unesco.org/fr/RL/la-slava-celebration-de-la-fete-du-saint-patron-de-la-famille-01010
+- https://visitestonia.com/en/what-to-do/five-reasons-to-spend-a-long-weekend-in-setomaa
+- https://www.bangkokpost.com/life/social-and-lifestyle/1187129/inside-the-thai-soul
+- https://www.bangkokpost.com/thailand/special-reports/3074305/ever-wonder-why-thais-offer-red-fanta-to-the-spirits
+- https://www.ihchina.cn/project_details/15094/
+- https://www.medienservice.sachsen.de/medien/news/1074176
+- https://www.metmuseum.org/art/collection/search/772023
+- https://www.regionen.sachsen.de/en/upper-lusatia-3966.html
+- https://www.tokelau.org.nz/About+Us/Fishing+and+Canoes.html
+- https://www.tokelau.org.nz/About+Us/Government/Self+Determination+Package/Constitution+of+Tokelau.html
+- https://www.tokelau.org.nz/Bulletin/July+2017/EnvDay-NN.html

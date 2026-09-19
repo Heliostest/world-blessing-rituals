@@ -48,5 +48,9 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Toposa
-- https://www.britannica.com/place/South-Sudan
 - https://www.britannica.com/topic/Nilotic-languages
+
+- https://doi.org/10.1073/pnas.2020430118
+- https://doi.org/10.3389/past.2025.15245
+- https://doi.org/10.3389/fitd.2023.1007480
+- https://doi.org/10.1093/inthealth/ihad089

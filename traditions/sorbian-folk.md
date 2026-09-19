@@ -54,3 +54,6 @@
 - https://www.domowina.de/en/lusatian-sorbs/intangible-cultural-heritage/
 - https://www.regionen.sachsen.de/en/easter-rides-5619.html
 - https://www.oberlausitz.com/en/ostern
+
+- https://www.regionen.sachsen.de/en/upper-lusatia-3966.html
+- https://www.medienservice.sachsen.de/medien/news/1074176

@@ -50,3 +50,6 @@
 - https://www.britannica.com/topic/Sidamo
 - https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054
 - https://ich.unesco.org/en/decisions/10.COM/10.B.16
+
+- https://ich.unesco.org/doc/src/29563.pdf
+- https://doi.org/10.1080/2331186X.2022.2046241

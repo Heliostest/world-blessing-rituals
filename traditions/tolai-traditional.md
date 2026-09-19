@@ -48,5 +48,8 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tolai
-- https://www.britannica.com/place/Rabaul
-- https://www.britannica.com/place/Papua-New-Guinea
+
+- https://doi.org/10.4000/jso.7550
+- https://www.metmuseum.org/art/collection/search/772023
+- https://doi.org/10.1080/00141840903581576
+- https://dx.doi.org/10.26278/E9BQ-P208

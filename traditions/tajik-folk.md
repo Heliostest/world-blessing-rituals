@@ -48,5 +48,9 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tajik-people
-- https://www.britannica.com/place/Tajikistan
 - https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-00261
+
+- https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-02097
+- https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336
+- https://ich.unesco.org/doc/src/32299.pdf
+- https://doi.org/10.1080/23311983.2025.2524932

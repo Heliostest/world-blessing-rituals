@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/toraja
 - https://whc.unesco.org/en/tentativelists/5462/
 - https://whc.unesco.org/en/intassistance/1453/
+
+- https://doi.org/10.3390/rel15091112
+- https://doi.org/10.1163/15685314-04601004

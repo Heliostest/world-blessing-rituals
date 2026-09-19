@@ -47,6 +47,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Wounaan
-- https://www.britannica.com/place/Darien-region-Panama
-- https://www.britannica.com/place/Panama
+- https://doi.org/10.25058/20112742.n36.06
+- http://www.scielo.org.co/scielo.php?script=sci_abstract&pid=S1794-24892020000400151&lng=en&nrm=iso&tlng=en

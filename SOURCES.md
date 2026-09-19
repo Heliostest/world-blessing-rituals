@@ -3757,3 +3757,30 @@
 - http://hdl.handle.net/1887.1/item:927762
 - https://hdl.handle.net/1887/3275069
 - https://www.kitlv.nl/news/winners-15th-subsidy-round-silvia-de-groot-fund/
+
+## 增补传统（Notebook source hunt C32：维瓦—亚利）
+
+- https://icmagazine.org/indigenous-peoples/wiwa/
+- https://ich.unesco.org/en/RL/02315
+- https://www.ijitee.org/wp-content/uploads/papers/v8i7c/G10120587C19.pdf
+- https://academicjournals.org/journal/AJHC/article-full-text-pdf/6635FCE61777
+- https://www.aa.com.tr/en/africa/ngente-gambia-s-traditional-newborn-naming-ceremony/3493524
+- https://www.trtafrika.com/english/article/18269006
+- https://doi.org/10.25058/20112742.n36.06
+- http://www.scielo.org.co/scielo.php?script=sci_abstract&pid=S1794-24892020000400151&lng=en&nrm=iso&tlng=en
+- https://pib.socioambiental.org/en/Povo:Xavante
+- https://www.scielo.br/j/ha/a/vcRPMbtx7SwRgkMzp9xFWbQ/?lang=en
+- https://hibridos.cc/en/rituals/povo-xavante/
+- https://icmagazine.org/indigenous-peoples/xavante/
+- https://www.sahistory.org.za/article/xhosa
+- https://www.southafrica.net/gl/en/travel/article/xhosa-traditions-discover-eastern-cape-s-indigenous-culture
+- https://www.chinadaily.com.cn/life/2010-06/09/content_11569775.htm
+- https://english.news.cn/20230605/f6eb7352ff024f4bad2f759857b6e280/c.html
+- https://www.ciyawo.org/who-are-yawo
+- https://www.perunorth.com/yagua-indigenous-amazonia
+- https://www.metmuseum.org/art/collection/search/310954
+- https://smarthistory.org/headdress-yaka/
+- https://www.clevelandart.org/art/1969.8
+- https://www.brooklynmuseum.org/en-GB/objects/4829
+- https://mundhum.com/festivals
+- https://internationalconservationfund.org/the-yali/

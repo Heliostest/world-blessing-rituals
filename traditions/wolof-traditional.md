@@ -47,6 +47,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Wolof
-- https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/wolof
-- https://www.everyculture.com/Africa-Middle-East/Wolof-Religion-and-Expressive-Culture.html
+- https://www.aa.com.tr/en/africa/ngente-gambia-s-traditional-newborn-naming-ceremony/3493524
+- https://www.trtafrika.com/english/article/18269006

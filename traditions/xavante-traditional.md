@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Xavante
-- https://www.britannica.com/place/Mato-Grosso
-- https://www.britannica.com/place/Brazil
+- https://pib.socioambiental.org/en/Povo:Xavante
+- https://www.scielo.br/j/ha/a/vcRPMbtx7SwRgkMzp9xFWbQ/?lang=en
+- https://hibridos.cc/en/rituals/povo-xavante/
+- https://icmagazine.org/indigenous-peoples/xavante/

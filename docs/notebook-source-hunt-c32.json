@@ -33,7 +33,23 @@
         "1. 山灵与律法伦理（高度敏感，仅概念）",
         "2. 生命礼仪（概念层）",
         "3. 公共文化与权利叙事（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/ancestral-system-of-knowledge-of-the-four-indigenous-peoples-arhuaco-kankuamo-kogui-and-wiwa-of-the-sierra-nevada-de-santa-marta-01886",
+        "https://ich.unesco.org/en/decisions/17.COM/7.B.3",
+        "https://icmagazine.org/indigenous-peoples/wiwa/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Sierra-Nevada-de-Santa-Marta",
+        "https://www.britannica.com/place/Colombia",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/ancestral-system-of-knowledge-of-the-four-indigenous-peoples-arhuaco-kankuamo-kogui-and-wiwa-of-the-sierra-nevada-de-santa-marta-01886",
+        "https://ich.unesco.org/en/decisions/17.COM/7.B.3",
+        "https://icmagazine.org/indigenous-peoples/wiwa/"
+      ],
+      "final_source_count": 3
     },
     {
       "slug": "wolaita-traditional",
@@ -48,7 +64,23 @@
         "1. 福音派／东正教公共崇拜（概念层）",
         "2. Ţossa 与 ayana 历史记忆（高度敏感，仅概念）",
         "3. 生命礼仪与社群互惠（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/02315",
+        "https://www.ijitee.org/wp-content/uploads/papers/v8i7c/G10120587C19.pdf",
+        "https://academicjournals.org/journal/AJHC/article-full-text-pdf/6635FCE61777"
+      ],
+      "removed_urls": [
+        "https://joshuaproject.net/people_groups/15835/ET",
+        "https://ijitee.org/wp-content/uploads/papers/v8i7c/G10120587C19.pdf",
+        "https://www.britannica.com/place/Ethiopia"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/02315",
+        "https://www.ijitee.org/wp-content/uploads/papers/v8i7c/G10120587C19.pdf",
+        "https://academicjournals.org/journal/AJHC/article-full-text-pdf/6635FCE61777"
+      ],
+      "final_source_count": 3
     },
     {
       "slug": "wolof-traditional",
@@ -63,7 +95,21 @@
         "1. 命名礼 nggentée（生命礼仪层）",
         "2. 开斋节 Korité 与宰牲节 Tabaski（公开伊斯兰节日层）",
         "3. 护身符与民间疗愈专长（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.aa.com.tr/en/africa/ngente-gambia-s-traditional-newborn-naming-ceremony/3493524",
+        "https://www.trtafrika.com/english/article/18269006"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Wolof",
+        "https://www.encyclopedia.com/social-sciences-and-law/anthropology-and-archaeology/people/wolof",
+        "https://www.everyculture.com/Africa-Middle-East/Wolof-Religion-and-Expressive-Culture.html"
+      ],
+      "final_urls": [
+        "https://www.aa.com.tr/en/africa/ngente-gambia-s-traditional-newborn-naming-ceremony/3493524",
+        "https://www.trtafrika.com/english/article/18269006"
+      ],
+      "final_source_count": 2
     },
     {
       "slug": "wounaan-traditional",
@@ -78,7 +124,21 @@
         "1. 森林伦理与祖先敬礼（概念层）",
         "2. 教堂崇拜（概念层）",
         "3. 疗愈中介（高度敏感，仅概念）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.25058/20112742.n36.06",
+        "http://www.scielo.org.co/scielo.php?script=sci_abstract&pid=S1794-24892020000400151&lng=en&nrm=iso&tlng=en"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Wounaan",
+        "https://www.britannica.com/place/Darien-region-Panama",
+        "https://www.britannica.com/place/Panama"
+      ],
+      "final_urls": [
+        "https://doi.org/10.25058/20112742.n36.06",
+        "http://www.scielo.org.co/scielo.php?script=sci_abstract&pid=S1794-24892020000400151&lng=en&nrm=iso&tlng=en"
+      ],
+      "final_source_count": 2
     },
     {
       "slug": "xavante-traditional",
@@ -93,7 +153,25 @@
         "1. 命名与半族伦理（敏感，仅概念）",
         "2. 祖灵敬礼（概念层）",
         "3. 基督教接触层（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://pib.socioambiental.org/en/Povo:Xavante",
+        "https://www.scielo.br/j/ha/a/vcRPMbtx7SwRgkMzp9xFWbQ/?lang=en",
+        "https://hibridos.cc/en/rituals/povo-xavante/",
+        "https://icmagazine.org/indigenous-peoples/xavante/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Xavante",
+        "https://www.britannica.com/place/Mato-Grosso",
+        "https://www.britannica.com/place/Brazil"
+      ],
+      "final_urls": [
+        "https://pib.socioambiental.org/en/Povo:Xavante",
+        "https://www.scielo.br/j/ha/a/vcRPMbtx7SwRgkMzp9xFWbQ/?lang=en",
+        "https://hibridos.cc/en/rituals/povo-xavante/",
+        "https://icmagazine.org/indigenous-peoples/xavante/"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "xhosa-traditional",
@@ -108,7 +186,20 @@
         "1. 祖先敬奉与院落宴礼（民俗层）",
         "2. 生命礼仪与成丁学校（限制性名称层）",
         "3. 梦境沟通、占卜与教会并存（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://sahistory.org.za/article/xhosa",
+        "https://www.southafrica.net/gl/en/travel/article/xhosa-traditions-discover-eastern-cape-s-indigenous-culture"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Xhosa",
+        "https://www.encyclopedia.com/places/africa/south-african-political-geography/xhosa"
+      ],
+      "final_urls": [
+        "https://sahistory.org.za/article/xhosa",
+        "https://www.southafrica.net/gl/en/travel/article/xhosa-traditions-discover-eastern-cape-s-indigenous-culture"
+      ],
+      "final_source_count": 2
     },
     {
       "slug": "xibe-traditional",
@@ -123,7 +214,21 @@
         "1. 西迁节公共纪念（概念层）",
         "2. 祖先敬礼与家屋伦理（概念层）",
         "3. 萨满传统余绪（高度敏感，仅概念）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.chinadaily.com.cn/life/2010-06/09/content_11569775.htm",
+        "https://english.news.cn/20230605/f6eb7352ff024f4bad2f759857b6e280/c.html"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Sibo",
+        "https://www.britannica.com/place/Xinjiang",
+        "https://www.britannica.com/topic/shamanism"
+      ],
+      "final_urls": [
+        "https://www.chinadaily.com.cn/life/2010-06/09/content_11569775.htm",
+        "https://english.news.cn/20230605/f6eb7352ff024f4bad2f759857b6e280/c.html"
+      ],
+      "final_source_count": 2
     },
     {
       "slug": "yaawo-traditional",
@@ -138,7 +243,19 @@
         "1. 清真寺礼拜与伊斯兰节日（概念层）",
         "2. 命名与生命礼仪（概念层）",
         "3. 祖先伦理余绪（敏感，仅概念）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.ciyawo.org/who-are-yawo"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Yao-African-people",
+        "https://www.britannica.com/place/Malawi",
+        "https://www.britannica.com/place/Mozambique"
+      ],
+      "final_urls": [
+        "https://www.ciyawo.org/who-are-yawo"
+      ],
+      "final_source_count": 1
     },
     {
       "slug": "yagua-traditional",
@@ -153,7 +270,19 @@
         "1. 森林—河流伦理（概念层）",
         "2. 生命礼仪（概念层）",
         "3. 教堂／城镇接触层（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.perunorth.com/yagua-indigenous-amazonia"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Yagua",
+        "https://www.britannica.com/place/Iquitos",
+        "https://www.britannica.com/place/Amazon-River"
+      ],
+      "final_urls": [
+        "https://www.perunorth.com/yagua-indigenous-amazonia"
+      ],
+      "final_source_count": 1
     },
     {
       "slug": "yaka-traditional",
@@ -168,7 +297,25 @@
         "1. 面具—会社公共层（极高敏感，仅概念）",
         "2. 祖灵敬礼（概念层）",
         "3. 教堂崇拜（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.metmuseum.org/art/collection/search/310954",
+        "https://smarthistory.org/headdress-yaka/",
+        "https://www.clevelandart.org/art/1969.8",
+        "https://www.brooklynmuseum.org/en-GB/objects/4829"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Yaka",
+        "https://www.britannica.com/place/Democratic-Republic-of-the-Congo",
+        "https://www.britannica.com/topic/African-art"
+      ],
+      "final_urls": [
+        "https://www.metmuseum.org/art/collection/search/310954",
+        "https://smarthistory.org/headdress-yaka/",
+        "https://www.clevelandart.org/art/1969.8",
+        "https://www.brooklynmuseum.org/en-GB/objects/4829"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "yakkha-traditional",
@@ -183,7 +330,21 @@
         "1. Muntum 相关礼仪（概念层）",
         "2. 家灵与地方灵敬礼（敏感，仅概念）",
         "3. 多元宗教并存层（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.eva.mpg.de/documents/Cambridge%20Scholars%20Publishing/Rai_Mundum_Locality-history-memory_2009_1554259.pdf",
+        "https://mundhum.com/festivals"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Nepal",
+        "https://www.britannica.com/topic/Kirati",
+        "https://www.britannica.com/place/Himalayas"
+      ],
+      "final_urls": [
+        "https://www.eva.mpg.de/documents/Cambridge%20Scholars%20Publishing/Rai_Mundum_Locality-history-memory_2009_1554259.pdf",
+        "https://mundhum.com/festivals"
+      ],
+      "final_source_count": 2
     },
     {
       "slug": "yali-traditional",
@@ -198,7 +359,19 @@
         "1. 祖先与园圃伦理（概念层）",
         "2. 猪只互惠（敏感，仅概念）",
         "3. 教堂崇拜（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://internationalconservationfund.org/the-yali/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Papua",
+        "https://www.britannica.com/place/New-Guinea",
+        "https://www.britannica.com/topic/Dani"
+      ],
+      "final_urls": [
+        "https://internationalconservationfund.org/the-yali/"
+      ],
+      "final_source_count": 1
     }
   ],
   "prompt_constraints": [

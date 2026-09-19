@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://joshuaproject.net/people_groups/15835/ET
-- https://ijitee.org/wp-content/uploads/papers/v8i7c/G10120587C19.pdf
-- https://www.britannica.com/place/Ethiopia
+- https://ich.unesco.org/en/RL/02315
+- https://www.ijitee.org/wp-content/uploads/papers/v8i7c/G10120587C19.pdf
+- https://academicjournals.org/journal/AJHC/article-full-text-pdf/6635FCE61777

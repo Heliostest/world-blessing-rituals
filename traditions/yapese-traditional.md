@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Oceania/Yap-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/place/Yap
-- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
+- https://doi.org/10.1080/09538259.2025.2456734
+- https://visityap.com/events_in_yap.php
+- https://mantaray.com/the-manta-ray-bay-resort/special-events-regional-partners/yap-day-2026/

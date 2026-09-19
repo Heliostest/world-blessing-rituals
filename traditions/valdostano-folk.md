@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Valle-dAosta
-- https://www.britannica.com/place/Aosta
-- https://www.britannica.com/place/Alps
+- https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/courmayeur/381
+- https://www.regione.vda.it/notizie/details_f.asp?id=406732
+- https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/brusson/371

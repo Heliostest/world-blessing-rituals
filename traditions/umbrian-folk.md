@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Umbria
-- https://www.britannica.com/place/Assisi
 - https://www.britannica.com/biography/Saint-Francis-of-Assisi
+- https://www.unesco.it/it/news/lenciclopedia-treccani-e-le-tavole-iguvine-sono-le-due-candidature-italiane-al-programma-unesco-memoria-del-mondo-per-il-ciclo-2026-2027/
+- https://www.santuariosantarita.it/
+- https://www.sanfrancescoassisi.org/

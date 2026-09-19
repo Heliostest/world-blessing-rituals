@@ -58,3 +58,7 @@
 - https://www.britannica.com/topic/prayer-wheel
 - https://rubinmuseum.org/projecthimalayanart/essays/prayer-wheel/
 - https://tnp.org/what-is-kora-or-circumambulation/
+- https://tibet.net/his-holiness-the-dalai-lama-joins-recitation-of-mani-mantra-at-tsuglagkhang/
+- https://tibet.net/kunphenling-tibetan-community-holds-sacred-saga-dawa-observance-and-year-of-compassion-celebration-at-lho-khandro-sangphug/
+- https://doi.org/10.3390/rel17050552
+- https://dx.doi.org/10.4000/15h7c

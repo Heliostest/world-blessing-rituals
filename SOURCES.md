@@ -2814,3 +2814,37 @@
 - https://www.visittrentino.info/en/guide/desmontegade
 - https://www.visittrentino.info/en/guide/must-see/churches-sanctuaries/santuario-della-madonna-di-pine_md_2437
 - https://www.visittrentino.info/it/guida/da-vedere/chiese-santuari/santuario-di-san-romedio_md_2567
+
+## 增补传统（Notebook source hunt C7：藏传佛教—雅浦）
+
+- http://archtat.ru/en/editions/r-m-valeev-a-g-sitdikov-r-r-khairutdinov-bolgar-historical-and-archaeological-complex-vol-1-bolgar-unesco-world-heritage-site-r-m-valeev-a-g-sitdikov-r-r-khairutdinov-kazan-ooo-glavdizain-2/
+- https://aggesellschaft.ch/wp-content/uploads/2023/05/App_Jahrbuch_2015.pdf
+- https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/brusson/371
+- https://balteus.lovevda.it/fr/base-de-donnees/3/localites/vallee-d-aoste/courmayeur/381
+- https://dea.digar.ee/?a=d&d=JVethnolandfolklor202406.1.118&l=ru
+- https://doi.org/10.1080/09538259.2025.2456734
+- https://doi.org/10.18848/2327-7866/CGP/v23i02/17-32
+- https://doi.org/10.3390/rel17050552
+- https://doi.org/10.54097/nq6m5f55
+- https://doi.org/10.59670/jns.v33i792
+- https://dx.doi.org/10.4000/15h7c
+- https://ich.unesco.org/en/RL/marches-of-entre-sambre-et-meuse-00670
+- https://ich.unesco.org/en/decisions/11.COM/10.B.30
+- https://ich.unesco.org/en/decisions/7.COM/11.6
+- https://ich.unesco.org/en/events/tongan-inter-departmental-meeting-on-the-convention-for-the-safeguarding-of-the-intangible-cultural-heritage-00110
+- https://ich.unesco.org/en/state/tonga-TO
+- https://ich.unesco.org/es/10b-lista-representativa-00891?include=slideshow_inc.php&id=00859&width=620&call=slideshow&mode=scroll
+- https://library.oapen.org/bitstream/handle/20.500.12657/75910/978-88-6046-194-0.pdf
+- https://mantaray.com/the-manta-ray-bay-resort/special-events-regional-partners/yap-day-2026/
+- https://ojs.utlib.ee/index.php/jeful/article/download/jeful.2015.6.1.09/10193/14973
+- https://sanctuairesdebeauraing.be/
+- https://tibet.net/his-holiness-the-dalai-lama-joins-recitation-of-mani-mantra-at-tsuglagkhang/
+- https://tibet.net/kunphenling-tibetan-community-holds-sacred-saga-dawa-observance-and-year-of-compassion-celebration-at-lho-khandro-sangphug/
+- https://visityap.com/events_in_yap.php
+- https://www.banneux-nd.be/
+- https://www.folklore.ee/folklore/vol15/news.htm
+- https://www.regione.vda.it/notizie/details_f.asp?id=406732
+- https://www.sanfrancescoassisi.org/
+- https://www.santuariosantarita.it/
+- https://www.unesco.it/it/news/lenciclopedia-treccani-e-le-tavole-iguvine-sono-le-due-candidature-italiane-al-programma-unesco-memoria-del-mondo-per-il-ciclo-2026-2027/
+- https://www.worldheritageexplorer.org/sites/bolgar_historical_and_archaeological_complex.html

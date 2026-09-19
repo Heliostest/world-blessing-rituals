@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/volga-tatars
 - https://www.britannica.com/topic/Tatar
-- https://www.britannica.com/place/Tatarstan
+- https://www.worldheritageexplorer.org/sites/bolgar_historical_and_archaeological_complex.html
+- http://archtat.ru/en/editions/r-m-valeev-a-g-sitdikov-r-r-khairutdinov-bolgar-historical-and-archaeological-complex-vol-1-bolgar-unesco-world-heritage-site-r-m-valeev-a-g-sitdikov-r-r-khairutdinov-kazan-ooo-glavdizain-2/
+- https://doi.org/10.3389/fcomm.2025.1693748

@@ -47,7 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Tonga/History
 - https://ich.unesco.org/en/RL/lakalaka-dances-and-sung-speeches-of-tonga-00072
-- https://kids.britannica.com/students/article/Tonga/277387
 - https://press-files.anu.edu.au/downloads/press/p63751/html/ch15s02.html
+- https://ich.unesco.org/en/state/tonga-TO
+- https://ich.unesco.org/en/events/tongan-inter-departmental-meeting-on-the-convention-for-the-safeguarding-of-the-intangible-cultural-heritage-00110

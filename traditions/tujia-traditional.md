@@ -50,3 +50,6 @@
 - https://www.britannica.com/topic/Tujia
 - http://english.scio.gov.cn/chinafacts/2017-06/06/content_40975371.htm
 - http://whhlyt.hunan.gov.cn/whhlyt/english/Culture/IntangibleCulturalHeritage/202206/t20220609_25442116.html
+- https://doi.org/10.54097/nq6m5f55
+- https://doi.org/10.59670/jns.v33i792
+- https://doi.org/10.18848/2327-7866/CGP/v23i02/17-32

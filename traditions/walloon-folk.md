@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Wallonia
-- https://www.britannica.com/place/Beauraing
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://ich.unesco.org/en/RL/marches-of-entre-sambre-et-meuse-00670
+- https://ich.unesco.org/en/decisions/7.COM/11.6
+- https://www.banneux-nd.be/
+- https://sanctuairesdebeauraing.be/

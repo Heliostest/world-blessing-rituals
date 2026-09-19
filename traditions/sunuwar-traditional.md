@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Nepal
-- https://www.britannica.com/place/Sikkim
+- https://doi.org/10.47310/iarjhss.2022.v03i01.033
+- https://nepjol.info/index.php/jodem/article/download/34813/27332/101513
+- https://www.nepjol.info/index.php/gipan/article/view/48915/36491
 - https://www.britannica.com/topic/Kirati

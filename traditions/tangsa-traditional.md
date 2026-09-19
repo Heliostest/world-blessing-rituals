@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
+- https://doi.org/10.69980/vgat6s14
+- https://doi.org/10.1093/oso/9780199472598.003.0007
+- https://doi.org/10.1080/14631369.2015.1091271
 - https://doi.org/10.11588/iaf.2015.46.3708
-- https://www.britannica.com/place/Arunachal-Pradesh
-- https://www.britannica.com/place/Assam

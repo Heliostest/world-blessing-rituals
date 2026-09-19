@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
+- https://ipr.nagaland.gov.in/sumi
+- https://tourism.nagaland.gov.in/events/tuluni-festival/
+- https://ipr.nagaland.gov.in/AHUNA-FESTIVAL-CELEBRATED-AT-ZUNHEBOTO
 - https://journals.sagepub.com/doi/10.1177/0049085714561836
 - https://www.southasianist.ed.ac.uk/southasianist/article/view/1852
-- https://www.britannica.com/place/Nagaland

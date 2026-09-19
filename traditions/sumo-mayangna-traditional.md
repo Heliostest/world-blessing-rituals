@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
+- https://doi.org/10.5871/bacad/9780197265765.003.0009
+- https://doi.org/10.1371/journal.pone.0249345
+- https://www.marena.gob.ni/Enderedd/wp-content/uploads/2020/12/4_Marco-de-Procesos_ERPNIC-16-nov2020.pdf
 - https://www.britannica.com/topic/Sumo-people
-- https://www.britannica.com/place/Mosquito-Coast
-- https://www.britannica.com/place/Nicaragua

@@ -50,3 +50,6 @@
 - https://doi.org/10.17516/1997-1370-0424
 - https://aa.uwpress.org/content/wpaa/58/1/80.full.pdf
 - https://doi.org/10.16993/bbu.i
+- https://www.folklore.ee/~aado/tent.htm
+- https://www.folklore.ee/folklore/vol2/tubinc.htm
+- https://atlaskmns.ru/page/en/people_nganasany_spirit.html

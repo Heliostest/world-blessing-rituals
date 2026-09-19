@@ -47,6 +47,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Niuafoou
-- https://www.britannica.com/place/Tonga
-- https://www.britannica.com/place/Polynesia
+- https://doi.org/10.25949/19440851
+- https://journals.openedition.org/archipel/3004

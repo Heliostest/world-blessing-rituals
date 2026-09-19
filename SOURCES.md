@@ -3273,3 +3273,34 @@
 - https://atlaskmns.ru/page/en/people_negidalcy_spirit.html
 - https://atlaskmns.ru/page/en/people_negidalcy_common.html
 - https://www.folklore.ee/folklore/vol44/berezkin.pdf
+
+## Notebook source hunt C19（2026-09-19；12 张薄 C 级卡片）
+
+- https://nepjol.info/index.php/nc/article/view/64398
+- https://www.nepjol.info/index.php/hisan/article/view/92738/70407
+- https://dx.doi.org/10.5772/intechopen.1002967
+- https://www.nepjol.info/index.php/litstud/article/download/39529/30238/115030
+- https://www.revistas.ucr.ac.cr/index.php/rreflexiones/article/download/4543/14824/53599
+- https://www.revistas.ucr.ac.cr/index.php/intercambio/article/download/12343/11598
+- https://www.folklore.ee/~aado/tent.htm
+- https://www.folklore.ee/folklore/vol2/tubinc.htm
+- https://atlaskmns.ru/page/en/people_nganasany_spirit.html
+- https://journals.openedition.org/aaa/598
+- https://www.britishmuseum.org/collection/term/x91935
+- https://doi.org/10.1371/journal.pone.0315903
+- https://doi.org/10.25949/19440851
+- https://journals.openedition.org/archipel/3004
+- https://atlaskmns.ru/page/en/people_nivhi_spirit.html
+- https://doi.org/10.24412/1026-8804-2024-4-148-164
+- https://doi.org/10.3389/fpsyg.2019.03051
+- https://utsav.gov.in/view-event/chalo-loku-festival-1
+- https://arunachalgovernor.gov.in/pr/2024/241124_Governor_extends_Chalo_Loku_greetings.pdf
+- https://bdpi.cultura.gob.pe/pueblos/nomatsigenga
+- https://doi.org/10.14318/hau2.1.021
+- https://doi.org/10.1086/711607
+- https://doi.org/10.3389/past.2025.15651
+- https://doi.org/10.14318/hau6.3.034
+- https://dx.doi.org/10.1163/15700666-12340184
+- https://www.metmuseum.org/exhibitions/listings/2009/barbier-mueller-museum/photo-gallery
+- https://doi.org/10.47772/IJRISS.2025.903SEDU0049
+- https://doi.org/10.1163/9789004412255_016

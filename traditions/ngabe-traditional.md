@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Guaymi
-- https://www.britannica.com/place/Panama
 - https://www.britannica.com/topic/Central-American-Indian
+- https://www.revistas.ucr.ac.cr/index.php/rreflexiones/article/download/4543/14824/53599
+- https://www.revistas.ucr.ac.cr/index.php/intercambio/article/download/12343/11598

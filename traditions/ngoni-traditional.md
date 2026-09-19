@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Ngoni
-- https://www.britannica.com/place/Malawi
 - https://www.britannica.com/topic/Mfecane
+- https://doi.org/10.1371/journal.pone.0315903

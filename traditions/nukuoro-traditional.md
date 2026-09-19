@@ -47,6 +47,4 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Nukuoro
-- https://www.britannica.com/place/Micronesia-republic-Pacific-Ocean
-- https://www.britannica.com/place/Polynesia
+- https://www.metmuseum.org/exhibitions/listings/2009/barbier-mueller-museum/photo-gallery

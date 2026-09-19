@@ -1,0 +1,203 @@
+{
+  "batch": "notebook-source-hunt-c20",
+  "cycle": 20,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 薄卡；接 nyakyusa-traditional 后按字母序续选，排除 C1–C19 已处理 slug 及已补强的 niuean-traditional、norman-folk；不以 4+ 来源卡填充",
+  "previous_cycles_slugs_processed": 227,
+  "slugs": [
+    "nyamwezi-traditional",
+    "nyishi-traditional",
+    "oceania",
+    "ontong-java-traditional",
+    "orang-rimba-traditional",
+    "oroch-traditional",
+    "orok-traditional",
+    "orokaiva-traditional",
+    "oroqen-traditional",
+    "ovimbundu-traditional",
+    "paite-traditional",
+    "palikur-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "nyamwezi-traditional",
+      "title": "尼亚姆韦齐传统信仰与祖灵—贸易祈福（Nyamwezi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Nyamwezi",
+        "https://www.britannica.com/place/Tabora",
+        "https://www.britannica.com/place/Tanzania"
+      ],
+      "rituals": [
+        "1. 祖先敬礼（概念层）",
+        "2. 教堂／清真寺公开崇拜（概念层）",
+        "3. 商旅—农事感恩（概念层）"
+      ]
+    },
+    {
+      "slug": "nyishi-traditional",
+      "title": "尼西传统信仰与东尼—波罗祈福（Nyishi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://en.wikipedia.org/wiki/Donyi-Polo",
+        "https://asianethnology.org/article/149718-the-institutionalization-of-tribal-religion-recasting-the-donyi-polo-movement-in-arunachal-pradesh/attachment/313629.pdf",
+        "https://www.britannica.com/place/Arunachal-Pradesh"
+      ],
+      "rituals": [
+        "1. Nyedar Namlo 公共祈祷（概念层）",
+        "2. 祭司与岁时礼仪（高度敏感，仅概念）",
+        "3. 基督教并行社区（概念层）"
+      ]
+    },
+    {
+      "slug": "oceania",
+      "title": "大洋洲／毛利／波利尼西亚祈福仪式",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.otago.ac.nz/maori/world/te-reo-maori/karakia-prayers",
+        "https://maoridictionary.co.nz/word/2275",
+        "https://teara.govt.nz/en/traditional-maori-religion-nga-karakia-a-te-maori/page-4"
+      ],
+      "rituals": [
+        "1. 卡拉基亚（karakia）",
+        "2. 欢迎与界线礼仪（如 pōwhiri 相关）",
+        "3. 航海、土地与工艺祝福"
+      ]
+    },
+    {
+      "slug": "ontong-java-traditional",
+      "title": "翁通爪哇传统信仰与环礁—基督教祈福（Ontong Java／Luangiua）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Ontong-Java-Atoll",
+        "https://www.britannica.com/place/Solomon-Islands",
+        "https://www.britannica.com/place/Polynesia"
+      ],
+      "rituals": [
+        "1. 基督教堂区礼仪（概念层）",
+        "2. 海洋与资源伦理（敏感，仅概念）",
+        "3. 祖先记忆与气候忧思（概念层）"
+      ]
+    },
+    {
+      "slug": "orang-rimba-traditional",
+      "title": "奥朗林巴传统信仰与苏门答腊雨林祈福（Orang Rimba）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Sumatra",
+        "https://www.britannica.com/place/Indonesia",
+        "https://www.britannica.com/topic/palm-oil"
+      ],
+      "rituals": [
+        "1. 森林禁忌与生计伦理（概念层）",
+        "2. 疾病与灵力中介（高度敏感，仅概念）",
+        "3. 与国家／世界宗教的接触（概念层）"
+      ]
+    },
+    {
+      "slug": "oroch-traditional",
+      "title": "奥罗奇传统信仰与滨海—萨满祈福（Oroch）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Oroch",
+        "https://www.britannica.com/place/Siberia",
+        "https://www.britannica.com/place/Russian-Far-East"
+      ],
+      "rituals": [
+        "1. 渔猎—山灵伦理（概念层）",
+        "2. 萨满中介（极高敏感，仅概念）",
+        "3. 东正教接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "orok-traditional",
+      "title": "奥罗克／乌伊尔塔传统信仰与库页—驯鹿祈福（Orok／Uilta）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Orok",
+        "https://www.britannica.com/place/Sakhalin-Island",
+        "https://www.britannica.com/place/Siberia"
+      ],
+      "rituals": [
+        "1. 驯鹿—海猎伦理（概念层）",
+        "2. 萨满中介（极高敏感，仅概念）",
+        "3. 东正教接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "orokaiva-traditional",
+      "title": "奥罗凯瓦传统信仰与北海岸祈福（Orokaiva）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/topic/Melanesian-culture",
+        "https://www.britannica.com/place/New-Guinea"
+      ],
+      "rituals": [
+        "1. 园艺与丰产伦理（概念层）",
+        "2. 展示与舞会（公开／敏感交界）",
+        "3. 基督教与丧礼并存（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "oroqen-traditional",
+      "title": "鄂伦春传统信仰与萨满—自然灵祈福（Oroqen）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/oroqen",
+        "https://doi.org/10.3390/rel14070867",
+        "http://english.scio.gov.cn/m/chinafacts/2017-06/06/content_40974673.htm"
+      ],
+      "rituals": [
+        "1. 火神敬礼与岁末拜访（概念层）",
+        "2. 猎后致敬与猛兽禁忌（概念层）",
+        "3. 萨满中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "ovimbundu-traditional",
+      "title": "奥温本杜传统信仰与基督教祈福（Ovimbundu）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Ovimbundu",
+        "https://www.britannica.com/place/Angola",
+        "https://www.britannica.com/place/Benguela"
+      ],
+      "rituals": [
+        "1. 教堂崇拜（概念层）",
+        "2. 祖先敬礼（概念层）",
+        "3. 丰收与社群感恩（概念层）"
+      ]
+    },
+    {
+      "slug": "paite-traditional",
+      "title": "派特基督教与佐米传统祈福余绪（Paite）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Manipur",
+        "https://www.britannica.com/place/Northeast-India",
+        "https://www.britannica.com/topic/Chin-people"
+      ],
+      "rituals": [
+        "1. 基督教崇拜（概念层）",
+        "2. 生命礼仪（概念层）",
+        "3. 文化节与传统记忆（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "palikur-traditional",
+      "title": "帕利库尔传统信仰与奥亚波克—海岸祈福（Palikur）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/French-Guiana",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "rituals": [
+        "1. 村落与神话公开层（概念）",
+        "2. 护佑传统（极高敏感，仅概念）",
+        "3. 教会与权利当代层（公开层）"
+      ]
+    }
+  ]
+}

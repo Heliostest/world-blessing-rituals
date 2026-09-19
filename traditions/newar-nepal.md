@@ -49,4 +49,7 @@
 
 - https://whc.unesco.org/en/list/121/
 - https://www.britannica.com/topic/Newar
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/newars
+- https://nepjol.info/index.php/nc/article/view/64398
+- https://www.nepjol.info/index.php/hisan/article/view/92738/70407
+- https://dx.doi.org/10.5772/intechopen.1002967
+- https://www.nepjol.info/index.php/litstud/article/download/39529/30238/115030

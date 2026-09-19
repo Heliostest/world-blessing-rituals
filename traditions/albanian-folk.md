@@ -47,8 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Bektashi
-- https://www.britannica.com/topic/Sufism
 - https://balkaninsight.com/2016/05/18/quarries-make-hellish-mess-of-albania-s-holy-mountain-05-16-2016/
 - https://doi.org/10.3390/rel16020163
 - https://albaniandailynews.com/news/holy-pilgrimage-thousands-of-bektashi-believers-climb-mount-tomorri-

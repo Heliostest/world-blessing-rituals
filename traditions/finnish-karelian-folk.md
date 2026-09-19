@@ -47,9 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Finno-Ugric-religion
-- https://www.britannica.com/topic/Finno-Ugric-religion/System-of-spirits
-- https://www.britannica.com/topic/sacred-grove
 - https://helda.helsinki.fi/server/api/core/bitstreams/19485fd9-c2a6-4423-bb1d-80bc114cd4ae/content
 - https://journal.fi/ethnolfenn/article/view/84255
 - https://samanthagarner.ca/sacred-bear-spirit-finnish-paganism/

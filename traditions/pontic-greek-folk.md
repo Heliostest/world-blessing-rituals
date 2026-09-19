@@ -48,5 +48,8 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Pontic-Greek
-- https://www.britannica.com/place/Pontus-ancient-district-Turkey
 - https://www.britannica.com/topic/Eastern-Orthodoxy
+- https://doi.org/10.3390/rel13100887
+- https://doi.org/10.12681/EADD/43094
+- https://doi.org/10.4000/perspective.27095
+- https://chicago.goarch.org/metropolitan-nathanaels-encyclical-on-the-commemoration-of-the-pontic-greek-genocide/

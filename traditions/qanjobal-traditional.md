@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Kanjobal
-- https://www.britannica.com/place/Guatemala
 - https://www.britannica.com/topic/Maya-people
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0187-73722021000100117
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742020000200177
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-050X2012000100006

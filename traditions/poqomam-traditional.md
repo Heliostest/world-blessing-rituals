@@ -48,5 +48,8 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Pokomam
-- https://www.britannica.com/place/Guatemala
 - https://www.britannica.com/topic/Maya-people
+- https://noticias.mcd.gob.gt/2026/04/15/espacio-sagrado-en-territorio-poqoman/
+- https://noticias.mcd.gob.gt/2026/04/27/estudiantes-de-san-luis-jilotepeque-reafirman-identidad-poqomam-en-visita-al-cerro-sipaque/
+- https://noticias.mcd.gob.gt/2025/07/21/ceremonia-maya-en-jalapa-casa-de-desarrollo-cultural-explica-significado-de-velas-y-tradiciones-ancestrales/
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-41152015000100108

@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Popoluca
-- https://www.britannica.com/place/Veracruz
-- https://www.britannica.com/place/Mexico
+- https://www.scielo.org.mx/scielo.php?script=sci_abstract&pid=S1665-80272019000200085&lng=es
+- https://sic.cultura.gob.mx/ficha.php?table=festividad&table_id=1418
+- https://www.scielo.org.mx/article_plus.php?pid=S2448-57052018000300031&tlng=es

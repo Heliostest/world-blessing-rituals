@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Rakhine
 - https://www.britannica.com/topic/Theravada
-- https://www.britannica.com/place/Myanmar
+- https://doi.org/10.3390/rel15060719
+- https://journals.openedition.org/moussons/2256
+- https://doi.org/10.3390/rel9120414

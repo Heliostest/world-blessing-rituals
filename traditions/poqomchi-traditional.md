@@ -48,5 +48,8 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Pokomam
-- https://www.britannica.com/place/Guatemala
 - https://www.britannica.com/topic/Maya-people
+- https://doi.org/10.7440/RES53.2015.04
+- https://noticias.mcd.gob.gt/2026/06/07/presentacion-de-libro-pone-en-valor-la-herencia-culinaria-del-pueblo-poqomchi/
+- https://doi.org/10.36829/63CHS.v3i2.279
+- https://doi.org/10.19130/iifl.ecm/62/000xs00146w08

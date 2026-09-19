@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/qeqchi
 - https://en.wikipedia.org/wiki/Qʼeqchiʼ_people
-- https://www.britannica.com/place/Guatemala
+- https://noticias.mcd.gob.gt/2026/07/01/capacitacion-revitaliza-tecnicas-ancestrales-del-pueblo-maya-qeqchi-en-alta-verapaz/
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742006000200007
+- https://doi.org/10.3390/w13121660
+- https://doi.org/10.1017/9781108774048.010

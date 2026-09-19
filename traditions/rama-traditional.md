@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Rama-people
-- https://www.britannica.com/place/Bluefields
-- https://www.britannica.com/place/Nicaragua
+- https://dx.doi.org/10.3917/ls.145.0007
+- https://journals.openedition.org/lengas/1180

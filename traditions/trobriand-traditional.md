@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Trobriand-Islands
 - https://www.britannica.com/topic/Kula
-- https://www.britannica.com/place/Papua-New-Guinea
+- https://www.metmuseum.org/art/collection/search/311225
+- https://doi.org/10.1075/clu.5.01dea
+- https://journals.openedition.org/jso/7182

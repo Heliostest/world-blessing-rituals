@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tumbuka
-- https://www.britannica.com/place/Malawi
-- https://www.britannica.com/place/Zambia
+- https://ich.unesco.org/en/RL/vimbuza-healing-dance-00158
+- https://doi.org/10.2979/RAL.2001.32.2.213
+- https://doi.org/10.3366/E0001972009000904

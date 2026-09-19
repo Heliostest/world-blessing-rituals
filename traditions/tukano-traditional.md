@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tucano
-- https://www.britannica.com/place/Vaupes-River
-- https://www.britannica.com/place/Amazon-River
+- https://doi.org/10.70845/2572-3626.1392
+- https://journals.openedition.org/revestudsoc/22391
+- https://www.scielo.br/j/bgoeldi/a/bY9PwXG6Dq4LfBTfvcsWj9S/
+- https://doi.org/10.22380/2539472X.1865

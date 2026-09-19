@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Trique
-- https://www.britannica.com/place/Oaxaca-state-Mexico
-- https://www.britannica.com/place/Mexico
+- https://catalogo.inpi.gob.mx/triqui/
+- https://revistas-filologicas.unam.mx/tlalocan/index.php/tl/article/view/502/545
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2448-84882018000300069

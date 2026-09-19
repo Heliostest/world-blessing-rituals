@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tojolabal
-- https://www.britannica.com/place/Chiapas
 - https://www.britannica.com/topic/Maya-people
+- https://catalogo.inpi.gob.mx/tojolabal/
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742019000200255
+- https://nuevaescuelamexicana.sep.gob.mx/contenido/recurso/41500/

@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tsachila
-- https://www.everyculture.com/South-America/Colorado.html
-- https://www.britannica.com/place/Ecuador
+- https://journals.openedition.org/nuevomundo/61200
+- https://journals.openedition.org/jsa/12840
+- https://www.redalyc.org/pdf/509/50925659011.pdf

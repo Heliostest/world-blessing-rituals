@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Mendi
-- https://www.britannica.com/place/Papua-New-Guinea
 - https://www.britannica.com/topic/Melanesian-culture
+- https://doi.org/10.1590/S0104-93131997000100002
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/3cf3cf16-0428-44ce-9f63-0fdaa8fdfe8e/content
+- https://doi.org/10.1086/702414

@@ -46,7 +46,5 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Arunachal-Pradesh
-- https://www.britannica.com/place/Northeast-India
 - https://www.britannica.com/topic/Donyi-Polo
+- https://arunachallivingheritage.com/people?type=Miji

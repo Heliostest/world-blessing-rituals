@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Mixtec
-- https://www.everyculture.com/Middle-America-Caribbean/Mixtec-Religion-and-Expressive-Culture.html
 - https://doi.org/10.1007/s12685-016-0174-x
+- https://catalogo.inpi.gob.mx/mixteco/
+- https://www.scielo.org.mx/scielo.php?pid=S2448-84882022000300137&script=sci_abstract&tlng=en
+- https://www.scielo.org.mx/scielo.php?pid=S2007-49642019000200213&script=sci_abstract&tlng=en

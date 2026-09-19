@@ -46,7 +46,9 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://en.wikipedia.org/wiki/Minahasan_people
 - https://digitalcollections.sit.edu/isp_collection/2191
-- https://www.britannica.com/place/North-Sulawesi
+- https://www.indonesia.travel/id/id/destination/sulawesi/north-sulawesi/suku-minahasa
+- https://doi.org/10.4102/hts.v80i1.9523
+- https://doi.org/10.58258/jisip.v6i1.2876
+- https://dx.doi.org/10.29037/digitalpress.49440

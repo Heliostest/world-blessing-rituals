@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Moken
-- https://www.britannica.com/place/Andaman-Sea
-- https://www.britannica.com/place/Surin-Islands
+- https://doi.org/10.1017/9781009399555.013
+- https://doi.org/10.4000/tc.310

@@ -48,7 +48,10 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054
 - https://americanhistory.si.edu/explore/stories/day-dead-smithsonian-its-not-halloween
 - https://folklife.si.edu/magazine/altered-altars-changing-traditions-dia-de-los-muertos
+- https://www.gob.mx/cultura/prensa/comparten-la-tradicion-de-la-ofrenda-hanal-pixan-en-altar-maya-en-el-museo-nacional-de-culturas-populares
+- https://www.inali.gob.mx/detalle/2018-10-31-18-10-36
+- https://revistas.inah.gob.mx/index.php/vitabrevis/article/download/3219/3102/5137
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2448-84882017000200207

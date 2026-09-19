@@ -3198,3 +3198,42 @@
 - https://doi.org/10.4000/moussons.7649
 - https://doi.org/10.1017/S0001972018000438
 - https://dx.doi.org/10.14318/hau6.3.011
+
+## 增补传统（Notebook source hunt C17：门迪—莫肯）
+
+- https://doi.org/10.1590/S0104-93131997000100002
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/3cf3cf16-0428-44ce-9f63-0fdaa8fdfe8e/content
+- https://doi.org/10.1086/702414
+- https://books.openedition.org/pacific/768
+- https://oraltradition.org/tandaning/
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/8e4b7e86-e0a0-46c6-9f0d-91eec25f5747/content
+- https://press-files.anu.edu.au/downloads/press/p90711/pdf/ch041.pdf
+- https://www.gob.mx/cultura/prensa/comparten-la-tradicion-de-la-ofrenda-hanal-pixan-en-altar-maya-en-el-museo-nacional-de-culturas-populares
+- https://www.inali.gob.mx/detalle/2018-10-31-18-10-36
+- https://revistas.inah.gob.mx/index.php/vitabrevis/article/download/3219/3102/5137
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2448-84882017000200207
+- https://arunachallivingheritage.com/people?type=Miji
+- https://www.indonesia.travel/id/id/destination/sulawesi/north-sulawesi/suku-minahasa
+- https://doi.org/10.4102/hts.v80i1.9523
+- https://doi.org/10.58258/jisip.v6i1.2876
+- https://dx.doi.org/10.29037/digitalpress.49440
+- https://majuli.assam.gov.in/tourist-place-detail/489
+- https://culturalaffairs.assam.gov.in/frontimpotentdata/festivals-of-assam
+- https://doi.org/10.1145/3694785
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Top-10.pdf
+- https://doi.org/10.1075/slcs.240.12rei
+- https://www.mined.gob.ni/biblioteca/wp-content/uploads/2024/08/CARTILLA.pdf
+- https://www.marena.gob.ni/wp-content/uploads/2026/04/Sistematizacion-de-las-Lecciones-Aprendidas-Gobernanza-1.pdf
+- https://journals.openedition.org/revestudsoc/20793
+- https://www.gob.mx/cms/uploads/attachment/file/618444/libro-leyenda-rey-kondoy-inpi-bilingue-mixe-es.pdf
+- https://sic.cultura.gob.mx/ficha.php?table=gastronomia&table_id=68
+- https://revistas.inah.gob.mx/index.php/cuicuilco/article/download/24737/26076
+- https://catalogo.inpi.gob.mx/mixteco/
+- https://www.scielo.org.mx/scielo.php?pid=S2448-84882022000300137&script=sci_abstract&tlng=en
+- https://www.scielo.org.mx/scielo.php?pid=S2007-49642019000200213&script=sci_abstract&tlng=en
+- https://dipr.mizoram.gov.in/post/the-origin-of-the-chapchar-kut
+- https://dipr.mizoram.gov.in/page/festivals
+- https://dx.doi.org/10.3390/genealogy9030071
+- https://doi.org/10.1017/9781009399555.013
+- https://doi.org/10.4000/tc.310

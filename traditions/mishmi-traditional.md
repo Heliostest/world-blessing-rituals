@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.academia.edu/52422685/SUPERNATURAL_WORLD_AND_FOLK_TAXONOMY_CASE_STUDY_ON_FEW_TRIBES_OF_SIANG_AND_DIBANG_VALLEYS_OF_ARUNACHAL_PRADESH
 - https://en.wikipedia.org/wiki/Donyi-Polo
-- https://www.britannica.com/place/Arunachal-Pradesh
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Top-10.pdf
+- https://doi.org/10.1075/slcs.240.12rei

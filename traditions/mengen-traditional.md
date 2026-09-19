@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/New-Britain-Island-Papua-New-Guinea
-- https://www.britannica.com/place/Papua-New-Guinea
 - https://www.britannica.com/topic/Melanesian-culture
+- https://books.openedition.org/pacific/768
+- https://oraltradition.org/tandaning/
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/8e4b7e86-e0a0-46c6-9f0d-91eec25f5747/content
+- https://press-files.anu.edu.au/downloads/press/p90711/pdf/ch041.pdf

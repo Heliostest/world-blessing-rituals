@@ -47,9 +47,12 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Saint-Marinus
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://www.visitsanmarino.com/pub2/VisitSM/evento/20260903_Festa_di_San_Marino.html
 - https://www.visitsanmarino.com/pub1/VisitSM/en/evento/20261001_1%C2%B0ottobre-cerimonia-di-investitura-dei-capitani-reggenti.html
 - https://www.visitsanmarino.com/pub2/VisitSM/evento/20250205_Festa_di_santagata.html
 - https://www.visitsanmarino.com/pub2/VisitSM/luogo/Arte-e-cultura/Basilica-del-Santo.html
+
+- https://www.visitsanmarino.com/pub2/VisitSM/en/evento/20260903_Festa_di_San_Marino.html
+- https://www.visitsanmarino.com/pub1/VisitSM/contenuto/About-San-Marino/FESTIVIT%C3%81-SAMMARINESI.html
+- https://whc.unesco.org/en/list/1245
+- https://www.museidistato.sm/

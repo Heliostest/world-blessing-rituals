@@ -47,9 +47,12 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Kuba-people
-- https://kids.britannica.com/scholars/article/Kuba/46332
 - https://www.metmuseum.org/toah/hd/kuba/hd_kuba.htm
 - https://www.metmuseum.org/essays/kingdoms-of-the-savanna-the-kuba-kingdom
 - https://www.britishmuseum.org/collection/object/E_Af1909-1210-1
 - https://www.metmuseum.org/art/collection/search/768372
+
+- https://www.britishmuseum.org/collection/object/E_Af1909-0513-2
+- https://www.africamuseum.be/en/learn/provenance/songye_statue
+- https://www.metmuseum.org/en/exhibitions/listings/2011/heroic-africans-legendary-leaders-iconic-sculptures
+- https://www.britishmuseum.org/collection/term/BIOG128993

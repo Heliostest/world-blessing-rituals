@@ -58,3 +58,7 @@
 - https://d-museum.kokugakuin.ac.jp/eos/detail/id=9175
 - https://d-museum.kokugakuin.ac.jp/eos/detail/id=9633
 - https://www.metmuseum.org/art/collection/search/54768
+- https://www.jinjahoncho.or.jp/en/
+- http://www2.kokugakuin.ac.jp/e-shinto/
+- https://doi.org/10.1093/acprof:oso/9780190621711.001.0001
+- https://doi.org/10.1093/jaarel/lfi115

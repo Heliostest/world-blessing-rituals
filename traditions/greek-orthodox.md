@@ -51,3 +51,7 @@
 - https://www.greeknewsagenda.gr/theophania/
 - https://www.goarch.org/-/the-order-for-the-lesser-sanctification-of-the-water
 - https://www.goarch.org/-/feast-of-the-holy-theophany-of-our-lord-god-and-savior-jesus-christ
+- https://ec-patr.org/en/21/02/00/00/the-sign-of-jonah-a-speech-delivered-by/
+- https://ec-patr.org/en/holy-temples/patriarchal-temple/schedule-of-divine-services/
+- https://holytrinity.ma.goarch.org/our-faith/special_services
+- https://chicago.goarch.org/blessing-of-the-waters-across-the-metropolis/

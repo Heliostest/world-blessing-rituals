@@ -48,6 +48,9 @@ Wetu Telu 社群规模在现代化与主流伊斯兰教育影响下有所变化�
 ## 参考来源
 
 - https://www.britannica.com/topic/Sasak
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/sasak-0
 - https://doi.org/10.15575/jassr.v4i2.66
 - https://doi.org/10.14710/sabda.19.2.111-124
+- https://doi.org/10.1201/9781003645542-73
+- https://doi.org/10.37253/altasia.v8i1.11313
+- https://doi.org/10.29408/jhm.v12i1.33941
+- https://doi.org/10.15408/insaniyat.v10i2.49550

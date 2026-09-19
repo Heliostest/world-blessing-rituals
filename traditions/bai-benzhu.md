@@ -51,3 +51,7 @@
 - https://kids.britannica.com/scholars/article/Bai/58000
 - http://covid-19.chinadaily.com.cn/life/2011-04/28/content_12415160.htm
 - https://www.yunnanexplorer.com/festivals/benzhu/
+- https://www.ihchina.cn/project_details/14999.html
+- https://www.ihchina.cn/Article/Index/detail?id=23505
+- https://mz.yn.gov.cn/html/2018/gongzuodongtai_0727/29121.html
+- https://www.ihchina.cn/project_details/11083.html

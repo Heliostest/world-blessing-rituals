@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/East-Timor
 - https://kids.britannica.com/students/article/East-Timor/384947
 - https://www.britannica.com/topic/Roman-Catholicism
+- https://journals.openedition.org/eces/5298
+- https://doi.org/10.1017/s0010417516000311
+- https://dx.doi.org/10.1163/22134379-17102006

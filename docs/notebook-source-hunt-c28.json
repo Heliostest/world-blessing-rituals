@@ -1,0 +1,208 @@
+{
+  "batch": "notebook-source-hunt-c28",
+  "cycle": 28,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 tetum-timor 后按字母序续选，排除 C1–C27 已处理 slug 及已补强卡片；不以 4+ 来源卡填充，不用已良好卡片凑数",
+  "previous_cycles_slugs_processed": 311,
+  "slugs": [
+    "thadou-traditional",
+    "thakali-traditional",
+    "tharu-traditional",
+    "theyyam-kerala",
+    "tikar-traditional",
+    "tikopia-traditional",
+    "tikuna-traditional",
+    "tiriyo-traditional",
+    "tiwa-traditional",
+    "tlapanec-traditional",
+    "toba-qom-traditional",
+    "tofalar-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "thadou-traditional",
+      "title": "塔斗／库基基督教与传统祈福余绪（Thadou）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Kuki",
+        "https://www.britannica.com/place/Manipur",
+        "https://www.britannica.com/place/Northeast-India"
+      ],
+      "rituals": [
+        "新教崇拜与奋兴（概念层）",
+        "生命礼仪（概念层）",
+        "传统信仰记忆（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "thakali-traditional",
+      "title": "塔卡利传统信仰与藏喜马拉雅商路祈福（Thakali）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Nepal",
+        "https://www.britannica.com/place/Mustang",
+        "https://www.britannica.com/topic/Tibetan-Buddhism"
+      ],
+      "rituals": [
+        "家屋与地方神敬礼（概念层）",
+        "佛教／印度教公共实践（概念层）",
+        "商路出行祈福（概念层）"
+      ]
+    },
+    {
+      "slug": "tharu-traditional",
+      "title": "塔鲁传统信仰与森林神—印度教祈福（Tharu）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tharu",
+        "https://en.wikipedia.org/wiki/Tharu_people",
+        "https://ideas.repec.org/a/kqi/journl/2019-3-2-3.html"
+      ],
+      "rituals": [
+        "森林神与地方神龛（概念层）",
+        "印度教节庆与生命礼仪（概念层）",
+        "佛教／基督教改宗社区（概念层）"
+      ]
+    },
+    {
+      "slug": "theyyam-kerala",
+      "title": "喀拉拉特耶姆仪式祈福（Theyyam／Kaliyattam）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.keralatourism.org/artforms/theyyam-ritual/1/",
+        "http://intangibleheritage.intach.org/documentation-of-theyyam-kerala/",
+        "https://www.bbc.com/travel/article/20230628-theyyam-the-indian-trance-where-men-become-gods"
+      ],
+      "rituals": [
+        "年度／还愿特耶姆演出（公开村落层）",
+        "圣林与家祠供奉（地方崇拜层）",
+        "仪式后祝福与劝慰（信众互动层）"
+      ]
+    },
+    {
+      "slug": "tikar-traditional",
+      "title": "蒂卡尔传统信仰与喀麦隆草原祈福（Tikar）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Cameroon",
+        "https://www.britannica.com/topic/Tikar",
+        "https://www.britannica.com/topic/grassland-peoples"
+      ],
+      "rituals": [
+        "祖灵与酋长伦理（敏感，仅概念）",
+        "社区节庆公开层（概念）",
+        "基督教并存（公开层）"
+      ]
+    },
+    {
+      "slug": "tikopia-traditional",
+      "title": "提科皮亚传统信仰与基督教—酋长祈福（Tikopia）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Tikopia",
+        "https://www.britannica.com/topic/Tikopia",
+        "https://www.britannica.com/place/Solomon-Islands"
+      ],
+      "rituals": [
+        "基督教堂区礼仪（概念层）",
+        "酋长与习惯法祝福（敏感，仅概念）",
+        "传统神祇—祖先记忆（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "tikuna-traditional",
+      "title": "蒂库纳传统信仰与亚马孙祈福（Tikuna／Ticuna）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.everyculture.com/South-America/Ticuna-Religion-and-Expressive-Culture.html",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/place/Brazil"
+      ],
+      "rituals": [
+        "天主教与弥赛亚运动公共层",
+        "女性成年礼（高度敏感，仅名称／概念）",
+        "萨满疗愈叙事（高度敏感，禁止操作）"
+      ]
+    },
+    {
+      "slug": "tiriyo-traditional",
+      "title": "蒂里奥传统信仰与圭亚那盾祈福（Tiriyó / Trio）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Guiana-Highlands",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "rituals": [
+        "成年礼传统（极高敏感，仅概念）",
+        "村落互惠（敏感，仅概念）",
+        "基督教与学校公开层（概念）"
+      ]
+    },
+    {
+      "slug": "tiwa-traditional",
+      "title": "提瓦传统信仰与印度教—山地祈福（Tiwa／Lalung）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://en.wikipedia.org/wiki/Tiwa_people_(Lalung)",
+        "https://www.britannica.com/place/Assam",
+        "https://www.britannica.com/place/Meghalaya"
+      ],
+      "rituals": [
+        "老村礼仪中心与祭司职责（概念层）",
+        "印度教节庆并行（概念层）",
+        "基督教少数社群（概念层）"
+      ]
+    },
+    {
+      "slug": "tlapanec-traditional",
+      "title": "特拉帕内克民间天主教与山灵祈福（Tlapanec／Meꞌphaa）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tlapanec",
+        "https://www.britannica.com/place/Guerrero",
+        "https://www.britannica.com/place/Mexico"
+      ],
+      "rituals": [
+        "主保节与教堂礼仪（概念层）",
+        "山灵与农事祈请（概念层）",
+        "疗愈中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "toba-qom-traditional",
+      "title": "托巴／科姆传统信仰与格兰查科祈福（Toba／Qom）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/south-american-indians-indians-gran-chaco",
+        "https://joshuaproject.net/people_groups/15517/AR",
+        "https://www.britannica.com/place/Gran-Chaco"
+      ],
+      "rituals": [
+        "萨满疗愈叙事（高度敏感，仅概念）",
+        "神话与季节仪典（概念层）",
+        "教会生活与双语教育（公共／当代层）"
+      ]
+    },
+    {
+      "slug": "tofalar-traditional",
+      "title": "托法拉尔传统信仰与萨彦—驯鹿祈福（Tofalar）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tofalar",
+        "https://www.britannica.com/place/Sayan-Mountains",
+        "https://www.britannica.com/place/Siberia"
+      ],
+      "rituals": [
+        "山灵—驯鹿伦理（敏感，仅概念）",
+        "萨满中介（极高敏感，仅概念）",
+        "东正教接触层（概念层）"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／朝圣页、博物馆／民俗档案、学术 DOI 或民族志。",
+    "不要采用 Britannica /place/、encyclopedia.com 总览、everyculture.com 总览或 Wikipedia 总览；不要改档位或写操演步骤。",
+    "如搜不到足够强来源，写明检索关键词，不要用弱来源填充。"
+  ]
+}

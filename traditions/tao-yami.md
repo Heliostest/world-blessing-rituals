@@ -50,3 +50,6 @@
 - https://www.cip.gov.tw/en/tribe/grid-list/6521E76602C72C42D0636733C6861689/info.html
 - https://en.tacp.gov.tw/Indigenous/ItemDetail?ID=b192f770-9ad9-4163-9d6e-562e16565dc7
 - https://www.rti.org.tw/en/news?pid=143890&uid=3
+- https://www.moc.gov.tw/en/News_Content2.aspx?n=398&s=14058
+- https://doi.org/10.4236/ojapps.2024.149165
+- https://gpi.culture.tw/books/1009901831

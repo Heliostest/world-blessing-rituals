@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/South-American-Indian
-- https://www.britannica.com/place/Araguaia-River
-- https://www.britannica.com/place/Mato-Grosso
+- https://pib.socioambiental.org/en/Povo:Apy%C3%A3wa
+- https://www.scielo.br/j/bgoeldi/a/qBzNMPkpQQJZRYcWpn6LcPJ/
+- https://doi.org/10.26512/rbla.v11i02.28507

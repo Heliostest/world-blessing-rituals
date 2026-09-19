@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Temne
-- https://www.britannica.com/place/Sierra-Leone
 - https://www.britannica.com/topic/Islam
+- https://doi.org/10.1093/acref/9780195301731.013.42347
+- https://journals.openedition.org/aaa/2753
+- https://journals.openedition.org/afriques/2406

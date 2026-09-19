@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Papua-New-Guinea
-- https://www.britannica.com/place/Sandaun
 - https://www.britannica.com/topic/Melanesian-culture
+- https://doi.org/10.4000/jso.7117
+- https://doi.org/10.14318/hau1.1.006
+- https://doi.org/10.1525/can.1994.9.4.02a00030

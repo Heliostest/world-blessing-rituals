@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tepehuan
-- https://www.britannica.com/place/Durango-state-Mexico
-- https://www.britannica.com/place/Mexico
+- https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=133
+- https://www.gob.mx/inpi/articulos/escucha-la-musica-del-nayar-huicholes-coras-mexicaneros-y-tepehuanos?idiom=es
+- https://doi.org/10.1525/jams.2025.78.1.195

@@ -3,7 +3,7 @@
   "cycle": 27,
   "date": "2026-09-19",
   "selection_rule": "n=3 未处理薄卡；接 tangsa-traditional 后按字母序续选，排除 C1–C26 已处理 slug 及已补强卡片；不以 4+ 来源卡填充，不用已良好卡片凑数",
-  "previous_cycles_slugs_processed": 311,
+  "previous_cycles_slugs_processed": 299,
   "slugs": [
     "tanna-traditional",
     "tao-yami",

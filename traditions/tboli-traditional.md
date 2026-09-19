@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Tboli
-- https://www.britannica.com/place/Mindanao
-- https://www.britannica.com/place/Philippines
+- https://talapamana.ncca.gov.ph/index.php/component/content/article/talapamana-mindanao?Itemid=101&catid=11
+- https://www.nationalmuseum.gov.ph/our-collections/ethnology/
+- https://upd.edu.ph/passing-on-the-tboli-legacy/

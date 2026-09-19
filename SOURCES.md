@@ -3551,3 +3551,41 @@
 - https://doi.org/10.69980/vgat6s14
 - https://doi.org/10.1093/oso/9780199472598.003.0007
 - https://doi.org/10.1080/14631369.2015.1091271
+
+## 增补传统（Notebook source hunt C27：坦纳—德顿）
+
+- https://www.vanuatu.travel/en/things-to-do/events/event/3-john-frum-festival
+- https://journals.openedition.org/jso/10513
+- https://www.vanuatu.travel/en/about-vanuatu/provinces/tafea/tanna/cultural-information-on-tanna
+- https://doi.org/10.1371/journal.pone.0313997
+- https://www.moc.gov.tw/en/News_Content2.aspx?n=398&s=14058
+- https://doi.org/10.4236/ojapps.2024.149165
+- https://gpi.culture.tw/books/1009901831
+- https://pib.socioambiental.org/en/Povo:Apy%C3%A3wa
+- https://www.scielo.br/j/bgoeldi/a/qBzNMPkpQQJZRYcWpn6LcPJ/
+- https://doi.org/10.26512/rbla.v11i02.28507
+- https://www.nationalmuseum.gov.ph/our-collections/ethnology/
+- https://upd.edu.ph/passing-on-the-tboli-legacy/
+- https://doi.org/10.4000/jso.7117
+- https://doi.org/10.14318/hau1.1.006
+- https://doi.org/10.1525/can.1994.9.4.02a00030
+- https://mobile.atlaskmns.ru/page/en/people_teleuty_spirit.html
+- https://atlaskmns.ru/page/en/lang_teleuty_all.html
+- https://www.folklore.ee/folklore/vol62/kharitonova.pdf
+- https://doi.org/10.1093/acref/9780195301731.013.42347
+- https://journals.openedition.org/aaa/2753
+- https://journals.openedition.org/afriques/2406
+- https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=133
+- https://www.gob.mx/inpi/articulos/escucha-la-musica-del-nayar-huicholes-coras-mexicaneros-y-tepehuanos?idiom=es
+- https://doi.org/10.1525/jams.2025.78.1.195
+- https://catalogo.inpi.gob.mx/chontal-de-oaxaca/
+- https://www.gob.mx/inpi/articulos/etnografia-de-los-chontales-de-oaxaca-slijuala-xanuc
+- https://sic.cultura.gob.mx/ficha.php?table=inali_li&table_id=20
+- https://doi.org/10.1093/oso/9780198231011.001.0001
+- https://doi.org/10.1080/21681392.2021.1931383
+- https://doi.org/10.4000/eastafrica.473
+- https://www.britishmuseum.org/collection/object/E_Af1979-01-2397
+- https://journals.openedition.org/gc/14141
+- https://www.africamuseum.be/fr/learn/provenance/storms
+- https://journals.openedition.org/eces/5298
+- https://dx.doi.org/10.1163/22134379-17102006

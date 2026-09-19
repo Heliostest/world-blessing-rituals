@@ -47,6 +47,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Sibo
-- https://www.britannica.com/place/Xinjiang
-- https://www.britannica.com/topic/shamanism
+- https://www.chinadaily.com.cn/life/2010-06/09/content_11569775.htm
+- https://english.news.cn/20230605/f6eb7352ff024f4bad2f759857b6e280/c.html

@@ -47,6 +47,4 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Yao-African-people
-- https://www.britannica.com/place/Malawi
-- https://www.britannica.com/place/Mozambique
+- https://www.ciyawo.org/who-are-yawo

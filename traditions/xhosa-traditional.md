@@ -47,6 +47,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Xhosa
 - https://sahistory.org.za/article/xhosa
-- https://www.encyclopedia.com/places/africa/south-african-political-geography/xhosa
+- https://www.southafrica.net/gl/en/travel/article/xhosa-traditions-discover-eastern-cape-s-indigenous-culture

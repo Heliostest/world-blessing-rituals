@@ -1,0 +1,210 @@
+{
+  "batch": "notebook-source-hunt-c33",
+  "cycle": 33,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 yali-traditional 后按字母序续选，排除 C1–C32 全部已处理 slug；不以 4+ 来源卡填充，不用已良好卡片凑数。",
+  "previous_cycles_slugs_processed": 371,
+  "exclusion_metadata_slug_union_count": 383,
+  "slugs": [
+    "yaminahua-traditional",
+    "yanesha-traditional",
+    "yanomami-traditional",
+    "yao-mien",
+    "yapese-traditional",
+    "yaqui-yoeme",
+    "yawalapiti-traditional",
+    "yekuana-traditional",
+    "yine-traditional",
+    "yokotan-traditional",
+    "yombe-traditional",
+    "yucatec-maya"
+  ],
+  "cards": [
+    {
+      "slug": "yaminahua-traditional",
+      "title": "亚米纳瓦传统信仰与普图马约—乌卡亚利祈福（Yaminahua）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Peru",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "rituals": [
+        "1. 生计与生态伦理（敏感，仅概念）",
+        "2. 护佑传统（极高敏感，仅概念）",
+        "3. 权利与当代表述（公开层）"
+      ]
+    },
+    {
+      "slug": "yanesha-traditional",
+      "title": "亚内沙传统信仰与雨林—基督教祈福（Yanesha／Amuesha）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Amuesha",
+        "https://www.britannica.com/place/Peru",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "rituals": [
+        "1. 主人灵与历史叙事（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 疗愈中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "yanomami-traditional",
+      "title": "亚诺马米传统信仰与萨满祈福概观（Yanomami／Yanomamö）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.everyculture.com/South-America/Yanomam-Religion-and-Expressive-Culture.html",
+        "https://www.britannica.com/topic/Yanomami",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "rituals": [
+        "1. 宇宙分层与丧葬—灵魂叙事（概念层）",
+        "2. 萨满诊断与疗愈（高度敏感，禁止操作）",
+        "3. 传教接触与当代权利斗争（公共／当代层）"
+      ]
+    },
+    {
+      "slug": "yao-mien",
+      "title": "瑶族／勉（Yao / Iu Mien）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://yaodao.hku.hk/daoism-among-the-yao/",
+        "https://en.wikipedia.org/wiki/Yao_Taoism",
+        "https://factsanddetails.com/china/cat5/sub30/item180.html"
+      ],
+      "rituals": [
+        "1. 度戒与祭司职分（概念层）",
+        "2. 家户神龛与仪式绘画（mien fang，概念）",
+        "3. 跨境迁徙与文本伦理（当代伦理层，概念）"
+      ]
+    },
+    {
+      "slug": "yapese-traditional",
+      "title": "雅浦传统信仰与村社祈福余绪（Yapese）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://doi.org/10.1080/09538259.2025.2456734",
+        "https://visityap.com/events_in_yap.php",
+        "https://mantaray.com/the-manta-ray-bay-resort/special-events-regional-partners/yap-day-2026/"
+      ],
+      "rituals": [
+        "1. Rai 石币交换文化与 Yap Day（公共文化层）",
+        "2. Churu' 坐舞公共展演（公共文化层）",
+        "3. Faluw 男子会所（CONCEPT ONLY，受限）"
+      ]
+    },
+    {
+      "slug": "yaqui-yoeme",
+      "title": "雅基／约埃梅（Yaqui / Yoeme）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Yaqui",
+        "https://americanindian.si.edu/exhibitions/infinityofnations/introduction/112382.html",
+        "https://www.everyculture.com/Middle-America-Caribbean/Yaqui-Religion-and-Expressive-Culture.html"
+      ],
+      "rituals": [
+        "1. 鹿舞与鹿歌（概念层）",
+        "2. Pahko'ola 与天主教节庆叠合（概念层）",
+        "3. 土地权与表演伦理（当代伦理层，概念）"
+      ]
+    },
+    {
+      "slug": "yawalapiti-traditional",
+      "title": "亚瓦拉皮蒂传统信仰与辛古祈福（Yawalapiti）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Xinguanos",
+        "https://www.britannica.com/place/Xingu-River",
+        "https://www.britannica.com/place/Brazil"
+      ],
+      "rituals": [
+        "1. 村际礼仪与互惠（敏感，仅概念）",
+        "2. 祖先敬礼（概念层）",
+        "3. 生命礼仪（概念层）"
+      ]
+    },
+    {
+      "slug": "yekuana-traditional",
+      "title": "耶库阿纳／马基里塔雷传统信仰与上奥里诺科祈福（Ye'kuana / Makiritare）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Orinoco-River",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "rituals": [
+        "1. 神话与工艺公开层（概念）",
+        "2. 仪式专家传统（极高敏感，仅概念）",
+        "3. 当代权利表述（公开层）"
+      ]
+    },
+    {
+      "slug": "yine-traditional",
+      "title": "伊内／皮罗传统信仰与乌卡亚利祈福（Yine / Piro）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Peru",
+        "https://www.britannica.com/place/Ucayali-River",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "rituals": [
+        "1. 河岸生计伦理（敏感，仅概念）",
+        "2. 护佑传统（极高敏感，仅概念）",
+        "3. 教会与权利当代层（公开层）"
+      ]
+    },
+    {
+      "slug": "yokotan-traditional",
+      "title": "约科坦／塔巴斯科琼塔尔玛雅民间天主教祈福（Yokot'an／Chontal de Tabasco）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Chontal",
+        "https://www.britannica.com/place/Tabasco-state-Mexico",
+        "https://www.britannica.com/topic/Maya-people"
+      ],
+      "rituals": [
+        "1. 主保节与教堂礼仪（概念层）",
+        "2. 湿地—农事祈请（概念层）",
+        "3. 日师／疗愈中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "yombe-traditional",
+      "title": "永贝传统信仰与恩基西（Nkisi）—祖灵祈福（Yombe）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Yombe",
+        "https://www.britannica.com/topic/nkisi",
+        "https://www.britannica.com/place/Democratic-Republic-of-the-Congo"
+      ],
+      "rituals": [
+        "1. 祖灵敬礼（概念层）",
+        "2. Nkisi 权力象征传统（极高敏感，仅概念）",
+        "3. 教堂崇拜（概念层）"
+      ]
+    },
+    {
+      "slug": "yucatec-maya",
+      "title": "尤卡坦玛雅民间天主教与哈纳尔皮克山祈福（Yucatec Maya）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Yucatec-people",
+        "https://www.britannica.com/topic/Day-of-the-Dead",
+        "https://www.britannica.com/place/Yucatan-Peninsula"
+      ],
+      "rituals": [
+        "1. Hanal Pixán／亡灵家户供奉（概念层）",
+        "2. 圣徒节与村社天主教（概念层）",
+        "3. 农业—雨祈与 H-men（高度敏感，仅概念）"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡通过联网检索补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／遗产机构页面、博物馆与档案馆、学术 DOI 或民族志。",
+    "禁止采用 Britannica 地名／主题总览页（/place/、/topic/）、encyclopedia.com、everyculture.com、Wikipedia、Factsanddetails 等弱总览站，以及旅游博客或无署名聚合页；不要用弱来源凑数。",
+    "仅做来源补强，不改档位、卡片正文或仪式内容，不写可复现操演步骤；敏感传统只做公开文化与概念层。",
+    "每条来源附一句中文说明其覆盖内容与可信度；搜不到足够强来源时写明检索关键词，不要用弱来源填充。"
+  ]
+}

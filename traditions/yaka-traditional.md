@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Yaka
-- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
-- https://www.britannica.com/topic/African-art
+- https://www.metmuseum.org/art/collection/search/310954
+- https://smarthistory.org/headdress-yaka/
+- https://www.clevelandart.org/art/1969.8
+- https://www.brooklynmuseum.org/en-GB/objects/4829

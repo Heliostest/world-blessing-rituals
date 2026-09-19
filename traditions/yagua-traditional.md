@@ -47,6 +47,4 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Yagua
-- https://www.britannica.com/place/Iquitos
-- https://www.britannica.com/place/Amazon-River
+- https://www.perunorth.com/yagua-indigenous-amazonia

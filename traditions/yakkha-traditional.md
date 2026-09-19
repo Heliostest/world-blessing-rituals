@@ -47,6 +47,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Nepal
-- https://www.britannica.com/topic/Kirati
-- https://www.britannica.com/place/Himalayas
+- https://www.eva.mpg.de/documents/Cambridge%20Scholars%20Publishing/Rai_Mundum_Locality-history-memory_2009_1554259.pdf
+- https://mundhum.com/festivals

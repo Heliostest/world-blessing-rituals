@@ -47,6 +47,4 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Papua
-- https://www.britannica.com/place/New-Guinea
-- https://www.britannica.com/topic/Dani
+- https://internationalconservationfund.org/the-yali/

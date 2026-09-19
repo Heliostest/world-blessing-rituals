@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Sierra-Nevada-de-Santa-Marta
-- https://www.britannica.com/place/Colombia
-- https://www.britannica.com/topic/South-American-Indian
+- https://ich.unesco.org/en/RL/ancestral-system-of-knowledge-of-the-four-indigenous-peoples-arhuaco-kankuamo-kogui-and-wiwa-of-the-sierra-nevada-de-santa-marta-01886
+- https://ich.unesco.org/en/decisions/17.COM/7.B.3
+- https://icmagazine.org/indigenous-peoples/wiwa/

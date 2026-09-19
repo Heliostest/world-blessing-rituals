@@ -3977,3 +3977,35 @@
 - https://www.folklore.ee/folklore/vol61/siragusa.pdf
 - https://ojs.utlib.ee/index.php/jeful/article/view/jeful.2015.6.1.07
 - https://fennougria.ee/en/peoples/baltic-finnic-peoples/vepsians/
+
+## 增补传统（Notebook source hunt C40：阿布鲁佐—科西嘉）
+
+- https://oaj.fupress.net/index.php/ah/article/view/17744
+- https://www.abruzzoturismo.it/it/riti-personaggi-e-miti
+- https://impactum-journals.uc.pt/antropologiaportuguesa/article/download/12044/9543/60597
+- https://www.kultur.ax/kulturforeningar-och-kulturutovare/festivaler
+- https://helda.helsinki.fi/server/api/core/bitstreams/c4755801-f208-4e98-8dc5-d16822094b4d/content
+- https://www.museum.ax/besok-vara-museer-och-sevardheter
+- https://www.juntadeandalucia.es/organismos/culturapatrimoniohistoricoydeporte/servicios/actualidad/noticias/detalle/415519.html
+- https://www.iaph.es/revistaph/index.php/revistaph/article/view/3732
+- https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/romeria-de-la-virgen-de-la-cabeza-1
+- https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra/documental-el-cami-del-foc-la-cremada-de-falles-d-andorra-la-vella
+- https://journal.diri.org.bd/index.php/DIRJ/article/view/12
+- https://i-proclaim.my/journals/index.php/ajhal/article/view/350
+- https://scielo.org.za/scielo.php?script=sci_arttext&pid=S1011-76012025000100002
+- https://njas.fi/njas/article/view/103
+- https://ich.unesco.org/en/RL/kalela-dance-01698
+- https://natmus.dk/historisk-viden/temaer/fester-og-traditioner/sankthans/sankthanskoen/boernenes-sankthans-kilder/
+- https://bornholm.dk/service-og-selvbetjening/kultur-og-fritid/bornholms-oe-arkiv/om-bornholms-oe-arkiv
+- https://bornholmsmuseum.dk/da/madkulturhuset-bornholm/
+- https://www.ihchina.cn/project_details/15284/
+- https://www.ihchina.cn/project_details/15285/
+- https://www.progressingeography.com/CN/10.18306/dlkxjz.2022.11.010
+- https://calabriastraordinaria.it/en/events/the-procession-of-the-varette
+- https://digi.ub.uni-heidelberg.de/diglit/fiore1691bd1
+- https://calabriastraordinaria.it/en/events/giulia-carafa-della-spina-historical-procession
+- https://doi.org/10.7312/columbia/9780231168021.003.0004
+- https://scholarhub.ui.ac.id/jai/vol42/iss2/3/
+- https://www.isula.corsica/patrimoine/Da-I-Stantari-a-u-Cantu-in-Paghjella_a187.html
+- https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/liste_inventaire-national-du-pci_juillet2024
+- https://ich.unesco.org/fr/USL/le-cantu-in-paghjella-profane-et-liturgique-de-corse-de-tradition-orale-00315

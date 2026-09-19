@@ -47,8 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Akha
 - https://thesiamsociety.org/knowledge-hub/research/267?lang=en
 - https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/
 - https://doi.org/10.30819/aemr.2
 - https://ich.unesco.org/fr/une-experience-de-patrimoine-vivant-et-la-pandemie-de-covid-19-01124?id=00021
+- https://impactum-journals.uc.pt/antropologiaportuguesa/article/download/12044/9543/60597

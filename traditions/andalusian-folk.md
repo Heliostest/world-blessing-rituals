@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Semana-Santa
 - https://guiadigital.iaph.es/bien/inmaterial/195121
 - https://repositorio.iaph.es/handle/11532/324987
 - https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/semana-santa-de-almonte
+- https://www.juntadeandalucia.es/organismos/culturapatrimoniohistoricoydeporte/servicios/actualidad/noticias/detalle/415519.html
+- https://www.iaph.es/revistaph/index.php/revistaph/article/view/3732
+- https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/romeria-de-la-virgen-de-la-cabeza-1

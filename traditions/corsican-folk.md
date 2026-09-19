@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://ich.unesco.org/en/USL/cantu-in-paghjella-a-secular-and-liturgical-oral-tradition-of-corsica-00315
 - https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Cultural-inspirations/U-Catenacciu-in-Sartene-experience-the-Good-Friday-procession-in-the-heart-of-Corsica
 - https://www.isula.corsica/culture/agenda/Scola-di-cantu-Venachese-Cours-de-chant-Cantu-in-Paghjella-e-Cantu-sacru-Canti-cu-Ghitara-Mairie-Venacu_ae1957142.html
+- https://www.isula.corsica/patrimoine/Da-I-Stantari-a-u-Cantu-in-Paghjella_a187.html
+- https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/liste_inventaire-national-du-pci_juillet2024
+- https://ich.unesco.org/fr/USL/le-cantu-in-paghjella-profane-et-liturgique-de-corse-de-tradition-orale-00315

@@ -2,7 +2,7 @@
   "batch": "notebook-source-hunt-c40",
   "cycle": 40,
   "date": "2026-09-19",
-  "status": "prepared",
+  "status": "completed",
   "selection_rule": "不排除任何早期批次；重算全部 grade=C 卡片当前来源段中的弱链接，按弱链接数量从多到少、slug 字母序选择前 12 张。",
   "previous_cycles_excluded": false,
   "c_grade_card_count": 156,
@@ -35,10 +35,34 @@
         "https://www.britannica.com/topic/Roman-Catholicism",
         "https://ich.unesco.org/en/RL/celestinian-forgiveness-celebration-01276"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://oaj.fupress.net/index.php/ah/article/view/17744",
+        "https://www.abruzzoturismo.it/it/riti-personaggi-e-miti"
+      ],
+      "added_urls": [
+        "https://oaj.fupress.net/index.php/ah/article/view/17744",
+        "https://www.abruzzoturismo.it/it/riti-personaggi-e-miti"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/celestinian-forgiveness-celebration-01276",
+        "https://oaj.fupress.net/index.php/ah/article/view/17744",
+        "https://www.abruzzoturismo.it/it/riti-personaggi-e-miti"
+      ],
+      "current_source_count": 2,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://oaj.fupress.net/index.php/ah/article/view/17744",
+        "https://www.abruzzoturismo.it/it/riti-personaggi-e-miti"
+      ]
     },
     {
       "slug": "akha-traditional",
@@ -55,10 +79,35 @@
         "https://doi.org/10.30819/aemr.2",
         "https://ich.unesco.org/fr/une-experience-de-patrimoine-vivant-et-la-pandemie-de-covid-19-01124?id=00021"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/",
+        "https://impactum-journals.uc.pt/antropologiaportuguesa/article/download/12044/9543/60597"
+      ],
+      "added_urls": [
+        "https://impactum-journals.uc.pt/antropologiaportuguesa/article/download/12044/9543/60597"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Akha"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://thesiamsociety.org/knowledge-hub/research/267?lang=en",
+        "https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/",
+        "https://doi.org/10.30819/aemr.2",
+        "https://ich.unesco.org/fr/une-experience-de-patrimoine-vivant-et-la-pandemie-de-covid-19-01124?id=00021",
+        "https://impactum-journals.uc.pt/antropologiaportuguesa/article/download/12044/9543/60597"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 5,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Akha"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/",
+        "https://impactum-journals.uc.pt/antropologiaportuguesa/article/download/12044/9543/60597"
+      ]
     },
     {
       "slug": "aland-folk",
@@ -74,10 +123,40 @@
         "https://visitaland.com/en/experience/midsummer-in-aland/",
         "https://www.nordiskamuseet.se/utforska/hogtider/midsommar/"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://www.kultur.ax/kulturforeningar-och-kulturutovare/festivaler",
+        "https://helda.helsinki.fi/server/api/core/bitstreams/c4755801-f208-4e98-8dc5-d16822094b4d/content",
+        "https://www.museum.ax/besok-vara-museer-och-sevardheter"
+      ],
+      "added_urls": [
+        "https://www.kultur.ax/kulturforeningar-och-kulturutovare/festivaler",
+        "https://helda.helsinki.fi/server/api/core/bitstreams/c4755801-f208-4e98-8dc5-d16822094b4d/content",
+        "https://www.museum.ax/besok-vara-museer-och-sevardheter"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Church-of-Sweden"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://visitaland.com/en/experience/sights-excursions/aland-churches/",
+        "https://visitaland.com/en/experience/midsummer-in-aland/",
+        "https://www.nordiskamuseet.se/utforska/hogtider/midsommar/",
+        "https://www.kultur.ax/kulturforeningar-och-kulturutovare/festivaler",
+        "https://helda.helsinki.fi/server/api/core/bitstreams/c4755801-f208-4e98-8dc5-d16822094b4d/content",
+        "https://www.museum.ax/besok-vara-museer-och-sevardheter"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Church-of-Sweden"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.kultur.ax/kulturforeningar-och-kulturutovare/festivaler",
+        "https://helda.helsinki.fi/server/api/core/bitstreams/c4755801-f208-4e98-8dc5-d16822094b4d/content",
+        "https://www.museum.ax/besok-vara-museer-och-sevardheter"
+      ]
     },
     {
       "slug": "andalusian-folk",
@@ -93,10 +172,40 @@
         "https://repositorio.iaph.es/handle/11532/324987",
         "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/semana-santa-de-almonte"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://www.juntadeandalucia.es/organismos/culturapatrimoniohistoricoydeporte/servicios/actualidad/noticias/detalle/415519.html",
+        "https://www.iaph.es/revistaph/index.php/revistaph/article/view/3732",
+        "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/romeria-de-la-virgen-de-la-cabeza-1"
+      ],
+      "added_urls": [
+        "https://www.juntadeandalucia.es/organismos/culturapatrimoniohistoricoydeporte/servicios/actualidad/noticias/detalle/415519.html",
+        "https://www.iaph.es/revistaph/index.php/revistaph/article/view/3732",
+        "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/romeria-de-la-virgen-de-la-cabeza-1"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Semana-Santa"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://guiadigital.iaph.es/bien/inmaterial/195121",
+        "https://repositorio.iaph.es/handle/11532/324987",
+        "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/semana-santa-de-almonte",
+        "https://www.juntadeandalucia.es/organismos/culturapatrimoniohistoricoydeporte/servicios/actualidad/noticias/detalle/415519.html",
+        "https://www.iaph.es/revistaph/index.php/revistaph/article/view/3732",
+        "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/romeria-de-la-virgen-de-la-cabeza-1"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Semana-Santa"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.juntadeandalucia.es/organismos/culturapatrimoniohistoricoydeporte/servicios/actualidad/noticias/detalle/415519.html",
+        "https://www.iaph.es/revistaph/index.php/revistaph/article/view/3732",
+        "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/romeria-de-la-virgen-de-la-cabeza-1"
+      ]
     },
     {
       "slug": "andorran-folk",
@@ -112,10 +221,36 @@
         "https://museus.ad/en/monumentos/sanctuary-of-meritxell",
         "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/que-es-el-patrimoni-immaterial/les-festes-d-interes-cultural/l-aplec-de-la-mare-de-deu-de-meritxell",
+        "https://museus.ad/en/monumentos/sanctuary-of-meritxell",
+        "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra/documental-el-cami-del-foc-la-cremada-de-falles-d-andorra-la-vella"
+      ],
+      "added_urls": [
+        "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra/documental-el-cami-del-foc-la-cremada-de-falles-d-andorra-la-vella"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Our-Lady-of-Meritxell"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/que-es-el-patrimoni-immaterial/les-festes-d-interes-cultural/l-aplec-de-la-mare-de-deu-de-meritxell",
+        "https://museus.ad/en/monumentos/sanctuary-of-meritxell",
+        "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra",
+        "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra/documental-el-cami-del-foc-la-cremada-de-falles-d-andorra-la-vella"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 4,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Our-Lady-of-Meritxell"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/que-es-el-patrimoni-immaterial/les-festes-d-interes-cultural/l-aplec-de-la-mare-de-deu-de-meritxell",
+        "https://museus.ad/en/monumentos/sanctuary-of-meritxell",
+        "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra/documental-el-cami-del-foc-la-cremada-de-falles-d-andorra-la-vella"
+      ]
     },
     {
       "slug": "baul-bengal",
@@ -132,10 +267,39 @@
         "https://ich.unesco.org/en/photo-pop-up-00973?photoID=00147",
         "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047",
+        "https://journal.diri.org.bd/index.php/DIRJ/article/view/12",
+        "https://i-proclaim.my/journals/index.php/ajhal/article/view/350"
+      ],
+      "added_urls": [
+        "https://journal.diri.org.bd/index.php/DIRJ/article/view/12",
+        "https://i-proclaim.my/journals/index.php/ajhal/article/view/350"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/art/Baul"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/baul-songs-00107",
+        "https://www.unesco.org/archives/multimedia/document-612",
+        "https://ich.unesco.org/en/photo-pop-up-00973?photoID=00147",
+        "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047",
+        "https://journal.diri.org.bd/index.php/DIRJ/article/view/12",
+        "https://i-proclaim.my/journals/index.php/ajhal/article/view/350"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/art/Baul"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047",
+        "https://journal.diri.org.bd/index.php/DIRJ/article/view/12",
+        "https://i-proclaim.my/journals/index.php/ajhal/article/view/350"
+      ]
     },
     {
       "slug": "bemba-traditional",
@@ -152,10 +316,41 @@
         "https://dx.doi.org/10.3389/fenvs.2025.1538921",
         "https://repository.up.ac.za/server/api/core/bitstreams/644905d8-357e-4d23-b318-2c400436484a/content"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S1011-76012025000100002",
+        "https://njas.fi/njas/article/view/103",
+        "https://ich.unesco.org/en/RL/kalela-dance-01698"
+      ],
+      "added_urls": [
+        "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S1011-76012025000100002",
+        "https://njas.fi/njas/article/view/103",
+        "https://ich.unesco.org/en/RL/kalela-dance-01698"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Bemba"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://doi.org/10.17159/2309-9585/2026/v52a7",
+        "https://doi.org/10.1093/acref/9780195301731.013.48534",
+        "https://dx.doi.org/10.3389/fenvs.2025.1538921",
+        "https://repository.up.ac.za/server/api/core/bitstreams/644905d8-357e-4d23-b318-2c400436484a/content",
+        "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S1011-76012025000100002",
+        "https://njas.fi/njas/article/view/103",
+        "https://ich.unesco.org/en/RL/kalela-dance-01698"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Bemba"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S1011-76012025000100002",
+        "https://njas.fi/njas/article/view/103",
+        "https://ich.unesco.org/en/RL/kalela-dance-01698"
+      ]
     },
     {
       "slug": "bornholm-folk",
@@ -172,10 +367,41 @@
         "https://www.visitdenmark.com/denmark/destinations/bornholm/attractions",
         "http://danmarkskirker.natmus.dk/"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://natmus.dk/historisk-viden/temaer/fester-og-traditioner/sankthans/sankthanskoen/boernenes-sankthans-kilder/",
+        "https://bornholm.dk/service-og-selvbetjening/kultur-og-fritid/bornholms-oe-arkiv/om-bornholms-oe-arkiv",
+        "https://bornholmsmuseum.dk/da/madkulturhuset-bornholm/"
+      ],
+      "added_urls": [
+        "https://natmus.dk/historisk-viden/temaer/fester-og-traditioner/sankthans/sankthanskoen/boernenes-sankthans-kilder/",
+        "https://bornholm.dk/service-og-selvbetjening/kultur-og-fritid/bornholms-oe-arkiv/om-bornholms-oe-arkiv",
+        "https://bornholmsmuseum.dk/da/madkulturhuset-bornholm/"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Church-of-Denmark"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://bornholm.info/en/oesterlars-round-church/",
+        "https://bornholm.info/en/round-churches-on-bornholm/",
+        "https://www.visitdenmark.com/denmark/destinations/bornholm/attractions",
+        "http://danmarkskirker.natmus.dk/",
+        "https://natmus.dk/historisk-viden/temaer/fester-og-traditioner/sankthans/sankthanskoen/boernenes-sankthans-kilder/",
+        "https://bornholm.dk/service-og-selvbetjening/kultur-og-fritid/bornholms-oe-arkiv/om-bornholms-oe-arkiv",
+        "https://bornholmsmuseum.dk/da/madkulturhuset-bornholm/"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Church-of-Denmark"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://natmus.dk/historisk-viden/temaer/fester-og-traditioner/sankthans/sankthanskoen/boernenes-sankthans-kilder/",
+        "https://bornholm.dk/service-og-selvbetjening/kultur-og-fritid/bornholms-oe-arkiv/om-bornholms-oe-arkiv",
+        "https://bornholmsmuseum.dk/da/madkulturhuset-bornholm/"
+      ]
     },
     {
       "slug": "buyei-traditional",
@@ -192,10 +418,41 @@
         "https://doi.org/10.3389/fpsyg.2019.02603",
         "https://doi.org/10.3389/fpls.2024.1364481"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://www.ihchina.cn/project_details/15284/",
+        "https://www.ihchina.cn/project_details/15285/",
+        "https://www.progressingeography.com/CN/10.18306/dlkxjz.2022.11.010"
+      ],
+      "added_urls": [
+        "https://www.ihchina.cn/project_details/15284/",
+        "https://www.ihchina.cn/project_details/15285/",
+        "https://www.progressingeography.com/CN/10.18306/dlkxjz.2022.11.010"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Buyei"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://factsanddetails.com/china/cat5/sub30/entry-4379.html",
+        "https://doi.org/10.1163/2210-7363_ecll_COM_000055",
+        "https://doi.org/10.3389/fpsyg.2019.02603",
+        "https://doi.org/10.3389/fpls.2024.1364481",
+        "https://www.ihchina.cn/project_details/15284/",
+        "https://www.ihchina.cn/project_details/15285/",
+        "https://www.progressingeography.com/CN/10.18306/dlkxjz.2022.11.010"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Buyei"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.ihchina.cn/project_details/15284/",
+        "https://www.ihchina.cn/project_details/15285/",
+        "https://www.progressingeography.com/CN/10.18306/dlkxjz.2022.11.010"
+      ]
     },
     {
       "slug": "calabrian-folk",
@@ -211,10 +468,40 @@
         "https://calabriastraordinaria.it/storage/files/02_L%27arte_e_la_Cultura_EN.pdf",
         "https://ich.unesco.org/en/RL/celebration-of-big-votive-structures-processions-00882"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://calabriastraordinaria.it/en/events/the-procession-of-the-varette",
+        "https://digi.ub.uni-heidelberg.de/diglit/fiore1691bd1",
+        "https://calabriastraordinaria.it/en/events/giulia-carafa-della-spina-historical-procession"
+      ],
+      "added_urls": [
+        "https://calabriastraordinaria.it/en/events/the-procession-of-the-varette",
+        "https://digi.ub.uni-heidelberg.de/diglit/fiore1691bd1",
+        "https://calabriastraordinaria.it/en/events/giulia-carafa-della-spina-historical-procession"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://calabriastraordinaria.it/en/news/jubilee-2025-in-the-dioceses-of-calabria-sites-paths-and-festivities",
+        "https://calabriastraordinaria.it/storage/files/02_L%27arte_e_la_Cultura_EN.pdf",
+        "https://ich.unesco.org/en/RL/celebration-of-big-votive-structures-processions-00882",
+        "https://calabriastraordinaria.it/en/events/the-procession-of-the-varette",
+        "https://digi.ub.uni-heidelberg.de/diglit/fiore1691bd1",
+        "https://calabriastraordinaria.it/en/events/giulia-carafa-della-spina-historical-procession"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://calabriastraordinaria.it/en/events/the-procession-of-the-varette",
+        "https://digi.ub.uni-heidelberg.de/diglit/fiore1691bd1",
+        "https://calabriastraordinaria.it/en/events/giulia-carafa-della-spina-historical-procession"
+      ]
     },
     {
       "slug": "chinese-buddhism",
@@ -232,10 +519,38 @@
         "https://doi.org/10.3390/rel14010110",
         "https://doi.org/10.1111/rec3.12483"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://doi.org/10.7312/columbia/9780231168021.003.0004",
+        "https://scholarhub.ui.ac.id/jai/vol42/iss2/3/"
+      ],
+      "added_urls": [
+        "https://doi.org/10.7312/columbia/9780231168021.003.0004",
+        "https://scholarhub.ui.ac.id/jai/vol42/iss2/3/"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Buddhism/Popular-religious-practices"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://buddhiststudies.utoronto.ca/wp-content/uploads/2021/10/Shiu_Stokes_2008_Animal-Release.pdf",
+        "https://doi.org/10.1515/cdc-2015-0008",
+        "https://doi.org/10.38144/TKT.2026.1.3",
+        "https://doi.org/10.3390/rel14010110",
+        "https://doi.org/10.1111/rec3.12483",
+        "https://doi.org/10.7312/columbia/9780231168021.003.0004",
+        "https://scholarhub.ui.ac.id/jai/vol42/iss2/3/"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Buddhism/Popular-religious-practices"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://doi.org/10.7312/columbia/9780231168021.003.0004",
+        "https://scholarhub.ui.ac.id/jai/vol42/iss2/3/"
+      ]
     },
     {
       "slug": "corsican-folk",
@@ -251,10 +566,40 @@
         "https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Cultural-inspirations/U-Catenacciu-in-Sartene-experience-the-Good-Friday-procession-in-the-heart-of-Corsica",
         "https://www.isula.corsica/culture/agenda/Scola-di-cantu-Venachese-Cours-de-chant-Cantu-in-Paghjella-e-Cantu-sacru-Canti-cu-Ghitara-Mairie-Venacu_ae1957142.html"
       ],
-      "weak_urls": [
+      "input_urls": [
+        "https://www.isula.corsica/patrimoine/Da-I-Stantari-a-u-Cantu-in-Paghjella_a187.html",
+        "https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/liste_inventaire-national-du-pci_juillet2024",
+        "https://ich.unesco.org/fr/USL/le-cantu-in-paghjella-profane-et-liturgique-de-corse-de-tradition-orale-00315"
+      ],
+      "added_urls": [
+        "https://www.isula.corsica/patrimoine/Da-I-Stantari-a-u-Cantu-in-Paghjella_a187.html",
+        "https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/liste_inventaire-national-du-pci_juillet2024",
+        "https://ich.unesco.org/fr/USL/le-cantu-in-paghjella-profane-et-liturgique-de-corse-de-tradition-orale-00315"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
-      "weak_domain_count": 1
+      "final_urls": [
+        "https://ich.unesco.org/en/USL/cantu-in-paghjella-a-secular-and-liturgical-oral-tradition-of-corsica-00315",
+        "https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Cultural-inspirations/U-Catenacciu-in-Sartene-experience-the-Good-Friday-procession-in-the-heart-of-Corsica",
+        "https://www.isula.corsica/culture/agenda/Scola-di-cantu-Venachese-Cours-de-chant-Cantu-in-Paghjella-e-Cantu-sacru-Canti-cu-Ghitara-Mairie-Venacu_ae1957142.html",
+        "https://www.isula.corsica/patrimoine/Da-I-Stantari-a-u-Cantu-in-Paghjella_a187.html",
+        "https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/liste_inventaire-national-du-pci_juillet2024",
+        "https://ich.unesco.org/fr/USL/le-cantu-in-paghjella-profane-et-liturgique-de-corse-de-tradition-orale-00315"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.isula.corsica/patrimoine/Da-I-Stantari-a-u-Cantu-in-Paghjella_a187.html",
+        "https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/liste_inventaire-national-du-pci_juillet2024",
+        "https://ich.unesco.org/fr/USL/le-cantu-in-paghjella-profane-et-liturgique-de-corse-de-tradition-orale-00315"
+      ]
     }
   ],
   "prompt": "请为 Notebook source hunt C40 准备下一批 C 级祈福／祈祷仪式资料卡的联网来源搜寻。\n\n本轮是在 C39 来源清理已经应用之后，对 docs/notebook-validation.json 中全部 grade=C 卡片的「## 参考来源」重新计数；不得因为某卡曾出现在 C1–C39 的早期批次就排除它。仍含 britannica.com、encyclopedia.com 或 everyculture.com 的弱链接均须计入。当前 C 级卡片共 156 张，仍含弱链接的卡片共 67 张。\n\n选择规则：在全部仍含上述弱链接的 C 级卡片中，按弱链接数量从多到少排序；并列时按 slug 字母序排序；选择前 12 张。不要为了凑数选择无弱链接的卡片，也不要排除先前批次出现过的卡片。\n\n选择结果（按优先顺序）：\n1. abruzzese-folk（弱链接 1 条；当前来源 2 条）\n2. akha-traditional（弱链接 1 条；当前来源 5 条）\n3. aland-folk（弱链接 1 条；当前来源 4 条）\n4. andalusian-folk（弱链接 1 条；当前来源 4 条）\n5. andorran-folk（弱链接 1 条；当前来源 4 条）\n6. baul-bengal（弱链接 1 条；当前来源 5 条）\n7. bemba-traditional（弱链接 1 条；当前来源 5 条）\n8. bornholm-folk（弱链接 1 条；当前来源 5 条）\n9. buyei-traditional（弱链接 1 条；当前来源 5 条）\n10. calabrian-folk（弱链接 1 条；当前来源 4 条）\n11. chinese-buddhism（弱链接 1 条；当前来源 6 条）\n12. corsican-folk（弱链接 1 条；当前来源 4 条）\n\n逐卡当前来源（[WEAK] 表示待替换的弱链接）：\n\n### 1. abruzzese-folk — 阿布鲁佐民间天主教与朝圣祈福（Abruzzese）\n仪式：圣母／山村朝圣（概念层）；主保节巡游（概念层）；灾后纪念与公共祈祷（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://ich.unesco.org/en/RL/celestinian-forgiveness-celebration-01276\n\n### 2. akha-traditional — 阿卡族传统信仰与秋千节祈福（Akha）\n仪式：秋千节公共层（节庆／观光可见）；祖先供奉与家屋礼仪焦点（敏感，仅概念）；村门、秋千架与礼仪权威（高度敏感，仅概念）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Akha\n- https://thesiamsociety.org/knowledge-hub/research/267?lang=en\n- https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/\n- https://doi.org/10.30819/aemr.2\n- https://ich.unesco.org/fr/une-experience-de-patrimoine-vivant-et-la-pandemie-de-covid-19-01124?id=00021\n\n### 3. aland-folk — 奥兰民间基督教与群岛祈福（Åland）\n仪式：路德宗礼拜与教会节期（概念层）；航海感恩与还愿（概念层）；仲夏等公共民俗层（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Church-of-Sweden\n- https://visitaland.com/en/experience/sights-excursions/aland-churches/\n- https://visitaland.com/en/experience/midsummer-in-aland/\n- https://www.nordiskamuseet.se/utforska/hogtider/midsommar/\n\n### 4. andalusian-folk — 安达卢西亚民间天主教与罗马里亚朝圣祈福（Andalusian）\n仪式：圣周游行（概念层）；Romería 乡村朝圣（概念层）；弥撒与生命礼仪（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Semana-Santa\n- https://guiadigital.iaph.es/bien/inmaterial/195121\n- https://repositorio.iaph.es/handle/11532/324987\n- https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/semana-santa-de-almonte\n\n### 5. andorran-folk — 安道尔民间天主教与山地朝圣祈福（Andorran）\n仪式：Meritxell 圣母敬礼（概念层）；堂区主保节（概念层）；山地还愿（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Our-Lady-of-Meritxell\n- https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/que-es-el-patrimoni-immaterial/les-festes-d-interes-cultural/l-aplec-de-la-mare-de-deu-de-meritxell\n- https://museus.ad/en/monumentos/sanctuary-of-meritxell\n- https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra\n\n### 6. baul-bengal — 孟加拉鲍尔／行吟密契传统（Baul）\n仪式：行吟演唱与乐器伴奏（公共文化层）；以歌传道／口传哲学（概念层）；身体为神殿的密契取向（限制性公共知识层）\n当前来源：\n- https://ich.unesco.org/en/RL/baul-songs-00107\n- [WEAK] https://www.britannica.com/art/Baul\n- https://www.unesco.org/archives/multimedia/document-612\n- https://ich.unesco.org/en/photo-pop-up-00973?photoID=00147\n- https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047\n\n### 7. bemba-traditional — 本巴传统宗教与莱萨—祖灵祈福（Bemba）\n仪式：旱灾等危机中的 Lesa 集体祈请（概念层）；祖灵与王室圣地敬礼（部分敏感）；教会生活与生命礼仪（公共／当代层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Bemba\n- https://doi.org/10.17159/2309-9585/2026/v52a7\n- https://doi.org/10.1093/acref/9780195301731.013.48534\n- https://dx.doi.org/10.3389/fenvs.2025.1538921\n- https://repository.up.ac.za/server/api/core/bitstreams/644905d8-357e-4d23-b318-2c400436484a/content\n\n### 8. bornholm-folk — 博恩霍尔姆民间基督教与岛屿祈福（Bornholm）\n仪式：路德宗礼拜与教会节期（概念层）；航海感恩（概念层）；岁时公共民俗层（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Church-of-Denmark\n- https://bornholm.info/en/oesterlars-round-church/\n- https://bornholm.info/en/round-churches-on-bornholm/\n- https://www.visitdenmark.com/denmark/destinations/bornholm/attractions\n- http://danmarkskirker.natmus.dk/\n\n### 9. buyei-traditional — 布依族传统信仰与三月三祈福（Buyei／Bouyei）\n仪式：三月三等岁时节庆（公共层）；祭祖与自然圣物敬礼（部分敏感）；扫寨／清洁寨落叙事（概念层，禁止操作）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Buyei\n- https://factsanddetails.com/china/cat5/sub30/entry-4379.html\n- https://doi.org/10.1163/2210-7363_ecll_COM_000055\n- https://doi.org/10.3389/fpsyg.2019.02603\n- https://doi.org/10.3389/fpls.2024.1364481\n\n### 10. calabrian-folk — 卡拉布里亚民间天主教与朝圣祈福（Calabrian）\n仪式：圣母朝圣与还愿（概念层）；主保节巡游（概念层）；圣周公共礼仪（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://calabriastraordinaria.it/en/news/jubilee-2025-in-the-dioceses-of-calabria-sites-paths-and-festivities\n- https://calabriastraordinaria.it/storage/files/02_L%27arte_e_la_Cultura_EN.pdf\n- https://ich.unesco.org/en/RL/celebration-of-big-votive-structures-processions-00882\n\n### 11. chinese-buddhism — 汉传佛教\n仪式：放生（放生）；礼佛诵经与诸佛菩萨名号持念；大悲水加持与功德回向\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Buddhism/Popular-religious-practices\n- https://buddhiststudies.utoronto.ca/wp-content/uploads/2021/10/Shiu_Stokes_2008_Animal-Release.pdf\n- https://doi.org/10.1515/cdc-2015-0008\n- https://doi.org/10.38144/TKT.2026.1.3\n- https://doi.org/10.3390/rel14010110\n- https://doi.org/10.1111/rec3.12483\n\n### 12. corsican-folk — 科西嘉民间天主教与朝圣祈福（Corsican）\n仪式：Catenacciu（Sartène）公共忏悔巡游（公开层）；主保节与 Paghjella 多声部歌唱（概念层）；Signatoru 民俗疗愈注记与生命礼仪（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://ich.unesco.org/en/USL/cantu-in-paghjella-a-secular-and-liturgical-oral-tradition-of-corsica-00315\n- https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Cultural-inspirations/U-Catenacciu-in-Sartene-experience-the-Good-Friday-procession-in-the-heart-of-Corsica\n- https://www.isula.corsica/culture/agenda/Scola-di-cantu-Venachese-Cours-de-chant-Cantu-in-Paghjella-e-Cantu-sacru-Canti-cu-Ghitara-Mairie-Venacu_ae1957142.html\n\n对每个选中 slug 给出 2–4 条新的、公开可核验的 URL，并附一句中文说明覆盖内容与可信度理由。来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。\n\n明确禁止：Britannica 地点（/place/）或泛概览页及其他 Britannica 泛概览、encyclopedia.com、everyculture.com、Wikipedia 或任何 wiki 概览页、101lasttribes／joshuaproject 等部族目录页、与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。硬性要求：URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或 SOURCES.md 已有 URL 重复；宁缺毋滥；只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n输出格式：\nslug:\n建议新增 URL（每行一条，附一句中文说明）：\n- <URL> — <说明>\n",
@@ -264,6 +609,71 @@
     "禁止 Britannica 地点／泛概览、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页与离题泛泛报告。",
     "只补来源，不改卡片正文、档位或仪式内容；URL、DOI、网页与 PDF 均须公开可核验。"
   ],
-  "remaining_estimate": 67,
-  "source_map": "/tmp/nb-source-hunt-c40.txt"
+  "remaining_estimate": 55,
+  "source_map": "/tmp/c40-urls.json",
+  "input_url_count": 33,
+  "input_unique_url_count": 33,
+  "card_url_added_count": 29,
+  "card_url_removed_count": 12,
+  "sources_unique_url_added_count": 29,
+  "weak_link_c_count_after_c40": 55,
+  "applied_urls": {
+    "abruzzese-folk": [
+      "https://oaj.fupress.net/index.php/ah/article/view/17744",
+      "https://www.abruzzoturismo.it/it/riti-personaggi-e-miti"
+    ],
+    "akha-traditional": [
+      "https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/",
+      "https://impactum-journals.uc.pt/antropologiaportuguesa/article/download/12044/9543/60597"
+    ],
+    "aland-folk": [
+      "https://www.kultur.ax/kulturforeningar-och-kulturutovare/festivaler",
+      "https://helda.helsinki.fi/server/api/core/bitstreams/c4755801-f208-4e98-8dc5-d16822094b4d/content",
+      "https://www.museum.ax/besok-vara-museer-och-sevardheter"
+    ],
+    "andalusian-folk": [
+      "https://www.juntadeandalucia.es/organismos/culturapatrimoniohistoricoydeporte/servicios/actualidad/noticias/detalle/415519.html",
+      "https://www.iaph.es/revistaph/index.php/revistaph/article/view/3732",
+      "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/romeria-de-la-virgen-de-la-cabeza-1"
+    ],
+    "andorran-folk": [
+      "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/que-es-el-patrimoni-immaterial/les-festes-d-interes-cultural/l-aplec-de-la-mare-de-deu-de-meritxell",
+      "https://museus.ad/en/monumentos/sanctuary-of-meritxell",
+      "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/arxiu-d-etnografia-d-andorra/falles-d-andorra/documental-el-cami-del-foc-la-cremada-de-falles-d-andorra-la-vella"
+    ],
+    "baul-bengal": [
+      "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047",
+      "https://journal.diri.org.bd/index.php/DIRJ/article/view/12",
+      "https://i-proclaim.my/journals/index.php/ajhal/article/view/350"
+    ],
+    "bemba-traditional": [
+      "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S1011-76012025000100002",
+      "https://njas.fi/njas/article/view/103",
+      "https://ich.unesco.org/en/RL/kalela-dance-01698"
+    ],
+    "bornholm-folk": [
+      "https://natmus.dk/historisk-viden/temaer/fester-og-traditioner/sankthans/sankthanskoen/boernenes-sankthans-kilder/",
+      "https://bornholm.dk/service-og-selvbetjening/kultur-og-fritid/bornholms-oe-arkiv/om-bornholms-oe-arkiv",
+      "https://bornholmsmuseum.dk/da/madkulturhuset-bornholm/"
+    ],
+    "buyei-traditional": [
+      "https://www.ihchina.cn/project_details/15284/",
+      "https://www.ihchina.cn/project_details/15285/",
+      "https://www.progressingeography.com/CN/10.18306/dlkxjz.2022.11.010"
+    ],
+    "calabrian-folk": [
+      "https://calabriastraordinaria.it/en/events/the-procession-of-the-varette",
+      "https://digi.ub.uni-heidelberg.de/diglit/fiore1691bd1",
+      "https://calabriastraordinaria.it/en/events/giulia-carafa-della-spina-historical-procession"
+    ],
+    "chinese-buddhism": [
+      "https://doi.org/10.7312/columbia/9780231168021.003.0004",
+      "https://scholarhub.ui.ac.id/jai/vol42/iss2/3/"
+    ],
+    "corsican-folk": [
+      "https://www.isula.corsica/patrimoine/Da-I-Stantari-a-u-Cantu-in-Paghjella_a187.html",
+      "https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/liste_inventaire-national-du-pci_juillet2024",
+      "https://ich.unesco.org/fr/USL/le-cantu-in-paghjella-profane-et-liturgique-de-corse-de-tradition-orale-00315"
+    ]
+  }
 }

@@ -49,7 +49,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://calabriastraordinaria.it/en/news/jubilee-2025-in-the-dioceses-of-calabria-sites-paths-and-festivities
 - https://calabriastraordinaria.it/storage/files/02_L%27arte_e_la_Cultura_EN.pdf
 - https://ich.unesco.org/en/RL/celebration-of-big-votive-structures-processions-00882
+- https://calabriastraordinaria.it/en/events/the-procession-of-the-varette
+- https://digi.ub.uni-heidelberg.de/diglit/fiore1691bd1
+- https://calabriastraordinaria.it/en/events/giulia-carafa-della-spina-historical-procession

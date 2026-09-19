@@ -1,0 +1,276 @@
+{
+  "batch": "notebook-source-hunt-c41",
+  "cycle": 41,
+  "date": "2026-09-19",
+  "status": "prepared",
+  "selection_rule": "不排除任何早期批次；重算全部 grade=C 卡片当前来源段中的弱链接，按弱链接数量从多到少、slug 字母序选择前 12 张。",
+  "previous_cycles_excluded": false,
+  "c_grade_card_count": 156,
+  "weak_link_c_count_after_c40": 55,
+  "selected_count": 12,
+  "slugs": [
+    "croatian-folk",
+    "dalecarlian-folk",
+    "emilian-folk",
+    "ewe-traditional",
+    "fulani-peul",
+    "ga-traditional",
+    "gagauz-traditional",
+    "galician-folk",
+    "greek-folk",
+    "greek-orthodox",
+    "gutnish-folk",
+    "ibibio-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "croatian-folk",
+      "title": "克罗地亚民间天主教与朝圣—节庆祈福（Croatian）",
+      "rituals": [
+        "Marija Bistrica 圣母朝圣（概念层）",
+        "Sinjska Alka 与 Zvončari 等民俗节庆（概念层）",
+        "复活节祝福与家庭礼仪（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://ich.unesco.org/en/RL/sinjska-alka-a-knights-tournament-in-sinj-00357",
+        "https://min-kulture.gov.hr/?id=16460",
+        "https://visitmarija-bistrica.croatia.hr/hr-hr/dogadanja/ljeto-u-mariji-bistrici"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "dalecarlian-folk",
+      "title": "达拉纳民间基督教与节期祈福（Dalecarlian／Dalarna）",
+      "rituals": [
+        "路德宗礼拜与 Kyrkbåtar 湖区教会记忆（概念层）",
+        "Midsommarstång 仲夏花柱等公共民俗层（概念层）",
+        "丰收感恩与 Dalahäst 文化象征（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Church-of-Sweden",
+        "https://www.visitdalarna.se/artikel/allt-om-midsommar-i-dalarna",
+        "https://www.visitdalarna.se/artikel/midsommardrommen-vantar",
+        "https://webbshop.nordiskamuseet.se/collections/dalahastar"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Church-of-Sweden"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "emilian-folk",
+      "title": "艾米利亚民间天主教与朝圣祈福（Emilian）",
+      "rituals": [
+        "Madonna di San Luca 拱廊朝圣（概念层）",
+        "San Geminiano／Sant’Ilario 主保巡游（概念层）",
+        "Ex-voto 还愿与家庭祈祷（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://emiliaromagnaturismo.it/it/arte-cultura/citta-darte/bologna-portici",
+        "https://emiliaromagnaturismo.it/it/itinerari/siti-unesco-a-bologna-e-modena",
+        "https://dati.beniculturali.it/lodview-arco/resource/ArchitecturalOrLandscapeHeritage/0800241610"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "ewe-traditional",
+      "title": "埃维族传统信仰与霍格贝措索节祈福（Ewe）",
+      "rituals": [
+        "Anloga Hogbetsotso 与 Agbadza／Misego（公共层）",
+        "世系祖先、Zikpui 凳子倾奠（高度敏感，仅概念）",
+        "Mawu、tro／vodu 与日常护佑叙事（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Ewe-people",
+        "https://visitghana.com/hogbetsotso-za-festival/",
+        "https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-62640.pdf",
+        "https://ich.unesco.org/doc/src/45516-FR.pdf?t=1568629329",
+        "https://ich.unesco.org/es/-00973?photoID=00236"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Ewe-people"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "fulani-peul",
+      "title": "富拉尼／颇尔牧养祝福传统（Fulani／Peul／Fulɓe）",
+      "rituals": [
+        "尼日尔内陆三角洲渡河与牧群选美（公开遗产层）",
+        "牧养伦理与 pulaaku（概念层）",
+        "Tabaski 等高阶伊斯兰节日与牧民祝福观（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Fulani",
+        "https://ich.unesco.org/en/RL/cultural-space-of-the-yaaral-and-degal-00132",
+        "https://hdl.handle.net/1808/5816",
+        "https://ich.unesco.org/en/projects/safeguarding-action-plan-of-yaaral-and-degal-00037"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Fulani"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "ga-traditional",
+      "title": "加族传统信仰与霍莫沃节祈福（Ga）",
+      "rituals": [
+        "Homowo、Kpokpoi 抛洒与 Wulomo 禁鼓（公共＋概念层）",
+        "城镇凳子概念、神灵层级与倾奠（高度敏感，仅概念）",
+        "生命礼仪与公共讽谏舞（部分城镇）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Ga",
+        "https://carleton.ca/africanstudies/wp-content/uploads/Ga-People-and-Homowo-Festival.pdf",
+        "https://visitghana.com/homowo-festival/",
+        "https://doi.org/10.38159/ehass.2022386",
+        "https://doi.org/10.1080/23311886.2024.2340427"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Ga"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "gagauz-traditional",
+      "title": "加告兹东正教与民间祈福传统（Gagauz）",
+      "rituals": [
+        "东正教圣礼与礼仪年（公共层）",
+        "平信徒家庭祈祷与护佑实践（概念层）",
+        "Hederlez／Kasım／Kurban 共食节日（公共层，献牲仅概念）"
+      ],
+      "current_urls": [
+        "https://doi.org/10.25501/soas.00029297",
+        "https://www.britannica.com/topic/Eastern-Orthodoxy",
+        "https://doi.org/10.65324/jgs001",
+        "https://old.gov.md/en/content/moldovan-pm-says-dialogue-mutual-respect-represent-foundation-stones-social-cohesion",
+        "https://invest.gov.md/wp-content/uploads/2024/06/EN_Agenda%20de%20Evenimente%202024.pdf"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Eastern-Orthodoxy"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "galician-folk",
+      "title": "加利西亚民间天主教与圣地亚哥朝圣祈福（Galician）",
+      "rituals": [
+        "圣地亚哥朝圣与 Botafumeiro（概念层）",
+        "Santa Marta de Ribarteme 假棺还愿游行与 San Andrés de Teixido（概念层）",
+        "海岸／乡村圣井与还愿（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Santiago-de-Compostela-pilgrimage",
+        "https://www.caminodesantiago.gal/es/descubre/origenes-y-evolucion/el-ano-santo-compostelano",
+        "https://www.turismo.gal/recurso/-/detalle/200312000146/romaria-de-santa-marta-de-ribarteme",
+        "https://blog.turismo.gal/san-andres-de-teixido-lugar-de-ritos-y-leyendas-acoge-una-nueva-romeria/",
+        "https://patrimoniogalego.net/index.php/2031/2011/06/amilladoiros-no-camino-a-san-andres-de-teixido/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Santiago-de-Compostela-pilgrimage"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "greek-folk",
+      "title": "希腊民间东正教与村社主保节祈福（Greek folk／Panigiri）",
+      "rituals": [
+        "Panigiri 与 Kourbani 共食（概念层）",
+        "Anastenaria 火上行走（公共民俗文化注记，非操作）",
+        "Athos 修道院朝圣命名（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Greek-Orthodox-Church",
+        "https://ayla.culture.gr/catalogue/ta-panigiria-tis-ikarias-2022/",
+        "https://ayla.culture.gr/catalogue/to-panigyri-tou-agiou-petrou-sta-spata/",
+        "https://ayla.culture.gr/6731-2/",
+        "https://archivecollections.visitgreece.gr/entities/multimedia/ea58cdf6-6b8c-4c99-9832-46dacf489541"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Greek-Orthodox-Church"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "greek-orthodox",
+      "title": "希腊正教祈福与圣水礼仪（Greek Orthodox）",
+      "rituals": [
+        "主显节大祝圣水／Agiasmos 与 Cross Diving（礼仪—公共层，概念）",
+        "家屋祝福（house blessing）（牧灵层，概念）",
+        "小祝圣水与日常堂区祈福（日常礼仪层，概念）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Epiphany",
+        "https://www.greeknewsagenda.gr/theophania/",
+        "https://www.goarch.org/-/the-order-for-the-lesser-sanctification-of-the-water",
+        "https://www.goarch.org/-/feast-of-the-holy-theophany-of-our-lord-god-and-savior-jesus-christ",
+        "https://ec-patr.org/en/21/02/00/00/the-sign-of-jonah-a-speech-delivered-by/",
+        "https://ec-patr.org/en/holy-temples/patriarchal-temple/schedule-of-divine-services/",
+        "https://holytrinity.ma.goarch.org/our-faith/special_services",
+        "https://chicago.goarch.org/blessing-of-the-waters-across-the-metropolis/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Epiphany"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "gutnish-folk",
+      "title": "哥特兰民间基督教与岛屿祈福（Gutnish／Gotland）",
+      "rituals": [
+        "路德宗礼拜与教会节期（概念层）",
+        "Kyrkoskepp 教堂还愿船与航海感恩（概念层）",
+        "Stångaspelen 仲夏民俗竞赛与公共民俗层（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Church-of-Sweden",
+        "https://gotland.com/stangaspelen/",
+        "https://www.svenskakyrkan.se/platser/679-visby-domkyrkoforsamling-visby-domkyrka-sankta-maria",
+        "https://www.svenskakyrkan.se/visbydomkyrka/besok-and-visningar"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Church-of-Sweden"
+      ],
+      "weak_domain_count": 1
+    },
+    {
+      "slug": "ibibio-traditional",
+      "title": "伊比比奥传统宗教与阿巴西—祖灵祈福（Ibibio）",
+      "rituals": [
+        "Abassi、祖灵神龛与 Isong 大地倾奠（概念层）",
+        "Ekpo 祖灵面具会社（高度敏感，仅概念；纠正旧称）",
+        "教会生活与木雕公共文化（公共层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Ibibio",
+        "https://www.britishmuseum.org/collection/object/E_Af1956-27-232",
+        "https://www.britishmuseum.org/collection/term/x83593",
+        "https://dx.doi.org/10.1179/nam.1978.26.3.271",
+        "https://doi.org/10.1080/10646175.2023.2264227"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Ibibio"
+      ],
+      "weak_domain_count": 1
+    }
+  ],
+  "prompt": "请为 Notebook source hunt C41 准备下一批 C 级祈福／祈祷仪式资料卡的联网来源搜寻。\n\n本轮是在 C40 来源清理已经应用之后，对 traditions/ 中全部 grade=C 卡片的「## 参考来源」重新计数；不得因为某卡曾出现在 C1–C40 的早期批次就排除它。仍含 britannica.com、encyclopedia.com 或 everyculture.com 的弱链接均须计入。\n\n当前 C 级卡片共 156 张，仍含弱链接的卡片共 55 张。\n\n选择规则：在全部仍含上述弱链接的 C 级卡片中，按弱链接数量从多到少排序；并列时按 slug 字母序排序；选择前 12 张。不要为了凑数选择无弱链接的卡片，也不要排除先前批次出现过的卡片。\n\n选择结果（按优先顺序）：\n1. croatian-folk（弱链接 1 条；当前来源 4 条）\n2. dalecarlian-folk（弱链接 1 条；当前来源 4 条）\n3. emilian-folk（弱链接 1 条；当前来源 4 条）\n4. ewe-traditional（弱链接 1 条；当前来源 5 条）\n5. fulani-peul（弱链接 1 条；当前来源 4 条）\n6. ga-traditional（弱链接 1 条；当前来源 5 条）\n7. gagauz-traditional（弱链接 1 条；当前来源 5 条）\n8. galician-folk（弱链接 1 条；当前来源 5 条）\n9. greek-folk（弱链接 1 条；当前来源 5 条）\n10. greek-orthodox（弱链接 1 条；当前来源 8 条）\n11. gutnish-folk（弱链接 1 条；当前来源 4 条）\n12. ibibio-traditional（弱链接 1 条；当前来源 5 条）\n\n逐卡当前来源（[WEAK] 表示待替换的弱链接）：\n\n### 1. croatian-folk — 克罗地亚民间天主教与朝圣—节庆祈福（Croatian）\n仪式：Marija Bistrica 圣母朝圣（概念层）；Sinjska Alka 与 Zvončari 等民俗节庆（概念层）；复活节祝福与家庭礼仪（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://ich.unesco.org/en/RL/sinjska-alka-a-knights-tournament-in-sinj-00357\n- https://min-kulture.gov.hr/?id=16460\n- https://visitmarija-bistrica.croatia.hr/hr-hr/dogadanja/ljeto-u-mariji-bistrici\n\n### 2. dalecarlian-folk — 达拉纳民间基督教与节期祈福（Dalecarlian／Dalarna）\n仪式：路德宗礼拜与 Kyrkbåtar 湖区教会记忆（概念层）；Midsommarstång 仲夏花柱等公共民俗层（概念层）；丰收感恩与 Dalahäst 文化象征（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Church-of-Sweden\n- https://www.visitdalarna.se/artikel/allt-om-midsommar-i-dalarna\n- https://www.visitdalarna.se/artikel/midsommardrommen-vantar\n- https://webbshop.nordiskamuseet.se/collections/dalahastar\n\n### 3. emilian-folk — 艾米利亚民间天主教与朝圣祈福（Emilian）\n仪式：Madonna di San Luca 拱廊朝圣（概念层）；San Geminiano／Sant’Ilario 主保巡游（概念层）；Ex-voto 还愿与家庭祈祷（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://emiliaromagnaturismo.it/it/arte-cultura/citta-darte/bologna-portici\n- https://emiliaromagnaturismo.it/it/itinerari/siti-unesco-a-bologna-e-modena\n- https://dati.beniculturali.it/lodview-arco/resource/ArchitecturalOrLandscapeHeritage/0800241610\n\n### 4. ewe-traditional — 埃维族传统信仰与霍格贝措索节祈福（Ewe）\n仪式：Anloga Hogbetsotso 与 Agbadza／Misego（公共层）；世系祖先、Zikpui 凳子倾奠（高度敏感，仅概念）；Mawu、tro／vodu 与日常护佑叙事（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Ewe-people\n- https://visitghana.com/hogbetsotso-za-festival/\n- https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-62640.pdf\n- https://ich.unesco.org/doc/src/45516-FR.pdf?t=1568629329\n- https://ich.unesco.org/es/-00973?photoID=00236\n\n### 5. fulani-peul — 富拉尼／颇尔牧养祝福传统（Fulani／Peul／Fulɓe）\n仪式：尼日尔内陆三角洲渡河与牧群选美（公开遗产层）；牧养伦理与 pulaaku（概念层）；Tabaski 等高阶伊斯兰节日与牧民祝福观（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Fulani\n- https://ich.unesco.org/en/RL/cultural-space-of-the-yaaral-and-degal-00132\n- https://hdl.handle.net/1808/5816\n- https://ich.unesco.org/en/projects/safeguarding-action-plan-of-yaaral-and-degal-00037\n\n### 6. ga-traditional — 加族传统信仰与霍莫沃节祈福（Ga）\n仪式：Homowo、Kpokpoi 抛洒与 Wulomo 禁鼓（公共＋概念层）；城镇凳子概念、神灵层级与倾奠（高度敏感，仅概念）；生命礼仪与公共讽谏舞（部分城镇）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Ga\n- https://carleton.ca/africanstudies/wp-content/uploads/Ga-People-and-Homowo-Festival.pdf\n- https://visitghana.com/homowo-festival/\n- https://doi.org/10.38159/ehass.2022386\n- https://doi.org/10.1080/23311886.2024.2340427\n\n### 7. gagauz-traditional — 加告兹东正教与民间祈福传统（Gagauz）\n仪式：东正教圣礼与礼仪年（公共层）；平信徒家庭祈祷与护佑实践（概念层）；Hederlez／Kasım／Kurban 共食节日（公共层，献牲仅概念）\n当前来源：\n- https://doi.org/10.25501/soas.00029297\n- [WEAK] https://www.britannica.com/topic/Eastern-Orthodoxy\n- https://doi.org/10.65324/jgs001\n- https://old.gov.md/en/content/moldovan-pm-says-dialogue-mutual-respect-represent-foundation-stones-social-cohesion\n- https://invest.gov.md/wp-content/uploads/2024/06/EN_Agenda%20de%20Evenimente%202024.pdf\n\n### 8. galician-folk — 加利西亚民间天主教与圣地亚哥朝圣祈福（Galician）\n仪式：圣地亚哥朝圣与 Botafumeiro（概念层）；Santa Marta de Ribarteme 假棺还愿游行与 San Andrés de Teixido（概念层）；海岸／乡村圣井与还愿（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Santiago-de-Compostela-pilgrimage\n- https://www.caminodesantiago.gal/es/descubre/origenes-y-evolucion/el-ano-santo-compostelano\n- https://www.turismo.gal/recurso/-/detalle/200312000146/romaria-de-santa-marta-de-ribarteme\n- https://blog.turismo.gal/san-andres-de-teixido-lugar-de-ritos-y-leyendas-acoge-una-nueva-romeria/\n- https://patrimoniogalego.net/index.php/2031/2011/06/amilladoiros-no-camino-a-san-andres-de-teixido/\n\n### 9. greek-folk — 希腊民间东正教与村社主保节祈福（Greek folk／Panigiri）\n仪式：Panigiri 与 Kourbani 共食（概念层）；Anastenaria 火上行走（公共民俗文化注记，非操作）；Athos 修道院朝圣命名（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Greek-Orthodox-Church\n- https://ayla.culture.gr/catalogue/ta-panigiria-tis-ikarias-2022/\n- https://ayla.culture.gr/catalogue/to-panigyri-tou-agiou-petrou-sta-spata/\n- https://ayla.culture.gr/6731-2/\n- https://archivecollections.visitgreece.gr/entities/multimedia/ea58cdf6-6b8c-4c99-9832-46dacf489541\n\n### 10. greek-orthodox — 希腊正教祈福与圣水礼仪（Greek Orthodox）\n仪式：主显节大祝圣水／Agiasmos 与 Cross Diving（礼仪—公共层，概念）；家屋祝福（house blessing）（牧灵层，概念）；小祝圣水与日常堂区祈福（日常礼仪层，概念）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Epiphany\n- https://www.greeknewsagenda.gr/theophania/\n- https://www.goarch.org/-/the-order-for-the-lesser-sanctification-of-the-water\n- https://www.goarch.org/-/feast-of-the-holy-theophany-of-our-lord-god-and-savior-jesus-christ\n- https://ec-patr.org/en/21/02/00/00/the-sign-of-jonah-a-speech-delivered-by/\n- https://ec-patr.org/en/holy-temples/patriarchal-temple/schedule-of-divine-services/\n- https://holytrinity.ma.goarch.org/our-faith/special_services\n- https://chicago.goarch.org/blessing-of-the-waters-across-the-metropolis/\n\n### 11. gutnish-folk — 哥特兰民间基督教与岛屿祈福（Gutnish／Gotland）\n仪式：路德宗礼拜与教会节期（概念层）；Kyrkoskepp 教堂还愿船与航海感恩（概念层）；Stångaspelen 仲夏民俗竞赛与公共民俗层（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Church-of-Sweden\n- https://gotland.com/stangaspelen/\n- https://www.svenskakyrkan.se/platser/679-visby-domkyrkoforsamling-visby-domkyrka-sankta-maria\n- https://www.svenskakyrkan.se/visbydomkyrka/besok-and-visningar\n\n### 12. ibibio-traditional — 伊比比奥传统宗教与阿巴西—祖灵祈福（Ibibio）\n仪式：Abassi、祖灵神龛与 Isong 大地倾奠（概念层）；Ekpo 祖灵面具会社（高度敏感，仅概念；纠正旧称）；教会生活与木雕公共文化（公共层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Ibibio\n- https://www.britishmuseum.org/collection/object/E_Af1956-27-232\n- https://www.britishmuseum.org/collection/term/x83593\n- https://dx.doi.org/10.1179/nam.1978.26.3.271\n- https://doi.org/10.1080/10646175.2023.2264227\n\n对每个选中 slug 给出 2–4 条新的、公开可核验的 URL，并附一句中文说明覆盖内容与可信度理由。来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。\n\n明确禁止：Britannica 地点（/place/）或泛概览页及其他 Britannica 泛概览、encyclopedia.com、everyculture.com、Wikipedia 或任何 wiki 概览页、101lasttribes／joshuaproject 等部族目录页、与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。硬性要求：URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或 SOURCES.md 已有 URL 重复；宁缺毋滥；只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n输出格式：\nslug:\n建议新增 URL（每行一条，附一句中文说明）：\n- <URL> — <说明>\n",
+  "prompt_constraints": [
+    "不因 C1–C40 曾处理过而排除卡片；遗留弱链接仍计数。",
+    "按弱链接数量降序、slug 字母序选择前 12 张。",
+    "禁止 Britannica 地点／泛概览、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页与离题泛泛报告。",
+    "只补来源，不改卡片正文、档位或仪式内容；URL、DOI、网页与 PDF 均须公开可核验。"
+  ],
+  "remaining_estimate": 55,
+  "source_map": "/tmp/nb-source-hunt-c41.txt",
+  "input_url_count": 0,
+  "input_unique_url_count": 0
+}

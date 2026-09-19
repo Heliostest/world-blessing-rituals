@@ -48,7 +48,8 @@
 ## 参考来源
 
 - https://ich.unesco.org/en/RL/baul-songs-00107
-- https://www.britannica.com/art/Baul
 - https://www.unesco.org/archives/multimedia/document-612
 - https://ich.unesco.org/en/photo-pop-up-00973?photoID=00147
 - https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047
+- https://journal.diri.org.bd/index.php/DIRJ/article/view/12
+- https://i-proclaim.my/journals/index.php/ajhal/article/view/350

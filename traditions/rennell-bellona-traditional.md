@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Rennell-Island
-- https://www.britannica.com/place/Bellona-Island
-- https://www.britannica.com/place/Solomon-Islands
+- https://doi.org/10.1017/ehs.2024.45
+- https://doi.org/10.5070/SD961017971
+- https://openresearch-repository.anu.edu.au/bitstream/1885/145227/1/PL-C72.pdf

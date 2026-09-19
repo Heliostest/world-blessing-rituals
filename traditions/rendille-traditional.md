@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Rendille
-- https://www.britannica.com/place/Kenya
-- https://www.britannica.com/place/Lake-Turkana
+- https://doi.org/10.37425/cfn92y70
+- https://doi.org/10.1080/17531055.2011.544542
+- https://api.taylorfrancis.com/content/chapters/oa-edit/download?identifierName=doi&identifierValue=10.4324/9781003290896-6&type=chapterpdf

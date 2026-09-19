@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/topic/Satere-Mawe
 - https://www.britannica.com/topic/guarana
-- https://www.britannica.com/place/Amazon-Rainforest
+- https://www.scielo.br/j/bgoeldi/a/C4LL4YppwFDcYJsVHgMTbjj/?lang=pt
+- https://www.scielo.br/j/hcsm/a/3KdTYZHGYtFmkvCMBxwpmCC/?lang=pt
+- https://doi.org/10.116306/T.8.2018.tde-13122018-163358

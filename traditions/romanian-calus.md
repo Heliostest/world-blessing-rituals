@@ -50,3 +50,5 @@
 - https://ich.unesco.org/en/RL/calus-ritual-00090
 - https://www.cultura.ro/unesco/
 - https://www.cnr-unesco.ro/uploads/media/f782__2023-patrimoniu-imaterial-engl.pdf
+- https://traditiivii.ro/en/domains/joc/ritualul-calusului/
+- https://doi.org/10.1086/462721

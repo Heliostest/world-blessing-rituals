@@ -1,0 +1,208 @@
+{
+  "batch": "notebook-source-hunt-c24",
+  "cycle": 24,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 secoya-traditional 后按字母序续选，排除 C1–C23 已处理 slug 及已补强卡片；不以 4+ 来源卡填充，不用已良好卡片凑数",
+  "previous_cycles_slugs_processed": 275,
+  "slugs": [
+    "selkup-traditional",
+    "sena-traditional",
+    "senufo-traditional",
+    "seri-comcaac-traditional",
+    "shambaa-traditional",
+    "sharanahua-traditional",
+    "sherdukpen-traditional",
+    "sherpa-buddhist",
+    "shilluk-traditional",
+    "shipibo-konibo",
+    "shor-traditional",
+    "shuar-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "selkup-traditional",
+      "title": "塞尔库普传统信仰与圣树—萨满祈福（Selkup）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/selkup",
+        "https://atlaskmns.ru/page/en/people_selcupy_spirit.html",
+        "https://www.britannica.com/topic/Samoyed"
+      ],
+      "rituals": [
+        "1. 圣树与三界宇宙敬礼（概念层）",
+        "2. 生命老妇相关生命关口叙事（概念层）",
+        "3. 萨满疗愈与鸟至节歌（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "sena-traditional",
+      "title": "塞纳传统信仰与赞比西—祖灵祈福（Sena）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sena-people",
+        "https://www.britannica.com/place/Zambezi-River",
+        "https://www.britannica.com/place/Mozambique"
+      ],
+      "rituals": [
+        "1. 祖先敬礼（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 河流—农事伦理（概念层）"
+      ]
+    },
+    {
+      "slug": "senufo-traditional",
+      "title": "塞努福人传统信仰与波洛会社概观（Senufo）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Senufo",
+        "https://www.britannica.com/art/African-art/Senufo",
+        "https://www.metmuseum.org/en/essays/senufo-arts-and-poro-initiation-in-northern-cote-divoire"
+      ],
+      "rituals": [
+        "1. Poro 入会与圣林教育（极度敏感，仅概念）",
+        "2. 葬礼与会社艺术的公共可见层（敏感，仅概念）",
+        "3. 农事村落与日常祈请叙事（概念层）"
+      ]
+    },
+    {
+      "slug": "seri-comcaac-traditional",
+      "title": "塞里／科姆卡克传统信仰与海陆祈福（Seri／Comcaac）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Seri-people",
+        "https://www.britannica.com/place/Sonora",
+        "https://www.britannica.com/place/Gulf-of-California"
+      ],
+      "rituals": [
+        "1. 海洋—沙漠生计伦理（概念层）",
+        "2. 歌咏与仪式知识（极高敏感，仅概念）",
+        "3. 与基督教／国家社会的接触（概念层）"
+      ]
+    },
+    {
+      "slug": "shambaa-traditional",
+      "title": "尚巴阿传统信仰与乌桑巴拉祈福（Shambaa／Shambala）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Shambaa",
+        "https://www.britannica.com/place/Usambara-Mountains",
+        "https://www.britannica.com/place/Tanzania"
+      ],
+      "rituals": [
+        "1. 祖先敬礼（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 山地农事感恩（概念层）"
+      ]
+    },
+    {
+      "slug": "sharanahua-traditional",
+      "title": "沙拉纳瓦传统信仰与乌卡亚利祈福（Sharanahua）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Peru",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "rituals": [
+        "1. 村落互惠（敏感，仅概念）",
+        "2. 护佑传统（极高敏感，仅概念）",
+        "3. 权利当代层（公开层）"
+      ]
+    },
+    {
+      "slug": "sherdukpen-traditional",
+      "title": "舍杜克彭传统信仰与藏传佛教—地方灵祈福（Sherdukpen）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Arunachal-Pradesh",
+        "https://www.britannica.com/topic/Tibetan-Buddhism",
+        "https://en.wikipedia.org/wiki/Donyi-Polo"
+      ],
+      "rituals": [
+        "1. 藏传佛教寺院实践（概念层）",
+        "2. 地方灵与村社礼仪（概念层）",
+        "3. 生命礼仪（概念层）"
+      ]
+    },
+    {
+      "slug": "sherpa-buddhist",
+      "title": "夏尔巴宁玛派佛教与山神祈福（Sherpa）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.everyculture.com/wc/Mauritania-to-Nigeria/Sherpas.html",
+        "https://www.britannica.com/topic/Sherpa-people",
+        "https://www.britannica.com/topic/Nyingma"
+      ],
+      "rituals": [
+        "1. 寺院礼佛与节庆（概念层）",
+        "2. 山神与氏族保护峰敬礼（概念层）",
+        "3. 地方通灵／占卜角色（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "shilluk-traditional",
+      "title": "希卢克传统宗教与神圣王权祈福（Shilluk）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Shilluk",
+        "https://www.britannica.com/topic/divine-kingship",
+        "https://www.britannica.com/place/South-Sudan"
+      ],
+      "rituals": [
+        "1. 尼康与祖先王记忆敬礼（概念层）",
+        "2. 河流—牧耕周期祈请（概念层）",
+        "3. 基督教并行与当代调适（概念层）"
+      ]
+    },
+    {
+      "slug": "shipibo-konibo",
+      "title": "希皮博—科尼博（Shipibo-Konibo）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://bdpi.cultura.gob.pe/pueblos/shipibo-konibo",
+        "https://americanindian.si.edu/exhibitions/infinityofnations/amazon/239608.html",
+        "https://digitalcommons.trinity.edu/tipiti/vol4/iss1/5/"
+      ],
+      "rituals": [
+        "1. kené 设计与宇宙可视化（公共文化层）",
+        "2. 治疗职分与植物知识（限制性概念层）",
+        "3. 河流—森林领地与城市离散（当代伦理层）"
+      ]
+    },
+    {
+      "slug": "shor-traditional",
+      "title": "绍尔人传统信仰与萨满祈福（Shor）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/fight-preserve-shor-culture",
+        "https://factsanddetails.com/world/cat55/sub350/item1919.html",
+        "https://www.britannica.com/place/Siberia"
+      ],
+      "rituals": [
+        "1. 自然主人灵祈请（概念层）",
+        "2. 萨满中介与口述史诗（高度敏感，仅概念）",
+        "3. 东正教与民俗双信仰（公共／当代层）"
+      ]
+    },
+    {
+      "slug": "shuar-traditional",
+      "title": "舒阿尔／阿鲁塔姆与亚马孙祈福传统（Shuar）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://flacso.edu.ec/lenguas-culturas/lenguas/shuar-chicham/general-information/?lang=en",
+        "https://cultureandmind.sites.sheffield.ac.uk/fieldsites/shuar",
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/meeting-arutam"
+      ],
+      "rituals": [
+        "1. 园地与 Nunkui 相关农艺敬礼（公共文化层）",
+        "2. Arútam 异象寻求（高度敏感，仅概念）",
+        "3. 萨满疗愈与教会生活并存（部分敏感）"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／朝圣页、博物馆／民俗档案、学术 DOI 或民族志。",
+    "不要采用 Britannica /place/、encyclopedia.com 总览、everyculture.com 总览或 Wikipedia 总览；不要改档位或写操演步骤。",
+    "如搜不到足够强来源，写明检索关键词，不要用弱来源填充。"
+  ]
+}

@@ -48,5 +48,8 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Salar
-- https://www.britannica.com/place/Qinghai
 - https://www.britannica.com/topic/Islam
+- https://www.ihchina.cn/project_details/12395/
+- https://www.ihchina.cn/project_details/15033/
+- https://www.ihchina.cn/project_details/12798/
+- https://doi.org/10.1017/S1356186322000773

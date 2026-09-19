@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Mbeya
-- https://www.britannica.com/place/Tanzania
 - https://www.britannica.com/topic/East-African-lakes
+- https://doi.org/10.47191/IJSSHR/V9-I2-69
+- https://commons.udsm.ac.tz/cgi/viewcontent.cgi?article=1026&context=zjahs

@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Rotuma
-- https://www.britannica.com/place/Fiji
 - https://www.britannica.com/topic/Polynesian-culture
+- http://www.hawaii.edu/oceanic/rotuma/os/howsel/31music.htm
+- https://www.hawaii.edu/oceanic/rotuma/os/ceremonies/funerals.htm
+- https://www.hawaii.edu/oceanic/rotuma/os/MacGregor/McHanlepherua.html

@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Sandawe
-- https://www.britannica.com/place/Tanzania
 - https://www.britannica.com/topic/Khoisan-languages
+- https://doi.org/10.1073/pnas.1817678116
+- https://doi.org/10.3828/hgr.2015.18

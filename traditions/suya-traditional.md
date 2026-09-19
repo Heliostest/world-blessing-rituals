@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
+- https://pib.socioambiental.org/pt/Povo:Khis%C3%AAtj%C3%AA
+- https://www.scielo.br/j/ccrh/a/sQyn8b4TKPSbSrvNsrv9QFk/?format=html&lang=pt
+- https://dx.doi.org/10.1098/rstb.2012.0164
 - https://www.britannica.com/topic/Xinguanos
-- https://www.britannica.com/place/Xingu-River
-- https://www.britannica.com/place/Brazil

@@ -46,7 +46,9 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
+- https://books.openedition.org/pacific/492
+- https://journals.openedition.org/jso/2592
+- https://journals.openedition.org/viatourism/10694
 - https://whc.unesco.org/en/list/1529/
 - https://www.britannica.com/topic/marae
 - https://paulturnbull.org/project/southseas/biogs/P000309b.htm

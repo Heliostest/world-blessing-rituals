@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
+- https://journals.openedition.org/etudesafricaines/1465
+- https://doi.org/10.1108/01443330610710278
+- https://journals.openedition.org/articulo/2535
 - https://www.britannica.com/topic/Susu
-- https://www.britannica.com/place/Guinea
-- https://www.britannica.com/place/Conakry

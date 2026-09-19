@@ -3517,3 +3517,37 @@
 - https://www.metmuseum.org/art/collection/search/314366
 - https://www.metmuseum.org/art/collection/search/314304
 - https://journals.openedition.org/terrain/2718
+
+## 增补传统（Notebook source hunt C26：苏米—唐萨）
+
+- https://ipr.nagaland.gov.in/sumi
+- https://tourism.nagaland.gov.in/events/tuluni-festival/
+- https://ipr.nagaland.gov.in/AHUNA-FESTIVAL-CELEBRATED-AT-ZUNHEBOTO
+- https://doi.org/10.5871/bacad/9780197265765.003.0009
+- https://doi.org/10.1371/journal.pone.0249345
+- https://www.marena.gob.ni/Enderedd/wp-content/uploads/2020/12/4_Marco-de-Procesos_ERPNIC-16-nov2020.pdf
+- https://doi.org/10.47310/iarjhss.2022.v03i01.033
+- https://nepjol.info/index.php/jodem/article/download/34813/27332/101513
+- https://www.nepjol.info/index.php/gipan/article/view/48915/36491
+- https://pib.socioambiental.org/en/Povo:Surui_Paiter
+- https://www.scielo.br/j/vb/a/5WvkttmB6QQzL4r8TZC9yrN/?lang=pt
+- https://doi.org/10.11606/9786587936048
+- https://journals.openedition.org/etudesafricaines/1465
+- https://doi.org/10.1108/01443330610710278
+- https://journals.openedition.org/articulo/2535
+- https://pib.socioambiental.org/pt/Povo:Khis%C3%AAtj%C3%AA
+- https://www.scielo.br/j/ccrh/a/sQyn8b4TKPSbSrvNsrv9QFk/?format=html&lang=pt
+- https://books.openedition.org/pacific/492
+- https://journals.openedition.org/jso/2592
+- https://journals.openedition.org/viatourism/10694
+- https://doi.org/10.4000/13mzs
+- https://www.nepjol.info/index.php/mjecs/article/view/61685
+- https://www.nepjol.info/index.php/litstud/article/view/63006
+- https://www.metmuseum.org/exhibitions/arts-of-oceania/inside-the-exhibition
+- https://www.britishmuseum.org/collection/object/E_Oc-5882_1
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/d9965705-135f-49ad-88d0-73cb17fad22d/content
+- https://doi.org/10.55863/ijees.2024.0057
+- https://doi.org/10.1080/00856401.2017.1319145
+- https://doi.org/10.69980/vgat6s14
+- https://doi.org/10.1093/oso/9780199472598.003.0007
+- https://doi.org/10.1080/14631369.2015.1091271

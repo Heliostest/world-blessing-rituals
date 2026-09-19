@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Manipur
+- https://doi.org/10.55863/ijees.2024.0057
+- https://doi.org/10.1080/00856401.2017.1319145
 - https://www.britannica.com/topic/Naga-people
-- https://www.britannica.com/place/Northeast-India

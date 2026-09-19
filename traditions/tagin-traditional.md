@@ -46,7 +46,4 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://en.wikipedia.org/wiki/Tagin_people
-- https://en.wikipedia.org/wiki/Donyi-Polo
-- https://www.britannica.com/place/Arunachal-Pradesh
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf

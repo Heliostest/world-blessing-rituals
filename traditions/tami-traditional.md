@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Papua-New-Guinea
-- https://www.britannica.com/place/Huon-Gulf
+- https://www.metmuseum.org/exhibitions/arts-of-oceania/inside-the-exhibition
+- https://www.britishmuseum.org/collection/object/E_Oc-5882_1
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/d9965705-135f-49ad-88d0-73cb17fad22d/content
 - https://www.britannica.com/topic/Melanesian-culture

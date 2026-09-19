@@ -46,7 +46,6 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Rondonia
-- https://www.britannica.com/place/Amazon-Rainforest
-- https://www.britannica.com/place/Brazil
+- https://pib.socioambiental.org/en/Povo:Surui_Paiter
+- https://www.scielo.br/j/vb/a/5WvkttmB6QQzL4r8TZC9yrN/?lang=pt
+- https://doi.org/10.11606/9786587936048

@@ -46,7 +46,8 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
+- https://doi.org/10.4000/13mzs
+- https://www.nepjol.info/index.php/mjecs/article/view/61685
+- https://www.nepjol.info/index.php/litstud/article/view/63006
 - https://www.britannica.com/topic/Tamang
-- https://www.britannica.com/place/Nepal
 - https://www.britannica.com/topic/Nyingma

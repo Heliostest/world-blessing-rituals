@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Nagaland
 - https://www.britannica.com/topic/Naga-people
-- https://www.britannica.com/place/Northeast-India
+- https://ipr.nagaland.gov.in/NGADA-FESTIVAL-CUM-MINI-HORNBILL-CELEBRATED-AT-TSEMINYU
+- https://tourism.nagaland.gov.in/tribes/
+- https://dx.doi.org/10.14318/hau5.2.031
+- https://doi.org/10.47191/ijsshr/v8-i5-30

@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Secoya
-- https://www.britannica.com/place/Napo-River
-- https://www.britannica.com/place/Amazon-Rainforest
+- https://doi.org/10.52980/revistaamazonaperuana.vi15.179
+- https://doi.org/10.3390/land8120182
+- https://journals.openedition.org/horizontes/4647

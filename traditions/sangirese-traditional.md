@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Sangihe-Islands
-- https://www.britannica.com/place/North-Sulawesi
 - https://www.britannica.com/topic/Protestantism
+- https://kemlu.go.id/davaocity/berita/budaya-indonesia-sukses-mencuri-perhatian-masyarakat-filipina-dengan-perayaan-adat-sangihe-tulude?type=publication
+- https://doi.org/10.21744/lingcure.v5nS1.1441
+- https://www.indonesia.travel/gb/en/destination/sulawesi/north-sulawesi/rumah-adat-sangihe-talaud

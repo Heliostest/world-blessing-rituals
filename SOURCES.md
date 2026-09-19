@@ -3419,3 +3419,39 @@
 - https://www.mona.uwi.edu/marcom/uwinotebook/entry/3190
 - https://doi.org/10.1590/1678-49442024v30n3e2024032.pt
 - https://doi.org/10.1590/S0104-71832022000200009
+
+## 增补传统（Notebook source hunt C23：伦迪勒—塞科亚）
+
+- https://doi.org/10.37425/cfn92y70
+- https://doi.org/10.1080/17531055.2011.544542
+- https://api.taylorfrancis.com/content/chapters/oa-edit/download?identifierName=doi&identifierValue=10.4324/9781003290896-6&type=chapterpdf
+- https://ipr.nagaland.gov.in/NGADA-FESTIVAL-CUM-MINI-HORNBILL-CELEBRATED-AT-TSEMINYU
+- https://dx.doi.org/10.14318/hau5.2.031
+- https://doi.org/10.47191/ijsshr/v8-i5-30
+- https://doi.org/10.5070/SD961017971
+- https://openresearch-repository.anu.edu.au/bitstream/1885/145227/1/PL-C72.pdf
+- https://traditiivii.ro/en/domains/joc/ritualul-calusului/
+- https://doi.org/10.1086/462721
+- http://www.hawaii.edu/oceanic/rotuma/os/howsel/31music.htm
+- https://www.hawaii.edu/oceanic/rotuma/os/ceremonies/funerals.htm
+- https://www.hawaii.edu/oceanic/rotuma/os/MacGregor/McHanlepherua.html
+- https://doi.org/10.47191/IJSSHR/V9-I2-69
+- https://commons.udsm.ac.tz/cgi/viewcontent.cgi?article=1026&context=zjahs
+- https://doi.org/10.1080/13629387.2011.610591
+- https://doi.org/10.3390/past.2024.13600
+- https://doi.org/10.1080/10464883.2023.2233386
+- https://www.ihchina.cn/project_details/12395/
+- https://www.ihchina.cn/project_details/15033/
+- https://www.ihchina.cn/project_details/12798/
+- https://doi.org/10.1017/S1356186322000773
+- https://doi.org/10.1073/pnas.1817678116
+- https://doi.org/10.3828/hgr.2015.18
+- https://kemlu.go.id/davaocity/berita/budaya-indonesia-sukses-mencuri-perhatian-masyarakat-filipina-dengan-perayaan-adat-sangihe-tulude?type=publication
+- https://doi.org/10.21744/lingcure.v5nS1.1441
+- https://www.indonesia.travel/gb/en/destination/sulawesi/north-sulawesi/rumah-adat-sangihe-talaud
+- https://www.scielo.br/j/bgoeldi/a/C4LL4YppwFDcYJsVHgMTbjj/?lang=pt
+- https://www.scielo.br/j/hcsm/a/3KdTYZHGYtFmkvCMBxwpmCC/?lang=pt
+- https://doi.org/10.116306/T.8.2018.tde-13122018-163358
+- https://doi.org/10.52980/revistaamazonaperuana.vi15.179
+- https://doi.org/10.3390/land8120182
+- https://journals.openedition.org/horizontes/4647

@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Sahrawi
-- https://www.britannica.com/place/Western-Sahara
 - https://www.britannica.com/topic/Islam
+- https://doi.org/10.1080/13629387.2011.610591
+- https://doi.org/10.3390/past.2024.13600
+- https://doi.org/10.1080/10464883.2023.2233386

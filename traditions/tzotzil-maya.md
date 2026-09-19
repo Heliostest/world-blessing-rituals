@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.everyculture.com/Middle-America-Caribbean/Tzotzil-of-Chamula-Religion-and-Expressive-Culture.html
-- https://www.everyculture.com/Middle-America-Caribbean/Tzotzil-of-Zinacantan-Religion-and-Expressive-Culture.html
-- https://www.britannica.com/topic/Tzotzil
+- https://doi.org/10.1525/can.1993.8.4.02a00030
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742009000100006
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-41152011000100218
+- https://journals.openedition.org/jsa/13456

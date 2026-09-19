@@ -50,3 +50,7 @@
 - https://edspace.american.edu/silkroadjournal/wp-content/uploads/sites/984/2017/09/Shrine-Pilgrimage-Among-the-Uighurs.pdf
 - https://journal.fi/scripta/article/view/67364
 - https://doi.org/10.1080/09681220208567330
+- https://journals.openedition.org/chinaperspectives/9358
+- https://journals.openedition.org/sextant/782
+- https://doi.org/10.1017/S1356186322000773
+- https://doi.org/10.1080/01419870.2020.1856904

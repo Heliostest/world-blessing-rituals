@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/history/asia-and-africa/southern-african-history/venda
 - https://era.anthropology.ac.uk/Era_Resources/Era/VendaGirls/Definitions/DefDomba.html
-- https://www.britannica.com/topic/Mwari
+- https://doi.org/10.3390/heritage4040249
+- https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2018000200006
+- https://doi.org/10.1080/00020189208707757
+- https://journals.openedition.org/ethnomusicologie/2849

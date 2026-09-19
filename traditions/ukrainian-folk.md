@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Eastern-Orthodoxy
-- https://www.britannica.com/place/Ukraine
-- https://www.britannica.com/topic/Slavic-religion
+- https://ich.unesco.org/en/RL/pysanka-ukrainian-tradition-and-art-of-decorating-eggs-02134
+- https://doi.org/10.1163/9789004688810_005
+- https://doi.org/10.59277/jef.2025.1-2.10
+- https://journals.openedition.org/ethnoecologie/3388

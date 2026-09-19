@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://sacredart.caaar.duke.edu/religions/surinamese-and-dutch-winti/
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/afro-surinamese-religions
-- https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/winti-suriname
+- http://hdl.handle.net/1887.1/item:927762
+- https://hdl.handle.net/1887/3275069
+- https://www.kitlv.nl/news/winners-15th-subsidy-round-silvia-de-groot-fund/

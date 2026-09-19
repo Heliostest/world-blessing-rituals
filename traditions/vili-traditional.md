@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Vili
-- https://www.britannica.com/place/Loango
-- https://www.britannica.com/place/Republic-of-the-Congo
+- https://africanarchive.org/en/staemme/kongo-vili
+- https://doi.org/10.1017/9781108564823
+- https://doi.org/10.1080/10609164.2013.792067

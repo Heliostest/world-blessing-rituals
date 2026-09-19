@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Arunachal-Pradesh
-- https://www.britannica.com/place/Northeast-India
-- https://www.britannica.com/topic/Naga-people
+- http://longding.nic.in
+- https://unicode.org/charts/PDF/U11E00.pdf
+- https://doi.org/10.1007/978-981-15-5370-7

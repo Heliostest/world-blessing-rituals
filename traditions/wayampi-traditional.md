@@ -47,6 +47,5 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/French-Guiana
-- https://www.britannica.com/place/Amazon-Rainforest
-- https://www.britannica.com/topic/South-American-Indian
+- https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-the-traditional-knowledge-oral-and-graphic-expressions-of-the-wajapi-in-amapa-00056
+- https://ich.unesco.org/doc/src/62107.pdf?t=1699223351

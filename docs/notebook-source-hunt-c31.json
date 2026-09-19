@@ -33,7 +33,23 @@
         "1. 祖先敬礼（概念层）",
         "2. 教堂崇拜（概念层）",
         "3. 海岸文化节认同（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://africanarchive.org/en/staemme/kongo-vili",
+        "https://doi.org/10.1017/9781108564823",
+        "https://doi.org/10.1080/10609164.2013.792067"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Vili",
+        "https://www.britannica.com/place/Loango",
+        "https://www.britannica.com/place/Republic-of-the-Congo"
+      ],
+      "final_urls": [
+        "https://africanarchive.org/en/staemme/kongo-vili",
+        "https://doi.org/10.1017/9781108564823",
+        "https://doi.org/10.1080/10609164.2013.792067"
+      ],
+      "final_source_count": 3
     },
     {
       "slug": "wa-traditional",
@@ -48,7 +64,25 @@
         "1. 木鼓相关公共文化节庆（当代公共层）",
         "2. 家屋祖神与生命礼仪（部分敏感）",
         "3. 佛教／基督教与生态习惯法（公共／当代层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.1177/21582440221117806",
+        "https://doi.org/10.1177/0097700412445348",
+        "https://doi.org/10.1177/02557614221132550",
+        "https://doi.org/10.1080/17411912.2024.2339174"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/places/asia/chinese-political-geography/wa",
+        "https://www.britannica.com/place/Yunnan"
+      ],
+      "final_urls": [
+        "https://doi.org/10.2991/essaeme-17.2017.56",
+        "https://doi.org/10.1177/21582440221117806",
+        "https://doi.org/10.1177/0097700412445348",
+        "https://doi.org/10.1177/02557614221132550",
+        "https://doi.org/10.1080/17411912.2024.2339174"
+      ],
+      "final_source_count": 5
     },
     {
       "slug": "waiwai-traditional",
@@ -63,7 +97,23 @@
         "1. 村落与互惠伦理（敏感，仅概念）",
         "2. 护佑传统（极高敏感，仅概念）",
         "3. 基督教并存（公开层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.1590/s0103-4014.2024.38112.008",
+        "https://doi.org/10.1590/2178-2547-BGOELDI-2019-0140",
+        "https://doi.org/10.11606/issn.2316-9036.v11i2p503-547"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Guiana-Highlands",
+        "https://www.britannica.com/place/Guyana",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "final_urls": [
+        "https://doi.org/10.1590/s0103-4014.2024.38112.008",
+        "https://doi.org/10.1590/2178-2547-BGOELDI-2019-0140",
+        "https://doi.org/10.11606/issn.2316-9036.v11i2p503-547"
+      ],
+      "final_source_count": 3
     },
     {
       "slug": "wallis-futuna-traditional",
@@ -78,7 +128,23 @@
         "1. 天主教堂区礼仪与瞻礼（概念层）",
         "2. 卡瓦与酋长礼仪（敏感，仅概念）",
         "3. 村社互惠与生命礼仪（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.4000/jso.16161",
+        "https://doi.org/10.4000/jso.593",
+        "https://doi.org/10.3917/ethn.024.0637"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Wallis-and-Futuna",
+        "https://www.britannica.com/topic/kava",
+        "https://www.britannica.com/place/Polynesia"
+      ],
+      "final_urls": [
+        "https://doi.org/10.4000/jso.16161",
+        "https://doi.org/10.4000/jso.593",
+        "https://doi.org/10.3917/ethn.024.0637"
+      ],
+      "final_source_count": 3
     },
     {
       "slug": "wancho-traditional",
@@ -93,7 +159,23 @@
         "1. 基督教崇拜（概念层）",
         "2. 村寨节庆与认同展演（概念层）",
         "3. 传统信仰记忆（极高敏感，仅概念）"
-      ]
+      ],
+      "applied_urls": [
+        "http://longding.nic.in",
+        "https://unicode.org/charts/PDF/U11E00.pdf",
+        "https://doi.org/10.1007/978-981-15-5370-7"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Arunachal-Pradesh",
+        "https://www.britannica.com/place/Northeast-India",
+        "https://www.britannica.com/topic/Naga-people"
+      ],
+      "final_urls": [
+        "http://longding.nic.in",
+        "https://unicode.org/charts/PDF/U11E00.pdf",
+        "https://doi.org/10.1007/978-981-15-5370-7"
+      ],
+      "final_source_count": 3
     },
     {
       "slug": "waorani-traditional",
@@ -108,7 +190,25 @@
         "1. 森林伦理与亲属规范（敏感，仅概念）",
         "2. 生命礼仪（概念层）",
         "3. 基督教／城镇接触层（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/6677819/",
+        "https://frompoverty.oxfam.org.uk/maps-in-court-how-the-waorani-are-upholding-their-rights-in-ecuador/",
+        "https://waoresist.amazonfrontlines.org/explore/",
+        "https://pubmed.ncbi.nlm.nih.gov/22234246/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Huaorani",
+        "https://www.britannica.com/place/Ecuador",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "final_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/6677819/",
+        "https://frompoverty.oxfam.org.uk/maps-in-court-how-the-waorani-are-upholding-their-rights-in-ecuador/",
+        "https://waoresist.amazonfrontlines.org/explore/",
+        "https://pubmed.ncbi.nlm.nih.gov/22234246/"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "warao-traditional",
@@ -123,7 +223,25 @@
         "1. 祖先节庆与圣石敬礼（高度敏感，仅概念）",
         "2. 三类萨满职分叙事（高度敏感，禁止操作）",
         "3. 教会接触与当代权利（公共／当代层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.1086/jar.30.2.3629642",
+        "https://doi.org/10.1177/13591835211052463",
+        "https://doi.org/10.1371/journal.pone.0216302",
+        "https://doi.org/10.1007/978-3-032-09109-3_4"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/warao-religion",
+        "https://www.everyculture.com/South-America/Warao-Religion-and-Expressive-Culture.html",
+        "https://www.britannica.com/place/Orinoco-River"
+      ],
+      "final_urls": [
+        "https://doi.org/10.1086/jar.30.2.3629642",
+        "https://doi.org/10.1177/13591835211052463",
+        "https://doi.org/10.1371/journal.pone.0216302",
+        "https://doi.org/10.1007/978-3-032-09109-3_4"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "waura-traditional",
@@ -138,7 +256,25 @@
         "1. 仪式笛传统（极高敏感，仅概念）",
         "2. 村落互惠与命名伦理（敏感，仅概念）",
         "3. 土地与跨村落联盟（公开层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://peoplespalaceprojects.org.uk/en/projects/kamukuwaka-vr/",
+        "https://doi.org/10.14318/hau4.2.004",
+        "https://www.bbc.com/portuguese/brasil-45660301",
+        "https://www.scielo.br/j/bgoeldi/a/zmZrTNGrbKkNtXcyxr9hx4j/?format=pdf&lang=en"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Xinguanos",
+        "https://www.britannica.com/place/Xingu-River",
+        "https://www.britannica.com/place/Brazil"
+      ],
+      "final_urls": [
+        "https://peoplespalaceprojects.org.uk/en/projects/kamukuwaka-vr/",
+        "https://doi.org/10.14318/hau4.2.004",
+        "https://www.bbc.com/portuguese/brasil-45660301",
+        "https://www.scielo.br/j/bgoeldi/a/zmZrTNGrbKkNtXcyxr9hx4j/?format=pdf&lang=en"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "wayampi-traditional",
@@ -153,7 +289,21 @@
         "1. 村落互惠与彩绘公开层（敏感，仅概念）",
         "2. 护佑传统（极高敏感，仅概念）",
         "3. 土地与当代表述（公开层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-the-traditional-knowledge-oral-and-graphic-expressions-of-the-wajapi-in-amapa-00056",
+        "https://ich.unesco.org/doc/src/62107.pdf?t=1699223351"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/French-Guiana",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-the-traditional-knowledge-oral-and-graphic-expressions-of-the-wajapi-in-amapa-00056",
+        "https://ich.unesco.org/doc/src/62107.pdf?t=1699223351"
+      ],
+      "final_source_count": 2
     },
     {
       "slug": "wayana-traditional",
@@ -168,7 +318,23 @@
         "1. 成年礼传统（极高敏感，仅概念）",
         "2. 村落与河岸互惠（敏感，仅概念）",
         "3. 当代文化与权利表述（公开层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.megazap.fr/Le-musee-du-quai-Branly-Jacques-Chirac-en-partenariat-avec-le-musee-des-cultures-guyanaises-presentent-une-exposition_a5623.html",
+        "http://www.watau.fr",
+        "https://hdl.handle.net/1887/18153"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Guiana-Highlands",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/topic/South-American-Indian"
+      ],
+      "final_urls": [
+        "https://www.megazap.fr/Le-musee-du-quai-Branly-Jacques-Chirac-en-partenariat-avec-le-musee-des-cultures-guyanaises-presentent-une-exposition_a5623.html",
+        "http://www.watau.fr",
+        "https://hdl.handle.net/1887/18153"
+      ],
+      "final_source_count": 3
     },
     {
       "slug": "wichi-traditional",
@@ -183,7 +349,23 @@
         "1. 资源主灵与禁忌伦理（概念层）",
         "2. 萨满顾问与疗愈（高度敏感，仅概念）",
         "3. 教会崇拜与并行实践（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2077-33232023000100111",
+        "https://doi.org/10.1016/j.jep.2018.10.026",
+        "https://doi.org/10.4000/caravelle.2897"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mataco",
+        "https://www.britannica.com/place/Gran-Chaco"
+      ],
+      "final_urls": [
+        "https://www.diva-portal.org/smash/get/diva2:130447/FULLTEXT01.pdf",
+        "https://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2077-33232023000100111",
+        "https://doi.org/10.1016/j.jep.2018.10.026",
+        "https://doi.org/10.4000/caravelle.2897"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "winti",
@@ -198,7 +380,23 @@
         "1. 问事与平衡（lukuman／bonuman 制度层，概念）",
         "2. Winti Prey 舞宴与灵体显现（核心神圣层，概念）",
         "3. 祖先、丧葬与当代公共承认（生命伦理—公民层，概念）"
-      ]
+      ],
+      "applied_urls": [
+        "http://hdl.handle.net/1887.1/item:927762",
+        "https://hdl.handle.net/1887/3275069",
+        "https://www.kitlv.nl/news/winners-15th-subsidy-round-silvia-de-groot-fund/"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/afro-surinamese-religions",
+        "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/winti-suriname"
+      ],
+      "final_urls": [
+        "https://sacredart.caaar.duke.edu/religions/surinamese-and-dutch-winti/",
+        "http://hdl.handle.net/1887.1/item:927762",
+        "https://hdl.handle.net/1887/3275069",
+        "https://www.kitlv.nl/news/winners-15th-subsidy-round-silvia-de-groot-fund/"
+      ],
+      "final_source_count": 4
     }
   ],
   "prompt_constraints": [

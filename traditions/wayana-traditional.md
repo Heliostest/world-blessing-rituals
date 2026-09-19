@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Guiana-Highlands
-- https://www.britannica.com/place/Amazon-Rainforest
-- https://www.britannica.com/topic/South-American-Indian
+- https://www.megazap.fr/Le-musee-du-quai-Branly-Jacques-Chirac-en-partenariat-avec-le-musee-des-cultures-guyanaises-presentent-une-exposition_a5623.html
+- http://www.watau.fr
+- https://hdl.handle.net/1887/18153

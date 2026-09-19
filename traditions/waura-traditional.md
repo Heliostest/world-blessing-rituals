@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Xinguanos
-- https://www.britannica.com/place/Xingu-River
-- https://www.britannica.com/place/Brazil
+- https://peoplespalaceprojects.org.uk/en/projects/kamukuwaka-vr/
+- https://doi.org/10.14318/hau4.2.004
+- https://www.bbc.com/portuguese/brasil-45660301
+- https://www.scielo.br/j/bgoeldi/a/zmZrTNGrbKkNtXcyxr9hx4j/?format=pdf&lang=en

@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Laos/Religion
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lao-religion
 - https://www.bbc.com/travel/article/20200819-laos-collective-approach-to-healthcare
 - https://www.watbuddhavong.org/wlb-updates/boun-that-luang/
+
+- https://doi.org/10.1355/sj5-2a
+- https://doi.org/10.1017/S0021911814001183
+- https://doi.org/10.1163/15734218-12341548

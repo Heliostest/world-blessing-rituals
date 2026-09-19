@@ -32,7 +32,6 @@
 
 日常可见托钵、听经、拜佛、习禅。雨安居（*vassa*）始末是重要节点；之后一个月常迎来大规模供僧。卫塞节纪念佛陀诞生、成道与涅槃。家庭佛坛简易供花供水，但戒律裁决与僧事仍依僧团。
 
-
 在缅甸、泰国等社会，谚语常强调手要常近布施；福德账本有时被比喻为人生最后时刻的安慰。学者指出，作福伦理支撑了寺院经济与村落互助，同时也形塑了人们对好运与社会地位的想象。
 
 斯里兰卡的佛牙寺巡游等公共庆典，把国家、城市与作福伦理连接在一起，显示功德不只是私人事务。
@@ -57,9 +56,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Theravada
-- https://www.britannica.com/topic/Buddhism/Popular-religious-practices
 - https://ich.unesco.org/en/RL/songkran-in-thailand-traditional-thai-new-year-festival-01719
 - https://doi.org/10.21313/hawaii/9780824867805.003.0005
 - https://doi.org/10.21313/hawaii/9780824867805.003.0004
 - https://doi.org/10.26034/LU.JGB.2025.7155
+
+- https://media.unesco.org/sites/default/files/webform/mow001/53_131%252B.pdf
+- https://doi.org/10.3389/fsoc.2026.1775508
+- https://doi.org/10.3390/rel11040177

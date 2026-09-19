@@ -47,8 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Veps
-- https://www.britannica.com/topic/Finno-Ugric-languages
 - https://www.folklore.ee/folklore/vol15/news.htm
 - https://dea.digar.ee/?a=d&d=JVethnolandfolklor202406.1.118&l=ru
 - https://ojs.utlib.ee/index.php/jeful/article/download/jeful.2015.6.1.09/10193/14973
+
+- https://kareliamuseum.ru/en/branches/656/
+- https://www.folklore.ee/folklore/vol61/siragusa.pdf
+- https://ojs.utlib.ee/index.php/jeful/article/view/jeful.2015.6.1.07
+- https://fennougria.ee/en/peoples/baltic-finnic-peoples/vepsians/

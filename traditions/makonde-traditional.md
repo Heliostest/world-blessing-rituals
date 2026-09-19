@@ -47,8 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Makonde
-- https://www.britannica.com/art/African-art/Makonde
 - https://joshuaproject.net/index.php/people_groups/13427/MZ
 
 - https://ich.unesco.org/en/USL/ingoma-ya-mapiko-01996
@@ -58,3 +56,7 @@
 - https://doi.org/10.1162/AFAR_r_00292
 
 - https://www.metmuseum.org/art/collection/search/318344
+
+- https://doi.org/10.1111/j.1467-9655.2010.01633.x
+- https://www.metmuseum.org/toah/hd/mako/hd_mako.htm
+- https://ich.unesco.org/en/8a-urgent-safeguarding-list-01324

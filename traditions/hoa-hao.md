@@ -52,9 +52,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Hoa-Hao-Vietnamese-religious-movement
-- https://kids.britannica.com/scholars/article/Huynh-Phu-So/41661
 - https://hoahao.org/a352/biography-and-teachings-of-prophet-huynh-phu-so
 - https://doi.org/10.1525/vs.2022.17.4.18
 - https://doi.org/10.32388/T8IX52
 - https://cms.btgcp.gov.vn/upload/documents/03_11_2021/tai-lieu-boi-duong-de-an-2021-11-03-16-41-27.pdf
+
+- https://doi.org/10.1525/vs.2024.19.1.9
+- https://researchportalplus.anu.edu.au/en/publications/apocalypse-now-hoa-hao-buddhism-emerging-from-the-shadows-of-war/
+- https://en.vietnamplus.vn/hoa-hao-buddhism-marks-86th-founding-anniversary-post289569.vnp

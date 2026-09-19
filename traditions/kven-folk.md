@@ -47,8 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Kven
-- https://www.britannica.com/topic/Church-of-Norway
 - https://snl.no/kvener
 - https://snl.no/l%C3%A6stadianere
 - https://snl.no/Kvendrakta
+
+- https://ich.unesco.org/en-state/norway-NO?info=periodic-reporting
+- https://septentrio.uit.no/index.php/nordlyd/article/view/6345
+- https://riksantikvaren.no/kvenske-og-norskfinske-kulturhistorier-i-norge/
+- https://doi.org/10.1080/19313152.2026.2636966

@@ -2,8 +2,8 @@
   "batch": "notebook-source-hunt-c39",
   "cycle": 39,
   "date": "2026-09-19",
-  "status": "prepared",
-  "selection_rule": "不排除任何早期批次；重算全部 grade=C 卡片当前来源段中的弱链接，按弱链接数量从多到少、slug 字母序选择前 12 张。",
+  "status": "completed",
+  "selection_rule": "按 /tmp/c39-urls.json 对 12 个 C 级卡片执行弱链接清理；不排除早期批次，输入 URL 去重后追加，移除选中卡片参考来源中的 Britannica、encyclopedia.com、everyculture.com 弱链接。",
   "previous_cycles_excluded": false,
   "c_grade_card_count": 156,
   "weak_link_c_count_after_c38": 79,
@@ -40,10 +40,44 @@
         "https://doi.org/10.32388/T8IX52",
         "https://cms.btgcp.gov.vn/upload/documents/03_11_2021/tai-lieu-boi-duong-de-an-2021-11-03-16-41-27.pdf"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://doi.org/10.1525/vs.2024.19.1.9",
+        "https://researchportalplus.anu.edu.au/en/publications/apocalypse-now-hoa-hao-buddhism-emerging-from-the-shadows-of-war/",
+        "https://doi.org/10.32388/T8IX52",
+        "https://en.vietnamplus.vn/hoa-hao-buddhism-marks-86th-founding-anniversary-post289569.vnp"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1525/vs.2024.19.1.9",
+        "https://researchportalplus.anu.edu.au/en/publications/apocalypse-now-hoa-hao-buddhism-emerging-from-the-shadows-of-war/",
+        "https://en.vietnamplus.vn/hoa-hao-buddhism-marks-86th-founding-anniversary-post289569.vnp"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Hoa-Hao-Vietnamese-religious-movement",
         "https://kids.britannica.com/scholars/article/Huynh-Phu-So/41661"
+      ],
+      "final_urls": [
+        "https://hoahao.org/a352/biography-and-teachings-of-prophet-huynh-phu-so",
+        "https://doi.org/10.1525/vs.2022.17.4.18",
+        "https://doi.org/10.32388/T8IX52",
+        "https://cms.btgcp.gov.vn/upload/documents/03_11_2021/tai-lieu-boi-duong-de-an-2021-11-03-16-41-27.pdf",
+        "https://doi.org/10.1525/vs.2024.19.1.9",
+        "https://researchportalplus.anu.edu.au/en/publications/apocalypse-now-hoa-hao-buddhism-emerging-from-the-shadows-of-war/",
+        "https://en.vietnamplus.vn/hoa-hao-buddhism-marks-86th-founding-anniversary-post289569.vnp"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 7,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Hoa-Hao-Vietnamese-religious-movement",
+        "https://kids.britannica.com/scholars/article/Huynh-Phu-So/41661"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://doi.org/10.32388/T8IX52",
+        "https://doi.org/10.1525/vs.2024.19.1.9",
+        "https://researchportalplus.anu.edu.au/en/publications/apocalypse-now-hoa-hao-buddhism-emerging-from-the-shadows-of-war/",
+        "https://en.vietnamplus.vn/hoa-hao-buddhism-marks-86th-founding-anniversary-post289569.vnp"
       ]
     },
     {
@@ -62,10 +96,45 @@
         "https://www.museum.ie/en-IE/Collections-Research/Folklife-Collections/Folklife-Collections-List-(1)/Other/The-Great-Irish-Famine/Penal-Cross",
         "https://www.heritagecouncil.ie/news/news-features/7-new-sites-selected-for-the-heritage-councils-adopt-a-monument-programme"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://mural.maynoothuniversity.ie/id/eprint/13339/",
+        "https://nationalinventoryich.ccs.gov.ie/holy-wells-in-county-clare/",
+        "https://cora.ucc.ie/items/54fcd918-be48-438f-a9cb-56947ed63fc5",
+        "https://mural.maynoothuniversity.ie/id/eprint/12743/"
+      ],
+      "added_urls": [
+        "https://mural.maynoothuniversity.ie/id/eprint/13339/",
+        "https://nationalinventoryich.ccs.gov.ie/holy-wells-in-county-clare/",
+        "https://cora.ucc.ie/items/54fcd918-be48-438f-a9cb-56947ed63fc5",
+        "https://mural.maynoothuniversity.ie/id/eprint/12743/"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Saint-Patrick",
         "https://www.britannica.com/topic/holy-well"
+      ],
+      "final_urls": [
+        "https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/seasonal-festivals/autumn",
+        "https://www.museum.ie/en-IE/Collections-Research/Folklife-Collections/Folklife-Collections-List-(1)/Other/The-Great-Irish-Famine/Penal-Cross",
+        "https://www.heritagecouncil.ie/news/news-features/7-new-sites-selected-for-the-heritage-councils-adopt-a-monument-programme",
+        "https://mural.maynoothuniversity.ie/id/eprint/13339/",
+        "https://nationalinventoryich.ccs.gov.ie/holy-wells-in-county-clare/",
+        "https://cora.ucc.ie/items/54fcd918-be48-438f-a9cb-56947ed63fc5",
+        "https://mural.maynoothuniversity.ie/id/eprint/12743/"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Saint-Patrick",
+        "https://www.britannica.com/topic/holy-well"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://mural.maynoothuniversity.ie/id/eprint/13339/",
+        "https://nationalinventoryich.ccs.gov.ie/holy-wells-in-county-clare/",
+        "https://cora.ucc.ie/items/54fcd918-be48-438f-a9cb-56947ed63fc5",
+        "https://mural.maynoothuniversity.ie/id/eprint/12743/"
       ]
     },
     {
@@ -85,10 +154,46 @@
         "https://www.britishmuseum.org/collection/object/E_Af1909-1210-1",
         "https://www.metmuseum.org/art/collection/search/768372"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://www.britishmuseum.org/collection/object/E_Af1909-0513-2",
+        "https://www.africamuseum.be/en/learn/provenance/songye_statue",
+        "https://www.metmuseum.org/en/exhibitions/listings/2011/heroic-africans-legendary-leaders-iconic-sculptures",
+        "https://www.britishmuseum.org/collection/term/BIOG128993"
+      ],
+      "added_urls": [
+        "https://www.britishmuseum.org/collection/object/E_Af1909-0513-2",
+        "https://www.africamuseum.be/en/learn/provenance/songye_statue",
+        "https://www.metmuseum.org/en/exhibitions/listings/2011/heroic-africans-legendary-leaders-iconic-sculptures",
+        "https://www.britishmuseum.org/collection/term/BIOG128993"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Kuba-people",
         "https://kids.britannica.com/scholars/article/Kuba/46332"
+      ],
+      "final_urls": [
+        "https://www.metmuseum.org/toah/hd/kuba/hd_kuba.htm",
+        "https://www.metmuseum.org/essays/kingdoms-of-the-savanna-the-kuba-kingdom",
+        "https://www.britishmuseum.org/collection/object/E_Af1909-1210-1",
+        "https://www.metmuseum.org/art/collection/search/768372",
+        "https://www.britishmuseum.org/collection/object/E_Af1909-0513-2",
+        "https://www.africamuseum.be/en/learn/provenance/songye_statue",
+        "https://www.metmuseum.org/en/exhibitions/listings/2011/heroic-africans-legendary-leaders-iconic-sculptures",
+        "https://www.britishmuseum.org/collection/term/BIOG128993"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 8,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Kuba-people",
+        "https://kids.britannica.com/scholars/article/Kuba/46332"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.britishmuseum.org/collection/object/E_Af1909-0513-2",
+        "https://www.africamuseum.be/en/learn/provenance/songye_statue",
+        "https://www.metmuseum.org/en/exhibitions/listings/2011/heroic-africans-legendary-leaders-iconic-sculptures",
+        "https://www.britishmuseum.org/collection/term/BIOG128993"
       ]
     },
     {
@@ -107,10 +212,45 @@
         "https://snl.no/l%C3%A6stadianere",
         "https://snl.no/Kvendrakta"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://ich.unesco.org/en-state/norway-NO?info=periodic-reporting",
+        "https://septentrio.uit.no/index.php/nordlyd/article/view/6345",
+        "https://riksantikvaren.no/kvenske-og-norskfinske-kulturhistorier-i-norge/",
+        "https://doi.org/10.1080/19313152.2026.2636966"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en-state/norway-NO?info=periodic-reporting",
+        "https://septentrio.uit.no/index.php/nordlyd/article/view/6345",
+        "https://riksantikvaren.no/kvenske-og-norskfinske-kulturhistorier-i-norge/",
+        "https://doi.org/10.1080/19313152.2026.2636966"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Kven",
         "https://www.britannica.com/topic/Church-of-Norway"
+      ],
+      "final_urls": [
+        "https://snl.no/kvener",
+        "https://snl.no/l%C3%A6stadianere",
+        "https://snl.no/Kvendrakta",
+        "https://ich.unesco.org/en-state/norway-NO?info=periodic-reporting",
+        "https://septentrio.uit.no/index.php/nordlyd/article/view/6345",
+        "https://riksantikvaren.no/kvenske-og-norskfinske-kulturhistorier-i-norge/",
+        "https://doi.org/10.1080/19313152.2026.2636966"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Kven",
+        "https://www.britannica.com/topic/Church-of-Norway"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://ich.unesco.org/en-state/norway-NO?info=periodic-reporting",
+        "https://septentrio.uit.no/index.php/nordlyd/article/view/6345",
+        "https://riksantikvaren.no/kvenske-og-norskfinske-kulturhistorier-i-norge/",
+        "https://doi.org/10.1080/19313152.2026.2636966"
       ]
     },
     {
@@ -129,10 +269,45 @@
         "https://www.altabadia.org/en/alta-badia-events/detail/event/traslaziun-dla-santa-crusc-translation-of-the-holy-cross",
         "https://www.altabadia.org/de/poi/sehenswertes-alta-badia/detail/poi/wallfahrtskirche-la-crusc-heiligkreuz"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://museumladin.it/en/",
+        "https://doi.org/10.7202/1123082ar",
+        "https://www.ladinia.it/en/informations/508/ladinia/the-ladinia",
+        "https://www.istitutladin.net/"
+      ],
+      "added_urls": [
+        "https://museumladin.it/en/",
+        "https://doi.org/10.7202/1123082ar",
+        "https://www.ladinia.it/en/informations/508/ladinia/the-ladinia",
+        "https://www.istitutladin.net/"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Ladin",
         "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://www.altabadia.org/en/alta-badia-events/detail/event/esaltaziun-dla-santa-crusc-elevation-of-the-holy-cross",
+        "https://www.altabadia.org/en/alta-badia-events/detail/event/traslaziun-dla-santa-crusc-translation-of-the-holy-cross",
+        "https://www.altabadia.org/de/poi/sehenswertes-alta-badia/detail/poi/wallfahrtskirche-la-crusc-heiligkreuz",
+        "https://museumladin.it/en/",
+        "https://doi.org/10.7202/1123082ar",
+        "https://www.ladinia.it/en/informations/508/ladinia/the-ladinia",
+        "https://www.istitutladin.net/"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Ladin",
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://museumladin.it/en/",
+        "https://doi.org/10.7202/1123082ar",
+        "https://www.ladinia.it/en/informations/508/ladinia/the-ladinia",
+        "https://www.istitutladin.net/"
       ]
     },
     {
@@ -150,10 +325,40 @@
         "https://www.bbc.com/travel/article/20200819-laos-collective-approach-to-healthcare",
         "https://www.watbuddhavong.org/wlb-updates/boun-that-luang/"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://doi.org/10.1355/sj5-2a",
+        "https://doi.org/10.1017/S0021911814001183",
+        "https://doi.org/10.1163/15734218-12341548"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1355/sj5-2a",
+        "https://doi.org/10.1017/S0021911814001183",
+        "https://doi.org/10.1163/15734218-12341548"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/place/Laos/Religion",
         "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lao-religion"
+      ],
+      "final_urls": [
+        "https://www.bbc.com/travel/article/20200819-laos-collective-approach-to-healthcare",
+        "https://www.watbuddhavong.org/wlb-updates/boun-that-luang/",
+        "https://doi.org/10.1355/sj5-2a",
+        "https://doi.org/10.1017/S0021911814001183",
+        "https://doi.org/10.1163/15734218-12341548"
+      ],
+      "current_source_count": 4,
+      "final_source_count": 5,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/place/Laos/Religion",
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lao-religion"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://doi.org/10.1355/sj5-2a",
+        "https://doi.org/10.1017/S0021911814001183",
+        "https://doi.org/10.1163/15734218-12341548"
       ]
     },
     {
@@ -172,10 +377,45 @@
         "https://livones.net/18-novembris-mazirbe/",
         "https://www.latvia.travel/en/culture-and-traditions-latvia"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://www.lu.lv/en/about-us/structure/institutes/ul-livonian-institute/",
+        "https://livones.net/a-new-informative-publication-on-the-livonians-in-english/",
+        "https://doi.org/10.1080/01629778.2024.2339875",
+        "https://doi.org/10.1093/oso/9780198767664.003.0022"
+      ],
+      "added_urls": [
+        "https://www.lu.lv/en/about-us/structure/institutes/ul-livonian-institute/",
+        "https://livones.net/a-new-informative-publication-on-the-livonians-in-english/",
+        "https://doi.org/10.1080/01629778.2024.2339875",
+        "https://doi.org/10.1093/oso/9780198767664.003.0022"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Liv",
         "https://www.britannica.com/topic/Finno-Ugric-languages"
+      ],
+      "final_urls": [
+        "https://www.latvia.travel/en/sight/liiv-peoples-house",
+        "https://livones.net/18-novembris-mazirbe/",
+        "https://www.latvia.travel/en/culture-and-traditions-latvia",
+        "https://www.lu.lv/en/about-us/structure/institutes/ul-livonian-institute/",
+        "https://livones.net/a-new-informative-publication-on-the-livonians-in-english/",
+        "https://doi.org/10.1080/01629778.2024.2339875",
+        "https://doi.org/10.1093/oso/9780198767664.003.0022"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Liv",
+        "https://www.britannica.com/topic/Finno-Ugric-languages"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.lu.lv/en/about-us/structure/institutes/ul-livonian-institute/",
+        "https://livones.net/a-new-informative-publication-on-the-livonians-in-english/",
+        "https://doi.org/10.1080/01629778.2024.2339875",
+        "https://doi.org/10.1093/oso/9780198767664.003.0022"
       ]
     },
     {
@@ -196,10 +436,45 @@
         "https://doi.org/10.1162/AFAR_r_00292",
         "https://www.metmuseum.org/art/collection/search/318344"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://ich.unesco.org/en/USL/ingoma-ya-mapiko-01996",
+        "https://doi.org/10.1111/j.1467-9655.2010.01633.x",
+        "https://www.metmuseum.org/toah/hd/mako/hd_mako.htm",
+        "https://ich.unesco.org/en/8a-urgent-safeguarding-list-01324"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1111/j.1467-9655.2010.01633.x",
+        "https://www.metmuseum.org/toah/hd/mako/hd_mako.htm",
+        "https://ich.unesco.org/en/8a-urgent-safeguarding-list-01324"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Makonde",
         "https://www.britannica.com/art/African-art/Makonde"
+      ],
+      "final_urls": [
+        "https://joshuaproject.net/index.php/people_groups/13427/MZ",
+        "https://ich.unesco.org/en/USL/ingoma-ya-mapiko-01996",
+        "https://doi.org/10.1162/afar_a_00599",
+        "https://doi.org/10.1162/AFAR_r_00292",
+        "https://www.metmuseum.org/art/collection/search/318344",
+        "https://doi.org/10.1111/j.1467-9655.2010.01633.x",
+        "https://www.metmuseum.org/toah/hd/mako/hd_mako.htm",
+        "https://ich.unesco.org/en/8a-urgent-safeguarding-list-01324"
+      ],
+      "current_source_count": 7,
+      "final_source_count": 8,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Makonde",
+        "https://www.britannica.com/art/African-art/Makonde"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://ich.unesco.org/en/USL/ingoma-ya-mapiko-01996",
+        "https://doi.org/10.1111/j.1467-9655.2010.01633.x",
+        "https://www.metmuseum.org/toah/hd/mako/hd_mako.htm",
+        "https://ich.unesco.org/en/8a-urgent-safeguarding-list-01324"
       ]
     },
     {
@@ -218,10 +493,45 @@
         "https://www.visitmalta.com/en/a/maltese-festa/",
         "https://www.tapinu.org/index.php/museums"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/maltese-village-festa-an-annual-community-celebration-01871",
+        "https://ichmalta.gov.mt/the-convention/",
+        "https://ich.unesco.org/en/Decisions/18.COM/8.b.43",
+        "https://www.um.edu.mt/"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/maltese-village-festa-an-annual-community-celebration-01871",
+        "https://ichmalta.gov.mt/the-convention/",
+        "https://ich.unesco.org/en/Decisions/18.COM/8.b.43",
+        "https://www.um.edu.mt/"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism",
         "https://www.britannica.com/topic/feast-religion"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/maltese-festa-an-inclusive-community-celebration-01980",
+        "https://www.visitmalta.com/en/a/maltese-festa/",
+        "https://www.tapinu.org/index.php/museums",
+        "https://ich.unesco.org/en/RL/maltese-village-festa-an-annual-community-celebration-01871",
+        "https://ichmalta.gov.mt/the-convention/",
+        "https://ich.unesco.org/en/Decisions/18.COM/8.b.43",
+        "https://www.um.edu.mt/"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.britannica.com/topic/feast-religion"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/maltese-village-festa-an-annual-community-celebration-01871",
+        "https://ichmalta.gov.mt/the-convention/",
+        "https://ich.unesco.org/en/Decisions/18.COM/8.b.43",
+        "https://www.um.edu.mt/"
       ]
     },
     {
@@ -241,10 +551,46 @@
         "https://www.visitsanmarino.com/pub2/VisitSM/evento/20250205_Festa_di_santagata.html",
         "https://www.visitsanmarino.com/pub2/VisitSM/luogo/Arte-e-cultura/Basilica-del-Santo.html"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://www.visitsanmarino.com/pub2/VisitSM/en/evento/20260903_Festa_di_San_Marino.html",
+        "https://www.visitsanmarino.com/pub1/VisitSM/contenuto/About-San-Marino/FESTIVIT%C3%81-SAMMARINESI.html",
+        "https://whc.unesco.org/en/list/1245",
+        "https://www.museidistato.sm/"
+      ],
+      "added_urls": [
+        "https://www.visitsanmarino.com/pub2/VisitSM/en/evento/20260903_Festa_di_San_Marino.html",
+        "https://www.visitsanmarino.com/pub1/VisitSM/contenuto/About-San-Marino/FESTIVIT%C3%81-SAMMARINESI.html",
+        "https://whc.unesco.org/en/list/1245",
+        "https://www.museidistato.sm/"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Saint-Marinus",
         "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://www.visitsanmarino.com/pub2/VisitSM/evento/20260903_Festa_di_San_Marino.html",
+        "https://www.visitsanmarino.com/pub1/VisitSM/en/evento/20261001_1%C2%B0ottobre-cerimonia-di-investitura-dei-capitani-reggenti.html",
+        "https://www.visitsanmarino.com/pub2/VisitSM/evento/20250205_Festa_di_santagata.html",
+        "https://www.visitsanmarino.com/pub2/VisitSM/luogo/Arte-e-cultura/Basilica-del-Santo.html",
+        "https://www.visitsanmarino.com/pub2/VisitSM/en/evento/20260903_Festa_di_San_Marino.html",
+        "https://www.visitsanmarino.com/pub1/VisitSM/contenuto/About-San-Marino/FESTIVIT%C3%81-SAMMARINESI.html",
+        "https://whc.unesco.org/en/list/1245",
+        "https://www.museidistato.sm/"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 8,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Saint-Marinus",
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://www.visitsanmarino.com/pub2/VisitSM/en/evento/20260903_Festa_di_San_Marino.html",
+        "https://www.visitsanmarino.com/pub1/VisitSM/contenuto/About-San-Marino/FESTIVIT%C3%81-SAMMARINESI.html",
+        "https://whc.unesco.org/en/list/1245",
+        "https://www.museidistato.sm/"
       ]
     },
     {
@@ -264,10 +610,44 @@
         "https://doi.org/10.21313/hawaii/9780824867805.003.0004",
         "https://doi.org/10.26034/LU.JGB.2025.7155"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://media.unesco.org/sites/default/files/webform/mow001/53_131%252B.pdf",
+        "https://doi.org/10.21313/hawaii/9780824867805.003.0005",
+        "https://doi.org/10.3389/fsoc.2026.1775508",
+        "https://doi.org/10.3390/rel11040177"
+      ],
+      "added_urls": [
+        "https://media.unesco.org/sites/default/files/webform/mow001/53_131%252B.pdf",
+        "https://doi.org/10.3389/fsoc.2026.1775508",
+        "https://doi.org/10.3390/rel11040177"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Theravada",
         "https://www.britannica.com/topic/Buddhism/Popular-religious-practices"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/songkran-in-thailand-traditional-thai-new-year-festival-01719",
+        "https://doi.org/10.21313/hawaii/9780824867805.003.0005",
+        "https://doi.org/10.21313/hawaii/9780824867805.003.0004",
+        "https://doi.org/10.26034/LU.JGB.2025.7155",
+        "https://media.unesco.org/sites/default/files/webform/mow001/53_131%252B.pdf",
+        "https://doi.org/10.3389/fsoc.2026.1775508",
+        "https://doi.org/10.3390/rel11040177"
+      ],
+      "current_source_count": 6,
+      "final_source_count": 7,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Theravada",
+        "https://www.britannica.com/topic/Buddhism/Popular-religious-practices"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://doi.org/10.21313/hawaii/9780824867805.003.0005",
+        "https://media.unesco.org/sites/default/files/webform/mow001/53_131%252B.pdf",
+        "https://doi.org/10.3389/fsoc.2026.1775508",
+        "https://doi.org/10.3390/rel11040177"
       ]
     },
     {
@@ -286,10 +666,45 @@
         "https://dea.digar.ee/?a=d&d=JVethnolandfolklor202406.1.118&l=ru",
         "https://ojs.utlib.ee/index.php/jeful/article/download/jeful.2015.6.1.09/10193/14973"
       ],
-      "weak_domain_count": 2,
-      "weak_urls": [
+      "input_urls": [
+        "https://kareliamuseum.ru/en/branches/656/",
+        "https://www.folklore.ee/folklore/vol61/siragusa.pdf",
+        "https://ojs.utlib.ee/index.php/jeful/article/view/jeful.2015.6.1.07",
+        "https://fennougria.ee/en/peoples/baltic-finnic-peoples/vepsians/"
+      ],
+      "added_urls": [
+        "https://kareliamuseum.ru/en/branches/656/",
+        "https://www.folklore.ee/folklore/vol61/siragusa.pdf",
+        "https://ojs.utlib.ee/index.php/jeful/article/view/jeful.2015.6.1.07",
+        "https://fennougria.ee/en/peoples/baltic-finnic-peoples/vepsians/"
+      ],
+      "removed_urls": [
         "https://www.britannica.com/topic/Veps",
         "https://www.britannica.com/topic/Finno-Ugric-languages"
+      ],
+      "final_urls": [
+        "https://www.folklore.ee/folklore/vol15/news.htm",
+        "https://dea.digar.ee/?a=d&d=JVethnolandfolklor202406.1.118&l=ru",
+        "https://ojs.utlib.ee/index.php/jeful/article/download/jeful.2015.6.1.09/10193/14973",
+        "https://kareliamuseum.ru/en/branches/656/",
+        "https://www.folklore.ee/folklore/vol61/siragusa.pdf",
+        "https://ojs.utlib.ee/index.php/jeful/article/view/jeful.2015.6.1.07",
+        "https://fennougria.ee/en/peoples/baltic-finnic-peoples/vepsians/"
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 2,
+      "weak_urls_before": [
+        "https://www.britannica.com/topic/Veps",
+        "https://www.britannica.com/topic/Finno-Ugric-languages"
+      ],
+      "weak_domain_count_after": 0,
+      "weak_urls_after": [],
+      "applied_urls": [
+        "https://kareliamuseum.ru/en/branches/656/",
+        "https://www.folklore.ee/folklore/vol61/siragusa.pdf",
+        "https://ojs.utlib.ee/index.php/jeful/article/view/jeful.2015.6.1.07",
+        "https://fennougria.ee/en/peoples/baltic-finnic-peoples/vepsians/"
       ]
     }
   ],
@@ -300,6 +715,85 @@
     "禁止 Britannica 地点／泛概览、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页与离题泛泛报告。",
     "只补来源，不改卡片正文、档位或仪式内容；URL、DOI、网页与 PDF 均须公开可核验。"
   ],
-  "remaining_estimate": 79,
-  "source_map": "/tmp/nb-source-hunt-c39.txt"
+  "remaining_estimate": 67,
+  "source_map": "/tmp/c39-urls.json",
+  "input_url_count": 47,
+  "input_unique_url_count": 47,
+  "card_url_added_count": 44,
+  "card_url_removed_count": 24,
+  "sources_unique_url_added_count": 44,
+  "weak_link_c_count_after_c39": 67,
+  "applied_urls": {
+    "hoa-hao": [
+      "https://doi.org/10.32388/T8IX52",
+      "https://doi.org/10.1525/vs.2024.19.1.9",
+      "https://researchportalplus.anu.edu.au/en/publications/apocalypse-now-hoa-hao-buddhism-emerging-from-the-shadows-of-war/",
+      "https://en.vietnamplus.vn/hoa-hao-buddhism-marks-86th-founding-anniversary-post289569.vnp"
+    ],
+    "irish-folk-catholic": [
+      "https://mural.maynoothuniversity.ie/id/eprint/13339/",
+      "https://nationalinventoryich.ccs.gov.ie/holy-wells-in-county-clare/",
+      "https://cora.ucc.ie/items/54fcd918-be48-438f-a9cb-56947ed63fc5",
+      "https://mural.maynoothuniversity.ie/id/eprint/12743/"
+    ],
+    "kuba-traditional": [
+      "https://www.britishmuseum.org/collection/object/E_Af1909-0513-2",
+      "https://www.africamuseum.be/en/learn/provenance/songye_statue",
+      "https://www.metmuseum.org/en/exhibitions/listings/2011/heroic-africans-legendary-leaders-iconic-sculptures",
+      "https://www.britishmuseum.org/collection/term/BIOG128993"
+    ],
+    "kven-folk": [
+      "https://ich.unesco.org/en-state/norway-NO?info=periodic-reporting",
+      "https://septentrio.uit.no/index.php/nordlyd/article/view/6345",
+      "https://riksantikvaren.no/kvenske-og-norskfinske-kulturhistorier-i-norge/",
+      "https://doi.org/10.1080/19313152.2026.2636966"
+    ],
+    "ladin-folk": [
+      "https://museumladin.it/en/",
+      "https://doi.org/10.7202/1123082ar",
+      "https://www.ladinia.it/en/informations/508/ladinia/the-ladinia",
+      "https://www.istitutladin.net/"
+    ],
+    "lao-baci-phi": [
+      "https://doi.org/10.1355/sj5-2a",
+      "https://doi.org/10.1017/S0021911814001183",
+      "https://doi.org/10.1163/15734218-12341548"
+    ],
+    "livonian-folk": [
+      "https://www.lu.lv/en/about-us/structure/institutes/ul-livonian-institute/",
+      "https://livones.net/a-new-informative-publication-on-the-livonians-in-english/",
+      "https://doi.org/10.1080/01629778.2024.2339875",
+      "https://doi.org/10.1093/oso/9780198767664.003.0022"
+    ],
+    "makonde-traditional": [
+      "https://ich.unesco.org/en/USL/ingoma-ya-mapiko-01996",
+      "https://doi.org/10.1111/j.1467-9655.2010.01633.x",
+      "https://www.metmuseum.org/toah/hd/mako/hd_mako.htm",
+      "https://ich.unesco.org/en/8a-urgent-safeguarding-list-01324"
+    ],
+    "maltese-festa": [
+      "https://ich.unesco.org/en/RL/maltese-village-festa-an-annual-community-celebration-01871",
+      "https://ichmalta.gov.mt/the-convention/",
+      "https://ich.unesco.org/en/Decisions/18.COM/8.b.43",
+      "https://www.um.edu.mt/"
+    ],
+    "sammarinese-folk": [
+      "https://www.visitsanmarino.com/pub2/VisitSM/en/evento/20260903_Festa_di_San_Marino.html",
+      "https://www.visitsanmarino.com/pub1/VisitSM/contenuto/About-San-Marino/FESTIVIT%C3%81-SAMMARINESI.html",
+      "https://whc.unesco.org/en/list/1245",
+      "https://www.museidistato.sm/"
+    ],
+    "theravada-buddhism": [
+      "https://doi.org/10.21313/hawaii/9780824867805.003.0005",
+      "https://media.unesco.org/sites/default/files/webform/mow001/53_131%252B.pdf",
+      "https://doi.org/10.3389/fsoc.2026.1775508",
+      "https://doi.org/10.3390/rel11040177"
+    ],
+    "veps-folk": [
+      "https://kareliamuseum.ru/en/branches/656/",
+      "https://www.folklore.ee/folklore/vol61/siragusa.pdf",
+      "https://ojs.utlib.ee/index.php/jeful/article/view/jeful.2015.6.1.07",
+      "https://fennougria.ee/en/peoples/baltic-finnic-peoples/vepsians/"
+    ]
+  }
 }

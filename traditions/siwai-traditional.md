@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
-- https://www.britannica.com/place/Bougainville-Island
-- https://www.britannica.com/place/Papua-New-Guinea
 - https://www.britannica.com/topic/Melanesian-culture
+- https://doi.org/10.1086/732354
+- https://openresearch-repository.anu.edu.au/bitstreams/c695f4b9-a610-4de0-9117-f847ec9eef9d/download
+- https://openresearch-repository.anu.edu.au/bitstreams/edf60f84-b60e-4750-a856-b678648546f5/download

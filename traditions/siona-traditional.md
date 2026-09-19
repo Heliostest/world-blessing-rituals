@@ -46,7 +46,7 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.britannica.com/topic/Siona
-- https://www.britannica.com/place/Putumayo-River
-- https://www.britannica.com/place/Amazon-Rainforest
+- https://journals.openedition.org/jsa/18933
+- https://doi.org/10.66709/news-305511
+- https://journals.openedition.org/etnografica/2813

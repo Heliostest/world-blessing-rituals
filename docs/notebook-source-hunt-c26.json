@@ -1,0 +1,208 @@
+{
+  "batch": "notebook-source-hunt-c26",
+  "cycle": 26,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 sulka-traditional 后按字母序续选，排除 C1–C25 已处理 slug 及已补强卡片；不以 4+ 来源卡填充，不用已良好卡片凑数",
+  "previous_cycles_slugs_processed": 299,
+  "slugs": [
+    "sumi-traditional",
+    "sumo-mayangna-traditional",
+    "sunuwar-traditional",
+    "surui-traditional",
+    "susu-traditional",
+    "suya-traditional",
+    "tagin-traditional",
+    "tahitian-maohi",
+    "tamang-traditional",
+    "tami-traditional",
+    "tangkhul-traditional",
+    "tangsa-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "sumi-traditional",
+      "title": "苏米／塞马那加基督教与传统祈福余绪（Sumi／Sema）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://journals.sagepub.com/doi/10.1177/0049085714561836",
+        "https://www.southasianist.ed.ac.uk/southasianist/article/view/1852",
+        "https://www.britannica.com/place/Nagaland"
+      ],
+      "rituals": [
+        "1. 浸信会崇拜与奋兴（概念层）",
+        "2. 生命礼仪（概念层）",
+        "3. 传统信仰记忆与本土化实践（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "sumo-mayangna-traditional",
+      "title": "苏莫／马扬纳传统信仰与雨林祈福（Sumo／Mayangna）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sumo-people",
+        "https://www.britannica.com/place/Mosquito-Coast",
+        "https://www.britannica.com/place/Nicaragua"
+      ],
+      "rituals": [
+        "1. 森林—河流伦理（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 疗愈中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "sunuwar-traditional",
+      "title": "苏努瓦尔传统信仰与穆克杜姆祈福（Sunuwar／Mukdum）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Nepal",
+        "https://www.britannica.com/place/Sikkim",
+        "https://www.britannica.com/topic/Kirati"
+      ],
+      "rituals": [
+        "1. Mukdum 相关生命礼仪（概念层）",
+        "2. 季节与祖先敬礼（概念层）",
+        "3. 多元宗教并存层（概念层）"
+      ]
+    },
+    {
+      "slug": "surui-traditional",
+      "title": "苏鲁伊／派特尔传统信仰与雨林祈福（Paiter Suruí）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Rondonia",
+        "https://www.britannica.com/place/Amazon-Rainforest",
+        "https://www.britannica.com/place/Brazil"
+      ],
+      "rituals": [
+        "1. 森林—祖先伦理（概念层）",
+        "2. 生命礼仪（概念层）",
+        "3. 基督教／外部接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "susu-traditional",
+      "title": "苏苏传统信仰与伊斯兰祈福（Susu／Soussou）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Susu",
+        "https://www.britannica.com/place/Guinea",
+        "https://www.britannica.com/place/Conakry"
+      ],
+      "rituals": [
+        "1. 清真寺礼拜与伊斯兰节日（概念层）",
+        "2. 命名与生命礼仪（概念层）",
+        "3. 氏族伦理余绪（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "suya-traditional",
+      "title": "苏亚／基塞杰传统信仰与辛古祈福（Suyá / Kisêdjê）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Xinguanos",
+        "https://www.britannica.com/place/Xingu-River",
+        "https://www.britannica.com/place/Brazil"
+      ],
+      "rituals": [
+        "1. 歌唱与命名传统（极高敏感，仅概念）",
+        "2. 村落互惠（敏感，仅概念）",
+        "3. 土地与当代表述（公开层）"
+      ]
+    },
+    {
+      "slug": "tagin-traditional",
+      "title": "塔金传统信仰与东尼—波罗／基督教祈福（Tagin）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://en.wikipedia.org/wiki/Tagin_people",
+        "https://en.wikipedia.org/wiki/Donyi-Polo",
+        "https://www.britannica.com/place/Arunachal-Pradesh"
+      ],
+      "rituals": [
+        "1. 教堂崇拜（概念层）",
+        "2. Donyi-Polo 村落实践（概念层）",
+        "3. 萨满／祭司中介（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "tahitian-maohi",
+      "title": "塔希提／马奥希 marae 与波利尼西亚祈福传统（Tahitian Māʻohi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://whc.unesco.org/en/list/1529/",
+        "https://www.britannica.com/topic/marae",
+        "https://paulturnbull.org/project/southseas/biogs/P000309b.htm"
+      ],
+      "rituals": [
+        "1. Marae 礼仪空间与酋长／祭司公共仪典（历史—遗产层）",
+        "2. 航行、渔猎与日常祈祷（民俗概念层）",
+        "3. 当代遗产日、文化复兴与基督宗教并行（公共文化层）"
+      ]
+    },
+    {
+      "slug": "tamang-traditional",
+      "title": "塔芒传统信仰与佛教—萨满祈福（Tamang）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Tamang",
+        "https://www.britannica.com/place/Nepal",
+        "https://www.britannica.com/topic/Nyingma"
+      ],
+      "rituals": [
+        "1. 寺院礼佛与功德（概念层）",
+        "2. 地方神与山灵敬礼（概念层）",
+        "3. 萨满／灵媒疗愈叙事（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "tami-traditional",
+      "title": "塔米传统信仰与休恩湾祈福（Tami）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/place/Huon-Gulf",
+        "https://www.britannica.com/topic/Melanesian-culture"
+      ],
+      "rituals": [
+        "1. 航海与交换伦理（概念层）",
+        "2. 木雕与公开展演（公开／敏感交界）",
+        "3. 基督教与丧礼（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "tangkhul-traditional",
+      "title": "唐库尔那加基督教与传统祈福余绪（Tangkhul）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Manipur",
+        "https://www.britannica.com/topic/Naga-people",
+        "https://www.britannica.com/place/Northeast-India"
+      ],
+      "rituals": [
+        "1. 基督教崇拜（概念层）",
+        "2. 生命礼仪（概念层）",
+        "3. 文化节与传统记忆（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "tangsa-traditional",
+      "title": "唐萨传统信仰与朗弗赖教祈福（Tangsa／Rangfraism）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://doi.org/10.11588/iaf.2015.46.3708",
+        "https://www.britannica.com/place/Arunachal-Pradesh",
+        "https://www.britannica.com/place/Assam"
+      ],
+      "rituals": [
+        "1. Rangfraism 公共崇拜（概念层）",
+        "2. 基督教堂会实践（概念层）",
+        "3. 传统余绪与改革取舍（敏感，仅概念）"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／朝圣页、博物馆／民俗档案、学术 DOI 或民族志。",
+    "不要采用 Britannica /place/、encyclopedia.com 总览、everyculture.com 总览或 Wikipedia 总览；不要改档位或写操演步骤。",
+    "如搜不到足够强来源，写明检索关键词，不要用弱来源填充。"
+  ]
+}

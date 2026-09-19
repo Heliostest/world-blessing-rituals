@@ -3480,3 +3480,40 @@
 - https://doi.org/10.3390/rel14040496
 - https://doi.org/10.3389/fclim.2026.1695925
 - https://doi.org/10.3390/plants7030067
+
+## 增补传统（Notebook source hunt C25：西阿西—苏尔卡）
+
+- https://journals.openedition.org/jso/6687
+- https://dx.doi.org/10.21463/jmic.2024.13.1.01
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/c908932b-5ef0-484c-bcf1-26709bb26bf8/content
+- https://journals.openedition.org/jsa/18933
+- https://doi.org/10.66709/news-305511
+- https://journals.openedition.org/etnografica/2813
+- https://www.sicultura.gob.gt/directory-directorio_c/listing/idioma-sipakapense/
+- https://www.scielo.org.mx/pdf/rpfd/v10n19/1870-4115-rpfd-10-19-52.pdf
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-39292023000200030
+- https://doi.org/10.1086/732354
+- https://openresearch-repository.anu.edu.au/bitstreams/c695f4b9-a610-4de0-9117-f847ec9eef9d/download
+- https://openresearch-repository.anu.edu.au/bitstreams/edf60f84-b60e-4750-a856-b678648546f5/download
+- https://doi.org/10.3390/HERITAGE5030139
+- https://doi.org/10.3390/heritage7010004
+- https://journals.openedition.org/etudesafricaines/67
+- https://journals.openedition.org/span/134
+- https://doi.org/10.1080/19428200.2026.2653461
+- https://journals.openedition.org/anthrovision/2332
+- https://www.metmuseum.org/art/collection/search/312287
+- https://www.metmuseum.org/art/collection/search/310808
+- https://www.metmuseum.org/art/collection/search/310453
+- https://doi.org/10.4236/aa.2022.122007
+- https://journals.openedition.org/etudesafricaines/175
+- https://journals.openedition.org/insaniyat/26849
+- https://atlaskmns.ru/page/en/people_sojoty.html
+- https://dx.doi.org/10.1163/9789004503502_011
+- https://doi.org/10.3390/su14031750
+- https://dx.doi.org/10.1163/2467-9666_enbo_COM_4138
+- https://dx.doi.org/10.3390/heritage8090385
+- https://doi.org/10.3389/fsufs.2025.1718684
+- https://doi.org/10.1017/CHOL9780521209816.011
+- https://www.metmuseum.org/art/collection/search/314366
+- https://www.metmuseum.org/art/collection/search/314304
+- https://journals.openedition.org/terrain/2718

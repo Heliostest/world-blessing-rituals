@@ -46,7 +46,9 @@
 - **评估状态：** 待后期统一评估
 
 ## 参考来源
-
 - https://www.atlaskmns.ru/page/en/people_sojoty_spirit.html
 - https://joshuaproject.net/people_groups/19736/RS
 - https://brill.com/view/journals/inas/22/2/article-p237_6.xml
+- https://atlaskmns.ru/page/en/people_sojoty.html
+- https://dx.doi.org/10.1163/9789004503502_011
+- https://doi.org/10.3390/su14031750

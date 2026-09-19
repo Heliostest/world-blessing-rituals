@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Oroch
-- https://www.britannica.com/place/Siberia
-- https://www.britannica.com/place/Russian-Far-East
+- https://atlaskmns.ru/page/en/people_orochi_spirit.html
+- https://doi.org/10.15405/epsbs.2019.12.04.52
+- https://doi.org/10.3390/rel11020055

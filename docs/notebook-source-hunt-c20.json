@@ -28,6 +28,20 @@
         "https://www.britannica.com/place/Tabora",
         "https://www.britannica.com/place/Tanzania"
       ],
+      "added_urls": [
+        "https://doi.org/10.1086/725199",
+        "https://doi.org/10.47772/IJRISS.2024.804111"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Tabora",
+        "https://www.britannica.com/place/Tanzania"
+      ],
+      "final_source_count": 3,
+      "final_urls": [
+        "https://www.britannica.com/topic/Nyamwezi",
+        "https://doi.org/10.1086/725199",
+        "https://doi.org/10.47772/IJRISS.2024.804111"
+      ],
       "rituals": [
         "1. 祖先敬礼（概念层）",
         "2. 教堂／清真寺公开崇拜（概念层）",
@@ -42,6 +56,18 @@
         "https://en.wikipedia.org/wiki/Donyi-Polo",
         "https://asianethnology.org/article/149718-the-institutionalization-of-tribal-religion-recasting-the-donyi-polo-movement-in-arunachal-pradesh/attachment/313629.pdf",
         "https://www.britannica.com/place/Arunachal-Pradesh"
+      ],
+      "added_urls": [
+        "https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Arunachal-Pradesh"
+      ],
+      "final_source_count": 3,
+      "final_urls": [
+        "https://en.wikipedia.org/wiki/Donyi-Polo",
+        "https://asianethnology.org/article/149718-the-institutionalization-of-tribal-religion-recasting-the-donyi-polo-movement-in-arunachal-pradesh/attachment/313629.pdf",
+        "https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf"
       ],
       "rituals": [
         "1. Nyedar Namlo 公共祈祷（概念层）",
@@ -58,6 +84,19 @@
         "https://maoridictionary.co.nz/word/2275",
         "https://teara.govt.nz/en/traditional-maori-religion-nga-karakia-a-te-maori/page-4"
       ],
+      "added_urls": [
+        "https://teara.govt.nz/en/traditional-maori-religion-nga-karakia-a-te-maori/print",
+        "https://www.tepapa.govt.nz/digital-museum/explore-digital-museum/matariki-maori-new-year/what-is-a-hautapu"
+      ],
+      "removed_urls": [],
+      "final_source_count": 5,
+      "final_urls": [
+        "https://www.otago.ac.nz/maori/world/te-reo-maori/karakia-prayers",
+        "https://maoridictionary.co.nz/word/2275",
+        "https://teara.govt.nz/en/traditional-maori-religion-nga-karakia-a-te-maori/page-4",
+        "https://teara.govt.nz/en/traditional-maori-religion-nga-karakia-a-te-maori/print",
+        "https://www.tepapa.govt.nz/digital-museum/explore-digital-museum/matariki-maori-new-year/what-is-a-hautapu"
+      ],
       "rituals": [
         "1. 卡拉基亚（karakia）",
         "2. 欢迎与界线礼仪（如 pōwhiri 相关）",
@@ -72,6 +111,22 @@
         "https://www.britannica.com/place/Ontong-Java-Atoll",
         "https://www.britannica.com/place/Solomon-Islands",
         "https://www.britannica.com/place/Polynesia"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1080/00223344.2026.2613309",
+        "https://doi.org/10.1017/ehs.2024.45",
+        "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/026d01e1-a96f-4547-8a2a-c5c61aac3720/content"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Ontong-Java-Atoll",
+        "https://www.britannica.com/place/Solomon-Islands",
+        "https://www.britannica.com/place/Polynesia"
+      ],
+      "final_source_count": 3,
+      "final_urls": [
+        "https://doi.org/10.1080/00223344.2026.2613309",
+        "https://doi.org/10.1017/ehs.2024.45",
+        "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/026d01e1-a96f-4547-8a2a-c5c61aac3720/content"
       ],
       "rituals": [
         "1. 基督教堂区礼仪（概念层）",
@@ -88,6 +143,22 @@
         "https://www.britannica.com/place/Indonesia",
         "https://www.britannica.com/topic/palm-oil"
       ],
+      "added_urls": [
+        "https://doi.org/10.65844/2549-4333.1257",
+        "https://doi.org/10.14710/endogami.1.1.1-13",
+        "https://doi.org/10.15408/sd.v1i2.1258"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Sumatra",
+        "https://www.britannica.com/place/Indonesia"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/palm-oil",
+        "https://doi.org/10.65844/2549-4333.1257",
+        "https://doi.org/10.14710/endogami.1.1.1-13",
+        "https://doi.org/10.15408/sd.v1i2.1258"
+      ],
       "rituals": [
         "1. 森林禁忌与生计伦理（概念层）",
         "2. 疾病与灵力中介（高度敏感，仅概念）",
@@ -102,6 +173,22 @@
         "https://www.britannica.com/topic/Oroch",
         "https://www.britannica.com/place/Siberia",
         "https://www.britannica.com/place/Russian-Far-East"
+      ],
+      "added_urls": [
+        "https://atlaskmns.ru/page/en/people_orochi_spirit.html",
+        "https://doi.org/10.15405/epsbs.2019.12.04.52",
+        "https://doi.org/10.3390/rel11020055"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Siberia",
+        "https://www.britannica.com/place/Russian-Far-East"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/Oroch",
+        "https://atlaskmns.ru/page/en/people_orochi_spirit.html",
+        "https://doi.org/10.15405/epsbs.2019.12.04.52",
+        "https://doi.org/10.3390/rel11020055"
       ],
       "rituals": [
         "1. 渔猎—山灵伦理（概念层）",
@@ -118,6 +205,22 @@
         "https://www.britannica.com/place/Sakhalin-Island",
         "https://www.britannica.com/place/Siberia"
       ],
+      "added_urls": [
+        "https://doi.org/10.22459/ofh.2020.08",
+        "https://atlaskmns.ru/page/en/people_oroki_common.html",
+        "https://doi.org/10.15021/00001201"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Sakhalin-Island",
+        "https://www.britannica.com/place/Siberia"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/Orok",
+        "https://doi.org/10.22459/ofh.2020.08",
+        "https://atlaskmns.ru/page/en/people_oroki_common.html",
+        "https://doi.org/10.15021/00001201"
+      ],
       "rituals": [
         "1. 驯鹿—海猎伦理（概念层）",
         "2. 萨满中介（极高敏感，仅概念）",
@@ -132,6 +235,24 @@
         "https://www.britannica.com/place/Papua-New-Guinea",
         "https://www.britannica.com/topic/Melanesian-culture",
         "https://www.britannica.com/place/New-Guinea"
+      ],
+      "added_urls": [
+        "https://doi.org/10.4000/books.editionsmsh.5816",
+        "https://doi.org/10.1017/s0010417516000311",
+        "https://journals.openedition.org/jso/pdf/724",
+        "https://journals.openedition.org/assr/23633"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Papua-New-Guinea",
+        "https://www.britannica.com/place/New-Guinea"
+      ],
+      "final_source_count": 5,
+      "final_urls": [
+        "https://www.britannica.com/topic/Melanesian-culture",
+        "https://doi.org/10.4000/books.editionsmsh.5816",
+        "https://doi.org/10.1017/s0010417516000311",
+        "https://journals.openedition.org/jso/pdf/724",
+        "https://journals.openedition.org/assr/23633"
       ],
       "rituals": [
         "1. 园艺与丰产伦理（概念层）",
@@ -148,6 +269,22 @@
         "https://doi.org/10.3390/rel14070867",
         "http://english.scio.gov.cn/m/chinafacts/2017-06/06/content_40974673.htm"
       ],
+      "added_urls": [
+        "https://doi.org/10.3390/rel15040415",
+        "https://doi.org/10.3390/h13060155",
+        "https://doi.org/10.3138/uram.30.3.232"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/oroqen"
+      ],
+      "final_source_count": 5,
+      "final_urls": [
+        "https://doi.org/10.3390/rel14070867",
+        "http://english.scio.gov.cn/m/chinafacts/2017-06/06/content_40974673.htm",
+        "https://doi.org/10.3390/rel15040415",
+        "https://doi.org/10.3390/h13060155",
+        "https://doi.org/10.3138/uram.30.3.232"
+      ],
       "rituals": [
         "1. 火神敬礼与岁末拜访（概念层）",
         "2. 猎后致敬与猛兽禁忌（概念层）",
@@ -162,6 +299,22 @@
         "https://www.britannica.com/topic/Ovimbundu",
         "https://www.britannica.com/place/Angola",
         "https://www.britannica.com/place/Benguela"
+      ],
+      "added_urls": [
+        "https://doi.org/10.2307/1156407",
+        "https://journals.openedition.org/mulemba/1542",
+        "https://www.scielo.br/j/mana/a/DT3cZVrbytSnSwrR73XBddx/?lang=pt"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Angola",
+        "https://www.britannica.com/place/Benguela"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/Ovimbundu",
+        "https://doi.org/10.2307/1156407",
+        "https://journals.openedition.org/mulemba/1542",
+        "https://www.scielo.br/j/mana/a/DT3cZVrbytSnSwrR73XBddx/?lang=pt"
       ],
       "rituals": [
         "1. 教堂崇拜（概念层）",
@@ -178,6 +331,22 @@
         "https://www.britannica.com/place/Northeast-India",
         "https://www.britannica.com/topic/Chin-people"
       ],
+      "added_urls": [
+        "https://doi.org/10.21659/rupkatha.v14n2.ne17",
+        "https://doi.org/10.63635/mrj.v1i1.12",
+        "https://doi.org/10.29328/journal.japch.1001005"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Manipur",
+        "https://www.britannica.com/place/Northeast-India"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/Chin-people",
+        "https://doi.org/10.21659/rupkatha.v14n2.ne17",
+        "https://doi.org/10.63635/mrj.v1i1.12",
+        "https://doi.org/10.29328/journal.japch.1001005"
+      ],
       "rituals": [
         "1. 基督教崇拜（概念层）",
         "2. 生命礼仪（概念层）",
@@ -193,11 +362,37 @@
         "https://www.britannica.com/place/Amazon-Rainforest",
         "https://www.britannica.com/topic/South-American-Indian"
       ],
+      "added_urls": [
+        "https://journals.openedition.org/ethnoecologie/2701",
+        "https://www.scielo.br/j/vb/a/D8xL5ytr88bKhVz4rNwCZwp/?lang=en",
+        "https://doi.org/10.3389/fnut.2023.1061611"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/French-Guiana",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "final_source_count": 4,
+      "final_urls": [
+        "https://www.britannica.com/topic/South-American-Indian",
+        "https://journals.openedition.org/ethnoecologie/2701",
+        "https://www.scielo.br/j/vb/a/D8xL5ytr88bKhVz4rNwCZwp/?lang=en",
+        "https://doi.org/10.3389/fnut.2023.1061611"
+      ],
       "rituals": [
         "1. 村落与神话公开层（概念）",
         "2. 护佑传统（极高敏感，仅概念）",
         "3. 教会与权利当代层（公开层）"
       ]
     }
+  ],
+  "input_url_count": 34,
+  "accepted_url_count": 34,
+  "dropped_urls": [],
+  "card_url_additions": 33,
+  "card_url_removals": 21,
+  "sources_unique_url_additions": 32,
+  "notes": [
+    "Nyishi 使用提供的 Arunachal Tourism Spiritual.pdf；未采用先前错误指向 Monpa 的候选。",
+    "未采用 RG 或 resolve.cambridge 候选；未进入卡片或 SOURCES.md。"
   ]
 }

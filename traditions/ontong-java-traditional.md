@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Ontong-Java-Atoll
-- https://www.britannica.com/place/Solomon-Islands
-- https://www.britannica.com/place/Polynesia
+- https://doi.org/10.1080/00223344.2026.2613309
+- https://doi.org/10.1017/ehs.2024.45
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/026d01e1-a96f-4547-8a2a-c5c61aac3720/content

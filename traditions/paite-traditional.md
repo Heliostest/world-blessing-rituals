@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Manipur
-- https://www.britannica.com/place/Northeast-India
 - https://www.britannica.com/topic/Chin-people
+- https://doi.org/10.21659/rupkatha.v14n2.ne17
+- https://doi.org/10.63635/mrj.v1i1.12
+- https://doi.org/10.29328/journal.japch.1001005

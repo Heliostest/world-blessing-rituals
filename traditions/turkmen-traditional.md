@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Turkmenistan/People
-- https://www.encyclopedia.com/places/commonwealth-independent-states-and-baltic-nations/cis-and-baltic-political-geography/turkmens
-- https://www.encyclopedia.com/places/commonwealth-independent-states-and-baltic-nations/cis-and-baltic-political-geography/turkmenistan
+- https://journals.openedition.org/remmm/10254
+- https://dx.doi.org/10.1108/ijcthr-05-2013-0033
+- https://journals.openedition.org/remmm/283
+- https://doi.org/10.1080/00210862.2013.860323

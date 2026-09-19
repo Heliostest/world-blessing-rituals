@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Macumba
-- https://www.britannica.com/topic/Candomble
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/afro-brazilian-religions
+- https://doi.org/10.70773/revistatopicos/774156673
+- https://doi.org/10.22456/1982-8136.8428
+- https://doi.org/10.3390/rel15080982
+- https://www.scielo.br/j/pe/a/P8tDsbdnZyNycjx76ZD7wZS/?lang=pt

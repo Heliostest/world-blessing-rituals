@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Turkana-people
-- https://www.britannica.com/place/Lake-Turkana
-- https://www.britannica.com/place/Kenya
+- https://doi.org/10.1093/afraf/adag006
+- https://doi.org/10.1073/pnas.2020430118
+- https://doi.org/10.1086/739930
+- https://doi.org/10.3828/whpnp.63837646691088

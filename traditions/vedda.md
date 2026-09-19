@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/veddas
 - https://vedda.org/wanniyalaeto.htm
-- https://www.britannica.com/topic/Vedda
+- https://doi.org/10.31357/fhss/vjhss.v10i02.01
+- https://vedda.org/keerthisinghe.htm
+- https://rsisinternational.org/journals/ijriss/articles/indigenous-communication-practices-an-exploration-of-traditional-modes-among-the-vedda-in-dambana-sri-lanka/

@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://atlaskmns.ru/page/en/people_udegeicy_spirit.html
-- https://www.britannica.com/place/Sikhote-Alin
 - https://factsanddetails.com/world/cat55/sub350/item1919.html
+- https://www.atlaskmns.ru/page/en/people_udegeicy_modart.html
+- https://journals.openedition.org/civilisations/3334

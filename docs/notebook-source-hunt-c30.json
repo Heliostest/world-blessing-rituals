@@ -32,7 +32,25 @@
         "1. 牲畜—祖先伦理（概念层）",
         "2. 雨水与预言叙事（敏感，仅概念）",
         "3. 教堂崇拜（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.1093/afraf/adag006",
+        "https://doi.org/10.1073/pnas.2020430118",
+        "https://doi.org/10.1086/739930",
+        "https://doi.org/10.3828/whpnp.63837646691088"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Turkana-people",
+        "https://www.britannica.com/place/Lake-Turkana",
+        "https://www.britannica.com/place/Kenya"
+      ],
+      "final_urls": [
+        "https://doi.org/10.1093/afraf/adag006",
+        "https://doi.org/10.1073/pnas.2020430118",
+        "https://doi.org/10.1086/739930",
+        "https://doi.org/10.3828/whpnp.63837646691088"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "turkmen-traditional",
@@ -47,7 +65,25 @@
         "1. 圣徒圣地朝拜（ziyarat／ovliya）（中高敏感）",
         "2. 伊斯兰年节与诺鲁孜等公共节庆",
         "3. 生命礼仪中的祝福与护佑民俗（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://journals.openedition.org/remmm/10254",
+        "https://dx.doi.org/10.1108/ijcthr-05-2013-0033",
+        "https://journals.openedition.org/remmm/283",
+        "https://doi.org/10.1080/00210862.2013.860323"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Turkmenistan/People",
+        "https://www.encyclopedia.com/places/commonwealth-independent-states-and-baltic-nations/cis-and-baltic-political-geography/turkmens",
+        "https://www.encyclopedia.com/places/commonwealth-independent-states-and-baltic-nations/cis-and-baltic-political-geography/turkmenistan"
+      ],
+      "final_urls": [
+        "https://journals.openedition.org/remmm/10254",
+        "https://dx.doi.org/10.1108/ijcthr-05-2013-0033",
+        "https://journals.openedition.org/remmm/283",
+        "https://doi.org/10.1080/00210862.2013.860323"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "tzotzil-maya",
@@ -62,7 +98,25 @@
         "1. 圣徒节与 cargos 公共礼仪（概念层）",
         "2. 圣山与四角田地仪式电路（概念层）",
         "3. Ilol 疗愈（高度敏感，仅概念）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.1525/can.1993.8.4.02a00030",
+        "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742009000100006",
+        "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-41152011000100218",
+        "https://journals.openedition.org/jsa/13456"
+      ],
+      "removed_urls": [
+        "https://www.everyculture.com/Middle-America-Caribbean/Tzotzil-of-Chamula-Religion-and-Expressive-Culture.html",
+        "https://www.everyculture.com/Middle-America-Caribbean/Tzotzil-of-Zinacantan-Religion-and-Expressive-Culture.html",
+        "https://www.britannica.com/topic/Tzotzil"
+      ],
+      "final_urls": [
+        "https://doi.org/10.1525/can.1993.8.4.02a00030",
+        "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742009000100006",
+        "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-41152011000100218",
+        "https://journals.openedition.org/jsa/13456"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "tzutujil-traditional",
@@ -77,7 +131,25 @@
         "1. 主保圣人节（公开层）",
         "2. 纺织与社区伦理（概念层）",
         "3. 更封闭的地方圣徒／圣地实践（敏感，仅概念）"
-      ]
+      ],
+      "applied_urls": [
+        "https://journals.openedition.org/alhim/4473",
+        "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742007000100006",
+        "https://journals.openedition.org/nuevomundo/66743",
+        "https://journals.openedition.org/trace/457"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Tzutujil",
+        "https://www.britannica.com/place/Lake-Atitlan",
+        "https://www.britannica.com/topic/Maya-people"
+      ],
+      "final_urls": [
+        "https://journals.openedition.org/alhim/4473",
+        "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742007000100006",
+        "https://journals.openedition.org/nuevomundo/66743",
+        "https://journals.openedition.org/trace/457"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "udege-traditional",
@@ -92,7 +164,21 @@
         "1. 渔猎前后对主人灵的祈请（概念层）",
         "2. 火灵与家屋护佑（概念层）",
         "3. 萨满中介与东正教余绪（高度敏感，仅概念）"
-      ]
+      ],
+      "applied_urls": [
+        "https://www.atlaskmns.ru/page/en/people_udegeicy_modart.html",
+        "https://journals.openedition.org/civilisations/3334"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Sikhote-Alin"
+      ],
+      "final_urls": [
+        "https://atlaskmns.ru/page/en/people_udegeicy_spirit.html",
+        "https://factsanddetails.com/world/cat55/sub350/item1919.html",
+        "https://www.atlaskmns.ru/page/en/people_udegeicy_modart.html",
+        "https://journals.openedition.org/civilisations/3334"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "ukrainian-folk",
@@ -107,7 +193,25 @@
         "1. 东正教礼仪年与圣礼（概念层）",
         "2. 修道院／圣井朝圣（概念层）",
         "3. 圣诞—丰收民俗祈福（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/pysanka-ukrainian-tradition-and-art-of-decorating-eggs-02134",
+        "https://doi.org/10.1163/9789004688810_005",
+        "https://doi.org/10.59277/jef.2025.1-2.10",
+        "https://journals.openedition.org/ethnoecologie/3388"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Eastern-Orthodoxy",
+        "https://www.britannica.com/place/Ukraine",
+        "https://www.britannica.com/topic/Slavic-religion"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/pysanka-ukrainian-tradition-and-art-of-decorating-eggs-02134",
+        "https://doi.org/10.1163/9789004688810_005",
+        "https://doi.org/10.59277/jef.2025.1-2.10",
+        "https://journals.openedition.org/ethnoecologie/3388"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "ulchi-traditional",
@@ -122,7 +226,23 @@
         "1. 自然主人灵与渔猎物候礼仪（概念层）",
         "2. 萨满与送灵叙事（高度敏感，禁止操作）",
         "3. 祖先／氏族敬礼与东正教并存（部分敏感）"
-      ]
+      ],
+      "applied_urls": [
+        "https://atlaskmns.ru/page/en/people_ulchi.html",
+        "https://www.atlaskmns.ru/page/en/lang_ulchi.html",
+        "https://dx.doi.org/10.20517/jtgg.2025.140"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/place/Amur-River"
+      ],
+      "final_urls": [
+        "https://www.atlaskmns.ru/page/en/people_ulchi_spirit.html",
+        "https://factsanddetails.com/world/cat55/sub350/item1919.html",
+        "https://atlaskmns.ru/page/en/people_ulchi.html",
+        "https://www.atlaskmns.ru/page/en/lang_ulchi.html",
+        "https://dx.doi.org/10.20517/jtgg.2025.140"
+      ],
+      "final_source_count": 5
     },
     {
       "slug": "umbanda",
@@ -137,7 +257,25 @@
         "1. 公共通灵会（会话／gira，概念层）",
         "2. 供养与慈善工作（概念层）",
         "3. 纪念日与灵类节日（概念层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.70773/revistatopicos/774156673",
+        "https://doi.org/10.22456/1982-8136.8428",
+        "https://doi.org/10.3390/rel15080982",
+        "https://www.scielo.br/j/pe/a/P8tDsbdnZyNycjx76ZD7wZS/?lang=pt"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Macumba",
+        "https://www.britannica.com/topic/Candomble",
+        "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/afro-brazilian-religions"
+      ],
+      "final_urls": [
+        "https://doi.org/10.70773/revistatopicos/774156673",
+        "https://doi.org/10.22456/1982-8136.8428",
+        "https://doi.org/10.3390/rel15080982",
+        "https://www.scielo.br/j/pe/a/P8tDsbdnZyNycjx76ZD7wZS/?lang=pt"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "uyghur-mazar",
@@ -152,7 +290,24 @@
         "1. Ziyarat 谒陵祈祷（概念—历史层）",
         "2. 麻扎节日与社群聚会（历史公共层）",
         "3. 苏非记忆与绿洲圣地理（文化史层）"
-      ]
+      ],
+      "applied_urls": [
+        "https://journals.openedition.org/chinaperspectives/9358",
+        "https://journals.openedition.org/sextant/782",
+        "https://doi.org/10.1017/S1356186322000773",
+        "https://doi.org/10.1080/01419870.2020.1856904"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://edspace.american.edu/silkroadjournal/wp-content/uploads/sites/984/2017/09/Shrine-Pilgrimage-Among-the-Uighurs.pdf",
+        "https://journal.fi/scripta/article/view/67364",
+        "https://doi.org/10.1080/09681220208567330",
+        "https://journals.openedition.org/chinaperspectives/9358",
+        "https://journals.openedition.org/sextant/782",
+        "https://doi.org/10.1017/S1356186322000773",
+        "https://doi.org/10.1080/01419870.2020.1856904"
+      ],
+      "final_source_count": 7
     },
     {
       "slug": "vedda",
@@ -167,7 +322,23 @@
         "1. 祖先灵咨问与狩猎相关奉献（概念层）",
         "2. Kiri Koraha 等仪式舞的公共史述（核心神圣层，概念）",
         "3. 佛教／印度教叠合与土地伦理（当代伦理层，概念）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.31357/fhss/vjhss.v10i02.01",
+        "https://vedda.org/keerthisinghe.htm",
+        "https://rsisinternational.org/journals/ijriss/articles/indigenous-communication-practices-an-exploration-of-traditional-modes-among-the-vedda-in-dambana-sri-lanka/"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/veddas",
+        "https://www.britannica.com/topic/Vedda"
+      ],
+      "final_urls": [
+        "https://vedda.org/wanniyalaeto.htm",
+        "https://doi.org/10.31357/fhss/vjhss.v10i02.01",
+        "https://vedda.org/keerthisinghe.htm",
+        "https://rsisinternational.org/journals/ijriss/articles/indigenous-communication-practices-an-exploration-of-traditional-modes-among-the-vedda-in-dambana-sri-lanka/"
+      ],
+      "final_source_count": 4
     },
     {
       "slug": "venda-traditional",
@@ -182,7 +353,25 @@
         "1. 家户祖先敬拜与祈雨（概念层）",
         "2. Domba 等入会序列（核心神圣层，概念）",
         "3. Tshikona 与公共文化伦理（当代伦理层，概念）"
-      ]
+      ],
+      "applied_urls": [
+        "https://doi.org/10.3390/heritage4040249",
+        "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2018000200006",
+        "https://doi.org/10.1080/00020189208707757",
+        "https://journals.openedition.org/ethnomusicologie/2849"
+      ],
+      "removed_urls": [
+        "https://www.encyclopedia.com/history/asia-and-africa/southern-african-history/venda",
+        "https://www.britannica.com/topic/Mwari"
+      ],
+      "final_urls": [
+        "https://era.anthropology.ac.uk/Era_Resources/Era/VendaGirls/Definitions/DefDomba.html",
+        "https://doi.org/10.3390/heritage4040249",
+        "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2018000200006",
+        "https://doi.org/10.1080/00020189208707757",
+        "https://journals.openedition.org/ethnomusicologie/2849"
+      ],
+      "final_source_count": 5
     },
     {
       "slug": "vietnamese-folk",
@@ -197,12 +386,105 @@
         "1. 家庭祭祖与上香",
         "2. 农历新年祭坛布置与迎祖",
         "3. 庙祠祈福与还愿"
-      ]
+      ],
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/practices-related-to-the-viet-beliefs-in-the-mother-goddesses-of-three-realms-01064",
+        "https://doi.org/10.18848/2154-8633/CGP/v15i02/113-137",
+        "https://journals.openedition.org/moussons/9539",
+        "https://dx.doi.org/10.12691/education-6-5-29"
+      ],
+      "removed_urls": [],
+      "final_urls": [
+        "https://en.vietnamplus.vn/ancestral-altar-quintessence-of-vietnamese-lunar-new-year-post205454.vnp",
+        "https://english.vov.vn/en/culture/how-do-vietnamese-families-decorate-ancestral-altar-during-tet-836780.vov",
+        "https://kids.britannica.com/students/article/ancestor-worship/272853",
+        "https://ich.unesco.org/en/RL/practices-related-to-the-viet-beliefs-in-the-mother-goddesses-of-three-realms-01064",
+        "https://doi.org/10.18848/2154-8633/CGP/v15i02/113-137",
+        "https://journals.openedition.org/moussons/9539",
+        "https://dx.doi.org/10.12691/education-6-5-29"
+      ],
+      "final_source_count": 7
     }
   ],
   "prompt_constraints": [
     "每卡补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／朝圣页、博物馆／民俗档案、学术 DOI 或民族志。",
     "不要采用 Britannica /place/、encyclopedia.com 总览、everyculture.com 总览或 Wikipedia 总览；不要改档位或写操演步骤。",
     "如搜不到足够强来源，写明检索关键词，不要用弱来源填充。"
-  ]
+  ],
+  "input_url_count": 45,
+  "input_unique_url_count": 45,
+  "card_url_added_count": 44,
+  "card_url_removed_count": 24,
+  "sources_unique_urls_added": 41,
+  "sources_urls_already_present": 4,
+  "applied_url_lists": {
+    "turkana-traditional": [
+      "https://doi.org/10.1093/afraf/adag006",
+      "https://doi.org/10.1073/pnas.2020430118",
+      "https://doi.org/10.1086/739930",
+      "https://doi.org/10.3828/whpnp.63837646691088"
+    ],
+    "turkmen-traditional": [
+      "https://journals.openedition.org/remmm/10254",
+      "https://dx.doi.org/10.1108/ijcthr-05-2013-0033",
+      "https://journals.openedition.org/remmm/283",
+      "https://doi.org/10.1080/00210862.2013.860323"
+    ],
+    "tzotzil-maya": [
+      "https://doi.org/10.1525/can.1993.8.4.02a00030",
+      "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742009000100006",
+      "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-41152011000100218",
+      "https://journals.openedition.org/jsa/13456"
+    ],
+    "tzutujil-traditional": [
+      "https://journals.openedition.org/alhim/4473",
+      "https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742007000100006",
+      "https://journals.openedition.org/nuevomundo/66743",
+      "https://journals.openedition.org/trace/457"
+    ],
+    "udege-traditional": [
+      "https://www.atlaskmns.ru/page/en/people_udegeicy_modart.html",
+      "https://journals.openedition.org/civilisations/3334"
+    ],
+    "ukrainian-folk": [
+      "https://ich.unesco.org/en/RL/pysanka-ukrainian-tradition-and-art-of-decorating-eggs-02134",
+      "https://doi.org/10.1163/9789004688810_005",
+      "https://doi.org/10.59277/jef.2025.1-2.10",
+      "https://journals.openedition.org/ethnoecologie/3388"
+    ],
+    "ulchi-traditional": [
+      "https://atlaskmns.ru/page/en/people_ulchi.html",
+      "https://www.atlaskmns.ru/page/en/lang_ulchi.html",
+      "https://dx.doi.org/10.20517/jtgg.2025.140"
+    ],
+    "umbanda": [
+      "https://doi.org/10.70773/revistatopicos/774156673",
+      "https://doi.org/10.22456/1982-8136.8428",
+      "https://doi.org/10.3390/rel15080982",
+      "https://www.scielo.br/j/pe/a/P8tDsbdnZyNycjx76ZD7wZS/?lang=pt"
+    ],
+    "uyghur-mazar": [
+      "https://journals.openedition.org/chinaperspectives/9358",
+      "https://journals.openedition.org/sextant/782",
+      "https://doi.org/10.1017/S1356186322000773",
+      "https://doi.org/10.1080/01419870.2020.1856904"
+    ],
+    "vedda": [
+      "https://doi.org/10.31357/fhss/vjhss.v10i02.01",
+      "https://vedda.org/keerthisinghe.htm",
+      "https://rsisinternational.org/journals/ijriss/articles/indigenous-communication-practices-an-exploration-of-traditional-modes-among-the-vedda-in-dambana-sri-lanka/"
+    ],
+    "venda-traditional": [
+      "https://doi.org/10.3390/heritage4040249",
+      "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2018000200006",
+      "https://doi.org/10.1080/00020189208707757",
+      "https://journals.openedition.org/ethnomusicologie/2849"
+    ],
+    "vietnamese-folk": [
+      "https://ich.unesco.org/en/RL/practices-related-to-the-viet-beliefs-in-the-mother-goddesses-of-three-realms-01064",
+      "https://doi.org/10.18848/2154-8633/CGP/v15i02/113-137",
+      "https://journals.openedition.org/moussons/9539",
+      "https://dx.doi.org/10.12691/education-6-5-29"
+    ]
+  }
 }

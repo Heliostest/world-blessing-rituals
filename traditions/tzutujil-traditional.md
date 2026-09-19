@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Tzutujil
-- https://www.britannica.com/place/Lake-Atitlan
-- https://www.britannica.com/topic/Maya-people
+- https://journals.openedition.org/alhim/4473
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742007000100006
+- https://journals.openedition.org/nuevomundo/66743
+- https://journals.openedition.org/trace/457

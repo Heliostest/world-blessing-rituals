@@ -3671,3 +3671,47 @@
 - https://ich.unesco.org/en/RL/vimbuza-healing-dance-00158
 - https://doi.org/10.2979/RAL.2001.32.2.213
 - https://doi.org/10.3366/E0001972009000904
+
+## 增补传统（Notebook source hunt C30：图尔卡纳—越南民间信仰）
+
+- https://doi.org/10.1093/afraf/adag006
+- https://doi.org/10.1086/739930
+- https://doi.org/10.3828/whpnp.63837646691088
+- https://journals.openedition.org/remmm/10254
+- https://dx.doi.org/10.1108/ijcthr-05-2013-0033
+- https://journals.openedition.org/remmm/283
+- https://doi.org/10.1080/00210862.2013.860323
+- https://doi.org/10.1525/can.1993.8.4.02a00030
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742009000100006
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-41152011000100218
+- https://journals.openedition.org/jsa/13456
+- https://journals.openedition.org/alhim/4473
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0185-25742007000100006
+- https://journals.openedition.org/trace/457
+- https://www.atlaskmns.ru/page/en/people_udegeicy_modart.html
+- https://journals.openedition.org/civilisations/3334
+- https://ich.unesco.org/en/RL/pysanka-ukrainian-tradition-and-art-of-decorating-eggs-02134
+- https://doi.org/10.1163/9789004688810_005
+- https://doi.org/10.59277/jef.2025.1-2.10
+- https://journals.openedition.org/ethnoecologie/3388
+- https://atlaskmns.ru/page/en/people_ulchi.html
+- https://www.atlaskmns.ru/page/en/lang_ulchi.html
+- https://dx.doi.org/10.20517/jtgg.2025.140
+- https://doi.org/10.70773/revistatopicos/774156673
+- https://doi.org/10.22456/1982-8136.8428
+- https://doi.org/10.3390/rel15080982
+- https://www.scielo.br/j/pe/a/P8tDsbdnZyNycjx76ZD7wZS/?lang=pt
+- https://journals.openedition.org/chinaperspectives/9358
+- https://journals.openedition.org/sextant/782
+- https://doi.org/10.1080/01419870.2020.1856904
+- https://doi.org/10.31357/fhss/vjhss.v10i02.01
+- https://vedda.org/keerthisinghe.htm
+- https://rsisinternational.org/journals/ijriss/articles/indigenous-communication-practices-an-exploration-of-traditional-modes-among-the-vedda-in-dambana-sri-lanka/
+- https://doi.org/10.3390/heritage4040249
+- https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2018000200006
+- https://doi.org/10.1080/00020189208707757
+- https://journals.openedition.org/ethnomusicologie/2849
+- https://ich.unesco.org/en/RL/practices-related-to-the-viet-beliefs-in-the-mother-goddesses-of-three-realms-01064
+- https://doi.org/10.18848/2154-8633/CGP/v15i02/113-137
+- https://journals.openedition.org/moussons/9539
+- https://dx.doi.org/10.12691/education-6-5-29

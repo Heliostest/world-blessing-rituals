@@ -54,3 +54,7 @@
 - https://en.vietnamplus.vn/ancestral-altar-quintessence-of-vietnamese-lunar-new-year-post205454.vnp
 - https://english.vov.vn/en/culture/how-do-vietnamese-families-decorate-ancestral-altar-during-tet-836780.vov
 - https://kids.britannica.com/students/article/ancestor-worship/272853
+- https://ich.unesco.org/en/RL/practices-related-to-the-viet-beliefs-in-the-mother-goddesses-of-three-realms-01064
+- https://doi.org/10.18848/2154-8633/CGP/v15i02/113-137
+- https://journals.openedition.org/moussons/9539
+- https://dx.doi.org/10.12691/education-6-5-29

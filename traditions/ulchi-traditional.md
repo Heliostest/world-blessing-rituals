@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.atlaskmns.ru/page/en/people_ulchi_spirit.html
-- https://www.britannica.com/place/Amur-River
 - https://factsanddetails.com/world/cat55/sub350/item1919.html
+- https://atlaskmns.ru/page/en/people_ulchi.html
+- https://www.atlaskmns.ru/page/en/lang_ulchi.html
+- https://dx.doi.org/10.20517/jtgg.2025.140

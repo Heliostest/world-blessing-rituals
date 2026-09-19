@@ -53,5 +53,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://ich.unesco.org/en/RL/celestinian-forgiveness-celebration-01276
+- https://oaj.fupress.net/index.php/ah/article/view/17744
+- https://www.abruzzoturismo.it/it/riti-personaggi-e-miti

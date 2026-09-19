@@ -47,8 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Buyei
 - https://factsanddetails.com/china/cat5/sub30/entry-4379.html
 - https://doi.org/10.1163/2210-7363_ecll_COM_000055
 - https://doi.org/10.3389/fpsyg.2019.02603
 - https://doi.org/10.3389/fpls.2024.1364481
+- https://www.ihchina.cn/project_details/15284/
+- https://www.ihchina.cn/project_details/15285/
+- https://www.progressingeography.com/CN/10.18306/dlkxjz.2022.11.010

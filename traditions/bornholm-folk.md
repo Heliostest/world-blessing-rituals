@@ -47,8 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Church-of-Denmark
 - https://bornholm.info/en/oesterlars-round-church/
 - https://bornholm.info/en/round-churches-on-bornholm/
 - https://www.visitdenmark.com/denmark/destinations/bornholm/attractions
 - http://danmarkskirker.natmus.dk/
+- https://natmus.dk/historisk-viden/temaer/fester-og-traditioner/sankthans/sankthanskoen/boernenes-sankthans-kilder/
+- https://bornholm.dk/service-og-selvbetjening/kultur-og-fritid/bornholms-oe-arkiv/om-bornholms-oe-arkiv
+- https://bornholmsmuseum.dk/da/madkulturhuset-bornholm/

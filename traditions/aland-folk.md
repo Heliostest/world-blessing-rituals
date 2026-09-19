@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Church-of-Sweden
 - https://visitaland.com/en/experience/sights-excursions/aland-churches/
 - https://visitaland.com/en/experience/midsummer-in-aland/
 - https://www.nordiskamuseet.se/utforska/hogtider/midsommar/
+- https://www.kultur.ax/kulturforeningar-och-kulturutovare/festivaler
+- https://helda.helsinki.fi/server/api/core/bitstreams/c4755801-f208-4e98-8dc5-d16822094b4d/content
+- https://www.museum.ax/besok-vara-museer-och-sevardheter

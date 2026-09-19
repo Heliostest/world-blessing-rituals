@@ -50,3 +50,6 @@
 - https://english.radio.cz/believers-go-pilgrimage-velehrad-cyril-and-methodius-celebrations-8553001
 - https://english.radio.cz/bystrice-pod-hostynem-8612067
 - https://www.south-moravia.com/en/pilgrimage-through-south-moravia/cyril-and-methodius-routes/
+- https://ich.unesco.org/en/RL/ride-of-the-kings-in-the-south-east-of-the-czech-republic-00564
+- https://www.visitczechia.com/en-us/things-to-do/places/landmarks/religious-monuments/c-velehrad-cistercian-monastery-st-cyril-and-metho
+- https://www.visitczechia.com/de-de/things-to-do/places/landmarks/religious-monuments/c-holy-hostyn

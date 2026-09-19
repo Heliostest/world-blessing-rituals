@@ -49,4 +49,6 @@
 
 - https://www.newadvent.org/cathen/11477b.htm
 - https://www.bcd.bzh/becedia/en/brittany-land-of-pardons
-- https://www.everyculture.com/Europe/Bretons-Religion-and-Expressive-Culture.html
+- https://www.culture.gouv.fr/thematiques/patrimoine-culturel-immateriel/vivre-le-patrimoine-culturel-immateriel/reportages/la-bretagne-terre-des-pardons
+- https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/Fiches-inventaire-du-PCI/les-pardons-et-tromenies-en-bretagne.pdf
+- https://dx.doi.org/10.3917/ethn.124.0635

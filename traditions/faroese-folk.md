@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Faroe-Islands-Atlantic-Ocean
 - https://www.tjodsavnid.fo/english-skrain-livandi-mentan/the-faroese-chaindance
 - https://www.faroeislands.fo/the-big-picture/national-symbols/national-day
+- https://visitfaroeislands.com/dk/whatson/events/event/st-olafs-national-celebration
+- https://visitfaroeislands.com/about-vfi/history-governance-and-economy/quick-facts/national-symbols

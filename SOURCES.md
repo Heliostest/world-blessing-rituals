@@ -2848,3 +2848,36 @@
 - https://www.santuariosantarita.it/
 - https://www.unesco.it/it/news/lenciclopedia-treccani-e-le-tavole-iguvine-sono-le-due-candidature-italiane-al-programma-unesco-memoria-del-mondo-per-il-ciclo-2026-2027/
 - https://www.worldheritageexplorer.org/sites/bolgar_historical_and_archaeological_complex.html
+
+## 增补传统（Notebook source hunt C8：阿卡—斐济）
+
+- https://doi.org/10.1111/rec3.12483
+- https://doi.org/10.1163/2210-7363_ecll_COM_000055
+- https://doi.org/10.18306/dlkxjz.2020.02.010
+- https://doi.org/10.30819/aemr.2
+- https://doi.org/10.3389/fpls.2024.1364481
+- https://doi.org/10.3389/fpsyg.2019.02603
+- https://doi.org/10.3390/agronomy14122913
+- https://doi.org/10.3390/land13122004
+- https://doi.org/10.3390/rel14010110
+- https://doi.org/10.3390/su13169003
+- https://doi.org/10.3390/su17093942
+- https://doi.org/10.38144/TKT.2026.1.3
+- https://doi.org/10.5772/intechopen.1015028
+- https://dx.doi.org/10.3917/ethn.124.0635
+- https://dx.doi.org/10.4000/assr.18403
+- https://ich.unesco.org/doc/src/45516-FR.pdf?t=1568629329
+- https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-62640.pdf
+- https://ich.unesco.org/en/RL/ride-of-the-kings-in-the-south-east-of-the-czech-republic-00564
+- https://ich.unesco.org/en/photo-pop-up-00973?photoID=00147
+- https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047
+- https://ich.unesco.org/en/state/micronesia-fs-FM
+- https://ich.unesco.org/es/-00973?photoID=00236
+- https://ich.unesco.org/fr/une-experience-de-patrimoine-vivant-et-la-pandemie-de-covid-19-01124?id=00021
+- https://visitfaroeislands.com/about-vfi/history-governance-and-economy/quick-facts/national-symbols
+- https://visitfaroeislands.com/dk/whatson/events/event/st-olafs-national-celebration
+- https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/Fiches-inventaire-du-PCI/les-pardons-et-tromenies-en-bretagne.pdf
+- https://www.culture.gouv.fr/thematiques/patrimoine-culturel-immateriel/vivre-le-patrimoine-culturel-immateriel/reportages/la-bretagne-terre-des-pardons
+- https://www.spc.int/DigitalLibrary/get/xe9qj
+- https://www.visitczechia.com/de-de/things-to-do/places/landmarks/religious-monuments/c-holy-hostyn
+- https://www.visitczechia.com/en-us/things-to-do/places/landmarks/religious-monuments/c-velehrad-cistercian-monastery-st-cyril-and-metho

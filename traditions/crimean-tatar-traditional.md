@@ -50,3 +50,4 @@
 - https://www.everyculture.com/Russia-Eurasia-China/Crimean-Tatars-Religion-and-Expressive-Culture.html
 - https://www.britannica.com/topic/Tatar
 - https://www.tataria.online/post/land-and-faith-what-is-the-specificity-of-crimean-tatar-islam
+- https://dx.doi.org/10.4000/assr.18403

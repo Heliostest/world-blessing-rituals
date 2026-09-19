@@ -50,3 +50,7 @@
 - https://culturalatlas.sbs.com.au/fijian-culture/fijian-culture-core-concepts
 - https://culturalatlas.sbs.com.au/fijian-culture/fijian-culture-etiquette
 - https://press-files.anu.edu.au/downloads/press/p289571/html/ch03.xhtml?page=9
+- https://doi.org/10.3390/su13169003
+- https://doi.org/10.3390/su17093942
+- https://doi.org/10.5772/intechopen.1015028
+- https://www.spc.int/DigitalLibrary/get/xe9qj

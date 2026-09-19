@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mandinka
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/malinke
 - https://www.britannica.com/topic/Mande
+- https://ich.unesco.org/en/RL/kankurang-manding-initiatory-rite-00143
+- https://doi.org/10.3366/edinburgh/9780748633197.003.0006
+- https://doi.org/10.1163/21540993-20230002
+- https://doi.org/10.1353/RAL.2001.0061

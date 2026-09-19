@@ -50,3 +50,7 @@
 - https://pia.gov.ph/features/all-set-for-kaamulan-street-dancing-event-featuring-bukidnons-seven-tribes/
 - https://ncca.gov.ph/about-ncca-3/subcommissions/subcommission-on-cultural-communities-and-traditional-arts-sccta/central-cultural-communities/the-mandaya-ethnic-group/
 - https://bukidnononline.com/kaamulan-festival-2026-schedule-of-activities/
+- https://www.nationalmuseum.gov.ph/2022/01/16/kahimunan-festival-a-ritual-of-gathering/
+- https://doi.org/10.52751/cmujs.2024.v28i1.w5ga4f58
+- https://doi.org/10.64612/ijiv.v1i6.78
+- https://talapamana.ncca.gov.ph/index.php/component/content/article/talapamana-mindanao?Itemid=101&catid=11

@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Manam
-- https://www.britannica.com/place/Papua-New-Guinea
-- https://www.britannica.com/place/Madang
+- https://doi.org/10.1080/00049182.2016.1267603
+- https://publications.iom.int/system/files/pdf/another_manam_report.pdf
+- https://openresearch-repository.anu.edu.au/entities/publication/694a5671-c9bf-4a01-bfec-b5ff2cdb76eb

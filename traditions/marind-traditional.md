@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Marind
-- https://www.britannica.com/place/Papua
-- https://www.britannica.com/place/New-Guinea
+- https://journals.openedition.org/jso/14796
+- https://journals.openedition.org/jso/6450

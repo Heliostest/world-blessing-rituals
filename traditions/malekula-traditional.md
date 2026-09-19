@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Malekula
-- https://www.britannica.com/place/Vanuatu
 - https://www.britannica.com/topic/Melanesian-culture
+- https://doi.org/10.4000/ocim.4148
+- https://doi.org/10.4225/72/570A79044704B
+- https://doi.org/10.1080/08941920.2014.905896
+- https://doi.org/10.1086/740598

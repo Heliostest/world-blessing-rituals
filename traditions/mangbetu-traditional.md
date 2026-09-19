@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Mangbetu
-- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
-- https://www.britannica.com/place/Central-Africa
+- https://www.metmuseum.org/art/collection/search/310063
+- https://doi.org/10.1163/afar_a_00775

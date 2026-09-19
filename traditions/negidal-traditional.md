@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Negidal
-- https://www.britannica.com/place/Amur-River
-- https://www.britannica.com/place/Siberia
+- https://atlaskmns.ru/page/en/people_negidalcy_spirit.html
+- https://atlaskmns.ru/page/en/people_negidalcy_common.html
+- https://www.folklore.ee/folklore/vol44/berezkin.pdf

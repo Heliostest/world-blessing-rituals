@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mundurucu
-- https://www.britannica.com/place/Tapajos-River
-- https://www.britannica.com/place/Amazon-Rainforest
+- https://doi.org/10.22409/antropolitica2022.i1.a45853
+- https://doi.org/10.48006/2358-0097-6204
+- https://www.scielo.br/j/vb/a/Vs84KdYPDrLv4jtPnPLvR7B/?lang=en

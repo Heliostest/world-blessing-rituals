@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Motu
-- https://www.britannica.com/place/Port-Moresby
-- https://www.britannica.com/place/Papua-New-Guinea
+- https://openresearch-repository.anu.edu.au/items/675bbb26-d9a4-4d1b-a3e1-1c2301c84b0d
+- https://doi.org/10.1080/03122417.2023.2238251
+- https://doi.org/10.58079/snw8

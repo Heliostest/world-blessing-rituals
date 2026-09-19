@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Monpa
-- https://www.britannica.com/place/Arunachal-Pradesh
 - https://www.britannica.com/topic/Tibetan-Buddhism
+- https://arunachaltourism.com/tawang-2/
+- https://arunachallivingheritage.com/people?type=Monpa
+- https://arunachaltourism.com/wp-content/uploads/2021/07/Spirtitual.pdf

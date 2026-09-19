@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Morogoro
-- https://www.britannica.com/place/Tanzania
-- https://www.britannica.com/place/East-Africa
+- https://doi.org/10.1371/journal.pone.0310387
+- https://doi.org/10.3389/fsrma.2025.1650915
+- https://journals.openedition.org/vertigo/27524

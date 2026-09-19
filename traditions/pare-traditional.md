@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Pare
-- https://www.britannica.com/place/Pare-Mountains
-- https://www.britannica.com/place/Tanzania
+- https://doi.org/10.2982/0012-8317(1998)87[279:TPFANC]2.0.CO;2
+- https://doi.org/10.4000/etudesafricaines.144
+- https://doi.org/10.1353/arw.0.0149
+- https://doi.org/10.1108/978-1-83608-216-320251018

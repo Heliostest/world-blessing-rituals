@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Orinoco-River
-- https://www.britannica.com/place/Amazon-Rainforest
 - https://www.britannica.com/topic/South-American-Indian
+- https://journals.openedition.org/jsa/21930
+- https://www.scielo.br/j/ra/a/SysMjpF7ZFmxtgDB9LqKHBm/?abstract/?lang=en
+- https://journals.openedition.org/jsa/23125

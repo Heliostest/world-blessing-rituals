@@ -50,3 +50,5 @@
 - https://www.britannica.com/topic/Pawnee-people
 - https://plainshumanities.unl.edu/encyclopedia/doc/egp.rel.035.html
 - https://repository.si.edu/handle/10088/32676
+- https://doi.org/10.1017/aaq.2024.63
+- https://doi.org/10.1093/hesc/9780197564370.003.0001

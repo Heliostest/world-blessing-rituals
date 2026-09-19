@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Papel
-- https://www.britannica.com/place/Guinea-Bissau
-- https://www.britannica.com/place/Bissau
+- https://journals.openedition.org/etnografica/2855
+- https://dx.doi.org/10.3368/aeh.43.1.162

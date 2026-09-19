@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Pentecost-Island
-- https://www.britannica.com/place/Vanuatu
 - https://www.britannica.com/topic/Melanesian-culture
+- https://www.vanuatu.travel/en/things-to-do/events/event/1-naghol-land-diving
+- https://www.vanuatu.travel/en/about-vanuatu/understanding-kastom
+- https://www.vanuatu.travel/au/plan/where-to-go/other-provinces/penama

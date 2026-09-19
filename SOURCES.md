@@ -3339,3 +3339,39 @@
 - https://journals.openedition.org/ethnoecologie/2701
 - https://www.scielo.br/j/vb/a/D8xL5ytr88bKhVz4rNwCZwp/?lang=en
 - https://doi.org/10.3389/fnut.2023.1061611
+
+## 增补传统（Notebook source hunt C21：帕纳拉—波戈罗）
+
+- https://pib.socioambiental.org/en/Povo:Panar%C3%A1
+- https://www.scielo.br/j/vb/a/ddY63qsqfpCvdRzpqCkQkVd/?lang=en
+- https://dx.doi.org/10.1098/rstb.2012.0164
+- https://journals.openedition.org/etnografica/2855
+- https://doi.org/10.2982/0012-8317(1998)87[279:TPFANC]2.0.CO;2
+- https://doi.org/10.4000/etudesafricaines.144
+- https://doi.org/10.1353/arw.0.0149
+- https://doi.org/10.1108/978-1-83608-216-320251018
+- https://dx.doi.org/10.31703/grr.2024(IX-I).12
+- https://doi.org/10.48165/sajssh.2026.7201
+- https://doi.org/10.1163/22142312-bja10062
+- https://doi.org/10.1108/qrj-08-2024-0175
+- https://doi.org/10.1017/aaq.2024.63
+- https://doi.org/10.1093/hesc/9780197564370.003.0001
+- https://www.scielo.br/j/elbc/a/fzmLm7XjJsvFCzNRYcHgxdD/?lang=en
+- https://doi.org/10.1086/593704
+- https://journals.openedition.org/anthrovision/9790
+- https://doi.org/10.1017/ehs.2022.3
+- https://doi.org/10.3390/su12020676
+- https://doi.org/10.33736/jbk.6332.2023
+- https://www.metmuseum.org/art/collection/search/311023
+- https://www.metmuseum.org/art/collection/search/312453
+- https://www.vanuatu.travel/en/things-to-do/events/event/1-naghol-land-diving
+- https://www.vanuatu.travel/en/about-vanuatu/understanding-kastom
+- https://www.vanuatu.travel/au/plan/where-to-go/other-provinces/penama
+- https://ipr.nagaland.gov.in/STORY-OF-PHOM-MONYI%C3%9C
+- https://ipr.nagaland.gov.in/phom
+- https://journals.openedition.org/jsa/21930
+- https://www.scielo.br/j/ra/a/SysMjpF7ZFmxtgDB9LqKHBm/?abstract/?lang=en
+- https://journals.openedition.org/jsa/23125
+- https://doi.org/10.1371/journal.pone.0310387
+- https://doi.org/10.3389/fsrma.2025.1650915
+- https://journals.openedition.org/vertigo/27524

@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Pende
-- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
 - https://www.britannica.com/topic/African-art
+- https://www.metmuseum.org/art/collection/search/311023
+- https://www.metmuseum.org/art/collection/search/312453

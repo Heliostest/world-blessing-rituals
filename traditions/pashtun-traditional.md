@@ -50,3 +50,7 @@
 - https://www.britannica.com/topic/Pashtun
 - https://www.britannica.com/topic/Pashtunwali
 - https://www.britannica.com/topic/Islam
+- https://dx.doi.org/10.31703/grr.2024(IX-I).12
+- https://doi.org/10.48165/sajssh.2026.7201
+- https://doi.org/10.1163/22142312-bja10062
+- https://doi.org/10.1108/qrj-08-2024-0175

@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Penan
-- https://www.britannica.com/place/Sarawak
-- https://www.britannica.com/place/Borneo
+- https://journals.openedition.org/anthrovision/9790
+- https://doi.org/10.1017/ehs.2022.3
+- https://doi.org/10.3390/su12020676
+- https://doi.org/10.33736/jbk.6332.2023

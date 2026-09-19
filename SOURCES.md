@@ -3074,3 +3074,47 @@
 - https://www.scielo.br/j/mana/a/bqC4yd4XTwSf6vpk58cqBvf/abstract/?lang=en
 - https://www.scielo.br/j/mana/a/wWFsdqD7jwrFQtVBZCht6Wk/?lang=pt
 - https://www.scielo.br/j/vb/a/43GvpdD7Zd996zvDGYKMYns/?lang=en
+
+## 增补传统（Notebook source hunt C14：库里亚—马莱库）
+
+- https://doi.org/10.3390/rel10040292
+- https://doi.org/10.47772/IJRISS.2024.8090280
+- https://doi.org/10.4000/etudesafricaines.135
+- https://www.revistas.inah.gob.mx/index.php/narrativasantropologicas/article/view/17547
+- https://doi.org/10.19130/iifl.ecm/61.002x4856001sm8
+- https://revistas.inah.gob.mx/index.php/cuicuilco/article/view/13173
+- https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=729
+- https://delawaretribe.org/wp-content/uploads/2026/04/NEAR_THE_EDGE.pdf
+- https://delawaretribe.org/wp-content/uploads/2026/04/aDelManClothing-2.pdf
+- https://dx.doi.org/10.5281/zenodo.2545989
+- https://doi.org/10.1093/jahist/89.2.752
+- https://www.metmuseum.org/essays/kingdoms-of-the-savanna-the-luba-and-lunda-empires
+- https://www.metmuseum.org/art/collection/search/690570
+- https://resources.metmuseum.org/resources/metpublications/pdf/Art_and_Oracle_African_Art_and_Rituals_of_Divination.pdf
+- https://doi.org/10.1080/17531055.2016.1254923
+- https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/the-art-of-africa.pdf
+- https://doi.org/10.1017/S0021853700013219
+- https://doi.org/10.4000/books.pulm.5528
+- https://www.scielo.br/j/elbc/a/fzmLm7XjJsvFCzNRYcHgxdD/?lang=pt
+- https://dx.doi.org/10.14195/2976-0232_1_4
+- https://doi.org/10.52426/rau.v12i1.338
+- https://www.nepjol.info/index.php/DSAJ/article/view/6366/5198
+- https://www.nepjol.info/index.php/mjecs/article/view/89916
+- https://www.nepjol.info/index.php/JMMIHS/article/view/30533
+- https://dx.doi.org/10.1371/journal.pone.0296886
+- https://doi.org/10.1080/03122417.2023.2238251
+- https://nla.gov.au/nla.obj-763156135/findingaid
+- https://dx.doi.org/10.46298/slovo.2021.7449
+- https://doi.org/10.3390/land15010094
+- https://doi.org/10.1017/S021853714000085
+- https://doi.org/10.3390/rel10090519
+- https://doi.org/10.17159/2309-9585/2024/v50a11
+- https://journals.openedition.org/lla/11885
+- https://journals.openedition.org/lla/9818
+- https://dx.doi.org/10.1163/9789004729469_008
+- https://doi.org/10.3390/rel16020201
+- https://doi.org/10.12797/Politeja.13.2016.40.06
+- https://doi.org/10.1163/26666286-12340029
+- https://doi.org/10.4324/9781003246190
+- https://www.scielo.sa.cr/scielo.php?script=sci_arttext&pid=S2215-26362020000100211
+- https://doi.org/10.1080/14678802.2018.1532643

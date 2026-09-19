@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Mozambique
-- https://www.britannica.com/place/Tanzania
 - https://www.britannica.com/topic/Swahili-people
+- https://doi.org/10.17159/2309-9585/2024/v50a11
+- https://journals.openedition.org/lla/11885
+- https://journals.openedition.org/lla/9818

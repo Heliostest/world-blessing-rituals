@@ -49,4 +49,7 @@
 
 - https://www.britannica.com/topic/Luba-people
 - https://www.britannica.com/topic/Luba-Kasai
-- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
+- https://www.metmuseum.org/essays/kingdoms-of-the-savanna-the-luba-and-lunda-empires
+- https://www.metmuseum.org/art/collection/search/690570
+- https://resources.metmuseum.org/resources/metpublications/pdf/Art_and_Oracle_African_Art_and_Rituals_of_Divination.pdf
+- https://doi.org/10.1080/17531055.2016.1254923

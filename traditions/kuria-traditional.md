@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Kuria
-- https://www.britannica.com/place/Lake-Victoria
-- https://www.britannica.com/place/Kenya
+- https://doi.org/10.3390/rel10040292
+- https://doi.org/10.47772/IJRISS.2024.8090280
+- https://doi.org/10.4000/etudesafricaines.135

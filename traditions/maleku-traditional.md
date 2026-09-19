@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Costa-Rica
 - https://www.britannica.com/topic/Central-American-Indian
-- https://www.britannica.com/place/Central-America
+- https://doi.org/10.4324/9781003246190
+- https://www.scielo.sa.cr/scielo.php?script=sci_arttext&pid=S2215-26362020000100211
+- https://doi.org/10.1080/14678802.2018.1532643

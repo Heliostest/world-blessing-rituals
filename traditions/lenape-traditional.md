@@ -50,3 +50,7 @@
 - https://www.britannica.com/topic/Delaware-people
 - https://www.penn.museum/sites/journal/113/
 - https://www.gutenberg.org/files/72988/72988-h/72988-h.htm
+- https://delawaretribe.org/wp-content/uploads/2026/04/NEAR_THE_EDGE.pdf
+- https://delawaretribe.org/wp-content/uploads/2026/04/aDelManClothing-2.pdf
+- https://dx.doi.org/10.5281/zenodo.2545989
+- https://doi.org/10.1093/jahist/89.2.752

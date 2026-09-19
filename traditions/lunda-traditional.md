@@ -48,5 +48,5 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Lunda
-- https://www.britannica.com/place/Democratic-Republic-of-the-Congo
-- https://www.britannica.com/place/Angola
+- https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/the-art-of-africa.pdf
+- https://doi.org/10.1017/S0021853700013219

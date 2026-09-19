@@ -48,5 +48,7 @@
 ## 参考来源
 
 - https://doi.org/10.3126/dsaj.v19i2.84709
-- https://www.britannica.com/place/Nepal
-- https://www.everyculture.com/Ma-Ni/Nepal.html
+- https://www.nepjol.info/index.php/DSAJ/article/view/6366/5198
+- https://www.nepjol.info/index.php/mjecs/article/view/89916
+- https://www.nepjol.info/index.php/JMMIHS/article/view/30533
+- https://dx.doi.org/10.1371/journal.pone.0296886

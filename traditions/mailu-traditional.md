@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Papua-New-Guinea
-- https://www.britannica.com/place/Central-Province-Papua-New-Guinea
 - https://www.britannica.com/topic/Melanesian-culture
+- https://doi.org/10.1080/03122417.2023.2238251
+- https://nla.gov.au/nla.obj-763156135/findingaid
+- https://dx.doi.org/10.46298/slovo.2021.7449

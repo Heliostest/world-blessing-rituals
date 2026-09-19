@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Maldives
 - https://www.britannica.com/topic/Islam
-- https://www.britannica.com/place/Indian-Ocean
+- https://dx.doi.org/10.1163/9789004729469_008
+- https://doi.org/10.3390/rel16020201
+- https://doi.org/10.12797/Politeja.13.2016.40.06
+- https://doi.org/10.1163/26666286-12340029

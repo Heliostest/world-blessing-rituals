@@ -50,3 +50,7 @@
 - http://en.chinaculture.org/2011-07/19/content_421754.htm
 - http://www.china.org.cn/china/earthquake_reconstruction/2010-02/02/content_19354450.htm
 - https://ich.unesco.org/en/USL/qiang-new-year-festival-00305
+- https://www.ihchina.cn/luntan_details/8442.html
+- https://www.ihchina.cn/luntan_details/8449.html
+- https://abazhou.gov.cn/abazhou/c109487/202512/88cbdd0f804d4d1a82c4d5c166bb02f4.shtml
+- https://wenchuan.gov.cn/wcxrmzf/c100133/201005/907ca1da450d4e92a5f5862bfff0f608.shtml

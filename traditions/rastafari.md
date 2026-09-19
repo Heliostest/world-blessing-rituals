@@ -50,3 +50,6 @@
 - https://www.britannica.com/topic/Rastafari
 - https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398
 - https://ich.unesco.org/en/decisions/13.COM/10.B.18
+- https://www.mona.uwi.edu/marcom/uwinotebook/entry/3190
+- https://doi.org/10.1590/1678-49442024v30n3e2024032.pt
+- https://doi.org/10.1590/S0104-71832022000200009

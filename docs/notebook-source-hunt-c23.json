@@ -1,0 +1,208 @@
+{
+  "batch": "notebook-source-hunt-c23",
+  "cycle": 23,
+  "date": "2026-09-19",
+  "selection_rule": "n=3 未处理薄卡；接 rastafari 后按字母序续选，排除 C1–C22 已处理 slug 及已补强卡片；不以 4+ 来源卡填充，不用已良好卡片凑数",
+  "previous_cycles_slugs_processed": 263,
+  "slugs": [
+    "rendille-traditional",
+    "rengma-traditional",
+    "rennell-bellona-traditional",
+    "romanian-calus",
+    "rotuma-traditional",
+    "safwa-traditional",
+    "sahrawi-traditional",
+    "salar-traditional",
+    "sandawe-traditional",
+    "sangirese-traditional",
+    "satere-mawe-traditional",
+    "secoya-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "rendille-traditional",
+      "title": "伦迪勒传统信仰与肯尼亚北部牧祈福（Rendille）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Rendille",
+        "https://www.britannica.com/place/Kenya",
+        "https://www.britannica.com/place/Lake-Turkana"
+      ],
+      "rituals": [
+        "1. 骆驼与井泉伦理（敏感，仅概念）",
+        "2. 年龄组织（敏感，仅概念）",
+        "3. 基督教／伊斯兰教并存（公开层）"
+      ]
+    },
+    {
+      "slug": "rengma-traditional",
+      "title": "伦马那加基督教与传统祈福余绪（Rengma）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Nagaland",
+        "https://www.britannica.com/topic/Naga-people",
+        "https://www.britannica.com/place/Northeast-India"
+      ],
+      "rituals": [
+        "1. 浸信会崇拜（概念层）",
+        "2. 生命礼仪（概念层）",
+        "3. 文化节与传统记忆（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "rennell-bellona-traditional",
+      "title": "伦内尔—贝罗纳传统信仰与波利尼西亚外岛祈福（Rennell and Bellona）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Rennell-Island",
+        "https://www.britannica.com/place/Bellona-Island",
+        "https://www.britannica.com/place/Solomon-Islands"
+      ],
+      "rituals": [
+        "1. 基督教堂区礼仪（概念层）",
+        "2. 氏族与资源伦理（敏感，仅概念）",
+        "3. 祖先记忆（高度敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "romanian-calus",
+      "title": "罗马尼亚卡鲁什仪式舞与五旬节祈福传统（Căluș）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://ich.unesco.org/en/RL/calus-ritual-00090",
+        "https://www.cultura.ro/unesco/",
+        "https://www.cnr-unesco.ro/uploads/media/f782__2023-patrimoniu-imaterial-engl.pdf"
+      ],
+      "rituals": [
+        "1. 五旬节村落巡游与宅院舞蹈（传统社区层，概念）",
+        "2. 舞队组织、vătaf 与 Mutul 角色（制度概念层）",
+        "3. 民俗节与舞台遗产展演（公共文化层）"
+      ]
+    },
+    {
+      "slug": "rotuma-traditional",
+      "title": "罗图马传统信仰与波利尼西亚边缘祈福（Rotuma）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Rotuma",
+        "https://www.britannica.com/place/Fiji",
+        "https://www.britannica.com/topic/Polynesian-culture"
+      ],
+      "rituals": [
+        "1. 土地与酋长伦理（敏感，仅概念）",
+        "2. 基督教公开礼拜（公开层）",
+        "3. 丧礼与祖先传统（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "safwa-traditional",
+      "title": "萨夫瓦传统信仰与祖灵—基督教祈福（Safwa）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Mbeya",
+        "https://www.britannica.com/place/Tanzania",
+        "https://www.britannica.com/topic/East-African-lakes"
+      ],
+      "rituals": [
+        "1. 祖先敬礼（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 农事感恩（概念层）"
+      ]
+    },
+    {
+      "slug": "sahrawi-traditional",
+      "title": "撒哈拉威民间伊斯兰与沙漠祈福（Sahrawi）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sahrawi",
+        "https://www.britannica.com/place/Western-Sahara",
+        "https://www.britannica.com/topic/Islam"
+      ],
+      "rituals": [
+        "1. 清真寺礼拜与伊斯兰节日（概念层）",
+        "2. 难民营／流散地集体祈祷（概念层）",
+        "3. 沙漠好客与诗歌祝福（概念层）"
+      ]
+    },
+    {
+      "slug": "salar-traditional",
+      "title": "撒拉族伊斯兰与河湟民间祈福（Salar）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Salar",
+        "https://www.britannica.com/place/Qinghai",
+        "https://www.britannica.com/topic/Islam"
+      ],
+      "rituals": [
+        "1. 清真寺礼拜与主麻（概念层）",
+        "2. 开斋节与宰牲节（概念层）",
+        "3. 经堂教育与门宦并行景观（敏感，仅概念）"
+      ]
+    },
+    {
+      "slug": "sandawe-traditional",
+      "title": "桑达韦传统信仰与点击语—祖灵祈福（Sandawe）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Sandawe",
+        "https://www.britannica.com/place/Tanzania",
+        "https://www.britannica.com/topic/Khoisan-languages"
+      ],
+      "rituals": [
+        "1. 祖先敬礼（概念层）",
+        "2. 教堂崇拜（概念层）",
+        "3. 土地与雨水伦理（概念层）"
+      ]
+    },
+    {
+      "slug": "sangirese-traditional",
+      "title": "桑义赫基督教与海岛习惯法祈福（Sangirese）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/place/Sangihe-Islands",
+        "https://www.britannica.com/place/North-Sulawesi",
+        "https://www.britannica.com/topic/Protestantism"
+      ],
+      "rituals": [
+        "1. 教堂崇拜与基督教节日（概念层）",
+        "2. Adat 生命礼仪（概念层）",
+        "3. 海洋／灾害相关感恩（概念层）"
+      ]
+    },
+    {
+      "slug": "satere-mawe-traditional",
+      "title": "萨特雷—马韦传统信仰与瓜拉纳祈福（Sateré-Mawé）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Satere-Mawe",
+        "https://www.britannica.com/topic/guarana",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "rituals": [
+        "1. 瓜拉纳栽培与感恩伦理（概念层）",
+        "2. 成年礼仪（极高敏感，仅概念）",
+        "3. 基督教接触层（概念层）"
+      ]
+    },
+    {
+      "slug": "secoya-traditional",
+      "title": "塞科亚传统信仰与雨林祈福（Secoya／Sekoya）",
+      "current_source_count": 3,
+      "current_urls": [
+        "https://www.britannica.com/topic/Secoya",
+        "https://www.britannica.com/place/Napo-River",
+        "https://www.britannica.com/place/Amazon-Rainforest"
+      ],
+      "rituals": [
+        "1. 河流—主人灵伦理（概念层）",
+        "2. 治疗中介（极高敏感，仅概念）",
+        "3. 基督教接触层（概念层）"
+      ]
+    }
+  ],
+  "prompt_constraints": [
+    "每卡补充 3–4 条可核验的具体来源 URL；优先 UNESCO ICH、官方节庆／朝圣页、博物馆／民俗档案、学术 DOI 或民族志。",
+    "不要采用 Britannica /place/、encyclopedia.com 总览、everyculture.com 总览或 Wikipedia 总览；不要改档位或写操演步骤。",
+    "如搜不到足够强来源，写明检索关键词，不要用弱来源填充。"
+  ]
+}

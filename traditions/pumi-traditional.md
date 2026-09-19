@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/pumi
 - https://en.wikipedia.org/wiki/Pumi_people
-- https://www.britannica.com/place/Yunnan
+- https://www.ihchina.cn/project_details/13065/
+- https://www.ihchina.cn/project_details/23295.html
+- https://mz.yn.gov.cn/html/2018/difangdongtai_0910/29586.html

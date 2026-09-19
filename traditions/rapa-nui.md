@@ -48,5 +48,8 @@
 ## 参考来源
 
 - https://whc.unesco.org/en/list/715/
-- https://www.britannica.com/place/Easter-Island
 - https://imaginarapanui.com/en/rapa-nui-culture/rapa-nui-religion-and-beliefs/
+- https://www.museorapanui.gob.cl/los-ancestros-de-rapa-nui
+- https://www.cultura.gob.cl/actualidad/ministra-de-las-culturas-participa-en-inauguracion-de-la-tapati-rapanui-y-desarrolla-agenda-de-trabajo-en-la-isla/
+- https://doi.org/10.1080/00438243.2011.579483
+- https://www.patrimoniocultural.gob.cl/noticias/moai-vuelve-rapa-nui-despues-de-152-anos-en-el-continente

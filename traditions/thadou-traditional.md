@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Kuki
-- https://www.britannica.com/place/Manipur
-- https://www.britannica.com/place/Northeast-India
+- https://doi.org/10.5194/isprs-archives-XLVIII-M-9-2025-1413-2025
+- https://doi.org/10.21659/rupkatha.v14n2.ne17
+- https://doi.org/10.1108/IJSSP-02-2025-0087

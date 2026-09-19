@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Guiana-Highlands
-- https://www.britannica.com/place/Amazon-Rainforest
 - https://www.britannica.com/topic/South-American-Indian
+- https://pib.socioambiental.org/en/Povo:Tiriy%C3%B3
+- https://journals.openedition.org/jsa/11332
+- https://www.scielo.br/j/ea/a/pV5SKfbbYtpfgMfHkJxT5Qb/?lang=en

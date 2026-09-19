@@ -47,6 +47,6 @@
 
 ## 参考来源
 
-- https://en.wikipedia.org/wiki/Tiwa_people_(Lalung)
-- https://www.britannica.com/place/Assam
-- https://www.britannica.com/place/Meghalaya
+- https://censusindia.gov.in/nada/index.php/catalog/44033/download/47698/DH_18_2001_MAR.pdf
+- https://oralliterature.org/collaborations/lokaratna/Lokaratna_14_2.pdf
+- https://www.niti.gov.in/hi/node/2250

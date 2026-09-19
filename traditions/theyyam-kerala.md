@@ -50,3 +50,6 @@
 - https://www.keralatourism.org/artforms/theyyam-ritual/1/
 - http://intangibleheritage.intach.org/documentation-of-theyyam-kerala/
 - https://www.bbc.com/travel/article/20230628-theyyam-the-indian-trance-where-men-become-gods
+- https://doi.org/10.3390/rel16121503
+- https://doi.org/10.4236/jss.2016.43032
+- https://dx.doi.org/10.4000/books.editionsehess.26292

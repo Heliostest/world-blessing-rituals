@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/south-american-indians-indians-gran-chaco
 - https://joshuaproject.net/people_groups/15517/AR
-- https://www.britannica.com/place/Gran-Chaco
+- https://doi.org/10.11144/javeriana.mavae16-2.rptp
+- https://journals.openedition.org/etnografica/6913
+- https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S1852-48262024000300271
+- https://dx.doi.org/10.20396/maloca.v3i00.13816

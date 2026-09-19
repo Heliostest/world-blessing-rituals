@@ -53,3 +53,7 @@
 - https://www.sardegnaturismo.it/en/sardinia-festival-sacred
 - https://www.sardegnaturismo.it/en/redentore-festival-religion-and-folklore
 - https://www.sardegnaturismo.it/en/sant-efisio
+- https://www.isresardegna.it/index.php?xsl=565&s=16&v=9&c=4093&nodesc=1
+- https://www.sardegnacultura.it/
+- https://doi.org/10.4000/etnografica.11451
+- https://ich.unesco.org/en/RL/canto-a-tenore-sardinian-pastoral-song-00165

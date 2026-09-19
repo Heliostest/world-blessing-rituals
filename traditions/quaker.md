@@ -51,9 +51,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Society-of-Friends
-- https://www.britannica.com/topic/Inner-Light
-- https://www.britannica.com/topic/Society-of-Friends/Teachings
-- https://kids.britannica.com/students/article/Quakers/276607
 - https://www.quaker.org.uk/faith/our-faith/how-quakers-worship
 - https://www.pym.org/faith-and-practice/experience-and-faith/meeting-worship/
+- https://www.swarthmore.edu/friends-historical-library
+- https://fwcc.world/learn/quaker-tradition-practice/
+- https://qfp.quaker.org.uk/
+- https://doi.org/10.1093/oxfordhb/9780199608676.001.0001

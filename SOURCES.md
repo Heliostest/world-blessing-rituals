@@ -3864,3 +3864,19 @@
 - https://ich.unesco.org/en/RL/baltic-song-and-dance-celebrations-00087
 - https://doi.org/10.15405/epsbs.2021.11.87
 - https://www.europeanproceedings.com/article/10.15405/epsbs.2021.11.87
+
+
+## 增补传统（Notebook source hunt C36：神道—撒丁民间）
+
+- https://www.jinjahoncho.or.jp/en/
+- http://www2.kokugakuin.ac.jp/e-shinto/
+- https://doi.org/10.1093/acprof:oso/9780190621711.001.0001
+- https://doi.org/10.1093/jaarel/lfi115
+- https://www.swarthmore.edu/friends-historical-library
+- https://fwcc.world/learn/quaker-tradition-practice/
+- https://qfp.quaker.org.uk/
+- https://doi.org/10.1093/oxfordhb/9780199608676.001.0001
+- https://www.isresardegna.it/index.php?xsl=565&s=16&v=9&c=4093&nodesc=1
+- https://www.sardegnacultura.it/
+- https://doi.org/10.4000/etnografica.11451
+- https://ich.unesco.org/en/RL/canto-a-tenore-sardinian-pastoral-song-00165

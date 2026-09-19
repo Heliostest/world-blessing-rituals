@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Teribe
-- https://www.britannica.com/place/Panama
 - https://www.britannica.com/topic/Central-American-Indian
+- https://doi.org/10.3390/genes12121921
+- https://doi.org/10.3389/fphar.2024.1426210

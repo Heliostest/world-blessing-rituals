@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/topic/Mopan
 - https://www.britannica.com/topic/Maya-people
-- https://www.britannica.com/place/Belize
+- https://doi.org/10.1080/17442222.2021.1935694
+- https://doi.org/10.1017/S0940739111000063
+- https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2007-736X2021000100102

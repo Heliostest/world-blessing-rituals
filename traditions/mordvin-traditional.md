@@ -50,3 +50,6 @@
 - https://www.britannica.com/topic/Finno-Ugric-religion
 - https://www.britannica.com/topic/Mordvin
 - https://en.wikipedia.org/wiki/Erzyan_native_religion
+- https://www.folklore.ee/folklore/vol17/mordmyth.pdf
+- https://www.folklore.ee/folklore/vol12/death.htm
+- https://doi.org/10.15507/2076-2577.017.2025.02.229-240

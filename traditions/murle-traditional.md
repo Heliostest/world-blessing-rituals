@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/South-Sudan
 - https://www.britannica.com/topic/Surmic-languages
-- https://www.britannica.com/place/East-African-lakes
+- https://doi.org/10.1080/17531055.2023.2259547
+- https://riftvalley.net/publication/what-can-the-changing-tastes-in-body-scarification-tell-us-about-the-lives-and-aspirations-of-murle-youth/
+- https://riftvalley.net/projects/sudan-and-south-sudan/south-sudan-customary-authorities-project/

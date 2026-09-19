@@ -47,6 +47,7 @@
 
 ## 参考来源
 
-- https://www.britannica.com/place/Bougainville-Island
-- https://www.britannica.com/place/Papua-New-Guinea
 - https://www.britannica.com/topic/Melanesian-culture
+- https://doi.org/10.1002/j.1834-4461.1971.tb00306.x
+- https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/c8af00a6-ede8-4eb6-acb7-0f9b94fea3bb/content
+- https://press-files.anu.edu.au/downloads/press/p57571/html/ch06.xhtml?referer=387&page=10

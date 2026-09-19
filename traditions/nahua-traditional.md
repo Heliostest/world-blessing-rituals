@@ -49,4 +49,6 @@
 
 - https://www.britannica.com/topic/Nahua
 - https://www.britannica.com/topic/Aztec
-- https://www.britannica.com/place/Mexico
+- https://www.gob.mx/inpi/videos/xantolo-celebracion-del-dia-de-muertos-nahuas-y-tepehuas-de-chicontepec-veracruz
+- https://nahuatl.historicas.unam.mx/index.php/ecn/article/download/78106/69104
+- https://catalogo.inpi.gob.mx/nahua-nahuatl/

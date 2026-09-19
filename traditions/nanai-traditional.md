@@ -47,6 +47,8 @@
 
 ## 参考来源
 
-- https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nanais
 - https://doi.org/10.15021/00002606
 - https://factsanddetails.com/world/cat55/sub350/item1919.html
+- https://ich.unesco.org/en/USL/hezhen-yimakan-storytelling-00028
+- https://atlaskmns.ru/page/en/people_nanaicy_spirit.html
+- https://www.folklore.ee/folklore/vol4/hoppal.htm

@@ -48,5 +48,6 @@
 ## 参考来源
 
 - https://www.britannica.com/topic/Ndau
-- https://www.britannica.com/place/Mozambique
-- https://www.britannica.com/place/Zimbabwe
+- https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0259-94222023000300009
+- https://doi.org/10.1108/DPM-05-2024-0130
+- https://doi.org/10.1017/pub.2025.10052

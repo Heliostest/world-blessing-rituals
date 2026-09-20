@@ -31,11 +31,15 @@ export const rituals = {
 } as const;
 export type RitualId = keyof typeof rituals;
 export type WishStatus = "active" | "realized" | "fulfilled";
+export type WishCategory = "study" | "work" | "life";
+export type ReturnMethod = "kindness" | "ritual";
 export type Note = { id: string; text: string; at: string };
 export type Wish = {
   id: string;
   title: string;
   intention: string;
+  category?: WishCategory;
+  returnMethod?: ReturnMethod;
   status: WishStatus;
   archived: boolean;
   createdAt: string;
@@ -73,12 +77,15 @@ export type Action =
       id: string;
       title: string;
       intention: string;
+      category?: WishCategory;
+      returnMethod?: ReturnMethod;
       at: string;
     }
   | { type: "wish.note"; id: string; noteId: string; text: string; at: string }
   | { type: "wish.realize"; id: string; at: string }
   | {
       type: "wish.fulfill";
+      method?: ReturnMethod;
       id: string;
       noteId: string;
       text: string;
@@ -133,6 +140,8 @@ export function reduce(s: State, a: Action): State {
             id: a.id,
             title: text(a.title, 60),
             intention: a.intention.trim(),
+            category: a.category ?? "life",
+            returnMethod: a.returnMethod ?? "kindness",
             createdAt: a.at,
             status: "active",
             archived: false,
@@ -164,10 +173,14 @@ export function reduce(s: State, a: Action): State {
       if (w.status === "fulfilled") return s;
       if (w.status !== "realized" || w.archived)
         throw new Error("先确认心愿实现，再来还愿吧");
+      const method = a.method ?? "kindness";
+      if (method === "ritual" && !hasReturnRitual(s, w))
+        throw new Error("先为这个已实现的心愿完成一个小仪式吧");
       const next = updateWish(s, {
         ...w,
         status: "fulfilled",
         fulfilledAt: a.at,
+        returnMethod: method,
         notes: [
           ...w.notes,
           { id: a.noteId, text: text(a.text, 500), at: a.at },
@@ -263,6 +276,17 @@ export function reduce(s: State, a: Action): State {
 export function localDay(date = new Date()): string {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 }
+export function hasReturnRitual(state: State, wish: Wish): boolean {
+  return Boolean(
+    wish.realizedAt &&
+      state.sessions.some(
+        (s) =>
+          s.wishId === wish.id &&
+          s.completedAt &&
+          s.startedAt >= wish.realizedAt!,
+      ),
+  );
+}
 export function dailyRitual(day: string): RitualId {
   return (Object.keys(rituals) as RitualId[])[
     Array.from(day).reduce((n, c) => n + c.charCodeAt(0), 0) % 3
@@ -311,6 +335,10 @@ export function restore(raw: string | null): State {
         w.title.trim().length > 0 &&
         w.title.length <= 60 &&
         str(w.intention) &&
+        (w.category === undefined ||
+          ["study", "work", "life"].includes(String(w.category))) &&
+        (w.returnMethod === undefined ||
+          ["kindness", "ritual"].includes(String(w.returnMethod))) &&
         typeof w.archived === "boolean" &&
         ["active", "realized", "fulfilled"].includes(String(w.status)) &&
         date(w.createdAt) &&

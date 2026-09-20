@@ -1,3 +1,7 @@
 export type { GestureHandle } from './types'
 export { createDrag } from './drag'
 export type { DragOpts } from './drag'
+export { createTilt } from './tilt'
+export type { TiltOpts } from './tilt'
+export { createSpin } from './spin'
+export type { SpinOpts } from './spin'

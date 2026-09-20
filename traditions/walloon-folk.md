@@ -47,8 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://ich.unesco.org/en/RL/marches-of-entre-sambre-et-meuse-00670
 - https://ich.unesco.org/en/decisions/7.COM/11.6
 - https://www.banneux-nd.be/
 - https://sanctuairesdebeauraing.be/
+- https://ich.unesco.org/en/RL/carnival-of-binche-00033
+- https://www.museedumasque.be/expos/expos-permanentes/centre-dinterpretation-du-carnaval-de-binche/
+- https://www.museedumasque.be/le-carnaval-de-binche-2024/

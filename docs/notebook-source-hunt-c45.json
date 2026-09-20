@@ -1,0 +1,512 @@
+{
+  "batch": "notebook-source-hunt-c45",
+  "cycle": 45,
+  "date": "2026-09-20",
+  "status": "completed",
+  "selection_rule": "不排除任何早期批次；重算全部 grade=C 卡片当前来源段中的弱链接，按弱链接数量从多到少、slug 字母序选择全部剩余卡片（不足 12 张）。",
+  "previous_cycles_excluded": false,
+  "c_grade_card_count": 156,
+  "weak_link_c_count_after_c44": 7,
+  "selected_count": 7,
+  "slugs": [
+    "totonac-traditional",
+    "tujia-traditional",
+    "umbrian-folk",
+    "volga-tatar-traditional",
+    "walloon-folk",
+    "wetu-telu-sasak",
+    "yazidi"
+  ],
+  "cards": [
+    {
+      "slug": "totonac-traditional",
+      "title": "托托纳克民间天主教与山灵祈福（Totonac）",
+      "rituals": [
+        "Danza de los Voladores（UNESCO／公共文化层）",
+        "圣徒节庆与 cargo 赞助（公共层）",
+        "Kiwikgolo 森林灵敬礼（CONCEPT）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Totonac",
+        "https://ich.unesco.org/en/RL/ritual-ceremony-of-the-voladores-00175",
+        "https://ich.unesco.org/en/BSP/xtaxkgakget-makgkaxtlawana-the-centre-for-indigenous-arts-and-its-contribution-to-safeguarding-the-intangible-cultural-heritage-of-the-totonac-people-of-veracruz-mexico-00666",
+        "https://www.inah.gob.mx/index.php/foto-del-dia/ceremonia-ritual-de-los-voladores-patrimonio-vivo",
+        "https://revistas.inah.gob.mx/index.php/cuicuilco/es/article/view/23503"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Totonac"
+      ],
+      "weak_count": 1,
+      "current_source_count": 5,
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/ritual-ceremony-of-the-voladores-00175",
+        "https://doi.org/10.18441/ind.v41i1.63-82",
+        "https://doi.org/10.1007/978-3-031-72123-6_31",
+        "https://doi.org/10.1007/s10668-014-9520-2"
+      ],
+      "added_urls": [
+        "https://doi.org/10.18441/ind.v41i1.63-82",
+        "https://doi.org/10.1007/978-3-031-72123-6_31",
+        "https://doi.org/10.1007/s10668-014-9520-2"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Totonac"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/ritual-ceremony-of-the-voladores-00175",
+        "https://ich.unesco.org/en/BSP/xtaxkgakget-makgkaxtlawana-the-centre-for-indigenous-arts-and-its-contribution-to-safeguarding-the-intangible-cultural-heritage-of-the-totonac-people-of-veracruz-mexico-00666",
+        "https://www.inah.gob.mx/index.php/foto-del-dia/ceremonia-ritual-de-los-voladores-patrimonio-vivo",
+        "https://revistas.inah.gob.mx/index.php/cuicuilco/es/article/view/23503",
+        "https://doi.org/10.18441/ind.v41i1.63-82",
+        "https://doi.org/10.1007/978-3-031-72123-6_31",
+        "https://doi.org/10.1007/s10668-014-9520-2"
+      ],
+      "source_notes": [
+        {
+          "url": "https://doi.org/10.18441/ind.v41i1.63-82",
+          "note": "主题明确的学术出版物 DOI，补充托托纳克社群、文化实践与历史语境；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.1007/978-3-031-72123-6_31",
+          "note": "主题明确的学术书章 DOI，补充托托纳克及其文化遗产的研究语境；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.1007/s10668-014-9520-2",
+          "note": "主题明确的学术论文 DOI，补充托托纳克地区社群与环境／可持续性语境；可独立核验。"
+        }
+      ],
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://doi.org/10.18441/ind.v41i1.63-82",
+        "https://doi.org/10.1007/978-3-031-72123-6_31",
+        "https://doi.org/10.1007/s10668-014-9520-2"
+      ]
+    },
+    {
+      "slug": "tujia-traditional",
+      "title": "土家族摆手与祖先祈福传统（Tujia／Bizika）",
+      "rituals": [
+        "摆手舞 Baishou 与社巴节 Sheba（公开节庆层）",
+        "八部大王等祖先祭祀（CONCEPT）",
+        "梯玛 Tima（CONCEPT ONLY／强尊重）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Tujia",
+        "http://english.scio.gov.cn/chinafacts/2017-06/06/content_40975371.htm",
+        "http://whhlyt.hunan.gov.cn/whhlyt/english/Culture/IntangibleCulturalHeritage/202206/t20220609_25442116.html",
+        "https://doi.org/10.54097/nq6m5f55",
+        "https://doi.org/10.59670/jns.v33i792",
+        "https://doi.org/10.18848/2327-7866/CGP/v23i02/17-32"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Tujia"
+      ],
+      "weak_count": 1,
+      "current_source_count": 6,
+      "input_urls": [
+        "https://www.ihchina.cn/project_details/12922.html",
+        "https://www.ihchina.cn/project_details/12319/",
+        "https://www.ihchina.cn/project_details/12925.html"
+      ],
+      "added_urls": [
+        "https://www.ihchina.cn/project_details/12922.html",
+        "https://www.ihchina.cn/project_details/12319/",
+        "https://www.ihchina.cn/project_details/12925.html"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Tujia"
+      ],
+      "final_urls": [
+        "http://english.scio.gov.cn/chinafacts/2017-06/06/content_40975371.htm",
+        "http://whhlyt.hunan.gov.cn/whhlyt/english/Culture/IntangibleCulturalHeritage/202206/t20220609_25442116.html",
+        "https://doi.org/10.54097/nq6m5f55",
+        "https://doi.org/10.59670/jns.v33i792",
+        "https://doi.org/10.18848/2327-7866/CGP/v23i02/17-32",
+        "https://www.ihchina.cn/project_details/12922.html",
+        "https://www.ihchina.cn/project_details/12319/",
+        "https://www.ihchina.cn/project_details/12925.html"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12922.html",
+          "note": "中国非物质文化遗产网官方项目页，直接补充土家族摆手舞等公共文化遗产信息；机构一手来源。"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12319/",
+          "note": "中国非物质文化遗产网官方项目页，补充土家族社巴／相关民俗遗产记录；机构一手来源。"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12925.html",
+          "note": "中国非物质文化遗产网官方项目页，补充土家族传统节庆与表演遗产记录；机构一手来源。"
+        }
+      ],
+      "final_source_count": 8,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.ihchina.cn/project_details/12922.html",
+        "https://www.ihchina.cn/project_details/12319/",
+        "https://www.ihchina.cn/project_details/12925.html"
+      ]
+    },
+    {
+      "slug": "umbrian-folk",
+      "title": "翁布里亚民间天主教与朝圣祈福（Umbrian）",
+      "rituals": [
+        "Assisi Basilica di San Francesco 朝圣（概念层）",
+        "Gubbio Festa dei Ceri（公共层）",
+        "Cascia Santa Rita 玫瑰朝圣（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/biography/Saint-Francis-of-Assisi",
+        "https://www.unesco.it/it/news/lenciclopedia-treccani-e-le-tavole-iguvine-sono-le-due-candidature-italiane-al-programma-unesco-memoria-del-mondo-per-il-ciclo-2026-2027/",
+        "https://www.santuariosantarita.it/",
+        "https://www.sanfrancescoassisi.org/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/biography/Saint-Francis-of-Assisi"
+      ],
+      "weak_count": 1,
+      "current_source_count": 4,
+      "input_urls": [
+        "https://www.comune.gubbio.pg.it/it/page/festa-dei-ceri",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_5037662576951/MODI",
+        "https://www.unesco.it/it/unesco-vicino-a-te/siti-patrimonio-mondiale/assisi-la-basilica-di-san-francesco-e-altri-siti-francescani/"
+      ],
+      "added_urls": [
+        "https://www.comune.gubbio.pg.it/it/page/festa-dei-ceri",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_5037662576951/MODI",
+        "https://www.unesco.it/it/unesco-vicino-a-te/siti-patrimonio-mondiale/assisi-la-basilica-di-san-francesco-e-altri-siti-francescani/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/biography/Saint-Francis-of-Assisi"
+      ],
+      "final_urls": [
+        "https://www.unesco.it/it/news/lenciclopedia-treccani-e-le-tavole-iguvine-sono-le-due-candidature-italiane-al-programma-unesco-memoria-del-mondo-per-il-ciclo-2026-2027/",
+        "https://www.santuariosantarita.it/",
+        "https://www.sanfrancescoassisi.org/",
+        "https://www.comune.gubbio.pg.it/it/page/festa-dei-ceri",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_5037662576951/MODI",
+        "https://www.unesco.it/it/unesco-vicino-a-te/siti-patrimonio-mondiale/assisi-la-basilica-di-san-francesco-e-altri-siti-francescani/"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.comune.gubbio.pg.it/it/page/festa-dei-ceri",
+          "note": "古比奥市政府官方页面，直接覆盖 Festa dei Ceri 的地方节庆与公共实践；地方一手来源。"
+        },
+        {
+          "url": "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_5037662576951/MODI",
+          "note": "意大利国家文化遗产目录 Paci 卡片，记录 Festa dei Ceri 的遗产语境；国家机构档案来源。"
+        },
+        {
+          "url": "https://www.unesco.it/it/unesco-vicino-a-te/siti-patrimonio-mondiale/assisi-la-basilica-di-san-francesco-e-altri-siti-francescani/",
+          "note": "意大利 UNESCO 官方页面，覆盖阿西西圣方济各圣殿及方济各朝圣遗产；国家机构一手来源。"
+        }
+      ],
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.comune.gubbio.pg.it/it/page/festa-dei-ceri",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_5037662576951/MODI",
+        "https://www.unesco.it/it/unesco-vicino-a-te/siti-patrimonio-mondiale/assisi-la-basilica-di-san-francesco-e-altri-siti-francescani/"
+      ]
+    },
+    {
+      "slug": "volga-tatar-traditional",
+      "title": "伏尔加鞑靼伊斯兰与民间祈福传统（Volga Tatar）",
+      "rituals": [
+        "Sabantuy 与 Koresh 摔跤（公共节庆层）",
+        "Bolgar 朝圣／White Mosque；Kul Sharif（朝圣—公共层）",
+        "Nardugan 冬季节庆（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Tatar",
+        "https://www.worldheritageexplorer.org/sites/bolgar_historical_and_archaeological_complex.html",
+        "http://archtat.ru/en/editions/r-m-valeev-a-g-sitdikov-r-r-khairutdinov-bolgar-historical-and-archaeological-complex-vol-1-bolgar-unesco-world-heritage-site-r-m-valeev-a-g-sitdikov-r-r-khairutdinov-kazan-ooo-glavdizain-2/",
+        "https://doi.org/10.3389/fcomm.2025.1693748"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Tatar"
+      ],
+      "weak_count": 1,
+      "current_source_count": 4,
+      "input_urls": [
+        "https://doi.org/10.47089/iuad.797850",
+        "https://doi.org/10.1080/01419870.2020.1856904",
+        "https://doi.org/10.24852/pa2013.4.6.253.260"
+      ],
+      "added_urls": [
+        "https://doi.org/10.47089/iuad.797850",
+        "https://doi.org/10.1080/01419870.2020.1856904",
+        "https://doi.org/10.24852/pa2013.4.6.253.260"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Tatar"
+      ],
+      "final_urls": [
+        "https://www.worldheritageexplorer.org/sites/bolgar_historical_and_archaeological_complex.html",
+        "http://archtat.ru/en/editions/r-m-valeev-a-g-sitdikov-r-r-khairutdinov-bolgar-historical-and-archaeological-complex-vol-1-bolgar-unesco-world-heritage-site-r-m-valeev-a-g-sitdikov-r-r-khairutdinov-kazan-ooo-glavdizain-2/",
+        "https://doi.org/10.3389/fcomm.2025.1693748",
+        "https://doi.org/10.47089/iuad.797850",
+        "https://doi.org/10.1080/01419870.2020.1856904",
+        "https://doi.org/10.24852/pa2013.4.6.253.260"
+      ],
+      "source_notes": [
+        {
+          "url": "https://doi.org/10.47089/iuad.797850",
+          "note": "主题明确的学术出版物 DOI，补充伏尔加鞑靼社群与文化／宗教实践研究语境；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.1080/01419870.2020.1856904",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.24852/pa2013.4.6.253.260",
+          "note": "主题明确的学术出版物 DOI，补充鞑靼节庆、身份与公共文化语境；可独立核验。"
+        }
+      ],
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://doi.org/10.47089/iuad.797850",
+        "https://doi.org/10.1080/01419870.2020.1856904",
+        "https://doi.org/10.24852/pa2013.4.6.253.260"
+      ]
+    },
+    {
+      "slug": "walloon-folk",
+      "title": "瓦隆民间天主教与朝圣祈福（Walloon）",
+      "rituals": [
+        "Marches de l'Entre-Sambre-et-Meuse（UNESCO／公共层）",
+        "Banneux 与 Beauraing 圣母朝圣（概念层）",
+        "堂区还愿弥撒（votive Masses）（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://ich.unesco.org/en/RL/marches-of-entre-sambre-et-meuse-00670",
+        "https://ich.unesco.org/en/decisions/7.COM/11.6",
+        "https://www.banneux-nd.be/",
+        "https://sanctuairesdebeauraing.be/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_count": 1,
+      "current_source_count": 5,
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/carnival-of-binche-00033",
+        "https://www.museedumasque.be/expos/expos-permanentes/centre-dinterpretation-du-carnaval-de-binche/",
+        "https://www.museedumasque.be/le-carnaval-de-binche-2024/"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/RL/carnival-of-binche-00033",
+        "https://www.museedumasque.be/expos/expos-permanentes/centre-dinterpretation-du-carnaval-de-binche/",
+        "https://www.museedumasque.be/le-carnaval-de-binche-2024/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/marches-of-entre-sambre-et-meuse-00670",
+        "https://ich.unesco.org/en/decisions/7.COM/11.6",
+        "https://www.banneux-nd.be/",
+        "https://sanctuairesdebeauraing.be/",
+        "https://ich.unesco.org/en/RL/carnival-of-binche-00033",
+        "https://www.museedumasque.be/expos/expos-permanentes/centre-dinterpretation-du-carnaval-de-binche/",
+        "https://www.museedumasque.be/le-carnaval-de-binche-2024/"
+      ],
+      "source_notes": [
+        {
+          "url": "https://ich.unesco.org/en/RL/carnival-of-binche-00033",
+          "note": "联合国教科文组织非遗名录页，直接覆盖瓦隆地区班什狂欢节公共遗产；国际官方遗产来源。"
+        },
+        {
+          "url": "https://www.museedumasque.be/expos/expos-permanentes/centre-dinterpretation-du-carnaval-de-binche/",
+          "note": "班什面具博物馆官方页面，补充狂欢节面具、游行与地方社群实践；专业机构来源。"
+        },
+        {
+          "url": "https://www.museedumasque.be/le-carnaval-de-binche-2024/",
+          "note": "班什面具博物馆官方节庆页面，记录当地狂欢节年度公共活动；专业机构一手来源。"
+        }
+      ],
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/carnival-of-binche-00033",
+        "https://www.museedumasque.be/expos/expos-permanentes/centre-dinterpretation-du-carnaval-de-binche/",
+        "https://www.museedumasque.be/le-carnaval-de-binche-2024/"
+      ]
+    },
+    {
+      "slug": "wetu-telu-sasak",
+      "title": "萨萨克韦图特卢／龙目岛地方伊斯兰传统（Sasak Wetu Telu）",
+      "rituals": [
+        "Pura Lingsar 与 Perang Topat（公开节庆层）",
+        "Segara Anak 供奉概念；Bayan 古清真寺（概念层）",
+        "祖先礼仪（CONCEPT）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Sasak",
+        "https://doi.org/10.15575/jassr.v4i2.66",
+        "https://doi.org/10.14710/sabda.19.2.111-124",
+        "https://doi.org/10.1201/9781003645542-73",
+        "https://doi.org/10.37253/altasia.v8i1.11313",
+        "https://doi.org/10.29408/jhm.v12i1.33941",
+        "https://doi.org/10.15408/insaniyat.v10i2.49550"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Sasak"
+      ],
+      "weak_count": 1,
+      "current_source_count": 7,
+      "input_urls": [
+        "https://doi.org/10.20961/jas.v6i2.18466",
+        "https://doi.org/10.28918/religia.v12i1.196",
+        "https://doi.org/10.23960/jsl.v12i3.985"
+      ],
+      "added_urls": [
+        "https://doi.org/10.20961/jas.v6i2.18466",
+        "https://doi.org/10.28918/religia.v12i1.196",
+        "https://doi.org/10.23960/jsl.v12i3.985"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Sasak"
+      ],
+      "final_urls": [
+        "https://doi.org/10.15575/jassr.v4i2.66",
+        "https://doi.org/10.14710/sabda.19.2.111-124",
+        "https://doi.org/10.1201/9781003645542-73",
+        "https://doi.org/10.37253/altasia.v8i1.11313",
+        "https://doi.org/10.29408/jhm.v12i1.33941",
+        "https://doi.org/10.15408/insaniyat.v10i2.49550",
+        "https://doi.org/10.20961/jas.v6i2.18466",
+        "https://doi.org/10.28918/religia.v12i1.196",
+        "https://doi.org/10.23960/jsl.v12i3.985"
+      ],
+      "source_notes": [
+        {
+          "url": "https://doi.org/10.20961/jas.v6i2.18466",
+          "note": "主题明确的学术出版物 DOI，补充萨萨克 Wetu Telu 与地方宗教实践研究语境；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.28918/religia.v12i1.196",
+          "note": "主题明确的宗教学术出版物 DOI，补充龙目岛萨萨克宗教、圣地与社群实践；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.23960/jsl.v12i3.985",
+          "note": "主题明确的学术出版物 DOI，补充龙目岛地方伊斯兰／Wetu Telu 的社会文化语境；可独立核验。"
+        }
+      ],
+      "final_source_count": 9,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://doi.org/10.20961/jas.v6i2.18466",
+        "https://doi.org/10.28918/religia.v12i1.196",
+        "https://doi.org/10.23960/jsl.v12i3.985"
+      ]
+    },
+    {
+      "slug": "yazidi",
+      "title": "雅兹迪（Yazidi / Êzidî）",
+      "rituals": [
+        "Çarşema Sor（红星期三）新年命名与 Melek Taus 敬礼（概念层）",
+        "Lalish 365 油灯概念；结祈愿结（CONCEPT）",
+        "Qawwal 圣诗与 Peacock Sanjaq（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Yazidi",
+        "https://whc.unesco.org/en/tentativelists/6467/",
+        "https://referenceworks.brill.com/display/entries/EIRO/COM-1252.xml",
+        "https://www.bbc.com/travel/article/20230803-in-pictures-the-protectors-of-a-7000-year-old-faith",
+        "https://doi.org/10.1017/aee.2026.10148",
+        "https://dx.doi.org/10.1163/2330-4804_eiro_com_1252",
+        "https://doi.org/10.4236/jss.2019.77002",
+        "https://doi.org/10.3390/rel13111071"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Yazidi"
+      ],
+      "weak_count": 1,
+      "current_source_count": 8,
+      "input_urls": [
+        "https://doi.org/10.33182/ks.v4i2.426",
+        "https://doi.org/10.1163/157338499X00056",
+        "https://www.yazda.org/final-report-of-investigation-into-cultural-heritage-destruction-during-the-islamic-state-s-genocide-against-the-yazidis"
+      ],
+      "added_urls": [
+        "https://doi.org/10.33182/ks.v4i2.426",
+        "https://doi.org/10.1163/157338499X00056",
+        "https://www.yazda.org/final-report-of-investigation-into-cultural-heritage-destruction-during-the-islamic-state-s-genocide-against-the-yazidis"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Yazidi"
+      ],
+      "final_urls": [
+        "https://whc.unesco.org/en/tentativelists/6467/",
+        "https://referenceworks.brill.com/display/entries/EIRO/COM-1252.xml",
+        "https://www.bbc.com/travel/article/20230803-in-pictures-the-protectors-of-a-7000-year-old-faith",
+        "https://doi.org/10.1017/aee.2026.10148",
+        "https://dx.doi.org/10.1163/2330-4804_eiro_com_1252",
+        "https://doi.org/10.4236/jss.2019.77002",
+        "https://doi.org/10.3390/rel13111071",
+        "https://doi.org/10.33182/ks.v4i2.426",
+        "https://doi.org/10.1163/157338499X00056",
+        "https://www.yazda.org/final-report-of-investigation-into-cultural-heritage-destruction-during-the-islamic-state-s-genocide-against-the-yazidis"
+      ],
+      "source_notes": [
+        {
+          "url": "https://doi.org/10.33182/ks.v4i2.426",
+          "note": "主题明确的学术出版物 DOI，补充雅兹迪社群、宗教记忆与迁徙／身份语境；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.1163/157338499X00056",
+          "note": "主题明确的参考工具书条目 DOI，补充雅兹迪信仰与历史背景；可独立核验。"
+        },
+        {
+          "url": "https://www.yazda.org/final-report-of-investigation-into-cultural-heritage-destruction-during-the-islamic-state-s-genocide-against-the-yazidis",
+          "note": "Yazda 社群组织调查报告，直接记录雅兹迪文化遗产毁坏与保护语境；社群一手／倡议机构来源。"
+        }
+      ],
+      "final_source_count": 10,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://doi.org/10.33182/ks.v4i2.426",
+        "https://doi.org/10.1163/157338499X00056",
+        "https://www.yazda.org/final-report-of-investigation-into-cultural-heritage-destruction-during-the-islamic-state-s-genocide-against-the-yazidis"
+      ]
+    }
+  ],
+  "prompt": "请为 Notebook source hunt C45 准备下一批 C 级祈福／祈祷仪式资料卡的联网来源搜寻。\n\n本轮是在 C44 来源清理已经应用并推送之后，对 docs/notebook-validation.json 中全部 grade=C 卡片的「## 参考来源」进行 TRUE recount；不得因为某卡曾出现在 C1–C44 的早期批次就排除它。仍含 britannica.com、encyclopedia.com 或 everyculture.com 的弱链接均须计入。当前 C 级卡片共 156 张，仍含弱链接的卡片共 7 张。\n\n选择规则：在全部仍含上述弱链接的 C 级卡片中，按弱链接数量从多到少排序；并列时按 slug 字母序排序；本轮将全部 7 张纳入（少于 12 张）。不要为了凑数选择无弱链接的卡片，也不要排除先前批次出现过的卡片。\n\n选择结果（按优先顺序）：\n1. totonac-traditional（弱链接 1 条；当前来源 5 条）\n2. tujia-traditional（弱链接 1 条；当前来源 6 条）\n3. umbrian-folk（弱链接 1 条；当前来源 4 条）\n4. volga-tatar-traditional（弱链接 1 条；当前来源 4 条）\n5. walloon-folk（弱链接 1 条；当前来源 5 条）\n6. wetu-telu-sasak（弱链接 1 条；当前来源 7 条）\n7. yazidi（弱链接 1 条；当前来源 8 条）\n\n逐卡当前来源（[WEAK] 表示待替换的弱链接）：\n\n### 1. totonac-traditional — 托托纳克民间天主教与山灵祈福（Totonac）\n仪式：Danza de los Voladores（UNESCO／公共文化层）；圣徒节庆与 cargo 赞助（公共层）；Kiwikgolo 森林灵敬礼（CONCEPT）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Totonac\n- https://ich.unesco.org/en/RL/ritual-ceremony-of-the-voladores-00175\n- https://ich.unesco.org/en/BSP/xtaxkgakget-makgkaxtlawana-the-centre-for-indigenous-arts-and-its-contribution-to-safeguarding-the-intangible-cultural-heritage-of-the-totonac-people-of-veracruz-mexico-00666\n- https://www.inah.gob.mx/index.php/foto-del-dia/ceremonia-ritual-de-los-voladores-patrimonio-vivo\n- https://revistas.inah.gob.mx/index.php/cuicuilco/es/article/view/23503\n\n### 2. tujia-traditional — 土家族摆手与祖先祈福传统（Tujia／Bizika）\n仪式：摆手舞 Baishou 与社巴节 Sheba（公开节庆层）；八部大王等祖先祭祀（CONCEPT）；梯玛 Tima（CONCEPT ONLY／强尊重）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Tujia\n- http://english.scio.gov.cn/chinafacts/2017-06/06/content_40975371.htm\n- http://whhlyt.hunan.gov.cn/whhlyt/english/Culture/IntangibleCulturalHeritage/202206/t20220609_25442116.html\n- https://doi.org/10.54097/nq6m5f55\n- https://doi.org/10.59670/jns.v33i792\n- https://doi.org/10.18848/2327-7866/CGP/v23i02/17-32\n\n### 3. umbrian-folk — 翁布里亚民间天主教与朝圣祈福（Umbrian）\n仪式：Assisi Basilica di San Francesco 朝圣（概念层）；Gubbio Festa dei Ceri（公共层）；Cascia Santa Rita 玫瑰朝圣（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/biography/Saint-Francis-of-Assisi\n- https://www.unesco.it/it/news/lenciclopedia-treccani-e-le-tavole-iguvine-sono-le-due-candidature-italiane-al-programma-unesco-memoria-del-mondo-per-il-ciclo-2026-2027/\n- https://www.santuariosantarita.it/\n- https://www.sanfrancescoassisi.org/\n\n### 4. volga-tatar-traditional — 伏尔加鞑靼伊斯兰与民间祈福传统（Volga Tatar）\n仪式：Sabantuy 与 Koresh 摔跤（公共节庆层）；Bolgar 朝圣／White Mosque；Kul Sharif（朝圣—公共层）；Nardugan 冬季节庆（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Tatar\n- https://www.worldheritageexplorer.org/sites/bolgar_historical_and_archaeological_complex.html\n- http://archtat.ru/en/editions/r-m-valeev-a-g-sitdikov-r-r-khairutdinov-bolgar-historical-and-archaeological-complex-vol-1-bolgar-unesco-world-heritage-site-r-m-valeev-a-g-sitdikov-r-r-khairutdinov-kazan-ooo-glavdizain-2/\n- https://doi.org/10.3389/fcomm.2025.1693748\n\n### 5. walloon-folk — 瓦隆民间天主教与朝圣祈福（Walloon）\n仪式：Marches de l'Entre-Sambre-et-Meuse（UNESCO／公共层）；Banneux 与 Beauraing 圣母朝圣（概念层）；堂区还愿弥撒（votive Masses）（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://ich.unesco.org/en/RL/marches-of-entre-sambre-et-meuse-00670\n- https://ich.unesco.org/en/decisions/7.COM/11.6\n- https://www.banneux-nd.be/\n- https://sanctuairesdebeauraing.be/\n\n### 6. wetu-telu-sasak — 萨萨克韦图特卢／龙目岛地方伊斯兰传统（Sasak Wetu Telu）\n仪式：Pura Lingsar 与 Perang Topat（公开节庆层）；Segara Anak 供奉概念；Bayan 古清真寺（概念层）；祖先礼仪（CONCEPT）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Sasak\n- https://doi.org/10.15575/jassr.v4i2.66\n- https://doi.org/10.14710/sabda.19.2.111-124\n- https://doi.org/10.1201/9781003645542-73\n- https://doi.org/10.37253/altasia.v8i1.11313\n- https://doi.org/10.29408/jhm.v12i1.33941\n- https://doi.org/10.15408/insaniyat.v10i2.49550\n\n### 7. yazidi — 雅兹迪（Yazidi / Êzidî）\n仪式：Çarşema Sor（红星期三）新年命名与 Melek Taus 敬礼（概念层）；Lalish 365 油灯概念；结祈愿结（CONCEPT）；Qawwal 圣诗与 Peacock Sanjaq（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Yazidi\n- https://whc.unesco.org/en/tentativelists/6467/\n- https://referenceworks.brill.com/display/entries/EIRO/COM-1252.xml\n- https://www.bbc.com/travel/article/20230803-in-pictures-the-protectors-of-a-7000-year-old-faith\n- https://doi.org/10.1017/aee.2026.10148\n- https://dx.doi.org/10.1163/2330-4804_eiro_com_1252\n- https://doi.org/10.4236/jss.2019.77002\n- https://doi.org/10.3390/rel13111071\n\n对每个选中 slug 给出 2–4 条新的、公开可核验的 URL，并附一句中文说明覆盖内容与可信度理由。来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。\n\n明确禁止：Britannica 地点（/place/）或泛概览页及其他 Britannica 泛概览、encyclopedia.com、everyculture.com、Wikipedia 或任何 wiki 概览页、101lasttribes／joshuaproject 等部族目录页、与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。硬性要求：URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或 SOURCES.md 已有 URL 重复；宁缺毋滥；只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n输出格式：\nslug:\n建议新增 URL（每行一条，附一句中文说明）：\n- <URL> — <说明>\n",
+  "prompt_constraints": [
+    "不因 C1–C44 曾处理过而排除卡片；遗留弱链接仍计数。",
+    "按弱链接数量降序、slug 字母序排序；本轮纳入全部剩余卡片。",
+    "禁止 Britannica 地点／泛概览、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页与离题泛泛报告。",
+    "只补来源，不改卡片正文、档位或仪式内容；URL、DOI、网页与 PDF 均须公开可核验。"
+  ],
+  "source_map": "/tmp/c45-urls.json",
+  "prompt_file": "/tmp/nb-source-hunt-c45.txt",
+  "remaining_estimate": 0,
+  "input_url_count": 22,
+  "unique_input_url_count": 22,
+  "card_url_added_count": 21,
+  "card_url_removed_count": 7,
+  "sources_unique_added_count": 20,
+  "sources_unique_url_added_count": 20,
+  "remaining_candidates_after_batch": 0,
+  "applied_at": "2026-09-20",
+  "weak_link_c_count_after_c45": 0
+}

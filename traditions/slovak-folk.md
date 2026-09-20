@@ -47,7 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
+
+- https://slovakia.travel/de/marienwallfahrt-in-levoca
+- https://www.snm.sk/muzea-snm/spisske-muzeum/spissky-hrad/objavujte/publikacie?stranka=2&produkt=acta-musaei-scepusiensis-2006-pohlady-do-minulosti-vi
+- https://www.pamiatky.sk/evidencie-a-registre/register-po/detail-po?tx_tempestregister_detail%5Baction%5D=pdf&tx_tempestregister_detail%5Bcode%5D=PO&tx_tempestregister_detail%5Bcontroller%5D=Register&tx_tempestregister_detail%5BdetailId%5D=e0ee93c3-7038-4358-a0c6-a34556073762&cHash=9d4e107880612a2a63bff4dc5f750d4a
+
 - https://slovakia.travel/en/levoca-marian-pilgrimage
 - https://slovakia.travel/en/easter-whipping-or-bathing-march-or-april
 - https://slovakia.travel/en/levoca

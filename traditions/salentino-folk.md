@@ -47,7 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
+
+- https://fondazionefocara.it/
+- https://www.lanottedellataranta.it/2026/08/14/concertone-2026-come-raggiungere-melpignano-il-22-agosto/
+- https://www.basilicaleuca.it/
+
 - https://www.viaggiareinpuglia.it/de/dettaglio-attrattore/basilica-santuario-santa-maria-de-finibus-terrae
 - https://viaggiareinpuglia.it/fr/dettaglio-tipicita/focara-novoli
 - https://viaggiareinpuglia.it/it/dettaglio-itinerario/terre-taranta

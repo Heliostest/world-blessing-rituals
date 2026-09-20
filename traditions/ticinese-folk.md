@@ -47,7 +47,12 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
+
+- https://mendrisio.ch/home/vivere-e-visitare/eventi/iniziative-cittadine/processioni-della-settimana-santa-di-mendrisio
+- https://www.ticino.ch/it/commons/details/Processioni-della-Settimana-Santa-di-Mendrisio/37413.html
+- https://www.madonnadelsasso.ch/
+- https://www.ascona-locarno.com/it/attualita/storie/il-sacro-monte-della-madonna-del-sasso
+
 - https://ich.unesco.org/en/RL/holy-week-processions-in-mendrisio-01460
 - https://www.lebendige-traditionen.ch/it/processioni-della-settimana-santa-di-mendrisio
 - https://www.ticino.ch/it/commons/details/Sacro-Monte-Madonna-del-Sasso/2693.html

@@ -47,7 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/She-people
+
+- https://www.ihchina.cn/project_details/24906.html
+- http://www.fj.gov.cn/xwdt/tpxx/202604/t20260424_7130812.htm
+- https://dfz.zj.gov.cn/zlyz/ossfs//h5/ZS-K-331102-2010-001-0101/files/basic-html/page1424.html
+
 - https://th.china-embassy.gov.cn/eng/ztbd/AboutChina/Ethnic/200011/t20001115_1432841.htm
 
 - https://www.ihchina.cn/project_details/15094/

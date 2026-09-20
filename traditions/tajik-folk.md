@@ -47,7 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Tajik-people
+
+- https://mfa.tj/en/moscow/view/9899/article-on-the-topic-celebration-of-navruz-holiday
+- https://www.mfa.tj/en/washington/tajikistan/tourism
+- https://mfa.tj/en/saudi/view/18492/ministry-of-foreign-affairs-celebrated-international-navruz-holiday
+
 - https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-00261
 
 - https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-02097

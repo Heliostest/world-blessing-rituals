@@ -47,9 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Kimbanguist-Church
 - https://apnews.com/article/congo-kimbanguism-politics-rebellion-black-liberation-c7ba1dfff9e99e74d91840d9ba75f6f7
 - https://doi.org/10.7833/113-0-101
 - https://doi.org/10.1086/728884
 - https://doi.org/10.1163/2211-2685_eco_K37
 - https://doi.org/10.1017/CHOL9780521815000.008
+- https://hts.org.za/index.php/hts/article/view/6819/19979
+- https://research.abo.fi/ws/files/60297920/9789004692206-BP000026.pdf
+- https://journals.openedition.org/civilisations/333?lang=en

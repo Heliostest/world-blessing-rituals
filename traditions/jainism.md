@@ -56,7 +56,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Jainism
 - https://www.metmuseum.org/essays/jain-manuscript-painting
 - https://jainpedia.org/wp-content/uploads/2021/08/Voulume-1-Catalogue-of-the-Manuscripts-of-the-British-Library.pdf
 - https://www.metmuseum.org/art/collection/search/73824
+- https://asi.nic.in/pages/WorldHeritageElloraCaves
+- https://asi.nic.in/pages/WorldHeritageKhajuraho
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC5240069/

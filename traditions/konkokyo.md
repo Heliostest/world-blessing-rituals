@@ -47,9 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Konko-kyo
 - https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9816
 - https://www.konkokyo.jp/eng/our_faith/religious_beliefs.html
 - https://konkokyo.jp/eng/our_faith/how_to_worship.html
 - https://nirc.nanzan-u.ac.jp/journal/15/article/1824/pdf/download
 - https://www.konkofaith.org/what-is-konko
+- http://www.konkokyo.or.jp/eng/
+- http://www.konkokyo.or.jp/eng/in

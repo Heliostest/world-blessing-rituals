@@ -47,8 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Kamba
 - http://www.bluegecko.org/kenya/tribes/kamba/beliefs.htm
 - https://artsandculture.google.com/story/kamba-beliefs-folklore-and-magic-national-museums-of-kenya/1QUxqjxoN2UGbQ?hl=en
 - https://www.easpublisher.com/get-articles/5413
 - https://lughayangu.com/post/syokimauthe-mysterious-kamba-prophetess
+- https://ojs.reformedjournals.co.za/index.php/stj/article/download/2528/3806?inline=1
+- https://www.explore-vc.org/en/objects.html?layout=showstar:portfolio&start=5
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC7952165/

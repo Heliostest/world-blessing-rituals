@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Kalenjin
 - https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2023000300003
 - https://dx.doi.org/10.4000/11ta1
 - https://doi.org/10.15021/00004305
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC3974104/
+- https://museums.or.ke/hyrax-hill-museum/
+- https://www.ajol.info/index.php/jhcs/article/download/334163/313945/753055

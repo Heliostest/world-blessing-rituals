@@ -47,9 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Kikuyu
 - https://www.cambridge.org/core/journals/africa/article/abs/kikuyu-religion-ancestorworship-and-sacrificial-practices/6CFD176DD79B1911B0E3F152DDBA59BF
 - https://doi.org/10.1080/13696810802159339
 - https://doi.org/10.1017/S0376892917000534
 - https://doi.org/10.3390/f9080481
 - https://doi.org/10.3366/ircl.2016.0180
+- https://museums.or.ke/mount-kenya-national-park-natural-forest/
+- https://www.ajol.info/index.php/eajess/article/view/279390/263563
+- https://museums.or.ke/meru-museum/

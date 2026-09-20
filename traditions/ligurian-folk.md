@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://www.santuarioguardia.it/la-nostra-storia/
 - https://www.santuarioguardia.it/visita-il-santuario/ex-voto-e-sala-ceri/
 - https://www.santuarioguardia.it/guardia-nel-mondo/
+- https://lamialiguria.it/2026/03/tradizioni-pasquali-liguria/
+- https://lamialiguria.it/eventi/il-presepe-di-manarola/
+- https://lamialiguria.it/itinerari/genova-citta-di-presepi/

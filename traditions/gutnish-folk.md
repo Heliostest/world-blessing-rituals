@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Church-of-Sweden
 - https://gotland.com/stangaspelen/
 - https://www.svenskakyrkan.se/platser/679-visby-domkyrkoforsamling-visby-domkyrka-sankta-maria
 - https://www.svenskakyrkan.se/visbydomkyrka/besok-and-visningar
+- https://www.gotlandsmuseum.se/utstallning/medeltidens-gotland/
+- https://www.medeltidsveckan.se/en/about-medieval-week/
+- https://www.gotlandsmuseum.se/besoksmal/fornsalen/

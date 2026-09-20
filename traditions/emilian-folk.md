@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://emiliaromagnaturismo.it/it/arte-cultura/citta-darte/bologna-portici
 - https://emiliaromagnaturismo.it/it/itinerari/siti-unesco-a-bologna-e-modena
 - https://dati.beniculturali.it/lodview-arco/resource/ArchitecturalOrLandscapeHeritage/0800241610
+- https://emiliaromagnaturismo.it/it/itinerari/bologna-passeggiata-portici-unesco
+- https://www.visitmodena.it/en/discover-modena/art-and-culture/curiosities-and-traditions/san-geminiano-fair
+- https://emiliaromagnaturismo.it/it/itinerari/romanico-a-modena-e-dintorni

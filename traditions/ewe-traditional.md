@@ -47,8 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Ewe-people
 - https://visitghana.com/hogbetsotso-za-festival/
 - https://ich.unesco.org/doc/src/Signed%20periodic%20report%20-%20Periodic%20report-62640.pdf
 - https://ich.unesco.org/doc/src/45516-FR.pdf?t=1568629329
 - https://ich.unesco.org/es/-00973?photoID=00236
+- https://books.openedition.org/obp/4211
+- https://dx.doi.org/10.1525/california/9780520234550.003.0002

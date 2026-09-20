@@ -47,8 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Santiago-de-Compostela-pilgrimage
 - https://www.caminodesantiago.gal/es/descubre/origenes-y-evolucion/el-ano-santo-compostelano
 - https://www.turismo.gal/recurso/-/detalle/200312000146/romaria-de-santa-marta-de-ribarteme
 - https://blog.turismo.gal/san-andres-de-teixido-lugar-de-ritos-y-leyendas-acoge-una-nueva-romeria/
 - https://patrimoniogalego.net/index.php/2031/2011/06/amilladoiros-no-camino-a-san-andres-de-teixido/
+- https://journals.openedition.org/etnografica/15047?lang=en
+- https://www.iaph.es/revistaph/index.php/revistaph/article/view/3633

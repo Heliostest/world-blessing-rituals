@@ -47,8 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Greek-Orthodox-Church
 - https://ayla.culture.gr/catalogue/ta-panigiria-tis-ikarias-2022/
 - https://ayla.culture.gr/catalogue/to-panigyri-tou-agiou-petrou-sta-spata/
 - https://ayla.culture.gr/6731-2/
 - https://archivecollections.visitgreece.gr/entities/multimedia/ea58cdf6-6b8c-4c99-9832-46dacf489541
+- https://ich.unesco.org/en/BSP/polyphonic-caravan-researching-safeguarding-and-promoting-the-epirus-polyphonic-song-01611
+- https://doi.org/10.1179/030701379790206493
+- https://doi.org/10.1515/9781400884360

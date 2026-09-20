@@ -780,5 +780,20 @@
 
 ## 赛博祈福 App（开发中）
 
-手机端壳：`apps/cyber-bless`（`npm install && npm run dev`）。
-设计规格：`specs/2026-09-20-cyber-bless-app-design.md`。
+手机端壳：`apps/cyber-bless`。设计规格：`specs/2026-09-20-cyber-bless-app-design.md`。
+
+### 本地开发
+
+```bash
+npm install
+npm run dev          # 根脚本 → cyber-bless（已带 --host）
+# 或：npm run dev -w @wbr/cyber-bless
+# 或：cd apps/cyber-bless && npm run dev -- --host
+```
+
+### 手机同网访问（LAN）
+
+1. 电脑与手机连同一 Wi‑Fi。
+2. 用上面的 `npm run dev`（Vite `server.host: true` / `--host`）启动。
+3. 终端会打印 `Network` 地址，如 `http://192.168.x.x:5173`；手机浏览器打开该 URL。
+4. 陀螺仪权限：多数浏览器要求 **HTTPS** 或 **localhost**。纯 HTTP LAN 上 `gyro` 可能不可用——场景内有点按降级；真机测陀螺仪可用本机隧道（如 `vite` + HTTPS 代理）或 USB 调试映射到 localhost。

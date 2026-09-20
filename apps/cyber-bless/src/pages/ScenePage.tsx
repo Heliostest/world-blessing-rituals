@@ -1,20 +1,26 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import * as Gestures from '@wbr/gestures'
 import * as Shared from '@wbr/shared'
 import { loadScene, type SceneInstance } from '@wbr/scenes'
+import { SceneComplete } from './SceneComplete'
 
 const UNAVAILABLE = '场景暂不可用'
-const PRACTICE_DONE = '练习结束'
 
 Shared.assertSafeCopy(UNAVAILABLE)
-Shared.assertSafeCopy(PRACTICE_DONE)
 
 export function ScenePage() {
   const { sceneId } = useParams<{ sceneId: string }>()
   const wrapRef = useRef<HTMLDivElement>(null)
   const [error, setError] = useState<string | null>(null)
   const [complete, setComplete] = useState(false)
+  const [runId, setRunId] = useState(0)
+
+  const onRetry = useCallback(() => {
+    setComplete(false)
+    setError(null)
+    setRunId((n) => n + 1)
+  }, [])
 
   useEffect(() => {
     setError(null)
@@ -72,7 +78,7 @@ export function ScenePage() {
       instance = null
       wrap.replaceChildren()
     }
-  }, [sceneId])
+  }, [sceneId, runId])
 
   if (!sceneId) {
     return (
@@ -87,11 +93,6 @@ export function ScenePage() {
     <div className="scene-page">
       <div className="scene-topbar">
         <Link to="/gallery">退出</Link>
-        {complete ? (
-          <span className="scene-complete-flag" aria-live="polite">
-            {PRACTICE_DONE}
-          </span>
-        ) : null}
       </div>
       {error ? (
         <div className="scene-error" role="alert">
@@ -99,7 +100,8 @@ export function ScenePage() {
           <Link to="/gallery">回廊</Link>
         </div>
       ) : null}
-      <div ref={wrapRef} className="scene-stage" hidden={Boolean(error)} />
+      <div ref={wrapRef} className="scene-stage" hidden={Boolean(error) || complete} />
+      {complete ? <SceneComplete onRetry={onRetry} /> : null}
     </div>
   )
 }

@@ -98,6 +98,31 @@ describe('createGyro', () => {
     g.dispose()
   })
 
+  it('requests permission on user gesture and listens when granted', async () => {
+    class DOEWithPerm extends FakeDeviceOrientationEvent {
+      static requestPermission = vi.fn(async () => 'granted' as PermissionState)
+    }
+    ;(globalThis as { DeviceOrientationEvent: unknown }).DeviceOrientationEvent = DOEWithPerm
+    const onBow = vi.fn()
+    const g = createGyro({ bowBetaDeg: 30, onBow })
+    g.mount(el, {})
+
+    // Mount must not call requestPermission (Safari user-gesture requirement).
+    expect(DOEWithPerm.requestPermission).not.toHaveBeenCalled()
+    window.dispatchEvent(new FakeDeviceOrientationEvent('deviceorientation', { beta: 45 }))
+    expect(onBow).not.toHaveBeenCalled()
+
+    el.dispatchEvent(ptr('pointerdown'))
+    await vi.waitFor(() => {
+      expect(DOEWithPerm.requestPermission).toHaveBeenCalledTimes(1)
+    })
+    await Promise.resolve()
+
+    window.dispatchEvent(new FakeDeviceOrientationEvent('deviceorientation', { beta: 45 }))
+    expect(onBow).toHaveBeenCalledTimes(1)
+    g.dispose()
+  })
+
   it('enables tap fallback when requestPermission denies', async () => {
     class DOEWithPerm extends FakeDeviceOrientationEvent {
       static requestPermission = vi.fn(async () => 'denied' as PermissionState)
@@ -106,12 +131,19 @@ describe('createGyro', () => {
     const onBow = vi.fn()
     const g = createGyro({ bowBetaDeg: 30, onBow })
     g.mount(el, {})
+    expect(DOEWithPerm.requestPermission).not.toHaveBeenCalled()
+
+    // First user gesture triggers permission request (not mount).
+    el.dispatchEvent(ptr('pointerdown'))
     await vi.waitFor(() => {
-      el.dispatchEvent(ptr('pointerdown'))
+      expect(DOEWithPerm.requestPermission).toHaveBeenCalledTimes(1)
+    })
+
+    // After deny, fallback tap fires onBow.
+    await vi.waitFor(() => {
       el.dispatchEvent(ptr('pointerup'))
       expect(onBow).toHaveBeenCalled()
     })
-    expect(DOEWithPerm.requestPermission).toHaveBeenCalled()
     g.dispose()
   })
 

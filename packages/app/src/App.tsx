@@ -6,18 +6,12 @@ import {
   useSyncExternalStore,
 } from "react";
 import { createStore, type Host } from "@wbr/runtime";
-import { Context, type Route } from "./context";
+import { Context, type Route, type FulfillmentDraft } from "./context";
 import { Icon } from "./art";
-import {
-  CollectionDetail,
-  History,
-  Me,
-  NewWish,
-  Today,
-  WishDetail,
-  Wishes,
-  World,
-} from "./pages";
+import { CollectionDetail, History, Me, Wishes, World } from "./pages";
+import { Today, ritualTitle } from "./home";
+import { NewWish, WishDetail, WishNote, FulfillWish } from "./wishes";
+import { fontStyles } from "./assets";
 import { Complete, Ritual } from "./ritual";
 
 export function BlessingApp({
@@ -35,6 +29,9 @@ export function BlessingApp({
   const snapshot = useSyncExternalStore(store.subscribe, store.getSnapshot);
   const [routes, setRoutes] = useState<Route[]>([{ page: "today" }]);
   const [error, setError] = useState("");
+  const [fulfillmentDrafts, setFulfillmentDrafts] = useState<
+    Record<string, FulfillmentDraft>
+  >({});
   const [dateKey, setDateKey] = useState(0);
   const audio = useRef<AudioContext | null>(null);
   const route = routes[routes.length - 1];
@@ -43,7 +40,19 @@ export function BlessingApp({
   const canBack = routes.length > 1 || route.page !== "today";
   function go(next: Route) {
     setError("");
-    setRoutes((old) => (roots.includes(next.page) ? [next] : [...old, next]));
+    setRoutes((old) => {
+      if (roots.includes(next.page)) return [next];
+      const existing = old.findIndex(
+        (r) => r.page === next.page && r.id === next.id,
+      );
+      if (existing >= 0) return old.slice(0, existing + 1);
+      if (
+        (old.at(-1)?.page === "new" && next.page === "wish") ||
+        next.page === "complete"
+      )
+        return [...old.slice(0, -1), next];
+      return [...old, next];
+    });
     window.scrollTo?.(0, 0);
   }
   function back() {
@@ -127,6 +136,7 @@ export function BlessingApp({
   if (!state)
     return (
       <div className="bless-app">
+        <style>{fontStyles}</style>
         <div className="loading-screen">
           <Icon name="leaf" />
           <p className="eyebrow">一日一念 · 赛博祈福</p>
@@ -170,8 +180,12 @@ export function BlessingApp({
       <NewWish />
     ) : route.page === "wish" ? (
       <WishDetail key={route.id} id={route.id!} />
+    ) : route.page === "fulfill" ? (
+      <FulfillWish key={route.id} id={route.id!} />
+    ) : route.page === "note" ? (
+      <WishNote key={route.id} id={route.id!} />
     ) : route.page === "ritual" ? (
-      <Ritual id={route.id} />
+      <Ritual id={route.id} wishId={route.wishId} />
     ) : route.page === "complete" ? (
       <Complete id={route.id!} />
     ) : route.page === "collection" ? (
@@ -187,6 +201,14 @@ export function BlessingApp({
         back,
         active,
         feedback,
+        fulfillmentDrafts,
+        setFulfillmentDraft: (id, draft) =>
+          setFulfillmentDrafts((old) => {
+            const next = { ...old };
+            if (draft) next[id] = draft;
+            else delete next[id];
+            return next;
+          }),
         dispatch: (action) => {
           try {
             store.dispatch(action);
@@ -204,6 +226,7 @@ export function BlessingApp({
       <div
         className={`bless-app${state.settings.reducedMotion ? " reduce-motion" : ""}`}
       >
+        <style>{fontStyles}</style>
         <div className="desktop-note">
           <span className="brand-mark">念</span>
           <strong>一日一念</strong>
@@ -214,26 +237,55 @@ export function BlessingApp({
           </p>
           <span>CYBER BLESS · A LITTLE EVERY DAY</span>
         </div>
-        <div className="app-shell">
-          <header className="app-topbar">
-            {!roots.includes(route.page) ? (
-              <button className="back-button" aria-label="返回" onClick={back}>
-                <Icon name="back" />
-                <span>返回</span>
+        <div className="app-shell" data-page={route.page}>
+          {!roots.includes(route.page) && (
+            <header
+              className={`app-topbar${route.page === "complete" ? " completion-topbar" : ""}`}
+            >
+              <button
+                className="back-button"
+                aria-label={route.page === "complete" ? "关闭完成页" : "返回"}
+                onClick={
+                  route.page === "complete" ? () => go({ page: "today" }) : back
+                }
+              >
+                <Icon name={route.page === "complete" ? "close" : "back"} />
               </button>
-            ) : (
-              <span className="wordmark">
-                <span>念</span> 一日一念
-              </span>
-            )}
-            <span className="save-status" role="status">
-              {snapshot.status === "saving"
-                ? "正在保存…"
-                : snapshot.status === "save-error"
-                  ? "尚未保存"
-                  : "本机珍藏"}
-            </span>
-          </header>
+              <h2>
+                {
+                  (
+                    {
+                      new: "许个小心愿",
+                      wish: "我的心愿",
+                      fulfill: "来还个愿",
+                      note: "记一笔",
+                      collection: "我的小收藏",
+                      history: "仪式时光",
+                      ritual:
+                        ritualTitle[
+                          state.activeSession?.ritual ??
+                            (route.id === "crane"
+                              ? "crane"
+                              : route.id === "lantern"
+                                ? "lantern"
+                                : "woodfish")
+                        ],
+                    } as Record<string, string>
+                  )[route.page]
+                }
+              </h2>
+            </header>
+          )}
+          <span
+            className={snapshot.status === "saved" ? "sr-only" : "save-status"}
+            role="status"
+          >
+            {snapshot.status === "saving"
+              ? "正在保存…"
+              : snapshot.status === "save-error"
+                ? "尚未保存"
+                : "本机珍藏"}
+          </span>
           {snapshot.status === "save-error" && (
             <div className="error-banner" role="alert">
               <span>{snapshot.error}</span>

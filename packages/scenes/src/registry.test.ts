@@ -51,12 +51,20 @@ describe('loadScene', () => {
     expect(typeof mod.create).toBe('function')
   })
 
+  it('resolves theravada-water module with matching meta', async () => {
+    const mod = await loadScene('theravada-water')
+    expect(mod.meta.id).toBe('theravada-water')
+    expect(mod.meta.title).toBe('花水位一倾')
+    expect(mod.meta.gestures).toEqual(['tilt', 'drag'])
+    expect(typeof mod.create).toBe('function')
+  })
+
   it('throws scene not implemented for other pilot ids', async () => {
-    await expect(loadScene('theravada-water')).rejects.toThrow(
-      /scene not implemented: theravada-water/,
-    )
     await expect(loadScene('shinto-torii')).rejects.toThrow(
       /scene not implemented: shinto-torii/,
+    )
+    await expect(loadScene('tibetan-wheel')).rejects.toThrow(
+      /scene not implemented: tibetan-wheel/,
     )
   })
 })

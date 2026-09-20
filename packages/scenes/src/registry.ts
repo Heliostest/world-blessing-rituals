@@ -46,12 +46,14 @@ export const sceneRegistry: SceneMeta[] = [
 
 /**
  * Dynamic-import implemented scenes.
- * celtic-folk-spring is wired; remaining pilots throw until later tasks.
+ * celtic-folk-spring + theravada-water are wired; remaining pilots throw until later tasks.
  */
 export async function loadScene(id: string): Promise<SceneModule> {
   switch (id) {
     case 'celtic-folk-spring':
       return import('./celtic-folk-spring')
+    case 'theravada-water':
+      return import('./theravada-water')
     default:
       throw new Error('scene not implemented: ' + id)
   }

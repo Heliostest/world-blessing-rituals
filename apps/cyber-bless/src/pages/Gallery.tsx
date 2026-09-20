@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const GESTURES = ['drag', 'tilt', 'spin', 'gyro', 'wishWrite'] as const
 
-const PLACEHOLDER_SCENES = [
+const PILOT_SCENES = [
   { id: 'celtic-folk-spring', title: '泉边一念' },
   { id: 'theravada-water', title: '花水位一倾' },
 ] as const
@@ -11,7 +11,7 @@ export function Gallery() {
   return (
     <main className="page">
       <h1>祈福廊</h1>
-      <p className="muted">场景尚未接入，可先试手势试验场。</p>
+      <p className="muted">试点场景可进入；其余稍后。</p>
 
       <h2>手势试验</h2>
       <ul className="list">
@@ -22,13 +22,12 @@ export function Gallery() {
         ))}
       </ul>
 
-      <h2>场景（占位）</h2>
+      <h2>场景</h2>
       <ul className="list">
-        {PLACEHOLDER_SCENES.map((s) => (
+        {PILOT_SCENES.map((s) => (
           <li key={s.id}>
-            <span>{s.title}</span>{' '}
-            <code className="muted">{s.id}</code>{' '}
-            <span className="muted">稍后</span>
+            <Link to={`/scene/${s.id}`}>{s.title}</Link>{' '}
+            <code className="muted">{s.id}</code>
           </li>
         ))}
       </ul>

@@ -1,26 +1,17 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import { Home } from './pages/Home'
-import { Gallery } from './pages/Gallery'
-import { About } from './pages/About'
-import { Playground } from './pages/Playground'
-import { ScenePage } from './pages/ScenePage'
+import { lazy, Suspense } from "react";
+import { BlessingApp } from "@wbr/app";
+import { browserHost } from "@wbr/runtime";
+import "@wbr/app/style.css";
+
+const host = browserHost();
+const DevApp = lazy(() => import("./DevApp"));
 
 export function App() {
-  return (
-    <BrowserRouter>
-      <nav className="app-nav">
-        <Link to="/">首页</Link>
-        <Link to="/gallery">祈福廊</Link>
-        <Link to="/about">关于</Link>
-        <Link to="/playground/drag">手势试验</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/playground/:gesture" element={<Playground />} />
-        <Route path="/scene/:sceneId" element={<ScenePage />} />
-      </Routes>
-    </BrowserRouter>
-  )
+  if (window.location.pathname.startsWith("/dev"))
+    return (
+      <Suspense fallback={<p>正在打开开发工具…</p>}>
+        <DevApp />
+      </Suspense>
+    );
+  return <BlessingApp host={host} />;
 }

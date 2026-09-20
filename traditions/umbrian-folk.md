@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/biography/Saint-Francis-of-Assisi
 - https://www.unesco.it/it/news/lenciclopedia-treccani-e-le-tavole-iguvine-sono-le-due-candidature-italiane-al-programma-unesco-memoria-del-mondo-per-il-ciclo-2026-2027/
 - https://www.santuariosantarita.it/
 - https://www.sanfrancescoassisi.org/
+- https://www.comune.gubbio.pg.it/it/page/festa-dei-ceri
+- http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_5037662576951/MODI
+- https://www.unesco.it/it/unesco-vicino-a-te/siti-patrimonio-mondiale/assisi-la-basilica-di-san-francesco-e-altri-siti-francescani/

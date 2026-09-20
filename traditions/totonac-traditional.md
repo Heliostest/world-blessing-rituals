@@ -47,8 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Totonac
 - https://ich.unesco.org/en/RL/ritual-ceremony-of-the-voladores-00175
 - https://ich.unesco.org/en/BSP/xtaxkgakget-makgkaxtlawana-the-centre-for-indigenous-arts-and-its-contribution-to-safeguarding-the-intangible-cultural-heritage-of-the-totonac-people-of-veracruz-mexico-00666
 - https://www.inah.gob.mx/index.php/foto-del-dia/ceremonia-ritual-de-los-voladores-patrimonio-vivo
 - https://revistas.inah.gob.mx/index.php/cuicuilco/es/article/view/23503
+- https://doi.org/10.18441/ind.v41i1.63-82
+- https://doi.org/10.1007/978-3-031-72123-6_31
+- https://doi.org/10.1007/s10668-014-9520-2

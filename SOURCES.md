@@ -4160,3 +4160,26 @@
 - https://www.ticino.ch/it/commons/details/Processioni-della-Settimana-Santa-di-Mendrisio/37413.html
 - https://www.madonnadelsasso.ch/
 - https://www.ascona-locarno.com/it/attualita/storie/il-sacro-monte-della-madonna-del-sasso
+
+## 增补传统（Notebook source hunt C45：弱链接清理）
+
+- https://doi.org/10.18441/ind.v41i1.63-82
+- https://doi.org/10.1007/978-3-031-72123-6_31
+- https://doi.org/10.1007/s10668-014-9520-2
+- https://www.ihchina.cn/project_details/12922.html
+- https://www.ihchina.cn/project_details/12319/
+- https://www.ihchina.cn/project_details/12925.html
+- https://www.comune.gubbio.pg.it/it/page/festa-dei-ceri
+- http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_5037662576951/MODI
+- https://www.unesco.it/it/unesco-vicino-a-te/siti-patrimonio-mondiale/assisi-la-basilica-di-san-francesco-e-altri-siti-francescani/
+- https://doi.org/10.47089/iuad.797850
+- https://doi.org/10.24852/pa2013.4.6.253.260
+- https://ich.unesco.org/en/RL/carnival-of-binche-00033
+- https://www.museedumasque.be/expos/expos-permanentes/centre-dinterpretation-du-carnaval-de-binche/
+- https://www.museedumasque.be/le-carnaval-de-binche-2024/
+- https://doi.org/10.20961/jas.v6i2.18466
+- https://doi.org/10.28918/religia.v12i1.196
+- https://doi.org/10.23960/jsl.v12i3.985
+- https://doi.org/10.33182/ks.v4i2.426
+- https://doi.org/10.1163/157338499X00056
+- https://www.yazda.org/final-report-of-investigation-into-cultural-heritage-destruction-during-the-islamic-state-s-genocide-against-the-yazidis

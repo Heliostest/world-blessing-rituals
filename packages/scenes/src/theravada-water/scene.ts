@@ -100,17 +100,27 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
+  renderer.toneMapping = THREE.ACESFilmicToneMapping
+  renderer.toneMappingExposure = 1.05
+  renderer.outputColorSpace = THREE.SRGBColorSpace
   const scene = new THREE.Scene()
-  scene.background = new THREE.Color(0x1a1420)
+  const bgColor = new THREE.Color(0x150f1c)
+  scene.background = bgColor
+  scene.fog = new THREE.FogExp2(bgColor.getHex(), 0.085)
 
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100)
-  camera.position.set(0, 2.6, 4.4)
-  camera.lookAt(0, 0.2, 0)
+  const cameraHome = new THREE.Vector3(0, 2.4, 4.1)
+  camera.position.copy(cameraHome)
+  const cameraLookAt = new THREE.Vector3(0, 0.25, 0)
+  camera.lookAt(cameraLookAt)
 
-  const ambient = new THREE.AmbientLight(0xaa8899, 0.55)
-  const key = new THREE.DirectionalLight(0xfff0e0, 1.05)
+  const ambient = new THREE.AmbientLight(0x6a5468, 0.4)
+  const hemi = new THREE.HemisphereLight(0xd8b8ff, 0x120a18, 0.45)
+  const key = new THREE.DirectionalLight(0xfff0e0, 0.95)
   key.position.set(2.2, 4.2, 2.5)
-  scene.add(ambient, key)
+  const fill = new THREE.PointLight(0x8ac8e0, 0.6, 6, 2)
+  fill.position.set(-1.6, 1.4, 0.6)
+  scene.add(ambient, hemi, key, fill)
 
   // Basin / water surface
   const basin = new THREE.Mesh(
@@ -128,7 +138,9 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   const water = new THREE.Mesh(
     new THREE.CircleGeometry(1.1, 48),
     new THREE.MeshStandardMaterial({
-      color: 0x3a7a9a,
+      color: 0x3a8aaa,
+      emissive: 0x123a4a,
+      emissiveIntensity: 0.4,
       metalness: 0.25,
       roughness: 0.3,
       transparent: true,
@@ -138,6 +150,10 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   water.rotation.x = -Math.PI / 2
   water.position.y = 0.22
   scene.add(water)
+
+  const anjaliGlow = new THREE.PointLight(0xffd9a0, 0, 5, 2)
+  anjaliGlow.position.set(0, 0.9, 0)
+  scene.add(anjaliGlow)
 
   // Pitcher / pour vessel (tilts with gesture)
   const pitcherGroup = new THREE.Group()
@@ -163,21 +179,29 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   spout.position.set(0.35, 0.15, 0)
   pitcherGroup.add(spout)
 
-  // Stream particles (simple line of droplets when pouring)
+  // Stream (stretches from the spout tip down to the water surface while pouring)
+  const streamBaseHeight = 0.9
   const streamMat = new THREE.MeshStandardMaterial({
-    color: 0x6ab0d0,
+    color: 0x8ad0e8,
+    emissive: 0x3a90b0,
+    emissiveIntensity: 0.6,
     transparent: true,
     opacity: 0,
   })
-  const stream = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.04, 0.9, 8), streamMat)
-  stream.position.set(-0.85, 0.75, 0.4)
+  const stream = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.025, 0.045, streamBaseHeight, 8),
+    streamMat,
+  )
   scene.add(stream)
+  const spoutWorldPos = new THREE.Vector3()
 
   // Petal token to drag
   const petal = new THREE.Mesh(
     new THREE.SphereGeometry(0.16, 16, 12),
     new THREE.MeshStandardMaterial({
       color: 0xe8a0b8,
+      emissive: 0x6a2a40,
+      emissiveIntensity: 0.35,
       metalness: 0.15,
       roughness: 0.55,
     }),
@@ -187,7 +211,32 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   petal.visible = false
   scene.add(petal)
 
+  const moteCount = 55
+  const motePositions = new Float32Array(moteCount * 3)
+  for (let i = 0; i < moteCount; i++) {
+    const angle = Math.random() * Math.PI * 2
+    const radius = 0.6 + Math.random() * 2.1
+    motePositions[i * 3] = Math.cos(angle) * radius
+    motePositions[i * 3 + 1] = 0.15 + Math.random() * 1.6
+    motePositions[i * 3 + 2] = Math.sin(angle) * radius
+  }
+  const moteGeometry = new THREE.BufferGeometry()
+  moteGeometry.setAttribute('position', new THREE.BufferAttribute(motePositions, 3))
+  const moteMaterial = new THREE.PointsMaterial({
+    color: 0xe0b8ff,
+    size: 0.028,
+    transparent: true,
+    opacity: 0.5,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+  })
+  const motes = new THREE.Points(moteGeometry, moteMaterial)
+  scene.add(motes)
+
   const petalHome = petal.position.clone()
+  const dragTarget = petalHome.clone()
+  let grabbed = false
+  let petalScale = 1
   const raycaster = new THREE.Raycaster()
   const pointerNdc = new THREE.Vector2()
   const dragPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), -0.22)
@@ -218,7 +267,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
     clientToNdc(clientX, clientY)
     raycaster.setFromCamera(pointerNdc, camera)
     if (raycaster.ray.intersectPlane(dragPlane, hitPoint)) {
-      petal.position.set(hitPoint.x, 0.35, hitPoint.z)
+      dragTarget.set(hitPoint.x, 0.35, hitPoint.z)
     }
   }
 
@@ -246,7 +295,9 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
     if (step !== 'drag') return
     step = 'anjali'
     dragHandle?.setEnabled(false)
-    petal.position.set(0, 0.28, 0)
+    grabbed = false
+    dragTarget.set(0, 0.28, 0)
+    petal.position.copy(dragTarget)
     syncOverlayForStep()
   }
 
@@ -257,7 +308,12 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
 
   const onHitMove = (e: PointerEvent) => {
     if (step !== 'drag' || e.buttons === 0) return
+    grabbed = true
     movePetalTo(e.clientX, e.clientY)
+  }
+
+  const onHitUp = () => {
+    grabbed = false
   }
 
   const wireGestures = () => {
@@ -284,8 +340,9 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       hitTest: waterHitTest,
       onDrop: (hit) => {
         if (step !== 'drag') return
+        grabbed = false
         if (hit) goAnjali()
-        else petal.position.copy(petalHome)
+        else dragTarget.copy(petalHome)
       },
     })
     dragHandle.mount(hitLayer, {})
@@ -293,6 +350,8 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
     handles.push(dragHandle)
 
     hitLayer.addEventListener('pointermove', onHitMove)
+    hitLayer.addEventListener('pointerup', onHitUp)
+    hitLayer.addEventListener('pointercancel', onHitUp)
     anjaliBtn.addEventListener('pointerup', onAnjaliTap)
   }
 
@@ -317,9 +376,10 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       for (const h of handles) h.update(dt)
       const t = performance.now() * 0.001
       water.position.y = 0.22 + Math.sin(t * 1.4) * 0.008
-      if (step === 'tilt' && pourProgress > 0.5) {
-        stream.position.y = 0.75 - (pourProgress - 0.5) * 0.3
-      }
+      ;(water.material as THREE.MeshStandardMaterial).emissiveIntensity =
+        0.35 + Math.sin(t * 0.9) * 0.1
+      motes.rotation.y += dt * 0.02
+
       if (step !== 'tilt') {
         pitcherGroup.rotation.z = THREE.MathUtils.lerp(
           pitcherGroup.rotation.z,
@@ -327,6 +387,41 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
           Math.min(1, dt * 4),
         )
       }
+      pitcherGroup.updateMatrixWorld(true)
+      spout.getWorldPosition(spoutWorldPos)
+      if (streamMat.opacity > 0) {
+        const waterY = water.position.y
+        const dropHeight = Math.max(spoutWorldPos.y - waterY, 0.05)
+        stream.position.set(
+          spoutWorldPos.x,
+          (spoutWorldPos.y + waterY) / 2,
+          spoutWorldPos.z,
+        )
+        const radial = THREE.MathUtils.clamp(pourProgress, 0.2, 1)
+        stream.scale.set(radial, dropHeight / streamBaseHeight, radial)
+      }
+
+      const followRate = 1 - Math.exp(-dt * 14)
+      if (step === 'drag') {
+        petal.position.lerp(dragTarget, followRate)
+        petal.rotation.y += dt * 0.6
+      }
+      const scaleTarget = grabbed ? 1.25 : 1
+      petalScale = THREE.MathUtils.lerp(petalScale, scaleTarget, 1 - Math.exp(-dt * 12))
+      petal.scale.set(1.2 * petalScale, 0.35 * petalScale, 0.9 * petalScale)
+
+      anjaliGlow.intensity =
+        step === 'anjali'
+          ? THREE.MathUtils.lerp(anjaliGlow.intensity, 1.1 + Math.sin(t * 3) * 0.25, 1 - Math.exp(-dt * 6))
+          : THREE.MathUtils.lerp(anjaliGlow.intensity, 0, 1 - Math.exp(-dt * 6))
+
+      camera.position.set(
+        cameraHome.x + Math.sin(t * 0.13) * 0.12,
+        cameraHome.y + Math.sin(t * 0.1) * 0.05,
+        cameraHome.z + Math.cos(t * 0.13) * 0.12,
+      )
+      camera.lookAt(cameraLookAt)
+
       renderer.render(scene, camera)
     },
     dispose() {
@@ -335,6 +430,8 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       resizeObserver?.disconnect()
       resizeObserver = null
       hitLayer.removeEventListener('pointermove', onHitMove)
+      hitLayer.removeEventListener('pointerup', onHitUp)
+      hitLayer.removeEventListener('pointercancel', onHitUp)
       anjaliBtn.removeEventListener('pointerup', onAnjaliTap)
       for (const h of handles) h.dispose()
       handles.length = 0
@@ -351,6 +448,8 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       streamMat.dispose()
       petal.geometry.dispose()
       ;(petal.material as THREE.Material).dispose()
+      moteGeometry.dispose()
+      moteMaterial.dispose()
       overlay.replaceChildren()
       overlay.classList.remove('scene-overlay')
     },

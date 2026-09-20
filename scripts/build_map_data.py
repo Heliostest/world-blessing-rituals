@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build docs/map-data.json from traditions/*.md."""
+"""Build docs/map-data.json from content/traditions/*.md."""
 from __future__ import annotations
 
 import json
@@ -8,9 +8,9 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TRAD = ROOT / "traditions"
+TRAD = ROOT / "content" / "traditions"
 OUT = ROOT / "docs" / "map-data.json"
-GITHUB = "https://github.com/Heliostest/world-blessing-rituals/blob/master/traditions/{slug}.md"
+GITHUB = "https://github.com/Heliostest/world-blessing-rituals/blob/master/content/traditions/{slug}.md"
 
 CURATED = json.loads((Path(__file__).parent / "curated.json").read_text(encoding="utf-8"))
 EURO = json.loads((Path(__file__).parent / "euro_folk.json").read_text(encoding="utf-8"))

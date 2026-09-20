@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Church-of-Sweden
 - https://stolavsleden.com/
 - https://www.isof.se/utforska/levande-traditioner/forslag/2024-10-04-fabodkultur
 - https://www.isof.se/folkminnen/amnesomraden/vardagsliv-nu-och-da/i-fabodarnas-land/folktro-runt-faboden
+- https://www.jamtli.com/kalendarium/midsommarfirande-pa-jamtli/
+- https://www.jamtli.com/kalendarium/fabodveckan/
+- https://www.jamtli.com/om-oss/jamtlis-historia/

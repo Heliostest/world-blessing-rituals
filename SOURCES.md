@@ -4044,3 +4044,40 @@
 - https://doi.org/10.4236/jss.2018.65004
 - https://doi.org/10.4236/aasoci.2019.91001
 - https://scielo.org.za/pdf/she/v40n1/14.pdf
+
+## 增补传统（Notebook source hunt C42：冰岛阿萨特鲁—傈僳）
+
+- https://asatru.is/blot/
+- https://asatru.is/statement/
+- https://doi.org/10.1525/nr.2000.4.1.106
+- https://asi.nic.in/pages/WorldHeritageElloraCaves
+- https://asi.nic.in/pages/WorldHeritageKhajuraho
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC5240069/
+- https://www.jamtli.com/kalendarium/midsommarfirande-pa-jamtli/
+- https://www.jamtli.com/kalendarium/fabodveckan/
+- https://www.jamtli.com/om-oss/jamtlis-historia/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC3974104/
+- https://museums.or.ke/hyrax-hill-museum/
+- https://www.ajol.info/index.php/jhcs/article/download/334163/313945/753055
+- https://ojs.reformedjournals.co.za/index.php/stj/article/download/2528/3806?inline=1
+- https://www.explore-vc.org/en/objects.html?layout=showstar:portfolio&start=5
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC7952165/
+- https://museums.or.ke/mount-kenya-national-park-natural-forest/
+- https://www.ajol.info/index.php/eajess/article/view/279390/263563
+- https://museums.or.ke/meru-museum/
+- https://hts.org.za/index.php/hts/article/view/6819/19979
+- https://research.abo.fi/ws/files/60297920/9789004692206-BP000026.pdf
+- https://journals.openedition.org/civilisations/333?lang=en
+- http://www.konkokyo.or.jp/eng/
+- http://www.konkokyo.or.jp/eng/in
+- https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0234923
+- https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0321119
+- https://tourismus.li/reiseland/unser-land/feiertage-brauchtum/funkensonntag.html
+- https://tourismus.li/reiseland/unser-land/feiertage-brauchtum/alpabfahrt.html
+- https://www.landesmuseum.li/de/veranstaltungen/staatsfeiertag-im-landesmuseum
+- https://lamialiguria.it/2026/03/tradizioni-pasquali-liguria/
+- https://lamialiguria.it/eventi/il-presepe-di-manarola/
+- https://lamialiguria.it/itinerari/genova-citta-di-presepi/
+- https://www.ihchina.cn/project_details/14970.html
+- https://www.ihchina.cn/project_details/23616/
+- https://www.ihchina.cn/project_details/12979/

@@ -1,0 +1,273 @@
+{
+  "batch": "notebook-source-hunt-c42",
+  "cycle": 42,
+  "date": "2026-09-20",
+  "status": "prepared",
+  "selection_rule": "不排除任何早期批次；重算全部 grade=C 卡片当前来源段中的弱链接，按弱链接数量从多到少、slug 字母序选择前 12 张。",
+  "previous_cycles_excluded": false,
+  "c_grade_card_count": 156,
+  "weak_link_c_count_after_c41": 43,
+  "selected_count": 12,
+  "slugs": [
+    "icelandic-asatru",
+    "jainism",
+    "jamtland-folk",
+    "kalenjin-traditional",
+    "kamba-traditional",
+    "kikuyu-ngai",
+    "kimbanguism",
+    "konkokyo",
+    "lahu-traditional",
+    "liechtenstein-folk",
+    "ligurian-folk",
+    "lisu-traditional"
+  ],
+  "cards": [
+    {
+      "slug": "icelandic-asatru",
+      "title": "冰岛阿萨特鲁／北欧多神复兴（Ásatrúarfélagið）",
+      "rituals": [
+        "季节 Blót（Jól／Vetranótt／Sumarblót）与角杯祝酒（公共社群层）",
+        "Allsherjargoði 与人生礼仪（法律—宗教服务层）",
+        "Reykjavík hof、开放日与讲座（公共教育层）"
+      ],
+      "current_urls": [
+        "https://asatru.is/um-asatruarfelagid/",
+        "https://www.bbc.com/travel/article/20190602-how-iceland-recreated-a-viking-age-religion",
+        "https://www.britannica.com/topic/Germanic-religion-and-mythology",
+        "https://skemman.is/bitstream/1946/48719/1/Rozalie_Rasovska_thesis_final.pdf",
+        "https://austurfrett.is/frettir/asatruarfolk-i-austurlands-aetlar-adh-byggja-hof-a-heradhi",
+        "https://guidetoiceland.is/history-culture/vikings-and-norse-gods-in-iceland"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Germanic-religion-and-mythology"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "jainism",
+      "title": "耆那教",
+      "rituals": [
+        "Tirthankara 圣像普迦（Jain puja）",
+        "Pratikraman 与 Paryushana／Samvatsari",
+        "Ahimsa 与 dāna 布施护生实践"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Jainism",
+        "https://www.metmuseum.org/essays/jain-manuscript-painting",
+        "https://jainpedia.org/wp-content/uploads/2021/08/Voulume-1-Catalogue-of-the-Manuscripts-of-the-British-Library.pdf",
+        "https://www.metmuseum.org/art/collection/search/73824"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Jainism"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "jamtland-folk",
+      "title": "耶姆特兰民间基督教与山林祈福（Jamtland）",
+      "rituals": [
+        "St. Olavsleden 朝圣与圣奥拉夫瞻礼民俗（概念层）",
+        "Fäbod 夏牧场祝福与 Kulning（概念层）",
+        "仲夏与教会节期公共民俗层（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Church-of-Sweden",
+        "https://stolavsleden.com/",
+        "https://www.isof.se/utforska/levande-traditioner/forslag/2024-10-04-fabodkultur",
+        "https://www.isof.se/folkminnen/amnesomraden/vardagsliv-nu-och-da/i-fabodarnas-land/folktro-runt-faboden"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Church-of-Sweden"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "kalenjin-traditional",
+      "title": "卡伦金传统宗教与阿西斯祈福（Kalenjin）",
+      "rituals": [
+        "Koros 祭坛向 Asis 求雨祈请（概念层，无献牲 how-to）",
+        "Tumdo 年龄级过渡（CONCEPT ONLY；强烈注意与尊重）",
+        "Orkoiyot 祈请领导命名与教会生活（公共／概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Kalenjin",
+        "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2023000300003",
+        "https://dx.doi.org/10.4000/11ta1",
+        "https://doi.org/10.15021/00004305"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Kalenjin"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "kamba-traditional",
+      "title": "坎巴传统宗教与恩盖／穆伦古祈福（Kamba）",
+      "rituals": [
+        "Ithembo 猴面包树圣地倾奠（概念层）",
+        "Kuvoya Mvua 求雨祈请（概念层）",
+        "Mundu Mue 与教会生命礼仪（CONCEPT only／当代公共层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Kamba",
+        "http://www.bluegecko.org/kenya/tribes/kamba/beliefs.htm",
+        "https://artsandculture.google.com/story/kamba-beliefs-folklore-and-magic-national-museums-of-kenya/1QUxqjxoN2UGbQ?hl=en",
+        "https://www.easpublisher.com/get-articles/5413",
+        "https://lughayangu.com/post/syokimauthe-mysterious-kamba-prophetess"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Kamba"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "kikuyu-ngai",
+      "title": "基库尤传统宗教与恩盖祈请（Gĩkũyũ／Ngai）",
+      "rituals": [
+        "面向肯尼亚山的社群祈请／Kũhoya Ngai（概念层）",
+        "Mũgumo 圣树下羔羊献礼（CONCEPT ONLY）",
+        "祖先共融与家庭纪念（日常概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Kikuyu",
+        "https://www.cambridge.org/core/journals/africa/article/abs/kikuyu-religion-ancestorworship-and-sacrificial-practices/6CFD176DD79B1911B0E3F152DDBA59BF",
+        "https://doi.org/10.1080/13696810802159339",
+        "https://doi.org/10.1017/S0376892917000534",
+        "https://doi.org/10.3390/f9080481",
+        "https://doi.org/10.3366/ircl.2016.0180"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Kikuyu"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "kimbanguism",
+      "title": "金班古教会／金班古主义祈福（Kimbanguism）",
+      "rituals": [
+        "绿—白唱诗班集体崇拜与赞美（公开礼拜层）",
+        "医治与互助援助事工（历史—公益层）",
+        "Nkamba 朝圣与 4 月 6 日先知纪念日（圣地层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Kimbanguist-Church",
+        "https://apnews.com/article/congo-kimbanguism-politics-rebellion-black-liberation-c7ba1dfff9e99e74d91840d9ba75f6f7",
+        "https://doi.org/10.7833/113-0-101",
+        "https://doi.org/10.1086/728884",
+        "https://doi.org/10.1163/2211-2685_eco_K37",
+        "https://doi.org/10.1017/CHOL9780521815000.008"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Kimbanguist-Church"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "konkokyo",
+      "title": "金光教（Konkōkyō）",
+      "rituals": [
+        "取次（Toritsugi）中介倾听（核心，概念层）",
+        "天地书付（Tenchi Kakitsuke）与日常信心提醒",
+        "感谢祖先与教团大祭／大切礼仪（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Konko-kyo",
+        "https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9816",
+        "https://www.konkokyo.jp/eng/our_faith/religious_beliefs.html",
+        "https://konkokyo.jp/eng/our_faith/how_to_worship.html",
+        "https://nirc.nanzan-u.ac.jp/journal/15/article/1824/pdf/download",
+        "https://www.konkofaith.org/what-is-konko"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Konko-kyo"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "lahu-traditional",
+      "title": "拉祜族传统信仰与新年祈福（Lahu）",
+      "rituals": [
+        "Esha（G’ui sha）与 Mawpa（CONCEPT ONLY）",
+        "Kha-ty-te 新年芦笙舞与公共节庆（公共层）",
+        "葫芦节与佛教／教会生活（公共／当代层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Lahu",
+        "https://thesiamsociety.org/wp-content/uploads/1970/03/JSS_058_1b_Walker_LahuNyiNewYearCelebrations.pdf",
+        "http://en.people.cn/n3/2016/1223/c208675-9158529.html",
+        "https://www.yunnanexploration.com/calabash-gourd-festival-of-luhu-ethnic-minority-in-ximeng-county-puer.html"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Lahu"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "liechtenstein-folk",
+      "title": "列支敦士登民间天主教与莱茵朝圣祈福（Liechtenstein）",
+      "rituals": [
+        "8 月 15 日 Staatsfeiertag 城堡弥撒（概念层）",
+        "Maria Trost 圣母圣地朝圣（概念层）",
+        "Alpabfahrt 牧季下山（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://tourismus.li/reiseland/unser-land/brauchtum.html",
+        "https://tourismus.li/reiseland/unser-land/feiertage-brauchtum/jahrmarkt.html",
+        "https://www.balzers.li/de/balzers-erleben/kultur-und-geschichte/burg-gutenberg/tblid/343"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "ligurian-folk",
+      "title": "利古里亚民间天主教与海岸朝圣祈福（Ligurian）",
+      "rituals": [
+        "Madonna della Guardia 圣母朝圣（概念层）",
+        "萨沃纳 Casacce 重十字架游行（概念层）",
+        "Cristo degli Abissi 水下／海岸祝福（概念层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism",
+        "https://www.santuarioguardia.it/la-nostra-storia/",
+        "https://www.santuarioguardia.it/visita-il-santuario/ex-voto-e-sala-ceri/",
+        "https://www.santuarioguardia.it/guardia-nel-mondo/"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "weak_count": 1
+    },
+    {
+      "slug": "lisu-traditional",
+      "title": "傈僳族传统信仰与山地祈福（Lisu）",
+      "rituals": [
+        "阔时节（Kuoshi）新年（公共层）",
+        "刀杆／火海节庆命名与 Niba（CONCEPT ONLY）",
+        "教会礼拜与四声部圣诗传统（公共／当代层）"
+      ],
+      "current_urls": [
+        "https://www.britannica.com/topic/Lisu",
+        "https://www.chinadaily.com.cn/life/2012-03/05/content_14760786.htm",
+        "https://govt.chinadaily.com.cn/s/202412/25/WS676ba1c0498eec7e1f72b986/performance-highlights-lisu-peoples-history-and-heritage.html",
+        "https://www.chinadaily.com.cn/m/dehong/2010-07/27/content_11055531.htm"
+      ],
+      "weak_urls": [
+        "https://www.britannica.com/topic/Lisu"
+      ],
+      "weak_count": 1
+    }
+  ],
+  "prompt": "请为 Notebook source hunt C42 准备下一批 C 级祈福／祈祷仪式资料卡的联网来源搜寻。\n\n本轮是在 C41 来源清理已经应用之后，对全部 grade=C 卡片的「## 参考来源」重新计数；不得因为某卡曾出现在 C1–C41 的早期批次就排除它。仍含 britannica.com、encyclopedia.com 或 everyculture.com 的弱链接均须计入。当前 C 级卡片共 156 张，仍含弱链接的卡片共 43 张。\n\n选择规则：在全部仍含上述弱链接的 C 级卡片中，按弱链接数量从多到少排序；并列时按 slug 字母序排序；选择前 12 张。不要为了凑数选择无弱链接的卡片，也不要排除先前批次出现过的卡片。\n\n选择结果（按优先顺序）：\n1. icelandic-asatru（弱链接 1 条；当前来源 6 条）\n2. jainism（弱链接 1 条；当前来源 4 条）\n3. jamtland-folk（弱链接 1 条；当前来源 4 条）\n4. kalenjin-traditional（弱链接 1 条；当前来源 4 条）\n5. kamba-traditional（弱链接 1 条；当前来源 5 条）\n6. kikuyu-ngai（弱链接 1 条；当前来源 6 条）\n7. kimbanguism（弱链接 1 条；当前来源 6 条）\n8. konkokyo（弱链接 1 条；当前来源 6 条）\n9. lahu-traditional（弱链接 1 条；当前来源 4 条）\n10. liechtenstein-folk（弱链接 1 条；当前来源 4 条）\n11. ligurian-folk（弱链接 1 条；当前来源 4 条）\n12. lisu-traditional（弱链接 1 条；当前来源 4 条）\n\n逐卡当前来源（[WEAK] 表示待替换的弱链接）：\n\n### 1. icelandic-asatru — 冰岛阿萨特鲁／北欧多神复兴（Ásatrúarfélagið）\n仪式：季节 Blót（Jól／Vetranótt／Sumarblót）与角杯祝酒（公共社群层）；Allsherjargoði 与人生礼仪（法律—宗教服务层）；Reykjavík hof、开放日与讲座（公共教育层）\n当前来源：\n- https://asatru.is/um-asatruarfelagid/\n- https://www.bbc.com/travel/article/20190602-how-iceland-recreated-a-viking-age-religion\n- [WEAK] https://www.britannica.com/topic/Germanic-religion-and-mythology\n- https://skemman.is/bitstream/1946/48719/1/Rozalie_Rasovska_thesis_final.pdf\n- https://austurfrett.is/frettir/asatruarfolk-i-austurlands-aetlar-adh-byggja-hof-a-heradhi\n- https://guidetoiceland.is/history-culture/vikings-and-norse-gods-in-iceland\n\n### 2. jainism — 耆那教\n仪式：Tirthankara 圣像普迦（Jain puja）；Pratikraman 与 Paryushana／Samvatsari；Ahimsa 与 dāna 布施护生实践\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Jainism\n- https://www.metmuseum.org/essays/jain-manuscript-painting\n- https://jainpedia.org/wp-content/uploads/2021/08/Voulume-1-Catalogue-of-the-Manuscripts-of-the-British-Library.pdf\n- https://www.metmuseum.org/art/collection/search/73824\n\n### 3. jamtland-folk — 耶姆特兰民间基督教与山林祈福（Jamtland）\n仪式：St. Olavsleden 朝圣与圣奥拉夫瞻礼民俗（概念层）；Fäbod 夏牧场祝福与 Kulning（概念层）；仲夏与教会节期公共民俗层（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Church-of-Sweden\n- https://stolavsleden.com/\n- https://www.isof.se/utforska/levande-traditioner/forslag/2024-10-04-fabodkultur\n- https://www.isof.se/folkminnen/amnesomraden/vardagsliv-nu-och-da/i-fabodarnas-land/folktro-runt-faboden\n\n### 4. kalenjin-traditional — 卡伦金传统宗教与阿西斯祈福（Kalenjin）\n仪式：Koros 祭坛向 Asis 求雨祈请（概念层，无献牲 how-to）；Tumdo 年龄级过渡（CONCEPT ONLY；强烈注意与尊重）；Orkoiyot 祈请领导命名与教会生活（公共／概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Kalenjin\n- https://scielo.org.za/scielo.php?script=sci_arttext&pid=S0041-476X2023000300003\n- https://dx.doi.org/10.4000/11ta1\n- https://doi.org/10.15021/00004305\n\n### 5. kamba-traditional — 坎巴传统宗教与恩盖／穆伦古祈福（Kamba）\n仪式：Ithembo 猴面包树圣地倾奠（概念层）；Kuvoya Mvua 求雨祈请（概念层）；Mundu Mue 与教会生命礼仪（CONCEPT only／当代公共层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Kamba\n- http://www.bluegecko.org/kenya/tribes/kamba/beliefs.htm\n- https://artsandculture.google.com/story/kamba-beliefs-folklore-and-magic-national-museums-of-kenya/1QUxqjxoN2UGbQ?hl=en\n- https://www.easpublisher.com/get-articles/5413\n- https://lughayangu.com/post/syokimauthe-mysterious-kamba-prophetess\n\n### 6. kikuyu-ngai — 基库尤传统宗教与恩盖祈请（Gĩkũyũ／Ngai）\n仪式：面向肯尼亚山的社群祈请／Kũhoya Ngai（概念层）；Mũgumo 圣树下羔羊献礼（CONCEPT ONLY）；祖先共融与家庭纪念（日常概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Kikuyu\n- https://www.cambridge.org/core/journals/africa/article/abs/kikuyu-religion-ancestorworship-and-sacrificial-practices/6CFD176DD79B1911B0E3F152DDBA59BF\n- https://doi.org/10.1080/13696810802159339\n- https://doi.org/10.1017/S0376892917000534\n- https://doi.org/10.3390/f9080481\n- https://doi.org/10.3366/ircl.2016.0180\n\n### 7. kimbanguism — 金班古教会／金班古主义祈福（Kimbanguism）\n仪式：绿—白唱诗班集体崇拜与赞美（公开礼拜层）；医治与互助援助事工（历史—公益层）；Nkamba 朝圣与 4 月 6 日先知纪念日（圣地层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Kimbanguist-Church\n- https://apnews.com/article/congo-kimbanguism-politics-rebellion-black-liberation-c7ba1dfff9e99e74d91840d9ba75f6f7\n- https://doi.org/10.7833/113-0-101\n- https://doi.org/10.1086/728884\n- https://doi.org/10.1163/2211-2685_eco_K37\n- https://doi.org/10.1017/CHOL9780521815000.008\n\n### 8. konkokyo — 金光教（Konkōkyō）\n仪式：取次（Toritsugi）中介倾听（核心，概念层）；天地书付（Tenchi Kakitsuke）与日常信心提醒；感谢祖先与教团大祭／大切礼仪（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Konko-kyo\n- https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9816\n- https://www.konkokyo.jp/eng/our_faith/religious_beliefs.html\n- https://konkokyo.jp/eng/our_faith/how_to_worship.html\n- https://nirc.nanzan-u.ac.jp/journal/15/article/1824/pdf/download\n- https://www.konkofaith.org/what-is-konko\n\n### 9. lahu-traditional — 拉祜族传统信仰与新年祈福（Lahu）\n仪式：Esha（G’ui sha）与 Mawpa（CONCEPT ONLY）；Kha-ty-te 新年芦笙舞与公共节庆（公共层）；葫芦节与佛教／教会生活（公共／当代层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Lahu\n- https://thesiamsociety.org/wp-content/uploads/1970/03/JSS_058_1b_Walker_LahuNyiNewYearCelebrations.pdf\n- http://en.people.cn/n3/2016/1223/c208675-9158529.html\n- https://www.yunnanexploration.com/calabash-gourd-festival-of-luhu-ethnic-minority-in-ximeng-county-puer.html\n\n### 10. liechtenstein-folk — 列支敦士登民间天主教与莱茵朝圣祈福（Liechtenstein）\n仪式：8 月 15 日 Staatsfeiertag 城堡弥撒（概念层）；Maria Trost 圣母圣地朝圣（概念层）；Alpabfahrt 牧季下山（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://tourismus.li/reiseland/unser-land/brauchtum.html\n- https://tourismus.li/reiseland/unser-land/feiertage-brauchtum/jahrmarkt.html\n- https://www.balzers.li/de/balzers-erleben/kultur-und-geschichte/burg-gutenberg/tblid/343\n\n### 11. ligurian-folk — 利古里亚民间天主教与海岸朝圣祈福（Ligurian）\n仪式：Madonna della Guardia 圣母朝圣（概念层）；萨沃纳 Casacce 重十字架游行（概念层）；Cristo degli Abissi 水下／海岸祝福（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://www.santuarioguardia.it/la-nostra-storia/\n- https://www.santuarioguardia.it/visita-il-santuario/ex-voto-e-sala-ceri/\n- https://www.santuarioguardia.it/guardia-nel-mondo/\n\n### 12. lisu-traditional — 傈僳族传统信仰与山地祈福（Lisu）\n仪式：阔时节（Kuoshi）新年（公共层）；刀杆／火海节庆命名与 Niba（CONCEPT ONLY）；教会礼拜与四声部圣诗传统（公共／当代层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Lisu\n- https://www.chinadaily.com.cn/life/2012-03/05/content_14760786.htm\n- https://govt.chinadaily.com.cn/s/202412/25/WS676ba1c0498eec7e1f72b986/performance-highlights-lisu-peoples-history-and-heritage.html\n- https://www.chinadaily.com.cn/m/dehong/2010-07/27/content_11055531.htm\n\n对每个选中 slug 给出 2–4 条新的、公开可核验的 URL，并附一句中文说明覆盖内容与可信度理由。来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。\n\n明确禁止：Britannica 地点（/place/）或泛概览页及其他 Britannica 泛概览、encyclopedia.com、everyculture.com、Wikipedia 或任何 wiki 概览页、101lasttribes／joshuaproject 等部族目录页、与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。硬性要求：URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或 SOURCES.md 已有 URL 重复；宁缺毋滥；只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n输出格式：\nslug:\n建议新增 URL（每行一条，附一句中文说明）：\n- <URL> — <说明>",
+  "prompt_constraints": [
+    "不因 C1–C41 曾处理过而排除卡片；遗留弱链接仍计数。",
+    "按弱链接数量降序、slug 字母序选择前 12 张。",
+    "禁止 Britannica 地点／泛概览、encyclopedia.com、everyculture.com、Wikipedia/wiki、部族目录页与离题泛泛报告。",
+    "只补来源，不改卡片正文、档位或仪式内容；URL、DOI、网页与 PDF 均须公开可核验。"
+  ],
+  "source_map": "/tmp/c42-urls.json",
+  "remaining_estimate": 43
+}

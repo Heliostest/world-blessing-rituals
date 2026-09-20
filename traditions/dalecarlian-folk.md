@@ -47,7 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Church-of-Sweden
 - https://www.visitdalarna.se/artikel/allt-om-midsommar-i-dalarna
 - https://www.visitdalarna.se/artikel/midsommardrommen-vantar
 - https://webbshop.nordiskamuseet.se/collections/dalahastar
+- https://zorn.se/besok/zorns-gammelgard-och-textilkammaren/
+- https://dalarnasmuseum.se/utstallningar/fasta-utstallningar/dalahastar/
+- https://dalarnasmuseum.se/dalarnas-museum/besokoss/utstallningar-2/

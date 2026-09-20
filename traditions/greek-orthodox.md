@@ -47,7 +47,6 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Epiphany
 - https://www.greeknewsagenda.gr/theophania/
 - https://www.goarch.org/-/the-order-for-the-lesser-sanctification-of-the-water
 - https://www.goarch.org/-/feast-of-the-holy-theophany-of-our-lord-god-and-savior-jesus-christ
@@ -55,3 +54,6 @@
 - https://ec-patr.org/en/holy-temples/patriarchal-temple/schedule-of-divine-services/
 - https://holytrinity.ma.goarch.org/our-faith/special_services
 - https://chicago.goarch.org/blessing-of-the-waters-across-the-metropolis/
+- https://whc.unesco.org/en/list/454
+- https://www.cabidigitallibrary.org/doi/abs/10.1800623675.0011
+- https://doi.org/10.1016/j.annals.2017.06.009

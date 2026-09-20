@@ -47,8 +47,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Ga
 - https://carleton.ca/africanstudies/wp-content/uploads/Ga-People-and-Homowo-Festival.pdf
 - https://visitghana.com/homowo-festival/
 - https://doi.org/10.38159/ehass.2022386
 - https://doi.org/10.1080/23311886.2024.2340427
+- https://doi.org/10.31751/589
+- https://gs.uwpress.org/content/14/1/81

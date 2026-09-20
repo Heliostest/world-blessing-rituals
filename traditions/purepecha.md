@@ -47,7 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Tarasco
+
+- https://sic.cultura.gob.mx/ficha.php?table=festividad&table_id=1129
+- https://cultura.michoacan.gob.mx/noticias/guia-esencial-para-disfrutar-la-noche-de-muertos-en-patzcuaro-y-tzintzuntzan-secum/
+- https://doi.org/10.14350/rig.60499
+
 - https://www.latimes.com/archives/la-xpm-1995-09-02-me-41473-story.html
 
 - https://ich.unesco.org/en/RL/pirekua-traditional-song-of-the-p-urhepecha-00398

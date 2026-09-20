@@ -47,7 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Church-of-Sweden
+
+- https://www.svenskakyrkan.se/simrishamn/pilgrim
+- https://www.isof.se/namn/ortnamn/sol/ortnamnslexikon/sadijavrre-sovestad
+- https://www.svenskakyrkan.se/lundsstift/nyheter/stora-pilgrimsveckan-pa-osterlen-2024
+
 - https://www.isof.se/utforska/kunskapsbanker/lar-dig-mer-om-arets-namn-och-handelser/handelser/martensafton
 - https://www.svenskakyrkan.se/lundsstift/pilgrim
 - https://www.svenskakyrkan.se/platser/21226-simrishamns-forsamling-st-olofs-kyrka

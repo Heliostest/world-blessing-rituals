@@ -4120,3 +4120,43 @@
 - https://www.patrimoniocultural.gov.pt/2025/09/patrimonio-cultural-i-p-nas-festas-de-nossa-senhora-dos-remedios-lamego/
 - https://www.patrimoniocultural.gov.pt/2025/09/procissao-noturna-de-nossa-senhora-do-fetal-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/
 - https://360.patrimoniocultural.gov.pt/pt/explorar/itens/museu-etnografico-dr-joaquim-manso/ex-voto-nossa-senhora-de-nazare
+
+## 增补传统（Notebook source hunt C44：弱链接清理）
+
+- https://sic.cultura.gob.mx/ficha.php?table=festividad&table_id=1129
+- https://cultura.michoacan.gob.mx/noticias/guia-esencial-para-disfrutar-la-noche-de-muertos-en-patzcuaro-y-tzintzuntzan-secum/
+- https://doi.org/10.14350/rig.60499
+- https://ziteil.ch/
+- https://www.valsurses.ch/en/excursion-destinations/ziteil-holy-pilgrimage-site
+- https://www.graubuenden.ch/de/veranstaltungen/s-chargiada-dalp-alpabzug
+- https://fondazionefocara.it/
+- https://www.lanottedellataranta.it/2026/08/14/concertone-2026-come-raggiungere-melpignano-il-22-agosto/
+- https://www.basilicaleuca.it/
+- https://www.diocese-annecy.fr/grandir-dans-la-foi/pastorale-du-tourisme/pelerinages-locaux/notre-dame-de-la-gorge
+- https://annuaire.catholique-savoie.fr/Sanctuario-Notre-Dame-de-Myans-268.html
+- https://communication.catholique-savoie.fr/Fete-patronale-au-Sanctuaire-de-Myans.html
+- https://www.svenskakyrkan.se/simrishamn/pilgrim
+- https://www.isof.se/namn/ortnamn/sol/ortnamnslexikon/sadijavrre-sovestad
+- https://www.svenskakyrkan.se/lundsstift/nyheter/stora-pilgrimsveckan-pa-osterlen-2024
+- https://www.ihchina.cn/project_details/24906.html
+- http://www.fj.gov.cn/xwdt/tpxx/202604/t20260424_7130812.htm
+- https://dfz.zj.gov.cn/zlyz/ossfs//h5/ZS-K-331102-2010-001-0101/files/basic-html/page1424.html
+- https://santuariosantarosalia.it/
+- https://santuariosantarosalia.it/festa-e-festino/
+- https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=41610
+- https://ich.unesco.org/en/video/32975
+- https://doi.org/10.33258/lakhomi.v5i4.1265
+- https://slovakia.travel/de/marienwallfahrt-in-levoca
+- https://www.snm.sk/muzea-snm/spisske-muzeum/spissky-hrad/objavujte/publikacie?stranka=2&produkt=acta-musaei-scepusiensis-2006-pohlady-do-minulosti-vi
+- https://www.pamiatky.sk/evidencie-a-registre/register-po/detail-po?tx_tempestregister_detail%5Baction%5D=pdf&tx_tempestregister_detail%5Bcode%5D=PO&tx_tempestregister_detail%5Bcontroller%5D=Register&tx_tempestregister_detail%5BdetailId%5D=e0ee93c3-7038-4358-a0c6-a34556073762&cHash=9d4e107880612a2a63bff4dc5f750d4a
+- https://mfa.tj/en/moscow/view/9899/article-on-the-topic-celebration-of-navruz-holiday
+- https://www.mfa.tj/en/washington/tajikistan/tourism
+- https://mfa.tj/en/saudi/view/18492/ministry-of-foreign-affairs-celebrated-international-navruz-holiday
+- https://rubinmuseum.org/collection/sc2010-32a-h/
+- https://www.metmuseum.org/art/collection/search/32640
+- https://doi.org/10.2218/himalaya.2019.7851
+- https://tibet.net/taipei-based-office-of-tibet-participates-in-sacred-saga-dawa-celebrations-in-taiwan-graced-by-eminent-tibetan-buddhist-masters/
+- https://mendrisio.ch/home/vivere-e-visitare/eventi/iniziative-cittadine/processioni-della-settimana-santa-di-mendrisio
+- https://www.ticino.ch/it/commons/details/Processioni-della-Settimana-Santa-di-Mendrisio/37413.html
+- https://www.madonnadelsasso.ch/
+- https://www.ascona-locarno.com/it/attualita/storie/il-sacro-monte-della-madonna-del-sasso

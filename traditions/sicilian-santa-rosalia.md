@@ -47,7 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/biography/Saint-Rosalia
+
+- https://santuariosantarosalia.it/
+- https://santuariosantarosalia.it/festa-e-festino/
+- https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=41610
+
 - https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=43070
 - https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=43323
 - https://repository.comune.palermo.it/storia-festino-santa-rosalia-palermo.php

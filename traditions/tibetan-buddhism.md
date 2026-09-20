@@ -55,7 +55,12 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/prayer-wheel
+
+- https://rubinmuseum.org/collection/sc2010-32a-h/
+- https://www.metmuseum.org/art/collection/search/32640
+- https://doi.org/10.2218/himalaya.2019.7851
+- https://tibet.net/taipei-based-office-of-tibet-participates-in-sacred-saga-dawa-celebrations-in-taiwan-graced-by-eminent-tibetan-buddhist-masters/
+
 - https://rubinmuseum.org/projecthimalayanart/essays/prayer-wheel/
 - https://tnp.org/what-is-kora-or-circumambulation/
 - https://tibet.net/his-holiness-the-dalai-lama-joins-recitation-of-mani-mantra-at-tsuglagkhang/

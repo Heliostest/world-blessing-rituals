@@ -47,7 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Sidamo
+
+- https://ich.unesco.org/en/video/32975
+- https://doi.org/10.33258/lakhomi.v5i4.1265
+
 - https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054
 - https://ich.unesco.org/en/decisions/10.COM/10.B.16
 

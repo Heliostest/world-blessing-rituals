@@ -2,7 +2,7 @@
   "batch": "notebook-source-hunt-c44",
   "cycle": 44,
   "date": "2026-09-20",
-  "status": "prepared",
+  "status": "completed",
   "selection_rule": "不排除任何早期批次；重算全部 grade=C 卡片当前来源段中的弱链接，按弱链接数量从多到少、slug 字母序选择前 12 张。",
   "previous_cycles_excluded": false,
   "c_grade_card_count": 156,
@@ -32,17 +32,54 @@
         "代父母纽带与婚礼致辞（生命礼仪层）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Tarasco",
-        "https://www.latimes.com/archives/la-xpm-1995-09-02-me-41473-story.html",
-        "https://ich.unesco.org/en/RL/pirekua-traditional-song-of-the-p-urhepecha-00398",
-        "https://www.gob.mx/sectur/articulos/plan-michoacan-presentan-en-sectur-la-edicion-de-la-k-uinchekua-2026-una-celebracion-de-identidad-purepecha",
-        "https://cultura.michoacan.gob.mx/noticias/danza-de-las-palmeras-un-legado-de-tradicion-purepecha-en-la-kuinchekua/"
+        "https://www.britannica.com/topic/Tarasco"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Tarasco"
       ],
       "weak_count": 1,
-      "current_source_count": 5
+      "input_urls": [
+        "https://sic.cultura.gob.mx/ficha.php?table=festividad&table_id=1129",
+        "https://cultura.michoacan.gob.mx/noticias/guia-esencial-para-disfrutar-la-noche-de-muertos-en-patzcuaro-y-tzintzuntzan-secum/",
+        "https://doi.org/10.14350/rig.60499"
+      ],
+      "added_urls": [
+        "https://sic.cultura.gob.mx/ficha.php?table=festividad&table_id=1129",
+        "https://cultura.michoacan.gob.mx/noticias/guia-esencial-para-disfrutar-la-noche-de-muertos-en-patzcuaro-y-tzintzuntzan-secum/",
+        "https://doi.org/10.14350/rig.60499"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Tarasco"
+      ],
+      "final_urls": [
+        "https://sic.cultura.gob.mx/ficha.php?table=festividad&table_id=1129",
+        "https://cultura.michoacan.gob.mx/noticias/guia-esencial-para-disfrutar-la-noche-de-muertos-en-patzcuaro-y-tzintzuntzan-secum/",
+        "https://doi.org/10.14350/rig.60499"
+      ],
+      "source_notes": [
+        {
+          "url": "https://sic.cultura.gob.mx/ficha.php?table=festividad&table_id=1129",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://cultura.michoacan.gob.mx/noticias/guia-esencial-para-disfrutar-la-noche-de-muertos-en-patzcuaro-y-tzintzuntzan-secum/",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://doi.org/10.14350/rig.60499",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://sic.cultura.gob.mx/ficha.php?table=festividad&table_id=1129",
+        "https://cultura.michoacan.gob.mx/noticias/guia-esencial-para-disfrutar-la-noche-de-muertos-en-patzcuaro-y-tzintzuntzan-secum/",
+        "https://doi.org/10.14350/rig.60499"
+      ]
     },
     {
       "slug": "romansh-folk",
@@ -53,16 +90,54 @@
         "阿尔卑斯牲畜下山祝福（概念层）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Romansh-language",
-        "https://www.lebendige-traditionen.ch/en/chalandamarz-5",
-        "https://www.graubuenden.ch/en/graubuenden/general-information/customs-traditions/chalandamarz",
-        "https://www.graubuenden.ch/en/tours/ziteil-bike"
+        "https://www.britannica.com/topic/Romansh-language"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Romansh-language"
       ],
       "weak_count": 1,
-      "current_source_count": 4
+      "input_urls": [
+        "https://ziteil.ch/",
+        "https://www.valsurses.ch/en/excursion-destinations/ziteil-holy-pilgrimage-site",
+        "https://www.graubuenden.ch/de/veranstaltungen/s-chargiada-dalp-alpabzug"
+      ],
+      "added_urls": [
+        "https://ziteil.ch/",
+        "https://www.valsurses.ch/en/excursion-destinations/ziteil-holy-pilgrimage-site",
+        "https://www.graubuenden.ch/de/veranstaltungen/s-chargiada-dalp-alpabzug"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Romansh-language"
+      ],
+      "final_urls": [
+        "https://ziteil.ch/",
+        "https://www.valsurses.ch/en/excursion-destinations/ziteil-holy-pilgrimage-site",
+        "https://www.graubuenden.ch/de/veranstaltungen/s-chargiada-dalp-alpabzug"
+      ],
+      "source_notes": [
+        {
+          "url": "https://ziteil.ch/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.valsurses.ch/en/excursion-destinations/ziteil-holy-pilgrimage-site",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.graubuenden.ch/de/veranstaltungen/s-chargiada-dalp-alpabzug",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://ziteil.ch/",
+        "https://www.valsurses.ch/en/excursion-destinations/ziteil-holy-pilgrimage-site",
+        "https://www.graubuenden.ch/de/veranstaltungen/s-chargiada-dalp-alpabzug"
+      ]
     },
     {
       "slug": "salentino-folk",
@@ -73,16 +148,54 @@
         "San Rocco 与 Pizzica 文化誓愿舞（公共文化层，非附体奇观）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Roman-Catholicism",
-        "https://www.viaggiareinpuglia.it/de/dettaglio-attrattore/basilica-santuario-santa-maria-de-finibus-terrae",
-        "https://viaggiareinpuglia.it/fr/dettaglio-tipicita/focara-novoli",
-        "https://viaggiareinpuglia.it/it/dettaglio-itinerario/terre-taranta"
+        "https://www.britannica.com/topic/Roman-Catholicism"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
       "weak_count": 1,
-      "current_source_count": 4
+      "input_urls": [
+        "https://fondazionefocara.it/",
+        "https://www.lanottedellataranta.it/2026/08/14/concertone-2026-come-raggiungere-melpignano-il-22-agosto/",
+        "https://www.basilicaleuca.it/"
+      ],
+      "added_urls": [
+        "https://fondazionefocara.it/",
+        "https://www.lanottedellataranta.it/2026/08/14/concertone-2026-come-raggiungere-melpignano-il-22-agosto/",
+        "https://www.basilicaleuca.it/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://fondazionefocara.it/",
+        "https://www.lanottedellataranta.it/2026/08/14/concertone-2026-come-raggiungere-melpignano-il-22-agosto/",
+        "https://www.basilicaleuca.it/"
+      ],
+      "source_notes": [
+        {
+          "url": "https://fondazionefocara.it/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.lanottedellataranta.it/2026/08/14/concertone-2026-come-raggiungere-melpignano-il-22-agosto/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.basilicaleuca.it/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://fondazionefocara.it/",
+        "https://www.lanottedellataranta.it/2026/08/14/concertone-2026-come-raggiungere-melpignano-il-22-agosto/",
+        "https://www.basilicaleuca.it/"
+      ]
     },
     {
       "slug": "savoyard-folk",
@@ -93,16 +206,54 @@
         "Désalpe 与主保巡游（公共／民俗层）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Roman-Catholicism",
-        "https://patrimoines.savoie.fr/upload/docs/application/pdf/2025-06/adulte_francais.pdf",
-        "https://patrimoines.savoie.fr/upload/docs/application/pdf/2020-08/la-rubrique-33_2020-08-31_11-25-36_781.pdf",
-        "https://www.chamonix-guides.com/fr/nos-engagements/solidarite/fete-des-guides"
+        "https://www.britannica.com/topic/Roman-Catholicism"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
       "weak_count": 1,
-      "current_source_count": 4
+      "input_urls": [
+        "https://www.diocese-annecy.fr/grandir-dans-la-foi/pastorale-du-tourisme/pelerinages-locaux/notre-dame-de-la-gorge",
+        "https://annuaire.catholique-savoie.fr/Sanctuario-Notre-Dame-de-Myans-268.html",
+        "https://communication.catholique-savoie.fr/Fete-patronale-au-Sanctuaire-de-Myans.html"
+      ],
+      "added_urls": [
+        "https://www.diocese-annecy.fr/grandir-dans-la-foi/pastorale-du-tourisme/pelerinages-locaux/notre-dame-de-la-gorge",
+        "https://annuaire.catholique-savoie.fr/Sanctuario-Notre-Dame-de-Myans-268.html",
+        "https://communication.catholique-savoie.fr/Fete-patronale-au-Sanctuaire-de-Myans.html"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://www.diocese-annecy.fr/grandir-dans-la-foi/pastorale-du-tourisme/pelerinages-locaux/notre-dame-de-la-gorge",
+        "https://annuaire.catholique-savoie.fr/Sanctuario-Notre-Dame-de-Myans-268.html",
+        "https://communication.catholique-savoie.fr/Fete-patronale-au-Sanctuaire-de-Myans.html"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.diocese-annecy.fr/grandir-dans-la-foi/pastorale-du-tourisme/pelerinages-locaux/notre-dame-de-la-gorge",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://annuaire.catholique-savoie.fr/Sanctuario-Notre-Dame-de-Myans-268.html",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://communication.catholique-savoie.fr/Fete-patronale-au-Sanctuaire-de-Myans.html",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.diocese-annecy.fr/grandir-dans-la-foi/pastorale-du-tourisme/pelerinages-locaux/notre-dame-de-la-gorge",
+        "https://annuaire.catholique-savoie.fr/Sanctuario-Notre-Dame-de-Myans-268.html",
+        "https://communication.catholique-savoie.fr/Fete-patronale-au-Sanctuaire-de-Myans.html"
+      ]
     },
     {
       "slug": "scanian-folk",
@@ -113,16 +264,54 @@
         "仲夏 maypole 与生命礼仪（民俗／教会层）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Church-of-Sweden",
-        "https://www.isof.se/utforska/kunskapsbanker/lar-dig-mer-om-arets-namn-och-handelser/handelser/martensafton",
-        "https://www.svenskakyrkan.se/lundsstift/pilgrim",
-        "https://www.svenskakyrkan.se/platser/21226-simrishamns-forsamling-st-olofs-kyrka"
+        "https://www.britannica.com/topic/Church-of-Sweden"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Church-of-Sweden"
       ],
       "weak_count": 1,
-      "current_source_count": 4
+      "input_urls": [
+        "https://www.svenskakyrkan.se/simrishamn/pilgrim",
+        "https://www.isof.se/namn/ortnamn/sol/ortnamnslexikon/sadijavrre-sovestad",
+        "https://www.svenskakyrkan.se/lundsstift/nyheter/stora-pilgrimsveckan-pa-osterlen-2024"
+      ],
+      "added_urls": [
+        "https://www.svenskakyrkan.se/simrishamn/pilgrim",
+        "https://www.isof.se/namn/ortnamn/sol/ortnamnslexikon/sadijavrre-sovestad",
+        "https://www.svenskakyrkan.se/lundsstift/nyheter/stora-pilgrimsveckan-pa-osterlen-2024"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Church-of-Sweden"
+      ],
+      "final_urls": [
+        "https://www.svenskakyrkan.se/simrishamn/pilgrim",
+        "https://www.isof.se/namn/ortnamn/sol/ortnamnslexikon/sadijavrre-sovestad",
+        "https://www.svenskakyrkan.se/lundsstift/nyheter/stora-pilgrimsveckan-pa-osterlen-2024"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.svenskakyrkan.se/simrishamn/pilgrim",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://www.isof.se/namn/ortnamn/sol/ortnamnslexikon/sadijavrre-sovestad",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://www.svenskakyrkan.se/lundsstift/nyheter/stora-pilgrimsveckan-pa-osterlen-2024",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.svenskakyrkan.se/simrishamn/pilgrim",
+        "https://www.isof.se/namn/ortnamn/sol/ortnamnslexikon/sadijavrre-sovestad",
+        "https://www.svenskakyrkan.se/lundsstift/nyheter/stora-pilgrimsveckan-pa-osterlen-2024"
+      ]
     },
     {
       "slug": "she-traditional",
@@ -133,18 +322,54 @@
         "师公传统与佛道影响（CONCEPT ONLY）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/She-people",
-        "https://th.china-embassy.gov.cn/eng/ztbd/AboutChina/Ethnic/200011/t20001115_1432841.htm",
-        "https://www.ihchina.cn/project_details/15094/",
-        "http://wlt.fujian.gov.cn/hdjl/wdxd/202305/t20230512_6168252.htm",
-        "http://www.chongyi.gov.cn/cyxrmzf/c103589/202008/cabb5c36cb02408884cb0ab4b1d36df2.shtml",
-        "http://www.zc.gov.cn/gk/zdly/whggwgk/content/post_10977181.html"
+        "https://www.britannica.com/topic/She-people"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/She-people"
       ],
       "weak_count": 1,
-      "current_source_count": 6
+      "input_urls": [
+        "https://www.ihchina.cn/project_details/24906.html",
+        "http://www.fj.gov.cn/xwdt/tpxx/202604/t20260424_7130812.htm",
+        "https://dfz.zj.gov.cn/zlyz/ossfs//h5/ZS-K-331102-2010-001-0101/files/basic-html/page1424.html"
+      ],
+      "added_urls": [
+        "https://www.ihchina.cn/project_details/24906.html",
+        "http://www.fj.gov.cn/xwdt/tpxx/202604/t20260424_7130812.htm",
+        "https://dfz.zj.gov.cn/zlyz/ossfs//h5/ZS-K-331102-2010-001-0101/files/basic-html/page1424.html"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/She-people"
+      ],
+      "final_urls": [
+        "https://www.ihchina.cn/project_details/24906.html",
+        "http://www.fj.gov.cn/xwdt/tpxx/202604/t20260424_7130812.htm",
+        "https://dfz.zj.gov.cn/zlyz/ossfs//h5/ZS-K-331102-2010-001-0101/files/basic-html/page1424.html"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.ihchina.cn/project_details/24906.html",
+          "note": "博物馆或国家文化遗产档案页面，直接记录该传统的物质文化、节庆或朝圣对象；机构来源。"
+        },
+        {
+          "url": "http://www.fj.gov.cn/xwdt/tpxx/202604/t20260424_7130812.htm",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://dfz.zj.gov.cn/zlyz/ossfs//h5/ZS-K-331102-2010-001-0101/files/basic-html/page1424.html",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.ihchina.cn/project_details/24906.html",
+        "http://www.fj.gov.cn/xwdt/tpxx/202604/t20260424_7130812.htm",
+        "https://dfz.zj.gov.cn/zlyz/ossfs//h5/ZS-K-331102-2010-001-0101/files/basic-html/page1424.html"
+      ]
     },
     {
       "slug": "sicilian-santa-rosalia",
@@ -155,16 +380,54 @@
         "圣骸敬礼、誓言与堂区弥撒（概念层）"
       ],
       "current_urls": [
-        "https://www.britannica.com/biography/Saint-Rosalia",
-        "https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=43070",
-        "https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=43323",
-        "https://repository.comune.palermo.it/storia-festino-santa-rosalia-palermo.php"
+        "https://www.britannica.com/biography/Saint-Rosalia"
       ],
       "weak_urls": [
         "https://www.britannica.com/biography/Saint-Rosalia"
       ],
       "weak_count": 1,
-      "current_source_count": 4
+      "input_urls": [
+        "https://santuariosantarosalia.it/",
+        "https://santuariosantarosalia.it/festa-e-festino/",
+        "https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=41610"
+      ],
+      "added_urls": [
+        "https://santuariosantarosalia.it/",
+        "https://santuariosantarosalia.it/festa-e-festino/",
+        "https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=41610"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/biography/Saint-Rosalia"
+      ],
+      "final_urls": [
+        "https://santuariosantarosalia.it/",
+        "https://santuariosantarosalia.it/festa-e-festino/",
+        "https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=41610"
+      ],
+      "source_notes": [
+        {
+          "url": "https://santuariosantarosalia.it/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://santuariosantarosalia.it/festa-e-festino/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=41610",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://santuariosantarosalia.it/",
+        "https://santuariosantarosalia.it/festa-e-festino/",
+        "https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=41610"
+      ]
     },
     {
       "slug": "sidama-traditional",
@@ -175,17 +438,46 @@
         "Woma 长老与 Magano 敬奉（CONCEPT ONLY）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Sidamo",
-        "https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054",
-        "https://ich.unesco.org/en/decisions/10.COM/10.B.16",
-        "https://ich.unesco.org/doc/src/29563.pdf",
-        "https://doi.org/10.1080/2331186X.2022.2046241"
+        "https://www.britannica.com/topic/Sidamo"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Sidamo"
       ],
       "weak_count": 1,
-      "current_source_count": 5
+      "input_urls": [
+        "https://ich.unesco.org/en/video/32975",
+        "https://doi.org/10.33258/lakhomi.v5i4.1265"
+      ],
+      "added_urls": [
+        "https://ich.unesco.org/en/video/32975",
+        "https://doi.org/10.33258/lakhomi.v5i4.1265"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Sidamo"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/video/32975",
+        "https://doi.org/10.33258/lakhomi.v5i4.1265"
+      ],
+      "source_notes": [
+        {
+          "url": "https://ich.unesco.org/en/video/32975",
+          "note": "联合国教科文组织非遗／遗产页面，直接覆盖该传统或公共节庆；国际官方遗产来源。"
+        },
+        {
+          "url": "https://doi.org/10.33258/lakhomi.v5i4.1265",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 2,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://ich.unesco.org/en/video/32975",
+        "https://doi.org/10.33258/lakhomi.v5i4.1265"
+      ]
     },
     {
       "slug": "slovak-folk",
@@ -196,16 +488,54 @@
         "Šibačka／Oblievačka 与节日食物祝福（公共民俗层）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Roman-Catholicism",
-        "https://slovakia.travel/en/levoca-marian-pilgrimage",
-        "https://slovakia.travel/en/easter-whipping-or-bathing-march-or-april",
-        "https://slovakia.travel/en/levoca"
+        "https://www.britannica.com/topic/Roman-Catholicism"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
       "weak_count": 1,
-      "current_source_count": 4
+      "input_urls": [
+        "https://slovakia.travel/de/marienwallfahrt-in-levoca",
+        "https://www.snm.sk/muzea-snm/spisske-muzeum/spissky-hrad/objavujte/publikacie?stranka=2&produkt=acta-musaei-scepusiensis-2006-pohlady-do-minulosti-vi",
+        "https://www.pamiatky.sk/evidencie-a-registre/register-po/detail-po?tx_tempestregister_detail%5Baction%5D=pdf&tx_tempestregister_detail%5Bcode%5D=PO&tx_tempestregister_detail%5Bcontroller%5D=Register&tx_tempestregister_detail%5BdetailId%5D=e0ee93c3-7038-4358-a0c6-a34556073762&cHash=9d4e107880612a2a63bff4dc5f750d4a"
+      ],
+      "added_urls": [
+        "https://slovakia.travel/de/marienwallfahrt-in-levoca",
+        "https://www.snm.sk/muzea-snm/spisske-muzeum/spissky-hrad/objavujte/publikacie?stranka=2&produkt=acta-musaei-scepusiensis-2006-pohlady-do-minulosti-vi",
+        "https://www.pamiatky.sk/evidencie-a-registre/register-po/detail-po?tx_tempestregister_detail%5Baction%5D=pdf&tx_tempestregister_detail%5Bcode%5D=PO&tx_tempestregister_detail%5Bcontroller%5D=Register&tx_tempestregister_detail%5BdetailId%5D=e0ee93c3-7038-4358-a0c6-a34556073762&cHash=9d4e107880612a2a63bff4dc5f750d4a"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://slovakia.travel/de/marienwallfahrt-in-levoca",
+        "https://www.snm.sk/muzea-snm/spisske-muzeum/spissky-hrad/objavujte/publikacie?stranka=2&produkt=acta-musaei-scepusiensis-2006-pohlady-do-minulosti-vi",
+        "https://www.pamiatky.sk/evidencie-a-registre/register-po/detail-po?tx_tempestregister_detail%5Baction%5D=pdf&tx_tempestregister_detail%5Bcode%5D=PO&tx_tempestregister_detail%5Bcontroller%5D=Register&tx_tempestregister_detail%5BdetailId%5D=e0ee93c3-7038-4358-a0c6-a34556073762&cHash=9d4e107880612a2a63bff4dc5f750d4a"
+      ],
+      "source_notes": [
+        {
+          "url": "https://slovakia.travel/de/marienwallfahrt-in-levoca",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.snm.sk/muzea-snm/spisske-muzeum/spissky-hrad/objavujte/publikacie?stranka=2&produkt=acta-musaei-scepusiensis-2006-pohlady-do-minulosti-vi",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.pamiatky.sk/evidencie-a-registre/register-po/detail-po?tx_tempestregister_detail%5Baction%5D=pdf&tx_tempestregister_detail%5Bcode%5D=PO&tx_tempestregister_detail%5Bcontroller%5D=Register&tx_tempestregister_detail%5BdetailId%5D=e0ee93c3-7038-4358-a0c6-a34556073762&cHash=9d4e107880612a2a63bff4dc5f750d4a",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://slovakia.travel/de/marienwallfahrt-in-levoca",
+        "https://www.snm.sk/muzea-snm/spisske-muzeum/spissky-hrad/objavujte/publikacie?stranka=2&produkt=acta-musaei-scepusiensis-2006-pohlady-do-minulosti-vi",
+        "https://www.pamiatky.sk/evidencie-a-registre/register-po/detail-po?tx_tempestregister_detail%5Baction%5D=pdf&tx_tempestregister_detail%5Bcode%5D=PO&tx_tempestregister_detail%5Bcontroller%5D=Register&tx_tempestregister_detail%5BdetailId%5D=e0ee93c3-7038-4358-a0c6-a34556073762&cHash=9d4e107880612a2a63bff4dc5f750d4a"
+      ]
     },
     {
       "slug": "tajik-folk",
@@ -216,18 +546,54 @@
         "Mazar 圣地朝拜与生命礼仪（部分敏感）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Tajik-people",
-        "https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-00261",
-        "https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-02097",
-        "https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336",
-        "https://ich.unesco.org/doc/src/32299.pdf",
-        "https://doi.org/10.1080/23311983.2025.2524932"
+        "https://www.britannica.com/topic/Tajik-people"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Tajik-people"
       ],
       "weak_count": 1,
-      "current_source_count": 6
+      "input_urls": [
+        "https://mfa.tj/en/moscow/view/9899/article-on-the-topic-celebration-of-navruz-holiday",
+        "https://www.mfa.tj/en/washington/tajikistan/tourism",
+        "https://mfa.tj/en/saudi/view/18492/ministry-of-foreign-affairs-celebrated-international-navruz-holiday"
+      ],
+      "added_urls": [
+        "https://mfa.tj/en/moscow/view/9899/article-on-the-topic-celebration-of-navruz-holiday",
+        "https://www.mfa.tj/en/washington/tajikistan/tourism",
+        "https://mfa.tj/en/saudi/view/18492/ministry-of-foreign-affairs-celebrated-international-navruz-holiday"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Tajik-people"
+      ],
+      "final_urls": [
+        "https://mfa.tj/en/moscow/view/9899/article-on-the-topic-celebration-of-navruz-holiday",
+        "https://www.mfa.tj/en/washington/tajikistan/tourism",
+        "https://mfa.tj/en/saudi/view/18492/ministry-of-foreign-affairs-celebrated-international-navruz-holiday"
+      ],
+      "source_notes": [
+        {
+          "url": "https://mfa.tj/en/moscow/view/9899/article-on-the-topic-celebration-of-navruz-holiday",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.mfa.tj/en/washington/tajikistan/tourism",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://mfa.tj/en/saudi/view/18492/ministry-of-foreign-affairs-celebrated-international-navruz-holiday",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 3,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://mfa.tj/en/moscow/view/9899/article-on-the-topic-celebration-of-navruz-holiday",
+        "https://www.mfa.tj/en/washington/tajikistan/tourism",
+        "https://mfa.tj/en/saudi/view/18492/ministry-of-foreign-affairs-celebrated-international-navruz-holiday"
+      ]
     },
     {
       "slug": "tibetan-buddhism",
@@ -238,19 +604,62 @@
         "Saga Dawa 与 Chöme 酥油灯（节庆／日常层）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/prayer-wheel",
-        "https://rubinmuseum.org/projecthimalayanart/essays/prayer-wheel/",
-        "https://tnp.org/what-is-kora-or-circumambulation/",
-        "https://tibet.net/his-holiness-the-dalai-lama-joins-recitation-of-mani-mantra-at-tsuglagkhang/",
-        "https://tibet.net/kunphenling-tibetan-community-holds-sacred-saga-dawa-observance-and-year-of-compassion-celebration-at-lho-khandro-sangphug/",
-        "https://doi.org/10.3390/rel17050552",
-        "https://dx.doi.org/10.4000/15h7c"
+        "https://www.britannica.com/topic/prayer-wheel"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/prayer-wheel"
       ],
       "weak_count": 1,
-      "current_source_count": 7
+      "input_urls": [
+        "https://rubinmuseum.org/collection/sc2010-32a-h/",
+        "https://www.metmuseum.org/art/collection/search/32640",
+        "https://doi.org/10.2218/himalaya.2019.7851",
+        "https://tibet.net/taipei-based-office-of-tibet-participates-in-sacred-saga-dawa-celebrations-in-taiwan-graced-by-eminent-tibetan-buddhist-masters/"
+      ],
+      "added_urls": [
+        "https://rubinmuseum.org/collection/sc2010-32a-h/",
+        "https://www.metmuseum.org/art/collection/search/32640",
+        "https://doi.org/10.2218/himalaya.2019.7851",
+        "https://tibet.net/taipei-based-office-of-tibet-participates-in-sacred-saga-dawa-celebrations-in-taiwan-graced-by-eminent-tibetan-buddhist-masters/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/prayer-wheel"
+      ],
+      "final_urls": [
+        "https://rubinmuseum.org/collection/sc2010-32a-h/",
+        "https://www.metmuseum.org/art/collection/search/32640",
+        "https://doi.org/10.2218/himalaya.2019.7851",
+        "https://tibet.net/taipei-based-office-of-tibet-participates-in-sacred-saga-dawa-celebrations-in-taiwan-graced-by-eminent-tibetan-buddhist-masters/"
+      ],
+      "source_notes": [
+        {
+          "url": "https://rubinmuseum.org/collection/sc2010-32a-h/",
+          "note": "博物馆或国家文化遗产档案页面，直接记录该传统的物质文化、节庆或朝圣对象；机构来源。"
+        },
+        {
+          "url": "https://www.metmuseum.org/art/collection/search/32640",
+          "note": "博物馆或国家文化遗产档案页面，直接记录该传统的物质文化、节庆或朝圣对象；机构来源。"
+        },
+        {
+          "url": "https://doi.org/10.2218/himalaya.2019.7851",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        },
+        {
+          "url": "https://tibet.net/taipei-based-office-of-tibet-participates-in-sacred-saga-dawa-celebrations-in-taiwan-graced-by-eminent-tibetan-buddhist-masters/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 4,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://rubinmuseum.org/collection/sc2010-32a-h/",
+        "https://www.metmuseum.org/art/collection/search/32640",
+        "https://doi.org/10.2218/himalaya.2019.7851",
+        "https://tibet.net/taipei-based-office-of-tibet-participates-in-sacred-saga-dawa-celebrations-in-taiwan-graced-by-eminent-tibetan-buddhist-masters/"
+      ]
     },
     {
       "slug": "ticinese-folk",
@@ -261,17 +670,62 @@
         "阿尔卑斯牧牛下山祝福（概念层）"
       ],
       "current_urls": [
-        "https://www.britannica.com/topic/Roman-Catholicism",
-        "https://ich.unesco.org/en/RL/holy-week-processions-in-mendrisio-01460",
-        "https://www.lebendige-traditionen.ch/it/processioni-della-settimana-santa-di-mendrisio",
-        "https://www.ticino.ch/it/commons/details/Sacro-Monte-Madonna-del-Sasso/2693.html",
-        "https://www.madonnadelsasso.org/"
+        "https://www.britannica.com/topic/Roman-Catholicism"
       ],
       "weak_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
       "weak_count": 1,
-      "current_source_count": 5
+      "input_urls": [
+        "https://mendrisio.ch/home/vivere-e-visitare/eventi/iniziative-cittadine/processioni-della-settimana-santa-di-mendrisio",
+        "https://www.ticino.ch/it/commons/details/Processioni-della-Settimana-Santa-di-Mendrisio/37413.html",
+        "https://www.madonnadelsasso.ch/",
+        "https://www.ascona-locarno.com/it/attualita/storie/il-sacro-monte-della-madonna-del-sasso"
+      ],
+      "added_urls": [
+        "https://mendrisio.ch/home/vivere-e-visitare/eventi/iniziative-cittadine/processioni-della-settimana-santa-di-mendrisio",
+        "https://www.ticino.ch/it/commons/details/Processioni-della-Settimana-Santa-di-Mendrisio/37413.html",
+        "https://www.madonnadelsasso.ch/",
+        "https://www.ascona-locarno.com/it/attualita/storie/il-sacro-monte-della-madonna-del-sasso"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://mendrisio.ch/home/vivere-e-visitare/eventi/iniziative-cittadine/processioni-della-settimana-santa-di-mendrisio",
+        "https://www.ticino.ch/it/commons/details/Processioni-della-Settimana-Santa-di-Mendrisio/37413.html",
+        "https://www.madonnadelsasso.ch/",
+        "https://www.ascona-locarno.com/it/attualita/storie/il-sacro-monte-della-madonna-del-sasso"
+      ],
+      "source_notes": [
+        {
+          "url": "https://mendrisio.ch/home/vivere-e-visitare/eventi/iniziative-cittadine/processioni-della-settimana-santa-di-mendrisio",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.ticino.ch/it/commons/details/Processioni-della-Settimana-Santa-di-Mendrisio/37413.html",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.madonnadelsasso.ch/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.ascona-locarno.com/it/attualita/storie/il-sacro-monte-della-madonna-del-sasso",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        }
+      ],
+      "current_source_count": 1,
+      "final_source_count": 4,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://mendrisio.ch/home/vivere-e-visitare/eventi/iniziative-cittadine/processioni-della-settimana-santa-di-mendrisio",
+        "https://www.ticino.ch/it/commons/details/Processioni-della-Settimana-Santa-di-Mendrisio/37413.html",
+        "https://www.madonnadelsasso.ch/",
+        "https://www.ascona-locarno.com/it/attualita/storie/il-sacro-monte-della-madonna-del-sasso"
+      ]
     }
   ],
   "prompt": "请为 Notebook source hunt C44 准备下一批 C 级祈福／祈祷仪式资料卡的联网来源搜寻。\n\n本轮是在 C43 来源清理已经应用之后，对 docs/notebook-validation.json 中全部 grade=C 卡片的「## 参考来源」重新计数；不得因为某卡曾出现在 C1–C43 的早期批次就排除它。仍含 britannica.com、encyclopedia.com 或 everyculture.com 的弱链接均须计入。当前 C 级卡片共 156 张，仍含弱链接的卡片共 19 张。\n\n选择规则：在全部仍含上述弱链接的 C 级卡片中，按弱链接数量从多到少排序；并列时按 slug 字母序排序；选择前 12 张；若不足 12 张则全部选择。不要为了凑数选择无弱链接的卡片，也不要排除先前批次出现过的卡片。\n\n选择结果（按优先顺序）：\n1. purepecha（弱链接 1 条；当前来源 5 条）\n2. romansh-folk（弱链接 1 条；当前来源 4 条）\n3. salentino-folk（弱链接 1 条；当前来源 4 条）\n4. savoyard-folk（弱链接 1 条；当前来源 4 条）\n5. scanian-folk（弱链接 1 条；当前来源 4 条）\n6. she-traditional（弱链接 1 条；当前来源 6 条）\n7. sicilian-santa-rosalia（弱链接 1 条；当前来源 4 条）\n8. sidama-traditional（弱链接 1 条；当前来源 5 条）\n9. slovak-folk（弱链接 1 条；当前来源 4 条）\n10. tajik-folk（弱链接 1 条；当前来源 6 条）\n11. tibetan-buddhism（弱链接 1 条；当前来源 7 条）\n12. ticinese-folk（弱链接 1 条；当前来源 5 条）\n\n逐卡当前来源（[WEAK] 表示待替换的弱链接）：\n### 1. purepecha — 普雷佩查民间天主教与节庆祈福（Purépecha／P'urhépecha）\n仪式：Pátzcuaro／Janitzio 亡灵节（公共纪念层）；K'uínchekua 与 cargo 主保 fiestas（公开节庆层）；代父母纽带与婚礼致辞（生命礼仪层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Tarasco\n- https://www.latimes.com/archives/la-xpm-1995-09-02-me-41473-story.html\n- https://ich.unesco.org/en/RL/pirekua-traditional-song-of-the-p-urhepecha-00398\n- https://www.gob.mx/sectur/articulos/plan-michoacan-presentan-en-sectur-la-edicion-de-la-k-uinchekua-2026-una-celebracion-de-identidad-purepecha\n- https://cultura.michoacan.gob.mx/noticias/danza-de-las-palmeras-un-legado-de-tradicion-purepecha-en-la-kuinchekua/\n\n### 2. romansh-folk — 罗曼什民间基督教与阿尔卑斯祈福（Romansh）\n仪式：Ziteil 圣母朝圣地（2429 m）（概念层）；Chalandamarz（3 月 1 日）摇铃（公共民俗层）；阿尔卑斯牲畜下山祝福（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Romansh-language\n- https://www.lebendige-traditionen.ch/en/chalandamarz-5\n- https://www.graubuenden.ch/en/graubuenden/general-information/customs-traditions/chalandamarz\n- https://www.graubuenden.ch/en/tours/ziteil-bike\n\n### 3. salentino-folk — 萨伦托民间天主教与海岸朝圣祈福（Salentino）\n仪式：Santa Maria de Finibus Terrae 朝圣（概念层）；Fòcara di Novoli（公共节庆层）；San Rocco 与 Pizzica 文化誓愿舞（公共文化层，非附体奇观）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://www.viaggiareinpuglia.it/de/dettaglio-attrattore/basilica-santuario-santa-maria-de-finibus-terrae\n- https://viaggiareinpuglia.it/fr/dettaglio-tipicita/focara-novoli\n- https://viaggiareinpuglia.it/it/dettaglio-itinerario/terre-taranta\n\n### 4. savoyard-folk — 萨瓦民间天主教与阿尔卑斯朝圣祈福（Savoyard）\n仪式：Notre-Dame de la Gorge 朝圣（概念层）；Notre-Dame de Myans 黑圣母（概念层）；Désalpe 与主保巡游（公共／民俗层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://patrimoines.savoie.fr/upload/docs/application/pdf/2025-06/adulte_francais.pdf\n- https://patrimoines.savoie.fr/upload/docs/application/pdf/2020-08/la-rubrique-33_2020-08-31_11-25-36_781.pdf\n- https://www.chamonix-guides.com/fr/nos-engagements/solidarite/fete-des-guides\n\n### 5. scanian-folk — 斯堪尼亚民间基督教与节期祈福（Scanian／Skåne）\n仪式：Mårtensafton 鹅宴（公共民俗层）；Sankt Olof 圣井／教堂（概念层）；仲夏 maypole 与生命礼仪（民俗／教会层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Church-of-Sweden\n- https://www.isof.se/utforska/kunskapsbanker/lar-dig-mer-om-arets-namn-och-handelser/handelser/martensafton\n- https://www.svenskakyrkan.se/lundsstift/pilgrim\n- https://www.svenskakyrkan.se/platser/21226-simrishamns-forsamling-st-olofs-kyrka\n\n### 6. she-traditional — 畲族传统信仰与祭祖祈福（She）\n仪式：盘瓠（Panhu）叙事与祖图／龙头杖敬礼（CONCEPT）；三月三乌饭／黑米节与山歌岁时（公共层）；师公传统与佛道影响（CONCEPT ONLY）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/She-people\n- https://th.china-embassy.gov.cn/eng/ztbd/AboutChina/Ethnic/200011/t20001115_1432841.htm\n- https://www.ihchina.cn/project_details/15094/\n- http://wlt.fujian.gov.cn/hdjl/wdxd/202305/t20230512_6168252.htm\n- http://www.chongyi.gov.cn/cyxrmzf/c103589/202008/cabb5c36cb02408884cb0ab4b1d36df2.shtml\n- http://www.zc.gov.cn/gk/zdly/whggwgk/content/post_10977181.html\n\n### 7. sicilian-santa-rosalia — 西西里圣罗萨莉亚朝圣与民间天主教祈福（Santa Rosalia）\n仪式：Festino 与 Carro Trionfale（七月公共巡游层）；Acchianata 赤足登山朝圣（9 月 4 日）（概念层）；圣骸敬礼、誓言与堂区弥撒（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/biography/Saint-Rosalia\n- https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=43070\n- https://turismo.comune.palermo.it/palermo-welcome-new-dettaglio.php?id=43323\n- https://repository.comune.palermo.it/storia-festino-santa-rosalia-palermo.php\n\n### 8. sidama-traditional — 锡达马传统信仰与菲切—尚巴拉拉新年祈福（Sidama）\n仪式：Fichee-Chambalaalla 新年节（公共层）；Qocho 共享与口述食物—妆饰知识（公共文化层）；Woma 长老与 Magano 敬奉（CONCEPT ONLY）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Sidamo\n- https://ich.unesco.org/en/RL/fichee-chambalaalla-new-year-festival-of-the-sidama-people-01054\n- https://ich.unesco.org/en/decisions/10.COM/10.B.16\n- https://ich.unesco.org/doc/src/29563.pdf\n- https://doi.org/10.1080/2331186X.2022.2046241\n\n### 9. slovak-folk — 斯洛伐克民间天主教与朝圣祈福（Slovak）\n仪式：Mariánska hora（Levoča）圣母朝圣（概念层）；主保节与村社巡游（概念层）；Šibačka／Oblievačka 与节日食物祝福（公共民俗层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://slovakia.travel/en/levoca-marian-pilgrimage\n- https://slovakia.travel/en/easter-whipping-or-bathing-march-or-april\n- https://slovakia.travel/en/levoca\n\n### 10. tajik-folk — 塔吉克民间伊斯兰与诺鲁孜祈福传统（Tajik folk）\n仪式：清真寺礼拜与两大节日（公共层）；Navruz：Haft Sin／Haft Shin、Sumanak 与春季光明（公共层）；Mazar 圣地朝拜与生命礼仪（部分敏感）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Tajik-people\n- https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-00261\n- https://ich.unesco.org/en/RL/nawrouz-novruz-nowrouz-nowrouz-nawrouz-nauryz-nooruz-nowruz-navruz-nevruz-nowruz-navruz-02097\n- https://ich.unesco.org/en/RL/culture-of-sumanak-sumalak-cooking-02336\n- https://ich.unesco.org/doc/src/32299.pdf\n- https://doi.org/10.1080/23311983.2025.2524932\n\n### 11. tibetan-buddhism — 藏传佛教\n仪式：转经筒 mani、磕长头与绕圣 kora；风马旗 lungta 与放生；Saga Dawa 与 Chöme 酥油灯（节庆／日常层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/prayer-wheel\n- https://rubinmuseum.org/projecthimalayanart/essays/prayer-wheel/\n- https://tnp.org/what-is-kora-or-circumambulation/\n- https://tibet.net/his-holiness-the-dalai-lama-joins-recitation-of-mani-mantra-at-tsuglagkhang/\n- https://tibet.net/kunphenling-tibetan-community-holds-sacred-saga-dawa-observance-and-year-of-compassion-celebration-at-lho-khandro-sangphug/\n- https://doi.org/10.3390/rel17050552\n- https://dx.doi.org/10.4000/15h7c\n\n### 12. ticinese-folk — 提契诺民间天主教与阿尔卑斯朝圣祈福（Ticinese）\n仪式：Mendrisio 圣周游行（UNESCO／公共层）；Madonna del Sasso 与主保 feste（概念层）；阿尔卑斯牧牛下山祝福（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://ich.unesco.org/en/RL/holy-week-processions-in-mendrisio-01460\n- https://www.lebendige-traditionen.ch/it/processioni-della-settimana-santa-di-mendrisio\n- https://www.ticino.ch/it/commons/details/Sacro-Monte-Madonna-del-Sasso/2693.html\n- https://www.madonnadelsasso.org/\n\n对每个选中 slug 给出 2–4 条新的、公开可核验的 URL，并附一句中文说明覆盖内容与可信度理由。来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。\n\n明确禁止：Britannica 地点（/place/）或泛概览页及其他 Britannica 泛概览、encyclopedia.com、everyculture.com、Wikipedia 或任何 wiki 概览页、101lasttribes／joshuaproject 等部族目录页、与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。硬性要求：URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或 SOURCES.md 已有 URL 重复；宁缺毋滥；只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n输出格式：\nslug:\n建议新增 URL（每行一条，附一句中文说明）：\n- <URL> — <说明>\n",
@@ -283,5 +737,14 @@
   ],
   "source_map": "/tmp/nb-source-hunt-c44.json",
   "prompt_file": "/tmp/nb-source-hunt-c44.txt",
-  "remaining_estimate": 19
+  "remaining_estimate": 19,
+  "input_url_count": 37,
+  "unique_input_url_count": 37,
+  "card_url_added_count": 37,
+  "card_url_removed_count": 12,
+  "sources_unique_added_count": 37,
+  "sources_unique_url_added_count": 37,
+  "remaining_candidates_after_batch": 7,
+  "applied_at": "2026-09-20",
+  "weak_link_c_count_after_c44": 7
 }

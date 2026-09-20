@@ -47,7 +47,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
+
+- https://www.diocese-annecy.fr/grandir-dans-la-foi/pastorale-du-tourisme/pelerinages-locaux/notre-dame-de-la-gorge
+- https://annuaire.catholique-savoie.fr/Sanctuario-Notre-Dame-de-Myans-268.html
+- https://communication.catholique-savoie.fr/Fete-patronale-au-Sanctuaire-de-Myans.html
+
 - https://patrimoines.savoie.fr/upload/docs/application/pdf/2025-06/adulte_francais.pdf
 - https://patrimoines.savoie.fr/upload/docs/application/pdf/2020-08/la-rubrique-33_2020-08-31_11-25-36_781.pdf
 - https://www.chamonix-guides.com/fr/nos-engagements/solidarite/fete-des-guides

@@ -47,7 +47,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Lozi
 - https://www.zambiatourism.com/date-set-for-2026-kuomboka-ceremony/
 - https://ich.unesco.org/doc/src/00209-EN.pdf
 - https://doi.org/10.47772/IJRISS.2023.7012149
+- https://www.mot.gov.zm/?p=3367
+- https://www.mot.gov.zm/?p=3894
+- https://www.limulungacouncil.gov.zm/?p=2265
+- https://www.mlgrd.gov.zm/?p=9368

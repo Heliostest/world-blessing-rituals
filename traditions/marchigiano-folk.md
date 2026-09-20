@@ -49,7 +49,10 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Roman-Catholicism
 - https://www.santuarioloreto.va/it/storia.html
 - https://www.santuarioloreto.va/it/venuta-e-b-v-di-loreto.html
 - https://www.turismo.marche.it/it_it/
+- https://www.santuarioloreto.va/it/news/2021/9-dicembre-festa-della-venuta-accendi-una-candela-nella-tua-casa.html
+- https://www.santuarioloreto.va/it/news/2026/il-santuario-della-santa-casa-si-prepara-alla-solennita-della-na.html
+- http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_6493347334541/MODI
+- https://doi.org/10.1108/978-1-80043-900-920211006

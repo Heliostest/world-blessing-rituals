@@ -50,7 +50,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Nogay
 - https://doi.org/10.47500/2025.v24.i4.05
 - https://doi.org/10.22378/2313-6197.2024-12-4.897-914
 - https://dx.doi.org/10.3389/fcomm.2025.1693748
+- https://doi.org/10.65076/3105-0042.2025.1.122.139
+- https://doi.org/10.53871/2078-8134.2021.4-10
+- https://doi.org/10.1163/1573-3912_ei3_COM_41065

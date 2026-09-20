@@ -2,7 +2,7 @@
   "batch": "notebook-source-hunt-c43",
   "cycle": 43,
   "date": "2026-09-20",
-  "status": "prepared",
+  "status": "completed",
   "selection_rule": "不排除任何早期批次；重算全部 grade=C 卡片当前来源段中的弱链接，按弱链接数量从多到少、slug 字母序选择前 12 张。",
   "previous_cycles_excluded": false,
   "c_grade_card_count": 156,
@@ -40,7 +40,60 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Lozi"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://www.mot.gov.zm/?p=3367",
+        "https://www.mot.gov.zm/?p=3894",
+        "https://www.limulungacouncil.gov.zm/?p=2265",
+        "https://www.mlgrd.gov.zm/?p=9368"
+      ],
+      "added_urls": [
+        "https://www.mot.gov.zm/?p=3367",
+        "https://www.mot.gov.zm/?p=3894",
+        "https://www.limulungacouncil.gov.zm/?p=2265",
+        "https://www.mlgrd.gov.zm/?p=9368"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Lozi"
+      ],
+      "final_urls": [
+        "https://www.zambiatourism.com/date-set-for-2026-kuomboka-ceremony/",
+        "https://ich.unesco.org/doc/src/00209-EN.pdf",
+        "https://doi.org/10.47772/IJRISS.2023.7012149",
+        "https://www.mot.gov.zm/?p=3367",
+        "https://www.mot.gov.zm/?p=3894",
+        "https://www.limulungacouncil.gov.zm/?p=2265",
+        "https://www.mlgrd.gov.zm/?p=9368"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.mot.gov.zm/?p=3367",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://www.mot.gov.zm/?p=3894",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://www.limulungacouncil.gov.zm/?p=2265",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://www.mlgrd.gov.zm/?p=9368",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        }
+      ],
+      "current_source_count": 4,
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.mot.gov.zm/?p=3367",
+        "https://www.mot.gov.zm/?p=3894",
+        "https://www.limulungacouncil.gov.zm/?p=2265",
+        "https://www.mlgrd.gov.zm/?p=9368"
+      ]
     },
     {
       "slug": "manx-folk",
@@ -60,7 +113,61 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Church-of-England"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://elections.gov.im/elections-and-voting-latest-news/2026/tynwald-day-mock-ballot-favourite-manx-folklore-character/",
+        "https://manxnationalheritage.im/whats-on/detail/yn-chruinnaght-2/",
+        "https://manxnationalheritage.im/shop/product/hop-tu-naa-festival-2026-at-cregneash-31st-october-10am-12pm-or-1pm-3pm/",
+        "https://doi.org/10.7592/Incantatio2025_13_Miller"
+      ],
+      "added_urls": [
+        "https://elections.gov.im/elections-and-voting-latest-news/2026/tynwald-day-mock-ballot-favourite-manx-folklore-character/",
+        "https://manxnationalheritage.im/whats-on/detail/yn-chruinnaght-2/",
+        "https://manxnationalheritage.im/shop/product/hop-tu-naa-festival-2026-at-cregneash-31st-october-10am-12pm-or-1pm-3pm/",
+        "https://doi.org/10.7592/Incantatio2025_13_Miller"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Church-of-England"
+      ],
+      "final_urls": [
+        "https://manxnationalheritage.im/visit-2/about-the-isle-of-man/tynwald/",
+        "https://www.visitisleofman.com/blog/read/2024/10/fun-facts-about-hop-tu-naa-on-the-isle-of-man-the-original-halloween-festival-b113",
+        "https://manxnationalheritage.im/whats-on/detail/hop-tu-naa-festival/",
+        "https://www.visitisleofman.com/experience/kirk-maughold-church-p1312271",
+        "https://elections.gov.im/elections-and-voting-latest-news/2026/tynwald-day-mock-ballot-favourite-manx-folklore-character/",
+        "https://manxnationalheritage.im/whats-on/detail/yn-chruinnaght-2/",
+        "https://manxnationalheritage.im/shop/product/hop-tu-naa-festival-2026-at-cregneash-31st-october-10am-12pm-or-1pm-3pm/",
+        "https://doi.org/10.7592/Incantatio2025_13_Miller"
+      ],
+      "source_notes": [
+        {
+          "url": "https://elections.gov.im/elections-and-voting-latest-news/2026/tynwald-day-mock-ballot-favourite-manx-folklore-character/",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://manxnationalheritage.im/whats-on/detail/yn-chruinnaght-2/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://manxnationalheritage.im/shop/product/hop-tu-naa-festival-2026-at-cregneash-31st-october-10am-12pm-or-1pm-3pm/",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.7592/Incantatio2025_13_Miller",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        }
+      ],
+      "current_source_count": 5,
+      "final_source_count": 8,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://elections.gov.im/elections-and-voting-latest-news/2026/tynwald-day-mock-ballot-favourite-manx-folklore-character/",
+        "https://manxnationalheritage.im/whats-on/detail/yn-chruinnaght-2/",
+        "https://manxnationalheritage.im/shop/product/hop-tu-naa-festival-2026-at-cregneash-31st-october-10am-12pm-or-1pm-3pm/",
+        "https://doi.org/10.7592/Incantatio2025_13_Miller"
+      ]
     },
     {
       "slug": "marchigiano-folk",
@@ -79,7 +186,60 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://www.santuarioloreto.va/it/news/2021/9-dicembre-festa-della-venuta-accendi-una-candela-nella-tua-casa.html",
+        "https://www.santuarioloreto.va/it/news/2026/il-santuario-della-santa-casa-si-prepara-alla-solennita-della-na.html",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_6493347334541/MODI",
+        "https://doi.org/10.1108/978-1-80043-900-920211006"
+      ],
+      "added_urls": [
+        "https://www.santuarioloreto.va/it/news/2021/9-dicembre-festa-della-venuta-accendi-una-candela-nella-tua-casa.html",
+        "https://www.santuarioloreto.va/it/news/2026/il-santuario-della-santa-casa-si-prepara-alla-solennita-della-na.html",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_6493347334541/MODI",
+        "https://doi.org/10.1108/978-1-80043-900-920211006"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://www.santuarioloreto.va/it/storia.html",
+        "https://www.santuarioloreto.va/it/venuta-e-b-v-di-loreto.html",
+        "https://www.turismo.marche.it/it_it/",
+        "https://www.santuarioloreto.va/it/news/2021/9-dicembre-festa-della-venuta-accendi-una-candela-nella-tua-casa.html",
+        "https://www.santuarioloreto.va/it/news/2026/il-santuario-della-santa-casa-si-prepara-alla-solennita-della-na.html",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_6493347334541/MODI",
+        "https://doi.org/10.1108/978-1-80043-900-920211006"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.santuarioloreto.va/it/news/2021/9-dicembre-festa-della-venuta-accendi-una-candela-nella-tua-casa.html",
+          "note": "相关圣殿／朝圣地官方页面，直接覆盖朝圣、瞻礼或地方宗教公共实践；一手机构来源。"
+        },
+        {
+          "url": "https://www.santuarioloreto.va/it/news/2026/il-santuario-della-santa-casa-si-prepara-alla-solennita-della-na.html",
+          "note": "相关圣殿／朝圣地官方页面，直接覆盖朝圣、瞻礼或地方宗教公共实践；一手机构来源。"
+        },
+        {
+          "url": "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_6493347334541/MODI",
+          "note": "博物馆或国家文化遗产档案页面，直接记录该传统的物质文化、节庆或朝圣对象；机构来源。"
+        },
+        {
+          "url": "https://doi.org/10.1108/978-1-80043-900-920211006",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        }
+      ],
+      "current_source_count": 4,
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.santuarioloreto.va/it/news/2021/9-dicembre-festa-della-venuta-accendi-una-candela-nella-tua-casa.html",
+        "https://www.santuarioloreto.va/it/news/2026/il-santuario-della-santa-casa-si-prepara-alla-solennita-della-na.html",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_6493347334541/MODI",
+        "https://doi.org/10.1108/978-1-80043-900-920211006"
+      ]
     },
     {
       "slug": "mazu",
@@ -100,7 +260,54 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Matsu"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://nchdb.boch.gov.tw/city/Yunlin/assets/overview/folklore/20240618000001/",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20090203000001",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20140306000001"
+      ],
+      "added_urls": [
+        "https://nchdb.boch.gov.tw/city/Yunlin/assets/overview/folklore/20240618000001/",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20090203000001",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20140306000001"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Matsu"
+      ],
+      "final_urls": [
+        "https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227",
+        "https://www.fujian.gov.cn/english/cultureandtravel/cultureandarts/202508/t20250807_6988988.htm",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20100618000008",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20100618000007",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20130118000007",
+        "https://nchdb.boch.gov.tw/city/Yunlin/assets/overview/folklore/20240618000001/",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20090203000001",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20140306000001"
+      ],
+      "source_notes": [
+        {
+          "url": "https://nchdb.boch.gov.tw/city/Yunlin/assets/overview/folklore/20240618000001/",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://nchdb.boch.gov.tw/assets/overview/folklore/20090203000001",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://nchdb.boch.gov.tw/assets/overview/folklore/20140306000001",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        }
+      ],
+      "current_source_count": 6,
+      "final_source_count": 8,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://nchdb.boch.gov.tw/city/Yunlin/assets/overview/folklore/20240618000001/",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20090203000001",
+        "https://nchdb.boch.gov.tw/assets/overview/folklore/20140306000001"
+      ]
     },
     {
       "slug": "molisan-folk",
@@ -119,7 +326,52 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11460",
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18677",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_2878131212751/MODI"
+      ],
+      "added_urls": [
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11460",
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18677",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_2878131212751/MODI"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/2459",
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18667",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_9951412152541/MODI",
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11460",
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18677",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_2878131212751/MODI"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11460",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18677",
+          "note": "与该卡片传统直接相关的公开机构或学术来源，补充节庆／社群／遗产语境并可独立核验。"
+        },
+        {
+          "url": "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_2878131212751/MODI",
+          "note": "博物馆或国家文化遗产档案页面，直接记录该传统的物质文化、节庆或朝圣对象；机构来源。"
+        }
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11460",
+        "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18677",
+        "http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_2878131212751/MODI"
+      ]
     },
     {
       "slug": "monegasque-folk",
@@ -138,7 +390,52 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Roman-Catholicism"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://www.mairie.mc/la-sainte-devote-sainte-patronne-de-monaco",
+        "https://www.mairie.mc/la-saint-jean",
+        "https://monservicepublic.gouv.mc/actualites/les-celebrations-de-la-sainte-devote4"
+      ],
+      "added_urls": [
+        "https://www.mairie.mc/la-sainte-devote-sainte-patronne-de-monaco",
+        "https://www.mairie.mc/la-saint-jean",
+        "https://monservicepublic.gouv.mc/actualites/les-celebrations-de-la-sainte-devote4"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Roman-Catholicism"
+      ],
+      "final_urls": [
+        "https://www.gouv.mc/actualites/les-celebrations-de-la-sainte-devote2",
+        "https://www.gouv.mc/gouvernement-et-institutions/histoire-et-patrimoine/les-differents-symboles/fete-de-sainte-devote",
+        "https://www.palais.mc/fr/actualites/s-a-s-le-prince-albert-ii/article/2020/janvier/celebrations-de-la-sainte-devote-2020-3473.html",
+        "https://www.mairie.mc/la-sainte-devote-sainte-patronne-de-monaco",
+        "https://www.mairie.mc/la-saint-jean",
+        "https://monservicepublic.gouv.mc/actualites/les-celebrations-de-la-sainte-devote4"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.mairie.mc/la-sainte-devote-sainte-patronne-de-monaco",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://www.mairie.mc/la-saint-jean",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://monservicepublic.gouv.mc/actualites/les-celebrations-de-la-sainte-devote4",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        }
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.mairie.mc/la-sainte-devote-sainte-patronne-de-monaco",
+        "https://www.mairie.mc/la-saint-jean",
+        "https://monservicepublic.gouv.mc/actualites/les-celebrations-de-la-sainte-devote4"
+      ]
     },
     {
       "slug": "ndebele-traditional",
@@ -159,7 +456,54 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Ndebele-South-African-people"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://www.iziko.org.za/news/iziko-museums-of-south-africa-presentsthen-i-knew-i-was-good-at-painting-esthermahlangu-a-retrospective/",
+        "https://doi.org/10.1080/23311983.2025.2457828",
+        "https://doi.org/10.25159/2663-6697/19708"
+      ],
+      "added_urls": [
+        "https://www.iziko.org.za/news/iziko-museums-of-south-africa-presentsthen-i-knew-i-was-good-at-painting-esthermahlangu-a-retrospective/",
+        "https://doi.org/10.1080/23311983.2025.2457828",
+        "https://doi.org/10.25159/2663-6697/19708"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Ndebele-South-African-people"
+      ],
+      "final_urls": [
+        "https://sahistory.org.za/article/ndebele",
+        "https://www.metmuseum.org/art/collection/search/320627",
+        "https://www.vukuzenzele.gov.za/class-her-own",
+        "https://doi.org/10.1108/978-1-64802-117-620251004",
+        "https://www.metmuseum.org/art/collection/search/320630",
+        "https://www.iziko.org.za/news/iziko-museums-of-south-africa-presentsthen-i-knew-i-was-good-at-painting-esthermahlangu-a-retrospective/",
+        "https://doi.org/10.1080/23311983.2025.2457828",
+        "https://doi.org/10.25159/2663-6697/19708"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.iziko.org.za/news/iziko-museums-of-south-africa-presentsthen-i-knew-i-was-good-at-painting-esthermahlangu-a-retrospective/",
+          "note": "博物馆或国家文化遗产档案页面，直接记录该传统的物质文化、节庆或朝圣对象；机构来源。"
+        },
+        {
+          "url": "https://doi.org/10.1080/23311983.2025.2457828",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.25159/2663-6697/19708",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        }
+      ],
+      "current_source_count": 6,
+      "final_source_count": 8,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.iziko.org.za/news/iziko-museums-of-south-africa-presentsthen-i-knew-i-was-good-at-painting-esthermahlangu-a-retrospective/",
+        "https://doi.org/10.1080/23311983.2025.2457828",
+        "https://doi.org/10.25159/2663-6697/19708"
+      ]
     },
     {
       "slug": "nogai-traditional",
@@ -178,7 +522,52 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Nogay"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://doi.org/10.65076/3105-0042.2025.1.122.139",
+        "https://doi.org/10.53871/2078-8134.2021.4-10",
+        "https://doi.org/10.1163/1573-3912_ei3_COM_41065"
+      ],
+      "added_urls": [
+        "https://doi.org/10.65076/3105-0042.2025.1.122.139",
+        "https://doi.org/10.53871/2078-8134.2021.4-10",
+        "https://doi.org/10.1163/1573-3912_ei3_COM_41065"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Nogay"
+      ],
+      "final_urls": [
+        "https://doi.org/10.47500/2025.v24.i4.05",
+        "https://doi.org/10.22378/2313-6197.2024-12-4.897-914",
+        "https://dx.doi.org/10.3389/fcomm.2025.1693748",
+        "https://doi.org/10.65076/3105-0042.2025.1.122.139",
+        "https://doi.org/10.53871/2078-8134.2021.4-10",
+        "https://doi.org/10.1163/1573-3912_ei3_COM_41065"
+      ],
+      "source_notes": [
+        {
+          "url": "https://doi.org/10.65076/3105-0042.2025.1.122.139",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.53871/2078-8134.2021.4-10",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        },
+        {
+          "url": "https://doi.org/10.1163/1573-3912_ei3_COM_41065",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        }
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://doi.org/10.65076/3105-0042.2025.1.122.139",
+        "https://doi.org/10.53871/2078-8134.2021.4-10",
+        "https://doi.org/10.1163/1573-3912_ei3_COM_41065"
+      ]
     },
     {
       "slug": "occitan-camargue-folk",
@@ -198,7 +587,53 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Romani"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://pop.culture.gouv.fr/notice/palissy/PM13003059",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903005109",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903002336"
+      ],
+      "added_urls": [
+        "https://pop.culture.gouv.fr/notice/palissy/PM13003059",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903005109",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903002336"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Romani"
+      ],
+      "final_urls": [
+        "https://www.villes-sanctuaires.com/en/villes-sanctuaires/saintes-maries-mer",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903000487",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903004817",
+        "https://pop.culture.gouv.fr/notice/museo/M0927",
+        "https://pop.culture.gouv.fr/notice/palissy/PM13003059",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903005109",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903002336"
+      ],
+      "source_notes": [
+        {
+          "url": "https://pop.culture.gouv.fr/notice/palissy/PM13003059",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://pop.culture.gouv.fr/notice/joconde/M0903005109",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://pop.culture.gouv.fr/notice/joconde/M0903002336",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        }
+      ],
+      "current_source_count": 5,
+      "final_source_count": 7,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://pop.culture.gouv.fr/notice/palissy/PM13003059",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903005109",
+        "https://pop.culture.gouv.fr/notice/joconde/M0903002336"
+      ]
     },
     {
       "slug": "ovambo-traditional",
@@ -218,7 +653,43 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Ambo-people"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://ich.unesco.org/en/RL/oshituthi-shomagongo-marula-fruit-festival-01089",
+        "https://doi.org/10.1080/03057070802685593"
+      ],
+      "added_urls": [
+        "https://doi.org/10.1080/03057070802685593"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Ambo-people"
+      ],
+      "final_urls": [
+        "https://www.vestiges-journal.info/CSACMonog/Davies_thesis/chap1.pdf",
+        "https://ich.unesco.org/en/RL/oshituthi-shomagongo-marula-fruit-festival-01089",
+        "https://repository.unam.edu.na/server/api/core/bitstreams/5ae2a1fd-0027-4b62-b4dd-6b9d7236055c/content",
+        "https://digital.unam.edu.na/bitstream/handle/11070.1/20232/Nghifikwa_2023.pdf?sequence=1&isAllowed=y",
+        "https://doi.org/10.1080/03057070802685593"
+      ],
+      "source_notes": [
+        {
+          "url": "https://ich.unesco.org/en/RL/oshituthi-shomagongo-marula-fruit-festival-01089",
+          "note": "联合国教科文组织非遗／遗产页面，直接覆盖该传统或公共节庆；国际官方遗产来源。"
+        },
+        {
+          "url": "https://doi.org/10.1080/03057070802685593",
+          "note": "主题明确的学术出版物 DOI，补充该社群、节庆或宗教民俗研究语境；可独立核验。"
+        }
+      ],
+      "current_source_count": 5,
+      "final_source_count": 5,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://ich.unesco.org/en/RL/oshituthi-shomagongo-marula-fruit-festival-01089",
+        "https://doi.org/10.1080/03057070802685593"
+      ]
     },
     {
       "slug": "piedmontese-folk",
@@ -237,7 +708,52 @@
       "weak_urls": [
         "https://www.britannica.com/topic/Shroud-of-Turin"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://www.sacrimonti.org/en/sacro-monte-di-oropa",
+        "https://www.sacrimonti.org/en/sacro-monte-di-varallo",
+        "https://www.santuariodioropa.it/il-sacro-monte/"
+      ],
+      "added_urls": [
+        "https://www.sacrimonti.org/en/sacro-monte-di-oropa",
+        "https://www.sacrimonti.org/en/sacro-monte-di-varallo",
+        "https://www.santuariodioropa.it/il-sacro-monte/"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/topic/Shroud-of-Turin"
+      ],
+      "final_urls": [
+        "https://www.sacrimonti.org/en/home",
+        "https://www.santuariodioropa.it/en/la-storia-del-santuario-2/",
+        "https://sindone.org/",
+        "https://www.sacrimonti.org/en/sacro-monte-di-oropa",
+        "https://www.sacrimonti.org/en/sacro-monte-di-varallo",
+        "https://www.santuariodioropa.it/il-sacro-monte/"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.sacrimonti.org/en/sacro-monte-di-oropa",
+          "note": "相关圣殿／朝圣地官方页面，直接覆盖朝圣、瞻礼或地方宗教公共实践；一手机构来源。"
+        },
+        {
+          "url": "https://www.sacrimonti.org/en/sacro-monte-di-varallo",
+          "note": "相关圣殿／朝圣地官方页面，直接覆盖朝圣、瞻礼或地方宗教公共实践；一手机构来源。"
+        },
+        {
+          "url": "https://www.santuariodioropa.it/il-sacro-monte/",
+          "note": "相关圣殿／朝圣地官方页面，直接覆盖朝圣、瞻礼或地方宗教公共实践；一手机构来源。"
+        }
+      ],
+      "current_source_count": 4,
+      "final_source_count": 6,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.sacrimonti.org/en/sacro-monte-di-oropa",
+        "https://www.sacrimonti.org/en/sacro-monte-di-varallo",
+        "https://www.santuariodioropa.it/il-sacro-monte/"
+      ]
     },
     {
       "slug": "portuguese-romarias",
@@ -259,7 +775,55 @@
       "weak_urls": [
         "https://www.britannica.com/event/Our-Lady-of-Fatima"
       ],
-      "weak_count": 1
+      "weak_count": 1,
+      "input_urls": [
+        "https://www.patrimoniocultural.gov.pt/2025/09/patrimonio-cultural-i-p-nas-festas-de-nossa-senhora-dos-remedios-lamego/",
+        "https://www.patrimoniocultural.gov.pt/2025/09/procissao-noturna-de-nossa-senhora-do-fetal-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/",
+        "https://360.patrimoniocultural.gov.pt/pt/explorar/itens/museu-etnografico-dr-joaquim-manso/ex-voto-nossa-senhora-de-nazare"
+      ],
+      "added_urls": [
+        "https://www.patrimoniocultural.gov.pt/2025/09/patrimonio-cultural-i-p-nas-festas-de-nossa-senhora-dos-remedios-lamego/",
+        "https://www.patrimoniocultural.gov.pt/2025/09/procissao-noturna-de-nossa-senhora-do-fetal-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/",
+        "https://360.patrimoniocultural.gov.pt/pt/explorar/itens/museu-etnografico-dr-joaquim-manso/ex-voto-nossa-senhora-de-nazare"
+      ],
+      "removed_urls": [
+        "https://www.britannica.com/event/Our-Lady-of-Fatima"
+      ],
+      "final_urls": [
+        "https://www.fatima.pt/en/pages/organizing-a-pilgrimage-to-the-shrine",
+        "https://folkways-media.si.edu/docs/folkways/artwork/UNES08317.pdf",
+        "https://www.fatima.pt/pt/news/d-jose-manuel-imbamba-preside-a-peregrinacao-internacional-aniversaria-de-setembro",
+        "https://www.patrimoniocultural.gov.pt/2025/02/patrimonio-cultural-ip-inscreve-romaria-de-s-bento-do-cando-no-inventario-nacional-do-patrimonio-cultural-imaterial/",
+        "https://www.patrimoniocultural.gov.pt/2026/06/vela-votiva-de-santa-marta-de-portuzelo-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/",
+        "https://matrizpci.patrimoniocultural.gov.pt/InventarioNacional/DetalheFicha/640?dirPesq=3",
+        "https://www.patrimoniocultural.gov.pt/2025/09/patrimonio-cultural-i-p-nas-festas-de-nossa-senhora-dos-remedios-lamego/",
+        "https://www.patrimoniocultural.gov.pt/2025/09/procissao-noturna-de-nossa-senhora-do-fetal-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/",
+        "https://360.patrimoniocultural.gov.pt/pt/explorar/itens/museu-etnografico-dr-joaquim-manso/ex-voto-nossa-senhora-de-nazare"
+      ],
+      "source_notes": [
+        {
+          "url": "https://www.patrimoniocultural.gov.pt/2025/09/patrimonio-cultural-i-p-nas-festas-de-nossa-senhora-dos-remedios-lamego/",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://www.patrimoniocultural.gov.pt/2025/09/procissao-noturna-de-nossa-senhora-do-fetal-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        },
+        {
+          "url": "https://360.patrimoniocultural.gov.pt/pt/explorar/itens/museu-etnografico-dr-joaquim-manso/ex-voto-nossa-senhora-de-nazare",
+          "note": "相关政府／公共机构官方页面，覆盖该传统的节庆、遗产或社群公共实践；政府一手来源。"
+        }
+      ],
+      "current_source_count": 7,
+      "final_source_count": 9,
+      "weak_domain_count_before": 1,
+      "weak_urls_after": [],
+      "weak_domain_count_after": 0,
+      "applied_urls": [
+        "https://www.patrimoniocultural.gov.pt/2025/09/patrimonio-cultural-i-p-nas-festas-de-nossa-senhora-dos-remedios-lamego/",
+        "https://www.patrimoniocultural.gov.pt/2025/09/procissao-noturna-de-nossa-senhora-do-fetal-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/",
+        "https://360.patrimoniocultural.gov.pt/pt/explorar/itens/museu-etnografico-dr-joaquim-manso/ex-voto-nossa-senhora-de-nazare"
+      ]
     }
   ],
   "prompt": "请为 Notebook source hunt C43 准备下一批 C 级祈福／祈祷仪式资料卡的联网来源搜寻。\n\n本轮是在 C42 来源清理已经应用之后，对 docs/notebook-validation.json 中全部 grade=C 卡片的「## 参考来源」重新计数；不得因为某卡曾出现在 C1–C42 的早期批次就排除它。仍含 britannica.com、encyclopedia.com 或 everyculture.com 的弱链接均须计入。当前 C 级卡片共 156 张，仍含弱链接的卡片共 31 张。\n\n选择规则：在全部仍含上述弱链接的 C 级卡片中，按弱链接数量从多到少排序；并列时按 slug 字母序排序；选择前 12 张。不要为了凑数选择无弱链接的卡片，也不要排除先前批次出现过的卡片。\n\n选择结果（按优先顺序）：\n1. lozi-traditional（弱链接 1 条；当前来源 4 条）\n2. manx-folk（弱链接 1 条；当前来源 5 条）\n3. marchigiano-folk（弱链接 1 条；当前来源 4 条）\n4. mazu（弱链接 1 条；当前来源 6 条）\n5. molisan-folk（弱链接 1 条；当前来源 4 条）\n6. monegasque-folk（弱链接 1 条；当前来源 4 条）\n7. ndebele-traditional（弱链接 1 条；当前来源 6 条）\n8. nogai-traditional（弱链接 1 条；当前来源 4 条）\n9. occitan-camargue-folk（弱链接 1 条；当前来源 5 条）\n10. ovambo-traditional（弱链接 1 条；当前来源 5 条）\n11. piedmontese-folk（弱链接 1 条；当前来源 4 条）\n12. portuguese-romarias（弱链接 1 条；当前来源 7 条）\n\n逐卡当前来源（[WEAK] 表示待替换的弱链接）：\n\n### 1. lozi-traditional — 洛齐／巴罗策传统宗教与尼扬贝—王陵祈福（Lozi／Barotse）\n仪式：Kuomboka／Nalikwanda 公共迁徙庆典（公共层）；Nayuma 王陵与 Nyambe（CONCEPT ONLY）；平民祖灵与教会生活（高阶概念／公共层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Lozi\n- https://www.zambiatourism.com/date-set-for-2026-kuomboka-ceremony/\n- https://ich.unesco.org/doc/src/00209-EN.pdf\n- https://doi.org/10.47772/IJRISS.2023.7012149\n\n### 2. manx-folk — 马恩岛民间基督教与海岛祈福（Manx）\n仪式：Tynwald Day（7 月 5 日）露天议会与教会祝福（公共层）；Hop-tu-Naa 芜菁灯笼民俗（公共文化层）；圣莫尔德圣井与海上还愿（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Church-of-England\n- https://manxnationalheritage.im/visit-2/about-the-isle-of-man/tynwald/\n- https://www.visitisleofman.com/blog/read/2024/10/fun-facts-about-hop-tu-naa-on-the-isle-of-man-the-original-halloween-festival-b113\n- https://manxnationalheritage.im/whats-on/detail/hop-tu-naa-festival/\n- https://www.visitisleofman.com/experience/kirk-maughold-church-p1312271\n\n### 3. marchigiano-folk — 马尔凯民间天主教与洛雷托朝圣祈福（Marchigiano）\n仪式：洛雷托圣母朝圣（概念层）；Festa della Venuta（12 月 10 日）篝火（公共层）；城村主保节巡游（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://www.santuarioloreto.va/it/storia.html\n- https://www.santuarioloreto.va/it/venuta-e-b-v-di-loreto.html\n- https://www.turismo.marche.it/it_it/\n\n### 4. mazu — 妈祖信仰与进香（Mazu / Matsu）\n仪式：大甲／白沙屯进香命名与分灵／过炉（概念层）；农历三月廿三诞辰庙会（公共层）；日常庙祠上香与家庭礼拜（公共—家庭层）\n当前来源：\n- https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227\n- [WEAK] https://www.britannica.com/topic/Matsu\n- https://www.fujian.gov.cn/english/cultureandtravel/cultureandarts/202508/t20250807_6988988.htm\n- https://nchdb.boch.gov.tw/assets/overview/folklore/20100618000008\n- https://nchdb.boch.gov.tw/assets/overview/folklore/20100618000007\n- https://nchdb.boch.gov.tw/assets/overview/folklore/20130118000007\n\n### 5. molisan-folk — 莫利塞民间天主教与朝圣祈福（Molisan）\n仪式：La Ndocciata（Agnone）火把游行（公共层）；Carrese 牛车圣物竞赛（公共层）；圣母朝圣（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/2459\n- https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18667\n- http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_9951412152541/MODI\n\n### 6. monegasque-folk — 摩纳哥民间天主教与海岸朝圣祈福（Monegasque）\n仪式：Sainte Dévote（1 月 27 日）烧船（公共层）；国庆 Te Deum（11 月 19 日）（公共层）；海岸还愿（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Roman-Catholicism\n- https://www.gouv.mc/actualites/les-celebrations-de-la-sainte-devote2\n- https://www.gouv.mc/gouvernement-et-institutions/histoire-et-patrimoine/les-differents-symboles/fete-de-sainte-devote\n- https://www.palais.mc/fr/actualites/s-a-s-le-prince-albert-ii/article/2020/janvier/celebrations-de-la-sainte-devote-2020-3473.html\n\n### 7. ndebele-traditional — 恩德贝莱传统宗教与祖灵祈福（Ndebele）\n仪式：Ingoma 入会（CONCEPT ONLY＋强烈注意与尊重）；Ikhazi 聘礼牛只祖先告知（CONCEPT）；Umuzi 壁画与珠饰公共文化（公共层）\n当前来源：\n- https://sahistory.org.za/article/ndebele\n- [WEAK] https://www.britannica.com/topic/Ndebele-South-African-people\n- https://www.metmuseum.org/art/collection/search/320627\n- https://www.vukuzenzele.gov.za/class-her-own\n- https://doi.org/10.1108/978-1-64802-117-620251004\n- https://www.metmuseum.org/art/collection/search/320630\n\n### 8. nogai-traditional — 诺盖伊斯兰与草原民间祈福传统（Nogai／Nogay）\n仪式：Sabantuy 春耕节庆与共餐（公共文化层）；Edige 等英雄史诗演唱（公共文化层）；Mazar ziyarat 与 Kurban CONCEPT（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Nogay\n- https://doi.org/10.47500/2025.v24.i4.05\n- https://doi.org/10.22378/2313-6197.2024-12-4.897-914\n- https://dx.doi.org/10.3389/fcomm.2025.1693748\n\n### 9. occitan-camargue-folk — 奥克／卡马格民间天主教与圣玛丽—萨拉朝圣（Occitan／Camargue）\n仪式：五月萨拉入海与圣女玛丽朝圣（公共层）；Gardians 牧人护卫与地下室萨拉敬礼（公共／部分敏感）；罗姆音乐／舞蹈文化层（公共文化层）\n当前来源：\n- https://www.villes-sanctuaires.com/en/villes-sanctuaires/saintes-maries-mer\n- [WEAK] https://www.britannica.com/topic/Romani\n- https://pop.culture.gouv.fr/notice/joconde/M0903000487\n- https://pop.culture.gouv.fr/notice/joconde/M0903004817\n- https://pop.culture.gouv.fr/notice/museo/M0927\n\n### 10. ovambo-traditional — 奥万博传统宗教与卡隆加祈福（Ovambo／Ambo）\n仪式：Oshituthi Shomagongo 马鲁拉节与 Kalunga（公共／概念层）；路德宗堂区礼拜与生命礼仪（公共／当代层）；Olufuko CONCEPT ONLY＋Okuruwo 邻族区分说明（高度敏感）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Ambo-people\n- https://www.vestiges-journal.info/CSACMonog/Davies_thesis/chap1.pdf\n- https://ich.unesco.org/en/RL/oshituthi-shomagongo-marula-fruit-festival-01089\n- https://repository.unam.edu.na/server/api/core/bitstreams/5ae2a1fd-0027-4b62-b4dd-6b9d7236055c/content\n- https://digital.unam.edu.na/bitstream/handle/11070.1/20232/Nghifikwa_2023.pdf?sequence=1&isAllowed=y\n\n### 11. piedmontese-folk — 皮埃蒙特民间天主教与朝圣祈福（Piedmontese）\n仪式：Sacri Monti／Varallo 圣山朝圣（概念层）；Oropa 黑圣母朝圣（概念层）；都灵圣骸布与主保节巡游（概念层）\n当前来源：\n- [WEAK] https://www.britannica.com/topic/Shroud-of-Turin\n- https://www.sacrimonti.org/en/home\n- https://www.santuariodioropa.it/en/la-storia-del-santuario-2/\n- https://sindone.org/\n\n### 12. portuguese-romarias — 葡萄牙罗马里亚朝圣与民间祈福（Portuguese Romarias／Fátima）\n仪式：法蒂玛 5／10 月 13 日朝圣与蜡烛游行（公开朝圣层）；维亚纳阿戈尼亚等地方罗马里亚（渔民—村民朝圣层）；蜡制器官等 ex-voto 还愿（民俗—虔敬层）\n当前来源：\n- [WEAK] https://www.britannica.com/event/Our-Lady-of-Fatima\n- https://www.fatima.pt/en/pages/organizing-a-pilgrimage-to-the-shrine\n- https://folkways-media.si.edu/docs/folkways/artwork/UNES08317.pdf\n- https://www.fatima.pt/pt/news/d-jose-manuel-imbamba-preside-a-peregrinacao-internacional-aniversaria-de-setembro\n- https://www.patrimoniocultural.gov.pt/2025/02/patrimonio-cultural-ip-inscreve-romaria-de-s-bento-do-cando-no-inventario-nacional-do-patrimonio-cultural-imaterial/\n- https://www.patrimoniocultural.gov.pt/2026/06/vela-votiva-de-santa-marta-de-portuzelo-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/\n- https://matrizpci.patrimoniocultural.gov.pt/InventarioNacional/DetalheFicha/640?dirPesq=3\n\n对每个选中 slug 给出 2–4 条新的、公开可核验的 URL，并附一句中文说明覆盖内容与可信度理由。来源优先 UNESCO 非遗名录、国家级非遗名录、与具体传统／节庆／朝圣地／社群直接相关的官方机构、博物馆／大学／档案馆及主题确切的 Crossref DOI。\n\n明确禁止：Britannica 地点（/place/）或泛概览页及其他 Britannica 泛概览、encyclopedia.com、everyculture.com、Wikipedia 或任何 wiki 概览页、101lasttribes／joshuaproject 等部族目录页、与传统无实质关联的泛泛政府报告或通用 UNESCO 专题页。硬性要求：URL 必须公开可访问并可独立核验；DOI 须能在 Crossref 查到且主题相符；网页须返回 HTTP 200，PDF 须确认正文含该传统关键词；不得与卡片现有 URL 或 SOURCES.md 已有 URL 重复；宁缺毋滥；只补「## 参考来源」，不改卡片正文、档位与仪式内容。\n\n输出格式：\nslug:\n建议新增 URL（每行一条，附一句中文说明）：\n- <URL> — <说明>\n",
@@ -270,5 +834,14 @@
     "只补来源，不改卡片正文、档位或仪式内容；URL、DOI、网页与 PDF 均须公开可核验。"
   ],
   "source_map": "/tmp/nb-source-hunt-c43.json",
-  "remaining_estimate": 31
+  "remaining_estimate": 19,
+  "input_url_count": 38,
+  "unique_input_url_count": 38,
+  "card_url_added_count": 37,
+  "card_url_removed_count": 12,
+  "sources_unique_added_count": 36,
+  "sources_unique_url_added_count": 36,
+  "remaining_candidates_after_batch": 19,
+  "applied_at": "2026-09-20",
+  "weak_link_c_count_after_c43": 19
 }

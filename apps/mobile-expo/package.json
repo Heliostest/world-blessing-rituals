@@ -4,6 +4,12 @@
   "private": true,
   "main": "index.ts",
   "scripts": {
+    "assets:prepare": "node ../../scripts/prepare-app-assets.mjs",
+    "prestart": "npm run assets:prepare",
+    "preandroid": "npm run assets:prepare",
+    "preios": "npm run assets:prepare",
+    "preweb": "npm run assets:prepare",
+    "eas-build-post-install": "npm run assets:prepare",
     "start": "expo start --go",
     "android": "expo start --android",
     "ios": "expo start --ios",

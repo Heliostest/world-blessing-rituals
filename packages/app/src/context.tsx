@@ -1,5 +1,6 @@
 import { createContext, useContext } from "react";
-import type { Action, State } from "@wbr/core";
+import type { Action, State, ReturnMethod } from "@wbr/core";
+export type FulfillmentDraft = { method: ReturnMethod; text: string };
 export type Route = {
   page:
     | "today"
@@ -8,11 +9,14 @@ export type Route = {
     | "me"
     | "new"
     | "wish"
+    | "fulfill"
+    | "note"
     | "ritual"
     | "complete"
     | "collection"
     | "history";
   id?: string;
+  wishId?: string;
 };
 export type AppContext = {
   state: State;
@@ -21,6 +25,8 @@ export type AppContext = {
   back(): void;
   feedback(): void;
   active: boolean;
+  fulfillmentDrafts: Record<string, FulfillmentDraft>;
+  setFulfillmentDraft(id: string, draft?: FulfillmentDraft): void;
 };
 export const Context = createContext<AppContext>(null!);
 export const useApp = () => useContext(Context);

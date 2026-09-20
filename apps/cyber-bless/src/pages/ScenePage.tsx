@@ -39,7 +39,14 @@ export function ScenePage() {
     wrap.replaceChildren(canvas, overlay)
 
     const onComplete = () => {
-      if (!cancelled) setComplete(true)
+      if (cancelled) return
+      // Stop WebGL/RAF immediately on complete (stage may stay mounted until retry/exit)
+      cancelAnimationFrame(raf)
+      raf = 0
+      overlay.removeEventListener('scene:complete', onComplete)
+      instance?.dispose()
+      instance = null
+      setComplete(true)
     }
     overlay.addEventListener('scene:complete', onComplete)
 

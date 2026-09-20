@@ -6,8 +6,13 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev -w @wbr/cyber-bless",
+    "dev": "npm run dev -w @wbr/cyber-bless --",
     "build": "npm run build -w @wbr/cyber-bless",
-    "test": "npm run test -w @wbr/gestures --if-present && npm run test -w @wbr/shared --if-present && npm run test -w @wbr/scenes --if-present"
+    "test": "npm run test -w @wbr/core && npm run test -w @wbr/runtime && npm run test -w @wbr/gestures && npm run test -w @wbr/shared && npm run test -w @wbr/scenes",
+    "mobile:start": "npm run start -w @wbr/mobile",
+    "mobile:android": "npm run android -w @wbr/mobile",
+    "mobile:ios": "npm run ios -w @wbr/mobile",
+    "mobile:verify": "npm run typecheck -w @wbr/mobile && node scripts/check-mobile-framework.mjs",
+    "verify": "npm test && npm run build && npm run mobile:verify"
   }
 }

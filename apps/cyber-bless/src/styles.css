@@ -144,7 +144,7 @@ a:hover {
   height: calc(100dvh - 48px);
   min-height: 320px;
   overflow: hidden;
-  background: #0b1a22;
+  background: radial-gradient(circle at 50% 35%, #171126, #05060a 75%);
   touch-action: none;
   user-select: none;
 }
@@ -223,11 +223,15 @@ a:hover {
   border-radius: 50%;
   background: #3a4a5c;
   border: 1px solid #6a7a8c;
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .scene-step-dot[data-state='active'] {
   background: #7ec8ff;
   border-color: #a8dcff;
+  box-shadow: 0 0 8px rgba(126, 200, 255, 0.7);
+  transform: scale(1.15);
 }
 
 .scene-step-dot[data-state='done'] {
@@ -246,6 +250,7 @@ a:hover {
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  animation: scene-fade-in 0.4s ease;
 }
 
 .scene-bow-tap {
@@ -260,10 +265,27 @@ a:hover {
   color: #e8eef6;
   font: inherit;
   cursor: pointer;
+  box-shadow: 0 0 0 rgba(126, 200, 255, 0);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  animation: scene-fade-in 0.4s ease;
 }
 
 .scene-bow-tap:hover {
   background: #24508a;
+  box-shadow: 0 0 14px rgba(126, 200, 255, 0.45);
+}
+
+.scene-bow-tap:active {
+  transform: translateX(-50%) scale(0.96);
+}
+
+@keyframes scene-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .scene-hit-layer {
@@ -279,6 +301,7 @@ a:hover {
   bottom: 100px;
   transform: translateX(-50%);
   width: min(320px, calc(100% - 24px));
+  animation: scene-fade-in 0.4s ease;
 }
 
 .scene-wish-slot form {
@@ -294,6 +317,13 @@ a:hover {
   background: #15202b;
   color: #e8eef6;
   font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scene-wish-slot input:focus {
+  outline: none;
+  border-color: #7ec8ff;
+  box-shadow: 0 0 10px rgba(126, 200, 255, 0.4);
 }
 
 .scene-wish-slot button {
@@ -304,6 +334,12 @@ a:hover {
   color: #e8eef6;
   font: inherit;
   cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scene-wish-slot button:hover {
+  background: #24508a;
+  box-shadow: 0 0 14px rgba(126, 200, 255, 0.45);
 }
 
 .scene-error {
@@ -385,6 +421,18 @@ a.gallery-card-link:hover {
   border: 1px solid #3a4a5c;
   text-align: center;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  animation: scene-pop-in 0.35s ease;
+}
+
+@keyframes scene-pop-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .scene-complete h2 {

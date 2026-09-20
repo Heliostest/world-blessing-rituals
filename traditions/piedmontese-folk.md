@@ -50,7 +50,9 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Shroud-of-Turin
 - https://www.sacrimonti.org/en/home
 - https://www.santuariodioropa.it/en/la-storia-del-santuario-2/
 - https://sindone.org/
+- https://www.sacrimonti.org/en/sacro-monte-di-oropa
+- https://www.sacrimonti.org/en/sacro-monte-di-varallo
+- https://www.santuariodioropa.it/il-sacro-monte/

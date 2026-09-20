@@ -50,12 +50,10 @@
 ## 参考来源
 
 - https://sahistory.org.za/article/ndebele
-- https://www.britannica.com/topic/Ndebele-South-African-people
-
 - https://www.metmuseum.org/art/collection/search/320627
-
 - https://www.vukuzenzele.gov.za/class-her-own
-
 - https://doi.org/10.1108/978-1-64802-117-620251004
-
 - https://www.metmuseum.org/art/collection/search/320630
+- https://www.iziko.org.za/news/iziko-museums-of-south-africa-presentsthen-i-knew-i-was-good-at-painting-esthermahlangu-a-retrospective/
+- https://doi.org/10.1080/23311983.2025.2457828
+- https://doi.org/10.25159/2663-6697/19708

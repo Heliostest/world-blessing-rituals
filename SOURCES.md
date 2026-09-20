@@ -4081,3 +4081,42 @@
 - https://www.ihchina.cn/project_details/14970.html
 - https://www.ihchina.cn/project_details/23616/
 - https://www.ihchina.cn/project_details/12979/
+
+## 增补传统（Notebook source hunt C43：洛齐—葡萄牙罗马里亚）
+
+- https://www.mot.gov.zm/?p=3367
+- https://www.mot.gov.zm/?p=3894
+- https://www.limulungacouncil.gov.zm/?p=2265
+- https://www.mlgrd.gov.zm/?p=9368
+- https://elections.gov.im/elections-and-voting-latest-news/2026/tynwald-day-mock-ballot-favourite-manx-folklore-character/
+- https://manxnationalheritage.im/whats-on/detail/yn-chruinnaght-2/
+- https://manxnationalheritage.im/shop/product/hop-tu-naa-festival-2026-at-cregneash-31st-october-10am-12pm-or-1pm-3pm/
+- https://doi.org/10.7592/Incantatio2025_13_Miller
+- https://www.santuarioloreto.va/it/news/2021/9-dicembre-festa-della-venuta-accendi-una-candela-nella-tua-casa.html
+- https://www.santuarioloreto.va/it/news/2026/il-santuario-della-santa-casa-si-prepara-alla-solennita-della-na.html
+- http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_6493347334541/MODI
+- https://doi.org/10.1108/978-1-80043-900-920211006
+- https://nchdb.boch.gov.tw/city/Yunlin/assets/overview/folklore/20240618000001/
+- https://nchdb.boch.gov.tw/assets/overview/folklore/20090203000001
+- https://nchdb.boch.gov.tw/assets/overview/folklore/20140306000001
+- https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11460
+- https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18677
+- http://paci.iccd.beniculturali.it/iccd/cards/viewPaci/ICCD_MODI_2878131212751/MODI
+- https://www.mairie.mc/la-sainte-devote-sainte-patronne-de-monaco
+- https://www.mairie.mc/la-saint-jean
+- https://monservicepublic.gouv.mc/actualites/les-celebrations-de-la-sainte-devote4
+- https://www.iziko.org.za/news/iziko-museums-of-south-africa-presentsthen-i-knew-i-was-good-at-painting-esthermahlangu-a-retrospective/
+- https://doi.org/10.1080/23311983.2025.2457828
+- https://doi.org/10.25159/2663-6697/19708
+- https://doi.org/10.65076/3105-0042.2025.1.122.139
+- https://doi.org/10.53871/2078-8134.2021.4-10
+- https://doi.org/10.1163/1573-3912_ei3_COM_41065
+- https://pop.culture.gouv.fr/notice/palissy/PM13003059
+- https://pop.culture.gouv.fr/notice/joconde/M0903005109
+- https://doi.org/10.1080/03057070802685593
+- https://www.sacrimonti.org/en/sacro-monte-di-oropa
+- https://www.sacrimonti.org/en/sacro-monte-di-varallo
+- https://www.santuariodioropa.it/il-sacro-monte/
+- https://www.patrimoniocultural.gov.pt/2025/09/patrimonio-cultural-i-p-nas-festas-de-nossa-senhora-dos-remedios-lamego/
+- https://www.patrimoniocultural.gov.pt/2025/09/procissao-noturna-de-nossa-senhora-do-fetal-inscrita-no-inventario-nacional-do-patrimonio-cultural-imaterial/
+- https://360.patrimoniocultural.gov.pt/pt/explorar/itens/museu-etnografico-dr-joaquim-manso/ex-voto-nossa-senhora-de-nazare

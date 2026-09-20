@@ -55,11 +55,10 @@
 ## 参考来源
 
 - https://ich.unesco.org/en/RL/mazu-belief-and-customs-00227
-- https://www.britannica.com/topic/Matsu
 - https://www.fujian.gov.cn/english/cultureandtravel/cultureandarts/202508/t20250807_6988988.htm
-
 - https://nchdb.boch.gov.tw/assets/overview/folklore/20100618000008
-
 - https://nchdb.boch.gov.tw/assets/overview/folklore/20100618000007
-
 - https://nchdb.boch.gov.tw/assets/overview/folklore/20130118000007
+- https://nchdb.boch.gov.tw/city/Yunlin/assets/overview/folklore/20240618000001/
+- https://nchdb.boch.gov.tw/assets/overview/folklore/20090203000001
+- https://nchdb.boch.gov.tw/assets/overview/folklore/20140306000001

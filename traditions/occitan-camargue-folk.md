@@ -51,10 +51,9 @@
 ## 参考来源
 
 - https://www.villes-sanctuaires.com/en/villes-sanctuaires/saintes-maries-mer
-- https://www.britannica.com/topic/Romani
-
 - https://pop.culture.gouv.fr/notice/joconde/M0903000487
-
 - https://pop.culture.gouv.fr/notice/joconde/M0903004817
-
 - https://pop.culture.gouv.fr/notice/museo/M0927
+- https://pop.culture.gouv.fr/notice/palissy/PM13003059
+- https://pop.culture.gouv.fr/notice/joconde/M0903005109
+- https://pop.culture.gouv.fr/notice/joconde/M0903002336

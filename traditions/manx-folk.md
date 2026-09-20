@@ -49,8 +49,11 @@
 
 ## 参考来源
 
-- https://www.britannica.com/topic/Church-of-England
 - https://manxnationalheritage.im/visit-2/about-the-isle-of-man/tynwald/
 - https://www.visitisleofman.com/blog/read/2024/10/fun-facts-about-hop-tu-naa-on-the-isle-of-man-the-original-halloween-festival-b113
 - https://manxnationalheritage.im/whats-on/detail/hop-tu-naa-festival/
 - https://www.visitisleofman.com/experience/kirk-maughold-church-p1312271
+- https://elections.gov.im/elections-and-voting-latest-news/2026/tynwald-day-mock-ballot-favourite-manx-folklore-character/
+- https://manxnationalheritage.im/whats-on/detail/yn-chruinnaght-2/
+- https://manxnationalheritage.im/shop/product/hop-tu-naa-festival-2026-at-cregneash-31st-october-10am-12pm-or-1pm-3pm/
+- https://doi.org/10.7592/Incantatio2025_13_Miller

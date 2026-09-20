@@ -3,6 +3,7 @@ import { Home } from './pages/Home'
 import { Gallery } from './pages/Gallery'
 import { About } from './pages/About'
 import { Playground } from './pages/Playground'
+import { ScenePage } from './pages/ScenePage'
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
         <Route path="/playground/:gesture" element={<Playground />} />
+        <Route path="/scene/:sceneId" element={<ScenePage />} />
       </Routes>
     </BrowserRouter>
   )

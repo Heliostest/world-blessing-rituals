@@ -45,12 +45,14 @@ export const sceneRegistry: SceneMeta[] = [
 ]
 
 /**
- * Dynamic-import implemented scenes in later tasks.
- * Until Tasks 8–9, all five pilots throw.
+ * Dynamic-import implemented scenes.
+ * celtic-folk-spring is wired; remaining pilots throw until later tasks.
  */
 export async function loadScene(id: string): Promise<SceneModule> {
-  // Placeholders for future dynamic imports:
-  // case 'celtic-folk-spring': return import('./celtic-folk-spring')
-  // case 'theravada-water': return import('./theravada-water')
-  throw new Error('scene not implemented: ' + id)
+  switch (id) {
+    case 'celtic-folk-spring':
+      return import('./celtic-folk-spring')
+    default:
+      throw new Error('scene not implemented: ' + id)
+  }
 }

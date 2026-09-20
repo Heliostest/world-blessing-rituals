@@ -44,12 +44,19 @@ describe('sceneRegistry', () => {
 })
 
 describe('loadScene', () => {
-  it('throws scene not implemented for pilot ids until scenes land', async () => {
-    await expect(loadScene('celtic-folk-spring')).rejects.toThrow(
-      /scene not implemented: celtic-folk-spring/,
-    )
+  it('resolves celtic-folk-spring module with matching meta', async () => {
+    const mod = await loadScene('celtic-folk-spring')
+    expect(mod.meta.id).toBe('celtic-folk-spring')
+    expect(mod.meta.title).toBe('泉边一念')
+    expect(typeof mod.create).toBe('function')
+  })
+
+  it('throws scene not implemented for other pilot ids', async () => {
     await expect(loadScene('theravada-water')).rejects.toThrow(
       /scene not implemented: theravada-water/,
+    )
+    await expect(loadScene('shinto-torii')).rejects.toThrow(
+      /scene not implemented: shinto-torii/,
     )
   })
 })

@@ -786,6 +786,11 @@
 
 ## 赛博祈福 App（开发中）
 
+### 产品研究草稿
+
+- [每日小仪式候选（2026-09-20）](specs/2026-09-20-daily-micro-rituals-candidates.md)（木鱼／纸鹤／灯类缺口与 15 项对照；附 `specs/notes-mokugyo.md`、`notes-origami-crane.md`、`notes-wish-lamps-disambiguation.md`）
+
+
 手机端壳：`apps/cyber-bless`。设计规格：`specs/2026-09-20-cyber-bless-app-design.md`。
 
 ### 本地开发

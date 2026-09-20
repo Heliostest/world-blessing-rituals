@@ -11,6 +11,49 @@ const add = {
 } as const;
 
 describe("personal ritual loop", () => {
+  it("persists wish category and planned return method, while accepting older saves", () => {
+    const s = reduce(createState(), {
+      ...add,
+      category: "work",
+      returnMethod: "ritual",
+    });
+    expect(restore(JSON.stringify(s)).wishes[0]).toMatchObject({
+      category: "work",
+      returnMethod: "ritual",
+    });
+    expect(
+      restore(JSON.stringify(reduce(createState(), add))).wishes,
+    ).toHaveLength(1);
+  });
+  it("requires a completed linked ritual after realization for ritual-based fulfillment", () => {
+    let s = reduce(reduce(createState(), add), {
+      type: "wish.realize",
+      id: "w1",
+      at,
+    });
+    const done = {
+      type: "wish.fulfill",
+      id: "w1",
+      noteId: "thanks",
+      text: "折好纸鹤，谢谢自己",
+      method: "ritual",
+      at,
+    } as const;
+    expect(() => reduce(s, done)).toThrow();
+    s = reduce(s, {
+      type: "ritual.start",
+      id: "r-return",
+      ritual: "crane",
+      wishId: "w1",
+      at,
+    });
+    for (let i = 0; i < 4; i++) s = reduce(s, { type: "ritual.step" });
+    s = reduce(s, { type: "ritual.finish", id: "r-return", at });
+    s = reduce(s, done);
+    expect(s.wishes[0].returnMethod).toBe("ritual");
+    expect(s.collectibles.filter((c) => c.kind === "badge")).toHaveLength(1);
+    expect(reduce(s, done)).toBe(s);
+  });
   it("creates a private wish, records progress and fulfills it exactly once", () => {
     let s = reduce(createState(), add);
     s = reduce(s, {

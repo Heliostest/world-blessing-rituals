@@ -44,6 +44,13 @@ export const sceneRegistry: SceneMeta[] = [
   },
 ]
 
+const IMPLEMENTED = new Set(['celtic-folk-spring', 'theravada-water'])
+
+/** Whether `loadScene(id)` can resolve a module. */
+export function isSceneImplemented(id: string): boolean {
+  return IMPLEMENTED.has(id)
+}
+
 /**
  * Dynamic-import implemented scenes.
  * celtic-folk-spring + theravada-water are wired; remaining pilots throw until later tasks.

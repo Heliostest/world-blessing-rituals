@@ -2,7 +2,7 @@
 
 - **日期：** 2026-09-20
 - **仓库：** `Heliostest/world-blessing-rituals`
-- **状态：** 设计已锁定，待实现计划
+- **状态：** 实现进行中 · 试点两景已通（celtic-folk-spring / theravada-water）
 - **产品定位：** 手机端「赛博祈福 / 许愿」App — 以致敬小品手势进入多个 Three.js 交互场景；**不是**真仪复现或通关养成。
 
 ## 背景与目标

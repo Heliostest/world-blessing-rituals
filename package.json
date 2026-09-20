@@ -1,0 +1,13 @@
+{
+  "name": "world-blessing-rituals",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @wbr/cyber-bless",
+    "build": "npm run build -w @wbr/cyber-bless",
+    "test": "npm run test -w @wbr/gestures --if-present && npm run test -w @wbr/shared --if-present"
+  }
+}

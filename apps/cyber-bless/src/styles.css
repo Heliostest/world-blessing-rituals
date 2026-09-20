@@ -1,0 +1,139 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  background: #0b0f14;
+  color: #e8eef6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+a {
+  color: #7ec8ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #1e2a38;
+  background: #111820;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.page {
+  padding: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.disclaimer {
+  padding: 12px;
+  border: 1px solid #3a4a5c;
+  border-radius: 8px;
+  background: #15202b;
+  margin: 12px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #3a7bd5;
+  background: #1a3a66;
+  color: #e8eef6;
+  cursor: pointer;
+  font: inherit;
+}
+
+.btn:hover {
+  background: #24508a;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.list li {
+  margin: 8px 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #15202b;
+}
+
+.playground-wrap {
+  position: relative;
+  width: 100%;
+  height: calc(100dvh - 48px);
+  min-height: 320px;
+  overflow: hidden;
+  touch-action: none;
+  background: radial-gradient(circle at 50% 30%, #1a3048, #0b0f14 70%);
+  user-select: none;
+}
+
+.playground-stage {
+  width: 100%;
+  height: 100%;
+}
+
+.playground-hud {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.playground-hud a,
+.playground-hud .gesture-links {
+  pointer-events: auto;
+}
+
+.gesture-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.status {
+  align-self: flex-start;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.55);
+  font-size: 14px;
+}
+
+.hint {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.muted {
+  opacity: 0.7;
+  font-size: 14px;
+}

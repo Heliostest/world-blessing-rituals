@@ -30,6 +30,8 @@ export function createGyro(opts: GyroOpts): GestureHandle {
   let holdAccumMs = 0
   let holdFired = false
   let disposed = false
+  let gestureArmed = false
+  let permissionRequested = false
 
   const maybeHold = () => {
     if (!bowed || holdFired) return
@@ -86,6 +88,41 @@ export function createGyro(opts: GyroOpts): GestureHandle {
     window.addEventListener('deviceorientation', onOrientation)
   }
 
+  const detachGestureArm = () => {
+    if (!el || !gestureArmed) return
+    el.removeEventListener('pointerdown', onFirstUserGesture)
+    el.removeEventListener('click', onFirstUserGesture)
+    gestureArmed = false
+  }
+
+  const onFirstUserGesture = () => {
+    if (disposed || permissionRequested) return
+    permissionRequested = true
+    detachGestureArm()
+
+    const DOE = getDOE()
+    if (!DOE || typeof DOE.requestPermission !== 'function') {
+      startListening()
+      return
+    }
+    void DOE.requestPermission()
+      .then((state) => {
+        if (disposed) return
+        if (state === 'granted') startListening()
+        else enableFallback()
+      })
+      .catch(() => {
+        if (!disposed) enableFallback()
+      })
+  }
+
+  const armGestureForPermission = () => {
+    if (!el || gestureArmed || permissionRequested) return
+    gestureArmed = true
+    el.addEventListener('pointerdown', onFirstUserGesture)
+    el.addEventListener('click', onFirstUserGesture)
+  }
+
   const setupOrientation = () => {
     const DOE = getDOE()
     if (!DOE) {
@@ -93,15 +130,8 @@ export function createGyro(opts: GyroOpts): GestureHandle {
       return
     }
     if (typeof DOE.requestPermission === 'function') {
-      void DOE.requestPermission()
-        .then((state) => {
-          if (disposed) return
-          if (state === 'granted') startListening()
-          else enableFallback()
-        })
-        .catch(() => {
-          if (!disposed) enableFallback()
-        })
+      // Safari requires requestPermission from a user gesture — arm, do not call now.
+      armGestureForPermission()
     } else {
       startListening()
     }
@@ -110,6 +140,7 @@ export function createGyro(opts: GyroOpts): GestureHandle {
   return {
     mount(target) {
       disposed = false
+      permissionRequested = false
       el = target
       setupOrientation()
     },
@@ -120,6 +151,7 @@ export function createGyro(opts: GyroOpts): GestureHandle {
     },
     dispose() {
       disposed = true
+      detachGestureArm()
       if (listening) {
         window.removeEventListener('deviceorientation', onOrientation)
         listening = false
@@ -132,6 +164,7 @@ export function createGyro(opts: GyroOpts): GestureHandle {
       el = null
       bowed = false
       holdAccumMs = 0
+      permissionRequested = false
     },
     setEnabled(on) {
       enabled = on

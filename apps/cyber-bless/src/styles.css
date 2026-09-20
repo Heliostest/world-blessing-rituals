@@ -266,6 +266,13 @@ a:hover {
   background: #24508a;
 }
 
+.scene-hit-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: auto;
+  touch-action: none;
+}
+
 .scene-wish-slot {
   position: absolute;
   left: 50%;

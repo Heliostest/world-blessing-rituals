@@ -789,6 +789,7 @@
 ### 产品研究草稿
 
 - [每日小仪式候选（2026-09-20）](specs/2026-09-20-daily-micro-rituals-candidates.md)（木鱼／纸鹤／灯类缺口与 15 项对照；附 `specs/notes-mokugyo.md`、`notes-origami-crane.md`、`notes-wish-lamps-disambiguation.md`）
+- [每日小仪式候选 Batch 2（2026-09-21）](specs/2026-09-21-daily-micro-rituals-candidates-b2.md)（达摩点睛／milagros／御守循环／红绳分层／节分／意大利绘牌／圣布里吉德十字／phuang malai／복조리／短册；加深木鱼·纸鹤笔记）
 
 
 手机端壳：`apps/cyber-bless`。设计规格：`specs/2026-09-20-cyber-bless-app-design.md`。

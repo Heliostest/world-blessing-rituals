@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "npm run dev -w @wbr/cyber-bless --",
     "build": "npm run build -w @wbr/cyber-bless",
-    "test": "npm run test -w @wbr/core && npm run test -w @wbr/runtime && npm run test -w @wbr/gestures && npm run test -w @wbr/shared && npm run test -w @wbr/scenes",
+    "test": "npm run test -w @wbr/core && npm run test -w @wbr/runtime && npm run test -w @wbr/app && npm run test -w @wbr/gestures && npm run test -w @wbr/shared && npm run test -w @wbr/scenes && node scripts/check-woodfish-assets.mjs",
     "mobile:start": "npm run start -w @wbr/mobile",
     "mobile:android": "npm run android -w @wbr/mobile",
     "mobile:ios": "npm run ios -w @wbr/mobile",

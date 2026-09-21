@@ -6,3 +6,4 @@ dist/
 *.tsbuildinfo
 artifacts/
 apps/mobile-expo/public/
+design/woodfish/*.blend[0-9]

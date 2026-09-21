@@ -24,6 +24,7 @@ export type AppContext = {
   dispatch(a: Action): boolean;
   back(): void;
   feedback(): void;
+  prepareFeedback(): void;
   active: boolean;
   fulfillmentDrafts: Record<string, FulfillmentDraft>;
   setFulfillmentDraft(id: string, draft?: FulfillmentDraft): void;

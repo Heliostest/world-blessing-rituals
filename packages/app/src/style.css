@@ -1047,6 +1047,76 @@ button:hover:not(:disabled) {
   width: calc(100% + 16px);
   margin: 0 -8px;
 }
+.woodfish-visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.34;
+  background:
+    radial-gradient(ellipse 46% 48% at 30% 38%, #ffe2ad66, transparent 100%),
+    radial-gradient(ellipse 42% 42% at 70% 54%, #f5c78a30, transparent 100%);
+}
+.woodfish-object {
+  touch-action: none;
+  cursor: grab;
+}
+.woodfish-object:active {
+  transform: none;
+  cursor: grabbing;
+}
+.woodfish-canvas,
+.woodfish-fallback {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.woodfish-canvas {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+.woodfish-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.woodfish-visual[data-renderer="ready"] .woodfish-canvas {
+  opacity: 1;
+}
+.woodfish-visual[data-renderer="ready"] .woodfish-fallback {
+  visibility: hidden;
+}
+.woodfish-status {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  color: #947a60;
+}
+.woodfish-pause {
+  display: block;
+  margin: 12px auto 0;
+  padding: 6px 20px;
+  background: none;
+  color: #91785c;
+  font-size: 12px;
+}
+.woodfish-inspection {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.woodfish-inspection select {
+  padding: 6px;
+}
+.ritual-object:focus-visible {
+  outline: 2px solid #ca8b36;
+  outline-offset: 3px;
+  border-radius: 24px;
+}
 .ritual-counter {
   text-align: center;
   font-size: 72px;

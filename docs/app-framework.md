@@ -22,7 +22,7 @@ npm run mobile:verify
 
 - `packages/core`：纯 TypeScript 状态与动作，心愿、日志、静态仪式进度、奖励和存档格式。
 - `packages/runtime`：异步存储接口、串行保存、失败重试、React 无关的订阅式 store。
-- `packages/app`：共享四页导航、详情与表单、静态仪式和统一主题。
+- `packages/app`：共享四页导航、详情与表单、Three.js 木鱼、步骤式纸鹤/心愿灯和统一主题。
 - `apps/cyber-bless`：Vite 网页入口，localStorage 适配。旧场景保留在 `/dev/gallery`，按需加载。
 - `apps/mobile-expo`：Expo 原生容器、AsyncStorage、震动、安全区、前后台、Android 返回和 WebView 错误恢复。
 
@@ -32,7 +32,23 @@ npm run mobile:verify
 
 用户已提供两张原始 UI 参考图，保存在 `assets/reference-ui/`。`packages/app/src/art.tsx` 使用非破坏性的 CSS 裁切复用木鱼、纸鹤、灯笼和纪念章；保留原图像素，边缘通过遮罩和背景混合处理，并非透明抠图。素材来源、字体许可证与子集生成方式见 `assets/README.md`。
 
-页面遵循奶油底、深棕粗黑标题、黄色主按钮、圆角薄边卡片的设计，新增许愿、心愿详情、还愿和仪式完成页按参考图布局。字体使用本地 Noto Sans SC 可变字体近似原图字形与字重；保留「今日、心愿、小天地、我的」四个入口。当前不含 Three.js 新场景，不加载外部图片和字体。静态仪式只是步骤式交互，不能视为完整折纸手势或 3D 体验。
+页面遵循奶油底、深棕粗黑标题、黄色主按钮、圆角薄边卡片的设计，新增许愿、心愿详情、还愿和仪式完成页按参考图布局。字体使用本地 Noto Sans SC 可变字体近似原图字形与字重；保留「今日、心愿、小天地、我的」四个入口。木鱼仪式页按需加载 Three.js 场景；首页、完成页仍用原参考图裁切。纸鹤和心愿灯保持步骤式交互，不能视为完整折纸手势。不加载外部图片和字体。
+
+## Three.js 木鱼
+
+`woodfish.tsx` 管理挂载和静态回退，`woodfish-scene.ts` 管理相机、照明、动画与场景资源，`woodfish-model.ts` 解析 Blender 导出的标准 GLB 并释放纹理/ImageBitmap。当前加载 `woodfish/blender-v2/woodfish.glb`，包含木鱼与木槌、真实 UV、切线和内嵌 PBR 贴图；不再使用旧版三向投射。颜色由内置 image_gen 参考 Blender UV 布局和初始基色进行图生图，法线与粗糙度在 Blender 从同一来源制作、烘焙，AO 来自真实几何。可编辑工程、提示词、桥接方式与材质局限见 `design/woodfish/README.md`。旧版资产保留。
+
+木鱼使用 Pointer Events 区分鼠标悬浮、触屏拖动和轻点；捕获主指针以处理区域外松手。触摸最大位移 ≤8px、时长 ≤350ms 才认作轻点，拖动、长按、多指和 pointercancel 不敲击；鼠标左键单击和 Enter/Space 仍可敲击。触屏离开立即取消跟随，鼠标离开区域也停止跟随。仅场景按钮使用 touch-action:none，其他区域正常滚动。
+
+敲击通过原生 button click 统一进入 `ritual.strike`，原子开始并计步，达到上限时不再写存档或触发反馈。计数立即保存，动画按接受顺序排队；声音和触觉在实际接触的时间线节点触发，AudioContext 在原始用户手势中预先解锁。12 次后用户点击完成，仍由已有幂等结算提交 10 点奖励、收藏物和心愿日志。暂停/后台冻结当前时间线与队列，恢复后继续；退出页面取消未播完的动画和声音，但已计入的次数保留。
+
+动画由本地打包的 anime.js 4.5.0 驱动，不加载 CDN。鼠标跟随使用 90ms 缓动，触屏直接跟随并在松手停住；敲击依次为 170ms 抬槌定位、95ms 加速下击、95ms 减速反弹、140ms 阻尼停稳。射线选择木鱼上部实体表面，槌头沿表面法线留出球体半径；摆动围绕固定握点，接触角度下限为零，反弹幅度低于下击幅度。重新定位时向观察者方向抬起，避免横向穿过木壳。木鱼保持刚体尺寸，只做 0.0025rad 的衰减微振。属于受接触约束的物理近似动画，不是完整刚体动力学求解器。
+
+渲染 DPR 上限 1.75、木鱼与木槌合计 93,816 三角面、GLB 约 6.90 MiB；木鱼颜色 1254px、法线/打包 AO 粗糙度 1024px，木槌颜色 1024px、法线/打包 AO 粗糙度 512px；主光阴影 1024px，两盏补光阴影各 512px；静止时无持续渲染循环。ResizeObserver、浏览器可见性和 Expo active 属性控制重绘/暂停，暂停时加载或改变尺寸仅补一帧静态画面。卸载时释放几何、材质、纹理、阴影、WebGL 上下文和事件；加载失败、着色器失败或上下文丢失后切回可敲击的静态原图。重新进入可重试 3D。减少动态效果设置会关闭 3D 敲击动画。
+
+开发检查：`/?inspectWoodfish=1` 的木鱼页可选择六个视角，正常地址隐藏控件。`python scripts/inspect-woodfish.py` 输出六角度截图；`python scripts/test-woodfish-browser.py` 验证真实浏览器交互（需 Python Playwright 和 Edge，可用 WBR_BROWSER / WBR_URL 指定浏览器与服务地址）。`python scripts/test-woodfish-pointer.py` 使用实际鼠标/CDP 触屏事件检查拖动、释放、接触音效和 anime.js 队列。应用单元测试检查轻点边界、握点到槌头的恒定距离和摆动不穿过接触平面。截图在忽略的 `artifacts/woodfish/`。
+
+本轮验证：50 项单元测试及网格闭合性/绕序/资源预算检查；Vite 生产构建；Expo Android/iOS 嵌入包与本地图片、模型、材质完整性；浏览器触摸/键盘、音效开关、暂停、退出/刷新恢复、35 次同批点击、奖励幂等、模拟前后台、320–1440px 与 DPR、WebGL 丢失和资源失败回退、纸鹤/心愿灯回归。六角度检查覆盖背面、底面和孔口，浏览器无控制台错误。尚未进行物理手机的帧率、触觉、音频、离线启动和 WebView 生命周期验收。
 
 ## 数据与规则
 

@@ -780,9 +780,17 @@
 724. [彭特科斯特传统信仰与瓦努阿图陆地跳祈福](content/traditions/pentecost-traditional.md)
 725. [罗图马传统信仰与波利尼西亚边缘祈福](content/traditions/rotuma-traditional.md)
 
+### 日常小仪式专卡
+
+726. [木鱼（mokugyo）](content/traditions/mokugyo-wooden-fish.md)
+727. [折纸鹤与千羽鶴](content/traditions/origami-crane-senbazuru.md)
+728. [水引（mizuhiki）](content/traditions/mizuhiki.md)
+729. [达摩不倒翁点睛](content/traditions/daruma-eye-painting.md)
+730. [平溪天灯](content/traditions/sky-lantern-pingxi.md)
+
 ### 比较
 
-726. [比较总览](content/traditions/comparative-overview.md)
+731. [比较总览](content/traditions/comparative-overview.md)
 
 ## 赛博祈福 App（开发中）
 

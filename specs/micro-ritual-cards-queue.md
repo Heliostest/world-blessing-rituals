@@ -7,33 +7,32 @@
 
 ## 待写（优先序）
 
-1. mokugyo-wooden-fish — 木鱼
-2. origami-crane-senbazuru — 折纸鹤／千羽鶴
-3. mizuhiki — 水引
-4. daruma-eye-painting — 达摩点睛
-5. sky-lantern-pingxi — 天灯（平溪等）
-6. floating-lantern-loy-krathong — 河灯／水灯（含 Loy Krathong）
-7. milagros — 墨西哥 milagros
-8. tanzaku-tanabata — 七夕短册
-9. yeondeunghoe — 韩国燃灯会
-10. bokjori — 복조리
-11. st-brigids-cross — 圣布里吉德十字
-12. furin-wind-chime — 风铃
-13. setsubun-mamemaki — 节分豆まき
-14. hongsheng-red-string — 红绳／红线（A/B 分层写清）
-15. italian-ex-voto — 意大利绘牌 ex-voto
-16. phuang-malai — 泰国花环
-17. ema-votive-plaque — 绘马（交叉引用 shinto.md）
-18. omikuji — 御神签（交叉引用 shinto.md）
-19. shrine-suzu-bell — 神社铃绪（交叉引用 shinto.md）
-20. omamori-cycle — 御守领受—返还（交叉引用 shinto.md）
-21. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
-22. diya-oil-lamp — Diya（交叉引用 hinduism.md）
-23. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
+1. floating-lantern-loy-krathong — 河灯／水灯（含 Loy Krathong）
+2. milagros — 墨西哥 milagros
+3. tanzaku-tanabata — 七夕短册
+4. yeondeunghoe — 韩国燃灯会
+5. bokjori — 복조리
+6. st-brigids-cross — 圣布里吉德十字
+7. furin-wind-chime — 风铃
+8. setsubun-mamemaki — 节分豆まき
+9. hongsheng-red-string — 红绳／红线（A/B 分层写清）
+10. italian-ex-voto — 意大利绘牌 ex-voto
+11. phuang-malai — 泰国花环
+12. ema-votive-plaque — 绘马（交叉引用 shinto.md）
+13. omikuji — 御神签（交叉引用 shinto.md）
+14. shrine-suzu-bell — 神社铃绪（交叉引用 shinto.md）
+15. omamori-cycle — 御守领受—返还（交叉引用 shinto.md）
+16. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
+17. diya-oil-lamp — Diya（交叉引用 hinduism.md）
+18. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
 
 ## 已写
 
-（空）
+1. mokugyo-wooden-fish — 木鱼（2026-09-21）
+2. origami-crane-senbazuru — 折纸鹤／千羽鶴（2026-09-21）
+3. mizuhiki — 水引（2026-09-21）
+4. daruma-eye-painting — 达摩点睛（2026-09-21）
+5. sky-lantern-pingxi — 天灯（平溪等）（2026-09-21）
 
 ## 跳过
 

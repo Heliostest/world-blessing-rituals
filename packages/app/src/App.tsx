@@ -13,17 +13,21 @@ import { Today, ritualTitle } from "./home";
 import { NewWish, WishDetail, WishNote, FulfillWish } from "./wishes";
 import { fontStyles } from "./assets";
 import { Complete, Ritual } from "./ritual";
+import { ContentContext, type ContentEnvironment } from "./content";
+import { InvalidContentError } from "@wbr/content";
 
 export function BlessingApp({
   host,
   active = true,
   backRequest = 0,
   onCanGoBack,
+  content,
 }: {
   host: Host;
   active?: boolean;
   backRequest?: number;
   onCanGoBack?: (value: boolean) => void;
+  content?: ContentEnvironment;
 }) {
   const store = useMemo(() => createStore(host), [host]);
   const snapshot = useSyncExternalStore(store.subscribe, store.getSnapshot);
@@ -114,12 +118,27 @@ export function BlessingApp({
       /* Hosts may disallow audio. */
     }
   }
-  function feedback() {
+  async function decodeSound(bytes: ArrayBuffer) {
+    const ctx = (audio.current ??= new AudioContext());
+    const sound = await ctx.decodeAudioData(bytes.slice(0));
+    if (sound.duration > 3 || sound.numberOfChannels > 2)
+      throw new InvalidContentError("Scene sound exceeds budget");
+    return sound;
+  }
+  function feedback(sound?: AudioBuffer) {
     if (state?.settings.haptics) void host.haptic?.().catch(() => {});
     if (!state?.settings.sound) return;
     try {
       const ctx = (audio.current ??= new AudioContext());
       void ctx.resume().catch(() => {});
+      if (sound) {
+        const source = ctx.createBufferSource();
+        source.buffer = sound;
+        source.connect(ctx.destination);
+        source.onended = () => source.disconnect();
+        source.start();
+        return;
+      }
       const oscillator = ctx.createOscillator();
       const gain = ctx.createGain();
       oscillator.type = "sine";
@@ -203,137 +222,146 @@ export function BlessingApp({
       <History />
     );
   return (
-    <Context.Provider
-      value={{
-        state,
-        go,
-        back,
-        active,
-        feedback,
-        prepareFeedback,
-        fulfillmentDrafts,
-        setFulfillmentDraft: (id, draft) =>
-          setFulfillmentDrafts((old) => {
-            const next = { ...old };
-            if (draft) next[id] = draft;
-            else delete next[id];
-            return next;
-          }),
-        dispatch: (action) => {
-          try {
-            const before = store.getSnapshot().state;
-            store.dispatch(action);
-            setError("");
-            return store.getSnapshot().state !== before;
-          } catch (e) {
-            setError(
-              e instanceof Error ? e.message : "这一步暂时没有完成，请再试一次",
-            );
-            return false;
-          }
-        },
-      }}
-    >
-      <div
-        className={`bless-app${state.settings.reducedMotion ? " reduce-motion" : ""}`}
+    <ContentContext.Provider value={content ?? {}}>
+      <Context.Provider
+        value={{
+          state,
+          go,
+          back,
+          active,
+          feedback,
+          decodeSound,
+          prepareFeedback,
+          fulfillmentDrafts,
+          setFulfillmentDraft: (id, draft) =>
+            setFulfillmentDrafts((old) => {
+              const next = { ...old };
+              if (draft) next[id] = draft;
+              else delete next[id];
+              return next;
+            }),
+          dispatch: (action) => {
+            try {
+              const before = store.getSnapshot().state;
+              store.dispatch(action);
+              setError("");
+              return store.getSnapshot().state !== before;
+            } catch (e) {
+              setError(
+                e instanceof Error
+                  ? e.message
+                  : "这一步暂时没有完成，请再试一次",
+              );
+              return false;
+            }
+          },
+        }}
       >
-        <style>{fontStyles}</style>
-        <div className="desktop-note">
-          <span className="brand-mark">念</span>
-          <strong>一日一念</strong>
-          <p>
-            把小小的仪式，
-            <br />
-            过成温柔的日常。
-          </p>
-          <span>CYBER BLESS · A LITTLE EVERY DAY</span>
-        </div>
-        <div className="app-shell" data-page={route.page}>
-          {!roots.includes(route.page) && (
-            <header
-              className={`app-topbar${route.page === "complete" ? " completion-topbar" : ""}`}
-            >
-              <button
-                className="back-button"
-                aria-label={route.page === "complete" ? "关闭完成页" : "返回"}
-                onClick={
-                  route.page === "complete" ? () => go({ page: "today" }) : back
-                }
+        <div
+          className={`bless-app${state.settings.reducedMotion ? " reduce-motion" : ""}`}
+        >
+          <style>{fontStyles}</style>
+          <div className="desktop-note">
+            <span className="brand-mark">念</span>
+            <strong>一日一念</strong>
+            <p>
+              把小小的仪式，
+              <br />
+              过成温柔的日常。
+            </p>
+            <span>CYBER BLESS · A LITTLE EVERY DAY</span>
+          </div>
+          <div className="app-shell" data-page={route.page}>
+            {!roots.includes(route.page) && (
+              <header
+                className={`app-topbar${route.page === "complete" ? " completion-topbar" : ""}`}
               >
-                <Icon name={route.page === "complete" ? "close" : "back"} />
-              </button>
-              <h2>
-                {
-                  (
-                    {
-                      new: "许个小心愿",
-                      wish: "我的心愿",
-                      fulfill: "来还个愿",
-                      note: "记一笔",
-                      collection: "我的小收藏",
-                      history: "仪式时光",
-                      ritual:
-                        ritualTitle[
-                          state.activeSession?.ritual ??
-                            (route.id === "crane"
-                              ? "crane"
-                              : route.id === "lantern"
-                                ? "lantern"
-                                : "woodfish")
-                        ],
-                    } as Record<string, string>
-                  )[route.page]
-                }
-              </h2>
-            </header>
-          )}
-          <span
-            className={snapshot.status === "saved" ? "sr-only" : "save-status"}
-            role="status"
-          >
-            {snapshot.status === "saving"
-              ? "正在保存…"
-              : snapshot.status === "save-error"
-                ? "尚未保存"
-                : "本机珍藏"}
-          </span>
-          {snapshot.status === "save-error" && (
-            <div className="error-banner" role="alert">
-              <span>{snapshot.error}</span>
-              <button onClick={() => store.retry()}>重试保存</button>
-            </div>
-          )}
-          {error && (
-            <div className="error-banner" role="alert">
-              <span>{error}</span>
-              <button onClick={() => setError("")}>知道了</button>
-            </div>
-          )}
-          <main className="app-content" key={route.page + (route.id ?? "")}>
-            {page}
-          </main>
-          {roots.includes(route.page) && (
-            <nav className="bottom-nav" aria-label="主导航">
-              {[
-                ["today", "今日"],
-                ["wishes", "心愿"],
-                ["world", "小天地"],
-                ["me", "我的"],
-              ].map(([id, label]) => (
                 <button
-                  key={id}
-                  aria-current={section === id ? "page" : undefined}
-                  onClick={() => go({ page: id as Route["page"] })}
+                  className="back-button"
+                  aria-label={route.page === "complete" ? "关闭完成页" : "返回"}
+                  onClick={
+                    route.page === "complete"
+                      ? () => go({ page: "today" })
+                      : back
+                  }
                 >
-                  <Icon name={id} />
-                  <span>{label}</span>
-                  <i />
+                  <Icon name={route.page === "complete" ? "close" : "back"} />
                 </button>
-              ))}
-            </nav>
-          )}
+                <h2>
+                  {
+                    (
+                      {
+                        new: "许个小心愿",
+                        wish: "我的心愿",
+                        fulfill: "来还个愿",
+                        note: "记一笔",
+                        collection: "我的小收藏",
+                        history: "仪式时光",
+                        ritual:
+                          ritualTitle[
+                            state.activeSession?.ritual ??
+                              (route.id === "crane"
+                                ? "crane"
+                                : route.id === "lantern"
+                                  ? "lantern"
+                                  : "woodfish")
+                          ],
+                      } as Record<string, string>
+                    )[route.page]
+                  }
+                </h2>
+              </header>
+            )}
+            <span
+              className={
+                snapshot.status === "saved" ? "sr-only" : "save-status"
+              }
+              role="status"
+            >
+              {snapshot.status === "saving"
+                ? "正在保存…"
+                : snapshot.status === "save-error"
+                  ? "尚未保存"
+                  : "本机珍藏"}
+            </span>
+            {snapshot.status === "save-error" && (
+              <div className="error-banner" role="alert">
+                <span>{snapshot.error}</span>
+                <button onClick={() => store.retry()}>重试保存</button>
+              </div>
+            )}
+            {error && (
+              <div className="error-banner" role="alert">
+                <span>{error}</span>
+                <button onClick={() => setError("")}>知道了</button>
+              </div>
+            )}
+            <main className="app-content" key={route.page + (route.id ?? "")}>
+              {page}
+            </main>
+            {roots.includes(route.page) && (
+              <nav className="bottom-nav" aria-label="主导航">
+                {[
+                  ["today", "今日"],
+                  ["wishes", "心愿"],
+                  ["world", "小天地"],
+                  ["me", "我的"],
+                ].map(([id, label]) => (
+                  <button
+                    key={id}
+                    aria-current={section === id ? "page" : undefined}
+                    onClick={() => go({ page: id as Route["page"] })}
+                  >
+                    <Icon name={id} />
+                    <span>{label}</span>
+                    <i />
+                  </button>
+                ))}
+              </nav>
+            )}
+          </div>
         </div>
-      </div>
-    </Context.Provider>
+      </Context.Provider>
+    </ContentContext.Provider>
   );
 }

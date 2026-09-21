@@ -23,7 +23,8 @@ export type AppContext = {
   go(route: Route): void;
   dispatch(a: Action): boolean;
   back(): void;
-  feedback(): void;
+  feedback(sound?: AudioBuffer): void;
+  decodeSound(bytes: ArrayBuffer): Promise<AudioBuffer>;
   prepareFeedback(): void;
   active: boolean;
   fulfillmentDrafts: Record<string, FulfillmentDraft>;

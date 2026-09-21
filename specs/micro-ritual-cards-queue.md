@@ -7,14 +7,9 @@
 
 ## 待写（优先序）
 
-1. phuang-malai — 泰国花环
-2. ema-votive-plaque — 绘马（交叉引用 shinto.md）
-3. omikuji — 御神签（交叉引用 shinto.md）
-4. shrine-suzu-bell — 神社铃绪（交叉引用 shinto.md）
-5. omamori-cycle — 御守领受—返还（交叉引用 shinto.md）
-6. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
-7. diya-oil-lamp — Diya（交叉引用 hinduism.md）
-8. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
+1. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
+2. diya-oil-lamp — Diya（交叉引用 hinduism.md）
+3. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
 
 ## 已写
 
@@ -33,6 +28,11 @@
 13. setsubun-mamemaki — 节分豆まき（2026-09-21）
 14. hongsheng-red-string — 红绳／红线（A/B 分层）（2026-09-21）
 15. italian-ex-voto — 意大利绘牌 ex-voto（2026-09-21）
+16. phuang-malai — 泰国花环（2026-09-21）
+17. ema-votive-plaque — 绘马（2026-09-21）
+18. omikuji — 御神签（2026-09-21）
+19. shrine-suzu-bell — 神社铃绪（2026-09-21）
+20. omamori-cycle — 御守领受—返还（2026-09-21）
 
 ## 跳过
 

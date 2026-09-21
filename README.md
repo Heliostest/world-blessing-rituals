@@ -797,10 +797,15 @@
 738. [节分豆まき](content/traditions/setsubun-mamemaki.md)
 739. [红绳／红线](content/traditions/hongsheng-red-string.md)
 740. [意大利绘牌 ex-voto](content/traditions/italian-ex-voto.md)
+741. [泰国花环（phuang malai）](content/traditions/phuang-malai.md)
+742. [绘马（ema）](content/traditions/ema-votive-plaque.md)
+743. [御神签（omikuji）](content/traditions/omikuji.md)
+744. [神社铃绪](content/traditions/shrine-suzu-bell.md)
+745. [御守领受—返还](content/traditions/omamori-cycle.md)
 
 ### 比较
 
-741. [比较总览](content/traditions/comparative-overview.md)
+746. [比较总览](content/traditions/comparative-overview.md)
 
 ## 赛博祈福 App（开发中）
 

@@ -79,7 +79,8 @@
 8. **来源与可信度：**  
    - https://www.metmuseum.org/art/collection/search/502274 — Met：用途与鱼无睑象征  
    - https://collections.penn.museum/collections/object/277977 — Penn：禅寺课诵伴奏  
-   **可信度：器物与用途高；起源细节中／待核实。**
+   **可信度：器物与用途高；起源细节中／待核实。**  
+   **B2：** 加深见 `notes-mokugyo.md`（Met 中国 muyu 505614、Penn 配对 keisu、明代团栾线索）；精确定年仍待核实。
 
 ---
 
@@ -96,7 +97,8 @@
    - https://www.city.hiroshima.lg.jp/english/peace/1033408/1009685.html — 广岛市：折鹤、禎子、纪念碑  
    - https://www.pref.hiroshima.lg.jp/site/hiroshimaforpeace-en/childrens-peace-monument.html — 县厅：1955-10-25 去世、1958-05-05 落成  
    - https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202312/202312_07_en.html — Highlighting Japan：千羽鹤愿望／和平  
-   **可信度：和平纪念层高；「千鹤必圆愿」标 B。**
+   **可信度：和平纪念层高；「千鹤必圆愿」标 B。**  
+   **B2：** 加深见 `notes-origami-crane.md`（1797 连鹤书／桑名市无形文化财；广岛市年约千万羽）；前现代「千单鹤必圆愿」系年仍待核实。
 
 ---
 
@@ -127,7 +129,8 @@
 7. **适用边界：** 多地禁放；不得鼓励违法施放。  
 8. **来源与可信度：**  
    - https://taiwangods.moi.gov.tw/html/landscape_EN/1_0011.aspx?i=6 — 内政部台湾宗教文化地图：平溪天灯节  
-   **可信度：节庆存在高；孔明发明说低／待核实。**
+   **可信度：节庆存在高；孔明发明说低／待核实。**  
+   **B2：** 孔明说＝地图转述传说层；不当史实（见 B2 §5.1）。
 
 ---
 
@@ -177,7 +180,8 @@
 8. **来源与可信度：**  
    - https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202003/202003_03_en.html — 饭田水引  
    - https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202312/202312_05_en.html — 鹤形水引  
-   **可信度：工艺与现代用途高；古代起源中／待核实。**
+   **可信度：工艺与现代用途高；古代起源中／待核实。**  
+   **B2：** 隋使红白绳＝HLJ「said to」产业传说；motoyui→水引工艺史较实。
 
 ---
 
@@ -193,7 +197,7 @@
 8. **来源与可信度：**  
    - https://en.kogei-japonica.com/media/crafts/furin/ — 风铃概览与历史叙述  
    - https://en.kogei-japonica.com/media/crafts/furin-types/ — 江户／南部铁器等类型；南部铁器 METI 传统工艺指定信息  
-   - **待核实：** 风铎→风铃演变的博物馆一级英文专条  
+   - **待核实：** 风铎→风铃演变的博物馆一级英文专条（B2：HLJ 2014 江户玻璃风铃工艺可引；风铎专条仍薄）  
    **可信度：夏日风物中–高；宗教主叙事勿过称。**
 
 ---
@@ -259,7 +263,8 @@
 7. **适用边界：** 明确标 B；不写「古罗马神谕」。  
 8. **来源与可信度：**  
    - https://turismoroma.it/en/places/trevi-fountain — Turismo Roma  
-   **可信度：习惯存在高；古代溯源低。**
+   **可信度：习惯存在高；古代溯源低。**  
+   **B2：** Helbig 创始说＝二手假说，非 Turismo Roma 定论；产品维持 B。
 
 ---
 
@@ -331,12 +336,21 @@
 ## 5. 待核实清单
 
 1. 圆型木鱼在中国定型并东传的精确定年。  
+   - **B2 已跟进：** 用途／象征／Met·Penn 馆藏已加固；明代团栾文献线索可写「可见」；**发明精确定年仍待核实**（见 `notes-mokugyo.md`、B2 §5.1）。  
 2. 「千鹤圆愿」前现代文献系年。  
+   - **B2 已跟进：** 1797 连鹤书＋政府刊物民俗信念层已核；**「千单鹤必圆愿」前现代系年仍待核实**（见 `notes-origami-crane.md`）。  
 3. 平溪天灯「孔明发明」说的史料等级。  
+   - **B2 已跟进：** 内政部地图转述＝传说层；地方避匪／祈愿口述另列；**不当三国史实**。  
 4. 水引与遣隋使红白绳的史学 vs 产业传说。  
+   - **B2 已跟进：** HLJ 饭田叙述标「said to」＝产业传说；江户–明治 motoyui→水引工艺史较实。  
 5. 风铃：博物馆一级英文专条；风铎→风铃学术综述。  
+   - **B2 已跟进：** HLJ 2014 江户玻璃风铃工艺可引用；**风铎→风铃英文一级专条仍薄**。  
 6. 特雷维投币 19 世纪起源人物说（旅游局只述习惯）。  
+   - **B2 已跟进：** Turismo Roma＝习惯 B；Helbig 说＝二手史学假说，非市府定论。  
 7. 汉人红绳手链与月老赤绳叙事的连接强度（未入 15 主表）。  
+   - **B2 已跟进：** 已入 B2 候选 §3.19（文学 A／当代 B 分层）；勿并 yazidi。  
+
+详表见 `specs/2026-09-21-daily-micro-rituals-candidates-b2.md` §5。  
 
 ---
 

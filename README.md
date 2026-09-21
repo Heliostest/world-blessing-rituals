@@ -787,10 +787,15 @@
 728. [水引（mizuhiki）](content/traditions/mizuhiki.md)
 729. [达摩不倒翁点睛](content/traditions/daruma-eye-painting.md)
 730. [平溪天灯](content/traditions/sky-lantern-pingxi.md)
+731. [河灯／水灯（Loy Krathong）](content/traditions/floating-lantern-loy-krathong.md)
+732. [墨西哥 milagros](content/traditions/milagros.md)
+733. [七夕短册](content/traditions/tanzaku-tanabata.md)
+734. [韩国燃灯会](content/traditions/yeondeunghoe.md)
+735. [복조리（福笊篱）](content/traditions/bokjori.md)
 
 ### 比较
 
-731. [比较总览](content/traditions/comparative-overview.md)
+736. [比较总览](content/traditions/comparative-overview.md)
 
 ## 赛博祈福 App（开发中）
 

@@ -7,24 +7,19 @@
 
 ## 待写（优先序）
 
-1. floating-lantern-loy-krathong — 河灯／水灯（含 Loy Krathong）
-2. milagros — 墨西哥 milagros
-3. tanzaku-tanabata — 七夕短册
-4. yeondeunghoe — 韩国燃灯会
-5. bokjori — 복조리
-6. st-brigids-cross — 圣布里吉德十字
-7. furin-wind-chime — 风铃
-8. setsubun-mamemaki — 节分豆まき
-9. hongsheng-red-string — 红绳／红线（A/B 分层写清）
-10. italian-ex-voto — 意大利绘牌 ex-voto
-11. phuang-malai — 泰国花环
-12. ema-votive-plaque — 绘马（交叉引用 shinto.md）
-13. omikuji — 御神签（交叉引用 shinto.md）
-14. shrine-suzu-bell — 神社铃绪（交叉引用 shinto.md）
-15. omamori-cycle — 御守领受—返还（交叉引用 shinto.md）
-16. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
-17. diya-oil-lamp — Diya（交叉引用 hinduism.md）
-18. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
+1. st-brigids-cross — 圣布里吉德十字
+2. furin-wind-chime — 风铃
+3. setsubun-mamemaki — 节分豆まき
+4. hongsheng-red-string — 红绳／红线（A/B 分层写清）
+5. italian-ex-voto — 意大利绘牌 ex-voto
+6. phuang-malai — 泰国花环
+7. ema-votive-plaque — 绘马（交叉引用 shinto.md）
+8. omikuji — 御神签（交叉引用 shinto.md）
+9. shrine-suzu-bell — 神社铃绪（交叉引用 shinto.md）
+10. omamori-cycle — 御守领受—返还（交叉引用 shinto.md）
+11. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
+12. diya-oil-lamp — Diya（交叉引用 hinduism.md）
+13. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
 
 ## 已写
 
@@ -33,6 +28,11 @@
 3. mizuhiki — 水引（2026-09-21）
 4. daruma-eye-painting — 达摩点睛（2026-09-21）
 5. sky-lantern-pingxi — 天灯（平溪等）（2026-09-21）
+6. floating-lantern-loy-krathong — 河灯／水灯（含 Loy Krathong）（2026-09-21）
+7. milagros — 墨西哥 milagros（2026-09-21）
+8. tanzaku-tanabata — 七夕短册（2026-09-21）
+9. yeondeunghoe — 韩国燃灯会（2026-09-21）
+10. bokjori — 복조리（2026-09-21）
 
 ## 跳过
 

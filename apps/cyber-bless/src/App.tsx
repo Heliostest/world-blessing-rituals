@@ -13,5 +13,14 @@ export function App() {
         <DevApp />
       </Suspense>
     );
-  return <BlessingApp host={host} />;
+  return (
+    <BlessingApp
+      host={host}
+      content={{
+        manifestUrl:
+          import.meta.env.VITE_SCENE_MANIFEST_URL ||
+          (import.meta.env.DEV ? "/scene-content/woodfish.json" : undefined),
+      }}
+    />
+  );
 }

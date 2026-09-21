@@ -84,7 +84,7 @@ with sync_playwright() as p:
     assert not errors, errors
     # Missing local resource should leave an operable static fallback.
     fallback=browser.new_context(viewport={"width":390,"height":844})
-    fallback.route("**/woodfish/blender-v2/woodfish.glb",lambda route:route.abort())
+    fallback.route("**/*.glb",lambda route:route.abort())
     f=fallback.new_page();f.goto(base,wait_until="networkidle")
     f.get_by_role("button",name="木鱼",exact=True).click()
     f.locator('[data-renderer="fallback"]').wait_for()
@@ -96,7 +96,7 @@ with sync_playwright() as p:
     slow.add_init_script("""window.draws=0;const draw=WebGL2RenderingContext.prototype.drawElements;
       WebGL2RenderingContext.prototype.drawElements=function(...args){window.draws++;return draw.apply(this,args)};""")
     held=[]
-    slow.route("**/woodfish/blender-v2/woodfish.glb",lambda route:held.append(route))
+    slow.route("**/woodfish/bundled-v1/woodfish.glb",lambda route:held.append(route))
     q=slow.new_page();q.goto(base,wait_until="networkidle")
     q.get_by_role("button",name="木鱼",exact=True).click()
     q.get_by_role("button",name="暂停片刻").click()

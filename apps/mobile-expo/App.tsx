@@ -13,6 +13,13 @@ import { StatusBar } from "expo-status-bar";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as Haptics from "expo-haptics";
 import BlessingDom from "./BlessingDom";
+import {
+  readContentHistory,
+  readSceneAsset,
+  writeContentHistory,
+  fetchSceneAsset,
+  cancelSceneAsset,
+} from "./scene-cache";
 
 const SAVE_KEY = "cyber-bless:personal:v1";
 export default function App() {
@@ -70,6 +77,12 @@ function Shell() {
       <BlessingDom
         key={generation}
         readSave={readSave}
+        readContentHistory={readContentHistory}
+        readSceneAsset={readSceneAsset}
+        writeContentHistory={writeContentHistory}
+        fetchSceneAsset={fetchSceneAsset}
+        cancelSceneAsset={cancelSceneAsset}
+        manifestUrl={process.env.EXPO_PUBLIC_SCENE_MANIFEST_URL ?? ""}
         writeSave={writeSave}
         haptic={haptic}
         onCanGoBack={onCanGoBack}

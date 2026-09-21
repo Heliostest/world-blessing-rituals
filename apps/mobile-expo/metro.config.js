@@ -13,6 +13,16 @@ config.resolver.nodeModulesPaths = [
 ];
 const originalResolve = config.resolver.resolveRequest;
 config.resolver.resolveRequest = (context, name, platform) => {
+  // noble 1.x's browser alias adds .js to an export that Metro then warns about.
+  // Select its browser-safe crypto shim explicitly; never bundle node:crypto.
+  if (name === "@noble/hashes/crypto" || name === "@noble/hashes/crypto.js")
+    return {
+      type: "sourceFile",
+      filePath: path.join(
+        path.dirname(require.resolve("@noble/hashes/sha256")),
+        "crypto.js",
+      ),
+    };
   if (/^react(?:\/|$)|^react-dom(?:\/|$)/.test(name))
     return {
       type: "sourceFile",

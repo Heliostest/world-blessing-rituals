@@ -8,11 +8,15 @@
   "scripts": {
     "dev": "npm run dev -w @wbr/cyber-bless --",
     "build": "npm run build -w @wbr/cyber-bless",
-    "test": "npm run test -w @wbr/core && npm run test -w @wbr/runtime && npm run test -w @wbr/app && npm run test -w @wbr/gestures && npm run test -w @wbr/shared && npm run test -w @wbr/scenes && node scripts/check-woodfish-assets.mjs",
+    "test": "npm run test -w @wbr/core && npm run test -w @wbr/runtime && npm run test -w @wbr/app && npm run test -w @wbr/gestures && npm run test -w @wbr/shared && npm run test -w @wbr/scenes && npm run test -w @wbr/content && npm run test -w @wbr/scene-runtime && node scripts/check-woodfish-assets.mjs",
     "mobile:start": "npm run start -w @wbr/mobile",
     "mobile:android": "npm run android -w @wbr/mobile",
     "mobile:ios": "npm run ios -w @wbr/mobile",
     "mobile:verify": "npm run typecheck -w @wbr/mobile && node scripts/check-mobile-framework.mjs",
-    "verify": "npm test && npm run build && npm run mobile:verify"
+    "verify": "npm test && npm run build && npm run mobile:verify",
+    "content:publish": "node scripts/publish-scene-content.mjs"
+  },
+  "engines": {
+    "node": ">=22.18.0"
   }
 }

@@ -7,9 +7,7 @@
 
 ## 待写（优先序）
 
-1. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
-2. diya-oil-lamp — Diya（交叉引用 hinduism.md）
-3. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
+（无）
 
 ## 已写
 
@@ -33,6 +31,9 @@
 18. omikuji — 御神签（2026-09-21）
 19. shrine-suzu-bell — 神社铃绪（2026-09-21）
 20. omamori-cycle — 御守领受—返还（2026-09-21）
+21. votive-candle-catholic — 天主教还愿烛（2026-09-21）
+22. diya-oil-lamp — Diya 油灯（2026-09-21）
+23. clootie-well-rag — Clootie 布条圣井（2026-09-21）
 
 ## 跳过
 

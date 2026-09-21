@@ -802,10 +802,13 @@
 743. [御神签（omikuji）](content/traditions/omikuji.md)
 744. [神社铃绪](content/traditions/shrine-suzu-bell.md)
 745. [御守领受—返还](content/traditions/omamori-cycle.md)
+746. [天主教还愿烛](content/traditions/votive-candle-catholic.md)
+747. [Diya 油灯](content/traditions/diya-oil-lamp.md)
+748. [Clootie 布条圣井](content/traditions/clootie-well-rag.md)
 
 ### 比较
 
-746. [比较总览](content/traditions/comparative-overview.md)
+749. [比较总览](content/traditions/comparative-overview.md)
 
 ## 赛博祈福 App（开发中）
 

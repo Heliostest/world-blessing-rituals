@@ -11,6 +11,26 @@ const add = {
 } as const;
 
 describe("personal ritual loop", () => {
+  it("accepts a burst of strikes atomically, caps progress and settles once", () => {
+    let s = createState();
+    for (let i = 0; i < 40; i++) {
+      s = reduce(s, {
+        type: "ritual.strike",
+        id: `tap-${i}`,
+        ritual: "woodfish",
+        at,
+      });
+    }
+    expect(s.activeSession).toMatchObject({ id: "tap-0", progress: 12 });
+    expect(reduce(s, { type: "ritual.step" })).toBe(s);
+    const ready = restore(JSON.stringify(s));
+    const done = { type: "ritual.finish", id: "tap-0", at } as const;
+    const complete = reduce(ready, done);
+    expect(reduce(complete, done)).toBe(complete);
+    expect(complete.ledger).toHaveLength(1);
+    expect(complete.ledger[0].amount).toBe(10);
+    expect(complete.collectibles).toHaveLength(1);
+  });
   it("persists wish category and planned return method, while accepting older saves", () => {
     const s = reduce(createState(), {
       ...add,

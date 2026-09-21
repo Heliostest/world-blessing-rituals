@@ -1,0 +1,512 @@
+import * as THREE from "three";
+import { assetUrl } from "./assets";
+import { animate, createTimeline } from "animejs";
+import { swingPose } from "./woodfish-motion";
+import { parseWoodfishModel } from "./woodfish-model";
+
+type Options = {
+  ready(): void;
+  failed(): void;
+  active: boolean;
+  reducedMotion: boolean;
+  impact(): void;
+};
+/** Owned by one mounted ritual. No application state or reward logic lives here. */
+export function createWoodfishScene(host: HTMLDivElement, options: Options) {
+  let shaderFailed = false;
+  const renderer = new THREE.WebGLRenderer({
+    alpha: true,
+    antialias: true,
+    powerPreference: "low-power",
+  });
+  renderer.setClearColor(0x000000, 0);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.1;
+  renderer.debug.onShaderError = () => {
+    shaderFailed = true;
+    queueMicrotask(() => {
+      if (!disposed) options.failed();
+    });
+  };
+  host.appendChild(renderer.domElement);
+  const scene = new THREE.Scene();
+  const camera = new THREE.OrthographicCamera(-2.2, 2.2, 1.6, -1.6, 0.1, 40);
+  const target = new THREE.Vector3(0.08, 0.02, 0);
+  camera.position.set(0.9, 2.3, 6.5);
+  camera.lookAt(target);
+  // Warm room bounce with a dominant upper-left lamp; keep the cavity shaded.
+  scene.add(new THREE.HemisphereLight(0xffecd4, 0x795039, 1.55));
+  const key = new THREE.DirectionalLight(0xffdfae, 3.2);
+  key.position.set(-3.5, 6, 4);
+  key.castShadow = true;
+  key.shadow.mapSize.set(1024, 1024);
+  Object.assign(key.shadow.camera, {
+    left: -3,
+    right: 3,
+    top: 3,
+    bottom: -3,
+    near: 0.5,
+    far: 14,
+  });
+  key.shadow.bias = -0.0002;
+  key.shadow.normalBias = 0.005;
+  key.shadow.radius = 4;
+  scene.add(key);
+  const fill = new THREE.DirectionalLight(0xffead4, 0.65);
+  fill.position.set(4, 2, 1);
+  scene.add(fill);
+  // A faint amber backlight outlines the wood.
+  const rim = new THREE.DirectionalLight(0xffc486, 0.9);
+  rim.position.set(2, 3, -4);
+  scene.add(rim);
+  // Fill light must also be occluded by the carved shell; otherwise the
+  // chamber looks like a painted shallow dent. Smaller maps suffice here.
+  for (const light of [fill, rim]) {
+    light.castShadow = true;
+    light.shadow.mapSize.set(512, 512);
+    Object.assign(light.shadow.camera, {
+      left: -2, right: 2, top: 2, bottom: -2, near: 0.5, far: 14,
+    });
+    light.shadow.bias = -0.0002;
+    light.shadow.normalBias = 0.005;
+    light.shadow.radius = 3;
+  }
+  const model = new THREE.Group();
+  scene.add(model);
+  const bodyGroup = new THREE.Group();
+  model.add(bodyGroup);
+  const mallet = new THREE.Group();
+  model.add(mallet);
+  mallet.position.set(1.02, 0.38, 1.24);
+  const geometries: THREE.BufferGeometry[] = [];
+  const materials: THREE.Material[] = [];
+  const textures: THREE.Texture[] = [];
+  const meshRequest = new XMLHttpRequest();
+  let modelAsset: Awaited<ReturnType<typeof parseWoodfishModel>> | null = null;
+  let disposed = false,
+    active = options.active,
+    reducedMotion = options.reducedMotion;
+  let frame = 0;
+  let followAnimation: ReturnType<typeof animate> | null = null;
+  let strikeAnimation: ReturnType<typeof createTimeline> | null = null;
+  let bodyMesh: THREE.Mesh | null = null;
+  const raycaster = new THREE.Raycaster();
+  const aim = { x: 0.6, y: 0.45 };
+  const hoverTarget = mallet.position.clone();
+  let following = false;
+  type StrikeTarget = { point: THREE.Vector3; normal: THREE.Vector3 };
+  const strikes: StrikeTarget[] = [];
+  const inspectMode = new URLSearchParams(window.location.search).has(
+    "inspectWoodfish",
+  );
+  let phase = "idle";
+  let needsStillFrame = false,
+    loaded = false,
+    reportedReady = false;
+  let angle = 0,
+    view = "front";
+  function mesh(
+    geometry: THREE.BufferGeometry,
+    material: THREE.Material,
+    parent: THREE.Object3D,
+  ) {
+    geometries.push(geometry);
+    const m = new THREE.Mesh(geometry, material);
+    m.castShadow = true;
+    m.receiveShadow = true;
+    parent.add(m);
+    return m;
+  }
+  const floorMaterial = new THREE.ShadowMaterial({ opacity: 0.008 });
+  materials.push(floorMaterial);
+  const floor = mesh(new THREE.PlaneGeometry(200, 200), floorMaterial, scene);
+  floor.rotation.x = -Math.PI / 2;
+  floor.position.y = -0.94;
+  floor.castShadow = false;
+  // A soft, local contact shadow, independent of directional shadow resolution.
+  const shadowCanvas = document.createElement("canvas");
+  shadowCanvas.width = shadowCanvas.height = 64;
+  const ctx = shadowCanvas.getContext("2d")!;
+  const gradient = ctx.createRadialGradient(32, 32, 3, 32, 32, 32);
+  gradient.addColorStop(0, "rgba(73,39,12,0.30)");
+  gradient.addColorStop(0.5, "rgba(73,39,12,0.15)");
+  gradient.addColorStop(1, "rgba(73,39,12,0)");
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, 64, 64);
+  const shadowTexture = new THREE.CanvasTexture(shadowCanvas);
+  textures.push(shadowTexture);
+  const contactMaterial = new THREE.MeshBasicMaterial({
+    map: shadowTexture,
+    transparent: true,
+    depthWrite: false,
+  });
+  materials.push(contactMaterial);
+  const contact = mesh(
+    new THREE.PlaneGeometry(3.0, 1.95),
+    contactMaterial,
+    scene,
+  );
+  contact.rotation.x = -Math.PI / 2;
+  contact.position.set(-0.12, -0.925, 0);
+  contact.castShadow = false;
+
+  new Promise<ArrayBuffer>((resolve, reject) => {
+    // XHR also supports bundled file: assets in Expo's embedded WebView.
+    meshRequest.open("GET", assetUrl("woodfish/blender-v2/woodfish.glb"));
+    meshRequest.responseType = "arraybuffer";
+    meshRequest.onload = () => {
+      const status = meshRequest.status;
+      if (
+        (status === 0 || (status >= 200 && status < 300)) &&
+        meshRequest.response instanceof ArrayBuffer
+      ) resolve(meshRequest.response);
+      else reject(new Error("Missing woodfish GLB"));
+    };
+    meshRequest.onerror = meshRequest.onabort = () =>
+      reject(new Error("Woodfish model load interrupted"));
+    meshRequest.send();
+  })
+    .then((bytes) => {
+      if (disposed) return null;
+      return parseWoodfishModel(bytes);
+    })
+    .then((asset) => {
+      if (!asset) return;
+      if (disposed) {
+        asset.dispose();
+        return;
+      }
+      modelAsset = asset;
+      bodyMesh = asset.body;
+      bodyGroup.add(bodyMesh);
+      bodyGroup.position.y = -0.91;
+      bodyMesh.position.y = 0.91;
+      mallet.add(asset.mallet);
+      loaded = true;
+      requestRender(true);
+    })
+    .catch(() => {
+      if (!disposed) options.failed();
+    });
+
+  function resize() {
+    if (disposed) return;
+    const { width, height } = host.getBoundingClientRect();
+    if (!width || !height) return;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
+    renderer.setSize(width, height, false);
+    const halfHeight = 1.57,
+      halfWidth = (halfHeight * width) / height;
+    camera.left = -halfWidth;
+    camera.right = halfWidth;
+    camera.top = halfHeight;
+    camera.bottom = -halfHeight;
+    camera.updateProjectionMatrix();
+    requestRender(true);
+  }
+  function requestRender(still = false) {
+    needsStillFrame ||= still;
+    if (!disposed && (active || needsStillFrame) && !document.hidden && !frame)
+      frame = requestAnimationFrame(render);
+  }
+  function render(time: number) {
+    frame = 0;
+    if (disposed || (!active && !needsStillFrame) || document.hidden) return;
+    needsStillFrame = false;
+    renderer.render(scene, camera);
+    if (inspectMode) {
+      host.dataset.mallet = JSON.stringify(mallet.position.toArray());
+      host.dataset.phase = phase;
+      host.dataset.queued = String(strikes.length);
+    }
+    if (loaded && !reportedReady && !shaderFailed) {
+      reportedReady = true;
+      options.ready();
+    }
+  }
+  function stopFollowing() {
+    following = false;
+    followAnimation?.cancel();
+    followAnimation = null;
+  }
+  function followTarget(immediate = false) {
+    followAnimation?.cancel();
+    followAnimation = null;
+    if (strikeAnimation || !active || document.hidden) return;
+    if (immediate || reducedMotion) {
+      mallet.position.copy(hoverTarget);
+      mallet.quaternion.identity();
+      requestRender();
+      return;
+    }
+    const from = mallet.position.clone(),
+      rotation = mallet.quaternion.clone(),
+      blend = { t: 0 };
+    followAnimation = animate(blend, {
+      t: 1,
+      duration: 90,
+      ease: "out(3)",
+      onUpdate: () => {
+        mallet.position.lerpVectors(from, hoverTarget, blend.t);
+        mallet.quaternion.copy(rotation).slerp(new THREE.Quaternion(), blend.t);
+        requestRender();
+      },
+      onComplete: () => {
+        followAnimation = null;
+      },
+    });
+  }
+  function nextStrike() {
+    if (
+      disposed ||
+      !active ||
+      document.hidden ||
+      strikeAnimation ||
+      !strikes.length
+    )
+      return;
+    followAnimation?.cancel();
+    followAnimation = null;
+    const target = strikes.shift()!;
+    if (reducedMotion) {
+      options.impact();
+      requestRender();
+      queueMicrotask(nextStrike);
+      return;
+    }
+    const start = swingPose(target.point, target.normal, 0.32);
+    const from = mallet.position.clone(),
+      fromRotation = mallet.quaternion.clone();
+    // Lift toward the viewer before lateral travel, keeping the head clear of
+    // the shell. The following arc is a rigid lever about the grip, not scaling.
+    const travel = new THREE.CubicBezierCurve3(
+      from,
+      from.clone().add(new THREE.Vector3(0, 0, 0.55)),
+      start.head.clone().add(new THREE.Vector3(0, 0, 0.55)),
+      start.head,
+    );
+    const approach = { t: 0 },
+      swing = { angle: 0.32 },
+      ring = { seconds: 0 };
+    let contacted = false;
+    function applySwing() {
+      if (reducedMotion) return;
+      const pose = swingPose(target.point, target.normal, swing.angle);
+      mallet.position.copy(pose.head);
+      mallet.quaternion.copy(pose.rotation);
+    }
+    phase = "lift";
+    strikeAnimation = createTimeline({
+      autoplay: false,
+      onUpdate: () => requestRender(),
+      onComplete: () => {
+        strikeAnimation = null;
+        bodyGroup.rotation.z = 0;
+        phase = "idle";
+        requestRender();
+        if (strikes.length) queueMicrotask(nextStrike);
+        else if (following) followTarget();
+      },
+    })
+      .add(
+        approach,
+        {
+          t: 1,
+          duration: 170,
+          ease: "inOut(2)",
+          onUpdate: () => {
+            if (reducedMotion) return;
+            mallet.position.copy(travel.getPoint(approach.t));
+            mallet.quaternion
+              .copy(fromRotation)
+              .slerp(start.rotation, approach.t);
+          },
+        },
+        0,
+      )
+      .call(() => {
+        phase = "downswing";
+      }, 170)
+      .add(
+        swing,
+        { angle: 0, duration: 95, ease: "in(2)", onUpdate: applySwing },
+        170,
+      )
+      .call(() => {
+        if (contacted) return;
+        contacted = true;
+        swing.angle = 0;
+        applySwing();
+        phase = "rebound";
+        options.impact();
+        requestRender();
+      }, 265)
+      .add(
+        swing,
+        { angle: 0.16, duration: 95, ease: "out(3)", onUpdate: applySwing },
+        265,
+      )
+      .add(
+        swing,
+        { angle: 0.1, duration: 140, ease: "out(3)", onUpdate: applySwing },
+        360,
+      )
+      .add(
+        ring,
+        {
+          seconds: 0.235,
+          duration: 235,
+          ease: "linear",
+          onUpdate: () => {
+            bodyGroup.rotation.z = reducedMotion
+              ? 0
+              : 0.0025 *
+                Math.exp(-24 * ring.seconds) *
+                Math.sin(95 * ring.seconds);
+          },
+        },
+        265,
+      );
+    strikeAnimation.play();
+  }
+  function visibility() {
+    if (document.hidden) {
+      cancelAnimationFrame(frame);
+      frame = 0;
+      stopFollowing();
+      strikeAnimation?.pause();
+    } else {
+      resize();
+      if (active) {
+        strikeAnimation?.resume();
+        nextStrike();
+      }
+      requestRender();
+    }
+  }
+  function lost(event: Event) {
+    event.preventDefault();
+    if (!disposed) options.failed();
+  }
+  renderer.domElement.addEventListener("webglcontextlost", lost);
+  document.addEventListener("visibilitychange", visibility);
+  window.addEventListener("resize", resize);
+  const observer = new ResizeObserver(resize);
+  observer.observe(host);
+  resize();
+  return {
+    strike() {
+      if (!loaded || !bodyMesh || !active || document.hidden) return;
+      // Restrict contact to the solid upper shell, never the slit or inner wall.
+      bodyMesh.updateWorldMatrix(true, false);
+      raycaster.set(
+        new THREE.Vector3(
+          THREE.MathUtils.clamp(aim.x, -0.65, 0.65),
+          THREE.MathUtils.clamp(aim.y, 0.28, 0.8),
+          3,
+        ),
+        new THREE.Vector3(0, 0, -1),
+      );
+      const hit = raycaster.intersectObject(bodyMesh, false)[0];
+      if (!hit) {
+        options.impact();
+        return;
+      }
+      const normal = (hit.normal ?? hit.face!.normal)
+        .clone()
+        .transformDirection(bodyMesh.matrixWorld);
+      strikes.push({ point: hit.point.clone(), normal });
+      nextStrike();
+    },
+    movePointer(x: number, y: number, immediate = false) {
+      if (!active || document.hidden || view !== "front") return;
+      raycaster.setFromCamera(new THREE.Vector2(x, y), camera);
+      const hit = raycaster.ray.intersectPlane(
+        new THREE.Plane(new THREE.Vector3(0, 0, 1), -1.24),
+        new THREE.Vector3(),
+      );
+      if (!hit) return;
+      aim.x = THREE.MathUtils.clamp(hit.x, -1, 1.02);
+      aim.y = THREE.MathUtils.clamp(hit.y, 0.12, 1.12);
+      hoverTarget.set(aim.x, aim.y, 1.24);
+      following = true;
+      followTarget(immediate);
+    },
+    stopFollowing,
+    setActive(value: boolean) {
+      active = value;
+      if (!active) {
+        cancelAnimationFrame(frame);
+        frame = 0;
+        stopFollowing();
+        strikeAnimation?.pause();
+        requestRender(true);
+      } else {
+        if (!document.hidden) {
+          strikeAnimation?.resume();
+          nextStrike();
+        }
+        requestRender();
+      }
+    },
+    setReducedMotion(value: boolean) {
+      reducedMotion = value;
+      if (value) {
+        followAnimation?.cancel();
+        followAnimation = null;
+        bodyGroup.rotation.z = 0;
+      }
+      requestRender(true);
+    },
+    // Used only by the explicit inspection UI (?inspectWoodfish=1), never by scoring.
+    inspect(next: string) {
+      view = next;
+      angle =
+        next === "back"
+          ? Math.PI
+          : next === "left"
+            ? -Math.PI / 2
+            : next === "right"
+              ? Math.PI / 2
+              : next === "front" ? 0.14 : 0;
+      camera.position.set(
+        Math.sin(angle) * 6.5,
+        next === "top" ? 6.5 : next === "bottom" ? -6.5 : 2.3,
+        next === "top" || next === "bottom" ? 0.01 : Math.cos(angle) * 6.5,
+      );
+      camera.lookAt(target);
+      mallet.visible = view === "front";
+      floor.visible = contact.visible = view !== "bottom";
+      requestRender(true);
+    },
+    dispose() {
+      if (disposed) return;
+      disposed = true;
+      stopFollowing();
+      strikeAnimation?.cancel();
+      strikeAnimation = null;
+      strikes.length = 0;
+      meshRequest.abort();
+      modelAsset?.dispose();
+      modelAsset = null;
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", visibility);
+      window.removeEventListener("resize", resize);
+      renderer.domElement.removeEventListener("webglcontextlost", lost);
+      geometries.forEach((g) => g.dispose());
+      materials.forEach((m) => m.dispose());
+      textures.forEach((t) => t.dispose());
+      key.shadow.dispose();
+      fill.shadow.dispose();
+      rim.shadow.dispose();
+      renderer.dispose();
+      renderer.forceContextLoss();
+      renderer.domElement.remove();
+    },
+  };
+}

@@ -8,6 +8,7 @@ export const assetFiles = [
   "reference-ui/rituals.png",
   "fonts/noto-sans-sc.woff2",
   "fonts/OFL.txt",
+  "woodfish/blender-v2/woodfish.glb",
 ];
 export async function prepareAppAssets() {
   const assets = [];

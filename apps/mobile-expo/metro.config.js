@@ -3,6 +3,9 @@ const path = require("path");
 const projectRoot = __dirname;
 const workspaceRoot = path.resolve(projectRoot, "../..");
 const config = getDefaultConfig(projectRoot);
+// Expo's DOM transform contains absolute entry paths. Do not reuse another
+// checkout's transformed module when moving between drives / Git worktrees.
+config.cacheVersion = `world-blessing:${workspaceRoot}`;
 config.watchFolders = [workspaceRoot];
 config.resolver.nodeModulesPaths = [
   path.join(projectRoot, "node_modules"),

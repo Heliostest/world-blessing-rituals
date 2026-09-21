@@ -105,6 +105,15 @@ export function BlessingApp({
       void audio.current?.suspend();
     } else setDateKey((k) => k + 1);
   }, [active, store]);
+  function prepareFeedback() {
+    if (!store.getSnapshot().state?.settings.sound) return;
+    try {
+      const ctx = (audio.current ??= new AudioContext());
+      void ctx.resume().catch(() => {});
+    } catch {
+      /* Hosts may disallow audio. */
+    }
+  }
   function feedback() {
     if (state?.settings.haptics) void host.haptic?.().catch(() => {});
     if (!state?.settings.sound) return;
@@ -201,6 +210,7 @@ export function BlessingApp({
         back,
         active,
         feedback,
+        prepareFeedback,
         fulfillmentDrafts,
         setFulfillmentDraft: (id, draft) =>
           setFulfillmentDrafts((old) => {
@@ -211,9 +221,10 @@ export function BlessingApp({
           }),
         dispatch: (action) => {
           try {
+            const before = store.getSnapshot().state;
             store.dispatch(action);
             setError("");
-            return true;
+            return store.getSnapshot().state !== before;
           } catch (e) {
             setError(
               e instanceof Error ? e.message : "这一步暂时没有完成，请再试一次",

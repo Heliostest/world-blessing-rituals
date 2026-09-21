@@ -4,6 +4,7 @@ import { Art, Icon } from "./art";
 import { now, uid, useApp } from "./context";
 import { Empty } from "./pages";
 import { ritualTitle } from "./home";
+import { Woodfish } from "./woodfish";
 
 function FeedbackControls() {
   const { state, dispatch } = useApp();
@@ -38,31 +39,34 @@ export function Ritual({
   id?: string;
   wishId?: string;
 }) {
-  const { state, dispatch, go, feedback, active } = useApp();
+  const { state, dispatch, go, feedback, prepareFeedback, active } = useApp();
   const [wishId, setWishId] = useState(linkedWishId ?? "");
   const [pulse, setPulse] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [view, setView] = useState("front");
   const r = state.activeSession;
   const kind: RitualId =
     r?.ritual ?? (id === "crane" || id === "lantern" ? id : "woodfish");
   const meta = rituals[kind];
   const progress = r?.progress ?? 0;
   const ready = progress >= meta.steps;
-  function start() {
-    return dispatch({
-      type: "ritual.start",
-      id: uid(),
-      ritual: kind,
-      wishId: wishId || undefined,
-      at: now(),
-    });
-  }
   function step() {
-    if (!active || ready) return;
-    if (!r && !start()) return;
-    if (dispatch({ type: "ritual.step" })) {
+    if (!active || paused || document.hidden || ready) return false;
+    if (
+      dispatch({
+        type: "ritual.strike",
+        id: uid(),
+        ritual: kind,
+        wishId: wishId || undefined,
+        at: now(),
+      })
+    ) {
       setPulse((n) => n + 1);
-      feedback();
+      if (kind === "woodfish") prepareFeedback();
+      else feedback();
+      return true;
     }
+    return false;
   }
   function finish() {
     if (r && dispatch({ type: "ritual.finish", id: r.id, at: now() })) {
@@ -95,39 +99,59 @@ export function Ritual({
           </strong>
           <span>{pulse ? "烦恼 -1" : "烦恼，轻轻放下"}</span>
         </div>
-        <button
-          className="ritual-object"
-          aria-label={
-            ready
-              ? "仪式步骤已完成"
-              : kind === "woodfish"
-                ? "轻敲木鱼"
-                : "完成当前步骤"
-          }
-          onClick={step}
-          disabled={ready || !active}
-        >
-          <span key={pulse} className={pulse ? "object-bounce" : ""}>
-            <Art
-              kind={kind}
-              variant={
-                kind === "woodfish"
-                  ? "play"
-                  : kind === "lantern"
-                    ? "wish"
-                    : "default"
-              }
-            />
-          </span>
-        </button>
+        {kind === "woodfish" ? (
+          <Woodfish
+            pulse={pulse}
+            active={active && !paused}
+            reducedMotion={state.settings.reducedMotion}
+            view={view}
+            disabled={ready}
+            onStrike={step}
+            onImpact={feedback}
+          />
+        ) : (
+          <button
+            className="ritual-object"
+            aria-label={ready ? "仪式步骤已完成" : "完成当前步骤"}
+            onClick={step}
+            disabled={ready || !active || paused}
+          >
+            <span key={pulse} className={pulse ? "object-bounce" : ""}>
+              <Art
+                kind={kind}
+                variant={kind === "lantern" ? "wish" : "default"}
+              />
+            </span>
+          </button>
+        )}
       </div>
+      {kind === "woodfish" &&
+        new URLSearchParams(window.location.search).has("inspectWoodfish") && (
+          <label className="woodfish-inspection">
+            模型视角
+            <select
+              aria-label="模型视角"
+              value={view}
+              onChange={(e) => setView(e.target.value)}
+            >
+              {["front", "left", "right", "back", "top", "bottom"].map((v) => (
+                <option key={v}>{v}</option>
+              ))}
+            </select>
+          </label>
+        )}
       <div className="ritual-counter">{String(progress).padStart(3, "0")}</div>
-      <p className="tap-instruction">
-        {ready
-          ? "这一刻，已经很好。"
-          : kind === "woodfish"
-            ? "点击木鱼，咚一下。"
-            : meta.prompts[Math.min(progress, meta.prompts.length - 1)]}
+      <p
+        className="tap-instruction"
+        id={kind === "woodfish" ? "woodfish-instruction" : undefined}
+      >
+        {paused
+          ? "停一会儿，也很好。"
+          : ready
+            ? "这一刻，已经很好。"
+            : kind === "woodfish"
+              ? "悬浮或按住拖动木槌，轻点敲一下。"
+              : meta.prompts[Math.min(progress, meta.prompts.length - 1)]}
       </p>
       {ready ? (
         <button className="button primary full" onClick={finish}>
@@ -157,6 +181,17 @@ export function Ritual({
         )
       )}
       <FeedbackControls />
+      {kind === "woodfish" && !ready && (
+        <button
+          className="woodfish-pause"
+          onClick={() => {
+            if (paused) prepareFeedback();
+            setPaused((p) => !p);
+          }}
+        >
+          {paused ? "继续轻敲" : "暂停片刻"}
+        </button>
+      )}
       <p className="ritual-footer">
         <span />
         慢慢{kind === "woodfish" ? "敲" : "来"}，也可以。

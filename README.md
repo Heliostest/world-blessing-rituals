@@ -792,10 +792,15 @@
 733. [七夕短册](content/traditions/tanzaku-tanabata.md)
 734. [韩国燃灯会](content/traditions/yeondeunghoe.md)
 735. [복조리（福笊篱）](content/traditions/bokjori.md)
+736. [圣布里吉德十字](content/traditions/st-brigids-cross.md)
+737. [风铃（fūrin）](content/traditions/furin-wind-chime.md)
+738. [节分豆まき](content/traditions/setsubun-mamemaki.md)
+739. [红绳／红线](content/traditions/hongsheng-red-string.md)
+740. [意大利绘牌 ex-voto](content/traditions/italian-ex-voto.md)
 
 ### 比较
 
-736. [比较总览](content/traditions/comparative-overview.md)
+741. [比较总览](content/traditions/comparative-overview.md)
 
 ## 赛博祈福 App（开发中）
 

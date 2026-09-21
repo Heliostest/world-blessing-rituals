@@ -7,19 +7,14 @@
 
 ## 待写（优先序）
 
-1. st-brigids-cross — 圣布里吉德十字
-2. furin-wind-chime — 风铃
-3. setsubun-mamemaki — 节分豆まき
-4. hongsheng-red-string — 红绳／红线（A/B 分层写清）
-5. italian-ex-voto — 意大利绘牌 ex-voto
-6. phuang-malai — 泰国花环
-7. ema-votive-plaque — 绘马（交叉引用 shinto.md）
-8. omikuji — 御神签（交叉引用 shinto.md）
-9. shrine-suzu-bell — 神社铃绪（交叉引用 shinto.md）
-10. omamori-cycle — 御守领受—返还（交叉引用 shinto.md）
-11. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
-12. diya-oil-lamp — Diya（交叉引用 hinduism.md）
-13. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
+1. phuang-malai — 泰国花环
+2. ema-votive-plaque — 绘马（交叉引用 shinto.md）
+3. omikuji — 御神签（交叉引用 shinto.md）
+4. shrine-suzu-bell — 神社铃绪（交叉引用 shinto.md）
+5. omamori-cycle — 御守领受—返还（交叉引用 shinto.md）
+6. votive-candle-catholic — 天主教还愿烛（交叉引用 christianity.md）
+7. diya-oil-lamp — Diya（交叉引用 hinduism.md）
+8. clootie-well-rag — Clootie 布条（交叉引用 celtic-folk.md）
 
 ## 已写
 
@@ -33,6 +28,11 @@
 8. tanzaku-tanabata — 七夕短册（2026-09-21）
 9. yeondeunghoe — 韩国燃灯会（2026-09-21）
 10. bokjori — 복조리（2026-09-21）
+11. st-brigids-cross — 圣布里吉德十字（2026-09-21）
+12. furin-wind-chime — 风铃（2026-09-21）
+13. setsubun-mamemaki — 节分豆まき（2026-09-21）
+14. hongsheng-red-string — 红绳／红线（A/B 分层）（2026-09-21）
+15. italian-ex-voto — 意大利绘牌 ex-voto（2026-09-21）
 
 ## 跳过
 

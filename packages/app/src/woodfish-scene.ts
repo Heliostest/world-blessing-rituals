@@ -1,19 +1,23 @@
 import * as THREE from "three";
-import { assetUrl } from "./assets";
+import { DEFAULT_PARAMETERS } from "@wbr/content";
+import type { SceneEngine, SceneMountOptions } from "@wbr/scene-runtime";
+import type { WoodfishContext, WoodfishController } from "./scene-engines";
 import { animate, createTimeline } from "animejs";
 import { swingPose } from "./woodfish-motion";
 import { parseWoodfishModel } from "./woodfish-model";
 
-type Options = {
-  ready(): void;
-  failed(): void;
-  active: boolean;
-  reducedMotion: boolean;
-  impact(): void;
-};
+type Options = WoodfishContext & SceneMountOptions;
+export const woodfishEngine: SceneEngine<WoodfishContext, WoodfishController> =
+  {
+    create: (host, context, options) =>
+      createWoodfishScene(host, { ...context, ...options }),
+  };
 /** Owned by one mounted ritual. No application state or reward logic lives here. */
 export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   let shaderFailed = false;
+  let parameters = DEFAULT_PARAMETERS;
+  let sound: AudioBuffer | undefined;
+  let confirm: (() => Promise<void>) | undefined;
   const renderer = new THREE.WebGLRenderer({
     alpha: true,
     antialias: true,
@@ -28,9 +32,6 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   renderer.toneMappingExposure = 1.1;
   renderer.debug.onShaderError = () => {
     shaderFailed = true;
-    queueMicrotask(() => {
-      if (!disposed) options.failed();
-    });
   };
   host.appendChild(renderer.domElement);
   const scene = new THREE.Scene();
@@ -69,7 +70,12 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     light.castShadow = true;
     light.shadow.mapSize.set(512, 512);
     Object.assign(light.shadow.camera, {
-      left: -2, right: 2, top: 2, bottom: -2, near: 0.5, far: 14,
+      left: -2,
+      right: 2,
+      top: 2,
+      bottom: -2,
+      near: 0.5,
+      far: 14,
     });
     light.shadow.bias = -0.0002;
     light.shadow.normalBias = 0.005;
@@ -85,7 +91,6 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   const geometries: THREE.BufferGeometry[] = [];
   const materials: THREE.Material[] = [];
   const textures: THREE.Texture[] = [];
-  const meshRequest = new XMLHttpRequest();
   let modelAsset: Awaited<ReturnType<typeof parseWoodfishModel>> | null = null;
   let disposed = false,
     active = options.active,
@@ -154,38 +159,53 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   contact.position.set(-0.12, -0.925, 0);
   contact.castShadow = false;
 
-  new Promise<ArrayBuffer>((resolve, reject) => {
-    // XHR also supports bundled file: assets in Expo's embedded WebView.
-    meshRequest.open("GET", assetUrl("woodfish/blender-v2/woodfish.glb"));
-    meshRequest.responseType = "arraybuffer";
-    meshRequest.onload = () => {
-      const status = meshRequest.status;
-      if (
-        (status === 0 || (status >= 200 && status < 300)) &&
-        meshRequest.response instanceof ArrayBuffer
-      ) resolve(meshRequest.response);
-      else reject(new Error("Missing woodfish GLB"));
-    };
-    meshRequest.onerror = meshRequest.onabort = () =>
-      reject(new Error("Woodfish model load interrupted"));
-    meshRequest.send();
-  })
-    .then((bytes) => {
-      if (disposed) return null;
-      return parseWoodfishModel(bytes);
-    })
-    .then((asset) => {
-      if (!asset) return;
+  options.content
+    .load(
+      async (pack, bytes, soundBytes) => {
+        const asset = await parseWoodfishModel(bytes, pack.bindings);
+        try {
+          const decoded = soundBytes
+            ? await options.decodeSound(soundBytes)
+            : undefined;
+          if (disposed) throw Error("Scene disposed");
+          parameters = pack.parameters;
+          renderer.toneMappingExposure = parameters.exposure;
+          key.intensity = parameters.keyIntensity;
+          fill.intensity = parameters.fillIntensity;
+          rim.intensity = parameters.rimIntensity;
+          bodyGroup.add(asset.body);
+          bodyGroup.position.y = -0.91;
+          asset.body.position.y = 0.91;
+          mallet.add(asset.mallet);
+          shaderFailed = false;
+          renderer.compile(scene, camera);
+          // Three reports linking failures on first use, not necessarily compile().
+          // Exercise a real frame inside candidate initialization so a bad remote
+          // material can still fall back to the last known good 3D pack.
+          renderer.render(scene, camera);
+          if (shaderFailed) throw Error("Scene shader failed");
+          return { asset, decoded };
+        } catch (error) {
+          bodyGroup.remove(asset.body);
+          mallet.remove(asset.mallet);
+          asset.dispose();
+          shaderFailed = false;
+          throw error;
+        }
+      },
+      { signal: options.signal },
+    )
+    .then((lease) => {
       if (disposed) {
-        asset.dispose();
+        lease.value.asset.dispose();
         return;
       }
-      modelAsset = asset;
-      bodyMesh = asset.body;
-      bodyGroup.add(bodyMesh);
-      bodyGroup.position.y = -0.91;
-      bodyMesh.position.y = 0.91;
-      mallet.add(asset.mallet);
+      modelAsset = lease.value.asset;
+      bodyMesh = modelAsset.body;
+      sound = lease.value.decoded;
+      confirm = lease.confirm;
+      options.onInstruction(lease.pack.copy.instruction);
+      host.dataset.contentRevision = lease.pack.revision;
       loaded = true;
       requestRender(true);
     })
@@ -217,7 +237,16 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     frame = 0;
     if (disposed || (!active && !needsStillFrame) || document.hidden) return;
     needsStillFrame = false;
-    renderer.render(scene, camera);
+    try {
+      renderer.render(scene, camera);
+    } catch {
+      options.failed();
+      return;
+    }
+    if (shaderFailed) {
+      options.failed();
+      return;
+    }
     if (inspectMode) {
       host.dataset.mallet = JSON.stringify(mallet.position.toArray());
       host.dataset.phase = phase;
@@ -225,6 +254,9 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     }
     if (loaded && !reportedReady && !shaderFailed) {
       reportedReady = true;
+      void confirm?.()
+        .then(() => options.content.prepareUpdate({ signal: options.signal }))
+        .catch(() => {});
       options.ready();
     }
   }
@@ -273,12 +305,15 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     followAnimation = null;
     const target = strikes.shift()!;
     if (reducedMotion) {
-      options.impact();
+      options.impact(sound);
       requestRender();
       queueMicrotask(nextStrike);
       return;
     }
-    const start = swingPose(target.point, target.normal, 0.32);
+    const start = swingPose(target.point, target.normal, 0.32, parameters);
+    const contactAt = parameters.liftMs + parameters.strikeMs;
+    const settleAt = contactAt + parameters.reboundMs;
+    const ringMs = parameters.reboundMs + parameters.settleMs;
     const from = mallet.position.clone(),
       fromRotation = mallet.quaternion.clone();
     // Lift toward the viewer before lateral travel, keeping the head clear of
@@ -295,7 +330,12 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     let contacted = false;
     function applySwing() {
       if (reducedMotion) return;
-      const pose = swingPose(target.point, target.normal, swing.angle);
+      const pose = swingPose(
+        target.point,
+        target.normal,
+        swing.angle,
+        parameters,
+      );
       mallet.position.copy(pose.head);
       mallet.quaternion.copy(pose.rotation);
     }
@@ -316,7 +356,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
         approach,
         {
           t: 1,
-          duration: 170,
+          duration: parameters.liftMs,
           ease: "inOut(2)",
           onUpdate: () => {
             if (reducedMotion) return;
@@ -330,11 +370,16 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
       )
       .call(() => {
         phase = "downswing";
-      }, 170)
+      }, parameters.liftMs)
       .add(
         swing,
-        { angle: 0, duration: 95, ease: "in(2)", onUpdate: applySwing },
-        170,
+        {
+          angle: 0,
+          duration: parameters.strikeMs,
+          ease: "in(2)",
+          onUpdate: applySwing,
+        },
+        parameters.liftMs,
       )
       .call(() => {
         if (contacted) return;
@@ -342,24 +387,34 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
         swing.angle = 0;
         applySwing();
         phase = "rebound";
-        options.impact();
+        options.impact(sound);
         requestRender();
-      }, 265)
+      }, contactAt)
       .add(
         swing,
-        { angle: 0.16, duration: 95, ease: "out(3)", onUpdate: applySwing },
-        265,
+        {
+          angle: 0.16,
+          duration: parameters.reboundMs,
+          ease: "out(3)",
+          onUpdate: applySwing,
+        },
+        contactAt,
       )
       .add(
         swing,
-        { angle: 0.1, duration: 140, ease: "out(3)", onUpdate: applySwing },
-        360,
+        {
+          angle: 0.1,
+          duration: parameters.settleMs,
+          ease: "out(3)",
+          onUpdate: applySwing,
+        },
+        settleAt,
       )
       .add(
         ring,
         {
-          seconds: 0.235,
-          duration: 235,
+          seconds: ringMs / 1000,
+          duration: ringMs,
           ease: "linear",
           onUpdate: () => {
             bodyGroup.rotation.z = reducedMotion
@@ -369,31 +424,15 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
                 Math.sin(95 * ring.seconds);
           },
         },
-        265,
+        contactAt,
       );
     strikeAnimation.play();
-  }
-  function visibility() {
-    if (document.hidden) {
-      cancelAnimationFrame(frame);
-      frame = 0;
-      stopFollowing();
-      strikeAnimation?.pause();
-    } else {
-      resize();
-      if (active) {
-        strikeAnimation?.resume();
-        nextStrike();
-      }
-      requestRender();
-    }
   }
   function lost(event: Event) {
     event.preventDefault();
     if (!disposed) options.failed();
   }
   renderer.domElement.addEventListener("webglcontextlost", lost);
-  document.addEventListener("visibilitychange", visibility);
   window.addEventListener("resize", resize);
   const observer = new ResizeObserver(resize);
   observer.observe(host);
@@ -413,7 +452,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
       );
       const hit = raycaster.intersectObject(bodyMesh, false)[0];
       if (!hit) {
-        options.impact();
+        options.impact(sound);
         return;
       }
       const normal = (hit.normal ?? hit.face!.normal)
@@ -444,8 +483,9 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
         frame = 0;
         stopFollowing();
         strikeAnimation?.pause();
-        requestRender(true);
+        resize();
       } else {
+        resize();
         if (!document.hidden) {
           strikeAnimation?.resume();
           nextStrike();
@@ -472,7 +512,9 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
             ? -Math.PI / 2
             : next === "right"
               ? Math.PI / 2
-              : next === "front" ? 0.14 : 0;
+              : next === "front"
+                ? 0.14
+                : 0;
       camera.position.set(
         Math.sin(angle) * 6.5,
         next === "top" ? 6.5 : next === "bottom" ? -6.5 : 2.3,
@@ -490,12 +532,10 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
       strikeAnimation?.cancel();
       strikeAnimation = null;
       strikes.length = 0;
-      meshRequest.abort();
       modelAsset?.dispose();
       modelAsset = null;
       cancelAnimationFrame(frame);
       observer.disconnect();
-      document.removeEventListener("visibilitychange", visibility);
       window.removeEventListener("resize", resize);
       renderer.domElement.removeEventListener("webglcontextlost", lost);
       geometries.forEach((g) => g.dispose());

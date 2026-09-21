@@ -2,6 +2,8 @@
 
 ## 运行
 
+使用 Node.js 22.18+。模型等内容的独立发布、缓存、回退和配置见 [场景内容分发](scene-content.md)。
+
 ```powershell
 npm install
 npm run dev
@@ -22,6 +24,7 @@ npm run mobile:verify
 
 - `packages/core`：纯 TypeScript 状态与动作，心愿、日志、静态仪式进度、奖励和存档格式。
 - `packages/runtime`：异步存储接口、串行保存、失败重试、React 无关的订阅式 store。
+- `packages/content`：独立内容契约、哈希校验、候选版本与回退、Web 缓存及 Native 文件桥接；不存储业务数据。
 - `packages/app`：共享四页导航、详情与表单、Three.js 木鱼、步骤式纸鹤/心愿灯和统一主题。
 - `apps/cyber-bless`：Vite 网页入口，localStorage 适配。旧场景保留在 `/dev/gallery`，按需加载。
 - `apps/mobile-expo`：Expo 原生容器、AsyncStorage、震动、安全区、前后台、Android 返回和 WebView 错误恢复。
@@ -36,7 +39,7 @@ npm run mobile:verify
 
 ## Three.js 木鱼
 
-`woodfish.tsx` 管理挂载和静态回退，`woodfish-scene.ts` 管理相机、照明、动画与场景资源，`woodfish-model.ts` 解析 Blender 导出的标准 GLB 并释放纹理/ImageBitmap。当前加载 `woodfish/blender-v2/woodfish.glb`，包含木鱼与木槌、真实 UV、切线和内嵌 PBR 贴图；不再使用旧版三向投射。颜色由内置 image_gen 参考 Blender UV 布局和初始基色进行图生图，法线与粗糙度在 Blender 从同一来源制作、烘焙，AO 来自真实几何。可编辑工程、提示词、桥接方式与材质局限见 `design/woodfish/README.md`。旧版资产保留。
+`woodfish.tsx` 通过 `packages/scene-runtime` 统一宿主管理挂载、暂停、可见性、取消与释放；`scene-engines.ts` 注册按需加载的本地引擎。`woodfish-scene.ts` 管理照明、动画与场景资源，`woodfish-model.ts` 解析 GLB 并释放纹理/ImageBitmap。`packages/content` 进入时优先读取完整待用包、已确认缓存和独立内置的 `woodfish/bundled-v1/woodfish.glb`；首帧后后台准备更新，下次进入才试用，渲染成功后确认。高清制作源仍在 `woodfish/blender-v2/woodfish.glb`，不随应用安装包分发。两档都有真实 UV、切线与内嵌 PBR；颜色源、Blender 烘焙与制作局限见 `design/woodfish/README.md`。旧制作资产保留。
 
 木鱼使用 Pointer Events 区分鼠标悬浮、触屏拖动和轻点；捕获主指针以处理区域外松手。触摸最大位移 ≤8px、时长 ≤350ms 才认作轻点，拖动、长按、多指和 pointercancel 不敲击；鼠标左键单击和 Enter/Space 仍可敲击。触屏离开立即取消跟随，鼠标离开区域也停止跟随。仅场景按钮使用 touch-action:none，其他区域正常滚动。
 
@@ -51,6 +54,8 @@ npm run mobile:verify
 本轮验证：50 项单元测试及网格闭合性/绕序/资源预算检查；Vite 生产构建；Expo Android/iOS 嵌入包与本地图片、模型、材质完整性；浏览器触摸/键盘、音效开关、暂停、退出/刷新恢复、35 次同批点击、奖励幂等、模拟前后台、320–1440px 与 DPR、WebGL 丢失和资源失败回退、纸鹤/心愿灯回归。六角度检查覆盖背面、底面和孔口，浏览器无控制台错误。尚未进行物理手机的帧率、触觉、音频、离线启动和 WebView 生命周期验收。
 
 ## 数据与规则
+
+2026-09-21 的内容分发改造保持以下业务规则与存档格式不变。内置 GLB 为 1.68 MiB / 21,962 三角面；上文 6.90 MiB / 93,816 三角面指高清档。音效、提示和白名单内交互参数可以来自场景包；动画代码与目标步数仍在应用中。最新验证与真机限制见 [场景内容分发](scene-content.md)。
 
 存储键 `cyber-bless:personal:v1`。网页与手机的本地存储独立，不自动同步。
 

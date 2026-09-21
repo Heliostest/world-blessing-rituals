@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "woodfish",
+  "revision": "woodfish-20260921-1",
+  "engine": "woodfish@1",
+  "bindings": { "body": "WoodfishBody", "mallet": "Mallet" },
+  "parameters": {
+    "headRadius": 0.255, "gripOffset": [0.65, -0.9, 0.1],
+    "exposure": 1.1, "keyIntensity": 3.2, "fillIntensity": 0.65, "rimIntensity": 0.9,
+    "liftMs": 170, "strikeMs": 95, "reboundMs": 95, "settleMs": 140
+  },
+  "copy": { "instruction": "悬浮或按住拖动木槌，轻点敲一下。" }
+}

@@ -44,6 +44,8 @@ export function Ritual({
   const [pulse, setPulse] = useState(0);
   const [paused, setPaused] = useState(false);
   const [view, setView] = useState("front");
+  const [instruction, setInstruction] =
+    useState("悬浮或按住拖动木槌，轻点敲一下。");
   const r = state.activeSession;
   const kind: RitualId =
     r?.ritual ?? (id === "crane" || id === "lantern" ? id : "woodfish");
@@ -108,6 +110,7 @@ export function Ritual({
             disabled={ready}
             onStrike={step}
             onImpact={feedback}
+            onInstruction={setInstruction}
           />
         ) : (
           <button
@@ -150,7 +153,7 @@ export function Ritual({
           : ready
             ? "这一刻，已经很好。"
             : kind === "woodfish"
-              ? "悬浮或按住拖动木槌，轻点敲一下。"
+              ? instruction
               : meta.prompts[Math.min(progress, meta.prompts.length - 1)]}
       </p>
       {ready ? (

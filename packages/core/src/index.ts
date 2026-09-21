@@ -93,7 +93,7 @@ export type Action =
     }
   | { type: "wish.archive"; id: string; archived: boolean }
   | {
-      type: "ritual.start";
+      type: "ritual.start" | "ritual.strike";
       id: string;
       ritual: RitualId;
       wishId?: string;
@@ -202,6 +202,13 @@ export function reduce(s: State, a: Action): State {
     }
     case "wish.archive":
       return updateWish(s, { ...wishOf(s, a.id), archived: a.archived });
+    case "ritual.strike": {
+      if (s.activeSession && s.activeSession.ritual !== a.ritual) return s;
+      const started = s.activeSession
+        ? s
+        : reduce(s, { ...a, type: "ritual.start" });
+      return reduce(started, { type: "ritual.step" });
+    }
     case "ritual.start": {
       if (s.activeSession) throw new Error("还有一个小仪式等你继续");
       if (s.sessions.some((r) => r.id === a.id)) return s;
@@ -224,6 +231,7 @@ export function reduce(s: State, a: Action): State {
     case "ritual.step": {
       if (!s.activeSession) return s;
       const r = s.activeSession;
+      if (r.progress >= rituals[r.ritual].steps) return s;
       return {
         ...s,
         activeSession: {

@@ -1,0 +1,24 @@
+{
+  "blender": "5.2.1 LTS",
+  "objects": {
+    "WoodfishBody": {
+      "vertices": 44032,
+      "triangles": 88060,
+      "nonManifoldEdges": 0,
+      "uvLoops": 264180
+    },
+    "Mallet": {
+      "vertices": 2882,
+      "triangles": 5756,
+      "nonManifoldEdges": 0,
+      "uvLoops": 17268
+    }
+  },
+  "material": {
+    "colorSource": "UV-guided image_gen edit",
+    "normalSource": "Blender tangent-space bake of controlled microheight from that same color",
+    "roughnessSource": "Blender bake of controlled 0.43-0.56 roughness from the same source",
+    "aoSource": "Blender geometry bake",
+    "triangleBudget": 100000
+  }
+}

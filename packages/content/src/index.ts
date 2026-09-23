@@ -18,17 +18,25 @@ export const DEFAULT_PARAMETERS = {
   settleMs: 140,
 };
 export type Asset = { path: string; bytes: number; sha256: string };
+export type RenderStyleId = "original" | "toon-ink" | "toon-soft";
 export type Pack = {
   schemaVersion: 1;
   sceneId: "woodfish";
   revision: string;
   engine: "woodfish@1";
+  renderStyle: RenderStyleId;
   model: Asset;
   sound?: Asset;
   bindings: { body: string; mallet: string };
   parameters: typeof DEFAULT_PARAMETERS;
   copy: { instruction: string };
 };
+export function parseRenderStyle(value: unknown): RenderStyleId {
+  if (value === undefined) return "original";
+  if (value === "original" || value === "toon-ink" || value === "toon-soft")
+    return value;
+  throw Error("Unsupported render style");
+}
 export function sha256(bytes: ArrayBuffer) {
   return Array.from(hash(new Uint8Array(bytes)), (b) =>
     b.toString(16).padStart(2, "0"),
@@ -78,6 +86,7 @@ export function parsePack(value: unknown): Pack {
     "sceneId",
     "revision",
     "engine",
+    "renderStyle",
     "model",
     "sound",
     "bindings",
@@ -125,6 +134,7 @@ export function parsePack(value: unknown): Pack {
     schemaVersion: 1,
     sceneId: "woodfish",
     engine: "woodfish@1",
+    renderStyle: parseRenderStyle(p.renderStyle),
     revision: str(p.revision, 80),
     model,
     ...(sound ? { sound } : {}),

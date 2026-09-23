@@ -14,13 +14,18 @@ const pack = (revision = "one"): Pack => ({
   sceneId: "woodfish",
   revision,
   engine: "woodfish@1",
+  renderStyle: "original",
   model: { path: "model.glb", bytes: data.byteLength, sha256: sha256(data) },
   bindings: { body: "WoodfishBody", mallet: "Mallet" },
   parameters: structuredClone(DEFAULT_PARAMETERS),
   copy: { instruction: "轻点敲一下" },
 });
+const legacyPack = (revision = "one") => {
+  const { renderStyle: _renderStyle, ...legacy } = pack(revision);
+  return legacy;
+};
 const candidate = (revision: string) => ({
-  pack: pack(revision),
+  pack: legacyPack(revision),
   base: "https://cdn.test/",
 });
 function setup() {
@@ -55,6 +60,27 @@ function setup() {
   };
 }
 describe("content contract", () => {
+  it("defaults old packs to the original render style", () => {
+    expect(parsePack(legacyPack()).renderStyle).toBe("original");
+  });
+  it("accepts only the approved render styles", () => {
+    for (const renderStyle of ["toon-ink", "toon-soft"] as const)
+      expect(parsePack({ ...pack(), renderStyle }).renderStyle).toBe(
+        renderStyle,
+      );
+    for (const renderStyle of ["toon-custom", "<script>", {}])
+      expect(() => parsePack({ ...pack(), renderStyle })).toThrow();
+  });
+  it("changes the normalized fingerprint input for a style-only update", () => {
+    const original = parsePack(legacyPack());
+    const ink = parsePack({ ...pack(), renderStyle: "toon-ink" });
+    expect(ink.model.sha256).toBe(original.model.sha256);
+    expect(
+      sha256(new TextEncoder().encode(JSON.stringify(ink)).buffer),
+    ).not.toBe(
+      sha256(new TextEncoder().encode(JSON.stringify(original)).buffer),
+    );
+  });
   it("rejects code, rules, paths, incompatible engines and unsafe parameters", () => {
     expect(parsePack(pack()).revision).toBe("one");
     for (const bad of [

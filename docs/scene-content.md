@@ -32,6 +32,18 @@ flowchart LR
 
 首个契约是 `sceneId: woodfish` / `engine: woodfish@1`。可更新模型及内嵌贴图、可选短音效、操作提示、节点绑定、槌头半径/握点、灯光强度/曝光、已有动作的阶段时长。包不能执行 JS/HTML，不能改变目标步数、奖励或存档。模型必须保持该引擎的坐标、朝向、槌头原点与接触区域约定；新的玩法、坐标体系或解码器需要更新引擎代码。
 
+木鱼包还可在顶层选择画布渲染风格，例如 `"renderStyle": "toon-ink"`。配置片段：
+
+```json
+{
+  "sceneId": "woodfish",
+  "engine": "woodfish@1",
+  "renderStyle": "toon-ink"
+}
+```
+
+可选 ID 仅有 `original`、`toon-ink`、`toon-soft`；旧包缺少该字段时按 `original` 解析，未知 ID 会被拒绝。`content/woodfish/pack.json` 控制远端包，`content/woodfish/bundled.json` 独立控制离线内置包。仅修改风格也会改变发布指纹，无需改动 GLB；更新仍在后台准备并于下次进入木鱼时试用，当前场景不会中途切换。
+
 当前以一个自包含 GLB 为模型更新单元。只更新声音、文案或参数不会重新下载相同哈希的模型；更新内嵌贴图会产生新 GLB。独立共享纹理依赖图留待后续。
 
 ## 加载、缓存与回退

@@ -116,6 +116,10 @@ export function createRenderStyle(
     let stylePhase = false;
     let shaderFailed = false;
     const previousHandler = renderer.debug.onShaderError;
+    const previousTarget = renderer.getRenderTarget();
+    const previousAutoClear = renderer.autoClear;
+    const previousClearColor = renderer.getClearColor(new THREE.Color());
+    const previousClearAlpha = renderer.getClearAlpha();
     const guarded = [shaderPass, outputPass];
     const originalRenders = guarded.map((pass) => pass.render);
     try {
@@ -138,6 +142,11 @@ export function createRenderStyle(
     } finally {
       guarded.forEach((pass, index) => { pass.render = originalRenders[index]; });
       renderer.debug.onShaderError = previousHandler;
+      // Three's RenderPass and EffectComposer restore state only after a
+      // successful draw. Restore it before either candidate rejection or fallback.
+      renderer.setRenderTarget(previousTarget);
+      renderer.autoClear = previousAutoClear;
+      renderer.setClearColor(previousClearColor, previousClearAlpha);
     }
     if (shaderFailed) {
       setStyle("original");

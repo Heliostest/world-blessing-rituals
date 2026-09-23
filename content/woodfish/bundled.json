@@ -3,6 +3,7 @@
   "sceneId": "woodfish",
   "revision": "bundled-woodfish-1",
   "engine": "woodfish@1",
+  "renderStyle": "original",
   "bindings": { "body": "WoodfishBody", "mallet": "Mallet" },
   "parameters": {
     "headRadius": 0.255, "gripOffset": [0.65, -0.9, 0.1],

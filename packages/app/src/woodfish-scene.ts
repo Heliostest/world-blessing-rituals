@@ -1,10 +1,11 @@
 import * as THREE from "three";
-import { DEFAULT_PARAMETERS } from "@wbr/content";
+import { DEFAULT_PARAMETERS, type RenderStyleId } from "@wbr/content";
 import type { SceneEngine, SceneMountOptions } from "@wbr/scene-runtime";
 import type { WoodfishContext, WoodfishController } from "./scene-engines";
 import { animate, createTimeline } from "animejs";
 import { swingPose } from "./woodfish-motion";
 import { parseWoodfishModel } from "./woodfish-model";
+import { createRenderStyle } from "./render-style";
 
 type Options = WoodfishContext & SceneMountOptions;
 export const woodfishEngine: SceneEngine<WoodfishContext, WoodfishController> =
@@ -39,6 +40,8 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   const target = new THREE.Vector3(0.08, 0.02, 0);
   camera.position.set(0.9, 2.3, 6.5);
   camera.lookAt(target);
+  const styleRenderer = createRenderStyle(renderer, scene, camera);
+  let selectedStyle: RenderStyleId = "original";
   // Warm room bounce with a dominant upper-left lamp; keep the cavity shaded.
   scene.add(new THREE.HemisphereLight(0xffecd4, 0x795039, 1.55));
   const key = new THREE.DirectionalLight(0xffdfae, 3.2);
@@ -163,6 +166,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     .load(
       async (pack, bytes, soundBytes) => {
         const asset = await parseWoodfishModel(bytes, pack.bindings);
+        const previousStyle = selectedStyle;
         try {
           const decoded = soundBytes
             ? await options.decodeSound(soundBytes)
@@ -184,12 +188,17 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
           // material can still fall back to the last known good 3D pack.
           renderer.render(scene, camera);
           if (shaderFailed) throw Error("Scene shader failed");
+          styleRenderer.setStyle(pack.renderStyle);
+          styleRenderer.render();
+          if (shaderFailed) throw Error("Scene shader failed");
+          selectedStyle = pack.renderStyle;
           return { asset, decoded };
         } catch (error) {
           bodyGroup.remove(asset.body);
           mallet.remove(asset.mallet);
           asset.dispose();
           shaderFailed = false;
+          styleRenderer.setStyle(previousStyle);
           throw error;
         }
       },
@@ -219,6 +228,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     if (!width || !height) return;
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
     renderer.setSize(width, height, false);
+    styleRenderer.resize(width, height);
     const halfHeight = 1.57,
       halfWidth = (halfHeight * width) / height;
     camera.left = -halfWidth;
@@ -238,7 +248,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     if (disposed || (!active && !needsStillFrame) || document.hidden) return;
     needsStillFrame = false;
     try {
-      renderer.render(scene, camera);
+      styleRenderer.render();
     } catch {
       options.failed();
       return;
@@ -544,6 +554,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
       key.shadow.dispose();
       fill.shadow.dispose();
       rim.shadow.dispose();
+      styleRenderer.dispose();
       renderer.dispose();
       renderer.forceContextLoss();
       renderer.domElement.remove();

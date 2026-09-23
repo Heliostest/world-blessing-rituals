@@ -1,5 +1,6 @@
 """Exercise the shared cartoon postprocessor on a real WebGL canvas."""
 import base64
+import copy
 import json
 import os
 from pathlib import Path
@@ -11,6 +12,70 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = os.environ.get("WBR_URL", "http://127.0.0.1:5176/")
 MODULE = "/@fs/" + (ROOT / "packages/app/src/render-style.ts").as_posix()
 THREE = "/@fs/" + (ROOT / "node_modules/three/build/three.module.js").as_posix()
+REMOTE = json.loads((ROOT / "artifacts/scene-content/woodfish.json").read_text(encoding="utf-8"))
+MODEL = (ROOT / "assets/woodfish/blender-v2/woodfish.glb").read_bytes()
+
+
+def enter_woodfish(page, revision):
+    page.get_by_role("button", name="木鱼", exact=True).click()
+    page.locator(".woodfish-visual[data-renderer='ready']").wait_for()
+    assert page.locator(".woodfish-canvas").get_attribute("data-content-revision") == revision
+    assert page.locator(".woodfish-canvas canvas").count() == 1
+
+
+def staged_woodfish(browser, inject_composer_failure=False):
+    context = browser.new_context(viewport={"width": 390, "height": 844})
+    manifest = copy.deepcopy(REMOTE)
+    manifest["revision"] = "probe-toon-soft"
+    manifest["renderStyle"] = "toon-soft"
+    context.route("**/scene-content/woodfish.json", lambda route: route.fulfill(json=manifest))
+    context.route("**/scene-content/*.glb", lambda route: route.fulfill(body=MODEL, content_type="model/gltf-binary"))
+    page = context.new_page()
+    page.goto(BASE, wait_until="networkidle")
+    enter_woodfish(page, "bundled-woodfish-1")
+    original = page.locator(".woodfish-canvas canvas").screenshot()
+    page.wait_for_function("""async () => {
+      const db = await new Promise((ok, no) => {const r=indexedDB.open('wbr-scene-content-v1');r.onsuccess=()=>ok(r.result);r.onerror=no});
+      const value = await new Promise((ok, no) => {const r=db.transaction('metadata').objectStore('metadata').getAll();r.onsuccess=()=>ok(r.result);r.onerror=no});
+      db.close(); return value.some(item => item.pending?.pack.revision === 'probe-toon-soft');
+    }""")
+    page.get_by_role("button", name="返回", exact=True).click()
+    page.evaluate("""async ({module, fail}) => {
+          const source = await (await fetch(module)).text();
+          const composerUrl = source.match(/from \"([^\"]*EffectComposer[^\"]*)\"/)[1];
+          const {EffectComposer} = await import(composerUrl);
+          const previous = EffectComposer.prototype.render;
+          window.styleFailureInjected = false;
+          window.composerDraws = 0;
+          EffectComposer.prototype.render = function(...args) {
+            window.composerDraws++;
+            if (fail && !window.styleFailureInjected) {
+              window.styleFailureInjected = true;
+              previous.apply(this, args);
+              throw Error('injected style pass failure');
+            }
+            return previous.apply(this, args);
+          };
+        }""", {"module": MODULE, "fail": inject_composer_failure})
+    enter_woodfish(page, "probe-toon-soft")
+    assert page.evaluate("window.composerDraws") > 0, "Mounted scene never used the selected style"
+    selected = page.locator(".woodfish-canvas canvas").screenshot()
+    assert selected != original, "Selected style should visibly change the canvas"
+    if inject_composer_failure:
+        assert page.evaluate("window.styleFailureInjected"), "Composer failure was not exercised"
+    count = page.locator(".ritual-counter").inner_text()
+    page.get_by_role("button", name="轻敲木鱼").click()
+    page.wait_for_function("before => document.querySelector('.ritual-counter')?.textContent !== before", arg=count)
+    assert page.locator(".woodfish-canvas canvas").count() == 1
+    if inject_composer_failure:
+        page.evaluate("""() => {
+          const canvas = document.querySelector('.woodfish-canvas canvas');
+          const extension = canvas.getContext('webgl2').getExtension('WEBGL_lose_context');
+          if (!extension) throw Error('WEBGL_lose_context unavailable');
+          extension.loseContext();
+        }""")
+        page.locator(".woodfish-visual[data-renderer='fallback']").wait_for()
+    context.close()
 
 
 def exercise(page):
@@ -49,8 +114,10 @@ def exercise(page):
             result[preset].png = canvas.toDataURL('image/png');
           }
           renderer.setSize(320, 220);
+          renderer.setPixelRatio(1.5);
           style.resize(320, 220);
           style.render();
+          result.resizedPixels = [canvas.width, canvas.height];
           result.resizedCorner = sample(1, 1);
           style.dispose();
           renderer.dispose();
@@ -82,6 +149,7 @@ with sync_playwright() as playwright:
             assert toon["corner"][3] == 0, result
             assert sum(abs(a - b) for a, b in zip(result["originalCenter"][:3], toon["center"][:3])) > 10, result
         assert result["resizedCorner"][3] == 0, result
+        assert result["resizedPixels"] == [480, 330], result
         context.close()
         print(json.dumps({"viewport": [width, height], "original": result["originalCenter"], "ink": result["toon-ink"]["center"], "soft": result["toon-soft"]["center"]}))
     context = browser.new_context()
@@ -131,4 +199,7 @@ with sync_playwright() as playwright:
     assert fallback["nextFrame"] == fallback["original"], fallback
     print(json.dumps({"styleShaderFallback": fallback}))
     context.close()
+    staged_woodfish(browser)
+    staged_woodfish(browser, inject_composer_failure=True)
+    print(json.dumps({"mountedWoodfishStyle": True, "styleFailureFallback": True, "contextLossFallback": True}))
     browser.close()

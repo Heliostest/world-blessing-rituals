@@ -9,8 +9,15 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.helio.cyberbless"
     },
-    "android": { "package": "com.helio.cyberbless" },
-    "web": { "bundler": "metro" },
-    "plugins": ["expo-asset"]
+    "android": {
+      "package": "com.helio.cyberbless"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-status-bar"
+    ]
   }
 }

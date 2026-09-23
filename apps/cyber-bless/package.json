@@ -10,12 +10,12 @@
   "dependencies": {
     "@wbr/app": "*",
     "@wbr/core": "*",
-    "@wbr/runtime": "*",
     "@wbr/gestures": "*",
+    "@wbr/runtime": "*",
     "@wbr/scenes": "^0.0.1",
     "@wbr/shared": "*",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "react-router-dom": "^7.0.0",
     "three": "^0.170.0"
   },

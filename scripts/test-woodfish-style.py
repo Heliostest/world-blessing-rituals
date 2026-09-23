@@ -47,12 +47,23 @@ def staged_woodfish(browser, inject_composer_failure=False):
           const previous = EffectComposer.prototype.render;
           window.styleFailureInjected = false;
           window.composerDraws = 0;
+          window.directRecoveryDraws = 0;
           EffectComposer.prototype.render = function(...args) {
             window.composerDraws++;
             if (fail && !window.styleFailureInjected) {
-              window.styleFailureInjected = true;
-              previous.apply(this, args);
-              throw Error('injected style pass failure');
+              const renderer = this.renderer, draw = renderer.render;
+              renderer.render = function(object, camera) {
+                if (!object.isScene && !window.styleFailureInjected) {
+                  window.styleFailureInjected = true;
+                  throw Error('injected fullscreen draw failure');
+                }
+                const directRecovery = window.styleFailureInjected && object.isScene && this.getRenderTarget() === null && this.autoClear;
+                const result = draw.call(this, object, camera);
+                if (directRecovery) {
+                  window.directRecoveryDraws++;
+                }
+                return result;
+              };
             }
             return previous.apply(this, args);
           };
@@ -60,9 +71,12 @@ def staged_woodfish(browser, inject_composer_failure=False):
     enter_woodfish(page, "probe-toon-soft")
     assert page.evaluate("window.composerDraws") > 0, "Mounted scene never used the selected style"
     selected = page.locator(".woodfish-canvas canvas").screenshot()
-    assert selected != original, "Selected style should visibly change the canvas"
     if inject_composer_failure:
         assert page.evaluate("window.styleFailureInjected"), "Composer failure was not exercised"
+        page.wait_for_function("window.directRecoveryDraws >= 2")
+        assert page.evaluate("window.composerDraws") == 1, "Failed style should stay on direct rendering"
+    else:
+        assert selected != original, "Selected style should visibly change the canvas"
     count = page.locator(".ritual-counter").inner_text()
     page.get_by_role("button", name="轻敲木鱼").click()
     page.wait_for_function("before => document.querySelector('.ritual-counter')?.textContent !== before", arg=count)
@@ -127,8 +141,64 @@ def exercise(page):
     )
 
 
+def scene_pass_failure(page):
+    result = page.evaluate("""async ({module, three}) => {
+      const THREE = await import(three);
+      const {createRenderStyle} = await import(module);
+      const renderer = new THREE.WebGLRenderer({alpha: true, preserveDrawingBuffer: true});
+      renderer.setSize(64, 64);
+      renderer.setClearColor(0x123456, 0.25);
+      const scene = new THREE.Scene();
+      const mesh = new THREE.Mesh(new THREE.SphereGeometry(0.7), new THREE.MeshBasicMaterial({color: 0xff3300}));
+      scene.add(mesh);
+      const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
+      camera.position.z = 3;
+      const style = createRenderStyle(renderer, scene, camera);
+      const pixels = () => renderer.domElement.toDataURL();
+      style.render();
+      const original = pixels();
+      // Remove the baseline so matching pixels require a new canvas draw.
+      renderer.clear();
+      const failure = Error('candidate scene draw failed');
+      const handler = () => { throw failure; };
+      renderer.debug.onShaderError = handler;
+      let offscreenAtFailure = false;
+      mesh.onBeforeRender = () => {
+        offscreenAtFailure = renderer.getRenderTarget() !== null;
+        renderer.debug.onShaderError();
+      };
+      style.setStyle('toon-ink');
+      let propagated = false;
+      try { style.render(); } catch (error) { propagated = error === failure; }
+      // Follow the host candidate-rejection path: dispose the style, then draw
+      // the replacement candidate directly using the same renderer.
+      style.setStyle('original');
+      mesh.onBeforeRender = () => {};
+      const canvasTarget = renderer.getRenderTarget() === null;
+      const autoClear = renderer.autoClear;
+      style.render();
+      const recovered = pixels();
+      const clearColor = renderer.getClearColor(new THREE.Color()).getHex();
+      const clearAlpha = renderer.getClearAlpha();
+      const handlerRestored = renderer.debug.onShaderError === handler;
+      style.dispose(); renderer.dispose();
+      return {propagated, offscreenAtFailure, canvasTarget, autoClear, clearColor,
+        clearAlpha, handlerRestored, matchesOriginal: original === recovered};
+    }""", {"module": MODULE, "three": THREE})
+    assert result["propagated"] and result["offscreenAtFailure"], result
+    assert result["canvasTarget"] and result["autoClear"], result
+    assert result["clearColor"] == 0x123456 and result["clearAlpha"] == 0.25, result
+    assert result["handlerRestored"] and result["matchesOriginal"], result
+    print(json.dumps({"scenePassFailure": result}))
+
+
 with sync_playwright() as playwright:
     browser = playwright.chromium.launch(channel=os.environ.get("WBR_BROWSER", "msedge"), headless=True)
+    context = browser.new_context()
+    page = context.new_page()
+    page.goto(BASE, wait_until="networkidle")
+    scene_pass_failure(page)
+    context.close()
     for width, height in [(390, 844), (1280, 800)]:
         context = browser.new_context(viewport={"width": width, "height": height})
         page = context.new_page()

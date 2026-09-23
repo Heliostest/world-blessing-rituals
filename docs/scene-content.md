@@ -1,6 +1,6 @@
 # 场景内容分发
 
-木鱼已接入「小应用壳 + 内置交互引擎 + 独立版本内容包」。保留 Expo SDK 54、React DOM、Three.js、anime.js；制作素材不再整个复制到网页发布目录。构建脚本需要 Node.js 22.18+，以便发布工具和运行时共用 TypeScript 校验器。
+木鱼已接入「小应用壳 + 内置交互引擎 + 独立版本内容包」。手机端使用 Expo SDK 57、React DOM、Three.js、anime.js；制作素材不再整个复制到网页发布目录。构建脚本需要 Node.js 22.18+，以便发布工具和运行时共用 TypeScript 校验器。
 
 ## 模块与更新边界
 

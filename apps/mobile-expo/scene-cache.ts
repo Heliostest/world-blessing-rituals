@@ -138,7 +138,7 @@ export async function fetchSceneAsset(
           await Promise.race([transfer, stopped]);
           check();
           verify(temporary, asset);
-          temporary.move(file);
+          await temporary.move(file);
         } catch (error) {
           const cleanup = () => {
             try {

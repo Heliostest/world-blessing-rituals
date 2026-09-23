@@ -89,6 +89,7 @@ function Shell() {
         active={active}
         backRequest={backRequest}
         dom={{
+          useExpoDOMWebView: false,
           style: styles.webview,
           contentInsetAdjustmentBehavior: "never",
           onError: fail,
@@ -119,7 +120,7 @@ const styles = StyleSheet.create({
   shell: { flex: 1, backgroundColor: "#faf6ec" },
   webview: { flex: 1, backgroundColor: "#faf6ec" },
   failure: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: "#faf6ec",
     justifyContent: "center",
     alignItems: "center",

@@ -10,7 +10,7 @@ npm run dev
 npm run mobile:start
 ```
 
-Vite 地址以启动日志为准。手机通过 Expo Go 扫描 Expo CLI 二维码；Android 与 iOS 共享 `packages/app` 下的 React DOM 界面。Expo 配置参考 HistoryCard：SDK 54、React Native 0.81.5、React 19.1。项目未关联 Expo 云账号，未执行云构建或商店发布。
+Vite 地址以启动日志为准。手机通过支持 SDK 57 的 Expo Go 扫描 Expo CLI 二维码；异地手机运行 `npm run mobile:remote` 启动隧道连接，电脑需保持联网运行。Android 与 iOS 共享 `packages/app` 下的 React DOM 界面。当前使用 Expo SDK 57、React Native 0.86.3、React 19.2.3。项目未关联 Expo 云账号，未执行云构建或商店发布。
 
 ```powershell
 npm test

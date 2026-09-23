@@ -97,6 +97,7 @@ button:hover:not(:disabled) {
   filter: brightness(0.985);
 }
 .bless-app {
+  width: 100%;
   min-height: 100dvh;
 }
 .app-shell {

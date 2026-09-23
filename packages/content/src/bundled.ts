@@ -4,6 +4,7 @@ export const bundledWoodfish = parsePack({
   "schemaVersion": 1,
   "sceneId": "woodfish",
   "engine": "woodfish@1",
+  "renderStyle": "original",
   "revision": "bundled-woodfish-1",
   "model": {
     "path": "woodfish/bundled-v1/woodfish.glb",

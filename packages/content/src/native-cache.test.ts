@@ -20,6 +20,8 @@ const disk = vi.hoisted(() => ({
   fail: false,
   paused: false,
   hold: false,
+  free: 1024 * 1024 * 1024,
+  stopGate: undefined as Promise<void> | undefined,
   reject: undefined as ((error: Error) => void) | undefined,
 }));
 vi.mock("@wbr/content", async (importOriginal) => ({
@@ -86,7 +88,7 @@ vi.mock("expo-file-system", () => {
         .map((uri) => new File(this, uri.split("/").at(-1)!));
     }
   }
-  return { File, Directory, Paths: { cache: "file:///cache" } };
+  return { File, Directory, Paths: { cache: "file:///cache", get availableDiskSpace() { return disk.free; } } };
 });
 vi.mock("expo-file-system/legacy", () => ({
   createDownloadResumable: (_url: string, uri: string) => ({
@@ -104,6 +106,11 @@ vi.mock("expo-file-system/legacy", () => ({
       disk.paused = true;
       disk.reject?.(Error("paused"));
     },
+    cancelAsync: async () => {
+      disk.paused = true;
+      await disk.stopGate;
+      disk.reject?.(Error("cancelled"));
+    },
   }),
 }));
 const asset = (bytes: Uint8Array) => ({
@@ -120,10 +127,34 @@ beforeEach(async () => {
   disk.fail = false;
   disk.paused = false;
   disk.hold = false;
+  disk.free = 1024 * 1024 * 1024;
+  disk.stopGate = undefined;
   disk.reject = undefined;
   disk.payload = new TextEncoder().encode("native scene");
 });
 describe("native content cache", () => {
+  it("retains a running writer reservation until native cancellation is acknowledged", async () => {
+    let acknowledge!: () => void;
+    disk.stopGate = new Promise(resolve => { acknowledge = resolve; });
+    disk.hold = true;
+    const a = asset(disk.payload);
+    const job = fetchSceneAsset(a, "https://cdn.test/a.glb", "writer");
+    const stopped = job.catch(() => undefined);
+    await vi.waitFor(() => expect(disk.downloads).toBe(1));
+    await cancelSceneAsset("writer");
+    await stopped;
+    await new Promise(resolve => setTimeout(resolve, 10));
+    try { expect((await maintainSceneCache()).reservedBytes).toBe(a.bytes); }
+    finally { acknowledge(); await Promise.resolve(); }
+    await vi.waitFor(async () => expect((await maintainSceneCache()).reservedBytes).toBe(0));
+  });
+  it("rejects disk exhaustion before transfer and permits retry after space is available", async () => {
+    disk.free = 0;
+    await expect(fetchSceneAsset(asset(disk.payload), "https://cdn.test/a.glb", "full")).rejects.toThrow(/disk space/);
+    expect(disk.downloads).toBe(0);
+    disk.free = 1024 * 1024 * 1024;
+    await expect(fetchSceneAsset(asset(disk.payload), "https://cdn.test/a.glb", "retry")).resolves.toMatch(/^file:/);
+  });
   it("updates normal read LRU and protects shared scene dependencies across clear", async () => {
     const a = asset(disk.payload);
     await fetchSceneAsset(a, "https://cdn.test/a.glb", "a");

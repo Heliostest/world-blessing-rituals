@@ -47,9 +47,9 @@ export default function BlessingDom({
       writeContentHistory,
       fetchSceneAsset,
       cancelSceneAsset,
-  protectSceneAssets,
-  releaseSceneAssets,
-  maintainSceneCache,
+      protectSceneAssets,
+      releaseSceneAssets,
+      maintainSceneCache,
     }),
     [],
   );
@@ -59,9 +59,9 @@ export default function BlessingDom({
     writeContentHistory,
     fetchSceneAsset,
     cancelSceneAsset,
-  protectSceneAssets,
-  releaseSceneAssets,
-  maintainSceneCache,
+    protectSceneAssets,
+    releaseSceneAssets,
+    maintainSceneCache,
   });
   const contentIO = useMemo(
     () => createNativeContentIO(contentActions),
@@ -78,7 +78,11 @@ export default function BlessingDom({
   return (
     <BlessingApp
       host={host}
-      content={{ io: contentIO, manifestUrl: manifestUrl || undefined, catalogUrl: catalogUrl || undefined }}
+      content={{
+        io: contentIO,
+        manifestUrl: manifestUrl || undefined,
+        catalogUrl: catalogUrl || undefined,
+      }}
       active={active}
       backRequest={backRequest}
       onCanGoBack={onCanGoBack}

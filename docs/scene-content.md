@@ -1,111 +1,116 @@
-# 场景内容分发
+# 场景内容分发与缓存
 
-木鱼已接入「小应用壳 + 内置交互引擎 + 独立版本内容包」。手机端使用 Expo SDK 57、React DOM、Three.js、anime.js；制作素材不再整个复制到网页发布目录。构建脚本需要 Node.js 22.18+，以便发布工具和运行时共用 TypeScript 校验器。
+截至 2026-09-24，应用具有通用场景目录、按需准备内容、共享磁盘缓存、历史重开和缓存管理入口。现有木鱼更新客户端仍保留本地优先、已确认版本与内置回退；新目录使用独立版本清单，资源缺失时重新下载，不把任意场景替换成木鱼。
 
-## 模块与更新边界
+## 架构与发布边界
 
-```mermaid
-flowchart LR
-  A[Web / Expo 应用壳] --> B[界面与业务 core]
-  B --> R[统一场景宿主 / 本地引擎注册]
-  R --> C[按需加载内置木鱼引擎]
-  C --> D[packages/content]
-  D --> E[后台读取远端 HTTPS 清单]
-  D --> F[完整待用包 / 已确认版本缓存]
-  D --> G[独立内置轻量包]
-  H[Blender / 素材制作] --> I[发布校验与内容哈希]
-  I --> E
-```
+| 层 | 内容与职责 | 生命周期 |
+| --- | --- | --- |
+| 安装包 | Expo DOM 宿主、React、Three.js、共享材质/后处理、已注册交互引擎、必要兜底内容 | 随 App 发版 |
+| 云端目录 | ID、标题、引擎契约、版本、不可变清单地址 | 轻量元数据；推荐和浏览不下载资源 |
+| 场景清单 | 场景身份、版本、引擎、命名资源表与受限配置 | 首次打开获取，成功准备后保存修复配方 |
+| 按需资源 | GLB、纹理、音频、JSON 配置等受支持的数据文件 | 按 SHA-256 去重，受统一预算约束 |
+| 运行内存/GPU | 当前解析模型、解码音频、事件、动画、renderer | 场景退出时释放 |
+| 用户存档 | 体验历史、步骤、收藏、原有奖励/心愿 | 持久化保存；不属于资源缓存 |
 
-| 位置 | 职责 |
-| --- | --- |
-| `packages/core` / `packages/runtime` | 记录、进度、奖励、串行保存，不接触下载缓存 |
-| `packages/scene-runtime` | 通用懒加载宿主、暂停/恢复、页面可见性、取消与幂等释放 |
-| `packages/app/src/scene-engines.ts` | 本地引擎注册表，保留每个引擎的上下文和控制器类型 |
-| `packages/app/src/woodfish-*` | 触控、anime.js、接触约束、渲染和资源释放 |
-| `packages/content` | schema、兼容性、SHA-256、候选选择、确认/回退、Web 缓存与桥接接口 |
-| `apps/mobile-expo/scene-cache.ts` | 原生下载、流式哈希、文件移动、缓存预算与取消 |
-| `content/woodfish/pack.json` | 远端木鱼配置 |
-| `content/woodfish/bundled.json` | 与内置 GLB 一起维护的独立配置，远端发布不能改写它 |
-| `scripts/publish-scene-content.mjs` | 校验、哈希资源、不可变版本清单、频道清单 |
-| `scripts/prepare-app-assets.mjs` | 从同一显式清单生成 Web / Expo public |
+`packages/content/src/catalog.ts` 验证通用目录和清单，`cache.ts` 负责容量预留、LRU 与使用中引用。`web.ts` 使用 IndexedDB，原生 `apps/mobile-expo/scene-cache.ts` 使用 Expo 文件系统与小型 AsyncStorage 索引；DOM 桥仅传递描述和 URI。所有内容客户端在同一 DOM 宿主中共享一个 Web 缓存协调器；Native 模块也只有一个协调器。当前 Web 保护租约以单页面宿主为范围，多标签页之间尚未同步使用中租约。
 
-首个契约是 `sceneId: woodfish` / `engine: woodfish@1`。可更新模型及内嵌贴图、可选短音效、操作提示、节点绑定、槌头半径/握点、灯光强度/曝光、已有动作的阶段时长。包不能执行 JS/HTML，不能改变目标步数、奖励或存档。模型必须保持该引擎的坐标、朝向、槌头原点与接触区域约定；新的玩法、坐标体系或解码器需要更新引擎代码。
+`packages/app/src/scene-engines.ts` 按版本注册本地引擎，统一宿主负责加载、暂停、恢复、取消和释放。木鱼、泉边一念和花水位一倾使用各自的实现。后两者是程序化 Three.js 场景，发布示例只下载一份共享的轻量文案配置；没有虚构大型模型来演示下载。
 
-木鱼包还可在顶层选择画布渲染风格，例如 `"renderStyle": "toon-ink"`。配置片段：
+## 数百种交互逻辑如何扩展
+
+每种真正不同的玩法注册独立的 `engine@version`，实现生命周期、依赖配置校验和自己的进度契约。相近玩法复用手势、Three.js、渲染风格和通用动作库，但不要求收敛成几个换皮模板。当前三个引擎使用整数步骤存档；未来自由布局等复杂玩法需要增加版本化 checkpoint schema 和迁移器，不应把所有状态压成步骤计数。场景内容版本允许变化，交互契约变化则升级引擎版本；不兼容引擎不得覆盖原存档进度。
+
+动态 `import()` 只延迟代码加载/执行。Metro 输出的引擎代码仍进入 App 安装产物。本轮在安装包外按需下载的是数据，新增交互代码通过应用商店发版；未注册引擎会显示需要更新 App，并在下载资源之前终止。
+
+官方资料于 2026-09-24 核对：Expo DOM 文档明确说明 DOM components 当前嵌入应用，尚不支持 OTA updates，因此不能直接把 EAS Update 作为本项目逐场景远端代码下载通道。[Expo DOM components](https://docs.expo.dev/guides/dom-components/)
+
+如果业务以后要求“不更新 App 就增加完全不同的新玩法代码”，需要单独建设受隔离的网页小游戏容器、受限消息桥、清单认证、兼容/回退及审核流程。Apple 2.5.2 约束下载改变功能的代码；4.7 为 HTML5/JavaScript 小程序、小游戏等规定了独立要求，包括内容责任和原生能力暴露限制。Google Play 限制外部下载 dex/JAR/native 可执行代码，对解释器内代码另有例外及政策要求。这些规则不是任意执行远端脚本的授权；本轮没有实现该容器。[Apple App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)；[Google Play Device and Network Abuse](https://support.google.com/googleplay/android-developer/answer/16559646?hl=en)
+
+## 目录、清单与打开流程
+
+目录示例：
 
 ```json
 {
-  "sceneId": "woodfish",
-  "engine": "woodfish@1",
-  "renderStyle": "toon-ink"
+  "schemaVersion": 1,
+  "scenes": [{
+    "id": "celtic-folk-spring",
+    "title": "泉边一念",
+    "engine": "celtic-folk-spring@1",
+    "revision": "v1-content-fingerprint",
+    "manifestUrl": "scene-content-fingerprint.json"
+  }]
 }
 ```
 
-可选 ID 仅有 `original`、`toon-ink`、`toon-soft`；旧包缺少该字段时按 `original` 解析，未知 ID 会被拒绝。`content/woodfish/pack.json` 控制远端包，`content/woodfish/bundled.json` 独立控制离线内置包。仅修改风格也会改变发布指纹，无需改动 GLB；更新仍在后台准备并于下次进入木鱼时试用，当前场景不会中途切换。
+清单示例结构：`{ schemaVersion: 1, sceneId, engine, revision, assets: { presentation: { path, bytes, sha256 } }, config: {} }`。资源地址相对清单解析。木鱼的命名资源为 `model` 和可选 `sound`，`config` 包含已验证的 bindings、parameters、copy、renderStyle；两个程序化场景只接受可选 `presentation` JSON（最多 8 KiB，caption 最多 300 字符）。其他资源类型由新引擎的校验器与加载器按契约接入，扩展名白名单本身不等于引擎已支持该资源。
 
-当前以一个自包含 GLB 为模型更新单元。只更新声音、文案或参数不会重新下载相同哈希的模型；更新内嵌贴图会产生新 GLB。独立共享纹理依赖图留待后续。
+目录最多 5000 项，网络元数据最多 2 MiB，单清单最多 128 个命名资源，内联配置最多 64 KiB。列表每次显示 24 项，可搜索或继续显示。目录刷新失败时读取上次目录；没有旧目录则展示内置条目和明确提示。每日推荐只从目录选取一项；未来推送只需携带 ID 或目录条目，不应调用下载接口。
 
-## 加载、缓存与回退
+点开场景会先记录体验意图，再检查引擎和版本身份。已有清单优先从本机读取；没有清单才请求 HTTPS 内容源。整个资源集合在下载前申请保护和容量预留，每项依次查缓存、校验字节数及 SHA-256，缺失才下载。完整准备后才挂载引擎。进度 UI 显示准备、下载/校验、就绪或失败；失败提供原因和重试。离开或取消会终止本次请求，不登记完整包。
 
-首页不请求场景模型。进入木鱼依次尝试「上次完整准备的待用缓存包 → 最近两个已确认缓存包 → 内置包」，不等待内容服务器，也不在前台重新下载缺失的远端资源。未就绪时显示轻量画面和加载提示，仍可敲击；离开页面取消加载。
+已保存清单是一份重建配方，不代表文件永久存在。历史记录保存原版本清单地址和引擎，断网且缓存完整时直接重开；缓存被清理则请求缺失的资源。服务器需要长期保留历史不可变清单与哈希文件；服务端删除这些内容时，只能报告失败，不能凭空恢复。目录发布新版本不会主动替换正在体验的场景。
 
-首帧成功后才在后台检查远端清单（2.5 秒超时），逐个下载模型与声音，校验字节数/SHA-256、模型依赖、节点、几何与贴图预算。完整写入缓存后登记 `pending`；下载中断、坏包、存储配额不足都不覆盖已确认版本。下一次进入才解码、实际绘制待用包，首帧成功后写入 `confirmed`，保留最近两个已确认描述。旧版数组元数据兼容读取，元数据修改在共享客户端内串行执行。
+## 缓存策略与失败恢复
 
-确定性的内容缺陷会隔离该候选，最多保留八个失败身份；内容变化后可以重试。卡通材质或轮廓效果的着色器编译或绘制失败时会恢复原材质并降级为 `original`，继续使用当前模型；模型首次绘制失败仍回退到下一个本地候选。GPU 等临时初始化错误只回退，下次仍可重试。使用中 GPU 上下文丢失则回到可敲击静态画面，下次进入重试。
+默认 **256 MiB 是全部场景共用的预算**。界面支持 64/128/256/512 MiB，设置保存在内容元数据里；底层 `maintain({ budget })` 支持配置整数正值。单资源最多 64 MiB。木鱼音效最多 4 MiB、解码后 3 秒/双声道；现有 GLB 几何、节点、贴图与依赖预算继续生效。
 
-挂载期间固定内容版本，下次进入再选择新版。跨重启恢复已有仪式进度，不保证恢复同一个视觉版本；规则仍在 core，所以本轮不迁移存档。
+协调器以唯一哈希计算实际占用和未完成下载预留。活动场景、正在下载的资源与排队请求持有租约；共享文件只计一次，只有最后一个使用者释放后才参与淘汰。历史清单和收藏不构成永久磁盘引用。超额时按真实最近使用时间删除最旧的可删除资源；普通缓存读取也会更新 LRU，小索引更新不会重写模型二进制。
 
-Web 使用独立 IndexedDB `wbr-scene-content-v1`，按哈希保存 ArrayBuffer、小索引管理 LRU；缓存命中只更新小索引，不重写模型二进制。存储不可用时仍可直接使用内置包，后台更新必须成功写入缓存。Native 使用 `Paths.cache/wbr-scene-content-v1`，唯一 `.part` 临时文件下载完成后，每 256 KiB 读取校验，再移动到哈希文件名。原生下载和写入串行；前台只读缓存接口独立于下载队列，不等待正在进行的网络传输。DOM action 仅返回 URI，二进制不以 Base64 跨桥。HTTP 开发页使用 Web 适配器，发布版 `file:` DOM 使用 Native 适配器。
+启动、回到前台、下载前后、场景退出和用户清理时执行维护，不依赖后台轮询定时器。降低预算时不删除活动资源，界面提示暂时超额；退出后再收敛到预算。受保护依赖本身超过预算时，在网络传输前返回容量不足。缓存 UI 的占用以最近一次维护快照为准，不为列表检查而读取全部模型。
 
-缓存预算 256 MiB，单资源最多 64 MiB，音效最多 4 MiB、解码后不超过 3 秒/双声道，下载超时 20 秒。当前木鱼最多 10 万三角面、12 张内嵌 PNG、单张 2048×2048、总计 16M 像素；暂不接收压缩编码扩展。这些是初始预算，并非真机测试所得。
+原生缓存位于 `Paths.cache/wbr-scene-content-v1`。目录是可删除缓存，系统可能自行回收，应以实际文件为准；索引会在维护时对照真实文件修复。[Expo FileSystem](https://docs.expo.dev/versions/latest/sdk/filesystem/)
 
-缓存可以被 LRU、系统或用户清理；已确认的描述不意味着文件永久保留。文件缺失则立即尝试下一个本地候选，后台更新可重新准备远端当前版本。内置原始文件随应用保留，不依赖可淘汰缓存；活动场景持有已解析内存直到退出。缓存与 `cyber-bless:personal:v1` 完全分开，不清理用户记录。
+原生下载先检查可用空间，写唯一 `.part` 文件，完成后每 256 KiB 流式读取校验，再移动到哈希文件名。未完成文件不对引擎可见，启动清扫遗留半包；运行中的临时文件不会被维护误删。网络传输上限 20 秒，取消和错误都会停止请求并清理临时文件。排队请求取消立即释放预留；正在写入的传输在终止响应后释放自己的预留。桥接取消消息先于下载请求到达时也会记住取消意图。WebView 被终止时，原生壳取消传输并释放旧场景租约。
 
-`mountScene()` 统一处理异步引擎加载、加载期间卸载、最新设置转发、页面可见性、暂停/恢复与失败释放。引擎只负责自身渲染、动画和 GPU 资源。宿主的 `AbortSignal` 随卸载/失败终止前后台内容工作；后台返回不能复活已卸载场景。当前接入木鱼，纸鹤和心愿灯仍是原有步骤交互。新增引擎需注册本地代码及对应契约，注册表不加载远端脚本。
+Web 校验完整响应后，以一个 IndexedDB 事务同时提交二进制和索引，失败时不留下半包。网络失败、哈希不符、缓存写入配额不足都会显示重试；已验证完整的单文件允许留下，以便重试时复用。缓存不可用时仍支持内置木鱼兜底，远端目录场景不谎报已缓存。
 
-## 开发与发布
+## 用户记录与使用入口
+
+首页显示“今日场景推荐”和“浏览场景目录”。“我的 → 我的仪式记录”重新打开历史场景，恢复已保存步骤；“我的 → 资源缓存”显示占用、预算、使用中和预留容量，并提供“清理可删除资源”。收藏只保存喜好，不自动离线锁定资源。
+
+`packages/core` 的 `sceneRecords` 保存 ID、标题、引擎、内容版本、清单地址、步骤、收藏和最近体验时间。旧存档缺少该字段时迁移为空列表，其他记录保持。它与原有心愿、仪式、奖励一起写入 `cyber-bless:personal:v1`，缓存 API 无权访问该 key。场景库的试体验步骤不会擅自生成原有仪式奖励；原有木鱼/纸鹤/心愿灯奖励路径继续由 core 管理。
+
+清理资源不会删除用户记录，但卸载 App 或清除整个浏览器站点数据仍会删除本机存档。远端内容不修改奖励规则。新玩法进度契约若不兼容，界面保留历史版本并报告冲突，开发者需要提供明确迁移。
+
+## 与原木鱼更新路径的关系
+
+原有首页木鱼仪式保留“待用缓存 → 最近两个已确认缓存版本 → 独立内置轻量包”的本地优先策略，首帧成功后后台准备远端更新，下次进入试用。该客户端也接入同一个容量预算和完整包保护。旧入口用于离线兜底和既有奖励流程；新场景目录入口用于显式按需下载和通用历史重开。二者下载相同哈希时复用文件。
+
+木鱼 `original`、`toon-ink`、`toon-soft` 仍使用 Three.js `MeshToonMaterial` 与 pmndrs/postprocessing。没有新增自写 GLSL。引擎首帧、渲染失败回退、卸载时模型/材质/纹理/阴影/动画/监听/renderer 释放继续保留。程序化场景也释放 renderer 并主动销毁 WebGL 上下文；减少动态效果不冻结手势计时。
+
+## 开发与云端发布
 
 ```powershell
 npm install
-npm run dev -- --port 5176
 npm run content:publish
+npm run dev -- --port 5177
 ```
 
-Vite 开发服务提供 `/scene-content/woodfish.json` 和高清哈希资源。修改素材/配置后运行 `content:publish`，进入木鱼触发后台准备，准备完成后再次进入试用新版；不会中途替换正在使用的物理参数。开发内容路由不会进入生产 dist。
+发布输出位于忽略的 `artifacts/scene-content/`：`catalog.json`、`scene-<sha256>.json`、哈希资源，以及兼容旧入口的 `woodfish.json` 和 releases。两个程序化场景共享一份小 JSON。Vite 开发路由提供这些文件，不把它们复制到生产 public；手机不预装所有远端资源。原内置模型及必需字体/插画仍随壳发布。
 
-生产 Web 配置 `VITE_SCENE_MANIFEST_URL`，Expo 构建配置 `EXPO_PUBLIC_SCENE_MANIFEST_URL`，值为自己 HTTPS 内容源的 `woodfish.json` 地址。不配置则直接使用内置轻量模型。Web 仅允许 localhost 开发使用 HTTP；原生下载要求 HTTPS。本仓库未绑定或部署云服务。
+生产 Web 设置 `VITE_SCENE_CATALOG_URL`，Expo 设置 `EXPO_PUBLIC_SCENE_CATALOG_URL`，地址指向 HTTPS `catalog.json`。旧木鱼后台更新另用 `VITE_SCENE_MANIFEST_URL` / `EXPO_PUBLIC_SCENE_MANIFEST_URL`。不配置目录则只显示内置条目。本仓库没有部署 CDN、目录服务或通知服务。
 
-Web / DOM 读取清单需配置 CORS，包括原生 `file:` 页来源。公共无凭据内容可设置 `Access-Control-Allow-Origin: *`。清单使用 `Cache-Control: no-cache`，哈希资源使用 `public, max-age=31536000, immutable`。SHA-256 验证文件与清单一致，清单依赖可信 HTTPS 源，本轮未实现离线签名认证。
+上传顺序为哈希资源 → 不可变场景清单 → 目录，目录使用 `Cache-Control: no-cache`，不可变资源长期缓存。按内容指纹生成新的版本/清单，禁止在原地址覆盖语义不同的内容。回滚时将目录指回保留的旧版本。内容源应支持 Web/DOM 的 CORS；公共无凭据内容允许 `Access-Control-Allow-Origin: *`。仅 localhost Web 开发允许 HTTP，Native 资源下载要求 HTTPS。SHA-256 证明资源与清单一致；清单信任来自 HTTPS，本轮未实现签名体系。
 
-1. 更新 `content/woodfish/pack.json` 和高清 GLB。可选音效设置 `$env:WBR_SCENE_SOUND='path/to/hit.wav'`；不设置则用内置合成敲击声。
-2. 执行 `npm run content:publish`。脚本校验契约、绑定和预算，输出到忽略的 `artifacts/scene-content/`；版本附加配置指纹，资源使用完整 SHA-256 文件名。
-3. 上传新哈希资源及 `releases/<revision>.json`，确认可读后最后替换 `woodfish.json`。
-4. 回滚时用保留的旧清单替换 `woodfish.json`。旧哈希资源继续保留，不覆盖同名文件。
+新增引擎时，需要增加本地模块与注册项、更新 `supportsScene`/引擎配置校验、定义进度恢复，并按单元测试和真实浏览器生命周期测试验收。可以复用 `mountScene`、缓存租约和共享 renderer 风格，但不得加载清单提供的 JavaScript。
 
-内置模型单独用后台 Blender 生成，不修改原 `.blend`：
+## 验证边界
 
 ```powershell
-& 'C:/Program Files/Blender Foundation/Blender 5.2/blender.exe' --background --factory-startup --python-exit-code 1 --python scripts/blender/export_bundled_woodfish.py
-node scripts/prepare-app-assets.mjs
-```
-
-内置模型 1,763,136 字节（1.68 MiB）、21,962 三角面，贴图最多 448px；高清版 7,235,024 字节（6.90 MiB）、93,816 三角面。闭合网格、UV、法线、切线和 PBR 均纳入校验。两个 public 目录是生成输出，不手工放文件；制作图、UV 工作图、`.blend` 和高清包不会进入应用启动素材清单。
-
-## 验证与后续
-
-```powershell
-npm run verify
-# 另起终端运行 Vite 后：
+npm test
+npm run build
+npm run mobile:verify
+$env:WBR_URL='http://127.0.0.1:5177/'
+python scripts/test-scene-library.py
 python scripts/test-scene-content.py
+python scripts/test-debug-overlay.py
 python scripts/test-woodfish-pointer.py
-python scripts/test-woodfish-browser.py
 ```
 
-内容测试覆盖契约、前台只读缓存、两阶段确认/回退、哈希、断网、取消、并发元数据、原生缓存逻辑、LRU 与解码预算。宿主测试覆盖懒加载卸载竞态、设置更新、可见性、失败释放与引擎注册。浏览器覆盖慢清单不阻塞首帧、资源复用、下一次进入才更新文案/灯光/声音、刷新后离线缓存、配额不足、半包取消、错误节点/首次绘制失败回退，以及原鼠标、触屏、音效和奖励流程。
+单元测试使用小资源和文件系统边界替身，覆盖全局预算、真实 LRU、共享依赖保护、排队取消、磁盘不足、坏包、半包、重启修复与持久化迁移。浏览器测试使用 500 条目录夹具、真实 IndexedDB 和 WebGL，验证按需下载、命中、历史进度、清理重开、共享引用、离线、错误重试与反复进入退出。WebGL 检查同时记录显式删除和上下文销毁，不以 DOM canvas 数量替代 GPU 生命周期检查。
 
-2026-09-21 验证：全仓 76 项单元测试、两档网格/材质检查、Vite 生产构建、Expo Android/iOS 嵌入检查通过。本地优先浏览器测试通过，包括慢清单、缓存配额不足、下载取消和下一次进入更新。另注入了首次 draw 抛错、着色器链接失败并在回退下载期间 resize 两种错误，均恢复到内置 3D。网页 dist 约 11.27 MiB（改造前约 30.77 MiB）；这是发布目录大小，不是首屏下载量。
+2026-09-24 实际结果：`npm run verify` 通过 102 项单元测试、木鱼素材预算校验、Web 构建和两端嵌入打包。场景库、原木鱼内容更新/回退、Shader 面板与木鱼触控浏览器测试通过；场景库循环的 9 个 WebGL 上下文全部销毁，存活 GPU 资源计数归零。此结果来自桌面浏览器软件环境与测试夹具，不是手机 GPU 实测数据。
 
-Expo Android/iOS 嵌入打包不能替代真机验收。发布前仍需测试两端发布版 Native URI、断网重启、磁盘不足、系统清缓存、WebView 重启，以及峰值内存、帧率与触觉。
-
-远端动态场景目录、存档版本快照、用户主动保留离线包、跨场景共享纹理、KTX2/Meshopt、自动质量档、大世界分区流式加载和 EAS Update 留作后续。通用宿主与本地注册表已经具备，内容契约目前仍限木鱼；完整大世界流式加载尚未实现。
+`mobile:verify` 运行 TypeScript 和 Android/iOS 的 Expo 原生包及嵌入 DOM HTML/JS/CSS/资源校验。**这是打包检查，不是真机验收。** 真机发布前仍需验证两端 Native file URI、低存储容量、系统回收缓存、下载暂停时机、进程被杀、WebView 重建、峰值 RAM/GPU、帧率、音频与触觉。本轮没有签名 APK/IPA、应用商店提交或设备性能测量。

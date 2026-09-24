@@ -15,7 +15,7 @@ with wave.open(audio, "wb") as wav:
 sound = audio.getvalue(); sound_hash = hashlib.sha256(sound).hexdigest()
 STATE = """async () => {
   const db=await new Promise((ok,no)=>{const r=indexedDB.open('wbr-scene-content-v1',1);r.onsuccess=()=>ok(r.result);r.onerror=no});
-  return new Promise((ok,no)=>{const r=db.transaction('metadata').objectStore('metadata').getAll();r.onsuccess=()=>{db.close();ok(r.result)};r.onerror=no});
+  return new Promise((ok,no)=>{const r=db.transaction('metadata').objectStore('metadata').getAll();r.onsuccess=()=>{db.close();ok(r.result.filter(s=>s?.version===2 && Array.isArray(s.confirmed)))};r.onerror=no});
 }"""
 def wait_revision(page, field, revision):
     # This installed Playwright accepts an unresolved Promise as truthy in

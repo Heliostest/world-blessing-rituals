@@ -18,7 +18,11 @@ export default function BlessingDom({
   writeContentHistory,
   fetchSceneAsset,
   cancelSceneAsset,
+  protectSceneAssets,
+  releaseSceneAssets,
+  maintainSceneCache,
   manifestUrl,
+  catalogUrl,
   dom: _dom,
 }: NativeContentBridge & {
   readSave(): Promise<string | null>;
@@ -28,6 +32,7 @@ export default function BlessingDom({
   active: boolean;
   backRequest: number;
   manifestUrl: string;
+  catalogUrl: string;
   dom?: import("expo/dom").DOMProps;
 }) {
   // DOM bridge proxies can change when native props update; keep a stable host.
@@ -42,6 +47,9 @@ export default function BlessingDom({
       writeContentHistory,
       fetchSceneAsset,
       cancelSceneAsset,
+  protectSceneAssets,
+  releaseSceneAssets,
+  maintainSceneCache,
     }),
     [],
   );
@@ -51,6 +59,9 @@ export default function BlessingDom({
     writeContentHistory,
     fetchSceneAsset,
     cancelSceneAsset,
+  protectSceneAssets,
+  releaseSceneAssets,
+  maintainSceneCache,
   });
   const contentIO = useMemo(
     () => createNativeContentIO(contentActions),
@@ -67,7 +78,7 @@ export default function BlessingDom({
   return (
     <BlessingApp
       host={host}
-      content={{ io: contentIO, manifestUrl: manifestUrl || undefined }}
+      content={{ io: contentIO, manifestUrl: manifestUrl || undefined, catalogUrl: catalogUrl || undefined }}
       active={active}
       backRequest={backRequest}
       onCanGoBack={onCanGoBack}

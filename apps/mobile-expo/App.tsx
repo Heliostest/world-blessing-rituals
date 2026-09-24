@@ -19,6 +19,10 @@ import {
   writeContentHistory,
   fetchSceneAsset,
   cancelSceneAsset,
+  protectSceneAssets,
+  releaseSceneAssets,
+  maintainSceneCache,
+  resetSceneCacheSession,
 } from "./scene-cache";
 
 const SAVE_KEY = "cyber-bless:personal:v1";
@@ -68,6 +72,7 @@ function Shell() {
     };
   }, []);
   const fail = () => {
+    void resetSceneCacheSession().catch(() => {});
     canGoBack.current = false;
     setFailed(true);
   };
@@ -82,6 +87,10 @@ function Shell() {
         writeContentHistory={writeContentHistory}
         fetchSceneAsset={fetchSceneAsset}
         cancelSceneAsset={cancelSceneAsset}
+        protectSceneAssets={protectSceneAssets}
+        releaseSceneAssets={releaseSceneAssets}
+        maintainSceneCache={maintainSceneCache}
+        catalogUrl={process.env.EXPO_PUBLIC_SCENE_CATALOG_URL ?? ""}
         manifestUrl={process.env.EXPO_PUBLIC_SCENE_MANIFEST_URL ?? ""}
         writeSave={writeSave}
         haptic={haptic}

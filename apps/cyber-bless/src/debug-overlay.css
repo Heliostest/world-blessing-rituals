@@ -63,6 +63,7 @@
 .debug-overlay-empty { color: #c1c5b3; margin: 20px 0; }
 @media (max-width: 560px) {
   .debug-overlay { top: auto; bottom: max(12px, env(safe-area-inset-bottom)); display: flex; flex-direction: column-reverse; }
+  body:has(.bottom-nav) .debug-overlay { bottom: calc(84px + env(safe-area-inset-bottom)); }
   .debug-overlay-panel { margin: 0 0 8px; padding: 12px; max-height: calc(100dvh - 80px - env(safe-area-inset-bottom)); }
   .debug-overlay-panel header, .debug-overlay-panel footer { display: none; }
   .debug-overlay-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }

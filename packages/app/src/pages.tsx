@@ -321,7 +321,7 @@ export function History() {
             </li>
           ))}
         </ol>
-      ) : (
+      ) : state.sceneRecords.length ? null : (
         <Empty title="故事才刚刚开始" body="完成的小仪式，会一一记在这里。" />
       )}
     </>

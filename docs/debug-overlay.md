@@ -4,6 +4,8 @@
 
 当前接入木鱼，以及 `/dev/scene/celtic-folk-spring`（泉边一念）和 `/dev/scene/theravada-water`（花水位一倾）。选择原始光照、墨线卡通或柔和卡通后，会立即更新当前画布，不重置仪式进度。多个已挂载场景可以通过下拉框分别选择；离开场景会移除其调试项并释放后处理资源。
 
+2026-09-24：正式应用的场景目录也接入上述三个引擎，并按目录场景 ID 区分调试覆盖。同一引擎的不同场景不会互相覆盖选择。手机底部存在主导航时，调试入口上移到导航上方，避免挡住“我的”和缓存管理入口。新的下载/缓存链路不改变 `MeshToonMaterial` 或 pmndrs/postprocessing 渲染实现。
+
 选择按场景 ID 保存到当前浏览器的 `wbr.debug.scene-styles.v1`，刷新或重新进入场景后仍然有效。存储不可用时仍可实时预览。点击“恢复内容默认”清除该场景覆盖，木鱼重新使用当前内容包的 `renderStyle`；两个旧场景默认使用原始光照。普通生产页面不读取或应用调试覆盖；面板不修改内容包或用户存档。Shader 绘制失败后回退到原始光照，并显示实际生效状态。
 
 新 Three.js 场景可使用 `@wbr/scene-runtime/debug-render-style` 的 `createDebugRenderStyle(renderer, scene, camera, { id, label, invalidate })`。`id` 应稳定且独立；按需渲染场景通过 `invalidate` 请求新帧，持续渲染场景可省略。通过返回对象的 `setStyle` 设置内容默认风格，并接入 `render`、`resize` 和 `dispose`。渲染集成位于 `packages/scene-runtime/src/render-style.ts`，材质适配位于 `toon-surfaces.ts`。

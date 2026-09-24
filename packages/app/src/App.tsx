@@ -15,6 +15,8 @@ import { fontStyles } from "./assets";
 import { Complete, Ritual } from "./ritual";
 import { ContentContext, type ContentEnvironment } from "./content";
 import { InvalidContentError } from "@wbr/content";
+import { SceneLibraryProvider, SceneCatalog, CacheManager } from "./scene-library";
+import { SceneExperience } from "./scene-experience";
 
 export function BlessingApp({
   host,
@@ -196,7 +198,7 @@ export function BlessingApp({
             ? route.page
             : "today";
   const page =
-    route.page === "today" ? (
+    route.page === "scenes" ? <SceneCatalog /> : route.page === "cache" ? <CacheManager /> : route.page === "scene" ? <SceneExperience entry={route.entry ?? state.sceneRecords.find(r => r.id === route.id)} /> : route.page === "today" ? (
       <Today key={dateKey} />
     ) : route.page === "wishes" ? (
       <Wishes />
@@ -257,7 +259,7 @@ export function BlessingApp({
           },
         }}
       >
-        <div
+        <SceneLibraryProvider><div
           className={`bless-app${state.settings.reducedMotion ? " reduce-motion" : ""}`}
         >
           <style>{fontStyles}</style>
@@ -297,6 +299,7 @@ export function BlessingApp({
                         note: "记一笔",
                         collection: "我的小收藏",
                         history: "仪式时光",
+                        scenes: "场景目录", scene: "场景体验", cache: "资源缓存",
                         ritual:
                           ritualTitle[
                             state.activeSession?.ritual ??
@@ -360,7 +363,7 @@ export function BlessingApp({
               </nav>
             )}
           </div>
-        </div>
+        </div></SceneLibraryProvider>
       </Context.Provider>
     </ContentContext.Provider>
   );

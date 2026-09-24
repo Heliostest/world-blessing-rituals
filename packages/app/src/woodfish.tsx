@@ -19,6 +19,9 @@ export function Woodfish({
   onStrike,
   onImpact,
   onInstruction,
+  contentClient,
+  sceneId,
+  onFailure,
 }: {
   pulse: number;
   active: boolean;
@@ -28,6 +31,9 @@ export function Woodfish({
   onStrike(): boolean;
   onImpact(sound?: AudioBuffer): void;
   onInstruction(text: string): void;
+  contentClient?: WoodfishContext["content"];
+  sceneId?: string;
+  onFailure?(error?: unknown): void;
 }) {
   const host = useRef<HTMLDivElement>(null);
   const scene = useRef<SceneSession<WoodfishController> | null>(null);
@@ -55,7 +61,8 @@ export function Woodfish({
       host: host.current,
       load: () => sceneEngines.load("woodfish@1"),
       context: {
-        content: woodfishContent(environment),
+        content: contentClient ?? woodfishContent(environment),
+        sceneId,
         decodeSound,
         onInstruction,
         impact: (sound) => latest.current.onImpact(sound),
@@ -65,8 +72,9 @@ export function Woodfish({
       ready: () => {
         if (!disposed) setStatus("ready");
       },
-      failed: () => {
+      failed: (error) => {
         if (!disposed) setStatus("fallback");
+        if (!disposed) onFailure?.(error);
       },
     });
     return () => {

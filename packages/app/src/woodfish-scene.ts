@@ -19,6 +19,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   let parameters = DEFAULT_PARAMETERS;
   let sound: AudioBuffer | undefined;
   let confirm: (() => Promise<void>) | undefined;
+  let releaseContent: (() => Promise<void>) | undefined;
   const renderer = new THREE.WebGLRenderer({
     alpha: true,
     antialias: true,
@@ -162,7 +163,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   contact.castShadow = false;
 
   const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
-    id: "woodfish", label: "木鱼", invalidate: () => requestRender(true),
+    id: options.sceneId ?? "woodfish", label: "木鱼", invalidate: () => requestRender(true),
   });
 
   options.content
@@ -219,6 +220,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
       bodyMesh = modelAsset.body;
       sound = lease.value.decoded;
       confirm = lease.confirm;
+      releaseContent = lease.release;
       options.onInstruction(lease.pack.copy.instruction);
       host.dataset.contentRevision = lease.pack.revision;
       loaded = true;
@@ -544,6 +546,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
     dispose() {
       if (disposed) return;
       disposed = true;
+      void releaseContent?.();
       stopFollowing();
       strikeAnimation?.cancel();
       strikeAnimation = null;

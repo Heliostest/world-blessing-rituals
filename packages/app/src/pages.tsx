@@ -252,6 +252,8 @@ export function Me() {
         ))}
       </div>
       <div className="settings-card">
+        <button className="settings-row" onClick={() => go({ page: "scenes" })}><span>场景目录</span><Icon name="arrow" /></button>
+        <button className="settings-row" onClick={() => go({ page: "cache" })}><span>资源缓存</span><Icon name="arrow" /></button>
         <button
           className="settings-row"
           onClick={() => go({ page: "history" })}
@@ -301,10 +303,13 @@ export function Me() {
   );
 }
 export function History() {
-  const { state } = useApp();
+  const { state, go } = useApp();
   return (
     <>
       <PageHead eyebrow="你留给自己的每一分钟" title="仪式时光" />
+      <div className="scene-catalog">{state.sceneRecords.map(record => <button className="scene-card" key={record.id} onClick={() => go({ page: "scene", id: record.id, entry: record })}>
+        <strong>{record.title}{record.favorite ? " · 已收藏" : ""}</strong><small>已完成 {record.progress} 步 · 再次打开</small>
+      </button>)}</div>
       {state.sessions.length ? (
         <ol className="timeline">
           {[...state.sessions].reverse().map((s) => (
@@ -312,6 +317,7 @@ export function History() {
               <small>{formatDate(s.completedAt!)}</small>
               <h3>{rituals[s.ritual].name}</h3>
               <p>功德 +10 · 收藏了{rituals[s.ritual].object}</p>
+              <button className="text-button" onClick={() => go({ page: "ritual", id: s.ritual })}>再次体验</button>
             </li>
           ))}
         </ol>

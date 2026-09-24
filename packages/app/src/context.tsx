@@ -1,8 +1,10 @@
 import { createContext, useContext } from "react";
 import type { Action, State, ReturnMethod } from "@wbr/core";
+import type { CatalogEntry } from "@wbr/content/catalog";
 export type FulfillmentDraft = { method: ReturnMethod; text: string };
 export type Route = {
   page:
+    | "scenes" | "scene" | "cache"
     | "today"
     | "wishes"
     | "world"
@@ -17,6 +19,7 @@ export type Route = {
     | "history";
   id?: string;
   wishId?: string;
+  entry?: CatalogEntry;
 };
 export type AppContext = {
   state: State;

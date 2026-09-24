@@ -2,6 +2,7 @@ import { useState } from "react";
 import { dailyRitual, localDay, rituals, type RitualId } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { useApp } from "./context";
+import { SceneRecommendation } from "./scene-library";
 
 export const ritualTitle = {
   woodfish: "敲掉一点小烦恼",
@@ -27,6 +28,7 @@ export function Today() {
         </button>
       </header>
       <p className="lead">今天，也给自己一点好运。</p>
+      <SceneRecommendation />
       {state.activeSession && (
         <button
           className="resume-banner"

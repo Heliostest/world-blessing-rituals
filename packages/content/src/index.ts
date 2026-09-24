@@ -70,7 +70,7 @@ function number(value: unknown, min: number, max: number) {
 export function parseAsset(value: unknown): Asset {
   const a = object(value, ["path", "bytes", "sha256"]);
   if (
-    !/^[a-zA-Z0-9_-]+(?:\/[a-zA-Z0-9_-]+)*\.(?:glb|wav|mp3|ogg)$/.test(
+    !/^[a-zA-Z0-9_-]+(?:\/[a-zA-Z0-9_-]+)*\.(?:glb|wav|mp3|ogg|png|jpg|webp|json|bin)$/.test(
       str(a.path, 256),
     )
   )
@@ -152,6 +152,7 @@ export function checkAbort(signal?: AbortSignal) {
     throw new DOMException("Content load cancelled", "AbortError");
 }
 export type ContentIO = {
+  cache?: import("./cache").CacheControl;
   /** Never starts a network request. Missing/evicted/corrupt cache returns undefined. */
   readCachedAsset(
     asset: Asset,
@@ -168,7 +169,7 @@ export type ContentIO = {
   writeHistory(key: string, value: unknown): Promise<void>;
 };
 export type Candidate = { pack: Pack; base: string };
-export type Lease<T> = { pack: Pack; value: T; confirm(): Promise<void> };
+export type Lease<T> = { pack: Pack; value: T; confirm(): Promise<void>; release?(): Promise<void> };
 type Metadata = {
   version: 2;
   confirmed: Candidate[];
@@ -227,6 +228,20 @@ export function createContentClient(config: {
   ) => void;
 }) {
   const { io } = config;
+  async function protect(pack: Pack, signal?: AbortSignal) {
+    const owner = `woodfish:${Date.now()}:${Math.random()}`;
+    await io.cache?.protect(owner, [pack.model, ...(pack.sound ? [pack.sound] : [])]);
+    let released = false;
+    const release = async () => {
+      if (released) return;
+      released = true; signal?.removeEventListener("abort", abort);
+      await io.cache?.release(owner);
+    };
+    const abort = () => { void release().catch(() => {}); };
+    signal?.addEventListener("abort", abort, { once: true });
+    if (signal?.aborted) { await release(); checkAbort(signal); }
+    return release;
+  }
   const bundled = parsePack(config.bundled);
   const historyKey = `woodfish@1:${config.manifestUrl ?? "bundled"}`;
   let writes: Promise<unknown> = Promise.resolve();
@@ -256,6 +271,7 @@ export function createContentClient(config: {
       if (!config.manifestUrl) return;
       if (refreshing && !refreshing.signal?.aborted) return refreshing.promise;
       const promise = (async () => {
+        let release: (() => Promise<void>) | undefined;
         try {
           const url = new URL(config.manifestUrl!);
           if (
@@ -273,6 +289,7 @@ export function createContentClient(config: {
           checkAbort(signal);
           if ((await readMetadata()).rejected.includes(identity(candidate)))
             return;
+          release = await protect(candidate.pack, signal);
           const read = async (asset: Asset) => {
             const bytes = await io.readAsset(
               asset,
@@ -302,6 +319,8 @@ export function createContentClient(config: {
           checkAbort(
             signal,
           ); /* Background errors never disturb the mounted scene. */
+        } finally {
+          await release?.();
         }
       })();
       const job = { promise, signal };
@@ -342,7 +361,9 @@ export function createContentClient(config: {
         tried.add(id);
         const { pack, base } = candidate;
         let initializing = false;
+        let release: (() => Promise<void>) | undefined;
         try {
+          if (candidate !== bootstrap) release = await protect(pack, signal);
           const read = async (asset: Asset) => {
             const bytes =
               candidate === bootstrap
@@ -367,6 +388,7 @@ export function createContentClient(config: {
           return {
             pack,
             value,
+            release,
             async confirm() {
               if (confirmed || signal?.aborted || candidate === bootstrap)
                 return;
@@ -387,6 +409,7 @@ export function createContentClient(config: {
             },
           };
         } catch (error) {
+          await release?.();
           checkAbort(signal);
           if (
             initializing &&

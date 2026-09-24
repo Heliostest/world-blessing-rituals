@@ -1,17 +1,29 @@
 import { Directory, File, Paths } from "expo-file-system";
 import { createDownloadResumable } from "expo-file-system/legacy";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import {
-  CACHE_BUDGET,
-  createSHA256,
-  parseAsset,
-  type Asset,
-} from "@wbr/content";
-
-// Metadata and disposable files never share the personal-save key or directory.
+import { createSHA256, type Asset } from "@wbr/content";
+import { createAssetCache, type CacheOptions, type CacheEntry } from "@wbr/content/cache";
 const PREFIX = "wbr:scene-content:v1:";
-const pending = new Map<string, () => void>();
-let queue: Promise<unknown> = Promise.resolve();
+const root = () => new Directory(Paths.cache, "wbr-scene-content-v1");
+const pending = new Map<string, AbortController>();
+const cancelledRequests = new Set<string>();
+const partials = new Set<string>();
+const sceneOwners = new Set<string>();
+let epoch = 0;
+let indexWrites: Promise<unknown> = Promise.resolve();
+async function index(): Promise<Record<string, number>> {
+  try {
+    const value = JSON.parse((await AsyncStorage.getItem(PREFIX + "lru")) ?? "{}");
+    return Object.fromEntries(Object.entries(value ?? {}).filter(([key, used]) => /^[a-f0-9]{64}$/.test(key) && typeof used === "number" && Number.isFinite(used))) as Record<string, number>;
+  } catch { return {}; }
+}
+function updateIndex(fn: (index: Record<string, number>) => void) {
+  const task = indexWrites.catch(() => {}).then(async () => {
+    const value = await index(); fn(value);
+    await AsyncStorage.setItem(PREFIX + "lru", JSON.stringify(value));
+  });
+  indexWrites = task; return task;
+}
 function verify(file: File, asset: Asset) {
   if (!file.exists || file.size !== asset.bytes)
     throw Error("Invalid scene file size");
@@ -33,161 +45,110 @@ function verify(file: File, asset: Asset) {
     handle.close();
   }
 }
+
+const cache = createAssetCache<string>({
+  async list() {
+    const directory = root(); directory.create({ idempotent: true, intermediates: true });
+    const used = await index();
+    const entries: CacheEntry[] = directory.list().filter((f): f is File => f instanceof File && /^[a-f0-9]{64}$/.test(f.name))
+      .map(f => ({ key: f.name, size: f.size, used: used[f.name] ?? 0 }));
+    const keys = new Set(entries.map(e => e.key));
+    await updateIndex(current => { for (const key of Object.keys(current)) if (!keys.has(key)) delete current[key]; });
+    return entries;
+  },
+  async read(asset) {
+    const file = new File(root(), asset.sha256);
+    try { verify(file, asset); return file.uri; }
+    catch { if (file.exists) file.delete(); return; }
+  },
+  touch: (key, at) => updateIndex(value => { value[key] = at; }),
+  async remove(key) {
+    const file = new File(root(), key); if (file.exists) file.delete();
+    await updateIndex(value => { delete value[key]; });
+  },
+  async sweep() {
+    const directory = root(); directory.create({ idempotent: true, intermediates: true });
+    for (const file of directory.list()) {
+      if (file instanceof File && file.name.endsWith(".part") && !partials.has(file.uri)) file.delete();
+    }
+  },
+  async download(asset, url, signal) {
+    if (!url.startsWith("https://")) throw Error("Native content requires HTTPS");
+    // Account for an atomic temp file before starting the network transfer.
+    const available = Paths.availableDiskSpace;
+    if (typeof available === "number" && available < asset.bytes + 1024 * 1024) throw Error("Insufficient disk space for scene");
+    const directory = root(); directory.create({ idempotent: true, intermediates: true });
+    const temporary = new File(directory, `${asset.sha256}-${Date.now()}-${Math.random().toString(16).slice(2)}.part`);
+    const originalUri = temporary.uri;
+    partials.add(originalUri);
+    let stop: () => void = () => {};
+    const download = createDownloadResumable(url, temporary.uri, {}, progress => {
+      if (progress.totalBytesWritten > asset.bytes || progress.totalBytesExpectedToWrite > asset.bytes) stop();
+    });
+    let rejectStop: (error: Error) => void = () => {};
+    const stopped = new Promise<never>((_, reject) => { rejectStop = reject; });
+    stop = () => {
+      void download.pauseAsync().catch(() => {});
+      rejectStop(Error("Scene transfer interrupted or exceeded size limit"));
+    };
+    signal?.throwIfAborted();
+    signal?.addEventListener("abort", stop, { once: true });
+    const timer = setTimeout(stop, 20000);
+    const transfer = download.downloadAsync();
+    const cleanup = () => {
+      partials.delete(originalUri);
+      try { const file = new File(directory, originalUri.split("/").at(-1)!); if (file.exists) file.delete(); } catch { /* next lifecycle sweep retries */ }
+    };
+    try {
+      const result = await Promise.race([transfer, stopped]);
+      signal?.throwIfAborted();
+      if (result && result.status !== undefined && (result.status < 200 || result.status >= 300)) throw Error(`Content HTTP ${result.status}`);
+      verify(temporary, asset);
+      const file = new File(directory, asset.sha256);
+      temporary.move(file);
+      return file.uri;
+    } finally {
+      clearTimeout(timer); signal?.removeEventListener("abort", stop);
+      void transfer.then(cleanup, cleanup);
+    }
+  },
+});
 export async function readContentHistory(key: string) {
   const raw = await AsyncStorage.getItem(PREFIX + key);
-  return raw ? JSON.parse(raw) : [];
+  try { return raw ? JSON.parse(raw) : undefined; } catch { return undefined; }
 }
 export async function writeContentHistory(key: string, value: unknown) {
   await AsyncStorage.setItem(PREFIX + key, JSON.stringify(value));
 }
+export async function readSceneAsset(asset: Asset): Promise<string | null> { return (await cache.read(asset)) ?? null; }
+export async function fetchSceneAsset(asset: Asset, url: string, requestId: string): Promise<string> {
+  const controller = new AbortController(); pending.set(requestId, controller);
+  if (cancelledRequests.delete(requestId)) controller.abort();
+  try { return await cache.fetch(asset, url, controller.signal); }
+  finally { pending.delete(requestId); }
+}
 export async function cancelSceneAsset(requestId: string) {
-  pending.get(requestId)?.();
-}
-/** A lookup never waits for the download queue or starts a network request. */
-export async function readSceneAsset(raw: Asset): Promise<string | null> {
-  const asset = parseAsset(raw);
-  const file = new File(
-    new Directory(Paths.cache, "wbr-scene-content-v1"),
-    asset.sha256,
-  );
-  try {
-    verify(file, asset);
-    return file.uri;
-  } catch {
-    return null;
+  if (pending.has(requestId)) pending.get(requestId)!.abort();
+  else {
+    // DOM bridge messages can arrive out of order; IDs are unique per request.
+    cancelledRequests.add(requestId);
+    if (cancelledRequests.size > 256) cancelledRequests.delete(cancelledRequests.values().next().value!);
   }
 }
-export async function fetchSceneAsset(
-  raw: Asset,
-  url: string,
-  requestId: string,
-): Promise<string> {
-  const asset = parseAsset(raw);
-  if (!url.startsWith("https://")) throw Error("Native content requires HTTPS");
-  let cancelled = false,
-    pause: (() => void) | undefined;
-  pending.set(requestId, () => {
-    cancelled = true;
-    pause?.();
-  });
-  const check = () => {
-    if (cancelled) throw Error("Scene download cancelled");
-  };
-  // Serialized disk mutations bound download concurrency and avoid eviction races.
-  const task = queue
-    .catch(() => {})
-    .then(async () => {
-      check();
-      const root = new Directory(Paths.cache, "wbr-scene-content-v1");
-      root.create({ idempotent: true, intermediates: true });
-      const file = new File(root, asset.sha256);
-      let index: Record<string, number> = {};
-      try {
-        const raw = JSON.parse(
-          (await AsyncStorage.getItem(PREFIX + "lru")) ?? "{}",
-        );
-        if (raw && typeof raw === "object" && !Array.isArray(raw))
-          index = Object.fromEntries(
-            Object.entries(raw).filter(
-              (entry): entry is [string, number] =>
-                /^[a-f0-9]{64}$/.test(entry[0]) &&
-                typeof entry[1] === "number" &&
-                Number.isFinite(entry[1]),
-            ),
-          );
-      } catch {
-        /* Rebuild index from files. */
-      }
-      check();
-      try {
-        verify(file, asset);
-      } catch {
-        if (file.exists) file.delete();
-        const temporary = new File(
-          root,
-          `${asset.sha256}-${Date.now()}-${Math.random().toString(16).slice(2)}.part`,
-        );
-        const download = createDownloadResumable(
-          url,
-          temporary.uri,
-          {},
-          (progress) => {
-            if (
-              progress.totalBytesWritten > asset.bytes ||
-              progress.totalBytesExpectedToWrite > asset.bytes
-            ) {
-              cancelled = true;
-              pause?.();
-            }
-          },
-        );
-        let rejectStop: (reason: Error) => void = () => {};
-        const stopped = new Promise<never>((_, reject) => {
-          rejectStop = reject;
-        });
-        pause = () => {
-          void download.pauseAsync().catch(() => {});
-          rejectStop(Error("Scene transfer stopped"));
-        };
-        const timer = setTimeout(() => {
-          cancelled = true;
-          pause?.();
-        }, 20000);
-        const transfer = download.downloadAsync();
-        try {
-          await Promise.race([transfer, stopped]);
-          check();
-          verify(temporary, asset);
-          await temporary.move(file);
-        } catch (error) {
-          const cleanup = () => {
-            try {
-              if (temporary.exists) temporary.delete();
-            } catch {
-              /* Sweep stale partials later. */
-            }
-          };
-          void transfer.then(cleanup, cleanup);
-          throw error;
-        } finally {
-          clearTimeout(timer);
-          pause = undefined;
-          // A failed native writer may settle after cancellation; .part files are
-          // never returned or counted as confirmed content and are swept below.
-        }
-      }
-      check();
-      index[asset.sha256] = Date.now();
-      const files = root
-        .list()
-        .filter((entry): entry is File => entry instanceof File);
-      for (const entry of files) {
-        if (
-          entry.name.endsWith(".part") &&
-          Date.now() - (entry.modificationTime ?? Date.now()) > 3600000
-        )
-          entry.delete();
-      }
-      let total = files
-        .filter((entry) => entry.exists)
-        .reduce((sum, entry) => sum + entry.size, 0);
-      for (const entry of files.sort(
-        (a, b) => (index[a.name] ?? 0) - (index[b.name] ?? 0),
-      )) {
-        if (total <= CACHE_BUDGET) break;
-        if (!entry.exists || entry.name.endsWith(".part")) continue;
-        if (entry.name === asset.sha256) continue;
-        total -= entry.size;
-        entry.delete();
-        delete index[entry.name];
-      }
-      await AsyncStorage.setItem(PREFIX + "lru", JSON.stringify(index));
-      return file.uri;
-    });
-  queue = task;
+export async function protectSceneAssets(owner: string, assets: Asset[]) {
+  const started = epoch; sceneOwners.add(owner);
   try {
-    return await task;
-  } finally {
-    pending.delete(requestId);
-  }
+    await cache.protect(owner, assets);
+    if (started !== epoch) { await cache.release(owner); throw Error("Scene host restarted"); }
+  } catch (error) { sceneOwners.delete(owner); throw error; }
+}
+export async function releaseSceneAssets(owner: string) { sceneOwners.delete(owner); await cache.release(owner); }
+export async function maintainSceneCache(options?: CacheOptions) { return cache.maintain(options); }
+/** A terminated DOM host cannot release its leases; the native shell owns recovery. */
+export async function resetSceneCacheSession() {
+  epoch++;
+  for (const controller of pending.values()) controller.abort();
+  const owners = [...sceneOwners]; sceneOwners.clear();
+  for (const owner of owners) await cache.release(owner);
+  await cache.maintain();
 }

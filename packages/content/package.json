@@ -3,8 +3,21 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
-  "exports": { ".": "./src/index.ts", "./web": "./src/web.ts", "./bundled": "./src/bundled.ts", "./native-web": "./src/native-web.ts", "./glb": "./src/glb.ts" },
-  "scripts": { "test": "vitest run" },
-  "dependencies": { "@noble/hashes": "^1.8.0" },
-  "devDependencies": { "vitest": "^3.2.7" }
+  "exports": {
+    ".": "./src/index.ts",
+    "./web": "./src/web.ts",
+    "./bundled": "./src/bundled.ts",
+    "./native-web": "./src/native-web.ts",
+    "./glb": "./src/glb.ts",
+    "./cache": "./src/cache.ts"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.8.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.7"
+  }
 }

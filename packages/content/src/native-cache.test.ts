@@ -6,6 +6,10 @@ import {
   cancelSceneAsset,
   readContentHistory,
   writeContentHistory,
+  protectSceneAssets,
+  releaseSceneAssets,
+  maintainSceneCache,
+  resetSceneCacheSession,
 } from "../../../apps/mobile-expo/scene-cache";
 
 const disk = vi.hoisted(() => ({
@@ -107,7 +111,9 @@ const asset = (bytes: Uint8Array) => ({
   bytes: bytes.byteLength,
   sha256: sha256(bytes.slice().buffer),
 });
-beforeEach(() => {
+beforeEach(async () => {
+  await resetSceneCacheSession();
+  await maintainSceneCache({ budget: 1024 * 1024 });
   disk.files.clear();
   disk.metadata.clear();
   disk.downloads = 0;
@@ -118,6 +124,33 @@ beforeEach(() => {
   disk.payload = new TextEncoder().encode("native scene");
 });
 describe("native content cache", () => {
+  it("updates normal read LRU and protects shared scene dependencies across clear", async () => {
+    const a = asset(disk.payload);
+    await fetchSceneAsset(a, "https://cdn.test/a.glb", "a");
+    disk.metadata.set("wbr:scene-content:v1:lru", JSON.stringify({ [a.sha256]: 1 }));
+    await readSceneAsset(a);
+    expect(JSON.parse(disk.metadata.get("wbr:scene-content:v1:lru")!)[a.sha256]).toBeGreaterThan(1);
+    await protectSceneAssets("one", [a]); await protectSceneAssets("two", [a]);
+    await releaseSceneAssets("one");
+    await maintainSceneCache({ clear: true });
+    expect(await readSceneAsset(a)).not.toBeNull();
+    await resetSceneCacheSession();
+    expect((await maintainSceneCache({ clear: true })).bytes).toBe(0);
+  });
+  it("sweeps interrupted files on startup and reconciles OS-deleted files", async () => {
+    const a = asset(disk.payload);
+    const uri = await fetchSceneAsset(a, "https://cdn.test/a.glb", "a");
+    disk.files.set("file:///cache/wbr-scene-content-v1/interrupted.part", disk.payload);
+    disk.files.delete(uri);
+    expect((await maintainSceneCache()).bytes).toBe(0);
+    expect(disk.files.size).toBe(0);
+    expect(await readSceneAsset(a)).toBeNull();
+  });
+  it("cancels a bridge request arriving after its cancel message", async () => {
+    await cancelSceneAsset("early");
+    await expect(fetchSceneAsset(asset(disk.payload), "https://cdn.test/a.glb", "early")).rejects.toThrow();
+    expect(disk.downloads).toBe(0);
+  });
   it("looks up cached files while a background download is stalled", async () => {
     const cachedAsset = asset(disk.payload);
     const uri = await fetchSceneAsset(

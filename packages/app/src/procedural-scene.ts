@@ -14,7 +14,7 @@ export async function proceduralEngine(id: string): Promise<SceneEngine<Procedur
     let active = options.active, reduced = options.reducedMotion, disposed = false, frame = 0;
     const instance = module.create({ canvas, overlay, gestures: Gestures, shared: Shared,
       initialProgress: context.progress, onProgress: context.checkpoint, sceneId: context.sceneId,
-      isActive: () => active && !disposed });
+      isActive: () => active && !disposed, isReducedMotion: () => reduced });
     const dispose = () => {
       if (disposed) return;
       disposed = true; cancelAnimationFrame(frame);
@@ -27,7 +27,7 @@ export async function proceduralEngine(id: string): Promise<SceneEngine<Procedur
     function tick(now: number) {
       frame = 0;
       if (disposed || !active) return;
-      try { instance.update(reduced ? 0 : Math.min((now - last) / 1000, 0.05)); last = now; }
+      try { instance.update(Math.min((now - last) / 1000, 0.05)); last = now; }
       catch (error) { options.failed(error); return; }
       frame = requestAnimationFrame(tick);
     }

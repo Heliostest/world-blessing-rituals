@@ -36,6 +36,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   let step: Step = 'tilt'
   let disposed = false
   let started = false
+  let restoring = true
   let pourProgress = 0
 
   const handles: GestureHandle[] = []
@@ -115,7 +116,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   const cameraLookAt = new THREE.Vector3(0, 0.25, 0)
   camera.lookAt(cameraLookAt)
   const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
-    id: 'theravada-water', label: '花水位一倾',
+    id: ctx.sceneId ?? 'theravada-water', label: '花水位一倾',
   })
 
   const ambient = new THREE.AmbientLight(0x6a5468, 0.4)
@@ -277,15 +278,18 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   }
 
   const completeScene = () => {
+    if (!restoring && ctx.isActive && !ctx.isActive()) return
     if (step === 'done') return
     step = 'done'
     tiltHandle?.setEnabled(false)
     dragHandle?.setEnabled(false)
+    if (!restoring) ctx.onProgress?.(3)
     syncOverlayForStep()
     overlay.dispatchEvent(new CustomEvent('scene:complete', { bubbles: true }))
   }
 
   const goDrag = () => {
+    if (!restoring && ctx.isActive && !ctx.isActive()) return
     if (step !== 'tilt') return
     step = 'drag'
     tiltHandle?.setEnabled(false)
@@ -293,16 +297,19 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
     streamMat.opacity = 0
     petal.visible = true
     dragHandle?.setEnabled(true)
+    if (!restoring) ctx.onProgress?.(1)
     syncOverlayForStep()
   }
 
   const goAnjali = () => {
+    if (!restoring && ctx.isActive && !ctx.isActive()) return
     if (step !== 'drag') return
     step = 'anjali'
     dragHandle?.setEnabled(false)
     grabbed = false
     dragTarget.set(0, 0.28, 0)
     petal.position.copy(dragTarget)
+    if (!restoring) ctx.onProgress?.(2)
     syncOverlayForStep()
   }
 
@@ -374,6 +381,10 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
         resizeObserver.observe(canvas.parentElement ?? canvas)
       }
       wireGestures()
+      if ((ctx.initialProgress ?? 0) >= 1) goDrag()
+      if ((ctx.initialProgress ?? 0) >= 2) goAnjali()
+      if ((ctx.initialProgress ?? 0) >= 3) completeScene()
+      restoring = false
       syncOverlayForStep()
     },
     update(dt: number) {
@@ -442,6 +453,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       handles.length = 0
       styleRenderer.dispose()
       renderer.dispose()
+      renderer.forceContextLoss()
       basin.geometry.dispose()
       ;(basin.material as THREE.Material).dispose()
       water.geometry.dispose()

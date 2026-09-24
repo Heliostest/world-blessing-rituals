@@ -3,6 +3,10 @@ import type * as Gestures from '@wbr/gestures'
 import type * as Shared from '@wbr/shared'
 
 export type SceneContext = {
+  initialProgress?: number
+  onProgress?(progress: number): void
+  isActive?(): boolean
+  sceneId?: string
   canvas: HTMLCanvasElement
   overlay: HTMLElement
   gestures: typeof Gestures

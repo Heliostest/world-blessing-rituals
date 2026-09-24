@@ -36,6 +36,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
   let step: Step = 'gyro'
   let disposed = false
   let started = false
+  let restoring = true
 
   const handles: GestureHandle[] = []
   let gyroHandle: GestureHandle | null = null
@@ -113,7 +114,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
   const cameraLookAt = new THREE.Vector3(0, 0.05, 0)
   camera.lookAt(cameraLookAt)
   const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
-    id: 'celtic-folk-spring', label: '泉边一念',
+    id: ctx.sceneId ?? 'celtic-folk-spring', label: '泉边一念',
   })
 
   const ambient = new THREE.AmbientLight(0x4a6a8a, 0.4)
@@ -221,25 +222,30 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
   }
 
   const completeScene = () => {
+    if (!restoring && ctx.isActive && !ctx.isActive()) return
     if (step === 'done') return
     step = 'done'
     gyroHandle?.setEnabled(false)
     dragHandle?.setEnabled(false)
     wishHandle?.setEnabled(false)
+    if (!restoring) ctx.onProgress?.(3)
     syncOverlayForStep()
     overlay.dispatchEvent(new CustomEvent('scene:complete', { bubbles: true }))
   }
 
   const goDrag = () => {
+    if (!restoring && ctx.isActive && !ctx.isActive()) return
     if (step !== 'gyro') return
     step = 'drag'
     gyroHandle?.setEnabled(false)
     bowBtn.hidden = true
     dragHandle?.setEnabled(true)
+    if (!restoring) ctx.onProgress?.(1)
     syncOverlayForStep()
   }
 
   const goWish = () => {
+    if (!restoring && ctx.isActive && !ctx.isActive()) return
     if (step !== 'drag') return
     step = 'wishWrite'
     dragHandle?.setEnabled(false)
@@ -247,6 +253,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
     dragTarget.set(0, 0.15, 0)
     token.position.copy(dragTarget)
     wishHandle?.setEnabled(true)
+    if (!restoring) ctx.onProgress?.(2)
     syncOverlayForStep()
   }
 
@@ -327,6 +334,10 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
         resizeObserver.observe(canvas.parentElement ?? canvas)
       }
       wireGestures()
+      if ((ctx.initialProgress ?? 0) >= 1) goDrag()
+      if ((ctx.initialProgress ?? 0) >= 2) goWish()
+      if ((ctx.initialProgress ?? 0) >= 3) completeScene()
+      restoring = false
       syncOverlayForStep()
     },
     update(dt: number) {
@@ -372,6 +383,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
       handles.length = 0
       styleRenderer.dispose()
       renderer.dispose()
+      renderer.forceContextLoss()
       water.geometry.dispose()
       ;(water.material as THREE.Material).dispose()
       bank.geometry.dispose()

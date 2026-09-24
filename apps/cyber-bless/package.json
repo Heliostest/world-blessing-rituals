@@ -8,6 +8,7 @@
     "preview": "vite preview --host"
   },
   "dependencies": {
+    "@wbr/scene-runtime": "*",
     "@wbr/app": "*",
     "@wbr/core": "*",
     "@wbr/gestures": "*",

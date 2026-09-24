@@ -1,4 +1,5 @@
 import * as THREE from 'three'
+import { createDebugRenderStyle } from '@wbr/scene-runtime/debug-render-style'
 import type { GestureHandle } from '@wbr/gestures'
 import type { SceneContext, SceneInstance } from '../contract'
 
@@ -111,6 +112,9 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
   camera.position.copy(cameraHome)
   const cameraLookAt = new THREE.Vector3(0, 0.05, 0)
   camera.lookAt(cameraLookAt)
+  const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
+    id: 'celtic-folk-spring', label: '泉边一念',
+  })
 
   const ambient = new THREE.AmbientLight(0x4a6a8a, 0.4)
   const hemi = new THREE.HemisphereLight(0x8fd0ff, 0x0a1420, 0.5)
@@ -191,6 +195,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
     const w = canvas.clientWidth || parent?.clientWidth || 1
     const h = canvas.clientHeight || parent?.clientHeight || 1
     renderer.setSize(w, h, false)
+    styleRenderer.resize(w, h)
     camera.aspect = w / Math.max(h, 1)
     camera.updateProjectionMatrix()
   }
@@ -352,7 +357,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
       )
       camera.lookAt(cameraLookAt)
 
-      renderer.render(scene, camera)
+      styleRenderer.render()
     },
     dispose() {
       if (disposed) return
@@ -365,6 +370,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
       overlay.removeEventListener('pointercancel', onOverlayUp)
       for (const h of handles) h.dispose()
       handles.length = 0
+      styleRenderer.dispose()
       renderer.dispose()
       water.geometry.dispose()
       ;(water.material as THREE.Material).dispose()

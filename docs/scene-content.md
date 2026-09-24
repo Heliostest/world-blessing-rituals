@@ -82,6 +82,8 @@ Web 校验完整响应后，以一个 IndexedDB 事务同时提交二进制和�
 
 ## 开发与云端发布
 
+正式环境的云服务评估、资源上传、EAS 构建和真机验收步骤见 [正式上线部署手册](production-deployment.md)。
+
 ```powershell
 npm install
 npm run content:publish

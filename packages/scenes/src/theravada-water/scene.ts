@@ -390,11 +390,13 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
     update(dt: number) {
       if (disposed || !started) return
       for (const h of handles) h.update(dt)
-      const t = performance.now() * 0.001
+      const reduced = ctx.isReducedMotion?.() ?? false
+      const t = reduced ? 0 : performance.now() * 0.001
+      const visualDt = reduced ? 0 : dt
       water.position.y = 0.22 + Math.sin(t * 1.4) * 0.008
       ;(water.material as THREE.MeshStandardMaterial).emissiveIntensity =
         0.35 + Math.sin(t * 0.9) * 0.1
-      motes.rotation.y += dt * 0.02
+      motes.rotation.y += visualDt * 0.02
 
       if (step !== 'tilt') {
         pitcherGroup.rotation.z = THREE.MathUtils.lerp(
@@ -420,7 +422,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       const followRate = 1 - Math.exp(-dt * 14)
       if (step === 'drag') {
         petal.position.lerp(dragTarget, followRate)
-        petal.rotation.y += dt * 0.6
+        petal.rotation.y += visualDt * 0.6
       }
       const scaleTarget = grabbed ? 1.25 : 1
       petalScale = THREE.MathUtils.lerp(petalScale, scaleTarget, 1 - Math.exp(-dt * 12))

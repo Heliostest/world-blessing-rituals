@@ -6,6 +6,7 @@ export type SceneContext = {
   initialProgress?: number
   onProgress?(progress: number): void
   isActive?(): boolean
+  isReducedMotion?(): boolean
   sceneId?: string
   canvas: HTMLCanvasElement
   overlay: HTMLElement

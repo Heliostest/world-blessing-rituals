@@ -22,6 +22,7 @@ export function App() {
       <BlessingApp
         host={host}
         content={{
+          catalogUrl: import.meta.env.VITE_SCENE_CATALOG_URL || (import.meta.env.DEV ? "/scene-content/catalog.json" : undefined),
           manifestUrl:
             import.meta.env.VITE_SCENE_MANIFEST_URL ||
             (import.meta.env.DEV ? "/scene-content/woodfish.json" : undefined),

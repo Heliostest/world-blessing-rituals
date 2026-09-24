@@ -23,7 +23,7 @@ export default defineConfig({
           const name = req.url?.split("?")[0]?.replace(/^\//, "");
           if (
             !name ||
-            !/^(woodfish\.json|[a-f0-9]{64}\.(glb|wav|mp3|ogg))$/.test(name)
+            !/^(woodfish\.json|catalog\.json|scene-[a-f0-9]{64}\.json|[a-f0-9]{64}\.(glb|wav|mp3|ogg|json))$/.test(name)
           )
             return next();
           try {

@@ -11,6 +11,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@wbr/scene-runtime": "*",
     "@wbr/gestures": "*",
     "@wbr/shared": "*",
     "three": "^0.170.0"

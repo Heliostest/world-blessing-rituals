@@ -5,7 +5,7 @@ import type { WoodfishContext, WoodfishController } from "./scene-engines";
 import { animate, createTimeline } from "animejs";
 import { swingPose } from "./woodfish-motion";
 import { parseWoodfishModel } from "./woodfish-model";
-import { createRenderStyle } from "./render-style";
+import { createDebugRenderStyle } from "@wbr/scene-runtime/debug-render-style";
 
 type Options = WoodfishContext & SceneMountOptions;
 export const woodfishEngine: SceneEngine<WoodfishContext, WoodfishController> =
@@ -40,7 +40,6 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   const target = new THREE.Vector3(0.08, 0.02, 0);
   camera.position.set(0.9, 2.3, 6.5);
   camera.lookAt(target);
-  const styleRenderer = createRenderStyle(renderer, scene, camera);
   let selectedStyle: RenderStyleId = "original";
   // Warm room bounce with a dominant upper-left lamp; keep the cavity shaded.
   scene.add(new THREE.HemisphereLight(0xffecd4, 0x795039, 1.55));
@@ -162,6 +161,10 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   contact.position.set(-0.12, -0.925, 0);
   contact.castShadow = false;
 
+  const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
+    id: "woodfish", label: "木鱼", invalidate: () => requestRender(true),
+  });
+
   options.content
     .load(
       async (pack, bytes, soundBytes) => {
@@ -178,6 +181,9 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
           fill.intensity = parameters.fillIntensity;
           rim.intensity = parameters.rimIntensity;
           bodyGroup.add(asset.body);
+          // Painted toy palette for toon presets; original GLB/PBR maps remain intact.
+          asset.body.userData.toonSurface = { color: 0xc49a6c, simplifyMap: true, aoIntensity: 0.32 };
+          asset.mallet.userData.toonSurface = { color: 0xa97549, simplifyMap: true, aoIntensity: 0.25 };
           bodyGroup.position.y = -0.91;
           asset.body.position.y = 0.91;
           mallet.add(asset.mallet);

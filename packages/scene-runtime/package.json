@@ -1,6 +1,23 @@
 {
-  "name": "@wbr/scene-runtime", "version": "0.0.1", "private": true, "type": "module",
-  "exports": { ".": "./src/index.ts" },
-  "scripts": { "test": "vitest run" },
-  "devDependencies": { "vitest": "^3.2.7" }
+  "name": "@wbr/scene-runtime",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./render-style": "./src/render-style.ts",
+    "./debug-render-style": "./src/debug-render-style.ts",
+    "./debug-styles": "./src/debug-styles.ts"
+  },
+  "dependencies": {
+    "@wbr/content": "*",
+    "postprocessing": "^6.39.5",
+    "three": "^0.170.0"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.7"
+  }
 }

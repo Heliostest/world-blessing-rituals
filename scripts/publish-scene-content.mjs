@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { parsePack } from "../packages/content/src/index.ts";
 import { validateWoodfishGLB } from "../packages/content/src/glb.ts";
+import { parseSceneManifest } from "../packages/content/src/catalog.ts";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const contentOutput = path.join(root, "artifacts/scene-content");
 const ref = async (file) => {
@@ -94,7 +95,30 @@ export async function publishSceneContent() {
     path.join(contentOutput, "woodfish.json.tmp"),
     path.join(contentOutput, "woodfish.json"),
   );
+  await publishCatalog(pack);
   return pack;
+}
+async function publishCatalog(pack) {
+  const { model, sound, schemaVersion, sceneId, revision, engine, ...config } = parsePack(pack);
+  const manifests = [{ schemaVersion, sceneId, revision, engine, assets: { model, ...(sound ? { sound } : {}) }, config }];
+  const titles = { woodfish: "敲一敲木鱼", "celtic-folk-spring": "泉边一念", "theravada-water": "花水位一倾" };
+  // Existing procedural scenes have independent interaction code. Their tiny
+  // presentation file exercises on-demand data without inventing heavy models.
+  const bytes = Buffer.from(JSON.stringify({ caption: "为今天留下一段安静时光。离开后进度会保留。" }));
+  const digest = createHash("sha256").update(bytes).digest("hex");
+  const presentation = { path: `${digest}.json`, bytes: bytes.length, sha256: digest };
+  await writeFile(path.join(contentOutput, presentation.path), bytes);
+  for (const id of ["celtic-folk-spring", "theravada-water"]) manifests.push({ schemaVersion: 1, sceneId: id, revision: `v1-${digest.slice(0, 12)}`, engine: `${id}@1`, assets: { presentation }, config: {} });
+  const scenes = [];
+  for (const raw of manifests) {
+    const manifest = parseSceneManifest(raw), text = JSON.stringify(manifest, null, 2);
+    const fingerprint = createHash("sha256").update(text).digest("hex");
+    const manifestUrl = `scene-${fingerprint}.json`;
+    await writeFile(path.join(contentOutput, manifestUrl), text);
+    scenes.push({ id: manifest.sceneId, title: titles[manifest.sceneId], engine: manifest.engine, revision: manifest.revision, manifestUrl });
+  }
+  await writeFile(path.join(contentOutput, "catalog.json.tmp"), JSON.stringify({ schemaVersion: 1, scenes }, null, 2));
+  await rename(path.join(contentOutput, "catalog.json.tmp"), path.join(contentOutput, "catalog.json"));
 }
 if (
   process.argv[1] &&

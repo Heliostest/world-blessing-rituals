@@ -62,7 +62,12 @@ export type Collectible = {
   at: string;
   wishId?: string;
 };
+export type SceneRecord = {
+  id: string; title: string; engine: string; revision: string; manifestUrl: string;
+  progress: number; favorite: boolean; lastOpened: string;
+};
 export type State = {
+  sceneRecords: SceneRecord[];
   version: 1;
   wishes: Wish[];
   activeSession: Session | null;
@@ -72,6 +77,9 @@ export type State = {
   settings: { sound: boolean; haptics: boolean; reducedMotion: boolean };
 };
 export type Action =
+  | { type: "scene.visit"; entry: Pick<SceneRecord, "id" | "title" | "engine" | "revision" | "manifestUrl">; at: string }
+  | { type: "scene.progress"; id: string; progress: number }
+  | { type: "scene.favorite"; id: string; favorite: boolean }
   | {
       type: "wish.create";
       id: string;
@@ -105,6 +113,7 @@ export type Action =
 
 export function createState(): State {
   return {
+    sceneRecords: [],
     version: 1,
     wishes: [],
     activeSession: null,
@@ -129,6 +138,19 @@ function updateWish(s: State, w: Wish): State {
 }
 export function reduce(s: State, a: Action): State {
   switch (a.type) {
+    case "scene.visit": {
+      const old = s.sceneRecords.find(r => r.id === a.entry.id);
+      // A saved interaction belongs to an engine contract, not a visual revision.
+      if (old && old.engine !== a.entry.engine) throw Error("此场景的玩法版本已变化，请从历史记录打开原版本");
+      const record = { ...a.entry, progress: old?.progress ?? 0, favorite: old?.favorite ?? false, lastOpened: a.at };
+      if (!sceneRecord(record)) throw Error("场景记录无效");
+      return { ...s, sceneRecords: [record, ...s.sceneRecords.filter(r => r.id !== a.entry.id)] };
+    }
+    case "scene.progress":
+      if (!Number.isSafeInteger(a.progress) || a.progress < 0 || a.progress > 1000000) throw Error("场景进度无效");
+      return { ...s, sceneRecords: s.sceneRecords.map(r => r.id === a.id ? { ...r, progress: a.progress } : r) };
+    case "scene.favorite":
+      return { ...s, sceneRecords: s.sceneRecords.map(r => r.id === a.id ? { ...r, favorite: a.favorite } : r) };
     case "wish.create":
       if (s.wishes.some((w) => w.id === a.id)) return s;
       if (a.intention.length > 160)
@@ -323,6 +345,7 @@ const session = (v: unknown) =>
   Number(v.progress) <= rituals[v.ritual].steps &&
   date(v.startedAt) &&
   optionalId(v.wishId);
+const sceneRecord = (v: unknown) => obj(v) && id(v.id) && str(v.title) && v.title.length <= 100 && id(v.engine) && id(v.revision) && str(v.manifestUrl) && v.manifestUrl.length <= 2048 && Number.isSafeInteger(v.progress) && Number(v.progress) >= 0 && Number(v.progress) <= 1000000 && typeof v.favorite === "boolean" && date(v.lastOpened);
 export function restore(raw: string | null): State {
   if (raw === null) return createState();
   const v: unknown = JSON.parse(raw);
@@ -330,6 +353,7 @@ export function restore(raw: string | null): State {
   const valid =
     obj(v) &&
     v.version === 1 &&
+    (v.sceneRecords === undefined || list(v.sceneRecords, sceneRecord)) &&
     obj(settings) &&
     ["sound", "haptics", "reducedMotion"].every(
       (k) => typeof settings[k] === "boolean",
@@ -385,6 +409,7 @@ export function restore(raw: string | null): State {
     );
   if (!valid) throw new Error("存档格式不受支持或已损坏，原数据已保留");
   const s = v as State;
+  s.sceneRecords ??= [];
   if (
     [
       ...s.sessions,

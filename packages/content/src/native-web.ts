@@ -1,6 +1,10 @@
 import { checkAbort, type Asset, type ContentIO } from "./index";
 import { createWebContentIO, readBytes } from "./web";
+import type { CacheOptions, CacheStats } from "./cache";
 export type NativeContentBridge = {
+  protectSceneAssets(owner: string, assets: Asset[]): Promise<void>;
+  releaseSceneAssets(owner: string): Promise<void>;
+  maintainSceneCache(options?: CacheOptions): Promise<CacheStats>;
   readSceneAsset(asset: Asset): Promise<string | null>;
   readContentHistory(key: string): Promise<unknown>;
   writeContentHistory(key: string, value: unknown): Promise<void>;
@@ -17,6 +21,11 @@ export function createNativeContentIO(bridge: NativeContentBridge): ContentIO {
   // Metro development runs the DOM on HTTP, where native file URIs are blocked.
   if (window.location.protocol !== "file:") return web;
   return {
+    cache: {
+      protect: (owner, assets) => bridge.protectSceneAssets(owner, assets),
+      release: owner => bridge.releaseSceneAssets(owner),
+      maintain: options => bridge.maintainSceneCache(options),
+    },
     async readCachedAsset(asset, signal) {
       checkAbort(signal);
       const uri = await bridge.readSceneAsset(asset).catch(() => null);

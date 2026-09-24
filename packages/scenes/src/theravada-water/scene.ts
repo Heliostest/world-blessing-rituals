@@ -1,4 +1,5 @@
 import * as THREE from 'three'
+import { createDebugRenderStyle } from '@wbr/scene-runtime/debug-render-style'
 import type { GestureHandle } from '@wbr/gestures'
 import type { SceneContext, SceneInstance } from '../contract'
 
@@ -113,6 +114,9 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   camera.position.copy(cameraHome)
   const cameraLookAt = new THREE.Vector3(0, 0.25, 0)
   camera.lookAt(cameraLookAt)
+  const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
+    id: 'theravada-water', label: '花水位一倾',
+  })
 
   const ambient = new THREE.AmbientLight(0x6a5468, 0.4)
   const hemi = new THREE.HemisphereLight(0xd8b8ff, 0x120a18, 0.45)
@@ -247,6 +251,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
     const w = canvas.clientWidth || parent?.clientWidth || 1
     const h = canvas.clientHeight || parent?.clientHeight || 1
     renderer.setSize(w, h, false)
+    styleRenderer.resize(w, h)
     camera.aspect = w / Math.max(h, 1)
     camera.updateProjectionMatrix()
   }
@@ -422,7 +427,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       )
       camera.lookAt(cameraLookAt)
 
-      renderer.render(scene, camera)
+      styleRenderer.render()
     },
     dispose() {
       if (disposed) return
@@ -435,6 +440,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       anjaliBtn.removeEventListener('pointerup', onAnjaliTap)
       for (const h of handles) h.dispose()
       handles.length = 0
+      styleRenderer.dispose()
       renderer.dispose()
       basin.geometry.dispose()
       ;(basin.material as THREE.Material).dispose()

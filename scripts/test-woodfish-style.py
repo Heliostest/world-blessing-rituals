@@ -1,4 +1,4 @@
-"""Exercise the shared cartoon postprocessor on a real WebGL canvas."""
+"""Exercise official toon materials and pmndrs outlines on real WebGL."""
 import base64
 import copy
 import json
@@ -10,7 +10,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = os.environ.get("WBR_URL", "http://127.0.0.1:5176/")
-MODULE = "/@fs/" + (ROOT / "packages/app/src/render-style.ts").as_posix()
+MODULE = "/@fs/" + (ROOT / "packages/scene-runtime/src/render-style.ts").as_posix()
 THREE = "/@fs/" + (ROOT / "node_modules/three/build/three.module.js").as_posix()
 REMOTE = json.loads((ROOT / "artifacts/scene-content/woodfish.json").read_text(encoding="utf-8"))
 MODEL = (ROOT / "assets/woodfish/blender-v2/woodfish.glb").read_bytes()
@@ -42,7 +42,7 @@ def staged_woodfish(browser, inject_composer_failure=False):
     page.get_by_role("button", name="返回", exact=True).click()
     page.evaluate("""async ({module, fail}) => {
           const source = await (await fetch(module)).text();
-          const composerUrl = source.match(/from \"([^\"]*EffectComposer[^\"]*)\"/)[1];
+          const composerUrl = source.match(/from \"([^\"]*postprocessing[^\"]*)\"/)[1];
           const {EffectComposer} = await import(composerUrl);
           const previous = EffectComposer.prototype.render;
           window.styleFailureInjected = false;
@@ -53,10 +53,6 @@ def staged_woodfish(browser, inject_composer_failure=False):
             if (fail && !window.styleFailureInjected) {
               const renderer = this.renderer, draw = renderer.render;
               renderer.render = function(object, camera) {
-                if (!object.isScene && !window.styleFailureInjected) {
-                  window.styleFailureInjected = true;
-                  throw Error('injected fullscreen draw failure');
-                }
                 const directRecovery = window.styleFailureInjected && object.isScene && this.getRenderTarget() === null && this.autoClear;
                 const result = draw.call(this, object, camera);
                 if (directRecovery) {
@@ -64,6 +60,10 @@ def staged_woodfish(browser, inject_composer_failure=False):
                 }
                 return result;
               };
+              window.styleFailureInjected = true;
+              renderer.setRenderTarget(this.inputBuffer);
+              renderer.autoClear = false;
+              throw Error('injected composer failure after changing renderer state');
             }
             return previous.apply(this, args);
           };
@@ -126,6 +126,8 @@ def exercise(page):
             style.render();
             result[preset] = {center: sample(128, 128), corner: sample(1, 1)};
             result[preset].png = canvas.toDataURL('image/png');
+            style.render();
+            result[preset].stable = canvas.toDataURL('image/png') === result[preset].png;
           }
           renderer.setSize(320, 220);
           renderer.setPixelRatio(1.5);
@@ -164,7 +166,7 @@ def scene_pass_failure(page):
       renderer.debug.onShaderError = handler;
       let offscreenAtFailure = false;
       mesh.onBeforeRender = () => {
-        offscreenAtFailure = renderer.getRenderTarget() !== null;
+        offscreenAtFailure ||= renderer.getRenderTarget() !== null;
         renderer.debug.onShaderError();
       };
       style.setStyle('toon-ink');
@@ -192,12 +194,52 @@ def scene_pass_failure(page):
     print(json.dumps({"scenePassFailure": result}))
 
 
+def outline_pass_failure(page):
+    result = page.evaluate("""async ({module, three}) => {
+      const THREE = await import(three);
+      const {createRenderStyle} = await import(module);
+      const renderer = new THREE.WebGLRenderer({alpha:true, preserveDrawingBuffer:true});
+      renderer.setSize(64, 64);
+      renderer.shadowMap.enabled = true;
+      const scene = new THREE.Scene();
+      const mesh = new THREE.Mesh(new THREE.SphereGeometry(0.7), new THREE.MeshStandardMaterial({color:0xc99764}));
+      scene.add(mesh, new THREE.AmbientLight(0xffffff, 1));
+      const camera = new THREE.OrthographicCamera(-1,1,1,-1,0.1,10); camera.position.z=3;
+      const source = mesh.material;
+      const style = createRenderStyle(renderer, scene, camera);
+      style.render();
+      const before = renderer.domElement.toDataURL();
+      let injected = false;
+      mesh.onBeforeRender = () => {
+        if (!injected && scene.overrideMaterial) { injected=true; throw Error('outline mask draw failed'); }
+      };
+      style.setStyle('toon-ink'); style.render();
+      const result = {injected, style:style.getStyle(), shadowEnabled:renderer.shadowMap.enabled,
+        shadowAutoUpdate:renderer.shadowMap.autoUpdate, restoredMaterial:mesh.material===source,
+        restoredOverride:scene.overrideMaterial===null, restoredLayer:mesh.layers.mask===1,
+        matchesOriginal:renderer.domElement.toDataURL()===before};
+      style.dispose(); renderer.dispose();
+      return result;
+    }""", {"module": MODULE, "three": THREE})
+    assert result["injected"] and result["style"] == "original", result
+    for key in ["shadowEnabled", "shadowAutoUpdate", "restoredMaterial", "restoredOverride", "restoredLayer", "matchesOriginal"]:
+        assert result[key], result
+    print(json.dumps({"outlinePassFailure": result}))
+
+
 with sync_playwright() as playwright:
     browser = playwright.chromium.launch(channel=os.environ.get("WBR_BROWSER", "msedge"), headless=True)
     context = browser.new_context()
     page = context.new_page()
     page.goto(BASE, wait_until="networkidle")
+    # Use the same Three.js module as the renderer; raw /@fs imports create a
+    # second set of constructors and cannot exercise material adaptation.
+    THREE = page.evaluate("""async module => {
+      const source = await (await fetch(module)).text();
+      return source.match(/from \"([^\"]*\/three[^\"]*)\"/)[1];
+    }""", MODULE)
     scene_pass_failure(page)
+    outline_pass_failure(page)
     context.close()
     for width, height in [(390, 844), (1280, 800)]:
         context = browser.new_context(viewport={"width": width, "height": height})
@@ -217,6 +259,7 @@ with sync_playwright() as playwright:
             toon = result[preset]
             assert toon["center"][3] > 0, result
             assert toon["corner"][3] == 0, result
+            assert toon["stable"], "Repeated still frames changed: composer state was not restored correctly"
             assert sum(abs(a - b) for a, b in zip(result["originalCenter"][:3], toon["center"][:3])) > 10, result
         assert result["resizedCorner"][3] == 0, result
         assert result["resizedPixels"] == [480, 330], result
@@ -233,7 +276,8 @@ with sync_playwright() as playwright:
           const renderer = new THREE.WebGLRenderer({canvas, alpha: true, preserveDrawingBuffer: true});
           renderer.setSize(64, 64);
           const scene = new THREE.Scene();
-          scene.add(new THREE.Mesh(new THREE.SphereGeometry(0.7), new THREE.MeshBasicMaterial({color: 0xff3300})));
+          scene.add(new THREE.AmbientLight(0xffffff, 1));
+          scene.add(new THREE.Mesh(new THREE.SphereGeometry(0.7), new THREE.MeshStandardMaterial({color: 0xff3300})));
           const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
           camera.position.z = 3;
           const style = createRenderStyle(renderer, scene, camera);
@@ -247,7 +291,7 @@ with sync_playwright() as playwright:
           const gl = renderer.getContext(), previous = gl.getProgramParameter.bind(gl);
           let injected = false;
           gl.getProgramParameter = function(program, parameter) {
-            if (!injected && parameter === gl.LINK_STATUS && gl.getAttachedShaders(program).some(s => gl.getShaderSource(s).includes('vec3 quantized'))) {
+            if (!injected && parameter === gl.LINK_STATUS && gl.getAttachedShaders(program).some(s => gl.getShaderSource(s).includes('SHADER_TYPE MeshToonMaterial'))) {
               injected = true;
               return false;
             }

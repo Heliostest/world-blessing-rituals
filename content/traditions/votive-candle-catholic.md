@@ -1,5 +1,9 @@
 # 天主教还愿烛（votive candle）
 
+![天主教堂还愿烛架上的烛火](./votive-candle-catholic.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Candles_at_the_Basilica_della_Salute_in_Venice.JPG -->
+
 ## 概述
 
 还愿烛（votive candle；亦称献烛）是**天主教民间虔诚中「点一盏小烛、留一个意向」的实践（A）**：在圣像或烛架前点烛，人离开后烛火继续燃着，被理解为祈祷持续呈上的可见记号；堂区科普引《若望福音》「我是世界之光」，并追溯至圣所长明灯与圣人墓前燃灯的旧例。教廷《民间虔诚与礼仪指南》（*Directory on Popular Piety and the Liturgy*，2001）把民间虔诚置于礼仪之下——它导向礼仪、从礼仪流出，**不能替代圣事**。`christianity.md` 已在概念层述及点烛奉献；本卡**聚焦还愿烛物件与「点一盏、留一愿」的短互动**。它与意大利绘牌 ex-voto（`italian-ex-voto.md`）、墨西哥 milagros（`milagros.md`）同属「还愿可见记号」的大家族而**物件各异**，产品须分皮肤；也不与佛教供灯共用「圣火」类特效包（见 `specs/notes-wish-lamps-disambiguation.md`）。

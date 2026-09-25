@@ -1,5 +1,9 @@
 # 阿布哈兹传统宗教与圣所祈福（Abkhaz／Apsua）
 
+![阿布哈兹共和国国家民歌舞蹈团传统服饰](./abkhaz-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:2014_Suchum,_Pa%C5%84stwowy_Zesp%C3%B3%C5%82_Folkowy_Pie%C5%9Bni_i_Ta%C5%84ca_Republiki_Abchazji_(01).jpg -->
+
 ## 概述
 
 **阿布哈兹人（Abkhaz；自称 Apsua）** 居住于高加索黑海沿岸的阿布哈兹地区。大英百科指出当代宗教构成以逊尼派伊斯兰与东正教为主，但公开民族志与地方文化叙述同时强调：以 **anykha／nykha（圣所）** 为核心的传统敬礼在战后显著复兴。传统信仰公开概述常环绕至高神与地方神（如雷电相关的 **Afy** 等）、**七大 Anykha（圣所）**——公开名录常突出 **Dydrypsh-nykha（Dydrypsh）** 以及 Lykh-nykha、Ldzaa-nykha 等（具体名录在口述与书写传统中略有出入）——以及氏族／家庭层级的较小圣所；公开伦理亦提及 **Ankhabyu** 等圣所守护／祭司伦理概念。家庭层可见 **Ashtw'ashyra** 等家族祈祷叙事。公共祈祷常与牲祭、共餐、酒与洁净规则相连。本条目为教育概览；**仅观礼／概念层**；**不提供**牲祭操作、誓约 how-to、可复现祷词或任何可滥用的仪轨细节。

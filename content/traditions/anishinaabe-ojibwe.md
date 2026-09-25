@@ -1,5 +1,9 @@
 # 阿尼什纳贝／奥吉布韦（Anishinaabe / Ojibwe）
 
+![大苏必利尔奇佩瓦／奥吉布韦大港居留地帕瓦舞（2009）](./anishinaabe-ojibwe.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Grand_Portage_Pow_Wow_2009.JPG -->
+
 ## 概述
 
 阿尼什纳贝（Anishinaabe，常译“原初之人”）是五大湖区及相关林地的阿尔冈昆语系原住民族自称；其中奥吉布韦（Ojibwe／Ojibwa，美国亦称 Chippewa）是重要分支，分布于今加拿大安大略、马尼托巴与美国威斯康星、明尼苏达等地。传统世界观强调与大地、水与 *manidoo*（神灵／灵性存在）的互惠关系。祈福与祈祷的核心媒介之一是神圣烟草（奥吉布韦语 *asemaa*）：烟气被认为可把人的话语带给造物主（*Gichi-manidoo*）与众灵。大型疗愈与教导体系中，大药会／大医学会（*Midewiwin*）具有重要地位。本条目为教育性概念概览，**不提供**入会等级、秘传药方或可操作仪轨。

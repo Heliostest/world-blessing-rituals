@@ -1,5 +1,9 @@
 # 安布里姆传统信仰与瓦努阿图火山岛祈福（Ambrym）
 
+![安布里姆岛公开卡斯托姆（kastom）舞者于瓦努阿图](./ambrym-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Ambrym_Kastom_Dancer_(114741909).jpeg -->
+
 ## 概述
 
 **安布里姆（Ambrym）** 为瓦努阿图火山岛，以砂画（sandroing）、等级社会与舞蹈传统的公开民族志记述闻名——**极高敏感，本卡仅概念层**。今日并存基督教与旅游。教育概览；**严禁**入会等级操作、砂画神圣图案教学或可冒充仪者的步骤。与坦纳、瓦努阿图总述（kastom）条目区分——本卡专岛，不替代全境总卡。

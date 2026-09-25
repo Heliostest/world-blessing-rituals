@@ -1,5 +1,9 @@
 # 阿尔巴尼亚民间信仰与托莫尔山朝圣祈福（Albanian folk／Bektashi Tomorr）
 
+![托莫尔山阿巴斯·阿里道堂（Tekke of Abaz Aliu）](./albanian-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tekke_of_Abaz_Aliu,_Mount_Tomorr_-_Mapillary_(gKi6cc24uVhfp-Hq9ulIcw).jpg -->
+
 ## 概述
 
 **阿尔巴尼亚民间信仰** 层累于天主教、东正教、逊尼伊斯兰与**贝克塔什（Bektashi）** 苏菲传统之上，并保留前基督教的山、日、祖先与民间疗愈叙事。公开文化与朝圣报道中，最广为人知的年度焦点之一是**托莫尔山（Mount Tomorr／Tomor）** 朝圣——多在**八月**高峰：贝克塔什信众纪念 **Abaz Ali** 等圣者叙事，登山祈祷、燃烛、献礼与共同体宴饮；公开记述中的 **qurbani（献牲／还愿屠牲）** 仅作概念层认知，**不提供操作**。亦吸引其他背景的寻求疗愈与好运者。城乡家户层则常见恶眼防护——包括 **Dordolec** 等稻草／布偶式驱邪「恶眼玩偶」的公共民俗外观——以及圣人／圣徒瞻礼、家庭守护实践与口头祝福。本条目为教育概览；**不提供**献牲操作、苏菲密契脚本、咒语配方或任何可冒充教团权威的程序。

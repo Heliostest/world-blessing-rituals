@@ -1,5 +1,9 @@
 # 阿卢尔传统信仰与艾伯特湖祈福（Alur）
 
+![阿卢尔族传统服饰与妆饰](./alur-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Alur_fashion.JPG -->
+
 ## 概述
 
 **阿卢尔人（Alur）** 分布于乌干达—刚果民主共和国艾伯特湖／西尼罗一带，属尼罗特语群社群。公开叙述涉及酋长（**Rwoth**）求雨／权威叙事、祖灵与 **Jok** 圣所概念，以及湖泊生计祝福叙事——与基督教接触并存——**中高敏感**。教育概览；**Rwoth／Jok／湖泊祝福均为 CONCEPT — non-operational**；不提供祭祀操作。与阿乔利、兰吉、卢奥等条目区分。

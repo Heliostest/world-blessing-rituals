@@ -1,5 +1,9 @@
 # 安汶基督教／伊斯兰与马鲁古习惯法祈福（Ambonese）
 
+![安汶马鲁古新教主堂 GPM Maranatha](./ambonese-traditional.jpg)
+
+<!-- 来源：Public domain (PD Indonesian Government) | https://commons.wikimedia.org/wiki/File:GPM_Maranatha_Ambon.jpg -->
+
 ## 概述
 
 **安汶人（Ambonese）** 为印度尼西亚马鲁古群岛安汶及周边的跨宗教社群，历史上以基督教（尤新教）与伊斯兰并置、以及香料贸易闻名。公开概述记述：教堂／清真寺礼仪构成公共祈福主轴；**adat（习惯法）** 与祖先敬意在和解、土地与生命礼仪中仍重要；跨村跨教的 **Pela Gandong**（pela／血缘结盟式互惠）被视为马鲁古和平与互保的重要公开记忆；部分地方叙述亦提及 **Raja（传统首领）** 祝福概念。教派冲突记忆使当代和平建设格外关键。本条目为教育概览；**仅概念／观礼层**；**不提供**政治动员、Raja 祝福 how-to 或可冒充神职的脚本。

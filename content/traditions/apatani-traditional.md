@@ -1,5 +1,9 @@
 # 阿帕塔尼传统信仰与日—月祈福（Apatani）
 
+![阿鲁纳恰尔齐罗河谷阿帕塔尼稻鱼耕作田](./apatani-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Apatani_Rice_Paddies.jpg -->
+
 ## 概述
 
 **阿帕塔尼人（Apatani／Tanii）** 分布于印度阿鲁纳恰尔邦齐罗河谷，以无畜力高效稻作系统闻名，相关景观曾被讨论列入世界遗产潜力。公开记述：传统信仰敬太阳—月亮（Danyi-Piilo／Donyi-Polo 相关公开表述），尊始祖 Abotani；萨满（**Nyibu**、Ui Innü 等公开分类）以口述经典 Miji-Miguñ 中介；重要节庆含 **Myoko**、**Dree** 等；村社公共平台 **Lapang** 为公开命名的聚会／仪礼空间概念。今日亦有基督教改宗与传统护持组织并存。本条目为教育概览；**Nyibu／占卜／血祭 CONCEPT ONLY — forbidden ops**；**不提供**献牲操作、出神脚本或可冒充萨满的步骤。

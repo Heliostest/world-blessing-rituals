@@ -1,5 +1,9 @@
 # 阿努塔传统信仰与基督教—酋长祈福（Anuta）
 
+![阿努塔岛卫星影像（NASA World Wind／Geocover）](./anuta-traditional.png)
+
+<!-- 来源：Public domain（NASA World Wind） | https://commons.wikimedia.org/wiki/File:Anuta_169.85030E_11.61124S.png -->
+
 ## 概述
 
 **阿努塔（Anuta）** 为所罗门群岛东南极小的波利尼西亚外岛，与提科皮亚文化相关但社群自有边界。公开民族志记述：基督教占主导，同时酋长权威、祖先记忆与严格资源伦理维系小岛生存；人口少、生态脆弱，外来访问须极度克制。本条目为教育概览；**不提供**历史献牲或可冒充酋长／祭司的步骤。

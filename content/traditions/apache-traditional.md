@@ -1,5 +1,9 @@
 # 阿帕奇传统信仰与生命礼仪概观（Apache Traditional）
 
+![阿帕奇棚屋（wickiup），Edward S. Curtis 摄于 1903 年](./apache-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Apache_Wickiup,_Edward_Curtis,_1903.jpg -->
+
 ## 概述
 
 **阿帕奇（Apache）** 是美国西南部多支阿萨巴斯坎语系原住民的统称，公开民族学与部落材料常区分西阿帕奇（Western Apache，含白山、圣卡洛斯等）、梅斯卡莱罗（Mescalero）、奇里卡瓦（Chiricahua）等；今日新墨西哥州 **梅斯卡莱罗阿帕奇部落** 正式包含梅斯卡莱罗、利潘（Lipan）与奇里卡瓦成员，保留地内有四座神圣山岳表述。传统宇宙观强调超自然力渗透自然：个人可通过动物、植物、山岳、天气等获得护持、警告与疗愈相关的歌与仪；创世与文化英雄叙事中，**白绘女人（White Painted Woman）**、水之子（Child-of-the-Water）与敌杀者（Killer of Enemies）等形象尤为关键。仪式专家常称「歌手」（singers）与医药人；山神／山灵（Gaʔhé／Mountain Spirits）面具舞在公开文化叙述中用于祝福与疗愈语境。梅斯卡莱罗官方文化页强调少女成年「四日过渡礼」为最重要的传统神圣礼仪之一，并由医药人／医药妇指导。许多阿帕奇人同时参与基督宗教或本土教会实践。本条目与纳瓦霍祝福道、霍皮、祖尼条目区分阿帕奇传统；**不提供**成年礼逐步操作、山神舞脚本、医药捆配方或任何限制性仪礼复现。

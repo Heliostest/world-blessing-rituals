@@ -1,5 +1,9 @@
 # 御神签（omikuji）
 
+![神社御神签（omikuji）折系签文](./omikuji.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Omikuji_at_Namba_Yasaka_Shrine_Osaka.jpg -->
+
 ## 概述
 
 御神签（*omikuji*，亦称 *mikuji*）是**神社（亦见于寺院）抽签问运的纸签实践（A）**：摇签筒得编号、对取签文，阅读运势与各项提示。国学院大学 EOS 记述其作为询神意／判吉凶的抽签形态；今日常见为签筒抽签棒再对号取纸签。日本国家旅游局（JNTO）刊物亦说明吉签多可携回、凶签常折系于境内指定绳架或处所——各社规定不一。神道参拜整体见 `shinto.md`；本卡**聚焦抽—读—折系的短互动**，强调自省参考，而非命运判定或算命商业化。

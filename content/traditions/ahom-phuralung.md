@@ -1,5 +1,9 @@
 # 阿豪姆／普拉隆传统与祭祖节（Tai-Ahom Phuralung／Me-Dam-Me-Phi）
 
+![阿萨姆恰莱多阿豪姆王陵（Charaideo Moidams）](./ahom-phuralung.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar,_Assam_4.jpg -->
+
 ## 概述
 
 **阿豪姆人（Ahom／Tai-Ahom）** 于十三世纪自今缅甸－云南一带进入布拉马普特拉河谷，建立阿豪姆王国，对今日印度阿萨姆历史影响深远。大英百科学生版等指出：阿豪姆原有自身神祇与礼仪，後来多采纳印度教与阿萨姆语，同时保留部分祖先崇拜与泰族民间宗教要素；近现代出现语言与文化复兴运动。传统信仰常称 **Phuralung（普拉隆）**：强调祖先（Dam）、天界／自然力量与祭司职分——公开记述中的 **Deodhai** 等祭司概念；公开节庆中最广为人知的是每年 **Me-Dam-Me-Phi**（向祖先与神灵奉献）。**2024 年**联合国教科文组织将查莱多（Charaideo）**Moidams** 坟丘葬制列入世界遗产，并提及相关祭祖礼仪在遗址仍有延续。本条目为教育性概览；**Deodhai 仅 CONCEPT**；**不提供** Ban-Phi 牲礼操作、祭司秘本或可复现祭祖祷词教程。

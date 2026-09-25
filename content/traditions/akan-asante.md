@@ -1,5 +1,9 @@
 # 阿肯／阿散蒂（Akan / Asante）
 
+![库马西肯特克罗诺阿散蒂传统神祠（UNESCO）](./akan-asante.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kentikrono_Shrine,_Kumasi.jpg -->
+
 ## 概述
 
 阿肯语族分布于今日加纳与科特迪瓦东部等地，阿散蒂（Asante／Ashanti）是其中最具历史影响力的政治与文化群体之一。祈福与社区安康高度依赖**祖先合作**：王室与家族的黑色凳子（black stool）被视为祖先精神的安息与召唤之所。周期性的 **Adae**（含 Akwasidae、Awukudae）由传统统治者代表人民奠酒献食；地方神祇神龛（*abosom*）与联合国教科文组织世界遗产中的阿散蒂传统建筑，则延续向神祇问询的公共宗教生活。

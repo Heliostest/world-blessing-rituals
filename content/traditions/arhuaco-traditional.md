@@ -1,5 +1,9 @@
 # 阿瓦科传统信仰与雪峰祈福（Arhuaco／Ika）
 
+![圣玛尔塔内华达雪峰阿瓦科社群（「兄长」守护土地）](./arhuaco-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Hermanos_mayores.jpg -->
+
 ## 概述
 
 **阿瓦科人（Arhuaco；亦称 Ika）** 分布于哥伦比亚圣玛尔塔内华达雪山，与科吉、维瓦、坎库阿莫同属「世界之心」山地原住民语境，但语言—社群认同分立。公开概述记述：传统宇宙强调山灵、律法与织帽等物质象征；今日面临领土与资源压力。本条目为教育概览；**不提供**入会、献牲或可冒充祭司（mamo）的步骤。**非** `kogi-traditional.md` 的重复。

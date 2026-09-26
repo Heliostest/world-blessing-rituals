@@ -1,5 +1,10 @@
 # 哈扎传统信仰与采集—祖灵祈福（Hadza）
 
+![坦桑尼亚哈扎人钻木取火](./hadza-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Starting_of_fire_by_Hadza_man.jpg -->
+
+
 ## 概述
 
 **哈扎人（Hadza／Hadzabe）** 分布于坦桑尼亚埃亚西湖附近，为东非著名采集狩猎社群之一，语言孤立。公开民族志记述：传统宇宙强调土地、祖先与共享伦理；今日面临土地压力、旅游与传教影响。本条目为教育概览；**不提供**狩猎操作、致幻／疗愈或可冒充仪者的步骤；**拒绝**把哈扎写成「时光旅行」消费品。

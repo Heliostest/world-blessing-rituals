@@ -1,5 +1,9 @@
 # 奇南特克民间天主教与山灵祈福（Chinantec）
 
+![瓦哈卡奇南特拉（La Chinantla）节庆中的奇南特克人与舞者](./chinantec-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Huehuentones_en_La_Chinantla.jpg -->
+
 ## 概述
 
 **奇南特克人（Chinantec）** 分布于墨西哥瓦哈卡北部山地，支系与方言多样。公开概述记述：天主教圣徒与地方山灵（公开叙述常及 **Dueño del Monte**「山之主」类守护叙事）、玉米—雨水伦理交织；社区自治含 **Mayordomía**；**Curandero** 疗愈中介属 **CONCEPT ONLY**。本条目为教育概览；**不提供**疗愈脚本、献牲操作或可冒充仪者的步骤。与米赫、马萨特克、萨波特克条目可比较。

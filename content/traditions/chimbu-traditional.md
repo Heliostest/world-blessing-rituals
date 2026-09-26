@@ -1,5 +1,9 @@
 # 钦布／辛布传统信仰与高地基督教祈福（Chimbu／Simbu）
 
+![巴布亚新几内亚辛布（Simbu／Chimbu）传统盛装](./chimbu-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:A_Simbu_mother_dressed_in_full_traditional_attire.jpg -->
+
 ## 概述
 
 **钦布人（Chimbu／Simbu）** 分布于巴布亚新几内亚高地辛布省一带。公开概述记述：今日多数为基督徒（天主教等影响显著），同时祖先与自然灵叙事、赔偿—交换礼仪在地方生活中仍可见；猪只与园圃在社会声望中作用关键。公共文化命名含 **Bugla Oku**（颅骨／头饰舞蹈的文化命名层）、**Singsing** 节庆展演，以及 **Bugla Yagu** 等猪只赔偿／交换叙事；灵力余绪仅 **CONCEPT**。本条目为教育概览；**不提供**战争、入会、献牲操作或可冒充仪者的步骤。

@@ -1,5 +1,9 @@
 # 黎族传统信仰与祖先—动物灵祈福（Hlai／Li）
 
+![海南黎族织锦技艺](./hlai-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Art_du_tissage_des_Li.jpg -->
+
 ## 概述
 
 **黎族（Hlai；汉语亦称黎）** 为中国海南岛主要原住民族群之一，支系多样（哈、杞、润等公开分类）。公开记述：传统宗教偏万物有灵与祖先崇拜；岁时可见 **Sanyuesan（三月三）** 公开文化节、**cattle-soul festival（牛魂／牛日民俗）**、**bamboo-pole dance（竹竿舞）** 与 **household ancestor incense（家屋祖先香火）** 等公开层；雷公、蛇等叙事见于神话；当代并存汉地民间信仰、佛教影响与旅游展演层。本条目为教育概览；**不提供**献牲操作或可冒充祭司的步骤。

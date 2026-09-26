@@ -1,5 +1,9 @@
 # 赫马尔基督教与佐米传统祈福余绪（Hmar）
 
+![赫马尔文化团传统歌舞展演](./hmar-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Hmar_Culture_Troupe.jpg -->
+
 ## 概述
 
 **赫马尔人（Hmar）** 主要分布于印度曼尼普尔、阿萨姆与米佐拉姆交界山地，属佐米／钦—库基相关社群公开分类。公开记述：今日多数为基督教（长老会等传统常见），**church choir**（堂会唱诗班）主导公共崇拜声音层；传统岁时可见 **Sikpui Ruoi** 收获—和平节公开文化记忆；**traditional song／dance** 作为认同载体与教会生活并存。本条目为教育概览；**不提供**献牲、入会或可冒充祭司的步骤。与派特、米佐、塔多条目可比较。

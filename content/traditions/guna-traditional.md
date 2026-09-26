@@ -1,5 +1,10 @@
 # 古纳／库纳传统信仰与祈福（Guna／Kuna）
 
+![圣布拉斯群岛身着莫拉服饰的古纳青年女性](./guna-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Panama-Kuna_0609a.jpg -->
+
+
 ## 概述
 
 **古纳人（Guna；亦作 Kuna／Cuna）** 是奇布查语系原住民族，主要分布于巴拿马圣布拉斯（Guna Yala）群岛与大陆部分地区，并有社群在哥伦比亚。大英百科指出：殖民接触摧毁其政治上层并改变社会与宗教系统；当代村社以农耕为主，辅以渔猎；宗教以萨满为中心，曾以日、月为重要神力，神话亦深受欧洲观念影响。encyclopedia.com《Cuna Religion》等公开综述记述：宗教组织含**村社首领 saila（sailakana）** 在集会中吟唱神话文本 **Pap Ikar（「神之道」）**，由 arkar 解释其道德寓意；以及**萨满 nele** 的占梦／透视疗愈传统，辅以木雕灵偶 **nuchu（nuchukana）**、药用植物专家等。本条目为教育概览；**不提供**疗愈吟诵全文、出神诱导、青春期礼细节或任何可冒充仪式专家的操作。

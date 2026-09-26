@@ -1,5 +1,10 @@
 # 弗留利民间天主教与朝圣祈福（Friulian）
 
+![弗留利蒙特堡圣母朝圣地（Castelmonte）](./friulian-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Castelmonte,_Udine,_Santuario_della_Beata_Vergine_001.jpg -->
+
+
 ## 概述
 
 **弗留利（Friuli）** 位于意大利东北，弗留利语少数族群与意大利国家天主教文化并存。公开文化记述中，**Castelmonte（蒙特堡）圣母** 朝圣地、村社主保节、复活节民俗，以及主显节前后的 **Pignarûl（大型篝火）** 等公共岁火构成民间祈福层。历史上民俗学亦记载 **Benandanti**：「良行者」相关的梦境／田野守护叙事——本卡仅作**历史民俗记忆**说明，**绝不**提供可复现的「民间魔法」或对抗巫术操作。本条目为教育概览；**不提供**可替代圣事的配方，并与斯洛文尼亚、克罗地亚、奥地利民间天主教可比较。

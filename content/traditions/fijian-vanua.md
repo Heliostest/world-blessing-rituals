@@ -1,5 +1,10 @@
 # 斐济传统 vanua 宇宙观与祖先祝福礼仪（Fijian Traditional／Veiqaraqaravi Vakavanua）
 
+![斐济苏瓦传统迎宾 sevusevu 卡瓦礼](./fijian-vanua.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Carmel_Sepuloni_Fiji_visit_April_2023_sevusevu.jpg -->
+
+
 ## 概述
 
 **斐济原住民（iTaukei）** 的传统文化常以 **vanua** 一词统摄土地、人民、习俗与祖先灵力：澳大利亚国立大学等公开研究强调 vanua 含「灵—地—人」三维，氏族（yavusa）的始祖灵 **kalou vu** 与其圣地 **yavutū** 赋予归属与保护。传统上，与祖先／守护灵沟通多经祭司 **bete**，并以 **yaqona（卡瓦）** 献呈；今日绝大多数 iTaukei 为基督宗教信徒（尤其卫理公会传统深厚），但 **sevusevu（呈献请求准许）**、**yaqona vakaturaga（酋长级卡瓦礼）**、公开层的 **bulubulu（和解／礼物致歉）** 等 **veiqaraqaravi vakavanua（依 vanua 之道的接待礼仪）** 仍是村庄迎宾、和解与公共生活的核心；**bete／yavutū** 则保持限制性命名。文化图集等材料指出：农村部落土地仍占国土绝大部分，村庄由首领与头人维系互惠伦理。本条目与萨摩亚、汤加、美拉尼西亚总览条目区分斐济 vanua 特殊性；**不提供**通灵恍惚教程、禁忌圣地擅闯指南或可复现祭司召灵步骤。

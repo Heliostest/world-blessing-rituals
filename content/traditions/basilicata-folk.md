@@ -1,5 +1,9 @@
 # 巴西利卡塔民间天主教与岩城朝圣祈福（Basilicata／Lucania）
 
+![意大利马泰拉布鲁娜节圣母巡游](./basilicata-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Madonna_della_Bruna,_Matera.jpg -->
+
 ## 概述
 
 **巴西利卡塔（Basilicata；旧称 Lucania）** 位于意大利南部，以马泰拉岩穴教堂、山村主保节与圣母朝圣著称。公开天主教与世界遗产叙述交织——本卡强调礼仪尊重先于观光消费。广为人知的公共层还包括 **马泰拉「布鲁娜节」／Festa della Bruna**（含「Strazzo」撕毁纸制凯旋车等公开节庆意象），以及 **阿切图拉「五月树」／Maggio di Accettura**（橡树—圣树「树婚」巡行的概念层公开记述）。本条目为教育概览；**不提供**可冒充神职的脚本。与普利亚、卡拉布里亚、坎帕尼亚条目可比较但卢卡尼亚认同独立。

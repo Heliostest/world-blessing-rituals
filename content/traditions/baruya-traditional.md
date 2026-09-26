@@ -1,5 +1,9 @@
 # 巴鲁亚传统信仰与安加高地祈福（Baruya）
 
+![巴布亚新几内亚萨拉瓦凯特山脉的巴鲁亚男子](./baruya-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:(Baruya_men_from_Sarawaket_Range,_Papua_New_Guinea)_-_DPLA_-_5a0569a5e83731fc1e52b2b7e0aff15a.jpg -->
+
 ## 概述
 
 **巴鲁亚人（Baruya）** 为巴布亚新几内亚东部高地安加（Anga）语群社群之一。公开民族志（含戈德利耶等）记述入会、盐业交换与性别化知识——**极高敏感，本卡仅概念提及，绝不提供操作**。今日并存基督教与市场经济。教育概览；**严禁**入会细节、体液象征复现或可冒充仪者的步骤。与门迪、雅利、福雷等条目区分。

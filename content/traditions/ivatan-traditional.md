@@ -1,5 +1,9 @@
 # 伊瓦坦民间天主教与巴丹群岛祈福（Ivatan）
 
+![巴斯科主教座堂（圣多明我堂，巴丹群岛）](./ivatan-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Basco_Cathedral_02.JPG -->
+
 ## 概述
 
 **伊瓦坦人（Ivatan）** 分布于菲律宾最北端巴丹群岛（Batanes），以抗风石屋、海洋生计与天主教信仰著称。西班牙殖民以来天主教深度嵌入；堂区**主保节／fiesta**、弥撒与台风季**还愿弥撒（votive Mass）**构成公共祈福。公开文化记述亦提及开海相关的 **Kapayvanuvanua** 叙事，以及 **Anito** 祖灵／地方灵供奉余绪——二者仅作**概念层**（无操作步骤）；邻里互助的 **Payuhuan** 家屋祝福体现村社韧性。本条目为教育概览；**不提供**可冒充神职的脚本，亦**不提供** Anito 供奉或开海仪轨 how-to。

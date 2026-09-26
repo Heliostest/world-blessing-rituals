@@ -1,5 +1,9 @@
 # 伊博传统宗教（Igbo / Odinani）
 
+![伊博社群新薯节（Iri Ji）仪式](./igbo-odinani.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Yam_Eating_Festival_in_an_Igbo_Community,_Nigeria.jpg -->
+
 ## 概述
 
 伊博人（Igbo，亦作 Ibo）主要居住于今日尼日利亚东南部，传统上以村社或村群为政治单元。传统宗教常称 **Odinani**／**Omenala**，核心是至高创造者 **Chukwu**／**Chineke**、大地女神 **Ala**／**Ani**、个人成就象征 **Ikenga**、各类神灵（*alusi*）以及护佑后裔的祖先。公开岁时以 **Iri Ji**（新薯节）为重要公共感恩层；**Dibia CONCEPT ONLY**（占卜／疗愈专家仅概念）；**morning libation CONCEPT high-level**（晨奠酒仅高层次概念）。19 世纪中叶以降基督教迅速传播，今日多数伊博人为基督徒，但仍可见与本土观念交织的实践。本条目为教育性概览；不对神谕裁断、秘社仪轨或献祭操作提供可复现说明。

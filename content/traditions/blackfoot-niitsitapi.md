@@ -1,5 +1,10 @@
 # 黑足／尼特西塔皮礼仪与医药捆（Niitsitapi／Blackfoot medicine bundles）
 
+![加拿大阿尔伯塔黑足渡口历史地尖顶帐篷营](./blackfoot-niitsitapi.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Blackfoot_crossing_Alberta_Canada_(16045368024).jpg -->
+
+
 ## 概述
 
 **黑足人（Blackfoot／Blackfeet；自称语境常作 Niitsitapi「真实之人」）** 为北美大平原阿尔冈昆语族社群，传统上包括 **Siksika、Kainai（Blood）、Piikani（Piegan／Peigan）** 等，分布于今加拿大阿尔伯塔与美国蒙大拿。大英百科记述：夏季各大狩猎群体会聚集举行主要部落性宗教礼仪 **Sun Dance（太阳舞）**；许多个人持有复杂的 **medicine bundles（医药捆／神圣捆）**——内含歌曲、故事与圣物，在正确礼仪下关涉保护、狩猎与康健。Encyclopedia.com 等强调捆物作为「可携带圣所」，连结水下、陆地与天空的存在，并以严格转让礼仪在保管者之间流通。本条目为教育性概览；**不提供**太阳舞肉体奉献操作、捆物打开程序、幻视追求教程或歌曲盗用。

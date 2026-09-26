@@ -1,5 +1,10 @@
 # 博拉纳传统信仰与东非牧祈福（Borana）
 
+![埃塞俄比亚博拉纳牧人下入埃尔索德火山口井泉](./borana-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Borana_herder_descending_into_El_Sod_crater,_Ethiopia,_2011.jpg -->
+
+
 ## 概述
 
 **博拉纳人（Borana）** 为奥罗莫支系牧人社群，分布于埃塞俄比亚南部与肯尼亚北部。公开叙述涉及 **Gadaa** 世代制度（**UNESCO** 人类非物质文化遗产相关公开层）、至高神 **Waaqa**、精神权威 **Kallu**、以及 **Singing Wells（歌唱井）** 等井泉—牧界伦理——**中高敏感**。今日并存伊斯兰教／基督教接触与跨境牧界政治。教育概览；不提供祭祀操作。与马赛、桑布鲁、伦迪勒等条目区分（博拉纳属奥罗莫—盖达传统，非马赛）。

@@ -1,5 +1,9 @@
 # 布蒂亚藏传与锡金祈福（Bhutia）
 
+![锡金佩玛扬则寺（Pemayangtse）与经幡](./bhutia-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Pemayangtse_Monastery_Sikkim_India.jpg -->
+
 ## 概述
 
 **布蒂亚人（Bhutia）** 为印度锡金等地藏缅语群社群，宗教生活以藏传佛教与地方护法传统为主——**中高敏感**。本卡仅公开寺院／节庆层（含 **Pang Lhabsol**／干城章嘉守护叙事、**Losoong** 新年公开层）；密续与闭关 **CONCEPT ONLY**；不提供密续或驱邪操作。与不丹竹巴总述、夏尔巴、雷布查等条目区分——锡金布蒂亚≠不丹国籍宗教总卡。

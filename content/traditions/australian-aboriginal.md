@@ -1,5 +1,9 @@
 # 澳大利亚原住民（Aboriginal Australia）
 
+![澳大利亚原住民烟熏礼／Ngarrindjeri长老Major Sumner主持的Smoking Ceremony](./australian-aboriginal.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Australian-aboriginal-smoking-ceremony.jpg -->
+
 ## 概述
 
 澳大利亚原住民包含数百个拥有不同语言、亲属制度与“国家／Country”归属的群体；不存在单一统一宗教。贯穿许多传统的关键框架是**梦创时代／Dreaming**（各地名称不同）：神话存在塑造地貌、律法与生命，并持续规范人与土地、祖先及图腾关系。公开可见的祈福与净化实践中，**烟熏礼（smoking ceremony）** 与 **Welcome to Country（欢迎莅临国／土地）** 常被用于洁净、保护、过渡与欢迎访客。托雷斯海峡岛民另有自身海洋与岛礁传统，本条目以大陆原住民公开礼仪为主，并强调各地差异与文化权威。

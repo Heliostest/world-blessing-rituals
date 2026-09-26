@@ -1,5 +1,9 @@
 # 傣族／西双版纳上座部与寨神祈福（Dai）
 
+![西双版纳傣族园曼听佛寺](./dai-xishuangbanna.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%82%A3%E6%97%8F%E5%9B%AD-%E6%9B%BC%E5%90%AC%E4%BD%9B%E5%AF%BA_2025-07-06.jpg -->
+
 ## 概述
 
 **傣族（Dai）** 为中国官方认定的少数民族，云南西双版纳、德宏等地为重要聚居区，与东南亚泰／佬／掸等族群语言文化相关。公开民族志记述：宗教生活以**上座部佛教**为核心——礼佛与 **Tan／dana（布施）**、出家短期、**Songkran／Sangkran（泼水节）** 等节庆——并并存 **Pha Ban** 寨神／村神与 **Pa Chang** 祭司传统（**CONCEPT ONLY**）。本条目聚焦西双版纳公开可述层；**不提供**驱灵操作、献牲或可冒充康朗／波章／Pa Chang 的仪轨步骤。

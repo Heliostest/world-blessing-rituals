@@ -1,5 +1,9 @@
 # 拜宁传统信仰与火舞—祖先祈福（Baining）
 
+![柏林民族学博物馆藏拜宁树皮面具（1915）](./baining-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Mask,_Baining,_New_Britain,_1915_-_Ethnological_Museum,_Berlin_-_DSC00940.JPG -->
+
 ## 概述
 
 **拜宁人（Baining）** 分布于巴布亚新几内亚东新不列颠内陆，以夜间 **火舞** 与树皮面具传统闻名于民族志影像——常被旅游过度奇观化。公开概述记述：祖先与面具礼仪交织；今日并存基督教；与沿海托莱社会关系复杂。本条目为教育概览；**严禁**面具／火舞操作化或可冒充仪者的步骤。

@@ -1,5 +1,10 @@
 # 卡尔梅克藏传佛教祈福传统（Kalmyk Buddhism）
 
+
+![埃利斯塔释迦牟尼金殿 Burkhan Bakshin Altan Sume（卡尔梅克 khurul）](./kalmyk-buddhism.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Burkhan_Bakshin_Altan_Sume.jpg -->
+
 ## 概述
 
 **卡尔梅克人（Kalmyk／Kalmuck，自称 Khalmg）** 是欧洲伏尔加下游、里海西北岸一带的卫拉特（Oirat）蒙古语族群体，主要聚居于俄罗斯联邦 **卡尔梅克共和国（Kalmykiya）**，首都埃利斯塔（Elista）。大英百科指出：卡尔梅克长期为游牧畜牧民，并如其他蒙古人一样奉行 **藏传佛教**，同时混有本土信仰与萨满要素。后苏联时代寺院（**khurul**）重建；埃利斯塔 **Burkhan Bakshin Altan Sume（释迦牟尼金殿／Golden Abode of Buddha Shakyamuni）** 与 **Zul** 灯节等成为公开朝拜与文化象征。本条目聚焦 **khurul liturgies by sangha, viewing-only**；**不提供**灌顶、密咒修法、献牲或可复现仪轨——**users don't officiate**。

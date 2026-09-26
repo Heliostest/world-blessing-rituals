@@ -1,5 +1,10 @@
 # 卡达山—杜顺／莫莫里安信仰（Kadazan-Dusun／Momolianism）
 
+
+![卡达山—杜顺丰收节 Kaamatan：女祭司 Bobohizan 主持 Magavau](./kadazan-dusun-momolianism.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Penampang_Sabah_Kaamatan-Celebrations-2014-01.jpg -->
+
 ## 概述
 
 **卡达山—杜顺人（Kadazan-Dusun）** 是马来西亚沙巴州最大的原住民族群统称。社群与学术论述中，传统世界观常称 **Momolianism**：稻灵 **Bambaazon（Bambarayon）** 与大地具神圣意涵；女祭司 **Bobohizan** 主持 **Magavau**——**viewing-only**，**users don't officiate**；**Sumazau** 舞与 **Kaamatan** 丰收节为公共文化层。本条目为教育性概览；**不提供** Magavau 可复现步骤、入灵脚本或牲礼操作。

@@ -1,5 +1,10 @@
 # 卡巴尔达民间伊斯兰与切尔克斯习惯祈福（Kabardian）
 
+
+![切尔克斯传统舞蹈（卡巴尔达—阿迪格文化圈）](./kabardian-traditional.jpg)
+
+<!-- 来源：CC BY 2.5 | https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_19128_Circassian_dancers_in_Kafr_Kama_Israel.JPG -->
+
 ## 概述
 
 **卡巴尔达人（Kabardian）** 为切尔克斯（阿迪格）人重要支系，主要分布于俄罗斯卡巴尔达—巴尔卡尔等地，绝大多数为逊尼派穆斯林。公开概述记述：清真寺礼仪与 **Adyge Khabze** 荣誉—好客习惯法深度交织；**Thashxwe** 等生命礼仪／节庆公开层；**Nart** 史诗为文化认同叙事；苏菲 **zikr** 属 **viewing-only**——**users don't officiate**。本条目为教育概览；**不提供**教团秘仪或政治动员话术。

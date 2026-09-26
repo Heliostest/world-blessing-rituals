@@ -1,5 +1,10 @@
 # 加斯科涅民间天主教与朝圣祈福（Gascon）
 
+![卢尔德圣地夜间火把／烛光巡游](./gascon-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Soir_de_p%C3%A8lerinage_%C3%A0_Lourdes_01.jpg -->
+
+
 ## 概述
 
 **加斯科涅（Gascony）** 位于法国西南，以奥克语／加斯科涅语遗产、村社主保节与毗邻 **卢尔德（Lourdes）** 等比利牛斯朝圣网络闻名。公开天主教民俗记述：圣母显现圣地 **Massabielle 洞窟** 的泉水与全球朝圣者相关；圣地常见 **Torchlight procession（火把／烛光巡游）**；本地另有 **fontaines soignantes（疗愈泉）** 的文化注记，以及堂区弥撒、还愿与农牧祝福。本条目为教育概览；**不提供**可冒充神职的脚本或「圣水治愈配方」，并与奥克／卡马尔格、巴斯克条目可比较。

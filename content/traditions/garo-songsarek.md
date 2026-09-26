@@ -1,5 +1,10 @@
 # 加罗宋萨雷克信仰（Garo Songsarek）
 
+![梅加拉亚百鼓旺加拉收获节舞蹈](./garo-songsarek.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:100_Drums_wangala_fest.jpg -->
+
+
 ## 概述
 
 **宋萨雷克（Songsarek）** 是印度东北梅加拉亚邦（Meghalaya）加罗人（Garo，自称 A’chik／Mande）的传统共同体宗教，与刀耕火种农业周期紧密相连。东加罗丘陵县政府公开文化页指出：宋萨雷克以创造神 **Tatara Rabuga**（亦有较长尊称）为至高神头，**Saljong**（太阳神）更贴近人间馈赠并在 **100-Drums Wangala**（百鼓旺加拉收获感恩）中受尊荣；公开节庆链亦含 **Rugala／Sasat Soa** 与 **Agalmaka** 等农作阶段礼仪。加罗社会著名于母系继承与 ma’chong 亲属单位。当代多数加罗已皈依基督教，宋萨雷克成为少数但仍具文化象征的传统。本条目与卡西 Niam、巴托／博多、那加等区分；**不提供**献牲操作、草药配方、入会或可复现完整祭仪步骤。

@@ -1,5 +1,9 @@
 # 高台教（Cao Đài / Caodaism）
 
+![越南西宁高台教圣座（Tòa Thánh Tây Ninh）](./cao-dai.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Cao_Dai_Holy_See_(10037404444).jpg -->
+
 ## 概述
 
 高台教（越南语 *Cao Đài*，意为“高台”，亦为对至上神的道敎式尊称）是20世纪兴起于越南南部的综合宗教运动，以 **Tòa Thánh Tây Ninh（太宁圣座）** 等为重要中心。其教义融合儒家伦理、道教修炼意象、佛教业力与轮回观念，并以类似天主教的**hierarchical liturgy／教阶**（教宗、枢机等）组织教会；万神殿中可见佛陀、孔子、耶稣、穆罕默德以及雨果、孙中山等“圣者”形象。至上神常以 **Thiên Nhãn（圣眼／Divine Eye）** 三角象征出现在圣所。崇拜包含日常 **Tứ thời** 四时礼拜、朔望集会与盛大节日。本条目为教育性概览；**Tứ thời viewing**；**users don't officiate**；不提供降神会操作或内部秘传科仪全文。

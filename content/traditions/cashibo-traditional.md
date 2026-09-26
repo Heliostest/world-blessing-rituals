@@ -1,5 +1,9 @@
 # 卡希博／卡卡塔伊博传统信仰与乌卡亚利祈福（Cashibo / Cacataibo）
 
+![1888年卡希博男子历史影像（Charles Kroehle）](./cashibo-traditional.jpg)
+
+<!-- 来源：Public Domain | https://commons.wikimedia.org/wiki/File:Cashibo_man_photographed_in_1888_by_Charles_Kroehle.jpg -->
+
 ## 概述
 
 **卡希博—卡卡塔伊博人（Cashibo／Cacataibo）** 分布于秘鲁乌卡亚利一带，属帕诺语系社群。公开叙述涉及村落礼仪与护佑观念——**极高敏感，本卡仅概念层**。教育概览；**严禁**药方、入会或可冒充仪者的步骤。与希皮博—科尼博、马鲁博、卡希纳瓦等帕诺条目区分；本卡合并同义，不另开 cacataibo 卡。

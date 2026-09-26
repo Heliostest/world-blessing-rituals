@@ -1,5 +1,9 @@
 # 埃莱马传统信仰与海湾面具祈福（Elema）
 
+![埃莱马 Eharo 仪式面具（博物馆藏）](./elema-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Masque_eharo_MHNT_ETH_AC_NB9.jpg -->
+
 ## 概述
 
 **埃莱马人（Elema）** 分布于巴布亚新几内亚海湾省，以 **Hevehe** 等大型面具周期礼仪闻名于民族志经典。公开概述记述：面具、祖先与长屋公共秩序交织；今日并存基督教。本条目为教育概览；**严禁**面具仪轨操作化、入会或可冒充仪者的步骤。与拜宁火舞、托莱图布安等面具传统区分谱系。

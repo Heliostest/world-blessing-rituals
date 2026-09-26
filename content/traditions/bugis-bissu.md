@@ -1,5 +1,9 @@
 # 布吉斯／比苏祭司传统（Bugis Bissu／South Sulawesi）
 
+![南苏拉威西比苏祭司表演Maggiri舞](./bugis-bissu.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Maggiri_dance_by_a_bissu_priest.jpg -->
+
 ## 概述
 
 **布吉斯人（Bugis／Ugi'）** 主要居于印度尼西亚南苏拉威西，历史上以航海贸易与水稻农耕并重。大英百科指出：十七世纪初布吉斯在邻邦戈阿推动下正式皈依伊斯兰教，并常被描述为群岛中虔敬的穆斯林群体之一；同时，公开学术记述强调其仍保留多种前伊斯兰要素。Encyclopedia.com《Bugis Religion》概述：**bissu**（比苏）为掌管王室圣物（regalia）与贵族礼仪的仪式专家；民间另有 **sanro** 行者；神圣场所与史诗 **La Galigo** 的咏唱亦延续。近人研究与报道（含 BBC Travel 等）常将 bissu 置于布吉斯五种性别／身份叙事中：被视为能同时体现多重视角、并在人间与 **dewata**（神灵）之间中介的圣职。本条目为教育性概览；**不提供**附体脚本、牲礼操作、自伤式通灵演示或可复现祝祷教程。

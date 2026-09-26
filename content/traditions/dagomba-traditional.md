@@ -1,5 +1,9 @@
 # 达贡巴传统信仰与加纳北部祈福（Dagomba / Dagbamba）
 
+![加纳北部达贡巴 Lunsi 宫廷鼓手](./dagomba-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Lunsi_(Drummers).jpg -->
+
 ## 概述
 
 **达贡巴人（Dagomba／Dagbamba）** 分布于加纳北部（含塔马利一带）。公开叙述涉及酋长制——**Ya-Na** 为达贡巴王／最高传统权威公开命名——祖灵观礼、**Lunsi** 宫廷鼓手，以及伊斯兰教／基督教接触；**Damba** 节庆见于 UNESCO 相关公开遗产叙述。教育概览；不提供宫廷／祭祀操作。与莫西、贡贾、马姆普鲁西等萨赫勒—草原条目区分。

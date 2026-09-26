@@ -1,5 +1,9 @@
 # 哈扎拉十二伊玛目什叶与阿富汗民间祈福（Hazara）
 
+![喀布尔萨希圣地（Ziyarat-e Sakhi）](./hazara-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Sakhi_Shrine2021-10-31_12.jpg -->
+
 ## 概述
 
 **哈扎拉人（Hazara）** 主要分布于阿富汗中部哈扎拉贾特及巴基斯坦奎达等流散地，多数为十二伊玛目什叶派穆斯林。公开概述记述：**Hosseiniyeh／Takyakhana**（侯赛因尼亚／聚会堂）为社群礼拜与穆哈兰姆纪念中心；**Nazar** 祝福食物／施饭构成公开施舍层；圣地朝谒如 **Ziyarat-e Sakhi**（萨希朝谒，流散地公开记述）承载敬爱圣裔叙事；**Ashura viewing-only sensitive**（阿舒拉仅观礼／敏感）。历史上遭受迫害与当代安全风险使纪念常与正义—哀悼相连。本条目为教育概览；**不提供**自笞等身体苦修操作、政治动员或可冒充教法权威的步骤。

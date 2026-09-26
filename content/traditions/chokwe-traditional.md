@@ -1,5 +1,9 @@
 # 乔奎传统宗教与祖先—面具祈福（Chokwe）
 
+![乔奎（Chokwe）Pwo 面具（中非皇家博物馆藏）](./chokwe-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Dance_mask_(pwo)_-_Chokwe_-_Royal_Museum_for_Central_Africa_-_DSC05873.JPG -->
+
 ## 概述
 
 **乔奎人（Chokwe）** 分布于安哥拉、刚果民主共和国与赞比亚交界地带，以精美面具、雕刻与复杂入会／祖先礼仪闻名于艺术史。公开民族志记述：祖先与自然灵在健康、丰饶与政治权威中作用关键；**Pwo** 与 **Cikunza** 等面具舞属公开展演／文化层；**Mukanda** 入会传统见于 UNESCO 概念层公开叙述，内部程序**密封**。基督教在多地并行。本条目为教育概览；**Mukanda UNESCO CONCEPT ONLY sealed**；**不提供**入会操作、面具秘仪内部程序或可冒充仪者的步骤。

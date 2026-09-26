@@ -1,5 +1,9 @@
 # 伊克彭传统信仰与辛古祈福（Ikpeng／Txicão）
 
+![奥兰多·维拉斯·博阿斯与一位伊克彭（Txicão）人](./ikpeng-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Orlando_Villas_Boas_e_um_%C3%ADndio_Txic%C3%A3o.jpg -->
+
 ## 概述
 
 **伊克彭人（Ikpeng；亦称 Txicão）** 现居巴西上辛古保护区相关地带，有迁徙入住史。公开概述记述：传统宇宙强调祖先与战争—狩猎伦理的历史叙述；今日强调和平共处与文化自治——**勿消费过去战争猎奇**。本条目为教育概览；**不提供**战争仪轨、献牲或可冒充仪者的步骤。与其他辛古社群卡片区分。

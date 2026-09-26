@@ -1,5 +1,10 @@
 # 加利西亚民间天主教与圣地亚哥朝圣祈福（Galician）
 
+![圣地亚哥—德孔波斯特拉大教堂 Botafumeiro 巨型香炉](./galician-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Botafumeiro.001_-_Catedral_de_Santiago.jpg -->
+
+
 ## 概述
 
 **加利西亚（Galicia）** 位于西班牙西北，以圣地亚哥—德孔波斯特拉（Santiago de Compostela）朝圣终点与大西洋岸民间天主教著称。公开遗产叙述中，**圣雅各之路（Camino de Santiago）** 为欧洲最著名朝圣网络之一；大教堂礼仪中常见 **Botafumeiro（巨型香炉）** 晃香的公共奇观。本地另有 **Santa Marta de Ribarteme** 假棺／还愿抬棺游行、通往 **San Andrés de Teixido** 的朝圣叙事，以及海岸／乡村**圣井**与还愿传统。本条目为教育概览；**不提供**可替代教会圣事的配方，并与葡萄牙罗马里亚、爱尔兰圣井条目可比较。

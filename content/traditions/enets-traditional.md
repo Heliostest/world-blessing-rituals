@@ -1,5 +1,10 @@
 # 埃涅茨传统信仰与泰梅尔祈福（Enets）
 
+![埃涅茨人交易鲟鱼（历史照片）](./enets-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:No-nb_bldsa_3f069.jpg -->
+
+
 ## 概述
 
 **埃涅茨人（Enets）** 为俄罗斯北方针叶—苔原带萨莫耶德语群小群体（泰梅尔一带）。公开叙述涉及驯鹿／渔猎、祖先与萨满史——**高度敏感，本卡偏概念**。公开文化日可见 **Reindeer Herder’s Day**；**Chekoro** 等圣地属观礼／限制叙述；萨满 **Budtode** 为 **HISTORY CONCEPT ONLY**。今日并存东正教接触与语言濒危议题。教育概览；**严禁**萨满操作复现。与涅涅茨、恩加纳桑等条目区分——埃涅茨为独立民族，不另开 entsi 同义卡。

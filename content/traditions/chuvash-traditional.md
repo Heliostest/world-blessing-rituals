@@ -1,5 +1,9 @@
 # 楚瓦什传统信仰（Chuvash traditional religion／Tură／Kiremet）
 
+![楚瓦什人在阿卡图伊（Akatuy）节庆上穿传统服饰起舞](./chuvash-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Chuvash_dancers.jpg -->
+
 ## 概述
 
 **楚瓦什人（Chuvash）** 是俄罗斯伏尔加河中游的突厥语民族，构成楚瓦什共和国主体，并分布于鞑靼斯坦、巴什科尔托斯坦等地。大英百科指出其人名义上多为俄罗斯东正教信徒，但传统信仰残余与名义宗教均曾显著衰落／并存。核心神名 **Tură（Tura）** 源自古突厥 **Tängri** 传统；地方圣所与灵力常称 **kiremet**——圣林规矩以**观礼／敬畏**理解，不作操作；公开文化节庆含 **Akatuy** 犁耕／春耕欢庆；祖先纪念常称 **Yupikh** 等公开叙述。本条目为教育性概览；**不提供**牲礼操作、咒术、kiremet 献祭程序或可复现「异教复兴」教程。

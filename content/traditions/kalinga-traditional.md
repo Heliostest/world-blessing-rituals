@@ -1,5 +1,10 @@
 # 卡林加传统信仰与科迪勒拉祈福（Kalinga）
 
+
+![卡林加女子传统舞蹈](./kalinga-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kalinga_Womens'_Dance.jpg -->
+
 ## 概述
 
 **卡林加人（Kalinga）** 分布于菲律宾吕宋科迪勒拉山区。公开概述记述：**Bodong** 和平协定为公共／观礼层——**no simulated ritual**；**Ullalim** 史诗为文化叙事；**Whang-od** 文身遗产仅作文化尊重提及（**no tattoo how-to**）；传统宇宙观与基督教并存——**users don't officiate**。本条目为教育概览；**不提供**猎首历史操作化、文身工序或可冒充仪者的步骤。

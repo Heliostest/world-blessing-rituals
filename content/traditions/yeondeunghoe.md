@@ -1,5 +1,9 @@
 # 韩国燃灯会（Yeondeunghoe）
 
+![首尔寺院燃灯会彩色莲灯](./yeondeunghoe.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Coloured_lanterns_at_the_Lotus_Lantern_Festival.jpg -->
+
 ## 概述
 
 燃灯会（*Yeondeunghoe*，莲灯节）是**韩国佛教节庆（A）**：佛诞节期点亮莲形灯笼、提灯巡行的春日灯会，2020 年列入联合国教科文组织《人类非物质文化遗产代表作名录》（编号 00882；列入决定 15.COM/8.B.1）。UNESCO 页面强调它已从寺院仪式扩展为**开放的春季节庆**——社会各界公众皆可参与，自制莲灯、表达祝愿，节庆承载光明与共聚的意义。本卡定位为节庆民俗专题：手机致敬**只做「组装莲灯」的物件层**，不宣称完成任何佛教仪轨；提灯游行是集体节庆场景，**不可缩成闯关**。燃灯会属佛教节庆系统，与韩国巫俗（`korean-musok.md`）不同体系，勿混同叙述；亦不与东亚各传统的寺院供灯（`chinese-buddhism.md` 等）混作同一语义资产。

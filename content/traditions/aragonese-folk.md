@@ -1,5 +1,9 @@
 # 阿拉贡民间天主教与朝圣祈福（Aragonese）
 
+![萨拉戈萨皮拉尔节献花礼（Ofrenda de Flores）](./aragonese-folk.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Ofrenda_de_flores_(Zaragoza).jpg -->
+
 ## 概述
 
 **阿拉贡（Aragon）** 位于西班牙东北内陆，以皮拉尔圣母（Zaragoza）、圣地亚哥之路支线与村社主保节著称。公开天主教民俗记述：朝圣、兄弟会抬像与农事祝福构成祈福层；**10 月 12 日**皮拉尔节的 **Ofrenda de Flores（献花礼）** 与民间 **jota** 歌舞是广为人知的公共文化层；阿拉贡语／方言遗产是认同维度。本条目为教育概览；**不提供**可冒充神职的脚本。与卡斯蒂利亚、加泰罗尼亚、纳瓦拉条目可比较。

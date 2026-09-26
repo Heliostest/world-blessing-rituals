@@ -1,5 +1,9 @@
 # 圣布里吉德十字（St Brigid's Cross）
 
+![爱尔兰民俗圣布里吉德十字（Cros Bhríde／St Brigid's Cross）](./st-brigids-cross.jpg)
+
+<!-- 来源：CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Saint_Brigid%27s_cross.jpg -->
+
 ## 概述
 
 圣布里吉德十字（爱尔兰语 **Cros Bhríde**）是**爱尔兰民俗—天主教（A）**的编织护佑物：多在 **1 月 31 日圣布里吉德夜**（2 月 1 日瞻礼前夕）以灯心草、麦秆等草茎编成，洒圣水后悬挂于住宅与畜棚，求家宅与牲畜得护佑（爱尔兰国家博物馆民俗馆藏 NMI Folklife 的宗教与历法习俗记述）。馆藏呈现其样式并非单一：**四臂、菱形、轮形、交织**等多种变体并存，反映地方与家户的编织差异。`celtic-folk.md` 已在岁时概念层点名此物，本卡**聚焦编织物件本身**；圣井与朝圣层另见 `irish-folk-catholic.md`。当代亦有从 Imbolc 出发的新异教重建叙述，与民俗—天主教的编织实践**须分述**，不得混写为「复活的古代真仪」。

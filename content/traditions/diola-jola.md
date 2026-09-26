@@ -1,5 +1,9 @@
 # 迪奥拉／乔拉传统宗教与神龛祈福（Diola／Jola／Dyola）
 
+![塞内加尔卡萨芒斯迪奥拉库姆波（Kumpo）](./diola-jola.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kumpo_Diola_Senegal.jpg -->
+
 ## 概述
 
 **迪奥拉人（Diola；亦作 Jola、Dyola）** 主要分布于塞内加尔卡萨芒斯（Casamance）、冈比亚与几内亚比绍沿海湿地，以定居水稻农耕与村落议事著称。大英百科以 Dyola 条概述该族群；宗教学百科强调：传统信仰承认创造主 **Emitai／Ata-Emit**（与天空、岁时与雨水紧密相连）；**Bekine** 等神龛属 **CONCEPT**；求雨／危机祈祷为 **viewing only**。公开面具／展演传统中 **Kumpo** 见于 UNESCO／遗产概念层叙述。今日穆斯林、基督徒与传统实践常并存。本条目为教育概览；**不提供**成人礼细节、神龛安立操作、牺牲屠宰或任何可复现的“请灵／成祭司”步骤。

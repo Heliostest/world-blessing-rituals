@@ -1,5 +1,9 @@
 # 独龙传统信仰与万物有灵祈福（Derung／Drung）
 
+![独龙族芒锣舞](./derung-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:H.the_Mangluo_dance.jpg -->
+
 ## 概述
 
 **独龙族（Derung／Drung／Dulong）** 为中国人口较少的官方民族之一，主要分布于云南贡山独龙江河谷。公开百科记述：传统宗教为万物有灵，萨满／仪式专家安抚恶灵；十二月前后新年有对天献祭的公开叙述；部分人接触基督教。历史上的文面等身体标记属高度敏感文化遗产，本条目**绝不提供**文面或任何身体改造操作。亦**不提供**献牲程序或可冒充萨满的步骤。

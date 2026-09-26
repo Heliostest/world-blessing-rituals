@@ -1,5 +1,9 @@
 # 乔克托传统宗教与青玉米礼（Choctaw）
 
+![密西西比乔克托印第安博览会上的舞者](./choctaw-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Choctaw_fair_dancers.jpg -->
+
 ## 概述
 
 **乔克托人（Choctaw；自称 Chahta）** 属马斯科吉语系，传统家园在今密西西比东南部；十九世纪被迫西迁至今俄克拉荷马（「泪水之路」），亦有社群存留于密西西比与路易斯安那。大英百科指出：乔克托曾为东南农业民族中技艺突出者，最重要的社群礼仪是仲夏 **Busk／青玉米礼（Green Corn／Okissa）**——初熟与新火更新；**Luak Pila** 圣火记忆见于公开文化叙述；**Stomp Dance** 属公共／教育展演层。everyculture 等公开综述强调人与自然、超自然力量之间的和谐，以及先知（hopaii）、医者（alikchi／healers）等角色——**healers CONCEPT**。当代许多乔克托人信奉基督教，同时传统舞蹈与青玉米／跺舞实践在部分社群中复兴。本条目为教育概览；**不提供**青玉米礼内部私密环节、净化草药配方、骨敛程序或任何可冒充仪式专家的操作。

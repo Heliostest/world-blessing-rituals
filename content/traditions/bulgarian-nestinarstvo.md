@@ -1,5 +1,9 @@
 # 保加利亚涅斯蒂纳尔火舞祈福传统（Nestinarstvo）
 
+![保加利亚涅斯蒂纳尔火舞（Nestinarstvo）](./bulgarian-nestinarstvo.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Nestinari.jpg -->
+
 ## 概述
 
 **涅斯蒂纳尔（Nestinarstvo，亦称火舞／踩火礼）** 是保加利亚东南部斯特兰贾（Strandzha）山区村落、尤其是 **布尔加里村（Bulgari／Balgari）** 保存的社区节庆仪式。2009 年以「Nestinarstvo, messages from the past: the Panagyr of Saints Constantine and Helena in the village of Bulgari」之名列入联合国教科文组织人类非物质文化遗产代表作名录。教科文组织公开文本指出：仪式在圣君士坦丁与圣海伦娜瞻礼（公历约 6 月 3–4 日）的 **Panagyr** 中达到高潮，旨在祈求村落福祉与丰饶；清晨有圣像游行与圣泉分发圣水、蜡烛以求健康，傍晚则以鼓与风笛引领，**Nestinari** 赤足踏入余烬圆圈，被视为圣徒意志得以表达的精神与身体领袖。布尔加斯地区历史博物馆等机构亦概述圣像「着装」、stolnina（圣像保管处）、horo 圈舞与家族传承的 nestinarka 角色。今日黑海度假地亦有商业化火舞表演，与村落真仪宜严格区分。本条目与罗马尼亚卡鲁什、斯拉夫民间等区分保加利亚斯特兰贾火舞遗产；**不提供**入定诱导、踩火操作、预言脚本或可复现「踏火得圣」步骤。

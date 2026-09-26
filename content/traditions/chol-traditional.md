@@ -1,5 +1,9 @@
 # 乔尔玛雅民间天主教与恰帕斯祈福（Chol）
 
+![墨西哥恰帕斯蒂拉（Tila）镇——Señor de Tila 朝圣地](./chol-traditional.jpg)
+
+<!-- 来源：CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Tila_Chiapas.jpg -->
+
 ## 概述
 
 **乔尔人（Chol，自称为 Yokot'anob 等，墨西哥恰帕斯等地）** 为玛雅语系社群。公开宗教生活常见民间天主教圣徒崇拜——尤以 **Señor de Tila（蒂拉黑基督）** 朝圣闻名——以及玉米与**绿十字**伦理；洞穴传统如 **Cueva de Don Juan** 雨穴属 **EXTREME CONCEPT／观礼**，不可操作。本卡聚焦可公开的圣徒—农作祈福。与约科坦（塔巴斯科）、拉坎东、策尔塔尔等条目区分；亦非瓦哈卡特基斯特拉特克「Chontal」。

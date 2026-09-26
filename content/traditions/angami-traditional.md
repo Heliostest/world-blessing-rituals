@@ -1,5 +1,9 @@
 # 安加米那加基督教与普夫察纳祈福余绪（Angami）
 
+![那加兰安加米那加人传统服饰与节庆装束](./angami-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Angami_Tribe_NAGALAND_INDIA_20.jpg -->
+
 ## 概述
 
 **安加米那加人（Angami Naga）** 主要分布于印度那加兰科希马等地。公开记述：今日绝大多数为基督徒（浸信会等影响深远）；传统宗教称 **Pfütsana／Krüna**，仅极少数村落实践，1987 年起有护持组织；公开文化年历突出 **Sekrenyi** 节庆与邦级 **Hornbill Festival** 等认同展演。历史上有精灵、禁忌周期（genna）、**Feast of Merit（功勋宴）** 等历史概念，以及祭司传统。本条目为教育概览；**Pfütsana CONCEPT ONLY**；**不提供**猎首历史操作化、献牲或可冒充祭司的步骤。与那加总览、米佐、钦—佐米条目可比较。

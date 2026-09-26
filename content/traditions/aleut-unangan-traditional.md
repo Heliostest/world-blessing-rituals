@@ -1,5 +1,9 @@
 # 阿留申／乌南干传统信仰与东正教祈福（Aleut／Unangan）
 
+![乌姆纳克岛尼科尔斯基东正教堂（阿留申）](./aleut-unangan-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Nikolski_village_church,_Umnak_AK.jpg -->
+
 ## 概述
 
 **阿留申人（Aleut；自称常作 Unangan／Unangas 等）** 分布于阿留申群岛、普里比洛夫群岛及俄罗斯司令群岛一带。公开民族志记述：前基督教宇宙观含萨满中介、动物灵与海洋伦理；文化层可见 **Iqyaq／Baidarka**（皮艇）生计象征；口述记忆中有 **Qugaq** 等灵力／地方存在概念（**CONCEPT**）。自18世纪俄美公司时期起，**俄罗斯东正教**深度成为族群认同标志，教堂、圣像与命名日礼仪构成当代祈福主轴；猎物敬意与历史萨满面具叙述以口述与博物馆知识形式余绪并存。本条目为教育概览；**不提供**萨满出神、狩猎咒术或可冒充仪式专家的步骤。

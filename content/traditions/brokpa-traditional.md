@@ -1,5 +1,9 @@
 # 布罗克巴传统信仰与拉达克—边境祈福（Brokpa）
 
+![拉达克布罗克巴男子戴典型花饰头饰](./brokpa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:A_Brokpa_man_in_typical_floral_headgear.jpg -->
+
 ## 概述
 
 **布罗克巴人（Brokpa）** 分布于拉达克等地的达尔德语群农牧社群，宗教生活交织藏传佛教、地方神与社区节庆——**中高敏感**。本卡仅公开节庆／寺院层（含 **Montho Tipi** 花饰头饰与 **Bono-na** 收获／丰饶节公开层）；神谕／驱邪 **EXTREME CONCEPT ONLY**；不提供密法或驱邪操作。与拉达克总述、巴尔蒂、金瑙尔等条目区分。

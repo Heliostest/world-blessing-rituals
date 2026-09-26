@@ -1,5 +1,10 @@
 # 哥特兰民间基督教与岛屿祈福（Gutnish／Gotland）
 
+![哥特兰莱维德教堂内的还愿船（Kyrkoskepp）](./gutnish-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Barco_votivo_da_igrexa_de_Levide.jpg -->
+
+
 ## 概述
 
 **哥特兰（Gotland）** 为瑞典波罗的海大岛，中世纪教堂密集，民间基督教（路德宗传统）与岛屿航海还愿、主保／节期礼拜构成祈福层；古特尼语（Gutnish）遗产是认同维度。公开记述：教堂内常见 **Kyrkoskepp（教堂还愿船／votivskepp）** 悬挂传统，纪念航海感恩；夏至等民俗与教会节期交织，地方公共层亦见 **Stångaspelen** 等仲夏民俗竞赛／游戏命名。本条目为教育概览；**不提供**可冒充神职的脚本。与斯堪尼亚、奥兰、大陆瑞典民俗可比较但哥特兰岛屿认同独立。

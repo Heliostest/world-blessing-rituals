@@ -1,5 +1,10 @@
 # 班巴拉／巴马纳传统宗教（Bambara／Bamana）
 
+![巴马纳契瓦拉羚羊形农耕纪念头饰](./bambara-bamana.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Antelope_dance_headdress,_Bamana_or_Bambara_people,_Honolulu_Museum_of_Art,_4377.1.JPG -->
+
+
 ## 概述
 
 **班巴拉人（Bambara，自称 Bamana）** 是马里最重要的曼德语族群体之一，传统上沿尼日尔河从事农业。Encyclopedia.com 与大英百科相关条目记述：传统宗教以创造者神 **Bemba／Ngala** 为核心，并展开与气、火、水、土相关的神性位格叙事（公开材料常提到 Pemba、Nyale／Mousso Koroni、Faro、Ndomadyiri 等）；祖先崇拜、村落守护灵与多个男性启蒙社团（如 Ndomo、Komo、Kono、Tyiwara／Chiwara、Korè 等）构成宗教生活骨架。大英百科 **Chiwara** 条指出：羚羊形头饰与舞蹈纪念教会人类农耕的精灵 Chiwara。今日绝大多数 Bamana 为穆斯林，但公开记述仍提到祖先礼仪与部分传统实践的延续。本条目为教育性概览；**不提供**秘密社团入会、牲礼操作、占卜教程或可复现启蒙仪程。

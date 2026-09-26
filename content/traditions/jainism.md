@@ -1,5 +1,9 @@
 # 耆那教
 
+![耆那教女尼（āryikā）礼敬渡津者圣像](./jainism.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Jain_aryika_(nun)_worshipping_in_front_of_Jain_idols_at_a_temple..jpg -->
+
 ## 概述
 
 耆那教以**不伤害（ahimsa）**为伦理与解脱论的第一原则，流行于印度若干地区并有全球侨民社群。对在家众而言，寺院礼敬渡津者（***Tirthankara***）、定期忏悔（***pratikraman***），以及系统化的布施（***dāna***），是积累福德、减轻业缚的主要道路。年节中的 ***Paryushana*** 与结束时的 ***Samvatsari***（相互宽恕）尤为重要。与有神论传统不同，耆那崇拜更强调礼敬已成就者的德性与道路，而非祈求造物主临时改写因果；但信徒仍会为内心平静、家庭安康与善终而祈祷、守斋。

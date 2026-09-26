@@ -1,5 +1,9 @@
 # 查莫罗传统信仰与和谐伦理（Chamorro traditional）
 
+![关岛南菲尼加扬拉特石公园的拉特石柱](./chamorro-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:South_Finegayan_Latte_Stone_Park_01.jpg -->
+
 ## 概述
 
 **查莫罗（Chamorro／CHamoru）** 是关岛与北马里亚纳群岛的原住民族群。大英百科指出：其祖先约于公元前 1600 年自岛屿东南亚迁入马里亚纳；西班牙语殖民时期人口锐减，当代查莫罗以罗马天主教为主，查莫罗语仍在许多家庭使用。关岛百科 **Guampedia** 等公开条目强调：古代与当代仍可见的祖先恭敬、**Taotaomo’na（先人／「以前的人」之灵）** 观念，以及核心伦理 **Inafa’maolek（「使善／恢复和谐」）**——含尊重长者（respetu）、亲属互惠（chenchule’）等。进入丛林前常有对 **Guelo yan Guela（祖父／祖母／祖先）** 的许可请求；**Latte** 石柱为文化认同象征；长者祝福见于公共文化层。本条目与密克罗尼西亚总论、夏威夷、萨摩亚等区分马里亚纳查莫罗；**不提供**草药处方、招灵、埋葬／颅骨礼仪操作或可复现「完整古礼」步骤。

@@ -1,5 +1,9 @@
 # 卡希纳瓦／胡尼库因传统信仰与雨林祈福（Cashinahua／Huni Kuin）
 
+![胡尼库因酋长伊萨卡祈祷（Huni Kuin）](./cashinahua-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Cacique_Isaka_Huni_Kuin_Rezando.jpg -->
+
 ## 概述
 
 **卡希纳瓦人（Cashinahua；自称常作 Huni Kuin）** 分布于巴西—秘鲁交界普鲁斯河流域，属帕诺语支。公开概述记述：传统宇宙强调身体绘饰、歌咏与萨满—治疗传统；今日并存基督教与土地维权。本条目为教育概览；**严禁**致幻植物操作、疗愈脚本或可冒充萨满的步骤。与希皮博—科尼博条目相关语支但社群独立，不可合并。

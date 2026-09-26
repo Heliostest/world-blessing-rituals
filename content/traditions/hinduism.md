@@ -1,5 +1,9 @@
 # 印度教
 
+![印度教普迦中的 aarti 旋灯仪轨](./hinduism.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Ceremony_aarti,_Hindu_Puja_India_b.jpg -->
+
 ## 概述
 
 印度教内部流派、神祇与地方习俗极为繁复，却常共享一套以**奉献（bhakti）**和仪轨来维系人神关系的生活节奏。家庭神龛与神庙中的 *puja*（普迦）、渊源更古的火祭 *yajna*、亲见圣像时的 *darshan*，以及为满愿而持守的誓愿斋戒 *vrata*，是理解“祈福—感恩—还愿”的重要钥匙。崇拜可以把神当作贵客来唤醒、沐浴、献食与旋灯（***aarti***），使日常时间充满与神圣的往来；供养之后领受 ***prasada***（福食／已献供物）是广泛可见的恩宠循环。

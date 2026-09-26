@@ -1,5 +1,9 @@
 # Clootie 布条圣井（clootie well）
 
+![苏格兰 Clootie 圣井旁系满布条的树木](./clootie-well-rag.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Clootie_Well,_August_2019.jpg -->
+
 ## 概述
 
 Clootie well（布条圣井；*cloot* 即「布片」）是**苏格兰等地凯尔特民俗的求愈还愿实践（A）**：把小布条浸入圣井水，再系到井旁树枝上，冀望病苦随布条在风吹雨淋中渐渐朽坏而消退——Forestry and Land Scotland 介绍苏格兰黑岛 Munlochy 圣井（盖尔语 *Tobar Clùdach Pholl Lochaidh*）时即如此叙述，并强调布条应**只用可生物降解材料，纯棉或纯羊毛最好**。`celtic-folk.md` 已在概念层点名 clootie wells；本卡**聚焦布条物件与「浸—系—放下」的短互动**。它是基督教—民俗交织的活态层，不得写成铁器时代德鲁伊「真仪」的复活。

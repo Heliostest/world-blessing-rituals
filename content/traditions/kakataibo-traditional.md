@@ -1,5 +1,10 @@
 # 卡卡泰博传统信仰与雨林祈福（Kakataibo）
 
+
+![卡卡泰博／Cashibo 男子历史影像（1888，帕奇特亚河附近）](./kakataibo-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Cashibo_man_photographed_in_1888_by_Charles_Kroehle.jpg -->
+
 ## 概述
 
 **卡卡泰博人（Kakataibo；历史文献或作 Cashibo 等相关他称）** 分布于秘鲁乌卡亚利一带，属帕诺语支。公开概述记述：传统宇宙强调森林、祖先与治疗伦理；今日并存基督教与土地维权。本条目为教育概览；**严禁**致幻操作、疗愈脚本或可冒充萨满的步骤。与卡希纳瓦／希皮博条目语支相关但社群独立，不可合并。

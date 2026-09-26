@@ -1,5 +1,9 @@
 # 阿迪传统信仰与东尼—波罗祈福（Adi）
 
+![阿鲁纳恰尔邦上锡昂阿迪女性波农（Ponung）舞](./adi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ponung_dance_performance_of_Adi_women_minyong_at_high_altitude,_Gete_village,_Upper_Siang_district.jpg -->
+
 ## 概述
 
 **阿迪人（Adi）** 分布于阿鲁纳恰尔邦西亚昂等河谷，含多个支系（公开叙述中常提及 Gallong／Galo 等）。多数遵循 **Donyi-Polo** 本土信仰：日—月象征未见之至高力，另有作物神、家屋守护等；礼仪处理善恶精灵。公开节庆与场所命名包括丰收节 **Solung**、公共祈祷场所 **Gangging**，以及 **Aran**、**Mirü** 等农事／社群礼仪叙事；血祭／血奉献在部分记述中出现，**仅 CONCEPT ONLY**。基督教在部分社区显著。本条目为教育概览；**不提供**献牲操作或可冒充祭司的步骤。

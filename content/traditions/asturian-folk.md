@@ -1,5 +1,9 @@
 # 阿斯图里亚斯民间天主教与凯尔特余绪祈福（Asturian）
 
+![阿斯图里亚斯科瓦东加圣母圣殿外观](./asturian-folk.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_Santa_Mar%C3%ADa_la_Real_de_Covadonga,_Asturias.jpg -->
+
 ## 概述
 
 **阿斯图里亚斯（Asturias）** 民间天主教在西班牙北部，以圣母朝圣地（如 **科瓦东加洞穴圣所 Covadonga**，**9 月 8 日**圣母瞻礼高峰）、山村主保节与大西洋岸还愿传统著称；节庆中常见 **风笛（gaita）** 等凯尔特／山区认同符号与教会实践并存；矿业社群亦敬礼 **圣巴巴拉（Santa Bárbara）** 为矿工主保。本条目为教育概览；**不提供**可替代圣事的配方，并与加利西亚朝圣、巴斯克民俗、爱尔兰圣井可比较。

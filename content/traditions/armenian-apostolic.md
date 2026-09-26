@@ -1,5 +1,9 @@
 # 亚美尼亚使徒教会（Armenian Apostolic Church）
 
+![圣埃奇米阿津主教座堂（Mother See of Holy Etchmiadzin）](./armenian-apostolic.jpg)
+
+<!-- 来源：CC0 1.0 | https://commons.wikimedia.org/wiki/File:Etchmiadzin_Cathedral_2024.jpg -->
+
 ## 概述
 
 亚美尼亚使徒教会是东方正教会（Oriental Orthodox）共融成员之一，传统上以公元约 301 年圣格列高利・启蒙者（St. Gregory the Illuminator）使亚美尼亚成为早期国家层面接受基督教的民族而自豪，自称为“第一个基督教民族”。礼仪体系称亚美尼亚礼（Armenian rite），亦为亚美尼亚天主教会所共用；圣餐礼仪常称 *Badarak*（圣祭），结构上与安提阿圣雅各礼及拜占庭圣金口约翰礼有历史关联。最高牧首称全亚美尼亚卡托利科斯（Catholicos of All Armenians），母座在圣埃奇米阿津（Holy Etchmiadzin）。教会使用古典亚美尼亚语（Grabar）与现代亚美尼亚语于礼仪与牧民生活；离散社群遍布近东、欧美与全球。本条目为教育性概览，不提供礼仪全文或可复现的圣事操作细则。

@@ -1,5 +1,9 @@
 # 沙捞越伊班传统信仰与加威节祈福（Iban）
 
+![古晋加威达雅克节庆游行中的伊班传统服饰](./iban-sarawak.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:The_Iban_tribe_during_yearly_Gawai_Dayak_celebration_parade.jpg -->
+
 ## 概述
 
 **伊班（Iban）** 是婆罗洲北部（今马来西亚沙捞越为主，亦跨印尼加里曼丹边境）重要的达雅克系民族，传统上以长屋（rumah panjai）农耕与河流生活为中心。公开民族志指出：长屋领袖 **Tuai Rumah** 主持公共秩序与节庆接待；节庆／礼仪主持可见 **Tuai Gawai**，吟唱祭司 **Lemambang** 在 **Miring** 供奉与 **Gawai Antu** 等场合由合格职人主持——**users don't officiate**（用户不主持）。宇宙观中 **Petara** 等神灵／祖灵、鸟占与梦兆指导人事。沙捞越将 **Gawai Dayak（达雅克丰收节）** 定为每年 6 月 1 日起的公共文化假期。本条目与Kaharingan、卡达山—杜顺等婆罗洲条目区分伊班长屋传统；**不提供** miring 供奉操作清单、manang 疗愈脚本、猎首相关 gawai 步骤或可复现占鸟仪轨。

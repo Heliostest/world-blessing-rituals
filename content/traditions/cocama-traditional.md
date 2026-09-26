@@ -1,5 +1,9 @@
 # 科卡马传统信仰与亚马逊河祈福（Cocama / Kokama）
 
+![巴西亚马逊科卡马／科卡马（Kokama）酋长 Jacinto Moraes Panuro](./cocama-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:CACIQUE_KOKAMA_JACINTO_MORAES_PANURO_FOTO_FABIO_PONTES_(36956801383).jpg -->
+
 ## 概述
 
 **科卡马人（Cocama，亦作 Kokama）** 分布于秘鲁、巴西与哥伦比亚交界的亚马逊干流一带。公开叙述涉及河岸生计、村落礼仪与护佑观念——**高度敏感，本卡仅概念层**。今日并存城市迁移与资源开采张力。教育概览；**严禁**药方或可冒充仪者的步骤。与伊内、希皮博、蒂库纳等条目区分；不另开 kokama 同义卡。

@@ -1,5 +1,9 @@
 # 楚克传统信仰与村社祈福余绪（Chuukese／Truk）
 
+![楚克（旧称 Truck／Truk）岛新教教堂（1932 年出版物）](./chuukese-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Protestant_Church_in_Truck_(from_a_book_published_in_1932).png -->
+
 ## 概述
 
 **楚克人（Chuukese；旧称 Truk）** 居住于密克罗尼西亚联邦楚克州——珊瑚环礁环抱多座火山高岛的潟湖群岛。Pulotu 与区域文化综述指出：皈依基督教前，崇拜对象包括天空神、神化高等首领与多样善恶诸灵；今日天主教与新教（含公理会传统）占主导，祖先灵魂影响事态、精灵与附体等前基督教要素仍常与教会实践交织。公开知识层可命名传统知识阶级 **Itang**、仪式／专责角色如 **Soufo／Souro**，以及与航海相关的护航概念 **Karak**（voyage charms）——均**仅作概念**，不泄露秘传配方。教堂是聚落最醒目的神圣建筑（教会公共层 OK）；与传说相关的地点仍可被视为有力圣地。本条目为教育概览；**不提供**秘密法术配方、占卜步骤、附体脚本或任何可冒充仪式专家的程序。

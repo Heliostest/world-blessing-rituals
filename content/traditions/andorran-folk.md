@@ -1,5 +1,9 @@
 # 安道尔民间天主教与山地朝圣祈福（Andorran）
 
+![安道尔梅里切尔旧圣所正面（Santuari vell de Meritxell）](./andorran-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Andorra,_Santuari_vell_de_Meritxell_(front).jpg -->
+
 ## 概述
 
 **安道尔（Andorra）** 为比利牛斯山地微型国家，以**罗马式（Romanesque）堂区与圣所**、**Meritxell 圣母（国家主保）**敬礼与加泰罗尼亚语天主教民俗著称。公开记述：**9 月 8 日** Meritxell 国庆／国家瞻礼、**卡尼略（Canillo）** 等堂区主保节与山地还愿构成祈福层。本条目为教育概览；**不提供**可冒充神职的脚本。与加泰罗尼亚、加斯科涅、阿拉贡朝圣条目可比较但安道尔国家—堂区认同独立。

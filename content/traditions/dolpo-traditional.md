@@ -1,5 +1,9 @@
 # 多尔波藏传与山神祈福（Dolpo）
 
+![尼泊尔多尔波八世纪崖下寺院](./dolpo-traditional.jpg)
+
+<!-- 来源：CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Temple_founded_in_the_8th_century,_Dolpo,_Nepal_in_2014.jpg -->
+
 ## 概述
 
 **多尔波（Dolpo）** 位于尼泊尔西北喜马拉雅，文化上与藏区苯教—藏传佛教传统深度交织。公开宗教生活可见 **Shey Gompa** 等寺院、转经与 **Riwo Palbar**（水晶山）**kora** 朝圣叙述；**Shey Festival** 为公开节庆／朝圣层；山神 **yul lha** 供奉属 **CONCEPT**——**中高敏感**。本卡仅公开朝圣／寺院层；不提供密续或闭关操作。与珞巴、门巴、上木斯塘、拉达克等条目区分。

@@ -1,5 +1,9 @@
 # 霍皮（Hopi）与 katsina／kachina 传统
 
+![亚利桑那州立博物馆霍皮 katsina 木雕展陈](./hopi.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Arizona_State_Museum_May_2019_05_(Hopi_Katsina_Dolls-_1870-1920s).jpg -->
+
 ## 概述
 
 霍皮人居住于今日美国亚利桑那州东北部干旱高原，传统农业依赖降水与精心耕作。宗教生活的核心之一是 **katsina**（英语常作 kachina）：数百位神灵、祖先与自然力量的显现。据说 katsinam（复数）每年约有半年造访村落；受启蒙的男子佩戴面具与礼服舞蹈时，所代表之灵被认为临在。哈佛皮博迪博物馆等机构指出，katsina 作为雨使者，承接霍皮人关于健康、丰饶与雨水的祈祷，并带回神界。木雕 *tithu*（常称 kachina doll）用于教育儿童辨识灵体，本身并非崇拜偶像。本条目为教育概览；**不描述**基瓦（kiva）内部限制性仪轨或面具制作秘法。

@@ -1,5 +1,9 @@
 # 德奥里传统信仰与昆迪—妈妈祈福（Deori）
 
+![德奥里人传统服饰](./deori-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Deori_people.jpg -->
+
 ## 概述
 
 **德奥里人（Deori）** 分布于印度阿萨姆与阿鲁纳恰尔毗邻地带，自称常作 Jimochãya（「太阳之子」公开自称叙述）。公开记述：传统宗教常称 **Kundism**，以 **Kundi-Mama**（及相关 **Kundigira／Girasi** 公开神系叙述）等至上神偶与氏族圣地、自然力敬礼为核心；岁时可见 **Bohag／Ibaku Bisu** 等公开文化层；**Bor Deori** 等氏族传统上主持 **Thani** 神龛——**users view**（用户观礼，不可主持）。行政分类或归入印度教，但社群常强调独立认同。本条目为教育概览；**Kundi-Mama CONCEPT**；**不提供**献牲、祭司操作或可冒充仪者的步骤。

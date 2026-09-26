@@ -1,5 +1,9 @@
 # 七夕短册（tanzaku）
 
+![竹枝上悬挂的七夕短册（tanzaku）](./tanzaku-tanabata.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Portland_Japanese_Garden_Tanabata_tanzaku.jpg -->
+
 ## 概述
 
 短册（*tanzaku*）是**日本七夕的书写许愿物件（A）**：长条色纸写下一行愿望，系挂于笹／竹。政府刊物 *Highlighting Japan* 记述了七夕把愿望写在色纸、挂上竹枝的习俗；在仙台七夕祭的七种主要装饰中，短册对应**学业、书艺进步**等愿望（仙台七夕祭官网英页列 Tanzaku 为 Paper Cards）。短册与绘马同属「书写＋悬挂」的家族，但**物件与语境不同**——绘马是神社（亦见寺院）还愿用的木牌（见 `shinto.md`），短册是岁时笹竹上的色纸——两者在产品中须分物分皮肤。仙台七饰中的**折鹤**可对照 `origami-crane-senbazuru.md`，但本卡聚焦短册、不并入。七夕是日本的星祭岁时，与中国乞巧习俗**可对照科普、不强行合并**为同一内容。

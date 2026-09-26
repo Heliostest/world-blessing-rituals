@@ -1,5 +1,10 @@
 # 卡拉什（Kalasha / Kalash）
 
+
+![卡拉什春季节庆 Chilam Joshi](./kalasha.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Chilam_joshi_festival_1.jpg -->
+
 ## 概述
 
 卡拉什人是巴基斯坦奇特拉尔地区本布勒特、伦布尔与比里尔等山谷中的小型印欧语系原住民族群，是该区域少数仍延续前伊斯兰多神—万物有灵传统的共同体。公开节庆包括 **Chilam Joshi**（春）公共层、**Uchaw** 秋收，以及 **Chawmos**——**HIGH SENSITIVITY viewing/respect only**；家屋／生育相关神 **Dezalik** 属 **CONCEPT**——**users don't officiate**。本条目为教育性概览，不对献牲程序、洁净禁忌执行细节或限制性仪轨提供操作说明。

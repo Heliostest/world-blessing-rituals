@@ -1,5 +1,9 @@
 # 巴塔克帕马林／乌加莫马林（Parmalim／Ugamo Malim）
 
+![托巴巴塔克传统大屋（Rumah Bolon）](./batak-parmalim.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Rumah_Bolon_(Batak_Traditional_House).jpg -->
+
 ## 概述
 
 **帕马林（Parmalim）** 指印度尼西亚北苏门答腊**托巴巴塔克人（Toba Batak）** 中遵循 **乌加莫马林（Ugamo Malim，常称马林教／巴塔克民族宗教之现代形态）** 的信徒与其信仰实践。大英百科记述巴塔克诸群体历史上以祖先与自然灵观念为特征，今日多数改信基督新教或伊斯兰教，但仍有社群持守本土宗教形态。学术期刊记述：马林教以创造主 **Debata Mulajadi Na Bolon** 为核心（公开叙述亦涉 **Debata Asiasi** 等神名层级），强调洁净（*hamalimon*），并由 **Ihutan** 等祭司职分主持；并有出生、丧葬、周六礼拜与年度大礼等义务性仪典；部分仪典须配合 **gondang**（鼓乐）与 **tortor**（传统舞）。本条目为教育性概览；**不提供**献祭操作、洁净配方细节或可复现的祭司指引。

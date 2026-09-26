@@ -1,5 +1,10 @@
 # 博鲁卡传统信仰与收获节祈福（Boruca／Brunca）
 
+![哥斯达黎加博鲁卡小魔鬼节面具舞者](./boruca-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Boruca_Fiesta_de_los_Diablitos.jpg -->
+
+
 ## 概述
 
 **博鲁卡人（Boruca／Brunca）** 分布于哥斯达黎加南部。公开文化记述：天主教与本土认同交织；著名的「小魔鬼舞」（Juego de los Diablitos）等节庆以**雕刻面具**、**植物染色纺织**与**抵抗记忆**为核心公共文化层，常被旅游过度奇观化——本卡强调其为社群历史—认同展演，**禁止**写成可购买的「驱魔／exorcism how-to」。本条目为教育概览；**不提供**可冒充仪者的步骤。

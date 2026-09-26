@@ -1,5 +1,9 @@
 # 查加人传统信仰与鲁瓦—乞力马扎罗祈福（Chagga）
 
+![查加兰马萨莱圣植巷道与门阙（约1890年代）](./chagga-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Masale_alley,_Chagga_gate_c.1890s_Chaggaland,_Kilimanjaro.jpg -->
+
 ## 概述
 
 **查加人（Chagga；亦作 Chaga）** 居住于坦桑尼亚北部乞力马扎罗山坡，以集约香蕉—咖啡农作与多元酋长区历史著称。公开百科（encyclopedia.com）指出今日信仰以基督新教／天主教为主，部分地区有伊斯兰影响；传统宇宙观中，至高存在常称 **Ruwa／Iruva**（与天空／太阳供养叙事相关），祖灵密切监督后人行为，不幸可归因于灵力失衡、巫术怀疑等。公开民族志概念层亦提及圣植 **Masale**、祖先相关圣地如 **Kyungu／Kifunyi**，以及统称 **Mitambiko** 的传统祈请／仪礼范畴——均仅作命名与文化理解，**不提供**献牲或仪轨操作。殖民传教使传统礼仪大幅缩减或与教会实践叠合（基督教 overlay 为当代公共层）；乞力马扎罗作为家园圣山的情感—伦理意义仍强。本条目为教育概览；**禁止**献牲 how-to、巫术指认、占卜步骤或任何可冒充仪式专家的程序。

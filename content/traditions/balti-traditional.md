@@ -1,5 +1,9 @@
 # 巴尔蒂伊斯兰与喀喇昆仑民间祈福（Balti）
 
+![卡普卢（Khaplu）恰克昌清真寺（Chaqchan Mosque）](./balti-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Chqchan_mosque.jpg -->
+
 ## 概述
 
 **巴尔蒂人（Balti）** 主要分布于巴基斯坦吉尔吉特—巴尔蒂斯坦（斯卡杜等），语言文化与藏区有历史联系，今日绝大多数为穆斯林（十二伊玛目什叶与 **Noorbakshia（努尔巴赫希）** 等公开记述常见）。清真寺／伊玛目巴拉、**Lossar** 巴尔蒂新年火把祝福公开叙述、阿舒拉纪念与高山行旅祈福构成公共层；前伊斯兰苯教／佛教层仅作历史背景。本条目为教育概览；**不提供**自伤苦修操作、政治动员或可冒充教法权威的步骤。

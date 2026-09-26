@@ -1,5 +1,9 @@
 # 巴克韦里传统信仰与火山—祖灵祈福（Bakweri／Kwe）
 
+![法科山脚下的巴克韦里传统房屋](./bakweri-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Bakweri_house_at_foot_of_Fako.jpg -->
+
 ## 概述
 
 **巴克韦里人（Bakweri／Kwe）** 分布于喀麦隆西南，临近喀麦隆火山（法科山）一带。公开概述记述：传统宇宙强调祖先、山灵与土地伦理；公开命名包括火山守护相关的 **Efasa Moto** 叙述，以及公共文化知识层的 **Male** 象面具社团（仅公开知识，无秘密操作）；今日多数为基督徒；火山风险与种植园历史塑造当代生活。本条目为教育概览；**不提供**献牲或可冒充仪者的步骤。与杜阿拉、巴米累克条目区分。

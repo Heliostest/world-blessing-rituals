@@ -1,5 +1,9 @@
 # 维托托传统信仰与雨林祈福（Huitoto／Witoto）
 
+![哥伦比亚维托托 okima 节庆舞者（历史影像）](./huitoto-traditional.jpg)
+
+<!-- 来源：Public Domain | https://commons.wikimedia.org/wiki/File:Witoto_(Uitoto),_dansare_vid_okima-fest.jpg -->
+
 ## 概述
 
 **维托托人（Huitoto／Witoto；含相关支系公开名称）** 分布于哥伦比亚—秘鲁交界亚马逊。公开概述记述：传统宇宙强调森林主人灵、祖先与马拉卡（maloca）公共生活；橡胶时代暴力创伤要求叙述极度克制。本条目为教育概览；**不提供**入会、献牲、疗愈脚本或可冒充仪者的步骤。与博拉、蒂库纳条目区分。

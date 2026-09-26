@@ -1,5 +1,9 @@
 # 赫鲁索／阿卡传统信仰与东尼—波罗—基督教祈福（Hrusso／Aka）
 
+![阿鲁纳恰尔邦赫鲁索／阿卡传统服饰夫妇](./hrusso-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Aka_Couples_in_traditional_attire.jpg -->
+
 ## 概述
 
 **赫鲁索人（Hrusso；亦称 Aka）** 分布于印度阿鲁纳恰尔邦西部，为人口较少的山地社群。公开概述记述：传统宇宙含地方灵与仪者中介；岁时可见 **Nechi Dau／Nechido** 收获节公开层；**Niji** 祭司相关山地礼仪属 **viewing-only**（仅观礼）。今日并存基督教与本土信仰／东尼—波罗相关影响。本条目为教育概览；**不提供**占卜、献牲或可冒充祭司的步骤。与布贡、米吉、门巴条目相邻但不可合并。

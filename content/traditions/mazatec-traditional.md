@@ -1,5 +1,10 @@
 # 马萨特克传统信仰与山灵祈福概观（Mazatec）
 
+
+![马萨特克瓦乌特拉亡灵节 Huehuentones 传统](./mazatec-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AHuehuentones_de_Huautla_de_Jim%C3%A9nez%2C_Oaxaca.jpg -->
+
 ## 概述
 
 **马萨特克人（Mazatec）** 分布于墨西哥瓦哈卡北部高山等地。公开民族志记述：天主教圣徒与地方山灵、玉米田宇宙交织；著名文献讨论致幻真菌礼仪与疗愈者角色——**本条目绝不提供**任何致幻植物识别、采集、剂量、制备或诱导步骤，仅作高度克制的文化存在提示。本条目为教育概览；禁止可冒充疗愈者的程序。

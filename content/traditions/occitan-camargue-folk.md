@@ -1,5 +1,9 @@
 # 奥克／卡马格民间天主教与圣玛丽—萨拉朝圣（Occitan／Camargue）
 
+![圣玛丽海朝圣：司铎祝福海水与抬像游行](./occitan-camargue-folk.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Saintes-Maries_Procession_de_mai_et_octobre.jpg -->
+
 ## 概述
 
 **普罗旺斯—奥克语区卡马格（Camargue）** 的民间天主教朝圣，以地中海城镇 **圣玛丽海（Saintes-Maries-de-la-Mer）** 为中心。大英百科与法国朝圣城镇网络介绍指出：传说中的圣女玛丽（玛丽·雅可伯与玛丽·萨洛梅等叙事变体）渡海至此；教堂加密窟敬礼 **萨拉（Sara）**——罗姆／吉普赛信众特别尊奉的主保。每年 5 月（及 10 月等）举行盛大朝圣：抬像入海、骑马牧人（gardians）护卫、弥撒与多族裔聚会，是欧洲最著名的罗姆朝圣之一，亦深嵌奥克地方认同。本条目为教育概览；**不提供**可冒充圣事的操作。与本档案「罗姆民间」条目互补：本卡聚焦**卡马格地方朝圣地理与奥克民间天主教**。

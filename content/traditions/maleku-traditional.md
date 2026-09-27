@@ -1,5 +1,10 @@
 # 马莱库传统信仰与湿地祈福（Maleku／Guatuso）
 
+![哥斯达黎加瓜图索／通希贝村 Maleku「神、自然与人」仪式](./maleku-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Costa_Rica_-_Malekus_01b.jpg -->
+
+
 ## 概述
 
 **马莱库人（Maleku；亦称 Guatuso）** 为哥斯达黎加北部人口较少的原住民族群，传统领地与 **Caño Negro** 等地湿地—雨林相关。公开概述记述：传统宇宙强调主人灵／高灵（公开叙述中可见 **Tócu** 等高灵概念）、自然伦理与祖先敬意；**Palenque** 等传统家屋记忆见于文化叙述；今日并存基督教接触；语言濒危使传承成为公共关切。本条目为教育概览；**Tócu** 高灵仅 CONCEPT；Caño Negro 圣地湿地；Palenque 传统家屋记忆——**users don't officiate**。**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与布里布里、卡韦卡尔条目区分。

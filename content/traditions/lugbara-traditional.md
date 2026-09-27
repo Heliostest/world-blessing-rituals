@@ -1,5 +1,9 @@
 # 卢格巴拉传统宗教与祖灵祈福（Lugbara）
 
+![乌干达卢格巴拉传统服饰／饰物](./lugbara-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Rugbara.JPG -->
+
 ## 概述
 
 **卢格巴拉人（Lugbara）** 分布于乌干达西北、刚果民主共和国东北与南苏丹毗邻地带。公开民族志传统（如 Middleton 等经典研究）强调祖灵在道德裁判与疾病解释中的核心；家屋祖先圣所常称 **Ori-jo（祖灵屋／家祠）**——household／restricted viewing；至高神公开表述涉及 **Adro／Adrastro（Adroa）** 等面向；林野／水边灵力常以 **Adroaro（Adroanzi 一类）** 叙述。今日广泛并存基督教与伊斯兰少数，传统礼仪以家屋与氏族场合延续。本条目为教育概览；**Ori-jo** restricted viewing；**Adro／Adroaro** CONCEPT；**不提供**驱邪脚本、献牲操作或可冒充仪者的步骤——**users don't officiate**。

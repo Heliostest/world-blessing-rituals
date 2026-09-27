@@ -1,5 +1,9 @@
 # 卢奥传统信仰与尼雅赛／祖灵祈福（Luo／Nyasaye／Juok）
 
+![肯尼亚卢奥传统舞蹈](./luo-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Traditional_Luo_Dance.jpg -->
+
 ## 概述
 
 **卢奥人（Luo；肯尼亚常称 Joluo）** 是东非尼罗语系群体，大英百科记述其主要生活在肯尼亚西部维多利亚湖沿岸平原，并延及坦桑尼亚北部等地；以渔猎农牧与分段世系社会组织闻名。Everyculture 等公开综述指出：传统宗教以**祖先敬拜**为核心，祖先被视为仍可透过梦境沟通的在场力量；同时存在称为 **juok／juogi** 的灵力叙事。肯尼亚卢奥常以 **Nyasaye**（及 Obong’o Nyakalaga 等名号）称呼至高创造者。公共／文化层突出 **Got Ramogi** 圣山朝圣与遗产地叙述。当代多数卢奥为基督徒，传统要素常与独立教会、主流教派并存。本条目为教育概览；**Got Ramogi** public／cultural；**Ajuoga** 疗愈者仅 CONCEPT——**users don't host healing**；**不提供**献牲教程、疗愈草药剂量、附体诱导或任何可复现的“驱 juok／成医巫”步骤。

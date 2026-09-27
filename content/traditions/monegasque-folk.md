@@ -1,5 +1,10 @@
 # 摩纳哥民间天主教与海岸朝圣祈福（Monegasque）
 
+
+![摩纳哥圣女德沃特小堂（主保 Sainte Dévote）](./monegasque-folk.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Sainte_D%C3%A9vote_Chapel,_Monaco_(49780871622).jpg -->
+
 ## 概述
 
 **摩纳哥（Monaco）** 为地中海微型公国，以圣尼古拉／圣女奉献堂区传统、主保节与海岸天主教民俗著称；观光与赛事产业发达，须区分礼仪与消费。公开记述：弥撒、还愿与公共节庆构成祈福层。本条目为教育概览；**不提供**可冒充神职的脚本。与普罗旺斯、利古里亚、科西嘉海岸朝圣可比较但摩纳哥认同独立。

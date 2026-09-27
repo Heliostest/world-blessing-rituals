@@ -1,5 +1,10 @@
 # 莫利塞民间天主教与朝圣祈福（Molisan）
 
+
+![莫利塞阿尼奥内 La Ndocciata 火把游行](./molisan-folk.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Ndocciata_Agnone_2006.JPG -->
+
 ## 概述
 
 **莫利塞（Molise）** 为意大利中南部小大区，以山村主保节、圣母朝圣地与移民还愿传统著称。公开天主教民俗记述：抬像巡游、圣周与侨乡感恩构成祈福层。本条目为教育概览；**不提供**可冒充神职的脚本。与阿布鲁佐、普利亚、坎帕尼亚条目可比较但莫利塞认同独立。

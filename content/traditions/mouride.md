@@ -1,5 +1,10 @@
 # 穆里德／穆里迪耶兄弟会朝圣与赞念（Mouride／Murīdiyya）
 
+
+![塞内加尔图巴大清真寺（穆里德圣地）](./mouride.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:The_Grande_Mosqu%C3%A9e_de_Touba.jpg -->
+
 ## 概述
 
 **穆里德教团（Mouride；阿拉伯语 Murīdiyya／Murīdiyyah）** 是塞内加尔最具影响力的**苏菲教团（ṭarīqa）** 之一，由谢赫 **Amadou Bamba Mbacké**（亦称 Ahmadou Bamba，约 1853–1927）于 19 世纪末创立。大英百科记述：塞内加尔穆斯林中兄弟会传统突出，穆里德与提加尼等教团并存；圣地城市 **Touba（图巴）** 为教团精神中心，大清真寺内安放创始人之墓。公开可见的大型实践包括对谢赫的纪念朝圣 **Grand Magal**、弟子对导师的效忠传统，以及强调劳动、教育与施舍的集体伦理。本条目说明公开朝圣与赞念结构；**不提供**拜师盟约（*njebbel*／*bayʿa*）操作、隐修功法或可复现的专属赞词教程。

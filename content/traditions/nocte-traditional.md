@@ -1,5 +1,10 @@
 # 诺克特传统信仰与基督教祈福余绪（Nocte）
 
+![阿鲁纳恰尔邦孔萨村恰洛洛库节的诺克特妇女](./nocte-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:A_group_of_Nocte_women,_Khonsa_village,_Khonsa_district,_Arunachal_Pradesh-_RIWATCH.jpg -->
+
+
 ## 概述
 
 **诺克特人（Nocte）** 分布于印度阿鲁纳恰尔邦东南，与那加相关山地社群公开分类中常并列讨论。公开记述：传统宇宙含祖先与地方灵力；今日并存基督教与本土实践；历史上战争—猎首叙事在影像中被过度猎奇。本条目为教育概览；**绝不提供**猎首／文身操作化、献牲或可冒充仪者的步骤。与万乔、科尼亚克条目对照时须克制。

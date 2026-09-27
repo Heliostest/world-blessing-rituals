@@ -1,5 +1,10 @@
 # 美拉尼西亚（kastom、社区仪式与“货物运动”语境）
 
+
+![瓦努阿图沙画（UNESCO ICH 美拉尼西亚礼仪／知识图形传承）](./melanesia.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3ASand_drawing%2C_Vanuatu.jpg -->
+
 ## 概述
 
 美拉尼西亚包括巴布亚新几内亚、所罗门群岛、瓦努阿图、新喀里多尼亚等地，语言与社会形态极度多元。地方常以 **kastom**（习俗／传统）统称活态的礼仪、知识与道德——其中氏族受限的 kastom 知识属 CONCEPT。祈福可见于猪宴、**Shell Money／Pig Exchange**、成年礼、祖先沟通与教会礼拜的融合。教科文组织登录的 **Vanuatu Sand Drawing**（瓦努阿图沙画）展示礼仪、神话与知识的图形传承。殖民与二战语境下的所谓 cargo cult 标签，今日学者提醒勿简化复杂政治—宗教现象。本条目为**美拉尼西亚区域总览**（勿与马约／Yoreme 条目混淆）；统一以概念层／公共层／氏族受限 CONCEPT 标注。

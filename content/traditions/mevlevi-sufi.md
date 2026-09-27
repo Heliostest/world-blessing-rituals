@@ -1,5 +1,10 @@
 # 梅夫莱维苏菲／旋转苦修者（Mevlevi Sufi）
 
+
+![科尼亚梅夫莱维教团苦修者表演 Sema 旋转仪礼](./mevlevi-sufi.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AWhirling_dervishes_from_Konya_in_Tunis.jpg -->
+
 ## 概述
 
 **梅夫莱维教团（Mevleviye／Mawlawīyah）** 是源自安纳托利亚科尼亚（Konya）的苏菲（Sufi）教团，与十三世纪波斯语苏菲诗人、神秘家 **鲁米（Jalāl al-Dīn Rūmī，Mawlānā）** 的追随者相关。大英百科 Mawlawīyah 条目与伊斯兰艺术「苦修者舞蹈」概述指出：欧洲旅行者以「旋转苦修者（whirling dervishes）」称呼其 **dhikr（记主）** 仪礼中的旋转。联合国教科文组织于 2005 年宣布、2008 年列入人类非物质文化遗产代表作名录的 **Mevlevi Sema ceremony**，描述了音乐（ney 笛、鼓、声乐 ayin）、白色礼服与黑色外袍、以及在 mevlevihane 中长期修学的历史；1925 年土耳其世俗化政策关闭道堂后，公开表演曾受限，1950–90 年代逐步开放，今日亦存在旅游简化版与力图恢复灵性语境的私人团体。本条目与一般伊斯兰教条目、摩洛哥格纳瓦、塞内加尔穆里德等苏菲／非洲伊斯兰实践区分安纳托利亚梅夫莱维；**不提供**入门修炼、旋转诱导、道乘密传或可复现「成道旋转」步骤。

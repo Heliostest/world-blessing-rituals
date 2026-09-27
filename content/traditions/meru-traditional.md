@@ -1,5 +1,10 @@
 # 梅鲁传统宗教与穆伦古／穆格韦祈福（Meru／Ameru）
 
+
+![肯尼亚梅鲁传统舞者](./meru-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ATraditional_Meru_dancers.jpg -->
+
 ## 概述
 
 **梅鲁人（Meru；自称 Ameru，含 Imenti、Tigania、Igembe 等支系）** 居住于肯尼亚梅鲁地区，与基库尤、恩布等有历史政治联系（如 GEMA）。公开百科与县政府文化页记述：传统信仰敬奉 **Murungu／Arega Kuthera／Ngai** 等称呼的至高父神，祖灵 **nkoma** 影响日常祸福；各支系精神领袖 **Mugwe** 作为神人中介，祈请护佑战士与世代级。殖民传教（苏格兰长老会、循道宗、天主教等）后多数改宗基督教，Mugwe 职分近乎消失；今日以循道宗等教会为主。本条目为教育概览；**不提供**献牲操作、诅咒／解咒步骤或任何可冒充 Mugwe 的程序。与基库尤、坎巴条目为**平行民族志**。

@@ -1,5 +1,9 @@
 # 派特基督教与佐米传统祈福余绪（Paite）
 
+![曼尼普尔派特语区福音路德教会（Lamka／Churachandpur）](./paite-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Manipur_Evangelical_Lutheran_Church.jpg -->
+
 ## 概述
 
 **派特人（Paite）** 主要分布于印度曼尼普尔等东北地区，属佐米／钦—库基相关社群公开分类。公开记述：今日多数为基督教（长老会等传统常见），教会生活主导公共祈福；传统祖先—地方灵记忆与文化节并存。本条目为教育概览；**不提供**献牲、入会或可冒充祭司的步骤。与那加、米佐、钦相关条目可比较。

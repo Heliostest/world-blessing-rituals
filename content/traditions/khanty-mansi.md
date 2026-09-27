@@ -1,4 +1,8 @@
 # 汉特／曼西奥布－乌戈尔信仰与熊礼（Khanty／Mansi bear ceremonialism）
+![汉特人在圣湖努姆托附近的楚姆帐篷前](./khanty-mansi.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Khanty_in_front_of_Chum_near_Lake_Numto.jpg -->
+
 
 ## 概述
 

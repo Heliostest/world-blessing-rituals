@@ -1,4 +1,8 @@
 # 基切玛雅精神传统与日守者祈福（K'iche'／Quiché Maya）
+![奇奇卡斯特南戈圣托马斯教堂（基切玛雅主保节地标）](./kiche-maya.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Iglesia_de_Santo_Tom%C3%A1s_2009.JPG -->
+
 
 ## 概述
 

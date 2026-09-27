@@ -1,4 +1,8 @@
 # 基库尤传统宗教与恩盖祈请（Gĩkũyũ／Ngai）
+![肯尼亚山（Kĩrĩnyaga）——基库尤传统宇宙观中的神临方位象征](./kikuyu-ngai.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mount_Kenya_-_Volcanic_Mountain_in_Central_Kenya.jpg -->
+
 
 ## 概述
 

@@ -1,5 +1,9 @@
 # 科尼亚克那加基督教与传统祈福余绪（Konyak）
 
+![科尼亚克 Aoling／Aoleang 春节文化节庆](./konyak-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Aoling_Festival.jpg -->
+
 ## 概述
 
 **科尼亚克人（Konyak）** 分布于那加兰北部与缅甸毗邻地带，以复杂的村寨联盟与醒目文化符号闻名于民族志影像史——后者常过度猎奇。公开记述：今日多数为基督徒；传统层含祖先、地方灵与首领礼仪；历史上战争—猎首叙事在文献中出现，**本条目绝不提供**任何猎首／文身操作化描写。本条目为教育概览。

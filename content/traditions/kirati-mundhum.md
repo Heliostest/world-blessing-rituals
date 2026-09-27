@@ -1,5 +1,9 @@
 # 基拉特／Mundhum 信仰（Kirati Mundhum／Kiratism）
 
+![卡林拉伊妇女跳 Sakela／Sili 季节祭舞（加德满都）](./kirati-mundhum.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Khaling_Rai_Womens_Dancing_Sakela_silli.jpg -->
+
 ## 概述
 
 **基拉特人（Kirati／Kirant）** 主要分布于尼泊尔东部及印度大吉岭、锡金一带，含 **拉伊（Rai）**、**林布（Limbu）**、雅克哈、苏努瓦尔等支系。大英百科指出：基拉特是东尼泊尔原住族群，仍维持对地方神祇与共同祖先的传统崇拜。其宗教—文化核心常称 **Mundhum**。公共层突出 **Sakela** 季节祭舞与 **Manghim** 神龛／祠；**Phedangba／Bijuwa** 祭司属 viewing-only restricted。本条目为教育性概览；**不提供**附体诱导、牲礼操作、萨满咒语或可复现祭司教程——**users don't officiate**。

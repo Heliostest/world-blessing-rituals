@@ -1,5 +1,9 @@
 # 韩国巫俗与祭祀（무속）
 
+![韩国巫堂（mudang）举行巫祭 gut](./korean-musok.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Korea-Mudang_performing_gut-01.jpg -->
+
 ## 概述
 
 韩国巫俗（*musok*／*mugyo*）以**巫师／巫堂（mudang 等）**为中介，透过**gut（巫祭）**沟通神灵与祖先，为家庭与村落祈求治病、安产、送亡、渔获与生意顺利。它与儒式祭祖、佛寺功德并行于朝鲜半岛宗教景观。济州的 Chilmeoridang Yeongdeunggut（迎送风神／龙王相关渔村巫祭）于2009年列入联合国教科文组织人类非物质文化遗产代表作名录，显示巫俗作为社区公共文化的重要性。当代都市亦有小型祈福与还愿形式。

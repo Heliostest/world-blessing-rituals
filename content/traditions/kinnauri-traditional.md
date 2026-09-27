@@ -1,5 +1,9 @@
 # 金瑙尔民间信仰与喜马偕尔祈福（Kinnauri）
 
+![金瑙尔卡尔帕／奇尼村毗湿奴地方神庙（Devta 庙宇）](./kinnauri-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Bishnu_temple,_chini_(kalpa)_kinnaur_01.jpg -->
+
 ## 概述
 
 **金瑙尔人（Kinnauri）** 分布于印度喜马偕尔邦金瑙尔一带，宗教生活交织印度教、藏传影响与地方神（devta）传统——**中高敏感**。公共层突出 **Phulaich／Fulech** 花节与 **Devta** 神轿／轿辇游行等开放庙会；**Grokch** 神谕／驱邪属极高敏感——HIGH SENSITIVITY CONCEPT ONLY。本卡仅公开庙会／朝圣与概念层；不提供密法、神谕或驱魔操作——**users don't officiate**。与拉达克、斯皮蒂、多尔波等条目区分。

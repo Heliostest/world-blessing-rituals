@@ -1,5 +1,9 @@
 # 坎巴传统宗教与恩盖／穆伦古祈福（Kamba）
 
+![肯尼亚坎巴／Akamba 传统服饰](./kamba-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Akamba_traditional_wear.jpg -->
+
 ## 概述
 
 **坎巴人（Kamba；亦作 Akamba）** 为肯尼亚东部班图语民族，大英百科指出其与邻族基库尤关系密切，传统上以农作、畜牧与长途贸易著称。公开文化材料记述至高创造者有多种称呼：**Ngai**、**Mulungu／Mlungu**、**Mumbi**（塑造者）、**Asa** 等；被视为仁慈的创造—保护者与「雨的赐予者」。**Ithembo**（常与猴面包树／圣地相关）倾奠敬礼、**Kuvoya Mvua** 求雨祈请，以及医药—仪式专责者 **Mundu Mue** 的公开命名，均仅作**概念层**（无操作 how-to）。祖灵 **Aimu／Maimu** 在家庭层中介人神。今日多数坎巴人信奉基督教，传统要素或与教会实践并存。本条目为教育概览；**不提供**献牲操作、求雨秘术、巫术指认或任何可冒充 Mundu Mue 的程序。与本档案「基库尤／恩盖」条目为**平行民族志**，非相互替代。

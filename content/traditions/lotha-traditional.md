@@ -1,5 +1,10 @@
 # 洛塔那加基督教与传统祈福余绪（Lotha）
 
+![洛塔那加女孩传统服饰](./lotha-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Lotha_Naga_girl.jpg -->
+
+
 ## 概述
 
 **洛塔人（Lotha）** 为印度那加兰主要那加族群之一。公开概述记述：今日绝大多数为浸信会等新教基督徒，教会、学校与节庆深度形塑生活；公共文化层突出 **Tokhu Emong** 丰收感恩节（公开记述约 **11 月 6–7 日**），常与 **Baptist choir**／教会感恩崇拜并置；传统信仰记忆与氏族和解叙述属 CONCEPT。本条目为教育概览；**不提供**猎首历史操作化、献牲或可冒充祭司的步骤——**users don't officiate**。与苏米、安加米、科尼亚克条目可比较。

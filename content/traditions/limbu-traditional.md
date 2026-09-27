@@ -1,5 +1,10 @@
 # 林布传统信仰与蒙杜姆祈福（Limbu／Mundhum）
 
+![基拉特林布妇女表演克拉昂（Kelang）舞](./limbu-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kirati_Limbu_women_performing_Kelang_dance.jpg -->
+
+
 ## 概述
 
 **林布人（Limbu；自称常作 Yakthung）** 分布于尼泊尔东部与印度锡金／大吉岭一带，属基拉特语支社群。公开记述：本土宗教常称基拉特蒙杜姆（Kirat Mundhum）／尤玛信仰相关传统，以口述经典 **Mundhum** 引导宇宙观、生命礼仪与伦理；公共层突出丰收节 **Chasok Tangnam**、神龛／祠 **Manghim**，以及 **Phedangba／Samba／Yeba** 等祭司职分（viewing／CONCEPT only）。今日并存印度教、佛教与基督教影响。本条目为教育概览；**不提供**萨满吟诵全文、献牲操作或可冒充祭司的步骤——**users don't officiate**。**本文件仅林布／Mundhum，不含洛姆韦（Lomwe）或其他传统内容。** 与雷布查、尼瓦尔、塔卡利条目可比较。

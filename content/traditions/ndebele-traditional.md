@@ -1,5 +1,9 @@
 # 恩德贝莱传统宗教与祖灵祈福（Ndebele）
 
+![南非莱塞迪文化村恩德贝莱壁画家屋](./ndebele-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Ndebele_Architecture.jpg -->
+
 ## 概述
 
 **恩德贝莱人（Ndebele）** 主要指南非的南恩德贝莱（如 Ndzundza、Manala 等支系）及相关恩古尼语群体；津巴布韦的北恩德贝莱（马塔贝莱）为另一历史分支，本条目以公开民族志所述南非南恩德贝莱宗教生活为主干。everyculture 记述：传统信仰环绕创造神 **Zimu** 与祖灵 **abezimu**；柏林传教等十九世纪努力对 Ndzundza 等地改变有限，当代则锡安基督教会（ZCC）、使徒教会与天主教影响广泛。不悦的祖灵可导致疾病与灾祸，传统疗愈者（iinyanga、izangoma）仍常被咨询；巫术怀疑叙事存在社会张力。壁画与珠饰是广为人知的物质文化。本条目为教育概览；**不提供**疗愈配方、附体脚本、巫术指认或任何可冒充仪式专家的程序。

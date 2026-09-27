@@ -1,5 +1,9 @@
 # 恩戈尼传统信仰与恩古尼迁徙祈福（Ngoni）
 
+![马拉维松巴恩戈尼舞蹈（Chancellor College）](./ngoni-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Dr_Banda_joins_a_Ngoni_dance_at_Chancellor_College,_Zomba_Malawi.jpg -->
+
 ## 概述
 
 **恩戈尼人（Ngoni）** 分布于马拉维、赞比亚、坦桑尼亚等地，与十九世纪恩古尼相关迁徙（Mfecane 余波公开史叙述）相连。公开概述记述：传统宇宙含祖先与年龄团伦理余绪；今日多数为基督徒。本条目为教育概览；**不提供**战争仪轨、献牲或可冒充仪者的步骤；**勿把迁徙史写成征服游戏**。与祖鲁／斯威士本土条目有历史关联但侨居社群认同独立。

@@ -1,5 +1,9 @@
 # 恩班迪传统信仰与河岸—祖灵祈福（Ngbandi）
 
+![布辛加恩班迪人历史肖像（Rijksmuseum／Commons CC0）](./ngbandi-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Portret_van_twee_leden_van_de_Ngbandi-stam_Indig%C3%A8nes_mogwandi_de_Businga_I_(titel_op_object),_RP-F-2001-7-824-71.jpg -->
+
 ## 概述
 
 **恩班迪人（Ngbandi）** 分布于中非共和国—刚果民主共和国乌班吉河相关地带。公开概述记述：传统宇宙强调祖灵与河岸农耕伦理；今日并存基督教与区域冲突语境——**须克制**。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤。与阿赞德、格巴亚、芒贝图条目区分。

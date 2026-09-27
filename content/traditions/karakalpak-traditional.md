@@ -1,5 +1,9 @@
 # 卡拉卡尔帕克民间伊斯兰与咸海三角洲祈福（Karakalpak）
 
+![卡拉卡尔帕克斯坦米兹达汉墓地圣地（Mizdakhan）](./karakalpak-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Necropolis_Mizdakhan_01.JPG -->
+
 ## 概述
 
 **卡拉卡尔帕克人（Karakalpak；自称 Qaraqalpaq）** 为突厥语民族，主要分布于乌兹别克斯坦自治共和国**卡拉卡尔帕克斯坦（Karakalpakstan）**，地处咸海东南、阿姆河三角洲与克孜勒库姆沙漠西缘；语言与哈萨克语相近。大英百科记述该地以棉花灌溉农业、畜牧与城市聚落为主，并强调咸海干涸带来的盐尘、健康与生计危机。公开民族志指出：名义上多为**哈纳菲逊尼派穆斯林**；**Mizdakhkan（Mizdahkan）mazar** 等大型墓地—圣地朝拜、**Navruz** 节期的 **Sumalak** 共食／熬制民俗，以及清真寺礼拜与生命礼仪（命名、割礼宴 **sunnat toi**、婚礼 **kelin toi**、丧葬诵经）构成公共—家庭祈福层。本条目为教育概览；**不提供**献牲操作、护符配方、「驱邪」步骤或任何可冒充宗教专家的程序。

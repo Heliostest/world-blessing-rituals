@@ -1,5 +1,9 @@
 # 卡拉莫琼传统信仰与牧畜祈福（Karamojong）
 
+![卡拉莫贾畜栏中的牛群（乌干达东北）](./karamoja-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Cattle_at_a_kraal_in_Karamoja_01.jpg -->
+
 ## 概述
 
 **卡拉莫琼人（Karamojong）** 分布于乌干达东北卡拉莫贾地区，属东尼罗／阿特克相关牧畜社会公开分类。公开概述记述：传统宇宙强调祖灵、牲畜与年龄组织；今日并存基督教与传统； disarmament、干旱与发展干预深刻影响当代生活。本条目为教育概览；**克制**安全语境；**不提供**献牲、战争或可冒充仪者的步骤。

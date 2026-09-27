@@ -1,5 +1,9 @@
 # 克伦族传统信仰与山地灵力—佛教接触（Karen Traditional）
 
+![仰光佛寺中的克伦族信众](./karen-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Buddhist_Karen_in_Yangon.JPG -->
+
 ## 概述
 
 **克伦族（Karen；自称因支系而异，常见 Sgaw／斯高、Pwo／波等）** 主要分布于缅甸与泰国北部山地。公开民族志概述万物有灵与母系祖先相关实践；**Khee Htoo** 结绳祝福节庆属可公开叙述的祝福／岁时层；母系祖先灵 **bgha** 属 **matrilineal ancestor CONCEPT**。平原与部分山地社群长期接触上座部佛教。本条目概述概念层；**不提供**牲祭操作、招魂脚本或可复现开祭步骤——**users don't officiate**。

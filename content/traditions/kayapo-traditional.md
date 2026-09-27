@@ -1,5 +1,9 @@
 # 卡亚波／梅本戈克雷祈福与命名礼仪概观（Kayapó／Mebêngôkre）
 
+![卡亚波／梅本戈克雷女性于全国原住民聚会](./kayapo-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mulheres_ind%C3%ADgenas_do_povo_Kayap%C3%B3.jpg -->
+
 ## 概述
 
 **卡亚波人（Kayapó；自称常作 Mebêngôkre）** 为巴西中部—亚马孙过渡带的原住民族之一，以身体彩绘、大型命名礼仪与环境权利运动闻名。公开材料记述：**Kukradjá／Biyok** 等季节性／命名相关大礼；**Men-kradjá** 男子集会屋；naming rites hosted by chiefs/elders——**users don't officiate**。本条目为教育概览；**不提供**入会步骤、彩绘配方或可冒充仪式专家的程序。

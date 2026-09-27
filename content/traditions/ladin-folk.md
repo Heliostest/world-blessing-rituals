@@ -1,5 +1,10 @@
 # 拉丁民间天主教与多洛米蒂祈福（Ladin）
 
+![多洛米蒂圣十字（Santa Crusc）山地圣地峰峦远眺](./ladin-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Santa_Crusc_da_Pescol.jpg -->
+
+
 ## 概述
 
 **拉丁人（Ladin）** 为意大利多洛米蒂山谷罗曼语少数族群。公开文化记述中，天主教堂区、圣母／山岳朝圣地（如 **Santa Crusc／Heilig Kreuz** 等山地圣地命名）、山谷主保节与复活节民俗、以及高山牧季 **Desalpa／Almabtrieb** 牲畜下山祝福构成民间祈福层；语言复兴与旅游经济并置。本条目为教育概览；**不提供**可冒充神职的脚本，并与罗曼什、弗留利、南蒂罗尔德语区天主教可比较。

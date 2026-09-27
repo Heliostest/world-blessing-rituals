@@ -1,5 +1,10 @@
 # 米纳哈萨基督教与马勒松传统祈福余绪（Minahasa）
 
+
+![米纳哈萨 Kabasaran 战舞展演](./minahasa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tarian_Perang_%22Kabasaran%22.jpg -->
+
 ## 概述
 
 **米纳哈萨人（Minahasa）** 分布于印度尼西亚北苏拉威西，以极高比例的基督教（尤新教 GMIM 等）与密集教堂景观闻名。公开记述：荷兰传教史深刻形塑认同；传统宗教常称 **Malesung**，礼仪权威有 **Tonaas Walian** 等公开称呼；当代亦有文化复兴运动（如 Mawale）讨论「米纳哈萨性」与基督教的关系。本条目为教育概览；**不提供**传统祭司仪轨复现或可冒充 Walian 的步骤。

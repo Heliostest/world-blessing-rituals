@@ -1,5 +1,10 @@
 # 米辛传统信仰与克奥利亚—东尼波罗祈福（Mishing／Mising）
 
+
+![米辛人 Ali-Aye-Ligang 春耕节舞蹈](./mishing-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mising_girls_dancing_During_Ali-Aye-Ligang.jpg -->
+
 ## 概述
 
 **米辛人（Mishing／Mising；亦作 Miri）** 为阿萨姆邦人口较多的塔尼语相关族群，亦分布于阿鲁纳恰尔毗邻地带。公开研究记述：宗教光谱含传统万物有灵与印度教新毗湿奴派（萨特拉体系）交融的 **Keoliya** 等公开表述、**Donyi-Polo** 认同运动，以及基督教改宗；河岸稻作与高脚屋生活塑造节庆与家屋礼仪。本条目为教育概览；**不提供**献牲操作或可冒充祭司／巴克特的步骤。

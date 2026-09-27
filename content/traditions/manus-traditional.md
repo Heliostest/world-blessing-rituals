@@ -1,5 +1,10 @@
 # 马努斯传统信仰与海军群岛祈福（Manus）
 
+![马努斯岛沿岸高脚屋村落](./manus-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Manus_-_097.jpg -->
+
+
 ## 概述
 
 **马努斯人（Manus）** 及相关海军群岛（Admiralty Islands）社群分布于巴布亚新几内亚马努斯省。公开民族志区分潟湖 **Titan**、内陆 **Usiai** 与近岸 Matankor 等生计—交换网络；**Lapan** 为世袭高等级／酋长层；**Moen Palit**（Sir Ghost／守护祖灵）叙述属家庭伦理监护的高度敏感概念。今日并存基督教与渔业—行政经济。教育概览；**Lapan** 财富交换 viewing；丧礼 CONCEPT——**users don't officiate**。与西阿西、托莱等岛屿条目区分。

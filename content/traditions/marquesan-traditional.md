@@ -1,5 +1,9 @@
 # 马克萨斯传统信仰与 meʻae—天主教祈福（Marquesas／ʻEnata）
 
+![希瓦奥阿岛马克萨斯石雕 tiki 圣所（meʻae）](./marquesan-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Tikimarquesas.jpg -->
+
 ## 概述
 
 **马克萨斯群岛（Marquesas；当地常称 Te Henua ʻEnata／ʻEnana）** 属法属波利尼西亚，以陡峭河谷、石砌 **paepae**、集会场 **tohua** 与圣所 **meʻae**、石雕 **tiki** 闻名；2024 年联合国教科文组织将「Te Henua Enata – The Marquesas Islands」列为世界遗产。公开文化复兴层突出双年艺术节 **Matavaa o te Henua Enana**、**tatau**（文身）与 **tuhuka**（工艺／知识大师）职分概念。19 世纪以降天主教占绝大多数，神话与地方知识仍以语言传承。本条目为**独立的马克萨斯条目**（勿与马里／伏尔加条目混淆）；教育概览；**Meʻae** CONCEPT；Matavaa 公共文化；Tiki／Tatau／Tuhuka CONCEPT——**users don't officiate**。**不提供**历史献牲、通灵或可冒充 tauʻa 的步骤。

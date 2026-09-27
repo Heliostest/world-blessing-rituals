@@ -1,5 +1,9 @@
 # 松巴马拉普信仰（Marapu，Sumba）
 
+![松巴帕索拉（Pasola）骑射节庆仪式](./marapu-sumba.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Upacara_adat_Pasola.jpg -->
+
 ## 概述
 
 **马拉普（Marapu）** 是印度尼西亚东努沙登加拉省**松巴岛（Sumba）** 及邻近地区部分社群的原住民祖先信仰体系。公开材料记述：马拉普以祖先灵为人类与造物主之间的中介；**Uma Mbatangu**（尖顶传统屋）为亲属与礼仪空间；**Rato** 祭司为礼仪权威 CONCEPT。**Pasola** 骑射节庆已列入印度尼西亚国家级非物质文化遗产（WBTB）公开叙述，属可观礼的国家 ICH／文化层。许多松巴人今日在行政身份上登记为基督宗教等，同时在节庆与圣地守护中延续马拉普实践。本条目为教育性概览；Pasola viewing；Rato CONCEPT——**users don't officiate altar/funerary rites**。**不提供**牲礼屠宰、丧葬秘仪或献祭步骤。

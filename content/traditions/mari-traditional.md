@@ -1,5 +1,9 @@
 # 马里传统宗教（Mari traditional religion／Cheremis）
 
+![马里人圣林（Селковская 圣地，Küsooto 传统）](./mari-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Марийская_роща-03732.jpg -->
+
 ## 概述
 
 马里人（Mari；旧称切列米斯 Cheremis）是伏尔加河中游的芬兰—乌戈尔语民族，主要居住在俄罗斯马里埃尔共和国，亦分布于巴什科尔托斯坦等地。其传统信仰常被外界称为「欧洲最后的多神／自然崇拜传统之一」，核心实践是在圣林（**Küsooto**／*küisoto*／*kusoto*）中由祭司 ***kart*** 主持公共祈祷与供奉。历史上可见 *mer*／**Kurupto** 一类跨村聚会；当代亦有与民族英雄 **Chumbylat**（楚姆布拉特）相关的朝圣纪念。本条目为**独立的马里（伏尔加）条目**（勿与马克萨斯／Marquesas 条目混淆）；教育性概览；Küsooto；Kart CONCEPT；Mer／Kurupto；Chumbylat pilgrimage——**outsiders don't officiate grove rites**。对涉及动物供奉的仪轨仅作概念说明，**不提供**操作程序。

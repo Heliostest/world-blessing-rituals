@@ -1,5 +1,9 @@
 # 库巴／布雄戈王权与自然灵祈福（Kuba／Bushongo）
 
+![库巴王室面具 Ngady aMwaash（皮博迪博物馆展品）](./kuba-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Ngady_aMwaash,_Kuba_Royal_Mask,_ca._1890-1910_-_African_collection_-_Peabody_Museum,_Harvard_University_-_DSC05787.JPG -->
+
 ## 概述
 
 **库巴人（Kuba；亦称 Bakuba）** 为刚果民主共和国开赛—桑库鲁河间约十余个班图语群体的联邦式王国文化，以中央 **布雄戈（Bushongo）** 王权为核心。大英百科记述：母系氏族、酋长会议与「神授」色彩的国王（**nyim**）制度；**Ndop** 王像雕塑为王权记忆的著名艺术形式。宗教方面，**Ngesh** 自然灵圣地／敬礼叙述与巫术观念见于公开民族志；物质文化以 **Shoowa** 等拉菲亚绣布（含丧葬用织物）闻名于世界艺术史。公开神话常提及创造者 **Bumba** 与文明英雄 **Woot**。本条目为教育概览；**不提供**入会面具操作、巫术配方、王室秘仪或任何可冒充仪式专家的程序。

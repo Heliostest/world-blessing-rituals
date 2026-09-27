@@ -1,5 +1,9 @@
 # 科罗威传统信仰与雨林祖先祈福概观（Korowai）
 
+![科罗威雨林树屋（巴斯曼附近，韦勒德博物馆收藏影像）](./korowai-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Collectie_Wereldmuseum,_TM-20041236,_Dia,_'Een_boomhuis_van_Kuruwai_Papua's_in_Basman',_maker_Wim_van_Oijen,_14-07-1992.jpg -->
+
 ## 概述
 
 **科罗威人（Korowai）** 分布于印度尼西亚巴布亚南部雨林，以树屋与小规模社群闻名于纪录片产业——后者常充满猎奇扭曲。公开严肃记述强调：祖先、鬼魂与互惠伦理维系社会；基督教接触与旅游／影视经济带来急剧变迁。本条目**仅作高度克制概览**；**不提供**食人传言的可操作或猎奇描写、献牲或可冒充仪者的步骤。

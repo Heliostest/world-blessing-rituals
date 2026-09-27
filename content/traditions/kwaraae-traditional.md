@@ -1,5 +1,9 @@
 # 夸拉阿埃传统信仰与马莱塔祈福（Kwara'ae）
 
+![马莱塔首府奥基（Auki）附近海岸村落（夸拉阿埃语区）](./kwaraae-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Idyllic_villages_on_the_coast_near_Auki,_the_capital_of_Malaita._(10704113825).jpg -->
+
 ## 概述
 
 **夸拉阿埃人（Kwara'ae）** 分布于所罗门群岛马莱塔岛。公开民族志与文化材料记述：前殖民宗教以对 **Akalo（祖灵）** 的敬意与土地—氏族伦理为中心；神圣男子屋／圣祠常称 **Beu aabu**（亦见 beu baita 等说法）；礼仪职分常称 **Fataabu（祭司）**。今日多数社区以基督教公开礼拜为主，kastom 记忆与土地权利论述并存——**中高敏感**。本条目为教育概览；**Akalo** 仅 CONCEPT／viewing；**Beu aabu** 属 TABOO／viewing（勿擅入）；**Fataabu** 仅 CONCEPT——**users don't officiate**。与阿雷阿雷、夸伊奥等马莱塔条目区分。

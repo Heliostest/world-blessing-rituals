@@ -1,5 +1,9 @@
 # 亚内沙传统信仰与雨林—基督教祈福（Yanesha／Amuesha）
 
+![秘鲁亚马逊亚内沙（Amuesha）女孩](./yanesha-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Amueshas1.jpg -->
+
 ## 概述
 
 **亚内沙人（Yanesha；亦称 Amuesha）** 分布于秘鲁中部塞瓦／雨林边缘。公开概述记述：传统宇宙强调主人灵、历史迁徙叙事与治疗伦理；今日多数受基督教影响，同时土地维权显著。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与阿沙宁卡、马齐根卡条目邻近但认同独立。

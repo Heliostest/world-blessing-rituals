@@ -1,5 +1,9 @@
 # 亚利传统信仰与巴布亚高地祈福（Yali）
 
+![巴布亚巴厘姆河谷的亚利男子](./yali-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Yali_man_Baliem_Valley_Papua.jpg -->
+
 ## 概述
 
 **亚利人（Yali）** 分布于印度尼西亚巴布亚高地，与达尼等相关但社群与语言认同分立。公开概述记述：传统宇宙强调祖先、园圃与猪只伦理；今日并存基督教与发展／旅游接触——后者常过度猎奇。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤。**非** `dani-papua.md` 的重复。

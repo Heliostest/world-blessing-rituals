@@ -3,45 +3,34 @@
 - **规则：** 每轮处理 **10** 张；图片保存为 `content/traditions/<slug>.jpg|png|webp`（与 `.md` 同级）；在对应 md 靠前位置插入 `![简述](./<slug>.ext)`；只用可核验**开放许可**图（Wikimedia Commons、博物馆开放获取、官方文化机构）；声明找不到前须至少尝试 **3 种不同思路**并记入「找不到」节
 - **思路示例：** ① Wikimedia 搜英文/原语名 ② Met/British Museum/国立博物馆开放藏品 ③ 联合国教科文/政府观光署活动页可下载图 ④ 卡内参考来源 URL 抓取开放图
 - **优先：** 日常小仪式专卡 → 其余按字母
-- **统计：** 待配 34；已配 697；找不到 18
+- **统计：** 待配 24；已配 706；找不到 19
 - **工作分支：** `content/ritual-photos`（基于 `content/micro-ritual-cards`）
 
 ## 待配
-1. [ ] `xhosa-traditional`
-2. [ ] `xibe-traditional`
-3. [ ] `yaawo-traditional`
-4. [ ] `yagua-traditional`
-5. [ ] `yaka-traditional`
-6. [ ] `yakkha-traditional`
-7. [ ] `yali-traditional`
-8. [ ] `yaminahua-traditional`
-9. [ ] `yanesha-traditional`
-10. [ ] `yanomami-traditional`
-11. [ ] `yao-mien`
-12. [ ] `yapese-traditional`
-13. [ ] `yaqui-yoeme`
-14. [ ] `yarsanism`
-15. [ ] `yawalapiti-traditional`
-16. [ ] `yazidi`
-17. [ ] `yekuana-traditional`
-18. [ ] `yi-bimoism`
-19. [ ] `yine-traditional`
-20. [ ] `yokotan-traditional`
-21. [ ] `yolngu`
-22. [ ] `yombe-traditional`
-23. [ ] `yoruba-and-west-african`
-24. [ ] `yucatec-maya`
-25. [ ] `yudja-traditional`
-26. [ ] `yugur-traditional`
-27. [ ] `yukaghir-traditional`
-28. [ ] `yupik-traditional`
-29. [ ] `zapotec-traditional`
-30. [ ] `zhuang-mo`
-31. [ ] `zoque-traditional`
-32. [ ] `zoroastrianism`
-33. [ ] `zulu-nguni`
-34. [ ] `zuni-ashiwi`
-
+1. [ ] `yao-mien`
+2. [ ] `yapese-traditional`
+3. [ ] `yaqui-yoeme`
+4. [ ] `yarsanism`
+5. [ ] `yawalapiti-traditional`
+6. [ ] `yazidi`
+7. [ ] `yekuana-traditional`
+8. [ ] `yi-bimoism`
+9. [ ] `yine-traditional`
+10. [ ] `yokotan-traditional`
+11. [ ] `yolngu`
+12. [ ] `yombe-traditional`
+13. [ ] `yoruba-and-west-african`
+14. [ ] `yucatec-maya`
+15. [ ] `yudja-traditional`
+16. [ ] `yugur-traditional`
+17. [ ] `yukaghir-traditional`
+18. [ ] `yupik-traditional`
+19. [ ] `zapotec-traditional`
+20. [ ] `zhuang-mo`
+21. [ ] `zoque-traditional`
+22. [ ] `zoroastrianism`
+23. [ ] `zulu-nguni`
+24. [ ] `zuni-ashiwi`
 ## 已配
 
 1. [x] `mokugyo-wooden-fish` 【优先】 batch1 — mokugyo-wooden-fish.jpg；Public Domain / Met Open Access；https://www.metmuseum.org/art/collection/search/505614
@@ -742,6 +731,16 @@
 696. [x] `wounaan-traditional` batch82 — 沃南；wounaan-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Mujeres_Wounaan.JPG
 697. [x] `xavante-traditional` batch82 — 沙万特；xavante-traditional.jpg；CC BY 3.0 br；https://commons.wikimedia.org/wiki/File:Mulher_Xavante.jpg
 
+698. [x] `xhosa-traditional` batch83 — 科萨；xhosa-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Amaggqirha.jpg
+699. [x] `xibe-traditional` batch83 — 锡伯；xibe-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:%E9%94%A1%E4%BC%AF%E5%AE%B6%E5%BA%99%E5%86%85%E5%B1%95%E7%A4%BA%E7%9A%84%E5%96%9C%E5%88%A9%E5%A6%88%E5%A6%88.jpg
+700. [x] `yaawo-traditional` batch83 — 姚人（东非）；yaawo-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Beni_Majuni_Malawi_2006-2.jpg
+701. [x] `yagua-traditional` batch83 — 亚瓜；yagua-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Yagua_Tribesman.jpg
+702. [x] `yaka-traditional` batch83 — 雅卡；yaka-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:%28MHNT%29_Masque_d%27initiation_-_Culture_Yaka_-_R%C3%A9publique_d%C3%A9mocratique_du_Congo.jpg
+703. [x] `yakkha-traditional` batch83 — 雅克哈；yakkha-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Kirat_Yakkha_Group_Kirat_New_Year_Celebration_13_December_2018_Kent_Uk.jpg
+704. [x] `yali-traditional` batch83 — 亚利；yali-traditional.jpg；CC BY 2.0；https://commons.wikimedia.org/wiki/File:Yali_man_Baliem_Valley_Papua.jpg
+705. [x] `yanesha-traditional` batch83 — 亚内沙；yanesha-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Amueshas1.jpg
+706. [x] `yanomami-traditional` batch83 — 亚诺马米；yanomami-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Yanomami_Woman_%26_Child.jpg
+
 ## 找不到（须含 ≥3 思路记录）
 1. [!] `bugun-traditional` batch23 — 找不到开放许可配图。思路：① Wikimedia Commons 搜 Bugun / Khowa Arunachal / Bugun tribe / Singchung Bugun / Pham-Kho Sowai，Category:Bugun 为空，无人物／节庆／仪式照；② Met Open Access 与卡内 Britannica（Arunachal／Donyi-Polo）链无明确 Bugun 开放藏品／可下载活动图；③ 新闻（Arunachal Observer 等 Pham-Kho Sowai 报道）与博物馆外景（Jawaharlal Nehru Museum／RIWATCH）许可不明或不属布贡社群仪式主题；仅见以族群命名的鸟类 Bugun liocichla，不宜作仪式卡配图。
 2. [!] `dhimal-traditional` batch29 — 找不到适合仪式卡的开放许可配图。思路：① Wikimedia Commons 搜 Dhimal / Siruwa Parba / Jatri / Dhimal Nepal costume／dance／Jhapa／Naxalbari，仅见语言地图、文字矢量图、共享食品 Bagiya.jpg（亦属 Maithil／Tharu，非迪马尔专属仪式），无人物／节庆／仪礼照；② Met Open Access 精确 "Dhimal" 命中 0；British Museum 检索无可用开放下载仪式图；卡内 Britannica 链无开放活动图；③ 新闻（Rising Nepal Jatri／Sirjat）与 Joshua Project 所引 Wikimedia（Munal Chaudhary）核查为 Tharu「Ashtimki」节庆图，非 Dhimal；无政府／UNESCO 可核验开放许可仪式照。
@@ -764,3 +763,4 @@
 17. [!] `sipakapense-traditional` batch69 — 找不到适合仪式卡的开放许可配图。思路：① Wikimedia Commons 搜 Sipacapa / Sipakapense / Sipacapa San Marcos / iglesia／fiesta，Category:Sipacapa 无仪式照，仅市徽 Coat of Sipacapa.jpg、Bandera de Sipacapa.png 与语言地图 Idiomasmap Guatemala.svg，不宜用旗徽冒充仪式配图；② Met Open Access「Sipacapa／Sipakapense」模糊命中为埃及／拜占庭等噪声、非西帕卡彭塞；Openverse 开放许可（cc0/pdm/by/by-sa）多为旗徽与危地马拉总统府 Flickr「道路改善开工」PDM 基建剪彩，非主保节／山灵／教堂仪礼；③ 卡内 Sicultura／Britannica／SciELO 链：Sicultura 403，无 UNESCO／政府观光署可核验 CC0/CC BY/CC BY-SA 仪式静图；Openverse「sipakapa iglesia／fiesta」0，Flickr 若干道路照为 BY-NC-SA（NC，不符合本队列）。不宜借用邻近基切／马姆／卡克奇克尔节庆图（卡文明确区分）。
 
 18. [!] `suya-traditional` batch71 — 找不到适合仪式卡的开放许可配图。思路：① Wikimedia Commons 搜 Suyá／Kisêdjê／Kisedje／Suya Xingu／Suya Indians／Seeger Suya，无 Category:Suyá／Kisêdjê，命中多为尼日利亚烤肉「suya」、语言地图 Macro-Ge、或 von den Steinen 1894《Unter den naturvölkern Zentral-Brasiliens》书页扫描（图版为 Auetö 树皮舟等，非苏亚专属；No restrictions／PD 但主题不符不宜挪用）；② Met Open Access／Peabody Harvard／British Museum 精确 Suya／Kisêdjê／Kisedje 无明确可下载开放藏品图（邻近 Tapirapé／Kayapó／Kuikuro 辛古图卡文要求区分，不宜借用）；③ 卡内 ISA PIB（img.socioambiental.org/Kisedje）有社群照片但许可为资讯／非商用教育层、非可核验 CC0/CC BY/CC BY-SA 可直接落盘；Openverse／UNESCO／巴西观光资源检索无可用可核验苏亚／基塞杰仪式静图。
+19. [!] `yaminahua-traditional` batch83 — 亚米纳瓦；找不到适合仪式卡的开放许可配图。思路：① Wikimedia Commons 搜 Yaminahua／Yaminawa／Jaminawa／Yaminahua Peru／pueblo Yaminahua，Category:Yaminawá 内几乎全是巴西阿克里 **Yawanawá**（Iauanauá）节庆／Festival Yawa 图——卡文明确为秘鲁普图马约／乌卡亚利边境帕诺语亚米纳瓦，与卡希纳瓦、沙拉纳瓦等区分，不宜借用；② Met Open Access 精确 “Yaminahua／Yaminawa” 命中 0（模糊检索为埃及／拜占庭噪声）；Openverse「Yaminahua／Yaminawa Peru」0；Smithsonian Open Access 接口 403；③ 卡内 IWGIA／Library of Congress subject:yaminahua 链无在线可下载开放静图（LOC 图像检索 0）；British Museum 检索接口噪声大且无可用可核验亚米纳瓦开放下载仪式图；无 UNESCO／秘鲁文化观光署可核验 CC0/CC BY/CC BY-SA 亚米纳瓦仪式静图。

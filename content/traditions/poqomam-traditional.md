@@ -1,5 +1,9 @@
 # 波科曼玛雅民间天主教与祖灵祈福（Poqomam）
 
+![帕林（Poqomam 核心城镇）](./poqomam-traditional.jpg)
+
+<!-- 来源：CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Palin,_Guatemala_-_panoramio_(3).jpg -->
+
 ## 概述
 
 **波科曼人（Poqomam）** 分布于危地马拉中南部若干市政（如帕林、奇纳乌特拉一带公开地名），与波科姆奇相关但语言—社区认同分立。公开记述：玛雅宇宙观与天主教圣徒交织；都市化与移民深刻影响当代实践。本条目为教育概览；**不提供**日数占卜操作、献牲或可冒充日师的步骤。**非** `poqomchi-traditional.md` 的重复。

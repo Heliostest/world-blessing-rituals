@@ -1,5 +1,9 @@
 # 波纳佩传统信仰与村社祈福余绪（Pohnpeian）
 
+![波纳佩南马都尔石城](./pohnpeian-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Nan_Madol,_Pohnpei.jpg -->
+
 ## 概述
 
 **波纳佩人（Pohnpeian）** 居住于密克罗尼西亚联邦波纳佩岛，以高岛农作、萨考（sakau／卡瓦）礼仪与传统首领 **Nahnmwarki** 等级制度闻名。公开民族志（everyculture）记述：前基督教宗教层次复杂——至高神之下有引导陆海空运动的 **eniwohs** 等灵，亡故酋长之灵可介入人事；祭司 **samworo** 曾以祷词与礼仪沟通人神，圣地石坛称 **pei**。今日岛上天主教与公理／公理会等新教约略均势，多数人仍承认地方灵与巫术效力的存在。本条目为教育概览；**不提供**祭司祷词复现、献牲、巫术配方或任何可冒充 samworo 的程序。

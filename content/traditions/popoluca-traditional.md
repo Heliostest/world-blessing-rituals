@@ -1,5 +1,9 @@
 # 波波卢卡民间天主教与海湾—山灵祈福（Popoluca）
 
+![索特亚潘（Sierra Popoluca 核心聚落）](./popoluca-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Soteapan,_Ver.,_Mexico_-_panoramio.jpg -->
+
 ## 概述
 
 **波波卢卡人（Popoluca；含 Sierra／Gulf 等相关公开支系称呼）** 分布于墨西哥韦拉克鲁斯南部与邻近地带。公开概述记述：天主教圣徒与玉米—雨水、火山／海湾神圣地理交织；主保节构成公共祈福层。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与纳瓦、米斯特克、佐克等邻族区分；「Popoluca」为他称历史复杂，叙述中尊重社群自我认同。

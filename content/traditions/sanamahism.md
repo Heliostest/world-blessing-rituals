@@ -1,5 +1,9 @@
 # 梅泰／萨那马希教祈福与赖哈劳巴（Sanamahism／Meitei）
 
+![梅泰 maibi 女祭司在 Lai Haraoba 节庆中起舞](./sanamahism.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File%3AA_Maibi_%28or_Amaibi%29%2C_a_traditional_Meitei_priestess_of_Sanamahism_religion%2C_dancing_in_honor_of_gods_in_Lai_Haraoba_classical_dance_and_music_ritualistic_festival_of_ancient_Kangleipak_civilisation_03.jpg -->
+
 ## 概述
 
 **萨那马希教（Sanamahism）**，亦称梅泰教（Meitei religion），是印度东北部**曼尼普尔（Manipur）** 山谷主体民族**梅泰人（Meitei）** 的本土信仰，以家神／创世神 **Lainingthou Sanamahi** 与母神 **Leimarel Sidabi** 等神祇为核心。大英百科记述：今日多数梅泰人信奉毗湿奴派印度教，但仍有社群持守萨那马希传统；家中敬奉 Sanamahi 与祖先崇拜亦见于部分已改宗家庭。公开可见的大型仪典以 **Lai Haraoba**（「取悦神祇／祖先之欢庆」）为代表：由 **maiba**（男祭司）与 **maibi**（女祭司）主持，结合圣林（*Umang Lai*）守护灵、歌舞、创世叙事与节庆奉献。本条目为教育性概览；**不提供**入神附体脚本、牲礼操作或可复现的祭司口诀。

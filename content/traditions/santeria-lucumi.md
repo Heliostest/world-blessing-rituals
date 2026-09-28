@@ -1,5 +1,9 @@
 # 圣特里亚／卢库米（Santería / Lucumí）
 
+![古巴特立尼达圣特里亚 Oshun（奥顺）祭坛](./santeria-lucumi.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File%3AUn_autel_de_santeria_d%C3%A9di%C3%A9_%C3%A0_Oshun%2C_orisha_de_l%27amour_CUBA._TRINIDAD_culte_de_Santeria_._Autel_d%27Oshun.jpg -->
+
 ## 概述
 
 圣特里亚（Santería，西班牙语“圣徒之道”）是在古巴发展成型、后扩散至拉丁美洲与北美的西非裔宗教传统。它主要源于约鲁巴诸民族的神祇信仰，在奴隶制与殖民天主教环境中，部分信众将约鲁巴神祇 *orisha*／*oricha*（奥里沙）与罗马公教圣徒（*santos*）对应，因而得名。当代许多实践者更愿自称“奥里沙宗教”、**卢库米**（Lucumí／Lukumí）或 **La Regla de Ocha-Ifá**（奥里沙／Ifá 之道），以强调非洲遗产而非“天主教化”标签。传统以私人“家屋神庙”（*ilé*／casa-templo）为中心，经占卜、供奉、入会与通灵媒介，建立个人与奥里沙的持续关系。本条目为教育性概览，**不对**入会、屠宰或限制性仪轨提供可复现步骤。

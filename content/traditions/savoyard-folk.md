@@ -1,5 +1,9 @@
 # 萨瓦民间天主教与阿尔卑斯朝圣祈福（Savoyard）
 
+![萨瓦高山圣母朝圣地 Notre-Dame de la Gorge](./savoyard-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ANotre-Dame-de-la-Gorge_Contamines-Montjoie.jpg -->
+
 ## 概述
 
 **萨瓦（Savoy）** 跨今日法国东南与历史萨瓦公国遗产区，公开民俗记述突出 **Notre-Dame de la Gorge** 高山／峡谷圣母朝圣、**Notre-Dame de Myans** 黑圣母敬礼、秋季 **Désalpe**（牲畜下山）欢庆，以及堂区主保巡游。法语／法兰克—普罗旺斯语遗产并存。本条目为教育概览；**不提供**可冒充神职的脚本。

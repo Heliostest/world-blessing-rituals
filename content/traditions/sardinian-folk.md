@@ -1,5 +1,9 @@
 # 撒丁民间天主教与节庆祈福（Sardinian Folk／Sardegna）
 
+![萨萨里 Faradda／烛台下降游行](./sardinian-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File%3ASassari_-_La_Discesa_dei_candelieri_%28La_Faradda%29.JPG -->
+
 ## 概述
 
 **撒丁岛（Sardegna）** 地中海中部，民间宗教生活以天主教敬礼为核心，并叠合乡村圣所、誓言（voto）、九天敬礼（novena）、方言圣歌 **gosos** 与行会（gremio）传统。官方旅游与文化遗产叙述强调：散布乡间的 **cumbessias／muristenes**（朝圣小屋群）；萨萨里的 **Discesa dei Candelieri（烛台下降／Faradda）**（UNESCO ICH）；努奥罗 **Redentore（救世主）** 朝圣；以及卡利亚里 **Sant'Efisio（S'Efisio）** 大型春季朝圣游行——纪念对圣埃菲西奥的誓愿与瘟疫／危难感恩。本条目为教育概览；**不提供**可复现的驱邪脚本、私人巫术配方或任何冒充圣事的操作。

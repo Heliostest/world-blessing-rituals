@@ -1,5 +1,9 @@
 # 塞努福人传统信仰与波洛会社概观（Senufo）
 
+
+![塞努福瓦纽戈（Wanyugo）面具](./senufo-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Wanyugo-masker_van_de_Senufo_bevolking,_asset_foPGmLAWqEkTkeeNRJefQruw.jpg -->
 ## 概述
 
 **塞努福人（Senufo／Senoufo）** 主要分布于科特迪瓦北部与马里东南部，并有相关社群在布基纳法索；大英百科记述其语言属尼日尔—刚果语系古尔语支，内部方言与自称多样，「Senufo」一名多为外部称呼。农业（玉米、小米等）与扩展家庭村落构成社会生活基础。公开艺术史与大都会艺术博物馆专文强调：许多地区以 **Poro（波洛；亦称 lô 等地方名）** 等年龄级／会社制度传承宗教—历史—道德知识，并与丰富的面具、雕像（含「古母／Ancient Mother」意象）及圣林相关；葬礼与社群义务亦常与会社艺术相连。当代并非所有塞努福社区仍维持同一形式的 Poro，地方变异极大。本条目为教育概览；**不提供**入会阶段程序、圣林内部规矩、面具「正确用法」操作，或任何可冒充会社成员的步骤。

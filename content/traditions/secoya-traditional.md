@@ -1,5 +1,9 @@
 # 塞科亚传统信仰与雨林祈福（Secoya／Sekoya）
 
+
+![塞科亚原住民领袖温贝托·皮阿瓜赫（Humberto Piaguaje）](./secoya-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Humberto_Piaguaje,_Dirigente_ind%C3%ADgena_Secoya.jpg -->
 ## 概述
 
 **塞科亚人（Secoya／Sekoya）** 分布于厄瓜多尔—秘鲁交界纳波／普图马约流域。公开概述记述：传统宇宙强调主人灵、河流与萨满—治疗传统；今日并存基督教接触与石油／土地压力。本条目为教育概览；**严禁**致幻植物操作、疗愈脚本或可冒充萨满的步骤。与西奥纳、科凡、图卡诺条目区分，不可并入同一「死藤水」卡片。

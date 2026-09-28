@@ -1,5 +1,9 @@
 # 蒂卡尔传统信仰与喀麦隆草原祈福（Tikar）
 
+![蒂卡尔恩甘贝酋长（传统权威象征）](./tikar-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tikar_Chief_of_Ngambe_1.jpg -->
+
 ## 概述
 
 **蒂卡尔人（Tikar）** 分布于喀麦隆西部—中部草原地带。公开叙述涉及酋长权威、祖灵与社区节庆，并与基督教接触并存——**中高敏感**。教育概览；不提供宫廷／入会操作。与巴米累克、巴蒙等草原条目区分。

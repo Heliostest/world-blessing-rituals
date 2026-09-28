@@ -3,124 +3,114 @@
 - **规则：** 每轮处理 **10** 张；图片保存为 `content/traditions/<slug>.jpg|png|webp`（与 `.md` 同级）；在对应 md 靠前位置插入 `![简述](./<slug>.ext)`；只用可核验**开放许可**图（Wikimedia Commons、博物馆开放获取、官方文化机构）；声明找不到前须至少尝试 **3 种不同思路**并记入「找不到」节
 - **思路示例：** ① Wikimedia 搜英文/原语名 ② Met/British Museum/国立博物馆开放藏品 ③ 联合国教科文/政府观光署活动页可下载图 ④ 卡内参考来源 URL 抓取开放图
 - **优先：** 日常小仪式专卡 → 其余按字母
-- **统计：** 待配 114；已配 617；找不到 18
+- **统计：** 待配 104；已配 627；找不到 18
 - **工作分支：** `content/ritual-photos`（基于 `content/micro-ritual-cards`）
 
 ## 待配
-1. [ ] `tikar-traditional`
-2. [ ] `tikopia-traditional`
-3. [ ] `tikuna-traditional`
-4. [ ] `tiriyo-traditional`
-5. [ ] `tiwa-traditional`
-6. [ ] `tlapanec-traditional`
-7. [ ] `tlingit`
-8. [ ] `toba-qom-traditional`
-9. [ ] `toda-nilgiri`
-10. [ ] `tofalar-traditional`
-11. [ ] `tohono-oodham-traditional`
-12. [ ] `tojolabal-traditional`
-13. [ ] `tokelauan-traditional`
-14. [ ] `tolai-traditional`
-15. [ ] `tongan-faa-tonga`
-16. [ ] `toposa-traditional`
-17. [ ] `toraja`
-18. [ ] `tornedalian-folk`
-19. [ ] `torres-strait-ailan-kastom`
-20. [ ] `totonac-traditional`
-21. [ ] `trentino-folk`
-22. [ ] `tripuri-traditional`
-23. [ ] `triqui-traditional`
-24. [ ] `trobriand-traditional`
-25. [ ] `tsachila-traditional`
-26. [ ] `tsonga-traditional`
-27. [ ] `tswana-traditional`
-28. [ ] `tuamotu-traditional`
-29. [ ] `tuareg-traditional`
-30. [ ] `tujia-traditional`
-31. [ ] `tukano-traditional`
-32. [ ] `tumbuka-traditional`
-33. [ ] `turkana-traditional`
-34. [ ] `turkmen-traditional`
-35. [ ] `tuvaluan-traditional`
-36. [ ] `tuvan-shamanism`
-37. [ ] `tzotzil-maya`
-38. [ ] `tzutujil-traditional`
-39. [ ] `udege-traditional`
-40. [ ] `udmurt-traditional`
-41. [ ] `ukrainian-folk`
-42. [ ] `ulchi-traditional`
-43. [ ] `umbanda`
-44. [ ] `umbrian-folk`
-45. [ ] `uyghur-mazar`
-46. [ ] `uzbek-folk`
-47. [ ] `valdostano-folk`
-48. [ ] `valencian-fallas`
-49. [ ] `vanuatu-kastom`
-50. [ ] `vedda`
-51. [ ] `venda-traditional`
-52. [ ] `veps-folk`
-53. [ ] `vietnamese-folk`
-54. [ ] `vili-traditional`
-55. [ ] `vodun-vodou`
-56. [ ] `volga-tatar-traditional`
-57. [ ] `wa-traditional`
-58. [ ] `waaqeffanna`
-59. [ ] `waiwai-traditional`
-60. [ ] `wallis-futuna-traditional`
-61. [ ] `walloon-folk`
-62. [ ] `walser-folk`
-63. [ ] `wancho-traditional`
-64. [ ] `waorani-traditional`
-65. [ ] `warao-traditional`
-66. [ ] `waura-traditional`
-67. [ ] `wayampi-traditional`
-68. [ ] `wayana-traditional`
-69. [ ] `wayuu-traditional`
-70. [ ] `welsh-folk`
-71. [ ] `wetu-telu-sasak`
-72. [ ] `wichi-traditional`
-73. [ ] `winti`
-74. [ ] `wiwa-traditional`
-75. [ ] `wixarika-huichol`
-76. [ ] `wolaita-traditional`
-77. [ ] `wolof-traditional`
-78. [ ] `won-buddhism`
-79. [ ] `wounaan-traditional`
-80. [ ] `xavante-traditional`
-81. [ ] `xhosa-traditional`
-82. [ ] `xibe-traditional`
-83. [ ] `yaawo-traditional`
-84. [ ] `yagua-traditional`
-85. [ ] `yaka-traditional`
-86. [ ] `yakkha-traditional`
-87. [ ] `yali-traditional`
-88. [ ] `yaminahua-traditional`
-89. [ ] `yanesha-traditional`
-90. [ ] `yanomami-traditional`
-91. [ ] `yao-mien`
-92. [ ] `yapese-traditional`
-93. [ ] `yaqui-yoeme`
-94. [ ] `yarsanism`
-95. [ ] `yawalapiti-traditional`
-96. [ ] `yazidi`
-97. [ ] `yekuana-traditional`
-98. [ ] `yi-bimoism`
-99. [ ] `yine-traditional`
-100. [ ] `yokotan-traditional`
-101. [ ] `yolngu`
-102. [ ] `yombe-traditional`
-103. [ ] `yoruba-and-west-african`
-104. [ ] `yucatec-maya`
-105. [ ] `yudja-traditional`
-106. [ ] `yugur-traditional`
-107. [ ] `yukaghir-traditional`
-108. [ ] `yupik-traditional`
-109. [ ] `zapotec-traditional`
-110. [ ] `zhuang-mo`
-111. [ ] `zoque-traditional`
-112. [ ] `zoroastrianism`
-113. [ ] `zulu-nguni`
-114. [ ] `zuni-ashiwi`
+1. [ ] `tohono-oodham-traditional`
+2. [ ] `tojolabal-traditional`
+3. [ ] `tokelauan-traditional`
+4. [ ] `tolai-traditional`
+5. [ ] `tongan-faa-tonga`
+6. [ ] `toposa-traditional`
+7. [ ] `toraja`
+8. [ ] `tornedalian-folk`
+9. [ ] `torres-strait-ailan-kastom`
+10. [ ] `totonac-traditional`
+11. [ ] `trentino-folk`
+12. [ ] `tripuri-traditional`
+13. [ ] `triqui-traditional`
+14. [ ] `trobriand-traditional`
+15. [ ] `tsachila-traditional`
+16. [ ] `tsonga-traditional`
+17. [ ] `tswana-traditional`
+18. [ ] `tuamotu-traditional`
+19. [ ] `tuareg-traditional`
+20. [ ] `tujia-traditional`
+21. [ ] `tukano-traditional`
+22. [ ] `tumbuka-traditional`
+23. [ ] `turkana-traditional`
+24. [ ] `turkmen-traditional`
+25. [ ] `tuvaluan-traditional`
+26. [ ] `tuvan-shamanism`
+27. [ ] `tzotzil-maya`
+28. [ ] `tzutujil-traditional`
+29. [ ] `udege-traditional`
+30. [ ] `udmurt-traditional`
+31. [ ] `ukrainian-folk`
+32. [ ] `ulchi-traditional`
+33. [ ] `umbanda`
+34. [ ] `umbrian-folk`
+35. [ ] `uyghur-mazar`
+36. [ ] `uzbek-folk`
+37. [ ] `valdostano-folk`
+38. [ ] `valencian-fallas`
+39. [ ] `vanuatu-kastom`
+40. [ ] `vedda`
+41. [ ] `venda-traditional`
+42. [ ] `veps-folk`
+43. [ ] `vietnamese-folk`
+44. [ ] `vili-traditional`
+45. [ ] `vodun-vodou`
+46. [ ] `volga-tatar-traditional`
+47. [ ] `wa-traditional`
+48. [ ] `waaqeffanna`
+49. [ ] `waiwai-traditional`
+50. [ ] `wallis-futuna-traditional`
+51. [ ] `walloon-folk`
+52. [ ] `walser-folk`
+53. [ ] `wancho-traditional`
+54. [ ] `waorani-traditional`
+55. [ ] `warao-traditional`
+56. [ ] `waura-traditional`
+57. [ ] `wayampi-traditional`
+58. [ ] `wayana-traditional`
+59. [ ] `wayuu-traditional`
+60. [ ] `welsh-folk`
+61. [ ] `wetu-telu-sasak`
+62. [ ] `wichi-traditional`
+63. [ ] `winti`
+64. [ ] `wiwa-traditional`
+65. [ ] `wixarika-huichol`
+66. [ ] `wolaita-traditional`
+67. [ ] `wolof-traditional`
+68. [ ] `won-buddhism`
+69. [ ] `wounaan-traditional`
+70. [ ] `xavante-traditional`
+71. [ ] `xhosa-traditional`
+72. [ ] `xibe-traditional`
+73. [ ] `yaawo-traditional`
+74. [ ] `yagua-traditional`
+75. [ ] `yaka-traditional`
+76. [ ] `yakkha-traditional`
+77. [ ] `yali-traditional`
+78. [ ] `yaminahua-traditional`
+79. [ ] `yanesha-traditional`
+80. [ ] `yanomami-traditional`
+81. [ ] `yao-mien`
+82. [ ] `yapese-traditional`
+83. [ ] `yaqui-yoeme`
+84. [ ] `yarsanism`
+85. [ ] `yawalapiti-traditional`
+86. [ ] `yazidi`
+87. [ ] `yekuana-traditional`
+88. [ ] `yi-bimoism`
+89. [ ] `yine-traditional`
+90. [ ] `yokotan-traditional`
+91. [ ] `yolngu`
+92. [ ] `yombe-traditional`
+93. [ ] `yoruba-and-west-african`
+94. [ ] `yucatec-maya`
+95. [ ] `yudja-traditional`
+96. [ ] `yugur-traditional`
+97. [ ] `yukaghir-traditional`
+98. [ ] `yupik-traditional`
+99. [ ] `zapotec-traditional`
+100. [ ] `zhuang-mo`
+101. [ ] `zoque-traditional`
+102. [ ] `zoroastrianism`
+103. [ ] `zulu-nguni`
+104. [ ] `zuni-ashiwi`
 
 ## 已配
 
@@ -746,6 +736,17 @@
 615. [x] `theyyam-kerala` batch74 — 喀拉拉特耶姆；theyyam-kerala.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Theyyam_of_Kerala_3.jpg
 616. [x] `tibetan-buddhism` batch74 — 藏传佛教；tibetan-buddhism.jpg；CC BY-SA 2.5；https://commons.wikimedia.org/wiki/File:An_elderly_Tibetan_women_holding_a_prayer_wheel_on_Lhasa,_Barkhor.jpg
 617. [x] `ticinese-folk` batch74 — 提契诺民间天主教；ticinese-folk.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:ProcessioneMendrisio.jpg
+618. [x] `tikar-traditional` batch75 — 蒂卡尔；tikar-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Tikar_Chief_of_Ngambe_1.jpg
+619. [x] `tikopia-traditional` batch75 — 提科皮亚；tikopia-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Boy_of_Tikopia,_October_20,_1972.jpg
+620. [x] `tikuna-traditional` batch75 — 蒂库纳；tikuna-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Máscara_Ticuna_MN_03.jpg
+621. [x] `tiriyo-traditional` batch75 — 蒂里奥；tiriyo-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Povo_Tiriyó.jpg
+622. [x] `tiwa-traditional` batch75 — 提瓦／拉隆；tiwa-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Tiwa_people_cooking_food_during_Jonbil_mela.jpg
+623. [x] `tlapanec-traditional` batch75 — 特拉帕内克／Meꞌphaa；tlapanec-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:MegadiversoT2_016.JPG
+624. [x] `tlingit` batch75 — 特林吉特；tlingit.jpg；CC BY 2.0；https://commons.wikimedia.org/wiki/File:Tlingit_dancing.jpg
+625. [x] `toba-qom-traditional` batch75 — 托巴／科姆；toba-qom-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Miembros_del_Coro_Qom_Chelalaapí_cantando.jpg
+626. [x] `toda-nilgiri` batch75 — 托达／尼尔吉里；toda-nilgiri.jpg；CC BY 3.0；https://commons.wikimedia.org/wiki/File:Toda_temple,kotagiri_-_panoramio.jpg
+627. [x] `tofalar-traditional` batch75 — 托法拉尔；tofalar-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Група_оленярів_Тофалари_Іркутська_губ._Нижньоудінський_повіт_поч_XX_ст_РЕМ.jpg
+
 
 ## 找不到（须含 ≥3 思路记录）
 1. [!] `bugun-traditional` batch23 — 找不到开放许可配图。思路：① Wikimedia Commons 搜 Bugun / Khowa Arunachal / Bugun tribe / Singchung Bugun / Pham-Kho Sowai，Category:Bugun 为空，无人物／节庆／仪式照；② Met Open Access 与卡内 Britannica（Arunachal／Donyi-Polo）链无明确 Bugun 开放藏品／可下载活动图；③ 新闻（Arunachal Observer 等 Pham-Kho Sowai 报道）与博物馆外景（Jawaharlal Nehru Museum／RIWATCH）许可不明或不属布贡社群仪式主题；仅见以族群命名的鸟类 Bugun liocichla，不宜作仪式卡配图。

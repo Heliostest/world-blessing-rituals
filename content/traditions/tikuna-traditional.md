@@ -1,5 +1,9 @@
 # 蒂库纳传统信仰与亚马孙祈福（Tikuna／Ticuna）
 
+![蒂库纳仪式面具与新女礼服饰（巴西国立博物馆）](./tikuna-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Máscara_Ticuna_MN_03.jpg -->
+
 ## 概述
 
 **蒂库纳人（Tikuna／Ticuna）** 为亚马孙西部（巴西、哥伦比亚、秘鲁交界）人口较多的原住民族之一。公开民族志（everyculture《Ticuna — Religion and Expressive Culture》）记述：传统世界观认为诸灵与力量主宰事态；多数人今日为天主教徒，二十世纪以来亦有多种弥赛亚运动。上界神性 **Ta'e** 赐予灵魂；文化英雄兄弟 **Yo'i** 与 **Ipi** 对抗中界／下界恶魔；第一人 **Nutapa** 等起源叙事流传。萨满力量常叙述为与特定树灵的关系；疗愈公开记述涉及吸烟草等外观，**本档案不提供任何操作**。女性成年礼在文化认同中极为重要，亦仅能作概念层提及。本条目为教育概览；**不提供**入会步骤、萨满疗法、致害魔法或任何可冒充仪式专家的程序。

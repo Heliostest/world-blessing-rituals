@@ -1,5 +1,9 @@
 # 特拉帕内克民间天主教与山灵祈福（Tlapanec／Meꞌphaa）
 
+![特拉帕内克猎人舞面具（马利纳尔特佩克，格雷罗）](./tlapanec-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:MegadiversoT2_016.JPG -->
+
 ## 概述
 
 **特拉帕内克人（Tlapanec；自称常作 Meꞌphaa）** 分布于墨西哥格雷罗山地。公开概述记述：天主教与地方山灵、雨水—玉米伦理交织；社区对采矿与暴力环境高度敏感；礼仪专家处理农事与疗愈相关公开叙述。本条目为教育概览；**克制**安全语境；**不提供**疗愈脚本或献牲操作。

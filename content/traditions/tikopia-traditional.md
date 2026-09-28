@@ -1,5 +1,9 @@
 # 提科皮亚传统信仰与基督教—酋长祈福（Tikopia）
 
+![提科皮亚岛少年（1972）](./tikopia-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Boy_of_Tikopia,_October_20,_1972.jpg -->
+
 ## 概述
 
 **提科皮亚（Tikopia）** 为所罗门群岛东南波利尼西亚外岛，以人类学家 Raymond Firth 的经典民族志闻名。公开记述：传统宇宙含神祇、祖先与酋长礼仪；当代多数人实践基督教，同时习惯法与首领权威仍标记社会祝福与资源伦理；岛屿生态脆弱，人口与资源管理传统重要。本条目为教育概览；**不提供**历史献牲或可冒充祭司／酋长的步骤。

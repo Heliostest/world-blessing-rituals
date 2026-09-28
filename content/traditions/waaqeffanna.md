@@ -1,5 +1,9 @@
 # 奥罗莫瓦克法纳与伊里查感恩节（Waaqeffanna／Irreecha）
 
+![奥罗莫伊里查（Irreecha）感恩节](./waaqeffanna.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Oromo_Irrecha.jpg -->
+
 ## 概述
 
 **瓦克法纳（Waaqeffanna／Waaqeffannaa）** 是东非**奥罗莫人（Oromo）** 的本土信仰传统，核心是对创造主 **Waaqa**（亦作 Waaqaa）的敬奉。学术与宗教研究文献记述：Waaqa 被理解为独一的创造者；*ayyaana*（灵性权能／中介）贯通创造物；伦理规范常以 *safuu*（恰当分寸／禁忌—尊重）来把握。公开可见的大型实践以感恩节 **Irreecha（Irreechaa）** 为代表：雨季结束前后，人们前往湖畔或山丘等自然圣地，感谢 Waaqa 赐雨、平安与丰收。联合国教科文组织将奥罗莫 **Gadaa** 世代治理体系列入人类非物质文化遗产代表作名录（2016），该体系与宗教—礼仪生活相互交织，但并不等同于瓦克法纳本身。本条目为教育性概览；**不提供** *qallu*／*qallitti* 附体操作、献牲细则或可复现的祭司指引。

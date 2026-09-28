@@ -1,5 +1,9 @@
 # 瓦伊瓦伊传统信仰与圭亚那—亚马逊祈福（Waiwai）
 
+![瓦伊瓦伊羽毛舞冠（博物馆藏）](./waiwai-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Headdress_(dance),_Wai-wai_people,_various_feathers_-_South_American_collection_-_Peabody_Museum,_Harvard_University_-_DSC05679.JPG -->
+
 ## 概述
 
 **瓦伊瓦伊人（Waiwai）** 分布于圭亚那、巴西与苏里南交界的雨林地带。公开叙述涉及村落礼仪、基督教接触史与护佑观念——**高度敏感，本卡仅概念层**。教育概览；**严禁**萨满操作或可冒充仪者的步骤。与马库希、蒂里奥等条目区分。

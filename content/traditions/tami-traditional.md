@@ -1,5 +1,10 @@
 # 塔米传统信仰与休恩湾祈福（Tami）
 
+![塔米人休恩湾面具（博物馆藏，十九世纪）](./tami-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Mask,_Huon_Gulf,_Tami_people,_19th_century,_coconut_bast,_fern,_rattan,_string,_pigment,_trade_cloth_-_De_Young_Museum_-_DSC01164.JPG -->
+
+
 ## 概述
 
 **塔米人（Tami）** 及相关休恩湾岛屿社群分布于巴布亚新几内亚莫罗贝一带。公开叙述涉及航海、祖先与交换伦理——**中高敏感**。今日并存基督教与渔业经济。教育概览；丧礼与密传止于概念。与西阿西、马努斯等条目区分。

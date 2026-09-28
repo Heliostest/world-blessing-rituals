@@ -1,5 +1,10 @@
 # 塔金传统信仰与东尼—波罗／基督教祈福（Tagin）
 
+![阿鲁纳恰尔塔金人传统服饰与节庆](./tagin-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tagin_Tribe_ARUNACHAL_PRADESH_INDIA.jpg -->
+
+
 ## 概述
 
 **塔金人（Tagin）** 为印度阿鲁纳恰尔邦塔尼语族群之一。公开记述：传统宇宙含日—月象征与精灵伦理，祭司／萨满（Nyibu 等公开称呼）中介沟通；当代多数社区已改宗基督教，仅少数村落仍以 **Donyi-Polo** 为主导实践，形成「教会为主、本土信仰据点并存」的景观。本条目为教育概览；**不提供**献牲操作、出神脚本或可冒充祭司的步骤。与尼西、阿迪、阿帕塔尼条目可比较。

@@ -1,5 +1,9 @@
 # 苏苏传统信仰与伊斯兰祈福（Susu／Soussou）
 
+![苏苏格里奥特与乐器历史影像](./susu-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Susu_Griot,_circa_1910,_Conakry,_Guinea.jpg -->
+
 ## 概述
 
 **苏苏人（Susu／Soussou）** 主要分布于几内亚沿海与塞拉利昂西北，属曼德语支相关社群。公开概述记述：今日绝大多数为穆斯林；传统氏族—祖先伦理与伊斯兰交织；康纳克里等城市使苏苏语成为重要通用语之一。本条目为教育概览；**不提供**献牲或可冒充教法权威的步骤。与索宁克、班巴拉、富拉尼条目可比较但海岸认同独立。

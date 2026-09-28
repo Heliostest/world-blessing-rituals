@@ -1,5 +1,10 @@
 # 祖鲁／恩古尼祖先敬拜（Zulu / Nguni）
 
+![祖鲁占卜师（sangoma）疗愈小屋中的仪式服饰与器物](./zulu-nguni.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Sangoma_Ritual_Regalia_in_Indumba_(Healing_Hut).jpg -->
+
+
 ## 概述
 
 **祖鲁人（Zulu）** 属南部非洲**恩古尼（Nguni）** 语族，传统核心区在今日南非夸祖鲁—纳塔尔一带。Encyclopedia.com 与早期民族志传统指出：对许多人而言，真正鲜活的宗教中心是对 **amadlozi**（祖先／亡者之荫）的敬拜与和解——当事顺遂时说祖先「与他们同在」，遭逢不幸则说祖先「转过脸去」。大英百科在 *sangoma* 条目中说明：上帝较少直接介入日常疾病，许多治理功能委托给祖先；祖先因伦理与礼仪疏忽而示警，须通过仪式修复。占卜师（*izangoma*）诊断原因，家长长老在畜栏、屋内 *umsamo*（后部灵性空间）或墓地沟通祖先。本条目聚焦祖先敬拜的公开概念，以区别于泛称「班图乌班图」条目；**不提供**祭牲操作、附体训练（*ukuthwasa*）步骤或药物配方。

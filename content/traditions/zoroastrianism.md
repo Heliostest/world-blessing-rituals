@@ -1,5 +1,10 @@
 # 琐罗亚斯德教
 
+![伊朗亚兹德琐罗亚斯德教胜利之火庙（Yazd Atash Behram）外景](./zoroastrianism.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Templo_zoroastrista,_Yazd,_Ir%C3%A1n,_2016-09-21,_DD_45.jpg -->
+
+
 ## 概述
 
 琐罗亚斯德教是古代伊朗世界的重要宗教，今日主要在伊朗与印度帕西社群中延续。信仰阿胡拉·马兹达，以善念、善言、善行对抗虚妄。圣火与洁净法则贯穿宗教生活；祭司主持的 **Yasna** 既是礼仪，也是《阿维斯塔》中的核心文本结构。信徒的祈福与功德，体现在火前祈祷、维护洁净、节庆分享与社区慈善，而不是崇拜火焰本身为独立神祇。

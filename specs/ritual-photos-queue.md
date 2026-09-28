@@ -3,14 +3,13 @@
 - **规则：** 每轮处理 **10** 张；图片保存为 `content/traditions/<slug>.jpg|png|webp`（与 `.md` 同级）；在对应 md 靠前位置插入 `![简述](./<slug>.ext)`；只用可核验**开放许可**图（Wikimedia Commons、博物馆开放获取、官方文化机构）；声明找不到前须至少尝试 **3 种不同思路**并记入「找不到」节
 - **思路示例：** ① Wikimedia 搜英文/原语名 ② Met/British Museum/国立博物馆开放藏品 ③ 联合国教科文/政府观光署活动页可下载图 ④ 卡内参考来源 URL 抓取开放图
 - **优先：** 日常小仪式专卡 → 其余按字母
-- **统计：** 待配 4；已配 726；找不到 19
+- **统计：** 待配 0；已配 730；找不到 19
 - **工作分支：** `content/ritual-photos`（基于 `content/micro-ritual-cards`）
 
 ## 待配
-1. [ ] `zoque-traditional`
-2. [ ] `zoroastrianism`
-3. [ ] `zulu-nguni`
-4. [ ] `zuni-ashiwi`
+
+（空）
+
 ## 已配
 
 1. [x] `mokugyo-wooden-fish` 【优先】 batch1 — mokugyo-wooden-fish.jpg；Public Domain / Met Open Access；https://www.metmuseum.org/art/collection/search/505614
@@ -741,6 +740,10 @@
 724. [x] `yupik-traditional` batch85 — 尤皮克；yupik-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Alaska_yupik_mask.jpg
 725. [x] `zapotec-traditional` batch85 — 萨波特克；zapotec-traditional.jpg；CC BY-SA 2.0；https://commons.wikimedia.org/wiki/File:Classical_Zapotec_Figure_-_Santo_Domingo_Cultural_Center_-_Oaxaca_City_-_Oaxaca_-_Mexico_(6490931829).jpg
 726. [x] `zhuang-mo` batch85 — 壮族麽教；zhuang-mo.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:%E5%A3%AE%E6%97%8F%E8%9B%99%E9%BC%93.jpg
+727. [x] `zoque-traditional` batch86 — 索克；zoque-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Bailante_Tradicional_Zoque_01.jpg
+728. [x] `zoroastrianism` batch86 — 琐罗亚斯德教；zoroastrianism.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Templo_zoroastrista,_Yazd,_Ir%C3%A1n,_2016-09-21,_DD_45.jpg
+729. [x] `zulu-nguni` batch86 — 祖鲁／恩古尼；zulu-nguni.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Sangoma_Ritual_Regalia_in_Indumba_(Healing_Hut).jpg
+730. [x] `zuni-ashiwi` batch86 — 祖尼／阿希维；zuni-ashiwi.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Indian_pueblo,_Zuni,_New_Mexico_LCCN97517369.jpg
 ## 找不到（须含 ≥3 思路记录）
 1. [!] `bugun-traditional` batch23 — 找不到开放许可配图。思路：① Wikimedia Commons 搜 Bugun / Khowa Arunachal / Bugun tribe / Singchung Bugun / Pham-Kho Sowai，Category:Bugun 为空，无人物／节庆／仪式照；② Met Open Access 与卡内 Britannica（Arunachal／Donyi-Polo）链无明确 Bugun 开放藏品／可下载活动图；③ 新闻（Arunachal Observer 等 Pham-Kho Sowai 报道）与博物馆外景（Jawaharlal Nehru Museum／RIWATCH）许可不明或不属布贡社群仪式主题；仅见以族群命名的鸟类 Bugun liocichla，不宜作仪式卡配图。
 2. [!] `dhimal-traditional` batch29 — 找不到适合仪式卡的开放许可配图。思路：① Wikimedia Commons 搜 Dhimal / Siruwa Parba / Jatri / Dhimal Nepal costume／dance／Jhapa／Naxalbari，仅见语言地图、文字矢量图、共享食品 Bagiya.jpg（亦属 Maithil／Tharu，非迪马尔专属仪式），无人物／节庆／仪礼照；② Met Open Access 精确 "Dhimal" 命中 0；British Museum 检索无可用开放下载仪式图；卡内 Britannica 链无开放活动图；③ 新闻（Rising Nepal Jatri／Sirjat）与 Joshua Project 所引 Wikimedia（Munal Chaudhary）核查为 Tharu「Ashtimki」节庆图，非 Dhimal；无政府／UNESCO 可核验开放许可仪式照。

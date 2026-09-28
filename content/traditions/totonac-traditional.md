@@ -1,5 +1,9 @@
 # 托托纳克民间天主教与山灵祈福（Totonac）
 
+![帕潘特拉飞人舞（Danza de los Voladores）](./totonac-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Voladores_Papantla_5.JPG -->
+
 ## 概述
 
 **托托纳克人（Totonac）** 分布于墨西哥东中部（韦拉克鲁斯高原与沿海低地等），大英百科指出其文化与其他中美洲群体相近又有加勒比圈联系特征，名义上多为罗马天主教，但基督教已被改编进传统信念，许多「异教」仪典公开记述仍存。公开文化叙述强调 **Danza de los Voladores（飞人舞）**（UNESCO 相关非遗）、民间天主教圣徒节庆与 **cargo** 赞助；森林灵 **Kiwikgolo**（及相关山主／Dueño del Monte 叙事）仅作 **CONCEPT**。五旬节派等新教扩张在部分社区造成张力。本条目为教育概览；**不提供**献牲操作、巫术配方、cargo 秘阶教程或任何可冒充仪式专家的程序。

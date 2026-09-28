@@ -1,5 +1,9 @@
 # 托雷斯海峡岛民／Ailan Kastom 祈福传统（Torres Strait Islanders）
 
+![乌加尔岛托雷斯海峡岛民舞者（1958）](./torres-strait-ailan-kastom.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Ugar_Island_dancers,_1958.jpg -->
+
 ## 概述
 
 **托雷斯海峡岛民（Torres Strait Islander peoples）** 是澳大利亚托雷斯海峡诸岛及迁居大陆的原住民族群，传统上以岛屿认同、航海贸易与渔猎为中心，文化与大陆原住民 **Aboriginal** 传统并列为澳大利亚原住民族两大支，但语言、宇宙观与礼仪自成体系。不列颠百科等公开材料指出：许多岛民宇宙观与星象、海洋及创世／规范叙事 **Tagai** 紧密相连——Tagai 常被描述为渔夫与精神存在，其星座故事为律法、季节与生活方式提供秩序。当代社群普遍强调 **Ailan Kastom（Island custom，岛屿习俗）**：涵盖对人物、地点、物件与海洋资源关系的习惯、信仰与义务；昆士兰相关立法亦承认其作为托雷斯海峡岛民习俗体系。海龟、儒艮等海洋生命对许多氏族具有图腾与生计双重意义。十九世纪基督教传入后，**Coming of the Light（光之降临）** 纪念礼成为公开重要节庆，与传统礼仪并存。本条目与《澳大利亚原住民》条目区分岛屿海洋传统；**不提供**限制性成年礼、图腾秘仪、海猎仪轨操作或可复现 Tagai 祷词。

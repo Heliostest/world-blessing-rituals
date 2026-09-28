@@ -1,5 +1,9 @@
 # 托霍诺奥德姆传统信仰与索诺兰祈福（Tohono O'odham）
 
+![圣沙维尔德尔巴克传教站（托霍诺奥德姆）](./tohono-oodham-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:San_Xavier_del_Bac_in_overcast_weather.jpg -->
+
 ## 概述
 
 **托霍诺奥德姆人（Tohono O'odham，旧称 Papago）** 分布于美国亚利桑那与墨西哥索诺拉沙漠。公开叙述涉及沙漠农作、圣徒／教会接触与社区节庆——**中高敏感**。本卡仅公开层；不提供未授权的仪轨操作。与皮马／阿基梅尔奥德姆近缘群体区分（本卡不另开空洞 pima 混名）；亦非雅基、马约条目。

@@ -1,5 +1,10 @@
 # 西奥纳传统信仰与雨林祈福（Siona）
 
+
+![西奥纳村制作木薯薄饼（库亚韦诺）](./siona-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Herstellung_von_Maniokfladen,_Siona_Village_San_Victoriano,_Ecuador.jpg -->
+
 ## 概述
 
 **西奥纳人（Siona）** 分布于哥伦比亚—厄瓜多尔交界普图马约／阿瓜里科流域。公开概述记述：传统宇宙强调主人灵、河流与萨满—治疗传统；今日并存基督教接触与石油／保护区压力。本条目为教育概览；**严禁**致幻植物操作、疗愈脚本或可冒充萨满的步骤。与图卡诺、科凡等邻近社群区分，不可并入同一「死藤水」卡片。

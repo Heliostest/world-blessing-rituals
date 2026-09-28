@@ -1,5 +1,10 @@
 # 芒贝图传统信仰与祖灵祈福（Mangbetu）
 
+![芒贝图舞者（1955，Paulis）](./mangbetu-traditional.jpg)
+
+<!-- 来源：No restrictions (Smithsonian) | https://commons.wikimedia.org/wiki/File:Dancers_at_Paulis-Mangbetu,_1955_(8232872216).jpg -->
+
+
 ## 概述
 
 **芒贝图人（Mangbetu）** 主要分布于刚果民主共和国东北，历史上以复杂宫廷文化与艺术传统闻名于民族志／博物馆叙述——后者常过度美学化。公开概述记述：传统宇宙含祖灵与地方灵力；今日并存基督教；殖民暴力与冲突史要求叙述克制。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤，并拒绝「奇观颅骨」猎奇框架。

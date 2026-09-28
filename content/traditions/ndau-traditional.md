@@ -1,5 +1,9 @@
 # 恩道传统宗教与祖灵祈福（Ndau）
 
+![津巴布韦 Chipinge 一带恩道相关 Muchongoyo 舞](./ndau-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Muchongoyo_dance.jpg -->
+
 ## 概述
 
 **恩道人（Ndau）** 分布于莫桑比克中部与津巴布韦东部交界地带，属绍纳相关班图语公开分类。公开概述记述：传统宗教强调祖灵、地方灵与治疗师；今日广泛并存基督教（含独立教会）与传统并行实践。本条目为教育概览；**不提供**驱邪脚本、献牲操作或可冒充治疗师的步骤。与绍纳姆瓦里、聪加、绍纳条目可比较。

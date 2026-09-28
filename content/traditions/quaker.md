@@ -1,5 +1,9 @@
 # 贵格会静默崇拜与见证（Religious Society of Friends / Quakers）
 
+![贵格会聚会所静默崇拜室内](./quaker.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Interior_of_Quaker_meeting_house.jpg -->
+
 ## 概述
 
 **贵格会**（Society of Friends，成员亦称 Friends／Quakers）兴起于十七世纪中叶英格兰，创始人物中以 **乔治·福克斯（George Fox）** 最为著名。大英百科全书指出：其核心是依「**内在之光**」（Inner Light／Inward Light）——对上帝的直接内在觉知——而生活，**不以信经、专职神职或繁复圣事形式作为崇拜必备条件**。公开论述常以 **SPICES**（Simplicity, Peace, Integrity, Community, Equality, Stewardship／Sustainability 等见证口诀变体）概括伦理见证。崇拜传统上以**静默聚会（Meeting for Worship）**为主；重大人生决定可经 **Clearness Committee（澄清委员会）** 团体辨识；会务则以崇拜式 **business meeting（事务聚会）** 寻求合一。本条目为教育性概览；不提供「如何获得神启」的操练教程，亦不收录内部事务会议细则。

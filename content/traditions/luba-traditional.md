@@ -1,5 +1,9 @@
 # 卢巴传统信仰与祖灵—王国祈福（Luba）
 
+![卢巴 lukasa 记忆板（布鲁克林博物馆藏）](./luba-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Planche_de_m%C3%A9moire_lukasa_(Luba)-Brooklyn_Museum.jpg -->
+
 ## 概述
 
 **卢巴人（Luba）** 分布于刚果民主共和国东南，历史上以卢巴王国传统与记忆艺术（如 *lukasa* 记忆板公开艺术史）闻名。公开概述记述：祖灵、王权记忆与治疗伦理交织；今日多数为基督徒。本条目为教育概览；**严禁**法器／记忆板仪轨操作化或献牲步骤。**勿与** `baganda-lubaale.md`（巴干达卢巴莱神灵传统）混淆——二者地理与族群完全不同。

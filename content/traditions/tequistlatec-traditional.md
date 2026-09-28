@@ -1,5 +1,9 @@
 # 特基斯特拉特克／瓦哈卡琼塔尔民间天主教祈福（Tequistlatec／Oaxaca Chontal）
 
+![瓦哈卡琼塔尔／瓦梅卢拉 Negrito 舞者](./tequistlatec-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://www.flickr.com/photos/130060719@N05/23658501669 -->
+
 ## 概述
 
 **瓦哈卡琼塔尔人（Oaxaca Chontal；语言常称 Tequistlatecan 相关）** 分布于墨西哥瓦哈卡南部沿海—山地，与塔巴斯科约科坦（Yokot'an）**不是同一族群**。公开概述记述：天主教圣徒与地方山灵、渔农伦理交织。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。文件名用 **tequistlatec**，避免与已有 `yokotan-traditional.md` 产生 chontal 同义冲突。

@@ -1,5 +1,9 @@
 # 彭特科斯特传统信仰与瓦努阿图陆地跳祈福（Pentecost）
 
+![瓦努阿图彭特科斯特陆地跳](./pentecost-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Pentecost_Land_Diving.JPG -->
+
 ## 概述
 
 **彭特科斯特岛（Pentecost）** 属瓦努阿图，以公开文化叙述中的陆地跳（land diving／nagol 相关）闻名——**极高敏感，本卡仅概念层，绝不提供操作**。今日并存基督教与旅游。教育概览；**严禁**仿跳教程、入会细节或可冒充仪者的步骤。与安布里姆、马莱库拉、坦纳、瓦努阿图总述区分。

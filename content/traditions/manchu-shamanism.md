@@ -1,5 +1,10 @@
 # 满族萨满与祭神祭天传统
 
+![江东六十四屯满洲萨满（1900年前历史影像）](./manchu-shamanism.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Manchu_shaman_in_Manchu_Wedge.jpg -->
+
+
 ## 概述
 
 **满族（Manchu）** 属通古斯语族，历史上以东北为根基并建立清朝。英语 *shaman* 一词即源自满—通古斯语 *šaman*（「知者」），大英百科以此讨论北亚萨满现象的词源与类型。满族实践常区分面向天神、祖先与氏族神灵的**家祭／堂子类礼仪**，以及涉及动物／英雄神灵、有时伴随通神表演的**野祭**传统。公开叙述中：**Wecheku** 为家神／户神类概念；**Tangse／tangzi（堂子）** 为堂祭／祭神空间概念；**Baichima** 等野祭／野外献祭见于研究讨论。乾隆朝曾敕纂满文本《满洲祭神祭天典礼》（1747；后有汉译本并收入《四库全书》）。本条目为教育性概览；**Wecheku**、**Tangse／tangzi**、**Baichima** 均 CONCEPT——shaman/elders host only, users don't officiate。**不提供**牲礼操作、请神／附体脚本、宫廷祷词全文复诵教程。

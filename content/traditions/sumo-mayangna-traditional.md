@@ -1,5 +1,9 @@
 # 苏莫／马扬纳传统信仰与雨林祈福（Sumo／Mayangna）
 
+![苏莫／苏穆人蓝菲尔兹历史影像](./sumo-mayangna-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Sumu_Bluefields.jpg -->
+
 ## 概述
 
 **苏莫／马扬纳人（Sumo／Mayangna）** 分布于尼加拉瓜与洪都拉斯莫斯基托海岸雨林地带，支系多样。公开概述记述：传统宇宙强调主人灵、祖先与森林—河流伦理；今日并存基督教（含摩拉维亚等传统公开常见）。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与米斯基托、拉马条目相邻但认同独立。

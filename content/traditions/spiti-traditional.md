@@ -1,5 +1,9 @@
 # 斯皮蒂藏传与山谷祈福（Spiti）
 
+![克耶寺斯皮蒂山谷寺院](./spiti-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kee_monastery_Spiti_Valley.JPG -->
+
 ## 概述
 
 **斯皮蒂（Spiti）** 位于印度喜马偕尔邦，文化上与藏传佛教深度交织，并与邻近拉豪尔、拉达克有联系又彼此区分。公开宗教生活可见寺院、转经与山谷节庆——**中高敏感**。本卡仅公开朝圣／寺院层；不提供密续或闭关操作。与拉达克、金瑙尔、多尔波等条目区分。

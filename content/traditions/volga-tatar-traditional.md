@@ -1,5 +1,9 @@
 # 伏尔加鞑靼伊斯兰与民间祈福传统（Volga Tatar）
 
+![伏尔加鞑靼萨班图伊节庆](./volga-tatar-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Sabantuy_in_Yoshkar-Ola_2024_-_4.jpg -->
+
 ## 概述
 
 **伏尔加鞑靼人（Volga Tatars）** 为俄罗斯联邦内最大突厥语穆斯林群体之一，以鞑靼斯坦等地为中心。公开记述强调：自 922 年伏尔加保加尔接受伊斯兰以来，**哈纳菲逊尼派**塑造文学、教育与礼仪生活；当代公共层尤重春季犁节 **Sabantuy**（含 **Koresh** 摔跤等民俗竞技）、**Bolgar（保加尔）朝圣**与 **White Mosque** 景观、喀山 **Kul Sharif** 清真寺，以及冬至前后 **Nardugan** 等冬季节庆记忆。本条目为教育概览；**不提供**护符配方、驱邪步骤或任何可冒充宗教专家的程序。

@@ -1,5 +1,9 @@
 # 奥罗奇传统信仰与滨海—萨满祈福（Oroch）
 
+![远东滨海奥罗奇人营地与持鹿角者（历史影像）](./oroch-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Oroczi,_on_the_river_Iman,_Eastern_Siberia.jpg -->
+
 ## 概述
 
 **奥罗奇人（Oroch）** 分布于俄罗斯远东滨海地区，通古斯相关小民族，人口极少。公开概述记述：传统宇宙含萨满、山灵与渔猎伦理；今日语言文化濒危，并存东正教接触。本条目为教育概览；**不提供**萨满出神脚本、献牲或可冒充萨满的步骤。与那乃、乌德盖、乌尔奇等远东条目区分。

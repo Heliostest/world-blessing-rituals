@@ -1,5 +1,10 @@
 # 夏威夷原住民祈福与 hoʻokupu／makahiki
 
+![夏威夷马卡希基节向神祇呈献礼物](./hawaiian.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:USMC-101120-M-2339L-058.jpg -->
+
+
 ## 概述
 
 夏威夷原住民宗教传统以对 **akua**（神祇）、**ʻAumakua**（家族守护祖灵）与土地—海洋关系的敬意为核心，四大主神常举 Kāne、Kanaloa、Kū、Lono。公开文化叙述强调 **Oli**（颂诗）、**Hula Kahiko**（古典胡拉）、**Heiau**（神庙遗址／圣地）与 **ʻAumakua**；**Kumu Hula／Kahuna viewing — users don't officiate**（胡拉教师／祭司传统仅观礼——用户不主持）。美国国家公园署等公开资料详述的 **Makahiki** 与 **Hoʻokupu** 奉献仍为重要季节／互惠层。本条目仅高层次介绍公开文化叙述；**不提供**可演唱／可复现的专属文本或动作教程。

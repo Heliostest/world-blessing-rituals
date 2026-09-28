@@ -1,5 +1,9 @@
 # 特索传统宗教与祖灵祈福（Teso／Iteso）
 
+![特索／伊特索家园聚落](./teso-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Iteso_Homestead.jpg -->
+
 ## 概述
 
 **特索人（Teso／Iteso）** 分布于乌干达东部与肯尼亚西部毗邻地带。公开概述记述：传统宗教强调祖灵与地方灵；今日广泛并存基督教与传统并行；畜牧—农耕生计塑造祈雨与丰收叙事。本条目为教育概览；**不提供**献牲操作或驱邪脚本。

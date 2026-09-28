@@ -1,5 +1,9 @@
 # 藏传佛教
 
+![拉萨八廓转经持转经筒](./tibetan-buddhism.jpg)
+
+<!-- 来源：CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:An_elderly_Tibetan_women_holding_a_prayer_wheel_on_Lhasa,_Barkhor.jpg -->
+
 ## 概述
 
 藏传佛教流传于青藏高原、蒙古高原、喜马拉雅周边及全球侨民社群，显密并蓄。对普通信众而言，日常积德与祈福方式包括：**转经筒（mani）、磕长头／大礼拜、绕圣（kora）、风马旗（lungta）、放生**，以及 **Chöme（酥油灯）** 供灯；圣月 **Saga Dawa** 尤为集中。这些行动强调以身语意恭敬三宝，并把利益回向给一切有情。朝圣路线——如绕转圣地——本身即是长时段的祈祷。

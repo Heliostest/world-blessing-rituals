@@ -1,5 +1,9 @@
 # 菲律宾原住民信仰（阿尼托／巴巴兰）（Philippine indigenous religions / anito & babaylan）
 
+![伊富高穆巴基祭司](./philippine-indigenous.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ifugao_Native_Priest.jpg -->
+
 ## 概述
 
 菲律宾群岛在殖民与基督化之前，广泛存在以**阿尼托（anito）**——祖先灵、地方自然灵与神性存在——为中心的民俗—宗教实践；与自然神／神性相关的沟通常称 **diwata** 体系。礼仪专家在米沙鄢等地称 **babaylan（baylan）**，他加禄语境常称 **katalonan** 等，多由女性或具女性礼仪角色的人担任，作为通灵媒介、疗愈者与社群顾问。当代仍有伊富高（Ifugao）、伊哥洛特诸群、苏巴嫩（Subanen）等原住民族群延续或复兴相关礼仪；苏巴嫩的 **Buklog** 感恩仪礼体系、伊富高的 **Hudhud** 叙事吟唱已列入联合国教科文组织非物质文化遗产名录。本条目综览公开可查的共性结构，不对附体操作、草药配方或献牲程序提供可复现说明。

@@ -1,5 +1,9 @@
 # 维达人／瓦尼亚拉埃托（Vedda / Wanniyalaeto）
 
+![维达人与孩童](./vedda.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Vedda_man_and_child,_Sri_Lanka.jpg -->
+
 ## 概述
 
 **维达人（Vedda／Veddha，自称 Wanniyalaeto／「林中人」）** 是斯里兰卡被承认的原住民族群之一，传统上以狩猎采集与森林知识著称；今日人口稀少，多与僧伽罗或泰米尔农村社会深度交融，语言亦多改用僧伽罗语／泰米尔语。Encyclopedia.com「Veddas」与维达文化档案（vedda.org）等公开综述指出：古典民族志（如 Seligmann 夫妇）描述其宗教以 **yakku／祖灵与英雄灵** 为核心，而非高等神祇体系；**nae yaku（新近祖先灵）** 与 Kande Yakka 等存在被召请以助狩猎、采集蜂蜜与疗愈；**Kiri Koraha** 等舞蹈／咨问场合由 **kapurale（萨满／灵媒）** 主持。沿岸与阿努拉德普勒等地维达社群常叠合佛教或印度教实践。本条目与上座部佛教、印度教等区分斯里兰卡森林原住民传统；**不提供**附体诱导、箭舞密咒、入会或可复现「请 nae yaku」步骤。

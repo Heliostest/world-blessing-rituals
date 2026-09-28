@@ -1,5 +1,9 @@
 # 节分豆まき（Setsubun mamemaki）
 
+![节分豆まき：福豆与鬼面（Setsubun mamemaki）](./setsubun-mamemaki.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Setsubun,bean_and_mask_of_ogre,Katori-city,Japan.JPG -->
+
 ## 概述
 
 节分豆まき是**日本岁时节庆实践（A）**：立春前一日（节分，约 **2 月 3 日—4 日**，依年而异）撒炒豆送疫鬼、迎福气，口喊「鬼は外、福は内」（鬼出去，福进来）。国学院大学 EOS 电子博物馆记述其源出宫廷**追傩（tsuina）**系统、**室町以降**豆まき渐成常见形态，神社寺院的**节分祭／节分会**形态因地而异；日本观光厅／国土交通省多语解说数据库的节分会条目并记有地方口号差异（如金峰山寺的呼法）——本卡以上述机构叙述为准。它是**强季节节庆**（一年一日），**不是每日仪式**；与仓库其他日本岁时卡（夏季的 `tanzaku-tanabata.md` 等）分属不同节令，互不混并。

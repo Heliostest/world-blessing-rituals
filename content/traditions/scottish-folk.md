@@ -1,5 +1,9 @@
 # 苏格兰民间基督教与圣岛—圣井祈福（Scottish）
 
+
+![苏格兰芒洛奇布条圣井（Munlochy Clootie Well）](./scottish-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Clootie_Well,_August_2019.jpg -->
 ## 概述
 
 **苏格兰民间基督教** 在长老会等改革宗主流之外，仍保留圣井、地方圣人记忆、年节民俗与海岛朝圣等层。公开遗产叙述突出 **Munlochy Clootie Well**（布条圣井）还愿、**Hogmanay／First-Footing** 新年民俗、**爱奥那岛（Iona）** 与圣科伦巴传统朝圣，以及堂区崇拜。本条目为教育概览；**不提供**替代圣事的「魔法配方」，并与爱尔兰圣井、凯尔特民俗、萨摩亚等条目可比较而**不可混同**（本文件不含任何萨摩亚／Faʻa Sāmoa 内容）。

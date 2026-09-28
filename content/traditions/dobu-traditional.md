@@ -1,5 +1,9 @@
 # 多布传统信仰与马西姆—巫术伦理祈福（Dobu）
 
+![多布首领 Gaganamole 与妻子（历史影像）](./dobu-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:CHIEF_GAGANAMOLE_AND_WIFE,_DOBU.jpg -->
+
 ## 概述
 
 **多布人（Dobu）** 分布于巴布亚新几内亚马西姆群岛，因人类学经典中的园圃、巫术与交换叙述而广为人知——本卡**拒绝**把多布写成「嫉妒岛」刻板或可通关巫术游戏。公开概述记述：祖先、园圃成功与库拉相关区域网络交织；今日并存基督教。教育概览；**严禁**咒语、巫术操作化或可冒充仪者的步骤。与特罗布里恩条目同属马西姆大区但岛屿认同独立。

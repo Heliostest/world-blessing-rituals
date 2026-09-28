@@ -1,5 +1,9 @@
 # 阿瓦尔民间伊斯兰与达吉斯坦圣地祈福（Avar）
 
+![达吉斯坦阿胡尔戈纪念综合体朝谒圣地（Ziyarat）](./avar-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ziyarat_at_Akh1ulgokh1_Memorial_COmplex,_Dagestan,_RU.jpg -->
+
 ## 概述
 
 **阿瓦尔人（Avar）** 为俄罗斯达吉斯坦共和国人口较多的高加索民族之一，绝大多数为逊尼派穆斯林。公开概述记述：清真寺、经堂与 **Naqshbandi** 等苏菲谱系在达吉斯坦山村历史上影响深远；**Imam Shamil** 记忆构成地方伊斯兰史的重要公开层；对谢赫陵墓／圣地的 **Ziyarat** 朝谒与地方习惯法记忆构成民间祈福层；**Dhikr** 赞念余绪为 **CONCEPT ONLY**。同时存在对圣陵实践的改革派批评。本条目为教育概览；**不提供**教团秘仪、政治动员或可冒充谢赫的步骤。与列兹金、车臣瓦伊纳赫条目可比较。

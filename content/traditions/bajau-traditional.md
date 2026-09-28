@@ -1,5 +1,9 @@
 # 巴瑶／萨马海洋伊斯兰与海灵祈福（Bajau／Sama）
 
+![大阪国立民族学博物馆展出的马来西亚沙巴巴瑶家船模型](./bajau-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:National_Museum_of_Ethnology,_Osaka_-_Houseboat_-_Bajau_people_-_State_of_Sabah_in_Malaysia.jpg -->
+
 ## 概述
 
 **巴瑶人（Bajau；亦作 Sama／Sama-Bajau）** 分布于东南亚苏禄海、苏拉威西海至马来半岛东岸等海域，历史上以船居渔捞闻名，今日多数已岸居。公开民族志记述：主体为逊尼派沙斐仪学派穆斯林，清真寺与伊玛目构成岸居社区宗教中心；同时并存通灵／占卜、海神／海灵 **Umboh Dilaut（亦作 Omboh Dilaut）**与「送疫灵船」等海洋民俗层，船居群体的伊斯兰正统性常被岸居他者争议。本条目为教育概览；**不提供**驱疫船操作、通灵脚本或可冒充仪式专家的步骤。

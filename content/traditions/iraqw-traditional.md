@@ -1,5 +1,9 @@
 # 伊拉克伍传统信仰与库希特祈福（Iraqw）
 
+![坦桑尼亚曼亚拉伊拉克伍农舍](./iraqw-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Manyara_Iraqw_nyumba_shambani_2012_Tamino.jpg -->
+
 ## 概述
 
 **伊拉克伍人（Iraqw）** 分布于坦桑尼亚北中部（曼亚拉／阿鲁沙一带公开地名），语言属南库希特，与周围班图社群显著不同。公开概述记述：传统宇宙含祖先与地方灵力、农牧复合生计；求雨与净化相关公开叙述可见 **Loo** 雨／净化观礼层；雨事专家 **Qwaslare** 与水灵 **Netlangw** 属 **CONCEPT ONLY**——**users don't officiate**。今日并存基督教与本土实践。本条目为教育概览；**不提供**献牲、疗愈脚本、求雨操作或可冒充仪者的步骤。

@@ -1,5 +1,10 @@
 # 古隆传统信仰与祭司—佛教祈福（Gurung／Tamu）
 
+![古隆妇女在塔穆洛萨尔新年节庆上](./gurung-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:GURUNG_WOMEN_AT_TAMU_LHOSAR_FESTIVAL.jpg -->
+
+
 ## 概述
 
 **古隆人（Gurung；自称常作 Tamu）** 为尼泊尔中部山地民族。公开记述显示宗教高度交融：传统祭司职分（如 **Pachyu／Ghyabre** 等公开分类）以口述神话维系创世与社群记忆；岁时可见 **Tamu Lhosar**（古隆新年公开层）；丧葬相关 **Arghun funerary CONCEPT**；**Pachyu／Ghyabre priests viewing-only NO ops**（祭司仅观礼，无操作步骤）。同时宁玛派等藏传佛教在许多地区影响深远。本条目为教育概览；**不提供**祭司经咒文本、丧葬魂程操作或可冒充祭司的步骤。

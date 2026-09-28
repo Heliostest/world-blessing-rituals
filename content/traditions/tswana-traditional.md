@@ -1,5 +1,9 @@
 # 茨瓦纳／巴特瓦纳传统宗教与巴迪莫祈福（Tswana / Badimo）
 
+![茨瓦纳传统舞者](./tswana-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tswana_Dancers_3.jpg -->
+
 ## 概述
 
 **茨瓦纳人（Tswana；复数常称 Batswana）** 是南部非洲高原的班图语族群体，主要分布于博茨瓦纳、南非及相邻地区。Encyclopedia of Religion 等公开条目指出：传统宗教以至高存在 **Modimo** 与祖先灵 **badimo**（单数语境与 modimo 的敬称层级相关）为中心——人、祖先与至高者被理解为程度上的连续，而非截然隔绝的「神／人」二元。Badimo 作为中介，维系社会和谐、人畜与作物丰饶，并期待后人以 **tirelo（侍奉／服务）** 回报：分享食物与啤酒、宴请、正确对待长辈。神学家 Gabriel Setiloane 等强调：许多茨瓦纳基督徒仍把基督教嵌进这一世界观，而非完全取代祖先伦理。公共层面的大型土著仪典在殖民与基督教化后已较少见，但私人层面的祖先敬重、治疗师（**dingaka**）及部分通过礼仪记忆仍具影响。本条目与《巴索托》《祖鲁》《科萨》区分茨瓦纳／塞茨瓦纳语境；**不提供**入会学校（bogwera／bojale）操作、巫医配方、动物屠宰步骤或可复现咒术。

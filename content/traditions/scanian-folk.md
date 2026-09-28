@@ -1,5 +1,9 @@
 # 斯堪尼亚民间基督教与节期祈福（Scanian／Skåne）
 
+
+![斯堪尼亚圣奥洛夫圣泉（Sankt Olofs källa，Österlen）](./scanian-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Sankt_Olofs_k%C3%A4lla,_%C3%96sterlen.jpg -->
 ## 概述
 
 **斯堪尼亚（Skåne／Scania）** 为瑞典最南省份，历史上长期与丹麦相连。公开民俗记述突出 **Mårtensafton**（圣马丁前夜）鹅宴传统、**Sankt Olof** 圣井／教堂地方敬礼、仲夏 **maypole（夏至柱）** 欢庆，以及路德宗生命礼仪。斯堪尼亚方言遗产是认同维度。本条目为教育概览；**不提供**可冒充神职的脚本。

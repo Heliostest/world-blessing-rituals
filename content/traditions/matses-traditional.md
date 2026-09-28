@@ -1,5 +1,10 @@
 # 马策斯／马约鲁纳传统信仰与亚马逊祈福（Matsés / Mayoruna）
 
+
+![马策斯／马约鲁纳（Maxuruna）历史肖像（Spix und Martius）](./matses-traditional.jpg)
+
+<!-- 来源：CC BY 2.5 | https://commons.wikimedia.org/wiki/File%3AIndien_Maxuruna.jpg -->
+
 ## 概述
 
 **马策斯人（Matsés，亦称 Mayoruna）** 分布于秘鲁—巴西边境亚马逊雨林。公开叙述涉及狩猎伦理、村落礼仪与护佑知识——**极高敏感，本卡仅概念提及**。今日并存国家边界管理与土地维权。教育概览；**严禁**迷幻／猎毒操作、入会或可冒充仪者的步骤。与马齐根卡、希皮博等秘鲁亚马逊条目区分。

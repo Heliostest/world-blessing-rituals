@@ -1,5 +1,9 @@
 # 泰国花环（phuang malai／พวงมาลัย）
 
+![泰国花环（phuang malai／พวงมาลัย）茉莉鲜花串环](./phuang-malai.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Bangkok,_Thailand,_March_2023_-_Jasmine_phuang_malai_(flower_garland).jpg -->
+
 ## 概述
 
 *Phuang malai*（พวงมาลัย）是**泰国礼敬与供养常见的鲜花串环（A）**：以茉莉等鲜花串成环状或带穗的花环，献给佛像、僧侣、神屋、长辈与贵客，亦见于车辆后视镜等日常求安场合。仓库 `thai-spirit-houses.md` 已将花环列为神屋公开供品之一（与 Nam Daeng 等并列），康奈尔大学相关民族志材料亦支撑神屋供养结构的公开叙述。本卡**聚焦花环物件与短互动**，不展开安座／请灵；与夏威夷 *lei* **不是文化等价物**——产品须分述，禁止「热带花环」混皮肤。完整花艺史与曼谷花博物馆等专史机构英页在候选研究中仍标为缺口（**待核实**），本卡不写成结论。

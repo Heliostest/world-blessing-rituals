@@ -1,5 +1,9 @@
 # 斯洛文尼亚民间天主教与朝圣祈福（Slovene）
 
+![普图伊库伦特嘉年华面具巡游](./slovene-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kurentovanje_Ptuj_2023_Kurent_with_handkerchiefs.jpg -->
+
 ## 概述
 
 **斯洛文尼亚民间天主教** 在罗马天主教主流下，保留圣母朝圣地、阿尔卑斯山村主保节、复活节民俗与家庭祝福等层。公开文化记述中，**布雷热圣母堂（Brezje — Marija Pomagaj／求助圣母）** 为重要朝圣地；同时 **Ptuj 的 Kurentovanje**（库伦特嘉年华）已列入联合国教科文组织非物质文化遗产，与天主教礼仪年及山区主保 feste 交织。本条目为教育概览；**不提供**可替代圣事的配方，并与克罗地亚、奥地利、意大利阿尔卑斯天主教可比较。

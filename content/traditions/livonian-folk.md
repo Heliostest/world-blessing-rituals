@@ -1,5 +1,10 @@
 # 利沃尼亚民间基督教与濒危语言祈福（Livonian）
 
+![马齐尔贝利沃尼亚文化之家（Līvõd Kōd）](./livonian-folk.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Livonian_culture_centre_in_Mazirbe.JPG -->
+
+
 ## 概述
 
 **利沃尼亚人（Livonians／Livs）** 为拉脱维亚海岸芬兰—乌戈尔少数族群，语言极度濒危。公开文化记述：历史上路德宗等基督教主导公共崇拜；今日祈福与认同常与语言复兴交织——尤以 **Mazirbe（小伊尔贝）** 的 **Līvlišt pīvad（利沃尼亚人日）**、文化中心 **Līvõd Kōd（利沃尼亚之家）**，以及海岸路德宗礼拜为公共可见层。本条目为教育概览；**不提供**可冒充神职的脚本。与塞托、芬兰—卡累利阿、爱沙尼亚民俗条目可比较，但利沃尼亚为独立濒危语言社群。

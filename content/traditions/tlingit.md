@@ -1,5 +1,9 @@
 # 特林吉特氏族礼仪与夸富宴传统（Tlingit ku.éex'／potlatch）
 
+![特林吉特舞蹈（Chief Shakes Tribal House）](./tlingit.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Tlingit_dancing.jpg -->
+
 ## 概述
 
 **特林吉特人（Tlingit，Łingít）** 传统居住于今美国东南阿拉斯加及邻近加拿大不列颠哥伦比亚、育空一带。史密森尼美国印第安人博物馆等记述：社会以母系继承的 **Raven／Eagle（或 Crow／Wolf）半偶族（moiety）**、氏族（clan）与氏族房（house）为认同核心；歌曲、舞蹈与纹徽（crest）被视为氏族财产。公共重大礼仪常称 **ku.éex'**（英语语境亦称 potlatch／party）：氏族设宴、演说、歌舞、赠礼，以确认地位、纪念亡者、庆祝婚嫁或成年，并在主客氏族之间维系互惠平衡。大英百科将西北海岸 **potlatch** 概括为透过馈赠公开确认社会地位的制度。本条目为教育性概览；**不提供**氏族歌曲盗用、纹徽擅用、纪念火礼或完整 ku.éex' 可复现脚本。

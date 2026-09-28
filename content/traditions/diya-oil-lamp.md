@@ -1,5 +1,9 @@
 # Diya 油灯（diya／dīpa）
 
+![印度教 Diya 油灯（diya／dīpa）](./diya-oil-lamp.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Diya.jpg -->
+
 ## 概述
 
 *Diya*（*dīpa*，灯盏）是**印度教家庭与节庆中最常见的油灯（A）**：陶或铜的小盏注油置芯，日常家庭 *puja*（普迦）与 *aarti*（旋灯）中点亮，排灯节（Diwali）等节庆时在门槛与窗台点起成排。Science Museum Group 藏**带印度教母题、或为北印度风格的黄铜油灯**与 **Lakshmi 立于象座、手捧五连盏油灯的造像**（均 1801–1900）可为器物例证。`hinduism.md` 已完整叙述 puja／aarti／prasada 框架；本卡**聚焦灯盏物件与「点亮一排、旋灯一瞥」的短互动**。Diya 与汉传／藏传供灯同属「光明」意象但神系与语境不同，产品皮肤必须分开（见 `specs/notes-wish-lamps-disambiguation.md`）。

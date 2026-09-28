@@ -1,5 +1,10 @@
 # 唐萨传统信仰与朗弗赖教祈福（Tangsa／Rangfraism）
 
+![唐萨人传统生活场景博物馆立体模型](./tangsa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Tangsa_diorama.JPG -->
+
+
 ## 概述
 
 **唐萨人（Tangsa）** 分布于印度阿萨姆与阿鲁纳恰尔交界山地，支系多样。公开研究记述：部分精英推动制度化本土宗教 **Rangfraism（朗弗赖教）**，在基督教与印度教影响语境中改革传统实践，作为族群认同标记；同时许多唐萨人为基督徒。本条目为教育概览；**不提供**献牲操作或可冒充祭司的步骤；教派争论外人勿煽动。

@@ -1,5 +1,9 @@
 # 尼西传统信仰与东尼—波罗祈福（Nyishi）
 
+![尼西人在阿鲁纳恰尔邦举行尤洛仪式](./nyishi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tribals_of_Nyishi_tribe_of_Arunachal_Pradesh_performing_rituals.jpg -->
+
 ## 概述
 
 **尼西人（Nyishi）** 为印度阿鲁纳恰尔邦人口较多的塔尼（Tani）语族群之一。公开记述：传统宗教属万物有灵—萨满类型，当代常以 **Donyi-Polo（日—月）** 复兴运动的制度化形式表述；祈祷堂 **Nyedar Namlo** 自21世纪初在多地兴建；祭司传统仍重要但面临基督教扩张与现代化压力。本条目为教育概览；**不提供**献牲操作、出神脚本或可冒充祭司的步骤。与阿帕塔尼、阿迪条目可比较。

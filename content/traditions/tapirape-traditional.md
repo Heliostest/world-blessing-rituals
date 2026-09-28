@@ -1,5 +1,9 @@
 # 塔皮拉佩传统信仰与阿拉瓜亚祈福（Tapirapé）
 
+![塔皮拉佩 Tawa／ype 仪式面具](./tapirape-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Apyãwa_(Tapirape)_Mask_MHNT.ETH.AC.1732.jpg -->
+
 ## 概述
 
 **塔皮拉佩人（Tapirapé）** 分布于巴西马托格罗索—托坎廷斯／阿拉瓜亚一带。公开民族志记述村落礼仪、命名与护佑观念——**高度敏感，本卡仅概念提及**。今日并存基督教接触与土地维权。教育概览；**严禁**入会、萨满操作或可冒充仪者的步骤。与卡拉贾、卡亚波等条目区分。

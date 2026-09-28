@@ -1,5 +1,9 @@
 # 卡亚比／卡瓦伊韦特传统信仰与塔帕若斯祈福（Kayabi / Kawaiwete）
 
+![历史影像中的卡亚比／Kajabi（巴西）](./kayabi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kajabi_in_Pedro_Dantas.jpeg -->
+
 ## 概述
 
 **卡亚比人（Kayabi，亦称 Kawaiwete）** 分布于巴西马托格罗索—帕拉一带（含辛古／塔帕若斯相关迁移史）。公开叙述涉及村落礼仪、命名与护佑观念——**高度敏感，本卡仅概念层**。今日并存土地维权与跨社群联盟。教育概览；**严禁**入会、萨满操作或可冒充仪者的步骤。与苏亚、卡亚波、瓦乌拉等条目区分；本卡不另开 kawaiwete 同义卡。

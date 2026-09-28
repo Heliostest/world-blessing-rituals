@@ -1,5 +1,9 @@
 # 康沃尔民间基督教与圣井—朝圣祈福（Cornish）
 
+![康沃尔雷德鲁斯圣皮拉努日（St Piran's Day）游行](./cornish-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:St_Piran%27s_Day_Parade,_Redruth,_Cornwall_-_March_2023_(10).jpg -->
+
 ## 概述
 
 **康沃尔（Cornwall）** 民间基督教在圣公会／卫斯理等传统之外，以圣井（holy wells）、**rag／clootie wells**（系布还愿圣井）地方圣人敬礼与海岸朝圣路径著称。**St Piran’s Day（圣皮拉努日，3 月 5 日）** 为康沃尔重要公共文化—认同节日。公开遗产叙述中，圣井常与疗愈、洗礼记忆与还愿物相连，学者亦讨论其与更早神圣水点的连续性。本条目为教育概览；**不提供**替代圣事的「魔法配方」，并与爱尔兰、苏格兰、威尔士圣井条目可比较。

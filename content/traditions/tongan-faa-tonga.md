@@ -1,5 +1,9 @@
 # 汤加／法阿汤加村社礼仪与祝福文化（Tongan／Faʻa Tonga）
 
+![汤加男子穿着 taʻovala 腰席](./tongan-faa-tonga.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Tonga_-_Mr_Marles%27_visit_to_Vaiola_Hospital_(10730055895)_-_cropped_(man_with_ta%27ovala).jpg -->
+
 ## 概述
 
 **法阿汤加（Faʻa Tonga／anga faka-Tonga，Tongan Way）** 是汤加王国及离散社群中持续实践的整全生活方式；大英百科记述汤加为波利尼西亚君主国，自约公元十世纪起有神圣王系 **Tuʻi Tonga**，十九世纪基督宗教传入后，绝大多数家庭归属卫理公会等教会，同时深度保留阶层、亲属与互惠伦理。公开学术与文化材料强调：核心价值包括尊重（*fakaʻapaʻapa*）、责任、扩展家庭与对土地—人民整体 **fonua** 的归属；卡瓦（*kava*／*ʻava*）礼、树皮布（*ngatu*）、腰席（*taʻovala*）与口述谱系是可见的文化标识。联合国教科文组织将汤加 **lakalaka**（舞蹈与吟诵演说）列入人类非物质文化遗产代表作名录，其结合诗歌、歌唱、演说与群舞，常呈现历史、传说与社会价值。前基督教时期有 Tangaloa、Maui、Hikuleʻo 等神祇与 *tapu*／*mana* 宇宙观，以及向 Tuʻi Tonga 献初果（*ʻinasi*）等公共仪典，今日多存于历史记忆与象征之中。本条目与萨摩亚、夏威夷条目区分；**不提供**卡瓦调制剂量、文身穿刺、王室登基操作或可复现秘仪。

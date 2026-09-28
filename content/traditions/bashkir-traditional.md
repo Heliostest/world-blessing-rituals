@@ -1,5 +1,9 @@
 # 巴什基尔伊斯兰与民俗祈福（Bashkir／Bashkort）
 
+![莫斯科巴什基尔萨班图伊节上的库赖笛传统乐](./bashkir-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Bashkir_tradition_music_on_Quray_flute_on_Moscow_Sabantuy_of_Moscow_bashkirs.jpg -->
+
 ## 概述
 
 **巴什基尔人（Bashkir；自称 Bashkort）** 是俄罗斯联邦巴什科尔托斯坦共和国及周边的突厥语穆斯林民族，传统上与南乌拉尔牧农生活相连。Encyclopedia.com 等公开综述指出：巴什基尔人自金帐汗国伊斯兰化以来以逊尼伊斯兰为主；苏联反宗教政策后，乡村可见诵经、斋戒与朝拜地方圣徒墓的复兴。同时，牧农年历中的 **Sabantuy／Habantuy（犁节）**、春日妇女／女孩集会叙事 **Kargatuy（「乌鸦／鸟节」等地方称呼，公开民俗层）**、氏族聚会 **Yïyïn**，以及对自然场所精灵与护身符的民间信念，常被理解在统一的穆斯林生活世界之内，而非与伊斯兰对立的「另一宗教」。公开记述亦强调对地方圣徒（**аулие／awliya／Auliya**）陵墓与圣泉／圣泉周边圣地的朝拜与求佑，属圣徒墓—圣地概念层。本条目为教育概览；**不提供**牲礼操作、护身符制作或任何可复现的萨满化「唤灵」步骤。

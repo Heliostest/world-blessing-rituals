@@ -1,5 +1,9 @@
 # 萨特雷—马韦传统信仰与瓜拉纳祈福（Sateré-Mawé）
 
+![瓜拉纳（Paullinia cupana）——萨特雷—马韦核心作物](./satere-mawe-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File%3AGuarana_-_Paullinia_cupana.jpg -->
+
 ## 概述
 
 **萨特雷—马韦人（Sateré-Mawé）** 分布于巴西亚马逊（亚马孙／帕拉相关地带），以瓜拉纳栽培文化与著名的成年礼仪（公开常称 *waumat*／蚁手套相关叙述）闻名——**后者极高敏感，本卡仅概念提及存在，绝不提供操作**。今日并存基督教接触与合作社经济。教育概览；**严禁**成年礼仪任何复现指导。

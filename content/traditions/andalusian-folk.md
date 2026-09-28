@@ -1,5 +1,9 @@
 # 安达卢西亚民间天主教与罗马里亚朝圣祈福（Andalusian）
 
+![埃尔罗西奥（El Rocío）罗马里亚朝圣途中骑马的朝圣者](./andalusian-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Romer%C3%ADa_de_El_Roc%C3%ADo_(2022).jpg -->
+
 ## 概述
 
 **安达卢西亚民间天主教** 以圣周（Semana Santa）游行、圣母敬礼与 **romería（乡村朝圣聚会）** 闻名于世，其中 **埃尔罗西奥（El Rocío）** 等朝圣尤具代表性。公开文化记述中，**Hermandad／Cofradía（兄弟会）** 组织抬运 **Paso（苦像／圣母抬像台）**，由 **Costalero（抬像者）** 承重前行，与全民参与构成强烈公共祈福层。本条目为教育概览；**不提供**可冒充神职的脚本；注意动物役使与人群安全的当代争议，仅作尊重性提醒。

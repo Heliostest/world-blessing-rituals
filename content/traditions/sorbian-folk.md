@@ -1,5 +1,9 @@
 # 索布族民间天主教与复活节骑乘祈福（Sorbian／Lusatian）
 
+![索布族复活节骑乘巡游](./sorbian-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Osterreiten-Nebelsch%C3%BCtz-01.jpg -->
+
 ## 概述
 
 **索布人（Sorbs；亦称卢萨提亚索布／Wends）** 为德国萨克森与勃兰登堡卢萨提亚地区的西斯拉夫少数民族，分上索布语与下索布语群体。本卡**聚焦天主教上卢萨蒂亚（Upper Lusatia）** 的公开礼仪，尤其是 **Osterreiten／Křižerjo（复活节骑乘）**。索布联盟（Domowina）指出：索布岁时习俗已列入德国国家级非物质文化遗产名录。复活节主日，男子盛装骑饰马——公开记述常见**礼帽（top hats）**、马饰与（部分线路）装饰尾饰等外观——以索布语、德语与拉丁语**圣歌（hymns）** 在马背宣告基督复活；诸队伍传统上避免相遇成「十字交叉」。另有彩蛋、取复活水、复活节火等民俗。

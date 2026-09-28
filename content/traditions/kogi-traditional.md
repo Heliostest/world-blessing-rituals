@@ -1,5 +1,9 @@
 # 科吉／圣玛尔塔内华达山脉起源律祈福（Kogi／Kággaba）
 
+![哥伦比亚圣玛尔塔内华达山脉的科吉社群](./kogi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:COMUNIDAD_KOGUIS.jpg -->
+
 ## 概述
 
 **科吉人（Kogi；自称 Kággaba）** 与阿瓦科（Arhuaco／Ikʉ）、维瓦（Wiwa／Sanhá）、坎库阿莫（Kankuamo）并称哥伦比亚加勒比海岸 **圣玛尔塔内华达山脉（Sierra Nevada de Santa Marta）**「四族」，视该山脉为「世界之心」。联合国教科文组织将四族**祖先知识体系**列入人类非物质文化遗产代表作名录：其核心是**起源律（Law of Origin）**——规范人与自然、宇宙的关系；知识持有者包括男性 **Mamo（亦作 Mama／Mamʉ）** 与女性 **Saga**，经长期培养学会倾听雪峰、河流与自然讯息。公开文化叙述强调：在相互连接的圣地网络举行「回馈／支付」（pagamento／zʉbihi）、洗礼、婚仪、传统歌舞与向精神力量的献礼，以维持生态与文化平衡。本条目为教育概览；**不提供** Mamo 养成细节、圣地献礼操作、告解脚本或任何可冒充精神权威的程序。

@@ -1,5 +1,9 @@
 # 马赛（Maasai）
 
+![马赛传统舞蹈（Maasai Global Festival 2024）](./maasai.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Traditional_Maasai_Dance_at_Maasai_Global_Festival_2024.jpg -->
+
 ## 概述
 
 马赛（Maasai／Maasai）是东非大裂谷一带以牧牛为中心的牧民社群，主要分布于今日肯尼亚与坦桑尼亚。礼仪生活高度围绕**年龄组（age-set）**展开：男孩经一系列相互关联的通过礼仪，逐步进入勇士（moran）、成年男子与长老身份。联合国教科文组织于2018年将 **Enkipaata、Eunoto、Olng’esherr** 三项男性通过礼仪列入《急需保护的非物质文化遗产名录》。礼仪专家 *oloiboni*（亦作 *laibon* 一类称呼）是宗教头人，但通常不掌握政治权力。本条目只做教育性概览；割礼与限制性通过礼的身体操作**不在描述范围**。

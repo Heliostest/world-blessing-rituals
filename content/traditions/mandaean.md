@@ -1,5 +1,10 @@
 # 曼达教（Mandaeanism / Mandaeism）
 
+![曼达教卡伦河洗礼（Maṣbuta）场面](./mandaean.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Masbuta_by_Mandaean_in_Karun_River,_Ahvaz,_Iran_-_16_July_2018_(08).jpg -->
+
+
 ## 概述
 
 曼达教是仍存于伊拉克南部与伊朗西南胡齐斯坦等地的古代近东宗教传统，其名称源于曼达语 *mandayya*（“具有知识者”）。学界常将其归入诺斯替（Gnostic）宗教谱系，但与许多诺斯替体系不同，曼达教高度强调婚姻与生育，并以反复进行的洗礼仪式著称。信众敬重施洗约翰，视耶稣为假弥赛亚；经典包括《金泽》（*Ginza*）、《约翰书》与礼仪祈祷集《科拉斯塔》（*Qolasta*）等。当代社群因战乱与湿地变迁大量移居海外，礼仪常以流动水或替代水槽完成。本条目为教育性概览，不提供祭司秘传祷文或可操作的洗礼程序细节。

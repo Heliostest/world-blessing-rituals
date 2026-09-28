@@ -1,5 +1,9 @@
 # 罗马涅民间天主教与朝圣祈福（Romagnol）
 
+![切塞纳蒙特圣母修道院（Madonna del Monte）](./romagnol-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Abbaziale_di_Santa_Maria_del_Monte_(Cesena).jpg -->
+
 ## 概述
 
 **罗马涅（Romagna）** 位于意大利北部（里米尼、拉文纳、切塞纳一带），与艾米利亚行政相连但方言—认同自有边界。公开天主教民俗记述突出 **切塞纳（Cesena）Madonna del Monte** 朝圣与 **还愿（ex-voto）**、**弗利（Forlì）Madonna del Fuoco（火圣母）** 敬礼，以及海岸与山地主保 **feste** 抬像传统。本条目为教育概览；**不提供**可冒充神职的脚本。与艾米利亚条目对照，强调罗马涅海岸—山地朝圣与方言差异。

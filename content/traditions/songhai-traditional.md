@@ -1,5 +1,9 @@
 # 桑海民间伊斯兰与宁日尔河灵力祈福（Songhai／Songhay）
 
+![加奥阿斯基亚陵墓圣地](./songhai-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tombeau_askia.jpg -->
+
 ## 概述
 
 **桑海人（Songhai／Songhay）** 分布于西非尼日尔河中游（马里、尼日尔等），与中世纪桑海帝国遗产相关。公开文化志记述：几乎普遍实践伊斯兰教（礼拜、斋月、朝觐理想等）；同时传统专家——如公开记述中的占卜者、对灵赞歌手、附体祭司等——在「危险路口」人生叙事中仍被咨询；雷电神 Dongo 等神话人物出现在口述与表演传统中。本条目为教育概览；**不提供**附体脚本、巫术对抗程序或可冒充 sohancitarey／zimatarey 的步骤。

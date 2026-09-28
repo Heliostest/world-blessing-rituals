@@ -1,5 +1,9 @@
 # 滕内传统信仰与伊斯兰—基督教祈福（Temne）
 
+![滕内女性雕像（苏格兰国家博物馆）](./temne-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Female_figure,_probably_Temne_People,_Sierra_Leon,_early_19th_century_CE._Sculpture._National_Museum_of_Scotland,_Edinburgh.jpg -->
+
 ## 概述
 
 **滕内人（Temne）** 主要分布于塞拉利昂北部与西部。公开概述记述：传统祖先—地方灵伦理与伊斯兰（及部分基督教）并存；稻作与港口城市生活塑造当代公共祈福。本条目为教育概览；**不提供**献牲、秘密会社入会或可冒充仪者的步骤。与门德、林巴条目可比较但社群边界分明。

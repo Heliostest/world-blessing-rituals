@@ -1,5 +1,10 @@
 # 西阿西传统信仰与休恩湾祈福（Siassi）
 
+
+![西阿西岛仪式木碗（柏林桥博物馆）](./siassi-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Ceremonial_Wooden_Bowl,_Papua_New_Guinea,_Br%C3%BCcke_Museum_Berlin,_65027,_view_a.jpg -->
+
 ## 概述
 
 **西阿西（Siassi）** 及相关休恩湾岛屿社群分布于巴布亚新几内亚莫罗贝一带。公开叙述涉及航海贸易、祖先与交换伦理——**中高敏感**。今日并存基督教与渔业—航运经济。教育概览；丧礼与密传止于概念。与马努斯、托莱、塔米等条目区分。

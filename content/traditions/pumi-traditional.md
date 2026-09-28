@@ -1,5 +1,9 @@
 # 普米传统信仰与韩规—藏传佛教祈福（Pumi）
 
+![普米韩规藏文手稿（云南民族博物馆）](./pumi-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Manuscripts_in_the_Yunnan_Nationalities_Museum_-_DSC04002.JPG -->
+
 ## 概述
 
 **普米族（Pumi；自称 Premi 等）** 主要分布于中国云南西北（丽江、宁蒗、兰坪等）及四川毗邻山地。公开百科记述：宗教生活受藏传佛教与苯教影响深，地方仪轨传统常称 **Hangui／韩规**（与纳西东巴、摩梭达巴有比较研究）；部分村寨保留 **Dingba／Zanbala** 类家坛三神与祖先敬礼；当代宁蒗等地多见格鲁派寺院实践，韩规在部分地区已成稀缺记忆。本条目为教育概览；**不提供**韩规经典操作、献牲或可冒充仪者的步骤。

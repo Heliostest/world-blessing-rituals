@@ -1,5 +1,10 @@
 # 曼吉安传统信仰与民都洛祖灵祈福（Mangyan）
 
+![伊拉亚曼吉安农耕仪礼舞蹈](./mangyan-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Mangyan_Dancing.png -->
+
+
 ## 概述
 
 **曼吉安人（Mangyan）** 为菲律宾民都洛岛多支系原住民统称（含汉努诺、伊拉亚等），内部分歧大。公开概述记述：传统宗教强调祖先、自然灵与礼仪专家；部分群体以竹简／树皮音节文字传承 **Ambahan** 诗歌；稻作相关的 **Panudlak／Pamago** 等礼仪见于公开叙述；**Balaynan** 等疗愈者职分有公开称谓。今日并存基督教与低地移民压力。本条目为高度概括入口，**不能**代表所有支系；**Ambahan** 竹诗歌；**Panudlak／Pamago** 稻作礼仪 CONCEPT；**Balaynan** 疗愈者 CONCEPT ONLY——**users don't officiate**。**不提供**献牲、通灵或可冒充仪者的步骤。

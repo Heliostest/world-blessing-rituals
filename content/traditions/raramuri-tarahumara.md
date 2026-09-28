@@ -1,5 +1,9 @@
 # 拉拉姆里／塔拉乌马拉（Rarámuri / Tarahumara）
 
+![拉拉姆里宗教游行（奇瓦瓦）](./raramuri-tarahumara.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Procesi%C3%B3n_Rar%C3%A1muri.jpg -->
+
 ## 概述
 
 **拉拉姆里（Rarámuri，他称塔拉乌马拉 Tarahumara）** 是墨西哥奇瓦瓦州西南部铜峡谷（Barranca del Cobre／Copper Canyon）高原与峡谷地带的原住民族，语言属尤托—阿兹特克语系索诺拉分支。大英百科 Tarahumara 条目指出：其生计以分散的玉米、豆类、南瓜农作与山羊／牛畜养为主，以长跑耐力闻名；名义上多为天主教，但牧场（ranchos）中仍盛行前哥伦布时期余绪与本地节庆，神话融合本土与基督元素。民族志概述（如 Encyclopedia.com／everyculture 宗教篇、密尔沃基公共博物馆）强调：主神常称「我们的父亲／母亲」（与日／月相关），在许多社区与上帝／耶稣、圣母对应；家户祭仪、疗愈、玉米与牲畜祝福，以及圣诞—复活节期间的教堂 matachines 舞与悲情剧是公开文化焦点。本条目与惠乔尔、阿帕奇、中美洲土著余绪等区分奇瓦瓦峡谷拉拉姆里；**不提供**佩奥特仪式操作、草药剂量、疗愈诱导或可复现「请神舞蹈」步骤。

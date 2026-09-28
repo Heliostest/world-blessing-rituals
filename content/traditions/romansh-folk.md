@@ -1,5 +1,9 @@
 # 罗曼什民间基督教与阿尔卑斯祈福（Romansh）
 
+![查兰达马尔茨摇铃迎春（Chalandamarz）](./romansh-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Chalandamarz_2014.jpg -->
+
 ## 概述
 
 **罗曼什人（Romansh）** 为瑞士格劳宾登州罗曼什语少数族群，宗教上以改革宗与天主教社群并置。公开文化记述突出海拔约 **2429 m** 的 **Ziteil** 圣母朝圣地、**Chalandamarz（3 月 1 日）** 少年摇铃驱冬／迎春民俗，以及阿尔卑斯 **牲畜下山（cattle descent）祝福** 与牧季叙事。本条目为教育概览；**不提供**可冒充神职的脚本。

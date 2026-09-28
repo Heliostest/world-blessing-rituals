@@ -1,5 +1,10 @@
 # 弗里堡民间天主教与双语朝圣祈福（Fribourg／Freiburg）
 
+![弗里堡州 Semsales 下山转场（Désalpe）装饰乳牛](./fribourg-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:D%C3%A9salpe_Fribourg.jpg -->
+
+
 ## 概述
 
 **弗里堡（Fribourg／Freiburg）** 为瑞士西中部州，以天主教传统深厚、法语／德语双语社群与圣母朝圣地著称。公开民俗记述：堂区主保节、堂区／圣母朝圣、**Fête de Saint-Nicolas（圣尼古拉节）** 公共庆祝，以及秋季 **Désalpe（下山／牲畜转场）** 中牧群装饰与对牲畜／牧季的感恩祝福构成祈福层；与周边新教州形成历史对照。本条目为教育概览；**不提供**可冒充神职的脚本。与罗曼什、瓦尔瑟、萨瓦条目可比较；**内容边界独立于弗里西（Frisian）条目**，勿与北海弗里西传统混写。

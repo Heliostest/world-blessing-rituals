@@ -1,5 +1,10 @@
 # 诺马齐根加传统信仰与雨林祈福（Nomatsigenga）
 
+![秘鲁潘戈阿圣安东尼奥·德·索诺莫罗的诺马齐根加节庆](./nomatsigenga-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Fiestas_Nomatsiguengas_en_San_Antonio_de_Sonomoro,_Pangoa,_Junin_01.jpg -->
+
+
 ## 概述
 
 **诺马齐根加人（Nomatsigenga）** 分布于秘鲁中部塞瓦／雨林边缘，属阿拉瓦克语支相关社群。公开概述记述：传统宇宙强调主人灵、历史迁徙与治疗伦理；今日并存基督教与土地维权。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与阿沙宁卡、马齐根卡、亚内沙条目邻近但认同独立，不可合并。

@@ -1,5 +1,9 @@
 # 伊富高稻作—祖灵祈福传统（Ifugao）
 
+![伊富高传统服饰男子（巴拿威）](./ifugao-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Banaue_Philippines_Ifugao-Tribesman-01.jpg -->
+
 ## 概述
 
 **伊富高人（Ifugao）** 是菲律宾吕宋岛北部科迪勒拉山区的湿稻耕作民族，语言属南岛语系。其以石砌梯田闻名于世；**Hudhud** 史诗吟唱已被联合国教科文组织列入人类非物质文化遗产代表作名录；**Punnuk**（收获后跨河拔河祝福，UNESCO 相关公开叙述）为社群公开祝福／闭合农季层；**Bulul** 是置于谷仓的祖先—稻谷守护雕像；礼仪专家 **Mumbaki** 属 **viewing-only**（仅观礼）。科迪勒拉稻作梯田亦为世界遗产文化景观。本条目为教育概览；**不提供** mumbaki 祝圣脚本、献牲剂量、附体操作或任何可冒充祭司的步骤。

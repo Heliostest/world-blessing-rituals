@@ -1,5 +1,10 @@
 # 莱纳佩／特拉华传统信仰与大屋礼（Lenape／Delaware）
 
+![南蒂科克—莱尼莱纳佩部落首领马克·古尔德（2016年族裔 powwow）](./lenape-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mark_Gould,_chief_of_the_Nanticoke_Lenni-Lenape_Tribal_Nation,_June_2016.jpg -->
+
+
 ## 概述
 
 **莱纳佩人（Lenape；自称 Lenni Lenape，「真正的人」）** 亦常被英语文献称为 **Delaware（特拉华）**，属阿尔冈昆语族，传统家园在今新泽西、宾夕法尼亚东部、特拉华与纽约西南一带；殖民驱离后，后代主要分布于俄克拉荷马、威斯康星、安大略等地。大英百科《Delaware》概述其农业、渔猎与村社自治；宾大博物馆早期民族志记述其宇宙观：万物有灵力，至高者 **Gicelamukaong（造物主／「创造我们之主」）** 居于第十二重天，四方向、日、月、雷与「大地母亲」等各有职司；**Mesingw／Living Solid Face（活面具／猎物守护者）** 为重要神面象征。最核心的社群礼仪是秋季约十二夜的 **Gamwing／Big House（大屋礼）**：愿景颂唱、祈祷、舞蹈、圣火与共食，以求更新与感恩；俄克拉荷马特拉华社群最后一次完整大屋礼多记于 1924 年前后，其后有记录与复兴努力，但知识高度社群主权化。本条目为教育概览；**不提供**大屋礼程序、愿景求取诱导、面具扮装操作或任何可冒充礼仪带领者的步骤。

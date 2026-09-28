@@ -1,5 +1,10 @@
 # 梅希纳库传统信仰与辛古祈福（Mehinaku）
 
+
+![梅希纳库珠串项饰（上辛古）](./mehinaku-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AColar_Mehinaku.jpg -->
+
 ## 概述
 
 **梅希纳库人（Mehinaku／Mehinako）** 为巴西上辛古相关社群之一，以复杂性别礼仪空间、村际互惠与祖先宇宙闻名于民族志。公开概述记述：多语族辛古和平网络中的仪式生活；今日并存保护区自治。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。**非**库伊库罗／卡马尤拉／卡拉帕洛卡片的合并版。

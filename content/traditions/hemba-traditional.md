@@ -1,5 +1,9 @@
 # 赫姆巴传统信仰与祖先雕像祈福（Hemba）
 
+![达拉斯艺术博物馆赫姆巴祖先雕像（singiti）](./hemba-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Standing_Male_ancestor_figure_(singiti)_Hemba_peoples_Niombo_group_late_19th-early_20th_century_Dallas_Museum_of_Art.jpg -->
+
 ## 概述
 
 **赫姆巴人（Hemba）** 分布于刚果民主共和国东南（坦噶尼喀湖西侧相关地带）。公开艺术史以祖先雕像闻名——**极高敏感，本卡仅概念提及，绝不提供操作或「激活」描写**。今日并存基督教。教育概览；**严禁**法器／雕像仪轨操作化。与松格、卢巴、永贝等中非艺术—宗教条目区分。

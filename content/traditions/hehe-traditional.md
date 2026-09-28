@@ -1,5 +1,9 @@
 # 赫赫传统信仰与祖灵—基督教祈福（Hehe）
 
+![伊林加赫赫传统 vigoda 座席上的社群交流](./hehe-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Exchanging_ideas_while_having_fun_at_home_in_a_special_place_that_is_traditionally_prepared_with_Hehe_traditional_seats_from_Iringa_-_Tanzania,_chairs_known_as_vigoda_(hehe_slang)_from_Hehe_tribe.jpg -->
+
 ## 概述
 
 **赫赫人（Hehe）** 主要分布于坦桑尼亚伊林加高原一带。公开概述记述：传统宇宙强调祖先与酋长权威伦理；**Kalenga／Mkwawa heritage**（卡伦加／姆克瓦瓦抗殖民与酋长遗产公开史）见于地方纪念；岁时可见 **Kuhongela** 收获感恩公开层；祖先敬意常称 **Mahoka** 等相关公开概念（**Mahoka ancestral CONCEPT**）。今日多数受基督教影响，农牧与高原生计塑造节庆。本条目为教育概览；**不提供**献牲或可冒充仪者的步骤。与苏库马、尼亚姆韦齐、贝纳等条目区域不同，不可合并。

@@ -1,5 +1,9 @@
 # 特博利传统信仰与心灵中介祈福（Tʼboli）
 
+![特博利 Tʼnalak 织者（苏布湖）](./tboli-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:T%27nalak_weaver_at_Lake_Sebu,_South_Cotabato.jpg -->
+
 ## 概述
 
 **特博利人（Tʼboli／Tboli）** 分布于菲律宾棉兰老科塔巴托南／南哥打巴托等山区，以织锦、黄铜工艺与口述史诗闻名。公开民族志记述：传统宇宙分层，万物有灵，祖先持续作用；疾病与不幸常通过供奉与灵媒中介处理；今日并存基督教。本条目为教育概览；**不提供**通灵脚本、献牲操作或可冒充灵媒的步骤。

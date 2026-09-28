@@ -1,5 +1,9 @@
 # 拉斯塔法里（Rastafari）
 
+![尼亚宾吉鼓（Nyabinghi）](./rastafari.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Nyabinghi.jpg -->
+
 ## 概述
 
 拉斯塔法里（Rastafari，亦称 Ras Tafari）是发源于 1930 年代牙买加、后传播至全球多地的宗教—政治运动，融合新教基督教、神秘主义与泛非政治意识。名称取自埃塞俄比亚皇帝海尔·塞拉西一世（Haile Selassie I）加冕前的尊号 Ras Tafari。信众常称神为 *Jah*，以《圣经》出埃及与巴比伦之囚等叙事理解非洲裔在美洲的历史处境：身处“巴比伦”的流亡试炼，盼望回归象征救赎的“锡安”（常指向埃塞俄比亚）。许多（非全部）信众视海尔·塞拉西为弥赛亚与基督再临。生活方式原则称 *livity*，涵盖发辫（dreadlocks）、红绿金黑象征色，以及 *I-tal*（天然、偏素食）饮食。本条目为教育性概览，不提供致幻物使用方法、剂量或入会操作说明。

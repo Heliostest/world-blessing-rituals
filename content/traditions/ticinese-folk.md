@@ -1,5 +1,9 @@
 # 提契诺民间天主教与阿尔卑斯朝圣祈福（Ticinese）
 
+![门德里西奥圣周游行](./ticinese-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:ProcessioneMendrisio.jpg -->
+
 ## 概述
 
 **提契诺（Ticino）** 为瑞士唯一以意大利语为主的州，以湖山圣母朝圣地、堂区主保节与阿尔卑斯牧季祝福著称。公开记述重点包括：**门德里西奥圣周（Mendrisio Holy Week）** 游行（UNESCO 相关非遗叙事）、**Madonna del Sasso**（洛迦诺岩上圣母）朝圣、各堂区主保 **feste**，以及阿尔卑斯 **cattle descent（牧牛下山）祝福**。本条目为教育概览；**不提供**可冒充神职的脚本。与瓦尔瑟、弗里堡、特伦蒂诺条目可比较但提契诺意大利语瑞士认同独立。

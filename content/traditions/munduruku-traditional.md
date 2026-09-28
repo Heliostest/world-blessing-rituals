@@ -1,5 +1,9 @@
 # 蒙杜鲁库传统信仰与亚马孙祈福概观（Munduruku／Mundurucú）
 
+![蒙杜鲁库村落 Waro Apompu（库鲁鲁河／巴西帕拉）](./munduruku-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Waro_Apompu_(Posto_Munduruku_-_Rio_Cururu).JPG -->
+
 ## 概述
 
 **蒙杜鲁库人（Munduruku；亦作 Mundurucú）** 为巴西塔帕若斯河流域等地的图皮语系原住民族，以男性居屋传统、神话英雄 **Karusakaibo** 与当代反采矿权利运动闻名。公开百科记述：方济各会、浸信会与语言研究所等长期传教带来部分天主教／新教皈依；传统叙事强调创造者—文化英雄、动物与祖先灵、萨满疗愈，以及把疾病／意外归咎于sorcerer的社会张力。萨满公开记述以吹烟、拍打、吸出致病物等外观疗愈，并处理「失魂」叙事。本条目为教育概览；**不提供**萨满疗法步骤、致害魔法、历史战争／猎头细节的操作化，或任何可冒充萨满的程序。

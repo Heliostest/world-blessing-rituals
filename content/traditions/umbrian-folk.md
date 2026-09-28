@@ -1,5 +1,9 @@
 # 翁布里亚民间天主教与朝圣祈福（Umbrian）
 
+![阿西西圣方济各大殿](./umbrian-folk.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Assisi_San_Francesco_BW_4.JPG -->
+
 ## 概述
 
 **翁布里亚（Umbria）** 位于意大利中部，以阿西西圣方济各朝圣网络、山城圣母堂与修会传统著称。公开记述重点包括：**Assisi Basilica di San Francesco**、**Gubbio Festa dei Ceri**（蜡烛节／圣乌巴尔多），以及 **Cascia Santa Rita** 玫瑰朝圣。本条目为教育概览；**不提供**可冒充神职／修士的脚本。与托斯卡纳、拉齐奥、马尔凯条目可比较但翁布里亚朝圣核心独特。

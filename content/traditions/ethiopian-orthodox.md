@@ -1,5 +1,10 @@
 # 埃塞俄比亚正教会／特瓦希多（Ethiopian Orthodox Tewahedo）
 
+![冈达尔主显节（Timkat）抬约柜礼仪](./ethiopian-orthodox.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Timket_Ceremony_Gondar_Ethio.jpg -->
+
+
 ## 概述
 
 埃塞俄比亚正教会（Ethiopian Orthodox Tewahedo Church）是东方正统教会（Oriental Orthodox）传统中历史悠久的教会之一，主要分布于埃塞俄比亚，亦及厄立特里亚相关社群与侨散。百科指出其礼拜融合基督教礼仪与地方文化要素，重视旧约传统，教会圣典范围较广（公开论述常提及《以诺一书》等），许多信众实践割礼，并有人同时尊重周六安息与主日。每座堂区以 **tabot**（约柜／约版的神圣复制物）为圣所核心；无 tabot 则无法举行圣礼。2019 年，联合国教科文组织将纪念基督受洗的 **Timkat**（埃塞俄比亚主显节／显现节）列入人类非物质文化遗产代表作名录。本条目为教育性概览，仅述公开礼仪结构与节庆意义，不提供圣礼操作或驱邪程序。

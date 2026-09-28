@@ -1,4 +1,8 @@
 # 柬埔寨 Neak Ta／土地守护灵
+![柬埔寨佛寺旁的土地／守护灵神龛（spirit house）](./khmer-neak-ta.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:The_spirit_house.jpg -->
+
 
 ## 概述
 

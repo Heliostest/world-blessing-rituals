@@ -1,5 +1,9 @@
 # 亚齐伊斯兰与圣墓—习俗法祈福（Acehnese）
 
+![班达亚齐拜图拉赫曼大清真寺（Baiturrahman）](./acehnese-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Meuseujid_Raya_Baiturrahman,_Aceh.jpg -->
+
 ## 概述
 
 **亚齐人（Acehnese）** 分布于印度尼西亚苏门答腊北端，历史上有「麦加前廊」之称。公开百科记述：宗教生活以逊尼派伊斯兰为核心，朝觐、天课与莱麦丹斋戒尤其受重视；习惯法（adat）与沙里亚在地方论述中常被说成表里一体；公开民俗亦突出 **Kanduri** 等共餐宴饮、对著名苏菲／学者圣墓（如 **Tengku Syiah Kuala**）的朝谒，以及农业法术记忆与 **Pawang** 相关禁忌余绪。本条目为教育概览；**Pawang 禁忌仅 CONCEPT**；**不提供**法术操作、通灵脚本或任何政治动员话术。

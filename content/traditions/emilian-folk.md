@@ -1,5 +1,10 @@
 # 艾米利亚民间天主教与朝圣祈福（Emilian）
 
+![博洛尼亚圣路加圣母朝圣拱廊](./emilian-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Arcade_of_Sanctuary_of_the_Madonna_di_San_Luca,_Bologna,_Italy.jpg -->
+
+
 ## 概述
 
 **艾米利亚（Emilia）** 位于意大利北部（博洛尼亚、摩德纳、帕尔马一带），以堂区主保节、圣母朝圣地与兄弟会传统著称。公开文化记述尤以博洛尼亚 **Madonna di San Luca（圣路加圣母）** 朝圣闻名：朝圣者可沿长廊拱廊（portico）上山朝拜；摩德纳等地则有 **San Geminiano（圣杰米尼亚诺）**、**Sant’Ilario** 等城市圣人主保巡游。抬像巡游、**ex-voto（还愿物）** 与城市圣人敬礼构成祈福层；艾米利亚方言遗产是认同维度。本条目为教育概览；**不提供**可冒充神职的脚本。与罗马涅、皮埃蒙特、利古里亚条目可比较。

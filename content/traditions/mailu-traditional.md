@@ -1,5 +1,9 @@
 # 迈卢传统信仰与航海—基督教祈福（Mailu）
 
+![迈卢船只历史素描（M. Schurig）](./mailu-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Mailu_vessels.jpg -->
+
 ## 概述
 
 **迈卢人（Mailu）** 分布于巴布亚新几内亚中央省东南沿海岛屿与沿岸。公开概述记述：传统宇宙含祖先与航海／园圃伦理；历史上区域贸易网络显著；礼仪空间常称 **Dubu**（仪式屋／会堂类公开记述）；**Govi** 等长途贸易节庆见于文化记忆；今日多数为基督徒。本条目为教育概览；**Dubu** 仅 viewing；**Govi** 作长途贸易节庆公共／文化层；长者集会 viewing-only——**users don't officiate**。**不提供**献牲或可冒充仪者的步骤。与莫图希里贸易、特罗布里恩库拉对照但社群与地理独立。

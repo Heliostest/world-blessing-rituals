@@ -1,4 +1,8 @@
 # 哈卡斯萨满与腾格里祈福传统（Khakas）
+![哈卡斯男子民族服饰](./khakas-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:National_costumes_of_Khakas_man.jpg -->
+
 
 ## 概述
 

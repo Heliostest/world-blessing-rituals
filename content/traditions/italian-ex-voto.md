@@ -1,5 +1,9 @@
 # 意大利绘牌还愿（ex-voto / tavoletta votiva）
 
+![意大利教堂绘牌还愿（ex-voto／tavoletta votiva，Merano）](./italian-ex-voto.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Merano,_chiesa_di_San_Leonardo_-_Dipinto_ex_voto.jpg -->
+
 ## 概述
 
 意大利绘牌还愿（*ex-voto*，绘牌称 *tavoletta votiva*）是**天主教民间还愿的绘画形式（A）**：灾病、危难得脱之后，请工匠绘「危难场景＋呼求代祷＋平安结局」图式的小画板，题铭（常作 **P.G.R.**，*Per Grazia Ricevuta*，「为所蒙受之恩」）并献挂于圣母或圣人圣地，是**谢恩的公开化**多于纯许愿（Science Museum Group 藏 **1724 年 Deruta 锡釉陶牌**为例证）。它与墨西哥金属还愿符 milagros（`milagros.md`）、新西班牙绘板 ex-voto／retablo（美国国家医学图书馆展览页——对照传统而非同一物件）、天主教还愿烛同属「还愿可见记号」的大家族而**物件各异**，产品须**分文化分皮肤**；天主教整体语境见 `christianity.md`。

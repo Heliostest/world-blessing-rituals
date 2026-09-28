@@ -1,5 +1,10 @@
 # 夏尔巴宁玛派佛教与山神祈福（Sherpa）
 
+
+![腾博切寺与珠峰、洛子峰、阿玛达布拉姆](./sherpa-buddhist.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tengboche_Monastery_with_Views_of_Mount_Everest,_Lhotse_and_Ama_Dablam.jpg -->
+
 ## 概述
 
 **夏尔巴人（Sherpa）** 主要分布于尼泊尔东部高海拔谷地（如库姆布），语言文化与藏区密切相关。公开文化志记述：宗教以藏传佛教**宁玛派**为主，寺院（gompa）、喇嘛与节庆构成公共核心；同时山神、地方灵与苯教源流元素交织，珠峰在夏尔巴语境中常作 **Chomolungma**（世界之母）受敬；村喇嘛、某些通灵／占卜角色（公开记述中的 lhawa 等）处理日常超自然事务。本条目为教育概览；**不提供**密续修持细节、伏藏仪轨或可冒充喇嘛／通灵者的步骤。

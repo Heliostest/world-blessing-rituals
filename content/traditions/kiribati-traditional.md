@@ -1,5 +1,9 @@
 # 基里巴斯传统信仰与集会堂祈福余绪（Kiribati／I-Kiribati／Maneaba）
 
+![基里巴斯阿贝马马环礁的 Maneaba 集会堂](./kiribati-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Maneaba_in_Abemama,_Kiribati.jpg -->
+
 ## 概述
 
 **基里巴斯（Kiribati；居民自称 I-Kiribati，旧称吉尔伯特群岛）** 是中太平洋密克罗尼西亚岛国，大英百科记述其人口以天主教与基里巴斯新教为主。殖民与宣教之前，公开太平洋史研究指出：各家族敬奉称为 **anti** 的神灵与祖灵。村落社会政治—礼仪中心是 **神圣 Maneaba（集会堂）**：长老 **Unimwane** 按氏族席位议事。今日 maneaba 仍是迎客、调解与公共节庆核心；**anti** 属 CONCEPT；基督教节期与岛民节庆叠合为当代公开层。本条目为教育概览；**不提供**家族祖先祭坛操作、咒语、占卜或任何可复现的“召唤 anti”步骤——**users don't officiate**。

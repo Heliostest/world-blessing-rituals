@@ -1,5 +1,9 @@
 # 丘赫玛雅民间天主教与跨界祈福（Chuj）
 
+![危地马拉圣马修·伊斯塔坦（San Mateo Ixtatán）天主教堂——丘赫主保节公开礼仪空间](./chuj-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:San_Mateo_Ixtat%C3%A1n_16.jpg -->
+
 ## 概述
 
 **丘赫人（Chuj）** 分布于危地马拉韦韦特南戈西北与墨西哥恰帕斯交界，跨界社群特征显著。公开记述：玛雅宇宙观与天主教圣徒交织；**San Mateo Ixtatán** 主保节与盐矿祝福叙事见于公开文化层；山神龛／山灵圣地与 **Ajk'in（日师／daykeeper）** 传统属高度敏感——**Ajk'in CONCEPT ONLY**。迁徙、边境与难民记忆常进入当代祈祷叙述。本条目为教育概览；**不提供**日数占卜操作、献牲或可冒充日师的步骤。

@@ -1,5 +1,9 @@
 # 瓦莱达奥斯塔民间天主教与阿尔卑斯祈福（Valdostano）
 
+![治愈圣母朝圣地（Courmayeur）](./valdostano-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Notre-Dame_de_la_Gu%C3%A9rison.JPG -->
+
 ## 概述
 
 **瓦莱达奥斯塔（Valle d'Aosta）** 为意大利西北自治大区，以法语／法兰克—普罗旺斯语遗产、阿尔卑斯堂区与圣母朝圣地著称。公开记述重点包括：**Notre-Dame de la Guérison（治愈圣母）** 高山朝圣、**Saint-Bernard（圣伯尔纳多／大圣伯纳）** 阿尔卑斯庇护叙事、牧季 **Alpine pasture blessing（高山草场祝福）**，以及作为地方文化节庆的 **Bataille des Reines（女王之战／母牛角力）**——后者为牲畜民俗表演，**非核心宗教仪轨**。本条目为教育概览；**不提供**可冒充神职的脚本。与萨瓦、提契诺、瓦尔瑟条目可比较但奥斯塔山谷认同独立。

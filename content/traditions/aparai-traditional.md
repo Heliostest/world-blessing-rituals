@@ -1,5 +1,9 @@
 # 阿帕莱传统信仰与圭亚那盾祈福（Aparai / Apalai）
 
+![阿帕莱陶器（巴西国家博物馆藏，约 1930，帕拉河）](./aparai-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Cer%C3%A2mica_-_Apara%C3%AD_MN_01.jpg -->
+
 ## 概述
 
 **阿帕莱人（Aparai，亦作 Apalai）** 分布于巴西北部与圭亚那盾雨林（常与瓦亚纳等社群比邻）。公开叙述涉及村落礼仪、成年礼与护佑观念——**极高敏感，本卡仅概念层**。今日并存基督教接触与土地议题。教育概览；**严禁**入会细节或可冒充仪者的步骤。与瓦亚纳、蒂里奥等条目区分。

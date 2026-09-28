@@ -1,5 +1,9 @@
 # 切罗基祈福与青玉米礼（Cherokee）
 
+![北卡罗来纳切罗基人准备青玉米礼舞蹈](./cherokee.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Cherokee_Indians_ready_for_The_Green_Corn_Dance,_Cherokee,_N._C._(5755511285).jpg -->
+
 ## 概述
 
 **切罗基（Cherokee，自称ᏣᎳᎩ／Tsalagi 等）** 是北美东南文化区的原住民民族，今有联邦承认的部落政府分布于俄克拉何马与北卡罗来纳等地。公开百科与民族志综述记述：传统宗教生活强调与造物、氏族、圣火与河川的关系；年度高峰之一是**青玉米礼（Green Corn Ceremony）**——在新玉米成熟时举行的净化、和解与更新庆典。另有 **Stomp Dance** 等广场舞蹈传统在当代部落生活中延续。许多礼仪知识仍属社群内部，本条目仅综合公开教育材料；**不提供**抓痕放血、致呕药饮、「下水」仪式操作、圣火重燃程序或可复现的医药／入会指引。

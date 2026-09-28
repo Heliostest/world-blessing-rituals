@@ -1,5 +1,9 @@
 # 马库希传统信仰与拉内马山祈福（Macushi / Makushi）
 
+![马库希／马库西人围篝火](./macushi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Macuxi_people_around_bonfire.jpg -->
+
 ## 概述
 
 **马库希人（Macushi，亦作 Makushi）** 分布于圭亚那、巴西与委内瑞拉交界的拉内马／圭亚那盾草原—森林过渡带。公开叙述涉及村落礼仪、神话与护佑观念——**高度敏感，本卡仅概念层**。今日并存基督教与采矿／保育张力。教育概览；**严禁**萨满操作或可冒充仪者的步骤。与瓦伊瓦伊、佩蒙等条目区分。

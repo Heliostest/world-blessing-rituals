@@ -1,5 +1,9 @@
 # 佐齐尔玛雅民间天主教与山灵祈福（Tzotzil）
 
+![圣胡安查穆拉狂欢节广场](./tzotzil-maya.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Carnaval_San_Juan_chamula%2C_Plaza_de_San_juan.jpg -->
+
 ## 概述
 
 **佐齐尔人（Tzotzil）** 为墨西哥恰帕斯高地玛雅语族群，著名社区包括 Chamula、Zinacantán 等。公开民族志记述：宇宙常呈四角—中心结构，圣山与祖先神（Totilme'il 等）极重要；太阳／基督、月亮／圣母等天主教象征与玛雅神性深度交融；地主（Earth Lord）、动物伴魂与 **ilol（看见者／疗愈者）** 等角色维系私人疗愈与公共节庆。本条目为教育概览；**不提供**疗愈脚本、祭品清单操作或可冒充 cargos 职分的步骤。与基切、拉坎顿条目可比较。

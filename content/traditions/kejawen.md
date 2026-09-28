@@ -1,5 +1,9 @@
 # 爪哇克贾文／爪哇教（Kejawen / Agami Jawi）
 
+![爪哇千日忌 Slametan（nyewu）共餐礼仪](./kejawen.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Slametan_nyewu.jpg -->
+
 ## 概述
 
 克贾文（Kejawen，亦称 Agami Jawi、「爪哇宗教」）是印度尼西亚爪哇岛中东部爪哇人传统中的**综摄性民间—神秘信仰与礼仪实践**，融合本土万物有灵、印度教—佛教遗产与伊斯兰苏菲式元素。公开礼仪层强调：**Bersih Desa** 村落净化；**Kraton Labuhan** 宫廷／海洋谢恩仪典的公开文化史；**Modin／Kaum** 作为 designated hosts——**users don't officiate slametan**。本条目为教育性概览，不对禁食修炼细节、护符制作提供操作说明。

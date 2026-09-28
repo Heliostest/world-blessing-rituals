@@ -1,5 +1,9 @@
 # 瓦尔瑟民间基督教与阿尔卑斯祈福（Walser）
 
+![福拉尔贝格雪中圣母小堂（Maria Schnee）](./walser-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Nenzing-Kapelle_Maria_Schnee_in_Halden-02ASD.jpg -->
+
 ## 概述
 
 **瓦尔瑟人（Walser）** 为阿尔卑斯德语方言少数社群，分布于瑞士、意大利、奥地利等高海拔山谷。公开记述重点包括：**Maria Schnee（雪中圣母）** 山村小堂、**Alpabfahrt（下山转场）**、**Alpsegen（高山草场祝福）**，以及 **Walser culture days（瓦尔瑟文化日）** 语言—认同节庆。本条目为教育概览；**不提供**可冒充神职的脚本，并与罗曼什、拉丁、弗里西条目可比较少数语言山区基督教。

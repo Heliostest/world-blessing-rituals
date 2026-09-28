@@ -1,5 +1,9 @@
 # 马林德传统信仰与沼泽—祖先祈福（Marind）
 
+![马林德—阿尼姆人祖先屋（历史影像）](./marind-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Een_voorouderhuis_van_de_Marind_Anim,_KITLV_500304.tiff -->
+
 ## 概述
 
 **马林德人（Marind／Marind-Anim）** 分布于新几内亚南部沿海—沼泽地带（今印度尼西亚南巴布亚及相关地区）。公开概述记述：传统宇宙强调祖先与复杂成年礼仪；殖民与当代发展压力深刻；历史上战争叙事曾被过度猎奇。本条目为教育概览；**严禁**入会、献牲、猎首任何操作化。与阿斯马特、达尼等巴布亚条目区分。

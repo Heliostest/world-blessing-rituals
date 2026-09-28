@@ -1,5 +1,9 @@
 # 奥朗林巴传统信仰与苏门答腊雨林祈福（Orang Rimba）
 
+![苏门答腊林中奥朗林巴／库布人在叶棚前起舞（历史影像）](./orang-rimba-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Twee_dansende_Kubu_mannen_bij_een_hut_in_het_bos_in_de_Boven-Tebo-streken_in_de_residentie_Djambi_TMnr_60043255.jpg -->
+
 ## 概述
 
 **奥朗林巴（Orang Rimba；亦称库布／Kubu 等他称，部分带贬义）** 为苏门答腊内陆雨林相关原住民群体，历史上游动采集与小型开垦并存。公开人权与民族志记述：宇宙观强调森林禁忌、祖先与地方灵；当代核心危机是油棕扩张、伐林与强制定居／改宗压力。本条目**仅作高度克制概览**；**不提供**猎仪、献牲或可冒充仪者的步骤。

@@ -1,5 +1,9 @@
 # 萨波特克／云之民传统祈福（Zapotec／Ben'Zaa）
 
+![瓦哈卡圣多明各文化中心古典萨波特克陶俑](./zapotec-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Classical_Zapotec_Figure_-_Santo_Domingo_Cultural_Center_-_Oaxaca_City_-_Oaxaca_-_Mexico_(6490931829).jpg -->
+
 ## 概述
 
 **萨波特克人（Zapotec；自称常作 Ben'Zaa／「云之民」）** 是墨西哥瓦哈卡州最大的原住民群体之一，分布于中央谷地、特万特佩克地峡、北部山地与南部海岸山地；语言属奥托—曼格语系，内部方言／语言多样。大英百科概述其以村镇为中心的农业社会（玉米、豆、南瓜等）。encyclopedia.com 等公开民族志记述：前西班牙宇宙观含中心与四方、雨神等自然力量；近现代则以天主教圣人崇奉为主干，并与前西班牙余绪交融——包括动物守护灵（tono）、巫师与魔鬼形象、基督像等。传统农业礼仪中，雷电／雨神 **Cosijo（Cociyo）** 曾极为重要；今日重要公共礼仪多在主保圣人日与**诸圣瞻礼（Todos Santos）**。本条目为特定民族卡，与总览性「中美洲土著余绪」及邻近的米斯特克条目互补；**不提供**献牲、占卜历法操作、巫技或任何可冒充仪式专家的程序。

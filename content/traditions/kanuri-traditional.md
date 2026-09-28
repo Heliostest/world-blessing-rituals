@@ -1,5 +1,9 @@
 # 卡努里伊斯兰与博尔努宫廷—民间祈福（Kanuri）
 
+![尼日利亚博尔努州卡努里文化舞蹈表演](./kanuri-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:A_Cultural_Kanuri_Dance_Performance_-_Borno_State.jpg -->
+
 ## 概述
 
 **卡努里人（Kanuri）** 主要分布于尼日利亚东北、尼日尔、乍得与喀麦隆交界的乍得湖盆地，与历史上卡内姆—博尔努等伊斯兰国家遗产相关。公开记述强调：**Durbar／Gani** 等宫廷—节庆公开展演；**Shehu of Borno** 作为传统政治—宗教威仪象征；经堂教育中的 **Malam** 职分；民间层亦可见敏感护佑实践——**CONCEPT ONLY**。本条目为教育概览；**不提供**护符配方或可冒充马拉布特的步骤——**users don't officiate**。

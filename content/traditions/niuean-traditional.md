@@ -1,5 +1,10 @@
 # 纽埃传统信仰与村社祈福余绪（Niuean）
 
+![纽埃宪法日五十周年庆典（2024）](./niuean-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Niue_Constitution_Day_-_50th_Anniversary,_Niue,_19_October_2024-071.jpg -->
+
+
 ## 概述
 
 **纽埃人（Niuean）** 居住于中太平洋抬升珊瑚岛纽埃（Niue），语言属波利尼西亚语通加支；邻近汤加、萨摩亚与库克群岛。encyclopedia.com《Niueans》记述：前基督教信仰以战神 **Tangaloa**、知识之神 **Hina** 及众多地方神灵为焦点；无偶像崇拜，但有护岛 **mana** 的护符 **tokamotu**，据称置于禁忌洞穴约两百年。1846 年起彭尼亚米纳（Peniamina）等推动归信，至十九世纪六十年代伦敦传道会公理宗主导；今日多数属 Ekalesia Niue，同时许多岛民仍相信 **aitu**（鬼灵／亡者相关存在）与祖灵的超自然世界。生命礼仪含男孩理发礼、女孩穿耳礼等公开文化记述；周日安息与村社节庆交织基督教与波利尼西亚互惠宴饮。本条目为教育概览；**不提供**禁忌洞穴定位探访教唆、招魂、成丁身体改造步骤或任何可冒充仪式专家的操作。

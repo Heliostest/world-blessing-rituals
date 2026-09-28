@@ -1,5 +1,9 @@
 # 特佩瓦内民间天主教与山地祈福（Tepehuan／O'dam）
 
+![特佩瓦内斯圣卡塔利娜教堂](./tepehuan-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Templo_de_Santa_Catarina_de_Tepehuanes_2008-08-08.jpg -->
+
 ## 概述
 
 **特佩瓦内人（Tepehuan；自称常作 O'dam 等相关公开称呼，分南北支系）** 分布于墨西哥杜兰戈、奇瓦瓦与纳亚里特等山地。公开概述记述：天主教圣徒与地方山灵、玉米伦理交织；今日并存新教接触与土地议题。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与塔拉乌马拉、维萨里卡／惠乔尔、科拉等北部山地条目区分。

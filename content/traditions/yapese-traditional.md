@@ -1,5 +1,10 @@
 # 雅浦传统信仰与村社祈福余绪（Yapese）
 
+
+![雅浦约尔拉普会所与石币（NOAA）](./yapese-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Community_house_of_Yorlap_(Yap_Islands)_with_stone_money_made_in_Palau_NOAA.jpg -->
+
 ## 概述
 
 **雅浦人（Yapese）** 居住于密克罗尼西亚联邦雅浦州主岛及关联岛屿，以 **Rai** 石币交换文化、航海网络与复杂等级—土地制度闻名。公开记述重点包括：**Yap Day** 文化节、**Churu'** 等坐舞公共展演，以及 **Faluw** 男子会所作为社会组织概念（**CONCEPT ONLY，受限空间，无 how-to**）。今日天主教为中央公共信仰。本条目为教育概览；**不提供**法术配方、圣地祭司操作、会所入会或任何可冒充仪式专家的程序。

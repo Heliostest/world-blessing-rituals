@@ -1,5 +1,9 @@
 # 科米传统信仰（Komi／Zyryan–Permian）
 
+![科米猎人传统服饰（芬兰—乌戈尔民族志公园）](./komi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:A_hunter_of_the_Komi_people_in_a_traditional_costume.jpg -->
+
 ## 概述
 
 **科米人（Komi）** 包括科米—兹良人（Zyryan）与科米—彼尔米亚克人（Permian），属乌拉尔语系芬兰—乌戈尔语支，世居俄罗斯东北部（今日科米共和国及彼尔姆边疆区一带）。Encyclopedia of Religion「Komi Religion」综述指出：十四至十五世纪接受东正教后，前基督教的森林／水灵、家户灵与祖先观念仍长期以民俗形式存续。公共／民俗层突出 **Lud** 仲夏草甸节等季节聚会；**Vörsa（林主）** 与 **Vasa（水灵）** 属 folklore／ethics CONCEPT 层。本条目与马里、乌德穆尔特、汉特—曼西等伏尔加／乌拉尔条目区分；**不提供**巫术咒语、占卜操作、献牲或可复现「请林灵」步骤——**users don't officiate**；atmosphere-only。

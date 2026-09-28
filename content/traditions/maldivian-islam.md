@@ -1,5 +1,10 @@
 # 马尔代夫伊斯兰与岛礁民间祈福（Maldivian／Divehi）
 
+![马累旧星期五清真寺 Hukuru Miskiiy 宣礼塔](./maldivian-islam.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Old_Friday_Mosque_(32840283891).jpg -->
+
+
 ## 概述
 
 **马尔代夫人（Divehi／Maldivian）** 居住于印度洋珊瑚岛链，国教为逊尼派伊斯兰。公开概述记述：清真寺、经堂教育、莱麦丹与 **Kuda Eid／Bodu Eid**（开斋／宰牲）构成公共宗教生活；**Bodu Beru** 鼓舞为广为人知的公共文化表演；历史上曾有佛教阶段，今日官方伊斯兰框架下仍可见对地方圣墓与 **Fanditha** 护佑民俗的民间叙述（须谨慎，避免污名）。本条目为教育概览；Eid 公共层；Bodu Beru 公共鼓舞；**Fanditha** 仅 CONCEPT ONLY——**no performance**；**users don't officiate**。**不提供**护符配方或可冒充教法权威的步骤。

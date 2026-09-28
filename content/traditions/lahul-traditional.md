@@ -1,5 +1,10 @@
 # 拉豪尔藏传与喜马偕尔祈福（Lahul / Lahaul）
 
+![拉豪尔三界主／特里洛基纳特（Trilokinath）朝圣地外观](./lahul-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Trilokinath_temple_near_Udaipur_Himachal_Pradesh.jpg -->
+
+
 ## 概述
 
 **拉豪尔（Lahul／Lahaul）** 位于印度喜马偕尔邦，与斯皮蒂常合称拉豪尔—斯皮蒂县，但山谷文化史相对独立。公开宗教生活交织藏传佛教、地方神与印度教接触——**中高敏感**。公共／观礼层突出冬季 **Halda** 火把节、**Triloknath Temple（三界主／观音相关朝圣地）** 与 **Kardang Gompa** 等开放寺院；**密续与闭关**属极高敏感——HIGH SENSITIVITY CONCEPT ONLY。本卡仅公开寺院／节庆层；不提供密续或驱邪操作——**users don't officiate**。与斯皮蒂、金瑙尔、拉达克等条目区分；**本文件仅拉豪尔传统，不含兰戈（Lango）或其他非洲条目内容。**

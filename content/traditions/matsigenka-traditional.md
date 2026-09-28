@@ -1,5 +1,10 @@
 # 马奇根卡传统信仰与萨满祈福概观（Matsigenka）
 
+
+![马奇根卡女性传统服饰（秘鲁潘戈阿）](./matsigenka-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AMachiguenga_woman.jpg -->
+
 ## 概述
 
 **马奇根卡人（Matsigenka／Machiguenga）** 分布于秘鲁东南亚马孙（乌鲁班巴上游等），属阿拉瓦克语族公开分类，与阿沙宁卡等群体可比较。公开民族志记述：创世者与Trickster、动物主灵、林中危险灵构成宇宙；**seripigari（萨满）** 通过与「不可见者」协作诊断疗愈；文献广泛提及致幻植物礼仪。本条目**仅作高度克制概览**；**绝不提供**致幻剂制备、剂量、出神诱导或巫术操作。

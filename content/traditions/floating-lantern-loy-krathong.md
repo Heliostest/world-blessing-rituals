@@ -1,5 +1,9 @@
 # 河灯／水灯（Loy Krathong）
 
+![泰国水灯节河上漂放的水灯（krathong）](./floating-lantern-loy-krathong.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Loy_Krathong_A_Celebration_of_Light_and_Renewal.jpg -->
+
 ## 概述
 
 河灯／水灯是**水面漂放型灯俗（A 民俗／节庆）**，本卡分述两个系统。其一是**中国中元放河灯**：农历七月半中元节前后，将灯盏点燃后置于水面漂流，寄托对先人的思念（新华社文化报道）；广西资源等地更形成「河灯节」形态，见中国非物质文化遗产网「中元节（资源河灯节）」项目页。其二是**泰国 Loy Krathong（水灯节）**：满月之夜（2024 年节庆在十一月，泰国观光局新闻稿），人们把以植物材料制成、点上烛火的小浮灯 *krathong* 放入河中，是泰国著名的灯之节庆。两者同属「水面漂放」家族，但节令、语义与物件各自独立，须**分述**。河灯**不是**天灯——不点火升空，与平溪天灯（`sky-lantern-pingxi.md`）是两种实践；**不是**寺院供灯（供灯见 `chinese-buddhism.md` 等）；北泰 **Yi Peng 天灯节**虽常与 Loy Krathong 时期相邻，但属放飞天灯的另一节俗，**勿并入本卡**（若他日产品化须另开条目）。

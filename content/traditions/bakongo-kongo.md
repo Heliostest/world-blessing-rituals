@@ -1,5 +1,9 @@
 # 巴刚果／刚果传统宗教（Bakongo／Kongo traditional religion）
 
+![大英博物馆藏刚果 nkisi nkondi 力量雕像（19世纪）](./bakongo-kongo.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:British_Museum_Room_25_Nkisi_Kongo_people_19th_century_17022019_4979.jpg -->
+
 ## 概述
 
 **刚果人（Kongo／Bakongo）** 是班图语族群体，分布于刚果民主共和国西部、刚果共和国与安哥拉北部沿海至宽果河一带。大英百科与《宗教百科》等概述：传统宗教以全能创造者 **Nzambi Mpungu／Nzambi Kalunga** 为终极力量来源，但日常祈福与裁决多经由**祖先（bakulu）**、地方灵与 **minkisi（单数 nkisi，圣药／力量容器）** 中介。专业职分者 **nganga** 制作、启用 minkisi，处理疾病、誓约、保护与社会失序。历史上王国政治、大西洋奴隶贸易、殖民与天主教／独立教会（如金邦古主义）深刻重塑实践，但祖先土地伦理与可见—不可见世界互通的宇宙观仍具韧性，并对美洲非裔宗教产生深远影响。本条目为教育性概览；**不提供** minkisi 制作／启用、「钉入 nkondi」操作、巫蛊对抗或入会可复现步骤。

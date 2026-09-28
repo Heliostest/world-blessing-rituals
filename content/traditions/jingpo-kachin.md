@@ -1,5 +1,9 @@
 # 景颇／克钦传统信仰与目瑙纵歌祈福（Jingpo／Kachin）
 
+![德宏芒市非正式目瑙／曼瑙集体舞蹈](./jingpo-kachin.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Informal_Manau_dance_in_Mangshi%2C_China.jpg -->
+
 ## 概述
 
 **景颇人（Jingpo；缅甸语境常作克钦／Kachin）** 为汉藏语系藏缅语族跨国民族。公开记述：盛大集体礼仪／节庆 **Munaw Zongge（目瑙纵歌）** 为公共层；**Jaiwa** 史诗吟唱为文化传承；村社 **Numshang** 与 **Nat** 精灵信仰属 **CONCEPT viewing**——**users don't officiate**。本条目为教育概览；**不提供** dumsa 附体脚本、献牲步骤或可冒充 jaiwa／dumsa 的程序。

@@ -1,5 +1,9 @@
 # 马孔德传统信仰与祖灵—木雕祈福（Makonde）
 
+![马孔德 Mapiko／Lipiko 面具（华沙民族志博物馆）](./makonde-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mapiko_Lapiko_Mask_in_the_National_Ethnographic_Museum,_Warsaw.jpg -->
+
 ## 概述
 
 **马孔德人（Makonde）** 为莫桑比克东北与坦桑尼亚东南的班图语民族，大英百科强调其刀耕火种农业、母系继嗣与举世闻名的木雕艺术。公开文化层包括 **Mapiko／Lipiko** 面具舞等可观礼的公共表演文化；**Jando／Unyago** 成年礼仪仅作 **CONCEPT ONLY**，并附强烈**注意与尊重**（无任何隔离、舞蹈或身体标记操作细节）。木雕中的 **Shetani** 等造型常作为纪念、认同与灵性想象的视觉文化；传统祖灵敬奉常与伊斯兰／基督教并存。本条目为教育概览；**不提供**入会步骤、献牲、巫术或任何可冒充仪式专家的程序。

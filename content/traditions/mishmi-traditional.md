@@ -1,5 +1,10 @@
 # 米什米传统信仰与精灵—高神祈福（Mishmi）
 
+
+![米朱米什米少女传统服饰（Tamladu 节庆）](./mishmi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Miju_Mishmi_Girl.jpg -->
+
 ## 概述
 
 **米什米人（Mishmi）** 分布于阿鲁纳恰尔邦迪邦／洛希特等河谷，支系含 Idu、Digaru、Miju 等公开分类。公开研究记述：传统宇宙强调高神（如 Idu 语境中的 Inni 等公开叙述）与众多善恶精灵；仪式与献牲在文献中被广泛提及；部分支系发展本土制度化信仰（如 Intayaism 等公开讨论），亦有基督教与藏传佛教接触。本条目为教育概览；**不提供**献牲操作、出神脚本或可冒充祭司的步骤。

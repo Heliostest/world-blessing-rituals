@@ -1,5 +1,9 @@
 # 巴干达／卢巴莱传统宗教（Baganda Balubaale／Lubaale）
 
+![乌干达卡苏比布干达诸王之陵（UNESCO）](./baganda-lubaale.jpg)
+
+<!-- 来源：CC BY-SA 3.0 IGO | https://commons.wikimedia.org/wiki/File:Tombs_of_Buganda_Kings_at_Kasubi-114316.jpg -->
+
 ## 概述
 
 **巴干达人（Baganda／Ganda）** 是乌干达最大民族之一，历史王国 **Buganda** 以卡巴卡（kabaka）王权闻名。大英百科与 Encyclopedia.com 记述：传统宗教承认创造者神 **Katonda**，并以 **balubaale／lubaale**（常被早期英文写作 gods，近人亦强调其多由非凡人物升格的守护者／英雄灵）组成国家与氏族层级的灵性体系；重要者包括与维多利亚湖、健康与丰饶相关的 **Mukasa**，以及战事相关的 **Kibuuka／Kibuka**。祭司守庙，先知／灵媒可代求；祖先灵（mizimu）与自然灵亦活跃于日常生活叙事。今日多数巴干达人为基督教或穆斯林，但公开记述仍提到传统医药、祖先敬拜与灵媒实践的延续。本条目为教育性概览；**不提供**附体脚本、巫蛊操作、牲礼教程或王室密室仪程。

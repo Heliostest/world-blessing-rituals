@@ -1,5 +1,9 @@
 # 巴厘印度教（Agama Hindu Dharma / Agama Tirta）
 
+![巴厘岛 Canang sari 日常鲜花供品](./balinese-hindu.jpg)
+
+<!-- 来源：CC0 1.0 | https://commons.wikimedia.org/wiki/File:Canang_sari.jpg -->
+
 ## 概述
 
 巴厘岛是印度尼西亚主要信奉印度教的地区；当地传统常自称 **Āgama Tīrtha**（“圣水之宗教”），今日官方语境亦称 **Agama Hindu Dharma**。它融合湿婆派、佛教余绪、祖先崇拜与更古老的马来—波利尼西亚自然神观，并以庙宇网络、日常 **Canang sari**、**Odalan** 庙会、**Pemangku** 职分与圣水（*tirta*）贯穿公私生活；**Ngaben** 火葬由祭司主导、外人仅可观礼。与南亚多数印度教形态不同，巴厘礼仪高度地方化：水利庙宇同步农耕、种姓与村落各有专属庙会，神祇按日历受邀降临而非常驻殿中。联合国教科文组织将巴厘的 *subak* 灌溉合作与水利庙宇文化景观列为世界遗产，说明祈福与生态管理紧密相连。本条目为教育性概览，不提供可复现的牲礼切割或密教仪轨细节。

@@ -1,5 +1,10 @@
 # 莫尔多瓦／厄尔齐亚—莫克沙传统信仰与东正教祈福（Mordvin）
 
+
+![厄尔齐亚媒人传统头饰（红绣）](./mordvin-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Erzya._Erzya_matchmaker%27s_headdress_(red_embroidery)_02.jpg -->
+
 ## 概述
 
 **莫尔多瓦人（Mordvin）** 含 **厄尔齐亚（Erzya）** 与 **莫克沙（Moksha）** 两大支系，主要分布于俄罗斯伏尔加河中游莫尔多瓦共和国及周边。大英百科芬—乌宗教综述指出：东正教表层之下仍可见家灵、自然敬意与岁时民俗；1990 年代起亦有 **Erzyan Mastor** 等民族宗教复兴组织举办公开祈请（如 Ras'ken' Ozks）。本条目为教育概览；**不提供**可冒充祭司的复兴仪轨脚本，也不把政治争议写成操作指南。

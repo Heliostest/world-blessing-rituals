@@ -1,5 +1,10 @@
 # 贡德人氏族神与祖先祈福传统（Gond／Koitur）
 
+![贡德妇女在凯斯拉布尔纳戈巴朝圣节向神祇献圣水](./gond-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Gond_tribal_women_offering_holy_water_to_their_deity_during_Keslapur_Nagoba_Jatara.jpg -->
+
+
 ## 概述
 
 **贡德人（Gond；自称 Koi／Koitur）** 是南亚次大陆人数最多的表列部落群体之一，主要分布于印度中央邦、恰蒂斯加尔、马哈拉施特拉、奥里萨等地的丘陵与森林地带，多数方言属达罗毗荼语族的贡德语。大英百科与民族志综述一致指出：各支系文化不尽相同，但宗教核心普遍围绕**氏族与村落神祇崇拜**以及**祖先敬拜**。公开节庆入口含 **Keslapur Nagoba Jatara**（纳戈巴朝圣／集会公开层）与 **Madai fair**（地方集市—节庆层）；世袭吟游—乐师 **Pardhan** 以琴音传述史诗（**Pardhan epic**）；丧葬纪念柱（**funerary posts**）属 **HIGH SENSITIVITY**。本条目为教育概览；**不提供**献牲程序、咒语、巫蛊操作或任何可冒充祭司的步骤。

@@ -1,5 +1,9 @@
 # 布格雷传统信仰与山地祈福（Buglé）
 
+![巴拿马恩加贝—布格雷自治区传统服饰](./bugle-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Indígenas_Gnabe_Bugle._Panamá.jpg -->
+
 ## 概述
 
 **布格雷人（Buglé）** 分布于巴拿马西部，与恩加贝共同构成 Ngäbe-Buglé 自治区语境，但语言—认同分立。公开概述记述：传统宇宙强调大地与主人灵伦理；今日并存基督教；采矿与自治议题显著——**勿消费抗争**。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。**非** `ngabe-traditional.md` 的重复。

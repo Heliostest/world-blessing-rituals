@@ -1,5 +1,9 @@
 # 博多／巴托信仰（Bathou）
 
+![博多巴托祭礼（Bathou Puja）场景](./bathou-bodo.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Bathou_puja_new_jpg_bodo_mainau_borainai.jpg -->
+
 ## 概述
 
 **博多人（Bodo／Boro）** 是印度东北阿萨姆等地的藏缅语族原住民族群。大英百科记述其宗教多元：部分社群奉印度教，亦有延续村落、家庭与自然神灵的传统信仰，另有改宗基督教者。传统民族宗教常称 **Bathou／Bathouism**（词源常释为「五」与「深层／哲思」），以至上神 **Bathoubwrai／Bwrai Bathou** 与五元素原理为核心，并以 **Sijou**（大戟属植物，常作生命／灵魂象征）立于家庭或村落祭坛。当代有 All Bathou Mahasabha 等组织推动制度化（公共祭坛 *thansali*、祭司职分、文献整理）。本条目为教育性概览；**不提供**牲礼操作、Kherai 等完整祭典程序或祭司祷词。

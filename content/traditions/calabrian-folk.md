@@ -1,5 +1,9 @@
 # 卡拉布里亚民间天主教与朝圣祈福（Calabrian）
 
+![卡拉布里亚波尔西圣母像（Madonna di Polsi）](./calabrian-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Santuario_Polsi_-_Statua_Madonna_di_Polsi_Processione.jpg -->
+
 ## 概述
 
 **卡拉布里亚（Calabria）** 位于意大利半岛西南端，以圣母朝圣地、村社主保节与海岸还愿传统著称。公开天主教民俗记述：抬像巡游、苦路与移民还愿构成祈福层；著名圣地包括 **Madonna di Polsi（波尔西圣母）** 朝圣。希腊语岛（Grecanico）等少数遗产并存。部分村社圣周／节庆公开层可见 **Vattenti** 等自我鞭笞苦修的历史—民俗外观——**仅作公共文化现象记述**，须强烈注意与尊重，**绝不提供**如何操作或任何美化／鼓动。本条目为教育概览；**不提供**可冒充神职的脚本。与西西里、普利亚、巴西利卡塔条目可比较但卡拉布里亚认同独立。

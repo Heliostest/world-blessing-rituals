@@ -1,5 +1,9 @@
 # 萨摩亚／法阿萨摩亚村社礼仪与祝福文化（Samoan／Faʻa Sāmoa）
 
+![萨摩亚萨瓦伊岛 Lelepa 村传统集会屋 fale](./samoan-faa-samoa.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File%3ASamoan_fale%2C_Lelepa_village%2C_Savaii%2C_Samoa_2009.JPG -->
+
 ## 概述
 
 **法阿萨摩亚（Faʻa Sāmoa，Samoan Way）** 是萨摩亚群岛（独立国家萨摩亚与美属萨摩亚）及离散社群中持续实践的整全生活方式。公开文化材料强调：核心是扩展家庭 **ʻaiga**、族长 **matai** 制度、村议会 **fono**、尊重长辈与互惠服务；基督教自十九世纪起与当地伦理深度交织。

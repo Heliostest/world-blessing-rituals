@@ -1,5 +1,10 @@
 # 马姆玛雅民间天主教与山灵祈福（Mam）
 
+![危地马拉 Todos Santos Cuchumatán 主保节／节庆现场](./mam-maya.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Guatemala_todos_santos_3170a.jpg -->
+
+
 ## 概述
 
 **马姆人（Mam）** 为危地马拉西部高地（及墨西哥恰帕斯部分地区）玛雅语族群。公开民族志模式与其他高地玛雅相似：天主教圣徒、十字架与 **cofradía**／fiesta 职分与山灵、祖先、玉米田宇宙交织；**Todos Santos Cuchumatán** 主保节为广为人知的公开瞻礼；**Ajq'ij**（日守／日计者）职分见于公开文化叙述。内战与移民深刻影响当代宗教生活（含福音派增长）。本条目为教育概览；Todos Santos 主保节；Cofradía 游行公开观礼；**Ajq'ij** 仅 CONCEPT／viewing ONLY——**users don't officiate**。**不提供**疗愈脚本、献祭操作或可冒充仪者的步骤。与基切、凯克奇、佐齐尔条目可比较。

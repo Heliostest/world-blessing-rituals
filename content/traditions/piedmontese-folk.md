@@ -1,5 +1,9 @@
 # 皮埃蒙特民间天主教与朝圣祈福（Piedmontese）
 
+![瓦拉洛圣山小堂](./piedmontese-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Sacro_Monte_(Varallo_Sesia)_20.jpg -->
+
 ## 概述
 
 **皮埃蒙特（Piedmont）** 位于意大利西北，以都灵圣骸布敬礼传统、阿尔卑斯山村圣母朝圣地与村社主保节著称。公开天主教民俗记述：朝圣、还愿与山居祝福构成祈福层；皮埃蒙特语遗产是认同维度。本条目为教育概览；**不提供**可冒充神职的脚本。与利古里亚、瓦尔瑟、萨瓦条目可比较。

@@ -1,5 +1,9 @@
 # 匈牙利民间天主教与朝圣祈福（Hungarian Folk／Magyar népi vallásosság）
 
+![马特劳韦雷贝伊—圣井全国朝圣地圣像](./hungarian-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:MatraverebelySzentkutFotoThalerTamas20.jpg -->
+
 ## 概述
 
 **匈牙利（Magyarország）** 民间祈福传统以拉丁礼天主教为主干，并与更早的圣王崇拜、圣母显现圣地与村落岁时习俗交织；大英百科概述匈牙利历史上为天主教国家，同时新教与世俗人口亦具分量。公开朝圣文化中，**Mátraverebély-Szentkút** 被枢机主教宣布为全国朝圣地（Nemzeti Kegyhely），方济各会管理，传说与圣拉迪斯劳斯（Szent László）跃马出泉及圣母显现治愈哑童相连，每年约有大批朝圣者前来；圣母升天前后为重要朝圣季。跨境／区域圣母朝圣网络中，**Csíksomlyó（奇克绍姆约）** 圣母朝圣亦为重要命名参考。**8 月 20 日圣伊什特万（Szent István／圣斯蒂芬）国庆** 与「新粮／新面包祝福」公共记忆相连。学术论述亦梳理圣伊什特万在民间叙事与节庆中的持续影响。本条目聚焦可核验的民间天主教／朝圣层，与泛斯拉夫或凯尔特条目区分；**不提供**告解脚本、圣水“配方”、驱魔步骤或任何可冒充圣事的操作。

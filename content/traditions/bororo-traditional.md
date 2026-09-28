@@ -1,5 +1,10 @@
 # 博罗罗传统信仰与葬礼—名制祈福（Bororo）
 
+![博罗罗礼仪羽冠（pariko，布拉格纳普斯特克博物馆）](./bororo-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Feather_headdress,_pariko,_Bororo_people,_NM_Prague,_191522.jpg -->
+
+
 ## 概述
 
 **博罗罗人（Bororo）** 分布于巴西马托格罗索等热带草原—过渡地带。公开民族志以复杂半族、名制与葬礼礼仪闻名——**极高敏感，本卡仅概念提及，绝不提供操作**。今日并存基督教接触与土地维权。教育概览；**严禁**葬礼复现、入会或可冒充仪者的步骤。与沙万特、卡亚波等草原／亚马逊条目区分。

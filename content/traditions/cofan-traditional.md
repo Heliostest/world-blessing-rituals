@@ -1,5 +1,9 @@
 # 科凡传统信仰与雨林祈福（Cofán／A'i）
 
+![厄瓜多尔苏昆比奥斯科凡社群在棕榈节（fiesta de la chonta）期间](./cofan-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:COMUNIDAD_COF%C3%81N_LAGUNA_DE_LA_PERLA_(16972076028).jpg -->
+
 ## 概述
 
 **科凡人（Cofán；自称常作 A'i）** 分布于厄瓜多尔—哥伦比亚交界亚马逊。公开概述记述：传统宇宙强调主人灵与萨满伦理；石油开采、保护区与文化自治是当代核心叙事——**勿消费抗争**。本条目为教育概览；**严禁**致幻操作、疗愈脚本或可冒充萨满的步骤。与西奥纳、瓦奥拉尼、舒阿尔条目区分。

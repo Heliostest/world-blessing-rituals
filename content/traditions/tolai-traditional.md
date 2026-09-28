@@ -1,5 +1,9 @@
 # 托莱传统信仰与图布安—习俗祈福（Tolai）
 
+![托莱舞者（东新不列颠 Nodup）](./tolai-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Tolai_dancers,_Nodup.jpg -->
+
 ## 概述
 
 **托莱人（Tolai）** 分布于巴布亚新几内亚东新不列颠（拉包尔／加泽尔半岛一带）。公开概述记述：传统宇宙含祖先与 **Tubuan／Dukduk** 等面具会社公共秩序传统（**仅概念，秘密会社细节禁止**）；贝壳货币与土地伦理显著；今日并存基督教。本条目为教育概览；**严禁**入会、面具仪轨操作化。

@@ -1,5 +1,9 @@
 # 圣马力诺民间天主教与共和朝圣祈福（Sammarinese）
 
+![圣马力诺圣马利诺大殿（Basilica di San Marino）](./sammarinese-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Basilica_di_San_Marino_-_2019-05-07.jpg -->
+
 ## 概述
 
 **圣马力诺（San Marino）** 为亚平宁微型共和国，公开天主教与公民礼仪记述突出 **9 月 3 日圣马利诺（Saint Marinus）主保／建国纪念日**、圣髑相关弥撒、**执政官（Capitani Reggenti）就职弥撒**，以及 **Basilica del Santo（圣马利诺大殿）** 朝圣。本条目为教育概览；**不提供**可冒充神职或戏仿国务的脚本。

@@ -1,5 +1,9 @@
 # 苏努瓦尔传统信仰与穆克杜姆祈福（Sunuwar／Mukdum）
 
+![苏努瓦尔乌道利节庆](./sunuwar-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Sunuwar_udhauli.JPG -->
+
 ## 概述
 
 **苏努瓦尔人（Sunuwar；自称常作 Koinch）** 分布于尼泊尔东部与印度锡金／西孟加拉一带，属基拉特语支社群。公开记述：本土宗教属基拉特蒙杜姆谱系，苏努瓦尔侧口述经典常称 **Mukdum**；今日并存印度教、基督教等。本条目为教育概览；**不提供**萨满吟诵全文、献牲操作或可冒充祭司的步骤。与林布、雅克哈、雷布查条目可比较。

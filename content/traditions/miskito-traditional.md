@@ -1,5 +1,10 @@
 # 米斯基托民间基督教与海岸灵力祈福（Miskito）
 
+
+![米斯基托人准备玳瑁壳（19世纪历史图）](./miskito-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Mosquito_Indians_preparing_tortoise_shell.jpg -->
+
 ## 概述
 
 **米斯基托人（Miskito／Miskitu）** 分布于尼加拉瓜与洪都拉斯加勒比海岸（米斯基托海岸）。公开民族志记述：19 世纪以降**摩拉维亚教会**影响深远，天主教与其他新教亦在；传统层保留对有害精灵、自然灵、梦兆、月力与征兆的关注，历史上萨满兼疗愈／占卜／驱邪。当代实践常将基督教三位一体与地方灵力叙事并置。本条目为教育概览；**不提供**驱邪操作、萨满脚本或可冒充牧师／萨满的步骤。

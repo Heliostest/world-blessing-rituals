@@ -1,5 +1,9 @@
 # 卡纳克习惯法与祈福礼仪（Kanak customary）
 
+![努美阿 Tjibaou 文化中心的卡纳克大屋（Grande Case）造型](./kanak-customary.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kanak_house.jpg -->
+
 ## 概述
 
 **卡纳克（Kanak）** 是新喀里多尼亚（New Caledonia／Kanaky）的美拉尼西亚原住民族群自称与政治—文化认同。公开旅游与研究材料普遍强调：**faire la coutume（做习惯礼）**——以言辞与礼物相互承认、请求进入部落土地；**Grande Case（大屋）** 为氏族与礼仪空间象征；努美阿 **Jean-Marie Tjibaou Cultural Centre** 推动卡纳克与大洋洲艺术呈现。本条目强调 **elder protocols**——**users do not perform customary gift-giving**；**不提供**氏族入会、禁忌地仪式操作或可复现习惯法步骤。

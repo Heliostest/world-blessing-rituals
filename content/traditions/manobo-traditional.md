@@ -1,5 +1,10 @@
 # 马诺博传统信仰与棉兰老祖灵祈福（Manobo）
 
+![马诺博少女在节庆中起舞](./manobo-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Manobo_Girl.jpg -->
+
+
 ## 概述
 
 **马诺博人（Manobo）** 为菲律宾棉兰老多支系原住民族群统称，语言文化内部分歧大。公开概述记述：传统宗教强调多层神灵与祖先；**Magbabaya** 常被叙述为至高／创造者神概念；礼仪专家 **Baylan／Baylanon** 主持疗愈与生命关口（高度敏感）；公开节庆层可见布基农 **Kaamulan**（含马诺博等七族）与收获感恩／**Samaya** 类公共聚集；棉兰老高原亦以 **Dagmay** 等蕉麻织布为文化标识。今日广泛并存天主教／新教与伊斯兰邻人环境。本条目为高度概括的教育概览，**不能**代表所有支系；**Magbabaya** CONCEPT；Kaamulan／Samaya 公共层；Baylan HIGH SENSITIVITY CONCEPT／viewing——**users don't officiate Baylan**；Dagmay 文化层。**不提供**献牲、通灵或可冒充仪者的步骤。

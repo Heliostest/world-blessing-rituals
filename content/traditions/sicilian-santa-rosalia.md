@@ -1,5 +1,10 @@
 # 西西里圣罗萨莉亚朝圣与民间天主教祈福（Santa Rosalia）
 
+
+![巴勒莫圣罗萨莉亚节花车巡游](./sicilian-santa-rosalia.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Festino_di_santa_Rosalia_2009_-_I.jpg -->
+
 ## 概述
 
 **圣罗萨莉亚（Santa Rosalia）** 为巴勒莫主保圣人，核心叙事关涉蒙佩莱格里诺山（Monte Pellegrino）隐修与城邦疫灾护佑记忆。公开文化与遗产叙述中，每年约 **7 月 14—15 日** 的 **Festino／U Fistinu** 以 **Carro Trionfale**（凯旋花车）承载圣骸／象征巡游与烟火等城市公共欢庆；**9 月 4 日** 的 **Acchianata** 则为相对内敛的赤足登山朝圣与还愿。本条目属欧洲民间天主教祈福；**不提供**可冒充神职的礼仪脚本，也不把节日简化为派对攻略。

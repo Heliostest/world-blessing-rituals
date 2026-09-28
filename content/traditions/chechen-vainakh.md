@@ -1,5 +1,9 @@
 # 车臣／瓦伊纳赫传统信仰与苏菲祈福余绪（Chechen／Vainakh）
 
+![车臣山地石塔（瓦伊纳赫塔楼景观）](./chechen-vainakh.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Chechen_tower_2023.jpg -->
+
 ## 概述
 
 **车臣人（Chechens；自称 Nokhchiy）** 与 **印古什人（Ingush）** 合称 **瓦伊纳赫（Vainakh／Nakh）**，居于北高加索。公开民族志（everyculture／encyclopedia）指出：本土传统宗教具泛灵色彩，主神常称 **Deela／Dela（“神”）**，并有自然与庇护神祇、火塘崇拜与祖先崇拜；相信来世中祖先福祉与在世者行为相关，丧礼可分多阶段举行。历史上格鲁吉亚东正教曾在山区留下痕迹；近代低地车臣约十八世纪、印古什约十九世纪较大规模转向伊斯兰教，今日多数虔信 **哈纳菲逊尼派**，并以苏菲兄弟会（**tariqa**，公开叙述常及纳克什班迪与卡迪里／**Kunta-Haji** 传统）沿氏族网络传播与维系信仰，苏联压制反而强化了地下兄弟会组织。山地石塔（公开文化常称 **Galsh** 等塔楼景观）建筑、舞蹈与史诗歌唱是显著公共文化标志。本条目为教育概览；Loud Zikr 仅 **CONCEPT viewing**；hearth／funeral **HIGH SENSITIVITY**；**不提供**苏菲拜功口授、丧礼复现、血仇调解操作或任何可冒充穆里德指导的步骤。

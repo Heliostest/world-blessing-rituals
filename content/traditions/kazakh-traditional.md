@@ -1,5 +1,9 @@
 # 哈萨克传统民俗与腾格里—伊斯兰祈福文化（Kazakh Traditional）
 
+![哈萨克纳吾热孜节庆传统服饰与冬不拉](./kazakh-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Traditional_costume_for_Nowruz.JPG -->
+
 ## 概述
 
 **哈萨克人（Kazakh）** 是中亚草原的突厥语民族，主要分布于哈萨克斯坦及中国新疆、俄罗斯等地；主体信仰为逊尼派伊斯兰教，同时长期保留前伊斯兰天神、祖先与自然崇拜余绪。公开文化层强调：**Nauryz（纳吾热孜）** 春季新年；**Alas／Adraspan** 烟净／净化作为 folklore/public 呈现；**Khoja Ahmed Yasawi** 圣徒陵朝谒；萨满式 **baqsy** 属 **CONCEPT**。本条目**不提供**献牲教程或通灵脚本——**users don't officiate**。

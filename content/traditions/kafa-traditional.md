@@ -1,5 +1,10 @@
 # 卡法传统信仰与埃塞西南祈福（Kafa / Kaffa）
 
+
+![卡法部落古式咖啡盏（咖啡供奉／Bunno 文化外观）](./kafa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Ancient_Coffee_Cup,_Kafa_Tribe_(13186929813).jpg -->
+
 ## 概述
 
 **卡法人（Kafa／Kaffa）** 分布于埃塞俄比亚西南，历史上与森林王国与咖啡原产地叙事相关。公开叙述涉及 **Mashkaro** 收获节、**Bunno** 咖啡供奉文化外观、**Kemo** 圣林伦理，以及教会并存——**中高敏感**；**users don't officiate**。教育概览；不提供祭祀操作。

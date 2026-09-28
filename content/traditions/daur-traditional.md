@@ -1,5 +1,9 @@
 # 达斡尔传统信仰与萨满—敖包祈福（Daur）
 
+![达斡尔萨满敖包祭祀击鼓祈请](./daur-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Daur_Shamanic_Oboo_Ritual.jpg -->
+
 ## 概述
 
 **达斡尔族（Daur）** 主要分布于中国内蒙古莫力达瓦、黑龙江齐齐哈尔及新疆塔城等地。公开百科与当代研究记述：传统宗教以萨满教为核心，天神（tenger）体系、自然神、氏族祖先神并重；**Aoboo／oboo（敖包）** 公共祭祀为重要公共表达；**Anian** 新年等岁时公开层见于文化叙述；**Yadgan** 萨满属 **CONCEPT ONLY no ops**。1990 年代起出现公开复兴。本条目为教育概览；**不提供**萨满出神、河灵疗愈操作或可冒充萨满的步骤。

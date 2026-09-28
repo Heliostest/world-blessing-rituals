@@ -1,5 +1,10 @@
 # 拉达克藏传佛教与山神祈福（Ladakh）
 
+![拉达克赫米斯（Hemis）寺院节庆中的僧伽](./ladakh-buddhist.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Hemis_Monastery_Festival_1.jpg -->
+
+
 ## 概述
 
 **拉达克（Ladakh）** 位于印度北部高海拔地区，文化与藏区深度相连。公开概述记述：宗教以藏传佛教（格鲁、竹巴等公开存在）为核心；**gompa（寺院）** 公共层突出礼佛、转经与节庆；著名如 **Hemis Tsechu** 等寺院节，僧伽演出 **Cham** 面具舞供公众观礼。山神／地方灵常以 **Yullha** 等概念叙述，与苯教源流元素交织；亦有伊斯兰社群（如卡基尔等地）并置，本条目聚焦佛教—山神公开层。**Cham** 由僧伽主持、访客 viewing-only；**Yullha** 仅 CONCEPT；**不提供**密续修持细节或可冒充喇嘛的步骤——**users don't officiate**。

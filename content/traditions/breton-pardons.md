@@ -1,5 +1,9 @@
 # 布列塔尼赦罪朝圣与民间祈福（Breton Pardons）
 
+![布列塔尼洛科龙大巡行（Troménie）圣洛朗礼拜堂](./breton-pardons.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:506_Troménie_Locronan.jpg -->
+
 ## 概述
 
 **布列塔尼赦罪礼（pardon；布列塔尼语相关表述常与“宽恕／大赦”相连）** 是法国西北布列塔尼半岛西部布列塔尼语区特有的教区主保圣人瞻礼—朝圣形式，天主教百科与地方文化综述均将其视为布列塔尼民间天主教最显著的公开表达之一。公开记述强调：信众在圣人／圣母瞻礼日告解、弥撒、列队绕堂或长距巡行（如 Locronan 的 *troménie*），求治愈、航海平安与感恩还愿；著名者包括圣伊夫（Tréguier）、Rumengol、Saint-Jean-du-Doigt、圣罗南与 Sainte-Anne-d'Auray 等。列队中常见圣旗／**banners（旗帜）**；多地 pardon 亦与**圣井／圣泉（sacred wells）**巡礼叙事相连，属公开朝圣—民俗层。本条目聚焦可核验的公开朝圣—节庆层；**不提供**告解内容、圣事操作或任何可复现的“获得大赦”步骤。

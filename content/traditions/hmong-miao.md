@@ -1,5 +1,9 @@
 # 苗族／赫蒙（Hmong / Miao）
 
+![赫蒙新年（Hmoob Noj Peb Caug）节庆](./hmong-miao.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Hmong_New_Year_-_Hmoob_Noj_Peb_Caug.jpg -->
+
 ## 概述
 
 苗族（中国官方称谓）与自称赫蒙（Hmong）等群体，同属苗瑶语族（Hmong-Mien）相关民族，历史上分布于中国南方山地及越南、老挝、泰国等高地，近代亦有大规模离散至欧美等地。传统宇宙观强调万物有灵、家屋与祖先神灵并存，以及人具有多个灵魂：疾病、灾祸常被理解为灵魂走失或与恶灵冲突。沟通可见与不可见世界的关键媒介是萨满（赫蒙语常称 *txiv neeb*），通过入神、吟诵与祭坛礼仪寻求诊断与护佑。本条目为教育性概览，仅作概念层说明，不提供入会、牲礼操作或可复现仪轨。

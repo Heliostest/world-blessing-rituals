@@ -1,5 +1,10 @@
 # 马约传统信仰与鹿舞—天主教祈福（Mayo／Yoreme）
 
+
+![马约／约雷梅 Pascola 舞者与传统面具（锡那罗亚北部）](./mayo-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AMayo_Yoreme.jpg -->
+
 ## 概述
 
 **马约人（Mayo；自称常作 Yoreme）** 分布于墨西哥索诺拉与锡那罗亚，与雅基／约埃梅文化相关但社群自有边界。公开记述：天主教与 **Danza del Venado**（鹿舞）、**Pascola** 等节庆展演交织；宇宙观中的 **Juya Ania**（花之世界／山野世界）与 **Sewa**（圣花）象征见于民族志。圣周与主保节是重要公共祈福层。本条目为**独立的马约／Yoreme 条目**（勿与美拉尼西亚条目混淆）；教育概览；鹿舞与 Pascola 作公共 ICH／表演观礼——**users don't dance as ritual specialists**；Juya Ania／Sewa CONCEPT。**不提供**入会细节、致幻植物操作或可冒充仪者的步骤。

@@ -1,5 +1,10 @@
 # 马达加斯加传统信仰（扎纳哈里／祖先之道与翻尸礼）
 
+![马达加斯加 famadihana（翻尸／迁骨）家族聚会现场](./malagasy-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:C%C3%A9r%C3%A9monie_Famadihana_MPMF24.jpg -->
+
+
 ## 概述
 
 **马达加斯加人（Malagasy）** 主要居住于印度洋第四大岛马达加斯加；语言属南岛语系，文化融合亚洲与非洲要素。传统宇宙观常以创造主 **Zanahary／Andriamanitra** 与祖先 **razana** 为轴：祖先被理解为仍参与家族生活的权威成员，可赐福亦可降罚。高原梅里纳（Merina）、贝齐寮（Betsileo）等地闻名的 **famadihana**（翻尸／迁骨礼）是公开可查的二次葬与家族团聚实践；大英百科概括为自家族墓取出遗骨、裹以新织 *lamba*、致 *kabary* 演说后再归葬。王室圣地 **Ambohimanga** 等入选世界遗产，显示祖先与土地权力的历史联结。本条目为教育性概览；**不提供**开墓、触骨、裹尸操作或可复现步骤。

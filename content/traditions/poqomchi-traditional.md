@@ -1,5 +1,9 @@
 # 波科姆奇玛雅民间天主教与祖灵祈福（Poqomchi'）
 
+![波科姆奇玛雅织花上衣（huipil）](./poqomchi-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Huipil,_asset_x1QiQYXKWLoUHeX8QdrzWalR.tif -->
+
 ## 概述
 
 **波科姆奇人（Poqomchi'）** 分布于危地马拉中北部高地（上／下韦拉帕斯一带公开地名）。公开记述：玛雅宇宙观与天主教圣徒交织；玉米伦理与主保节构成公共祈福层。本条目为教育概览；**不提供**日数占卜操作、献牲或可冒充日师的步骤。与波科曼、凯克奇、阿奇条目可比较。

@@ -1,5 +1,10 @@
 # 米佐基督教与萨库阿传统祈福余绪（Mizo）
 
+
+![米佐竹竿舞 Cheraw／Bango Nirtya 传统舞蹈](./mizo-traditional.jpg)
+
+<!-- 来源：GODL-India | https://commons.wikimedia.org/wiki/File:Mizoram_Bango_Nirtya_performed_at_the_44th_India_International_Film_Festival_of_India_(IFFI-2013),_in_Panaji,_Goa_on_November_26,_2013.jpg -->
+
 ## 概述
 
 **米佐人（Mizo；历史文献亦作 Lushai 等）** 主要分布于印度米佐拉姆邦及周边跨境地区。公开百科记述：今日绝大多数为虔诚基督徒（长老会等新教传统影响深远），圣诞、复活节与教会奉献构成公共祈福主轴；改宗前的民族信仰常称 **Sakhua／Khua**，含 Pathian 等高位神与地方灵力叙事，今日仅极少数人实践或以文化复兴形式被讨论。本条目为教育概览；**不提供**传统献牲、驱邪操作或可冒充牧师／祭司的步骤。

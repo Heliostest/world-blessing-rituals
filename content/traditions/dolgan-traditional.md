@@ -1,5 +1,9 @@
 # 多尔干传统信仰与萨满—东正教祈福（Dolgan）
 
+![泰梅尔杜金卡的多尔干妇女](./dolgan-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Dolgan_woman_Dudinka.jpg -->
+
 ## 概述
 
 **多尔干人（Dolgan）** 主要分布于俄罗斯泰梅尔半岛与叶尼塞河下游一带，语言属突厥语族并深受雅库特影响。公开百科指出：东正教洗礼在其族群形成过程中具有标志意义；岁时可见 **Nikolayev Den** 等公开文化／教会相关记述；**reindeer gatherings**（驯鹿集会）属公开牧猎社群层；萨满 **Oyuun** 为 **CONCEPT ONLY**。宇宙观公开记述含 ichchi、ayyy 与 abaasy 等范畴。本条目为教育概览；**不提供**萨满请神脚本、出神诱导、献牲或任何可冒充萨满的程序。

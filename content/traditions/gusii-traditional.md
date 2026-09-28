@@ -1,5 +1,10 @@
 # 古西传统信仰与高地—祖灵祈福（Gusii／Kisii）
 
+![肯尼亚基西地区古西社群舞蹈](./gusii-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Dances_in_Kisii.jpg -->
+
+
 ## 概述
 
 **古西人（Gusii／Kisii）** 分布于肯尼亚西南高地。公开概述记述：传统宇宙强调祖先与年龄组织伦理余绪；至高／创造相关公开叙述可见 **Engoro**；年龄组织余绪称 **Omoraani age-set CONCEPT**；祝福相关 **Nyangi blessing CONCEPT ONLY**。今日多数为基督徒，茶与香蕉农耕塑造节庆。本条目为教育概览；**不提供**入会、割礼操作或可冒充仪者的步骤。与卢奥、基库尤、卡伦金等邻族条目区分。

@@ -1,5 +1,9 @@
 # 御守领受—返还（omamori）
 
+![御守（omamori）各类随身守护袋](./omamori-cycle.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Variousomamori.jpg -->
+
 ## 概述
 
 御守（*omamori*；袋装随身型亦称守札 *mamorifuda*）是**神社（亦见于寺院）颁发的随身守护象征（A）**：针对交通安全、学业、安产、家安等主题，装于织锦小袋中奉持。国学院 EOS 区分较大、多安于神棚或门柱的**神札（shinsatsu／ofuda）**与可随身的**守札／御守**；神社本厅英文导览强调御守非普通纪念品，而是承载神威的圣物，宜自持或赠亲友。仓库 `shinto.md` 已述领受与岁末返还焚纳。本卡**聚焦「领受→佩持→期末返还」时间循环**，不新建神道总卡，也不做拆袋看内部的玩法。

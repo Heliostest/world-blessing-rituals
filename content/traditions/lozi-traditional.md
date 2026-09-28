@@ -1,5 +1,9 @@
 # 洛齐／巴罗策传统宗教与尼扬贝—王陵祈福（Lozi／Barotse）
 
+![赞比亚西部洛齐／巴罗策 Kuomboka 迁徙庆典](./lozi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kuomboka_ceremony_in_Zambia_04.jpg -->
+
 ## 概述
 
 **洛齐人（Lozi；亦称巴罗策 Barotse）** 为赞比亚西部巴罗策兰洪泛平原的班图语民族，以季节性迁徙王权仪式与复杂王国制度著称。公开民族志记述：信仰以至高神 **Nyambe** 为一神论主干；著名的 **Kuomboka** 公共迁徙庆典以王舟 **Nalikwanda** 等为视觉焦点；**Nayuma** 等王陵／王室陵寝礼仪仅作 **CONCEPT ONLY**。平民祖灵与疗愈叙事保持高阶概览。基督教已广泛传播。本条目为教育概览；**不提供**献牲操作、王陵秘仪、巫术配方或任何可冒充祭司的程序。

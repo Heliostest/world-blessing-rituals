@@ -1,5 +1,9 @@
 # 瓦斯特克／特内克民间天主教与山灵祈福（Huastec／Teenek）
 
+![瓦斯特克地区 Xantolo 亡灵节庆](./huastec-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Xantolo_85.JPG -->
+
 ## 概述
 
 **瓦斯特克人（Huastec；自称 Teenek 等）** 分布于墨西哥东北海湾低地—山地（圣路易斯波托西、韦拉克鲁斯等）。公开概述记述：天主教圣徒与地方灵力、音乐舞蹈传统交织；岁时可见 **Xantolo**（亡灵／万灵相关公开节庆层）、**Voladores de Tamaletón**（塔马莱通飞人，UNESCO 相关公开遗产叙述）、**patron processions**（主保游行）；**mountain／maize CONCEPT**（山灵／玉米农事祈请概念层）。今日并存福音派改宗。本条目为教育概览；**不提供**疗愈脚本、献牲操作或可冒充仪者的步骤。与纳瓦、托托纳克、普雷佩查条目可比较。

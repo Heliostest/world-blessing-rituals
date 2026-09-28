@@ -1,5 +1,9 @@
 # 若开上座部佛教与民间祈福（Rakhine／Arakanese）
 
+![若开谬乌陶坎登佛塔](./rakhine-buddhist.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:HtaukKanThein_MraukU.jpg -->
+
 ## 概述
 
 **若开人（Rakhine；历史亦称 Arakanese）** 主要分布于缅甸若开邦，主体实践上座部佛教，寺塔、僧伽与佛历节庆构成公共宗教生活；民间亦可见纳特等地方灵力与佛教并行的缅甸共性。本条目**仅聚焦公开可述的佛教—民俗祈福层**；若开邦当代人道与族群冲突极为敏感，**不提供**任何政治动员、安全操作或冲突方叙事消费，并提醒读者另寻人权专业来源。

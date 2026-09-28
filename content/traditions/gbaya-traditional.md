@@ -1,5 +1,10 @@
 # 格巴亚传统信仰与祖灵祈福（Gbaya）
 
+![卡尔诺村巴亚／格巴亚妇女捣木薯（历史照片）](./gbaya-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Afrique_Centrale._5,_Lieutenant_Lancrenon._Femmes_Bayas_pilant_le_manioc._Village_de_Carnot_-_(mission)_Lancrenon_;_(photogr.)_Lancrenon_;_(photogr._reprod._par)_Radiguet_et_Massiot_(pour_la_conf%C3%A9rence_donn%C3%A9e_par)..._-_btv1b532371997.jpg -->
+
+
 ## 概述
 
 **格巴亚人（Gbaya）** 主要分布于中非共和国西部与喀麦隆东部，支系多样。公开概述记述：传统宇宙含祖先与地方灵力；今日并存基督教与本土实践；区域冲突与流散要求叙述克制。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤。与班达、曼贾等相关中非社群区分。

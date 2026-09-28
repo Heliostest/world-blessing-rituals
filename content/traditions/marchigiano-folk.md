@@ -1,5 +1,9 @@
 # 马尔凯民间天主教与洛雷托朝圣祈福（Marchigiano）
 
+![意大利洛雷托圣家堂（Basilica della Santa Casa）](./marchigiano-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Basilica_di_Loreto_-_Ancona_(Large_view).jpg -->
+
 ## 概述
 
 **马尔凯（Marche）** 位于意大利中部亚得里亚海侧，以 **洛雷托圣家堂（Holy House of Loreto）** 朝圣网络、海岸／山城主保节著称，是欧洲重要圣母朝圣目的地之一。公开天主教记述：朝圣劳苦、还愿与村社抬像构成祈福层。本条目为教育概览；**不提供**可冒充神职的脚本。与翁布里亚、阿布鲁佐、罗马涅条目可比较但洛雷托核心独特。

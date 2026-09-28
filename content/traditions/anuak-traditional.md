@@ -1,5 +1,9 @@
 # 阿努阿克传统宗教与尼罗河岸祈福（Anuak）
 
+![埃塞俄比亚丁马阿努阿克人（Anywaa／Anuak）社群成员](./anuak-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Anuak_Tribe,_Ethiopia_(14316218111).jpg -->
+
 ## 概述
 
 **阿努阿克人（Anuak／Anywaa）** 分布于南苏丹与埃塞俄比亚交界的索巴特河／加姆贝拉等河岸地带，属尼罗语族公开分类。公开概述强调：传统政治—宇宙观与神圣领导 **Kwaaro**、神灵／力量 **Juok**、祖先及河岸生态相关；公开叙述亦见 **Akura** 等河岸生计祝福叙事。当代社区同时面对基督教传教、国家边界政治与资源冲突。本条目为教育概览；**Kwaaro／Juok CONCEPT**；**不提供**献牲、战争仪轨或可冒充首领／祭司的步骤。与希卢克、努尔、丁卡条目可比较而不可混同。

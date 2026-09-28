@@ -1,5 +1,10 @@
 # 绍纳传统宗教与姆瓦里祈雨（Shona／Mwari）
 
+
+![绍纳祖先拇指钢琴 mbira dzavadzimu](./shona-mwari.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Mbira_dzavadzimu.jpg -->
+
 ## 概述
 
 **绍纳人（Shona）** 是津巴布韦主体族群（亦分布于邻国部分地区），传统宗教聚焦与亡者及地方灵的关系：家族祖先 **vadzimu**、领地／酋长相关的狮灵 **mhondoro**，以及南方马托博丘陵一带以洞穴神谕著称的高神 **Mwari（亦作 Mwali）** 圣地体系（如 Njelele 等）。Encyclopedia.com 等综述指出：多数日常祈请通过灵媒（svikiro）在附体状态下进行；重大公共事务包括求雨、农时与酋长继承协商。啤酒祭、歌唱舞蹈与 **bira** 通宵仪式、以及 **mbira dzavadzimu**（祖先的拇指钢琴）是公开文化叙述中的鲜明标志。当代多数绍纳人同时参与基督宗教，传统实践常与教会生活并存。本条目为教育性概览；**不提供**附体诱导、献牲屠宰、神谕对话脚本或可复现的疗愈／驱巫程序。

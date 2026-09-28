@@ -1,5 +1,10 @@
 # 希卢克传统宗教与神圣王权祈福（Shilluk）
 
+
+![希卢克婚礼中的夫妇](./shilluk-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Shilluk_Couple_during_wedding.jpg -->
+
 ## 概述
 
 **希卢克人（Shilluk；自称常作 Chollo 等）** 分布于南苏丹白尼罗河一带，与努尔、丁卡等同属尼罗语族公开分类。公开民族志与百科强调：**神圣王权（reth）** 与文化英雄／祖先王 **Nyikang（尼康）** 叙事处于宇宙—政治秩序核心；王与祖先媒介社群丰饶与正义，传统宗教与基督教接触并存。本条目为教育概览；**不提供**王权秘密仪轨、献牲或任何可冒充王室仪式的步骤。

@@ -1,5 +1,10 @@
 # 尚巴阿传统信仰与乌桑巴拉祈福（Shambaa／Shambala）
 
+
+![尚巴阿妇女行走于乌桑巴拉山地村落](./shambaa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Two_Shambaa_ladies_from_Usambara_region.jpg -->
+
 ## 概述
 
 **尚巴阿人（Shambaa／Shambala）** 分布于坦桑尼亚东北乌桑巴拉山脉。公开概述记述：传统宇宙强调祖先与山国（王国）历史伦理；今日多数受基督教影响；山地农业与森林保护议题显著。本条目为教育概览；**不提供**献牲或可冒充仪者的步骤。与查加、帕雷等东北高地社群区分。

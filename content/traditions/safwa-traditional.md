@@ -1,5 +1,9 @@
 # 萨夫瓦传统信仰与祖灵—基督教祈福（Safwa）
 
+![坦桑尼亚萨夫瓦族传统房屋](./safwa-traditional.jpg)
+
+<!-- 来源：CC0 1.0 | https://commons.wikimedia.org/wiki/File:Traditional_House_of_Safwa_Tribe_in_Tanzania_01.jpg -->
+
 ## 概述
 
 **萨夫瓦人（Safwa）** 分布于坦桑尼亚西南高原（姆贝亚一带公开地名）。公开概述记述：传统宇宙强调祖先与山地农耕伦理；今日多数受基督教影响。本条目为教育概览；**不提供**献牲或可冒充仪者的步骤。与尼亚库萨、恩戈尼、尼亚姆韦齐条目区域邻近但认同独立。

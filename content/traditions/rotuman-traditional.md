@@ -1,5 +1,9 @@
 # 罗图马传统信仰与村社祈福余绪（Rotuman）
 
+![罗图马莫图萨 Mofmanu 海滩](./rotuman-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Mofmanu_beach_in_Motusa,_Rotuma.jpg -->
+
 ## 概述
 
 **罗图马人（Rotuman）** 居住于斐济辖下的罗图马岛，语言与文化在波利尼西亚—美拉尼西亚接触带上具独特性。公开岛屿文化记述突出 **Katoʻaga** 村社宴饮／庆礼、**Apei** 细席交换、**kava** 礼仪场合，以及 **Rotuma Day** 公共节庆；教会（循道与天主教）礼拜主导当代公共宗教生活，前基督教 **mana**／灵界记忆仍见于口述史。本条目为教育概览；**不提供**招魂、法术、kava 调制剂量或任何可冒充仪式专家的程序。

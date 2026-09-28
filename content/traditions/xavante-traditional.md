@@ -1,5 +1,9 @@
 # 沙万特传统信仰与草原—祖灵祈福（Xavante）
 
+![巴西沙万特（Xavante）妇女](./xavante-traditional.jpg)
+
+<!-- 来源：CC BY 3.0 br | https://commons.wikimedia.org/wiki/File:Mulher_Xavante.jpg -->
+
 ## 概述
 
 **沙万特人（Xavante／A'uwẽ）** 分布于巴西马托格罗索等热带草原（cerrado）地带。公开概述记述：传统宇宙强调祖灵、二元半族组织与命名礼仪；今日并存基督教接触与强势文化自治。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。与卡亚波、亚诺马米等亚马逊／草原条目生计与社会组织不同。

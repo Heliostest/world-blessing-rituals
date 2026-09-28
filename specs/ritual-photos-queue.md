@@ -3,54 +3,44 @@
 - **规则：** 每轮处理 **10** 张；图片保存为 `content/traditions/<slug>.jpg|png|webp`（与 `.md` 同级）；在对应 md 靠前位置插入 `![简述](./<slug>.ext)`；只用可核验**开放许可**图（Wikimedia Commons、博物馆开放获取、官方文化机构）；声明找不到前须至少尝试 **3 种不同思路**并记入「找不到」节
 - **思路示例：** ① Wikimedia 搜英文/原语名 ② Met/British Museum/国立博物馆开放藏品 ③ 联合国教科文/政府观光署活动页可下载图 ④ 卡内参考来源 URL 抓取开放图
 - **优先：** 日常小仪式专卡 → 其余按字母
-- **统计：** 待配 44；已配 687；找不到 18
+- **统计：** 待配 34；已配 697；找不到 18
 - **工作分支：** `content/ritual-photos`（基于 `content/micro-ritual-cards`）
 
 ## 待配
-1. [ ] `wetu-telu-sasak`
-2. [ ] `wichi-traditional`
-3. [ ] `winti`
-4. [ ] `wiwa-traditional`
-5. [ ] `wixarika-huichol`
-6. [ ] `wolaita-traditional`
-7. [ ] `wolof-traditional`
-8. [ ] `won-buddhism`
-9. [ ] `wounaan-traditional`
-10. [ ] `xavante-traditional`
-11. [ ] `xhosa-traditional`
-12. [ ] `xibe-traditional`
-13. [ ] `yaawo-traditional`
-14. [ ] `yagua-traditional`
-15. [ ] `yaka-traditional`
-16. [ ] `yakkha-traditional`
-17. [ ] `yali-traditional`
-18. [ ] `yaminahua-traditional`
-19. [ ] `yanesha-traditional`
-20. [ ] `yanomami-traditional`
-21. [ ] `yao-mien`
-22. [ ] `yapese-traditional`
-23. [ ] `yaqui-yoeme`
-24. [ ] `yarsanism`
-25. [ ] `yawalapiti-traditional`
-26. [ ] `yazidi`
-27. [ ] `yekuana-traditional`
-28. [ ] `yi-bimoism`
-29. [ ] `yine-traditional`
-30. [ ] `yokotan-traditional`
-31. [ ] `yolngu`
-32. [ ] `yombe-traditional`
-33. [ ] `yoruba-and-west-african`
-34. [ ] `yucatec-maya`
-35. [ ] `yudja-traditional`
-36. [ ] `yugur-traditional`
-37. [ ] `yukaghir-traditional`
-38. [ ] `yupik-traditional`
-39. [ ] `zapotec-traditional`
-40. [ ] `zhuang-mo`
-41. [ ] `zoque-traditional`
-42. [ ] `zoroastrianism`
-43. [ ] `zulu-nguni`
-44. [ ] `zuni-ashiwi`
+1. [ ] `xhosa-traditional`
+2. [ ] `xibe-traditional`
+3. [ ] `yaawo-traditional`
+4. [ ] `yagua-traditional`
+5. [ ] `yaka-traditional`
+6. [ ] `yakkha-traditional`
+7. [ ] `yali-traditional`
+8. [ ] `yaminahua-traditional`
+9. [ ] `yanesha-traditional`
+10. [ ] `yanomami-traditional`
+11. [ ] `yao-mien`
+12. [ ] `yapese-traditional`
+13. [ ] `yaqui-yoeme`
+14. [ ] `yarsanism`
+15. [ ] `yawalapiti-traditional`
+16. [ ] `yazidi`
+17. [ ] `yekuana-traditional`
+18. [ ] `yi-bimoism`
+19. [ ] `yine-traditional`
+20. [ ] `yokotan-traditional`
+21. [ ] `yolngu`
+22. [ ] `yombe-traditional`
+23. [ ] `yoruba-and-west-african`
+24. [ ] `yucatec-maya`
+25. [ ] `yudja-traditional`
+26. [ ] `yugur-traditional`
+27. [ ] `yukaghir-traditional`
+28. [ ] `yupik-traditional`
+29. [ ] `zapotec-traditional`
+30. [ ] `zhuang-mo`
+31. [ ] `zoque-traditional`
+32. [ ] `zoroastrianism`
+33. [ ] `zulu-nguni`
+34. [ ] `zuni-ashiwi`
 
 ## 已配
 
@@ -741,6 +731,16 @@
 685. [x] `wayana-traditional` batch81 — 瓦亚纳；wayana-traditional.jpg；CC BY 3.0；https://commons.wikimedia.org/wiki/File:Wayana,_Culturele_voorwerpen.png
 686. [x] `wayuu-traditional` batch81 — 瓦尤；wayuu-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Yonna_Wayuu.jpg
 687. [x] `welsh-folk` batch81 — 威尔士民间；welsh-folk.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Mari_Lwyd_At_Sidmouth_Folk_Festival.jpg
+688. [x] `wetu-telu-sasak` batch82 — 萨萨克韦图特卢；wetu-telu-sasak.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Masjid_Bayan_Beleq,_Bayan_(1).jpg
+689. [x] `wichi-traditional` batch82 — 维奇；wichi-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Hombre_wich%C3%AD.jpg
+690. [x] `winti` batch82 — 苏里南温蒂；winti.jpg；CC BY 4.0；https://commons.wikimedia.org/wiki/File:Winti_dans_in_Suriname,_KITLV_91064.tiff
+691. [x] `wiwa-traditional` batch82 — 维瓦；wiwa-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Ind%C3%ADgenas_wiwa.jpg
+692. [x] `wixarika-huichol` batch82 — 维哈里卡／惠乔尔；wixarika-huichol.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:La_peregrinaci%C3%B3n_a_Wirikuta_de_los_wixaritari.jpg
+693. [x] `wolaita-traditional` batch82 — 沃莱塔；wolaita-traditional.jpg；CC BY-SA 2.0；https://commons.wikimedia.org/wiki/File:Girl_of_the_Welayta_people.jpg
+694. [x] `wolof-traditional` batch82 — 沃洛夫；wolof-traditional.jpg；CC BY-SA 2.0；https://commons.wikimedia.org/wiki/File:Tabaski-Kounkane.jpg
+695. [x] `won-buddhism` batch82 — 圆佛教；won-buddhism.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:%EC%9B%90%EB%B6%88%EA%B5%90_%EC%9D%B5%EC%82%B0_%EC%84%B1%EC%A7%80_%EA%B3%B5%ED%9A%8C%EB%8B%B9.jpg
+696. [x] `wounaan-traditional` batch82 — 沃南；wounaan-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Mujeres_Wounaan.JPG
+697. [x] `xavante-traditional` batch82 — 沙万特；xavante-traditional.jpg；CC BY 3.0 br；https://commons.wikimedia.org/wiki/File:Mulher_Xavante.jpg
 
 ## 找不到（须含 ≥3 思路记录）
 1. [!] `bugun-traditional` batch23 — 找不到开放许可配图。思路：① Wikimedia Commons 搜 Bugun / Khowa Arunachal / Bugun tribe / Singchung Bugun / Pham-Kho Sowai，Category:Bugun 为空，无人物／节庆／仪式照；② Met Open Access 与卡内 Britannica（Arunachal／Donyi-Polo）链无明确 Bugun 开放藏品／可下载活动图；③ 新闻（Arunachal Observer 等 Pham-Kho Sowai 报道）与博物馆外景（Jawaharlal Nehru Museum／RIWATCH）许可不明或不属布贡社群仪式主题；仅见以族群命名的鸟类 Bugun liocichla，不宜作仪式卡配图。

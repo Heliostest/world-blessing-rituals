@@ -1,5 +1,9 @@
 # 维哈里卡／惠乔尔（Wixárika / Huichol）
 
+![维哈里卡／惠乔尔（Wixárika）维里库塔圣地朝圣](./wixarika-huichol.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:La_peregrinaci%C3%B3n_a_Wirikuta_de_los_wixaritari.jpg -->
+
 ## 概述
 
 维哈里卡（Wixárika；复数 Wixáritari）是墨西哥中西部原住民族，西班牙语文献常称惠乔尔（Huichol），主要分布于哈利斯科、纳亚里特、萨卡特卡斯与杜兰戈等州的西马德雷山脉一带。本民族自称 Wixárika／Wizarika，对外亦用 tevi（“人”）等称谓。语言属犹他—阿兹特克语系，与相邻科拉（Cora）语相近。宗教与日常几乎不分：祖灵、火、玉米、鹿与圣地景观共同构成祈福与农耕福祉的宇宙观。年度朝圣通往奇瓦瓦沙漠中的圣地维里库塔（Wirikuta），路线被称为“我们的祖火之路”（Tatehuarí Huajuyé）；2025 年联合国教科文组织将该圣地之路列入世界遗产名录，确认其作为美洲仍在使用的前哥伦布礼仪路线的代表性。本条目为教育性概览，**不提供**佩约特仙人掌的采集、剂量、食用程序或其他致幻／药用操作细节，亦不复述入门训练步骤。

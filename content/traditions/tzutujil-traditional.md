@@ -1,5 +1,9 @@
 # 楚图希尔玛雅民间天主教与阿蒂特兰祈福（Tz'utujil）
 
+![圣地亚哥阿蒂特兰教区教堂](./tzutujil-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Iglesia_Parroquial_Santiago_Ap%C3%B3stol%2C_Santiago_Atitlan.jpg -->
+
 ## 概述
 
 **楚图希尔人（Tz'utujil）** 为危地马拉阿蒂特兰湖区玛雅语系社群。公开宗教生活常见民间天主教圣徒崇拜、湖岸节庆与纺织伦理——**中高敏感**。本卡聚焦可公开的教堂—节庆层；不涉未公开的圣地／马西蒙等封闭实践细节。与卡克奇克尔、基切、玛姆等条目区分。

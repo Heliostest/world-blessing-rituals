@@ -1,5 +1,9 @@
 # 图瓦卢传统信仰与村社祈福余绪（Tuvaluan）
 
+![图瓦卢 Fatele 歌舞](./tuvaluan-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Fatele_Funafuti_Tuvalu.jpg -->
+
 ## 概述
 
 **图瓦卢人（Tuvaluan）** 居住于西太平洋中部九座低矮珊瑚环礁／礁岛组成的国家图瓦卢（旧称埃利斯群岛），语言属波利尼西亚语、与萨摩亚语接近；努伊岛有较强密克罗尼西亚历史层。大英百科记述：居民绝大多数属图瓦卢教会（**EKT**／原埃利斯群岛新教传统）；生活以村社园艺、手划舟渔捞与侨汇支持为主。公开可见文化层包括 **Fatele** 歌舞、**Maneapa**（村社会堂）、**Gospel Day** 等教会纪念，以及前基督教 **tapu** 记忆（**CONCEPT**）。本条目为教育概览；**不提供**招魂、巫蛊操作、葬礼敏感细节的复现或任何可冒充仪式专家的程序。

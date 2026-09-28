@@ -1,5 +1,9 @@
 # 图卡诺传统信仰与沃佩斯河祈福（Tukano）
 
+![图卡诺欢迎舞](./tukano-traditional.jpg)
+
+<!-- 来源：CC BY 3.0 | https://commons.wikimedia.org/wiki/File:AMAZON_RAINFOREST_NATIVES_TUKANO_WELCOME_DANCE_-_panoramio.jpg -->
+
 ## 概述
 
 **图卡诺人（Tukano）** 分布于哥伦比亚—巴西交界沃佩斯（Vaupés）河流域，以复杂的语言族外婚网络与萨满—仪者传统闻名于民族志。公开概述记述：宇宙观强调河流、祖先与「吹气／烟」等治疗象征（**仅概念**）；今日并存天主教／基督教接触。本条目为教育概览；**严禁**致幻植物操作、疗愈脚本或可冒充萨满的步骤。

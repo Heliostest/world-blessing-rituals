@@ -3,34 +3,24 @@
 - **规则：** 每轮处理 **10** 张；图片保存为 `content/traditions/<slug>.jpg|png|webp`（与 `.md` 同级）；在对应 md 靠前位置插入 `![简述](./<slug>.ext)`；只用可核验**开放许可**图（Wikimedia Commons、博物馆开放获取、官方文化机构）；声明找不到前须至少尝试 **3 种不同思路**并记入「找不到」节
 - **思路示例：** ① Wikimedia 搜英文/原语名 ② Met/British Museum/国立博物馆开放藏品 ③ 联合国教科文/政府观光署活动页可下载图 ④ 卡内参考来源 URL 抓取开放图
 - **优先：** 日常小仪式专卡 → 其余按字母
-- **统计：** 待配 24；已配 706；找不到 19
+- **统计：** 待配 14；已配 716；找不到 19
 - **工作分支：** `content/ritual-photos`（基于 `content/micro-ritual-cards`）
 
 ## 待配
-1. [ ] `yao-mien`
-2. [ ] `yapese-traditional`
-3. [ ] `yaqui-yoeme`
-4. [ ] `yarsanism`
-5. [ ] `yawalapiti-traditional`
-6. [ ] `yazidi`
-7. [ ] `yekuana-traditional`
-8. [ ] `yi-bimoism`
-9. [ ] `yine-traditional`
-10. [ ] `yokotan-traditional`
-11. [ ] `yolngu`
-12. [ ] `yombe-traditional`
-13. [ ] `yoruba-and-west-african`
-14. [ ] `yucatec-maya`
-15. [ ] `yudja-traditional`
-16. [ ] `yugur-traditional`
-17. [ ] `yukaghir-traditional`
-18. [ ] `yupik-traditional`
-19. [ ] `zapotec-traditional`
-20. [ ] `zhuang-mo`
-21. [ ] `zoque-traditional`
-22. [ ] `zoroastrianism`
-23. [ ] `zulu-nguni`
-24. [ ] `zuni-ashiwi`
+1. [ ] `yolngu`
+2. [ ] `yombe-traditional`
+3. [ ] `yoruba-and-west-african`
+4. [ ] `yucatec-maya`
+5. [ ] `yudja-traditional`
+6. [ ] `yugur-traditional`
+7. [ ] `yukaghir-traditional`
+8. [ ] `yupik-traditional`
+9. [ ] `zapotec-traditional`
+10. [ ] `zhuang-mo`
+11. [ ] `zoque-traditional`
+12. [ ] `zoroastrianism`
+13. [ ] `zulu-nguni`
+14. [ ] `zuni-ashiwi`
 ## 已配
 
 1. [x] `mokugyo-wooden-fish` 【优先】 batch1 — mokugyo-wooden-fish.jpg；Public Domain / Met Open Access；https://www.metmuseum.org/art/collection/search/505614
@@ -741,6 +731,16 @@
 705. [x] `yanesha-traditional` batch83 — 亚内沙；yanesha-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Amueshas1.jpg
 706. [x] `yanomami-traditional` batch83 — 亚诺马米；yanomami-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Yanomami_Woman_%26_Child.jpg
 
+707. [x] `yao-mien` batch84 — 瑶族／勉；yao-mien.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Yao_people%27s_Harvest_Festival_in_Nala_Village_-_10.jpg
+708. [x] `yapese-traditional` batch84 — 雅浦；yapese-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Community_house_of_Yorlap_(Yap_Islands)_with_stone_money_made_in_Palau_NOAA.jpg
+709. [x] `yaqui-yoeme` batch84 — 雅基／约埃梅；yaqui-yoeme.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Danza_del_venado_yaqui.jpg
+710. [x] `yarsanism` batch84 — 雅尔桑；yarsanism.jpg；CC0；https://commons.wikimedia.org/wiki/File:Yarsani_shrine_of_Mam_Nazar_near_Sufayya_betweek_Kalek_and_Mosul_19.jpg
+711. [x] `yawalapiti-traditional` batch84 — 亚瓦拉皮蒂；yawalapiti-traditional.jpg；CC BY-SA 2.0；https://www.flickr.com/photos/19865921@N00/131933190
+712. [x] `yazidi` batch84 — 雅兹迪；yazidi.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Lalish,_the_holiest_place_in_Ezidkhan._01.jpg
+713. [x] `yekuana-traditional` batch84 — 耶库阿纳；yekuana-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Retrato_Yekuana_retusche_crop.jpg
+714. [x] `yi-bimoism` batch84 — 彝族毕摩教；yi-bimoism.jpg；Public domain；https://commons.wikimedia.org/wiki/File:%E7%AD%86%E6%91%A9%E8%83%BD%E6%96%87%E5%96%84%E5%92%92%E7%82%BA%E7%8C%93%E7%8E%80%E6%97%8F%E4%B8%AD%E4%B9%8B%E5%B7%AB%E8%80%85.jpg
+715. [x] `yine-traditional` batch84 — 伊内／皮罗；yine-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:%E2%80%9CPiro-Indianer%E2%80%9D.jpg
+716. [x] `yokotan-traditional` batch84 — 约科坦；yokotan-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Rezandero_Chontal_2.jpg
 ## 找不到（须含 ≥3 思路记录）
 1. [!] `bugun-traditional` batch23 — 找不到开放许可配图。思路：① Wikimedia Commons 搜 Bugun / Khowa Arunachal / Bugun tribe / Singchung Bugun / Pham-Kho Sowai，Category:Bugun 为空，无人物／节庆／仪式照；② Met Open Access 与卡内 Britannica（Arunachal／Donyi-Polo）链无明确 Bugun 开放藏品／可下载活动图；③ 新闻（Arunachal Observer 等 Pham-Kho Sowai 报道）与博物馆外景（Jawaharlal Nehru Museum／RIWATCH）许可不明或不属布贡社群仪式主题；仅见以族群命名的鸟类 Bugun liocichla，不宜作仪式卡配图。
 2. [!] `dhimal-traditional` batch29 — 找不到适合仪式卡的开放许可配图。思路：① Wikimedia Commons 搜 Dhimal / Siruwa Parba / Jatri / Dhimal Nepal costume／dance／Jhapa／Naxalbari，仅见语言地图、文字矢量图、共享食品 Bagiya.jpg（亦属 Maithil／Tharu，非迪马尔专属仪式），无人物／节庆／仪礼照；② Met Open Access 精确 "Dhimal" 命中 0；British Museum 检索无可用开放下载仪式图；卡内 Britannica 链无开放活动图；③ 新闻（Rising Nepal Jatri／Sirjat）与 Joshua Project 所引 Wikimedia（Munal Chaudhary）核查为 Tharu「Ashtimki」节庆图，非 Dhimal；无政府／UNESCO 可核验开放许可仪式照。

@@ -1,5 +1,9 @@
 # 永贝传统信仰与恩基西（Nkisi）—祖灵祈福（Yombe）
 
+![布鲁克林博物馆永贝母子雕像](./yombe-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Figure_of_Mother_and_Child,_Yombe_people,_Lower_Congo_province,_Democratic_Republic_of_the_Congo,_19th_century,_wood,_beads,_glass_mirror,_metal,_resin_-_Brooklyn_Museum_-_Brooklyn,_NY_-_DSC08533.JPG -->
+
 ## 概述
 
 **永贝人（Yombe）** 分布于刚果（金）／刚果（布）沿海下刚果及相关地带，属刚果语支大传统中的鲜明支系。公开艺术史以 *minkisi*（权力雕像）等闻名——**极高敏感，本卡仅概念提及，绝不提供操作**。今日并存基督教。教育概览；**严禁**法器操作化、入会或献牲步骤。与 `bakongo-kongo.md` 对照但永贝认同与沿海历史独立，非重复卡片。

@@ -1,5 +1,9 @@
 # 约尔努／东北阿纳姆地（Yolŋu / Yolngu）
 
+![澳大利亚国家美术馆约尔努空心木棺纪念装置](./yolngu.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Aboriginal_Memorial_June_2022.jpg -->
+
 ## 概述
 
 **约尔努（Yolŋu／Yolngu）** 是澳大利亚北领地东北阿纳姆地（Arnhem Land）的原住民族群总称，含五十余个氏族，语言属 Yolŋu Matha 诸方言，社会组织以 **Dhuwa** 与 **Yirritja** 两个半族及母系／父系亲属网络为基础。AIATSIS／NFSA 与公开法学综述指出：其神圣法统 **Maḏayin（Madayin）** 统合歌曲（manikay）、舞蹈（buŋgul／bunggul）、祖先图案（miny'tji）、圣地与神圣物，既是宗教也是法律与政治权威来源；公开场合可见的 bunggul（如 Garma 文化节）与限制性入会、丧葬仪轨并存。本条目与澳大利亚原住民总览、托雷斯海峡条目区分东北阿纳姆地约尔努法统；**不提供**入会操作、神圣物细节、歌线密传或可复现「进入 Madayin」步骤。

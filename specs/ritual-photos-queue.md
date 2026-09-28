@@ -3,24 +3,14 @@
 - **规则：** 每轮处理 **10** 张；图片保存为 `content/traditions/<slug>.jpg|png|webp`（与 `.md` 同级）；在对应 md 靠前位置插入 `![简述](./<slug>.ext)`；只用可核验**开放许可**图（Wikimedia Commons、博物馆开放获取、官方文化机构）；声明找不到前须至少尝试 **3 种不同思路**并记入「找不到」节
 - **思路示例：** ① Wikimedia 搜英文/原语名 ② Met/British Museum/国立博物馆开放藏品 ③ 联合国教科文/政府观光署活动页可下载图 ④ 卡内参考来源 URL 抓取开放图
 - **优先：** 日常小仪式专卡 → 其余按字母
-- **统计：** 待配 14；已配 716；找不到 19
+- **统计：** 待配 4；已配 726；找不到 19
 - **工作分支：** `content/ritual-photos`（基于 `content/micro-ritual-cards`）
 
 ## 待配
-1. [ ] `yolngu`
-2. [ ] `yombe-traditional`
-3. [ ] `yoruba-and-west-african`
-4. [ ] `yucatec-maya`
-5. [ ] `yudja-traditional`
-6. [ ] `yugur-traditional`
-7. [ ] `yukaghir-traditional`
-8. [ ] `yupik-traditional`
-9. [ ] `zapotec-traditional`
-10. [ ] `zhuang-mo`
-11. [ ] `zoque-traditional`
-12. [ ] `zoroastrianism`
-13. [ ] `zulu-nguni`
-14. [ ] `zuni-ashiwi`
+1. [ ] `zoque-traditional`
+2. [ ] `zoroastrianism`
+3. [ ] `zulu-nguni`
+4. [ ] `zuni-ashiwi`
 ## 已配
 
 1. [x] `mokugyo-wooden-fish` 【优先】 batch1 — mokugyo-wooden-fish.jpg；Public Domain / Met Open Access；https://www.metmuseum.org/art/collection/search/505614
@@ -741,6 +731,16 @@
 714. [x] `yi-bimoism` batch84 — 彝族毕摩教；yi-bimoism.jpg；Public domain；https://commons.wikimedia.org/wiki/File:%E7%AD%86%E6%91%A9%E8%83%BD%E6%96%87%E5%96%84%E5%92%92%E7%82%BA%E7%8C%93%E7%8E%80%E6%97%8F%E4%B8%AD%E4%B9%8B%E5%B7%AB%E8%80%85.jpg
 715. [x] `yine-traditional` batch84 — 伊内／皮罗；yine-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:%E2%80%9CPiro-Indianer%E2%80%9D.jpg
 716. [x] `yokotan-traditional` batch84 — 约科坦；yokotan-traditional.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Rezandero_Chontal_2.jpg
+717. [x] `yolngu` batch85 — 约尔努；yolngu.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Aboriginal_Memorial_June_2022.jpg
+718. [x] `yombe-traditional` batch85 — 永贝；yombe-traditional.jpg；CC0；https://commons.wikimedia.org/wiki/File:Figure_of_Mother_and_Child,_Yombe_people,_Lower_Congo_province,_Democratic_Republic_of_the_Congo,_19th_century,_wood,_beads,_glass_mirror,_metal,_resin_-_Brooklyn_Museum_-_Brooklyn,_NY_-_DSC08533.JPG
+719. [x] `yoruba-and-west-african` batch85 — 约鲁巴；yoruba-and-west-african.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Osun_Osogbo_Sacred_Groove_-_The_statue_of_Osun.jpg
+720. [x] `yucatec-maya` batch85 — 尤卡坦玛雅；yucatec-maya.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Kuj%27naj.jpg
+721. [x] `yudja-traditional` batch85 — 尤贾／朱鲁纳；yudja-traditional.jpg；CC BY 2.0；https://commons.wikimedia.org/wiki/File:AMAZONIA_REAL_ALDEIA_SAO_FRANCISCO_SOUZEL_PEDROSA_NETO-108_(49594446586).jpg
+722. [x] `yugur-traditional` batch85 — 裕固；yugur-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Matisi_Gisela-Brantl_04.JPG
+723. [x] `yukaghir-traditional` batch85 — 尤卡吉尔；yukaghir-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Yukaghir_shaman.jpg
+724. [x] `yupik-traditional` batch85 — 尤皮克；yupik-traditional.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Alaska_yupik_mask.jpg
+725. [x] `zapotec-traditional` batch85 — 萨波特克；zapotec-traditional.jpg；CC BY-SA 2.0；https://commons.wikimedia.org/wiki/File:Classical_Zapotec_Figure_-_Santo_Domingo_Cultural_Center_-_Oaxaca_City_-_Oaxaca_-_Mexico_(6490931829).jpg
+726. [x] `zhuang-mo` batch85 — 壮族麽教；zhuang-mo.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:%E5%A3%AE%E6%97%8F%E8%9B%99%E9%BC%93.jpg
 ## 找不到（须含 ≥3 思路记录）
 1. [!] `bugun-traditional` batch23 — 找不到开放许可配图。思路：① Wikimedia Commons 搜 Bugun / Khowa Arunachal / Bugun tribe / Singchung Bugun / Pham-Kho Sowai，Category:Bugun 为空，无人物／节庆／仪式照；② Met Open Access 与卡内 Britannica（Arunachal／Donyi-Polo）链无明确 Bugun 开放藏品／可下载活动图；③ 新闻（Arunachal Observer 等 Pham-Kho Sowai 报道）与博物馆外景（Jawaharlal Nehru Museum／RIWATCH）许可不明或不属布贡社群仪式主题；仅见以族群命名的鸟类 Bugun liocichla，不宜作仪式卡配图。
 2. [!] `dhimal-traditional` batch29 — 找不到适合仪式卡的开放许可配图。思路：① Wikimedia Commons 搜 Dhimal / Siruwa Parba / Jatri / Dhimal Nepal costume／dance／Jhapa／Naxalbari，仅见语言地图、文字矢量图、共享食品 Bagiya.jpg（亦属 Maithil／Tharu，非迪马尔专属仪式），无人物／节庆／仪礼照；② Met Open Access 精确 "Dhimal" 命中 0；British Museum 检索无可用开放下载仪式图；卡内 Britannica 链无开放活动图；③ 新闻（Rising Nepal Jatri／Sirjat）与 Joshua Project 所引 Wikimedia（Munal Chaudhary）核查为 Tharu「Ashtimki」节庆图，非 Dhimal；无政府／UNESCO 可核验开放许可仪式照。

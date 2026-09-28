@@ -1,5 +1,9 @@
 # 伦马那加基督教与传统祈福余绪（Rengma）
 
+![霍恩比尔节伦马那加服饰展演（基萨马）](./rengma-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Rengma_Nagas_at_Kisama_Heritage_Village,_Nagaland.jpg -->
+
 ## 概述
 
 **伦马人（Rengma）** 为印度那加兰与阿萨姆交界地带的那加族群之一。公开概述记述：今日多数为浸信会等新教基督徒；传统信仰记忆与文化展演并存于认同叙述。本条目为教育概览；**不提供**猎首历史操作化、献牲或可冒充祭司的步骤。与苏米、洛塔、安加米条目可比较。

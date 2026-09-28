@@ -1,5 +1,9 @@
 # 伦迪勒传统信仰与肯尼亚北部牧祈福（Rendille）
 
+![肯尼亚北部伦迪勒村落](./rendille-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:In_a_small_Rendille_ethnic_village,_Northern_Kenya.jpg -->
+
 ## 概述
 
 **伦迪勒人（Rendille）** 分布于肯尼亚北部，以骆驼牧养与年龄组织公开叙述著称——**中高敏感**。今日并存基督教／伊斯兰教接触与干旱适应。教育概览；不提供祭祀操作。与博拉纳、马赛、桑布鲁等条目区分（伦迪勒为库希特语牧人传统，非马赛）。

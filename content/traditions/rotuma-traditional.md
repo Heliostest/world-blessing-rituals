@@ -1,5 +1,9 @@
 # 罗图马传统信仰与波利尼西亚边缘祈福（Rotuma）
 
+![罗图马酋长会议（1927）](./rotuma-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Council_of_Chiefs_of_Rotuma,_1927.jpg -->
+
 ## 概述
 
 **罗图马（Rotuma）** 为斐济属地岛屿，文化上偏波利尼西亚，与斐济本土美拉尼西亚传统有别。公开叙述涉及酋长、祖先与基督教接触后的社区伦理——**中高敏感**。教育概览；丧礼与密传止于概念。与斐济总述、瓦利斯等条目区分。

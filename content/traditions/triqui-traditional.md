@@ -1,5 +1,9 @@
 # 特里基民间天主教与山灵祈福（Triqui）
 
+![特里基圣周游行（圣多明各德尔埃斯塔多）](./triqui-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Semana_santa_triqui_en_Santo_Domingo_del_Estado.jpg -->
+
 ## 概述
 
 **特里基人（Triqui）** 分布于墨西哥瓦哈卡西部山地，支系与方言多样。公开概述记述：天主教圣徒与地方山灵、玉米伦理交织；社区自治与迁徙劳工经历深刻；政治暴力与流散语境要求叙述克制。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与米赫、奇南特克、米斯特克条目可比较。

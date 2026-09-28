@@ -1,5 +1,9 @@
 # 特罗布里恩传统信仰与库拉—祖先祈福（Trobriand／Kiriwina）
 
+![特罗布里恩群岛独木舟挡浪板（火奴鲁鲁艺术博物馆）](./trobriand-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Canoe_splashboard,_Trobriand_Islands,_Honolulu_Museum_of_Art,_4193.JPG -->
+
 ## 概述
 
 **特罗布里恩人（Trobriand Islanders；基里维纳等岛）** 属巴布亚新几内亚马西姆区域，以 **Kula** 交换圈、园圃魔力与母系礼仪闻名于人类学经典——本卡拒绝把马林诺夫斯基传统写成可通关「原始经济游戏」。公开概述记述：祖先、园圃与航海互惠交织；今日并存基督教。教育概览；**不提供**魔力咒语、献牲或可冒充仪者的步骤。

@@ -1,5 +1,9 @@
 # 特里普里传统信仰与十四神祈福（Tripuri）
 
+![特里普拉十四神庙（Kharchi／Chaturdasha Devata）](./tripuri-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Temple_of_14_gods-Tripura.jpg -->
+
 ## 概述
 
 **特里普里人（Tripuri／Tipra）** 为印度特里普拉邦主要原住民族群之一，亦分布于孟加拉国毗邻地带。公开概述记述：传统宗教常与 **十四神（Fourteen Gods／Chaturdasha Devata）** 崇拜及相关王室—祭司记忆相连；今日广泛并存印度教实践与基督教改宗社区；节庆与生命礼仪中祖先与地方神敬意仍可见。本条目为教育概览；**不提供**王室秘仪、献牲操作或可冒充祭司的步骤。

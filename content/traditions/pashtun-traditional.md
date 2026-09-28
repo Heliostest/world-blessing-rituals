@@ -1,5 +1,9 @@
 # 普什图民间伊斯兰与普什图瓦里祈福（Pashtun）
 
+![阿富汗普什图家庭](./pashtun-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Afghan_family_Pashtun_home.JPEG -->
+
 ## 概述
 
 **普什图人（Pashtun／Pakhtun）** 分布于阿富汗与巴基斯坦开伯尔—普什图省等广大地带，绝大多数为逊尼派穆斯林。公开概述记述：清真寺与经堂构成宗教生活；**Pashtunwali（普什图瓦里）** 习惯法典强调荣誉、好客、庇护与赔偿正义，与伊斯兰规范复杂交织；苏菲圣地与生命礼仪亦常见。本条目为教育概览；**不提供**血仇操作、政治动员或可冒充教法权威的步骤。

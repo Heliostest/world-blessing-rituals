@@ -1,5 +1,9 @@
 # 彭德传统信仰与面具—祖灵祈福（Pende）
 
+![彭德面具（博物馆藏）](./pende-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Masque_Pende_Congo_belge.jpg -->
+
 ## 概述
 
 **彭德人（Pende）** 分布于刚果民主共和国西南。公开概述记述：传统宇宙强调祖灵与著名的面具—启蒙会社传统；今日并存基督教；殖民与冲突史要求克制。本条目为教育概览；**严禁**入会、面具仪轨操作化或献牲步骤。与乔奎、库巴等条目区分。

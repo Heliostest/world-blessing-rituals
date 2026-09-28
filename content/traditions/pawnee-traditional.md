@@ -1,5 +1,9 @@
 # 波尼人传统信仰与星辰—圣捆祈福（Pawnee）
 
+![波尼村落土屋与村民（历史照片）](./pawnee-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Group_of_Indians_and_mud_lodge_in_Pawnee_village,_by_Carbutt,_John,_1832-1905.jpg -->
+
 ## 概述
 
 **波尼人（Pawnee）** 为北美大平原／中部平原原住民民族，历史上主要活动于今内布拉斯加一带，后迁居今俄克拉何马；传统上包括斯基迪（Skidi／Skiri）、乔维（Chaui）、基特卡哈基（Kitkehahki）、皮塔豪伊拉特（Pitahawirata）等分支。大英百科与史密森尼等公开研究记述：波尼传统宗教高度精致，以至高创造力量 **Tirawa（Tirawahat）**、太阳 **Shakuru**、晨星与昏星等天体权能，以及各村／各带保管的 **sacred bundles（圣捆）** 为中心；祭司掌握礼仪歌曲与天文—农事节律，萨满式疗愈者亦具重要社会角色；玉米在象征系统中常被理解为太阳祝福经由「母亲」意象赐予的媒介。斯基迪波尼历史上曾有与晨星捆相关的高度限制性礼仪，公开史学记载其中偶发的人祭实践已于十九世纪终止（常引最后已知事件约在 1838 年），并遭美国当局禁止。本条目为教育概览；**不提供**圣捆打开程序、礼仪歌曲、晨星献祭任何复现细节，或可冒充祭司的操作。

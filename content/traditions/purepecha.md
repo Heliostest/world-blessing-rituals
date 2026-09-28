@@ -1,5 +1,9 @@
 # 普雷佩查民间天主教与节庆祈福（Purépecha／P'urhépecha）
 
+![哈尼齐奥岛亡灵节守夜](./purepecha.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Noche_de_Muertos_en_Janitzio.jpg -->
+
 ## 概述
 
 **普雷佩查人（Purépecha；亦称 P'urhépecha；西语旧称 Tarasco／Tarascan，多外名称谓）** 主要居住在墨西哥米却肯州火山高原与湖区。大英百科记述其为农业与手工艺社群；宗教信仰以罗马天主教为主，公开综述称民间天主教强调主保圣人与节庆。公开文化记述突出 **帕特茨夸罗（Pátzcuaro）／哈尼齐奥（Janitzio）亡灵节（Día de Muertos）**、**K'uínchekua** 等新年／村社节庆叙事、**cargo** 主保服务，以及 **代父母（compadrazgo／godparent）** 纽带。本条目为教育概览；**不提供**巫术指控操作、草药剂量或任何可复现的“法力”步骤。

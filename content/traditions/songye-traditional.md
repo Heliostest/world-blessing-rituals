@@ -1,5 +1,9 @@
 # 松格传统信仰与面具—祖灵祈福（Songye）
 
+![松格基夫韦贝面具博物馆藏](./songye-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Mask_(kifwebe),_male_-_Songye_-_Royal_Museum_for_Central_Africa_-_DSC06089.JPG -->
+
 ## 概述
 
 **松格人（Songye）** 分布于刚果民主共和国中南部。公开概述记述：传统宇宙强调祖灵与著名的权力雕像／面具（如 *kifwebe* 相关公开艺术史叙述）传统；今日并存基督教；艺术品市场伦理争议显著。本条目为教育概览；**严禁**入会、法器操作化或献牲步骤。与彭德、雅卡、卢巴相关语境区分。

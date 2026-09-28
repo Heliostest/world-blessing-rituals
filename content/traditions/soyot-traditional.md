@@ -1,5 +1,9 @@
 # 索约特传统信仰与山灵—佛教祈福（Soyot）
 
+![索约特祭祀器物博物馆藏](./soyot-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Soyot_cult_objects,_1889_-_C._G._Mannerheim_collection_-_Museum_of_Cultures_(Helsinki)_-_DSC04867.JPG -->
+
 ## 概述
 
 **索约特人（Soyot；俄语 Сойоты）** 分布于俄罗斯布里亚特共和国奥卡（Oka）等高海拔区，邻近蒙古。公开原住民图志与研究记述：传统世界观强调万物有主、山岳与动物须受敬畏；当代宗教生活多与藏传佛教并行，并复兴对圣山（如与布仁汗／Buren-Khaan、门库—萨尔达克相关叙事）的集体朝拜。驯养与狩猎伦理中的「平衡」观念亦见于当代民族志。本条目为教育概览；**不提供**萨满请神脚本、献牲操作或可冒充喇嘛／萨满的程序。

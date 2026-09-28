@@ -1,5 +1,9 @@
 # 斯洛伐克民间天主教与朝圣祈福（Slovak）
 
+![莱沃恰圣母山朝圣圣殿](./slovak-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Bazilika_Mari%C3%A1nska_hora,_Levo%C4%8Da_19_Slovakia199.jpg -->
+
 ## 概述
 
 **斯洛伐克民间天主教** 在罗马天主教主流下，保留圣母朝圣地、乡村主保节、复活节民俗与家庭祝福等层。公开文化记述中，**莱沃恰圣母山（Mariánska hora, Levoča）** 传统上吸引大规模朝圣信众；复活节有 **Šibačka／Oblievačka**（鞭梢轻触／泼水祝福民俗）；另有主保巡游与节日食物祝福。本条目为教育概览；**不提供**可替代圣事的配方，并与捷克—摩拉维亚、波兰圣篮、匈牙利民俗条目可比较。

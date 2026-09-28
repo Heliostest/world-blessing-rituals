@@ -1,5 +1,9 @@
 # 瓦伦西亚法雅节与民间天主教节庆（Valencian Fallas／Falles）
 
+![瓦伦西亚法雅节焚烧（Cremà）](./valencian-fallas.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Fallas_crem%C3%A0_Burning_the_falla_in_Valencia.jpg -->
+
 ## 概述
 
 **法雅节（Valencian: Falles；Spanish: Fallas）** 是西班牙瓦伦西亚及其侨民社区迎接春天的大型城市节庆，以街道上竖立（**Plantà**）、并于圣若瑟瞻礼（3 月 19 日）焚烧（**La Cremà**）的巨型讽刺雕塑 **falla／ninot** 为核心。联合国教科文组织于 2016 年将「瓦伦西亚法雅节」列入人类非物质文化遗产代表作名录。节庆结构公开包括：**Plantà**（竖立）、日间 **Mascletà** 烟火节奏、向城市主保 **Virgen de los Desamparados（被遗弃者圣母）** 的 **Ofrenda de Flores（献花）**——**并非向圣若瑟献花**——以及圣若瑟日的 **La Cremà**。由各区 fallas 委员会与市政机构组织。本条目聚焦可核验的公共节庆与民事虔诚层；**不提供**可冒充弥撒或圣事的操作，亦不鼓励危险烟火仿作。

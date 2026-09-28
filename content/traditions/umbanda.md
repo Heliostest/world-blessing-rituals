@@ -1,5 +1,9 @@
 # 巴西翁班达（Umbanda）
 
+![翁班达 Boiadeiros 礼仪](./umbanda.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Os_Boiadeiros_na_Umbanda_da_TESL_Pita_13.jpg -->
+
 ## 概述
 
 翁班达（Umbanda）是20世纪兴起于巴西都市（尤其里约热内卢、圣保罗一带）的非洲裔—通灵融合宗教，与巴伊亚等地更强调西非渊源的**坎东布莱**同属广义 Macumba 光谱，但组织与神学并不相同。大英百科全书在 Macumba 条目中指出：翁班达更「精致」、反映印度教与佛教影响，并吸引白人中产阶级；礼仪由介质主导，透过恍惚与圣灵沟通。其典型要素包括卡德克灵学（Kardecist Spiritism）、天主教圣徒意象、非洲神灵／精灵类别以及巴西原住民灵性形象的再创造。本条目为教育性概览，强调与坎东布莱的区别；**不提供**入会、附体诱导或献祭的任何操作说明。

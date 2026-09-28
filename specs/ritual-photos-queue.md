@@ -3,84 +3,74 @@
 - **规则：** 每轮处理 **10** 张；图片保存为 `content/traditions/<slug>.jpg|png|webp`（与 `.md` 同级）；在对应 md 靠前位置插入 `![简述](./<slug>.ext)`；只用可核验**开放许可**图（Wikimedia Commons、博物馆开放获取、官方文化机构）；声明找不到前须至少尝试 **3 种不同思路**并记入「找不到」节
 - **思路示例：** ① Wikimedia 搜英文/原语名 ② Met/British Museum/国立博物馆开放藏品 ③ 联合国教科文/政府观光署活动页可下载图 ④ 卡内参考来源 URL 抓取开放图
 - **优先：** 日常小仪式专卡 → 其余按字母
-- **统计：** 待配 74；已配 657；找不到 18
+- **统计：** 待配 64；已配 667；找不到 18
 - **工作分支：** `content/ritual-photos`（基于 `content/micro-ritual-cards`）
 
 ## 待配
-1. [ ] `ukrainian-folk`
-2. [ ] `ulchi-traditional`
-3. [ ] `umbanda`
-4. [ ] `umbrian-folk`
-5. [ ] `uyghur-mazar`
-6. [ ] `uzbek-folk`
-7. [ ] `valdostano-folk`
-8. [ ] `valencian-fallas`
-9. [ ] `vanuatu-kastom`
-10. [ ] `vedda`
-11. [ ] `venda-traditional`
-12. [ ] `veps-folk`
-13. [ ] `vietnamese-folk`
-14. [ ] `vili-traditional`
-15. [ ] `vodun-vodou`
-16. [ ] `volga-tatar-traditional`
-17. [ ] `wa-traditional`
-18. [ ] `waaqeffanna`
-19. [ ] `waiwai-traditional`
-20. [ ] `wallis-futuna-traditional`
-21. [ ] `walloon-folk`
-22. [ ] `walser-folk`
-23. [ ] `wancho-traditional`
-24. [ ] `waorani-traditional`
-25. [ ] `warao-traditional`
-26. [ ] `waura-traditional`
-27. [ ] `wayampi-traditional`
-28. [ ] `wayana-traditional`
-29. [ ] `wayuu-traditional`
-30. [ ] `welsh-folk`
-31. [ ] `wetu-telu-sasak`
-32. [ ] `wichi-traditional`
-33. [ ] `winti`
-34. [ ] `wiwa-traditional`
-35. [ ] `wixarika-huichol`
-36. [ ] `wolaita-traditional`
-37. [ ] `wolof-traditional`
-38. [ ] `won-buddhism`
-39. [ ] `wounaan-traditional`
-40. [ ] `xavante-traditional`
-41. [ ] `xhosa-traditional`
-42. [ ] `xibe-traditional`
-43. [ ] `yaawo-traditional`
-44. [ ] `yagua-traditional`
-45. [ ] `yaka-traditional`
-46. [ ] `yakkha-traditional`
-47. [ ] `yali-traditional`
-48. [ ] `yaminahua-traditional`
-49. [ ] `yanesha-traditional`
-50. [ ] `yanomami-traditional`
-51. [ ] `yao-mien`
-52. [ ] `yapese-traditional`
-53. [ ] `yaqui-yoeme`
-54. [ ] `yarsanism`
-55. [ ] `yawalapiti-traditional`
-56. [ ] `yazidi`
-57. [ ] `yekuana-traditional`
-58. [ ] `yi-bimoism`
-59. [ ] `yine-traditional`
-60. [ ] `yokotan-traditional`
-61. [ ] `yolngu`
-62. [ ] `yombe-traditional`
-63. [ ] `yoruba-and-west-african`
-64. [ ] `yucatec-maya`
-65. [ ] `yudja-traditional`
-66. [ ] `yugur-traditional`
-67. [ ] `yukaghir-traditional`
-68. [ ] `yupik-traditional`
-69. [ ] `zapotec-traditional`
-70. [ ] `zhuang-mo`
-71. [ ] `zoque-traditional`
-72. [ ] `zoroastrianism`
-73. [ ] `zulu-nguni`
-74. [ ] `zuni-ashiwi`
+1. [ ] `venda-traditional`
+2. [ ] `veps-folk`
+3. [ ] `vietnamese-folk`
+4. [ ] `vili-traditional`
+5. [ ] `vodun-vodou`
+6. [ ] `volga-tatar-traditional`
+7. [ ] `wa-traditional`
+8. [ ] `waaqeffanna`
+9. [ ] `waiwai-traditional`
+10. [ ] `wallis-futuna-traditional`
+11. [ ] `walloon-folk`
+12. [ ] `walser-folk`
+13. [ ] `wancho-traditional`
+14. [ ] `waorani-traditional`
+15. [ ] `warao-traditional`
+16. [ ] `waura-traditional`
+17. [ ] `wayampi-traditional`
+18. [ ] `wayana-traditional`
+19. [ ] `wayuu-traditional`
+20. [ ] `welsh-folk`
+21. [ ] `wetu-telu-sasak`
+22. [ ] `wichi-traditional`
+23. [ ] `winti`
+24. [ ] `wiwa-traditional`
+25. [ ] `wixarika-huichol`
+26. [ ] `wolaita-traditional`
+27. [ ] `wolof-traditional`
+28. [ ] `won-buddhism`
+29. [ ] `wounaan-traditional`
+30. [ ] `xavante-traditional`
+31. [ ] `xhosa-traditional`
+32. [ ] `xibe-traditional`
+33. [ ] `yaawo-traditional`
+34. [ ] `yagua-traditional`
+35. [ ] `yaka-traditional`
+36. [ ] `yakkha-traditional`
+37. [ ] `yali-traditional`
+38. [ ] `yaminahua-traditional`
+39. [ ] `yanesha-traditional`
+40. [ ] `yanomami-traditional`
+41. [ ] `yao-mien`
+42. [ ] `yapese-traditional`
+43. [ ] `yaqui-yoeme`
+44. [ ] `yarsanism`
+45. [ ] `yawalapiti-traditional`
+46. [ ] `yazidi`
+47. [ ] `yekuana-traditional`
+48. [ ] `yi-bimoism`
+49. [ ] `yine-traditional`
+50. [ ] `yokotan-traditional`
+51. [ ] `yolngu`
+52. [ ] `yombe-traditional`
+53. [ ] `yoruba-and-west-african`
+54. [ ] `yucatec-maya`
+55. [ ] `yudja-traditional`
+56. [ ] `yugur-traditional`
+57. [ ] `yukaghir-traditional`
+58. [ ] `yupik-traditional`
+59. [ ] `zapotec-traditional`
+60. [ ] `zhuang-mo`
+61. [ ] `zoque-traditional`
+62. [ ] `zoroastrianism`
+63. [ ] `zulu-nguni`
+64. [ ] `zuni-ashiwi`
 
 ## 已配
 
@@ -741,6 +731,16 @@
 655. [x] `tzutujil-traditional` batch78 — 楚图希尔；tzutujil-traditional.jpg；CC BY 2.0；https://commons.wikimedia.org/wiki/File:Iglesia_Parroquial_Santiago_Ap%C3%B3stol%2C_Santiago_Atitlan.jpg
 656. [x] `udege-traditional` batch78 — 乌德盖；udege-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:%D0%92._%D0%9A._%D0%90%D1%80%D1%81%D0%B5%D0%BD%D1%8C%D0%B5%D0%B2_%D0%B2_%D1%83%D0%B4%D1%8D%D0%B3%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%BC_%D0%BA%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B5_%28%D0%B2_%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B5%29_%D0%B8_%D1%83%D0%B4%D1%8D%D0%B3%D0%B5%D0%B9%D1%86%D1%8B_%D1%81_%D1%80%D0%B5%D0%BA%D0%B8_%D0%90%D0%BD%D1%8E%D0%B9..jpg
 657. [x] `udmurt-traditional` batch78 — 乌德穆尔特；udmurt-traditional.jpg；CC BY 4.0；https://commons.wikimedia.org/wiki/File:Udmurt_women_1907.jpg
+658. [x] `ukrainian-folk` batch79 — 乌克兰民间；ukrainian-folk.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Ukrainian_Orthodox_Christmas_in_Poland_-_Koliada.JPG
+659. [x] `ulchi-traditional` batch79 — 乌尔奇；ulchi-traditional.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Ulchi_village.jpg
+660. [x] `umbanda` batch79 — 翁班达；umbanda.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Os_Boiadeiros_na_Umbanda_da_TESL_Pita_13.jpg
+661. [x] `umbrian-folk` batch79 — 翁布里亚；umbrian-folk.jpg；Public domain；https://commons.wikimedia.org/wiki/File:Assisi_San_Francesco_BW_4.JPG
+662. [x] `uyghur-mazar` batch79 — 维吾尔麻扎；uyghur-mazar.jpg；CC BY 3.0；https://commons.wikimedia.org/wiki/File:Kashgar_-_Afaq_Khoja_Mausoleum.jpg
+663. [x] `uzbek-folk` batch79 — 乌兹别克；uzbek-folk.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Sumalak_sayli.jpg
+664. [x] `valdostano-folk` batch79 — 瓦莱达奥斯塔；valdostano-folk.jpg；CC BY-SA 3.0；https://commons.wikimedia.org/wiki/File:Notre-Dame_de_la_Gu%C3%A9rison.JPG
+665. [x] `valencian-fallas` batch79 — 瓦伦西亚法雅；valencian-fallas.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Fallas_crem%C3%A0_Burning_the_falla_in_Valencia.jpg
+666. [x] `vanuatu-kastom` batch79 — 瓦努阿图卡斯托姆；vanuatu-kastom.jpg；CC BY 2.0；https://commons.wikimedia.org/wiki/File:Sand_drawing,_Vanuatu.jpg
+667. [x] `vedda` batch79 — 维达人；vedda.jpg；CC BY-SA 4.0；https://commons.wikimedia.org/wiki/File:Vedda_man_and_child,_Sri_Lanka.jpg
 
 ## 找不到（须含 ≥3 思路记录）
 1. [!] `bugun-traditional` batch23 — 找不到开放许可配图。思路：① Wikimedia Commons 搜 Bugun / Khowa Arunachal / Bugun tribe / Singchung Bugun / Pham-Kho Sowai，Category:Bugun 为空，无人物／节庆／仪式照；② Met Open Access 与卡内 Britannica（Arunachal／Donyi-Polo）链无明确 Bugun 开放藏品／可下载活动图；③ 新闻（Arunachal Observer 等 Pham-Kho Sowai 报道）与博物馆外景（Jawaharlal Nehru Museum／RIWATCH）许可不明或不属布贡社群仪式主题；仅见以族群命名的鸟类 Bugun liocichla，不宜作仪式卡配图。

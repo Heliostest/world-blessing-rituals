@@ -1,5 +1,9 @@
 # 瓦乌拉／沃贾传统信仰与辛古祈福（Wauja / Waura）
 
+![辛古瓦乌拉人马普卢陶罐](./waura-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Cooking_Pot_Mapulu_Waura.JPG -->
+
 ## 概述
 
 **瓦乌拉人（Wauja，亦作 Waura）** 为巴西上辛古地区原住民社群之一。公开文化叙述常见仪式笛、神话与村落礼仪——**高度敏感，本卡仅概念层**。今日并存土地维权与跨村落联盟。教育概览；**严禁**入会、圣笛操作或可冒充仪者的步骤。与卡马尤拉、梅希纳库、卡鲁阿贾等辛古条目区分。

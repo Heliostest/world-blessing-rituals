@@ -1,5 +1,9 @@
 # 瓦扬皮传统信仰与法属圭亚那—奥亚波克祈福（Wayampi / Wajãpi）
 
+![瓦扬皮／瓦贾皮人](./wayampi-traditional.jpg)
+
+<!-- 来源：CC BY 3.0 br | https://commons.wikimedia.org/wiki/File:Wajãpi.jpg -->
+
 ## 概述
 
 **瓦扬皮人（Wayampi，亦作 Wajãpi／Wayãpi）** 分布于法属圭亚那与巴西北部奥亚波克一带。公开叙述涉及村落礼仪、身体彩绘与护佑观念——**高度敏感，本卡仅概念层**。今日并存国家医疗／教育接触与土地维权。教育概览；**严禁**入会、萨满操作或可冒充仪者的步骤。与帕利库尔、蒂里奥、阿帕莱等条目区分；不另开 wajapi 同义卡。

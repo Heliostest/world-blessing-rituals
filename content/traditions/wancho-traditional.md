@@ -1,5 +1,9 @@
 # 万乔传统信仰与基督教祈福余绪（Wancho）
 
+![阿鲁纳恰尔邦万乔人传统服饰](./wancho-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Wancho_Tribe_ARUNACHAL_PRADESH_INDIA.jpg -->
+
 ## 概述
 
 **万乔人（Wancho）** 分布于印度阿鲁纳恰尔邦东南，与那加相关山地社群公开分类中常并列讨论。公开记述：传统宇宙含祖先与地方灵力；今日并存基督教与本土实践；历史上战争—猎首叙事在民族志影像中被过度猎奇。本条目为教育概览；**绝不提供**猎首／文身操作化、献牲或可冒充仪者的步骤。与科尼亚克、诺克特等相关语境须克制比较。

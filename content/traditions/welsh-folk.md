@@ -1,5 +1,9 @@
 # 威尔士民间祈福与节庆（Welsh Folk／Cymru）
 
+![威尔士马里·卢伊德（Mari Lwyd）民俗](./welsh-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mari_Lwyd_At_Sidmouth_Folk_Festival.jpg -->
+
 ## 概述
 
 **威尔士（Cymru／Wales）** 民间祈福与节庆文化以威尔士语社群的诗歌、音乐与岁时习俗为核，并与基督教长期交织。公开机构叙述重点包括：霍利韦尔 **St Winefride's Well（圣温妮弗雷德圣井）** 朝圣、**St David's Day（圣大卫日，3 月 1 日）**、冬季 **Mari Lwyd** 门前 **Pwnco** 对歌，以及 **National Eisteddfod** 与 **Gorsedd** 公开典礼。本条目聚焦当代可核验的民俗—公共文化层；**不提供**任何当代异教教团入会或冒充大德鲁伊主持的操作。

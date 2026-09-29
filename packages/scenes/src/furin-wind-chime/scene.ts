@@ -1,13 +1,17 @@
 import * as THREE from 'three'
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js'
 import { createDebugRenderStyle } from '@wbr/scene-runtime/debug-render-style'
 import type { GestureHandle } from '@wbr/gestures'
 import type { SceneContext, SceneInstance } from '../contract'
 import {
+  addCelLights,
+  CEL_STYLE,
   createChimeAudio,
   createMotes,
   createStepOverlay,
   createWarmStage,
   disposeTree,
+  markBackdrop,
   setSafeText,
 } from '../procedural-kit'
 
@@ -29,6 +33,8 @@ const COPY = {
 const RING_SECONDS = 2.2
 const SWING_TRIGGER_DEG = 30
 const RIBBON_SEGMENTS = 4
+const BELL_RADIUS = 0.26
+const BELL_SWEEP = Math.PI * 0.55
 
 export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   const { canvas, overlay, gestures, shared } = ctx
@@ -78,7 +84,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   }
 
   // Summer cream: pale sky-cream background, sun-warm key light.
-  const { renderer, scene } = createWarmStage(canvas, 0xf6f0e4, 0.05)
+  const { renderer, scene } = createWarmStage(canvas, 0xf7f0e3, 0.045)
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.5, 3.4)
   camera.position.copy(cameraHome)
@@ -87,30 +93,36 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
     id: ctx.sceneId ?? 'furin-wind-chime', label: COPY.title,
   })
+  styleRenderer.setStyle(CEL_STYLE)
 
-  const ambient = new THREE.AmbientLight(0xfff4e0, 0.75)
-  const hemi = new THREE.HemisphereLight(0xfff0d8, 0xd8c8a8, 0.6)
-  const key = new THREE.DirectionalLight(0xffe0b0, 1.0)
-  key.position.set(2, 4, 3)
+  // Summer afternoon: sun-warm key, cool sky-blue rim off the glass.
+  addCelLights(scene, {
+    sky: 0xfff4e2,
+    ground: 0xdcc6a6,
+    key: 0xffe2b2,
+    rim: 0xc4e6ff,
+    keyIntensity: 1.3,
+    keyPosition: [2, 4, 3],
+  })
   const glint = new THREE.PointLight(0xbfe4ff, 0, 2.5, 2)
   glint.position.set(0.3, 1.7, 0.6)
-  scene.add(ambient, hemi, key, glint)
+  scene.add(glint)
 
   const world = new THREE.Group()
   scene.add(world)
 
-  // Wooden eave beam the chime hangs from.
+  // Wooden eave beam the chime hangs from; soft bevel catches a cel highlight.
   const beam = new THREE.Mesh(
-    new THREE.BoxGeometry(3.6, 0.14, 0.3),
-    new THREE.MeshStandardMaterial({ color: 0xb08a62, roughness: 0.8 }),
+    new RoundedBoxGeometry(3.6, 0.14, 0.3, 2, 0.025),
+    new THREE.MeshStandardMaterial({ color: 0xb98c60, roughness: 0.95 }),
   )
   beam.position.set(0, 2.45, -0.1)
   world.add(beam)
 
-  const backWall = new THREE.Mesh(
+  const backWall = markBackdrop(new THREE.Mesh(
     new THREE.PlaneGeometry(6, 4),
-    new THREE.MeshStandardMaterial({ color: 0xefe3cf, roughness: 1 }),
-  )
+    new THREE.MeshStandardMaterial({ color: 0xf1e4cd, roughness: 1 }),
+  ))
   backWall.position.set(0, 1.5, -1.4)
   world.add(backWall)
 
@@ -121,13 +133,13 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
 
   const cord = new THREE.Mesh(
     new THREE.CylinderGeometry(0.006, 0.006, 0.3, 6),
-    new THREE.MeshStandardMaterial({ color: 0xc0504a, roughness: 0.8 }),
+    new THREE.MeshStandardMaterial({ color: 0xd2574d, roughness: 0.95 }),
   )
   cord.position.y = -0.15
   pivot.add(cord)
 
   const bellMat = new THREE.MeshStandardMaterial({
-    color: 0xd8f0ff,
+    color: 0xd2efff,
     emissive: 0x7ab8d8,
     emissiveIntensity: 0.15,
     metalness: 0.1,
@@ -137,16 +149,30 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
     side: THREE.DoubleSide,
   })
   const bell = new THREE.Mesh(
-    new THREE.SphereGeometry(0.26, 32, 16, 0, Math.PI * 2, 0, Math.PI * 0.55),
+    new THREE.SphereGeometry(BELL_RADIUS, 32, 16, 0, Math.PI * 2, 0, BELL_SWEEP),
     bellMat,
   )
   bell.position.y = -0.52
   pivot.add(bell)
 
+  // Opaque lip and crown on the clear glass: the ink pass only outlines opaque
+  // surfaces, so these give the bell a crisp drawn mouth and top.
+  const rimMat = new THREE.MeshStandardMaterial({ color: 0xb4e0f2, roughness: 0.9 })
+  const lip = new THREE.Mesh(
+    new THREE.TorusGeometry(BELL_RADIUS * Math.sin(BELL_SWEEP), 0.009, 8, 48),
+    rimMat,
+  )
+  lip.rotation.x = Math.PI / 2
+  lip.position.y = bell.position.y + BELL_RADIUS * Math.cos(BELL_SWEEP)
+  pivot.add(lip)
+  const crown = new THREE.Mesh(new THREE.SphereGeometry(0.035, 16, 8), rimMat)
+  crown.position.y = bell.position.y + BELL_RADIUS
+  pivot.add(crown)
+
   // Painted band on the glass (goldfish-red summer stripe).
   const band = new THREE.Mesh(
     new THREE.TorusGeometry(0.235, 0.012, 8, 32),
-    new THREE.MeshStandardMaterial({ color: 0xe4574a, roughness: 0.5 }),
+    new THREE.MeshStandardMaterial({ color: 0xea5a4c, roughness: 0.9 }),
   )
   band.rotation.x = Math.PI / 2
   band.position.y = -0.62
@@ -164,15 +190,15 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   clapperPivot.add(clapperString)
   const clapper = new THREE.Mesh(
     new THREE.CylinderGeometry(0.03, 0.03, 0.05, 12),
-    new THREE.MeshStandardMaterial({ color: 0x8c6c4c, roughness: 0.6 }),
+    new THREE.MeshStandardMaterial({ color: 0x94704c, roughness: 0.9 }),
   )
   clapper.position.y = -0.2
   clapperPivot.add(clapper)
 
   // Paper ribbon (tanzaku-style) as a chain of segments for flutter.
   const ribbonMat = new THREE.MeshStandardMaterial({
-    color: 0xf4d27a,
-    roughness: 0.85,
+    color: 0xf7cf6c,
+    roughness: 0.95,
     side: THREE.DoubleSide,
   })
   const segGeo = new THREE.PlaneGeometry(0.14, 0.13)

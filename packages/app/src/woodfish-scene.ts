@@ -42,9 +42,10 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   camera.position.set(0.9, 2.3, 6.5);
   camera.lookAt(target);
   let selectedStyle: RenderStyleId = "original";
-  // Warm room bounce with a dominant upper-left lamp; keep the cavity shaded.
-  scene.add(new THREE.HemisphereLight(0xffecd4, 0x795039, 1.55));
-  const key = new THREE.DirectionalLight(0xffdfae, 3.2);
+  // Anime cel rig: dominant upper-left lamp sets one clean light/shade split;
+  // a lighter warm bounce keeps shade bands soft without flattening the cavity.
+  scene.add(new THREE.HemisphereLight(0xfff0dc, 0x8c5f47, 1.55));
+  const key = new THREE.DirectionalLight(0xffe2b6, 3.2);
   key.position.set(-3.5, 6, 4);
   key.castShadow = true;
   key.shadow.mapSize.set(1024, 1024);
@@ -60,11 +61,12 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   key.shadow.normalBias = 0.005;
   key.shadow.radius = 4;
   scene.add(key);
-  const fill = new THREE.DirectionalLight(0xffead4, 0.65);
+  // Faintly lilac fill: the cool shade tint of painted anime backgrounds.
+  const fill = new THREE.DirectionalLight(0xf0e6ff, 0.65);
   fill.position.set(4, 2, 1);
   scene.add(fill);
-  // A faint amber backlight outlines the wood.
-  const rim = new THREE.DirectionalLight(0xffc486, 0.9);
+  // A peach backlight draws a bright rim along the silhouette.
+  const rim = new THREE.DirectionalLight(0xffd0a0, 0.9);
   rim.position.set(2, 3, -4);
   scene.add(rim);
   // Fill light must also be occluded by the carved shell; otherwise the
@@ -140,9 +142,10 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   shadowCanvas.width = shadowCanvas.height = 64;
   const ctx = shadowCanvas.getContext("2d")!;
   const gradient = ctx.createRadialGradient(32, 32, 3, 32, 32, 32);
-  gradient.addColorStop(0, "rgba(73,39,12,0.30)");
-  gradient.addColorStop(0.5, "rgba(73,39,12,0.15)");
-  gradient.addColorStop(1, "rgba(73,39,12,0)");
+  // Flatter core with a quicker falloff reads as a painted cel shadow.
+  gradient.addColorStop(0, "rgba(88,50,28,0.30)");
+  gradient.addColorStop(0.55, "rgba(88,50,28,0.2)");
+  gradient.addColorStop(1, "rgba(88,50,28,0)");
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, 64, 64);
   const shadowTexture = new THREE.CanvasTexture(shadowCanvas);
@@ -182,9 +185,9 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
           fill.intensity = parameters.fillIntensity;
           rim.intensity = parameters.rimIntensity;
           bodyGroup.add(asset.body);
-          // Painted toy palette for toon presets; original GLB/PBR maps remain intact.
-          asset.body.userData.toonSurface = { color: 0xc49a6c, simplifyMap: true, aoIntensity: 0.32 };
-          asset.mallet.userData.toonSurface = { color: 0xa97549, simplifyMap: true, aoIntensity: 0.25 };
+          // Anime painted-wood palette for toon presets; original GLB/PBR maps remain intact.
+          asset.body.userData.toonSurface = { color: 0xd0a172, simplifyMap: true, aoIntensity: 0.3 };
+          asset.mallet.userData.toonSurface = { color: 0xb27a4a, simplifyMap: true, aoIntensity: 0.22 };
           bodyGroup.position.y = -0.91;
           asset.body.position.y = 0.91;
           mallet.add(asset.mallet);

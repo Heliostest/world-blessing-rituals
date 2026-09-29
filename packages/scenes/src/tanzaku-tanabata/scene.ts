@@ -3,11 +3,14 @@ import { createDebugRenderStyle } from '@wbr/scene-runtime/debug-render-style'
 import type { GestureHandle } from '@wbr/gestures'
 import type { SceneContext, SceneInstance } from '../contract'
 import {
+  addCelLights,
+  CEL_STYLE,
   createChimeAudio,
   createMotes,
   createStepOverlay,
   createWarmStage,
   disposeTree,
+  markBackdrop,
   setSafeText,
 } from '../procedural-kit'
 
@@ -27,7 +30,8 @@ const COPY = {
   stepsAria: '步骤',
 } as const
 
-const STRIP_COLORS = [0xe8826f, 0x7fb8a4, 0xf2c75c, 0x9d8fd0, 0xef9fb8]
+// Soft but saturated washi: coral, mint, marigold, lavender, sakura.
+const STRIP_COLORS = [0xf0876f, 0x74c3aa, 0xf6cc58, 0xa293de, 0xf5a0bd]
 
 export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   const { canvas, overlay, gestures, shared } = ctx
@@ -79,8 +83,8 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Cream night-sky: warm cream background, peach key, soft lavender fill.
-  const { renderer, scene } = createWarmStage(canvas, 0xf5efe6, 0.06)
+  // Cream night-sky: warm cream background, peach key, lavender rim and fill.
+  const { renderer, scene } = createWarmStage(canvas, 0xf6ede1, 0.055)
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.9, 4.4)
   camera.position.copy(cameraHome)
@@ -89,38 +93,38 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
     id: ctx.sceneId ?? 'tanzaku-tanabata', label: COPY.title,
   })
+  styleRenderer.setStyle(CEL_STYLE)
 
-  const ambient = new THREE.AmbientLight(0xfff1dc, 0.7)
-  const hemi = new THREE.HemisphereLight(0xffe7c8, 0xc9b8a0, 0.6)
-  const key = new THREE.DirectionalLight(0xffd6a8, 1.1)
-  key.position.set(2.5, 4, 3)
-  const fill = new THREE.PointLight(0xc8b4ff, 0.5, 8, 2)
+  addCelLights(scene, { sky: 0xfff0dc, ground: 0xd9c2b0, key: 0xffd9ad, rim: 0xd8ccff })
+  const fill = new THREE.PointLight(0xc8b4ff, 0.45, 8, 2)
   fill.position.set(-2, 2.2, 1)
-  scene.add(ambient, hemi, key, fill)
+  scene.add(fill)
 
   const world = new THREE.Group()
   scene.add(world)
 
-  const ground = new THREE.Mesh(
+  const ground = markBackdrop(new THREE.Mesh(
     new THREE.CircleGeometry(3.2, 48),
-    new THREE.MeshStandardMaterial({ color: 0xe6d6bd, roughness: 1 }),
-  )
+    new THREE.MeshStandardMaterial({ color: 0xebdac0, roughness: 1 }),
+  ))
   ground.rotation.x = -Math.PI / 2
   world.add(ground)
 
   // Procedural bamboo: segmented stalks with node rings and a few leaves.
   const bamboo = new THREE.Group()
   world.add(bamboo)
-  const stalkMat = new THREE.MeshStandardMaterial({ color: 0x8fb36a, roughness: 0.6 })
-  const nodeMat = new THREE.MeshStandardMaterial({ color: 0x6f9450, roughness: 0.6 })
+  // Flat, matte greens read as painted cel bands; darker nodes mark the rhythm.
+  const stalkMat = new THREE.MeshStandardMaterial({ color: 0x9cc66e, roughness: 0.9 })
+  const nodeMat = new THREE.MeshStandardMaterial({ color: 0x5f9147, roughness: 0.9 })
   const leafMat = new THREE.MeshStandardMaterial({
-    color: 0x7aa85a,
-    roughness: 0.7,
+    color: 0x7fbc5c,
+    roughness: 0.9,
     side: THREE.DoubleSide,
   })
-  const segGeo = new THREE.CylinderGeometry(0.05, 0.055, 0.5, 12)
-  const nodeGeo = new THREE.TorusGeometry(0.056, 0.012, 6, 16)
-  const leafGeo = new THREE.PlaneGeometry(0.34, 0.08)
+  const segGeo = new THREE.CylinderGeometry(0.05, 0.056, 0.5, 16)
+  const nodeGeo = new THREE.TorusGeometry(0.057, 0.014, 8, 20)
+  // Slim lens-shaped blade instead of a flat rectangle: cleaner anime silhouette.
+  const leafGeo = new THREE.CircleGeometry(0.17, 12).scale(1, 0.26, 1)
   const stalkXs = [-0.35, 0.05, 0.4]
   stalkXs.forEach((x, s) => {
     const segments = 5 + (s % 2)
@@ -164,7 +168,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
       stripGeo,
       new THREE.MeshStandardMaterial({
         color: STRIP_COLORS[i % STRIP_COLORS.length],
-        roughness: 0.8,
+        roughness: 0.95,
         side: THREE.DoubleSide,
       }),
     )
@@ -177,7 +181,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
     color: STRIP_COLORS[4],
     emissive: 0x6a2a3a,
     emissiveIntensity: 0.15,
-    roughness: 0.8,
+    roughness: 0.95,
     side: THREE.DoubleSide,
   })
   const loose = new THREE.Mesh(stripGeo, looseMat)

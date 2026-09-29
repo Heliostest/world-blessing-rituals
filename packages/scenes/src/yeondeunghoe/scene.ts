@@ -3,10 +3,13 @@ import { createDebugRenderStyle } from '@wbr/scene-runtime/debug-render-style'
 import type { GestureHandle } from '@wbr/gestures'
 import type { SceneContext, SceneInstance } from '../contract'
 import {
+  addCelLights,
+  CEL_STYLE,
   createMotes,
   createStepOverlay,
   createWarmStage,
   disposeTree,
+  markBackdrop,
   setSafeText,
 } from '../procedural-kit'
 
@@ -47,14 +50,14 @@ function buildLantern(
     color,
     emissive: 0xffa060,
     emissiveIntensity: 0.35,
-    roughness: 0.75,
+    roughness: 0.9,
     side: THREE.DoubleSide,
   })
   const tipMat = new THREE.MeshStandardMaterial({
-    color: 0xf6d9c0,
+    color: 0xfbe4cf,
     emissive: 0xff9a70,
     emissiveIntensity: 0.2,
-    roughness: 0.75,
+    roughness: 0.9,
     side: THREE.DoubleSide,
   })
   for (let row = 0; row < 2; row++) {
@@ -129,7 +132,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   }
 
   // Warm cream dusk with lotus-pink accents.
-  const { renderer, scene } = createWarmStage(canvas, 0xf3e6d8, 0.07)
+  const { renderer, scene } = createWarmStage(canvas, 0xf5e7da, 0.065)
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.5, 4.6)
   camera.position.copy(cameraHome)
@@ -138,35 +141,43 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   const styleRenderer = createDebugRenderStyle(renderer, scene, camera, {
     id: ctx.sceneId ?? 'yeondeunghoe', label: COPY.title,
   })
+  styleRenderer.setStyle(CEL_STYLE)
 
-  const ambient = new THREE.AmbientLight(0xffecd8, 0.6)
-  const hemi = new THREE.HemisphereLight(0xffe0c4, 0xc4a890, 0.55)
-  const key = new THREE.DirectionalLight(0xffd0a0, 0.8)
-  key.position.set(-2, 4, 3)
-  scene.add(ambient, hemi, key)
+  // Dusk rig: amber key from the upper left, rose-lilac rim behind the lanterns.
+  addCelLights(scene, {
+    sky: 0xffeadb,
+    ground: 0xd4b4a4,
+    key: 0xffcf9e,
+    rim: 0xf2c4e0,
+    keyIntensity: 1.15,
+    keyPosition: [-2, 4, 3],
+  })
 
   const world = new THREE.Group()
   scene.add(world)
 
-  const ground = new THREE.Mesh(
+  const ground = markBackdrop(new THREE.Mesh(
     new THREE.CircleGeometry(4, 48),
-    new THREE.MeshStandardMaterial({ color: 0xe2cdb4, roughness: 1 }),
-  )
+    new THREE.MeshStandardMaterial({ color: 0xe7d0ba, roughness: 1 }),
+  ))
   ground.rotation.x = -Math.PI / 2
   world.add(ground)
 
-  const plinth = new THREE.Mesh(
-    new THREE.CylinderGeometry(0.42, 0.5, 0.3, 32),
-    new THREE.MeshStandardMaterial({ color: 0xcdb08e, roughness: 0.85 }),
-  )
+  const plinthMat = new THREE.MeshStandardMaterial({ color: 0xcaa580, roughness: 0.95 })
+  const plinth = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.5, 0.3, 40), plinthMat)
   plinth.position.y = 0.15
   world.add(plinth)
+  // Rounded lip: a lit cel band along the top edge, like a bevel.
+  const plinthLip = new THREE.Mesh(new THREE.TorusGeometry(0.42, 0.022, 8, 48), plinthMat)
+  plinthLip.rotation.x = Math.PI / 2
+  plinthLip.position.y = 0.3
+  world.add(plinthLip)
 
-  const petalGeo = new THREE.SphereGeometry(0.11, 12, 8, 0, Math.PI, 0, Math.PI / 2)
+  const petalGeo = new THREE.SphereGeometry(0.11, 16, 10, 0, Math.PI, 0, Math.PI / 2)
   petalGeo.scale(1, 1.6, 0.5)
   const coreGeo = new THREE.SphereGeometry(0.09, 16, 12)
 
-  const main = buildLantern(petalGeo, coreGeo, 0xf2a3b3, 0.6)
+  const main = buildLantern(petalGeo, coreGeo, 0xf5a4b8, 0.6)
   main.group.position.set(0, LOW_Y, 0)
   world.add(main.group)
 
@@ -179,7 +190,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
     [2.2, 2.2, -1.2],
   ]
   companionSpots.forEach(([x, y, z], i) => {
-    const l = buildLantern(petalGeo, coreGeo, i % 2 ? 0xf6c89a : 0xefb0c0, 0.25)
+    const l = buildLantern(petalGeo, coreGeo, i % 2 ? 0xf8c795 : 0xf1adc6, 0.25)
     l.group.position.set(x, y, z)
     l.group.scale.setScalar(0.7)
     world.add(l.group)

@@ -2103,6 +2103,9 @@ button:hover:not(:disabled) {
 .scene-discovery { padding: 20px; border: 1px solid #dedecb; border-radius: 22px; margin-bottom: 20px; background: #f1f2e6; display: grid; gap: 10px; }
 .scene-discovery h2 { margin: 8px 0; font-size: 21px; }
 .scene-discovery p, .cache-manager p { line-height: 1.8; }
+.ritual-narrative { position: static; margin: 4px 0 12px; }
+.ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; }
+.ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; }
 .scene-catalog { display: grid; gap: 12px; margin: 20px 0; }
 .scene-card { display: grid; text-align: left; padding: 20px; gap: 8px; border-radius: 16px; border: 1px solid #e1ddcd; background: #fffdf6; color: #514837; cursor: pointer; }
 .scene-card small { color: #817965; }

@@ -14,6 +14,7 @@ import { sceneEngines } from "./scene-engines";
 import { now, useApp } from "./context";
 import { supportsScene, useSceneLibrary, woodfishPack } from "./scene-library";
 import { Woodfish } from "./woodfish";
+import { RitualNarrativeBlurb } from "./ritual-narrative";
 
 function ProceduralScene({
   entry,
@@ -221,6 +222,7 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
   return (
     <section className="scene-experience">
       <h1>{entry.title}</h1>
+      <RitualNarrativeBlurb sceneId={entry.id} />
       {error ? (
         <div className="scene-load-error" role="alert">
           <p>暂时无法打开。记录和进度已保留。</p>

@@ -5,6 +5,7 @@ import { now, uid, useApp } from "./context";
 import { Empty } from "./pages";
 import { ritualTitle } from "./home";
 import { Woodfish } from "./woodfish";
+import { RitualNarrativeBlurb } from "./ritual-narrative";
 
 function FeedbackControls() {
   const { state, dispatch } = useApp();
@@ -78,6 +79,7 @@ export function Ritual({
   }
   return (
     <div className={`ritual-page ritual-${kind}`}>
+      {kind === "woodfish" && <RitualNarrativeBlurb sceneId="woodfish" />}
       <div className="ritual-goal">
         今日目标{" "}
         <strong>

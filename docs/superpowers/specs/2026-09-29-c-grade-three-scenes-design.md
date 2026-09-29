@@ -100,6 +100,35 @@ clapper on a sub-pivot, and a four-segment paper ribbon that flutters.
 - `packages/app/src/scene-engines.ts` — `proceduralEngine(id)` entries.
 - `packages/app/src/scene-library.tsx` — `builtInScenes` catalog entries.
 - `packages/app/src/scene-experience.tsx` — engine id union cast.
+- `packages/app/src/scene-placement.ts` — 今日 vs 心愿 ids + recommendation filter.
+- `packages/app/src/home.tsx` / `pages.tsx` / `wishes.tsx` — product entry points.
+
+
+## Product placement (今日 / 心愿)
+
+Cream app shell bottom nav: **今日 / 心愿 / 小天地 / 我的**.
+
+| Scene | Product surface | Why |
+|---|---|---|
+| `furin-wind-chime` | **今日** (祈福 / blessing practice) | Summer sound / daily calm — sits beside woodfish-style rituals, not the wish journal. |
+| `tanzaku-tanabata` | **心愿** (许愿 practice) | Writing-and-hanging homage maps to wish intention. |
+| `yeondeunghoe` | **心愿** (许愿 practice) | Lantern float homage maps to lighting a wish. |
+
+### Wiring
+
+- Shared constants: `packages/app/src/scene-placement.ts`
+  (`TODAY_SCENE_IDS`, `WISH_SCENE_IDS`, `recommendTodayScene`, copy).
+- **今日** (`home.tsx`):
+  - `SceneRecommendation` uses `recommendTodayScene` (excludes wish-scene ids).
+  - Featured 「今日小练习」 card → opens `furin-wind-chime` via `page: "scene"`.
+  - Extra ritual-grid tile for each today-placement scene.
+- **心愿** (`pages.tsx` `Wishes`, `wishes.tsx` `WishDetail`):
+  - List page 「心愿小练习」 cards for tanzaku + yeondeunghoe.
+  - Active / realized wish detail: secondary actions to open either practice scene.
+- Scenes remain in `builtInScenes` / Gallery / scene catalog for discovery; placement
+  only changes *where the primary entry points live*.
+- Still homage-only: all new UI copy includes 练习 / 非法效 and avoids forbidden
+  success phrases.
 
 ## Validation
 

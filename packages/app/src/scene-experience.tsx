@@ -43,7 +43,12 @@ function ProceduralScene({
       },
       load: () =>
         sceneEngines.load(
-          entry.engine as "celtic-folk-spring@1" | "theravada-water@1",
+          entry.engine as
+            | "celtic-folk-spring@1"
+            | "theravada-water@1"
+            | "tanzaku-tanabata@1"
+            | "yeondeunghoe@1"
+            | "furin-wind-chime@1",
         ),
       ready: () => {
         if (host.current) host.current.dataset.ready = "true";

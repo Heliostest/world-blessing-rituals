@@ -9,7 +9,6 @@ import {
 import { CACHE_BUDGET, parsePack, type Pack } from "@wbr/content";
 import {
   createSceneLibrary,
-  recommendScene,
   type CatalogEntry,
   type SceneManifest,
 } from "@wbr/content/catalog";
@@ -17,6 +16,7 @@ import type { CacheOptions, CacheStats } from "@wbr/content/cache";
 import { contentIO, useContent } from "./content";
 import { useApp } from "./context";
 import { localDay } from "@wbr/core";
+import { recommendTodayScene } from "./scene-placement";
 
 export const builtInScenes: CatalogEntry[] = [
   {
@@ -37,6 +37,27 @@ export const builtInScenes: CatalogEntry[] = [
     id: "theravada-water",
     title: "花水位一倾",
     engine: "theravada-water@1",
+    revision: "bundled",
+    manifestUrl: "",
+  },
+  {
+    id: "tanzaku-tanabata",
+    title: "短册系竹",
+    engine: "tanzaku-tanabata@1",
+    revision: "bundled",
+    manifestUrl: "",
+  },
+  {
+    id: "yeondeunghoe",
+    title: "燃灯上浮",
+    engine: "yeondeunghoe@1",
+    revision: "bundled",
+    manifestUrl: "",
+  },
+  {
+    id: "furin-wind-chime",
+    title: "风铃一响",
+    engine: "furin-wind-chime@1",
     revision: "bundled",
     manifestUrl: "",
   },
@@ -169,7 +190,7 @@ export function SceneLibraryProvider({ children }: { children: ReactNode }) {
 export function SceneRecommendation() {
   const { entries } = useSceneLibrary(),
     { go } = useApp();
-  const entry = recommendScene(entries, localDay());
+  const entry = recommendTodayScene(entries, localDay());
   return (
     <section className="scene-discovery">
       <div>

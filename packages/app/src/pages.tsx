@@ -2,6 +2,11 @@ import { useState } from "react";
 import { rituals } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { formatDate, statusText, useApp } from "./context";
+import { useSceneLibrary } from "./scene-library";
+import {
+  WISH_PRACTICE_COPY,
+  wishSceneEntries,
+} from "./scene-placement";
 
 export function PageHead({
   eyebrow,
@@ -48,7 +53,9 @@ export function Empty({
 }
 export function Wishes() {
   const { state, go } = useApp();
+  const { entries } = useSceneLibrary();
   const [filter, setFilter] = useState("active");
+  const practices = wishSceneEntries(entries);
   const wishes = state.wishes.filter((w) =>
     filter === "archived"
       ? w.archived
@@ -75,6 +82,31 @@ export function Wishes() {
           <p>每一份认真期待，都值得被记住。</p>
         </div>
       </div>
+      {practices.length > 0 && (
+        <section className="wish-practice" aria-label={WISH_PRACTICE_COPY.heading}>
+          <div className="section-heading">
+            <h2>{WISH_PRACTICE_COPY.heading}</h2>
+          </div>
+          <p className="quiet wish-practice-blurb">{WISH_PRACTICE_COPY.blurb}</p>
+          <div className="wish-practice-grid">
+            {practices.map((entry) => (
+              <button
+                key={entry.id}
+                className="wish-practice-card"
+                onClick={() => go({ page: "scene", id: entry.id, entry })}
+              >
+                <strong>{entry.title}</strong>
+                <small>
+                  {entry.id === "tanzaku-tanabata"
+                    ? WISH_PRACTICE_COPY.tanzakuAction
+                    : WISH_PRACTICE_COPY.yeondeunghoeAction}
+                </small>
+                <Icon name="arrow" />
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
       <div className="filter-row" role="group" aria-label="心愿筛选">
         {[
           ["active", "心愿灯"],

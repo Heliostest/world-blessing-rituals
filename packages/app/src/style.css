@@ -2115,3 +2115,69 @@ button:hover:not(:disabled) {
 .scene-experience .woodfish-object { width: 100%; height: 340px; }
 .scene-progress { color: #696d53; }
 .library-scene-stage [hidden] { display: none !important; }
+
+.practice-card {
+  background: linear-gradient(180deg, #f7f1e6 0%, #f3ebe0 100%);
+  border-color: #e8dcc8;
+}
+.ritual-tile-glyph {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  font-size: 28px;
+  line-height: 1;
+}
+.wish-practice {
+  margin: 4px 0 18px;
+  display: grid;
+  gap: 10px;
+}
+.wish-practice-blurb {
+  margin: 0;
+  font-size: 13px;
+  color: #8a7660;
+  line-height: 1.6;
+}
+.wish-practice-grid {
+  display: grid;
+  gap: 10px;
+}
+.wish-practice-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  column-gap: 8px;
+  align-items: center;
+  text-align: left;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid #e4d9c6;
+  background: #fffdf7;
+  color: #514837;
+  cursor: pointer;
+}
+.wish-practice-card strong {
+  grid-column: 1;
+  font-size: 16px;
+}
+.wish-practice-card small {
+  grid-column: 1;
+  color: #817965;
+  font-size: 12px;
+}
+.wish-practice-card svg {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 18px;
+  height: 18px;
+  color: #815519;
+}
+.wish-practice-detail .wish-practice-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+.wish-practice-detail .quiet {
+  margin: 6px 0 0;
+}
+

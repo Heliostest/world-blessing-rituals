@@ -42,9 +42,39 @@ export const sceneRegistry: SceneMeta[] = [
     sensitivity: '低',
     gestures: ['drag', 'wishWrite'],
   },
+  {
+    id: 'tanzaku-tanabata',
+    title: '短册系竹',
+    traditionSlug: 'shinto',
+    grade: 'C',
+    sensitivity: '低',
+    gestures: ['drag', 'wishWrite'],
+  },
+  {
+    id: 'yeondeunghoe',
+    title: '燃灯上浮',
+    traditionSlug: 'won-buddhism',
+    grade: 'C',
+    sensitivity: '低',
+    gestures: ['drag'],
+  },
+  {
+    id: 'furin-wind-chime',
+    title: '风铃一响',
+    traditionSlug: 'shinto',
+    grade: 'C',
+    sensitivity: '低',
+    gestures: ['tilt'],
+  },
 ]
 
-const IMPLEMENTED = new Set(['celtic-folk-spring', 'theravada-water'])
+const IMPLEMENTED = new Set([
+  'celtic-folk-spring',
+  'theravada-water',
+  'tanzaku-tanabata',
+  'yeondeunghoe',
+  'furin-wind-chime',
+])
 
 /** Whether `loadScene(id)` can resolve a module. */
 export function isSceneImplemented(id: string): boolean {
@@ -53,7 +83,8 @@ export function isSceneImplemented(id: string): boolean {
 
 /**
  * Dynamic-import implemented scenes.
- * celtic-folk-spring + theravada-water are wired; remaining pilots throw until later tasks.
+ * Wired: celtic-folk-spring, theravada-water and the three C-grade Design A scenes;
+ * remaining pilots throw until later tasks.
  */
 export async function loadScene(id: string): Promise<SceneModule> {
   switch (id) {
@@ -61,6 +92,12 @@ export async function loadScene(id: string): Promise<SceneModule> {
       return import('./celtic-folk-spring')
     case 'theravada-water':
       return import('./theravada-water')
+    case 'tanzaku-tanabata':
+      return import('./tanzaku-tanabata')
+    case 'yeondeunghoe':
+      return import('./yeondeunghoe')
+    case 'furin-wind-chime':
+      return import('./furin-wind-chime')
     default:
       throw new Error('scene not implemented: ' + id)
   }

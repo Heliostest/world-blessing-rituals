@@ -2,7 +2,12 @@ import { useState } from "react";
 import { dailyRitual, localDay, rituals, type RitualId } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { useApp } from "./context";
-import { SceneRecommendation } from "./scene-library";
+import { SceneRecommendation, useSceneLibrary } from "./scene-library";
+import {
+  FURIN_COPY,
+  findSceneEntry,
+  todaySceneEntries,
+} from "./scene-placement";
 
 export const ritualTitle = {
   woodfish: "敲掉一点小烦恼",
@@ -11,10 +16,13 @@ export const ritualTitle = {
 };
 export function Today() {
   const { state, go } = useApp();
+  const { entries } = useSceneLibrary();
   const [day] = useState(() => localDay());
   const id = dailyRitual(day);
   const merit = state.ledger.reduce((n, l) => n + l.amount, 0);
   const collected = new Set(state.collectibles.map((c) => c.kind));
+  const furin = findSceneEntry(entries, "furin-wind-chime");
+  const todayPractices = todaySceneEntries(entries);
   return (
     <div className="today-page">
       <header className="home-heading">
@@ -65,6 +73,21 @@ export function Today() {
           </button>
         </div>
       </section>
+      {furin && (
+        <section className="daily-card practice-card">
+          <span className="tag">{FURIN_COPY.tag}</span>
+          <div className="daily-copy">
+            <h2>{FURIN_COPY.title}</h2>
+            <p>{FURIN_COPY.blurb}</p>
+            <button
+              className="button secondary"
+              onClick={() => go({ page: "scene", id: furin.id, entry: furin })}
+            >
+              {FURIN_COPY.action}
+            </button>
+          </div>
+        </section>
+      )}
       <section className="achievement-card">
         <div className="section-heading">
           <h2>我的小小成就</h2>
@@ -93,6 +116,18 @@ export function Today() {
                   <Icon name="check" />
                 </span>
               )}
+            </button>
+          ))}
+          {todayPractices.map((entry) => (
+            <button
+              className="ritual-tile"
+              key={entry.id}
+              onClick={() => go({ page: "scene", id: entry.id, entry })}
+            >
+              <span className="ritual-tile-glyph" aria-hidden="true">
+                🎐
+              </span>
+              <strong>{entry.title}</strong>
             </button>
           ))}
         </div>

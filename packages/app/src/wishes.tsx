@@ -7,6 +7,11 @@ import {
 import { Art, Icon } from "./art";
 import { formatDate, now, uid, useApp } from "./context";
 import { Empty } from "./pages";
+import { useSceneLibrary } from "./scene-library";
+import {
+  WISH_PRACTICE_COPY,
+  wishSceneEntries,
+} from "./scene-placement";
 
 function ReturnChoices({
   value,
@@ -134,6 +139,8 @@ export function NewWish() {
 }
 export function WishDetail({ id }: { id: string }) {
   const { state, go, dispatch } = useApp();
+  const { entries } = useSceneLibrary();
+  const practices = wishSceneEntries(entries);
   const wish = state.wishes.find((w) => w.id === id);
   const [showAll, setShowAll] = useState(false);
   if (!wish)
@@ -219,6 +226,26 @@ export function WishDetail({ id }: { id: string }) {
           </button>
         )}
       </section>
+      {!wish.archived && wish.status !== "fulfilled" && practices.length > 0 && (
+        <section className="form-card wish-practice-detail">
+          <h2>{WISH_PRACTICE_COPY.detailHeading}</h2>
+          <p className="quiet">{WISH_PRACTICE_COPY.detailBlurb}</p>
+          <div className="wish-practice-actions">
+            {practices.map((entry) => (
+              <button
+                key={entry.id}
+                type="button"
+                className="button secondary full"
+                onClick={() => go({ page: "scene", id: entry.id, entry })}
+              >
+                {entry.id === "tanzaku-tanabata"
+                  ? WISH_PRACTICE_COPY.tanzakuAction
+                  : WISH_PRACTICE_COPY.yeondeunghoeAction}
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
       <div className={`return-summary method-${method}`}>
         <Icon name={method === "kindness" ? "heart" : "leaf"} />
         <span>

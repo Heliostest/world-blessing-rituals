@@ -7,6 +7,11 @@ export type SceneContext = {
   onProgress?(progress: number): void
   isActive?(): boolean
   isReducedMotion?(): boolean
+  /** Live App feedback settings; call `prepareFeedback` from a user gesture. */
+  prepareFeedback?(): void
+  /** Vibrates only when the App haptics toggle is on. */
+  haptic?(): void
+  isSoundEnabled?(): boolean
   sceneId?: string
   canvas: HTMLCanvasElement
   overlay: HTMLElement

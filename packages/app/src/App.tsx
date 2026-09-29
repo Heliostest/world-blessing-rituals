@@ -127,8 +127,12 @@ export function BlessingApp({
       throw new InvalidContentError("Scene sound exceeds budget");
     return sound;
   }
+  function haptic() {
+    if (store.getSnapshot().state?.settings.haptics)
+      void host.haptic?.().catch(() => {});
+  }
   function feedback(sound?: AudioBuffer) {
-    if (state?.settings.haptics) void host.haptic?.().catch(() => {});
+    haptic();
     if (!state?.settings.sound) return;
     try {
       const ctx = (audio.current ??= new AudioContext());
@@ -232,6 +236,7 @@ export function BlessingApp({
           back,
           active,
           feedback,
+          haptic,
           decodeSound,
           prepareFeedback,
           fulfillmentDrafts,

@@ -72,3 +72,37 @@ it("keeps real gesture elapsed time when decorative motion is reduced", async ()
   expect(fixture.progress).toBe(1);
   controller.dispose();
 });
+it("forwards App sound/haptics feedback to the scene context", async () => {
+  vi.stubGlobal("requestAnimationFrame", () => 1);
+  vi.stubGlobal("cancelAnimationFrame", () => {});
+  const engine = await proceduralEngine("furin-wind-chime");
+  const prepareFeedback = vi.fn(),
+    haptic = vi.fn();
+  let sound = true;
+  const controller = engine.create(
+    document.createElement("div"),
+    {
+      progress: 0,
+      sceneId: "furin",
+      checkpoint: () => {},
+      prepareFeedback,
+      haptic,
+      isSoundEnabled: () => sound,
+    },
+    {
+      active: true,
+      reducedMotion: false,
+      signal: new AbortController().signal,
+      ready: () => {},
+      failed: () => {},
+    },
+  );
+  fixture.context.prepareFeedback();
+  fixture.context.haptic();
+  expect(prepareFeedback).toHaveBeenCalledOnce();
+  expect(haptic).toHaveBeenCalledOnce();
+  expect(fixture.context.isSoundEnabled()).toBe(true);
+  sound = false;
+  expect(fixture.context.isSoundEnabled()).toBe(false);
+  controller.dispose();
+});

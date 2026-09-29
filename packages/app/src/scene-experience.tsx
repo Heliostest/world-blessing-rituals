@@ -15,6 +15,7 @@ import { now, useApp } from "./context";
 import { supportsScene, useSceneLibrary, woodfishPack } from "./scene-library";
 import { Woodfish } from "./woodfish";
 import { RitualNarrativeBlurb } from "./ritual-narrative";
+import { FeedbackControls } from "./feedback-controls";
 
 function ProceduralScene({
   entry,
@@ -29,9 +30,9 @@ function ProceduralScene({
 }) {
   const host = useRef<HTMLDivElement>(null),
     session = useRef<SceneSession<SceneController>>(null);
-  const { active, state } = useApp();
-  const latest = useRef({ checkpoint, failed });
-  latest.current = { checkpoint, failed };
+  const { active, state, prepareFeedback, haptic } = useApp();
+  const latest = useRef({ checkpoint, failed, prepareFeedback, haptic, state });
+  latest.current = { checkpoint, failed, prepareFeedback, haptic, state };
   useEffect(() => {
     session.current = mountScene({
       host: host.current!,
@@ -41,6 +42,9 @@ function ProceduralScene({
         progress,
         checkpoint: (n: number) => latest.current.checkpoint(n),
         sceneId: entry.id,
+        prepareFeedback: () => latest.current.prepareFeedback(),
+        haptic: () => latest.current.haptic(),
+        isSoundEnabled: () => latest.current.state.settings.sound,
       },
       load: () =>
         sceneEngines.load(
@@ -138,6 +142,7 @@ function LoadedScene({
           failed={failed}
         />
       )}
+      {entry.engine !== "woodfish@1" && <FeedbackControls />}
       <button
         className="text-button"
         onClick={() =>

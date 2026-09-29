@@ -1,4 +1,5 @@
 import * as THREE from 'three'
+import type { SceneContext } from './contract'
 
 /** Shared helpers for the cream/warm C-grade procedural scenes (Design A). */
 
@@ -27,7 +28,7 @@ export function createStepOverlay(
   assertSafeCopy: (t: string) => void,
 ): StepOverlay {
   overlay.replaceChildren()
-  overlay.classList.add('scene-overlay')
+  overlay.classList.add('scene-overlay', 'scene-overlay--cream')
 
   const hitLayer = document.createElement('div')
   hitLayer.className = 'scene-hit-layer'
@@ -72,21 +73,19 @@ export function createStepOverlay(
 /** Default look for the C-grade scenes: anime 三渲二 (cel bands + ink outlines). */
 export const CEL_STYLE = 'toon-ink' as const
 
-/** Renderer + scene + camera tuned for the cream/warm palette. */
-export function createWarmStage(
-  canvas: HTMLCanvasElement,
-  background: number,
-  fogDensity: number,
-) {
+/**
+ * Renderer + scene for the cream/warm palette. Like the woodfish, the canvas
+ * clears fully transparent so the subject sits on the cream page itself — no
+ * painted background, fog or fake stage.
+ */
+export function createWarmStage(canvas: HTMLCanvasElement) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
+  renderer.setClearColor(0x000000, 0)
   renderer.toneMapping = THREE.ACESFilmicToneMapping
   renderer.toneMappingExposure = 1.0
   renderer.outputColorSpace = THREE.SRGBColorSpace
   const scene = new THREE.Scene()
-  const bgColor = new THREE.Color(background)
-  scene.background = bgColor
-  scene.fog = new THREE.FogExp2(bgColor.getHex(), fogDensity)
   return { renderer, scene }
 }
 
@@ -116,34 +115,6 @@ export function addCelLights(
   rimLight.position.set(-keyPosition[0] * 0.6, keyPosition[1] * 0.5, -3)
   scene.add(ambient, hemi, keyLight, rimLight)
   return { ambient, hemi, key: keyLight, rim: rimLight }
-}
-
-/** Cel-shaded but kept out of the ink selection (ground, walls, backdrops). */
-export function markBackdrop(mesh: THREE.Mesh) {
-  mesh.userData.toonSurface = { ...mesh.userData.toonSurface, outline: false }
-  return mesh
-}
-
-/** Soft floating motes around the origin (warm additive points). */
-export function createMotes(count: number, color: number, spread = 2.2, height = 1.8) {
-  const positions = new Float32Array(count * 3)
-  for (let i = 0; i < count; i++) {
-    const angle = Math.random() * Math.PI * 2
-    const radius = 0.4 + Math.random() * spread
-    positions[i * 3] = Math.cos(angle) * radius
-    positions[i * 3 + 1] = 0.1 + Math.random() * height
-    positions[i * 3 + 2] = Math.sin(angle) * radius
-  }
-  const geometry = new THREE.BufferGeometry()
-  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
-  const material = new THREE.PointsMaterial({
-    color,
-    size: 0.03,
-    transparent: true,
-    opacity: 0.6,
-    depthWrite: false,
-  })
-  return new THREE.Points(geometry, material)
 }
 
 /** Dispose every geometry/material reachable from `root`. */
@@ -196,6 +167,11 @@ export function createChimeAudio() {
   }
 
   return {
+    /** Create/resume the context inside a user gesture (mobile autoplay). */
+    unlock() {
+      const a = ensure()
+      if (a?.state === 'suspended') void a.resume().catch(() => {})
+    },
     play({ freqs, duration, gain = 0.12, type = 'sine' }: ToneOpts) {
       const a = ensure()
       if (!a) return
@@ -225,6 +201,35 @@ export function createChimeAudio() {
       closed = true
       if (ac) void ac.close().catch(() => {})
       ac = null
+    },
+  }
+}
+
+export type ChimeTone = ToneOpts
+
+/**
+ * Scene-side sound + haptics that follow the App's 音效/震动 toggles (same
+ * settings the woodfish uses). Without an App host, chimes play and haptics
+ * are skipped.
+ */
+export function createSceneFeedback(
+  ctx: Pick<SceneContext, 'prepareFeedback' | 'haptic' | 'isSoundEnabled'>,
+) {
+  const audio = createChimeAudio()
+  const soundOn = () => ctx.isSoundEnabled?.() ?? true
+  return {
+    /** Call at gesture start so audio may start on the later impact. */
+    prepare() {
+      ctx.prepareFeedback?.()
+      if (soundOn()) audio.unlock()
+    },
+    /** The impactful moment: haptic tick plus an optional chime. */
+    impact(tone?: ChimeTone) {
+      ctx.haptic?.()
+      if (tone && soundOn()) audio.play(tone)
+    },
+    dispose() {
+      audio.dispose()
     },
   }
 }

@@ -6,33 +6,8 @@ import { Empty } from "./pages";
 import { ritualTitle } from "./home";
 import { Woodfish } from "./woodfish";
 import { RitualNarrativeBlurb } from "./ritual-narrative";
+import { FeedbackControls } from "./feedback-controls";
 
-function FeedbackControls() {
-  const { state, dispatch } = useApp();
-  return (
-    <div className="feedback-controls">
-      {(
-        [
-          ["sound", "音效"],
-          ["haptics", "震动"],
-        ] as const
-      ).map(([key, label]) => (
-        <label key={key}>
-          <Icon name={key} />
-          <span>{label}</span>
-          <input
-            className="switch"
-            type="checkbox"
-            checked={state.settings[key]}
-            onChange={(e) =>
-              dispatch({ type: "settings", key, value: e.target.checked })
-            }
-          />
-        </label>
-      ))}
-    </div>
-  );
-}
 export function Ritual({
   id,
   wishId: linkedWishId,

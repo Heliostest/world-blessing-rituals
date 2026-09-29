@@ -6,12 +6,10 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
-  createChimeAudio,
-  createMotes,
+  createSceneFeedback,
   createStepOverlay,
   createWarmStage,
   disposeTree,
-  markBackdrop,
   setSafeText,
 } from '../procedural-kit'
 
@@ -55,7 +53,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   const handles: GestureHandle[] = []
   let tiltHandle: GestureHandle | null = null
   let resizeObserver: ResizeObserver | null = null
-  const audio = createChimeAudio()
+  const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
     overlay,
@@ -83,8 +81,8 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Summer cream: pale sky-cream background, sun-warm key light.
-  const { renderer, scene } = createWarmStage(canvas, 0xf7f0e3, 0.045)
+  // Transparent over the cream page, sun-warm key light.
+  const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.5, 3.4)
   camera.position.copy(cameraHome)
@@ -118,13 +116,6 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   )
   beam.position.set(0, 2.45, -0.1)
   world.add(beam)
-
-  const backWall = markBackdrop(new THREE.Mesh(
-    new THREE.PlaneGeometry(6, 4),
-    new THREE.MeshStandardMaterial({ color: 0xf1e4cd, roughness: 1 }),
-  ))
-  backWall.position.set(0, 1.5, -1.4)
-  world.add(backWall)
 
   // Pivot at the hanging point; everything below swings with it.
   const pivot = new THREE.Group()
@@ -222,9 +213,6 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   tapZone.position.set(0, 1.45, 0)
   world.add(tapZone)
 
-  const motes = createMotes(50, 0xffd9a0, 1.8, 2.4)
-  world.add(motes)
-
   const raycaster = new THREE.Raycaster()
   const pointerNdc = new THREE.Vector2()
 
@@ -251,7 +239,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   const ping = (soft = false) => {
     const reduced = ctx.isReducedMotion?.() ?? false
     // Glass-like: bright fundamental + inharmonic partials, quick decay.
-    audio.play({
+    fx.impact({
       freqs: [2093, 2960, 4186 * 1.19],
       duration: reduced || soft ? 0.6 : 1.6,
       gain: soft ? 0.04 : reduced ? 0.05 : 0.08,
@@ -298,6 +286,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
 
   const onActionTap = () => {
     if (disposed) return
+    fx.prepare()
     if (step === 'idle') goRing()
     else if (step === 'listen') completeScene()
   }
@@ -305,6 +294,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   let downX = 0
   let downY = 0
   const onHitDown = (e: PointerEvent) => {
+    fx.prepare()
     downX = e.clientX
     downY = e.clientY
   }
@@ -402,7 +392,6 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
       const energy = Math.min(1, Math.abs(swingVel) * 0.5 + Math.abs(swing))
       glint.intensity = energy * 1.2
       bellMat.emissiveIntensity = 0.15 + energy * 0.4
-      if (!reduced) motes.rotation.y += dt * 0.02
 
       camera.position.set(
         cameraHome.x + Math.sin(t * 0.12) * 0.08,
@@ -424,13 +413,13 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
       actionBtn.removeEventListener('pointerup', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
-      audio.dispose()
+      fx.dispose()
       styleRenderer.dispose()
       renderer.dispose()
       renderer.forceContextLoss()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
     },
   }
 }

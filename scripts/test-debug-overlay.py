@@ -30,6 +30,9 @@ with sync_playwright() as p:
     expect(page.locator("#debug-scene")).to_have_value("woodfish")
     canvas = page.locator(".woodfish-canvas canvas")
     page.evaluate("window.debugTestCanvas = document.querySelector('.woodfish-canvas canvas')")
+    # The bundled pack defaults to toon-ink; start the comparison from plain lighting.
+    page.get_by_role("button", name="原始光照").click()
+    expect(page.locator("#debug-overlay-panel").get_by_role("status")).to_contain_text("正在使用原始光照")
     original = canvas.screenshot(style=CAPTURE_STYLE)
     (OUT / "woodfish-original.png").write_bytes(original)
     page.get_by_role("button", name="墨线卡通").click()

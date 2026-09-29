@@ -53,4 +53,28 @@ describe("official toon material adaptation", () => {
     expect(disposed).toHaveBeenCalledOnce();
     surfaces.dispose();
   });
+
+  it("keeps backdrops cel-shaded but unselected for ink, and follows animated glow", () => {
+    const scene = new THREE.Scene();
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(), new THREE.MeshStandardMaterial({ color: 0xe6d6bd }));
+    ground.userData.toonSurface = { outline: false };
+    const glowMaterial = new THREE.MeshStandardMaterial({ color: 0xf2a3b3, emissive: 0xffa060, emissiveIntensity: 0.35 });
+    const lantern = new THREE.Mesh(new THREE.BoxGeometry(), glowMaterial);
+    scene.add(ground, lantern);
+    const surfaces = createToonSurfaces("toon-ink");
+    let frame = surfaces.apply(scene);
+    expect((ground.material as THREE.Material).type).toBe("MeshToonMaterial");
+    expect(frame.outlined).toEqual([lantern]);
+    frame.restore();
+    glowMaterial.emissiveIntensity = 0.9;
+    glowMaterial.opacity = 0.5;
+    frame = surfaces.apply(scene);
+    const toon = lantern.material as unknown as THREE.MeshToonMaterial;
+    expect(toon.emissiveIntensity).toBe(0.9);
+    expect(toon.opacity).toBe(0.5);
+    expect(toon.emissive.getHex()).toBe(0xffa060);
+    frame.restore();
+    expect(lantern.material).toBe(glowMaterial);
+    surfaces.dispose();
+  });
 });

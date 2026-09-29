@@ -69,6 +69,9 @@ export function createStepOverlay(
   return { hitLayer, titleEl, dotsEl, hintEl, actionBtn, renderDots }
 }
 
+/** Default look for the C-grade scenes: anime 三渲二 (cel bands + ink outlines). */
+export const CEL_STYLE = 'toon-ink' as const
+
 /** Renderer + scene + camera tuned for the cream/warm palette. */
 export function createWarmStage(
   canvas: HTMLCanvasElement,
@@ -85,6 +88,40 @@ export function createWarmStage(
   scene.background = bgColor
   scene.fog = new THREE.FogExp2(bgColor.getHex(), fogDensity)
   return { renderer, scene }
+}
+
+type CelLightOpts = {
+  sky: number
+  ground: number
+  key: number
+  rim: number
+  keyIntensity?: number
+  keyPosition?: [number, number, number]
+}
+
+/**
+ * Anime cel light rig: one clear key sets the lit/shade split, a warm sky/ground
+ * bounce keeps shade bands soft (toon gradients step only direct light), and a
+ * pale backlight draws a rim along silhouettes.
+ */
+export function addCelLights(
+  scene: THREE.Scene,
+  { sky, ground, key, rim, keyIntensity = 1.4, keyPosition = [2.5, 4, 3] }: CelLightOpts,
+) {
+  const ambient = new THREE.AmbientLight(sky, 0.35)
+  const hemi = new THREE.HemisphereLight(sky, ground, 0.75)
+  const keyLight = new THREE.DirectionalLight(key, keyIntensity)
+  keyLight.position.set(...keyPosition)
+  const rimLight = new THREE.DirectionalLight(rim, 0.7)
+  rimLight.position.set(-keyPosition[0] * 0.6, keyPosition[1] * 0.5, -3)
+  scene.add(ambient, hemi, keyLight, rimLight)
+  return { ambient, hemi, key: keyLight, rim: rimLight }
+}
+
+/** Cel-shaded but kept out of the ink selection (ground, walls, backdrops). */
+export function markBackdrop(mesh: THREE.Mesh) {
+  mesh.userData.toonSurface = { ...mesh.userData.toonSurface, outline: false }
+  return mesh
 }
 
 /** Soft floating motes around the origin (warm additive points). */

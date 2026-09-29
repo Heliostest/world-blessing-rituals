@@ -18,13 +18,22 @@ import { useApp } from "./context";
 import { localDay } from "@wbr/core";
 import { recommendTodayScene } from "./scene-placement";
 
-export const builtInScenes: CatalogEntry[] = [
+export type BuiltInSceneEntry = CatalogEntry & {
+  /** 一段 80–120 汉字：起源 + 历史脉络 + 基本意涵；练习／致敬语气。缺省 → 隐藏折叠块。 */
+  narrative?: string;
+  /** 指向 content/traditions/<slug>.md（单文件，非目录）；仅元数据，本期 app 不加载。 */
+  traditionSlug?: string;
+};
+export const builtInScenes: BuiltInSceneEntry[] = [
   {
     id: "woodfish",
     title: "敲一敲木鱼",
     engine: "woodfish@1",
     revision: "bundled",
     manifestUrl: "",
+    traditionSlug: "chinese-buddhism",
+    narrative:
+      "木鱼是东亚佛教课诵与集众时常见的响器，圆型腹空，轻敲以应诵经节拍，禅寺中常与磬相配。鱼形无睑，常被理解为精勤醒觉，并与寺院晨昏的日常节律相连。本页只作静心练习与文化致敬，非宗教仪轨。",
   },
   {
     id: "celtic-folk-spring",
@@ -32,6 +41,7 @@ export const builtInScenes: CatalogEntry[] = [
     engine: "celtic-folk-spring@1",
     revision: "bundled",
     manifestUrl: "",
+    traditionSlug: "celtic-folk",
   },
   {
     id: "theravada-water",
@@ -39,6 +49,7 @@ export const builtInScenes: CatalogEntry[] = [
     engine: "theravada-water@1",
     revision: "bundled",
     manifestUrl: "",
+    traditionSlug: "theravada-buddhism",
   },
   {
     id: "tanzaku-tanabata",
@@ -46,6 +57,9 @@ export const builtInScenes: CatalogEntry[] = [
     engine: "tanzaku-tanabata@1",
     revision: "bundled",
     manifestUrl: "",
+    traditionSlug: "shinto",
+    narrative:
+      "日本七夕时，人们把愿望写在色纸短册上，系于笹竹；仙台七夕的七种装饰中，短册多寄托学业与书艺精进之愿。它与绘马同属书写悬挂的祈愿习惯，却是七月星祭的岁时语境。本页只作许愿练习与致敬，非宗教仪轨。",
   },
   {
     id: "yeondeunghoe",
@@ -53,6 +67,9 @@ export const builtInScenes: CatalogEntry[] = [
     engine: "yeondeunghoe@1",
     revision: "bundled",
     manifestUrl: "",
+    traditionSlug: "won-buddhism",
+    narrative:
+      "韩国燃灯会是佛诞前后点亮莲灯的节庆，二〇二〇年列入联合国教科文组织人类非物质文化遗产代表作名录。灯火象征光明与共同祝愿，如今也延伸为公众可自制莲灯参与的开放春日共庆。本页只作许愿练习与致敬，非宗教仪轨。",
   },
   {
     id: "furin-wind-chime",
@@ -60,6 +77,9 @@ export const builtInScenes: CatalogEntry[] = [
     engine: "furin-wind-chime@1",
     revision: "bundled",
     manifestUrl: "",
+    traditionSlug: "shinto",
+    narrative:
+      "风铃是日本夏日常见的风物与工艺：江户玻璃或南部铁器的铃身下系纸短册，风过轻响，带来听觉上的清凉感。常述由古时悬于檐角的风铎演变而来，渐成民俗美学。本页只作静听练习与致敬，非宗教仪轨。",
   },
 ];
 export const supportsScene = (engine: string) =>

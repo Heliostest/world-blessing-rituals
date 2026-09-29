@@ -5,12 +5,10 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
-  createChimeAudio,
-  createMotes,
+  createSceneFeedback,
   createStepOverlay,
   createWarmStage,
   disposeTree,
-  markBackdrop,
   setSafeText,
 } from '../procedural-kit'
 
@@ -49,7 +47,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   let dragHandle: GestureHandle | null = null
   let wishHandle: GestureHandle | null = null
   let resizeObserver: ResizeObserver | null = null
-  const audio = createChimeAudio()
+  const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
     overlay,
@@ -83,8 +81,8 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Cream night-sky: warm cream background, peach key, lavender rim and fill.
-  const { renderer, scene } = createWarmStage(canvas, 0xf6ede1, 0.055)
+  // Transparent over the cream page: peach key, lavender rim and fill.
+  const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.9, 4.4)
   camera.position.copy(cameraHome)
@@ -102,13 +100,6 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
 
   const world = new THREE.Group()
   scene.add(world)
-
-  const ground = markBackdrop(new THREE.Mesh(
-    new THREE.CircleGeometry(3.2, 48),
-    new THREE.MeshStandardMaterial({ color: 0xebdac0, roughness: 1 }),
-  ))
-  ground.rotation.x = -Math.PI / 2
-  world.add(ground)
 
   // Procedural bamboo: segmented stalks with node rings and a few leaves.
   const bamboo = new THREE.Group()
@@ -154,7 +145,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   hangZone.position.set(0.02, 1.8, -0.05)
   world.add(hangZone)
 
-  // Paper strips: a few already hanging + one loose on the ground.
+  // Paper strips: a few already hanging + one loose at the bamboo's foot.
   const stripGeo = new THREE.PlaneGeometry(0.12, 0.42)
   stripGeo.translate(0, -0.21, 0) // pivot at the top so it sways like paper on string
   const hangingStrips: THREE.Mesh[] = []
@@ -197,10 +188,6 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   )
   pickZone.position.set(looseHome.x, looseHome.y - 0.2, looseHome.z)
   world.add(pickZone)
-
-  const motes = createMotes(70, 0xffc98a)
-  world.add(motes)
-  const moteMat = motes.material as THREE.PointsMaterial
 
   const sparkleLight = new THREE.PointLight(0xffd8a0, 0, 3, 2)
   sparkleLight.position.copy(looseHangPos)
@@ -266,7 +253,11 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
     step = 'hang'
     dragTarget.set(looseHome.x - 0.2, 0.9, 0.6)
     dragHandle?.setEnabled(true)
-    if (!restoring) ctx.onProgress?.(1)
+    if (!restoring) {
+      // Light paper lift: haptic tick + a soft high note.
+      fx.impact({ freqs: [1046.5, 1568], duration: 0.25, gain: 0.04 })
+      ctx.onProgress?.(1)
+    }
     syncOverlayForStep()
   }
 
@@ -282,7 +273,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
       loose.rotation.z = 0.35
       sparkle = 1
       const reduced = ctx.isReducedMotion?.() ?? false
-      audio.play({
+      fx.impact({
         freqs: [1318.5, 1975.5, 2637],
         duration: reduced ? 0.35 : 0.9,
         gain: reduced ? 0.05 : 0.09,
@@ -297,6 +288,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
 
   const onActionTap = () => {
     if (disposed) return
+    fx.prepare()
     if (step === 'pick') goHang()
     else if (step === 'hang') goWish()
     else if (step === 'wish') completeScene()
@@ -305,6 +297,8 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   // Registered before the drag handle so a press on the strip picks it up and
   // the same pointer keeps dragging (drag's pointerdown sees it enabled).
   const onHitDown = (e: PointerEvent) => {
+    if (step !== 'pick' && step !== 'hang') return
+    fx.prepare()
     if (step !== 'pick') return
     raycastAt(e.clientX, e.clientY)
     if (raycaster.intersectObjects([pickZone, loose], false).length > 0) {
@@ -380,14 +374,12 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
       for (const h of handles) h.update(dt)
       const reduced = ctx.isReducedMotion?.() ?? false
       const t = reduced ? 0 : performance.now() * 0.001
-      const visualDt = reduced ? 0 : dt
 
       hangingStrips.forEach((s, i) => {
         s.rotation.z = Math.sin(t * 1.3 + i * 1.7) * 0.12
         s.rotation.y = Math.sin(t * 0.7 + i) * 0.2
       })
       bamboo.rotation.z = Math.sin(t * 0.5) * 0.008
-      motes.rotation.y += visualDt * 0.03
 
       const follow = reduced ? 1 : 1 - Math.exp(-dt * 12)
       if (step === 'hang') {
@@ -408,10 +400,8 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
         THREE.MathUtils.lerp(loose.scale.x, scaleTarget, 1 - Math.exp(-dt * 12)),
       )
 
-      // Hang burst: brighten motes + a brief warm glow at the strip.
+      // Hang burst: a brief warm glow at the strip.
       sparkle = Math.max(0, sparkle - dt * (reduced ? 3 : 0.8))
-      moteMat.opacity = 0.55 + sparkle * 0.4
-      moteMat.size = 0.03 + sparkle * 0.03
       sparkleLight.intensity = sparkle * 1.6
 
       camera.position.set(
@@ -435,13 +425,13 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
       actionBtn.removeEventListener('pointerup', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
-      audio.dispose()
+      fx.dispose()
       styleRenderer.dispose()
       renderer.dispose()
       renderer.forceContextLoss()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
     },
   }
 }

@@ -5,11 +5,10 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
-  createMotes,
+  createSceneFeedback,
   createStepOverlay,
   createWarmStage,
   disposeTree,
-  markBackdrop,
   setSafeText,
 } from '../procedural-kit'
 
@@ -104,6 +103,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   const handles: GestureHandle[] = []
   let pushHandle: GestureHandle | null = null
   let resizeObserver: ResizeObserver | null = null
+  const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
     overlay,
@@ -131,8 +131,8 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Warm cream dusk with lotus-pink accents.
-  const { renderer, scene } = createWarmStage(canvas, 0xf5e7da, 0.065)
+  // Transparent over the cream page; lotus-pink accents on the lanterns.
+  const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.5, 4.6)
   camera.position.copy(cameraHome)
@@ -155,13 +155,6 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
 
   const world = new THREE.Group()
   scene.add(world)
-
-  const ground = markBackdrop(new THREE.Mesh(
-    new THREE.CircleGeometry(4, 48),
-    new THREE.MeshStandardMaterial({ color: 0xe7d0ba, roughness: 1 }),
-  ))
-  ground.rotation.x = -Math.PI / 2
-  world.add(ground)
 
   const plinthMat = new THREE.MeshStandardMaterial({ color: 0xcaa580, roughness: 0.95 })
   const plinth = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.5, 0.3, 40), plinthMat)
@@ -204,10 +197,6 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   )
   tapZone.position.set(0, LOW_Y + 0.1, 0)
   world.add(tapZone)
-
-  const motes = createMotes(80, 0xffb878, 2.4, 3.2)
-  world.add(motes)
-  const moteMat = motes.material as THREE.PointsMaterial
 
   const raycaster = new THREE.Raycaster()
   const pointerNdc = new THREE.Vector2()
@@ -256,7 +245,16 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
     step = 'rise'
     riseT = 0
     pushHandle?.setEnabled(false)
-    if (!restoring) ctx.onProgress?.(1)
+    if (!restoring) {
+      // Soft warm lantern tone: low, round partials with a slow fade.
+      const reduced = ctx.isReducedMotion?.() ?? false
+      fx.impact({
+        freqs: [523.25, 784, 1046.5],
+        duration: reduced ? 0.5 : 1.4,
+        gain: reduced ? 0.05 : 0.08,
+      })
+      ctx.onProgress?.(1)
+    }
     syncOverlayForStep()
     // Reduced motion: no float animation, snap straight to the resting height.
     if (!restoring && (ctx.isReducedMotion?.() ?? false)) goRest()
@@ -264,6 +262,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
 
   const onActionTap = () => {
     if (disposed) return
+    fx.prepare()
     if (step === 'ready') goRise()
     else if (step === 'rest') completeScene()
   }
@@ -271,6 +270,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   let downX = 0
   let downY = 0
   const onHitDown = (e: PointerEvent) => {
+    if (step === 'ready') fx.prepare()
     downX = e.clientX
     downY = e.clientY
   }
@@ -345,15 +345,12 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
       const pulse = step === 'rest' || step === 'done' ? Math.sin(t * 2.2) * 0.35 : 0
       main.light.intensity = glowBase + pulse
       main.shellMat.emissiveIntensity = 0.35 + eased * 0.35 + pulse * 0.2
-      moteMat.opacity = 0.45 + eased * 0.3
 
       companions.forEach((l, i) => {
         const [x, y, z] = companionSpots[i]
         l.group.position.set(x + Math.sin(t * 0.3 + i) * 0.1, y + Math.sin(t * 0.8 + i * 2) * 0.08, z)
         l.group.rotation.y += visualDt * 0.15
       })
-      motes.rotation.y += visualDt * 0.025
-      motes.position.y = reduced ? 0 : (t * 0.05) % 0.5
 
       // Camera tilts up to follow the lantern.
       const lookY = THREE.MathUtils.lerp(1.0, 1.9, eased)
@@ -377,12 +374,13 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
       actionBtn.removeEventListener('pointerup', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
+      fx.dispose()
       styleRenderer.dispose()
       renderer.dispose()
       renderer.forceContextLoss()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
     },
   }
 }

@@ -27,6 +27,8 @@ export type AppContext = {
   dispatch(a: Action): boolean;
   back(): void;
   feedback(sound?: AudioBuffer): void;
+  /** Haptic tick only; respects the 震动 toggle. */
+  haptic(): void;
   decodeSound(bytes: ArrayBuffer): Promise<AudioBuffer>;
   prepareFeedback(): void;
   active: boolean;

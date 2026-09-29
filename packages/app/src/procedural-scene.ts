@@ -6,6 +6,10 @@ export type ProceduralContext = {
   progress: number;
   checkpoint(progress: number): void;
   sceneId: string;
+  /** App feedback, read live so 音效/震动 toggles apply mid-scene. */
+  prepareFeedback?(): void;
+  haptic?(): void;
+  isSoundEnabled?(): boolean;
 };
 
 /** Adapts two independent interaction implementations to the shared lifecycle. */
@@ -34,6 +38,9 @@ export async function proceduralEngine(
         sceneId: context.sceneId,
         isActive: () => active && !disposed,
         isReducedMotion: () => reduced,
+        prepareFeedback: context.prepareFeedback,
+        haptic: context.haptic,
+        isSoundEnabled: context.isSoundEnabled,
       });
       const dispose = () => {
         if (disposed) return;

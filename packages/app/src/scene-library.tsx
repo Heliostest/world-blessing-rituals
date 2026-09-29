@@ -40,6 +40,27 @@ export const builtInScenes: CatalogEntry[] = [
     revision: "bundled",
     manifestUrl: "",
   },
+  {
+    id: "tanzaku-tanabata",
+    title: "短册系竹",
+    engine: "tanzaku-tanabata@1",
+    revision: "bundled",
+    manifestUrl: "",
+  },
+  {
+    id: "yeondeunghoe",
+    title: "燃灯上浮",
+    engine: "yeondeunghoe@1",
+    revision: "bundled",
+    manifestUrl: "",
+  },
+  {
+    id: "furin-wind-chime",
+    title: "风铃一响",
+    engine: "furin-wind-chime@1",
+    revision: "bundled",
+    manifestUrl: "",
+  },
 ];
 export const supportsScene = (engine: string) =>
   builtInScenes.some((e) => e.engine === engine);

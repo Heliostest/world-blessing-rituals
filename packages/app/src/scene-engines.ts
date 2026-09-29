@@ -19,4 +19,7 @@ export const sceneEngines = createSceneRegistry({
     import("./woodfish-scene").then((module) => module.woodfishEngine),
   "celtic-folk-spring@1": () => import("./procedural-scene").then(m => m.proceduralEngine("celtic-folk-spring")),
   "theravada-water@1": () => import("./procedural-scene").then(m => m.proceduralEngine("theravada-water")),
+  "tanzaku-tanabata@1": () => import("./procedural-scene").then(m => m.proceduralEngine("tanzaku-tanabata")),
+  "yeondeunghoe@1": () => import("./procedural-scene").then(m => m.proceduralEngine("yeondeunghoe")),
+  "furin-wind-chime@1": () => import("./procedural-scene").then(m => m.proceduralEngine("furin-wind-chime")),
 });

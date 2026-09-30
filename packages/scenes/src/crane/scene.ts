@@ -64,25 +64,51 @@ function pressedLayer(ring: V3[], front: V3, back: V3): V3[] {
   return tris
 }
 
-/** Thin paper fin from `base` to `tip` (neck, tail, beak) with a raised spine. */
-function paperFin(base: V3, tip: V3, halfWidth: number, spine: number): V3[] {
-  const axis = tip.clone().sub(base).normalize()
-  const perp = new THREE.Vector3().crossVectors(axis, v(0, 0, 1)).normalize()
-  const p0 = base.clone().addScaledVector(perp, halfWidth)
-  const p1 = base.clone().addScaledVector(perp, -halfWidth)
-  const mid = base.clone().lerp(tip, 0.35)
-  const mf = mid.clone().setZ(mid.z + spine)
-  const mb = mid.clone().setZ(mid.z - spine)
-  return [p0, mf, tip, mf, p1, tip, p0, tip, mb, p1, mb, tip, p0, p1, mf, p0, mb, p1]
+/** Closed slab between two matching outlines (`top` and `bot`): both faces, side rails and caps. */
+function slab(top: V3[], bot: V3[]): V3[] {
+  const tris: V3[] = []
+  for (let i = 1; i < top.length - 1; i++) {
+    tris.push(top[0], top[i], top[i + 1], bot[0], bot[i + 1], bot[i])
+  }
+  for (let i = 0; i < top.length; i++) {
+    const j = (i + 1) % top.length
+    tris.push(top[i], bot[i], bot[j], top[i], bot[j], top[j])
+  }
+  return tris
 }
 
-/** One wing in its pivot space: two facets meeting along a centre crease. */
-function wingFacets(side: 1 | -1): V3[] {
-  const rootF = v(0.17, 0, 0)
-  const rootB = v(-0.2, 0, 0)
-  const crease = v(-0.02, 0.018, 0)
-  const tip = v(-0.1, 0.03, 0.62 * side)
-  return [rootF, crease, tip, crease, rootB, tip]
+/**
+ * Tapered paper board in the xy plane from `baseMid` to `tip`. Faces sit at
+ * ±`halfThick` on z so the piece keeps a readable width even when nearly edge-on.
+ */
+function paperBoard(baseMid: V3, tip: V3, baseHalfW: number, tipHalfW: number, halfThick: number): V3[] {
+  const axis = tip.clone().sub(baseMid).normalize()
+  const perp = v(axis.y, -axis.x, 0)
+  if (perp.lengthSq() < 1e-8) perp.set(1, 0, 0)
+  else perp.normalize()
+  const outline = [
+    baseMid.clone().addScaledVector(perp, -baseHalfW),
+    baseMid.clone().addScaledVector(perp, baseHalfW),
+    tip.clone().addScaledVector(perp, tipHalfW),
+    tip.clone().addScaledVector(perp, -tipHalfW),
+  ]
+  return slab(
+    outline.map((p) => p.clone().setZ(p.z + halfThick)),
+    outline.map((p) => p.clone().setZ(p.z - halfThick)),
+  )
+}
+
+/**
+ * Broad wing board in pivot space: root along +x/−x on the body ridge, tip out
+ * on ±z. Slight Y thickness keeps the silhouette from collapsing to a line.
+ */
+function wingBoard(side: 1 | -1): V3[] {
+  const outline = [v(0.14, 0, 0), v(-0.14, 0, 0), v(-0.05, 0.04, 0.58 * side)]
+  const half = 0.008
+  return slab(
+    outline.map((p) => p.clone().setY(p.y + half)),
+    outline.map((p) => p.clone().setY(p.y - half)),
+  )
 }
 
 export function createCrane(ctx: SceneContext): SceneInstance {
@@ -219,27 +245,52 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     paperMat,
   )
 
-  // Forms 3–4: the crane. Body along +x (head), wings on ±z.
+  // Forms 3–4: the orizuru. Body along +x (head), wings on ±z.
   const crane = new THREE.Group()
-  crane.position.y = -0.08
-  const body = new THREE.Mesh(new THREE.OctahedronGeometry(1, 0), paperMat)
-  body.scale.set(0.24, 0.12, 0.085)
-  crane.add(body)
-  const neckTip = v(0.52, 0.44, 0)
-  crane.add(new THREE.Mesh(facetGeometry(paperFin(v(0.16, 0.02, 0), neckTip, 0.05, 0.025)), paperMat))
-  crane.add(new THREE.Mesh(facetGeometry(paperFin(v(-0.18, 0.02, 0), v(-0.56, 0.42, 0), 0.05, 0.025)), paperMat))
+  // `pose` tips the back toward the camera so spread wing faces read (showForm
+  // owns the outer group's rotation.x each frame).
+  const pose = new THREE.Group()
+  pose.position.y = -0.06
+  pose.rotation.x = 0.28
+  crane.add(pose)
+  // Diamond body: crisp top apex for wing roots, shallow keel (no spike cloud).
+  const body = new THREE.Mesh(
+    facetGeometry(
+      pressedLayer(
+        [v(0.2, 0.01, 0), v(0, 0.1, 0), v(-0.2, 0.01, 0), v(0, -0.11, 0)],
+        v(0, 0.01, 0.08),
+        v(0, 0.01, -0.08),
+      ),
+    ),
+    paperMat,
+  )
+  pose.add(body)
+  // Neck/tail emerge from the nose and rear points — outside the body volume.
+  const neckBase = v(0.18, 0.02, 0)
+  const neckTip = v(0.44, 0.36, 0)
+  pose.add(new THREE.Mesh(facetGeometry(paperBoard(neckBase, neckTip, 0.042, 0.014, 0.012)), paperMat))
+  pose.add(
+    new THREE.Mesh(
+      facetGeometry(paperBoard(v(-0.18, 0.02, 0), v(-0.5, 0.32, 0), 0.042, 0.005, 0.012)),
+      paperMat,
+    ),
+  )
+  // Head: reverse-fold tip at the neck end, beak angled forward and down.
+  const headRoot = neckTip.clone().sub(neckBase).normalize().multiplyScalar(-0.018)
   const beak = new THREE.Mesh(
-    facetGeometry(paperFin(v(0, 0, 0), v(0.1, -0.08, 0), 0.022, 0.012)),
+    facetGeometry(paperBoard(headRoot, v(0.1, -0.085, 0), 0.02, 0.003, 0.01)),
     paperMat,
   )
   beak.position.copy(neckTip)
-  crane.add(beak)
+  pose.add(beak)
   const wings: THREE.Group[] = []
   for (const side of [1, -1] as const) {
     const pivot = new THREE.Group()
-    pivot.position.set(0, 0.1, 0)
-    pivot.add(new THREE.Mesh(facetGeometry(wingFacets(side)), paperMat))
-    crane.add(pivot)
+    pivot.position.set(0, 0.09, 0)
+    // Slight dihedral so both wings read from the 3/4 camera.
+    pivot.rotation.z = side * 0.12
+    pivot.add(new THREE.Mesh(facetGeometry(wingBoard(side)), paperMat))
+    pose.add(pivot)
     wings.push(pivot)
   }
 
@@ -423,7 +474,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       // Crane details: wings rise from folded-up (form 3) to spread (form 4).
       const spread = form >= 4 ? (prevForm >= 3 ? k : 1) : 0
       const flap = reduced ? 0 : Math.sin(t * 2.2) * 0.08 * spread
-      const wingAngle = THREE.MathUtils.lerp(Math.PI / 2 - 0.12, 0.18, spread) + flap
+      const wingAngle = THREE.MathUtils.lerp(Math.PI / 2 - 0.12, 0.42, spread) + flap
       wings[0].rotation.x = -wingAngle
       wings[1].rotation.x = wingAngle
       beak.scale.setScalar(form >= 4 ? Math.max(0.001, spread) : 0.001)

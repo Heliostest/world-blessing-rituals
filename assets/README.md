@@ -1,5 +1,7 @@
 # 本地视觉素材
 
+五个待实现 Three.js 场景的实物／结构参考图另存于 [`design/scene-references/`](../design/scene-references/README.md)，包含 10 张图和逐图来源、许可、下载地址、校验值；仅用于设计研究，不打入 App 资源包。文化背景见[五场景考据](../specs/2026-10-01-five-scene-research.md)。
+
 `reference-ui/wishes.png` 与 `reference-ui/rituals.png` 是用户于 2026-09-20 提供的两张 1536 × 1024 UI 参考图的原样副本。`packages/app/src/art.tsx` 用坐标裁切显示木鱼、纸鹤、心愿灯与纪念章，CSS 柔化边缘并与奶油背景混合；没有重绘原图，也不是透明背景的独立抠图。后续可替换为同风格的高清透明素材。界面文字、表单、按钮和导航均为可交互组件，不是整屏图片。
 
 `fonts/noto-sans-sc.woff2` 为 Noto Sans SC 可变字体的本地子集，保留拉丁、基础汉字、中文标点和全角字符，支持 100–900 字重。字体用于接近参考图的粗黑中文层级；无法从参考图确定其原始字体，不能视为完全一致。来源为 Google Fonts 官方仓库：

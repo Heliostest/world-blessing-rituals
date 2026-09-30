@@ -790,6 +790,7 @@
 
 ### 产品研究草稿
 
+- [五个待实现场景考据（2026-10-01）](specs/2026-10-01-five-scene-research.md)（纸鹤／心愿灯／庭前一礼／廊前轻转／火边花环；一级来源、地域差异及简介草案） · [10 张本地参考图与授权](design/scene-references/README.md)
 - [每日小仪式候选（2026-09-20）](specs/2026-09-20-daily-micro-rituals-candidates.md)（木鱼／纸鹤／灯类缺口与 15 项对照；附 `specs/notes-mokugyo.md`、`notes-origami-crane.md`、`notes-wish-lamps-disambiguation.md`）
 - [每日小仪式候选 Batch 2（2026-09-21）](specs/2026-09-21-daily-micro-rituals-candidates-b2.md)（达摩点睛／milagros／御守循环／红绳分层／节分／意大利绘牌／圣布里吉德十字／phuang malai／복조리／短册；加深木鱼·纸鹤笔记）
 

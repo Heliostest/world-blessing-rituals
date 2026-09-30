@@ -1,5 +1,7 @@
 # 赛博祈福 App — 设计规格（§1–§4）
 
+资料补充（2026-10-01）：待建场景的[考据与简介草案](2026-10-01-five-scene-research.md)、[本地参考图与授权](../design/scene-references/README.md)。下文保留初始设计记录；具体文化事实与地域区别参照新补充资料。
+
 - **日期：** 2026-09-20
 - **仓库：** `Heliostest/world-blessing-rituals`
 - **状态：** 实现进行中 · 试点两景已通（celtic-folk-spring / theravada-water）

@@ -782,9 +782,35 @@
 724. [彭特科斯特传统信仰与瓦努阿图陆地跳祈福](content/traditions/pentecost-traditional.md)
 725. [罗图马传统信仰与波利尼西亚边缘祈福](content/traditions/rotuma-traditional.md)
 
+### 日常小仪式专卡
+
+726. [木鱼（mokugyo）](content/traditions/mokugyo-wooden-fish.md)
+727. [折纸鹤与千羽鶴](content/traditions/origami-crane-senbazuru.md)
+728. [水引（mizuhiki）](content/traditions/mizuhiki.md)
+729. [达摩不倒翁点睛](content/traditions/daruma-eye-painting.md)
+730. [平溪天灯](content/traditions/sky-lantern-pingxi.md)
+731. [河灯／水灯（Loy Krathong）](content/traditions/floating-lantern-loy-krathong.md)
+732. [墨西哥 milagros](content/traditions/milagros.md)
+733. [七夕短册](content/traditions/tanzaku-tanabata.md)
+734. [韩国燃灯会](content/traditions/yeondeunghoe.md)
+735. [복조리（福笊篱）](content/traditions/bokjori.md)
+736. [圣布里吉德十字](content/traditions/st-brigids-cross.md)
+737. [风铃（fūrin）](content/traditions/furin-wind-chime.md)
+738. [节分豆まき](content/traditions/setsubun-mamemaki.md)
+739. [红绳／红线](content/traditions/hongsheng-red-string.md)
+740. [意大利绘牌 ex-voto](content/traditions/italian-ex-voto.md)
+741. [泰国花环（phuang malai）](content/traditions/phuang-malai.md)
+742. [绘马（ema）](content/traditions/ema-votive-plaque.md)
+743. [御神签（omikuji）](content/traditions/omikuji.md)
+744. [神社铃绪](content/traditions/shrine-suzu-bell.md)
+745. [御守领受—返还](content/traditions/omamori-cycle.md)
+746. [天主教还愿烛](content/traditions/votive-candle-catholic.md)
+747. [Diya 油灯](content/traditions/diya-oil-lamp.md)
+748. [Clootie 布条圣井](content/traditions/clootie-well-rag.md)
+
 ### 比较
 
-726. [比较总览](content/traditions/comparative-overview.md)
+749. [比较总览](content/traditions/comparative-overview.md)
 
 ## 赛博祈福 App（开发中）
 

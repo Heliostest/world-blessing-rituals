@@ -15,6 +15,7 @@ import {
   setSafeText,
   sizeStage,
 } from '../procedural-kit'
+import { FORM_COUNT } from './fold-kinematics'
 import { createOrigamiSheet } from './origami-sheet'
 
 type Step = 'fold' | 'lift' | 'wish' | 'done'
@@ -23,10 +24,10 @@ const STEP_ORDER: Step[] = ['fold', 'lift', 'wish']
 
 const COPY = {
   title: '折一只纸鹤',
-  hintFold: '点按纸面折一下（折纸意象练习，非完整教程）。',
+  hintFold: '点按纸面折一下（按纸鹤传统折序简化为四步的练习，非完整教程）。',
   fold1: '收成方形底（1/4），再点按继续。',
   fold2: '拉长成鸟形底（2/4），再点按继续。',
-  fold3: '折起颈与尾（3/4），再点按继续。',
+  fold3: '折起颈与尾（3/4），再点按翻出鹤首、展开双翼。',
   hintLift: '纸鹤折好了。向上拖起它，或点按下方托起。',
   hintWish: '可写一句想送给自己或他人的话，或点按下方静看片刻（练习，非法效）。',
   foldTap: '折一下',
@@ -39,10 +40,29 @@ const COPY = {
 /** Hints shown after each of the first three folds; the fourth ends the step. */
 const FOLD_HINTS = [COPY.hintFold, COPY.fold1, COPY.fold2, COPY.fold3] as const
 
-const FOLD_COUNT = 4
-const FOLD_SECONDS = 0.55
+const FOLD_COUNT = FORM_COUNT - 1
+/** Seconds per fold, by the form it folds into. */
+const FOLD_SECONDS = [0, 1.6, 2.2, 2.9, 2.3] as const
 const REST_Y = 0.9
 const LIFT_Y = 1.3
+
+/**
+ * How each form faces the camera, in the sheet's bird-base axes (right, up,
+ * front): the flat square lies back like paper on a table, the bases stand
+ * up, the crane turns three-quarters with its head toward the viewer.
+ */
+const VIEWS: readonly { tilt: number; yaw: number; size: number }[] = [
+  { tilt: 1.02, yaw: 0, size: 1.55 },
+  { tilt: 0.18, yaw: -0.18, size: 0.95 },
+  { tilt: 0.12, yaw: -0.22, size: 1.3 },
+  { tilt: 0.1, yaw: 0.42, size: 1.38 },
+  { tilt: 0.22, yaw: 0.62, size: 1.5 },
+]
+
+function smooth(t: number) {
+  const x = Math.min(1, Math.max(0, t))
+  return x * x * (3 - 2 * x)
+}
 
 export function createCrane(ctx: SceneContext): SceneInstance {
   const { canvas, overlay, gestures, shared } = ctx
@@ -54,10 +74,10 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   let disposed = false
   let started = false
   let restoring = true
-  // Paper form 0..4 and the fold transition from the previous form.
+  // Form the paper is folding toward and the progress of that fold (1 = at rest).
   let form = 0
-  let prevForm = 0
-  let foldT = 1
+  let foldK = 1
+  let posed = ''
   let liftT = 0
   let grabbed = false
 
@@ -126,21 +146,40 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   const world = new THREE.Group()
   scene.add(world)
 
-  // Single crease-driven washi sheet (not body/wing/neck prop soup).
+  // One square of paper folded along explicit creases (see fold-kinematics).
   const sheet = createOrigamiSheet()
-  // `paper` carries lift; `holder` gives the 3/4 yaw and gentle idle turn.
+  // `paper` carries the lift; `holder` turns and scales the sheet for each form;
+  // `sheet.object` is shifted so the folded paper sits on the holder's origin.
   const paper = new THREE.Group()
   paper.position.set(0, REST_Y, 0)
   world.add(paper)
   const holder = new THREE.Group()
-  holder.rotation.y = -0.55
-  // Scale so the unit sheet / folded crane fills the product frame.
-  holder.scale.setScalar(1.55)
   paper.add(holder)
-  holder.add(sheet.mesh)
+  holder.add(sheet.object)
 
-  // Init flat pose; plausibility checked once (clamps are silent at runtime).
-  sheet.setFold(0, 0, 1)
+  // Rest framing of every form: orientation, scale to `size`, bounds centre.
+  const birdAxes = new THREE.Matrix4().makeBasis(
+    new THREE.Vector3(-1, 1, 0).normalize(),
+    new THREE.Vector3(-1, -1, 0).normalize(),
+    new THREE.Vector3(0, 0, 1),
+  )
+  const birdToWorld = new THREE.Quaternion().setFromRotationMatrix(birdAxes).invert()
+  const box = new THREE.Box3()
+  const frames = VIEWS.map((view, f) => {
+    sheet.pose(f, 1)
+    const q = new THREE.Quaternion()
+      .setFromEuler(new THREE.Euler(-view.tilt, view.yaw, 0, 'YXZ'))
+      .multiply(birdToWorld)
+    sheet.bounds(box)
+    const size = box.getSize(new THREE.Vector3())
+    return {
+      q,
+      scale: view.size / Math.max(size.x, size.y, size.z),
+      centre: box.getCenter(new THREE.Vector3()),
+    }
+  })
+  sheet.pose(0, 1)
+  const centre = new THREE.Vector3()
 
   // Generous invisible tap target around the paper.
   const tapZone = new THREE.Mesh(
@@ -194,12 +233,11 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     syncOverlayForStep()
   }
 
-  /** One fold performance stage; the fourth finishes the crane. */
+  /** One fold of the sequence; a tap mid-fold finishes the fold under way first. */
   const foldOnce = () => {
     if (!canAct() || step !== 'fold' || form >= FOLD_COUNT) return
-    prevForm = form
     form += 1
-    foldT = restoring || (ctx.isReducedMotion?.() ?? false) ? 1 : 0
+    foldK = restoring || (ctx.isReducedMotion?.() ?? false) ? 1 : 0
     if (!restoring) {
       // Soft paper crease: short, airy triangle tones.
       fx.impact({ freqs: [880, 1320], duration: 0.2, gain: 0.035, type: 'triangle' })
@@ -297,16 +335,20 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       const reduced = ctx.isReducedMotion?.() ?? false
       const t = reduced ? 0 : performance.now() * 0.001
 
-      foldT = Math.min(1, foldT + dt / FOLD_SECONDS)
-      const k = foldT * foldT * (3 - 2 * foldT)
-      // Drive the single sheet by crease-angle keyframes (prev → form).
-      sheet.setFold(prevForm, form, k)
-
-      // Mild wing breathe on the finished pose via a tiny holder rock (geometry
-      // already has wing crease angles; avoid a second fake wing mesh).
-      const spread = form >= 4 ? (prevForm >= 3 ? k : 1) : 0
-      const flap = reduced ? 0 : Math.sin(t * 2.2) * 0.04 * spread
-      sheet.mesh.rotation.z = flap
+      // Fold: advance the tap and pose the sheet from its crease angles.
+      if (foldK < 1) foldK = reduced ? 1 : Math.min(1, foldK + dt / FOLD_SECONDS[form])
+      const key = `${form}:${foldK}`
+      if (key !== posed) {
+        sheet.pose(form, foldK)
+        posed = key
+      }
+      // Turn, scale and centre between the two forms' rest framings.
+      const from = frames[foldK < 1 ? form - 1 : form]
+      const to = frames[form]
+      const e = smooth(foldK)
+      holder.quaternion.slerpQuaternions(from.q, to.q, e)
+      holder.scale.setScalar(THREE.MathUtils.lerp(from.scale, to.scale, e))
+      sheet.object.position.copy(centre.lerpVectors(from.centre, to.centre, e)).negate()
 
       // Lift: drag follows the pointer, then settles at the raised perch.
       if (step === 'lift') {
@@ -314,17 +356,16 @@ export function createCrane(ctx: SceneContext): SceneInstance {
         paper.position.lerp(dragTarget, follow)
       } else if (step === 'wish' || step === 'done') {
         liftT = reduced ? 1 : Math.min(1, liftT + dt / 1.2)
-        const e = liftT * liftT * (3 - 2 * liftT)
-        paper.position.set(0, THREE.MathUtils.lerp(REST_Y, LIFT_Y, e) + Math.sin(t * 1.4) * 0.03, 0)
+        const lift = liftT * liftT * (3 - 2 * liftT)
+        paper.position.set(0, THREE.MathUtils.lerp(REST_Y, LIFT_Y, lift) + Math.sin(t * 1.4) * 0.03, 0)
       } else {
         paper.position.set(0, REST_Y + Math.sin(t * 1.1) * 0.015, 0)
       }
-      holder.rotation.y = -0.55 + (reduced ? 0 : Math.sin(t * 0.4) * 0.12)
-      // Tip the folded bird slightly toward the camera so wings/neck read.
-      holder.rotation.x = THREE.MathUtils.lerp(0.12, 0.32, spread)
+      // A slow idle turn, so the folded layers catch the light.
+      paper.rotation.y = reduced ? 0 : Math.sin(t * 0.4) * 0.1
       const lifted = step === 'wish' || step === 'done' ? liftT : 0
       glow.intensity = lifted * 0.9
-      sheet.material.emissiveIntensity = 0.06 + lifted * 0.1
+      sheet.setGlow(lifted * 0.1)
       const grabScale = grabbed ? 1.08 : 1
       paper.scale.setScalar(THREE.MathUtils.lerp(paper.scale.x, grabScale, 1 - Math.exp(-dt * 12)))
 

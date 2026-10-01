@@ -15,6 +15,7 @@ import {
   setSafeText,
   sizeStage,
 } from '../procedural-kit'
+import { createOrigamiSheet } from './origami-sheet'
 
 type Step = 'fold' | 'lift' | 'wish' | 'done'
 
@@ -42,74 +43,6 @@ const FOLD_COUNT = 4
 const FOLD_SECONDS = 0.55
 const REST_Y = 0.9
 const LIFT_Y = 1.3
-
-type V3 = THREE.Vector3
-const v = (x: number, y: number, z: number) => new THREE.Vector3(x, y, z)
-
-/** Non-indexed triangle soup → flat normals, so every fold reads as a plane. */
-function facetGeometry(tris: V3[]) {
-  const geo = new THREE.BufferGeometry().setFromPoints(tris)
-  geo.computeVertexNormals()
-  return geo
-}
-
-/** Double pyramid over a closed ring: a pressed paper layer with a centre crease. */
-function pressedLayer(ring: V3[], front: V3, back: V3): V3[] {
-  const tris: V3[] = []
-  for (let i = 0; i < ring.length; i++) {
-    const a = ring[i]
-    const b = ring[(i + 1) % ring.length]
-    tris.push(front, a, b, back, b, a)
-  }
-  return tris
-}
-
-/** Closed slab between two matching outlines (`top` and `bot`): both faces, side rails and caps. */
-function slab(top: V3[], bot: V3[]): V3[] {
-  const tris: V3[] = []
-  for (let i = 1; i < top.length - 1; i++) {
-    tris.push(top[0], top[i], top[i + 1], bot[0], bot[i + 1], bot[i])
-  }
-  for (let i = 0; i < top.length; i++) {
-    const j = (i + 1) % top.length
-    tris.push(top[i], bot[i], bot[j], top[i], bot[j], top[j])
-  }
-  return tris
-}
-
-/**
- * Tapered paper board in the xy plane from `baseMid` to `tip`. Faces sit at
- * ±`halfThick` on z so the piece keeps a readable width even when nearly edge-on.
- */
-function paperBoard(baseMid: V3, tip: V3, baseHalfW: number, tipHalfW: number, halfThick: number): V3[] {
-  const axis = tip.clone().sub(baseMid).normalize()
-  const perp = v(axis.y, -axis.x, 0)
-  if (perp.lengthSq() < 1e-8) perp.set(1, 0, 0)
-  else perp.normalize()
-  const outline = [
-    baseMid.clone().addScaledVector(perp, -baseHalfW),
-    baseMid.clone().addScaledVector(perp, baseHalfW),
-    tip.clone().addScaledVector(perp, tipHalfW),
-    tip.clone().addScaledVector(perp, -tipHalfW),
-  ]
-  return slab(
-    outline.map((p) => p.clone().setZ(p.z + halfThick)),
-    outline.map((p) => p.clone().setZ(p.z - halfThick)),
-  )
-}
-
-/**
- * Broad wing board in pivot space: root along +x/−x on the body ridge, tip out
- * on ±z. Slight Y thickness keeps the silhouette from collapsing to a line.
- */
-function wingBoard(side: 1 | -1): V3[] {
-  const outline = [v(0.14, 0, 0), v(-0.14, 0, 0), v(-0.05, 0.04, 0.58 * side)]
-  const half = 0.008
-  return slab(
-    outline.map((p) => p.clone().setY(p.y + half)),
-    outline.map((p) => p.clone().setY(p.y - half)),
-  )
-}
 
 export function createCrane(ctx: SceneContext): SceneInstance {
   const { canvas, overlay, gestures, shared } = ctx
@@ -166,7 +99,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Transparent over the cream page: morning key, mint rim along the paper edges.
+  // Transparent over the cream page: morning key, soft rim along the paper edges.
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.75, 2.6)
@@ -182,8 +115,8 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     sky: 0xfff6e6,
     ground: 0xd6c8ae,
     key: 0xffe6c0,
-    rim: 0xd2f2e0,
-    keyIntensity: 1.35,
+    rim: 0xb8d4e8,
+    keyIntensity: 1.55,
     keyPosition: [1.5, 4, 2.5],
   })
   const glow = new THREE.PointLight(0xffe2b0, 0, 2.5, 2)
@@ -193,109 +126,21 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   const world = new THREE.Group()
   scene.add(world)
 
-  // Product green washi; flat shading keeps every crease a crisp cel plane.
-  const paperMat = new THREE.MeshStandardMaterial({
-    color: 0x72bf8c,
-    emissive: 0x1f4a30,
-    emissiveIntensity: 0.08,
-    roughness: 0.95,
-    flatShading: true,
-    side: THREE.DoubleSide,
-  })
-
-  // `paper` carries the 3/4 view and the lift; `holder` follows drag.
+  // Single crease-driven washi sheet (not body/wing/neck prop soup).
+  const sheet = createOrigamiSheet()
+  // `paper` carries lift; `holder` gives the 3/4 yaw and gentle idle turn.
   const paper = new THREE.Group()
   paper.position.set(0, REST_Y, 0)
   world.add(paper)
   const holder = new THREE.Group()
   holder.rotation.y = -0.55
+  // Scale so the unit sheet / folded crane fills the product frame.
+  holder.scale.setScalar(1.55)
   paper.add(holder)
+  holder.add(sheet.mesh)
 
-  // Form 0: a flat square sheet with its diagonal creases pressed in.
-  const sheet = new THREE.Mesh(
-    facetGeometry(
-      pressedLayer(
-        [v(0.5, 0, 0), v(0, 0, -0.5), v(-0.5, 0, 0), v(0, 0, 0.5)],
-        v(0, 0.035, 0),
-        v(0, 0.03, 0),
-      ),
-    ),
-    paperMat,
-  )
-  // Form 1: square (preliminary) base, stood upright.
-  const squareBase = new THREE.Mesh(
-    facetGeometry(
-      pressedLayer(
-        [v(0, 0.36, 0), v(0.25, 0, 0), v(0, -0.3, 0), v(-0.25, 0, 0)],
-        v(0, 0.02, 0.07),
-        v(0, 0.02, -0.07),
-      ),
-    ),
-    paperMat,
-  )
-  // Form 2: bird base — a long, narrow kite.
-  const birdBase = new THREE.Mesh(
-    facetGeometry(
-      pressedLayer(
-        [v(0, 0.58, 0), v(0.15, 0.06, 0), v(0.03, -0.32, 0), v(-0.03, -0.32, 0), v(-0.15, 0.06, 0)],
-        v(0, 0.08, 0.05),
-        v(0, 0.08, -0.05),
-      ),
-    ),
-    paperMat,
-  )
-
-  // Forms 3–4: the orizuru. Body along +x (head), wings on ±z.
-  const crane = new THREE.Group()
-  // `pose` tips the back toward the camera so spread wing faces read (showForm
-  // owns the outer group's rotation.x each frame).
-  const pose = new THREE.Group()
-  pose.position.y = -0.06
-  pose.rotation.x = 0.28
-  crane.add(pose)
-  // Diamond body: crisp top apex for wing roots, shallow keel (no spike cloud).
-  const body = new THREE.Mesh(
-    facetGeometry(
-      pressedLayer(
-        [v(0.2, 0.01, 0), v(0, 0.1, 0), v(-0.2, 0.01, 0), v(0, -0.11, 0)],
-        v(0, 0.01, 0.08),
-        v(0, 0.01, -0.08),
-      ),
-    ),
-    paperMat,
-  )
-  pose.add(body)
-  // Neck/tail emerge from the nose and rear points — outside the body volume.
-  const neckBase = v(0.18, 0.02, 0)
-  const neckTip = v(0.44, 0.36, 0)
-  pose.add(new THREE.Mesh(facetGeometry(paperBoard(neckBase, neckTip, 0.042, 0.014, 0.012)), paperMat))
-  pose.add(
-    new THREE.Mesh(
-      facetGeometry(paperBoard(v(-0.18, 0.02, 0), v(-0.5, 0.32, 0), 0.042, 0.005, 0.012)),
-      paperMat,
-    ),
-  )
-  // Head: reverse-fold tip at the neck end, beak angled forward and down.
-  const headRoot = neckTip.clone().sub(neckBase).normalize().multiplyScalar(-0.018)
-  const beak = new THREE.Mesh(
-    facetGeometry(paperBoard(headRoot, v(0.1, -0.085, 0), 0.02, 0.003, 0.01)),
-    paperMat,
-  )
-  beak.position.copy(neckTip)
-  pose.add(beak)
-  const wings: THREE.Group[] = []
-  for (const side of [1, -1] as const) {
-    const pivot = new THREE.Group()
-    pivot.position.set(0, 0.09, 0)
-    // Slight dihedral so both wings read from the 3/4 camera.
-    pivot.rotation.z = side * 0.12
-    pivot.add(new THREE.Mesh(facetGeometry(wingBoard(side)), paperMat))
-    pose.add(pivot)
-    wings.push(pivot)
-  }
-
-  const forms: THREE.Object3D[] = [sheet, squareBase, birdBase, crane, crane]
-  for (const f of new Set(forms)) holder.add(f)
+  // Init flat pose; plausibility checked once (clamps are silent at runtime).
+  sheet.setFold(0, 0, 1)
 
   // Generous invisible tap target around the paper.
   const tapZone = new THREE.Mesh(
@@ -430,14 +275,6 @@ export function createCrane(ctx: SceneContext): SceneInstance {
 
   syncOverlayForStep()
 
-  /** Show `f` at fold phase `k` (0 hidden flat, 1 settled). */
-  const showForm = (f: THREE.Object3D, k: number, incoming: boolean) => {
-    f.visible = k > 0.001
-    const s = 0.25 + 0.75 * k
-    f.scale.set(s, s, s)
-    f.rotation.x = (1 - k) * (incoming ? -Math.PI / 2 : Math.PI / 2)
-  }
-
   return {
     start() {
       if (disposed || started) return
@@ -462,22 +299,14 @@ export function createCrane(ctx: SceneContext): SceneInstance {
 
       foldT = Math.min(1, foldT + dt / FOLD_SECONDS)
       const k = foldT * foldT * (3 - 2 * foldT)
-      const cur = forms[form]
-      const prev = forms[prevForm]
-      for (const f of new Set(forms)) f.visible = false
-      if (cur === prev) showForm(cur, 1, true)
-      else {
-        showForm(prev, 1 - k, false)
-        showForm(cur, k, true)
-      }
+      // Drive the single sheet by crease-angle keyframes (prev → form).
+      sheet.setFold(prevForm, form, k)
 
-      // Crane details: wings rise from folded-up (form 3) to spread (form 4).
+      // Mild wing breathe on the finished pose via a tiny holder rock (geometry
+      // already has wing crease angles; avoid a second fake wing mesh).
       const spread = form >= 4 ? (prevForm >= 3 ? k : 1) : 0
-      const flap = reduced ? 0 : Math.sin(t * 2.2) * 0.08 * spread
-      const wingAngle = THREE.MathUtils.lerp(Math.PI / 2 - 0.12, 0.42, spread) + flap
-      wings[0].rotation.x = -wingAngle
-      wings[1].rotation.x = wingAngle
-      beak.scale.setScalar(form >= 4 ? Math.max(0.001, spread) : 0.001)
+      const flap = reduced ? 0 : Math.sin(t * 2.2) * 0.04 * spread
+      sheet.mesh.rotation.z = flap
 
       // Lift: drag follows the pointer, then settles at the raised perch.
       if (step === 'lift') {
@@ -491,9 +320,11 @@ export function createCrane(ctx: SceneContext): SceneInstance {
         paper.position.set(0, REST_Y + Math.sin(t * 1.1) * 0.015, 0)
       }
       holder.rotation.y = -0.55 + (reduced ? 0 : Math.sin(t * 0.4) * 0.12)
+      // Tip the folded bird slightly toward the camera so wings/neck read.
+      holder.rotation.x = THREE.MathUtils.lerp(0.12, 0.32, spread)
       const lifted = step === 'wish' || step === 'done' ? liftT : 0
       glow.intensity = lifted * 0.9
-      paperMat.emissiveIntensity = 0.08 + lifted * 0.1
+      sheet.material.emissiveIntensity = 0.06 + lifted * 0.1
       const grabScale = grabbed ? 1.08 : 1
       paper.scale.setScalar(THREE.MathUtils.lerp(paper.scale.x, grabScale, 1 - Math.exp(-dt * 12)))
 
@@ -519,6 +350,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()
+      sheet.dispose()
       styleRenderer.dispose()
       renderer.dispose()
       renderer.forceContextLoss()

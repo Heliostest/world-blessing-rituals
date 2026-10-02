@@ -565,9 +565,10 @@ class Closure:
         return out
 
 
-def solve_track(closure, base, driven, unknown, start, end, samples):
-    """Rigid mechanism path: driven creases follow s*(end-start); unknown
-    creases are solved for vertex closure at every sample (Levenberg-Marquardt)."""
+def solve_track(closure, base, driven, unknown, start, end, samples, ease_func=None):
+    """Rigid mechanism path: driven creases follow s*(end-start) with optional
+    easing; unknown creases are solved for vertex closure at every sample
+    (Levenberg-Marquardt)."""
     import numpy as np
 
     ang = dict(base)
@@ -575,13 +576,16 @@ def solve_track(closure, base, driven, unknown, start, end, samples):
     prev, prev2 = [start[c] for c in unknown], None
     for i in range(1, samples + 1):
         s = i / samples
+        # Apply easing function if provided for smoother motion
+        s_eased = ease_func(s) if ease_func else s
         for c in driven:
-            ang[c] = start[c] + (end[c] - start[c]) * s
+            ang[c] = start[c] + (end[c] - start[c]) * s_eased
         if i == samples:
             x = np.array([end[c] for c in unknown])
         else:
             guess = [p + (e - p) / (samples - i + 1) for p, e in zip(prev, (end[c] for c in unknown))]
             if prev2 is not None:
+                # Extrapolate from previous two steps for better initial guess
                 guess = [2 * p - q for p, q in zip(prev, prev2)]
             x = np.array(guess, float)
             lam = 1e-6
@@ -746,7 +750,9 @@ def derive(sh: Sheet):
                 else:
                     driven = moving
                 unknown = [i for i in moving if i not in driven]
-                rows = solve_track(closure, start, driven, unknown, start, end, SAMPLES if unknown else 2)
+                # Use smoothstep easing for narrow folds to reduce jerkiness
+                ease = (lambda s: s * s * (3 - 2 * s)) if name.startswith("narrow") else None
+                rows = solve_track(closure, start, driven, unknown, start, end, SAMPLES if unknown else 2, ease)
             for i in moving:
                 state[i] = rows[i][-1]
             phases.append({"name": name, "k0": k0, "k1": k1, "rows": rows, "stack": kend, "relabel": relabel})

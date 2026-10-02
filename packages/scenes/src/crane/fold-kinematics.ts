@@ -476,7 +476,18 @@ export function createFoldKinematics(model: FoldModel, opts: KinematicsOptions =
       const len = Math.hypot(ax, ay)
       const ux = ax / len
       const uy = ay / len
-      const th = crease >= 0 ? angle[crease] : 0
+      let th = crease >= 0 ? angle[crease] : 0
+      // Inside-reverse folds (forms 3-4): soften angles near ±π to reduce
+      // layer penetration during the swing phase (real paper bends here).
+      if (form >= 3 && progress < 1 && crease >= 0) {
+        const rest = data.creases[crease].fold[form]
+        const isReverse = Math.abs(rest) > 0.99
+        if (isReverse && Math.abs(th) > 0.9 * Math.PI) {
+          const t = (Math.abs(th) - 0.9 * Math.PI) / (0.1 * Math.PI)
+          const soften = smooth(Math.min(1, t)) * 0.15
+          th *= 1 - soften
+        }
+      }
       const co = Math.cos(th)
       const si = Math.sin(th)
       const k1 = 1 - co
@@ -565,16 +576,28 @@ export function createFoldKinematics(model: FoldModel, opts: KinematicsOptions =
     }
     // Body puff & wing droop: subtle volume in the finished crane (form 4).
     if (form === 4 && progress > 0.5) {
-      const puff = (progress - 0.5) * 2
+      const puff = smooth((progress - 0.5) * 2)
       for (let g = 0; g < faceCount; g++) {
-        const c = paper[2 * data.faces[g][0]] * scale + paper[2 * data.faces[g][1]] * scale
-        const isBody = Math.abs(c) < 0.3 * scale && heights[g] > 10
-        const isWing = heights[g] < 3 && Math.abs(c) > 0.8 * scale
+        const face = data.faces[g]
+        let cx = 0
+        let cy = 0
+        for (const v of face) {
+          cx += paper[2 * v]
+          cy += paper[2 * v + 1]
+        }
+        cx = (cx / face.length) * scale
+        cy = (cy / face.length) * scale
+        const h = Math.abs(heights[g])
+        // Body: central high-stacked faces (the folded body layers)
+        const isBody = h > 12 && Math.abs(cx) < 0.25 * scale && Math.abs(cy) < 0.25 * scale
+        // Wings: low-stacked faces at the edges (the spread petals)
+        const isWing = h < 4 && (Math.abs(cx) > 0.6 * scale || Math.abs(cy) > 0.6 * scale)
         if (isBody) {
-          for (let i = 0; i < 3; i++) lift[3 * g + i] += puff * 0.8 * thickness * faceR[9 * g + 3 * i + 2]
+          // Puff the body outward along its normal
+          for (let i = 0; i < 3; i++) lift[3 * g + i] += puff * 1.2 * thickness * faceR[9 * g + 3 * i + 2]
         } else if (isWing) {
-          const droop = puff * 1.2 * thickness
-          lift[3 * g + 2] -= droop
+          // Droop the wings downward
+          lift[3 * g + 2] -= puff * 1.5 * thickness
         }
       }
     }

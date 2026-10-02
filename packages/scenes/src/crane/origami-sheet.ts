@@ -29,8 +29,8 @@ export type OrigamiSheet = {
   readonly kinematics: FoldKinematics
   /** Pose folding toward `form` at tap progress k (k = 1: the form at rest). */
   pose(form: number, k: number): void
-  /** Bounds of the drawn sheet in its own frame. */
-  bounds(target?: THREE.Box3): THREE.Box3
+  /** Bounds of the drawn sheet in its own frame, or turned by `turn` first. */
+  bounds(target?: THREE.Box3, turn?: THREE.Quaternion): THREE.Box3
   /** Warm emissive lift of the paper (0 = none). */
   setGlow(amount: number): void
   dispose(): void
@@ -156,10 +156,14 @@ export function createOrigamiSheet(): OrigamiSheet {
       kinematics.pose(form, k)
       update()
     },
-    bounds(target = new THREE.Box3()) {
+    bounds(target = new THREE.Box3(), turn) {
       target.makeEmpty()
       const p = new THREE.Vector3()
-      for (let i = 0; i < count; i++) target.expandByPoint(p.set(drawn[3 * i], drawn[3 * i + 1], drawn[3 * i + 2]))
+      for (let i = 0; i < count; i++) {
+        p.set(drawn[3 * i], drawn[3 * i + 1], drawn[3 * i + 2])
+        if (turn) p.applyQuaternion(turn)
+        target.expandByPoint(p)
+      }
       return target
     },
     setGlow(amount) {

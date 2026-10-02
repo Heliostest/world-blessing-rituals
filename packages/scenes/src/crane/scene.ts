@@ -49,14 +49,17 @@ const LIFT_Y = 1.3
 /**
  * How each form faces the camera, in the sheet's bird-base axes (right, up,
  * front): the flat square lies back like paper on a table, the bases stand
- * up, the crane turns three-quarters with its head toward the viewer.
+ * up, the crane turns three-quarters with its head toward the viewer and
+ * leans its back toward the camera, so the spread wings show their faces
+ * instead of their edges. `size` is the form's larger side on screen (world
+ * units), small enough for a portrait phone.
  */
 const VIEWS: readonly { tilt: number; yaw: number; size: number }[] = [
-  { tilt: 1.02, yaw: 0, size: 1.55 },
-  { tilt: 0.18, yaw: -0.18, size: 0.95 },
-  { tilt: 0.12, yaw: -0.22, size: 1.3 },
-  { tilt: 0.1, yaw: 0.42, size: 1.38 },
-  { tilt: 0.22, yaw: 0.62, size: 1.5 },
+  { tilt: 1.02, yaw: 0, size: 1.2 },
+  { tilt: 0.18, yaw: -0.18, size: 1.2 },
+  { tilt: 0.12, yaw: -0.22, size: 1.55 },
+  { tilt: 0.1, yaw: 0.42, size: 1.4 },
+  { tilt: -0.5, yaw: 0.8, size: 1.0 },
 ]
 
 function smooth(t: number) {
@@ -157,7 +160,9 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   paper.add(holder)
   holder.add(sheet.object)
 
-  // Rest framing of every form: orientation, scale to `size`, bounds centre.
+  // Rest framing of every form: orientation, then scale and centre from its
+  // bounds as the camera sees them (turned to the view; the flat square's
+  // diagonal, not its side, spans the screen).
   const birdAxes = new THREE.Matrix4().makeBasis(
     new THREE.Vector3(-1, 1, 0).normalize(),
     new THREE.Vector3(-1, -1, 0).normalize(),
@@ -170,12 +175,12 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     const q = new THREE.Quaternion()
       .setFromEuler(new THREE.Euler(-view.tilt, view.yaw, 0, 'YXZ'))
       .multiply(birdToWorld)
-    sheet.bounds(box)
+    sheet.bounds(box, q)
     const size = box.getSize(new THREE.Vector3())
     return {
       q,
-      scale: view.size / Math.max(size.x, size.y, size.z),
-      centre: box.getCenter(new THREE.Vector3()),
+      scale: view.size / Math.max(size.x, size.y),
+      centre: box.getCenter(new THREE.Vector3()).applyQuaternion(q.clone().invert()),
     }
   })
   sheet.pose(0, 1)

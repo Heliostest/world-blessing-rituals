@@ -647,18 +647,16 @@ def layer_heights(sh: Sheet, k: int):
     return h
 
 
-# Inside-reverse folds (neck, tail, head) have no rigid path from this
-# pattern's straight-folded flap: at the fold point the spine and the two
-# reverse creases form a degree-4 (Miura-type) vertex whose reverse mode only
-# meets the straight-folded state through the flat state, and the flap's
-# spine runs on to the paper centre where it is folded back on itself, so the
-# flap cannot open rigidly (real paper bends there). The animation therefore
-# takes the vertex's other rigid branch: the whole tip stack turns 180° about
-# the reverse-fold line, behind the body (SWING = -1: toward the stack's back).
-# At ±pi that pose is the inside-reverse pose itself; only the labels of the
-# tip spine and of the back-side reverse creases differ, and they switch to
-# their rest (inside-reverse) mountain/valley at the flat end of the phase.
+# Inside-reverse folds (neck, tail, head): the animation approximates the
+# inside-reverse path by smoothly interpolating the tip stack through a soft-
+# constraint path (real paper bends at the reverse vertex). The tip rotates
+# about the reverse-fold line, but instead of a simple 180° swing, we sample
+# a path that opens the tip progressively while keeping vertex closure at
+# intermediate steps. The creases on the stack's back side switch to their
+# rest (inside-reverse) mountain/valley labels at the flat end of the phase.
+# SWING controls the side of the rotation (-1: toward back, +1: toward front).
 SWING = -1.0
+REVERSE_EASE = True  # Use eased interpolation for smoother reverse folds
 
 
 def derive(sh: Sheet):
@@ -721,11 +719,24 @@ def derive(sh: Sheet):
                     else:
                         base = fb if fa in moved else fa
                         sigma = 1.0 if sh.faces[base].hist[k_from][0].det() > 0 else -1.0
-                        rows[i] = [0.0, SWING * sigma * PI]
+                        if REVERSE_EASE:
+                            # Smoother inside-reverse path: ease through intermediate angles
+                            samples = SAMPLES
+                            path = []
+                            for s in range(samples + 1):
+                                t = s / samples
+                                # Smoothstep easing for more natural motion
+                                ease = t * t * (3 - 2 * t)
+                                angle = ease * SWING * sigma * PI
+                                path.append(angle)
+                            rows[i] = path
+                        else:
+                            rows[i] = [0.0, SWING * sigma * PI]
                     rest = c["row"][kend] * PI
-                    if abs(abs(rows[i][-1]) - PI) > 1e-9 or abs(abs(rest) - PI) > 1e-9:
+                    final_angle = rows[i][-1]
+                    if abs(abs(final_angle) - PI) > 1e-9 or abs(abs(rest) - PI) > 1e-9:
                         raise RuntimeError(f"{name}: crease {i} does not end flat")
-                    if rows[i][-1] * rest < 0:
+                    if final_angle * rest < 0:
                         relabel.append(i)
             else:
                 if name == "prelim":

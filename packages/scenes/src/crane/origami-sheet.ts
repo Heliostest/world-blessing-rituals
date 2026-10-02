@@ -13,10 +13,10 @@ import { buildFoldModel, createFoldKinematics, type FoldKinematics, ORIZURU } fr
 export const SHEET_HALF = 0.5
 /** Drawn thickness of one paper layer, as a fraction of the half-size. */
 const LAYER = 0.0012
-const PAPER_TOP = 0xfffcf6
-const PAPER_BACK = 0xf4ecdd
-const PAPER_EDGE = 0xe7dccb
-const PAPER_GLOW = 0xfff0d6
+const PAPER_TOP = 0xfaf8f0
+const PAPER_BACK = 0xf2ede0
+const PAPER_EDGE = 0xe8e2d0
+const PAPER_GLOW = 0xfff4e0
 const EDGE_INK = 0x584235
 const CREASE_INK = 0xa18b74
 /** Creases folded further than this (rad) get an ink line. */

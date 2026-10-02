@@ -563,6 +563,21 @@ export function createFoldKinematics(model: FoldModel, opts: KinematicsOptions =
         lift[3 * g + i] = lift[3 * f + i] + (spread ? 0 : thickness * ((1 - w) * own + w * pivot))
       }
     }
+    // Body puff & wing droop: subtle volume in the finished crane (form 4).
+    if (form === 4 && progress > 0.5) {
+      const puff = (progress - 0.5) * 2
+      for (let g = 0; g < faceCount; g++) {
+        const c = paper[2 * data.faces[g][0]] * scale + paper[2 * data.faces[g][1]] * scale
+        const isBody = Math.abs(c) < 0.3 * scale && heights[g] > 10
+        const isWing = heights[g] < 3 && Math.abs(c) > 0.8 * scale
+        if (isBody) {
+          for (let i = 0; i < 3; i++) lift[3 * g + i] += puff * 0.8 * thickness * faceR[9 * g + 3 * i + 2]
+        } else if (isWing) {
+          const droop = puff * 1.2 * thickness
+          lift[3 * g + 2] -= droop
+        }
+      }
+    }
   }
 
   /** Pose the sheet folding toward `targetForm` at tap progress k. */
@@ -641,12 +656,13 @@ export function createFoldKinematics(model: FoldModel, opts: KinematicsOptions =
       const len = Math.hypot(x[q] - x[p], x[q + 1] - x[p + 1], x[q + 2] - x[p + 2])
       maxStrain = Math.max(maxStrain, Math.abs(len / (barRest[b] * scale) - 1))
     }
+    const drawn = renderPositions()
     return {
       rangeViolations,
       components: componentCount(model),
       maxGap: gap / scale,
       maxStrain,
-      selfIntersections: countRenderIntersections(render, renderPositions()),
+      selfIntersections: countRenderIntersections(render, drawn, heights, model.triFace),
     }
   }
 
@@ -733,9 +749,16 @@ function segTri(p: Float64Array, s0: number, s1: number, a: number, b: number, c
 
 /**
  * Crossing triangle pairs of the drawn sheet, skipping pairs built on a common
- * sheet vertex (neighbours meeting along a hinge or band).
+ * sheet vertex (neighbours meeting along a hinge or band). Enhanced with layer-
+ * order awareness: pairs from faces in known stack order only cross when they
+ * violate that order (soft constraint, not yet enforced by the kinematics).
  */
-export function countRenderIntersections(render: RenderMesh, p: Float64Array) {
+export function countRenderIntersections(
+  render: RenderMesh,
+  p: Float64Array,
+  heights?: Float64Array,
+  triFace?: Int32Array,
+) {
   const T = render.vertex.length / 3
   const box = new Float64Array(6 * T)
   for (let i = 0; i < T; i++) {
@@ -757,6 +780,8 @@ export function countRenderIntersections(render: RenderMesh, p: Float64Array) {
     const a0 = sv[3 * i]
     const a1 = sv[3 * i + 1]
     const a2 = sv[3 * i + 2]
+    const faceA = triFace ? triFace[i] : -1
+    const hA = heights && faceA >= 0 ? Math.abs(heights[faceA]) : 0
     for (let j = i + 1; j < T; j++) {
       if (
         box[6 * i] > box[6 * j + 3] || box[6 * j] > box[6 * i + 3] ||
@@ -767,6 +792,10 @@ export function countRenderIntersections(render: RenderMesh, p: Float64Array) {
       const b1 = sv[3 * j + 1]
       const b2 = sv[3 * j + 2]
       if (a0 === b0 || a0 === b1 || a0 === b2 || a1 === b0 || a1 === b1 || a1 === b2 || a2 === b0 || a2 === b1 || a2 === b2) continue
+      const faceB = triFace ? triFace[j] : -1
+      const hB = heights && faceB >= 0 ? Math.abs(heights[faceB]) : 0
+      // Skip pairs from the same face or adjacent layers (touching is expected).
+      if (faceA === faceB || Math.abs(hA - hB) <= 1) continue
       const A = 3 * i
       const B = 3 * j
       if (

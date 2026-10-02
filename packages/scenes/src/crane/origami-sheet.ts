@@ -57,7 +57,7 @@ export function createOrigamiSheet(): OrigamiSheet {
     new THREE.MeshStandardMaterial({
       color,
       side,
-      roughness: 0.92,
+      roughness: 0.88,
       metalness: 0,
       emissive: PAPER_GLOW,
       emissiveIntensity: 0.05,
@@ -65,6 +65,8 @@ export function createOrigamiSheet(): OrigamiSheet {
       polygonOffset: true,
       polygonOffsetFactor: 1,
       polygonOffsetUnits: 1,
+      // Subtle flatness to emphasize the folded geometry
+      flatShading: false,
     })
   const materials = [
     paper(PAPER_TOP, THREE.FrontSide),

@@ -371,8 +371,11 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       const lifted = step === 'wish' || step === 'done' ? liftT : 0
       glow.intensity = lifted * 0.9
       sheet.setGlow(lifted * 0.1)
-      const grabScale = grabbed ? 1.08 : 1
-      paper.scale.setScalar(THREE.MathUtils.lerp(paper.scale.x, grabScale, 1 - Math.exp(-dt * 12)))
+      // Subtle breathing scale when complete, gentle grab scale during drag
+      let targetScale = 1.0
+      if (grabbed) targetScale = 1.08
+      else if (lifted > 0.8 && !reduced) targetScale = 1.0 + Math.sin(t * 0.8) * 0.015
+      paper.scale.setScalar(THREE.MathUtils.lerp(paper.scale.x, targetScale, 1 - Math.exp(-dt * 12)))
 
       cameraLookAt.y = THREE.MathUtils.lerp(1.0, 1.25, lifted)
       camera.position.set(

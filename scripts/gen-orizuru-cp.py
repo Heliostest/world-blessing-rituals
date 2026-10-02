@@ -725,12 +725,14 @@ def derive(sh: Sheet):
                         sigma = 1.0 if sh.faces[base].hist[k_from][0].det() > 0 else -1.0
                         if REVERSE_EASE:
                             # Smoother inside-reverse path: ease through intermediate angles
+                            # Use a more gradual ease-in-out curve that better approximates
+                            # the progressive opening of a real inside-reverse fold
                             samples = SAMPLES
                             path = []
                             for s in range(samples + 1):
                                 t = s / samples
-                                # Smoothstep easing for more natural motion
-                                ease = t * t * (3 - 2 * t)
+                                # Quintic ease-in-out for smoother acceleration/deceleration
+                                ease = t * t * t * (t * (t * 6 - 15) + 10)
                                 angle = ease * SWING * sigma * PI
                                 path.append(angle)
                             rows[i] = path

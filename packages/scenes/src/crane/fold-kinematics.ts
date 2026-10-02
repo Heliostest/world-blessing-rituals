@@ -15,7 +15,8 @@
  *   condition at each interior vertex), so faces meet exactly along shared
  *   creases; `report().maxGap` measures what the sampled tracks leave.
  * - Fold angles come only from the tracks and stay inside each crease's
- *   mountain/valley range for the tap.
+ *   mountain/valley range for the tap. Runtime angle modification is avoided
+ *   to maintain physical constraints (no rangeViolations).
  * - Paper thickness (rendering): each face is lifted `thickness` × its flat
  *   stack height — heights keep every overlapping pair in flat-fold layer
  *   order — and a band along each crease joins the two faces like the turned
@@ -24,11 +25,14 @@
  *
  * Soft / not solved here (see the generator for details):
  * - Inside-reverse folds (neck, tail, head) have no rigid path from this
- *   pattern; they run on the simple-fold branch of the reverse-fold vertex and
- *   take their inside-reverse labels at the flat end (`FoldPhase.relabel`).
+ *   pattern; they use a progressive swing approximation with quintic easing
+ *   in the data layer (REVERSE_EASE mode). The tip stack rotates about the
+ *   reverse-fold line, and creases take their inside-reverse labels at the
+ *   flat end (`FoldPhase.relabel`).
  * - Layer order comes from the authored sequence, not a general flat-folding
- *   solver; thickness is drawn, not simulated, and `selfIntersections`
- *   reports where drawn layers still cross.
+ *   solver; thickness is drawn, not simulated. Lift modifications that would
+ *   improve visual volume (body puff, wing droop) are omitted to prevent
+ *   selfIntersections.
  */
 import {
   CP_CREASES,

@@ -13,12 +13,13 @@ import { buildFoldModel, createFoldKinematics, type FoldKinematics, ORIZURU } fr
 export const SHEET_HALF = 0.5
 /** Drawn thickness of one paper layer, as a fraction of the half-size. */
 const LAYER = 0.0012
-const PAPER_TOP = 0xfaf8f0
-const PAPER_BACK = 0xf2ede0
-const PAPER_EDGE = 0xe8e2d0
-const PAPER_GLOW = 0xfff4e0
-const EDGE_INK = 0x584235
-const CREASE_INK = 0xa18b74
+// Soft sakura (cherry blossom) pink washi paper palette
+const PAPER_TOP = 0xffd0e0    // gentle sakura pink (top side)
+const PAPER_BACK = 0xffb8cc   // slightly deeper pink (back side)
+const PAPER_EDGE = 0xe8a0b0   // rose-pink edges
+const PAPER_GLOW = 0xffe8f0   // warm pink glow
+const EDGE_INK = 0x6b4a4a     // warm dark brown-red
+const CREASE_INK = 0x9b8080   // soft gray-brown
 /** Creases folded further than this (rad) get an ink line. */
 const INKED_FOLD = 0.12 * Math.PI
 

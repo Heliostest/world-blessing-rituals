@@ -54,6 +54,17 @@ describe("official toon material adaptation", () => {
     surfaces.dispose();
   });
 
+  it("keeps a surface's depth offset, so ink lines drawn on it stay visible", () => {
+    const paper = new THREE.MeshStandardMaterial({ polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 2 });
+    const scene = new THREE.Scene(); scene.add(new THREE.Mesh(new THREE.PlaneGeometry(), paper));
+    const surfaces = createToonSurfaces("toon-ink");
+    const frame = surfaces.apply(scene);
+    const toon = frame.outlined[0].material as THREE.MeshToonMaterial;
+    expect([toon.polygonOffset, toon.polygonOffsetFactor, toon.polygonOffsetUnits]).toEqual([true, 1, 2]);
+    frame.restore();
+    surfaces.dispose();
+  });
+
   it("keeps backdrops cel-shaded but unselected for ink, and follows animated glow", () => {
     const scene = new THREE.Scene();
     const ground = new THREE.Mesh(new THREE.PlaneGeometry(), new THREE.MeshStandardMaterial({ color: 0xe6d6bd }));

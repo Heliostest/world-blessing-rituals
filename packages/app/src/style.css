@@ -2056,7 +2056,8 @@ button:hover:not(:disabled) {
 .scene-wish-slot {
   position: absolute;
   left: 50%;
-  bottom: 100px;
+  /* Above the action button (bottom: 100px) so both stay tappable. */
+  bottom: 152px;
   transform: translateX(-50%);
   width: min(320px, calc(100% - 24px));
   animation: scene-fade-in 0.4s ease;

@@ -233,3 +233,56 @@ export function createSceneFeedback(
     },
   }
 }
+
+/** Raycasts from `camera` through client-space pointer positions on `canvas`. */
+export function createPointerRay(canvas: HTMLCanvasElement, camera: THREE.Camera) {
+  const raycaster = new THREE.Raycaster()
+  const ndc = new THREE.Vector2()
+  const aim = (clientX: number, clientY: number) => {
+    const rect = canvas.getBoundingClientRect()
+    ndc.x = ((clientX - rect.left) / Math.max(rect.width, 1)) * 2 - 1
+    ndc.y = -((clientY - rect.top) / Math.max(rect.height, 1)) * 2 + 1
+    raycaster.setFromCamera(ndc, camera)
+    return raycaster
+  }
+  return {
+    aim,
+    /** True when the ray through the pointer hits any of `objects`. */
+    hits(clientX: number, clientY: number, objects: THREE.Object3D[]) {
+      return aim(clientX, clientY).intersectObjects(objects, false).length > 0
+    },
+  }
+}
+
+/**
+ * Sizes renderer, style pass and camera to the canvas box. Returns the aspect
+ * so scenes can pull the camera back on narrow portrait screens.
+ */
+export function sizeStage(
+  canvas: HTMLCanvasElement,
+  renderer: THREE.WebGLRenderer,
+  styleRenderer: { resize(w: number, h: number): void },
+  camera: THREE.PerspectiveCamera,
+) {
+  const parent = canvas.parentElement
+  const w = canvas.clientWidth || parent?.clientWidth || 1
+  const h = canvas.clientHeight || parent?.clientHeight || 1
+  renderer.setSize(w, h, false)
+  styleRenderer.resize(w, h)
+  camera.aspect = w / Math.max(h, 1)
+  camera.updateProjectionMatrix()
+  return camera.aspect
+}
+
+/** Extra camera distance for portrait screens narrower than 0.8 aspect. */
+export function portraitBoost(aspect: number, factor = 3) {
+  return aspect < 0.8 ? (0.8 - aspect) * factor : 0
+}
+
+/** Re-runs `resize` when the canvas host changes size; returns a disconnect. */
+export function observeCanvasResize(canvas: HTMLCanvasElement, resize: () => void) {
+  if (typeof ResizeObserver === 'undefined') return () => {}
+  const ro = new ResizeObserver(() => resize())
+  ro.observe(canvas.parentElement ?? canvas)
+  return () => ro.disconnect()
+}

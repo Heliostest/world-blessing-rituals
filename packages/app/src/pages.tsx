@@ -5,6 +5,7 @@ import { formatDate, statusText, useApp } from "./context";
 import { useSceneLibrary } from "./scene-library";
 import {
   WISH_PRACTICE_COPY,
+  wishPracticeAction,
   wishSceneEntries,
 } from "./scene-placement";
 
@@ -97,9 +98,7 @@ export function Wishes() {
               >
                 <strong>{entry.title}</strong>
                 <small>
-                  {entry.id === "tanzaku-tanabata"
-                    ? WISH_PRACTICE_COPY.tanzakuAction
-                    : WISH_PRACTICE_COPY.yeondeunghoeAction}
+                  {wishPracticeAction(entry)}
                 </small>
                 <Icon name="arrow" />
               </button>

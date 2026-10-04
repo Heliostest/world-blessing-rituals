@@ -1,14 +1,10 @@
 /**
  * Three.js view of the folding sheet: one mesh drawn from `fold-kinematics`.
  *
- * Face triangles carry the paper's two sides (sakura-pink washi on top, a
- * deeper pink underneath, as two material groups over the same triangles);
- * thin bands along the creases show the turned edges of the folds. Every
- * triangle shades flat as drawn, so the finished crane's volume reads in the
- * cel bands. Ink lines trace the paper's raw edges and the creases that are
- * currently folded.
- *
- * Art direction: 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有…
+ * Face triangles carry the paper's two sides (white washi on top, pale cream
+ * underneath, as two material groups over the same triangles); thin bands
+ * along the creases show the turned edges of the folds. Ink lines trace the
+ * paper's raw edges and the creases that are currently folded.
  */
 import * as THREE from 'three'
 import { buildFoldModel, createFoldKinematics, type FoldKinematics, ORIZURU } from './fold-kinematics'
@@ -103,11 +99,13 @@ export function createOrigamiSheet(): OrigamiSheet {
   function update() {
     kinematics.renderPositions(drawn)
     for (let i = 0; i < 3 * count; i++) position[i] = drawn[i]
-    // every triangle shades flat as drawn, so the finished crane's volume
-    // reads in the cel bands: face triangles wind counter-clockwise on the
-    // paper's top side (the back material flips it); bands fall back to their
-    // face's normal while the fold is open and they have no area
-    for (let r = 0; r < count; r += 3) {
+    // face triangles: the face's top normal (the back material flips it)
+    for (let r = 0; r < faceVerts; r++) {
+      kinematics.faceNormal(render.face[r], normalOf)
+      normal.set(normalOf, 3 * r)
+    }
+    // bands: their own flat normal (degenerate while the fold is open)
+    for (let r = faceVerts; r < count; r += 3) {
       const ax = drawn[3 * r]
       const ay = drawn[3 * r + 1]
       const az = drawn[3 * r + 2]

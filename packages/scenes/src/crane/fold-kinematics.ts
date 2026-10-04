@@ -22,12 +22,6 @@
  *   order — and a band along each crease joins the two faces like the turned
  *   edge of a fold. A face swinging across a stack pivots on the hinge raised
  *   to mid-height between where it starts and where it lands.
- * - Volume (rendering): as the wings are pulled apart the finished crane is
- *   drawn puffed (`layoutVolume`): the bird base's front and back halves
- *   part into a diamond body, the neck and tail stand as tapering prisms and
- *   each wing's loose layers hang off the layer they fold around. The offsets
- *   are affine on pieces cut from the faces, so stacked layers move together
- *   and keep their order; `report().selfIntersections` counts this drawing.
  *
  * Soft / not solved here (see the generator for details):
  * - Inside-reverse folds (neck, tail, head) have no rigid path from this
@@ -36,10 +30,9 @@
  *   reverse-fold line, and creases take their inside-reverse labels at the
  *   flat end (`FoldPhase.relabel`).
  * - Layer order comes from the authored sequence, not a general flat-folding
- *   solver; thickness is drawn, not simulated. So is the volume: real paper
- *   bends to puff the body, while here the sheet stays rigidly flat-folded —
- *   angles, gaps and strain are measured on it — and only its drawing parts
- *   the layers.
+ *   solver; thickness is drawn, not simulated. Lift modifications that would
+ *   improve visual volume (body puff, wing droop) are omitted to prevent
+ *   selfIntersections.
  */
 import {
   CP_CREASES,
@@ -211,19 +204,15 @@ function area2(p: number[], a: number, b: number, c: number) {
   return (p[2 * b] - p[2 * a]) * (p[2 * c + 1] - p[2 * a + 1]) - (p[2 * b + 1] - p[2 * a + 1]) * (p[2 * c] - p[2 * a])
 }
 
-/**
- * Ear-clip a convex ring that may carry collinear (T-junction) vertices. The
- * largest ear goes first; `smallest` clips the smallest first instead, which
- * never strands a run of collinear points (rings cut into pieces carry many).
- */
-function triangulateRing(paper: number[], ring: readonly number[], out: number[], smallest = false) {
+/** Ear-clip a convex ring that may carry collinear (T-junction) vertices. */
+function triangulateRing(paper: number[], ring: readonly number[], out: number[]) {
   const r = [...ring]
   while (r.length > 3) {
     let best = -1
-    let bestArea = smallest ? Infinity : 0
+    let bestArea = 0
     for (let i = 0; i < r.length; i++) {
       const ar = area2(paper, r[(i + r.length - 1) % r.length], r[i], r[(i + 1) % r.length])
-      if (ar > 1e-12 && (smallest ? ar < bestArea : ar > bestArea)) {
+      if (ar > 1e-12 && ar > bestArea) {
         best = i
         bestArea = ar
       }
@@ -326,444 +315,65 @@ export function buildFoldModel(data: CreasePatternData = ORIZURU): FoldModel {
  * Render topology with paper thickness: every face triangle keeps its own
  * corner copies (lifted by the face's stack height) and each crease edge gets
  * a two-triangle band joining the copies of the two faces it hinges.
- *
- * Optional cuts split faces along straight lines of one pose — flat seams of
- * the drawing only — so an offset that is affine between the lines is drawn
- * exactly on every piece. A cut point on a sheet edge is shared by the faces
- * meeting there; one where two lines cross inside a face moves rigidly with it.
  */
 export type RenderMesh = {
-  /** Drawn point and CP face per render vertex (points: sheet vertices, then cut points). */
+  /** Sheet vertex and CP face per render vertex. */
   readonly vertex: Uint32Array
   readonly face: Int32Array
   /** Face triangles first (`faceTris`), then fold bands (`bandTris`). */
   readonly faceTris: number
   readonly bandTris: number
-  /** CP face per render triangle, -1 for a band. */
-  readonly triFace: Int32Array
   /** Render-vertex pairs along the paper border. */
   readonly borderLines: Uint32Array
   /** Per crease: render-vertex pairs of both faces' copies of its edge. */
   readonly creaseLines: readonly Uint32Array[]
-  /** Drawn points: the sheet vertices, then the cut points. */
-  readonly points: number
-  /** Per cut point: three sheet vertices and the weights that place it among them. */
-  readonly cutFrom: Uint32Array
-  readonly cutWeight: Float64Array
 }
 
-/** The points p of a pose with dir · p = level. */
-export type CutLine = { readonly dir: readonly [number, number, number]; readonly level: number }
-
-export type RenderCut = {
-  /** Sheet vertex positions of the pose the lines are drawn in. */
-  readonly rest: Float64Array
-  readonly lines: readonly CutLine[]
-  /** Faces drawn whole (they stand out of the plane the lines cut). */
-  readonly whole: (face: number) => boolean
-}
-
-/** Within this distance (world units) of a line a point lies on it. */
-const CUT_EPS = 1e-9
-
-export function buildRenderMesh(model: FoldModel, cut?: RenderCut): RenderMesh {
-  const { data, vertexCount: n } = model
-  const paper = Array.from(model.paper)
-  const key = (a: number, b: number) => (a < b ? a * n + b : b * n + a)
-  const lines = cut?.lines ?? []
-  /** Per line: every point's height along its direction in the cut pose. */
-  const height = lines.map(({ dir }) =>
-    Array.from({ length: n }, (_, v) => dir[0] * cut!.rest[3 * v] + dir[1] * cut!.rest[3 * v + 1] + dir[2] * cut!.rest[3 * v + 2]),
-  )
-  const from: number[] = []
-  const weight: number[] = []
-  /** Sheet edge each point on one lies on (cut points inside a face: none). */
-  const edgeOf = new Map<number, number>()
-  const addPoint = (vs: readonly number[], ws: readonly number[]) => {
-    const p = n + weight.length / 3
-    from.push(...vs)
-    weight.push(...ws)
-    paper.push(
-      ws[0] * paper[2 * vs[0]] + ws[1] * paper[2 * vs[1]] + ws[2] * paper[2 * vs[2]],
-      ws[0] * paper[2 * vs[0] + 1] + ws[1] * paper[2 * vs[1] + 1] + ws[2] * paper[2 * vs[2] + 1],
-    )
-    for (const h of height) h.push(ws[0] * h[vs[0]] + ws[1] * h[vs[1]] + ws[2] * h[vs[2]])
-    return p
-  }
-
-  // cut points on every sheet edge a line crosses (edges of the faces cut)
-  const onEdge = new Map<number, number[]>()
-  data.faces.forEach((ring, f) => {
-    if (!cut || cut.whole(f)) return
-    ring.forEach((p, i) => {
-      const q = ring[(i + 1) % ring.length]
-      const [a, b] = p < q ? [p, q] : [q, p]
-      if (onEdge.has(key(a, b))) return
-      const ts: number[] = []
-      lines.forEach(({ level }, l) => {
-        const da = height[l][a] - level
-        const db = height[l][b] - level
-        if ((da < -CUT_EPS && db > CUT_EPS) || (da > CUT_EPS && db < -CUT_EPS)) ts.push(da / (da - db))
-      })
-      ts.sort((s, t) => s - t)
-      const ids: number[] = []
-      ts.forEach((t, i) => {
-        if (i > 0 && t - ts[i - 1] < 1e-9) return // two lines crossing on the edge
-        const id = addPoint([a, b, b], [1 - t, t, 0])
-        edgeOf.set(id, key(a, b))
-        ids.push(id)
-      })
-      onEdge.set(key(a, b), ids)
-    })
-  })
-  /** Drawn points along sheet edge a→b, ends included. */
-  const along = (a: number, b: number) => {
-    const mids = onEdge.get(key(a, b)) ?? []
-    return [a, ...(a < b ? mids : [...mids].reverse()), b]
-  }
-  /** Points p and q (of face f) lie on one of its sheet edges. */
-  const onSheetEdge = (f: number, p: number, q: number) => {
-    const ep = edgeOf.get(p)
-    const eq = edgeOf.get(q)
-    if ((p >= n && ep === undefined) || (q >= n && eq === undefined)) return false
-    if (p < n && q < n) {
-      const r = data.faces[f]
-      const i = r.indexOf(p)
-      return r[(i + 1) % r.length] === q || r[(i + r.length - 1) % r.length] === q
-    }
-    if (p >= n && q >= n) return ep === eq
-    const [v, e] = p < n ? [p, eq!] : [q, ep!]
-    return Math.floor(e / n) === v || e % n === v
-  }
-  const crossing = new Map<string, number>()
-
-  /** Split a convex piece of face f along line l: the pieces on either side. */
-  function split(f: number, ring: number[], l: number): number[][] {
-    const d = ring.map((p) => height[l][p] - lines[l].level)
-    if (d.every((x) => x > -CUT_EPS) || d.every((x) => x < CUT_EPS)) return [ring]
-    const lo: number[] = []
-    const hi: number[] = []
-    ring.forEach((p, i) => {
-      const j = (i + 1) % ring.length
-      if (d[i] < CUT_EPS) lo.push(p)
-      if (d[i] > -CUT_EPS) hi.push(p)
-      if ((d[i] < -CUT_EPS && d[j] > CUT_EPS) || (d[i] > CUT_EPS && d[j] < -CUT_EPS)) {
-        if (onSheetEdge(f, p, ring[j])) throw new Error('cut line crosses a sheet edge it was not split on')
-        // two lines cross inside the face: place the point among three of its corners
-        const k = `${f},${Math.min(p, ring[j])},${Math.max(p, ring[j])},${l}`
-        const known = crossing.get(k)
-        if (known !== undefined) {
-          lo.push(known)
-          hi.push(known)
-          return
-        }
-        const t = d[i] / (d[i] - d[j])
-        const u = paper[2 * p] + t * (paper[2 * ring[j]] - paper[2 * p])
-        const v = paper[2 * p + 1] + t * (paper[2 * ring[j] + 1] - paper[2 * p + 1])
-        const [a, b, c] = corners[f]
-        const det = area2(paper, a, b, c)
-        const wa = ((paper[2 * b] - u) * (paper[2 * c + 1] - v) - (paper[2 * b + 1] - v) * (paper[2 * c] - u)) / det
-        const wb = ((paper[2 * c] - u) * (paper[2 * a + 1] - v) - (paper[2 * c + 1] - v) * (paper[2 * a] - u)) / det
-        const m = addPoint([a, b, c], [wa, wb, 1 - wa - wb])
-        crossing.set(k, m)
-        lo.push(m)
-        hi.push(m)
-      }
-    })
-    return [lo, hi]
-  }
-  /** A non-degenerate corner triangle of every face. */
-  const corners: number[][] = []
-  for (let t = 0; t < model.triFace.length; t++) corners[model.triFace[t]] ??= [...model.tris.subarray(3 * t, 3 * t + 3)]
-
+export function buildRenderMesh(model: FoldModel): RenderMesh {
   const vertex: number[] = []
   const face: number[] = []
-  const triFace: number[] = []
-  const pieceLists = data.faces.map((ring0, f) => {
-    const ring = ring0.flatMap((p, i) => along(p, ring0[(i + 1) % ring0.length]).slice(0, -1))
-    let pieces = [ring]
-    if (cut && !cut.whole(f)) lines.forEach((_, l) => (pieces = pieces.flatMap((r) => split(f, r, l))))
-    return { ring0, ring, pieces }
-  })
-  const points = n + weight.length / 3
-  const copy = new Map<number, number>() // face * points + point → a render vertex
-  pieceLists.forEach(({ ring0, ring, pieces }, f) => {
-    // faces left as they were keep the sheet's own triangulation
-    const changed = pieces.length > 1 || ring.length > ring0.length
-    for (const piece of pieces) {
-      const tri: number[] = []
-      triangulateRing(paper, piece, tri, changed)
-      for (const p of tri) {
-        if (!copy.has(f * points + p)) copy.set(f * points + p, vertex.length)
-        vertex.push(p)
-        face.push(f)
-      }
-      for (let t = 0; t < tri.length; t += 3) triFace.push(f)
+  const T = model.tris.length / 3
+  for (let t = 0; t < T; t++) {
+    for (let j = 0; j < 3; j++) {
+      vertex.push(model.tris[3 * t + j])
+      face.push(model.triFace[t])
     }
-  })
-  const faceTris = vertex.length / 3
-  const at = (f: number, p: number) => {
-    const r = copy.get(f * points + p)
-    if (r === undefined) throw new Error('point not on face')
-    return r
   }
-  const creaseLines: number[][] = data.creases.map(() => [])
+  const at = (t: number, v: number) => {
+    for (let j = 0; j < 3; j++) if (model.tris[3 * t + j] === v) return 3 * t + j
+    throw new Error('vertex not on triangle')
+  }
+  const creaseLines: number[][] = model.data.creases.map(() => [])
   let bands = 0
   for (let h = 0; h < model.hingeCrease.length; h++) {
     const c = model.hingeCrease[h]
     if (c < 0) continue
-    const f1 = model.triFace[model.hingeTris[2 * h]]
-    const f2 = model.triFace[model.hingeTris[2 * h + 1]]
-    const line = along(model.hinges[4 * h], model.hinges[4 * h + 1])
-    for (let i = 0; i + 1 < line.length; i++) {
-      const a1 = at(f1, line[i])
-      const b1 = at(f1, line[i + 1])
-      const a2 = at(f2, line[i])
-      const b2 = at(f2, line[i + 1])
-      creaseLines[c].push(a1, b1, a2, b2)
-      for (const r of [a1, b1, b2, a1, b2, a2]) {
-        vertex.push(vertex[r])
-        face.push(face[r])
-      }
-      triFace.push(-1, -1)
-      bands += 2
+    const t1 = model.hingeTris[2 * h]
+    const t2 = model.hingeTris[2 * h + 1]
+    const a1 = at(t1, model.hinges[4 * h])
+    const b1 = at(t1, model.hinges[4 * h + 1])
+    const a2 = at(t2, model.hinges[4 * h])
+    const b2 = at(t2, model.hinges[4 * h + 1])
+    creaseLines[c].push(a1, b1, a2, b2)
+    for (const r of [a1, b1, b2, a1, b2, a2]) {
+      vertex.push(vertex[r])
+      face.push(face[r])
     }
+    bands += 2
   }
   const border: number[] = []
   for (let i = 0; i < model.boundary.length; i += 3) {
-    const f = model.triFace[model.boundary[i + 2]]
-    const line = along(model.boundary[i], model.boundary[i + 1])
-    for (let k = 0; k + 1 < line.length; k++) border.push(at(f, line[k]), at(f, line[k + 1]))
+    const t = model.boundary[i + 2]
+    border.push(at(t, model.boundary[i]), at(t, model.boundary[i + 1]))
   }
   return {
     vertex: Uint32Array.from(vertex),
     face: Int32Array.from(face),
-    faceTris,
+    faceTris: T,
     bandTris: bands,
-    triFace: Int32Array.from(triFace),
     borderLines: Uint32Array.from(border),
     creaseLines: creaseLines.map((l) => Uint32Array.from(l)),
-    points,
-    cutFrom: Uint32Array.from(from),
-    cutWeight: Float64Array.from(weight),
   }
-}
-
-// ---------------------------------------------------------------------------
-// Drawn volume of the finished crane
-// ---------------------------------------------------------------------------
-
-/** Bird-base axes in the sheet frame (the held root face): toward the tail, and up. */
-export const BIRD_RIGHT = [-Math.SQRT1_2, Math.SQRT1_2, 0] as const
-export const BIRD_UP = [-Math.SQRT1_2, -Math.SQRT1_2, 0] as const
-
-/**
- * How far the finished crane's layers stand apart, as fractions of the paper
- * half-size. Folded paper never presses flat: pulling the wings apart opens
- * the body between the bird base's front and back halves (its crease pattern
- * stays one rigid flat-folded sheet; only the drawing parts the layers).
- */
-export type VolumeOptions = {
-  /**
-   * Body half-thickness by height, as [level, half-thickness] knots down from
-   * the wing hinge (level 0, where the neck and tail leave the body) to the
-   * keel (1), linear in between.
-   */
-  readonly body: readonly (readonly [number, number])[]
-  /**
-   * The body's front and back ridges: across the body the half-thickness
-   * stays below a tent peaking at `peak` on the centre line and falling to the
-   * hinge's half-thickness `width` to either side (wider than the body where
-   * it is held to the hinge's half-thickness).
-   */
-  readonly ridge: { readonly peak: number; readonly width: number }
-  /** Neck and tail half-thickness where they are thinnest (toward their tips; also the head's). */
-  readonly tips: number
-  /** Gap between each wing's loose layers and the layer they fold around. */
-  readonly wingGap: number
-}
-
-/**
- * Slim at the hinge so the neck and tail stand as prisms about as thick as
- * they are wide, sharp at their tips; held there for a collar the loose wing
- * layers hang over, then a belly swelling about as deep as the body is tall
- * to a diamond ridge down the middle and closing toward the keel.
- */
-export const VOLUME: VolumeOptions = {
-  body: [[0, 0.06], [0.12, 0.06], [0.35, 0.22], [1, 0.03]],
-  ridge: { peak: 0.22, width: 0.4 },
-  tips: 0.012,
-  wingGap: 0.04,
-}
-
-type DrawnVolume = {
-  readonly render: RenderMesh
-  /** Per render vertex at full volume: offset along the body normal, and along its face's own normal. */
-  readonly body: Float64Array
-  readonly own: Float64Array
-}
-
-/** Positions of a render mesh's cut points among the sheet vertex positions `x`. */
-function placeCutPoints(render: RenderMesh, x: ArrayLike<number>, out: Float64Array) {
-  const { cutFrom: v, cutWeight: w } = render
-  for (let i = 0; i < w.length; i += 3) {
-    for (let k = 0; k < 3; k++) {
-      out[i + k] = w[i] * x[3 * v[i] + k] + w[i + 1] * x[3 * v[i + 1] + k] + w[i + 2] * x[3 * v[i + 2] + k]
-    }
-  }
-  return out
-}
-
-/**
- * Lay out the drawn volume on the finished crane at rest (`rest`: sheet
- * vertex positions, `normal`/`lift`: per-face top normals and thickness
- * lifts there). The body is a diamond: the bird base's front half stands off
- * forward and its back half backward, most along the centre line and less
- * toward the sides, from the paper centre (the apex, closed) through the
- * hinge to a full belly and back to the keel; the neck and tail taper from the
- * hinge toward their tips, and the head, folded inside the neck, stays as thin
- * as they end; the wings ride on the hinge, their loose layers
- * (the ones with raw edges) hanging off the layer they fold around. Every
- * offset is affine between the profile's levels and either side of the
- * centre line, so the render mesh is cut there: overlapping layers move
- * together and keep their stack order, and the two halves only ever part.
- */
-function layoutVolume(
-  model: FoldModel,
-  rest: Float64Array,
-  normal: Float64Array,
-  lift: Float64Array,
-  scale: number,
-  opts: VolumeOptions,
-): DrawnVolume {
-  const { data, vertexCount: n, paper } = model
-  const last = data.creases[0].fold.length - 1
-  const dot3 = (u: ArrayLike<number>, i: number, v: ArrayLike<number>, j: number) =>
-    u[i] * v[j] + u[i + 1] * v[j + 1] + u[i + 2] * v[j + 2]
-  const r = 3 * data.root
-  const inPlane = data.faces.map((_, f) => Math.abs(dot3(normal, 3 * f, normal, r)) > 0.5)
-  const up = (p: ArrayLike<number>, i: number) => dot3(p, i, BIRD_UP, 0)
-  const right = (p: ArrayLike<number>, i: number) => dot3(p, i, BIRD_RIGHT, 0)
-  const centre = data.vertices.findIndex(([u, v]) => Math.abs(u) < 1e-9 && Math.abs(v) < 1e-9)
-  const top = up(rest, 3 * centre)
-  const mid = right(rest, 3 * centre)
-  const spread = data.creases.filter((c) => Math.abs(c.fold[last]) > 1e-6 && Math.abs(c.fold[last]) < 1 - 1e-6)
-  const hinge = spread.reduce((s, c) => s + up(rest, 3 * c.a) + up(rest, 3 * c.b), 0) / (2 * spread.length)
-  let keel = Infinity
-  data.faces.forEach((ring, f) => inPlane[f] && ring.forEach((v) => (keel = Math.min(keel, up(rest, 3 * v)))))
-  const knots = opts.body.map(([l, s]) => [hinge + l * (keel - hinge), s * scale] as const)
-  const shoulder = knots[0][1]
-  const peak = opts.ridge.peak * scale
-  const fall = (peak - shoulder) / (opts.ridge.width * scale)
-  // cut where the profile bends: its levels, the centre line, and where each
-  // sloping stretch of it meets either side of the ridge's tent
-  const lines: CutLine[] = [
-    ...knots.filter(([h]) => h > keel + CUT_EPS).map(([level]) => ({ dir: BIRD_UP, level })),
-    { dir: BIRD_RIGHT, level: mid },
-  ]
-  for (let i = 1; i < knots.length; i++) {
-    const [h0, s0] = knots[i - 1]
-    const [h1, s1] = knots[i]
-    const rise = (s1 - s0) / (h1 - h0) // belly = s0 + rise * (h - h0)
-    if (Math.abs(rise) < 1e-12) continue
-    for (const side of [1, -1]) {
-      // s0 + rise (h - h0) = peak - fall * side (x - mid), x along BIRD_RIGHT
-      const dir = BIRD_UP.map((u, k) => rise * u + fall * side * BIRD_RIGHT[k])
-      const len = Math.hypot(...dir)
-      lines.push({ dir: dir.map((d) => d / len) as [number, number, number], level: (peak - s0 + rise * h0 + fall * side * mid) / len })
-    }
-  }
-  // the head: a tip reverse-folded inside the neck, wholly above the hinge
-  const cap = data.faces.map((ring) => ring.includes(centre))
-  const head = data.faces.map((ring, f) => inPlane[f] && !cap[f] && ring.every((v) => up(rest, 3 * v) > hinge + CUT_EPS))
-  const render = buildRenderMesh(model, { rest, lines, whole: (f) => !inPlane[f] || head[f] })
-
-  // rest place of every drawn point; which face kinds it lies on
-  const P = render.points
-  const pos = new Float64Array(3 * P)
-  pos.set(rest.subarray(0, 3 * n))
-  placeCutPoints(render, rest, pos.subarray(3 * n))
-  const onPlane = new Uint8Array(P)
-  const onCap = new Uint8Array(P)
-  const offHead = new Uint8Array(P)
-  for (let i = 0; i < render.vertex.length; i++) {
-    const f = render.face[i]
-    if (inPlane[f]) onPlane[render.vertex[i]] = 1
-    if (cap[f]) onCap[render.vertex[i]] = 1
-    if (inPlane[f] && !head[f]) offHead[render.vertex[i]] = 1
-  }
-  const lerp = (a: number, b: number, t: number) => a + (b - a) * t
-  /** Body half-thickness at a point at or below the hinge: the belly, under the ridge's tent. */
-  const belly = (p: number) => {
-    const h = up(pos, 3 * p)
-    let i = 1
-    while (i < knots.length - 1 && h < knots[i][0]) i++
-    const [h0, s0] = knots[i - 1]
-    const [h1, s1] = knots[i]
-    return Math.min(lerp(s0, s1, (h - h0) / (h1 - h0)), peak - fall * Math.abs(right(pos, 3 * p) - mid))
-  }
-  const above = (p: number) => onPlane[p] && up(pos, 3 * p) > hinge + CUT_EPS
-  // above the hinge the neck (bird left) and tail (right) lose half-thickness
-  // with height, as steeply as leaves their thinnest point at `tips`
-  const flapAt = (p: number, slope: number) => shoulder - slope * (up(pos, 3 * p) - hinge)
-  const slope = [0, 0]
-  for (const s of [0, 1]) {
-    const flap = [...Array(P).keys()].filter((p) => above(p) && offHead[p] && !onCap[p] && (right(pos, 3 * p) > mid ? 1 : 0) === s)
-    const highest = Math.max(...flap.map((p) => up(pos, 3 * p)))
-    slope[s] = (shoulder - opts.tips * scale) / (highest - hinge)
-  }
-  const half = new Float64Array(P)
-  for (let p = 0; p < P; p++) {
-    const h = up(pos, 3 * p)
-    if (!onPlane[p]) continue // wing-only points: set below
-    else if (p === centre) half[p] = 0 // the apex stays closed
-    else if (h <= hinge + CUT_EPS) half[p] = belly(p)
-    // the head hangs below the top of the neck it is folded into: inside the
-    // neck it may stay thinner than the layers around it, as thin as the tip
-    else if (!offHead[p]) half[p] = opts.tips * scale
-    else if (onCap[p]) half[p] = (shoulder * (top - h)) / (top - hinge)
-    else half[p] = flapAt(p, slope[right(pos, 3 * p) > mid ? 1 : 0])
-  }
-  // points only on the wings ride with the hinge's ends
-  let ends = Infinity
-  for (let p = 0; p < P; p++) if (onPlane[p] && Math.abs(up(pos, 3 * p) - hinge) < 1e-9) ends = Math.min(ends, half[p])
-  for (let p = 0; p < P; p++) if (!onPlane[p]) half[p] = ends
-  if (Math.min(...half) < 0) throw new Error('drawn volume would pass the bird base halves through each other')
-  // the tent must clear the hinge's half-thickness wherever the body is held to it
-  let held = 1
-  while (held < knots.length && knots[held][1] === shoulder) held++
-  for (let p = 0; p < P; p++) {
-    if (onPlane[p] && !above(p) && up(pos, 3 * p) >= knots[held - 1][0] - CUT_EPS) {
-      if (Math.abs(right(pos, 3 * p) - mid) > opts.ridge.width * scale) throw new Error('ridge narrower than the body at the hinge')
-    }
-  }
-
-  // the bird base's front half (the c1 side of the c2–c4 diagonal) stands off forward
-  const side = data.faces.map((ring) => (ring.reduce((s, v) => s + paper[2 * v] + paper[2 * v + 1], 0) > 0 ? 1 : -1))
-  // a wing's loose layers carry raw paper edges; they hang off the layer they fold around
-  const loose = new Uint8Array(data.faces.length)
-  for (let i = 0; i < model.boundary.length; i += 3) {
-    const f = model.triFace[model.boundary[i + 2]]
-    if (!inPlane[f]) loose[f] = 1
-  }
-  const away = new Float64Array(data.faces.length)
-  for (const c of data.creases) {
-    const [f, g] = c.faces
-    for (const [a, b] of [[f, g], [g, f]]) {
-      if (loose[a] && !loose[b] && !inPlane[b]) {
-        const d = [0, 1, 2].map((k) => lift[3 * a + k] - lift[3 * b + k])
-        away[a] = Math.sign(dot3(d, 0, normal, 3 * a))
-      }
-    }
-  }
-  const body = new Float64Array(render.vertex.length)
-  const own = new Float64Array(render.vertex.length)
-  for (let i = 0; i < render.vertex.length; i++) {
-    const f = render.face[i]
-    body[i] = side[f] * half[render.vertex[i]]
-    own[i] = away[f] * opts.wingGap * scale
-  }
-  return { render, body, own }
 }
 
 // ---------------------------------------------------------------------------
@@ -775,8 +385,6 @@ export type KinematicsOptions = {
   scale?: number
   /** Drawn paper thickness per layer, as a fraction of the half-size. */
   thickness?: number
-  /** Drawn volume of the finished crane (false: its layers drawn pressed flat). */
-  volume?: VolumeOptions | false
 }
 
 export type PlausibilityReport = {
@@ -800,11 +408,7 @@ export function createFoldKinematics(model: FoldModel, opts: KinematicsOptions =
   const { data, vertexCount: n, hinges, hingeCrease, bars, barRest, paper } = model
   const faceCount = data.faces.length
   const m = data.creases.length
-  /** A crease that rests spread (a wing hinge): how far it has opened grows the volume. */
-  const spreadCrease = data.creases.findIndex((c) => {
-    const a = Math.abs(c.fold[FORM_COUNT - 1])
-    return a > 1e-6 && a < 1 - 1e-6
-  })
+  const render = buildRenderMesh(model)
 
   const x = new Float64Array(3 * n)
   const angle = new Float64Array(m)
@@ -976,34 +580,16 @@ export function createFoldKinematics(model: FoldModel, opts: KinematicsOptions =
     updateLifts()
   }
 
-  /** How much of the finished crane's volume is drawn: it grows as the wings are pulled apart. */
-  function volumeAmount() {
-    if (!volume || spreadCrease < 0) return 0
-    const t = angle[spreadCrease] / (data.creases[spreadCrease].fold[FORM_COUNT - 1] * PI)
-    return Math.min(1, Math.max(0, t))
-  }
-
-  /**
-   * Positions of the drawn sheet: faces lifted by stack height, fold bands,
-   * and the finished crane's volume (see layoutVolume).
-   */
+  /** Positions of the drawn sheet: faces lifted by stack height, fold bands. */
   function renderPositions(out = new Float64Array(3 * render.vertex.length)) {
     const rv = render.vertex
     const rf = render.face
-    placeCutPoints(render, x, cutPos)
-    const e = volumeAmount()
-    const r = 9 * data.root
     for (let i = 0; i < rv.length; i++) {
-      const p = rv[i]
+      const v = rv[i]
       const f = rf[i]
-      const src = p < n ? x : cutPos
-      const at = p < n ? 3 * p : 3 * (p - n)
-      // body halves part along the body normal; wing layers along their own
-      const b = volume ? e * volume.body[i] : 0
-      const o = volume ? e * volume.own[i] : 0
-      for (let k = 0; k < 3; k++) {
-        out[3 * i + k] = src[at + k] + lift[3 * f + k] + b * faceR[r + 3 * k + 2] + o * faceR[9 * f + 3 * k + 2]
-      }
+      out[3 * i] = x[3 * v] + lift[3 * f]
+      out[3 * i + 1] = x[3 * v + 1] + lift[3 * f + 1]
+      out[3 * i + 2] = x[3 * v + 2] + lift[3 * f + 2]
     }
     return out
   }
@@ -1065,19 +651,10 @@ export function createFoldKinematics(model: FoldModel, opts: KinematicsOptions =
       components: componentCount(model),
       maxGap: gap / scale,
       maxStrain,
-      selfIntersections: countRenderIntersections(render, drawn, heights, render.triFace),
+      selfIntersections: countRenderIntersections(render, drawn, heights, model.triFace),
     }
   }
 
-  // The volume is laid out on the finished crane at rest (the body in one
-  // plane, the wings standing out of it); then the sheet starts flat.
-  pose(FORM_COUNT - 1, 1)
-  const normals = new Float64Array(3 * faceCount)
-  for (let f = 0; f < faceCount; f++) for (let k = 0; k < 3; k++) normals[3 * f + k] = faceR[9 * f + 3 * k + 2]
-  const volumeOpts = opts.volume ?? VOLUME
-  const volume = volumeOpts ? layoutVolume(model, Float64Array.from(x), normals, Float64Array.from(lift), scale, volumeOpts) : null
-  const render = volume?.render ?? buildRenderMesh(model)
-  const cutPos = new Float64Array(3 * (render.points - n))
   pose(0, 1)
 
   return {
@@ -1161,10 +738,9 @@ function segTri(p: Float64Array, s0: number, s1: number, a: number, b: number, c
 
 /**
  * Crossing triangle pairs of the drawn sheet, skipping pairs built on a common
- * drawn point (neighbours meeting along a hinge, band or cut). Enhanced with
- * layer-order awareness: pairs from faces in known stack order only cross when
- * they violate that order (soft constraint, not yet enforced by the
- * kinematics). `triFace` gives each render triangle's face (-1: a band).
+ * sheet vertex (neighbours meeting along a hinge or band). Enhanced with layer-
+ * order awareness: pairs from faces in known stack order only cross when they
+ * violate that order (soft constraint, not yet enforced by the kinematics).
  */
 export function countRenderIntersections(
   render: RenderMesh,

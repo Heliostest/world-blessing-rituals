@@ -7,7 +7,6 @@ import {
   creaseRange,
   FORM_COUNT,
   ORIZURU,
-  VOLUME,
 } from './fold-kinematics'
 
 const model = buildFoldModel(ORIZURU)
@@ -154,51 +153,6 @@ describe('rigid folding of the sheet (kinematics)', () => {
     // the wing tips leave the body plane (z = 0) on opposite sides
     expect(wingA[2] * wingB[2]).toBeLessThan(0)
     expect(Math.min(Math.abs(wingA[2]), Math.abs(wingB[2]))).toBeGreaterThan(0.2)
-  })
-
-  it('draws the finished crane puffed as the wings spread, never passing its layers through each other', () => {
-    const { render } = kin
-    const layer = 0.0012 * 0.5
-    kin.pose(4, 1)
-    const inBody = faces.map((_, f) => Math.abs(kin.faceNormal(f)[2]) > 0.5) // all but the spread wings
-    /** Drawn depth (along the body normal) of the faces that end in the body plane. */
-    const bodyDepth = (p: Float64Array) => {
-      let lo = Infinity
-      let hi = -Infinity
-      for (let i = 0; i < 3 * render.faceTris; i++) {
-        if (!inBody[render.face[i]]) continue
-        lo = Math.min(lo, p[3 * i + 2])
-        hi = Math.max(hi, p[3 * i + 2])
-      }
-      return hi - lo
-    }
-    /** Largest distance between the drawn copies of the sheet vertex at paper (u, v). */
-    const spread = (p: Float64Array, u: number, v: number) => {
-      const w = V.findIndex(([a, b]) => Math.abs(a - u) < 1e-9 && Math.abs(b - v) < 1e-9)
-      const copies = [...render.vertex.keys()].filter((i) => render.vertex[i] === w)
-      let d = 0
-      for (const i of copies) for (const j of copies) d = Math.max(d, Math.hypot(p[3 * i] - p[3 * j], p[3 * i + 1] - p[3 * j + 1], p[3 * i + 2] - p[3 * j + 2]))
-      return d
-    }
-    // folded flat, the crane is only as deep as its stack of layers
-    kin.pose(3, 1)
-    expect(bodyDepth(kin.renderPositions())).toBeLessThan(32 * layer)
-    // pulling the wings apart puffs it out, with every layer kept in its place
-    let last = 0
-    for (let i = 0; i <= 10; i++) {
-      kin.pose(4, 0.5 + i / 20)
-      expect(kin.report().selfIntersections).toBe(0)
-      const depth = bodyDepth(kin.renderPositions())
-      expect(depth).toBeGreaterThanOrEqual(last - 1e-12)
-      last = depth
-    }
-    const p = kin.renderPositions()
-    expect(last).toBeGreaterThan(0.2 * 0.5) // a body a fifth of the paper's half-size deep
-    expect(spread(p, 0, 0)).toBeLessThan(32 * layer) // the apex at the paper centre stays closed
-    // each wing's layers stand apart at its tip
-    for (const [u, v] of [[1, 1], [-1, -1]]) expect(spread(p, u, v)).toBeGreaterThan(0.5 * VOLUME.wingGap * 0.5)
-    // the neck and tail end sharp, and so does the head folded into the neck
-    for (const [u, v] of [[1, -1], [-1, 1]]) expect(spread(p, u, v)).toBeLessThan(2 * VOLUME.tips * 0.5 + 32 * layer)
   })
 
   it('poses from crease angles alone, so any (form, k) is reproducible', () => {

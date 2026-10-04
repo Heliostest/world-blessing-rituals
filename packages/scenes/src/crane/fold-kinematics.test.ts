@@ -155,6 +155,26 @@ describe('rigid folding of the sheet (kinematics)', () => {
     expect(Math.min(Math.abs(wingA[2]), Math.abs(wingB[2]))).toBeGreaterThan(0.2)
   })
 
+  it('rests like the finished diagram: wings in a slight dihedral, head crimped down, tail highest', () => {
+    kin.pose(4, 1)
+    const p = kin.positions
+    const vertex = (u: number, v: number) => V.findIndex(([a, b]) => Math.abs(a - u) < 1e-9 && Math.abs(b - v) < 1e-9)
+    const height = (i: number) => -Math.SQRT1_2 * (p[3 * i] + p[3 * i + 1]) // along bird-base up
+    // the wings turn on the creases left spread at rest; their tips rise above that hinge
+    const hinge = creases.filter((c) => Math.abs(c.fold[4]) > 1e-9 && Math.abs(Math.abs(c.fold[4]) - 1) > 1e-9)
+    const hingeHeight = Math.max(...hinge.flatMap((c) => [height(c.a), height(c.b)]))
+    for (const tip of [vertex(1, 1), vertex(-1, -1)]) {
+      const lift = Math.atan2(height(tip) - hingeHeight, Math.abs(p[3 * tip + 2]))
+      expect(lift).toBeGreaterThan(0.15) // lifted, not spread flat
+      expect(lift).toBeLessThan(0.4) // only slightly
+    }
+    // the head turns down off the neck's highest point (the crimp); the tail stands above it
+    const neck = V.flatMap(([u, v], i) => (u > 0 && v < 0 ? [i] : []))
+    const crimp = Math.max(...neck.map(height))
+    expect(height(vertex(1, -1))).toBeLessThan(crimp - 0.05)
+    expect(height(vertex(-1, 1))).toBeGreaterThan(crimp)
+  })
+
   it('poses from crease angles alone, so any (form, k) is reproducible', () => {
     kin.pose(3, 0.6)
     const a = Float64Array.from(kin.positions)

@@ -37,19 +37,23 @@ VEPS = 1e-7
 SQ2 = math.sqrt(2.0)
 K = 2.0 - SQ2  # midline points where the bird-base kite creases land
 
-# Shape parameters (bird-base frame: leg length 1, spine = centre line).
+# Shape parameters (bird-base frame: leg length 1, spine = centre line). As in
+# the finished diagram, the neck reaches forward lower than the tail, and the
+# head is crimped steeply down off its tip.
 PARAMS = {
     "neck_s": 0.93,  # spine point of the neck reverse fold, from the leg tip
-    "neck_beta": 66.0,  # neck angle above the horizontal (deg)
+    "neck_beta": 48.0,  # neck angle above the horizontal (deg)
     "tail_s": 0.93,
-    "tail_beta": 62.0,
-    "head_len": 0.19,  # head reverse fold, measured back from the neck tip
-    "head_beta": -40.0,  # head direction against the horizontal (deg)
+    "tail_beta": 70.0,
+    "head_len": 0.18,  # head reverse fold, measured back from the neck tip
+    "head_beta": -65.0,  # head direction against the horizontal (deg)
 }
 
-# Wings spread out of the body plane (fraction of pi); every other crease
-# rests exactly flat (+-pi) and paper thickness is a separate layer offset.
-WING = 0.47
+# Wings spread out of the body plane (fraction of pi): from the upright petals
+# they turn 0.42 pi, resting 0.08 pi (14.4 deg) above the horizontal, a slight
+# dihedral. Every other crease rests exactly flat (+-pi) and paper thickness is
+# a separate layer offset.
+WING = 0.42
 
 
 # --------------------------------------------------------------------------

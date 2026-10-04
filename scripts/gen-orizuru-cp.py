@@ -43,13 +43,15 @@ PARAMS = {
     "neck_beta": 66.0,  # neck angle above the horizontal (deg)
     "tail_s": 0.93,
     "tail_beta": 62.0,
-    "head_len": 0.19,  # head reverse fold, measured back from the neck tip
-    "head_beta": -40.0,  # head direction against the horizontal (deg)
+    "head_len": 0.22,  # head reverse fold, measured back from the neck tip
+    "head_beta": -55.0,  # head direction against the horizontal (deg): a clear downward crimp
 }
 
-# Wings spread out of the body plane (fraction of pi); every other crease
-# rests exactly flat (+-pi) and paper thickness is a separate layer offset.
-WING = 0.47
+# Wings spread out of the body plane (fraction of pi): 0.4 holds them about
+# 18 deg above level, the shallow V of a display crane. Every other crease
+# rests exactly flat (+-pi); paper thickness and the finished crane's volume
+# are drawn offsets (fold-kinematics.ts).
+WING = 0.40
 
 
 # --------------------------------------------------------------------------

@@ -51,15 +51,17 @@ const LIFT_Y = 1.3
  * front): the flat square lies back like paper on a table, the bases stand
  * up, the crane turns three-quarters with its head toward the viewer and
  * leans its back toward the camera, so the spread wings show their faces
- * instead of their edges. `size` is the form's larger side on screen (world
- * units), small enough for a portrait phone.
+ * instead of their edges and the puffed body, neck and tail their depth
+ * (turned further toward the head, the view looks into the body's open
+ * side). `size` is the form's larger side on screen (world units), small
+ * enough for a portrait phone.
  */
 const VIEWS: readonly { tilt: number; yaw: number; size: number }[] = [
   { tilt: 1.02, yaw: 0, size: 1.2 },
   { tilt: 0.18, yaw: -0.18, size: 1.2 },
   { tilt: 0.12, yaw: -0.22, size: 1.55 },
   { tilt: 0.1, yaw: 0.42, size: 1.4 },
-  { tilt: -0.5, yaw: 0.8, size: 1.0 },
+  { tilt: -0.35, yaw: 0.6, size: 1.0 },
 ]
 
 function smooth(t: number) {

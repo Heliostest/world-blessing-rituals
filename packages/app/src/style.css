@@ -2083,13 +2083,16 @@ button:hover:not(:disabled) {
 
 .scene-wish-slot form {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 6px 8px;
 }
 
 .scene-wish-slot input {
   flex: 1;
-  padding: 8px 10px;
-  border-radius: 6px;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 22px;
   border: 1px solid #3a4a5c;
   background: #15202b;
   color: #e8eef6;
@@ -2104,8 +2107,9 @@ button:hover:not(:disabled) {
 }
 
 .scene-wish-slot button {
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 8px 18px;
+  border-radius: 22px;
+  font-weight: 650;
   border: 1px solid #3a7bd5;
   background: #1a3a66;
   color: #e8eef6;
@@ -2117,6 +2121,23 @@ button:hover:not(:disabled) {
 .scene-wish-slot button:hover {
   background: #24508a;
   box-shadow: 0 0 14px rgba(126, 200, 255, 0.45);
+}
+
+/* Under the box: the note (or a nudge after an empty submit) and n/40. */
+.scene-wish-slot .wish-write-meta {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #c9d6e4;
+}
+
+.scene-wish-slot .wish-write-meta [data-nudge] {
+  color: #ffd38a;
+  font-weight: 600;
 }
 .library-scene-stage { position: relative; height: min(65vh, 540px); min-height: 360px; border-radius: 22px; overflow: hidden; background: var(--cream); color: var(--ink); }
 .library-scene-stage + .feedback-controls { margin-top: 14px; }
@@ -2190,14 +2211,27 @@ button:hover:not(:disabled) {
   border-color: #f0a86c;
   box-shadow: 0 0 0 3px #f0a86c33;
 }
+/* The submit capsule matches the app's primary button. */
 .scene-overlay--cream .scene-wish-slot button {
-  border-color: #e9ddca;
-  background: var(--paper);
-  color: var(--ink);
+  border-color: #ffc530;
+  background: linear-gradient(#ffe77a, #ffda4a);
+  box-shadow:
+    inset 0 1px 0 #fff4b7,
+    0 4px 6px #bc8a261a;
+  color: #352000;
 }
 .scene-overlay--cream .scene-wish-slot button:hover {
-  background: #fff6e4;
-  box-shadow: 0 4px 12px #97672d2e;
+  background: linear-gradient(#ffe98a, #ffdc58);
+  box-shadow:
+    inset 0 1px 0 #fff4b7,
+    0 4px 10px #bc8a2629;
+}
+.scene-overlay--cream .scene-wish-slot .wish-write-meta {
+  color: #8a6f57;
+  text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);
+}
+.scene-overlay--cream .scene-wish-slot .wish-write-meta [data-nudge] {
+  color: #b0562b;
 }
 
 .practice-card {

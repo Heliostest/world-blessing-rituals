@@ -334,7 +334,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
     hitLayer.addEventListener('pointerdown', onHitDown)
     hitLayer.addEventListener('pointerup', onHitUp)
     hitLayer.addEventListener('pointercancel', onHitCancel)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
   }
 
   syncOverlayForStep()
@@ -410,7 +410,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
       hitLayer.removeEventListener('pointercancel', onHitCancel)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

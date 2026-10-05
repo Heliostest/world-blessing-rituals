@@ -295,7 +295,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
 
     hitLayer.addEventListener('pointerdown', onHitDown)
     hitLayer.addEventListener('pointerup', onHitUp)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
   }
 
   syncOverlayForStep()
@@ -371,7 +371,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
       resizeObserver = null
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

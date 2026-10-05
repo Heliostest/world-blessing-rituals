@@ -47,6 +47,8 @@ export function createStepOverlay(
   hintEl.className = 'scene-hint'
   hintEl.setAttribute('aria-live', 'polite')
 
+  // Scenes listen for `click`, not `pointerup`: it also fires for Enter and
+  // Space, and not when a finger slides off the button before lifting.
   const actionBtn = document.createElement('button')
   actionBtn.type = 'button'
   actionBtn.className = 'scene-bow-tap'

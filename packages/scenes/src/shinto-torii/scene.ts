@@ -346,7 +346,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
     dragHandle.mount(hitLayer, {})
     handles.push(dragHandle)
     hitLayer.addEventListener('pointerup', onHitUp)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
 
     // Device motion can also start the bow; without sensors the tap button stands in.
     gyroHandle = gestures.createGyro({
@@ -439,7 +439,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
       stopResize()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

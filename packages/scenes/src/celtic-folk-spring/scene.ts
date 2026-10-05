@@ -289,7 +289,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
     gyroHandle.mount(overlay, {})
     handles.push(gyroHandle)
 
-    bowBtn.addEventListener('pointerup', onBowTapFallback)
+    bowBtn.addEventListener('click', onBowTapFallback)
 
     dragHandle = gestures.createDrag({
       hitTest: waterHitTest,
@@ -377,7 +377,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
       disposed = true
       resizeObserver?.disconnect()
       resizeObserver = null
-      bowBtn.removeEventListener('pointerup', onBowTapFallback)
+      bowBtn.removeEventListener('click', onBowTapFallback)
       overlay.removeEventListener('pointermove', onOverlayMove)
       overlay.removeEventListener('pointerup', onOverlayUp)
       overlay.removeEventListener('pointercancel', onOverlayUp)

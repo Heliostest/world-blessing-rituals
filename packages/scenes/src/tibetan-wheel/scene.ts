@@ -316,7 +316,7 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
     spinHandle.mount(hitLayer, {})
     handles.push(spinHandle)
     hitLayer.addEventListener('pointerup', onHitUp)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
 
     gyroHandle = gestures.createGyro({
       bowBetaDeg: 60,
@@ -380,7 +380,7 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
       stopResize()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

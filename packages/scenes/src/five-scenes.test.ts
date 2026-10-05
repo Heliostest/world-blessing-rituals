@@ -41,6 +41,9 @@ const SCRIPTS: Script[] = [
   { id: 'shinto-torii', taps: [1, 1, 1] },
   { id: 'tibetan-wheel', taps: [1, 0, 1] },
   { id: 'slavic-wreath', taps: [1, 1, 1] },
+  { id: 'furin-wind-chime', taps: [1, 0, 1] },
+  { id: 'tanzaku-tanabata', taps: [1, 1, 1] },
+  { id: 'yeondeunghoe', taps: [1, 0, 1] },
 ]
 
 async function mount(id: string, initialProgress = 0) {
@@ -65,7 +68,8 @@ async function mount(id: string, initialProgress = 0) {
   overlay.addEventListener('scene:complete', complete)
   instance.start()
   const button = overlay.querySelector<HTMLButtonElement>('.scene-bow-tap')!
-  const tap = () => button.dispatchEvent(new Event('pointerup'))
+  // A tap that ends on the button, or Enter/Space, reaches the scene as click.
+  const tap = () => button.click()
   const run = (seconds: number) => {
     for (let t = 0; t < seconds; t += 0.05) instance.update(0.05)
   }
@@ -73,7 +77,7 @@ async function mount(id: string, initialProgress = 0) {
   const runUntil = (n: number) => {
     for (let t = 0; t < 15 && progress.length < n; t += 0.05) instance.update(0.05)
   }
-  return { mod, overlay, instance, progress, complete, haptic, tap, run, runUntil }
+  return { mod, overlay, instance, progress, complete, haptic, button, tap, run, runUntil }
 }
 
 afterEach(() => {
@@ -96,6 +100,20 @@ describe.each(SCRIPTS)('$id scene', ({ id, taps }) => {
     expect(s.haptic).toHaveBeenCalled()
     s.instance.dispose()
     expect(s.overlay.childElementCount).toBe(0)
+  })
+
+  it('ignores a press that slides off the button (pointerup without click)', async () => {
+    const s = await mount(id)
+    const hint = () => s.overlay.querySelector('.scene-hint')?.textContent
+    const before = hint()
+    for (const type of ['pointerdown', 'pointerup']) {
+      s.button.dispatchEvent(new Event(type, { bubbles: true }))
+      s.run(0.1)
+    }
+    s.run(3)
+    expect(s.progress).toEqual([])
+    expect(hint()).toBe(before)
+    s.instance.dispose()
   })
 
   it('restores a finished session silently', async () => {

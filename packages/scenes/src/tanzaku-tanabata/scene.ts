@@ -335,7 +335,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
     hitLayer.addEventListener('pointermove', onHitMove)
     hitLayer.addEventListener('pointerup', onHitUp)
     hitLayer.addEventListener('pointercancel', onHitUp)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
 
     wishHandle = gestures.createWishWrite({
       maxLen: 40,
@@ -422,7 +422,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
       hitLayer.removeEventListener('pointermove', onHitMove)
       hitLayer.removeEventListener('pointerup', onHitUp)
       hitLayer.removeEventListener('pointercancel', onHitUp)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

@@ -5,6 +5,11 @@ function ptr(type: string, x = 0, y = 0) {
   return new PointerEvent(type, { clientX: x, clientY: y, pointerId: 1, bubbles: true })
 }
 
+/** The click a browser sends after a tap that ends on the target. */
+function tap() {
+  return new MouseEvent('click', { bubbles: true, detail: 1 })
+}
+
 /** Minimal DeviceOrientationEvent stand-in for jsdom. */
 class FakeDeviceOrientationEvent extends Event {
   readonly beta: number | null
@@ -94,6 +99,21 @@ describe('createGyro', () => {
     g.mount(el, {})
     el.dispatchEvent(ptr('pointerdown'))
     el.dispatchEvent(ptr('pointerup'))
+    el.dispatchEvent(tap())
+    expect(onBow).toHaveBeenCalledTimes(1)
+    g.dispose()
+  })
+
+  it('fallback waits for click: a press that slides off (pointerup only) does nothing', () => {
+    delete (globalThis as { DeviceOrientationEvent?: unknown }).DeviceOrientationEvent
+    const onBow = vi.fn()
+    const g = createGyro({ bowBetaDeg: 30, onBow })
+    g.mount(el, {})
+    el.dispatchEvent(ptr('pointerdown'))
+    el.dispatchEvent(ptr('pointerup'))
+    expect(onBow).not.toHaveBeenCalled()
+    // Keyboard activation (Enter/Space) arrives as a click with detail 0.
+    el.dispatchEvent(new MouseEvent('click', { bubbles: true, detail: 0 }))
     expect(onBow).toHaveBeenCalledTimes(1)
     g.dispose()
   })
@@ -141,7 +161,7 @@ describe('createGyro', () => {
 
     // After deny, fallback tap fires onBow.
     await vi.waitFor(() => {
-      el.dispatchEvent(ptr('pointerup'))
+      el.dispatchEvent(tap())
       expect(onBow).toHaveBeenCalled()
     })
     g.dispose()
@@ -157,6 +177,7 @@ describe('createGyro', () => {
     g.mount(el, {})
     btn.dispatchEvent(ptr('pointerdown'))
     btn.dispatchEvent(ptr('pointerup'))
+    btn.dispatchEvent(tap())
     expect(onBow).toHaveBeenCalledTimes(1)
     g.dispose()
   })

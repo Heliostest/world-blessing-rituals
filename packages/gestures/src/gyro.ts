@@ -67,7 +67,9 @@ export function createGyro(opts: GyroOpts): GestureHandle {
     applyBeta(beta)
   }
 
-  const onFallbackPointerUp = () => {
+  // `click`, like the scene buttons: taps, Enter and Space all count, and a
+  // finger that slides off before lifting cancels.
+  const onFallbackTap = () => {
     if (!enabled || !fallbackActive) return
     opts.onBow?.()
   }
@@ -79,7 +81,7 @@ export function createGyro(opts: GyroOpts): GestureHandle {
       opts.fallbackTapSelector
         ? (el.querySelector(opts.fallbackTapSelector) as HTMLElement | null) ?? el
         : el
-    tapTarget.addEventListener('pointerup', onFallbackPointerUp)
+    tapTarget.addEventListener('click', onFallbackTap)
   }
 
   const startListening = () => {
@@ -157,7 +159,7 @@ export function createGyro(opts: GyroOpts): GestureHandle {
         listening = false
       }
       if (fallbackActive && tapTarget) {
-        tapTarget.removeEventListener('pointerup', onFallbackPointerUp)
+        tapTarget.removeEventListener('click', onFallbackTap)
         fallbackActive = false
       }
       tapTarget = null

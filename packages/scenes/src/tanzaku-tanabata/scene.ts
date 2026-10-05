@@ -5,6 +5,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createSceneFeedback,
   createStepOverlay,
   createWarmStage,
@@ -47,6 +48,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   let dragHandle: GestureHandle | null = null
   let wishHandle: GestureHandle | null = null
   let resizeObserver: ResizeObserver | null = null
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -220,6 +222,16 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
     raycaster.setFromCamera(pointerNdc, camera)
   }
 
+  /**
+   * The loose strip with a generous margin (pickZone follows it once picked
+   * up). Presses and drags that start here are the scene's; elsewhere the
+   * page scrolls.
+   */
+  const onStrip = (clientX: number, clientY: number) => {
+    raycastAt(clientX, clientY)
+    return raycaster.intersectObjects([pickZone, loose], false).length > 0
+  }
+
   const bambooHitTest = (clientX: number, clientY: number) => {
     raycastAt(clientX, clientY)
     return raycaster.intersectObject(hangZone, false).length > 0
@@ -299,18 +311,14 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   const onHitDown = (e: PointerEvent) => {
     if (step !== 'pick' && step !== 'hang') return
     fx.prepare()
-    if (step !== 'pick') return
-    raycastAt(e.clientX, e.clientY)
-    if (raycaster.intersectObjects([pickZone, loose], false).length > 0) {
-      goHang()
-      grabbed = true
-      moveStripTo(e.clientX, e.clientY)
-    }
+    if (!onStrip(e.clientX, e.clientY)) return
+    if (step === 'pick') goHang()
+    grabbed = true
+    moveStripTo(e.clientX, e.clientY)
   }
 
   const onHitMove = (e: PointerEvent) => {
-    if (step !== 'hang' || e.buttons === 0) return
-    grabbed = true
+    if (step !== 'hang' || !grabbed || e.buttons === 0) return
     moveStripTo(e.clientX, e.clientY)
   }
 
@@ -320,7 +328,9 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
 
   const wireGestures = () => {
     hitLayer.addEventListener('pointerdown', onHitDown)
+    stopClaim = claimObjectTouches(hitLayer, onStrip)
     dragHandle = gestures.createDrag({
+      startsOn: onStrip,
       hitTest: bambooHitTest,
       onDrop: (hit) => {
         if (step !== 'hang') return
@@ -385,6 +395,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
       if (step === 'hang') {
         loose.position.lerp(dragTarget, follow)
         loose.rotation.z = THREE.MathUtils.lerp(loose.rotation.z, 0, follow)
+        pickZone.position.set(loose.position.x, loose.position.y - 0.2, loose.position.z)
       } else if (step === 'wish' || step === 'done') {
         loose.position.lerp(looseHangPos, reduced ? 1 : 1 - Math.exp(-dt * 6))
         loose.rotation.z = THREE.MathUtils.lerp(
@@ -418,6 +429,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
       disposed = true
       resizeObserver?.disconnect()
       resizeObserver = null
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointermove', onHitMove)
       hitLayer.removeEventListener('pointerup', onHitUp)

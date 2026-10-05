@@ -6,6 +6,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createPointerRay,
   createSceneFeedback,
   createStepOverlay,
@@ -67,6 +68,7 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
   let spinHandle: GestureHandle | null = null
   let gyroHandle: GestureHandle | null = null
   let stopResize = () => {}
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -224,6 +226,8 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
   world.add(drumZone)
 
   const pointer = createPointerRay(canvas, camera)
+  /** Taps and swipes that start on the drum are the scene's; elsewhere the page scrolls. */
+  const onDrum = (x: number, y: number) => pointer.hits(x, y, [drumZone])
 
   const resize = () => {
     const aspect = sizeStage(canvas, renderer, styleRenderer, camera)
@@ -290,12 +294,14 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
   }
   const onHitUp = (e: PointerEvent) => {
     const moved = Math.hypot(e.clientX - downX, e.clientY - downY)
-    if (moved < 12 && pointer.hits(e.clientX, e.clientY, [drumZone])) push(TAP_PUSH)
+    if (moved < 12 && onDrum(e.clientX, e.clientY)) push(TAP_PUSH)
   }
 
   const wireGestures = () => {
     hitLayer.addEventListener('pointerdown', onHitDown)
+    stopClaim = claimObjectTouches(hitLayer, onDrum)
     spinHandle = gestures.createSpin({
+      startsOn: onDrum,
       onAngle: (angle) => {
         const delta = angle - lastSpinAngle
         lastSpinAngle = angle
@@ -378,6 +384,7 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
       if (disposed) return
       disposed = true
       stopResize()
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
       actionBtn.removeEventListener('click', onActionTap)

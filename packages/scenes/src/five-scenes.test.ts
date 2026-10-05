@@ -19,10 +19,19 @@ vi.mock('three', async (importOriginal) => {
   return { ...actual, WebGLRenderer }
 })
 vi.mock('@wbr/scene-runtime/debug-render-style', () => ({
-  createDebugRenderStyle: () => ({
+  createDebugRenderStyle: (
+    _renderer: unknown,
+    scene: { updateMatrixWorld(): void },
+    camera: { updateMatrixWorld(): void },
+  ) => ({
     setStyle: vi.fn(),
     resize: vi.fn(),
-    render: vi.fn(),
+    // Like a real render, bring world matrices up to date so pointer rays hit
+    // what would be on screen.
+    render: vi.fn(() => {
+      scene.updateMatrixWorld()
+      camera.updateMatrixWorld()
+    }),
     dispose: vi.fn(),
   }),
 }))
@@ -77,7 +86,45 @@ async function mount(id: string, initialProgress = 0) {
   const runUntil = (n: number) => {
     for (let t = 0; t < 15 && progress.length < n; t += 0.05) instance.update(0.05)
   }
-  return { mod, overlay, instance, progress, complete, haptic, button, tap, run, runUntil }
+  return { mod, canvas, overlay, instance, progress, complete, haptic, button, tap, run, runUntil }
+}
+
+type Point = readonly [number, number]
+
+/** jsdom has no layout: the stage is 300×300 (the stub renderer's aspect is 1). */
+const STAGE = 300
+
+/** Lays the stage out and draws a frame; returns the hit layer. */
+function layOut(s: Awaited<ReturnType<typeof mount>>) {
+  s.canvas.getBoundingClientRect = () =>
+    ({ x: 0, y: 0, left: 0, top: 0, right: STAGE, bottom: STAGE, width: STAGE, height: STAGE }) as DOMRect
+  const hit = s.overlay.querySelector<HTMLElement>('.scene-hit-layer')!
+  Object.defineProperty(hit, 'clientWidth', { configurable: true, value: STAGE })
+  hit.setPointerCapture = () => {}
+  s.run(0.05)
+  return hit
+}
+
+/** One finger from `from` to `to`, in client px. */
+function swipe(el: HTMLElement, [x0, y0]: Point, [x1, y1]: Point) {
+  for (const [type, x, y] of [
+    ['pointerdown', x0, y0],
+    ['pointermove', (x0 + x1) / 2, (y0 + y1) / 2],
+    ['pointermove', x1, y1],
+    ['pointerup', x1, y1],
+  ] as const) {
+    const e = new Event(type)
+    Object.assign(e, { clientX: x, clientY: y, pointerId: 1, buttons: type === 'pointerup' ? 0 : 1 })
+    el.dispatchEvent(e)
+  }
+}
+
+/** Whether a touch that starts at this point is kept from scrolling the page. */
+function claimsTouch(el: HTMLElement, [x, y]: Point) {
+  const e = new Event('touchstart', { cancelable: true })
+  Object.assign(e, { changedTouches: [{ clientX: x, clientY: y }] })
+  el.dispatchEvent(e)
+  return e.defaultPrevented
 }
 
 afterEach(() => {
@@ -132,30 +179,56 @@ describe.each(SCRIPTS)('$id scene', ({ id, taps }) => {
 })
 
 describe('tibetan-wheel drag direction', () => {
-  const drag = (el: HTMLElement, fromX: number, toX: number) => {
-    for (const [type, x] of [
-      ['pointerdown', fromX],
-      ['pointermove', (fromX + toX) / 2],
-      ['pointermove', toX],
-      ['pointerup', toX],
-    ] as const) {
-      const e = new Event(type)
-      Object.assign(e, { clientX: x, clientY: 100, pointerId: 1, buttons: 1 })
-      el.dispatchEvent(e)
-    }
-  }
-
   it('refuses a left-to-right drag and turns on a right-to-left one', async () => {
     const s = await mount('tibetan-wheel')
-    const hit = s.overlay.querySelector<HTMLElement>('.scene-hit-layer')!
-    hit.setPointerCapture = () => {}
-    drag(hit, 0, 3)
+    const hit = layOut(s)
+    // Both drags start on the drum, in the middle of the stage.
+    swipe(hit, [130, 150], [170, 150])
     s.run(0.2)
     expect(s.progress).toEqual([])
     expect(s.overlay.querySelector('.scene-hint')?.textContent).toContain('只沿顺时针')
-    drag(hit, 3, 0)
+    swipe(hit, [170, 150], [130, 150])
     s.run(0.2)
     expect(s.progress).toEqual([1])
+    s.instance.dispose()
+  })
+})
+
+/**
+ * Swipes, per scene: the step (as restored progress) where a swipe moves the
+ * scene on, the same motion started on an empty part of the 300×300 stage,
+ * one started on the object, and the progress the latter reports.
+ */
+const SWIPES: { id: string; at: number; stray: [Point, Point]; onObject: [Point, Point]; reports: number }[] = [
+  { id: 'crane', at: 1, stray: [[20, 285], [20, 195]], onObject: [[150, 150], [150, 60]], reports: 2 },
+  { id: 'shinto-torii', at: 0, stray: [[20, 285], [20, 195]], onObject: [[150, 150], [150, 60]], reports: 1 },
+  { id: 'furin-wind-chime', at: 0, stray: [[20, 285], [20, 195]], onObject: [[150, 150], [150, 60]], reports: 1 },
+  { id: 'tibetan-wheel', at: 0, stray: [[60, 285], [20, 285]], onObject: [[170, 150], [130, 150]], reports: 1 },
+  { id: 'yeondeunghoe', at: 0, stray: [[20, 285], [20, 195]], onObject: [[150, 190], [150, 100]], reports: 1 },
+  // Hanging: a stray swipe that ends on the bamboo must not carry the strip there.
+  { id: 'tanzaku-tanabata', at: 1, stray: [[20, 285], [150, 60]], onObject: [[250, 190], [150, 60]], reports: 2 },
+]
+
+describe.each(SWIPES)('$id swipe', ({ id, at, stray, onObject, reports }) => {
+  it('leaves a swipe that starts off the object to the page', async () => {
+    const s = await mount(id, at)
+    const hit = layOut(s)
+    const hint = s.overlay.querySelector('.scene-hint')?.textContent
+    expect(claimsTouch(hit, stray[0])).toBe(false)
+    swipe(hit, ...stray)
+    s.run(3)
+    expect(s.progress).toEqual([])
+    expect(s.overlay.querySelector('.scene-hint')?.textContent).toBe(hint)
+    s.instance.dispose()
+  })
+
+  it('moves on for the same swipe started on the object', async () => {
+    const s = await mount(id, at)
+    const hit = layOut(s)
+    expect(claimsTouch(hit, onObject[0])).toBe(true)
+    swipe(hit, ...onObject)
+    s.runUntil(1)
+    expect(s.progress).toEqual([reports])
     s.instance.dispose()
   })
 })

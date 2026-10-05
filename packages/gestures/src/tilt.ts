@@ -1,6 +1,8 @@
 import type { GestureHandle } from './types'
 
 export type TiltOpts = {
+  /** Only a pointer that goes down where this is true starts tilting (default: anywhere). */
+  startsOn?(clientX: number, clientY: number): boolean
   pourAngleDeg?: number
   holdMs?: number
   onAngle?(deg: number): void
@@ -44,7 +46,7 @@ export function createTilt(opts: TiltOpts): GestureHandle {
   }
 
   const onDown = (e: PointerEvent) => {
-    if (!enabled) return
+    if (!enabled || (opts.startsOn && !opts.startsOn(e.clientX, e.clientY))) return
     tracking = true
     startY = e.clientY
     angle = 0

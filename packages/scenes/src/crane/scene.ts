@@ -5,6 +5,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createPointerRay,
   createSceneFeedback,
   createStepOverlay,
@@ -89,6 +90,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   let dragHandle: GestureHandle | null = null
   let wishHandle: GestureHandle | null = null
   let stopResize = () => {}
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -195,6 +197,8 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   paper.add(tapZone)
 
   const pointer = createPointerRay(canvas, camera)
+  /** Taps and drags that start on the paper are the scene's; elsewhere the page scrolls. */
+  const onPaper = (x: number, y: number) => pointer.hits(x, y, [tapZone])
   const dragPlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0)
   const hitPoint = new THREE.Vector3()
   const dragTarget = new THREE.Vector3(0, REST_Y, 0)
@@ -265,7 +269,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     fx.prepare()
     downX = e.clientX
     downY = e.clientY
-    if (step === 'lift' && pointer.hits(e.clientX, e.clientY, [tapZone])) grabbed = true
+    if (step === 'lift' && onPaper(e.clientX, e.clientY)) grabbed = true
   }
   const onHitMove = (e: PointerEvent) => {
     if (step !== 'lift' || !grabbed || e.buttons === 0) return
@@ -281,13 +285,16 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     grabbed = false
     if (step !== 'fold') return
     const moved = Math.hypot(e.clientX - downX, e.clientY - downY)
-    if (moved < 12 && pointer.hits(e.clientX, e.clientY, [tapZone])) foldOnce()
+    if (moved < 12 && onPaper(e.clientX, e.clientY)) foldOnce()
   }
 
   const wireGestures = () => {
     hitLayer.addEventListener('pointerdown', onHitDown)
-    // Lift: a drag released well above where it began carries the crane up.
+    stopClaim = claimObjectTouches(hitLayer, onPaper)
+    // Lift: a drag that starts on the crane and is released well above where
+    // it began carries it up; a stray swipe elsewhere on the stage does not.
     dragHandle = gestures.createDrag({
+      startsOn: onPaper,
       hitTest: (_x, y) => downY - y > 40,
       onDrop: (hit) => {
         if (step !== 'lift') return
@@ -392,6 +399,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       if (disposed) return
       disposed = true
       stopResize()
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointermove', onHitMove)
       hitLayer.removeEventListener('pointerup', onHitUp)

@@ -6,6 +6,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createPointerRay,
   createSceneFeedback,
   createStepOverlay,
@@ -86,6 +87,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   let gyroHandle: GestureHandle | null = null
   let wishHandle: GestureHandle | null = null
   let stopResize = () => {}
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -238,6 +240,8 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   world.add(toriiZone)
 
   const pointer = createPointerRay(canvas, camera)
+  /** Taps and swipes that start on the torii are the scene's; elsewhere the page scrolls. */
+  const onTorii = (x: number, y: number) => pointer.hits(x, y, [toriiZone])
 
   const resize = () => {
     const aspect = sizeStage(canvas, renderer, styleRenderer, camera)
@@ -326,15 +330,18 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   }
   const onHitUp = (e: PointerEvent) => {
     const moved = Math.hypot(e.clientX - downX, e.clientY - downY)
-    if (moved < 12 && step === 'approach' && pointer.hits(e.clientX, e.clientY, [toriiZone])) {
+    if (moved < 12 && step === 'approach' && onTorii(e.clientX, e.clientY)) {
       startWalk()
     }
   }
 
   const wireGestures = () => {
     hitLayer.addEventListener('pointerdown', onHitDown)
-    // Swipe up = step forward; swipe down = lower the head.
+    stopClaim = claimObjectTouches(hitLayer, onTorii)
+    // Swipe up = step forward; swipe down = lower the head. Either swipe must
+    // start on the torii, so scrolling past the stage never walks or bows.
     dragHandle = gestures.createDrag({
+      startsOn: onTorii,
       hitTest: (_x, y) =>
         step === 'approach' ? downY - y > SWIPE_PX : step === 'bow' && y - downY > SWIPE_PX,
       onDrop: (hit) => {
@@ -437,6 +444,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
       if (disposed) return
       disposed = true
       stopResize()
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
       actionBtn.removeEventListener('click', onActionTap)

@@ -2100,7 +2100,7 @@ button:hover:not(:disabled) {
   background: #24508a;
   box-shadow: 0 0 14px rgba(126, 200, 255, 0.45);
 }
-.library-scene-stage { position: relative; height: min(65vh, 540px); min-height: 360px; border-radius: 22px; overflow: hidden; background: var(--cream); color: var(--ink); touch-action: none; }
+.library-scene-stage { position: relative; height: min(65vh, 540px); min-height: 360px; border-radius: 22px; overflow: hidden; background: var(--cream); color: var(--ink); }
 .library-scene-stage + .feedback-controls { margin-top: 14px; }
 .scene-discovery { padding: 20px; border: 1px solid #dedecb; border-radius: 22px; margin-bottom: 20px; background: #f1f2e6; display: grid; gap: 10px; }
 .scene-discovery h2 { margin: 8px 0; font-size: 21px; }
@@ -2123,6 +2123,11 @@ button:hover:not(:disabled) {
 
 /* C-grade scenes: transparent canvas on the cream page (like the woodfish), so
    the overlay is ink-on-paper instead of the dark-scene glass. */
+/* The page scrolls from empty stage areas; a touch that starts on the scene's
+   object is claimed in JS (claimObjectTouches), so its gestures still work. */
+.scene-overlay--cream .scene-hit-layer {
+  touch-action: manipulation;
+}
 .scene-overlay--cream .scene-title {
   color: var(--ink);
   text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);

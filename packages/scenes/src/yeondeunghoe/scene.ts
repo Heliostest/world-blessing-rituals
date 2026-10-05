@@ -5,6 +5,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createSceneFeedback,
   createStepOverlay,
   createWarmStage,
@@ -103,6 +104,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   const handles: GestureHandle[] = []
   let pushHandle: GestureHandle | null = null
   let resizeObserver: ResizeObserver | null = null
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -281,8 +283,11 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   }
 
   const wireGestures = () => {
-    // Upward push: vertical drag of ~40px anywhere on the stage.
+    // Upward push: a vertical drag of ~40px that starts on the lantern;
+    // elsewhere on the stage a swipe scrolls the page.
+    stopClaim = claimObjectTouches(hitLayer, lanternHitTest)
     pushHandle = gestures.createTilt({
+      startsOn: lanternHitTest,
       pourAngleDeg: 40,
       holdMs: 0,
       onPour: () => {
@@ -369,6 +374,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
       disposed = true
       resizeObserver?.disconnect()
       resizeObserver = null
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
       actionBtn.removeEventListener('click', onActionTap)

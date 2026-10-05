@@ -257,6 +257,24 @@ export function createPointerRay(canvas: HTMLCanvasElement, camera: THREE.Camera
 }
 
 /**
+ * Lets the page scroll from the empty parts of the stage: the cream hit layer
+ * allows panning (touch-action: manipulation), and only a touch that starts
+ * where `onObject` is true is kept from scrolling, so taps and drags on the
+ * object stay with the scene. Returns a remover.
+ */
+export function claimObjectTouches(
+  hitLayer: HTMLElement,
+  onObject: (clientX: number, clientY: number) => boolean,
+) {
+  const onTouchStart = (e: TouchEvent) => {
+    const touch = e.changedTouches[0]
+    if (touch && onObject(touch.clientX, touch.clientY)) e.preventDefault()
+  }
+  hitLayer.addEventListener('touchstart', onTouchStart, { passive: false })
+  return () => hitLayer.removeEventListener('touchstart', onTouchStart)
+}
+
+/**
  * Sizes renderer, style pass and camera to the canvas box. Returns the aspect
  * so scenes can pull the camera back on narrow portrait screens.
  */

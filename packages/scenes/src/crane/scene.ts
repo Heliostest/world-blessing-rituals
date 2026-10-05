@@ -25,10 +25,14 @@ const STEP_ORDER: Step[] = ['fold', 'lift', 'wish']
 
 const COPY = {
   title: '折一只纸鹤',
-  hintFold: '点按纸面折一下（按纸鹤传统折序简化为四步的练习，非完整教程）。',
-  fold1: '收成方形底（1/4），再点按继续。',
-  fold2: '拉长成鸟形底（2/4），再点按继续。',
-  fold3: '折起颈与尾（3/4），再点按翻出鹤首、展开双翼。',
+  hintFold: '点按纸面折一下（按纸鹤传统折序简化为四次折叠的练习，非完整教程）。',
+  folding1: '收成方形底…',
+  fold1: '方形底收好了，再点按继续。',
+  folding2: '拉长成鸟形底…',
+  fold2: '鸟形底拉好了，再点按继续。',
+  folding3: '折起颈与尾…',
+  fold3: '颈与尾折好了，再点按翻出鹤首、展开双翼。',
+  folding4: '翻出鹤首，展开双翼…',
   hintLift: '纸鹤折好了。向上拖起它，或点按下方托起。',
   hintWish: '可写一句想送给自己或他人的话，或点按下方静看片刻（练习，非法效）。',
   foldTap: '折一下',
@@ -38,8 +42,12 @@ const COPY = {
   stepsAria: '步骤',
 } as const
 
-/** Hints shown after each of the first three folds; the fourth ends the step. */
+/**
+ * Hints at rest before each fold, and while each fold is under way. They name
+ * no count of their own: the step dots and 已完成 n/3 count the three steps.
+ */
 const FOLD_HINTS = [COPY.hintFold, COPY.fold1, COPY.fold2, COPY.fold3] as const
+const FOLDING_HINTS = [COPY.folding1, COPY.folding2, COPY.folding3, COPY.folding4] as const
 
 const FOLD_COUNT = FORM_COUNT - 1
 /** Seconds per fold, by the form it folds into. */
@@ -113,8 +121,15 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     actionBtn.hidden = step === 'done'
     wishSlot.hidden = step !== 'wish'
     hitLayer.style.pointerEvents = step === 'fold' || step === 'lift' ? 'auto' : 'none'
+    // While a fold is under way the button waits with the paper (taps are ignored).
+    const folding = step === 'fold' && foldK < 1
+    actionBtn.setAttribute('aria-disabled', String(folding))
     if (step === 'fold') {
-      setHint(FOLD_HINTS[Math.min(form, FOLD_HINTS.length - 1)])
+      setHint(
+        folding
+          ? FOLDING_HINTS[form - 1]
+          : FOLD_HINTS[Math.min(form, FOLD_HINTS.length - 1)],
+      )
       setSafeText(actionBtn, COPY.foldTap, assertSafeCopy)
     } else if (step === 'lift') {
       setHint(COPY.hintLift)
@@ -243,16 +258,20 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     syncOverlayForStep()
   }
 
-  /** One fold of the sequence; a tap mid-fold finishes the fold under way first. */
+  /**
+   * One fold of the sequence. A tap while the paper is still folding is
+   * ignored, so a quick double tap folds once; the lift step begins only when
+   * the last fold has settled (see update).
+   */
   const foldOnce = () => {
-    if (!canAct() || step !== 'fold' || form >= FOLD_COUNT) return
+    if (!canAct() || step !== 'fold' || form >= FOLD_COUNT || foldK < 1) return
     form += 1
     foldK = restoring || (ctx.isReducedMotion?.() ?? false) ? 1 : 0
     if (!restoring) {
       // Soft paper crease: short, airy triangle tones.
       fx.impact({ freqs: [880, 1320], duration: 0.2, gain: 0.035, type: 'triangle' })
     }
-    if (form >= FOLD_COUNT) goLift()
+    if (form >= FOLD_COUNT && foldK >= 1) goLift()
     else syncOverlayForStep()
   }
 
@@ -348,8 +367,15 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       const reduced = ctx.isReducedMotion?.() ?? false
       const t = reduced ? 0 : performance.now() * 0.001
 
-      // Fold: advance the tap and pose the sheet from its crease angles.
-      if (foldK < 1) foldK = reduced ? 1 : Math.min(1, foldK + dt / FOLD_SECONDS[form])
+      // Fold: advance the tap and pose the sheet from its crease angles. Once
+      // it settles, the next fold may start, or the crane is ready to lift.
+      if (foldK < 1) {
+        foldK = reduced ? 1 : Math.min(1, foldK + dt / FOLD_SECONDS[form])
+        if (foldK >= 1) {
+          if (form >= FOLD_COUNT) goLift()
+          else syncOverlayForStep()
+        }
+      }
       const key = `${form}:${foldK}`
       if (key !== posed) {
         sheet.pose(form, foldK)

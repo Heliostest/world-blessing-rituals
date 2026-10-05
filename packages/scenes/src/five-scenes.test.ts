@@ -38,14 +38,16 @@ vi.mock('@wbr/scene-runtime/debug-render-style', () => ({
 
 import { loadScene } from './registry'
 
-type Script = { id: string; taps: number[] }
+type Script = { id: string; taps: number[]; gap?: number }
 
 /**
  * Per scene: how many action-button taps to make before each checkpoint.
- * Frames advance between taps so timed transitions (walk, bow, weave, coast) finish.
+ * Frames advance between taps (`gap` seconds, default 0.1) so timed
+ * transitions (walk, bow, weave, coast) finish; the crane folds one fold at a
+ * time, so it waits out each fold.
  */
 const SCRIPTS: Script[] = [
-  { id: 'crane', taps: [4, 1, 1] },
+  { id: 'crane', taps: [4, 1, 1], gap: 3 },
   { id: 'lantern', taps: [1, 1, 1] },
   { id: 'shinto-torii', taps: [1, 1, 1] },
   { id: 'tibetan-wheel', taps: [1, 0, 1] },
@@ -131,14 +133,14 @@ afterEach(() => {
   document.body.replaceChildren()
 })
 
-describe.each(SCRIPTS)('$id scene', ({ id, taps }) => {
+describe.each(SCRIPTS)('$id scene', ({ id, taps, gap = 0.1 }) => {
   it('walks through three checkpoints to scene:complete', async () => {
     const s = await mount(id)
     expect(s.overlay.querySelector('.scene-title')?.textContent).toBe(s.mod.meta.title)
     for (let checkpoint = 1; checkpoint <= 3; checkpoint++) {
       for (let i = 0; i < taps[checkpoint - 1]; i++) {
         s.tap()
-        s.run(0.1)
+        s.run(gap)
       }
       s.runUntil(checkpoint)
       expect(s.progress).toEqual([1, 2, 3].slice(0, checkpoint))
@@ -174,6 +176,81 @@ describe.each(SCRIPTS)('$id scene', ({ id, taps }) => {
   it('keeps all overlay copy within the safe-copy rules', async () => {
     const s = await mount(id)
     expect(() => Shared.assertSafeCopy(s.overlay.textContent ?? '')).not.toThrow()
+    s.instance.dispose()
+  })
+})
+
+describe('crane folds', () => {
+  const hint = (s: Awaited<ReturnType<typeof mount>>) =>
+    s.overlay.querySelector('.scene-hint')?.textContent ?? ''
+  /** Index of the active step dot (3 when all are done). */
+  const activeDot = (s: Awaited<ReturnType<typeof mount>>) => {
+    const dots = [...s.overlay.querySelectorAll<HTMLElement>('.scene-step-dot')]
+    const i = dots.findIndex((d) => d.dataset.state === 'active')
+    return i < 0 ? dots.length : i
+  }
+
+  it('folds once for a quick double tap: taps wait for the fold under way', async () => {
+    const s = await mount('crane')
+    const atRest = hint(s)
+    s.tap()
+    s.run(0.09)
+    s.tap()
+    expect(s.haptic).toHaveBeenCalledTimes(1)
+    expect(s.button.getAttribute('aria-disabled')).toBe('true')
+    expect(hint(s)).toContain('…')
+    s.run(2)
+    expect(s.button.getAttribute('aria-disabled')).toBe('false')
+    expect(hint(s)).not.toBe(atRest)
+    expect(hint(s)).toContain('再点按')
+    // The settled paper takes the next tap.
+    s.tap()
+    expect(s.haptic).toHaveBeenCalledTimes(2)
+    s.instance.dispose()
+  })
+
+  it('waits for the last fold to settle before the lift hint, dot and checkpoint', async () => {
+    const s = await mount('crane')
+    for (let i = 0; i < 3; i++) {
+      s.tap()
+      s.run(3)
+    }
+    s.tap()
+    s.run(1) // the last fold takes 2.3 s
+    expect(s.progress).toEqual([])
+    expect(activeDot(s)).toBe(0)
+    expect(hint(s)).not.toContain('向上拖起')
+    s.run(1.5)
+    expect(s.progress).toEqual([1])
+    expect(activeDot(s)).toBe(1)
+    expect(hint(s)).toContain('向上拖起')
+    s.instance.dispose()
+  })
+
+  it('keeps hint, step dots and reported steps on one count of three', async () => {
+    const s = await mount('crane')
+    const check = () => {
+      expect(s.overlay.querySelectorAll('.scene-step-dot')).toHaveLength(3)
+      expect(activeDot(s)).toBe(s.progress.length)
+      // No hint carries a step fraction of its own (like 1/4 next to 0/3).
+      expect(hint(s)).not.toMatch(/\d\s*\/\s*\d/)
+    }
+    check()
+    for (let i = 0; i < 4; i++) {
+      s.tap()
+      s.run(0.5)
+      check()
+      s.run(2.5)
+      check()
+    }
+    expect(s.progress).toEqual([1])
+    s.tap()
+    s.run(0.1)
+    check()
+    s.tap()
+    s.run(0.1)
+    check()
+    expect(s.progress).toEqual([1, 2, 3])
     s.instance.dispose()
   })
 })

@@ -2037,6 +2037,12 @@ button:hover:not(:disabled) {
   transform: translateX(-50%) scale(0.96);
 }
 
+/* A step still under way (a crane fold): the button waits and taps are ignored. */
+.scene-bow-tap[aria-disabled='true'] {
+  opacity: 0.55;
+  cursor: progress;
+}
+
 @keyframes scene-fade-in {
   from {
     opacity: 0;

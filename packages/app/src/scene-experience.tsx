@@ -72,6 +72,8 @@ function ProceduralScene({
   );
   return <div className="library-scene-stage" ref={host} />;
 }
+/** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
+const sceneSteps = (entry: CatalogEntry) => (entry.engine === "woodfish@1" ? 12 : 3);
 function LoadedScene({
   entry,
   lease,
@@ -84,6 +86,7 @@ function LoadedScene({
   const { state, dispatch, active, feedback, prepareFeedback } = useApp();
   const record = state.sceneRecords.find((r) => r.id === entry.id);
   const progress = record?.progress ?? 0;
+  const steps = sceneSteps(entry);
   const [instruction, setInstruction] = useState("轻敲木鱼，让心慢下来");
   const checkpoint = (n: number) =>
     dispatch({ type: "scene.progress", id: entry.id, progress: n });
@@ -111,7 +114,7 @@ function LoadedScene({
   return (
     <>
       <p className="scene-progress" role="status">
-        已完成 {progress} / {entry.engine === "woodfish@1" ? 12 : 3}
+        已完成 {progress} / {steps}
       </p>
       {entry.engine === "woodfish@1" ? (
         <>
@@ -122,10 +125,10 @@ function LoadedScene({
             active={active}
             reducedMotion={state.settings.reducedMotion}
             view="front"
-            disabled={progress >= 12}
+            disabled={progress >= steps}
             onStrike={() => {
               prepareFeedback();
-              checkpoint(Math.min(12, progress + 1));
+              checkpoint(Math.min(steps, progress + 1));
               return true;
             }}
             onImpact={feedback}
@@ -155,7 +158,7 @@ function LoadedScene({
       >
         {record?.favorite ? "取消收藏" : "收藏场景"}
       </button>
-      {progress >= (entry.engine === "woodfish@1" ? 12 : 3) && (
+      {progress >= steps && (
         <p>这次体验已经完成，记录已留下。</p>
       )}
     </>

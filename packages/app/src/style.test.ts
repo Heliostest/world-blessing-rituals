@@ -99,6 +99,15 @@ describe("text fields", () => {
   });
 });
 
+describe("scene load error", () => {
+  it("wraps a long detail inside the card, so 重试打开 stays on screen", () => {
+    const rule = declared(".scene-load-error");
+    expect(rule).toMatch(/grid-template-columns: minmax\(0(px)?, 1fr\)/);
+    expect(rule).toMatch(/overflow-wrap: anywhere/);
+    expect(declared(".scene-load-error code")).toMatch(/white-space: pre-wrap/);
+  });
+});
+
 describe("scene overlay", () => {
   const overlay = (cream: boolean) =>
     `<div class="scene-overlay${cream ? " scene-overlay--cream" : ""}"><div class="scene-hit-layer"></div><div class="scene-title">t</div><div class="scene-step-dots"></div><div class="scene-hint">h</div><button class="scene-bow-tap">b</button><div class="scene-wish-slot"></div></div>`;

@@ -3,6 +3,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from "react";
@@ -13,6 +14,7 @@ import {
   type SceneManifest,
 } from "@wbr/content/catalog";
 import type { CacheOptions, CacheStats } from "@wbr/content/cache";
+import { Icon } from "./art";
 import { contentIO, useContent } from "./content";
 import { useApp } from "./context";
 import { recommendTodayScene } from "./scene-placement";
@@ -172,6 +174,8 @@ type LibraryContext = {
   maintain(options?: CacheOptions): Promise<CacheStats | undefined>;
 };
 const Library = createContext<LibraryContext>(null!);
+/** What `SceneLibraryProvider` provides; tests stand in their own. */
+export { Library as SceneLibraryContext };
 export const useSceneLibrary = () => useContext(Library);
 export function SceneLibraryProvider({ children }: { children: ReactNode }) {
   const environment = useContent(),
@@ -283,15 +287,21 @@ export function SceneRecommendation({ day }: { day: string }) {
 }
 export const formatBytes = (bytes: number) =>
   `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
+/** When a search in 场景目录 finds nothing. */
+export const CATALOG_EMPTY_COPY = {
+  title: "没有找到相符的场景",
+  body: "换个字词试试，或清空搜索，看看全部场景。",
+  clear: "清空搜索",
+} as const;
 export function SceneCatalog() {
   const { entries, library, stats, error, ready } = useSceneLibrary(),
     { go } = useApp();
   const [query, setQuery] = useState(""),
     [limit, setLimit] = useState(24);
   const [statuses, setStatuses] = useState<Record<string, string>>({});
-  const visible = entries
-    .filter((e) => e.title.includes(query))
-    .slice(0, limit);
+  const search = useRef<HTMLInputElement>(null);
+  const matches = entries.filter((e) => e.title.includes(query.trim()));
+  const visible = matches.slice(0, limit);
   useEffect(() => {
     let disposed = false;
     const hashes = new Set(stats?.entries.map((e) => e.key));
@@ -317,6 +327,7 @@ export function SceneCatalog() {
       <label className="scene-search">
         搜索场景
         <input
+          ref={search}
           value={query}
           onChange={(e) => {
             setQuery(e.target.value);
@@ -348,7 +359,23 @@ export function SceneCatalog() {
           </button>
         ))}
       </div>
-      {entries.filter((e) => e.title.includes(query)).length > limit && (
+      {query.trim() !== "" && matches.length === 0 && (
+        <div className="empty" role="status">
+          <Icon name="leaf" />
+          <h3>{CATALOG_EMPTY_COPY.title}</h3>
+          <p>{CATALOG_EMPTY_COPY.body}</p>
+          <button
+            className="button secondary"
+            onClick={() => {
+              setQuery("");
+              search.current?.focus();
+            }}
+          >
+            {CATALOG_EMPTY_COPY.clear}
+          </button>
+        </div>
+      )}
+      {matches.length > limit && (
         <button
           className="button secondary"
           onClick={() => setLimit((n) => n + 24)}

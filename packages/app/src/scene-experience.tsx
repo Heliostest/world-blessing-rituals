@@ -16,6 +16,7 @@ import { supportsScene, useSceneLibrary, woodfishPack } from "./scene-library";
 import { Woodfish } from "./woodfish";
 import { RitualNarrativeBlurb } from "./ritual-narrative";
 import { FeedbackControls } from "./feedback-controls";
+import { describeSceneLoadError } from "./scene-load-error";
 
 function ProceduralScene({
   entry,
@@ -178,7 +179,9 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
   const fail = (error?: unknown) => {
     cancel.current?.abort();
     setLoaded(undefined);
-    setError(error instanceof Error ? error.message : "场景画面暂不可用");
+    setError(
+      error instanceof Error && error.message ? error.message : "场景画面暂不可用",
+    );
   };
   useEffect(() => {
     if (!ready || !entry) return;
@@ -218,7 +221,7 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
     })().catch((e) => {
       if (!controller.signal.aborted) {
         void lease?.release();
-        setError(e instanceof Error ? e.message : "下载失败");
+        setError(e instanceof Error && e.message ? e.message : "下载失败");
       }
     });
     return () => {
@@ -227,17 +230,21 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
     };
   }, [entry, library, ready, attempt]);
   if (!entry) return <p role="alert">场景信息缺失，请返回目录重试。</p>;
+  const failure = error ? describeSceneLoadError(error) : undefined;
   return (
     <section className="scene-experience">
       <h1>{entry.title}</h1>
       <RitualNarrativeBlurb sceneId={entry.id} />
-      {error ? (
+      {failure ? (
         <div className="scene-load-error" role="alert">
           <p>暂时无法打开。记录和进度已保留。</p>
-          <details>
-            <summary>查看原因</summary>
-            {error}
-          </details>
+          <p>{failure.reason}</p>
+          {failure.detail && (
+            <details>
+              <summary>查看技术细节</summary>
+              <code>{failure.detail}</code>
+            </details>
+          )}
           <button
             className="button primary"
             onClick={() => setAttempt((n) => n + 1)}

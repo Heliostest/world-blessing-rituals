@@ -14,9 +14,10 @@ beforeAll(() => {
   const style = document.createElement("style");
   style.textContent = css;
   document.head.append(style);
-  rules = [...style.sheet!.cssRules].filter(
-    (r): r is CSSStyleRule => r instanceof CSSStyleRule,
-  );
+  // Top-level rules and those inside @media blocks.
+  rules = [...style.sheet!.cssRules]
+    .flatMap((r) => (r instanceof CSSMediaRule ? [...r.cssRules] : [r]))
+    .filter((r): r is CSSStyleRule => r instanceof CSSStyleRule);
 });
 
 /** Declarations of every rule for exactly this selector, in order. */
@@ -72,5 +73,26 @@ describe("touch targets", () => {
     const inset = declared(".small-button::before").match(/inset: (-?[\d.]+)px/);
     expect(inset).not.toBeNull();
     expect(pill - 2 * Number(inset![1])).toBeGreaterThanOrEqual(44);
+  });
+});
+
+describe("text fields", () => {
+  it("never sizes a text field below 16px, so iOS does not zoom in on focus", () => {
+    const size = (r: CSSStyleRule) => r.style.getPropertyValue("font-size");
+    const sized = rules.filter(
+      (r) => /\b(input|textarea|select)\b/.test(r.selectorText) && /^\d/.test(size(r)),
+    );
+    expect(sized.length).toBeGreaterThan(0);
+    for (const rule of sized)
+      expect(px(size(rule)), rule.selectorText).toBeGreaterThanOrEqual(16);
+  });
+
+  it.each([
+    ["the wish title", `<section class="form-card"><textarea></textarea></section>`, "textarea"],
+    ["a 还愿 note", `<section class="form-card"><div class="return-note"><textarea></textarea></div></section>`, "textarea"],
+    ["the share text", `<div class="share-panel"><textarea></textarea></div>`, "textarea"],
+    ["the ritual's wish picker", `<div class="ritual-link"><select></select></div>`, "select"],
+  ])("sets %s at 16px", (_name, html, selector) => {
+    expect(getComputedStyle(place(html, selector)).fontSize).toBe("16px");
   });
 });

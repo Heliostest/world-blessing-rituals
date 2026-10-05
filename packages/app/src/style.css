@@ -574,7 +574,8 @@ button:hover:not(:disabled) {
   resize: vertical;
   background: #fcfaf6;
   color: #504437;
-  font-size: 15px;
+  /* 16px or more: iOS zooms the page into smaller text fields on focus. */
+  font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
   min-height: 65px;
@@ -916,7 +917,7 @@ button:hover:not(:disabled) {
   font-size: 14px;
 }
 .return-note textarea {
-  font-size: 13px;
+  font-size: 16px;
   padding: 8px;
   min-height: 46px;
 }
@@ -1167,7 +1168,7 @@ button:hover:not(:disabled) {
   border: 0;
   background: transparent;
   color: #6e5033;
-  font-size: 13px;
+  font-size: 16px;
   padding: 5px 0;
 }
 .feedback-controls {
@@ -1342,9 +1343,6 @@ button:hover:not(:disabled) {
 }
 .share-panel .small-button {
   margin-top: 10px;
-}
-.share-panel textarea {
-  font-size: 13px;
 }
 .round-button {
   width: 44px;

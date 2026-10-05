@@ -1967,6 +1967,14 @@ button:hover:not(:disabled) {
   pointer-events: auto;
 }
 
+/* Title, step dots and hint only label the scene: taps pass through them to
+   the hit layer beneath, whatever order these rules load in. */
+.scene-overlay > .scene-title,
+.scene-overlay > .scene-step-dots,
+.scene-overlay > .scene-hint {
+  pointer-events: none;
+}
+
 .scene-title {
   position: absolute;
   left: 12px;

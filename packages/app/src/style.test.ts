@@ -9,6 +9,8 @@ const css = readFileSync(
   "utf8",
 );
 let rules: CSSStyleRule[] = [];
+// jsdom's cascade ignores selector specificity (the last declaration wins), so
+// these checks only assert values a browser resolves the same way.
 
 beforeAll(() => {
   const style = document.createElement("style");
@@ -94,5 +96,20 @@ describe("text fields", () => {
     ["the ritual's wish picker", `<div class="ritual-link"><select></select></div>`, "select"],
   ])("sets %s at 16px", (_name, html, selector) => {
     expect(getComputedStyle(place(html, selector)).fontSize).toBe("16px");
+  });
+});
+
+describe("scene overlay", () => {
+  const overlay = (cream: boolean) =>
+    `<div class="scene-overlay${cream ? " scene-overlay--cream" : ""}"><div class="scene-hit-layer"></div><div class="scene-title">t</div><div class="scene-step-dots"></div><div class="scene-hint">h</div><button class="scene-bow-tap">b</button><div class="scene-wish-slot"></div></div>`;
+  const events = (selector: string) =>
+    getComputedStyle(document.querySelector(selector)!).pointerEvents;
+
+  it.each([false, true])("lets taps through title, dots and hint (cream: %s)", (cream) => {
+    place(overlay(cream), ".scene-overlay");
+    for (const label of [".scene-title", ".scene-step-dots", ".scene-hint"])
+      expect(events(label), label).toBe("none");
+    for (const control of [".scene-hit-layer", ".scene-bow-tap", ".scene-wish-slot"])
+      expect(events(control), control).toBe("auto");
   });
 });

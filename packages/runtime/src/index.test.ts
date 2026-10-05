@@ -39,3 +39,19 @@ it("serializes rapid saves and retries the latest snapshot after failure", async
     haptics: false,
   });
 });
+it("gives a brand-new save the initial settings, and leaves a saved one alone", async () => {
+  const fresh = createStore(
+    { read: async () => null, write: async () => {} },
+    () => ({ reducedMotion: true }),
+  );
+  await fresh.load();
+  expect(fresh.getSnapshot().state?.settings.reducedMotion).toBe(true);
+
+  const raw = JSON.stringify({ ...fresh.getSnapshot().state, settings: { sound: true, haptics: true, reducedMotion: false } });
+  const saved = createStore(
+    { read: async () => raw, write: async () => {} },
+    () => ({ reducedMotion: true }),
+  );
+  await saved.load();
+  expect(saved.getSnapshot().state?.settings.reducedMotion).toBe(false);
+});

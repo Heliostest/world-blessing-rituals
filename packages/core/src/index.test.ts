@@ -151,6 +151,20 @@ describe("personal ritual loop", () => {
       reduce(s, { type: "ritual.start", id: "r2", ritual: "woodfish", at }),
     ).toThrow();
   });
+  it("starts a fresh save with the given settings, but keeps a saved choice", () => {
+    expect(createState({ reducedMotion: true }).settings).toEqual({
+      sound: true,
+      haptics: true,
+      reducedMotion: true,
+    });
+    expect(restore(null, { reducedMotion: true }).settings.reducedMotion).toBe(
+      true,
+    );
+    const saved = JSON.stringify(createState());
+    expect(restore(saved, { reducedMotion: true }).settings.reducedMotion).toBe(
+      false,
+    );
+  });
   it("rejects corrupt or newer saves while empty storage gets a fresh state", () => {
     expect(restore(null)).toEqual(createState());
     expect(() => restore("{bad")).toThrow();

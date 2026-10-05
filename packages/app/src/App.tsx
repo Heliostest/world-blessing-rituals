@@ -17,6 +17,7 @@ import { ContentContext, type ContentEnvironment } from "./content";
 import { InvalidContentError } from "@wbr/content";
 import { SceneLibraryProvider, SceneCatalog, CacheManager } from "./scene-library";
 import { SceneExperience } from "./scene-experience";
+import { followSystemReducedMotion, initialSettings } from "./reduced-motion";
 
 export function BlessingApp({
   host,
@@ -31,7 +32,7 @@ export function BlessingApp({
   onCanGoBack?: (value: boolean) => void;
   content?: ContentEnvironment;
 }) {
-  const store = useMemo(() => createStore(host), [host]);
+  const store = useMemo(() => createStore(host, initialSettings), [host]);
   const snapshot = useSyncExternalStore(store.subscribe, store.getSnapshot);
   const [routes, setRoutes] = useState<Route[]>([{ page: "today" }]);
   const [error, setError] = useState("");
@@ -70,6 +71,7 @@ export function BlessingApp({
   useEffect(() => {
     void store.load();
   }, [store]);
+  useEffect(() => followSystemReducedMotion(store), [store]);
   useEffect(() => {
     onCanGoBack?.(canBack);
   }, [canBack, onCanGoBack]);

@@ -111,7 +111,8 @@ export type Action =
   | { type: "ritual.finish"; id: string; at: string }
   | { type: "settings"; key: keyof State["settings"]; value: boolean };
 
-export function createState(): State {
+/** A fresh state; `settings` overrides defaults (e.g. the system's motion preference). */
+export function createState(settings: Partial<State["settings"]> = {}): State {
   return {
     sceneRecords: [],
     version: 1,
@@ -120,7 +121,7 @@ export function createState(): State {
     sessions: [],
     collectibles: [],
     ledger: [],
-    settings: { sound: true, haptics: true, reducedMotion: false },
+    settings: { sound: true, haptics: true, reducedMotion: false, ...settings },
   };
 }
 function text(value: string, max: number) {
@@ -346,8 +347,12 @@ const session = (v: unknown) =>
   date(v.startedAt) &&
   optionalId(v.wishId);
 const sceneRecord = (v: unknown) => obj(v) && id(v.id) && str(v.title) && v.title.length <= 100 && id(v.engine) && id(v.revision) && str(v.manifestUrl) && v.manifestUrl.length <= 2048 && Number.isSafeInteger(v.progress) && Number(v.progress) >= 0 && Number(v.progress) <= 1000000 && typeof v.favorite === "boolean" && date(v.lastOpened);
-export function restore(raw: string | null): State {
-  if (raw === null) return createState();
+/** Restores a save; without one yet, starts fresh with `initialSettings`. */
+export function restore(
+  raw: string | null,
+  initialSettings?: Partial<State["settings"]>,
+): State {
+  if (raw === null) return createState(initialSettings);
   const v: unknown = JSON.parse(raw);
   const settings = obj(v) ? v.settings : null;
   const valid =

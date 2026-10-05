@@ -4,6 +4,7 @@ export type Storage = {
   read(): Promise<string | null>;
   write(raw: string): Promise<void>;
 };
+/** `haptic` only where the host can vibrate; the App hides its 震动 toggle otherwise. */
 export type Host = Storage & { haptic?(): Promise<void> };
 type Snapshot = {
   state: State | null;
@@ -85,11 +86,18 @@ export function createStore(
 }
 export type Store = ReturnType<typeof createStore>;
 export function browserHost(): Host {
+  // Checked once: iOS browsers have no Vibration API, so no haptics there.
+  const canVibrate =
+    typeof navigator !== "undefined" && typeof navigator.vibrate === "function";
   return {
     read: async () => localStorage.getItem(SAVE_KEY),
     write: async (raw) => localStorage.setItem(SAVE_KEY, raw),
-    haptic: async () => {
-      navigator.vibrate?.(12);
-    },
+    ...(canVibrate
+      ? {
+          haptic: async () => {
+            navigator.vibrate(12);
+          },
+        }
+      : {}),
   };
 }

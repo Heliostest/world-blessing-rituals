@@ -1,5 +1,23 @@
-import { expect, it } from "vitest";
-import { createStore } from "./index";
+import { afterEach, expect, it, vi } from "vitest";
+import { browserHost, createStore } from "./index";
+
+afterEach(() => {
+  vi.unstubAllGlobals();
+});
+
+it("offers haptics only where the browser can vibrate", async () => {
+  const vibrate = vi.fn(() => true);
+  vi.stubGlobal("navigator", { vibrate });
+  const host = browserHost();
+  expect(host.haptic).toBeTypeOf("function");
+  await host.haptic!();
+  expect(vibrate).toHaveBeenCalledWith(12);
+  // iOS Safari: no Vibration API, so no haptic for the App to offer.
+  vi.stubGlobal("navigator", {});
+  expect(browserHost().haptic).toBeUndefined();
+  vi.stubGlobal("navigator", undefined);
+  expect(browserHost().haptic).toBeUndefined();
+});
 
 it("preserves corrupt data and blocks writes until it can load", async () => {
   const writes: string[] = [];

@@ -239,6 +239,7 @@ export function BlessingApp({
           active,
           feedback,
           haptic,
+          canHaptic: typeof host.haptic === "function",
           decodeSound,
           prepareFeedback,
           fulfillmentDrafts,

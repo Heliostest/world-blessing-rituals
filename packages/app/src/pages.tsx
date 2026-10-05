@@ -258,7 +258,7 @@ export function CollectionDetail({ id }: { id: string }) {
   );
 }
 export function Me() {
-  const { state, dispatch, go } = useApp();
+  const { state, dispatch, go, canHaptic } = useApp();
   const stats = [
     [state.ledger.reduce((n, l) => n + l.amount, 0), "积攒功德"],
     [state.sessions.length, "仪式时光"],
@@ -298,22 +298,25 @@ export function Me() {
             ["haptics", "轻触反馈", "每一步，都有温柔回应"],
             ["reducedMotion", "减少动态效果", "让画面更安静"],
           ] as const
-        ).map(([key, title, sub]) => (
-          <label className="settings-row" key={key}>
-            <span>
-              {title}
-              <small>{sub}</small>
-            </span>
-            <input
-              type="checkbox"
-              className="switch"
-              checked={state.settings[key]}
-              onChange={(e) =>
-                dispatch({ type: "settings", key, value: e.target.checked })
-              }
-            />
-          </label>
-        ))}
+        )
+          // No 轻触反馈 where the host cannot vibrate (iOS browsers).
+          .filter(([key]) => key !== "haptics" || canHaptic)
+          .map(([key, title, sub]) => (
+            <label className="settings-row" key={key}>
+              <span>
+                {title}
+                <small>{sub}</small>
+              </span>
+              <input
+                type="checkbox"
+                className="switch"
+                checked={state.settings[key]}
+                onChange={(e) =>
+                  dispatch({ type: "settings", key, value: e.target.checked })
+                }
+              />
+            </label>
+          ))}
       </div>
       <div className="local-note">
         <Icon name="lock" />

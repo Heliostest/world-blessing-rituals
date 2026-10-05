@@ -232,8 +232,10 @@ describe('crane folds', () => {
     const check = () => {
       expect(s.overlay.querySelectorAll('.scene-step-dot')).toHaveLength(3)
       expect(activeDot(s)).toBe(s.progress.length)
-      // No hint carries a step fraction of its own (like 1/4 next to 0/3).
+      // No hint carries a step fraction of its own (like 1/4 next to 0/3),
+      // nor a count of folds in words (like 四次折叠).
       expect(hint(s)).not.toMatch(/\d\s*\/\s*\d/)
+      expect(hint(s)).not.toMatch(/[\d一二两三四五六七八九十]\s*[次折步]/)
     }
     check()
     for (let i = 0; i < 4; i++) {

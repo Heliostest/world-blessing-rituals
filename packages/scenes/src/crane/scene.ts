@@ -25,7 +25,7 @@ const STEP_ORDER: Step[] = ['fold', 'lift', 'wish']
 
 const COPY = {
   title: '折一只纸鹤',
-  hintFold: '点按纸面折一下（按纸鹤传统折序简化为四次折叠的练习，非完整教程）。',
+  hintFold: '点按纸面折一下（按纸鹤传统折序简化的练习，非完整教程）。',
   folding1: '收成方形底…',
   fold1: '方形底收好了，再点按继续。',
   folding2: '拉长成鸟形底…',

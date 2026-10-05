@@ -258,17 +258,88 @@ describe('crane folds', () => {
 })
 
 describe('tibetan-wheel drag direction', () => {
+  const hint = (s: Awaited<ReturnType<typeof mount>>) =>
+    s.overlay.querySelector('.scene-hint')?.textContent ?? ''
+
   it('refuses a left-to-right drag and turns on a right-to-left one', async () => {
     const s = await mount('tibetan-wheel')
     const hit = layOut(s)
+    const ready = hint(s)
+    expect(ready).toContain('只沿顺时针')
     // Both drags start on the drum, in the middle of the stage.
     swipe(hit, [130, 150], [170, 150])
     s.run(0.2)
     expect(s.progress).toEqual([])
-    expect(s.overlay.querySelector('.scene-hint')?.textContent).toContain('只沿顺时针')
+    const refused = hint(s)
+    expect(refused).not.toBe(ready)
+    expect(refused).toContain('只沿顺时针')
     swipe(hit, [170, 150], [130, 150])
     s.run(0.2)
     expect(s.progress).toEqual([1])
+    expect(hint(s)).not.toBe(refused)
+    s.instance.dispose()
+  })
+
+  it('lets the refused-direction hint go after a moment, or at a push the right way', async () => {
+    const s = await mount('tibetan-wheel')
+    const hit = layOut(s)
+    const ready = hint(s)
+    swipe(hit, [130, 150], [170, 150])
+    s.run(0.2)
+    const refused = hint(s)
+    expect(refused).not.toBe(ready)
+    s.run(1)
+    expect(hint(s)).toBe(refused)
+    s.run(2)
+    expect(hint(s)).toBe(ready)
+    // While it turns: refused again, then a short push the right way answers it.
+    s.tap()
+    s.run(0.1)
+    const turning = hint(s)
+    swipe(hit, [130, 150], [170, 150])
+    expect(hint(s)).toBe(refused)
+    swipe(hit, [170, 150], [150, 150])
+    expect(hint(s)).toBe(turning)
+    expect(s.progress).toEqual([1])
+    s.instance.dispose()
+  })
+})
+
+describe('tibetan-wheel turning', () => {
+  it('lets the button settle the turning drum; a double tap does not stop it at once', async () => {
+    const s = await mount('tibetan-wheel')
+    const label = () => s.button.textContent
+    const pushLabel = label()
+    s.tap()
+    s.tap() // the second tap of a quick double tap
+    s.run(0.1)
+    expect(s.progress).toEqual([1])
+    expect(label()).not.toBe(pushLabel)
+    expect(s.button.getAttribute('aria-disabled')).toBe('true')
+    s.run(1)
+    expect(s.button.getAttribute('aria-disabled')).toBe('false')
+    // Still turning: the extra tap neither pushed nor stopped it.
+    expect(s.progress).toEqual([1])
+    s.tap()
+    expect(s.button.getAttribute('aria-disabled')).toBe('true')
+    // It comes to rest well before the ~5 s it coasts on its own.
+    s.run(1.5)
+    expect(s.progress).toEqual([1, 2])
+    expect(s.button.getAttribute('aria-disabled')).toBe('false')
+    s.tap()
+    expect(s.progress).toEqual([1, 2, 3])
+    s.instance.dispose()
+  })
+
+  it('no longer keeps the drum turning when the button is tapped every 1.5 s', async () => {
+    const s = await mount('tibetan-wheel')
+    s.tap()
+    // Each tap used to push it on; 18 s of this stayed at the first step.
+    for (let i = 0; i < 2; i++) {
+      s.run(1.5)
+      if (s.progress.length === 1) s.tap()
+    }
+    expect(s.progress).toEqual([1, 2])
     s.instance.dispose()
   })
 })

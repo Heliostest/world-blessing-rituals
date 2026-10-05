@@ -25,11 +25,13 @@ const STEP_ORDER: Step[] = ['ready', 'turn', 'still']
 
 const COPY = {
   title: '廊前轻转',
-  hintReady: '从右向左轻滑，或点按转筒，让它顺时针转动（练习）。',
-  hintReverse: '转筒只沿顺时针方向转动，请从右向左轻滑。',
-  hintTurn: '转筒缓缓转着，可再轻推一下。',
+  hintReady: '转筒只沿顺时针转：从右向左轻滑，或点按转筒（练习）。',
+  hintReverse: '反向推不动：转筒只沿顺时针方向转动，请从右向左轻滑。',
+  hintTurn: '转筒缓缓转着，可静看它慢下来，或点按下方让它停下。',
+  hintSettling: '转筒渐渐慢下来…',
   hintStill: '转筒慢慢停下，点按下方或竖起手机稍停，静立片刻（练习，非法效）。',
   pushTap: '轻推一下',
+  settleTap: '让它慢慢停下',
   stillTap: '静立片刻',
   done: '廊前安静下来（练习结束，不以转数计算）。',
   stepsAria: '步骤',
@@ -44,7 +46,16 @@ const SWIPE_GAIN = 2.4
 const MAX_SPEED = 7
 const START_SPEED = 1.2
 const STILL_SPEED = 0.08
+/** Extra drag (1/s) once asked to stop: about a second from full speed to rest. */
+const SETTLE_DRAG = 3
+/**
+ * The button turns into 让它慢慢停下 as the drum starts; it waits this long
+ * first, so the second tap of a double tap does not stop it at once.
+ */
+const SETTLE_AFTER_SECONDS = 0.8
 const REVERSE_HINT_RAD = 0.5
+/** How long the refused-direction hint stays before the step's own returns. */
+const REVERSE_HINT_SECONDS = 2.5
 
 type Unit = { unit: THREE.Group; drum: THREE.Group }
 
@@ -63,6 +74,11 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
   let lastSpinAngle = 0
   let reverseAccum = 0
   let refuseWobble = 0
+  /** Seconds the refused-direction hint has left (0: the step's own hint). */
+  let reverseHintT = 0
+  /** Seconds since the turn began, and whether the drum was asked to stop. */
+  let turnT = 0
+  let settling = false
 
   const handles: GestureHandle[] = []
   let spinHandle: GestureHandle | null = null
@@ -88,12 +104,16 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
     )
     actionBtn.hidden = step === 'done'
     hitLayer.style.pointerEvents = step === 'ready' || step === 'turn' ? 'auto' : 'none'
+    // Just after the turn begins, and while the drum settles, the button waits.
+    const waiting = step === 'turn' && (settling || turnT < SETTLE_AFTER_SECONDS)
+    actionBtn.setAttribute('aria-disabled', String(waiting))
+    const refused = reverseHintT > 0
     if (step === 'ready') {
-      setHint(COPY.hintReady)
+      setHint(refused ? COPY.hintReverse : COPY.hintReady)
       setSafeText(actionBtn, COPY.pushTap, assertSafeCopy)
     } else if (step === 'turn') {
-      setHint(COPY.hintTurn)
-      setSafeText(actionBtn, COPY.pushTap, assertSafeCopy)
+      setHint(settling ? COPY.hintSettling : refused ? COPY.hintReverse : COPY.hintTurn)
+      setSafeText(actionBtn, COPY.settleTap, assertSafeCopy)
     } else if (step === 'still') {
       setHint(COPY.hintStill)
       setSafeText(actionBtn, COPY.stillTap, assertSafeCopy)
@@ -249,6 +269,8 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
   const goStill = () => {
     if (!canAct() || step !== 'turn') return
     step = 'still'
+    settling = false
+    reverseHintT = 0
     spinHandle?.setEnabled(false)
     gyroHandle?.setEnabled(true)
     if (!restoring) ctx.onProgress?.(2)
@@ -259,14 +281,19 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
   const goTurn = () => {
     if (!canAct() || step !== 'ready') return
     step = 'turn'
+    turnT = 0
+    reverseHintT = 0
     if (!restoring) ctx.onProgress?.(1)
     else speed = TAP_PUSH // resumed mid-turn: let it coast down again
     syncOverlayForStep()
   }
 
-  /** Add clockwise speed; the first push that gets it going starts the turn. */
+  /**
+   * Add clockwise speed; the first push that gets it going starts the turn.
+   * A push the right way also answers a refused one, so its hint goes.
+   */
   const push = (amount: number) => {
-    if (!canAct() || (step !== 'ready' && step !== 'turn') || amount <= 0) return
+    if (!canAct() || (step !== 'ready' && step !== 'turn') || settling || amount <= 0) return
     const before = speed
     speed = Math.min(MAX_SPEED, speed + amount)
     if (before < START_SPEED && speed >= START_SPEED) {
@@ -274,13 +301,25 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
       const reduced = ctx.isReducedMotion?.() ?? false
       fx.impact({ freqs: [196, 293.66, 392], duration: reduced ? 0.5 : 1.2, gain: 0.05 })
     }
+    const refused = reverseHintT > 0
+    reverseHintT = 0
     if (step === 'ready' && speed >= START_SPEED) goTurn()
+    else if (refused) syncOverlayForStep()
+  }
+
+  /** While it turns, the button lets the drum slow to rest; then the still step begins. */
+  const settle = () => {
+    if (!canAct() || step !== 'turn' || settling || turnT < SETTLE_AFTER_SECONDS) return
+    settling = true
+    reverseHintT = 0
+    syncOverlayForStep()
   }
 
   const onActionTap = () => {
     if (disposed) return
     fx.prepare()
-    if (step === 'ready' || step === 'turn') push(TAP_PUSH)
+    if (step === 'ready') push(TAP_PUSH)
+    else if (step === 'turn') settle()
     else if (step === 'still') completeScene()
   }
 
@@ -305,17 +344,20 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
       onAngle: (angle) => {
         const delta = angle - lastSpinAngle
         lastSpinAngle = angle
+        if (settling) return
         const drive = clockwiseImpulse(delta)
         if (drive > 0) {
           push(drive * SWIPE_GAIN)
           return
         }
-        // Reverse drag: the drum does not follow; say so once per stroke.
+        // Reverse drag: the drum does not follow; say so once per stroke,
+        // for a moment (see REVERSE_HINT_SECONDS).
         reverseAccum += delta
         if (reverseAccum > REVERSE_HINT_RAD) {
           reverseAccum = -Infinity
           refuseWobble = 1
-          setHint(COPY.hintReverse)
+          reverseHintT = REVERSE_HINT_SECONDS
+          syncOverlayForStep()
         }
       },
     })
@@ -361,10 +403,21 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
       const reduced = ctx.isReducedMotion?.() ?? false
       const t = reduced ? 0 : performance.now() * 0.001
 
-      // Exponential drag + light friction: the drum coasts, then settles.
-      speed = Math.max(0, speed * Math.exp(-dt * 0.55) - dt * 0.12)
+      // Exponential drag + light friction: the drum coasts, then settles
+      // (sooner once asked to stop).
+      const drag = 0.55 + (settling ? SETTLE_DRAG : 0)
+      speed = Math.max(0, speed * Math.exp(-dt * drag) - dt * 0.12)
       if (reduced) speed = Math.min(speed, 1.5)
-      if (step === 'turn' && speed < STILL_SPEED) goStill()
+      if (step === 'turn') {
+        const early = turnT < SETTLE_AFTER_SECONDS
+        turnT += dt
+        if (speed < STILL_SPEED) goStill()
+        else if (early && turnT >= SETTLE_AFTER_SECONDS) syncOverlayForStep()
+      }
+      if (reverseHintT > 0) {
+        reverseHintT = Math.max(0, reverseHintT - dt)
+        if (reverseHintT === 0) syncOverlayForStep()
+      }
       main.drum.rotation.y += CLOCKWISE_FROM_ABOVE * speed * dt
 
       // Refused reverse push: a tiny shake, no rotation.

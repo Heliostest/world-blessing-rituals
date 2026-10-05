@@ -1,0 +1,51 @@
+{
+  "slug": "albanian-folk",
+  "batchId": "C01",
+  "selectedDisplay": "托莫尔山公共风光介绍与独立展台上的原创希望烛火（非真实山径／圣所复原）",
+  "sliceChangeReason": "固定原山景＋原创烛火切片，明确烛具属于独立产品舞台；不将无实测资料的圣所与道路加入实体复原。",
+  "recommendedStatus": "ready",
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [],
+  "nextWriting": [
+    "如扩展真实圣所或朝圣道路，需另行核验建筑与准入资料；不属于当前切片。"
+  ],
+  "semanticRationale": "文化山景有国家旅游局与社群公开自述；原创烛具结构、支撑、与山景分离的空间和暗到亮终态完整，未冒充当地礼器或真实朝圣。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Tomorri Mountain",
+      "institution": "阿尔巴尼亚国家旅游局",
+      "url": "https://www.akt.gov.al/en/nature/Mount-Tomorr-3/",
+      "accessedAt": "2026-10-04",
+      "locator": "正文第2—6段（地理、地形与贝克塔什八月朝圣）",
+      "claims": [
+        "Berat／Skrapar及Osum河谷背景",
+        "森林坡地、草地、宽谷、陡崖",
+        "八月纪念Abaz Ali朝圣"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "THE TOMORR MOUNTAIN AND THE FOOTPRINT OF ABBAS ALI",
+      "institution": "贝克塔什世界总部",
+      "url": "https://kryegjyshataboterorebektashiane.org/en/the-tomorr-mountain-and-the-footprint-of-abbas-ali/",
+      "accessedAt": "2026-10-04",
+      "locator": "Every year on August 20-25；ALI AND HIS FOOTPRINT首段",
+      "claims": [
+        "教团公开自述8月20—25日朝圣",
+        "高处纪念墓为symbolic kenotaf自述"
+      ],
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+ "slug":"blang-traditional","batchId":"C01",
+ "selectedDisplay":"景迈山林下茶外观关系图与独立原创茶食桌、感谢卡摆放起止",
+ "sliceChangeReason":"保留景迈山茶林外观及原创感谢卡，实际来源可支撑生态关系图；供僧菜单及佛灯未核，原创盘杯糕点不称宗教对象，不复建未知村屋与路线。",
+ "recommendedStatus":"ready","gaps":[],
+ "nextWriting":["非阻断：编辑植物层与村落茶林关系示意规格，标原创茶食；扩展真实村屋、供僧菜单或游客路径前须再查具名地方证据。"],
+ "sources":[
+  {"id":"S1","title":"Cultural Landscape of Old Tea Forests of the Jingmai Mountain in Pu’er（1665）","institution":"UNESCO World Heritage Centre","url":"https://whc.unesco.org/en/list/1665/","accessedAt":"2026-10-04","locator":"Description L4-5/18；Brief synthesis L37-38；Criteria/Integrity L39-45","claims":["惠民镇景迈山布朗与傣族共建的活态景观","林下茶栽培、茶祖文化与社区管理关联","森林茶林村落系统；不支持供僧菜单与游客路线"],"verified":true},
+  {"id":"S2","title":"呵护好景迈山的古茶林（2024-03-01）","institution":"南康传承人口述、人民日报记者李茂颖整理／国家林业和草原局转载","url":"https://www.forestry.gov.cn/c/www/lcdt/547757.jhtml","accessedAt":"2026-10-04","locator":"正文L51-56及署名；已读作者身份和第一人称段","claims":["布朗族一芽两叶标识及护茶护林责任自述","公开欢迎客人喝茶，不证明供僧菜单"],"verified":true},
+  {"id":"S3","title":"你好！这里是景迈山古茶林——访陈耀华（2023-11-10）","institution":"北京大学世界遗产研究中心主任陈耀华原始采访／中国绿色时报／国家林业和草原局","url":"https://www.forestry.gov.cn/c/www/zrzryc/531328.jhtml","accessedAt":"2026-10-04","locator":"采访身份L45-49；林间开垦和林下种植L111-112；图片图说L53、84","claims":["外围防护林、茶林村落关系","乔木层、茶树主要中层和地面草本","林下模式与台地茶园区分"],"verified":true},
+  {"id":"S3-image1","title":"当地茶农在茶林中采茶（卢磊摄）","institution":"原始采访摄影／中国绿色时报、国家林草局","url":"https://www.forestry.gov.cn/u/cms/www/202311/10135055vq5g.jpg","accessedAt":"2026-10-04","locator":"已下载并查看完整彩色像素，图说与采访相连","claims":["斑驳树干、分叉枝、细枝叶片与冠层光隙的可见关系；未鉴定人物民族或每株植物"],"verified":true},
+  {"id":"S3-image2","title":"森林—茶林—村落平面景观（卢磊摄）","institution":"原始采访摄影／中国绿色时报、国家林草局","url":"https://www.forestry.gov.cn/u/cms/www/202311/101346365x9n.jpg","accessedAt":"2026-10-04","locator":"已下载并查看完整彩色像素；采访首图L53图说","claims":["坡上聚居与外围林冠景观尺度；村名未给不用于具体村屋复建"],"verified":true},
+  {"id":"U1","title":"The Old Tea Forest Landscape in Mangjing Shangzhai and Mangjing Xiazhai","institution":"UNESCO World Heritage Centre／Chen Yaohua申报摄影","url":"https://whc.unesco.org/en/documents/200168","accessedAt":"2026-10-04","locator":"元数据正文已读，实际图片403，未用于视觉事实；不作已核图片计数","claims":[],"verified":false},
+  {"id":"U2","title":"ICOMOS Evaluations of nominations of cultural and mixed properties（2023）","institution":"ICOMOS／UNESCO","url":"https://whc.unesco.org/archive/2023/whc23-45com-inf8B1-en.pdf","accessedAt":"2026-10-04","locator":"web全文容量失败、下载403；未读相关正文，搜索节选不计","claims":[],"verified":false}
+ ]
+}

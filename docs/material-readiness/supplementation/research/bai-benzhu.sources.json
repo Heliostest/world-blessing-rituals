@@ -1,0 +1,58 @@
+{
+  "slug": "bai-benzhu",
+  "batchId": "C01",
+  "selectedDisplay": "洱源西湖白洁／柏洁夫人本主庙公开外围说明与独立原创花果摆放面板",
+  "sliceChangeReason": "原泛大理村庙需落实地方版本；县政府有直接西湖本主节说明，但未足以复原该庙供桌香炉。",
+  "recommendedStatus": "needs_research",
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [
+    "白洁庙供桌香炉实际材质部件及与入口和观者关系尚未核验",
+    "未找到该庙日常花果茶供献的直接出处；船上牲礼供桌不是可借用对象",
+    "县政府柏洁／白洁两种写法需核对庙额"
+  ],
+  "nextWriting": [
+    "寻找文物或村社标定庙身份的入口—供桌—香炉同框公开资料，补游客可站处与具体构造",
+    "核对庙额写法和花果茶直接出处，无法得到时仅保留明确原创面板"
+  ],
+  "semanticRationale": "已厘清西湖不同节期、地方对象及观察到的持盘图，但主要真实庙物及空间关键项仍须猜测；原创面板不能掩盖缺口。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "西湖本主节",
+      "institution": "洱源县人民政府",
+      "url": "https://www.eryuan.gov.cn/eyxrmzf/c102746/pc/content/1988831310452461568/content_1988831310452461568.html",
+      "accessedAt": "2026-10-04",
+      "locator": "概述、西湖节期、出湖迎本主、庙会祭祀、海灯会（web L27–51）；ot9z7K1F.jpg与TkbuD6RD.jpg已查看像素",
+      "claims": [
+        "地方本主柏洁／白洁夫人，七月初一节期",
+        "一般本主像木雕或泥塑，不能赋给该庙",
+        "泊岸沿垂柳岸路到庙，船上供桌属于七月十五",
+        "照片持盘筐与船队，不见庙内香炉供桌"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "本主节",
+      "institution": "大理白族自治州人民政府",
+      "url": "https://www.dali.gov.cn/dlzrmzf/c101707/pc/content/1968886683784024064/content_1968886683784024064.html",
+      "accessedAt": "2026-10-04",
+      "locator": "村社身份与节期、迎送段（web L47–49）",
+      "claims": [
+        "本主身份多样",
+        "有数村共奉",
+        "节期因地方对象不同"
+      ],
+      "verified": true
+    }
+  ]
+}

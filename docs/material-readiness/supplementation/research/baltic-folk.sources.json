@@ -1,0 +1,74 @@
+{
+  "slug": "baltic-folk",
+  "batchId": "C01",
+  "selectedDisplay": "Salakas 教堂右门廊壁龛保存的1876年 Jakiškiai 来源雕刻十字外观与独立原创彩巾小架致敬",
+  "sliceChangeReason": "国家文化中心田野记录提供特定工匠、原村落和迁移保存位置，替换未落实路旁造型；不伪造原址，把独立原创彩巾过程与文物观看分开，仍完整描述对象空间与起止。",
+  "recommendedStatus": "ready",
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：后续精绘或模型需核实隐藏锚固与图片授权；若扩大到真实婚礼彩巾供物或户外原址，需先重读 UNESCO／地方民族志。"
+  ],
+  "semanticRationale": "主要外观来自高分辨率现场照片观察，项目正文厘清来源与保存位置；不从未读 UNESCO 推定橡木、供物含义。独立 T 架布结起止完整，文物保持静止，范围改变有保护迁移依据。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Kryždirbystės tradicija Lietuvoje",
+      "institution": "Lietuvos nacionalinis kultūros centras",
+      "url": "https://kryzdirbysteskelias.lt/kryzdirbystes-tradicija-lietuvoje/",
+      "accessedAt": "2026-10-04",
+      "locator": "正文四段（web L22–25）",
+      "claims": [
+        "工艺、艺术、信仰结合",
+        "制作安置祝圣探访维护整体范围",
+        "2001与2008名录、文化身份"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Senieji kryžiai prie Salako Švč. Mergelės Marijos Sopulingosios bažnyčios",
+      "institution": "Lietuvos nacionalinis kultūros centras 田野项目",
+      "url": "https://kryzdirbysteskelias.lt/2020/11/19/senieji-kryziai-prie-salako-svc-mergeles-marijos-sopulingosios-baznycios/",
+      "accessedAt": "2026-10-04",
+      "locator": "Salakas 地点与两段正文（web L33–35），摄影2W7A0346-683x1024.jpg已查看像素",
+      "claims": [
+        "右壁龛一十字与一棚柱",
+        "1876年 Jonas Visockas 制作、原 Jakiškiai 村、1969迁入修复",
+        "木柱卷饰平台与保护栏龛壁外观可见；木种及隐藏锚固未知"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Apie projektą",
+      "institution": "立陶宛国家UNESCO委员会／文化研究机构／国家文化中心",
+      "url": "https://kryzdirbysteskelias.lt/about/",
+      "accessedAt": "2026-10-04",
+      "locator": "项目组织与2020田野说明、2023管理段（web L26–37）",
+      "claims": [
+        "机构田野记录的来源归属"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Cross-crafting and its symbolism",
+      "institution": "UNESCO",
+      "url": "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013",
+      "accessedAt": "2026-10-04",
+      "locator": "访问多次仅有人机验证页；PDF亦未读到",
+      "claims": [],
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "slug": "asturian-folk",
+  "title": "阿斯图里亚斯民间天主教与凯尔特余绪祈福（Asturian）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "科瓦东加现存 Santa Cueva 岩洞、小教堂与下方 Pozón 水池的静态公开外观介绍",
+  "baselineSelectedDisplay": "科瓦东加洞穴圣所公开外观介绍",
+  "sliceChangeReason": "保留原洞穴外观，仅明确现代洞内建筑及水池关系；未缩成一般地理卡。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：圣所自身正文确认现存时期、自然洞与下方Pozón及季节水量；但风格名不能作具体材料构件，当前入口阶梯护栏与观者位置未核实，objects/space仍1。静态sequence=null解释充分；画面季节性与原创配色、默认无声明确。未挪大圣殿粉红石材给洞穴小教堂，也未把旧木构当现状，范围边界来源对应清楚，保留待研究。",
+  "evidence": [
+    {
+      "file": "content/display-notes/asturian-folk.md",
+      "line": 17,
+      "quote": "小教堂“新罗马式”只是一种风格名",
+      "reason": "风格不替代主对象形制"
+    },
+    {
+      "file": "content/display-notes/asturian-folk.md",
+      "line": 23,
+      "quote": "Pozón 明确位于 Santa Cueva 下方",
+      "reason": "已核实的上下关系"
+    },
+    {
+      "file": "content/display-notes/asturian-folk.md",
+      "line": 31,
+      "quote": "sequence 可记 null，但不能借此评为整体 ready",
+      "reason": "静态范围与未通过区分"
+    }
+  ],
+  "gaps": [
+    "现存洞内小教堂外部墙、屋顶、护栏材质及洞壁支撑未核",
+    "洞口轮廓、当前阶梯和上部通道相对位置及外部观看点未核"
+  ],
+  "nextWriting": [
+    "取得官方现状外观照片/建筑记录补材料、开口、护栏与支撑",
+    "重试官方旅游正文或政府建筑资料核阶梯、上部通道与观看点"
+  ],
+  "sourceFiles": [
+    "content/traditions/asturian-folk.md",
+    "content/display-notes/asturian-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Santuario",
+      "institution": "Santuario de Covadonga",
+      "url": "https://santuariodecovadonga.es/santuario/",
+      "accessedAt": "2026-10-04",
+      "locator": "La Santa Cueva L47—55，Colegiata L59—62，Basílica L66—69；El Pozón 段经 Invoke-WebRequest 正文核验",
+      "claims": [
+        "1777 年火灾",
+        "现存洞内小教堂 1940 年代初及建筑师",
+        "1778 年圣母像捐赠",
+        "Pozón 在洞下、地下连通及雨/融雪季落水",
+        "历史回廊访问路径"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Covadonga espiritual: la Santina y el santuario",
+      "institution": "Turismo Asturias",
+      "url": "https://www.turismoasturias.es/covadonga/espiritual",
+      "accessedAt": "2026-10-04",
+      "locator": "正文未访问成功：web 超时、Invoke-WebRequest 连接关闭、curl 连接重置",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补现存洞穴圣所与季节水池关系；缺洞口礼拜建筑材料形制及游客通道，待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

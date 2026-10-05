@@ -1,0 +1,12 @@
+{
+  "slug":"bornholm-folk","batchId":"C01",
+  "selectedDisplay":"Østerlars 当代圆教堂入口侧、扶壁锥顶与独立钟楼的静态公开外观说明",
+  "sliceChangeReason":"保持原具体圆教堂外观，固定当代入口侧视图并排除动态礼仪。",
+  "recommendedStatus":"ready","dimensions":{"context":2,"objects":2,"space":2,"sequence":null,"sensory":2,"variants":2,"boundaries":2,"provenance":2},"gaps":[],
+  "nextWriting":["非阻断：精绘门与钟楼上层时另查材质；使用图片另核权限。"],
+  "sources":[
+    {"id":"S1","title":"Østerlars Kirke","institution":"Østerlars-Gudhjem 堂区","url":"https://www.oesterlarskirke.dk/","accessedAt":"2026-10-04","locator":"首页L32–36与L59–62日历","claims":["活态堂区身份","丘顶村北位置","10月4日旅游关闭，不能承诺开放"],"verified":true},
+    {"id":"S2","title":"Østerlars round church","institution":"Destination Bornholm","url":"https://bornholm.info/en/oesterlars-round-church/","accessedAt":"2026-10-04","locator":"历史、Knights Templar与Visit正文L63–69；页首照片实际查看像素","claims":["约年与奉献","后加屋顶","骑士团理论未证","照片中白圆厅、扶壁、门廊、钟楼、前景关系"],"verified":true},
+    {"id":"S3","title":"Kirkens historie","institution":"Østerlars-Gudhjem 堂区","url":"https://www.oesterlarskirke.dk/om-kirken/default-00793d1c32","accessedAt":"2026-10-04","locator":"L37、L40–42（Taget、Kirkeklokkerne）","claims":["大石砌造","1744橡木屋架、涂焦油橡木瓦","独立钟楼"],"verified":true}
+  ]
+}

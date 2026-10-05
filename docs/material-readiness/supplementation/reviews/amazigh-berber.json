@@ -1,0 +1,118 @@
+{
+  "slug": "amazigh-berber",
+  "title": "阿马齐格／柏柏尔（Amazigh / Berber）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "圆顶小祠点烛留布致敬研究稿（阿马齐格具名社区/器型/公开姿态未完成核验）",
+  "baselineSelectedDisplay": "圆顶小祠点烛留布致敬",
+  "sliceChangeReason": "未以无依据的地方替换基线；发现Bouya Omar圆顶建筑与Sidi Chamharouch岩石圣地不可混并，保留研究稿。",
+  "readiness": "scope_blocked",
+  "workflowStatus": "scope_blocked",
+  "narrativeReady": false,
+  "dimensions": {
+    "context": 1,
+    "objects": 1,
+    "space": 1,
+    "sequence": 2,
+    "sensory": 1,
+    "variants": 1,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：原POP地图链接已核实为无关来源并排除；学术目录及转载读取范围认真记录，但具名阿马齐格社区、圆顶小祠和公开点烛系布无法接合，文化切片归属阻断，readiness与workflow为scope_blocked，narrativeReady=false。原创陶盘留言带虽有起止，不证明真实场景；盖墓布、圆顶陵与白岩洞不得跨地点拼合。保存来源审查和草稿，不计完成。",
+  "evidence": [
+    {
+      "file": "content/display-notes/amazigh-berber.md",
+      "line": 6,
+      "quote": "不能证明阿马齐格祠、蜡烛或布条",
+      "reason": "核验排除错误来源"
+    },
+    {
+      "file": "content/display-notes/amazigh-berber.md",
+      "line": 11,
+      "quote": "不是证实游客把窄布条系到祠外",
+      "reason": "核心动作证据不成立"
+    },
+    {
+      "file": "content/display-notes/amazigh-berber.md",
+      "line": 15,
+      "quote": "不能把两处的圆顶、墓体、洞口和香烛拼接",
+      "reason": "跨地点结构冲突"
+    }
+  ],
+  "gaps": [
+    "具名阿马齐格社区及圆顶圣地未选定。",
+    "点烛／系窄布条与盖墓布不同，所选地点公开姿态及节点缺直接来源。",
+    "祠体材料构架与公开入口/观看位置缺一手记录。",
+    "原始论文相关正文未成功核验，转载需与原刊对照。"
+  ],
+  "nextWriting": [
+    "优先IRCAM西部Anti-Atlas具名圣地研究，获取公开外观形制并分别核验点烛和系布；排除原卡POP错误链接。"
+  ],
+  "sourceFiles": [
+    "content/traditions/amazigh-berber.md",
+    "content/display-notes/amazigh-berber.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Carte de Camargue, Crau et Petite Camargue（M0903002336）",
+      "institution": "法国文化部POP／Arles卡马格博物馆",
+      "url": "https://pop.culture.gouv.fr/notice/joconde/M0903002336",
+      "accessedAt": "2026-10-04",
+      "locator": "titre、inventaire83011552、plaque de verre、sujet Camargue字段",
+      "claims": [
+        "原卡引用实际为法国卡马格地图玻璃负片，与本切片无关，排除"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Altérités volume6 numéro2, 2009（目录）",
+      "institution": "蒙特利尔大学人类学系",
+      "url": "https://anthropo.umontreal.ca/public/FAS/anthropologie/Documents/5-Departement/Alterites/ALTERITES-vol_6_n_2.pdf",
+      "accessedAt": "2026-10-04",
+      "locator": "首页与Sommaire目录Aufauvre条目；正文重取timeout",
+      "claims": [
+        "确认Céline Aufauvre文章作者、题名与研究两个圣地"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Sainteté et exorcisme à Bouya Omar et Sidi Chamharouch（Aufauvre原始民族志转载）",
+      "institution": "原作者Céline Aufauvre；转载站Anthropos.hira，原论文机构为Centre Jacques Berque／LESC",
+      "url": "https://anthropohira.wordpress.com/2012/09/23/saintete-et-exorcisme-a-bouya-omar-et-sidi-chamharouch-%D8%A7%D9%84%D9%82%D8%AF%D8%A7%D8%B3%D8%A9-%D9%88%D8%B7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A7%D8%B1%D9%88%D8%A7%D8%AD-%D8%A7%D9%84%D8%B4%D8%B1%D9%8A/",
+      "accessedAt": "2026-10-04",
+      "locator": "Entre les rives段；En partant段；Le tombeau段",
+      "claims": [
+        "转载文字区分圆顶陵寝与白色岩石/洞穴圣地",
+        "覆盖墓体织物不等于游客系窄布条；仅线索，原刊一致性待查"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Saints et sanctuaires de l’Anti-Atlas occidental. Apports et perceptions",
+      "institution": "IRCAM",
+      "url": "https://www.ircam.ma/index.php/fr/activites/ev/Saints-et-sanctuaires-de-l%E2%80%99Anti-Atlas-occidental.-Apports-et-perceptions-2023",
+      "accessedAt": "2026-10-04",
+      "locator": "多次正文访问timeout；未以摘要证明事实",
+      "claims": [],
+      "verified": false
+    },
+    {
+      "id": "U2",
+      "title": "Taskiwin martial dance of the western High Atlas",
+      "institution": "UNESCO",
+      "url": "https://ich.unesco.org/en/USL/taskiwin-martial-dance-of-the-western-high-atlas-01256",
+      "accessedAt": "2026-10-04",
+      "locator": "人机验证页，未读正文，且不对应选定祠体",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已排除POP法国地图误引，保存民族志转载线索与原创草稿；社区祠体及点烛系布未接合，待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

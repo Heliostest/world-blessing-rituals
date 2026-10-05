@@ -1,0 +1,102 @@
+{
+  "slug": "andorran-folk",
+  "title": "安道尔民间天主教与山地朝圣祈福（Andorran）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "卡尼略 Meritxell 1976 年新圣殿的静态公开外观与南北庭院关系说明",
+  "baselineSelectedDisplay": "Meritxell圣殿公开外观介绍",
+  "sliceChangeReason": "原外观范围未区分新旧堂；以官方建筑导览明确选择新圣殿，保留静态建筑教育范围。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：卡尼略新圣殿及1976版本明确；黑片岩、白预制拱、铜带方塔可绘，主体与南回廊北庭院位置明确。散射日光和纹理简化标为原创，静态sequence=null没有冒称动态朝圣齐备；新旧堂与未建规划区别清楚，公开观者和礼仪边界一致，三机构来源逐主张对应。",
+  "evidence": [
+    {
+      "file": "content/display-notes/andorran-folk.md",
+      "line": 15,
+      "quote": "新堂外表采用黑色片岩及白色预制构件",
+      "reason": "核心表面材料有官方导览依据"
+    },
+    {
+      "file": "content/display-notes/andorran-folk.md",
+      "line": 21,
+      "quote": "南侧是带肋拱顶的回廊，北侧是庭院",
+      "reason": "南北空间可据此绘制"
+    },
+    {
+      "file": "content/display-notes/andorran-folk.md",
+      "line": 27,
+      "quote": "本项 sequence 记 null",
+      "reason": "静态范围解释真实存在"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "若扩展动态访问路径，另核入口与地面；照片再使用前另核授权。"
+  ],
+  "sourceFiles": [
+    "content/traditions/andorran-folk.md",
+    "content/display-notes/andorran-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Sanctuary of Meritxell",
+      "institution": "Govern d’Andorra / Àrea de Museus",
+      "url": "https://museus.ad/en/monumentos/sanctuary-of-meritxell",
+      "accessedAt": "2026-10-04",
+      "locator": "首段、Location、宗教活动调整时间、Carillon 段",
+      "claims": [
+        "卡尼略 Meritxell 地点",
+        "1972 年火灾与 1976 年新堂",
+        "旧堂 1994 年转为记忆展示",
+        "钟声记忆背景"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Historic Ensemble of Meritxell",
+      "institution": "Departament de Patrimoni Cultural / Àrea de Museus, Govern d’Andorra",
+      "url": "https://museus.ad/es/media/files/publicacions/meritxell_eng.pdf",
+      "accessedAt": "2026-10-04",
+      "locator": "PDF 第 7—10、14 页；文本 L19—80，已读相关章节；截图服务超时不作视觉观察",
+      "claims": [
+        "已建规划范围",
+        "希腊十字主体与方后殿、筒拱",
+        "北庭院南回廊",
+        "黑片岩白预制件与白半圆拱",
+        "方塔铜带及未变绿说明",
+        "旧堂建筑区别"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "L’aplec de la Mare de Déu de Meritxell",
+      "institution": "Govern d’Andorra",
+      "url": "https://www.govern.ad/ca/tematiques/cultura-i-esports/patrimoni-cultural/que-es-el-patrimoni-immaterial/les-festes-d-interes-cultural/l-aplec-de-la-mare-de-deu-de-meritxell",
+      "accessedAt": "2026-10-04",
+      "locator": "Introducció L8—10 全段",
+      "claims": [
+        "9 月 8 日国家节日",
+        "国家认同意义",
+        "宗教与家庭活动区分"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补新堂材料部件、南北庭院、静态声画与新旧版本区别；主审通过静态建筑切片。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

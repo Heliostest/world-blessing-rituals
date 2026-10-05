@@ -1,0 +1,100 @@
+{
+  "slug": "akha-traditional",
+  "title": "阿卡族传统信仰与秋千节祈福（Akha）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "Ban Phahee 2025公共秋千节背景与四杆式外观上色致敬研究稿（地方器型待接合）",
+  "baselineSelectedDisplay": "清莱秋千外观上色致敬",
+  "sliceChangeReason": "基线清莱未指村落；锁定官方公告的Ban Phahee，但不能将机构泛泰国器型强行归入该村。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": 2,
+    "sensory": 1,
+    "variants": 1,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：具名活动及一般四杆型有真实机构资料，来源限度认真区分；但Ban Phahee实际是否使用该器型、绳环座板和杆脚场地仍需猜测，objects/space/variants不能为2。原创描边起止可执行、默认无音轨及建造禁区明确，不弥补文化对象缺证。不计完成。",
+  "evidence": [
+    {
+      "file": "content/display-notes/akha-traditional.md",
+      "line": 3,
+      "quote": "不宣称 SAC 的一般器型已证明就是该村 2025 构架",
+      "reason": "具体村与类型尚不能接合"
+    },
+    {
+      "file": "content/display-notes/akha-traditional.md",
+      "line": 11,
+      "quote": "村落实际是否有木轭、环／板形式尚待核验",
+      "reason": "主对象关键形制缺口"
+    },
+    {
+      "file": "content/display-notes/akha-traditional.md",
+      "line": 13,
+      "quote": "S1 只证明 Ban Phahee 有村秋千场",
+      "reason": "场地空间仍不足"
+    }
+  ],
+  "gaps": [
+    "Ban Phahee具名秋千构架未有同次活动一手外观记录，SAC类型不能直接归属该村。",
+    "具体杆脚、绳端或座板与房屋/山坡的布局未核验。"
+  ],
+  "nextWriting": [
+    "核验Ban Phahee村社或活动原始照片/说明，把类型结构与具名社区接合后复评。"
+  ],
+  "sourceFiles": [
+    "content/traditions/akha-traditional.md",
+    "content/display-notes/akha-traditional.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Akha Swing Festival 2025 Celebrates Hill Tribe Traditions in Chiang Rai",
+      "institution": "Tourism Authority of Thailand",
+      "url": "https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/",
+      "accessedAt": "2026-10-04",
+      "locator": "Ban Phahee段与Ban Pha Mee段",
+      "claims": [
+        "Ban Phahee 2025-09-04至08公开活动在村秋千场",
+        "清莱多村版本"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Lo Chingcha / Swing Festival",
+      "institution": "Sirindhorn Anthropology Centre（作者Thanwadee Sookprasert）",
+      "url": "https://rituals.sac.or.th/en/detail.php?id=7",
+      "accessedAt": "2026-10-04",
+      "locator": "四杆型、水轮型、儿童型段；节末段；记录location为空",
+      "claims": [
+        "四长树干上端束拢，藤绳环",
+        "三类秋千",
+        "节末绳处理的机构版本"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "The Akha Swing Festival, a.k.a. Women’s New Year",
+      "institution": "Jim Goodman作者自己的亲历研究／摄影写作网站",
+      "url": "https://blackeagleflights.blogspot.com/2014/07/the-akha-swing-festival-aka-womens-new.html",
+      "accessedAt": "2026-10-04",
+      "locator": "four poles/yoke段；首段村落开放空间；节末段",
+      "claims": [
+        "作者亲历四杆、木轭、中央长绳和环口",
+        "一般村落开放空间位置",
+        "节末取下绳的目击版本"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已读活动公告、机构类型和作者目击，保存结构对照及原创上色起止；缺具名村构架及场地证据，待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

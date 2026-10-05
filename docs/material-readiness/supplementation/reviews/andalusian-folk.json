@@ -1,0 +1,102 @@
+{
+  "slug": "andalusian-folk",
+  "title": "安达卢西亚民间天主教与罗马里亚朝圣祈福（Andalusian）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "塞维利亚复活兄弟会基督 Paso 的现代公开沿街观礼段与器物说明",
+  "baselineSelectedDisplay": "安达卢西亚圣周 Paso 游行的公共观礼介绍",
+  "sliceChangeReason": "原圣周 Paso 切片未定城市兄弟会；组织者器物、圣像及路线资料支持明确基督台实例。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：塞维利亚复活主日与具体兄弟会基督台明确。雪松框八梁、透空饰板红绒裙、固定木像和烛架结构均有组织者记录；台下承重者、侧观者、后方乐队关系可画。进入—整体经过—完全出画明确局部起止并与真实归返分开，不示抬运训练；材料视觉具体，音乐机构只作为文化事实而不假造音轨。所选当前基督台区别圣母华盖，年份矛盾已排除且无主要器型阻断，来源主张对应完整。",
+  "evidence": [
+    {
+      "file": "content/display-notes/andalusian-folk.md",
+      "line": 13,
+      "quote": "下部 parihuela 是雪松木承重框，八根 trabajaderas 横向承重梁",
+      "reason": "承重材质与部件关系具体"
+    },
+    {
+      "file": "content/display-notes/andalusian-folk.md",
+      "line": 31,
+      "quote": "圣像相对台座固定",
+      "reason": "避免误将雕塑动势动画化"
+    },
+    {
+      "file": "content/display-notes/andalusian-folk.md",
+      "line": 33,
+      "quote": "台体从另一侧完全出画",
+      "reason": "局部公共观察过程有终态"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "如做修复年表，核对官方两页角饰年份与鎏金作者差异；实际音乐、会徽和照片另核权利，当年路线另核。"
+  ],
+  "sourceFiles": [
+    "content/traditions/andalusian-folk.md",
+    "content/display-notes/andalusian-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Pasos",
+      "institution": "Hermandad de la Resurrección, Sevilla",
+      "url": "https://www.hermandaddelaresurreccion.com/pasos/",
+      "accessedAt": "2026-10-04",
+      "locator": "Paso de Cristo L34—40 全段；对照 Paso de Palio L45—65",
+      "claims": [
+        "雪松台架",
+        "八根 trabajaderas 每梁五人",
+        "透空植物纹面板、曲线饰带及鎏金",
+        "侧柄色与烛架数量",
+        "基督台与华盖台区分"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Sagrada Resurrección",
+      "institution": "Hermandad de la Resurrección, Sevilla",
+      "url": "https://www.hermandaddelaresurreccion.com/sagrada-resurreccion/",
+      "accessedAt": "2026-10-04",
+      "locator": "L33—48 形象、材质、首次游行及修复全文",
+      "claims": [
+        "pino de Flandes 木像",
+        "裹尸布下垂及视觉上升姿态",
+        "1973 年首次复活主日游行",
+        "隐藏不锈钢固定螺栓"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Ficha Cofradia",
+      "institution": "Hermandad de la Resurrección, Sevilla",
+      "url": "https://www.hermandaddelaresurreccion.com/ficha-cofradia/",
+      "accessedAt": "2026-10-04",
+      "locator": "Sede L36—38；Pasos L70—74；音乐与路线 L76—84",
+      "claims": [
+        "Santa Marina 驻地",
+        "酒红天鹅绒裙边",
+        "两台音乐区分",
+        "San Luis 等公开街道及归返路线；年度不明确"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补具名Paso雪松框、固定木像、红绒裙及侧边观看—经过—离开过程；主审通过公共观礼切片。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

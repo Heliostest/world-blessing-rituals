@@ -1,0 +1,106 @@
+{
+  "slug": "abruzzese-folk",
+  "title": "阿布鲁佐民间天主教与朝圣祈福（Abruzzese）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "Isola del Gran Sasso 的 San Gabriele 旧圣殿1929年立面静态外观介绍",
+  "baselineSelectedDisplay": "阿布鲁佐山村教堂公共朝圣外观",
+  "sliceChangeReason": "基线未指定教堂；选圣所公开自述及原始1929报道覆盖的具名立面，分清新旧殿。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：未具名山村落实San Gabriele旧殿1929立面，文化部及圣所原始报道支撑，花岗岩柱廊、洞石面、红大理石小柱与胡桃门具体，台阶前廊主门上敞廊的深度可画。配色与背景明确原创，非礼拜公众外观限定与原许可一致，静态sequence=null没有宣称动态拜访齐备；新旧殿区别、图像主题、图片边界与事实来源对应完整。历史报道的年代限度未伪作当代测绘。",
+  "evidence": [
+    {
+      "file": "content/display-notes/abruzzese-folk.md",
+      "line": 9,
+      "quote": "高台阶上为红色 Baveno 花岗岩柱廊",
+      "reason": "主要结构材质有原始报道"
+    },
+    {
+      "file": "content/display-notes/abruzzese-folk.md",
+      "line": 14,
+      "quote": "观者前方地面→台阶→柱廊→柱后门面→上方敞廊／山花",
+      "reason": "空间层次可绘"
+    },
+    {
+      "file": "content/display-notes/abruzzese-folk.md",
+      "line": 17,
+      "quote": "本切片是静态图文，sequence 合理不适用（null）",
+      "reason": "静态而非动态拜访结论"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "后续若精细绘制雕像马赛克或加入访客运动，另核验图片权限、当代修复状况与准入；静态sequence不适用。"
+  ],
+  "sourceFiles": [
+    "content/traditions/abruzzese-folk.md",
+    "content/display-notes/abruzzese-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Santuario di San Gabriele dell’Addolorata",
+      "institution": "意大利文化部",
+      "url": "https://cultura.gov.it/luogo/santuario-di-san-gabriele-dell-addolorata",
+      "accessedAt": "2026-10-04",
+      "locator": "Descrizione 首三段",
+      "claims": [
+        "Isola del Gran Sasso地点",
+        "两座圣殿",
+        "朝圣与圣人生前生活/安葬联系"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "L’antica Basilica",
+      "institution": "Santuario di San Gabriele",
+      "url": "https://www.sangabriele.org/lantica-basilica/",
+      "accessedAt": "2026-10-04",
+      "locator": "Facciata esterna",
+      "claims": [
+        "1929立面",
+        "五尊雕像及三幅马赛克"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "La facciata dell’antica Basilica",
+      "institution": "San Gabriele圣所重刊P. Verrua《L’Eco di San Gabriele》1929-08-25原始报道",
+      "url": "https://www.sangabriele.org/la-facciata-dellantica-basilica/",
+      "accessedAt": "2026-10-04",
+      "locator": "Sull’alta scalinata段；loggetta段；travertino材料段及noce门段",
+      "claims": [
+        "台阶柱廊主门上层关系",
+        "花岗岩/洞石/大理石/胡桃木门材料"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "San Gabriele repair project PDF",
+      "institution": "意大利文化部／重建专员机构",
+      "url": "https://sisma2016.gov.it/wp-content/uploads/2023/02/AU-San-Gabriele.pdf",
+      "accessedAt": "2026-10-04",
+      "locator": "首页可读；后续正文timeout，未用于主张",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已具名旧殿，补石材木门、柱廊台阶上层关系和静态读图范围；主审通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

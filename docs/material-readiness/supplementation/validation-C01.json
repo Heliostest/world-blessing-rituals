@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-04",
+  "batchId": "C01",
+  "structuralValidation": "passed",
+  "semanticValidation": "20项由主代理实际阅读后逐项决策；结构脚本不替代语义判定。",
+  "processed": 20,
+  "newlyReady": 12,
+  "needsResearch": 7,
+  "scopeBlocked": 1,
+  "notes": 20,
+  "reviews": 20,
+  "researchRecords": 20,
+  "validNewEvidenceQuotes": 60,
+  "verifiedSourceUrls": 55,
+  "ledgerUnits": 506,
+  "baselineReady": 3,
+  "totalReady": 15,
+  "remainingNotReady": 491,
+  "baselineSnapshotFilesHashUnchanged": 39,
+  "traditionCardsHashUnchanged": 726,
+  "gitDiffCheck": "passed",
+  "nextAction": {
+    "batchId": "C02",
+    "slug": "breton-pardons",
+    "instruction": "优先续接本批 researching/drafted，再处理 pending；needs_research/scope_blocked 不计完成，留待新增证据。"
+  },
+  "limits": "文字齐备性，非模型实现、上线许可或图片音频授权；8项未通过均不计完成。"
+}

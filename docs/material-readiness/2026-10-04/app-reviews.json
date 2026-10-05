@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "app-celtic-folk-spring", "title": "泉边一念（App 已接入体验）", "grade": "seed", "batchId": "S01",
+    "selectedDisplay": "虚拟泉边投放无面值信物并在木牌留短愿的原创体验；不做古代礼仪复原",
+    "readiness": "partial", "narrativeReady": true,
+    "dimensions": {"context": 1, "objects": 1, "space": 1, "sequence": 1, "sensory": 1, "variants": 1, "boundaries": 2, "provenance": 1},
+    "evidence": [
+      {"file": "content/traditions/celtic-folk.md", "line": 47, "quote": "拖一枚无面值信物轻轻放入水中（非文物复制）", "reason": "明确动作对象及原创资格，未说明信物形制、入水与终态。"},
+      {"file": "content/traditions/celtic-folk.md", "line": 48, "quote": "在木牌上写短句愿望", "reason": "已有木牌对象但摆放或悬挂位置不明。"},
+      {"file": "content/traditions/celtic-folk.md", "line": 44, "quote": "非古代复原礼", "reason": "改编边界明确，不需要补德鲁伊主持流程。"}
+    ],
+    "gaps": ["古代水边奉献与后世布条圣井在一张卡中，原创泉边切片的文化参照未单列。", "泉池边缘、信物材质轮廓、木牌位置和入水后的运动／保留状态没有足够文字。", "投物与木牌设计属于原创，现有参考列表未逐项对应具体文化陈述。"],
+    "nextWriting": ["单列泉边原创体验的文化说明：区分古代水边器物奉献、后世 clootie 民俗和本产品投放信物＋木牌，不将三者称为同一真实仪轨。", "补泉面与岸边、信物及木牌的空间和材质文字；写出停驻—放物—入水变化—留愿—结束，不必指定代码实现。", "给选定的文化参照配对应来源，配色、波纹与纪念物保留方式明确写为产品决定。"],
+    "sourceFiles": ["content/traditions/celtic-folk.md", "specs/2026-09-20-daily-micro-rituals-candidates.md"]
+  },
+  {
+    "slug": "app-theravada-water", "title": "花水位一倾（App 已接入体验）", "grade": "seed", "batchId": "S01",
+    "selectedDisplay": "宋干公开浴佛意象改编的香花水倾注与合掌片段；不混浇水回向、供衣或授戒",
+    "readiness": "partial", "narrativeReady": true,
+    "dimensions": {"context": 2, "objects": 1, "space": 1, "sequence": 1, "sensory": 1, "variants": 1, "boundaries": 2, "provenance": 1},
+    "evidence": [
+      {"file": "content/traditions/theravada-buddhism.md", "line": 47, "quote": "浴佛／浇佛以净水香花浇灌佛像表恭敬", "reason": "公开浴佛范围明确；不采用同卡其他礼仪。"},
+      {"file": "content/traditions/theravada-buddhism.md", "line": 50, "quote": "拖拽倾斜水瓶，让清水轻轻浇过佛像表面", "reason": "有瓶、佛像与倾注关系，但器型、佛像姿态及承水位置没有文字。"},
+      {"file": "content/traditions/theravada-buddhism.md", "line": 51, "quote": "点选一朵花瓣放入水中", "reason": "拟动作中的水指瓶水、佛像承水还是独立水面不明确。"}
+    ],
+    "gaps": ["佛像、瓶和承水器的材料、姿态、位置及选用地区实例未写。", "花瓣置入何处与倾注的先后、液体流向及停止／完成状态有歧义。", "现有 Songkran 来源是列表，未对应器型和过程中的事实主张。"],
+    "nextWriting": ["选定一个宋干公开浴佛参照，补佛像姿态、倾水器、接水位置、花瓣与水流的文字关系；不索取授戒或供衣主持脚本。", "写清水从哪里流到哪里、花瓣放置时点、倾注停止和合掌结束的状态，原创演出部分与传统描述分栏说明。", "把宋干浴佛事实和器物依据逐条关联来源，避免将 Grot Nam 浇水回向解释成同一动作。"],
+    "sourceFiles": ["content/traditions/theravada-buddhism.md"]
+  },
+  {
+    "slug": "app-tanzaku-tanabata", "title": "短册系竹（App 已接入体验）", "grade": "seed", "batchId": "S01",
+    "selectedDisplay": "以仙台七夕纸短册为文化说明参照，写短愿并系于笹竹的原创片段",
+    "readiness": "partial", "narrativeReady": true,
+    "dimensions": {"context": 2, "objects": 1, "space": 1, "sequence": 1, "sensory": 0, "variants": 2, "boundaries": 2, "provenance": 2},
+    "evidence": [
+      {"file": "specs/2026-09-21-daily-micro-rituals-candidates-b2.md", "line": 196, "quote": "色纸短册书愿，系于笹／竹", "reason": "已有纸材和竹笹关系，并明确政府及仙台节庆资料对应背景。"},
+      {"file": "specs/2026-09-21-daily-micro-rituals-candidates-b2.md", "line": 198, "quote": "写短愿→系绳挂笹", "reason": "有动作链，纸形、穿系位置、绳结及挂好后状态不足。"},
+      {"file": "specs/2026-09-21-daily-micro-rituals-candidates-b2.md", "line": 200, "quote": "选色纸→书一行→挂上夜空笹林", "reason": "拟舞台与顺序可理解，竹枝位置和局部运动仍未描述。"}
+    ],
+    "gaps": ["色纸短册轮廓、书写面、系绳连接和竹枝悬挂位置尚未用文字确定。", "只有选纸—写字—悬挂摘要，没有挂接与收尾的可见状态，也未说明是否风动。", "产品引用 shinto 元数据并不替代短册工艺与仙台岁时资料，需单独维护依据。"],
+    "nextWriting": ["补短册的长短比例、纸面及孔／系绳选型、竹枝形态与牌面朝向，未考据比例标为原创决定。", "按选纸、书愿、挂接、完成后停驻／轻摆写状态文字，并独立引用七夕／仙台资料，避免从神道卡推导所有短册习俗。"],
+    "sourceFiles": ["specs/2026-09-21-daily-micro-rituals-candidates-b2.md", "packages/app/src/scene-library.tsx"]
+  },
+  {
+    "slug": "app-yeondeunghoe", "title": "燃灯上浮（App 已接入体验）", "grade": "seed", "batchId": "S01",
+    "selectedDisplay": "韩国燃灯会公开莲灯制作／点亮意象；上浮是否为原创演出待说明",
+    "readiness": "scope_blocked", "narrativeReady": true,
+    "dimensions": {"context": 1, "objects": 1, "space": 1, "sequence": 1, "sensory": 1, "variants": 1, "boundaries": 1, "provenance": 1},
+    "evidence": [
+      {"file": "specs/2026-09-20-daily-micro-rituals-candidates.md", "line": 308, "quote": "莲形灯笼；制作、提灯、点亮", "reason": "现有文化研究支持莲灯、提灯与点亮，没有给出上浮过程。"},
+      {"file": "packages/app/src/scene-library.tsx", "line": 70, "quote": "traditionSlug: \"won-buddhism\"", "reason": "产品关联圆佛教卡，但该卡介绍一圆相、四恩与周日法会，未提供燃灯会归属依据。"},
+      {"file": "content/traditions/won-buddhism.md", "line": 43, "quote": "一圆相静心适合手机致敬小品", "reason": "圆佛教卡允许的切片为一圆相静心，不能据此替燃灯会材料背书。"},
+      {"file": "specs/2026-09-20-daily-micro-rituals-candidates.md", "line": 310, "quote": "组装莲灯→点亮加入灯海", "reason": "研究中的原创演出方向与产品标题上浮尚未对齐。"}
+    ],
+    "gaps": ["燃灯会与圆佛教卡的关联没有仓库依据；上浮标题也未声明为原创灯海演出或实际放飞。", "莲灯骨架、罩面、莲瓣结构、连接以及灯海中的位置与运动未描述。"],
+    "nextWriting": ["先单列韩国燃灯会公开节庆资料，明确不以圆佛教卡作为该体验依据；补说明上浮是原创视觉演出还是具名文化动作，当前文字不支持真实放飞归属。", "范围定好后补莲灯材料部件、制作／点亮的起止状态、灯海排列与运动；逐主张关联已有 UNESCO 研究线索，不把游行缩为真实礼仪通关。"],
+    "sourceFiles": ["specs/2026-09-20-daily-micro-rituals-candidates.md", "packages/app/src/scene-library.tsx", "content/traditions/won-buddhism.md"]
+  },
+  {
+    "slug": "app-furin-wind-chime", "title": "风铃一响（App 已接入体验）", "grade": "seed", "batchId": "S01",
+    "selectedDisplay": "江户玻璃风铃的夏日静听意象与下系纸短册；不作风铎历史复原或驱邪仪轨",
+    "readiness": "partial", "narrativeReady": true,
+    "dimensions": {"context": 2, "objects": 1, "space": 1, "sequence": 1, "sensory": 1, "variants": 2, "boundaries": 2, "provenance": 2},
+    "evidence": [
+      {"file": "specs/2026-09-20-daily-micro-rituals-candidates.md", "line": 193, "quote": "铃身＋纸短册；风动或轻触发声", "reason": "已有部件与动因，但铃舌、系线与碰撞位置未用文字写清。"},
+      {"file": "specs/2026-09-21-daily-micro-rituals-candidates-b2.md", "line": 236, "quote": "政府刊物详述江户玻璃风铃工艺", "reason": "有明确指向江户玻璃切片的工艺来源说明；本次不重新验证外网。"},
+      {"file": "specs/2026-09-20-daily-micro-rituals-candidates.md", "line": 200, "quote": "风铎→风铃演变的博物馆一级英文专条", "reason": "演变史仍标待核实，但现代工艺切片可避开该起源主张。"}
+    ],
+    "gaps": ["江户玻璃铃身形状、铃舌与系线／纸短册的部件关系未具体描述。", "挂在哪里、风如何作用于短册、碰撞发声后怎样停稳只有摘要；神道卡不提供这些形制细节。", "已有简介仍带风铎演变叙述，开发说明应避开未核实起源扩大表述。"],
+    "nextWriting": ["围绕选定江户玻璃风铃补文字剖面关系：铃身开口、铃舌、线和纸短册的连接、悬挂点及观看位置；未考据细节标为产品选择。", "写风动／轻触—短册带动—铃内碰撞—轻响—衰减停稳的状态描述和玻璃音色方向，无需准备实际音频文件。", "文化介绍先限当代夏日工艺与美学，风铎起源史保留待核实，来源对应到已有政府刊物线索。"],
+    "sourceFiles": ["specs/2026-09-20-daily-micro-rituals-candidates.md", "specs/2026-09-21-daily-micro-rituals-candidates-b2.md", "packages/app/src/scene-library.tsx"]
+  }
+]

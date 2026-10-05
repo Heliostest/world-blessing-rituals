@@ -1,0 +1,14 @@
+{
+  "slug":"andalusian-folk","batchId":"C01",
+  "selectedDisplay":"塞维利亚复活兄弟会基督 Paso 的现代公开沿街观礼段与器物说明",
+  "sliceChangeReason":"原圣周 Paso 切片未定城市兄弟会；组织者器物、圣像及路线资料支持明确基督台实例。",
+  "recommendedStatus":"ready",
+  "dimensions":{"context":2,"objects":2,"space":2,"sequence":2,"sensory":2,"variants":2,"boundaries":2,"provenance":2},
+  "gaps":[],"nextWriting":["如做修复年表，核对官方两页角饰年份与鎏金作者差异；实际音乐、会徽和照片另核权利，当年路线另核。"],
+  "semanticRationale":"明确木台架、承重横梁与人、鎏金雕饰、红绒裙、固定木像及后随乐队；过程为有起止的固定街边观察段，未模拟真实抬运操作。",
+  "sources":[
+    {"id":"S1","title":"Pasos","institution":"Hermandad de la Resurrección, Sevilla","url":"https://www.hermandaddelaresurreccion.com/pasos/","accessedAt":"2026-10-04","locator":"Paso de Cristo L34—40 全段；对照 Paso de Palio L45—65","claims":["雪松台架","八根 trabajaderas 每梁五人","透空植物纹面板、曲线饰带及鎏金","侧柄色与烛架数量","基督台与华盖台区分"],"verified":true},
+    {"id":"S2","title":"Sagrada Resurrección","institution":"Hermandad de la Resurrección, Sevilla","url":"https://www.hermandaddelaresurreccion.com/sagrada-resurreccion/","accessedAt":"2026-10-04","locator":"L33—48 形象、材质、首次游行及修复全文","claims":["pino de Flandes 木像","裹尸布下垂及视觉上升姿态","1973 年首次复活主日游行","隐藏不锈钢固定螺栓"],"verified":true},
+    {"id":"S3","title":"Ficha Cofradia","institution":"Hermandad de la Resurrección, Sevilla","url":"https://www.hermandaddelaresurreccion.com/ficha-cofradia/","accessedAt":"2026-10-04","locator":"Sede L36—38；Pasos L70—74；音乐与路线 L76—84","claims":["Santa Marina 驻地","酒红天鹅绒裙边","两台音乐区分","San Luis 等公开街道及归返路线；年度不明确"],"verified":true}
+  ]
+}

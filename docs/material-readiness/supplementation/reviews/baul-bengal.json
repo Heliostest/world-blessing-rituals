@@ -1,0 +1,119 @@
+{
+  "slug": "baul-bengal",
+  "title": "孟加拉鲍尔／行吟密契传统（Baul）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "Baul公开器物文化介绍、Met Gopīyantra 89.4.233外观与独立原创拨弦句子卡",
+  "baselineSelectedDisplay": "公开Baul行吟乐器与原创歌词卡致敬",
+  "sliceChangeReason": "基线公开器物加原创歌词卡保留；用具名馆藏固定器型，未核Kenduli舞台不复建，原创句子不称真实歌词。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：官方档案与实践者自述界定Baul跨境及当代公开背景，馆藏木皮双侧臂单弦器有原始元数据和实际像素。产地不确定、黑白色、尺寸矛盾与隐藏锚点不伪造；所选外观无需施工内部参数。原创底座后撑及卡槽、左右前后面板空间可绘，示意弦从偏离释放衰减到静直与卡入槽、退出重入终态清楚。没有删成一句介绍；真实演奏／Kenduli现场不冒称齐备，音像边界和器型差异明确。限定器物加原创句子卡通过。",
+  "evidence": [
+    {
+      "file": "content/display-notes/baul-bengal.md",
+      "line": 16,
+      "quote": "两条细长侧臂从共鸣体外侧向上收拢",
+      "reason": "实物部件关系实际观察"
+    },
+    {
+      "file": "content/display-notes/baul-bengal.md",
+      "line": 24,
+      "quote": "左前为同器型拨弦示意，右前平放空卡",
+      "reason": "观者空间与对象位置具体"
+    },
+    {
+      "file": "content/display-notes/baul-bengal.md",
+      "line": 32,
+      "quote": "弦停止回到静直；卡下缘插入右后木槽",
+      "reason": "过程终止状态明确"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：制作明标馆藏参照的说明图并保留音景限度；若扩大至真实Kenduli场地则另查现场与授权。"
+  ],
+  "sourceFiles": [
+    "content/traditions/baul-bengal.md",
+    "content/display-notes/baul-bengal.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Baul Songs",
+      "institution": "UNESCO Multimedia Archives／Bangladesh National Commission for UNESCO",
+      "url": "https://www.unesco.org/archives/multimedia/document-612",
+      "accessedAt": "2026-10-04",
+      "locator": "地域正文L59、Publisher/2005 L84-85、在线限制L60与Rights字段；未观看全片",
+      "claims": [
+        "孟加拉国乡村与印度西孟加拉文化范围",
+        "2005档案出品者与音像在线限制"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Gopīyantra 89.4.233",
+      "institution": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/500802",
+      "accessedAt": "2026-10-04",
+      "locator": "奏法介绍L12-13、Object Information L40-48；尺寸单位矛盾排除",
+      "claims": [
+        "Baul单弦器拨弦及压侧臂改变张力音高",
+        "19世纪晚期、Bengal or Orissa、木与皮、编号89.4.233",
+        "Not on view／Public Domain当前标记"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2-image",
+      "title": "Gopīyantra正面馆藏照片",
+      "institution": "The Metropolitan Museum of Art",
+      "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/500802/1019977/main-image",
+      "accessedAt": "2026-10-04",
+      "locator": "下载到临时研究目录并实际查看完整正面黑白像素",
+      "claims": [
+        "截锥共鸣体、两侧长臂向上收拢、顶部左伸调弦轴与中线细弦",
+        "颜色及内部锚点不能由照片确认"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "About Parvathy Baul",
+      "institution": "实践者Parvathy Baul本人网站",
+      "url": "https://www.parvathybaul.com/about",
+      "accessedAt": "2026-10-04",
+      "locator": "About首段L37-41；Lineage Shashanko/Nitai器物段L109、129",
+      "claims": [
+        "孟加拉当代公开表演存在",
+        "器物搭配和金属器差异；未赋给馆藏"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Baul songs 00107",
+      "institution": "UNESCO ICH",
+      "url": "https://ich.unesco.org/en/RL/baul-songs-00107",
+      "accessedAt": "2026-10-04",
+      "locator": "本轮人机验证；未读正文",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补馆藏木皮双侧臂单弦器、原创支撑与句子卡、拨弦衰减终態；主审通过公开器物切片。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

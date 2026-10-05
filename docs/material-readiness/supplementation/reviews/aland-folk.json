@@ -1,0 +1,96 @@
+{
+  "slug": "aland-folk",
+  "title": "奥兰民间基督教与群岛祈福（Åland）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "奥兰Kökar Hamnö圣安娜教堂木制还愿船静态公开外观介绍（构架及悬挂细节待核验）",
+  "baselineSelectedDisplay": "奥兰群岛教堂中殿还愿船模型的公开外观介绍",
+  "sliceChangeReason": "具名化原泛群岛船模；地方政府确认对象木制和64炮，但未得到可靠细部画面。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": null,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：Kökar地方实物、木材与64炮文本和还愿性质已读，传说单独标记；但未见实物像素，主要船体、桅数帆索吊点及教堂陈列位置皆未确认。静态sequence=null合理且默认无声；不能据海盗船一词补三桅黑帆。具名范围和文化卡可以保留，器物及空间仍为1，不完成。",
+  "evidence": [
+    {
+      "file": "content/display-notes/aland-folk.md",
+      "line": 11,
+      "quote": "未目视逐一计数",
+      "reason": "地方文本与实际观察分开"
+    },
+    {
+      "file": "content/display-notes/aland-folk.md",
+      "line": 12,
+      "quote": "顶部悬挂点、吊索数与船身受力位置",
+      "reason": "主要结构尚缺"
+    },
+    {
+      "file": "content/display-notes/aland-folk.md",
+      "line": 17,
+      "quote": "当前缺少可靠画面使静态物件描述仍不能通过",
+      "reason": "静态不抵消器物缺口"
+    }
+  ],
+  "gaps": [
+    "船体桅帆索具及炮的部件关系未核验。",
+    "具体吊索连接与相对祭坛/长椅陈列位置未核验，图像访问失败。"
+  ],
+  "nextWriting": [
+    "取得市政/堂区/本地博物馆公开全景和细节，核验木船构架、吊点及陈列位置；静态sequence不适用。"
+  ],
+  "sourceFiles": [
+    "content/traditions/aland-folk.md",
+    "content/display-notes/aland-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Kökar church / S:ta Annas Kyrka",
+      "institution": "Kökar市政府",
+      "url": "https://www.kokar.ax/st-annas-kyrka?lang=en",
+      "accessedAt": "2026-10-04",
+      "locator": "正文首段及末段church ship",
+      "claims": [
+        "Hamnö、1784石教堂",
+        "木制装饰船模型64炮",
+        "Olle故事明确为legend"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Kyrkor på Åland",
+      "institution": "Visit Åland",
+      "url": "https://visitaland.com/upplev/sevardheter-utflykter/kyrkor/",
+      "accessedAt": "2026-10-04",
+      "locator": "Interiör末段",
+      "claims": [
+        "高处悬挂船模",
+        "Kökar水手还愿船的公开解释"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Kökar市政教堂页附图52",
+      "institution": "Kökar市政府",
+      "url": "https://static.wixstatic.com/media/60f552_72da92c0e49c4634afabd5c0fe24e8a5~mv2.jpg",
+      "accessedAt": "2026-10-04",
+      "locator": "附图52打开失败",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补Kökar木制还愿船地方文本及静态边界；缺船体桅索吊点和教堂陈列全景，待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

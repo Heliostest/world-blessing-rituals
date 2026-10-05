@@ -1,0 +1,111 @@
+{
+  "slug": "aragonese-folk",
+  "title": "阿拉贡民间天主教与朝圣祈福（Aragonese）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "萨拉戈萨皮拉尔圣殿现代南立面、广场视轴与屋顶轮廓的静态公开介绍",
+  "baselineSelectedDisplay": "萨拉戈萨皮拉尔圣殿外观",
+  "sliceChangeReason": "保留建筑外观，补定南立面及现代时期，排除献花动态过程。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：现代南立面与广场版本明确，砖石壁柱、釉瓦穹顶、角塔、门拱山花栏杆及石雕层次可绘。中央浮雕与Alfonso I视轴、两门位置有市政依据；比例颜色明确原创，默认无音轨。静态sequence=null合理，不复制北河岸或献花场；信仰传说与历史证据区分，公众观看资格及神职边界一致。四份当地机构资料对应文化、材料和空间主张。",
+  "evidence": [
+    {
+      "file": "content/display-notes/aragonese-folk.md",
+      "line": 17,
+      "quote": "两端各有半圆拱门，门上为三角山花",
+      "reason": "南立面部件轮廓与左右关系具体"
+    },
+    {
+      "file": "content/display-notes/aragonese-folk.md",
+      "line": 25,
+      "quote": "高塔位于建筑角部，并非四塔在一条立面上并排",
+      "reason": "避免误绘角塔空间"
+    },
+    {
+      "file": "content/display-notes/aragonese-folk.md",
+      "line": 29,
+      "quote": "sequence 记 null",
+      "reason": "静态范围明确"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "如扩展完整复原或导航，另核屋顶图案、精确街宽、现状管制和照片授权。"
+  ],
+  "sourceFiles": [
+    "content/traditions/aragonese-folk.md",
+    "content/display-notes/aragonese-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Basílica de Nuestra Señora del Pilar",
+      "institution": "Gobierno de Aragón / Cultura de Aragón",
+      "url": "https://culturadearagon.es/bienes/basilica-de-nuestra-senora-del-pilar/",
+      "accessedAt": "2026-10-04",
+      "locator": "Descripción L59—70；历史立面改造 L151—156",
+      "claims": [
+        "17 世纪末至 20 世纪建设",
+        "砖石外墙与壁柱门拱",
+        "釉瓦穹顶、采光塔、小穹顶及角塔"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Fachada de la basílica de Nuestra Señora del Pilar",
+      "institution": "Ayuntamiento de Zaragoza / Arte Público",
+      "url": "https://zaragoza.es/sede/servicio/arte-publico/299",
+      "accessedAt": "2026-10-04",
+      "locator": "Descripción 第 2—4 点 L71—76；Comentarios L79—83",
+      "claims": [
+        "南立面两门与三角山花",
+        "栏杆上八尊石雕",
+        "1969 年白石灰岩中央高浮雕",
+        "广场与 Alfonso I 街视轴"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Historia constructiva",
+      "institution": "Catedral Basílica del Pilar / Cabildo Metropolitano",
+      "url": "https://www.catedralbasilicadelpilar.es/historia-constructiva/",
+      "accessedAt": "2026-10-04",
+      "locator": "L32—39；现存立面段 L111",
+      "claims": [
+        "1961 年基本现存轮廓",
+        "圣母显现属宗教传说且无考古历史证据"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "Fiestas del Pilar",
+      "institution": "Gobierno de Aragón / Patrimonio Cultural",
+      "url": "https://patrimonioculturaldearagon.es/patrimonio/fiestas-del-pilar/",
+      "accessedAt": "2026-10-04",
+      "locator": "Descripción L39—46 全段",
+      "claims": [
+        "10 月 12 日节日",
+        "献花与节庆音乐为独立公共活动"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补南立面砖石结构、雕像、穹顶与广场视轴；主审通过静态外观。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

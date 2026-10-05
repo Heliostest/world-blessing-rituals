@@ -1,0 +1,64 @@
+{
+  "slug": "aland-folk",
+  "batchId": "C01",
+  "selectedDisplay": "奥兰Kökar Hamnö圣安娜教堂木制还愿船静态公开外观介绍（构架及悬挂细节待核验）",
+  "sliceChangeReason": "具名化原泛群岛船模；地方政府确认对象木制和64炮，但未得到可靠细部画面。",
+  "recommendedStatus": "needs_research",
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": null,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [
+    "船体桅帆索具及炮的部件关系未核验。",
+    "具体吊索连接与相对祭坛/长椅陈列位置未核验，图像访问失败。"
+  ],
+  "nextWriting": [
+    "取得市政/堂区/本地博物馆公开全景和细节，核验木船构架、吊点及陈列位置；静态sequence不适用。"
+  ],
+  "semanticRationale": "文化与木材有一手机构依据，但另一位设计者仍需猜桅数、帆索与吊挂，核心物件/空间门槛未通过。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Kökar church / S:ta Annas Kyrka",
+      "institution": "Kökar市政府",
+      "url": "https://www.kokar.ax/st-annas-kyrka?lang=en",
+      "accessedAt": "2026-10-04",
+      "locator": "正文首段及末段church ship",
+      "claims": [
+        "Hamnö、1784石教堂",
+        "木制装饰船模型64炮",
+        "Olle故事明确为legend"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Kyrkor på Åland",
+      "institution": "Visit Åland",
+      "url": "https://visitaland.com/upplev/sevardheter-utflykter/kyrkor/",
+      "accessedAt": "2026-10-04",
+      "locator": "Interiör末段",
+      "claims": [
+        "高处悬挂船模",
+        "Kökar水手还愿船的公开解释"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Kökar市政教堂页附图52",
+      "institution": "Kökar市政府",
+      "url": "https://static.wixstatic.com/media/60f552_72da92c0e49c4634afabd5c0fe24e8a5~mv2.jpg",
+      "accessedAt": "2026-10-04",
+      "locator": "附图52打开失败",
+      "claims": [],
+      "verified": false
+    }
+  ]
+}

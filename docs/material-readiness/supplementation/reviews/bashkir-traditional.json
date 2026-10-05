@@ -1,0 +1,95 @@
+{
+  "slug": "bashkir-traditional",
+  "title": "巴什基尔伊斯兰与民俗祈福（Bashkir／Bashkort）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "2025年 Argamak Sabantuy 公共草地集会与民族志毡房参照、独立原创彩带门架致敬",
+  "baselineSelectedDisplay": "Sabantuy公共赛场与原创彩带致敬",
+  "sliceChangeReason": "原公共赛场未有精确赛事布局，固定到博物馆自述公共布展和已观察草地；保留原公开节庆背景与彩带动态，明确不复原赛事或当日毡房材料。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：2025 Argamak公共博物馆接待实例固定，传统木格栅屋顶杆顶圈毡盖引用博物馆构架讲解，当日绿色罩材未知明确不复建。所选传统构架示意有支撑和部件关系，草地前景独立木脚门架三棉带的挂环展开及停态具体。切片保留公共节庆草地毡房和原创彩带，不冒称全赛场；照片场地与原创前后图分开，材质声画及西北巴什基尔版本、边界均具体。罩材与附带Tratau称谓不参与此限定图示，无阻断。",
+  "evidence": [
+    {
+      "file": "content/display-notes/bashkir-traditional.md",
+      "line": 13,
+      "quote": "屋顶杆从墙格栅上缘连到中央木圈",
+      "reason": "有据传统构架支撑关系"
+    },
+    {
+      "file": "content/display-notes/bashkir-traditional.md",
+      "line": 19,
+      "quote": "架子不依附毡房屋顶、顶圈或历史织带",
+      "reason": "原创挂架与背景明确分离"
+    },
+    {
+      "file": "content/display-notes/bashkir-traditional.md",
+      "line": 33,
+      "quote": "最后一条展开后全部停止移动",
+      "reason": "彩带过程有终止状态"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：核对报道附带 Tratau 地名及照片授权；若要写实赛场或当日毡房需另核罩材和平面图。"
+  ],
+  "sourceFiles": [
+    "content/traditions/bashkir-traditional.md",
+    "content/display-notes/bashkir-traditional.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Сабантуй -2025: праздник традиций и единства",
+      "institution": "ГБУКИ РБ Национальный музей РБ / Дюртюлинский историко-краеведческий музей",
+      "url": "https://museumrb.ru/djurtjulinskij-istoriko-kraevedcheskij-muzej/sabantuj-2025-prazdnik-tradicij-i-edinstva/",
+      "accessedAt": "2026-10-04",
+      "locator": "正文日期场合与 этно-юрта 三段（web L61–67）；图片1-8-675x900.jpg和2-8-900x405.jpg已查看像素",
+      "claims": [
+        "2025-06-07 Argamak 公共 Sabantuy",
+        "民族志毡房介绍西北巴什基尔生活器物服饰",
+        "开阔草地与帐内支杆、红色织物；罩材不能从图鉴定"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Башкирская юрта. Журнал «Мир музея»",
+      "institution": "共和国国家博物馆，作者 Эльвира Хамидуллина",
+      "url": "https://museumrb.ru/novosti/bashkirskaja-jurta-zhurnal-mir-muzeja/",
+      "accessedAt": "2026-10-04",
+      "locator": "木架覆盖、格栅、门框、顶圈与绳约束段（web L64–71）",
+      "claims": [
+        "历史木骨架覆毡",
+        "交叉格栅围成圆墙，门框留在开口",
+        "屋顶杆连接中央木圈与墙上缘，绳约束",
+        "两种顶形"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Национальная гостиная Башкирская юрта",
+      "institution": "Культура.РФ",
+      "url": "https://www.culture.ru/events/4624661/nacionalnaya-gostinaya-bashkirskaya-yurta",
+      "accessedAt": "2026-10-04",
+      "locator": "访问 timeout，仅搜索摘要，未作为依据",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补Argamak公共场合、传统毡房构架示意与独立三彩带门架展开终态；主审通过限定切片。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

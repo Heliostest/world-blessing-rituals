@@ -1,0 +1,13 @@
+{
+ "slug":"beja-traditional","batchId":"C01",
+ "selectedDisplay":"北部贝贾Sufayya周边红海山地历史背景、乳品分享与原创和平意向研究稿；公共牧营与乳器未固定",
+ "sliceChangeReason":"以具名原始田野收窄历史范围，保留营地与乳品关键缺口，不把贸易聚落当牧营或借畜当献奶。",
+ "recommendedStatus":"needs_research",
+ "gaps":["北部贝贾具体公开牧营实例和观者位置未固定。","所选社区真实乳器材质、口沿底足及摆放用途缺一手记录。","hamot借畜乳权不能证明游客待客献奶流程；地方器型变体仍未选定。"],
+ "nextWriting":["查北部贝贾在地机构乳器藏品或具名公共田野图，固定器物材质和同社区待客环境；有证据后再补空间并复评。"],
+ "sources":[
+  {"id":"S1","title":"Aspects of Labour in An Agro-pastoral Economy: The Northern Beja of Sudan","institution":"John Morton原始田野／Overseas Development Institute Pastoral Development Network Paper30b（1990）","url":"https://media.odi.org/documents/5367.pdf","accessedAt":"2026-10-04","locator":"PDF页2-3（印刷1-2）地域与田野偏差；PDF页11（印刷10）hamot L271-283","claims":["1982-83与1987 Sufayya北部Bisharin/Atman农牧与贸易背景","Sufayya为贸易聚落而非牧营","裸山与宽谷稀疏金合欢等半荒漠植被","借畜期间乳毛使用权及安排差异；不证明奶碗献供"],"verified":true},
+  {"id":"U1","title":"Survival on Meagre Resources（全文线索）","institution":"Leif Manger／Nordic Africa Institute","url":"https://www.diva-portal.org/smash/get/diva2%3A277265/FULLTEXT01.pdf","accessedAt":"2026-10-04","locator":"下载与重试超时，未读正文；不将Hadendowa摘要移植北部实例","claims":[],"verified":false},
+  {"id":"U2","title":"CEDEJ Sudan 2791（原卡链接）","institution":"CEDEJ Sudan","url":"https://cedejsudan.hypotheses.org/2791","accessedAt":"2026-10-04","locator":"正文访问阻断，未用搜索摘要作事实","claims":[],"verified":false}
+ ]
+}

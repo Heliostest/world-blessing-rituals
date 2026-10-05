@@ -30,6 +30,10 @@ button {
   cursor: pointer;
   color: inherit;
   border: 0;
+  /* Every button is at least a comfortable finger target, and quick repeat
+     taps never zoom the page. */
+  min-height: 44px;
+  touch-action: manipulation;
 }
 button:disabled {
   cursor: default;
@@ -345,6 +349,8 @@ button:hover:not(:disabled) {
   padding: 0;
   font-size: 12px;
   font-weight: 400;
+  /* A full 44px target that does not grow the heading row. */
+  margin: -12px 0;
 }
 .achievement-card .text-button b {
   font-size: 15px;
@@ -606,7 +612,7 @@ button:hover:not(:disabled) {
   border: 1px solid #e9ddc9;
   border-radius: 30px;
   background: #faf6ed;
-  min-height: 41px;
+  min-height: 44px;
   cursor: pointer;
   color: #786859;
 }
@@ -794,6 +800,13 @@ button:hover:not(:disabled) {
   padding: 5px 10px;
   font-size: 12px;
   min-height: 30px;
+  position: relative;
+}
+/* The pill stays small; an invisible margin around it makes a 44px target. */
+.small-button::before {
+  content: "";
+  position: absolute;
+  inset: -7px -4px;
 }
 .small-button svg {
   width: 14px;
@@ -1150,6 +1163,7 @@ button:hover:not(:disabled) {
 }
 .ritual-link select {
   width: 100%;
+  min-height: 44px;
   border: 0;
   background: transparent;
   color: #6e5033;
@@ -1333,8 +1347,8 @@ button:hover:not(:disabled) {
   font-size: 13px;
 }
 .round-button {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
   border: 1px solid #ffcc49;
@@ -1382,7 +1396,7 @@ button:hover:not(:disabled) {
 .filter-row button {
   flex: 1;
   background: none;
-  min-height: 38px;
+  min-height: 44px;
   border-radius: 12px;
   font-size: 14px;
   color: #a08b71;

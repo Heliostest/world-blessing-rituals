@@ -1,0 +1,104 @@
+{
+  "slug": "calabrian-folk",
+  "title": "卡拉布里亚民间天主教与朝圣祈福（Calabrian）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "San Luca市Polsi圣母朝圣堂的静态公开外观介绍",
+  "baselineSelectedDisplay": "Madonna di Polsi教堂外观",
+  "sliceChangeReason": "沿用Madonna di Polsi教堂外观，明确静态范围和1980调查年代，不假补当前立面。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": null,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：Polsi文化部1980建筑档案补混合砌体三廊多坡金属板屋面，但现存外立面轮廓前场观看关系和声画表面未见；历史结构不得当2026裸露外观。静态sequence=null合理，核心材形空间仍缺，保留partial。",
+  "evidence": [
+    {
+      "file": "content/display-notes/calabrian-folk.md",
+      "line": 13,
+      "quote": "主体为砖与石块混合砌体",
+      "reason": "历史调查已补材料"
+    },
+    {
+      "file": "content/display-notes/calabrian-folk.md",
+      "line": 23,
+      "quote": "前场与山坡、附属楼、道路的实际前后左右关系仍未核验",
+      "reason": "现存空间阻断"
+    }
+  ],
+  "gaps": [
+    "缺可读取的正立面/前场实物照片，门窗、屋面/侧翼、墙面颜色与道路山地相对关系未核验。",
+    "1980建筑调查波纹金属屋面不能直接断言为2026外观，需现代资料核对。"
+  ],
+  "nextWriting": [
+    "取得机构正立面及门外前场照片，核现代屋面表面、具体体块开口和环境相对位置；结构砌体与表面材料分开。"
+  ],
+  "sourceFiles": [
+    "content/traditions/calabrian-folk.md",
+    "content/display-notes/calabrian-folk.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Santuario della Madonna di Polsi",
+      "institution": "Comune di San Luca",
+      "url": "https://www.comune.sanluca.rc.it/vivere-il-comune/luoghi/santuario-della-madonna-di-polsi/",
+      "accessedAt": "2026-10-05",
+      "locator": "正文24–52及访问66–74行全文已读",
+      "claims": [
+        "具名地点、教区、山谷与朝圣背景",
+        "主要节日及Capistrano等地方变体"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Santuario Beata Vergine Maria del Divin Pastore, 18-ICCD_MODI_9897413800571",
+      "institution": "ICCD / Pontificia Facoltà Teologica Marianum",
+      "url": "https://catalogo.beniculturali.it/detail/ArchitecturalOrLandscapeHeritage/18iccd_modi_9897413800571",
+      "accessedAt": "2026-10-05",
+      "locator": "正文16–30及字段已读",
+      "claims": [
+        "Polsi地方圣母敬礼与山地地点",
+        "宗教所有权与编录归属"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Santuario della Madonna di Polsi, 建筑档案1800011204完整打印",
+      "institution": "Soprintendenza BAP Reggio Calabria e Vibo Valentia / ICCD",
+      "url": "https://sigecweb.beniculturali.it/sigec/item/print/ICCD11160792",
+      "accessedAt": "2026-10-05",
+      "locator": "6页全文已读，尤其第3–4页IS/PN/CP/DE与第6页编录日期",
+      "claims": [
+        "1980档案的砖石混合砌体、长方三廊",
+        "档案多坡屋面与波纹金属板覆盖",
+        "正立面线脚与石门框花卉基督教符号",
+        "档案调查/数字化年代"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "San Luca市政府Polsi照片",
+      "institution": "Comune di San Luca",
+      "url": "https://www.comune.sanluca.rc.it/wp-content/uploads/2024/04/Santuario-della-Madonna-Polsi.webp",
+      "accessedAt": "2026-10-05",
+      "locator": "图片请求超时，未取得像素",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补Polsi历史建筑结构档案及山区语境；当前立面前场待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

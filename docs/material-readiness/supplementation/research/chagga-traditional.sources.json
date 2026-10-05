@@ -1,0 +1,15 @@
+{
+  "slug": "chagga-traditional", "batchId": "C02",
+  "selectedDisplay": "Machame Mamba 引水网络与家园香蕉园的原创公开说明致敬",
+  "sliceChangeReason": "把原卡泛称园畦引水限定到原始调查中的 Machame 案例；不借农业资料补写祈福主持礼。",
+  "recommendedStatus": "needs_research",
+  "dimensions": {"context":2,"objects":1,"space":2,"sequence":2,"sensory":1,"variants":2,"boundaries":2,"provenance":2},
+  "gaps": ["Mamba 选定主渠和园内支渠的截面、岸体材料、连接与实际可见表面尚未核定；不得以原创比例掩盖此缺口。"],
+  "nextWriting": ["补取可定位 Machame Mamba 渠段的原始照片或结构调查，记录渠岸、截面、水面与园地连接。"],
+  "semanticRationale": "已有石块低堤与分流网络和园地层次的具体依据，可形成边界明确的阅读说明；渠道主要结构仍有关键未知，保留待研究。",
+  "sources": [
+    {"id":"S1","title":"Community-Based Approaches in the Construction and Management of Water Infrastructures among the Chagga, Kilimanjaro, Tanzania","institution":"Land 原始研究／University of Pretoria 存档","url":"https://repository.up.ac.za/bitstreams/ced1639b-78b5-49c5-ac37-85579e8b59ff/download","accessedAt":"2026-10-05","locator":"PDF pp.2,8–10；§4.1；Figures 3–5 附近","claims":["Machame Mamba 从 Kikafu 河取水","石块与巨石低堤在较缓流处分水","主支渠通向村落和香蕉园","历史仪式与当代维护应区分"],"verified":true},
+    {"id":"S2","title":"Sustainable Land Management in Practice: Chagga Homegardens","institution":"FAO","url":"https://www.fao.org/4/i1861e/i1861e08.pdf","accessedAt":"2026-10-05","locator":"印刷 pp.132–133／PDF pp.7–8；Chagga Homegardens","claims":["四层混植","部分园地经渠道灌排","渠道维护及管道水泥改进建议"],"verified":true},
+    {"id":"U1","title":"Oral history and the development of indigenous irrigation","institution":"Norsk Geografisk Tidsskrift","url":"https://www.tandfonline.com/doi/pdf/10.1080/00291950701864898","accessedAt":"2026-10-05","locator":"访问返回403，未核正文","claims":[],"verified":false}
+  ]
+}

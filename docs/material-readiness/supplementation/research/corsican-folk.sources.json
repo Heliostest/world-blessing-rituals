@@ -1,0 +1,63 @@
+{
+  "slug": "corsican-folk",
+  "batchId": "C02",
+  "selectedDisplay": "Murato San Michele教堂院门外及山地远景的静态图文",
+  "sliceChangeReason": "将基线泛称山村教堂具体化为San Michele；实景为开阔坡地院落，不增造街道。",
+  "recommendedStatus": "ready",
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [],
+  "nextWriting": [
+    "核实照片转载授权和署名；若改作建筑复原，补屋顶、院门等未确认材种与尺寸。"
+  ],
+  "semanticRationale": "官方文本指定双色石材，实际观察官方所载两视角结构与院界，静态范围完整；sequence不适用，不证明宗教或动态体验。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "EGLISE SAN MICHELE",
+      "institution": "Agence du Tourisme de la Corse",
+      "url": "https://www.visit-corsica.com/it/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/EGLISE-SAN-MICHELE",
+      "accessedAt": "2026-10-05",
+      "locator": "正文HTML实际完整读取；网页重开超时用Invoke-WebRequest读取",
+      "claims": [
+        "Murato约1140比萨风格罗曼式教堂",
+        "双色墙石chloritite/Bevinco、Saint-Florent石灰岩",
+        "天使造堂为传说"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Eglise-St-Michel-MURATO",
+      "institution": "官方旅游条目图片供稿",
+      "url": "https://corse.media.tourinsoft.eu/upload/Eglise-St-Michel-MURATO-2.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载并view_image像素",
+      "claims": [
+        "石砌院界和卷曲杆件门、草地内教堂与高方塔",
+        "不确定院墙石种、门金属和屋顶材料"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Eglise San Michele Murato 16",
+      "institution": "Sylvain Alessandri / 官方旅游条目图片",
+      "url": "https://corse.media.tourinsoft.eu/upload/Eglise-San-Michele-Murato-16--Sylvain-Alessandri.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载并view_image像素",
+      "claims": [
+        "开阔山地远景中的教堂与低院界"
+      ],
+      "verified": true
+    }
+  ]
+}

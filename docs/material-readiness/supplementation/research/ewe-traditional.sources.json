@@ -1,0 +1,86 @@
+{
+  "slug": "ewe-traditional",
+  "batchId": "C02",
+  "selectedDisplay": "Anloga Hogbe Park主durbar文化背景与独立原创木板棉布和解清扫符号致敬",
+  "sliceChangeReason": "保留基线公共durbar与原创符号，纠正出埃及误译、将旅游配图2019海报从场地证据剔除；真实广场留待研究。",
+  "recommendedStatus": "needs_research",
+  "gaps": [
+    "同一次公开主durbar的首领坐位/棚台、公众界线、中央空地、出入口前后关系未核；地面座椅遮棚材质结构不足。"
+  ],
+  "nextWriting": [
+    "查社区或地方政府一次主durbar公开全景或场地说明，核具体布局与材质，再补实景与原创信息台分层关系。"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Ghana Tourism Authority：Hogbetsotso Za festival",
+      "institution": "Ghana Tourism Authority",
+      "url": "https://visitghana.com/hogbetsotso-za-festival/",
+      "accessedAt": "2026-10-05",
+      "locator": "2025-04-17正文Origin/Activities全文",
+      "claims": [
+        "Anlo/Anloga主集会背景与出走传说",
+        "首领接受致敬、和解清扫与Husago概念"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Anlo Dukor：About",
+      "institution": "Anlo Dukor",
+      "url": "https://www.anlodukor.org/about",
+      "accessedAt": "2026-10-05",
+      "locator": "About Anlo Dukor与节庆段",
+      "claims": [
+        "社区组织自述与纪念和解意义"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Anlo Dukor：Festival Program",
+      "institution": "Anlo Dukor",
+      "url": "https://anlodukor.org/program",
+      "accessedAt": "2026-10-05",
+      "locator": "2025节目表",
+      "claims": [
+        "2025Hogbe Park主durbar及其他活动分离"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "旅游页所列图片",
+      "institution": "Ghana Tourism Authority公开列图",
+      "url": "https://visitghana.com/wp-content/uploads/2025/04/8751-hogbetsotso-za-festival.jpeg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素：2019海报",
+      "claims": [
+        "2019宣传海报，不支持真实布局"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S5",
+      "title": "Anlo Dukor：Gallery",
+      "institution": "Anlo Dukor",
+      "url": "https://www.anlodukor.org/gallery",
+      "accessedAt": "2026-10-05",
+      "locator": "正文及HTML实际读，仅标题占位未取现场图片",
+      "claims": [
+        "仅标题占位可读，无现场像素"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Anloga District Assembly Final Draft Plan2022–2025",
+      "institution": "Anloga District Assembly",
+      "url": "https://anda.gov.gh/wp-content/uploads/2024/09/Anloga-District-Assembly_Final-Draft-Plan-2022-2025.pdf",
+      "accessedAt": "2026-10-05",
+      "locator": "请求返回防护HTML，PDF未读",
+      "claims": [],
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "chinese-buddhism",
+  "title": "汉传佛教",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "佛光山2020公开供灯意义与原创灯下合十致敬（实际灯具待核）",
+  "baselineSelectedDisplay": "寺院供香供灯的原创灯下合十致敬",
+  "sliceChangeReason": "将全国泛称限定到已读组织者活动；区分登记光明灯、固定宝塔灯和2025现代花灯，未把器型互相移植。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": 1,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：供灯意义和历史场合有官方依据，正确区分宝塔灯与登记光明灯，2025修缮装置不移植2020。实际单灯材质器型、安放支撑与光源起止缺失，原创合十不足以解决供灯主体，保留partial。",
+  "evidence": [
+    {
+      "file": "content/display-notes/chinese-buddhism.md",
+      "line": 15,
+      "quote": "单盏容器轮廓、燃料或电光、底座、玻璃罩／莲瓣、支撑台架与材料均未确认",
+      "reason": "供灯核心器物缺口"
+    },
+    {
+      "file": "content/display-notes/chinese-buddhism.md",
+      "line": 33,
+      "quote": "双手停留合十姿态，所选善意文字保持显示",
+      "reason": "仅原创合十终态已明确"
+    }
+  ],
+  "gaps": [
+    "2020选定光明灯单盏材料、部件、光源、底座和安放关系未知",
+    "宝塔灯有形制文字，但不是已确认登记供灯；不能代替核心器物",
+    "原卡供香器型与位置未核"
+  ],
+  "nextWriting": [
+    "取得可定位佛光山公开光明灯的第一方结构说明或实际照片，确认材料、支撑与灯架／供桌关系，再补点亮过程。"
+  ],
+  "sourceFiles": [
+    "content/traditions/chinese-buddhism.md",
+    "content/display-notes/chinese-buddhism.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "佛光山2020年春節平安燈法會",
+      "institution": "佛光山寺",
+      "url": "https://www.fgs.org.tw/events/2020ny/lighting.html",
+      "accessedAt": "2026-10-05",
+      "locator": "點燈的意義开头；點燈提問",
+      "claims": [
+        "灯供养与光明智慧",
+        "2020大雄宝殿光明灯与药师法会灯的场合区分"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "公开导览：大雄宝殿／成佛大道",
+      "institution": "佛光山寺",
+      "url": "https://www.fgs.org.tw/events/FGSmap/main-shrine.html",
+      "accessedAt": "2026-10-05",
+      "locator": "正文最后四段",
+      "claims": [
+        "宝塔灯左右位置与多层形制",
+        "佛前供桌镶玉",
+        "殿前铺地与回廊"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "佛光山2025年花燈介紹",
+      "institution": "佛光山资讯中心",
+      "url": "https://www.fgs.org.tw/events/2025ny/page_light.html",
+      "accessedAt": "2026-10-05",
+      "locator": "光明在望；光雕藝術",
+      "claims": [
+        "2025修缮语境",
+        "现代灯会和寺院固定器物不能混用"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补佛光山供灯意义与宝塔灯区别；登记单灯形制空间起止待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

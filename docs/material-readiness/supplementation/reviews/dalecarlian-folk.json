@@ -1,0 +1,117 @@
+{
+  "slug": "dalecarlian-folk",
+  "title": "达拉纳民间基督教与节期祈福（Dalecarlian／Dalarna）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "Tibble具名教堂船河岸系泊外观、结构和历史交通静态图文",
+  "baselineSelectedDisplay": "达拉纳Kyrkbåtar教堂船公共文化记忆",
+  "sliceChangeReason": "将泛湖区选定为有社区一手材料的Tibble河岸两艘现代教堂船，保留公共文化记忆，排除划行模拟。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审研究并完整写读：社区给出具名两船年代及各部件木种铜铆钉，实际两张图片辨船首船板肋骨座板和河岸系泊。另地历史船屋不移植Tibble。主体限定静态系泊图文，未见教堂仅作位置标记，sequence=null且无划桨脚本；可据文画出有支撑船体与码头关系，通过限定范围。",
+  "evidence": [
+    {
+      "file": "content/display-notes/dalecarlian-folk.md",
+      "line": 15,
+      "quote": "横向座板依次跨接左右舷",
+      "reason": "船体结构具体"
+    },
+    {
+      "file": "content/display-notes/dalecarlian-folk.md",
+      "line": 21,
+      "quote": "船长轴与木板码头近似平行",
+      "reason": "河岸位置可绘"
+    },
+    {
+      "file": "content/display-notes/dalecarlian-folk.md",
+      "line": 27,
+      "quote": "开始与结束都是已系泊船体照片和结构说明",
+      "reason": "静态过程边界明确"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：照片授权与说明图编辑；扩展动态船行须另补桨叶和真实航线及动作。"
+  ],
+  "sourceFiles": [
+    "content/traditions/dalecarlian-folk.md",
+    "content/display-notes/dalecarlian-folk.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Tibble-Lycka 社区《Om kyrkbåtarna och båthuset》",
+      "institution": "Tibble-Lycka byar",
+      "url": "https://tibble-lycka.se/kyrkbatarna/mer-om-kyrkbatarna/",
+      "accessedAt": "2026-10-05",
+      "locator": "Kersti/Beckox’n/Lekatt’n及Fakta段全文",
+      "claims": [
+        "具名船年代与Tibble1943年前步行",
+        "主要船体材质、部件和数量"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Leksands kommun：Västra och Östra Rönnäs",
+      "institution": "Leksands kommun",
+      "url": "https://leksand.se/boende-trafik-och-miljo/kulturmiljoer-i-leksands-kommun/kulturmiljoer-i-byar-och-fabodar/vastra-och-ostra-ronnas",
+      "accessedAt": "2026-10-05",
+      "locator": "Kyrkbåtar及Gemensamma anläggningar段",
+      "claims": [
+        "Leksand历史赴教堂船与保存背景"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Visit Dalarna：Tibble团体教堂船划行",
+      "institution": "Visit Dalarna",
+      "url": "https://www.visitdalarna.se/gora/aktiviteter/kyrkbatsrodd-grupper-i-tibble",
+      "accessedAt": "2026-10-05",
+      "locator": "Tibble bystuga/Prostbryggan正文",
+      "claims": [
+        "现代Tibble与教堂岸边出发点"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "社区所列系泊船照片",
+      "institution": "Tibble-Lycka byar",
+      "url": "https://media.tibble-lycka.se/2021/09/kb_oxn_klar.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素",
+      "claims": [
+        "敞口座板肋骨码头船关系"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S5",
+      "title": "社区所列船首近景",
+      "institution": "Tibble-Lycka byar",
+      "url": "https://media.tibble-lycka.se/2018/05/Kyrkbat_renov.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素",
+      "claims": [
+        "船首与板缝绳关系"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补Tibble社区船体材种连接、实际河岸照片与历史现代变体；静态图文通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

@@ -11,7 +11,7 @@ import argparse
 ROOT = Path(__file__).resolve().parents[3]
 BASE = ROOT / 'docs/material-readiness/2026-10-04'
 SUP = ROOT / 'docs/material-readiness/supplementation'
-DATE = '2026-10-04'
+DATE = '2026-10-05'
 
 def read(path):
     return json.loads(path.read_text(encoding='utf-8-sig'))
@@ -41,7 +41,7 @@ def rebuild(p):
             needsResearch=c['needs_research'],scopeBlocked=c['scope_blocked'],processedNonReady=c['needs_research']+c['scope_blocked'])
         active=c['researching']+c['drafted']
         b['status']='ready' if c['ready']+c['baseline_ready']==len(rows) else ('in_progress' if active or (c['pending'] and any(i['outputFiles'] for i in rows)) else ('pending' if c['pending']==len(rows)-c['baseline_ready'] else 'processed_with_gaps'))
-        if any(i['reviewFile'] for i in rows):
+        if any(i['reviewFile'] and i['updatedAt']==DATE for i in rows):
             report=f'docs/material-readiness/supplementation/batches/{b["batchId"]}.md'
             b['reportFile']=report
             text=[f'# {b["batchId"]} 展示材料补写与复评', '',f'更新：{DATE}。状态：{b["status"]}；新增通过 {c["ready"]}/{len(rows)}；待研究 {c["needs_research"]}；范围阻断 {c["scope_blocked"]}；未处理/处理中 {c["pending"]+active}。', '', '基线报告和原卡片保留；以下结论只对应各项选定切片。每项的来源与逐维理由见复评文件。', '', '| 条目与说明 | 复评 | 补齐内容／未解决问题与下一步 |','| --- | --- | --- |']
@@ -53,10 +53,12 @@ def rebuild(p):
                 if i['reviewFile']:
                     review_data=read(ROOT/i['reviewFile'])
                     extra+='；下一步：'+'；'.join(review_data['nextWriting'])
-                text.append(f'| {note} | {review} | {i["checkpoint"]}{extra} |')
+                checkpoint=i['checkpoint'].rstrip('。；')
+                text.append(f'| {note} | {review} | {checkpoint}{extra} |')
             text += ['', '## 续接', '', f'当前下一位置：{p["nextAction"]["batchId"]} / `{p["nextAction"]["slug"]}`。已处理但未通过项保留为待办；无新增证据时，按 progress.json 的 nextAction 继续下一未开始批次。', '', '## 验收说明', '', '主代理逐项阅读新说明后判定八维，结构脚本仅校验枚举、门槛、文件、行号与计数，不根据篇幅或标题给分。']
-            if b['batchId']=='C01' and not c['pending'] and not active:
-                text += ['', '本批结构核对及基线哈希结果：[validation-C01.json](../validation-C01.json)。']
+            validation=SUP/f'validation-{b["batchId"]}.json'
+            if validation.exists() and not c['pending'] and not active:
+                text += ['', f'本批结构核对及基线哈希结果：[validation-{b["batchId"]}.json](../validation-{b["batchId"]}.json)。']
             (ROOT/report).parent.mkdir(parents=True,exist_ok=True)
             (ROOT/report).write_text('\n'.join(text)+'\n',encoding='utf-8')
     save(BASE/'progress.json',p)
@@ -82,7 +84,8 @@ def rebuild(p):
         '状态定义：baseline_ready 原齐备；pending 未开始；researching 研究中；drafted 待复评；needs_research 关键资料不足；scope_blocked 范围／归属阻断；ready 新说明通过八维。只有 ready 计本轮完成。批次 processed_with_gaps 表示全部处理过但有未完成项。', '',
         '已知后续范围问题仍保留：C08 Yazidi 的动作与教育边界；B04 Chol 与 Yokot\'anob 归属；S01 yeondeunghoe 与圆佛教及“上浮”关系。', '',
         '## 更新日志','', '- 2026-10-04：建立 506 项基线与续接台账，原齐备 3 项，待补 503 项。',
-        f'- {DATE}：C01 按项保存研究、补写与复评；最新累计通过 {s["newlyReady"]} 项，输出 {s["newDocuments"]} 份说明；详情见逐项台账。']
+        '- 2026-10-04：C01全部处理，新增通过12项，7项待研究、1项范围阻断；20份说明及逐项复评已保存。',
+        f'- {DATE}：继续C02；累计新增通过 {s["newlyReady"]} 项，输出 {s["newDocuments"]} 份说明；详情见逐项台账。']
     (BASE/'progress.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 def record(slug):

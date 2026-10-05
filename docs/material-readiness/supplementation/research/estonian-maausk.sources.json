@@ -1,0 +1,9 @@
+{
+ "slug":"estonian-maausk","batchId":"C02","selectedDisplay":"Maavalla Koda公开亡灵季背景与独立原创木框玻璃窗台陶盘蜡烛纪念光、纸卡起止",
+ "sliceChangeReason":"保留基线窗边象征点烛，固定2009组织自述并区别现代传播与史前假设；所有窗式器材明标原创，排除墓园圣林与召魂。",
+ "recommendedStatus":"ready","gaps":[],"nextWriting":["非阻断：编辑原创器具说明图及时间自由选择标签；若扩展真实民居窗式或墓园器型，另查具名实物。"],
+ "sources":[
+  {"id":"S1","title":"14.10.10222 (2009) On hingedeaeg","institution":"Taarausuliste ja Maausuliste Maavalla Koda／Ahto Kaasik","url":"https://www.maavald.ee/uudised-10222-2009/3357-141010222-2009-on-hingedeaeg","accessedAt":"2026-10-05","locator":"机构HTML下载成功并读亡灵季、家居清静代际故事、koduakendel/kalmudel和作者署名段；web超时不作唯一验证","claims":["组织2009自述亡灵季与代际纪念","有人在家窗或亲人墓点烛，不能外推全体爱沙尼亚或灵体实际出现"],"verified":true},
+  {"id":"S2","title":"BERTA: Hingedepäev - 2. november / Hingedeaeg","institution":"爱沙尼亚文学博物馆民俗项目BERTA","url":"https://www.folklore.ee/Berta/tahtpaev-hingedepaev.php","accessedAt":"2026-10-05","locator":"正文L4的1990年代窗/墓点烛；L6的较长季节和地方差异","claims":["点烛现代传播年代与较长亡灵季区别","不能将各地日期与全部人群身份统一"],"verified":true}
+ ]
+}

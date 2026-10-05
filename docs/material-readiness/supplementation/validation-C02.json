@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-05",
+  "batchId": "C02",
+  "structuralValidation": "passed",
+  "semanticValidation": "主代理逐项阅读全文并作显式八维判断；本脚本仅验证记录结构，不能自动证明文化齐备。",
+  "processed": 20,
+  "newlyReady": 13,
+  "needsResearch": 7,
+  "scopeBlocked": 0,
+  "notes": 20,
+  "reviews": 20,
+  "researchRecords": 20,
+  "validNewEvidenceQuotes": 54,
+  "batchVerifiedSourceUrls": 66,
+  "cumulativeDocuments": 40,
+  "cumulativeEvidenceQuotes": 114,
+  "ledgerUnits": 506,
+  "newlyReadyTotal": 25,
+  "baselineReady": 3,
+  "totalReady": 28,
+  "remainingNotReady": 478,
+  "baselineSnapshotFilesHashUnchanged": 39,
+  "traditionCardsHashUnchanged": 726,
+  "frozenC01FilesUnchangedAgainstCommit": "e69824e",
+  "gitDiffCheck": "passed",
+  "nextAction": {
+    "batchId": "C03",
+    "slug": "faroese-folk",
+    "instruction": "优先续接本批 researching/drafted，再处理 pending；needs_research/scope_blocked 不计完成，留待新增证据。"
+  },
+  "limits": "通过仅对应选定文字切片；静态sequence=null不表示动态场景或礼仪齐备；未通过项均不计完成。"
+}

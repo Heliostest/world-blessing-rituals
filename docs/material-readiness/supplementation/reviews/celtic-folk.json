@@ -1,0 +1,85 @@
+{
+  "slug": "celtic-folk",
+  "title": "凯尔特宗教与民俗祈福（Celtic religion）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "泉边一念：明确虚构的开放泉池与原创木片留愿体验",
+  "baselineSelectedDisplay": "泉边一念：原创虚拟泉边留愿",
+  "sliceChangeReason": "沿用原评估原创泉边留愿，明确其构造和全过程不属于古代仪轨。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：巴斯罗马遗址限定且前罗马敬奉保留推测，未泛称凯尔特仪轨。原评估允许原创泉边体验，石岸内衬出口、托盘木片和岸上纸签板均具体标原创；片从盘到水面再回收，纸签保留与清除的终态可编写，材料声画及文化边界清楚。通过仅针对原创切片。",
+  "evidence": [
+    {
+      "file": "content/display-notes/celtic-folk.md",
+      "line": 17,
+      "quote": "盘沿阻止圆片滚落",
+      "reason": "托盘与圆片支撑具体"
+    },
+    {
+      "file": "content/display-notes/celtic-folk.md",
+      "line": 21,
+      "quote": "二者不悬在水上",
+      "reason": "岸上器物空间明确"
+    },
+    {
+      "file": "content/display-notes/celtic-folk.md",
+      "line": 30,
+      "quote": "木片随虚拟水流缓慢到后侧出口并进入回收区",
+      "reason": "原创结束状态可写"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：编辑巴斯历史分期简介，保持罗马遗址事实与原创体验分别标注。"
+  ],
+  "sourceFiles": [
+    "content/traditions/celtic-folk.md",
+    "content/display-notes/celtic-folk.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Roman Sacred Spring",
+      "institution": "Roman Baths / Bath & North East Somerset Council",
+      "url": "https://www.romanbaths.co.uk/roman-sacred-spring-0",
+      "accessedAt": "2026-10-05",
+      "locator": "正文 Sacred Spring、King’s Bath、Roman drain；web已读141–163行",
+      "claims": [
+        "特定遗址罗马期供物",
+        "前罗马敬奉仅为土堤提示",
+        "不规则石室、铅衬、橡木桩",
+        "后世建筑层次及排水"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Fun facts",
+      "institution": "Roman Baths / Bath & North East Somerset Council",
+      "url": "https://www.romanbaths.co.uk/fun-facts-0",
+      "accessedAt": "2026-10-05",
+      "locator": "正文 Sacred Spring 与 offerings；web已读142–157行",
+      "claims": [
+        "罗马时期关于泉水的信念及投入钱币首饰",
+        "铅诅咒片为历史馆藏，不用于本体验",
+        "石槽与排水"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已核巴斯机构资料，明确原创池岸木片纸签板及完整回收终态；主审通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "chinese-folk-and-confucian",
+  "title": "汉人民间信仰与祭祖／儒礼",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "艋舺龙山寺2017一炉一香公开制度与1979铜铸观音炉简化结构的原创无燃烧致敬",
+  "baselineSelectedDisplay": "庙外庭前上香公开姿态致敬",
+  "sliceChangeReason": "按第一方一香政策替代泛称三香茶果，原卡公开庭前致敬收窄到内埕观音炉；明确地方儒释道融合而非国家儒家礼制。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：龙山寺公开2017减香与1979器物研究分期，铜铸鼓腹三足、焊接与配件托泥支撑均可绘。内埕前殿正殿关系明确；只作简化结构和原创数量标识合十演出，真实燃香芯材与装饰未见部分明确排除，不以一寺代全国或祭孔。八维满足此限定切片。",
+  "evidence": [
+    {
+      "file": "content/display-notes/chinese-folk-and-confucian.md",
+      "line": 15,
+      "quote": "炉腹分前后铸造后焊合",
+      "reason": "器物结构有寺方原始研究"
+    },
+    {
+      "file": "content/display-notes/chinese-folk-and-confucian.md",
+      "line": 15,
+      "quote": "足部接触托泥底板，底板落在地面",
+      "reason": "承托结构具体"
+    },
+    {
+      "file": "content/display-notes/chinese-folk-and-confucian.md",
+      "line": 37,
+      "quote": "主炉结构、合十姿态与",
+      "reason": "结束显示状态明确"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断编辑：取得1979观音炉可授权正面图，仅增加确实观察到的装饰细节；保留2017时间及原创无燃烧标签。"
+  ],
+  "sourceFiles": [
+    "content/traditions/chinese-folk-and-confucian.md",
+    "content/display-notes/chinese-folk-and-confucian.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "艋舺龙山寺公开导览与参拜说明",
+      "institution": "艋舺龙山寺",
+      "url": "https://www.lungshan.org.tw/Tour_Guide/search",
+      "accessedAt": "2026-10-05",
+      "locator": "参拜第一至六步；绪论／神祇；三川殿",
+      "claims": [
+        "公众进出与面向正殿",
+        "台湾地方儒释道融合语境",
+        "前殿内埕正殿关系"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "艋舺龙山寺季刊第36期",
+      "institution": "艋舺龙山寺",
+      "url": "https://www.lungshan.org.tw/lungshan/eBooks/036.pdf",
+      "accessedAt": "2026-10-05",
+      "locator": "印刷p.13／PDF p.15；实际下载并提取正文阅读",
+      "claims": [
+        "2017一炉一香执行时间与措施",
+        "香枝缩短、檀香与无烟香"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "艋舺龙山寺季刊第38期：典藏龙山寺香炉研究",
+      "institution": "艋舺龙山寺",
+      "url": "https://www.lungshan.org.tw/lungshan/eBooks/038.pdf",
+      "accessedAt": "2026-10-05",
+      "locator": "印刷pp.15–17／PDF pp.17–19；七○年代的香炉使用，实际下载并提取正文阅读",
+      "claims": [
+        "1979铜铸三足鼎式观音炉",
+        "前后分铸焊接、凹底螺丝、配件组装",
+        "历代不同器材与神位区分"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补龙山寺历史减香制度、铜铸炉简化结构与内埕关系，原创无燃烧说明演出通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

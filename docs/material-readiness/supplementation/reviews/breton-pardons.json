@@ -1,0 +1,102 @@
+{
+  "slug": "breton-pardons",
+  "title": "布列塔尼赦罪朝圣与民间祈福（Breton Pardons）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "Locronan Saint-Ronan石堂外部与旗帜队列的原创非圣事步行致敬",
+  "baselineSelectedDisplay": "布列塔尼石堂与旗帜队列的非圣事致敬",
+  "sliceChangeReason": "把泛布列塔尼石堂切片固定到Locronan，不扩大礼仪资格。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：Locronan石堂调查解决建筑材质和体块，旗帜类型有研究，但具名旗架横杆杆材悬挂握持仍未观察；原创队列起止不能代替主体器物证据，objects=1保留partial。",
+  "evidence": [
+    {
+      "file": "content/display-notes/breton-pardons.md",
+      "line": 17,
+      "quote": "旗杆材质、旗面如何悬在杆上",
+      "reason": "主物件仍欠明确"
+    },
+    {
+      "file": "content/display-notes/breton-pardons.md",
+      "line": 29,
+      "quote": "队列到右侧停步并离开观察范围",
+      "reason": "原创过程结束已写"
+    }
+  ],
+  "gaps": [
+    "未核验所选Locronan旗帜的旗杆材料、横撑/悬挂、握持支撑及正反图像；机构图片像素未成功读取。"
+  ],
+  "nextWriting": [
+    "取得具名旗帜正反面和持杆实物资料，补旗面—杆—人接触关系、材质、下缘与图像；不得把类型平均尺寸或其他堂区图像套入。"
+  ],
+  "sourceFiles": [
+    "content/traditions/breton-pardons.md",
+    "content/display-notes/breton-pardons.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Les bannières de procession",
+      "institution": "Bretagne Culture Diversité；Yann Celton（教区图书馆员/文物研究者）",
+      "url": "https://bcd.bzh/becedia/fr/les-bannieres-de-procession",
+      "accessedAt": "2026-10-05",
+      "locator": "正文21–27行与作者38行，全文已读",
+      "claims": [
+        "两面纺织旗与绣饰",
+        "旗帜堂区身份与图像类型",
+        "平信徒持旗及队列预先安排"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Eglise paroissiale Saint-Ronan, place de l'Eglise (Locronan), IA00005195",
+      "institution": "Région Bretagne / Inventaire général du patrimoine culturel",
+      "url": "https://patrimoine.bzh/gertrude-diffusion/dossier/IA00005195",
+      "accessedAt": "2026-10-05",
+      "locator": "Historique98–105；Description140–155；Murs/Toits159–165，均实际读",
+      "claims": [
+        "灰花岗岩规整石块及石板屋面",
+        "西塔前门廊和Pénity西南连接",
+        "1808旧尖顶倒塌与后续形制"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "La Grande Troménie à Locronan（2025活动）",
+      "institution": "Locronan地方公开活动网站",
+      "url": "https://www.locronan.bzh/agenda/la-grande-tromenie-a-locronan-12-07-2025-8",
+      "accessedAt": "2026-10-05",
+      "locator": "活动正文已读；只采用节期/地点，不采用远古起源断言",
+      "claims": [
+        "具名Grande Troménie七月六年周期公共活动背景"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "Bannières portées lors de la troménie de Locronan, 14 juillet 2019（照片）",
+      "institution": "Julie Léonard / BCD",
+      "url": "https://bcd.bzh/becedia/sites/default/files/focus/img_20190714_1819182-ok.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "正文图注已读，但图片像素未读取；curl连接重置，浏览器不可用",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补Locronan石堂调查与旗帜类型、原创队列起止；旗架握持材质待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

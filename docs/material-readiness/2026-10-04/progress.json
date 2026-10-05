@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-10-04",
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "baselineAssessment": "docs/material-readiness/2026-10-04/assessment.json",
   "scopeNote": "498 个传统候选与 8 个 App 专题共 506 个评估单位，部分题材重叠。",
   "workflowStatuses": {
@@ -52,23 +52,23 @@
     "total": 506,
     "baselineReady": 3,
     "initialToFill": 503,
-    "newlyReady": 12,
-    "remainingNotReady": 491,
-    "newDocuments": 20,
-    "verifiedSourceUrls": 55,
+    "newlyReady": 25,
+    "remainingNotReady": 478,
+    "newDocuments": 40,
+    "verifiedSourceUrls": 121,
     "statusCounts": {
       "baseline_ready": 3,
-      "pending": 483,
+      "pending": 463,
       "researching": 0,
       "drafted": 0,
-      "needs_research": 7,
+      "needs_research": 14,
       "scope_blocked": 1,
-      "ready": 12
+      "ready": 25
     }
   },
   "nextAction": {
-    "batchId": "C02",
-    "slug": "breton-pardons",
+    "batchId": "C03",
+    "slug": "faroese-folk",
     "instruction": "优先续接本批 researching/drafted，再处理 pending；needs_research/scope_blocked 不计完成，留待新增证据。"
   },
   "batches": [
@@ -87,14 +87,14 @@
     {
       "batchId": "C02",
       "total": 20,
-      "status": "pending",
+      "status": "processed_with_gaps",
       "baselineReady": 0,
-      "newlyReady": 0,
-      "pending": 20,
-      "needsResearch": 0,
+      "newlyReady": 13,
+      "pending": 0,
+      "needsResearch": 7,
       "scopeBlocked": 0,
-      "processedNonReady": 0,
-      "reportFile": null
+      "processedNonReady": 7,
+      "reportFile": "docs/material-readiness/supplementation/batches/C02.md"
     },
     {
       "batchId": "C03",
@@ -1552,16 +1552,59 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "布列塔尼石堂与旗帜队列的非圣事致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "未选布列塔尼具体 pardon；旗帜材质图案与石堂街景关系缺失"
+      "selectedDisplay": "Locronan Saint-Ronan石堂外部与旗帜队列的原创非圣事步行致敬",
+      "status": "needs_research",
+      "outputFiles": [
+        "content/display-notes/breton-pardons.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/breton-pardons.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Les bannières de procession",
+          "institution": "Bretagne Culture Diversité；Yann Celton（教区图书馆员/文物研究者）",
+          "url": "https://bcd.bzh/becedia/fr/les-bannieres-de-procession",
+          "accessedAt": "2026-10-05",
+          "locator": "正文21–27行与作者38行，全文已读",
+          "claims": [
+            "两面纺织旗与绣饰",
+            "旗帜堂区身份与图像类型",
+            "平信徒持旗及队列预先安排"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Eglise paroissiale Saint-Ronan, place de l'Eglise (Locronan), IA00005195",
+          "institution": "Région Bretagne / Inventaire général du patrimoine culturel",
+          "url": "https://patrimoine.bzh/gertrude-diffusion/dossier/IA00005195",
+          "accessedAt": "2026-10-05",
+          "locator": "Historique98–105；Description140–155；Murs/Toits159–165，均实际读",
+          "claims": [
+            "灰花岗岩规整石块及石板屋面",
+            "西塔前门廊和Pénity西南连接",
+            "1808旧尖顶倒塌与后续形制"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "La Grande Troménie à Locronan（2025活动）",
+          "institution": "Locronan地方公开活动网站",
+          "url": "https://www.locronan.bzh/agenda/la-grande-tromenie-a-locronan-12-07-2025-8",
+          "accessedAt": "2026-10-05",
+          "locator": "活动正文已读；只采用节期/地点，不采用远古起源断言",
+          "claims": [
+            "具名Grande Troménie七月六年周期公共活动背景"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Locronan石堂调查与旗帜类型、原创队列起止；旗架握持材质待研究。",
+      "remainingGaps": [
+        "未核验所选Locronan旗帜的旗杆材料、横撑/悬挂、握持支撑及正反图像；机构图片像素未成功读取。"
+      ],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "buyei-traditional",
@@ -1569,17 +1612,56 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "三月三歌圩与原创共享五色饭致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "三月三歌圩地区未选；五色饭盛器、桌面空间与起止不足",
-        "现有来源链接尚未逐主张对应所选公开切片；不能由链接列表确认上述形制、空间或过程。"
+      "selectedDisplay": "贵州望谟布依三月三背景介绍与原创共享五色饭饭桌短体验（不复原真实歌圩）",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/buyei-traditional.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/buyei-traditional.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "布依族“三月三”（望谟县申报项）",
+          "institution": "中国艺术研究院·中国非物质文化遗产保护中心 / 望谟县文化旅游发展中心",
+          "url": "https://www.ihchina.cn/project_details/15285/",
+          "accessedAt": "2026-10-05",
+          "locator": "项目字段及正文50–53行，全部三段已读",
+          "claims": [
+            "望谟县三月三项目归属",
+            "糯米与红黄黑紫白五色及植物汁",
+            "下午宴亲友、饭后对歌"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "布依族的“三月三”",
+          "institution": "国家民族事务委员会",
+          "url": "https://www.neac.gov.cn/seac/c102690/201901/1132144.shtml",
+          "accessedAt": "2026-10-05",
+          "locator": "2009-03-27正文20–25行已读",
+          "claims": [
+            "三月三存在地区差异",
+            "罗甸与罗平的不同场所日期活动不能套用望谟"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Predicting the distribution pattern changes of dye plant habitats caused by climate change",
+          "institution": "University of South China / Central China Normal University，Frontiers in Plant Science",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2024.1364481/full",
+          "accessedAt": "2026-10-05",
+          "locator": "摘要、Introduction、Methods已读351–390行",
+          "claims": [
+            "该论文研究枫香染布的植物生境，不能支持五色饭或歌圩用器"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补望谟非遗背景、原创碗盘桌勺形制布局与分饭起止；通过限定原创饭桌。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "calabrian-folk",
@@ -1587,17 +1669,61 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "insufficient",
-      "selectedDisplay": "Madonna di Polsi教堂外观",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "波尔西形制和山地观看关系缺失",
-        "山地外观光色和静态观看范围不足，建筑与文化主张缺来源对应。"
+      "selectedDisplay": "San Luca市Polsi圣母朝圣堂的静态公开外观介绍",
+      "status": "needs_research",
+      "outputFiles": [
+        "content/display-notes/calabrian-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/calabrian-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Santuario della Madonna di Polsi",
+          "institution": "Comune di San Luca",
+          "url": "https://www.comune.sanluca.rc.it/vivere-il-comune/luoghi/santuario-della-madonna-di-polsi/",
+          "accessedAt": "2026-10-05",
+          "locator": "正文24–52及访问66–74行全文已读",
+          "claims": [
+            "具名地点、教区、山谷与朝圣背景",
+            "主要节日及Capistrano等地方变体"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Santuario Beata Vergine Maria del Divin Pastore, 18-ICCD_MODI_9897413800571",
+          "institution": "ICCD / Pontificia Facoltà Teologica Marianum",
+          "url": "https://catalogo.beniculturali.it/detail/ArchitecturalOrLandscapeHeritage/18iccd_modi_9897413800571",
+          "accessedAt": "2026-10-05",
+          "locator": "正文16–30及字段已读",
+          "claims": [
+            "Polsi地方圣母敬礼与山地地点",
+            "宗教所有权与编录归属"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Santuario della Madonna di Polsi, 建筑档案1800011204完整打印",
+          "institution": "Soprintendenza BAP Reggio Calabria e Vibo Valentia / ICCD",
+          "url": "https://sigecweb.beniculturali.it/sigec/item/print/ICCD11160792",
+          "accessedAt": "2026-10-05",
+          "locator": "6页全文已读，尤其第3–4页IS/PN/CP/DE与第6页编录日期",
+          "claims": [
+            "1980档案的砖石混合砌体、长方三廊",
+            "档案多坡屋面与波纹金属板覆盖",
+            "正立面线脚与石门框花卉基督教符号",
+            "档案调查/数字化年代"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Polsi历史建筑结构档案及山区语境；当前立面前场待研究。",
+      "remainingGaps": [
+        "缺可读取的正立面/前场实物照片，门窗、屋面/侧翼、墙面颜色与道路山地相对关系未核验。",
+        "1980建筑调查波纹金属屋面不能直接断言为2026外观，需现代资料核对。"
+      ],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "catalan-folk",
@@ -1605,16 +1731,59 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "加泰罗尼亚 gegants 巨人巡游公开外观介绍",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "巨人偶形制和街道空间未写；城市变体与巡游观察起止未选"
+      "selectedDisplay": "Barcelona Plaça Nova新对gegants在Sant Roc公开会面巡游的外观与观察过程",
+      "status": "needs_research",
+      "outputFiles": [
+        "content/display-notes/catalan-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/catalan-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Gegants vells de Sant Roc de la Plaça Nova",
+          "institution": "Ajuntament de Barcelona / Cultura Popular",
+          "url": "https://www.barcelona.cat/culturapopular/ca/ambits-festius/imatgeria-festiva/gegants/gegants-vells-de-sant-roc-de-la-placa-nova",
+          "accessedAt": "2026-10-05",
+          "locator": "技术字段94–125及正文127–135全文已读",
+          "claims": [
+            "1906旧对Roc/Eulàlia与复制新对分开",
+            "日常复制品与原件保存/外出用途",
+            "伴奏变化"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Protocol Festiu de Ciutat Vella de Barcelona（2017）",
+          "institution": "Ajuntament de Barcelona - Districte de Ciutat Vella；Xavier Cordomí及田野团队",
+          "url": "https://www.barcelona.cat/culturapopular/sites/default/files/protocol_festiu_de_ciutat_vella_-_web.pdf",
+          "accessedAt": "2026-10-05",
+          "locator": "版权/田野说明第4页；PDF第60页La Trobada i Ball de Gegants 1940–1951行实际读",
+          "claims": [
+            "Plaça Nova新对及乐队作为活动主人",
+            "8月15日集合、具名街道巡游、返回与舞蹈会面结束"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Gegants i caps grossos de Santa Eulàlia, 08247-88",
+          "institution": "Diputació de Barcelona / Oficina de Patrimoni Cultural；Pilar Camañes",
+          "url": "https://patrimonicultural.diba.cat/element/gegants-i-caps-grossos-de-santa-eulalia",
+          "accessedAt": "2026-10-05",
+          "locator": "Description115–116、History118–122已全文读",
+          "claims": [
+            "另一镇1994巨人的纸石头部与具体服装，不应继承到Barcelona所选实物"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Plaça Nova2017新对巡游起止路线与新旧区别；主巨人壳体承载结构待研究。",
+      "remainingGaps": [
+        "新对巨人的壳体材料、服装具体部件、内部承载框架/横撑/开口与人接触位置未核验，不能借用旧对或另一镇器物。",
+        "尚无已读活动像素说明具体落地、抬放和转场接触。"
+      ],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "celtic-folk",
@@ -1622,17 +1791,46 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "泉边一念：原创虚拟泉边留愿",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "虚拟泉源结构、信物材质沉浮与木牌空间不足",
-        "现有来源链接尚未逐主张对应所选公开切片；不能由链接列表确认上述形制、空间或过程。"
+      "selectedDisplay": "泉边一念：明确虚构的开放泉池与原创木片留愿体验",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/celtic-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/celtic-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Roman Sacred Spring",
+          "institution": "Roman Baths / Bath & North East Somerset Council",
+          "url": "https://www.romanbaths.co.uk/roman-sacred-spring-0",
+          "accessedAt": "2026-10-05",
+          "locator": "正文 Sacred Spring、King’s Bath、Roman drain；web已读141–163行",
+          "claims": [
+            "特定遗址罗马期供物",
+            "前罗马敬奉仅为土堤提示",
+            "不规则石室、铅衬、橡木桩",
+            "后世建筑层次及排水"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Fun facts",
+          "institution": "Roman Baths / Bath & North East Somerset Council",
+          "url": "https://www.romanbaths.co.uk/fun-facts-0",
+          "accessedAt": "2026-10-05",
+          "locator": "正文 Sacred Spring 与 offerings；web已读142–157行",
+          "claims": [
+            "罗马时期关于泉水的信念及投入钱币首饰",
+            "铅诅咒片为历史馆藏，不用于本体验",
+            "石槽与排水"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已核巴斯机构资料，明确原创池岸木片纸签板及完整回收终态；主审通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "chagga-traditional",
@@ -1640,17 +1838,48 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "查加坡地园畦引水致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "水道园畦走向材料与水流状态未写",
-        "查加具体灌溉园林地方版本未选，水道与伦理主张缺来源对应。"
+      "selectedDisplay": "Machame Mamba 引水网络与家园香蕉园的原创公开说明致敬",
+      "status": "needs_research",
+      "outputFiles": [
+        "content/display-notes/chagga-traditional.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/chagga-traditional.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Community-Based Approaches in the Construction and Management of Water Infrastructures among the Chagga, Kilimanjaro, Tanzania",
+          "institution": "Land 原始研究／University of Pretoria 存档",
+          "url": "https://repository.up.ac.za/bitstreams/ced1639b-78b5-49c5-ac37-85579e8b59ff/download",
+          "accessedAt": "2026-10-05",
+          "locator": "PDF pp.2,8–10；§4.1；Figures 3–5 附近",
+          "claims": [
+            "Machame Mamba 从 Kikafu 河取水",
+            "石块与巨石低堤在较缓流处分水",
+            "主支渠通向村落和香蕉园",
+            "历史仪式与当代维护应区分"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Sustainable Land Management in Practice: Chagga Homegardens",
+          "institution": "FAO",
+          "url": "https://www.fao.org/4/i1861e/i1861e08.pdf",
+          "accessedAt": "2026-10-05",
+          "locator": "印刷 pp.132–133／PDF pp.7–8；Chagga Homegardens",
+          "claims": [
+            "四层混植",
+            "部分园地经渠道灌排",
+            "渠道维护及管道水泥改进建议"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Machame引水拓扑和维护背景；渠体截面岸材待研究，不计完成。",
+      "remainingGaps": [
+        "Mamba 选定主渠和园内支渠的截面、岸体材料、连接与实际可见表面尚未核定；不得以原创比例掩盖此缺口。"
+      ],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "chinese-buddhism",
@@ -1658,16 +1887,61 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "寺院供香供灯的原创灯下合十致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "香炉、供灯材质结构与佛堂位置缺失；未限定寺院或器型"
+      "selectedDisplay": "佛光山2020公开供灯意义与原创灯下合十致敬（实际灯具待核）",
+      "status": "needs_research",
+      "outputFiles": [
+        "content/display-notes/chinese-buddhism.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/chinese-buddhism.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "佛光山2020年春節平安燈法會",
+          "institution": "佛光山寺",
+          "url": "https://www.fgs.org.tw/events/2020ny/lighting.html",
+          "accessedAt": "2026-10-05",
+          "locator": "點燈的意義开头；點燈提問",
+          "claims": [
+            "灯供养与光明智慧",
+            "2020大雄宝殿光明灯与药师法会灯的场合区分"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "公开导览：大雄宝殿／成佛大道",
+          "institution": "佛光山寺",
+          "url": "https://www.fgs.org.tw/events/FGSmap/main-shrine.html",
+          "accessedAt": "2026-10-05",
+          "locator": "正文最后四段",
+          "claims": [
+            "宝塔灯左右位置与多层形制",
+            "佛前供桌镶玉",
+            "殿前铺地与回廊"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "佛光山2025年花燈介紹",
+          "institution": "佛光山资讯中心",
+          "url": "https://www.fgs.org.tw/events/2025ny/page_light.html",
+          "accessedAt": "2026-10-05",
+          "locator": "光明在望；光雕藝術",
+          "claims": [
+            "2025修缮语境",
+            "现代灯会和寺院固定器物不能混用"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补佛光山供灯意义与宝塔灯区别；登记单灯形制空间起止待研究。",
+      "remainingGaps": [
+        "2020选定光明灯单盏材料、部件、光源、底座和安放关系未知",
+        "宝塔灯有形制文字，但不是已确认登记供灯；不能代替核心器物",
+        "原卡供香器型与位置未核"
+      ],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "chinese-folk-and-confucian",
@@ -1675,17 +1949,58 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "庙外庭前上香公开姿态致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "香炉材料轮廓与庭前桌台关系不足；三柱与茶果未标地区取舍",
-        "现有来源链接尚未逐主张对应所选公开切片；不能由链接列表确认上述形制、空间或过程。"
+      "selectedDisplay": "艋舺龙山寺2017一炉一香公开制度与1979铜铸观音炉简化结构的原创无燃烧致敬",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/chinese-folk-and-confucian.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/chinese-folk-and-confucian.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "艋舺龙山寺公开导览与参拜说明",
+          "institution": "艋舺龙山寺",
+          "url": "https://www.lungshan.org.tw/Tour_Guide/search",
+          "accessedAt": "2026-10-05",
+          "locator": "参拜第一至六步；绪论／神祇；三川殿",
+          "claims": [
+            "公众进出与面向正殿",
+            "台湾地方儒释道融合语境",
+            "前殿内埕正殿关系"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "艋舺龙山寺季刊第36期",
+          "institution": "艋舺龙山寺",
+          "url": "https://www.lungshan.org.tw/lungshan/eBooks/036.pdf",
+          "accessedAt": "2026-10-05",
+          "locator": "印刷p.13／PDF p.15；实际下载并提取正文阅读",
+          "claims": [
+            "2017一炉一香执行时间与措施",
+            "香枝缩短、檀香与无烟香"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "艋舺龙山寺季刊第38期：典藏龙山寺香炉研究",
+          "institution": "艋舺龙山寺",
+          "url": "https://www.lungshan.org.tw/lungshan/eBooks/038.pdf",
+          "accessedAt": "2026-10-05",
+          "locator": "印刷pp.15–17／PDF pp.17–19；七○年代的香炉使用，实际下载并提取正文阅读",
+          "claims": [
+            "1979铜铸三足鼎式观音炉",
+            "前后分铸焊接、凹底螺丝、配件组装",
+            "历代不同器材与神位区分"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补龙山寺历史减香制度、铜铸炉简化结构与内埕关系，原创无燃烧说明演出通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "chuukese-traditional",
@@ -1693,17 +2008,36 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "楚克教堂初熟宴席致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "教堂宴席与潟湖关系、食物形态与灯火状态未写",
-        "楚克具体岛屿公共宴席版本未选，初熟与宴席解释缺主张来源对应。"
+      "selectedDisplay": "楚克教堂初熟宴席致敬（具体一手场合未核；仅完成Tonoas历史差异说明）",
+      "status": "needs_research",
+      "outputFiles": [
+        "content/display-notes/chuukese-traditional.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/chuukese-traditional.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "The Changing Family in Chuuk: 1950–1990",
+          "institution": "Micronesian Seminar；Innocente Oneisom原始家庭访谈与初稿",
+          "url": "https://micsem.org/print/?id=2029",
+          "accessedAt": "2026-10-05",
+          "locator": "全文；The Ideal Chuukese Family；Food Distribution；Celebrations",
+          "claims": [
+            "多数访谈家庭在Tonoas",
+            "面包果煮捣和香蕉叶包分配",
+            "向村长/家族首领的初熟类别及衰退",
+            "节日家族共食与初熟应分开"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已核楚克家庭食物访谈并区分初熟与教会节日共食；原定教堂实例包形空间待研究。",
+      "remainingGaps": [
+        "原定教堂初熟宴席无可定位一手实例与公众资格",
+        "食物叶包轮廓、折层/连接、承放容器未知",
+        "教堂具体空间与初熟主持起止无依据"
+      ],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "circassian-traditional",
@@ -1711,16 +2045,85 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "Xabze 公开款待礼节的原创让座分享致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "宴席座次、茶具与面包形态未定；圣林外圈与款待场景的转换依据不足"
+      "selectedDisplay": "Xabze公开款待伦理、Gelendzhik ane白蜡木桌参照的原创让座茶饼分享",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/circassian-traditional.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/circassian-traditional.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Circassian ane table",
+          "institution": "Gelendzhik Museum of History and Local Lore／Culture.ru馆藏页",
+          "url": "https://ar.culture.ru/en/subject/stol-adygskiy",
+          "accessedAt": "2026-10-05",
+          "locator": "Creation period／Place／Technique；正文三足横撑和捐赠段",
+          "claims": [
+            "此件19世纪后半叶Adygea来源",
+            "白蜡木43x60x60cm",
+            "三足横撑圆桌结构"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S1-I",
+          "title": "Gelendzhik ane table同件实物照片",
+          "institution": "Gelendzhik Museum of History and Local Lore",
+          "url": "https://ar.culture.ru/attachments/attachment/middle/61b98818de7b563005294469-middle.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "从馆藏页图29取得，实际下载并view_image观察600x600像素",
+          "claims": [
+            "薄圆桌面与凸窄边",
+            "桌面裂缝、磨损仅属此件",
+            "三条车制节状木足和横撑可见"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Circassian Customs & Traditions, second edition2014",
+          "institution": "Centre for Circassian Studies；Amjad Jaimoukha编译",
+          "url": "https://circassianworld.com/pdfs/circassian-customs-traditions.pdf",
+          "accessedAt": "2026-10-05",
+          "locator": "印刷pp.89–103／PDF pp.90–104；下载正文阅读Receiving/Respect/Feasting guests",
+          "claims": [
+            "款待伦理",
+            "尊位面对客室入口",
+            "客室与正式宴会座次和历史变体不同"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Circassian Cuisine",
+          "institution": "Sanjalay Press；Amjad Jaimoukha编2004",
+          "url": "https://circassianworld.com/pdfs/circassian-cuisine.pdf",
+          "accessedAt": "2026-10-05",
+          "locator": "§6.15玉米扁饼；§8.1 Kalmyk茶；印刷pp.30–31、41",
+          "claims": [
+            "玉米面平饼材料与圆/椭圆形",
+            "压块茶加奶/奶油的Kalmyk茶与饼搭配"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S4",
+          "title": "Three-legged table",
+          "institution": "The Adygeysk Museum of Local Lore／Culture.ru馆藏页",
+          "url": "https://ar.culture.ru/en/subject/stol-na-tryoh-nozhkah---iane",
+          "accessedAt": "2026-10-05",
+          "locator": "器物字段及木工、配三足凳段",
+          "claims": [
+            "木桌及配木凳概念",
+            "与S1不同馆藏和木种不得移植"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补馆藏ane木桌材形、公开款待与茶饼参照，原创让座分享起止完整；通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "cornish-folk",
@@ -1728,17 +2131,81 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "康沃尔圣井公开外观与系布民俗说明",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "未选一处圣井；井体材料、布条与树木位置及静态观看范围不足",
-        "现有来源链接尚未逐主张对应所选公开切片；不能由链接列表确认上述形制、空间或过程。"
+      "selectedDisplay": "Madron圣井、系布树与邻近小堂的公开静态图文说明",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/cornish-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/cornish-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Holy well called Madron Well",
+          "institution": "Historic England",
+          "url": "https://historicengland.org.uk/listing/the-list/list-entry/1004310",
+          "accessedAt": "2026-10-05",
+          "locator": "Details；SW4455832747",
+          "claims": [
+            "石衬矩形积水井穴",
+            "井、小堂、十字架分别登记"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Medieval chapel known as Madron Well Chapel",
+          "institution": "Historic England",
+          "url": "https://historicengland.org.uk/listing/the-list/list-entry/1006728",
+          "accessedAt": "2026-10-05",
+          "locator": "Details",
+          "claims": [
+            "无顶单室石构、花岗岩台阶与祭坛",
+            "西南进水槽、西侧渠道、北墙排水"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Trail Guide: Madron Chapel and Trengwainton Carn",
+          "institution": "Penwith Landscape Partnership",
+          "url": "https://www.penwithlandscape.org.uk/trails-and-ancient-sites/trail-guide-madron-chapel-and-trengwainton-carn/",
+          "accessedAt": "2026-10-05",
+          "locator": "Route 2",
+          "claims": [
+            "入口步道、过溪侧路、井与小堂分开",
+            "路面湿软与破损木板提示"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S4",
+          "title": "Tree hung with Cloutie ribbons and plants growing around Madron Well",
+          "institution": "Penwith Landscape Partnership",
+          "url": "https://www.penwithlandscape.org.uk/images/Point%203%20a%29%20Madron%20Well%20cloutie%20tree.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "下载原图并tools.view_image实际看像素",
+          "claims": [
+            "树枝悬挂布状条片、低处井水与植物遮挡；不识别纤维和树种"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S5",
+          "title": "Madron Well Blog 4 - Folklore of Madron Well",
+          "institution": "Penwith Landscape Partnership / Cornwall Archaeological Unit公开综述",
+          "url": "https://www.penwithlandscape.org.uk/blog/post/madron-well-blog-4---folklore-of-madron-well",
+          "accessedAt": "2026-10-05",
+          "locator": "17th/19th Century；Continuing traditions；末段保护建议",
+          "claims": [
+            "分期民俗记录为信仰与历史记述",
+            "开阔放牧地变为湿林地、供物与保护"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Madron井与小堂遗产结构和实际系布树观察，静态图文通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "corsican-folk",
@@ -1746,17 +2213,56 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "insufficient",
-      "selectedDisplay": "科西嘉山村教堂外观",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "地点立面与街巷背景不足",
-        "教堂外观光色与静态范围不足，科西嘉地方案例和主张来源缺失。"
+      "selectedDisplay": "Murato San Michele教堂院门外及山地远景的静态图文",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/corsican-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/corsican-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "EGLISE SAN MICHELE",
+          "institution": "Agence du Tourisme de la Corse",
+          "url": "https://www.visit-corsica.com/it/Mon-sejour/Patrimoine-culturel/Tout-le-patrimoine-culturel/EGLISE-SAN-MICHELE",
+          "accessedAt": "2026-10-05",
+          "locator": "正文HTML实际完整读取；网页重开超时用Invoke-WebRequest读取",
+          "claims": [
+            "Murato约1140比萨风格罗曼式教堂",
+            "双色墙石chloritite/Bevinco、Saint-Florent石灰岩",
+            "天使造堂为传说"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Eglise-St-Michel-MURATO",
+          "institution": "官方旅游条目图片供稿",
+          "url": "https://corse.media.tourinsoft.eu/upload/Eglise-St-Michel-MURATO-2.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载并view_image像素",
+          "claims": [
+            "石砌院界和卷曲杆件门、草地内教堂与高方塔",
+            "不确定院墙石种、门金属和屋顶材料"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Eglise San Michele Murato 16",
+          "institution": "Sylvain Alessandri / 官方旅游条目图片",
+          "url": "https://corse.media.tourinsoft.eu/upload/Eglise-San-Michele-Murato-16--Sylvain-Alessandri.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载并view_image像素",
+          "claims": [
+            "开阔山地远景中的教堂与低院界"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Murato双色石堂、院界山景与真实照片观察；静态外观通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "crimean-tatar-traditional",
@@ -1764,16 +2270,68 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "克里米亚鞑靼开斋共餐与和平祝福的原创致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "开斋桌食品、器物及环境缺可见细节；海岸与餐桌的关系未定"
+      "selectedDisplay": "2024 Musafir公开iftar文化说明及以当代豆汤为参照的共餐、和平光环原创致敬",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/crimean-tatar-traditional.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/crimean-tatar-traditional.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Іфтар – як українська традиція",
+          "institution": "Духовне управління мусульман Автономної Республіки Крим（DUMARK新闻处）",
+          "url": "https://www.dumk.org/2024/04/03/iftar-yak-ukra%D1%97nska-tradiciya/",
+          "accessedAt": "2026-10-05",
+          "locator": "正文首两段、致辞/展览/交流段，实际全文相关正文读取",
+          "claims": [
+            "2024-04-01与Mejlis联办Musafir餐会、混合来宾",
+            "开场致辞、Ramadan展览、身份介绍、交流；未给分店/菜单/完整仪轨"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "2024 Musafir iftar全景照片",
+          "institution": "DUMARK新闻处",
+          "url": "https://www.dumk.org/wp-content/uploads/2024/04/photo_2024-04-02_17-26-43.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "下载view_image实际像素",
+          "claims": [
+            "两桌列与中央通道、浅白布、圆盘碗、透明壶杯",
+            "不识别2024菜名/饮料/陶种/纤维"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Musafir官网菜单",
+          "institution": "Musafir自营餐厅",
+          "url": "https://www.musafir.com.ua/",
+          "accessedAt": "2026-10-05",
+          "locator": "Supи段红扁豆汤；Chebureki/Yantiki段实读",
+          "claims": [
+            "当代红扁豆奶油汤配奶油薄荷酱、柠檬、面包丁作为原创选食参照",
+            "当代菜单不得继承为2024餐会菜单"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S4",
+          "title": "Contact us",
+          "institution": "Musafir自营餐厅",
+          "url": "https://www.musafir.com.ua/en/contacts/",
+          "accessedAt": "2026-10-05",
+          "locator": "分店地址各段实读",
+          "claims": [
+            "当前基辅多分店，不能唯一回溯2024活动场地"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已補Musafir公开餐会与真实桌列观察，原创汤碗分餐日常祝愿和平光四阶段完整；通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "croatian-folk",
@@ -1781,17 +2339,54 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "insufficient",
-      "selectedDisplay": "Marija Bistrica公开圣地外观朝圣介绍",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "Marija Bistrica建筑与公共入口只是名称；观看范围与访问变化未写",
-        "现有来源链接尚未逐主张对应所选公开切片；不能由链接列表确认上述形制、空间或过程。"
+      "selectedDisplay": "Marija Bistrica圣地整体公开外观、廊院关系和西立面文字材料的静态图文",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/croatian-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/croatian-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Svetište",
+          "institution": "Općina Marija Bistrica",
+          "url": "https://marija-bistrica.hr/svetiste/",
+          "accessedAt": "2026-10-05",
+          "locator": "圣地正文",
+          "claims": [
+            "圣母朝圣地语境、Bollé外观与季节时段概述"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Crkva sv. Marije Bistričke, Trg pape Ivana Pavla II.32",
+          "institution": "Ministarstvo kulture i medija Republike Hrvatske",
+          "url": "https://min-kulture.gov.hr/crkva-sv-marije-bistricke-trg-pape-ivana-pavla-ii-32-marija-bistrica/27467?impaired=0",
+          "accessedAt": "2026-10-05",
+          "locator": "首段；Oštećenja；Zahvati na konstrukciji；Restauratorski radovi",
+          "claims": [
+            "单中殿、cinktor、前小堂与邻山关系",
+            "西立面石构件、砖墙、抹灰、挑出构件；灾后修复"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "圣地整体俯瞰照片IMG_3358-naslovna",
+          "institution": "Općina Marija Bistrica",
+          "url": "https://marija-bistrica.hr/wp-content/uploads/2022/12/IMG_3358-naslovna.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载view_image像素",
+          "claims": [
+            "主堂、钟塔、低廊院与外公共广场；外表色面"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Marija Bistrica文化部墙体材质与政府整体照片廊院广场关系；静态图文通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "cypriot-folk",
@@ -1799,17 +2394,69 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "insufficient",
-      "selectedDisplay": "Panagia tou Kykkou修院外观",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "修院部件材料、外部场地和观看位置未写",
-        "修院外观色彩光线缺失，建筑与地方信仰主张缺来源对应。"
+      "selectedDisplay": "Kykkos修院公开资料所记录户外院落、石砌外墙与阶梯的静态图文",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/cypriot-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/cypriot-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Monastery of Kykkos – written audio guide",
+          "institution": "Cyprus Tourism / Deputy Ministry of Tourism",
+          "url": "https://www.visitcyprus.com/wp-content/uploads/files/audio_guides/written_form/Monastery_of_Kykkos_afigisi_en.pdf",
+          "accessedAt": "2026-10-05",
+          "locator": "22页PDF实际读取；印刷页2—5",
+          "claims": [
+            "修院与山峰海拔区分",
+            "现存建筑多期、1541灾后石构",
+            "院落与石铺地、外墙廊道装饰"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Kykkos Monastery官方条目院落照片",
+          "institution": "Visit Cyprus",
+          "url": "https://www.visitcyprus.com/wp-content/uploads/2015/11/28232e87509dedeadc0cd2b6a94ea3f5.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载view_image像素",
+          "claims": [
+            "长条两层石墙、台阶、门窗与远处钟楼",
+            "院地与山坡林木空间；不鉴定门木种与屋面"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Klasztoru Kykkos",
+          "institution": "Visit Cyprus",
+          "url": "https://www.visitcyprus.com/pl/pl-discover-cyprus/pl-culture-pl-discover-cyprus/pl-sites-and-monuments-pl-culture-pl-discover-cyprus/kykkos-monastery-2/",
+          "accessedAt": "2026-10-05",
+          "locator": "正文与地址栏",
+          "claims": [
+            "名称、Troodos/Marathasa地域",
+            "短文1318米与详稿区分不一致，保留差异"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S4",
+          "title": "HOLY MONASTERY OF KYKKOS – Museum guide",
+          "institution": "Holy Monastery of Kykkos",
+          "url": "https://kykkos.org.cy/kykkos-museum.cy.net/eg-odigos-mousiou.html",
+          "accessedAt": "2026-10-05",
+          "locator": "全文15行实际阅读；地面材料、音乐与入口段",
+          "claims": [
+            "博物馆内部材料与声音不能继承给外墙院落"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Kykkos官方石构分期、院落阶梯长墙远塔照片观察与资料差异；静态通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "czech-moravian-folk",
@@ -1817,16 +2464,54 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "圣霍斯廷山丘与朝圣意向簿的原创致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "圣霍斯廷山丘与圣母殿相对位置未写；意向簿、蜡烛形制与终态不明"
+      "selectedDisplay": "Hostýn官方山丘远景介绍与独立原创纸簿陶盘蜡烛和平意向小品",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/czech-moravian-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/czech-moravian-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "圣所历史PDF，旧站可读副本",
+          "institution": "Matice svatohostýnská / Hostýn圣所",
+          "url": "https://old.hostyn.cz/bazilika_historie.pdf",
+          "accessedAt": "2026-10-05",
+          "locator": "1页PDF全文Historie/Popis chrámu",
+          "claims": [
+            "传说与历史重修双塔",
+            "入口马赛克青铜门饰"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "CzechTourism：Hostýn",
+          "institution": "CzechTourism",
+          "url": "https://www.visitczechia.com/en-us/things-to-do/places/landmarks/religious-monuments/c-holy-hostyn",
+          "accessedAt": "2026-10-05",
+          "locator": "主体三段",
+          "claims": [
+            "山丘双塔穹顶和信仰背景"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "上述页面官方所列全景SVLI-004-Hostyn_let",
+          "institution": "CzechTourism官方列图",
+          "url": "https://cdn.visitczechia.com/cms/getwebpmedia/63abc005-392d-4f5a-83a4-b8f7492e85f2/SVLI-004-Hostyn_let.jpg?width=1280&ext=.jpg&quality=35",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载view像素",
+          "claims": [
+            "丘顶林间圣殿周边建筑和山脊关系"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Hostýn官方丘顶远景与地方史，原创簿烛材料支撑及熄灭重入终态；通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "dalecarlian-folk",
@@ -1834,17 +2519,78 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "达拉纳Kyrkbåtar教堂船公共文化记忆",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "未选湖区与船型；教堂船部件、码头和观看范围不足",
-        "现有来源链接尚未逐主张对应所选公开切片；不能由链接列表确认上述形制、空间或过程。"
+      "selectedDisplay": "Tibble具名教堂船河岸系泊外观、结构和历史交通静态图文",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/dalecarlian-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/dalecarlian-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Tibble-Lycka 社区《Om kyrkbåtarna och båthuset》",
+          "institution": "Tibble-Lycka byar",
+          "url": "https://tibble-lycka.se/kyrkbatarna/mer-om-kyrkbatarna/",
+          "accessedAt": "2026-10-05",
+          "locator": "Kersti/Beckox’n/Lekatt’n及Fakta段全文",
+          "claims": [
+            "具名船年代与Tibble1943年前步行",
+            "主要船体材质、部件和数量"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Leksands kommun：Västra och Östra Rönnäs",
+          "institution": "Leksands kommun",
+          "url": "https://leksand.se/boende-trafik-och-miljo/kulturmiljoer-i-leksands-kommun/kulturmiljoer-i-byar-och-fabodar/vastra-och-ostra-ronnas",
+          "accessedAt": "2026-10-05",
+          "locator": "Kyrkbåtar及Gemensamma anläggningar段",
+          "claims": [
+            "Leksand历史赴教堂船与保存背景"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Visit Dalarna：Tibble团体教堂船划行",
+          "institution": "Visit Dalarna",
+          "url": "https://www.visitdalarna.se/gora/aktiviteter/kyrkbatsrodd-grupper-i-tibble",
+          "accessedAt": "2026-10-05",
+          "locator": "Tibble bystuga/Prostbryggan正文",
+          "claims": [
+            "现代Tibble与教堂岸边出发点"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S4",
+          "title": "社区所列系泊船照片",
+          "institution": "Tibble-Lycka byar",
+          "url": "https://media.tibble-lycka.se/2021/09/kb_oxn_klar.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载view像素",
+          "claims": [
+            "敞口座板肋骨码头船关系"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S5",
+          "title": "社区所列船首近景",
+          "institution": "Tibble-Lycka byar",
+          "url": "https://media.tibble-lycka.se/2018/05/Kyrkbat_renov.jpg",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载view像素",
+          "claims": [
+            "船首与板缝绳关系"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Tibble社区船体材种连接、实际河岸照片与历史现代变体；静态图文通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "emilian-folk",
@@ -1852,17 +2598,66 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "San Luca拱廊上山外观",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "柱拱材质、路线段起止与光影未写",
-        "拱廊路线及材质主张缺逐项来源关联。"
+      "selectedDisplay": "San Luca市政山坡外侧照片与城市至圣所路线静态图文",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/emilian-folk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/emilian-folk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Comune di Bologna：San Luca 序列",
+          "institution": "Comune di Bologna",
+          "url": "https://portici.comune.bologna.it/la-serie/san-luca",
+          "accessedAt": "2026-10-05",
+          "locator": "正文首两段",
+          "claims": [
+            "巴洛克敬礼道路及现代公共步行用途"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "市政地图：Portico di San Luca / Meloncello",
+          "institution": "Comune di Bologna",
+          "url": "https://portici.comune.bologna.it/mappe?tipo=22",
+          "accessedAt": "2026-10-05",
+          "locator": "Portico di San Luca及Meloncello节",
+          "claims": [
+            "各路线段与圣所关系",
+            "拱数计法与长度范围"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "2019市政府修缮公告",
+          "institution": "Comune di Bologna",
+          "url": "https://www.comune.bologna.it/novita/comunicati-stampa/portico-monumentale-di-san-luca-sono-iniziati-i-lavori-di-restauro-e-di-ripristino-strutturale",
+          "accessedAt": "2026-10-05",
+          "locator": "实际HTTP下载完整HTML并阅读Gli interventi",
+          "claims": [
+            "墙拱顶抹灰砌体与历史修缮范围"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S4",
+          "title": "市政所列山坡外观照片",
+          "institution": "Comune di Bologna",
+          "url": "https://portici.comune.bologna.it/sites/default/files/styles/card_poi/public/2024-04/_DS72867-HDR.jpg?itok=7QWkgBox",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载view像素",
+          "claims": [
+            "实际观察外侧柱拱表面屋面与街道城市位置"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补San Luca外侧柱拱表面支撑及实际照片、路线分段；限定静态图文通过。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "estonian-maausk",
@@ -1870,16 +2665,43 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "Hingedeaeg 亡灵季窗边象征点烛致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "蜡烛与窗边环境形制不足；窗边与墓园变体须选其一；来源关联不足"
+      "selectedDisplay": "Maavalla Koda公开亡灵季背景与独立原创木框玻璃窗台陶盘蜡烛纪念光、纸卡起止",
+      "status": "ready",
+      "outputFiles": [
+        "content/display-notes/estonian-maausk.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/estonian-maausk.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "14.10.10222 (2009) On hingedeaeg",
+          "institution": "Taarausuliste ja Maausuliste Maavalla Koda／Ahto Kaasik",
+          "url": "https://www.maavald.ee/uudised-10222-2009/3357-141010222-2009-on-hingedeaeg",
+          "accessedAt": "2026-10-05",
+          "locator": "机构HTML下载成功并读亡灵季、家居清静代际故事、koduakendel/kalmudel和作者署名段；web超时不作唯一验证",
+          "claims": [
+            "组织2009自述亡灵季与代际纪念",
+            "有人在家窗或亲人墓点烛，不能外推全体爱沙尼亚或灵体实际出现"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "BERTA: Hingedepäev - 2. november / Hingedeaeg",
+          "institution": "爱沙尼亚文学博物馆民俗项目BERTA",
+          "url": "https://www.folklore.ee/Berta/tahtpaev-hingedepaev.php",
+          "accessedAt": "2026-10-05",
+          "locator": "正文L4的1990年代窗/墓点烛；L6的较长季节和地方差异",
+          "claims": [
+            "点烛现代传播年代与较长亡灵季区别",
+            "不能将各地日期与全部人群身份统一"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补组织亡灵季窗烛背景、原创窗台木框玻璃及陶盘烛卡形制起止；主审通过限定切片。",
+      "remainingGaps": [],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "ewe-traditional",
@@ -1887,17 +2709,80 @@
       "grade": "C",
       "batchId": "C02",
       "baselineReadiness": "partial",
-      "selectedDisplay": "Anloga出走纪念的原创和解广场致敬",
-      "status": "pending",
-      "outputFiles": [],
-      "reviewFile": null,
-      "verifiedSources": [],
-      "checkpoint": "尚未开始新研究与文字补齐。",
-      "remainingGaps": [
-        "Anloga广场与首领公众观看关系未写；原创清扫符号形制及放置终态不足",
-        "现有来源链接尚未逐主张对应所选公开切片；不能由链接列表确认上述形制、空间或过程。"
+      "selectedDisplay": "Anloga Hogbe Park主durbar文化背景与独立原创木板棉布和解清扫符号致敬",
+      "status": "needs_research",
+      "outputFiles": [
+        "content/display-notes/ewe-traditional.md"
       ],
-      "updatedAt": "2026-10-04"
+      "reviewFile": "docs/material-readiness/supplementation/reviews/ewe-traditional.json",
+      "verifiedSources": [
+        {
+          "id": "S1",
+          "title": "Ghana Tourism Authority：Hogbetsotso Za festival",
+          "institution": "Ghana Tourism Authority",
+          "url": "https://visitghana.com/hogbetsotso-za-festival/",
+          "accessedAt": "2026-10-05",
+          "locator": "2025-04-17正文Origin/Activities全文",
+          "claims": [
+            "Anlo/Anloga主集会背景与出走传说",
+            "首领接受致敬、和解清扫与Husago概念"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S2",
+          "title": "Anlo Dukor：About",
+          "institution": "Anlo Dukor",
+          "url": "https://www.anlodukor.org/about",
+          "accessedAt": "2026-10-05",
+          "locator": "About Anlo Dukor与节庆段",
+          "claims": [
+            "社区组织自述与纪念和解意义"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S3",
+          "title": "Anlo Dukor：Festival Program",
+          "institution": "Anlo Dukor",
+          "url": "https://anlodukor.org/program",
+          "accessedAt": "2026-10-05",
+          "locator": "2025节目表",
+          "claims": [
+            "2025Hogbe Park主durbar及其他活动分离"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S4",
+          "title": "旅游页所列图片",
+          "institution": "Ghana Tourism Authority公开列图",
+          "url": "https://visitghana.com/wp-content/uploads/2025/04/8751-hogbetsotso-za-festival.jpeg",
+          "accessedAt": "2026-10-05",
+          "locator": "实际下载view像素：2019海报",
+          "claims": [
+            "2019宣传海报，不支持真实布局"
+          ],
+          "verified": true
+        },
+        {
+          "id": "S5",
+          "title": "Anlo Dukor：Gallery",
+          "institution": "Anlo Dukor",
+          "url": "https://www.anlodukor.org/gallery",
+          "accessedAt": "2026-10-05",
+          "locator": "正文及HTML实际读，仅标题占位未取现场图片",
+          "claims": [
+            "仅标题占位可读，无现场像素"
+          ],
+          "verified": true
+        }
+      ],
+      "checkpoint": "已补Anlo出走纪念与社区节目、剔除2019海报场地误用，原创符号起止具体；真实durbar布局待研究。",
+      "remainingGaps": [
+        "同一次公开主durbar的首领坐位/棚台、公众界线、中央空地、出入口前后关系未核；地面座椅遮棚材质结构不足。"
+      ],
+      "updatedAt": "2026-10-05"
     },
     {
       "slug": "faroese-folk",

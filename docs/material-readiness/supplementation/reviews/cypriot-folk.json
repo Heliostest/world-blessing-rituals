@@ -1,0 +1,108 @@
+{
+  "slug": "cypriot-folk",
+  "title": "塞浦路斯民间东正教与朝圣祈福（Cypriot）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "Kykkos修院公开资料所记录户外院落、石砌外墙与阶梯的静态图文",
+  "baselineSelectedDisplay": "Panagia tou Kykkou修院外观",
+  "sliceChangeReason": "将基线修院外观具体化为官方院落照片范围；不进入礼拜堂和僧房。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：官方讲解石构分期与院地关系，实际图片长墙台阶门窗远塔山坡可绘，博物馆内部材质不移植外墙，海拔差异保留。未知檐门屋面材种不伪造，对限定静态照片图文不阻断；sequence=null不声称行走揭像或鸣钟。",
+  "evidence": [
+    {
+      "file": "content/display-notes/cypriot-folk.md",
+      "line": 9,
+      "quote": "1541年灾后以石重建",
+      "reason": "主体石构文化分期有据"
+    },
+    {
+      "file": "content/display-notes/cypriot-folk.md",
+      "line": 16,
+      "quote": "右侧阶梯近、远处钟楼在左后方",
+      "reason": "可绘深度位置"
+    },
+    {
+      "file": "content/display-notes/cypriot-folk.md",
+      "line": 20,
+      "quote": "读者仅从图中认识构件",
+      "reason": "静态观看限定"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "核实图片转载授权与当期参观公告；若扩成完整建筑模型则补门、屋顶及结构材质。"
+  ],
+  "sourceFiles": [
+    "content/traditions/cypriot-folk.md",
+    "content/display-notes/cypriot-folk.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Monastery of Kykkos – written audio guide",
+      "institution": "Cyprus Tourism / Deputy Ministry of Tourism",
+      "url": "https://www.visitcyprus.com/wp-content/uploads/files/audio_guides/written_form/Monastery_of_Kykkos_afigisi_en.pdf",
+      "accessedAt": "2026-10-05",
+      "locator": "22页PDF实际读取；印刷页2—5",
+      "claims": [
+        "修院与山峰海拔区分",
+        "现存建筑多期、1541灾后石构",
+        "院落与石铺地、外墙廊道装饰"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Kykkos Monastery官方条目院落照片",
+      "institution": "Visit Cyprus",
+      "url": "https://www.visitcyprus.com/wp-content/uploads/2015/11/28232e87509dedeadc0cd2b6a94ea3f5.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view_image像素",
+      "claims": [
+        "长条两层石墙、台阶、门窗与远处钟楼",
+        "院地与山坡林木空间；不鉴定门木种与屋面"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Klasztoru Kykkos",
+      "institution": "Visit Cyprus",
+      "url": "https://www.visitcyprus.com/pl/pl-discover-cyprus/pl-culture-pl-discover-cyprus/pl-sites-and-monuments-pl-culture-pl-discover-cyprus/kykkos-monastery-2/",
+      "accessedAt": "2026-10-05",
+      "locator": "正文与地址栏",
+      "claims": [
+        "名称、Troodos/Marathasa地域",
+        "短文1318米与详稿区分不一致，保留差异"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "HOLY MONASTERY OF KYKKOS – Museum guide",
+      "institution": "Holy Monastery of Kykkos",
+      "url": "https://kykkos.org.cy/kykkos-museum.cy.net/eg-odigos-mousiou.html",
+      "accessedAt": "2026-10-05",
+      "locator": "全文15行实际阅读；地面材料、音乐与入口段",
+      "claims": [
+        "博物馆内部材料与声音不能继承给外墙院落"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补Kykkos官方石构分期、院落阶梯长墙远塔照片观察与资料差异；静态通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "chuukese-traditional",
+  "title": "楚克传统信仰与村社祈福余绪（Chuukese／Truk）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "楚克教堂初熟宴席致敬（具体一手场合未核；仅完成Tonoas历史差异说明）",
+  "baselineSelectedDisplay": "楚克教堂初熟宴席致敬",
+  "sliceChangeReason": "保留原切片缺口；原始访谈区分向家族/村长初熟供献与后来节日共食，不可自动改写为教堂初熟礼。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 1,
+    "objects": 1,
+    "space": 1,
+    "sequence": 1,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：Tonoas家庭原始访谈明确历史初熟给村长家族头与后来圣诞共食，未证实原定教堂初熟。无证活动身份不是足以确立另一归属的矛盾，保留needs_research；包食物有叶材但折法盘架及教堂空间全过程仍缺，原创阅读序列不能抵消。",
+  "evidence": [
+    {
+      "file": "content/display-notes/chuukese-traditional.md",
+      "line": 7,
+      "quote": "不是“初熟供献移入某座教堂”的证据",
+      "reason": "范围实例未证"
+    },
+    {
+      "file": "content/display-notes/chuukese-traditional.md",
+      "line": 17,
+      "quote": "没有可核定的方包、圆包、折角或叶柄绑结照片",
+      "reason": "核心物件形制不足"
+    }
+  ],
+  "gaps": [
+    "原定教堂初熟宴席无可定位一手实例与公众资格",
+    "食物叶包轮廓、折层/连接、承放容器未知",
+    "教堂具体空间与初熟主持起止无依据"
+  ],
+  "nextWriting": [
+    "从具体楚克教会/村社的一次原始活动记录核定初熟或收成感恩身份，再补同场器物与空间；无法确认时另选有边界的食物文化介绍而非算原切片完成。"
+  ],
+  "sourceFiles": [
+    "content/traditions/chuukese-traditional.md",
+    "content/display-notes/chuukese-traditional.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The Changing Family in Chuuk: 1950–1990",
+      "institution": "Micronesian Seminar；Innocente Oneisom原始家庭访谈与初稿",
+      "url": "https://micsem.org/print/?id=2029",
+      "accessedAt": "2026-10-05",
+      "locator": "全文；The Ideal Chuukese Family；Food Distribution；Celebrations",
+      "claims": [
+        "多数访谈家庭在Tonoas",
+        "面包果煮捣和香蕉叶包分配",
+        "向村长/家族首领的初熟类别及衰退",
+        "节日家族共食与初熟应分开"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已核楚克家庭食物访谈并区分初熟与教会节日共食；原定教堂实例包形空间待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

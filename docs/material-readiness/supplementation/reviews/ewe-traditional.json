@@ -1,0 +1,129 @@
+{
+  "slug": "ewe-traditional",
+  "title": "埃维族传统信仰与霍格贝措索节祈福（Ewe）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "Anloga Hogbe Park主durbar文化背景与独立原创木板棉布和解清扫符号致敬",
+  "baselineSelectedDisplay": "Anloga出走纪念的原创和解广场致敬",
+  "sliceChangeReason": "保留基线公共durbar与原创符号，纠正出埃及误译、将旅游配图2019海报从场地证据剔除；真实广场留待研究。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 1,
+    "sequence": 2,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审实际研究写读：旅游与社区一手正文固定Anlo/Anloga及Hogbe Park历史节目，迁徙传说与倒退纪念保持概念，实际配图为2019海报不能当2025场地。原创木板槽座棉布陶盘与擦拭置板终态具体，但首领公众广场拓扑与现场材形无同次证据，space=1保留partial，不以原创台面替代。",
+  "evidence": [
+    {
+      "file": "content/display-notes/ewe-traditional.md",
+      "line": 19,
+      "quote": "板下缘插入有槽的窄木座",
+      "reason": "原创符号支撑明确"
+    },
+    {
+      "file": "content/display-notes/ewe-traditional.md",
+      "line": 27,
+      "quote": "尚不能画出同一次公开durbar中首领台/棚、观者边界、中央空地及入口",
+      "reason": "真实主体空间阻断"
+    },
+    {
+      "file": "content/display-notes/ewe-traditional.md",
+      "line": 38,
+      "quote": "桌面灰标已无，布仍在盘",
+      "reason": "原创结束状态具体"
+    }
+  ],
+  "gaps": [
+    "同一次公开主durbar的首领坐位/棚台、公众界线、中央空地、出入口前后关系未核；地面座椅遮棚材质结构不足。"
+  ],
+  "nextWriting": [
+    "查社区或地方政府一次主durbar公开全景或场地说明，核具体布局与材质，再补实景与原创信息台分层关系。"
+  ],
+  "sourceFiles": [
+    "content/traditions/ewe-traditional.md",
+    "content/display-notes/ewe-traditional.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Ghana Tourism Authority：Hogbetsotso Za festival",
+      "institution": "Ghana Tourism Authority",
+      "url": "https://visitghana.com/hogbetsotso-za-festival/",
+      "accessedAt": "2026-10-05",
+      "locator": "2025-04-17正文Origin/Activities全文",
+      "claims": [
+        "Anlo/Anloga主集会背景与出走传说",
+        "首领接受致敬、和解清扫与Husago概念"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Anlo Dukor：About",
+      "institution": "Anlo Dukor",
+      "url": "https://www.anlodukor.org/about",
+      "accessedAt": "2026-10-05",
+      "locator": "About Anlo Dukor与节庆段",
+      "claims": [
+        "社区组织自述与纪念和解意义"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Anlo Dukor：Festival Program",
+      "institution": "Anlo Dukor",
+      "url": "https://anlodukor.org/program",
+      "accessedAt": "2026-10-05",
+      "locator": "2025节目表",
+      "claims": [
+        "2025Hogbe Park主durbar及其他活动分离"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "旅游页所列图片",
+      "institution": "Ghana Tourism Authority公开列图",
+      "url": "https://visitghana.com/wp-content/uploads/2025/04/8751-hogbetsotso-za-festival.jpeg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素：2019海报",
+      "claims": [
+        "2019宣传海报，不支持真实布局"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S5",
+      "title": "Anlo Dukor：Gallery",
+      "institution": "Anlo Dukor",
+      "url": "https://www.anlodukor.org/gallery",
+      "accessedAt": "2026-10-05",
+      "locator": "正文及HTML实际读，仅标题占位未取现场图片",
+      "claims": [
+        "仅标题占位可读，无现场像素"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Anloga District Assembly Final Draft Plan2022–2025",
+      "institution": "Anloga District Assembly",
+      "url": "https://anda.gov.gh/wp-content/uploads/2024/09/Anloga-District-Assembly_Final-Draft-Plan-2022-2025.pdf",
+      "accessedAt": "2026-10-05",
+      "locator": "请求返回防护HTML，PDF未读",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补Anlo出走纪念与社区节目、剔除2019海报场地误用，原创符号起止具体；真实durbar布局待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

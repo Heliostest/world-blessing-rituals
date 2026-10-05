@@ -1,0 +1,11 @@
+{
+ "slug":"chuukese-traditional","batchId":"C02",
+ "selectedDisplay":"楚克教堂初熟宴席致敬（具体一手场合未核；仅完成Tonoas历史差异说明）",
+ "sliceChangeReason":"保留原切片缺口；原始访谈区分向家族/村长初熟供献与后来节日共食，不可自动改写为教堂初熟礼。",
+ "recommendedStatus":"needs_research",
+ "dimensions":{"context":1,"objects":1,"space":1,"sequence":1,"sensory":1,"variants":2,"boundaries":2,"provenance":2},
+ "gaps":["原定教堂初熟宴席无可定位一手实例与公众资格","食物叶包轮廓、折层/连接、承放容器未知","教堂具体空间与初熟主持起止无依据"],
+ "nextWriting":["从具体楚克教会/村社的一次原始活动记录核定初熟或收成感恩身份，再补同场器物与空间；无法确认时另选有边界的食物文化介绍而非算原切片完成。"],
+ "semanticRationale":"实地访谈有明确Tonoas范围和食物分配事实，足以编辑差异卡；没有证据把历史土地关系初熟供献和教会节日共食合成同一场合，核心缺口保留。",
+ "sources":[{"id":"S1","title":"The Changing Family in Chuuk: 1950–1990","institution":"Micronesian Seminar；Innocente Oneisom原始家庭访谈与初稿","url":"https://micsem.org/print/?id=2029","accessedAt":"2026-10-05","locator":"全文；The Ideal Chuukese Family；Food Distribution；Celebrations","claims":["多数访谈家庭在Tonoas","面包果煮捣和香蕉叶包分配","向村长/家族首领的初熟类别及衰退","节日家族共食与初熟应分开"],"verified":true}]
+}

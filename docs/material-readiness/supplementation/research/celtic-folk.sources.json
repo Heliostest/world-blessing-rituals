@@ -1,0 +1,16 @@
+{
+  "slug": "celtic-folk",
+  "batchId": "C02",
+  "selectedDisplay": "泉边一念：明确虚构的开放泉池与原创木片留愿体验",
+  "sliceChangeReason": "沿用原评估原创泉边留愿，明确其构造和全过程不属于古代仪轨。",
+  "recommendedStatus": "ready",
+  "dimensions": {"context":2,"objects":2,"space":2,"sequence":2,"sensory":2,"variants":2,"boundaries":2,"provenance":2},
+  "gaps": [],
+  "nextWriting": ["非阻断：编辑巴斯历史分期简介，保持罗马遗址事实与原创体验分别标注。"],
+  "semanticRationale": "文化背景限定一处罗马不列颠遗址且保留前罗马证据的推测性；木片材质、支撑、漂浮、岸上愿望板及回收结束均有具体原创规格，无须猜测传统仪轨。",
+  "evidenceHints": ["圆片初始放在池边的浅木托盘中，托盘底面贴住石岸", "木片随虚拟水流缓慢到后侧出口并进入回收区；水面恢复为细波"],
+  "sources": [
+    {"id":"S1","title":"Roman Sacred Spring","institution":"Roman Baths / Bath & North East Somerset Council","url":"https://www.romanbaths.co.uk/roman-sacred-spring-0","accessedAt":"2026-10-05","locator":"正文 Sacred Spring、King’s Bath、Roman drain；web已读141–163行","claims":["特定遗址罗马期供物","前罗马敬奉仅为土堤提示","不规则石室、铅衬、橡木桩","后世建筑层次及排水"],"verified":true},
+    {"id":"S2","title":"Fun facts","institution":"Roman Baths / Bath & North East Somerset Council","url":"https://www.romanbaths.co.uk/fun-facts-0","accessedAt":"2026-10-05","locator":"正文 Sacred Spring 与 offerings；web已读142–157行","claims":["罗马时期关于泉水的信念及投入钱币首饰","铅诅咒片为历史馆藏，不用于本体验","石槽与排水"],"verified":true}
+  ]
+}

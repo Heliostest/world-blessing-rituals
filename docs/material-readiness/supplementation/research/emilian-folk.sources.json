@@ -1,0 +1,62 @@
+{
+  "slug": "emilian-folk",
+  "batchId": "C02",
+  "selectedDisplay": "San Luca市政山坡外侧照片与城市至圣所路线静态图文",
+  "sliceChangeReason": "保留上山拱廊公开外观，限定已有可观察市政图与定位关系，不冒称整段建筑或动态朝圣齐备。",
+  "recommendedStatus": "ready",
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：照片授权与路线示意编辑；转动态须另补具名廊内地面屋面和行进起止。"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Comune di Bologna：San Luca 序列",
+      "institution": "Comune di Bologna",
+      "url": "https://portici.comune.bologna.it/la-serie/san-luca",
+      "accessedAt": "2026-10-05",
+      "locator": "正文首两段",
+      "claims": [
+        "巴洛克敬礼道路及现代公共步行用途"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "市政地图：Portico di San Luca / Meloncello",
+      "institution": "Comune di Bologna",
+      "url": "https://portici.comune.bologna.it/mappe?tipo=22",
+      "accessedAt": "2026-10-05",
+      "locator": "Portico di San Luca及Meloncello节",
+      "claims": [
+        "各路线段与圣所关系",
+        "拱数计法与长度范围"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "2019市政府修缮公告",
+      "institution": "Comune di Bologna",
+      "url": "https://www.comune.bologna.it/novita/comunicati-stampa/portico-monumentale-di-san-luca-sono-iniziati-i-lavori-di-restauro-e-di-ripristino-strutturale",
+      "accessedAt": "2026-10-05",
+      "locator": "实际HTTP下载完整HTML并阅读Gli interventi",
+      "claims": [
+        "墙拱顶抹灰砌体与历史修缮范围"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "市政所列山坡外观照片",
+      "institution": "Comune di Bologna",
+      "url": "https://portici.comune.bologna.it/sites/default/files/styles/card_poi/public/2024-04/_DS72867-HDR.jpg?itok=7QWkgBox",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素",
+      "claims": [
+        "实际观察外侧柱拱表面屋面与街道城市位置"
+      ],
+      "verified": true
+    }
+  ]
+}

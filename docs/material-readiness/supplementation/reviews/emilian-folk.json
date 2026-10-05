@@ -1,0 +1,105 @@
+{
+  "slug": "emilian-folk",
+  "title": "艾米利亚民间天主教与朝圣祈福（Emilian）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "San Luca市政山坡外侧照片与城市至圣所路线静态图文",
+  "baselineSelectedDisplay": "San Luca拱廊上山外观",
+  "sliceChangeReason": "保留上山拱廊公开外观，限定已有可观察市政图与定位关系，不冒称整段建筑或动态朝圣齐备。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审实际研究写读：市政地图解决上山分段，2019完整修缮HTML核墙拱顶抹灰砌体，实际外侧图片明确拱洞壁墩低墙屋面和道路下方城市。限定静态外侧照片与关系图，屋面材种廊内铺地明确不复原；不把外道路材料移植廊内。sequence=null不声称完整行走或巡游，范围有据且可绘主体。",
+  "evidence": [
+    {
+      "file": "content/display-notes/emilian-folk.md",
+      "line": 13,
+      "quote": "砌体结构加抹灰饰面",
+      "reason": "主体材料有市政文本"
+    },
+    {
+      "file": "content/display-notes/emilian-folk.md",
+      "line": 17,
+      "quote": "落地壁墩托住拱与上方连续屋面",
+      "reason": "可绘支撑关系"
+    },
+    {
+      "file": "content/display-notes/emilian-folk.md",
+      "line": 29,
+      "quote": "初始和结束都是同一山坡外观与路线关系图",
+      "reason": "静态过程范围明确"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：照片授权与路线示意编辑；转动态须另补具名廊内地面屋面和行进起止。"
+  ],
+  "sourceFiles": [
+    "content/traditions/emilian-folk.md",
+    "content/display-notes/emilian-folk.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Comune di Bologna：San Luca 序列",
+      "institution": "Comune di Bologna",
+      "url": "https://portici.comune.bologna.it/la-serie/san-luca",
+      "accessedAt": "2026-10-05",
+      "locator": "正文首两段",
+      "claims": [
+        "巴洛克敬礼道路及现代公共步行用途"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "市政地图：Portico di San Luca / Meloncello",
+      "institution": "Comune di Bologna",
+      "url": "https://portici.comune.bologna.it/mappe?tipo=22",
+      "accessedAt": "2026-10-05",
+      "locator": "Portico di San Luca及Meloncello节",
+      "claims": [
+        "各路线段与圣所关系",
+        "拱数计法与长度范围"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "2019市政府修缮公告",
+      "institution": "Comune di Bologna",
+      "url": "https://www.comune.bologna.it/novita/comunicati-stampa/portico-monumentale-di-san-luca-sono-iniziati-i-lavori-di-restauro-e-di-ripristino-strutturale",
+      "accessedAt": "2026-10-05",
+      "locator": "实际HTTP下载完整HTML并阅读Gli interventi",
+      "claims": [
+        "墙拱顶抹灰砌体与历史修缮范围"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "市政所列山坡外观照片",
+      "institution": "Comune di Bologna",
+      "url": "https://portici.comune.bologna.it/sites/default/files/styles/card_poi/public/2024-04/_DS72867-HDR.jpg?itok=7QWkgBox",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素",
+      "claims": [
+        "实际观察外侧柱拱表面屋面与街道城市位置"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补San Luca外侧柱拱表面支撑及实际照片、路线分段；限定静态图文通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

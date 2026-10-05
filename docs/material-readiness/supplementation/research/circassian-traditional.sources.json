@@ -1,0 +1,17 @@
+{
+ "slug":"circassian-traditional","batchId":"C02",
+ "selectedDisplay":"Xabze公开款待伦理、Gelendzhik ane白蜡木桌参照的原创让座茶饼分享",
+ "sliceChangeReason":"保留原卡公开让座分享；撤去无连贯一手证据的圣林点灯；馆藏参照、历史礼俗与原创舞台分开。",
+ "recommendedStatus":"ready",
+ "dimensions":{"context":2,"objects":2,"space":2,"sequence":2,"sensory":2,"variants":2,"boundaries":2,"provenance":2},
+ "gaps":[],
+ "nextWriting":["非阻断编辑：真实图像另核授权并保留馆藏身份；压缩背景而不扩展圣林或主持祷词。"],
+ "semanticRationale":"主木桌有第一方馆藏档案与实际像素观察，食物类别有社区编译原书，历史客位和原创可绘空间及起止明确；未靠通用原创面板补未知文化主体。",
+ "sources":[
+ {"id":"S1","title":"Circassian ane table","institution":"Gelendzhik Museum of History and Local Lore／Culture.ru馆藏页","url":"https://ar.culture.ru/en/subject/stol-adygskiy","accessedAt":"2026-10-05","locator":"Creation period／Place／Technique；正文三足横撑和捐赠段","claims":["此件19世纪后半叶Adygea来源","白蜡木43x60x60cm","三足横撑圆桌结构"],"verified":true},
+ {"id":"S1-I","title":"Gelendzhik ane table同件实物照片","institution":"Gelendzhik Museum of History and Local Lore","url":"https://ar.culture.ru/attachments/attachment/middle/61b98818de7b563005294469-middle.jpg","accessedAt":"2026-10-05","locator":"从馆藏页图29取得，实际下载并view_image观察600x600像素","claims":["薄圆桌面与凸窄边","桌面裂缝、磨损仅属此件","三条车制节状木足和横撑可见"],"verified":true},
+ {"id":"S2","title":"Circassian Customs & Traditions, second edition2014","institution":"Centre for Circassian Studies；Amjad Jaimoukha编译","url":"https://circassianworld.com/pdfs/circassian-customs-traditions.pdf","accessedAt":"2026-10-05","locator":"印刷pp.89–103／PDF pp.90–104；下载正文阅读Receiving/Respect/Feasting guests","claims":["款待伦理","尊位面对客室入口","客室与正式宴会座次和历史变体不同"],"verified":true},
+ {"id":"S3","title":"Circassian Cuisine","institution":"Sanjalay Press；Amjad Jaimoukha编2004","url":"https://circassianworld.com/pdfs/circassian-cuisine.pdf","accessedAt":"2026-10-05","locator":"§6.15玉米扁饼；§8.1 Kalmyk茶；印刷pp.30–31、41","claims":["玉米面平饼材料与圆/椭圆形","压块茶加奶/奶油的Kalmyk茶与饼搭配"],"verified":true},
+ {"id":"S4","title":"Three-legged table","institution":"The Adygeysk Museum of Local Lore／Culture.ru馆藏页","url":"https://ar.culture.ru/en/subject/stol-na-tryoh-nozhkah---iane","accessedAt":"2026-10-05","locator":"器物字段及木工、配三足凳段","claims":["木桌及配木凳概念","与S1不同馆藏和木种不得移植"],"verified":true}
+ ]
+}

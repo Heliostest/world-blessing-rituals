@@ -1,0 +1,15 @@
+{
+ "slug":"breton-pardons","batchId":"C02","selectedDisplay":"Locronan Saint-Ronan石堂外部与旗帜队列的原创非圣事步行致敬",
+ "sliceChangeReason":"把泛布列塔尼石堂切片固定到Locronan，不扩大礼仪资格。",
+ "recommendedStatus":"needs_research","dimensions":{"context":2,"objects":1,"space":2,"sequence":2,"sensory":1,"variants":2,"boundaries":2,"provenance":2},
+ "gaps":["未核验所选Locronan旗帜的旗杆材料、横撑/悬挂、握持支撑及正反图像；机构图片像素未成功读取。"],
+ "nextWriting":["取得具名旗帜正反面和持杆实物资料，补旗面—杆—人接触关系、材质、下缘与图像；不得把类型平均尺寸或其他堂区图像套入。"],
+ "semanticRationale":"已读地区建筑调查足以定位灰花岗岩石堂和外部体块；BCD类型研究支持双面纺织绣旗与身份，仍不足确认切片旗架，保留待研究。",
+ "evidenceHints":["门廊大圆拱内通向成对圆拱门；Pénity 礼拜堂接在西南侧", "旗杆材质、旗面如何悬在杆上、横撑有无、杆脚是否用套具支持……保持未知"],
+ "sources":[
+ {"id":"S1","title":"Les bannières de procession","institution":"Bretagne Culture Diversité；Yann Celton（教区图书馆员/文物研究者）","url":"https://bcd.bzh/becedia/fr/les-bannieres-de-procession","accessedAt":"2026-10-05","locator":"正文21–27行与作者38行，全文已读","claims":["两面纺织旗与绣饰","旗帜堂区身份与图像类型","平信徒持旗及队列预先安排"],"verified":true},
+ {"id":"S2","title":"Eglise paroissiale Saint-Ronan, place de l'Eglise (Locronan), IA00005195","institution":"Région Bretagne / Inventaire général du patrimoine culturel","url":"https://patrimoine.bzh/gertrude-diffusion/dossier/IA00005195","accessedAt":"2026-10-05","locator":"Historique98–105；Description140–155；Murs/Toits159–165，均实际读","claims":["灰花岗岩规整石块及石板屋面","西塔前门廊和Pénity西南连接","1808旧尖顶倒塌与后续形制"],"verified":true},
+ {"id":"S3","title":"La Grande Troménie à Locronan（2025活动）","institution":"Locronan地方公开活动网站","url":"https://www.locronan.bzh/agenda/la-grande-tromenie-a-locronan-12-07-2025-8","accessedAt":"2026-10-05","locator":"活动正文已读；只采用节期/地点，不采用远古起源断言","claims":["具名Grande Troménie七月六年周期公共活动背景"],"verified":true},
+ {"id":"S4","title":"Bannières portées lors de la troménie de Locronan, 14 juillet 2019（照片）","institution":"Julie Léonard / BCD","url":"https://bcd.bzh/becedia/sites/default/files/focus/img_20190714_1819182-ok.jpg","accessedAt":"2026-10-05","locator":"正文图注已读，但图片像素未读取；curl连接重置，浏览器不可用","claims":[],"verified":false}
+ ]
+}

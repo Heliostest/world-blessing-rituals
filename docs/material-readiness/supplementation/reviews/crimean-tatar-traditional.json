@@ -1,0 +1,107 @@
+{
+  "slug": "crimean-tatar-traditional",
+  "title": "克里米亚鞑靼伊斯兰与归乡祈福传统（Crimean Tatar）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "2024 Musafir公开iftar文化说明及以当代豆汤为参照的共餐、和平光环原创致敬",
+  "baselineSelectedDisplay": "克里米亚鞑靼开斋共餐与和平祝福的原创致敬",
+  "sliceChangeReason": "基线原本即原创共餐和平致敬；补具体社区主办餐会及当代菜品参照，明确不重现2024菜单、分店与仪轨。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：2024Musafir社区餐会、实际主办方全景与当前餐厅汤菜单对应且时点分开，未将当前分店菜单倒填历史活动。原创陶碗勺壶杯木桌材形布置具体，分餐汤面变化、勺回托盘、日常点头祝愿和独立抽象海平线圆环起止完整；真实开斋身份步骤不复演。原评估本为原创共餐和平光，调整有依据未缩成介绍，通过限定产品切片。",
+  "evidence": [
+    {
+      "file": "content/display-notes/crimean-tatar-traditional.md",
+      "line": 20,
+      "quote": "圈足接触桌面",
+      "reason": "原创碗支撑与材料具体"
+    },
+    {
+      "file": "content/display-notes/crimean-tatar-traditional.md",
+      "line": 32,
+      "quote": "两碗各有一份，中心碗汤面降低；勺回托盘",
+      "reason": "分餐起止可写"
+    },
+    {
+      "file": "content/display-notes/crimean-tatar-traditional.md",
+      "line": 26,
+      "quote": "光环是平面说明板上的可见圆环",
+      "reason": "和平光空间非实景海岸明确"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "核实参考照片授权、普通祝愿翻译与人名；若改真实iftar复原，必须补活动分店、菜单及公开过程。"
+  ],
+  "sourceFiles": [
+    "content/traditions/crimean-tatar-traditional.md",
+    "content/display-notes/crimean-tatar-traditional.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Іфтар – як українська традиція",
+      "institution": "Духовне управління мусульман Автономної Республіки Крим（DUMARK新闻处）",
+      "url": "https://www.dumk.org/2024/04/03/iftar-yak-ukra%D1%97nska-tradiciya/",
+      "accessedAt": "2026-10-05",
+      "locator": "正文首两段、致辞/展览/交流段，实际全文相关正文读取",
+      "claims": [
+        "2024-04-01与Mejlis联办Musafir餐会、混合来宾",
+        "开场致辞、Ramadan展览、身份介绍、交流；未给分店/菜单/完整仪轨"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "2024 Musafir iftar全景照片",
+      "institution": "DUMARK新闻处",
+      "url": "https://www.dumk.org/wp-content/uploads/2024/04/photo_2024-04-02_17-26-43.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "下载view_image实际像素",
+      "claims": [
+        "两桌列与中央通道、浅白布、圆盘碗、透明壶杯",
+        "不识别2024菜名/饮料/陶种/纤维"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Musafir官网菜单",
+      "institution": "Musafir自营餐厅",
+      "url": "https://www.musafir.com.ua/",
+      "accessedAt": "2026-10-05",
+      "locator": "Supи段红扁豆汤；Chebureki/Yantiki段实读",
+      "claims": [
+        "当代红扁豆奶油汤配奶油薄荷酱、柠檬、面包丁作为原创选食参照",
+        "当代菜单不得继承为2024餐会菜单"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "Contact us",
+      "institution": "Musafir自营餐厅",
+      "url": "https://www.musafir.com.ua/en/contacts/",
+      "accessedAt": "2026-10-05",
+      "locator": "分店地址各段实读",
+      "claims": [
+        "当前基辅多分店，不能唯一回溯2024活动场地"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已補Musafir公开餐会与真实桌列观察，原创汤碗分餐日常祝愿和平光四阶段完整；通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

@@ -1,0 +1,120 @@
+{
+  "slug": "cornish-folk",
+  "title": "康沃尔民间基督教与圣井—朝圣祈福（Cornish）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "Madron圣井、系布树与邻近小堂的公开静态图文说明",
+  "baselineSelectedDisplay": "康沃尔圣井公开外观与系布民俗说明",
+  "sliceChangeReason": "将基线未指定的康沃尔圣井具体化为Madron，保留系布民俗说明并区分独立井穴与小堂水槽。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：Madron井和邻近小堂分址，遗产登记明示石衬井、花岗岩台阶及水路；实际系布树照片只辨可见表面，不猜纤维树种。两张图文保持静态，sequence=null有合理解释；位置、历史民俗分期和保护边界可用于公开资料展示。",
+  "evidence": [
+    {
+      "file": "content/display-notes/cornish-folk.md",
+      "line": 9,
+      "quote": "小型矩形、石衬、积水井穴",
+      "reason": "井体形制材质已实证"
+    },
+    {
+      "file": "content/display-notes/cornish-folk.md",
+      "line": 9,
+      "quote": "北墙入口、东西向内部空间",
+      "reason": "小堂空间明确"
+    },
+    {
+      "file": "content/display-notes/cornish-folk.md",
+      "line": 18,
+      "quote": "本切片静态，sequence 不适用",
+      "reason": "静态范围明确"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "核实配图授权、排版及现状；如扩展动作或场景必须另行研究。"
+  ],
+  "sourceFiles": [
+    "content/traditions/cornish-folk.md",
+    "content/display-notes/cornish-folk.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Holy well called Madron Well",
+      "institution": "Historic England",
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1004310",
+      "accessedAt": "2026-10-05",
+      "locator": "Details；SW4455832747",
+      "claims": [
+        "石衬矩形积水井穴",
+        "井、小堂、十字架分别登记"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Medieval chapel known as Madron Well Chapel",
+      "institution": "Historic England",
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1006728",
+      "accessedAt": "2026-10-05",
+      "locator": "Details",
+      "claims": [
+        "无顶单室石构、花岗岩台阶与祭坛",
+        "西南进水槽、西侧渠道、北墙排水"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Trail Guide: Madron Chapel and Trengwainton Carn",
+      "institution": "Penwith Landscape Partnership",
+      "url": "https://www.penwithlandscape.org.uk/trails-and-ancient-sites/trail-guide-madron-chapel-and-trengwainton-carn/",
+      "accessedAt": "2026-10-05",
+      "locator": "Route 2",
+      "claims": [
+        "入口步道、过溪侧路、井与小堂分开",
+        "路面湿软与破损木板提示"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "Tree hung with Cloutie ribbons and plants growing around Madron Well",
+      "institution": "Penwith Landscape Partnership",
+      "url": "https://www.penwithlandscape.org.uk/images/Point%203%20a%29%20Madron%20Well%20cloutie%20tree.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "下载原图并tools.view_image实际看像素",
+      "claims": [
+        "树枝悬挂布状条片、低处井水与植物遮挡；不识别纤维和树种"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S5",
+      "title": "Madron Well Blog 4 - Folklore of Madron Well",
+      "institution": "Penwith Landscape Partnership / Cornwall Archaeological Unit公开综述",
+      "url": "https://www.penwithlandscape.org.uk/blog/post/madron-well-blog-4---folklore-of-madron-well",
+      "accessedAt": "2026-10-05",
+      "locator": "17th/19th Century；Continuing traditions；末段保护建议",
+      "claims": [
+        "分期民俗记录为信仰与历史记述",
+        "开阔放牧地变为湿林地、供物与保护"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补Madron井与小堂遗产结构和实际系布树观察，静态图文通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

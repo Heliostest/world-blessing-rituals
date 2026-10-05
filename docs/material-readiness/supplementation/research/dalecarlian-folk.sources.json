@@ -1,0 +1,74 @@
+{
+  "slug": "dalecarlian-folk",
+  "batchId": "C02",
+  "selectedDisplay": "Tibble具名教堂船河岸系泊外观、结构和历史交通静态图文",
+  "sliceChangeReason": "将泛湖区选定为有社区一手材料的Tibble河岸两艘现代教堂船，保留公共文化记忆，排除划行模拟。",
+  "recommendedStatus": "ready",
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：照片授权与说明图编辑；扩展动态船行须另补桨叶和真实航线及动作。"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Tibble-Lycka 社区《Om kyrkbåtarna och båthuset》",
+      "institution": "Tibble-Lycka byar",
+      "url": "https://tibble-lycka.se/kyrkbatarna/mer-om-kyrkbatarna/",
+      "accessedAt": "2026-10-05",
+      "locator": "Kersti/Beckox’n/Lekatt’n及Fakta段全文",
+      "claims": [
+        "具名船年代与Tibble1943年前步行",
+        "主要船体材质、部件和数量"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Leksands kommun：Västra och Östra Rönnäs",
+      "institution": "Leksands kommun",
+      "url": "https://leksand.se/boende-trafik-och-miljo/kulturmiljoer-i-leksands-kommun/kulturmiljoer-i-byar-och-fabodar/vastra-och-ostra-ronnas",
+      "accessedAt": "2026-10-05",
+      "locator": "Kyrkbåtar及Gemensamma anläggningar段",
+      "claims": [
+        "Leksand历史赴教堂船与保存背景"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Visit Dalarna：Tibble团体教堂船划行",
+      "institution": "Visit Dalarna",
+      "url": "https://www.visitdalarna.se/gora/aktiviteter/kyrkbatsrodd-grupper-i-tibble",
+      "accessedAt": "2026-10-05",
+      "locator": "Tibble bystuga/Prostbryggan正文",
+      "claims": [
+        "现代Tibble与教堂岸边出发点"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "社区所列系泊船照片",
+      "institution": "Tibble-Lycka byar",
+      "url": "https://media.tibble-lycka.se/2021/09/kb_oxn_klar.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素",
+      "claims": [
+        "敞口座板肋骨码头船关系"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S5",
+      "title": "社区所列船首近景",
+      "institution": "Tibble-Lycka byar",
+      "url": "https://media.tibble-lycka.se/2018/05/Kyrkbat_renov.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素",
+      "claims": [
+        "船首与板缝绳关系"
+      ],
+      "verified": true
+    }
+  ]
+}

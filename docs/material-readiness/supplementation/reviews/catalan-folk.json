@@ -1,0 +1,112 @@
+{
+  "slug": "catalan-folk",
+  "title": "加泰罗尼亚民间天主教与巨人巡游祈福（Catalan）",
+  "grade": "C",
+  "batchId": "C02",
+  "selectedDisplay": "Barcelona Plaça Nova新对gegants在Sant Roc公开会面巡游的外观与观察过程",
+  "baselineSelectedDisplay": "加泰罗尼亚 gegants 巨人巡游公开外观介绍",
+  "sliceChangeReason": "把泛加泰罗尼亚巨人巡游固定到2017市政府记录的Plaça Nova Sant Roc会面，区分新对与1906旧对。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 1,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审阅读全文：2017Protocol固定新对巨人集合巡游回广场次序，正确分离旧对与另一镇材料。所选新对头身衣物框架与人接触仍欠证据，公开序列可介绍但不能据常见纸糊猜主物；objects=1不计齐备。",
+  "evidence": [
+    {
+      "file": "content/display-notes/catalan-folk.md",
+      "line": 17,
+      "quote": "内部框架材质与横撑、承载者接触位置",
+      "reason": "主体器物关键缺口"
+    },
+    {
+      "file": "content/display-notes/catalan-folk.md",
+      "line": 31,
+      "quote": "巡游返回 Plaça Nova",
+      "reason": "公开过程结束有据"
+    }
+  ],
+  "gaps": [
+    "新对巨人的壳体材料、服装具体部件、内部承载框架/横撑/开口与人接触位置未核验，不能借用旧对或另一镇器物。",
+    "尚无已读活动像素说明具体落地、抬放和转场接触。"
+  ],
+  "nextWriting": [
+    "取得Plaça Nova新对管理者/制作方器物资料及公开活动照片，补头躯衣裙/框架的材料连接和支撑；保持新旧两对分开。"
+  ],
+  "sourceFiles": [
+    "content/traditions/catalan-folk.md",
+    "content/display-notes/catalan-folk.md"
+  ],
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Gegants vells de Sant Roc de la Plaça Nova",
+      "institution": "Ajuntament de Barcelona / Cultura Popular",
+      "url": "https://www.barcelona.cat/culturapopular/ca/ambits-festius/imatgeria-festiva/gegants/gegants-vells-de-sant-roc-de-la-placa-nova",
+      "accessedAt": "2026-10-05",
+      "locator": "技术字段94–125及正文127–135全文已读",
+      "claims": [
+        "1906旧对Roc/Eulàlia与复制新对分开",
+        "日常复制品与原件保存/外出用途",
+        "伴奏变化"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Protocol Festiu de Ciutat Vella de Barcelona（2017）",
+      "institution": "Ajuntament de Barcelona - Districte de Ciutat Vella；Xavier Cordomí及田野团队",
+      "url": "https://www.barcelona.cat/culturapopular/sites/default/files/protocol_festiu_de_ciutat_vella_-_web.pdf",
+      "accessedAt": "2026-10-05",
+      "locator": "版权/田野说明第4页；PDF第60页La Trobada i Ball de Gegants 1940–1951行实际读",
+      "claims": [
+        "Plaça Nova新对及乐队作为活动主人",
+        "8月15日集合、具名街道巡游、返回与舞蹈会面结束"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Gegants i caps grossos de Santa Eulàlia, 08247-88",
+      "institution": "Diputació de Barcelona / Oficina de Patrimoni Cultural；Pilar Camañes",
+      "url": "https://patrimonicultural.diba.cat/element/gegants-i-caps-grossos-de-santa-eulalia",
+      "accessedAt": "2026-10-05",
+      "locator": "Description115–116、History118–122已全文读",
+      "claims": [
+        "另一镇1994巨人的纸石头部与具体服装，不应继承到Barcelona所选实物"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "Gegants nous de Sant Roc de la Plaça Nova",
+      "institution": "Ajuntament de Barcelona / Cultura Popular",
+      "url": "https://www.barcelona.cat/culturapopular/ca/ambits-festius/imatgeria-festiva/gegants/gegants-nous-de-sant-roc-de-la-placa-nova",
+      "accessedAt": "2026-10-05",
+      "locator": "访问限制/418，未读正文",
+      "claims": [],
+      "verified": false
+    },
+    {
+      "id": "S5",
+      "title": "Gegants",
+      "institution": "Associació de Festes de la Plaça Nova",
+      "url": "https://plnova.cat/seccions/colles-de-cultura-popular/gegants/",
+      "accessedAt": "2026-10-05",
+      "locator": "多次请求超时，未读正文",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补Plaça Nova2017新对巡游起止路线与新旧区别；主巨人壳体承载结构待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

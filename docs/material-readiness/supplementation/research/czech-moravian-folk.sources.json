@@ -1,0 +1,50 @@
+{
+  "slug": "czech-moravian-folk",
+  "batchId": "C02",
+  "selectedDisplay": "Hostýn官方山丘远景介绍与独立原创纸簿陶盘蜡烛和平意向小品",
+  "sliceChangeReason": "保留原评估山丘与意向簿致敬，固定官方远景而不虚造公开近景步道；原创桌面器材与实景分栏。",
+  "recommendedStatus": "ready",
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：照片授权及实景/原创标签编辑；扩展近景步道建筑须另补材质与观看位置。"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "圣所历史PDF，旧站可读副本",
+      "institution": "Matice svatohostýnská / Hostýn圣所",
+      "url": "https://old.hostyn.cz/bazilika_historie.pdf",
+      "accessedAt": "2026-10-05",
+      "locator": "1页PDF全文Historie/Popis chrámu",
+      "claims": [
+        "传说与历史重修双塔",
+        "入口马赛克青铜门饰"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "CzechTourism：Hostýn",
+      "institution": "CzechTourism",
+      "url": "https://www.visitczechia.com/en-us/things-to-do/places/landmarks/religious-monuments/c-holy-hostyn",
+      "accessedAt": "2026-10-05",
+      "locator": "主体三段",
+      "claims": [
+        "山丘双塔穹顶和信仰背景"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "上述页面官方所列全景SVLI-004-Hostyn_let",
+      "institution": "CzechTourism官方列图",
+      "url": "https://cdn.visitczechia.com/cms/getwebpmedia/63abc005-392d-4f5a-83a4-b8f7492e85f2/SVLI-004-Hostyn_let.jpg?width=1280&ext=.jpg&quality=35",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view像素",
+      "claims": [
+        "丘顶林间圣殿周边建筑和山脊关系"
+      ],
+      "verified": true
+    }
+  ]
+}

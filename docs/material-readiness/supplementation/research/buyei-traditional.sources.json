@@ -1,0 +1,15 @@
+{
+ "slug":"buyei-traditional","batchId":"C02",
+ "selectedDisplay":"贵州望谟布依三月三背景介绍与原创共享五色饭饭桌短体验（不复原真实歌圩）",
+ "sliceChangeReason":"沿用原创共享饭体验，具名为望谟非遗申报项；歌圩只作已核验背景，真实场地与曲目不并入本次展示。",
+ "recommendedStatus":"ready",
+ "dimensions":{"context":2,"objects":2,"space":2,"sequence":2,"sensory":2,"variants":2,"boundaries":2,"provenance":2},
+ "gaps":[],"nextWriting":["非阻断：压缩背景文字；如将来扩成真实歌圩，另补望谟具名场地、实物餐具及当地公开声画，不能沿用原创桌面为事实。"],
+ "semanticRationale":"文化事实有望谟项目原文支持，五色糯饭与地区变体相对应；碗盘桌勺结构、相对布局、分饭全过程明确为原创，未冒充地方待客或祭祖步骤。",
+ "evidenceHints":["碗为圆形敞口，口沿圆滑、壁向底部内收", "五色小堆都在盘内，色界可辨但边缘自然相接；勺回到桌边"],
+ "sources":[
+ {"id":"S1","title":"布依族“三月三”（望谟县申报项）","institution":"中国艺术研究院·中国非物质文化遗产保护中心 / 望谟县文化旅游发展中心","url":"https://www.ihchina.cn/project_details/15285/","accessedAt":"2026-10-05","locator":"项目字段及正文50–53行，全部三段已读","claims":["望谟县三月三项目归属","糯米与红黄黑紫白五色及植物汁","下午宴亲友、饭后对歌"],"verified":true},
+ {"id":"S2","title":"布依族的“三月三”","institution":"国家民族事务委员会","url":"https://www.neac.gov.cn/seac/c102690/201901/1132144.shtml","accessedAt":"2026-10-05","locator":"2009-03-27正文20–25行已读","claims":["三月三存在地区差异","罗甸与罗平的不同场所日期活动不能套用望谟"],"verified":true},
+ {"id":"S3","title":"Predicting the distribution pattern changes of dye plant habitats caused by climate change","institution":"University of South China / Central China Normal University，Frontiers in Plant Science","url":"https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2024.1364481/full","accessedAt":"2026-10-05","locator":"摘要、Introduction、Methods已读351–390行","claims":["该论文研究枫香染布的植物生境，不能支持五色饭或歌圩用器"],"verified":true}
+ ]
+}

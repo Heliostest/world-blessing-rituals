@@ -1,0 +1,71 @@
+{
+  "slug": "croatian-folk",
+  "batchId": "C02",
+  "selectedDisplay": "Marija Bistrica圣地整体公开外观、廊院关系和西立面文字材料的静态图文",
+  "sliceChangeReason": "将泛称公开圣地外观具体化为当地政府俯瞰图与文化部立面材料说明；不猜未查看图库的正面细节。",
+  "recommendedStatus": "ready",
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [],
+  "nextWriting": [
+    "核实照片授权与更新现状；扩成精确立面或动态朝圣时补正面影像、屋面材料与过程。"
+  ],
+  "semanticRationale": "核心石砖抹灰材质有官方修复文本，整体体块和相互位置有已实际观看政府图，静态说明范围完整。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Svetište",
+      "institution": "Općina Marija Bistrica",
+      "url": "https://marija-bistrica.hr/svetiste/",
+      "accessedAt": "2026-10-05",
+      "locator": "圣地正文",
+      "claims": [
+        "圣母朝圣地语境、Bollé外观与季节时段概述"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Crkva sv. Marije Bistričke, Trg pape Ivana Pavla II.32",
+      "institution": "Ministarstvo kulture i medija Republike Hrvatske",
+      "url": "https://min-kulture.gov.hr/crkva-sv-marije-bistricke-trg-pape-ivana-pavla-ii-32-marija-bistrica/27467?impaired=0",
+      "accessedAt": "2026-10-05",
+      "locator": "首段；Oštećenja；Zahvati na konstrukciji；Restauratorski radovi",
+      "claims": [
+        "单中殿、cinktor、前小堂与邻山关系",
+        "西立面石构件、砖墙、抹灰、挑出构件；灾后修复"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "圣地整体俯瞰照片IMG_3358-naslovna",
+      "institution": "Općina Marija Bistrica",
+      "url": "https://marija-bistrica.hr/wp-content/uploads/2022/12/IMG_3358-naslovna.jpg",
+      "accessedAt": "2026-10-05",
+      "locator": "实际下载view_image像素",
+      "claims": [
+        "主堂、钟塔、低廊院与外公共广场；外表色面"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "IMG_0110/IMG_0134教堂照片",
+      "institution": "Ministarstvo kulture i medija Republike Hrvatske",
+      "url": "https://min-kulture.gov.hr/UserDocsImages/slike/fotogalerija/obnova%20od%20potresa/Marija%20Bistrica/IMG_0110.JPG",
+      "accessedAt": "2026-10-05",
+      "locator": "网页图库click超时；curl连接重置，未view像素",
+      "claims": [],
+      "verified": false
+    }
+  ]
+}

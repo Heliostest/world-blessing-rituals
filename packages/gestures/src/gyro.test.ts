@@ -132,7 +132,11 @@ describe('createGyro', () => {
     window.dispatchEvent(new FakeDeviceOrientationEvent('deviceorientation', { beta: 45 }))
     expect(onBow).not.toHaveBeenCalled()
 
+    // Safari counts a click as the gesture, not a touch's pointerdown.
     el.dispatchEvent(ptr('pointerdown'))
+    expect(DOEWithPerm.requestPermission).not.toHaveBeenCalled()
+    el.dispatchEvent(ptr('pointerup'))
+    el.dispatchEvent(tap())
     await vi.waitFor(() => {
       expect(DOEWithPerm.requestPermission).toHaveBeenCalledTimes(1)
     })
@@ -140,6 +144,8 @@ describe('createGyro', () => {
 
     window.dispatchEvent(new FakeDeviceOrientationEvent('deviceorientation', { beta: 45 }))
     expect(onBow).toHaveBeenCalledTimes(1)
+    el.dispatchEvent(tap())
+    expect(DOEWithPerm.requestPermission).toHaveBeenCalledTimes(1)
     g.dispose()
   })
 
@@ -154,7 +160,7 @@ describe('createGyro', () => {
     expect(DOEWithPerm.requestPermission).not.toHaveBeenCalled()
 
     // First user gesture triggers permission request (not mount).
-    el.dispatchEvent(ptr('pointerdown'))
+    el.dispatchEvent(tap())
     await vi.waitFor(() => {
       expect(DOEWithPerm.requestPermission).toHaveBeenCalledTimes(1)
     })
@@ -189,6 +195,134 @@ describe('createGyro', () => {
     g.mount(el, {})
     g.setEnabled(false)
     window.dispatchEvent(new FakeDeviceOrientationEvent('deviceorientation', { beta: 45 }))
+    expect(onBow).not.toHaveBeenCalled()
+    g.dispose()
+  })
+
+  it('asks for motion permission only while enabled: taps in earlier steps never do', async () => {
+    class DOEWithPerm extends FakeDeviceOrientationEvent {
+      static requestPermission = vi.fn(async () => 'granted' as PermissionState)
+    }
+    ;(globalThis as { DeviceOrientationEvent: unknown }).DeviceOrientationEvent = DOEWithPerm
+    const onBow = vi.fn()
+    const g = createGyro({ bowBetaDeg: 30, onBow })
+    // As the scenes do: mounted up front, enabled only at the motion step.
+    g.mount(el, {})
+    g.setEnabled(false)
+    el.dispatchEvent(tap())
+    el.dispatchEvent(tap())
+    expect(DOEWithPerm.requestPermission).not.toHaveBeenCalled()
+
+    g.setEnabled(true)
+    el.dispatchEvent(tap())
+    await vi.waitFor(() => {
+      expect(DOEWithPerm.requestPermission).toHaveBeenCalledTimes(1)
+    })
+    await Promise.resolve()
+    window.dispatchEvent(new FakeDeviceOrientationEvent('deviceorientation', { beta: 45 }))
+    expect(onBow).toHaveBeenCalledTimes(1)
+    g.dispose()
+  })
+
+  it('does not ask from the fallback button, whose tap does the step itself', async () => {
+    class DOEWithPerm extends FakeDeviceOrientationEvent {
+      static requestPermission = vi.fn(async () => 'granted' as PermissionState)
+    }
+    ;(globalThis as { DeviceOrientationEvent: unknown }).DeviceOrientationEvent = DOEWithPerm
+    const btn = document.createElement('button')
+    btn.className = 'bow-tap'
+    btn.append(document.createElement('span'))
+    el.appendChild(btn)
+    const g = createGyro({ bowBetaDeg: 30, fallbackTapSelector: '.bow-tap' })
+    g.mount(el, {})
+    btn.dispatchEvent(tap())
+    btn.firstChild!.dispatchEvent(tap())
+    expect(DOEWithPerm.requestPermission).not.toHaveBeenCalled()
+    el.dispatchEvent(tap())
+    await vi.waitFor(() => {
+      expect(DOEWithPerm.requestPermission).toHaveBeenCalledTimes(1)
+    })
+    g.dispose()
+  })
+})
+
+describe('createGyro riseDeg', () => {
+  let el: HTMLElement
+  let savedDOE: unknown
+
+  /** Readings in order, each followed by `dt` seconds of frames. */
+  const tilt = (g: ReturnType<typeof createGyro>, betas: number[], dt = 0.1) => {
+    for (const beta of betas) {
+      window.dispatchEvent(new FakeDeviceOrientationEvent('deviceorientation', { beta }))
+      g.update(dt)
+    }
+  }
+
+  beforeEach(() => {
+    el = document.createElement('div')
+    document.body.appendChild(el)
+    savedDOE = (globalThis as { DeviceOrientationEvent?: unknown }).DeviceOrientationEvent
+    ;(globalThis as { DeviceOrientationEvent: unknown }).DeviceOrientationEvent = FakeDeviceOrientationEvent
+  })
+
+  afterEach(() => {
+    el.remove()
+    if (savedDOE === undefined) {
+      delete (globalThis as { DeviceOrientationEvent?: unknown }).DeviceOrientationEvent
+    } else {
+      ;(globalThis as { DeviceOrientationEvent?: unknown }).DeviceOrientationEvent = savedDOE
+    }
+  })
+
+  it.each([45, 60, 75, 90])(
+    'never counts a reading pose held from the start (beta ≈ %i°), however long',
+    (beta) => {
+      const onBow = vi.fn()
+      const onHold = vi.fn()
+      const g = createGyro({ bowBetaDeg: 60, riseDeg: 30, holdMs: 800, onBow, onHold })
+      g.mount(el, {})
+      // A hand is never quite still: a few degrees either way, for 6 s.
+      for (let i = 0; i < 20; i++) tilt(g, [beta - 6, beta + 6, beta], 0.1)
+      expect(onBow).not.toHaveBeenCalled()
+      expect(onHold).not.toHaveBeenCalled()
+      g.dispose()
+    },
+  )
+
+  it('counts lowering the phone and raising it again, after the hold', () => {
+    const onBow = vi.fn()
+    const onHold = vi.fn()
+    const g = createGyro({ bowBetaDeg: 60, riseDeg: 30, holdMs: 800, onBow, onHold })
+    g.mount(el, {})
+    tilt(g, [70, 50, 30], 0.1)
+    expect(onBow).not.toHaveBeenCalled()
+    tilt(g, [50, 70], 0)
+    expect(onBow).toHaveBeenCalledTimes(1)
+    g.update(0.5)
+    expect(onHold).not.toHaveBeenCalled()
+    g.update(0.4)
+    expect(onHold).toHaveBeenCalledTimes(1)
+    g.dispose()
+  })
+
+  it('does not count a raise short of riseDeg, or one that does not reach bowBetaDeg', () => {
+    const onBow = vi.fn()
+    const g = createGyro({ bowBetaDeg: 60, riseDeg: 30, holdMs: 800, onBow })
+    g.mount(el, {})
+    tilt(g, [45, 70, 74])
+    tilt(g, [20, 45, 55, 59])
+    expect(onBow).not.toHaveBeenCalled()
+    g.dispose()
+  })
+
+  it('forgets readings from before it was last enabled', () => {
+    const onBow = vi.fn()
+    const g = createGyro({ bowBetaDeg: 60, riseDeg: 30, holdMs: 800, onBow })
+    g.mount(el, {})
+    tilt(g, [20])
+    g.setEnabled(false)
+    g.setEnabled(true)
+    tilt(g, [70, 75])
     expect(onBow).not.toHaveBeenCalled()
     g.dispose()
   })

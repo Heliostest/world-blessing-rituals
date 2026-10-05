@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import * as Gestures from '@wbr/gestures'
 import * as Shared from '@wbr/shared'
 
@@ -379,6 +379,107 @@ describe.each(SWIPES)('$id swipe', ({ id, at, stray, onObject, reports }) => {
     swipe(hit, ...onObject)
     s.runUntil(1)
     expect(s.progress).toEqual([reports])
+    s.instance.dispose()
+  })
+})
+
+/** Minimal DeviceOrientationEvent stand-in for jsdom. */
+class FakeDeviceOrientationEvent extends Event {
+  readonly beta: number | null
+  constructor(type: string, init: { beta?: number | null } = {}) {
+    super(type)
+    this.beta = init.beta ?? null
+  }
+}
+
+describe('device motion', () => {
+  const g = globalThis as { DeviceOrientationEvent?: unknown }
+  let saved: unknown
+  beforeEach(() => {
+    saved = g.DeviceOrientationEvent
+  })
+  afterEach(() => {
+    if (saved === undefined) delete g.DeviceOrientationEvent
+    else g.DeviceOrientationEvent = saved
+  })
+  const lean = (beta: number) =>
+    window.dispatchEvent(new FakeDeviceOrientationEvent('deviceorientation', { beta }))
+  const stageTap = (s: Awaited<ReturnType<typeof mount>>) =>
+    s.overlay
+      .querySelector('.scene-hit-layer')!
+      .dispatchEvent(new MouseEvent('click', { bubbles: true, detail: 1 }))
+
+  it.each([45, 60, 75, 90])(
+    'celtic-folk-spring leaves its first step alone at a reading grip (beta ≈ %i°)',
+    async (beta) => {
+      g.DeviceOrientationEvent = FakeDeviceOrientationEvent
+      const s = await mount('celtic-folk-spring')
+      for (let i = 0; i < 30; i++) {
+        lean(beta + ((i % 3) - 1) * 6)
+        s.run(0.2)
+      }
+      expect(s.progress).toEqual([])
+      s.instance.dispose()
+    },
+  )
+
+  it('celtic-folk-spring moves on for a lean forward and back up, held', async () => {
+    g.DeviceOrientationEvent = FakeDeviceOrientationEvent
+    const s = await mount('celtic-folk-spring')
+    const hint = () => s.overlay.querySelector('.scene-hint')?.textContent
+    const ready = hint()
+    lean(70)
+    s.run(0.2)
+    lean(35)
+    s.run(0.2)
+    lean(72)
+    expect(hint()).not.toBe(ready) // 停驻片刻…
+    s.run(0.5)
+    expect(s.progress).toEqual([])
+    s.run(0.5)
+    expect(s.progress).toEqual([1])
+    s.instance.dispose()
+  })
+
+  it.each([
+    ['shinto-torii', 1],
+    ['tibetan-wheel', 2],
+  ] as const)('%s never asks for motion access before its motion step', async (id, motionStep) => {
+    const requestPermission = vi.fn(async () => 'granted' as PermissionState)
+    g.DeviceOrientationEvent = class extends FakeDeviceOrientationEvent {
+      static requestPermission = requestPermission
+    }
+    const s = await mount(id)
+    for (let step = 0; step < motionStep; step++) {
+      stageTap(s)
+      s.tap()
+      s.runUntil(step + 1)
+    }
+    expect(s.progress).toHaveLength(motionStep)
+    expect(requestPermission).not.toHaveBeenCalled()
+    // At the motion step its own button still does the step, without asking.
+    s.tap()
+    s.run(3)
+    expect(s.progress).toHaveLength(motionStep + 1)
+    expect(requestPermission).not.toHaveBeenCalled()
+    s.instance.dispose()
+  })
+
+  it('shinto-torii asks for motion access from a tap on the stage at the bow step', async () => {
+    const requestPermission = vi.fn(async () => 'granted' as PermissionState)
+    g.DeviceOrientationEvent = class extends FakeDeviceOrientationEvent {
+      static requestPermission = requestPermission
+    }
+    const s = await mount('shinto-torii', 1)
+    stageTap(s)
+    expect(requestPermission).toHaveBeenCalledTimes(1)
+    await Promise.resolve()
+    // Granted: raising the phone and holding it starts the bow.
+    lean(20)
+    lean(75)
+    s.run(1)
+    s.runUntil(2)
+    expect(s.progress).toEqual([2])
     s.instance.dispose()
   })
 })

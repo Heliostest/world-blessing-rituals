@@ -18,6 +18,7 @@ import { InvalidContentError } from "@wbr/content";
 import { SceneLibraryProvider, SceneCatalog, CacheManager } from "./scene-library";
 import { SceneExperience } from "./scene-experience";
 import { followSystemReducedMotion, initialSettings } from "./reduced-motion";
+import { useLocalDay } from "./local-day";
 
 export function BlessingApp({
   host,
@@ -39,7 +40,8 @@ export function BlessingApp({
   const [fulfillmentDrafts, setFulfillmentDrafts] = useState<
     Record<string, FulfillmentDraft>
   >({});
-  const [dateKey, setDateKey] = useState(0);
+  // 今日 is rebuilt only when the date changes, so focus and scroll survive.
+  const day = useLocalDay(active);
   const audio = useRef<AudioContext | null>(null);
   const route = routes[routes.length - 1];
   const state = snapshot.state;
@@ -87,7 +89,7 @@ export function BlessingApp({
       if (document.hidden) {
         void store.flush();
         void audio.current?.suspend();
-      } else setDateKey((k) => k + 1);
+      }
     };
     const beforeUnload = (e: BeforeUnloadEvent) => {
       const status = store.getSnapshot().status;
@@ -98,9 +100,7 @@ export function BlessingApp({
     };
     document.addEventListener("visibilitychange", hidden);
     window.addEventListener("beforeunload", beforeUnload);
-    const timer = window.setInterval(() => setDateKey((k) => k + 1), 60000);
     return () => {
-      clearInterval(timer);
       document.removeEventListener("visibilitychange", hidden);
       window.removeEventListener("beforeunload", beforeUnload);
       void audio.current?.close();
@@ -111,7 +111,7 @@ export function BlessingApp({
     if (!active) {
       void store.flush();
       void audio.current?.suspend();
-    } else setDateKey((k) => k + 1);
+    }
   }, [active, store]);
   function prepareFeedback() {
     if (!store.getSnapshot().state?.settings.sound) return;
@@ -205,7 +205,7 @@ export function BlessingApp({
             : "today";
   const page =
     route.page === "scenes" ? <SceneCatalog /> : route.page === "cache" ? <CacheManager /> : route.page === "scene" ? <SceneExperience entry={route.entry ?? state.sceneRecords.find(r => r.id === route.id)} /> : route.page === "today" ? (
-      <Today key={dateKey} />
+      <Today key={day} day={day} />
     ) : route.page === "wishes" ? (
       <Wishes />
     ) : route.page === "world" ? (

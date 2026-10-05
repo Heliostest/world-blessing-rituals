@@ -15,7 +15,6 @@ import {
 import type { CacheOptions, CacheStats } from "@wbr/content/cache";
 import { contentIO, useContent } from "./content";
 import { useApp } from "./context";
-import { localDay } from "@wbr/core";
 import { recommendTodayScene } from "./scene-placement";
 
 export type BuiltInSceneEntry = CatalogEntry & {
@@ -257,10 +256,10 @@ export function SceneLibraryProvider({ children }: { children: ReactNode }) {
     </Library.Provider>
   );
 }
-export function SceneRecommendation() {
+export function SceneRecommendation({ day }: { day: string }) {
   const { entries } = useSceneLibrary(),
     { go } = useApp();
-  const entry = recommendTodayScene(entries, localDay());
+  const entry = recommendTodayScene(entries, day);
   return (
     <section className="scene-discovery">
       <div>

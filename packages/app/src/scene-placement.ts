@@ -1,3 +1,4 @@
+import { dailyRitual } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
 import { recommendScene } from "@wbr/content/catalog";
 
@@ -54,16 +55,23 @@ export function todaySceneEntries(entries: CatalogEntry[]): CatalogEntry[] {
 }
 
 /**
- * Daily recommendation on 今日: exclude wish-practice scenes so 心愿 content
- * does not surface as "今日场景推荐". Falls back to full list if the filtered
- * pool is empty.
+ * Daily recommendation on 今日: a scene the page does not already offer that
+ * day. Never a wish-practice scene (those live on 心愿), nor today's featured
+ * practice, nor the scene of today's random ritual (a 2D ritual and its scene
+ * share an id, e.g. woodfish). If that leaves nothing, the wish-free pool,
+ * then the full list.
  */
 export function recommendTodayScene(
   entries: CatalogEntry[],
   day: string,
 ): CatalogEntry | undefined {
-  const pool = entries.filter((e) => !isWishScene(e.id));
-  return recommendScene(pool.length ? pool : entries, day);
+  const wishFree = entries.filter((e) => !isWishScene(e.id));
+  const shown = new Set([featuredTodayPractice(entries, day)?.id, dailyRitual(day)]);
+  const pool = wishFree.filter((e) => !shown.has(e.id));
+  return recommendScene(
+    pool.length ? pool : wishFree.length ? wishFree : entries,
+    day,
+  );
 }
 
 /** Today's featured practice card: one of the 今日 scenes, rotated by day. */

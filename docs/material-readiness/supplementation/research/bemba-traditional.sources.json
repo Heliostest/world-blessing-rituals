@@ -1,0 +1,11 @@
+{
+  "slug":"bemba-traditional","batchId":"C01",
+  "selectedDisplay":"1993—1996年Mpika西侧Mulenga Kapuli／Ndona本巴高原农作背景与原创邻里面粉分享示意",
+  "sliceChangeReason":"将泛高原农田固定为原始田野研究的具名历史语境，道具保持明确原创，不宣称当代写实村落或供粉仪礼。",
+  "recommendedStatus":"ready","dimensions":{"context":2,"objects":2,"space":2,"sequence":2,"sensory":2,"variants":2,"boundaries":2,"provenance":2},"gaps":[],
+  "nextWriting":["非阻断：出版时保持1993—1996研究年代标签；若扩写实房屋和待客器物另做研究。"],
+  "sources":[
+    {"id":"S1","title":"Agrarian Changes and Coping Strategies for Subsistence of Bemba Shifting Cultivators in Northern Zambia in the Mid-1990's","institution":"Shuichi Oyama / Tomoki Y. Takamura；Japanese Society for Tropical Agriculture / J-STAGE","url":"https://www.jstage.jst.go.jp/article/jsta1957/45/2/45_2_84/_pdf/-char/en","accessedAt":"2026-10-04","locator":"期刊第85–88页 Research area / Cropping systems；第96页 Coping strategies；PDF页1–4、12","claims":["具名村和1993—1996研究范围","高原miombo林地、草层、季节河谷湿地与农田并存","指状黍木薯玉米主粮及机磨","1995亲属间主粮分享"],"verified":true},
+    {"id":"S1-index","title":"同研究发布页与摘要","institution":"J-STAGE / Japanese Society for Tropical Agriculture","url":"https://www.jstage.jst.go.jp/article/jsta1957/45/2/45_2_84/_article","accessedAt":"2026-10-04","locator":"作者栏、2001卷45期2与Abstract L63–67","claims":["原研究作者、年份和摘要确认；与S1同一研究非独立证据"],"verified":true}
+  ]
+}

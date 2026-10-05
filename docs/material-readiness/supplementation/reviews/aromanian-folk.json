@@ -1,0 +1,115 @@
+{
+  "slug": "aromanian-folk",
+  "title": "阿罗马尼亚／巴尔干瓦拉几东正教祈福传统（Aromanian／Vlach）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "皮恩多斯梅措沃 Agia Paraskevi 公开外观与独立原创和平灯意向说明",
+  "baselineSelectedDisplay": "皮恩多斯山地教堂外观与原创和平意向致敬",
+  "sliceChangeReason": "以市政直接来源将原泛山地教堂定为梅措沃实例；复活灯火改为中性原创灯，避免冒充真实复活礼。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：Metsovo的Vlach语言文化背景与具体教堂有官方文字，内部木雕与外墙严格分开；但现状外墙屋顶钟塔接合、入口广场关系没有像素或建筑文字证据，objects/space为1。独立陶盘蜡柱白卡有接触、左右槽位和灭火留卡终态，原创序列与无声表现充分，不能替真实教堂补缺。已写地方版本和观看边界，保留部分齐备待研究。",
+  "evidence": [
+    {
+      "file": "content/display-notes/aromanian-folk.md",
+      "line": 17,
+      "quote": "真实主体墙的材料、屋顶铺材和轮廓",
+      "reason": "主要外观未核验"
+    },
+    {
+      "file": "content/display-notes/aromanian-folk.md",
+      "line": 27,
+      "quote": "灯与圣所之间有明确文字分隔",
+      "reason": "真实与原创空间分开"
+    },
+    {
+      "file": "content/display-notes/aromanian-folk.md",
+      "line": 35,
+      "quote": "火焰淡去、蜡烛恢复未亮，卡继续留存",
+      "reason": "原创终态具体"
+    }
+  ],
+  "gaps": [
+    "教堂真实外墙屋盖及开口材质形制未核",
+    "钟塔与主体连接、院落广场入口朝向和观看位置未核；市政图像访问失败"
+  ],
+  "nextWriting": [
+    "获取市政南面236_1756.jpg、钟塔236_1767.jpg、入口236_1765.jpg像素及图说，或政府建筑遗产记录",
+    "补真实建筑对象和广场关系后复评；不以原创灯已具体抵消真实建筑缺口"
+  ],
+  "sourceFiles": [
+    "content/traditions/aromanian-folk.md",
+    "content/display-notes/aromanian-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Metsovo",
+      "institution": "Greek National Tourism Organisation",
+      "url": "https://www.visitgreece.gr/en/mainland/epirus/metsovo",
+      "accessedAt": "2026-10-04",
+      "locator": "Overview L91—95",
+      "claims": [
+        "皮恩多斯背景",
+        "Vlach村镇",
+        "中心广场悬铃木"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Church of Agia Paraskevi, Metsovo",
+      "institution": "Municipality of Metsovo / Tour Guide System",
+      "url": "https://metsovotour.epcon.gr/poi.php?lang=en&poi_id=1_236",
+      "accessedAt": "2026-10-04",
+      "locator": "正文 L17—22 已读；南面、钟塔、入口图片 web 超时且另下载连接失败",
+      "claims": [
+        "镇中心主教座堂",
+        "1511年首次记录及修复",
+        "1880—1885钟塔",
+        "木雕屏障、双讲坛文化背景"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Church",
+      "institution": "Metsovo Folk Art Museum",
+      "url": "https://metsovomuseum.gr/en/portfolio/church/",
+      "accessedAt": "2026-10-04",
+      "locator": "Priest L46—49；Iconostasis L59",
+      "claims": [
+        "地方教堂与社会生活身份",
+        "Metsovo木雕工匠背景"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S4",
+      "title": "Μέτσοβο – Εγνατία",
+      "institution": "Hellenic Ministry of Culture / Cultural Egnatia",
+      "url": "https://culturalegnatia.culture.gov.gr/stops/%CE%BC%CE%AD%CF%84%CF%83%CE%BF%CE%B2%CE%BF/",
+      "accessedAt": "2026-10-04",
+      "locator": "地点与Vlach L50—57；传统聚落L97—100",
+      "claims": [
+        "地方Vlach语言文化背景",
+        "中心广场与Agia Paraskevi关系；居民石屋材质不能继承给教堂"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补Metsovo教堂背景及原创意向卡陶盘灯起止；缺真实外观与入口钟塔广场关系，待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

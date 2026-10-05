@@ -1,0 +1,74 @@
+{
+  "slug": "abruzzese-folk",
+  "batchId": "C01",
+  "selectedDisplay": "Isola del Gran Sasso 的 San Gabriele 旧圣殿1929年立面静态外观介绍",
+  "sliceChangeReason": "基线未指定教堂；选圣所公开自述及原始1929报道覆盖的具名立面，分清新旧殿。",
+  "recommendedStatus": "ready",
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [],
+  "nextWriting": [
+    "后续若精细绘制雕像马赛克或加入访客运动，另核验图片权限、当代修复状况与准入；静态sequence不适用。"
+  ],
+  "semanticRationale": "可画出台阶、柱廊、柱后木门、上部敞廊与山花的关系；材料明确，静态起止状态清楚且不宣称动态朝圣齐备。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Santuario di San Gabriele dell’Addolorata",
+      "institution": "意大利文化部",
+      "url": "https://cultura.gov.it/luogo/santuario-di-san-gabriele-dell-addolorata",
+      "accessedAt": "2026-10-04",
+      "locator": "Descrizione 首三段",
+      "claims": [
+        "Isola del Gran Sasso地点",
+        "两座圣殿",
+        "朝圣与圣人生前生活/安葬联系"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "L’antica Basilica",
+      "institution": "Santuario di San Gabriele",
+      "url": "https://www.sangabriele.org/lantica-basilica/",
+      "accessedAt": "2026-10-04",
+      "locator": "Facciata esterna",
+      "claims": [
+        "1929立面",
+        "五尊雕像及三幅马赛克"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "La facciata dell’antica Basilica",
+      "institution": "San Gabriele圣所重刊P. Verrua《L’Eco di San Gabriele》1929-08-25原始报道",
+      "url": "https://www.sangabriele.org/la-facciata-dellantica-basilica/",
+      "accessedAt": "2026-10-04",
+      "locator": "Sull’alta scalinata段；loggetta段；travertino材料段及noce门段",
+      "claims": [
+        "台阶柱廊主门上层关系",
+        "花岗岩/洞石/大理石/胡桃木门材料"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "San Gabriele repair project PDF",
+      "institution": "意大利文化部／重建专员机构",
+      "url": "https://sisma2016.gov.it/wp-content/uploads/2023/02/AU-San-Gabriele.pdf",
+      "accessedAt": "2026-10-04",
+      "locator": "首页可读；后续正文timeout，未用于主张",
+      "claims": [],
+      "verified": false
+    }
+  ]
+}

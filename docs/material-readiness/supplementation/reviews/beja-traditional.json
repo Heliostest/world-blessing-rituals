@@ -1,0 +1,95 @@
+{
+  "slug": "beja-traditional",
+  "title": "贝贾牧民伊斯兰与红海山地祈福传统（Beja）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "北部贝贾Sufayya周边红海山地历史背景、乳品分享与原创和平意向研究稿；公共牧营与乳器未固定",
+  "baselineSelectedDisplay": "贝贾乳品分享丘陵致敬",
+  "sliceChangeReason": "以具名原始田野收窄历史范围，保留营地与乳品关键缺口，不把贸易聚落当牧营或借畜当献奶。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 1,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：北部具名历史田野与山谷农牧贸易互助有原始研究，研究偏差、年代及hamot与献奶区别明确；但基线所需公开牧营及真实乳器仍未固定。原创陶碗木桌纸卡和整碗平移有充分结构位置终态，不能以独立草案抵消真实主对象缺证，objects/space/variants为1。音景边界清楚，已读研究与未读下载逐项分开，保存待研究不完成。",
+  "evidence": [
+    {
+      "file": "content/display-notes/beja-traditional.md",
+      "line": 11,
+      "quote": "不是证实把一碗奶放到客人面前的祈福仪式",
+      "reason": "借畜不是所选献奶动作证据"
+    },
+    {
+      "file": "content/display-notes/beja-traditional.md",
+      "line": 25,
+      "quote": "未固定一处公开营地",
+      "reason": "具体文化环境仍缺"
+    },
+    {
+      "file": "content/display-notes/beja-traditional.md",
+      "line": 34,
+      "quote": "碗底始终获得台面支撑，乳面不变",
+      "reason": "原创过程已具体但不抵消缺口"
+    }
+  ],
+  "gaps": [
+    "北部贝贾具体公开牧营实例和观者位置未固定。",
+    "所选社区真实乳器材质、口沿底足及摆放用途缺一手记录。",
+    "hamot借畜乳权不能证明游客待客献奶流程；地方器型变体仍未选定。"
+  ],
+  "nextWriting": [
+    "查北部贝贾在地机构乳器藏品或具名公共田野图，固定器物材质和同社区待客环境；有证据后再补空间并复评。"
+  ],
+  "sourceFiles": [
+    "content/traditions/beja-traditional.md",
+    "content/display-notes/beja-traditional.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Aspects of Labour in An Agro-pastoral Economy: The Northern Beja of Sudan",
+      "institution": "John Morton原始田野／Overseas Development Institute Pastoral Development Network Paper30b（1990）",
+      "url": "https://media.odi.org/documents/5367.pdf",
+      "accessedAt": "2026-10-04",
+      "locator": "PDF页2-3（印刷1-2）地域与田野偏差；PDF页11（印刷10）hamot L271-283",
+      "claims": [
+        "1982-83与1987 Sufayya北部Bisharin/Atman农牧与贸易背景",
+        "Sufayya为贸易聚落而非牧营",
+        "裸山与宽谷稀疏金合欢等半荒漠植被",
+        "借畜期间乳毛使用权及安排差异；不证明奶碗献供"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Survival on Meagre Resources（全文线索）",
+      "institution": "Leif Manger／Nordic Africa Institute",
+      "url": "https://www.diva-portal.org/smash/get/diva2%3A277265/FULLTEXT01.pdf",
+      "accessedAt": "2026-10-04",
+      "locator": "下载与重试超时，未读正文；不将Hadendowa摘要移植北部实例",
+      "claims": [],
+      "verified": false
+    },
+    {
+      "id": "U2",
+      "title": "CEDEJ Sudan 2791（原卡链接）",
+      "institution": "CEDEJ Sudan",
+      "url": "https://cedejsudan.hypotheses.org/2791",
+      "accessedAt": "2026-10-04",
+      "locator": "正文访问阻断，未用搜索摘要作事实",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补北部历史田野山谷与借畜乳权背景、原创碗桌卡起止；缺真实乳器和公共牧营同社区实例，待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

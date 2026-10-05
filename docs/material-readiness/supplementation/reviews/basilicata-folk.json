@@ -1,0 +1,106 @@
+{
+  "slug": "basilicata-folk",
+  "title": "巴西利卡塔民间天主教与岩城朝圣祈福（Basilicata／Lucania）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "马泰拉 Sasso Caveoso 的 Monterrone 岩丘与 Santa Maria de Idris 当代公开外立面静态介绍",
+  "baselineSelectedDisplay": "马泰拉岩穴教堂外观",
+  "sliceChangeReason": "将原马泰拉岩穴教堂外观落实到有公开管理与现状图像的具体教堂；静态范围保持不扩大到礼拜。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": null,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：具体落实Santa Maria de Idris；岩体开凿与tufo砌面、门窗、右侧薄壁钟楼结构明确，平台短阶岩体和居民背景可绘。门户照片像素观察与APT文字区分，暗门材质未知不强行推定，缺少门木种不阻断外观示意。sequence=null仅静态观看、无音轨、现状版本与地下相邻教堂排除明确；来源对应、年代歧义与现场边界充分。",
+  "evidence": [
+    {
+      "file": "content/display-notes/basilicata-folk.md",
+      "line": 16,
+      "quote": "中心是低缓的双坡轮廓",
+      "reason": "立面可绘制轮廓"
+    },
+    {
+      "file": "content/display-notes/basilicata-folk.md",
+      "line": 22,
+      "quote": "入口在前方石铺平台上，短阶垂直门口",
+      "reason": "入口与平台空间位置明确"
+    },
+    {
+      "file": "content/display-notes/basilicata-folk.md",
+      "line": 28,
+      "quote": "本切片是静态外观介绍，sequence 合理记 null",
+      "reason": "不会把静态读图升级为动态朝圣"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：产品插图应另确认图片使用权，门材质和钟细节如要精绘需另核验。"
+  ],
+  "sourceFiles": [
+    "content/traditions/basilicata-folk.md",
+    "content/display-notes/basilicata-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Chiesa di Santa Maria De Idris",
+      "institution": "Italia.it / Ministero del Turismo",
+      "url": "https://www.italia.it/it/basilicata/matera/chiesa-santa-maria-de-idris",
+      "accessedAt": "2026-10-04",
+      "locator": "标题后两段（web 正文 L7–9）；页首图 2480X1000_chiesa_santa_maria_de_idris_destination 已查看像素",
+      "claims": [
+        "位置在 Monterrone / Sasso Caveoso",
+        "tufo 立面与薄壁钟楼",
+        "现状照片门窗、平台、栏杆及社区关系"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Chiesa rupestre Santa Maria de Idris",
+      "institution": "APT Basilicata",
+      "url": "https://basilicatasacra.it/basilicata-sacra/chiesa-rupestre-santa-maria-de-idris/",
+      "accessedAt": "2026-10-04",
+      "locator": "建筑描述第一段（web L125）",
+      "claims": [
+        "建造和开凿两部分",
+        "不规则平面",
+        "十五世纪重建 tufo 立面"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "Urban circuit management of Rock Churches of Matera",
+      "institution": "Oltre l’Arte",
+      "url": "https://www.oltrelartematera.it/en/home-2/",
+      "accessedAt": "2026-10-04",
+      "locator": "OPENING TIMES 表 Madonna de Idris / San Giovanni in Monterrone",
+      "claims": [
+        "当代公开参观地点"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Basilicata Sacra PDF",
+      "institution": "APT Basilicata",
+      "url": "https://www.basilicataturistica.it/wp-content/uploads/2019/01/basilicata-sacra_web.pdf",
+      "accessedAt": "2026-10-04",
+      "locator": "访问 502，未阅读全文，不作证据",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补Idris岩体立面、门窗钟楼、平台社区关系及静态范围；主审通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

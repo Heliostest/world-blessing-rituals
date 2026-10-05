@@ -1,0 +1,68 @@
+{
+  "slug": "akha-traditional",
+  "batchId": "C01",
+  "selectedDisplay": "Ban Phahee 2025公共秋千节背景与四杆式外观上色致敬研究稿（地方器型待接合）",
+  "sliceChangeReason": "基线清莱未指村落；锁定官方公告的Ban Phahee，但不能将机构泛泰国器型强行归入该村。",
+  "recommendedStatus": "needs_research",
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": 2,
+    "sensory": 1,
+    "variants": 1,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [
+    "Ban Phahee具名秋千构架未有同次活动一手外观记录，SAC类型不能直接归属该村。",
+    "具体杆脚、绳端或座板与房屋/山坡的布局未核验。"
+  ],
+  "nextWriting": [
+    "核验Ban Phahee村社或活动原始照片/说明，把类型结构与具名社区接合后复评。"
+  ],
+  "semanticRationale": "原创颜色过程完整，但主要文化对象的地方器型仍需猜测，核心门槛不通过。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Akha Swing Festival 2025 Celebrates Hill Tribe Traditions in Chiang Rai",
+      "institution": "Tourism Authority of Thailand",
+      "url": "https://www.tatnews.org/2025/08/akha-swing-festival-2025-celebrates-hill-tribe-traditions-in-chiang-rai/",
+      "accessedAt": "2026-10-04",
+      "locator": "Ban Phahee段与Ban Pha Mee段",
+      "claims": [
+        "Ban Phahee 2025-09-04至08公开活动在村秋千场",
+        "清莱多村版本"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Lo Chingcha / Swing Festival",
+      "institution": "Sirindhorn Anthropology Centre（作者Thanwadee Sookprasert）",
+      "url": "https://rituals.sac.or.th/en/detail.php?id=7",
+      "accessedAt": "2026-10-04",
+      "locator": "四杆型、水轮型、儿童型段；节末段；记录location为空",
+      "claims": [
+        "四长树干上端束拢，藤绳环",
+        "三类秋千",
+        "节末绳处理的机构版本"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "The Akha Swing Festival, a.k.a. Women’s New Year",
+      "institution": "Jim Goodman作者自己的亲历研究／摄影写作网站",
+      "url": "https://blackeagleflights.blogspot.com/2014/07/the-akha-swing-festival-aka-womens-new.html",
+      "accessedAt": "2026-10-04",
+      "locator": "four poles/yoke段；首段村落开放空间；节末段",
+      "claims": [
+        "作者亲历四杆、木轭、中央长绳和环口",
+        "一般村落开放空间位置",
+        "节末取下绳的目击版本"
+      ],
+      "verified": true
+    }
+  ]
+}

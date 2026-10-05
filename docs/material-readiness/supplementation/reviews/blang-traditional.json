@@ -1,0 +1,141 @@
+{
+  "slug": "blang-traditional",
+  "title": "布朗族传统信仰与上座部—自然灵祈福（Blang／Bulang）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "景迈山林下茶外观关系图与独立原创茶食桌、感谢卡摆放起止",
+  "baselineSelectedDisplay": "景迈茶山公共风光与原创感谢卡",
+  "sliceChangeReason": "保留景迈山茶林外观及原创感谢卡，实际来源可支撑生态关系图；供僧菜单及佛灯未核，原创盘杯糕点不称宗教对象，不复建未知村屋与路线。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：景迈山林下茶与共建族群有遗产正文，传承人口述支撑布朗生态背景，研究者访谈给防护森林茶林村落及三层植物关系；已看树枝叶片与坡村摄影但不鉴定未标民族或村名。说明采用明确非测绘关系图，原创四脚木桌盘杯糕点和纸槽有材料部件支撑与左右前后位置。盘杯从待选落台、感谢卡入槽稳定退出重入终态可执行；不伪称供僧菜单、真实游客路线或佛灯仪礼。生态和原创主对象均具体，声画变体边界对应充分。",
+  "evidence": [
+    {
+      "file": "content/display-notes/blang-traditional.md",
+      "line": 18,
+      "quote": "上层冠顶高于茶层",
+      "reason": "有据植物层关系具体"
+    },
+    {
+      "file": "content/display-notes/blang-traditional.md",
+      "line": 20,
+      "quote": "四根角下直腿相接",
+      "reason": "原创桌支撑具体"
+    },
+    {
+      "file": "content/display-notes/blang-traditional.md",
+      "line": 34,
+      "quote": "卡下缘插入前中木槽，面向台前",
+      "reason": "原创留卡位置与终态可绘"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：编辑植物层与村落茶林关系示意规格，标原创茶食；扩展真实村屋、供僧菜单或游客路径前须再查具名地方证据。"
+  ],
+  "sourceFiles": [
+    "content/traditions/blang-traditional.md",
+    "content/display-notes/blang-traditional.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Cultural Landscape of Old Tea Forests of the Jingmai Mountain in Pu’er（1665）",
+      "institution": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1665/",
+      "accessedAt": "2026-10-04",
+      "locator": "Description L4-5/18；Brief synthesis L37-38；Criteria/Integrity L39-45",
+      "claims": [
+        "惠民镇景迈山布朗与傣族共建的活态景观",
+        "林下茶栽培、茶祖文化与社区管理关联",
+        "森林茶林村落系统；不支持供僧菜单与游客路线"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "呵护好景迈山的古茶林（2024-03-01）",
+      "institution": "南康传承人口述、人民日报记者李茂颖整理／国家林业和草原局转载",
+      "url": "https://www.forestry.gov.cn/c/www/lcdt/547757.jhtml",
+      "accessedAt": "2026-10-04",
+      "locator": "正文L51-56及署名；已读作者身份和第一人称段",
+      "claims": [
+        "布朗族一芽两叶标识及护茶护林责任自述",
+        "公开欢迎客人喝茶，不证明供僧菜单"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3",
+      "title": "你好！这里是景迈山古茶林——访陈耀华（2023-11-10）",
+      "institution": "北京大学世界遗产研究中心主任陈耀华原始采访／中国绿色时报／国家林业和草原局",
+      "url": "https://www.forestry.gov.cn/c/www/zrzryc/531328.jhtml",
+      "accessedAt": "2026-10-04",
+      "locator": "采访身份L45-49；林间开垦和林下种植L111-112；图片图说L53、84",
+      "claims": [
+        "外围防护林、茶林村落关系",
+        "乔木层、茶树主要中层和地面草本",
+        "林下模式与台地茶园区分"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3-image1",
+      "title": "当地茶农在茶林中采茶（卢磊摄）",
+      "institution": "原始采访摄影／中国绿色时报、国家林草局",
+      "url": "https://www.forestry.gov.cn/u/cms/www/202311/10135055vq5g.jpg",
+      "accessedAt": "2026-10-04",
+      "locator": "已下载并查看完整彩色像素，图说与采访相连",
+      "claims": [
+        "斑驳树干、分叉枝、细枝叶片与冠层光隙的可见关系；未鉴定人物民族或每株植物"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S3-image2",
+      "title": "森林—茶林—村落平面景观（卢磊摄）",
+      "institution": "原始采访摄影／中国绿色时报、国家林草局",
+      "url": "https://www.forestry.gov.cn/u/cms/www/202311/101346365x9n.jpg",
+      "accessedAt": "2026-10-04",
+      "locator": "已下载并查看完整彩色像素；采访首图L53图说",
+      "claims": [
+        "坡上聚居与外围林冠景观尺度；村名未给不用于具体村屋复建"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "The Old Tea Forest Landscape in Mangjing Shangzhai and Mangjing Xiazhai",
+      "institution": "UNESCO World Heritage Centre／Chen Yaohua申报摄影",
+      "url": "https://whc.unesco.org/en/documents/200168",
+      "accessedAt": "2026-10-04",
+      "locator": "元数据正文已读，实际图片403，未用于视觉事实；不作已核图片计数",
+      "claims": [],
+      "verified": false
+    },
+    {
+      "id": "U2",
+      "title": "ICOMOS Evaluations of nominations of cultural and mixed properties（2023）",
+      "institution": "ICOMOS／UNESCO",
+      "url": "https://whc.unesco.org/archive/2023/whc23-45com-inf8B1-en.pdf",
+      "accessedAt": "2026-10-04",
+      "locator": "web全文容量失败、下载403；未读相关正文，搜索节选不计",
+      "claims": [],
+      "verified": false
+    }
+  ],
+  "checkpoint": "已补景迈山生态三层与林茶村关系、原创木桌陶盘杯糕点和感谢卡起止；主审通过限定关系图切片。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

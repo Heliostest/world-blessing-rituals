@@ -1,0 +1,63 @@
+{
+  "slug": "bashkir-traditional",
+  "batchId": "C01",
+  "selectedDisplay": "2025年 Argamak Sabantuy 公共草地集会与民族志毡房参照、独立原创彩带门架致敬",
+  "sliceChangeReason": "原公共赛场未有精确赛事布局，固定到博物馆自述公共布展和已观察草地；保留原公开节庆背景与彩带动态，明确不复原赛事或当日毡房材料。",
+  "recommendedStatus": "ready",
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：核对报道附带 Tratau 地名及照片授权；若要写实赛场或当日毡房需另核罩材和平面图。"
+  ],
+  "semanticRationale": "传统结构来源与现代场合分别引用，不借前者给当日帐篷错误赋材质；完整独立门架布带部件、场地原创布局与展开起止足够画本限定小品。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Сабантуй -2025: праздник традиций и единства",
+      "institution": "ГБУКИ РБ Национальный музей РБ / Дюртюлинский историко-краеведческий музей",
+      "url": "https://museumrb.ru/djurtjulinskij-istoriko-kraevedcheskij-muzej/sabantuj-2025-prazdnik-tradicij-i-edinstva/",
+      "accessedAt": "2026-10-04",
+      "locator": "正文日期场合与 этно-юрта 三段（web L61–67）；图片1-8-675x900.jpg和2-8-900x405.jpg已查看像素",
+      "claims": [
+        "2025-06-07 Argamak 公共 Sabantuy",
+        "民族志毡房介绍西北巴什基尔生活器物服饰",
+        "开阔草地与帐内支杆、红色织物；罩材不能从图鉴定"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Башкирская юрта. Журнал «Мир музея»",
+      "institution": "共和国国家博物馆，作者 Эльвира Хамидуллина",
+      "url": "https://museumrb.ru/novosti/bashkirskaja-jurta-zhurnal-mir-muzeja/",
+      "accessedAt": "2026-10-04",
+      "locator": "木架覆盖、格栅、门框、顶圈与绳约束段（web L64–71）",
+      "claims": [
+        "历史木骨架覆毡",
+        "交叉格栅围成圆墙，门框留在开口",
+        "屋顶杆连接中央木圈与墙上缘，绳约束",
+        "两种顶形"
+      ],
+      "verified": true
+    },
+    {
+      "id": "U1",
+      "title": "Национальная гостиная Башкирская юрта",
+      "institution": "Культура.РФ",
+      "url": "https://www.culture.ru/events/4624661/nacionalnaya-gostinaya-bashkirskaya-yurta",
+      "accessedAt": "2026-10-04",
+      "locator": "访问 timeout，仅搜索摘要，未作为依据",
+      "claims": [],
+      "verified": false
+    }
+  ]
+}

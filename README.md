@@ -26,6 +26,10 @@
 
 各 `content/traditions/*.md` 在「注意与尊重」与「参考来源」之间含 **手机互动适合度（Three.js 评估草稿）** 一节，为可能的手机端致敬小品提供 A／B／C 档位设想。**此为内部评估草稿，不构成对神圣仪轨的模拟许可**；不可据此复现入会、献牲、附体或完整礼拜／圣餐。各卡「评估状态」均为 **待后期统一评估**。量尺说明见 [比较总览](content/traditions/comparative-overview.md)。
 
+现有文字是否足以支撑后续展示设计与开发，另见 [2026-10-04 材料齐备性分批评估](docs/material-readiness/2026-10-04/README.md)：按文化范围、器物材质、空间、过程、声画描述、变体、边界与来源对应逐项审阅，不以模型、代码或实际素材文件是否实现作为齐备标准。
+
+后续批量补齐从 [进度记录](docs/material-readiness/2026-10-04/progress.md) 和 [新会话提示词](docs/material-readiness/2026-10-04/next-session-prompt.md) 续接；逐项工作状态保存在独立台账中，原评估保留为基线。
+
 ## 许可
 
 本作品采用 [Creative Commons Attribution 4.0 International (CC BY 4.0)](content/LICENSE) 许可。引用请注明本档案名称与修订信息；下游使用请保留许可声明。

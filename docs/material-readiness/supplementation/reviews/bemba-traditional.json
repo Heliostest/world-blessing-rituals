@@ -1,0 +1,83 @@
+{
+  "slug": "bemba-traditional",
+  "title": "本巴传统宗教与莱萨—祖灵祈福（Bemba）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "1993—1996年Mpika西侧Mulenga Kapuli／Ndona本巴高原农作背景与原创邻里面粉分享示意",
+  "baselineSelectedDisplay": "赞比亚本巴高原农田与邻里分享面粉的原创伦理致敬",
+  "sliceChangeReason": "将泛高原农田固定为原始田野研究的具名历史语境，道具保持明确原创，不宣称当代写实村落或供粉仪礼。",
+  "readiness": "ready",
+  "workflowStatus": "ready",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 2,
+    "space": 2,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：具名Mulenga Kapuli/Ndona、研究年代及本巴农作食物互助有原始田野PDF支撑；背景高原林田湿地可用关系图表达。粉袋棉布、木桌纸卡槽和家屋圆片明确全属原创，接触支撑与左右位置可绘，整袋移桌心和留愿亮灯具有不倒粉的明确终态及重入状态。声画、主粮差异、王室和成年礼排除充分；未把真实分享误称固定仪式，两个网址承认同一研究而非两份独立证据。",
+  "evidence": [
+    {
+      "file": "content/display-notes/bemba-traditional.md",
+      "line": 32,
+      "quote": "袋底始终以台面为接收平面，不倒粉",
+      "reason": "原创分享动作对象和终态具体"
+    },
+    {
+      "file": "content/display-notes/bemba-traditional.md",
+      "line": 17,
+      "quote": "槽底托纸卡下缘，卡不贴在粉袋上",
+      "reason": "物件连接与空间可绘"
+    },
+    {
+      "file": "content/display-notes/bemba-traditional.md",
+      "line": 33,
+      "quote": "退出结束，重入回初态",
+      "reason": "完整起止及重入状态"
+    }
+  ],
+  "gaps": [],
+  "nextWriting": [
+    "非阻断：出版时保持1993—1996研究年代标签；若扩写实房屋和待客器物另做研究。"
+  ],
+  "sourceFiles": [
+    "content/traditions/bemba-traditional.md",
+    "content/display-notes/bemba-traditional.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Agrarian Changes and Coping Strategies for Subsistence of Bemba Shifting Cultivators in Northern Zambia in the Mid-1990's",
+      "institution": "Shuichi Oyama / Tomoki Y. Takamura；Japanese Society for Tropical Agriculture / J-STAGE",
+      "url": "https://www.jstage.jst.go.jp/article/jsta1957/45/2/45_2_84/_pdf/-char/en",
+      "accessedAt": "2026-10-04",
+      "locator": "期刊第85–88页 Research area / Cropping systems；第96页 Coping strategies；PDF页1–4、12",
+      "claims": [
+        "具名村和1993—1996研究范围",
+        "高原miombo林地、草层、季节河谷湿地与农田并存",
+        "指状黍木薯玉米主粮及机磨",
+        "1995亲属间主粮分享"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S1-index",
+      "title": "同研究发布页与摘要",
+      "institution": "J-STAGE / Japanese Society for Tropical Agriculture",
+      "url": "https://www.jstage.jst.go.jp/article/jsta1957/45/2/45_2_84/_article",
+      "accessedAt": "2026-10-04",
+      "locator": "作者栏、2001卷45期2与Abstract L63–67",
+      "claims": [
+        "原研究作者、年份和摘要确认；与S1同一研究非独立证据"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补具名历史农作背景、原创棉布粉袋木桌纸卡及分享留愿起止；主审通过。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

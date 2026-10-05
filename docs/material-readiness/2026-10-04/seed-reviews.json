@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "app-woodfish",
+    "title": "敲一敲木鱼（App 种子体验）",
+    "grade": "seed",
+    "batchId": "S01",
+    "selectedDisplay": "圆型腹空木鱼置于软垫，以木槌轻敲的原创静心练习；不包含完整课诵",
+    "readiness": "ready",
+    "narrativeReady": true,
+    "dimensions": {"context": 2, "objects": 2, "space": 2, "sequence": 2, "sensory": 2, "variants": 2, "boundaries": 2, "provenance": 2},
+    "evidence": [
+      {"file": "specs/notes-mokugyo.md", "line": 16, "quote": "禅寺课诵节奏；常与 *keisu*（磬）配合；垫上敲击", "reason": "已有用途、垫上位置及对应 Penn 馆藏说明，科普不必依赖起源精确定年。"},
+      {"file": "specs/notes-mokugyo.md", "line": 23, "quote": "团栾／圆型木鱼（头尾相接、腹空）", "reason": "圆型切片与长条鱼板、具象鱼形在文字中分开。"},
+      {"file": "design/woodfish/README.md", "line": 14, "quote": "共鸣孔、斜缝与内腔；圆角嘴部、单独木槌", "reason": "采用制作文档中的文字说明，已有具体部件关系；不以实际模型存在作为齐备依据。"},
+      {"file": "docs/app-framework.md", "line": 48, "quote": "抬槌定位", "reason": "同段完整描述下击、接触表面、反弹、停稳与微振，可提取为无技术依赖的演出描述。"},
+      {"file": "specs/notes-mokugyo.md", "line": 42, "quote": "禁用「消业点数」「开光完成」「敲够解锁」", "reason": "产品静心改编边界明确；来源中的年代不确定不阻断本切片。"}
+    ],
+    "gaps": ["非阻断性编辑缺口：文化笔记、产品形制和动作说明分散于三个文件，尚无一篇面向设计者的整合说明。"],
+    "nextWriting": ["把圆型木鱼、木槌、软垫、木纹色调、敲击接触—反弹—停稳与接触声整理为一份独立文字规格；明确造型与敲击次数是产品选择，木材细分及微表面不是历史测绘结论。"],
+    "sourceFiles": ["specs/notes-mokugyo.md", "design/woodfish/README.md", "docs/app-framework.md", "packages/app/src/scene-library.tsx"]
+  },
+  {
+    "slug": "app-crane",
+    "title": "折一只纸鹤（App 种子体验）",
+    "grade": "seed",
+    "batchId": "S01",
+    "selectedDisplay": "一张方纸形成单只纸鹤的当代祝愿工艺意象；四段演出摘要，不称完整折纸教程",
+    "readiness": "partial",
+    "narrativeReady": true,
+    "dimensions": {"context": 2, "objects": 2, "space": 1, "sequence": 1, "sensory": 2, "variants": 2, "boundaries": 2, "provenance": 2},
+    "evidence": [
+      {"file": "specs/2026-10-01-five-scene-research.md", "line": 17, "quote": "两片尖三角翼、较窄的颈与尾、向下折出的喙，以及连续折痕", "reason": "纸鹤成品的纸面轮廓与识别部件足够具体。"},
+      {"file": "specs/2026-10-01-five-scene-research.md", "line": 19, "quote": "四次点击只能代表四个演出阶段", "reason": "产品边界已明确，但四个中间纸形及连接方式仍未用文字逐段说明。"},
+      {"file": "specs/2026-10-01-five-scene-research.md", "line": 18, "quote": "最终姿态、纸张厚度和舞台底座均是美术选择", "reason": "允许原创选择，不过摆放面、视点和折叠期间的位置关系尚未决定。"}
+    ],
+    "gaps": ["四段只给出情绪提示和成品轮廓，缺每段起始纸形、折痕位置、翻面／展开方式及结束纸形。", "没有明确选择桌面／抽象舞台、纸的正反面、成品朝向和书写位置；现有折叠图不能代替用户要求的文字说明。"],
+    "nextWriting": ["为方纸—中间纸形—翼颈尾—成鹤四段各写一段可视化描述，明确压缩的真实工艺步骤和产品转场，保证纸面连续且不宣称四步完整教学。", "补一段原创舞台说明，选定纸面位置、观察方向、成品姿态及短愿呈现方式；保留连鹤工艺史、战后和平纪念与当代祝愿三层分述。"],
+    "sourceFiles": ["specs/2026-10-01-five-scene-research.md", "specs/notes-origami-crane.md", "design/scene-references/README.md", "packages/core/src/index.ts"]
+  },
+  {
+    "slug": "app-lantern",
+    "title": "点一盏心愿灯（App 种子体验）",
+    "grade": "seed",
+    "batchId": "S01",
+    "selectedDisplay": "木架固定悬挂的暖黄纸灯与心愿牌，由暗转亮的原创祝愿体验；不升空、不漂河",
+    "readiness": "partial",
+    "narrativeReady": true,
+    "dimensions": {"context": 2, "objects": 2, "space": 1, "sequence": 1, "sensory": 2, "variants": 2, "boundaries": 2, "provenance": 2},
+    "evidence": [
+      {"file": "specs/2026-10-01-five-scene-research.md", "line": 39, "quote": "用细骨架支撑薄纸罩", "reason": "纸罩、骨架、圈口与透光／褶皱已有具体文字，工艺参考及来源明确。"},
+      {"file": "specs/2026-10-01-five-scene-research.md", "line": 40, "quote": "灯体固定悬挂于木架或置于台座", "reason": "可选两种摆放；本评估选择木架悬挂，但木架、灯、牌之间连接及空间关系未完全写出。"},
+      {"file": "packages/core/src/index.ts", "line": 29, "quote": "安放一盏灯", "reason": "现有三段提示有安放与点亮，缺写愿／挂牌在过程中的位置和完成后状态描述。"},
+      {"file": "specs/2026-10-01-five-scene-research.md", "line": 45, "quote": "对应某一具名古俗", "reason": "该段明确整套体验没有对应具名古俗，工艺出处不能转换成祭礼身份。"}
+    ],
+    "gaps": ["虽选定木架悬挂，仍缺灯与牌各自如何连接木架、牌的相对位置和展示背景的文字。", "安放—点亮三段提示与简介中的点亮、写愿、悬挂尚未形成唯一可理解的过程；牌从空白到带文字的变化未描述。"],
+    "nextWriting": ["补固定木架切片的部件与空间文字：架体、灯罩上下圈口、悬挂连接、心愿牌位置及观看方向；木架形制标为原创设计决定。", "选择并写清安放、写愿、挂牌、点亮的顺序及每段起止状态，描述由暗到暖亮和牌签轻摆；保留原创身份及不升空／不漂河边界。"],
+    "sourceFiles": ["specs/2026-10-01-five-scene-research.md", "specs/notes-wish-lamps-disambiguation.md", "design/scene-references/README.md", "packages/core/src/index.ts"]
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "slug": "basque-folk",
+  "title": "巴斯克民间信仰与玛丽女神传说（Basque folk／Mari）",
+  "grade": "C",
+  "batchId": "C01",
+  "selectedDisplay": "安博托东壁 Mari 洞穴外部位置与原创诚信灯盏／词条教育致敬",
+  "baselineSelectedDisplay": "安博托山景与洞穴外观的传说教育致敬",
+  "sliceChangeReason": "保留山景洞穴教育；以东壁实际位置固定范围，发现现有照片是内侧向外视角，外部轮廓及路径仍待研究。",
+  "readiness": "partial",
+  "workflowStatus": "needs_research",
+  "narrativeReady": true,
+  "dimensions": {
+    "context": 2,
+    "objects": 1,
+    "space": 1,
+    "sequence": 2,
+    "sensory": 2,
+    "variants": 2,
+    "boundaries": 2,
+    "provenance": 2
+  },
+  "semanticReview": "主审：有政府与地方资料对应东壁洞穴及传说身份，素材照片方向实际核实；照片从内向外，无法替代真实外部轮廓与山路连接，objects/space仍为1。原创陶杯灯盏纸条、面板位置及状态可执行，声画、变体、教育边界明确，但不得以其完整消除真实洞口缺口。“不背对”缺原始文本已禁止动作化，记待核不冒称传统规范。",
+  "evidence": [
+    {
+      "file": "content/display-notes/basque-folk.md",
+      "line": 15,
+      "quote": "实际是从岩棚／开口内部朝外看",
+      "reason": "照片视角不能作为外部轮廓证据"
+    },
+    {
+      "file": "content/display-notes/basque-folk.md",
+      "line": 23,
+      "quote": "真实洞穴外观与山路关系仍只有 1",
+      "reason": "关键空间缺口"
+    },
+    {
+      "file": "content/display-notes/basque-folk.md",
+      "line": 35,
+      "quote": "真实山路未齐备不会因原创面板已齐备而变成 ready",
+      "reason": "明确未完成判定"
+    }
+  ],
+  "gaps": [
+    "尚未核验一手外部洞口轮廓及接近路径连接；内部逆光照片不能替代",
+    "离开不背对的原始民族志文本未读到，已禁止用作真实动作教程"
+  ],
+  "nextWriting": [
+    "找公园管理机构外部洞口现状图／测绘定位，补大开口轮廓和山路岩台关系",
+    "查 Barandiarán 原始采集或研究机构条目，核对尊重规则实际措辞"
+  ],
+  "sourceFiles": [
+    "content/traditions/basque-folk.md",
+    "content/display-notes/basque-folk.md"
+  ],
+  "checkedAt": "2026-10-04",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Urkiola Natural Park",
+      "institution": "Gobierno Vasco / Tourism Euskadi",
+      "url": "https://tourism.euskadi.eus/en/natural-areas/urkiola-natural-park/webtur00-content/en/",
+      "accessedAt": "2026-10-04",
+      "locator": "公园地貌与 Anboto 段（web L133–141）",
+      "claims": [
+        "石灰岩峭壁深谷",
+        "Anboto 为最高峰，与 Mari 神话关联"
+      ],
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "title": "Anbotoko Mari and Durangaldea",
+      "institution": "Durangaldea Turismoa",
+      "url": "https://durangaldeaturismoa.eus/en/anbotoko-mari-and-durangaldea/",
+      "accessedAt": "2026-10-04",
+      "locator": "Many places, many names；Mari’s cave on Anboto（web L61–78）；插图 Anbotoko-Mariren-koba-2-1024x683.jpg 已查看像素",
+      "claims": [
+        "地方名称不同",
+        "东壁峰顶下约1150米",
+        "大开口经走廊到隐藏入口",
+        "规则实际写按进入方式离开、不坐、不带走物品",
+        "图片只能支持内侧向外视角"
+      ],
+      "verified": true
+    }
+  ],
+  "checkpoint": "已补东壁位置、洞穴层次、素材视角及原创灯盏词条过程；缺外洞口与山路一手关系，待研究。",
+  "reviewMethod": "主代理实际逐项阅读全文，按可绘制物件、相对位置、起止状态、文化事实与原创决定的区分进行语义判定；脚本仅记录明确决策和真实引文。"
+}

@@ -185,7 +185,7 @@ describe('crane folds', () => {
     s.overlay.querySelector('.scene-hint')?.textContent ?? ''
   /** Index of the active step dot (3 when all are done). */
   const activeDot = (s: Awaited<ReturnType<typeof mount>>) => {
-    const dots = [...s.overlay.querySelectorAll<HTMLElement>('.scene-step-dot')]
+    const dots = Array.from(s.overlay.querySelectorAll<HTMLElement>('.scene-step-dot'))
     const i = dots.findIndex((d) => d.dataset.state === 'active')
     return i < 0 ? dots.length : i
   }

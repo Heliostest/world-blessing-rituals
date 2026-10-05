@@ -34,12 +34,17 @@ export type WishStatus = "active" | "realized" | "fulfilled";
 export type WishCategory = "study" | "work" | "life";
 export type ReturnMethod = "kindness" | "ritual";
 export type Note = { id: string; text: string; at: string };
+/** Longest wish title and intention (小约定), in UTF-16 units. */
+export const WISH_TITLE_MAX = 60;
+export const WISH_INTENTION_MAX = 160;
 export type Wish = {
   id: string;
   title: string;
   intention: string;
   category?: WishCategory;
   returnMethod?: ReturnMethod;
+  /** The scene whose wish box this wish was written in, if any. */
+  sourceSceneId?: string;
   status: WishStatus;
   archived: boolean;
   createdAt: string;
@@ -87,6 +92,7 @@ export type Action =
       intention: string;
       category?: WishCategory;
       returnMethod?: ReturnMethod;
+      sourceSceneId?: string;
       at: string;
     }
   | { type: "wish.note"; id: string; noteId: string; text: string; at: string }
@@ -154,17 +160,21 @@ export function reduce(s: State, a: Action): State {
       return { ...s, sceneRecords: s.sceneRecords.map(r => r.id === a.id ? { ...r, favorite: a.favorite } : r) };
     case "wish.create":
       if (s.wishes.some((w) => w.id === a.id)) return s;
-      if (a.intention.length > 160)
-        throw new Error("小约定请控制在 160 字以内");
+      if (a.intention.length > WISH_INTENTION_MAX)
+        throw new Error(`小约定请控制在 ${WISH_INTENTION_MAX} 字以内`);
+      if (!optionalId(a.sourceSceneId)) throw new Error("心愿的来源场景无效");
       return {
         ...s,
         wishes: [
           {
             id: a.id,
-            title: text(a.title, 60),
+            title: text(a.title, WISH_TITLE_MAX),
             intention: a.intention.trim(),
             category: a.category ?? "life",
             returnMethod: a.returnMethod ?? "kindness",
+            ...(a.sourceSceneId === undefined
+              ? {}
+              : { sourceSceneId: a.sourceSceneId }),
             createdAt: a.at,
             status: "active",
             archived: false,
@@ -370,12 +380,13 @@ export function restore(
         id(w.id) &&
         str(w.title) &&
         w.title.trim().length > 0 &&
-        w.title.length <= 60 &&
+        w.title.length <= WISH_TITLE_MAX &&
         str(w.intention) &&
         (w.category === undefined ||
           ["study", "work", "life"].includes(String(w.category))) &&
         (w.returnMethod === undefined ||
           ["kindness", "ritual"].includes(String(w.returnMethod))) &&
+        optionalId(w.sourceSceneId) &&
         typeof w.archived === "boolean" &&
         ["active", "realized", "fulfilled"].includes(String(w.status)) &&
         date(w.createdAt) &&

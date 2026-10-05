@@ -313,8 +313,10 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
 
     wishHandle = gestures.createWishWrite({
       maxLen: 40,
-      onSubmit: () => {
-        if (step !== 'wishWrite') return
+      saves: ctx.saveWish !== undefined,
+      onSubmit: (text) => {
+        if (step !== 'wishWrite' || (ctx.isActive && !ctx.isActive())) return
+        ctx.saveWish?.(text)
         completeScene()
       },
     })

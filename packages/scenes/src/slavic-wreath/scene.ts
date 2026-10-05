@@ -465,8 +465,10 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
 
     wishHandle = gestures.createWishWrite({
       maxLen: 40,
-      onSubmit: () => {
-        if (step !== 'drift') return
+      saves: ctx.saveWish !== undefined,
+      onSubmit: (text) => {
+        if (step !== 'drift' || !canAct()) return
+        ctx.saveWish?.(text)
         completeScene()
       },
     })

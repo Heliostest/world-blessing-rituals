@@ -2,15 +2,25 @@ import type { GestureHandle } from './types'
 
 export type WishWriteOpts = {
   maxLen?: number
+  /**
+   * Whether the host keeps the line (the App saves it as a new 心愿); the note
+   * under the box says so. Hosts that keep nothing pass false.
+   */
+  saves?: boolean
   onSubmit?(text: string): void
 }
 
-/** Copy of the wish box. The line goes to `onSubmit` only; nothing keeps it. */
+/** Copy of the wish box. The line goes to `onSubmit`; the host may keep it. */
 export const WISH_WRITE_COPY = {
   label: '写一句想说的话',
   placeholder: '写一句想说的话…',
   submit: '写好了',
-  note: '只在此刻，不会保存',
+  /** Under the box, when the host keeps the line. */
+  note: '写好后会存进心愿',
+  /** Under the box, when it keeps nothing. */
+  unsaved: '只在此刻，不会保存',
+  /** The host's confirmation once the line is kept. */
+  saved: '已存进心愿',
   empty: '先写一句，再点「写好了」。',
 } as const
 
@@ -18,6 +28,7 @@ let boxes = 0
 
 export function createWishWrite(opts: WishWriteOpts): GestureHandle {
   const maxLen = opts.maxLen ?? 40
+  const restingNote = opts.saves === false ? WISH_WRITE_COPY.unsaved : WISH_WRITE_COPY.note
 
   let el: HTMLElement | null = null
   let form: HTMLFormElement | null = null
@@ -30,7 +41,7 @@ export function createWishWrite(opts: WishWriteOpts): GestureHandle {
   /** The note under the box, or a gentle nudge after an empty submit. */
   const setNudge = (on: boolean) => {
     if (!note) return
-    note.textContent = on ? WISH_WRITE_COPY.empty : WISH_WRITE_COPY.note
+    note.textContent = on ? WISH_WRITE_COPY.empty : restingNote
     note.toggleAttribute('data-nudge', on)
   }
 

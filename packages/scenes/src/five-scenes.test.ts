@@ -37,6 +37,7 @@ vi.mock('@wbr/scene-runtime/debug-render-style', () => ({
 }))
 
 import { loadScene } from './registry'
+import type { SceneContext } from './contract'
 
 type Script = { id: string; taps: number[]; gap?: number }
 
@@ -57,7 +58,7 @@ const SCRIPTS: Script[] = [
   { id: 'yeondeunghoe', taps: [1, 0, 1] },
 ]
 
-async function mount(id: string, initialProgress = 0) {
+async function mount(id: string, initialProgress = 0, extra: Partial<SceneContext> = {}) {
   const mod = await loadScene(id)
   const canvas = document.createElement('canvas')
   const overlay = document.createElement('div')
@@ -74,6 +75,7 @@ async function mount(id: string, initialProgress = 0) {
     onProgress: (n) => progress.push(n),
     haptic,
     isSoundEnabled: () => false,
+    ...extra,
   })
   const complete = vi.fn()
   overlay.addEventListener('scene:complete', complete)
@@ -480,6 +482,73 @@ describe('device motion', () => {
     s.run(1)
     s.runUntil(2)
     expect(s.progress).toEqual([2])
+    s.instance.dispose()
+  })
+})
+
+/**
+ * The six scenes with a wish box: the progress that opens it (as restored
+ * progress) and the progress reported once a line is written.
+ */
+const WISH_BOXES = [
+  { id: 'crane', at: 2, after: 3 },
+  { id: 'lantern', at: 1, after: 2 },
+  { id: 'tanzaku-tanabata', at: 2, after: 3 },
+  { id: 'slavic-wreath', at: 2, after: 3 },
+  { id: 'shinto-torii', at: 2, after: 3 },
+  { id: 'celtic-folk-spring', at: 2, after: 3 },
+]
+
+describe.each(WISH_BOXES)('$id wish box', ({ id, at, after }) => {
+  const box = (s: Awaited<ReturnType<typeof mount>>) => {
+    const input = s.overlay.querySelector<HTMLInputElement>('.scene-wish-slot input')!
+    return {
+      input,
+      note: () => s.overlay.querySelector('.scene-wish-slot .wish-write-meta')?.textContent ?? '',
+      write(text: string) {
+        input.value = text
+        input.form!.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }))
+      },
+    }
+  }
+
+  it('hands the written line to the host to keep as a wish, then moves on', async () => {
+    const saveWish = vi.fn()
+    const s = await mount(id, at, { saveWish })
+    const b = box(s)
+    expect(b.note()).toContain(Gestures.WISH_WRITE_COPY.note)
+    b.write('   ')
+    expect(saveWish).not.toHaveBeenCalled()
+    expect(s.progress).toEqual([])
+    b.write('  愿家人平安  ')
+    expect(saveWish).toHaveBeenCalledTimes(1)
+    expect(saveWish).toHaveBeenCalledWith('愿家人平安')
+    expect(s.progress).toEqual([after])
+    // Enter pressed twice keeps nothing more.
+    b.write('愿家人平安')
+    expect(saveWish).toHaveBeenCalledTimes(1)
+    s.instance.dispose()
+  })
+
+  it('keeps nothing while the scene is not active', async () => {
+    const saveWish = vi.fn()
+    let active = false
+    const s = await mount(id, at, { saveWish, isActive: () => active })
+    box(s).write('愿家人平安')
+    expect(saveWish).not.toHaveBeenCalled()
+    expect(s.progress).toEqual([])
+    active = true
+    box(s).write('愿家人平安')
+    expect(saveWish).toHaveBeenCalledTimes(1)
+    s.instance.dispose()
+  })
+
+  it('says nothing is kept where the host keeps no wishes, and still moves on', async () => {
+    const s = await mount(id, at)
+    const b = box(s)
+    expect(b.note()).toContain(Gestures.WISH_WRITE_COPY.unsaved)
+    b.write('愿家人平安')
+    expect(s.progress).toEqual([after])
     s.instance.dispose()
   })
 })

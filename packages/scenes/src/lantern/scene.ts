@@ -335,8 +335,10 @@ export function createLantern(ctx: SceneContext): SceneInstance {
 
     wishHandle = gestures.createWishWrite({
       maxLen: 40,
-      onSubmit: () => {
-        if (step !== 'wish') return
+      saves: ctx.saveWish !== undefined,
+      onSubmit: (text) => {
+        if (step !== 'wish' || !canAct()) return
+        ctx.saveWish?.(text)
         goRest()
       },
     })

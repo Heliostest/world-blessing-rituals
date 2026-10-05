@@ -39,6 +39,27 @@ describe('createWishWrite', () => {
     g.dispose()
   })
 
+  it('says the line will be kept as a 心愿, or, where nothing keeps it, that it will not', () => {
+    const kept = createWishWrite({})
+    kept.mount(el, {})
+    const note = () => el.querySelector('.wish-write-meta [aria-live]')!.textContent
+    expect(note()).toBe(WISH_WRITE_COPY.note)
+    expect(note()).not.toContain('不会保存')
+    kept.dispose()
+
+    const momentary = createWishWrite({ saves: false })
+    momentary.mount(el, {})
+    expect(note()).toBe(WISH_WRITE_COPY.unsaved)
+    // After a nudge, typing brings back the same note.
+    const input = el.querySelector('input')!
+    el.querySelector('form')!.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }))
+    expect(note()).toBe(WISH_WRITE_COPY.empty)
+    input.value = '平'
+    input.dispatchEvent(new Event('input', { bubbles: true }))
+    expect(note()).toBe(WISH_WRITE_COPY.unsaved)
+    momentary.dispose()
+  })
+
   it('counts characters as n/maxLen while typing', () => {
     const g = createWishWrite({ maxLen: 40 })
     g.mount(el, {})

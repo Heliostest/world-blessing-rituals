@@ -9,31 +9,36 @@ import type {
   SceneLease,
   SceneProgress,
 } from "@wbr/content/catalog";
+import { WISH_WRITE_COPY } from "@wbr/gestures";
 import type { WoodfishContext } from "./scene-engines";
 import { sceneEngines } from "./scene-engines";
-import { now, useApp } from "./context";
+import { now, uid, useApp } from "./context";
 import { supportsScene, useSceneLibrary, woodfishPack } from "./scene-library";
 import { Woodfish } from "./woodfish";
 import { RitualNarrativeBlurb } from "./ritual-narrative";
 import { FeedbackControls } from "./feedback-controls";
 import { describeSceneLoadError } from "./scene-load-error";
+import { sceneWish } from "./scene-wish";
 
 function ProceduralScene({
   entry,
   progress,
   checkpoint,
+  saveWish,
   failed,
 }: {
   entry: CatalogEntry;
   progress: number;
   checkpoint(n: number): void;
+  saveWish(text: string): void;
   failed(error?: unknown): void;
 }) {
   const host = useRef<HTMLDivElement>(null),
     session = useRef<SceneSession<SceneController>>(null);
   const { active, state, prepareFeedback, haptic } = useApp();
-  const latest = useRef({ checkpoint, failed, prepareFeedback, haptic, state });
-  latest.current = { checkpoint, failed, prepareFeedback, haptic, state };
+  const callbacks = { checkpoint, saveWish, failed, prepareFeedback, haptic };
+  const latest = useRef({ ...callbacks, state });
+  latest.current = { ...callbacks, state };
   useEffect(() => {
     session.current = mountScene({
       host: host.current!,
@@ -46,6 +51,7 @@ function ProceduralScene({
         prepareFeedback: () => latest.current.prepareFeedback(),
         haptic: () => latest.current.haptic(),
         isSoundEnabled: () => latest.current.state.settings.sound,
+        saveWish: (text: string) => latest.current.saveWish(text),
       },
       load: () =>
         sceneEngines.load(
@@ -84,13 +90,20 @@ function LoadedScene({
   lease?: SceneLease;
   failed(error?: unknown): void;
 }) {
-  const { state, dispatch, active, feedback, prepareFeedback } = useApp();
+  const { state, dispatch, active, feedback, prepareFeedback, go } = useApp();
   const record = state.sceneRecords.find((r) => r.id === entry.id);
   const progress = record?.progress ?? 0;
   const steps = sceneSteps(entry);
   const [instruction, setInstruction] = useState("轻敲木鱼，让心慢下来");
+  /** The wish this visit kept from the scene's wish box, if any. */
+  const [keptWish, setKeptWish] = useState<string>();
   const checkpoint = (n: number) =>
     dispatch({ type: "scene.progress", id: entry.id, progress: n });
+  // Each line is a new 心愿, also when the scene was opened from a wish.
+  const saveWish = (text: string) => {
+    const wish = sceneWish(text, entry.id, uid(), now());
+    if (wish && dispatch(wish)) setKeptWish(wish.id);
+  };
   const client = useMemo<WoodfishContext["content"] | undefined>(
     () =>
       lease && entry.engine === "woodfish@1"
@@ -143,8 +156,25 @@ function LoadedScene({
           entry={entry}
           progress={progress}
           checkpoint={checkpoint}
+          saveWish={saveWish}
           failed={failed}
         />
+      )}
+      {entry.engine !== "woodfish@1" && (
+        // Present from the start (empty), so the confirmation is announced.
+        <p className="scene-wish-saved" role="status">
+          {keptWish && (
+            <>
+              {WISH_WRITE_COPY.saved}
+              <button
+                className="text-button"
+                onClick={() => go({ page: "wish", id: keptWish })}
+              >
+                去看看
+              </button>
+            </>
+          )}
+        </p>
       )}
       {entry.engine !== "woodfish@1" && <FeedbackControls />}
       <button

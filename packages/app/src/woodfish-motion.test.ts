@@ -7,13 +7,24 @@ import {
   MIN_HANDLE_LIFT,
 } from "./woodfish-motion";
 import { DEFAULT_PARAMETERS } from "@wbr/content";
-import { isTap } from "./woodfish-input";
+import { pressOutcome, QUICK_PRESS_MS } from "./woodfish-input";
 
-it("distinguishes a tap from a drag, long press, cancellation and secondary touch", () => {
-  expect(isTap({ distance: 5, elapsed: 120, cancelled: false })).toBe(true);
-  expect(isTap({ distance: 20, elapsed: 120, cancelled: false })).toBe(false);
-  expect(isTap({ distance: 0, elapsed: 700, cancelled: false })).toBe(false);
-  expect(isTap({ distance: 0, elapsed: 50, cancelled: true })).toBe(false);
+it("tells a strike from a drag, cancellation and secondary touch; a long still press strikes too", () => {
+  const press = (distance: number, elapsed: number, cancelled = false) =>
+    pressOutcome({ distance, elapsed, cancelled });
+  // A quick still tap strikes through the click that follows.
+  expect(press(5, 120)).toBe("tap");
+  expect(press(8, QUICK_PRESS_MS)).toBe("tap");
+  // Held longer but still: it strikes on release (no click may follow).
+  expect(press(0, QUICK_PRESS_MS + 1)).toBe("long");
+  expect(press(0, 700)).toBe("long");
+  expect(press(3, 5000)).toBe("long");
+  // Moving the mallet is no strike, however quick or slow.
+  expect(press(20, 120)).toBe("none");
+  expect(press(9, 700)).toBe("none");
+  // A second finger or a pointercancel calls it off.
+  expect(press(0, 50, true)).toBe("none");
+  expect(press(0, 700, true)).toBe("none");
 });
 
 it("keeps a rigid grip-to-head distance and never swings through the contact plane", () => {

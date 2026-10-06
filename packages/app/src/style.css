@@ -2184,8 +2184,13 @@ button:hover:not(:disabled) {
 .tag-sage { background: var(--sage-tint); color: var(--green-ink); box-shadow: none; }
 .scene-discovery p, .cache-manager p { line-height: 1.8; }
 .ritual-narrative { position: static; margin: 4px 0 12px; }
-.ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; }
-.ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; }
+/* display:flex drops the native disclosure triangle, so 了解此仪式 read as
+   plain text. A chevron that turns when open marks it as expandable. */
+.ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; gap: 9px; cursor: pointer; list-style: none; color: var(--ink-soft); }
+.ritual-narrative > summary::-webkit-details-marker { display: none; }
+.ritual-narrative > summary::after { content: ""; width: 7px; height: 7px; margin-top: -4px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform var(--dur-base) var(--ease); }
+.ritual-narrative[open] > summary::after { margin-top: 4px; transform: rotate(-135deg); }
+.ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--paper); color: var(--ink-soft); }
 .scene-catalog { display: grid; gap: 12px; margin: 20px 0; }
 .scene-card { display: grid; text-align: left; padding: 20px; gap: 8px; border-radius: var(--radius-md); border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer; }
 .scene-card small { color: var(--muted); }
@@ -2197,7 +2202,11 @@ button:hover:not(:disabled) {
    widening it, so 重试打开 stays on screen. */
 .scene-load-error { grid-template-columns: minmax(0, 1fr); overflow-wrap: anywhere; }
 .scene-load-error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13px; color: var(--muted); }
-.scene-download progress { width: 100%; }
+/* The download bar matches the ritual progress track, not the platform's blue. */
+.scene-download progress { width: 100%; height: 12px; appearance: none; border: 0; border-radius: 10px; overflow: hidden; background: var(--line); box-shadow: inset 0 1px 3px #9f773d13; }
+.scene-download progress::-webkit-progress-bar { background: var(--line); }
+.scene-download progress::-webkit-progress-value { background: linear-gradient(#ffe675, #ffcd31); border-radius: 10px; }
+.scene-download progress::-moz-progress-bar { background: linear-gradient(#ffe675, #ffcd31); border-radius: 10px; }
 /* 已存进心愿 once a scene's wish box keeps a line: empty (no height) until then. */
 .scene-wish-saved { display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; margin: 0; color: var(--green-ink); }
 .scene-experience h1 { font-size: 26px; }
@@ -2216,26 +2225,31 @@ button:hover:not(:disabled) {
   color: var(--ink);
   text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);
 }
-.scene-overlay--cream .scene-step-dot {
+.scene-overlay--cream .scene-step-dot,
+.library-scene-stage .scene-overlay .scene-step-dot {
   background: #efe4d2;
   border-color: #d9c7ad;
 }
-.scene-overlay--cream .scene-step-dot[data-state='active'] {
+.scene-overlay--cream .scene-step-dot[data-state='active'],
+.library-scene-stage .scene-overlay .scene-step-dot[data-state='active'] {
   background: #f0a86c;
   border-color: #d98a4e;
   box-shadow: 0 0 0 3px #f0a86c33;
 }
-.scene-overlay--cream .scene-step-dot[data-state='done'] {
+.scene-overlay--cream .scene-step-dot[data-state='done'],
+.library-scene-stage .scene-overlay .scene-step-dot[data-state='done'] {
   background: var(--green);
   border-color: #6f8457;
 }
-.scene-overlay--cream .scene-hint {
+.scene-overlay--cream .scene-hint,
+.library-scene-stage .scene-overlay .scene-hint {
   color: #5a3a24;
   background: #fffcf6e0;
   border: 1px solid var(--line);
   box-shadow: 0 3px 6px #97672d14;
 }
-.scene-overlay--cream .scene-bow-tap {
+.scene-overlay--cream .scene-bow-tap,
+.library-scene-stage .scene-overlay .scene-bow-tap {
   min-height: 44px;
   border: 1px solid #e9ddca;
   border-radius: 22px;
@@ -2243,21 +2257,25 @@ button:hover:not(:disabled) {
   color: var(--ink);
   box-shadow: 0 3px 8px #97672d1f;
 }
-.scene-overlay--cream .scene-bow-tap:hover {
+.scene-overlay--cream .scene-bow-tap:hover,
+.library-scene-stage .scene-overlay .scene-bow-tap:hover {
   background: #fff6e4;
   box-shadow: 0 4px 12px #97672d2e;
 }
-.scene-overlay--cream .scene-wish-slot input {
+.scene-overlay--cream .scene-wish-slot input,
+.library-scene-stage .scene-overlay .scene-wish-slot input {
   border-color: #e0d2bc;
   background: var(--paper);
   color: var(--ink);
 }
-.scene-overlay--cream .scene-wish-slot input:focus {
+.scene-overlay--cream .scene-wish-slot input:focus,
+.library-scene-stage .scene-overlay .scene-wish-slot input:focus {
   border-color: #f0a86c;
   box-shadow: 0 0 0 3px #f0a86c33;
 }
 /* The submit capsule matches the app's primary button. */
-.scene-overlay--cream .scene-wish-slot button {
+.scene-overlay--cream .scene-wish-slot button,
+.library-scene-stage .scene-overlay .scene-wish-slot button {
   border-color: #ffc530;
   background: linear-gradient(#ffe77a, #ffda4a);
   box-shadow:
@@ -2265,7 +2283,8 @@ button:hover:not(:disabled) {
     0 4px 6px #bc8a261a;
   color: #352000;
 }
-.scene-overlay--cream .scene-wish-slot button:hover {
+.scene-overlay--cream .scene-wish-slot button:hover,
+.library-scene-stage .scene-overlay .scene-wish-slot button:hover {
   background: linear-gradient(#ffe98a, #ffdc58);
   box-shadow:
     inset 0 1px 0 #fff4b7,
@@ -2277,6 +2296,25 @@ button:hover:not(:disabled) {
 }
 .scene-overlay--cream .scene-wish-slot .wish-write-meta [data-nudge] {
   color: #b0562b;
+}
+/* The night pilot scenes (泉边一念, 花水位一倾) keep their dark canvas. In the
+   cream shell their title and hint inherited the page ink, dark on dark;
+   their text is light here and their controls are the shell's warm ones. */
+.library-scene-stage .scene-overlay:not(.scene-overlay--cream) {
+  color: #fffaf0;
+}
+.library-scene-stage .scene-overlay:not(.scene-overlay--cream) .scene-step-dot[data-state='todo'] {
+  background: #fffaf033;
+  border-color: #fffaf080;
+}
+.library-scene-stage .scene-overlay:not(.scene-overlay--cream) .scene-hint {
+  color: #fffaf0;
+  background: #22170fc7;
+  border-color: #fffaf026;
+  box-shadow: none;
+}
+.library-scene-stage .scene-overlay:not(.scene-overlay--cream) .wish-write-meta {
+  color: #f3e6d0;
 }
 
 .practice-card {

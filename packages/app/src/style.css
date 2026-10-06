@@ -1549,7 +1549,8 @@ button:hover:not(:disabled) {
   top: 24px;
   writing-mode: vertical-rl;
   font-size: 12px;
-  color: var(--muted);
+  /* The room's darker gradient: --muted is 4.3-4.4:1 here, --ink-soft 5.0+. */
+  color: var(--ink-soft);
   letter-spacing: 4px;
 }
 .room-shelf {
@@ -1572,7 +1573,7 @@ button:hover:not(:disabled) {
 }
 .empty-shelf {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--ink-soft);
   margin-bottom: 18px;
 }
 .room-floor {

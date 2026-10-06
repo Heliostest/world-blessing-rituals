@@ -1,6 +1,8 @@
 import type { GestureHandle } from './types'
 
 export type DragOpts = {
+  /** Only a pointer that goes down where this is true starts a drag (default: anywhere). */
+  startsOn?: (clientX: number, clientY: number) => boolean
   hitTest: (clientX: number, clientY: number) => boolean
   onProgress?: (t: number) => void
   onDrop?: (hit: boolean) => void
@@ -11,7 +13,7 @@ export function createDrag(opts: DragOpts): GestureHandle {
   let enabled = true
   let dragging = false
   const onDown = (e: PointerEvent) => {
-    if (!enabled) return
+    if (!enabled || (opts.startsOn && !opts.startsOn(e.clientX, e.clientY))) return
     dragging = true
     el?.setPointerCapture(e.pointerId)
   }

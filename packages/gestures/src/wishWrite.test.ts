@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { createWishWrite } from './wishWrite'
+import { createWishWrite, WISH_WRITE_COPY } from './wishWrite'
 
 describe('createWishWrite', () => {
   let el: HTMLElement
@@ -22,6 +22,74 @@ describe('createWishWrite', () => {
     expect(form!.querySelector('button[type="submit"], input[type="submit"]')).toBeTruthy()
     g.dispose()
     expect(el.querySelector('form')).toBeNull()
+  })
+
+  it('speaks Chinese: label, placeholder and a 写好了 button instead of "wish"/"OK"', () => {
+    const g = createWishWrite({})
+    g.mount(el, {})
+    const input = el.querySelector('input')!
+    const button = el.querySelector('button[type="submit"]')!
+    expect(input.getAttribute('aria-label')).toBe(WISH_WRITE_COPY.label)
+    expect(input.placeholder).toBe(WISH_WRITE_COPY.placeholder)
+    expect(button.textContent).toBe('写好了')
+    expect(el.textContent).not.toMatch(/\bOK\b|wish/i)
+    // The note and the counter describe the box.
+    const meta = document.getElementById(input.getAttribute('aria-describedby')!)
+    expect(meta?.textContent).toContain(WISH_WRITE_COPY.note)
+    g.dispose()
+  })
+
+  it('says the line will be kept as a 心愿, or, where nothing keeps it, that it will not', () => {
+    const kept = createWishWrite({})
+    kept.mount(el, {})
+    const note = () => el.querySelector('.wish-write-meta [aria-live]')!.textContent
+    expect(note()).toBe(WISH_WRITE_COPY.note)
+    expect(note()).not.toContain('不会保存')
+    kept.dispose()
+
+    const momentary = createWishWrite({ saves: false })
+    momentary.mount(el, {})
+    expect(note()).toBe(WISH_WRITE_COPY.unsaved)
+    // After a nudge, typing brings back the same note.
+    const input = el.querySelector('input')!
+    el.querySelector('form')!.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }))
+    expect(note()).toBe(WISH_WRITE_COPY.empty)
+    input.value = '平'
+    input.dispatchEvent(new Event('input', { bubbles: true }))
+    expect(note()).toBe(WISH_WRITE_COPY.unsaved)
+    momentary.dispose()
+  })
+
+  it('counts characters as n/maxLen while typing', () => {
+    const g = createWishWrite({ maxLen: 40 })
+    g.mount(el, {})
+    const input = el.querySelector('input')!
+    const meta = el.querySelector('.wish-write-meta')!
+    expect(meta.textContent).toContain('0/40')
+    input.value = '愿家人平安'
+    input.dispatchEvent(new Event('input', { bubbles: true }))
+    expect(meta.textContent).toContain('5/40')
+    expect(input.maxLength).toBe(40)
+    g.dispose()
+  })
+
+  it('nudges gently on an empty or blank submit, and lets go once typing starts', () => {
+    const onSubmit = vi.fn()
+    const g = createWishWrite({ onSubmit })
+    g.mount(el, {})
+    const input = el.querySelector('input')!
+    const note = el.querySelector<HTMLElement>('[aria-live]')!
+    input.value = '  '
+    el.querySelector('form')!.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }))
+    expect(onSubmit).not.toHaveBeenCalled()
+    expect(note.textContent).toBe(WISH_WRITE_COPY.empty)
+    expect(note.hasAttribute('data-nudge')).toBe(true)
+    expect(document.activeElement).toBe(input)
+    input.value = '平'
+    input.dispatchEvent(new Event('input', { bubbles: true }))
+    expect(note.textContent).toBe(WISH_WRITE_COPY.note)
+    expect(note.hasAttribute('data-nudge')).toBe(false)
+    g.dispose()
   })
 
   it('submits trimmed text via onSubmit', () => {

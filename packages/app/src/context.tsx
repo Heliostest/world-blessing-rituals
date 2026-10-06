@@ -29,6 +29,8 @@ export type AppContext = {
   feedback(sound?: AudioBuffer): void;
   /** Haptic tick only; respects the 震动 toggle. */
   haptic(): void;
+  /** Whether the host can vibrate at all (not in iOS browsers); else no 震动 toggle. */
+  canHaptic: boolean;
   decodeSound(bytes: ArrayBuffer): Promise<AudioBuffer>;
   prepareFeedback(): void;
   active: boolean;

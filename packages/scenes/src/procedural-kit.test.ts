@@ -22,7 +22,7 @@ vi.mock('three', async (importOriginal) => {
   return { ...actual, WebGLRenderer }
 })
 
-import { createSceneFeedback, createWarmStage } from './procedural-kit'
+import { claimObjectTouches, createSceneFeedback, createWarmStage } from './procedural-kit'
 
 afterEach(() => {
   vi.unstubAllGlobals()
@@ -100,5 +100,23 @@ describe('createSceneFeedback', () => {
     fx.impact(tone)
     expect(oscillators).toHaveLength(2)
     fx.dispose()
+  })
+})
+
+describe('claimObjectTouches', () => {
+  const touchStart = (el: HTMLElement, clientX: number, clientY: number) => {
+    const e = new Event('touchstart', { cancelable: true })
+    Object.assign(e, { changedTouches: [{ clientX, clientY }] })
+    el.dispatchEvent(e)
+    return e.defaultPrevented
+  }
+
+  it('keeps only touches that start on the object from scrolling the page', () => {
+    const el = document.createElement('div')
+    const stop = claimObjectTouches(el, (x) => x < 50)
+    expect(touchStart(el, 10, 10)).toBe(true)
+    expect(touchStart(el, 80, 10)).toBe(false)
+    stop()
+    expect(touchStart(el, 10, 10)).toBe(false)
   })
 })

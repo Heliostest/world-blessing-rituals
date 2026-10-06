@@ -12,6 +12,12 @@ export type SceneContext = {
   /** Vibrates only when the App haptics toggle is on. */
   haptic?(): void
   isSoundEnabled?(): boolean
+  /**
+   * Keeps a line written in the scene's wish box as a new 心愿 (never an
+   * existing one). Scenes call it with the trimmed line as they move on;
+   * hosts without wishes leave it out, and the box then says nothing is kept.
+   */
+  saveWish?(text: string): void
   sceneId?: string
   canvas: HTMLCanvasElement
   overlay: HTMLElement

@@ -69,4 +69,18 @@ describe('createSpin', () => {
     expect(onRevolution).not.toHaveBeenCalled()
     g.dispose()
   })
+
+  it('ignores a swipe that starts off the object (startsOn)', () => {
+    const onAngle = vi.fn()
+    const g = createSpin({ onAngle, startsOn: (x) => x >= 100 && x <= 200 })
+    g.mount(el, {})
+    el.dispatchEvent(ptr('pointerdown', 20, 0))
+    el.dispatchEvent(ptr('pointermove', 300, 0))
+    el.dispatchEvent(ptr('pointerup', 300, 0))
+    expect(onAngle).not.toHaveBeenCalled()
+    el.dispatchEvent(ptr('pointerdown', 150, 0))
+    el.dispatchEvent(ptr('pointermove', 300, 0))
+    expect(onAngle).toHaveBeenCalledTimes(1)
+    g.dispose()
+  })
 })

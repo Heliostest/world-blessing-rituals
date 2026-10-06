@@ -21,7 +21,7 @@ export function Ritual({
   const [paused, setPaused] = useState(false);
   const [view, setView] = useState("front");
   const [instruction, setInstruction] =
-    useState("悬浮或按住拖动木槌，轻点敲一下。");
+    useState("轻点木鱼敲一下；按住拖动，木槌会跟着移动。");
   const r = state.activeSession;
   const kind: RitualId =
     r?.ritual ?? (id === "crane" || id === "lantern" ? id : "woodfish");

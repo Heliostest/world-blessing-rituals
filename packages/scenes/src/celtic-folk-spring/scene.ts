@@ -9,7 +9,7 @@ const STEP_ORDER: Step[] = ['gyro', 'drag', 'wishWrite']
 
 const COPY = {
   title: '泉边一念',
-  hintGyro: '微倾停驻片刻，或点按下方以鞠躬（练习）。',
+  hintGyro: '手机向前倾、再竖起停驻片刻，或点按下方以鞠躬（练习）。',
   hintDrag: '将信物拖向泉面后松开。',
   hintWish: '写下短句后提交（练习，非法效）。',
   hintHolding: '停驻片刻…',
@@ -275,8 +275,11 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
 
   const wireGestures = () => {
     gyroHandle = gestures.createGyro({
-      bowBetaDeg: 30,
-      holdMs: 500,
+      // Lean forward, come back near upright and hold: a deliberate move, so
+      // a phone simply held to read (beta ≈ 45–90°) never ends the step.
+      bowBetaDeg: 60,
+      riseDeg: 30,
+      holdMs: 800,
       fallbackTapSelector: '[data-gyro-fallback]',
       onBow: () => {
         if (step !== 'gyro') return
@@ -289,7 +292,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
     gyroHandle.mount(overlay, {})
     handles.push(gyroHandle)
 
-    bowBtn.addEventListener('pointerup', onBowTapFallback)
+    bowBtn.addEventListener('click', onBowTapFallback)
 
     dragHandle = gestures.createDrag({
       hitTest: waterHitTest,
@@ -310,8 +313,10 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
 
     wishHandle = gestures.createWishWrite({
       maxLen: 40,
-      onSubmit: () => {
-        if (step !== 'wishWrite') return
+      saves: ctx.saveWish !== undefined,
+      onSubmit: (text) => {
+        if (step !== 'wishWrite' || (ctx.isActive && !ctx.isActive())) return
+        ctx.saveWish?.(text)
         completeScene()
       },
     })
@@ -377,7 +382,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
       disposed = true
       resizeObserver?.disconnect()
       resizeObserver = null
-      bowBtn.removeEventListener('pointerup', onBowTapFallback)
+      bowBtn.removeEventListener('click', onBowTapFallback)
       overlay.removeEventListener('pointermove', onOverlayMove)
       overlay.removeEventListener('pointerup', onOverlayUp)
       overlay.removeEventListener('pointercancel', onOverlayUp)

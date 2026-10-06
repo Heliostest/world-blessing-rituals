@@ -10,6 +10,7 @@ import { Empty } from "./pages";
 import { useSceneLibrary } from "./scene-library";
 import {
   WISH_PRACTICE_COPY,
+  wishPracticeAction,
   wishSceneEntries,
 } from "./scene-placement";
 
@@ -238,9 +239,7 @@ export function WishDetail({ id }: { id: string }) {
                 className="button secondary full"
                 onClick={() => go({ page: "scene", id: entry.id, entry })}
               >
-                {entry.id === "tanzaku-tanabata"
-                  ? WISH_PRACTICE_COPY.tanzakuAction
-                  : WISH_PRACTICE_COPY.yeondeunghoeAction}
+                {wishPracticeAction(entry)}
               </button>
             ))}
           </div>

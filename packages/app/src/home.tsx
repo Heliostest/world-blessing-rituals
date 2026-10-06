@@ -4,8 +4,9 @@ import { Art, Icon } from "./art";
 import { useApp } from "./context";
 import { SceneRecommendation, useSceneLibrary } from "./scene-library";
 import {
-  FURIN_COPY,
-  findSceneEntry,
+  TODAY_PRACTICE_COPY,
+  featuredTodayPractice,
+  todayPracticeCopy,
   todaySceneEntries,
 } from "./scene-placement";
 
@@ -21,7 +22,7 @@ export function Today() {
   const id = dailyRitual(day);
   const merit = state.ledger.reduce((n, l) => n + l.amount, 0);
   const collected = new Set(state.collectibles.map((c) => c.kind));
-  const furin = findSceneEntry(entries, "furin-wind-chime");
+  const featured = featuredTodayPractice(entries, day);
   const todayPractices = todaySceneEntries(entries);
   return (
     <div className="today-page">
@@ -73,17 +74,19 @@ export function Today() {
           </button>
         </div>
       </section>
-      {furin && (
+      {featured && (
         <section className="daily-card practice-card">
-          <span className="tag">{FURIN_COPY.tag}</span>
+          <span className="tag">{TODAY_PRACTICE_COPY.tag}</span>
           <div className="daily-copy">
-            <h2>{FURIN_COPY.title}</h2>
-            <p>{FURIN_COPY.blurb}</p>
+            <h2>{featured.title}</h2>
+            <p>{todayPracticeCopy(featured.id)?.blurb}</p>
             <button
               className="button secondary"
-              onClick={() => go({ page: "scene", id: furin.id, entry: furin })}
+              onClick={() =>
+                go({ page: "scene", id: featured.id, entry: featured })
+              }
             >
-              {FURIN_COPY.action}
+              {TODAY_PRACTICE_COPY.action}
             </button>
           </div>
         </section>
@@ -125,7 +128,7 @@ export function Today() {
               onClick={() => go({ page: "scene", id: entry.id, entry })}
             >
               <span className="ritual-tile-glyph" aria-hidden="true">
-                🎐
+                {todayPracticeCopy(entry.id)?.glyph}
               </span>
               <strong>{entry.title}</strong>
             </button>

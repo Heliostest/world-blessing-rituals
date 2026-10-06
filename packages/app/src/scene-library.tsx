@@ -21,7 +21,7 @@ import { recommendTodayScene } from "./scene-placement";
 export type BuiltInSceneEntry = CatalogEntry & {
   /** 一段 80–120 汉字：起源 + 历史脉络 + 基本意涵；练习／致敬语气。缺省 → 隐藏折叠块。 */
   narrative?: string;
-  /** 指向 content/traditions/<slug>.md（单文件，非目录）；仅元数据，本期 app 不加载。 */
+  /** 指向 content/traditions/<slug>.md（单文件，非目录）；仅元数据，本期 app 不加载。产品原创场景（crane、lantern）省略。 */
   traditionSlug?: string;
 };
 export const builtInScenes: BuiltInSceneEntry[] = [
@@ -80,6 +80,56 @@ export const builtInScenes: BuiltInSceneEntry[] = [
     traditionSlug: "shinto",
     narrative:
       "风铃是日本夏日常见的风物与工艺：江户玻璃或南部铁器的铃身下系纸短册，风过轻响，带来听觉上的清凉感。常述由古时悬于檐角的风铎演变而来，渐成民俗美学。本页只作静听练习与致敬，非宗教仪轨。",
+  },
+  {
+    id: "shinto-torii",
+    title: "庭前一礼",
+    engine: "shinto-torii@1",
+    revision: "bundled",
+    manifestUrl: "",
+    traditionSlug: "shinto",
+    narrative:
+      "在日本神社，鸟居标示日常空间与神圣空间的边界，入内前的轻轻一礼表达敬意。不同神社的参拜礼节并不完全相同。这里以庭前停步、低头与安静致意为灵感，是一段产品改编的致敬练习，不替代真实参拜，也不代表任何神社。",
+  },
+  {
+    id: "tibetan-wheel",
+    title: "廊前轻转",
+    engine: "tibetan-wheel@1",
+    revision: "bundled",
+    manifestUrl: "",
+    traditionSlug: "tibetan-buddhism",
+    narrative:
+      "转经筒见于藏传佛教的日常实践，转动与祈愿、诵念相联系。这里以廊前固定式转筒为灵感，邀请你用一次轻缓的触碰，让筒身沿顺时针方向转动。本体验为产品改编的致敬练习，保留安静的节奏，不代替修持，也不以转数计量任何成效。",
+  },
+  {
+    id: "slavic-wreath",
+    title: "火边花环",
+    engine: "slavic-wreath@1",
+    revision: "bundled",
+    manifestUrl: "",
+    traditionSlug: "slavic-folk",
+    narrative:
+      "乌克兰与波兰部分地区的仲夏习俗中，可以见到花环、歌唱、火光与水上放环，各地做法与节期有所不同。这里借这些公开的民俗意象，让一圈花叶载着祝愿缓缓漂远。本体验为产品改编的致敬练习，不代表所有斯拉夫传统，也不以花环预测命运。",
+  },
+  // Product-original practices: no traditionSlug, so no tradition is implied.
+  // They share ids with the 2D crane/lantern rituals but live on the scene route.
+  {
+    id: "crane",
+    title: "折一只纸鹤",
+    engine: "crane@1",
+    revision: "bundled",
+    manifestUrl: "",
+    narrative:
+      "纸鹤承载着手作与祝愿，也在战后的广岛成为和平的象征。这里以一张纸的折痕与展开为灵感，邀请你缓缓折出一只鹤，留下想送给自己或他人的话。本体验为产品改编的练习，不代表特定宗教仪式，也不承诺心愿必然实现。",
+  },
+  {
+    id: "lantern",
+    title: "点一盏心愿灯",
+    engine: "lantern@1",
+    revision: "bundled",
+    manifestUrl: "",
+    narrative:
+      "一盏柔和的灯，可以为一句祝愿留出安静的位置。这里借鉴纸灯笼的竹骨与透光纸面，将点亮、写愿与悬挂组成一段缓慢的体验。本场景为产品原创的练习，不对应某项真实供灯仪式；灯留在眼前，陪你记住此刻的心意。",
   },
 ];
 export const supportsScene = (engine: string) =>

@@ -125,8 +125,8 @@ export function Today({ day }: { day: string }) {
               key={entry.id}
               onClick={() => go({ page: "scene", id: entry.id, entry })}
             >
-              <span className="ritual-tile-glyph" aria-hidden="true">
-                {todayPracticeCopy(entry.id)?.glyph}
+              <span className="ritual-tile-icon">
+                <Icon name={todayPracticeCopy(entry.id)?.icon ?? "leaf"} />
               </span>
               <strong>{entry.title}</strong>
             </button>

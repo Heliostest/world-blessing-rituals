@@ -2174,8 +2174,14 @@ button:hover:not(:disabled) {
 }
 .library-scene-stage { position: relative; height: min(65vh, 540px); min-height: 360px; border-radius: var(--radius-lg); overflow: hidden; background: var(--cream); color: var(--ink); }
 .library-scene-stage + .feedback-controls { margin-top: 14px; }
-.scene-discovery { padding: 20px; border: 1px solid #dedecb; border-radius: 22px; margin-bottom: 20px; background: #f1f2e6; display: grid; gap: 10px; }
-.scene-discovery h2 { margin: 8px 0; font-size: 21px; }
+/* Same card surface as the ritual cards below it; the sage tag marks it as a
+   recommendation instead of a separate grey-green card. */
+.scene-discovery { padding: 15px 16px 6px; border: 1px solid var(--line); border-radius: var(--radius-lg); margin-bottom: 13px; background: var(--paper-glass); box-shadow: var(--shadow-card); display: grid; gap: 10px; }
+.scene-discovery > div { display: grid; justify-items: start; }
+.scene-discovery h2 { margin: 8px 0 2px; font-size: 21px; }
+.scene-discovery p { color: var(--muted); font-size: 14px; }
+.scene-discovery > .text-button { justify-self: start; }
+.tag-sage { background: var(--sage-tint); color: var(--green-ink); box-shadow: none; }
 .scene-discovery p, .cache-manager p { line-height: 1.8; }
 .ritual-narrative { position: static; margin: 4px 0 12px; }
 .ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; }
@@ -2277,12 +2283,19 @@ button:hover:not(:disabled) {
   background: linear-gradient(180deg, #f7f1e6 0%, #f3ebe0 100%);
   border-color: #e8dcc8;
 }
-.ritual-tile-glyph {
+.ritual-tile-icon {
   display: grid;
   place-items: center;
-  min-height: 42px;
-  font-size: 28px;
-  line-height: 1;
+  width: 42px;
+  height: 42px;
+  margin: 2px auto 0;
+  border-radius: 50%;
+  background: #fff0cf;
+  color: var(--ink-soft);
+}
+.ritual-tile-icon svg {
+  width: 26px;
+  height: 26px;
 }
 .wish-practice {
   margin: 4px 0 18px;

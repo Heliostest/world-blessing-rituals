@@ -148,6 +148,20 @@ export function Icon({ name }: { name: string }) {
     lotus: (
       <path d="M12 19C4 16 7 8 12 3c5 5 8 13 0 16ZM12 19C3 19 2 13 3 8c6 2 9 6 9 11ZM12 19c9 0 10-6 9-11-6 2-9 6-9 11Z" />
     ),
+    // 今日 practice tiles: drawn marks instead of emoji, which differ by platform.
+    furin: (
+      <>
+        <path d="M12 2.5v3.6M6.6 12.4a5.4 5.4 0 0 1 10.8 0M5.4 12.4h13.2M12 12.4v3.4" />
+        <rect x="10.4" y="15.8" width="3.2" height="5.7" rx=".6" />
+      </>
+    ),
+    torii: <path d="M2.5 4.3Q12 7 21.5 4.3M7 6.4V21M17 6.4V21M4.6 10.6h14.8M12 5.9v4.7" />,
+    wheel: (
+      <>
+        <rect x="8.5" y="4" width="7" height="11.5" rx="1.5" />
+        <path d="M12 2v2M12 15.5v6M8.5 7.8h7M8.5 11.7h7M20 14.2c-.9 2.1-4.1 3.6-8 3.6s-7.1-1.5-8-3.6M4 14.2l-.3 2.6M4 14.2l2.5.8" />
+      </>
+    ),
   };
   return (
     <svg

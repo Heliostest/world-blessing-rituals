@@ -267,7 +267,7 @@ export function SceneRecommendation({ day }: { day: string }) {
   return (
     <section className="scene-discovery">
       <div>
-        <span className="eyebrow">今日场景推荐</span>
+        <span className="tag tag-sage">今日场景推荐</span>
         <h2>{entry?.title}</h2>
         <p>点开时准备内容，记录会一直留在本机。</p>
       </div>

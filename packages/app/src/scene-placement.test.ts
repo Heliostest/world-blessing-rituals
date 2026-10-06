@@ -1,7 +1,10 @@
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { dailyRitual } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
 import { assertSafeCopy } from "@wbr/shared";
+import { Icon } from "./art";
 import { builtInScenes } from "./scene-library";
 import {
   TODAY_PRACTICE_COPY,
@@ -101,9 +104,11 @@ describe("scene placement", () => {
   });
 
   it("gives each surface's scenes their own safe copy", () => {
+    const icon = (name: string) => renderToStaticMarkup(createElement(Icon, { name }));
     for (const id of TODAY_SCENE_IDS) {
       const copy = todayPracticeCopy(id)!;
-      expect(copy.glyph).toBeTruthy();
+      // A drawn icon, not the leaf an unknown name falls back to.
+      expect(icon(copy.icon)).not.toBe(icon("leaf"));
       expect(() => assertSafeCopy(copy.blurb)).not.toThrow();
     }
     expect(todayPracticeCopy("crane")).toBeUndefined();

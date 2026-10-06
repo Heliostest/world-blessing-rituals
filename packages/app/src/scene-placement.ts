@@ -88,17 +88,17 @@ export const TODAY_PRACTICE_COPY = {
   scenes: {
     "furin-wind-chime": {
       blurb: "轻拂听一声清凉（练习，非法效）。",
-      glyph: "🎐",
+      icon: "furin",
     },
     "shinto-torii": {
       blurb: "在鸟居前停步，轻轻一礼（致敬练习，不替代真实参拜）。",
-      glyph: "⛩️",
+      icon: "torii",
     },
     "tibetan-wheel": {
       blurb: "顺时针轻推转筒，静看它慢下来（练习，非法效）。",
-      glyph: "↻",
+      icon: "wheel",
     },
-  } satisfies Record<TodaySceneId, { blurb: string; glyph: string }>,
+  } satisfies Record<TodaySceneId, { blurb: string; icon: string }>,
 } as const;
 
 export function todayPracticeCopy(id: string) {

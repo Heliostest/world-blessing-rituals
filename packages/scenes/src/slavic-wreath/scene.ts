@@ -5,6 +5,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createPointerRay,
   createSceneFeedback,
   createStepOverlay,
@@ -87,6 +88,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   let dragHandle: GestureHandle | null = null
   let wishHandle: GestureHandle | null = null
   let stopResize = () => {}
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -348,6 +350,8 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   world.add(wreathZone)
 
   const pointer = createPointerRay(canvas, camera)
+  /** Taps and drags that start on the wreath are the scene's; elsewhere the page scrolls. */
+  const onWreath = (x: number, y: number) => pointer.hits(x, y, [wreathZone])
   const dragPlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), -HOLD_POS.z)
   const hitPoint = new THREE.Vector3()
   const dragTarget = HOLD_POS.clone()
@@ -420,7 +424,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
     fx.prepare()
     downX = e.clientX
     downY = e.clientY
-    if (step === 'place' && pointer.hits(e.clientX, e.clientY, [wreathZone])) grabbed = true
+    if (step === 'place' && onWreath(e.clientX, e.clientY)) grabbed = true
   }
   const onHitMove = (e: PointerEvent) => {
     if (step !== 'place' || !grabbed || e.buttons === 0) return
@@ -435,12 +439,14 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   const onHitUp = (e: PointerEvent) => {
     if (step !== 'weave') return
     const moved = Math.hypot(e.clientX - downX, e.clientY - downY)
-    if (moved < 12 && pointer.hits(e.clientX, e.clientY, [wreathZone])) startWeave()
+    if (moved < 12 && onWreath(e.clientX, e.clientY)) startWeave()
   }
 
   const wireGestures = () => {
     hitLayer.addEventListener('pointerdown', onHitDown)
+    stopClaim = claimObjectTouches(hitLayer, onWreath)
     dragHandle = gestures.createDrag({
+      startsOn: onWreath,
       // Carried down toward the water (the river fills the lower screen).
       hitTest: (_x, y) => grabbed && y - downY > 40,
       onDrop: (hit) => {
@@ -455,12 +461,14 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
     handles.push(dragHandle)
     hitLayer.addEventListener('pointermove', onHitMove)
     hitLayer.addEventListener('pointerup', onHitUp)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
 
     wishHandle = gestures.createWishWrite({
       maxLen: 40,
-      onSubmit: () => {
-        if (step !== 'drift') return
+      saves: ctx.saveWish !== undefined,
+      onSubmit: (text) => {
+        if (step !== 'drift' || !canAct()) return
+        ctx.saveWish?.(text)
         completeScene()
       },
     })
@@ -568,10 +576,11 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
       if (disposed) return
       disposed = true
       stopResize()
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointermove', onHitMove)
       hitLayer.removeEventListener('pointerup', onHitUp)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

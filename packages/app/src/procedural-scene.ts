@@ -10,6 +10,8 @@ export type ProceduralContext = {
   prepareFeedback?(): void;
   haptic?(): void;
   isSoundEnabled?(): boolean;
+  /** Keeps a line from the scene's wish box as a new 心愿. */
+  saveWish?(text: string): void;
 };
 
 /** Adapts two independent interaction implementations to the shared lifecycle. */
@@ -41,6 +43,7 @@ export async function proceduralEngine(
         prepareFeedback: context.prepareFeedback,
         haptic: context.haptic,
         isSoundEnabled: context.isSoundEnabled,
+        saveWish: context.saveWish,
       });
       const dispose = () => {
         if (disposed) return;

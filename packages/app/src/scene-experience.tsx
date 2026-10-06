@@ -9,30 +9,36 @@ import type {
   SceneLease,
   SceneProgress,
 } from "@wbr/content/catalog";
+import { WISH_WRITE_COPY } from "@wbr/gestures";
 import type { WoodfishContext } from "./scene-engines";
 import { sceneEngines } from "./scene-engines";
-import { now, useApp } from "./context";
+import { now, uid, useApp } from "./context";
 import { supportsScene, useSceneLibrary, woodfishPack } from "./scene-library";
 import { Woodfish } from "./woodfish";
 import { RitualNarrativeBlurb } from "./ritual-narrative";
 import { FeedbackControls } from "./feedback-controls";
+import { describeSceneLoadError } from "./scene-load-error";
+import { sceneWish } from "./scene-wish";
 
 function ProceduralScene({
   entry,
   progress,
   checkpoint,
+  saveWish,
   failed,
 }: {
   entry: CatalogEntry;
   progress: number;
   checkpoint(n: number): void;
+  saveWish(text: string): void;
   failed(error?: unknown): void;
 }) {
   const host = useRef<HTMLDivElement>(null),
     session = useRef<SceneSession<SceneController>>(null);
   const { active, state, prepareFeedback, haptic } = useApp();
-  const latest = useRef({ checkpoint, failed, prepareFeedback, haptic, state });
-  latest.current = { checkpoint, failed, prepareFeedback, haptic, state };
+  const callbacks = { checkpoint, saveWish, failed, prepareFeedback, haptic };
+  const latest = useRef({ ...callbacks, state });
+  latest.current = { ...callbacks, state };
   useEffect(() => {
     session.current = mountScene({
       host: host.current!,
@@ -45,6 +51,7 @@ function ProceduralScene({
         prepareFeedback: () => latest.current.prepareFeedback(),
         haptic: () => latest.current.haptic(),
         isSoundEnabled: () => latest.current.state.settings.sound,
+        saveWish: (text: string) => latest.current.saveWish(text),
       },
       load: () =>
         sceneEngines.load(
@@ -72,6 +79,8 @@ function ProceduralScene({
   );
   return <div className="library-scene-stage" ref={host} />;
 }
+/** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
+const sceneSteps = (entry: CatalogEntry) => (entry.engine === "woodfish@1" ? 12 : 3);
 function LoadedScene({
   entry,
   lease,
@@ -81,12 +90,20 @@ function LoadedScene({
   lease?: SceneLease;
   failed(error?: unknown): void;
 }) {
-  const { state, dispatch, active, feedback, prepareFeedback } = useApp();
+  const { state, dispatch, active, feedback, prepareFeedback, go } = useApp();
   const record = state.sceneRecords.find((r) => r.id === entry.id);
   const progress = record?.progress ?? 0;
+  const steps = sceneSteps(entry);
   const [instruction, setInstruction] = useState("轻敲木鱼，让心慢下来");
+  /** The wish this visit kept from the scene's wish box, if any. */
+  const [keptWish, setKeptWish] = useState<string>();
   const checkpoint = (n: number) =>
     dispatch({ type: "scene.progress", id: entry.id, progress: n });
+  // Each line is a new 心愿, also when the scene was opened from a wish.
+  const saveWish = (text: string) => {
+    const wish = sceneWish(text, entry.id, uid(), now());
+    if (wish && dispatch(wish)) setKeptWish(wish.id);
+  };
   const client = useMemo<WoodfishContext["content"] | undefined>(
     () =>
       lease && entry.engine === "woodfish@1"
@@ -111,7 +128,7 @@ function LoadedScene({
   return (
     <>
       <p className="scene-progress" role="status">
-        已完成 {progress} / {entry.engine === "woodfish@1" ? 12 : 3}
+        已完成 {progress} / {steps}
       </p>
       {entry.engine === "woodfish@1" ? (
         <>
@@ -122,10 +139,10 @@ function LoadedScene({
             active={active}
             reducedMotion={state.settings.reducedMotion}
             view="front"
-            disabled={progress >= 12}
+            disabled={progress >= steps}
             onStrike={() => {
               prepareFeedback();
-              checkpoint(Math.min(12, progress + 1));
+              checkpoint(Math.min(steps, progress + 1));
               return true;
             }}
             onImpact={feedback}
@@ -139,8 +156,25 @@ function LoadedScene({
           entry={entry}
           progress={progress}
           checkpoint={checkpoint}
+          saveWish={saveWish}
           failed={failed}
         />
+      )}
+      {entry.engine !== "woodfish@1" && (
+        // Present from the start (empty), so the confirmation is announced.
+        <p className="scene-wish-saved" role="status">
+          {keptWish && (
+            <>
+              {WISH_WRITE_COPY.saved}
+              <button
+                className="text-button"
+                onClick={() => go({ page: "wish", id: keptWish })}
+              >
+                去看看
+              </button>
+            </>
+          )}
+        </p>
       )}
       {entry.engine !== "woodfish@1" && <FeedbackControls />}
       <button
@@ -155,7 +189,7 @@ function LoadedScene({
       >
         {record?.favorite ? "取消收藏" : "收藏场景"}
       </button>
-      {progress >= (entry.engine === "woodfish@1" ? 12 : 3) && (
+      {progress >= steps && (
         <p>这次体验已经完成，记录已留下。</p>
       )}
     </>
@@ -175,7 +209,9 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
   const fail = (error?: unknown) => {
     cancel.current?.abort();
     setLoaded(undefined);
-    setError(error instanceof Error ? error.message : "场景画面暂不可用");
+    setError(
+      error instanceof Error && error.message ? error.message : "场景画面暂不可用",
+    );
   };
   useEffect(() => {
     if (!ready || !entry) return;
@@ -215,7 +251,7 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
     })().catch((e) => {
       if (!controller.signal.aborted) {
         void lease?.release();
-        setError(e instanceof Error ? e.message : "下载失败");
+        setError(e instanceof Error && e.message ? e.message : "下载失败");
       }
     });
     return () => {
@@ -224,17 +260,21 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
     };
   }, [entry, library, ready, attempt]);
   if (!entry) return <p role="alert">场景信息缺失，请返回目录重试。</p>;
+  const failure = error ? describeSceneLoadError(error) : undefined;
   return (
     <section className="scene-experience">
       <h1>{entry.title}</h1>
       <RitualNarrativeBlurb sceneId={entry.id} />
-      {error ? (
+      {failure ? (
         <div className="scene-load-error" role="alert">
           <p>暂时无法打开。记录和进度已保留。</p>
-          <details>
-            <summary>查看原因</summary>
-            {error}
-          </details>
+          <p>{failure.reason}</p>
+          {failure.detail && (
+            <details>
+              <summary>查看技术细节</summary>
+              <code>{failure.detail}</code>
+            </details>
+          )}
           <button
             className="button primary"
             onClick={() => setAttempt((n) => n + 1)}

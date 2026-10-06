@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { dailyRitual } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
 import { assertSafeCopy } from "@wbr/shared";
 import { builtInScenes } from "./scene-library";
@@ -138,6 +139,19 @@ describe("scene placement", () => {
       const pick = recommendTodayScene(entries, day);
       expect(pick).toBeDefined();
       expect(isWishScene(pick!.id)).toBe(false);
+    }
+  });
+
+  it("dedupes 今日 recommendation from featured practice and daily ritual", () => {
+    for (let i = 1; i <= 28; i++) {
+      const day = `2026-10-${String(i).padStart(2, "0")}`;
+      const featured = featuredTodayPractice(entries, day);
+      const ritual = dailyRitual(day);
+      const pick = recommendTodayScene(entries, day);
+      expect(pick).toBeDefined();
+      expect(isWishScene(pick!.id)).toBe(false);
+      if (featured) expect(pick!.id).not.toBe(featured.id);
+      expect(pick!.id).not.toBe(ritual);
     }
   });
 });

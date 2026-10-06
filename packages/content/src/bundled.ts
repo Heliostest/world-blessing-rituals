@@ -32,6 +32,6 @@ export const bundledWoodfish = parsePack({
     "settleMs": 140
   },
   "copy": {
-    "instruction": "悬浮或按住拖动木槌，轻点敲一下。"
+    "instruction": "轻点木鱼敲一下；按住拖动，木槌会跟着移动。"
   }
 });

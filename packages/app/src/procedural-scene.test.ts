@@ -106,3 +106,23 @@ it("forwards App sound/haptics feedback to the scene context", async () => {
   expect(fixture.context.isSoundEnabled()).toBe(false);
   controller.dispose();
 });
+it("hands the scene the App's saveWish, so its wish box can keep a line", async () => {
+  vi.stubGlobal("requestAnimationFrame", () => 1);
+  vi.stubGlobal("cancelAnimationFrame", () => {});
+  const engine = await proceduralEngine("crane");
+  const saveWish = vi.fn();
+  const controller = engine.create(
+    document.createElement("div"),
+    { progress: 0, sceneId: "crane", checkpoint: () => {}, saveWish },
+    {
+      active: true,
+      reducedMotion: false,
+      signal: new AbortController().signal,
+      ready: () => {},
+      failed: () => {},
+    },
+  );
+  fixture.context.saveWish("愿家人平安");
+  expect(saveWish).toHaveBeenCalledWith("愿家人平安");
+  controller.dispose();
+});

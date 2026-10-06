@@ -6,6 +6,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createSceneFeedback,
   createStepOverlay,
   createWarmStage,
@@ -53,6 +54,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   const handles: GestureHandle[] = []
   let tiltHandle: GestureHandle | null = null
   let resizeObserver: ResizeObserver | null = null
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -314,7 +316,10 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   }
 
   const wireGestures = () => {
+    // Swings start on the bell; elsewhere a vertical swipe scrolls the page.
+    stopClaim = claimObjectTouches(hitLayer, bellHitTest)
     tiltHandle = gestures.createTilt({
+      startsOn: bellHitTest,
       pourAngleDeg: SWING_TRIGGER_DEG,
       holdMs: 0,
       onAngle: (deg) => {
@@ -334,7 +339,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
     hitLayer.addEventListener('pointerdown', onHitDown)
     hitLayer.addEventListener('pointerup', onHitUp)
     hitLayer.addEventListener('pointercancel', onHitCancel)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
   }
 
   syncOverlayForStep()
@@ -407,10 +412,11 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
       disposed = true
       resizeObserver?.disconnect()
       resizeObserver = null
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
       hitLayer.removeEventListener('pointercancel', onHitCancel)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

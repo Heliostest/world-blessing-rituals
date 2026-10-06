@@ -6,6 +6,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createPointerRay,
   createSceneFeedback,
   createStepOverlay,
@@ -86,6 +87,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   let gyroHandle: GestureHandle | null = null
   let wishHandle: GestureHandle | null = null
   let stopResize = () => {}
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -238,6 +240,8 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   world.add(toriiZone)
 
   const pointer = createPointerRay(canvas, camera)
+  /** Taps and swipes that start on the torii are the scene's; elsewhere the page scrolls. */
+  const onTorii = (x: number, y: number) => pointer.hits(x, y, [toriiZone])
 
   const resize = () => {
     const aspect = sizeStage(canvas, renderer, styleRenderer, camera)
@@ -326,15 +330,18 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   }
   const onHitUp = (e: PointerEvent) => {
     const moved = Math.hypot(e.clientX - downX, e.clientY - downY)
-    if (moved < 12 && step === 'approach' && pointer.hits(e.clientX, e.clientY, [toriiZone])) {
+    if (moved < 12 && step === 'approach' && onTorii(e.clientX, e.clientY)) {
       startWalk()
     }
   }
 
   const wireGestures = () => {
     hitLayer.addEventListener('pointerdown', onHitDown)
-    // Swipe up = step forward; swipe down = lower the head.
+    stopClaim = claimObjectTouches(hitLayer, onTorii)
+    // Swipe up = step forward; swipe down = lower the head. Either swipe must
+    // start on the torii, so scrolling past the stage never walks or bows.
     dragHandle = gestures.createDrag({
+      startsOn: onTorii,
       hitTest: (_x, y) =>
         step === 'approach' ? downY - y > SWIPE_PX : step === 'bow' && y - downY > SWIPE_PX,
       onDrop: (hit) => {
@@ -346,7 +353,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
     dragHandle.mount(hitLayer, {})
     handles.push(dragHandle)
     hitLayer.addEventListener('pointerup', onHitUp)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
 
     // Device motion can also start the bow; without sensors the tap button stands in.
     gyroHandle = gestures.createGyro({
@@ -362,8 +369,10 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
 
     wishHandle = gestures.createWishWrite({
       maxLen: 40,
-      onSubmit: () => {
-        if (step !== 'ema') return
+      saves: ctx.saveWish !== undefined,
+      onSubmit: (text) => {
+        if (step !== 'ema' || !canAct()) return
+        ctx.saveWish?.(text)
         leaveEma()
         completeScene()
       },
@@ -437,9 +446,10 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
       if (disposed) return
       disposed = true
       stopResize()
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointerup', onHitUp)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

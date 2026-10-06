@@ -4,13 +4,18 @@ export type Storage = {
   read(): Promise<string | null>;
   write(raw: string): Promise<void>;
 };
+/** `haptic` only where the host can vibrate; the App hides its 震动 toggle otherwise. */
 export type Host = Storage & { haptic?(): Promise<void> };
 type Snapshot = {
   state: State | null;
   status: "loading" | "load-error" | "saving" | "saved" | "save-error";
   error?: string;
 };
-export function createStore(storage: Storage) {
+export function createStore(
+  storage: Storage,
+  /** Settings for a brand-new save, read when it is first loaded. */
+  initialSettings?: () => Partial<State["settings"]>,
+) {
   let snapshot: Snapshot = { state: null, status: "loading" };
   let queue = Promise.resolve();
   let revision = 0;
@@ -53,7 +58,9 @@ export function createStore(storage: Storage) {
       publish({ state: null, status: "loading" });
       loading = storage
         .read()
-        .then((raw) => publish({ state: restore(raw), status: "saved" }))
+        .then((raw) =>
+          publish({ state: restore(raw, initialSettings?.()), status: "saved" }),
+        )
         .catch(() =>
           publish({
             state: null,
@@ -79,11 +86,18 @@ export function createStore(storage: Storage) {
 }
 export type Store = ReturnType<typeof createStore>;
 export function browserHost(): Host {
+  // Checked once: iOS browsers have no Vibration API, so no haptics there.
+  const canVibrate =
+    typeof navigator !== "undefined" && typeof navigator.vibrate === "function";
   return {
     read: async () => localStorage.getItem(SAVE_KEY),
     write: async (raw) => localStorage.setItem(SAVE_KEY, raw),
-    haptic: async () => {
-      navigator.vibrate?.(12);
-    },
+    ...(canVibrate
+      ? {
+          haptic: async () => {
+            navigator.vibrate(12);
+          },
+        }
+      : {}),
   };
 }

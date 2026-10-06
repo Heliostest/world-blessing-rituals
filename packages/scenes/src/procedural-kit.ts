@@ -47,6 +47,8 @@ export function createStepOverlay(
   hintEl.className = 'scene-hint'
   hintEl.setAttribute('aria-live', 'polite')
 
+  // Scenes listen for `click`, not `pointerup`: it also fires for Enter and
+  // Space, and not when a finger slides off the button before lifting.
   const actionBtn = document.createElement('button')
   actionBtn.type = 'button'
   actionBtn.className = 'scene-bow-tap'
@@ -252,6 +254,24 @@ export function createPointerRay(canvas: HTMLCanvasElement, camera: THREE.Camera
       return aim(clientX, clientY).intersectObjects(objects, false).length > 0
     },
   }
+}
+
+/**
+ * Lets the page scroll from the empty parts of the stage: the cream hit layer
+ * allows panning (touch-action: manipulation), and only a touch that starts
+ * where `onObject` is true is kept from scrolling, so taps and drags on the
+ * object stay with the scene. Returns a remover.
+ */
+export function claimObjectTouches(
+  hitLayer: HTMLElement,
+  onObject: (clientX: number, clientY: number) => boolean,
+) {
+  const onTouchStart = (e: TouchEvent) => {
+    const touch = e.changedTouches[0]
+    if (touch && onObject(touch.clientX, touch.clientY)) e.preventDefault()
+  }
+  hitLayer.addEventListener('touchstart', onTouchStart, { passive: false })
+  return () => hitLayer.removeEventListener('touchstart', onTouchStart)
 }
 
 /**

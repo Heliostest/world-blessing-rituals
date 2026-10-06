@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { dailyRitual, localDay, rituals, type RitualId } from "@wbr/core";
+import { dailyRitual, rituals, type RitualId } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { useApp } from "./context";
 import { SceneRecommendation, useSceneLibrary } from "./scene-library";
@@ -15,10 +14,9 @@ export const ritualTitle = {
   crane: "折一份小小的期待",
   lantern: "点亮一盏心愿灯",
 };
-export function Today() {
+export function Today({ day }: { day: string }) {
   const { state, go } = useApp();
   const { entries } = useSceneLibrary();
-  const [day] = useState(() => localDay());
   const id = dailyRitual(day);
   const merit = state.ledger.reduce((n, l) => n + l.amount, 0);
   const collected = new Set(state.collectibles.map((c) => c.kind));
@@ -37,7 +35,7 @@ export function Today() {
         </button>
       </header>
       <p className="lead">今天，也给自己一点好运。</p>
-      <SceneRecommendation />
+      <SceneRecommendation day={day} />
       {state.activeSession && (
         <button
           className="resume-banner"

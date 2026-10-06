@@ -5,6 +5,7 @@ import type { SceneContext, SceneInstance } from '../contract'
 import {
   addCelLights,
   CEL_STYLE,
+  claimObjectTouches,
   createPointerRay,
   createSceneFeedback,
   createStepOverlay,
@@ -24,10 +25,14 @@ const STEP_ORDER: Step[] = ['fold', 'lift', 'wish']
 
 const COPY = {
   title: '折一只纸鹤',
-  hintFold: '点按纸面折一下（按纸鹤传统折序简化为四步的练习，非完整教程）。',
-  fold1: '收成方形底（1/4），再点按继续。',
-  fold2: '拉长成鸟形底（2/4），再点按继续。',
-  fold3: '折起颈与尾（3/4），再点按翻出鹤首、展开双翼。',
+  hintFold: '点按纸面折一下（按纸鹤传统折序简化的练习，非完整教程）。',
+  folding1: '收成方形底…',
+  fold1: '方形底收好了，再点按继续。',
+  folding2: '拉长成鸟形底…',
+  fold2: '鸟形底拉好了，再点按继续。',
+  folding3: '折起颈与尾…',
+  fold3: '颈与尾折好了，再点按翻出鹤首、展开双翼。',
+  folding4: '翻出鹤首，展开双翼…',
   hintLift: '纸鹤折好了。向上拖起它，或点按下方托起。',
   hintWish: '可写一句想送给自己或他人的话，或点按下方静看片刻（练习，非法效）。',
   foldTap: '折一下',
@@ -37,8 +42,12 @@ const COPY = {
   stepsAria: '步骤',
 } as const
 
-/** Hints shown after each of the first three folds; the fourth ends the step. */
+/**
+ * Hints at rest before each fold, and while each fold is under way. They name
+ * no count of their own: the step dots and 已完成 n/3 count the three steps.
+ */
 const FOLD_HINTS = [COPY.hintFold, COPY.fold1, COPY.fold2, COPY.fold3] as const
+const FOLDING_HINTS = [COPY.folding1, COPY.folding2, COPY.folding3, COPY.folding4] as const
 
 const FOLD_COUNT = FORM_COUNT - 1
 /** Seconds per fold, by the form it folds into. */
@@ -89,6 +98,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   let dragHandle: GestureHandle | null = null
   let wishHandle: GestureHandle | null = null
   let stopResize = () => {}
+  let stopClaim = () => {}
   const fx = createSceneFeedback(ctx)
 
   const ui = createStepOverlay(
@@ -111,8 +121,15 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     actionBtn.hidden = step === 'done'
     wishSlot.hidden = step !== 'wish'
     hitLayer.style.pointerEvents = step === 'fold' || step === 'lift' ? 'auto' : 'none'
+    // While a fold is under way the button waits with the paper (taps are ignored).
+    const folding = step === 'fold' && foldK < 1
+    actionBtn.setAttribute('aria-disabled', String(folding))
     if (step === 'fold') {
-      setHint(FOLD_HINTS[Math.min(form, FOLD_HINTS.length - 1)])
+      setHint(
+        folding
+          ? FOLDING_HINTS[form - 1]
+          : FOLD_HINTS[Math.min(form, FOLD_HINTS.length - 1)],
+      )
       setSafeText(actionBtn, COPY.foldTap, assertSafeCopy)
     } else if (step === 'lift') {
       setHint(COPY.hintLift)
@@ -195,6 +212,8 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   paper.add(tapZone)
 
   const pointer = createPointerRay(canvas, camera)
+  /** Taps and drags that start on the paper are the scene's; elsewhere the page scrolls. */
+  const onPaper = (x: number, y: number) => pointer.hits(x, y, [tapZone])
   const dragPlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0)
   const hitPoint = new THREE.Vector3()
   const dragTarget = new THREE.Vector3(0, REST_Y, 0)
@@ -239,16 +258,20 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     syncOverlayForStep()
   }
 
-  /** One fold of the sequence; a tap mid-fold finishes the fold under way first. */
+  /**
+   * One fold of the sequence. A tap while the paper is still folding is
+   * ignored, so a quick double tap folds once; the lift step begins only when
+   * the last fold has settled (see update).
+   */
   const foldOnce = () => {
-    if (!canAct() || step !== 'fold' || form >= FOLD_COUNT) return
+    if (!canAct() || step !== 'fold' || form >= FOLD_COUNT || foldK < 1) return
     form += 1
     foldK = restoring || (ctx.isReducedMotion?.() ?? false) ? 1 : 0
     if (!restoring) {
       // Soft paper crease: short, airy triangle tones.
       fx.impact({ freqs: [880, 1320], duration: 0.2, gain: 0.035, type: 'triangle' })
     }
-    if (form >= FOLD_COUNT) goLift()
+    if (form >= FOLD_COUNT && foldK >= 1) goLift()
     else syncOverlayForStep()
   }
 
@@ -265,7 +288,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     fx.prepare()
     downX = e.clientX
     downY = e.clientY
-    if (step === 'lift' && pointer.hits(e.clientX, e.clientY, [tapZone])) grabbed = true
+    if (step === 'lift' && onPaper(e.clientX, e.clientY)) grabbed = true
   }
   const onHitMove = (e: PointerEvent) => {
     if (step !== 'lift' || !grabbed || e.buttons === 0) return
@@ -281,13 +304,16 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     grabbed = false
     if (step !== 'fold') return
     const moved = Math.hypot(e.clientX - downX, e.clientY - downY)
-    if (moved < 12 && pointer.hits(e.clientX, e.clientY, [tapZone])) foldOnce()
+    if (moved < 12 && onPaper(e.clientX, e.clientY)) foldOnce()
   }
 
   const wireGestures = () => {
     hitLayer.addEventListener('pointerdown', onHitDown)
-    // Lift: a drag released well above where it began carries the crane up.
+    stopClaim = claimObjectTouches(hitLayer, onPaper)
+    // Lift: a drag that starts on the crane and is released well above where
+    // it began carries it up; a stray swipe elsewhere on the stage does not.
     dragHandle = gestures.createDrag({
+      startsOn: onPaper,
       hitTest: (_x, y) => downY - y > 40,
       onDrop: (hit) => {
         if (step !== 'lift') return
@@ -303,12 +329,14 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     hitLayer.addEventListener('pointermove', onHitMove)
     hitLayer.addEventListener('pointerup', onHitUp)
     hitLayer.addEventListener('pointercancel', onHitUp)
-    actionBtn.addEventListener('pointerup', onActionTap)
+    actionBtn.addEventListener('click', onActionTap)
 
     wishHandle = gestures.createWishWrite({
       maxLen: 40,
-      onSubmit: () => {
-        if (step !== 'wish') return
+      saves: ctx.saveWish !== undefined,
+      onSubmit: (text) => {
+        if (step !== 'wish' || !canAct()) return
+        ctx.saveWish?.(text)
         completeScene()
       },
     })
@@ -341,8 +369,15 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       const reduced = ctx.isReducedMotion?.() ?? false
       const t = reduced ? 0 : performance.now() * 0.001
 
-      // Fold: advance the tap and pose the sheet from its crease angles.
-      if (foldK < 1) foldK = reduced ? 1 : Math.min(1, foldK + dt / FOLD_SECONDS[form])
+      // Fold: advance the tap and pose the sheet from its crease angles. Once
+      // it settles, the next fold may start, or the crane is ready to lift.
+      if (foldK < 1) {
+        foldK = reduced ? 1 : Math.min(1, foldK + dt / FOLD_SECONDS[form])
+        if (foldK >= 1) {
+          if (form >= FOLD_COUNT) goLift()
+          else syncOverlayForStep()
+        }
+      }
       const key = `${form}:${foldK}`
       if (key !== posed) {
         sheet.pose(form, foldK)
@@ -392,11 +427,12 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       if (disposed) return
       disposed = true
       stopResize()
+      stopClaim()
       hitLayer.removeEventListener('pointerdown', onHitDown)
       hitLayer.removeEventListener('pointermove', onHitMove)
       hitLayer.removeEventListener('pointerup', onHitUp)
       hitLayer.removeEventListener('pointercancel', onHitUp)
-      actionBtn.removeEventListener('pointerup', onActionTap)
+      actionBtn.removeEventListener('click', onActionTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       fx.dispose()

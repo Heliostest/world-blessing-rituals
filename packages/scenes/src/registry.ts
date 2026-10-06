@@ -1,6 +1,13 @@
 import type { SceneMeta } from '@wbr/shared'
 import type { SceneModule } from './contract'
 
+/**
+ * Slug for product-original scenes (crane, lantern) that do not represent a
+ * specific religious or folk tradition; there is intentionally no
+ * content/traditions card for it.
+ */
+export const PRODUCT_ORIGINAL = 'product-original'
+
 export const sceneRegistry: SceneMeta[] = [
   {
     id: 'celtic-folk-spring',
@@ -66,6 +73,23 @@ export const sceneRegistry: SceneMeta[] = [
     sensitivity: '低',
     gestures: ['tilt'],
   },
+  {
+    id: 'crane',
+    title: '折一只纸鹤',
+    // Product-original practice: deliberately not tied to a tradition card.
+    traditionSlug: PRODUCT_ORIGINAL,
+    grade: 'C',
+    sensitivity: '低',
+    gestures: ['drag', 'wishWrite'],
+  },
+  {
+    id: 'lantern',
+    title: '点一盏心愿灯',
+    traditionSlug: PRODUCT_ORIGINAL,
+    grade: 'C',
+    sensitivity: '低',
+    gestures: ['drag', 'wishWrite'],
+  },
 ]
 
 const IMPLEMENTED = new Set([
@@ -74,6 +98,11 @@ const IMPLEMENTED = new Set([
   'tanzaku-tanabata',
   'yeondeunghoe',
   'furin-wind-chime',
+  'shinto-torii',
+  'tibetan-wheel',
+  'slavic-wreath',
+  'crane',
+  'lantern',
 ])
 
 /** Whether `loadScene(id)` can resolve a module. */
@@ -81,11 +110,7 @@ export function isSceneImplemented(id: string): boolean {
   return IMPLEMENTED.has(id)
 }
 
-/**
- * Dynamic-import implemented scenes.
- * Wired: celtic-folk-spring, theravada-water and the three C-grade Design A scenes;
- * remaining pilots throw until later tasks.
- */
+/** Dynamic-import implemented scenes; unknown ids throw. */
 export async function loadScene(id: string): Promise<SceneModule> {
   switch (id) {
     case 'celtic-folk-spring':
@@ -98,6 +123,16 @@ export async function loadScene(id: string): Promise<SceneModule> {
       return import('./yeondeunghoe')
     case 'furin-wind-chime':
       return import('./furin-wind-chime')
+    case 'shinto-torii':
+      return import('./shinto-torii')
+    case 'tibetan-wheel':
+      return import('./tibetan-wheel')
+    case 'slavic-wreath':
+      return import('./slavic-wreath')
+    case 'crane':
+      return import('./crane')
+    case 'lantern':
+      return import('./lantern')
     default:
       throw new Error('scene not implemented: ' + id)
   }

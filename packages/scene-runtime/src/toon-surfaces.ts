@@ -41,6 +41,10 @@ export function createToonSurfaces(style: Exclude<RenderStyleId, "original">) {
       vertexColors: source.vertexColors,
       depthWrite: source.depthWrite,
       depthTest: source.depthTest,
+      // A surface pushed back in depth lets ink lines lie exactly on it.
+      polygonOffset: source.polygonOffset,
+      polygonOffsetFactor: source.polygonOffsetFactor,
+      polygonOffsetUnits: source.polygonOffsetUnits,
       visible: source.visible,
       wireframe: source.wireframe,
       fog: source.fog,

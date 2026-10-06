@@ -1,14 +1,30 @@
 import { describe, expect, it } from "vitest";
+import { dailyRitual } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
+import { assertSafeCopy } from "@wbr/shared";
+import { builtInScenes } from "./scene-library";
 import {
+  TODAY_PRACTICE_COPY,
   TODAY_SCENE_IDS,
+  WISH_PRACTICE_COPY,
   WISH_SCENE_IDS,
+  featuredTodayPractice,
   isTodayScene,
   isWishScene,
   recommendTodayScene,
+  todayPracticeCopy,
+  wishPracticeAction,
   wishSceneEntries,
   todaySceneEntries,
 } from "./scene-placement";
+
+const bundled = (id: string, title: string): CatalogEntry => ({
+  id,
+  title,
+  engine: `${id}@1`,
+  revision: "bundled",
+  manifestUrl: "",
+});
 
 const entries: CatalogEntry[] = [
   {
@@ -39,25 +55,82 @@ const entries: CatalogEntry[] = [
     revision: "bundled",
     manifestUrl: "",
   },
+  bundled("shinto-torii", "庭前一礼"),
+  bundled("tibetan-wheel", "廊前轻转"),
+  bundled("crane", "折一只纸鹤"),
+  bundled("lantern", "点一盏心愿灯"),
+  bundled("slavic-wreath", "火边花环"),
 ];
 
 describe("scene placement", () => {
   it("splits today vs wish scene ids", () => {
-    expect([...TODAY_SCENE_IDS]).toEqual(["furin-wind-chime"]);
-    expect([...WISH_SCENE_IDS]).toEqual(["tanzaku-tanabata", "yeondeunghoe"]);
+    expect([...TODAY_SCENE_IDS]).toEqual([
+      "furin-wind-chime",
+      "shinto-torii",
+      "tibetan-wheel",
+    ]);
+    expect([...WISH_SCENE_IDS]).toEqual([
+      "tanzaku-tanabata",
+      "yeondeunghoe",
+      "crane",
+      "lantern",
+      "slavic-wreath",
+    ]);
     expect(isTodayScene("furin-wind-chime")).toBe(true);
+    expect(isTodayScene("shinto-torii")).toBe(true);
     expect(isWishScene("tanzaku-tanabata")).toBe(true);
+    expect(isWishScene("slavic-wreath")).toBe(true);
     expect(isWishScene("furin-wind-chime")).toBe(false);
+  });
+
+  it("places every placed scene on exactly one surface, and all are bundled", () => {
+    for (const id of TODAY_SCENE_IDS) expect(isWishScene(id)).toBe(false);
+    const bundledIds = builtInScenes.map((e) => e.id);
+    for (const id of [...TODAY_SCENE_IDS, ...WISH_SCENE_IDS]) {
+      expect(bundledIds).toContain(id);
+    }
   });
 
   it("lists catalog entries for each surface", () => {
     expect(todaySceneEntries(entries).map((e) => e.id)).toEqual([
-      "furin-wind-chime",
+      ...TODAY_SCENE_IDS,
     ]);
     expect(wishSceneEntries(entries).map((e) => e.id)).toEqual([
-      "tanzaku-tanabata",
-      "yeondeunghoe",
+      ...WISH_SCENE_IDS,
     ]);
+  });
+
+  it("gives each surface's scenes their own safe copy", () => {
+    for (const id of TODAY_SCENE_IDS) {
+      const copy = todayPracticeCopy(id)!;
+      expect(copy.glyph).toBeTruthy();
+      expect(() => assertSafeCopy(copy.blurb)).not.toThrow();
+    }
+    expect(todayPracticeCopy("crane")).toBeUndefined();
+    for (const entry of wishSceneEntries(entries)) {
+      const label = wishPracticeAction(entry);
+      expect(label.startsWith(entry.title)).toBe(true);
+      expect(() => assertSafeCopy(label)).not.toThrow();
+    }
+    expect(wishPracticeAction(entries[0])).toBe("敲一敲木鱼");
+    for (const text of [
+      TODAY_PRACTICE_COPY.tag,
+      TODAY_PRACTICE_COPY.action,
+      WISH_PRACTICE_COPY.blurb,
+    ]) {
+      expect(() => assertSafeCopy(text)).not.toThrow();
+    }
+  });
+
+  it("features a different 今日 practice across days, never a wish scene", () => {
+    const seen = new Set<string>();
+    for (let i = 1; i <= 28; i++) {
+      const pick = featuredTodayPractice(entries, `2026-10-${String(i).padStart(2, "0")}`);
+      expect(pick && isTodayScene(pick.id)).toBe(true);
+      seen.add(pick!.id);
+    }
+    expect(seen.size).toBeGreaterThan(1);
+    expect(featuredTodayPractice([entries[0]], "2026-10-01")).toBeUndefined();
   });
 
   it("never recommends a wish scene on 今日", () => {
@@ -66,6 +139,19 @@ describe("scene placement", () => {
       const pick = recommendTodayScene(entries, day);
       expect(pick).toBeDefined();
       expect(isWishScene(pick!.id)).toBe(false);
+    }
+  });
+
+  it("dedupes 今日 recommendation from featured practice and daily ritual", () => {
+    for (let i = 1; i <= 28; i++) {
+      const day = `2026-10-${String(i).padStart(2, "0")}`;
+      const featured = featuredTodayPractice(entries, day);
+      const ritual = dailyRitual(day);
+      const pick = recommendTodayScene(entries, day);
+      expect(pick).toBeDefined();
+      expect(isWishScene(pick!.id)).toBe(false);
+      if (featured) expect(pick!.id).not.toBe(featured.id);
+      expect(pick!.id).not.toBe(ritual);
     }
   });
 });

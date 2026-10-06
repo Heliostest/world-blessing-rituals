@@ -1,6 +1,8 @@
 import type { GestureHandle } from './types'
 
 export type SpinOpts = {
+  /** Only a pointer that goes down where this is true starts a spin (default: anywhere). */
+  startsOn?(clientX: number, clientY: number): boolean
   onAngle?(rad: number): void
   onRevolution?(n: number): void
 }
@@ -15,7 +17,7 @@ export function createSpin(opts: SpinOpts): GestureHandle {
   let lastRev = 0
 
   const onDown = (e: PointerEvent) => {
-    if (!enabled) return
+    if (!enabled || (opts.startsOn && !opts.startsOn(e.clientX, e.clientY))) return
     tracking = true
     lastX = e.clientX
     el?.setPointerCapture(e.pointerId)

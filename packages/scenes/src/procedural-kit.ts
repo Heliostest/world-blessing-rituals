@@ -47,6 +47,8 @@ export function createStepOverlay(
   hintEl.className = 'scene-hint'
   hintEl.setAttribute('aria-live', 'polite')
 
+  // Scenes listen for `click`, not `pointerup`: it also fires for Enter and
+  // Space, and not when a finger slides off the button before lifting.
   const actionBtn = document.createElement('button')
   actionBtn.type = 'button'
   actionBtn.className = 'scene-bow-tap'
@@ -232,4 +234,75 @@ export function createSceneFeedback(
       audio.dispose()
     },
   }
+}
+
+/** Raycasts from `camera` through client-space pointer positions on `canvas`. */
+export function createPointerRay(canvas: HTMLCanvasElement, camera: THREE.Camera) {
+  const raycaster = new THREE.Raycaster()
+  const ndc = new THREE.Vector2()
+  const aim = (clientX: number, clientY: number) => {
+    const rect = canvas.getBoundingClientRect()
+    ndc.x = ((clientX - rect.left) / Math.max(rect.width, 1)) * 2 - 1
+    ndc.y = -((clientY - rect.top) / Math.max(rect.height, 1)) * 2 + 1
+    raycaster.setFromCamera(ndc, camera)
+    return raycaster
+  }
+  return {
+    aim,
+    /** True when the ray through the pointer hits any of `objects`. */
+    hits(clientX: number, clientY: number, objects: THREE.Object3D[]) {
+      return aim(clientX, clientY).intersectObjects(objects, false).length > 0
+    },
+  }
+}
+
+/**
+ * Lets the page scroll from the empty parts of the stage: the cream hit layer
+ * allows panning (touch-action: manipulation), and only a touch that starts
+ * where `onObject` is true is kept from scrolling, so taps and drags on the
+ * object stay with the scene. Returns a remover.
+ */
+export function claimObjectTouches(
+  hitLayer: HTMLElement,
+  onObject: (clientX: number, clientY: number) => boolean,
+) {
+  const onTouchStart = (e: TouchEvent) => {
+    const touch = e.changedTouches[0]
+    if (touch && onObject(touch.clientX, touch.clientY)) e.preventDefault()
+  }
+  hitLayer.addEventListener('touchstart', onTouchStart, { passive: false })
+  return () => hitLayer.removeEventListener('touchstart', onTouchStart)
+}
+
+/**
+ * Sizes renderer, style pass and camera to the canvas box. Returns the aspect
+ * so scenes can pull the camera back on narrow portrait screens.
+ */
+export function sizeStage(
+  canvas: HTMLCanvasElement,
+  renderer: THREE.WebGLRenderer,
+  styleRenderer: { resize(w: number, h: number): void },
+  camera: THREE.PerspectiveCamera,
+) {
+  const parent = canvas.parentElement
+  const w = canvas.clientWidth || parent?.clientWidth || 1
+  const h = canvas.clientHeight || parent?.clientHeight || 1
+  renderer.setSize(w, h, false)
+  styleRenderer.resize(w, h)
+  camera.aspect = w / Math.max(h, 1)
+  camera.updateProjectionMatrix()
+  return camera.aspect
+}
+
+/** Extra camera distance for portrait screens narrower than 0.8 aspect. */
+export function portraitBoost(aspect: number, factor = 3) {
+  return aspect < 0.8 ? (0.8 - aspect) * factor : 0
+}
+
+/** Re-runs `resize` when the canvas host changes size; returns a disconnect. */
+export function observeCanvasResize(canvas: HTMLCanvasElement, resize: () => void) {
+  if (typeof ResizeObserver === 'undefined') return () => {}
+  const ro = new ResizeObserver(() => resize())
+  ro.observe(canvas.parentElement ?? canvas)
+  return () => ro.disconnect()
 }

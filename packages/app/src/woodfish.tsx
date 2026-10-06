@@ -6,7 +6,7 @@ import {
   type WoodfishController,
   type WoodfishContext,
 } from "./scene-engines";
-import { isTap } from "./woodfish-input";
+import { pressOutcome } from "./woodfish-input";
 import { useContent, woodfishContent } from "./content";
 import { useApp } from "./context";
 
@@ -119,6 +119,13 @@ export function Woodfish({
     suppressClick.current = true;
     scene.current?.controller?.stopFollowing();
   }
+  /** One strike: the App records it, then the mallet swings (or the art bounces). */
+  function strike() {
+    if (!onStrike()) return;
+    if (status === "ready" && scene.current?.controller)
+      scene.current.controller.strike();
+    else onImpact();
+  }
   return (
     <button
       className="ritual-object woodfish-object"
@@ -153,15 +160,19 @@ export function Woodfish({
           g.distance,
           Math.hypot(event.clientX - g.x, event.clientY - g.y),
         );
-        suppressClick.current = !isTap({
+        const press = pressOutcome({
           distance: g.distance,
           elapsed: g.type === "mouse" ? 0 : performance.now() - g.at,
           cancelled: g.cancelled,
         });
+        // A quick tap strikes through the click that follows. A long still
+        // press strikes now, and any click the browser still sends is dropped.
+        suppressClick.current = press !== "tap";
         gesture.current = null;
         if (event.currentTarget.hasPointerCapture(event.pointerId))
           event.currentTarget.releasePointerCapture(event.pointerId);
         if (g.type !== "mouse") scene.current?.controller?.stopFollowing();
+        if (press === "long") strike();
       }}
       onPointerCancel={cancelPointer}
       onLostPointerCapture={cancelPointer}
@@ -170,6 +181,9 @@ export function Woodfish({
       }}
       onContextMenu={(event) => {
         event.preventDefault();
+        // Android sends this while a finger is held down: no menu, and the
+        // press still strikes when it lifts. A right click just stops.
+        if (gesture.current && gesture.current.type !== "mouse") return;
         gesture.current = null;
         suppressClick.current = true;
         scene.current?.controller?.stopFollowing();
@@ -178,10 +192,7 @@ export function Woodfish({
       onClick={(event) => {
         if (event.button !== 0 || (event.detail !== 0 && suppressClick.current))
           return;
-        if (!onStrike()) return;
-        if (status === "ready" && scene.current?.controller)
-          scene.current.controller.strike();
-        else onImpact();
+        strike();
       }}
     >
       <span className="woodfish-visual" data-renderer={status}>

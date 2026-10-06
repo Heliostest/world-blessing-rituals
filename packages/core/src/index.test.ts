@@ -45,6 +45,32 @@ describe("personal ritual loop", () => {
       restore(JSON.stringify(reduce(createState(), add))).wishes,
     ).toHaveLength(1);
   });
+  it("keeps the scene a wish was written in through a save, beside wishes made without one", () => {
+    const first = reduce(createState(), add);
+    const s = reduce(first, {
+      ...add,
+      id: "w2",
+      title: "希望家人平安",
+      intention: "",
+      sourceSceneId: "crane",
+    });
+    // A new wish, beside the first one, which stays as it was.
+    expect(s.wishes).toHaveLength(2);
+    expect(s.wishes[1]).toEqual(first.wishes[0]);
+    const restored = restore(JSON.stringify(s));
+    expect(restored.wishes[0]).toMatchObject({
+      id: "w2",
+      sourceSceneId: "crane",
+      category: "life",
+    });
+    expect("sourceSceneId" in restored.wishes[1]).toBe(false);
+    expect(() =>
+      reduce(s, { ...add, id: "w3", sourceSceneId: "" }),
+    ).toThrow();
+    const bad = JSON.parse(JSON.stringify(s));
+    bad.wishes[0].sourceSceneId = 7;
+    expect(() => restore(JSON.stringify(bad))).toThrow();
+  });
   it("requires a completed linked ritual after realization for ritual-based fulfillment", () => {
     let s = reduce(reduce(createState(), add), {
       type: "wish.realize",
@@ -150,6 +176,20 @@ describe("personal ritual loop", () => {
     expect(() =>
       reduce(s, { type: "ritual.start", id: "r2", ritual: "woodfish", at }),
     ).toThrow();
+  });
+  it("starts a fresh save with the given settings, but keeps a saved choice", () => {
+    expect(createState({ reducedMotion: true }).settings).toEqual({
+      sound: true,
+      haptics: true,
+      reducedMotion: true,
+    });
+    expect(restore(null, { reducedMotion: true }).settings.reducedMotion).toBe(
+      true,
+    );
+    const saved = JSON.stringify(createState());
+    expect(restore(saved, { reducedMotion: true }).settings.reducedMotion).toBe(
+      false,
+    );
   });
   it("rejects corrupt or newer saves while empty storage gets a fresh state", () => {
     expect(restore(null)).toEqual(createState());

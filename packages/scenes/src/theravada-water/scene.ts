@@ -364,7 +364,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
     hitLayer.addEventListener('pointermove', onHitMove)
     hitLayer.addEventListener('pointerup', onHitUp)
     hitLayer.addEventListener('pointercancel', onHitUp)
-    anjaliBtn.addEventListener('pointerup', onAnjaliTap)
+    anjaliBtn.addEventListener('click', onAnjaliTap)
   }
 
   syncOverlayForStep()
@@ -450,7 +450,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       hitLayer.removeEventListener('pointermove', onHitMove)
       hitLayer.removeEventListener('pointerup', onHitUp)
       hitLayer.removeEventListener('pointercancel', onHitUp)
-      anjaliBtn.removeEventListener('pointerup', onAnjaliTap)
+      anjaliBtn.removeEventListener('click', onAnjaliTap)
       for (const h of handles) h.dispose()
       handles.length = 0
       styleRenderer.dispose()

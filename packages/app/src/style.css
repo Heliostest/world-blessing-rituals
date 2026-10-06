@@ -30,6 +30,10 @@ button {
   cursor: pointer;
   color: inherit;
   border: 0;
+  /* Every button is at least a comfortable finger target, and quick repeat
+     taps never zoom the page. */
+  min-height: 44px;
+  touch-action: manipulation;
 }
 button:disabled {
   cursor: default;
@@ -345,6 +349,8 @@ button:hover:not(:disabled) {
   padding: 0;
   font-size: 12px;
   font-weight: 400;
+  /* A full 44px target that does not grow the heading row. */
+  margin: -12px 0;
 }
 .achievement-card .text-button b {
   font-size: 15px;
@@ -568,7 +574,8 @@ button:hover:not(:disabled) {
   resize: vertical;
   background: #fcfaf6;
   color: #504437;
-  font-size: 15px;
+  /* 16px or more: iOS zooms the page into smaller text fields on focus. */
+  font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
   min-height: 65px;
@@ -606,7 +613,7 @@ button:hover:not(:disabled) {
   border: 1px solid #e9ddc9;
   border-radius: 30px;
   background: #faf6ed;
-  min-height: 41px;
+  min-height: 44px;
   cursor: pointer;
   color: #786859;
 }
@@ -794,6 +801,13 @@ button:hover:not(:disabled) {
   padding: 5px 10px;
   font-size: 12px;
   min-height: 30px;
+  position: relative;
+}
+/* The pill stays small; an invisible margin around it makes a 44px target. */
+.small-button::before {
+  content: "";
+  position: absolute;
+  inset: -7px -4px;
 }
 .small-button svg {
   width: 14px;
@@ -903,7 +917,7 @@ button:hover:not(:disabled) {
   font-size: 14px;
 }
 .return-note textarea {
-  font-size: 13px;
+  font-size: 16px;
   padding: 8px;
   min-height: 46px;
 }
@@ -1150,10 +1164,11 @@ button:hover:not(:disabled) {
 }
 .ritual-link select {
   width: 100%;
+  min-height: 44px;
   border: 0;
   background: transparent;
   color: #6e5033;
-  font-size: 13px;
+  font-size: 16px;
   padding: 5px 0;
 }
 .feedback-controls {
@@ -1329,12 +1344,9 @@ button:hover:not(:disabled) {
 .share-panel .small-button {
   margin-top: 10px;
 }
-.share-panel textarea {
-  font-size: 13px;
-}
 .round-button {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
   border: 1px solid #ffcc49;
@@ -1382,7 +1394,7 @@ button:hover:not(:disabled) {
 .filter-row button {
   flex: 1;
   background: none;
-  min-height: 38px;
+  min-height: 44px;
   border-radius: 12px;
   font-size: 14px;
   color: #a08b71;
@@ -1955,6 +1967,14 @@ button:hover:not(:disabled) {
   pointer-events: auto;
 }
 
+/* Title, step dots and hint only label the scene: taps pass through them to
+   the hit layer beneath, whatever order these rules load in. */
+.scene-overlay > .scene-title,
+.scene-overlay > .scene-step-dots,
+.scene-overlay > .scene-hint {
+  pointer-events: none;
+}
+
 .scene-title {
   position: absolute;
   left: 12px;
@@ -2037,6 +2057,12 @@ button:hover:not(:disabled) {
   transform: translateX(-50%) scale(0.96);
 }
 
+/* A step still under way (a crane fold): the button waits and taps are ignored. */
+.scene-bow-tap[aria-disabled='true'] {
+  opacity: 0.55;
+  cursor: progress;
+}
+
 @keyframes scene-fade-in {
   from {
     opacity: 0;
@@ -2056,7 +2082,8 @@ button:hover:not(:disabled) {
 .scene-wish-slot {
   position: absolute;
   left: 50%;
-  bottom: 100px;
+  /* Above the action button (bottom: 100px) so both stay tappable. */
+  bottom: 152px;
   transform: translateX(-50%);
   width: min(320px, calc(100% - 24px));
   animation: scene-fade-in 0.4s ease;
@@ -2064,13 +2091,16 @@ button:hover:not(:disabled) {
 
 .scene-wish-slot form {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 6px 8px;
 }
 
 .scene-wish-slot input {
   flex: 1;
-  padding: 8px 10px;
-  border-radius: 6px;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 22px;
   border: 1px solid #3a4a5c;
   background: #15202b;
   color: #e8eef6;
@@ -2085,8 +2115,9 @@ button:hover:not(:disabled) {
 }
 
 .scene-wish-slot button {
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 8px 18px;
+  border-radius: 22px;
+  font-weight: 650;
   border: 1px solid #3a7bd5;
   background: #1a3a66;
   color: #e8eef6;
@@ -2099,7 +2130,24 @@ button:hover:not(:disabled) {
   background: #24508a;
   box-shadow: 0 0 14px rgba(126, 200, 255, 0.45);
 }
-.library-scene-stage { position: relative; height: min(65vh, 540px); min-height: 360px; border-radius: 22px; overflow: hidden; background: var(--cream); color: var(--ink); touch-action: none; }
+
+/* Under the box: the note (or a nudge after an empty submit) and n/40. */
+.scene-wish-slot .wish-write-meta {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #c9d6e4;
+}
+
+.scene-wish-slot .wish-write-meta [data-nudge] {
+  color: #ffd38a;
+  font-weight: 600;
+}
+.library-scene-stage { position: relative; height: min(65vh, 540px); min-height: 360px; border-radius: 22px; overflow: hidden; background: var(--cream); color: var(--ink); }
 .library-scene-stage + .feedback-controls { margin-top: 14px; }
 .scene-discovery { padding: 20px; border: 1px solid #dedecb; border-radius: 22px; margin-bottom: 20px; background: #f1f2e6; display: grid; gap: 10px; }
 .scene-discovery h2 { margin: 8px 0; font-size: 21px; }
@@ -2114,7 +2162,13 @@ button:hover:not(:disabled) {
 .scene-search input, .cache-manager select { min-height: 44px; border: 1px solid #c7c8b4; border-radius: 10px; padding: 8px; background: #fffdf6; color: #514837; font: inherit; }
 .cache-usage { display: block; font-size: 24px; margin-top: 24px; }
 .scene-download, .scene-load-error { padding: 24px; border: 1px solid #dedecb; border-radius: 18px; display: grid; gap: 20px; }
+/* A long detail (an English message, a URL) wraps inside the card instead of
+   widening it, so 重试打开 stays on screen. */
+.scene-load-error { grid-template-columns: minmax(0, 1fr); overflow-wrap: anywhere; }
+.scene-load-error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13px; color: #817965; }
 .scene-download progress { width: 100%; }
+/* 已存进心愿 once a scene's wish box keeps a line: empty (no height) until then. */
+.scene-wish-saved { display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; margin: 0; color: #696d53; }
 .scene-experience h1 { font-size: 26px; }
 .scene-experience .woodfish-object { width: 100%; height: 340px; }
 .scene-progress { color: #696d53; }
@@ -2122,6 +2176,11 @@ button:hover:not(:disabled) {
 
 /* C-grade scenes: transparent canvas on the cream page (like the woodfish), so
    the overlay is ink-on-paper instead of the dark-scene glass. */
+/* The page scrolls from empty stage areas; a touch that starts on the scene's
+   object is claimed in JS (claimObjectTouches), so its gestures still work. */
+.scene-overlay--cream .scene-hit-layer {
+  touch-action: manipulation;
+}
 .scene-overlay--cream .scene-title {
   color: var(--ink);
   text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);
@@ -2166,14 +2225,27 @@ button:hover:not(:disabled) {
   border-color: #f0a86c;
   box-shadow: 0 0 0 3px #f0a86c33;
 }
+/* The submit capsule matches the app's primary button. */
 .scene-overlay--cream .scene-wish-slot button {
-  border-color: #e9ddca;
-  background: var(--paper);
-  color: var(--ink);
+  border-color: #ffc530;
+  background: linear-gradient(#ffe77a, #ffda4a);
+  box-shadow:
+    inset 0 1px 0 #fff4b7,
+    0 4px 6px #bc8a261a;
+  color: #352000;
 }
 .scene-overlay--cream .scene-wish-slot button:hover {
-  background: #fff6e4;
-  box-shadow: 0 4px 12px #97672d2e;
+  background: linear-gradient(#ffe98a, #ffdc58);
+  box-shadow:
+    inset 0 1px 0 #fff4b7,
+    0 4px 10px #bc8a2629;
+}
+.scene-overlay--cream .scene-wish-slot .wish-write-meta {
+  color: #8a6f57;
+  text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);
+}
+.scene-overlay--cream .scene-wish-slot .wish-write-meta [data-nudge] {
+  color: #b0562b;
 }
 
 .practice-card {

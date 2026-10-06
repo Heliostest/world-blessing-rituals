@@ -6,7 +6,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { assertSafeCopy } from "@wbr/shared";
-import { sceneRegistry } from "@wbr/scenes";
+import { PRODUCT_ORIGINAL, sceneRegistry } from "@wbr/scenes";
 import { RitualNarrativeBlurb } from "./ritual-narrative";
 import { builtInScenes } from "./scene-library";
 
@@ -38,14 +38,26 @@ describe("RitualNarrativeBlurb", () => {
 });
 
 describe("builtInScenes narratives", () => {
-  it("covers the four approved micro-rituals", () => {
+  it("covers the approved micro-rituals and the five new scenes", () => {
     expect(withNarrative.map((e) => e.id).sort()).toEqual([
+      "crane",
       "furin-wind-chime",
+      "lantern",
+      "shinto-torii",
+      "slavic-wreath",
       "tanzaku-tanabata",
+      "tibetan-wheel",
       "woodfish",
       "yeondeunghoe",
     ]);
   });
+
+  it.each(withNarrative.map((e) => [e.id, e.narrative!]))(
+    "%s frames itself as practice or homage",
+    (_id, narrative) => {
+      expect(narrative).toMatch(/练习|致敬/);
+    },
+  );
 
   it.each(withNarrative.map((e) => [e.id, e.narrative!]))(
     "%s has 80–120 汉字 and safe copy",
@@ -57,7 +69,24 @@ describe("builtInScenes narratives", () => {
     },
   );
 
-  it.each(builtInScenes.map((e) => [e.id, e.traditionSlug]))(
+  const productOriginal = sceneRegistry
+    .filter((s) => s.traditionSlug === PRODUCT_ORIGINAL)
+    .map((s) => s.id);
+
+  it("product-original scenes claim no tradition and say so", () => {
+    expect(productOriginal).toEqual(["crane", "lantern"]);
+    for (const id of productOriginal) {
+      const entry = builtInScenes.find((e) => e.id === id)!;
+      expect(entry.traditionSlug).toBeUndefined();
+      expect(entry.narrative).toMatch(/产品(原创|改编)/);
+    }
+  });
+
+  it.each(
+    builtInScenes
+      .filter((e) => !productOriginal.includes(e.id))
+      .map((e) => [e.id, e.traditionSlug]),
+  )(
     "%s traditionSlug points to an existing tradition card",
     (id, slug) => {
       expect(slug).toBeTruthy();

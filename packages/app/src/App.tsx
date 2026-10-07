@@ -43,6 +43,7 @@ export function BlessingApp({
   // 今日 is rebuilt only when the date changes, so focus and scroll survive.
   const day = useLocalDay(active);
   const audio = useRef<AudioContext | null>(null);
+  const shell = useRef<HTMLDivElement>(null);
   const route = routes[routes.length - 1];
   const state = snapshot.state;
   const roots = ["today", "wishes", "world", "me"];
@@ -62,6 +63,9 @@ export function BlessingApp({
         return [...old.slice(0, -1), next];
       return [...old, next];
     });
+    // A new page opens at the top: phones scroll the window, the desktop
+    // device frame scrolls the shell itself.
+    shell.current?.scrollTo?.(0, 0);
     window.scrollTo?.(0, 0);
   }
   function back() {
@@ -281,7 +285,7 @@ export function BlessingApp({
             </p>
             <span>CYBER BLESS · A LITTLE EVERY DAY</span>
           </div>
-          <div className="app-shell" data-page={route.page}>
+          <div className="app-shell" data-page={route.page} ref={shell}>
             {!roots.includes(route.page) && (
               <header
                 className={`app-topbar${route.page === "complete" ? " completion-topbar" : ""}`}

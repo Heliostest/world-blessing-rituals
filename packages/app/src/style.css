@@ -2443,22 +2443,47 @@ button:hover:not(:disabled) {
   }
 }
 @media (min-width: 1000px) {
-  /* The phone is a chunky handheld resting on the island table. */
+  /* Holds the shell's margins (they would collapse through it), so the page
+     is exactly one window tall and never scrolls behind the device. */
+  .bless-app {
+    display: flow-root;
+  }
+  /* The phone is a chunky handheld resting on the island table: a screen of
+     fixed height that fits the window and scrolls inside, so its rim never
+     runs off the bottom. The dock stays inside it, at the screen's foot. */
   .app-shell {
     margin: 28px max(9%, calc((100vw - 1060px) / 2)) 28px auto;
-    min-height: calc(100dvh - 56px);
+    display: flex;
+    flex-direction: column;
+    height: calc(100dvh - 56px);
+    min-height: 0;
     border: 6px solid var(--rim);
     border-radius: 40px;
-    overflow: hidden;
+    overflow: hidden auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: var(--ledge) transparent;
     box-shadow:
       0 0 0 3px var(--edge),
       0 12px 0 3px #7fc4b3,
       0 30px 60px #0b5a5240;
   }
+  /* Short pages still put the dock at the foot of the screen. */
+  .app-content {
+    flex: 1 0 auto;
+  }
+  /* The dock is in the flow here, so the tab pages keep no room under it. */
+  .app-shell[data-page="today"] .app-content,
+  .app-shell[data-page="wishes"] .app-content,
+  .app-shell[data-page="world"] .app-content,
+  .app-shell[data-page="me"] .app-content {
+    padding-bottom: 24px;
+  }
   .bottom-nav {
-    width: 394px;
-    margin-left: 12px;
-    bottom: 46px;
+    position: sticky;
+    bottom: 12px;
+    width: auto;
+    margin: 0 12px 12px;
     border-radius: 28px;
   }
   .desktop-note {

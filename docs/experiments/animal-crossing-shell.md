@@ -64,7 +64,7 @@ C 级场景的画布是透明的（`setClearColor(0, 0)`），舞台底色就是
 - **插画素材**是奶油底位图裁切（`.art` 做了隔离，`multiply` 不会和底混合）。目前靠插画同色纸底、明信片相框和道具格子遮掩；放到糖果色上必须加格子。
 - ~~场景布光~~：夜间舞台的两个场景已改用月光布光和暖色光晕（见上）。
 - ~~今日小练习的 emoji 字形~~：已改为手绘场景图标（`packages/app/src/scene-icons.tsx`，按场景 id 取图，三渲二平涂加墨线），放进和插画裁切同尺寸的 76px 道具格；文案对象不再带图标。
-- Expo 原生外壳（`apps/mobile-expo/App.tsx`）的加载底色仍是奶油 `#faf6ec`，`/dev` 工具页（`apps/cyber-bless/src/styles.css`）也没有改。
+- Expo 原生外壳（`apps/mobile-expo/App.tsx`）的安全区和加载底色已改为薄荷 `#cdf1e6`，失败页改用沙色底、墨色字和薄荷胶囊重试按钮（审计 P2-1）。`/dev` 工具页（`apps/cyber-bless/src/styles.css`）没有改。
 - 没有验证：真机、读屏软件、系统高对比度模式。截图用的是 SwiftShader 软件渲染，Three.js 画面以真机为准。
 
 ## 如何对比

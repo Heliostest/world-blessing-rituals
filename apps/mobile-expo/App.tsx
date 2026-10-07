@@ -118,24 +118,34 @@ function Shell() {
               setGeneration((n) => n + 1);
             }}
           >
-            <Text>重新打开</Text>
+            <Text style={styles.retryLabel}>重新打开</Text>
           </Pressable>
         </View>
       )}
     </SafeAreaView>
   );
 }
+// Island shell colours (packages/app/src/style.css): the safe-area bands and
+// the WebView's first paint are the mint page, like index.html's theme-color.
 const styles = StyleSheet.create({
-  shell: { flex: 1, backgroundColor: "#faf6ec" },
-  webview: { flex: 1, backgroundColor: "#faf6ec" },
+  shell: { flex: 1, backgroundColor: "#cdf1e6" },
+  webview: { flex: 1, backgroundColor: "#cdf1e6" },
   failure: {
     ...StyleSheet.absoluteFill,
-    backgroundColor: "#faf6ec",
+    backgroundColor: "#fbf3dc",
     justifyContent: "center",
     alignItems: "center",
     padding: 30,
     gap: 24,
   },
-  message: { color: "#514837", textAlign: "center", lineHeight: 26 },
-  retry: { backgroundColor: "#e6ead8", borderRadius: 12, padding: 18 },
+  message: { color: "#4a2a12", textAlign: "center", lineHeight: 26 },
+  retry: {
+    backgroundColor: "#4fd8c9",
+    borderColor: "#d4f8f2",
+    borderWidth: 3,
+    borderRadius: 999,
+    paddingVertical: 14,
+    paddingHorizontal: 28,
+  },
+  retryLabel: { color: "#064a43", fontWeight: "800", fontSize: 16 },
 });

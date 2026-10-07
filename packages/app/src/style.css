@@ -1,18 +1,101 @@
 @charset "UTF-8";
+/*
+ * Cozy-island shell (experiment/animal-crossing-shell, a visual preview).
+ * Tokens and patterns are ported from animal-island-ui: mint primary, candy
+ * accents, chunky press buttons on a solid ledge, thick soft HUD panels and
+ * polka-dot grounds. Values are re-tuned so every text tier stays WCAG AA.
+ * Old cream token → island token: docs/experiments/animal-crossing-shell.md.
+ */
 :root {
-  font-family: "Blessing Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
-  color: #361b0e;
-  background: #eee6d8;
+  /* Rounded system fonts only, first installed wins; the bundled Blessing
+     Sans still covers CJK where no rounded face is installed. */
+  --font-round: "Nunito", "Varela Round", "M PLUS Rounded 1c", "Yuanti SC",
+    "HarmonyOS Sans SC", "HarmonyOS Sans", "PingFang SC", "Blessing Sans",
+    "Microsoft YaHei", system-ui, sans-serif;
+  font-family: var(--font-round);
+  color: var(--ink);
+  background:
+    radial-gradient(#ffffff59 3px, transparent 3.6px) 0 0 / 34px 34px,
+    radial-gradient(#8fd3c3 3px, transparent 3.6px) 17px 17px / 34px 34px,
+    var(--island-deep);
+  color-scheme: light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --cream: #fcf8ef;
-  --paper: #fffcf6;
-  --ink: #361b0e;
-  --muted: #897767;
-  --line: #eee3d1;
-  --yellow: #ffda4a;
-  --green: #879d6b;
+
+  /* Grounds */
+  --island: #cdf1e6; /* mint page */
+  --island-dot: #b3e7d9; /* its polka dots */
+  --island-deep: #a3decf; /* the table around the phone (wide screens) */
+  --sand: #fbf3dc; /* HUD panel fill */
+  --paper: #fffcf2; /* inputs, chips, raised fills */
+  --slot: #f9f1e1; /* item slot behind the small illustration crops */
+  --art-paper: #fdf8ee; /* the large crops' own paper, so they sit seamlessly */
+  --rim: #fffdf7; /* the thick soft panel border */
+  --edge: #ecdcb8; /* thin outline outside the rim */
+  --ledge: #a2d9ca; /* solid ledge under panels on the mint ground */
+
+  /* Ink tiers, AA on --sand, --paper and --island */
+  --ink: #4a2a12; /* headings, 10:1 */
+  --ink-soft: #6b4a2b; /* body and any text on the dotted page, 5.8:1+ */
+  --muted: #7a5f45; /* captions inside panels and tints, 4.8:1+ */
+  --faint: #b39c7e; /* icons and rules only, never text */
+
+  /* Mint primary */
+  --mint: #4fd8c9;
+  --mint-hi: #86e8dc;
+  --mint-ledge: #17a093;
+  --mint-ink: #064a43; /* text on mint faces, 5.8:1 */
+  --mint-text: #0a5f58; /* mint-coloured text on light grounds, 5.5:1+ even on a dot */
+  --mint-tint: #dcf7f1;
+
+  /* Candy accents: face, highlight, ledge, tint. Text on any face is --ink. */
+  --peach: #ffb08f;
+  --peach-hi: #ffcbb3;
+  --peach-ledge: #e0835f;
+  --peach-tint: #ffe9de;
+  --butter: #ffd966;
+  --butter-hi: #ffe896;
+  --butter-ledge: #e0aa25;
+  --butter-tint: #fff3c6;
+  --sky: #8fd0f5;
+  --sky-hi: #b9e3fa;
+  --sky-ledge: #5ea9d6;
+  --sky-tint: #e0f2fc;
+  --bubblegum: #ff9fb8;
+  --bubblegum-hi: #ffc4d3;
+  --bubblegum-ledge: #e2769a;
+  --bubblegum-tint: #ffe3ea;
+  --leaf: #8fd17a;
+  --leaf-hi: #b6e5a6;
+  --leaf-ledge: #5aa548;
+  --leaf-tint: #e4f5da;
+  --leaf-ink: #3d6b2c;
+
+  /* Island at night (lantern stages) */
+  --night: #11304a;
+  --night-low: #1b4d58;
+  --star: #fff8dc;
+  --moon: #ffeaa8;
+
+  --focus: #0b6e66;
+  --radius-panel: 28px;
+  --radius-tile: 22px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  /* HUD panel: inner highlight, thin outline, solid ledge. */
+  --panel-shadow: inset 0 3px 0 #ffffffd9, 0 0 0 2px var(--edge),
+    0 6px 0 2px var(--ledge);
+  --panel-shadow-pressed: inset 0 3px 0 #ffffffd9, 0 0 0 2px var(--edge),
+    0 2px 0 2px var(--ledge);
+  --dots:
+    radial-gradient(var(--island-dot) 2.6px, transparent 3.2px) 0 0 / 24px 24px,
+    radial-gradient(#ffffffa6 1.6px, transparent 2.2px) 12px 12px / 24px 24px;
+
+  /* Cream-era names, kept as aliases so nothing resolves to nothing. */
+  --cream: var(--island);
+  --line: var(--edge);
+  --yellow: var(--butter);
+  --green: var(--leaf-ledge);
 }
 * {
   box-sizing: border-box;
@@ -51,7 +134,7 @@ a:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 3px solid #a37938;
+  outline: 3px solid var(--focus);
   outline-offset: 3px;
 }
 h1,
@@ -65,13 +148,13 @@ h2,
 h3,
 strong,
 b {
-  font-weight: 750;
+  font-weight: 800;
 }
 h1 {
   font-size: 30px;
   line-height: 1.4;
-  font-weight: 850;
-  letter-spacing: 0.1px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
 }
 h2 {
   font-size: 18px;
@@ -91,14 +174,15 @@ svg {
 }
 button {
   transition:
-    filter 0.15s,
-    transform 0.15s;
+    filter 0.15s var(--ease),
+    transform 0.15s var(--ease),
+    box-shadow 0.15s var(--ease);
 }
 button:active {
   transform: translateY(1px);
 }
 button:hover:not(:disabled) {
-  filter: brightness(0.985);
+  filter: brightness(1.03);
 }
 .bless-app {
   width: 100%;
@@ -109,68 +193,100 @@ button:hover:not(:disabled) {
   min-height: 100dvh;
   margin: auto;
   position: relative;
-  background: var(--cream);
-  background-image:
-    radial-gradient(ellipse at 15% 35%, #fffdf780, transparent 65%),
-    radial-gradient(#b9946110 0.55px, transparent 0.65px);
-  background-size:
-    auto,
-    4px 4px;
-  box-shadow: 0 14px 60px #8a65321a;
+  background: var(--dots), var(--island);
+  box-shadow: 0 14px 60px #0b5a5226;
 }
 .app-content {
-  padding: 8px 18px 28px;
-  animation: page-in 0.25s ease-out;
+  padding: 8px 18px 32px;
+  animation: page-in 0.25s var(--ease);
 }
+/* The four tabs leave room under the floating dock. */
 .app-shell[data-page="today"] .app-content,
 .app-shell[data-page="wishes"] .app-content,
 .app-shell[data-page="world"] .app-content,
 .app-shell[data-page="me"] .app-content {
-  padding: 30px 18px 96px;
+  padding: 30px 18px 128px;
 }
 .app-topbar {
-  height: 64px;
+  height: 68px;
   padding: 12px 18px 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
+/* The page title is a swallowtail ribbon, as in the island Title. */
 .app-topbar h2 {
-  font-size: 21px;
-  font-weight: 750;
+  max-width: calc(100% - 120px);
+  padding: 6px 30px 8px;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--mint-ink);
+  background: linear-gradient(180deg, var(--mint-hi), var(--mint));
+  box-shadow:
+    inset 0 3px 0 #ffffff80,
+    inset 0 -4px 0 #17a09359;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    calc(100% - 14px) 50%,
+    100% 100%,
+    0 100%,
+    14px 50%
+  );
+}
+/* 完成页 has no title: no empty ribbon. */
+.app-topbar h2:empty {
+  display: none;
 }
 .back-button {
   position: absolute;
-  left: 12px;
+  left: 14px;
   display: grid;
   place-items: center;
   width: 44px;
   height: 44px;
-  background: none;
+  border: 3px solid var(--rim);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 4px 0 2px var(--ledge);
+}
+.back-button:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 1px 0 2px var(--ledge);
 }
 .back-button svg {
-  width: 25px;
-  height: 25px;
-  stroke-width: 2.2;
+  width: 22px;
+  height: 22px;
+  stroke-width: 2.8;
 }
 .completion-topbar {
-  height: 40px;
+  height: 48px;
 }
 .completion-topbar .back-button {
   left: auto;
-  right: 12px;
+  right: 14px;
 }
 .save-status {
   position: fixed;
   right: 18px;
-  top: 7px;
+  top: 8px;
   z-index: 20;
-  border-radius: 15px;
-  background: #fff8df;
-  padding: 5px 10px;
-  font-size: 10px;
-  color: #9e7d37;
+  border: 2px solid var(--rim);
+  border-radius: 999px;
+  background: var(--butter-tint);
+  box-shadow: 0 2px 0 var(--butter-ledge);
+  padding: 3px 11px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-soft);
 }
 .desktop-note {
   display: none;
@@ -183,17 +299,32 @@ button:hover:not(:disabled) {
   margin-bottom: 20px;
 }
 .page-heading .eyebrow {
-  color: var(--muted);
-  font-size: 12px;
-  margin-bottom: 6px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
 .page-heading h1 {
-  font-size: 27px;
+  font-size: 28px;
+  text-shadow: 0 3px 0 #ffffffb3;
+}
+/* A side note in a heading (场景目录's count) is a flat chip. */
+.page-heading > p {
+  padding: 3px 12px 4px;
+  border: 2.5px solid var(--rim);
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow: 0 0 0 2px var(--edge);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--ink-soft);
+  white-space: nowrap;
 }
 .lead,
 .page-subtitle {
   font-size: 16px;
-  color: #8e7866;
+  font-weight: 600;
+  color: var(--ink-soft);
   line-height: 1.7;
 }
 .home-heading {
@@ -203,54 +334,81 @@ button:hover:not(:disabled) {
   gap: 8px;
 }
 .home-heading h1 {
-  font-size: 31px;
-  font-weight: 850;
+  font-size: 32px;
+  font-weight: 900;
+  text-shadow: 0 3px 0 #ffffffb3;
 }
 .lead {
-  margin: 4px 0 13px;
+  margin: 2px 0 16px;
 }
+/* A HUD counter: coin bubble, thick rim, ledge. */
 .merit-pill {
   display: flex;
   align-items: center;
-  gap: 5px;
-  background: linear-gradient(#fff2d8, #fff0ce);
-  border: 1px solid #eed5a8;
-  border-radius: 22px;
-  padding: 8px 10px;
-  font-size: 12px;
+  gap: 6px;
+  background: var(--paper);
+  border: 3px solid var(--rim);
+  border-radius: 999px;
+  padding: 3px 12px 3px 3px;
+  font-size: 13px;
+  font-weight: 700;
   white-space: nowrap;
-  color: #654017;
+  color: var(--ink-soft);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 5px 0 2px var(--ledge);
+}
+.merit-pill:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 2px 0 2px var(--ledge);
 }
 .merit-pill b {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--ink);
 }
 .merit-pill svg:first-child {
-  width: 23px;
-  color: #946221;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--butter);
+  color: #7a4a0c;
+  box-shadow: inset 0 -3px 0 var(--butter-ledge);
 }
 .merit-pill svg:last-child {
   width: 12px;
   height: 16px;
+  stroke-width: 2.6;
 }
 .tag {
   display: inline-flex;
   align-items: center;
-  padding: 5px 13px;
-  background: linear-gradient(#ffe9a1, #ffe397);
-  border-radius: 20px;
+  padding: 3px 14px 4px;
+  background: var(--butter);
+  border: 2.5px solid var(--rim);
+  border-radius: 999px;
   font-size: 13px;
-  color: #49300b;
-  font-weight: 550;
-  box-shadow: inset 0 1px 2px #fff8cf;
+  color: var(--ink);
+  font-weight: 800;
+  box-shadow: 0 3px 0 var(--butter-ledge);
+}
+.tag.soft {
+  background: var(--mint-tint);
+  box-shadow: 0 3px 0 #a9e5da;
+  color: var(--mint-ink);
 }
 .daily-card {
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  background: linear-gradient(130deg, #fffcf8bb, #fcf7ecbb);
-  padding: 15px 13px 14px;
-  box-shadow:
-    0 3px 7px #ad865316,
-    inset 0 1px 0 #fffef8;
+  border: 3px solid var(--rim);
+  border-radius: var(--radius-panel);
+  background: var(--art-paper);
+  padding: 16px 14px 18px;
+  box-shadow: var(--panel-shadow);
+}
+.daily-card + .daily-card {
+  margin-top: 22px;
 }
 .daily-card > .art {
   margin: 0 -4px;
@@ -261,47 +419,61 @@ button:hover:not(:disabled) {
 }
 .daily-copy h2 {
   font-size: 25px;
-  font-weight: 850;
+  font-weight: 900;
   line-height: 1.45;
   margin-top: 3px;
 }
 .daily-copy p {
-  color: #7f6b59;
+  color: var(--muted);
   font-size: 16px;
-  margin: 3px 0 12px;
+  font-weight: 600;
+  margin: 3px 0 14px;
 }
+/* Chunky island buttons: a candy face that sinks into its solid ledge. */
 .button {
+  --ledge-color: #dcc8a0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   min-height: 52px;
-  padding: 10px 18px;
-  border-radius: 23px;
+  padding: 10px 22px;
+  border: 3px solid var(--rim);
+  border-radius: 999px;
   font-size: 19px;
-  font-weight: 650;
+  font-weight: 800;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  box-shadow:
+    inset 0 3px 0 #ffffff8c,
+    0 6px 0 var(--ledge-color),
+    0 9px 14px #0b5a521f;
+}
+.button:active:not(:disabled) {
+  transform: translateY(5px);
+  box-shadow:
+    inset 0 3px 0 #ffffff8c,
+    0 1px 0 var(--ledge-color),
+    0 2px 4px #0b5a521f;
 }
 .button.primary {
-  background: linear-gradient(#ffe77a, #ffda4a);
-  border: 1px solid #ffc530;
-  box-shadow:
-    inset 0 1px 0 #fff4b7,
-    0 4px 6px #bc8a261a;
-  color: #352000;
+  --ledge-color: var(--mint-ledge);
+  background: linear-gradient(180deg, var(--mint-hi), var(--mint));
+  border-color: #d4f8f2;
+  color: var(--mint-ink);
 }
 .button.secondary {
-  background: #fff4d3;
-  border: 1px solid #efce89;
-  color: #714b1b;
-  font-size: 15px;
-  min-height: 45px;
+  --ledge-color: var(--butter-ledge);
+  background: linear-gradient(180deg, var(--butter-hi), var(--butter));
+  border-color: #fff8de;
+  color: var(--ink);
+  font-size: 16px;
+  min-height: 48px;
 }
 .button.outline {
-  background: #fffaf266;
-  border: 1px solid #ab8054;
-  font-weight: 450;
-  color: #4d2c18;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 700;
 }
 .button.full,
 .daily-copy .button {
@@ -312,20 +484,23 @@ button:hover:not(:disabled) {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin: 24px 0 12px;
+  margin: 26px 0 12px;
 }
 .section-heading h2 {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 900;
 }
 .section-heading > span {
   font-size: 12px;
-  color: var(--muted);
+  font-weight: 600;
+  color: var(--ink-soft);
 }
 .text-button {
   padding: 8px 0;
   background: none;
-  color: #927b66;
+  color: var(--mint-text);
   font-size: 13px;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -333,22 +508,23 @@ button:hover:not(:disabled) {
 .text-button svg {
   width: 15px;
   height: 15px;
+  stroke-width: 2.4;
 }
 .achievement-card {
-  margin-top: 13px;
-  padding: 12px;
-  border: 1px solid var(--line);
-  border-radius: 21px;
-  background: #fffcf7bb;
-  box-shadow: 0 3px 7px #ad86530d;
+  margin-top: 22px;
+  padding: 14px;
+  border: 3px solid var(--rim);
+  border-radius: var(--radius-panel);
+  background: var(--sand);
+  box-shadow: var(--panel-shadow);
 }
 .achievement-card .section-heading {
-  margin: 0 0 9px;
+  margin: 0 0 10px;
 }
 .achievement-card .text-button {
   padding: 0;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   /* A full 44px target that does not grow the heading row. */
   margin: -12px 0;
 }
@@ -358,117 +534,221 @@ button:hover:not(:disabled) {
 .ritual-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 9px;
+  gap: 10px;
 }
+/* Candy tiles, one colour each, like island app icons. */
 .ritual-tile {
-  background: linear-gradient(#f8edda, #f7f0e4);
-  border: 1px solid #f0e5d4;
-  border-radius: 16px;
-  padding: 5px 5px 7px;
+  --tile: var(--sand);
+  --tile-ledge: var(--edge);
+  background: var(--tile);
+  border: 3px solid var(--rim);
+  border-radius: var(--radius-tile);
+  padding: 6px 5px 8px;
   position: relative;
   min-width: 0;
+  box-shadow: 0 4px 0 var(--tile-ledge);
+}
+.ritual-tile:nth-child(6n + 1) {
+  --tile: var(--leaf-tint);
+  --tile-ledge: #bfe3ad;
+}
+.ritual-tile:nth-child(6n + 2) {
+  --tile: var(--peach-tint);
+  --tile-ledge: #f6c7b2;
+}
+.ritual-tile:nth-child(6n + 3) {
+  --tile: var(--butter-tint);
+  --tile-ledge: #f2d98a;
+}
+.ritual-tile:nth-child(6n + 4) {
+  --tile: var(--sky-tint);
+  --tile-ledge: #b4dcf3;
+}
+.ritual-tile:nth-child(6n + 5) {
+  --tile: var(--bubblegum-tint);
+  --tile-ledge: #f7bfce;
+}
+.ritual-tile:nth-child(6n + 6) {
+  --tile: var(--mint-tint);
+  --tile-ledge: #a9e5da;
+}
+.ritual-tile:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--tile-ledge);
 }
 .ritual-tile strong {
   display: block;
-  font-size: 12px;
-  font-weight: 450;
-  color: #80644a;
-  margin-top: 1px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink-soft);
+  margin-top: 3px;
 }
 .collected-dot {
   position: absolute;
   right: 4px;
   top: 5px;
-  background: #e5ead6;
+  background: var(--leaf);
+  border: 2px solid var(--rim);
   border-radius: 50%;
-  color: #809567;
-  width: 17px;
-  height: 17px;
+  color: #24501a;
+  width: 22px;
+  height: 22px;
   display: grid;
   place-items: center;
+  box-shadow: 0 2px 0 var(--leaf-ledge);
 }
 .collected-dot svg {
   width: 12px;
   height: 12px;
+  stroke-width: 3;
 }
 .wish-invitation {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: transparent;
+  gap: 10px;
+  background: var(--paper);
   width: 100%;
-  padding: 18px 4px 0;
-  font-size: 12px;
-  color: #937d62;
+  margin-top: 24px;
+  padding: 6px 16px 6px 6px;
+  border: 3px solid var(--rim);
+  border-radius: 999px;
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 5px 0 2px var(--ledge);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
   text-align: left;
 }
+.wish-invitation:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 2px 0 2px var(--ledge);
+}
 .wish-invitation > svg {
-  width: 18px;
+  width: 36px;
+  height: 36px;
+  padding: 7px;
+  border-radius: 50%;
+  background: var(--bubblegum);
+  color: var(--ink);
+  box-shadow: inset 0 -3px 0 var(--bubblegum-ledge);
 }
 .invitation-action {
   display: flex;
   align-items: center;
   gap: 2px;
   margin-left: auto;
-  color: #815519;
+  color: var(--mint-text);
+  font-weight: 800;
   white-space: nowrap;
 }
 .invitation-action svg {
   width: 12px;
+  stroke-width: 2.6;
 }
 .resume-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff0c9;
-  border: 1px solid #f4d898;
-  border-radius: 12px;
+  background: var(--butter-tint);
+  border: 3px solid var(--rim);
+  border-radius: 22px;
   width: 100%;
-  padding: 10px 12px;
+  padding: 10px 14px;
   text-align: left;
-  margin: 10px 0;
-  font-size: 13px;
+  margin: 12px 0 16px;
+  font-size: 14px;
+  font-weight: 800;
+  box-shadow:
+    0 0 0 2px #f2d98a,
+    0 5px 0 2px var(--butter-ledge);
 }
 .resume-banner small {
   display: block;
-  font-size: 11px;
-  color: #967443;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
   margin-top: 4px;
 }
+/* The tab bar is a chunky floating HUD dock; each tab has its own candy. */
 .bottom-nav {
   position: fixed;
-  bottom: 0;
+  bottom: max(10px, env(safe-area-inset-bottom));
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: min(100%, 430px);
-  padding: 7px 14px max(10px, env(safe-area-inset-bottom));
-  background: #fcf8eff5;
-  border-top: 1px solid #eadfca;
+  gap: 4px;
+  width: calc(min(100%, 430px) - 24px);
+  margin-left: 12px;
+  padding: 6px;
+  background: var(--paper);
+  border: 3px solid var(--rim);
+  border-radius: 30px;
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 7px 0 2px #8fcfbf,
+    0 16px 26px #0b5a5233;
   z-index: 10;
-  backdrop-filter: blur(12px);
 }
 .bottom-nav button {
+  --tab: var(--butter);
+  --tab-hi: var(--butter-hi);
+  --tab-ledge: var(--butter-ledge);
+  --tab-tint: var(--butter-tint);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  min-height: 51px;
+  gap: 1px;
+  min-height: 58px;
+  padding: 4px 0 5px;
+  border-radius: 22px;
   background: none;
-  color: #ae9c88;
+  color: var(--muted);
   font-size: 12px;
+  font-weight: 800;
+}
+.bottom-nav button:nth-child(2) {
+  --tab: var(--bubblegum);
+  --tab-hi: var(--bubblegum-hi);
+  --tab-ledge: var(--bubblegum-ledge);
+  --tab-tint: var(--bubblegum-tint);
+}
+.bottom-nav button:nth-child(3) {
+  --tab: var(--leaf);
+  --tab-hi: var(--leaf-hi);
+  --tab-ledge: var(--leaf-ledge);
+  --tab-tint: var(--leaf-tint);
+}
+.bottom-nav button:nth-child(4) {
+  --tab: var(--sky);
+  --tab-hi: var(--sky-hi);
+  --tab-ledge: var(--sky-ledge);
+  --tab-tint: var(--sky-tint);
 }
 .bottom-nav button svg {
-  width: 24px;
-  height: 24px;
-  stroke-width: 2;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--tab-tint);
+  color: var(--ink-soft);
+  stroke-width: 2.1;
 }
 .bottom-nav button[aria-current] {
-  color: #4e2c11;
-  font-weight: 650;
+  background: linear-gradient(180deg, var(--tab-hi), var(--tab));
+  color: var(--ink);
+  font-weight: 900;
+  box-shadow:
+    inset 0 3px 0 #ffffff8c,
+    0 4px 0 var(--tab-ledge);
+  transform: translateY(-2px);
 }
 .bottom-nav button[aria-current] svg {
-  fill: #6b461419;
+  background: #ffffffb3;
+  color: var(--ink);
+  fill: #ffffff;
 }
 .bottom-nav i {
   display: none;
@@ -505,8 +785,12 @@ button:hover:not(:disabled) {
   object-fit: fill;
   user-select: none;
 }
+/* Small crops sit in a cream item slot (as in an island inventory), so the
+   crop's own cream ground never shows as a box on a candy tile. */
 .art-small {
   height: 76px;
+  border-radius: 16px;
+  background: var(--slot);
 }
 .art-small .reference-crop {
   width: 83px;
@@ -517,18 +801,36 @@ button:hover:not(:disabled) {
   max-width: 240px;
   margin: 16px auto;
 }
+/* Large crops straight on the mint page get a postcard frame in their own
+   paper colour, so the crop's ground never shows as a box. */
+.app-content > .art,
+.new-wish-page > .art,
+.wish-detail-page > .art,
+.fulfill-page > .art,
+.note-page > .art,
+.celebration .art {
+  padding: 6px;
+  border: 4px solid var(--rim);
+  border-radius: 26px;
+  background: var(--art-paper);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 6px 0 2px var(--ledge);
+}
 .art-variant-home {
   margin-top: -1px;
 }
 .asset-fallback {
   display: grid;
   place-items: center;
-  background: #f5e4ba;
+  background: var(--butter-tint);
+  border: 3px solid var(--rim);
   width: 130px;
   height: 130px;
   border-radius: 50%;
   font-size: 26px;
-  color: #a8874f;
+  font-weight: 800;
+  color: var(--ink-soft);
 }
 .art-small .asset-fallback {
   width: 60px;
@@ -536,17 +838,17 @@ button:hover:not(:disabled) {
   font-size: 16px;
 }
 .form-card {
-  background: #fffcf7c9;
-  border: 1px solid var(--line);
-  border-radius: 19px;
-  padding: 15px;
-  box-shadow: 0 3px 7px #ad86530d;
-  margin: 0 0 9px;
+  background: var(--sand);
+  border: 3px solid var(--rim);
+  border-radius: 24px;
+  padding: 16px;
+  box-shadow: var(--panel-shadow);
+  margin: 0 0 18px;
 }
 .form-card h2,
 .form-card label {
   font-size: 17px;
-  font-weight: 650;
+  font-weight: 800;
 }
 .field-heading {
   display: flex;
@@ -560,39 +862,41 @@ button:hover:not(:disabled) {
 }
 .field-heading > span {
   font-size: 12px;
-  color: #937c68;
-  font-weight: 350;
+  color: var(--muted);
+  font-weight: 600;
   white-space: nowrap;
 }
 .form-card textarea,
 .share-panel textarea {
   display: block;
   width: 100%;
-  border: 1px solid #eadfce;
-  border-radius: 11px;
-  padding: 10px 12px;
+  border: 2.5px solid var(--edge);
+  border-radius: 18px;
+  padding: 10px 14px;
   resize: vertical;
-  background: #fcfaf6;
-  color: #504437;
+  background: var(--paper);
+  color: var(--ink);
   /* 16px or more: iOS zooms the page into smaller text fields on focus. */
   font-size: 16px;
   line-height: 1.7;
-  font-weight: 400;
+  font-weight: 600;
   min-height: 65px;
+  box-shadow: 0 3px 0 #e2d3b3;
 }
 .form-card textarea::placeholder {
-  color: #9b8d7e;
+  color: var(--muted);
 }
 .form-card textarea:focus {
-  border-color: #d6ad5d;
+  border-color: var(--mint);
   outline-offset: 2px;
+  box-shadow: 0 3px 0 var(--mint-ledge);
 }
 .new-wish-page > .page-subtitle {
   text-align: center;
   margin: 0 0 3px;
 }
 .new-wish-page > .art {
-  margin: 0 0 4px;
+  margin: 4px 0 18px;
 }
 .category-chips {
   display: grid;
@@ -600,7 +904,7 @@ button:hover:not(:disabled) {
   gap: 8px;
   border: 0;
   padding: 0;
-  margin: 12px 0 0;
+  margin: 14px 0 4px;
 }
 .category-chips label {
   display: flex;
@@ -609,19 +913,22 @@ button:hover:not(:disabled) {
   gap: 7px;
   position: relative;
   font-size: 14px;
-  font-weight: 400;
-  border: 1px solid #e9ddc9;
-  border-radius: 30px;
-  background: #faf6ed;
+  font-weight: 700;
+  border: 2.5px solid var(--edge);
+  border-radius: 999px;
+  background: var(--paper);
   min-height: 44px;
   cursor: pointer;
-  color: #786859;
+  color: var(--ink-soft);
+  box-shadow: 0 3px 0 #e2d3b3;
 }
 .category-chips .selected {
-  background: linear-gradient(#ffe78b, #ffda55);
-  border-color: #ffc137;
-  color: #643d10;
-  box-shadow: 0 3px 6px #b985241a;
+  background: linear-gradient(180deg, var(--mint-hi), var(--mint));
+  border-color: #d4f8f2;
+  color: var(--mint-ink);
+  box-shadow:
+    inset 0 2px 0 #ffffff80,
+    0 4px 0 var(--mint-ledge);
 }
 .category-chips input {
   position: absolute;
@@ -636,7 +943,7 @@ button:hover:not(:disabled) {
   height: 20px;
 }
 .category-chips label:focus-within {
-  outline: 2px solid #a7792d;
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 .return-plan h2 {
@@ -644,7 +951,7 @@ button:hover:not(:disabled) {
 }
 .return-choices {
   display: grid;
-  gap: 7px;
+  gap: 9px;
   border: 0;
   padding: 0;
   margin: 0;
@@ -653,30 +960,31 @@ button:hover:not(:disabled) {
   display: flex;
   align-items: center;
   gap: 13px;
-  border: 1px solid #e9dfcd;
-  border-radius: 10px;
-  background: #fcf9f2;
+  border: 2.5px solid var(--edge);
+  border-radius: 18px;
+  background: var(--paper);
   padding: 10px 12px;
   min-height: 44px;
   cursor: pointer;
+  box-shadow: 0 3px 0 #e2d3b3;
 }
 .choice-row.chosen {
-  border-color: #ffbf28;
-  background: #fff9e8;
-  box-shadow: inset 0 0 0 1px #ffffff;
+  border-color: var(--butter-ledge);
+  background: var(--butter-tint);
+  box-shadow: 0 3px 0 var(--butter-ledge);
 }
 .choice-row > span {
   flex: 1;
 }
 .choice-row strong {
   font-size: 15px;
-  font-weight: 550;
+  font-weight: 800;
   display: block;
 }
 .choice-row small {
   font-size: 13px;
-  font-weight: 350;
-  color: #a18c76;
+  font-weight: 500;
+  color: var(--muted);
   display: block;
   margin-top: 2px;
   line-height: 1.6;
@@ -684,35 +992,33 @@ button:hover:not(:disabled) {
 .choice-row svg {
   width: 23px;
   height: 23px;
-  color: #8da271;
-  fill: #8da271;
+  color: var(--leaf-ledge);
+  fill: var(--leaf-ledge);
 }
 .choice-row:first-of-type svg {
-  color: #e7643e;
-  fill: #e7643e;
+  color: var(--bubblegum-ledge);
+  fill: var(--bubblegum-ledge);
 }
+/* The island radio: a soft rounded square with a check, not a dot. */
 .choice-row input {
   appearance: none;
-  flex: 0 0 19px;
-  width: 19px;
-  height: 19px;
-  border: 1px solid #b19a80;
-  border-radius: 50%;
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  border: 2.5px solid #95805f;
+  border-radius: 8px;
   margin: 0;
-  background: #fffcf6;
+  background: var(--paper);
 }
 .choice-row input:checked {
-  border-color: #ffb900;
-  background: radial-gradient(
-    circle,
-    #ffbd12 0 5px,
-    #fffdf4 6px 7px,
-    #ffbd12 8px
-  );
+  border-color: var(--mint-ledge);
+  background: var(--mint)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23064a43' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 4 4L19 6'/%3E%3C/svg%3E")
+    center / 13px no-repeat;
 }
 .quiet {
   font-size: 12px;
-  color: #9b8772;
+  color: var(--ink-soft);
   line-height: 1.8;
   margin: 9px 0;
 }
@@ -723,15 +1029,17 @@ button:hover:not(:disabled) {
   display: flex;
   gap: 10px;
   align-items: center;
-  border: 1px solid #ede3d5;
-  border-radius: 10px;
-  padding: 10px 11px;
+  border: 2.5px solid var(--edge);
+  border-radius: 18px;
+  background: var(--paper);
+  padding: 10px 12px;
   font-size: 14px;
+  font-weight: 700;
 }
 .private-row svg {
   width: 19px;
   height: 19px;
-  fill: #50332122;
+  fill: #6b4a2b26;
 }
 .new-wish-page .primary {
   margin-top: 0;
@@ -746,31 +1054,35 @@ button:hover:not(:disabled) {
   display: inline-flex;
   gap: 7px;
   align-items: center;
-  background: linear-gradient(#fff1b8, #ffde68);
-  border: 1px solid #ffcf55;
-  border-radius: 30px;
-  padding: 5px 15px;
+  background: linear-gradient(180deg, var(--butter-hi), var(--butter));
+  border: 2.5px solid var(--rim);
+  border-radius: 999px;
+  padding: 4px 16px 5px;
   font-size: 15px;
-  box-shadow: inset 0 1px 0 #fff8df;
-  margin: 0 auto 2px;
+  font-weight: 800;
+  color: var(--ink);
+  box-shadow: 0 4px 0 var(--butter-ledge);
+  margin: 0 auto 6px;
 }
 .status-pill svg {
   width: 20px;
   height: 20px;
 }
 .status-pill.fulfilled {
-  background: #f6e8c5;
+  background: linear-gradient(180deg, var(--leaf-hi), var(--leaf));
+  box-shadow: 0 4px 0 var(--leaf-ledge);
 }
 .wish-detail-page > .art-variant-wish-detail {
   max-width: 330px;
-  margin: 0 auto 5px;
+  margin: 6px auto 18px;
 }
 .wish-title {
   font-size: 29px;
-  font-weight: 800;
+  font-weight: 900;
   overflow-wrap: anywhere;
   line-height: 1.4;
   margin: 3px 0 6px;
+  text-shadow: 0 3px 0 #ffffffb3;
 }
 .wish-meta {
   display: flex;
@@ -778,30 +1090,34 @@ button:hover:not(:disabled) {
   justify-content: center;
   gap: 6px;
   font-size: 12px;
-  color: #a08a72;
+  font-weight: 600;
+  color: var(--ink-soft);
   margin-bottom: 12px;
 }
 .wish-meta svg {
   width: 13px;
   height: 13px;
-  fill: #9d8a7366;
+  fill: #6b4a2b40;
 }
 .effort-card {
   text-align: left;
-  padding: 12px;
+  padding: 14px;
 }
 .small-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
-  border: 1px solid #e8ddca;
-  border-radius: 22px;
-  background: #fdf9f1;
-  padding: 5px 10px;
+  border: 2px solid var(--edge);
+  border-radius: 999px;
+  background: var(--paper);
+  padding: 5px 12px;
   font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-soft);
   min-height: 30px;
   position: relative;
+  box-shadow: 0 3px 0 #e2d3b3;
 }
 /* The pill stays small; an invisible margin around it makes a 44px target. */
 .small-button::before {
@@ -817,15 +1133,15 @@ button:hover:not(:disabled) {
   display: flex;
   align-items: flex-start;
   gap: 11px;
-  background: #f7f4eb;
-  border: 1px solid #eee5d7;
-  border-radius: 11px;
+  background: var(--paper);
+  border: 2.5px solid var(--edge);
+  border-radius: 18px;
   padding: 11px 10px;
-  margin-top: 7px;
+  margin-top: 8px;
 }
 .note-preview > svg {
-  color: #91a879;
-  fill: #91a879;
+  color: var(--leaf-ledge);
+  fill: var(--leaf-ledge);
   width: 23px;
   height: 28px;
   margin-top: 4px;
@@ -836,14 +1152,14 @@ button:hover:not(:disabled) {
 .note-preview p {
   font-size: 14px;
   line-height: 1.6;
-  color: #6f6256;
+  color: var(--ink-soft);
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 .note-preview time {
   display: block;
-  font-size: 11px;
-  color: #b19d87;
+  font-size: 12px;
+  color: var(--muted);
   margin-top: 5px;
 }
 .empty-note {
@@ -853,23 +1169,23 @@ button:hover:not(:disabled) {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #fffcf7c9;
-  border: 1px solid var(--line);
-  border-radius: 18px;
+  background: var(--sand);
+  border: 3px solid var(--rim);
+  border-radius: 22px;
   padding: 15px 17px;
   text-align: left;
   font-size: 14px;
-  margin: 8px 0 12px;
-  box-shadow: 0 3px 7px #ad86530d;
+  margin: 8px 0 16px;
+  box-shadow: var(--panel-shadow);
 }
 .return-summary svg {
   width: 23px;
   height: 23px;
-  color: #de653d;
-  fill: #de653d;
+  color: var(--bubblegum-ledge);
+  fill: var(--bubblegum-ledge);
 }
 .return-summary strong {
-  font-weight: 600;
+  font-weight: 800;
 }
 .archive-button {
   display: flex;
@@ -882,18 +1198,19 @@ button:hover:not(:disabled) {
   font-size: 28px;
   margin-top: 1px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.3px;
+  text-shadow: 0 3px 0 #ffffffb3;
 }
 .fulfill-page > .page-subtitle {
   font-size: 14px;
   margin: 4px 0 6px;
 }
 .fulfill-page > .art {
-  margin: 0 0 3px;
+  margin: 4px 0 18px;
 }
 .fulfillment-card {
-  padding: 13px;
+  padding: 14px;
 }
 .fulfillment-card h2 {
   margin-bottom: 9px;
@@ -905,10 +1222,10 @@ button:hover:not(:disabled) {
 }
 .return-note {
   padding: 10px;
-  background: #fffbf4;
-  border: 1px solid #eee4d5;
-  border-radius: 13px;
-  margin-top: 9px;
+  background: var(--paper);
+  border: 2.5px solid var(--edge);
+  border-radius: 18px;
+  margin-top: 10px;
 }
 .return-note .field-heading {
   margin-bottom: 5px;
@@ -933,11 +1250,11 @@ button:hover:not(:disabled) {
 }
 .badge-preview strong {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 800;
 }
 .badge-preview p {
   font-size: 12px;
-  color: #9f8c77;
+  color: var(--muted);
   margin-top: 4px;
 }
 .leaf-footer {
@@ -946,12 +1263,13 @@ button:hover:not(:disabled) {
   justify-content: center;
   gap: 17px;
   font-size: 13px;
-  color: #9f8a72;
+  font-weight: 700;
+  color: var(--ink-soft);
   margin: 18px 0 1px;
 }
 .leaf-footer svg {
-  color: #90a575;
-  fill: #90a575;
+  color: var(--leaf-ledge);
+  fill: var(--leaf-ledge);
   width: 21px;
   height: 26px;
 }
@@ -959,12 +1277,15 @@ button:hover:not(:disabled) {
   transform: scaleX(-1);
 }
 .linked-ritual {
-  background: #f1f2df;
-  border-radius: 10px;
+  background: var(--leaf-tint);
+  border: 2.5px solid var(--rim);
+  border-radius: 18px;
   padding: 10px;
   font-size: 12px;
-  color: #778953;
+  font-weight: 700;
+  color: var(--leaf-ink);
   margin-top: 10px;
+  box-shadow: 0 0 0 2px #bfe3ad;
 }
 .linked-ritual p {
   display: flex;
@@ -982,6 +1303,7 @@ button:hover:not(:disabled) {
 .note-page > h1 {
   font-size: 25px;
   text-align: center;
+  text-shadow: 0 3px 0 #ffffffb3;
 }
 .note-page .form-card {
   margin-top: 18px;
@@ -996,53 +1318,80 @@ button:hover:not(:disabled) {
 }
 .ritual-goal {
   text-align: center;
-  margin: 9px 0 9px;
+  margin: 9px 0 10px;
   font-size: 17px;
+  font-weight: 700;
+  color: var(--ink-soft);
 }
 .ritual-goal strong {
   margin-left: 9px;
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--ink);
 }
+/* A candy-striped progress bar in a thick rim. */
 .progress-track {
-  height: 12px;
-  background: #eee3d1;
-  box-shadow: inset 0 1px 3px #9f773d13;
-  border-radius: 10px;
+  height: 20px;
+  background: var(--paper);
+  border: 3px solid var(--rim);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    inset 0 2px 3px #9f773d1f;
+  border-radius: 999px;
   width: 76%;
-  margin: 0 auto 18px;
+  margin: 0 auto 22px;
   overflow: hidden;
 }
 .progress-track span {
   display: block;
   height: 100%;
-  background: linear-gradient(#ffe675, #ffcd31);
-  border-radius: 10px;
-  transition: width 0.18s;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--butter) 0 8px,
+    var(--butter-hi) 8px 16px
+  );
+  border-radius: 999px;
+  box-shadow: inset 0 -3px 0 #e0aa2566;
+  transition: width 0.18s var(--ease);
 }
+/* The ritual sits on a warm paper stage panel: the ground its art and the
+   woodfish lighting were made for. */
 .ritual-stage {
   position: relative;
+  padding: 4px 8px 10px;
+  border: 4px solid var(--rim);
+  border-radius: 32px;
+  background: var(--art-paper);
+  box-shadow: var(--panel-shadow);
+}
+/* The 3D woodfish is a transparent canvas, so its stage can carry dots. */
+.ritual-woodfish .ritual-stage {
+  background:
+    radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px,
+    var(--art-paper);
 }
 .ritual-feedback {
   text-align: center;
   height: 91px;
   padding-top: 13px;
-  animation: feedback-in 0.3s ease-out;
+  animation: feedback-in 0.3s var(--ease);
 }
 .ritual-feedback strong {
   display: block;
-  transform: rotate(-8deg);
+  transform: rotate(-6deg);
   font-size: 31px;
-  color: #a96515;
+  color: #b4521f;
   font-weight: 900;
-  text-shadow: 0 1px 0 white;
+  text-shadow:
+    0 2px 0 #ffffff,
+    0 4px 0 #f6d9b8;
   letter-spacing: 1px;
 }
 .ritual-feedback span {
   display: block;
   font-size: 22px;
-  font-weight: 800;
-  color: #899c6b;
+  font-weight: 900;
+  color: var(--leaf-ink);
   margin-top: 7px;
 }
 .ritual-object {
@@ -1106,16 +1455,18 @@ button:hover:not(:disabled) {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 11px;
-  color: #947a60;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
 }
 .woodfish-pause {
   display: block;
-  margin: 12px auto 0;
+  margin: 14px auto 0;
   padding: 6px 20px;
   background: none;
-  color: #91785c;
-  font-size: 12px;
+  color: var(--mint-text);
+  font-size: 13px;
+  font-weight: 700;
 }
 .woodfish-inspection {
   display: flex;
@@ -1128,47 +1479,57 @@ button:hover:not(:disabled) {
   padding: 6px;
 }
 .ritual-object:focus-visible {
-  outline: 2px solid #ca8b36;
+  outline: 3px solid var(--focus);
   outline-offset: 3px;
   border-radius: 24px;
 }
+/* Score digits as a chunky sticker. */
 .ritual-counter {
   text-align: center;
   font-size: 72px;
   font-weight: 900;
   line-height: 1.2;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-variant-numeric: tabular-nums;
-  margin: 9px 0 0;
-  color: #482305;
+  margin: 16px 0 0;
+  color: var(--ink);
+  text-shadow:
+    0 3px 0 #ffffff,
+    0 7px 0 var(--ledge);
 }
 .tap-instruction {
   text-align: center;
   font-size: 19px;
-  margin: 0 0 19px;
-  color: #715a43;
+  font-weight: 700;
+  margin: 2px 0 19px;
+  color: var(--ink-soft);
 }
 .ritual-link {
-  background: #fffcf7;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 9px 12px;
-  margin: 0 0 14px;
+  background: var(--paper);
+  border: 3px solid var(--rim);
+  border-radius: 22px;
+  padding: 9px 14px 4px;
+  margin: 0 0 16px;
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 5px 0 2px var(--ledge);
 }
 .ritual-link label {
-  font-size: 11px;
-  color: #9d866b;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
 }
 .ritual-link label small {
-  font-size: 10px;
+  font-size: 11px;
 }
 .ritual-link select {
   width: 100%;
   min-height: 44px;
   border: 0;
   background: transparent;
-  color: #6e5033;
+  color: var(--ink);
   font-size: 16px;
+  font-weight: 700;
   padding: 5px 0;
 }
 .feedback-controls {
@@ -1181,63 +1542,82 @@ button:hover:not(:disabled) {
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 44px;
-  border: 1px solid #e9ddca;
-  border-radius: 21px;
-  background: #fffcf6;
-  padding: 8px 12px;
+  min-height: 48px;
+  border: 3px solid var(--rim);
+  border-radius: 999px;
+  background: var(--paper);
+  padding: 5px 10px 5px 5px;
   font-size: 14px;
-  box-shadow: 0 3px 6px #97672d0c;
+  font-weight: 800;
+  color: var(--ink-soft);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 5px 0 2px var(--ledge);
 }
 .feedback-controls svg {
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--sky-tint);
 }
+/* The island switch: a sunken track and a ringed handle, leaf green when on. */
 .switch {
   appearance: none;
-  width: 41px;
-  height: 24px;
-  border-radius: 20px;
-  background: #dbcfbb;
-  border: 1px solid #c5b498;
+  width: 52px;
+  height: 30px;
+  border-radius: 999px;
+  background: #e8dcc3;
+  border: 2.5px solid #95805f;
+  box-shadow: inset 0 2px 4px #725d4226;
   position: relative;
   cursor: pointer;
   flex-shrink: 0;
   margin: 0;
-  transition: background 0.2s;
+  transition:
+    background 0.25s var(--ease),
+    border-color 0.25s var(--ease);
 }
 .switch:before {
   content: "";
+  box-sizing: border-box;
   position: absolute;
-  left: 2px;
-  top: 2px;
-  width: 18px;
-  height: 18px;
+  left: 1px;
+  top: 50%;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  background: #fffdf8;
-  box-shadow: 0 1px 2px #946c2940;
-  transition: transform 0.2s;
+  background: var(--paper);
+  border: 2.5px solid #95805f;
+  transform: translateY(-50%);
+  transition:
+    transform 0.25s var(--ease),
+    border-color 0.25s var(--ease);
 }
 .switch:checked {
-  background: #ffda4e;
-  border-color: #ffc126;
+  background: #86d67a;
+  border-color: var(--leaf-ledge);
+  box-shadow: inset 0 2px 4px #5a9e1e33;
 }
 .switch:checked:before {
-  transform: translateX(17px);
+  border-color: var(--leaf-ledge);
+  transform: translate(22px, -50%);
 }
 .ritual-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  color: #b09b83;
+  color: var(--ink-soft);
   font-size: 13px;
+  font-weight: 700;
   margin-top: 27px;
 }
 .ritual-footer span {
   width: 45px;
-  height: 1px;
-  background: #dbcbb2;
+  height: 4px;
+  background: radial-gradient(circle, var(--leaf-ledge) 1.6px, transparent 2.1px)
+    0 50% / 8px 4px repeat-x;
 }
 .object-bounce {
   animation: bounce 0.22s ease-out;
@@ -1247,8 +1627,9 @@ button:hover:not(:disabled) {
 }
 .completion > h1 {
   font-size: 33px;
-  font-weight: 850;
+  font-weight: 900;
   line-height: 1.45;
+  text-shadow: 0 3px 0 #ffffffb3;
 }
 .completion > .page-subtitle {
   font-size: 16px;
@@ -1260,17 +1641,18 @@ button:hover:not(:disabled) {
   padding-top: 15px;
   background: repeating-conic-gradient(
     from -18deg at 50% 90%,
-    #ffeb952d 0 8deg,
-    transparent 8deg 17deg
+    #ffe58f80 0 8deg,
+    #ffffff4d 8deg 17deg
   );
   mask-image: linear-gradient(transparent, #000 15%, #000 94%, transparent);
 }
 .reward-number {
-  color: #a65e0a;
+  color: #a2471a;
   font-size: 32px;
-  font-weight: 850;
+  font-weight: 900;
   transform: rotate(-5deg);
   padding: 2px 0;
+  text-shadow: 0 3px 0 #ffffff;
 }
 .reward-number strong {
   font-size: 60px;
@@ -1280,64 +1662,72 @@ button:hover:not(:disabled) {
 .celebration .art {
   position: relative;
   margin-top: 2px;
+  margin-bottom: 16px;
 }
 .title-badge {
   display: inline-block;
-  border: 1px solid #d8ac64;
-  outline: 1px dashed #d8ac64;
-  outline-offset: -5px;
-  background: #fff0cd;
-  padding: 12px 20px;
+  border: 3px solid var(--rim);
+  outline: 2px dashed var(--peach-ledge);
+  outline-offset: -8px;
+  background: var(--peach-tint);
+  padding: 12px 22px;
   border-radius: 22px;
   font-size: 18px;
-  color: #9b5b17;
+  font-weight: 800;
+  color: #8a3b17;
   transform: rotate(-4deg);
   margin-bottom: 15px;
+  box-shadow:
+    0 0 0 2px #f6c7b2,
+    0 5px 0 2px var(--peach-ledge);
 }
 .completion-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 17px 0;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: #fffcf5;
-  box-shadow: 0 3px 7px #ad86530d;
-  margin: 10px 0 14px;
+  border: 3px solid var(--rim);
+  border-radius: 24px;
+  background: var(--sand);
+  box-shadow: var(--panel-shadow);
+  margin: 10px 0 20px;
 }
 .completion-stats > div + div {
-  border-left: 1px solid #e7d7bd;
+  border-left: 3px dotted var(--edge);
 }
 .completion-stats span {
   display: block;
   font-size: 14px;
-  color: #8d7760;
+  font-weight: 700;
+  color: var(--muted);
 }
 .completion-stats strong {
   display: block;
   font-size: 32px;
   line-height: 1.4;
-  font-weight: 800;
+  font-weight: 900;
 }
 .completion-stats small {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .completion > .button {
-  margin-bottom: 11px;
+  margin-bottom: 16px;
 }
 .completion .leaf-footer {
   margin-top: 13px;
 }
 .share-panel {
-  background: #fffcf5;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 13px;
+  background: var(--sand);
+  border: 3px solid var(--rim);
+  border-radius: 22px;
+  padding: 14px;
   text-align: left;
   margin-top: 12px;
+  box-shadow: var(--panel-shadow);
 }
 .share-panel label {
   font-size: 13px;
+  font-weight: 700;
   display: block;
   margin-bottom: 8px;
 }
@@ -1349,75 +1739,108 @@ button:hover:not(:disabled) {
   height: 44px;
   display: grid;
   place-items: center;
-  border: 1px solid #ffcc49;
-  background: #ffde68;
+  border: 3px solid var(--rim);
+  background: linear-gradient(180deg, var(--butter-hi), var(--butter));
   border-radius: 50%;
+  color: var(--ink);
+  box-shadow:
+    0 0 0 2px #f2d98a,
+    0 4px 0 2px var(--butter-ledge);
+}
+.round-button:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 2px #f2d98a,
+    0 1px 0 2px var(--butter-ledge);
+}
+.round-button svg {
+  stroke-width: 2.8;
 }
 .count-pill {
   font-size: 12px;
-  color: #967c53;
-  background: #fff0cf;
-  border: 1px solid #ecd8b2;
-  border-radius: 20px;
-  padding: 6px 10px;
+  font-weight: 800;
+  color: var(--ink-soft);
+  background: var(--butter-tint);
+  border: 2.5px solid var(--rim);
+  border-radius: 999px;
+  padding: 5px 12px;
   white-space: nowrap;
+  /* A read-only counter: a ring, no ledge (ledges mean "tap me"). */
+  box-shadow: 0 0 0 2px #f2d98a;
 }
 .wish-hero {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: #fff2da;
-  border: 1px solid #efdfc4;
-  border-radius: 18px;
-  padding: 10px;
+  gap: 10px;
+  background:
+    radial-gradient(#ffcfdb 2px, transparent 2.6px) 0 0 / 18px 18px,
+    var(--bubblegum-tint);
+  border: 3px solid var(--rim);
+  border-radius: var(--radius-panel);
+  padding: 10px 14px 10px 10px;
   margin-top: 8px;
+  box-shadow:
+    inset 0 3px 0 #ffffffd9,
+    0 0 0 2px #f7c3d1,
+    0 6px 0 2px #f0a6bb;
 }
 .wish-hero > .art {
   flex: 0 0 82px;
 }
 .wish-hero h2 {
   font-size: 17px;
+  font-weight: 900;
 }
 .wish-hero p {
-  font-size: 12px;
-  color: #a18a6c;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
   margin-top: 4px;
 }
+/* Segmented filter: a rimmed track with a mint candy for the current one. */
 .filter-row {
   display: flex;
-  gap: 8px;
-  padding: 4px;
-  background: #f3ecde;
-  border-radius: 14px;
-  margin: 20px 0 15px;
+  gap: 6px;
+  padding: 5px;
+  background: var(--paper);
+  border: 3px solid var(--rim);
+  border-radius: 999px;
+  margin: 22px 0 18px;
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 5px 0 2px var(--ledge);
 }
 .filter-row button {
   flex: 1;
   background: none;
   min-height: 44px;
-  border-radius: 12px;
+  border-radius: 999px;
   font-size: 14px;
-  color: #a08b71;
+  font-weight: 800;
+  color: var(--muted);
 }
 .filter-row .selected {
-  background: #ffe087;
-  color: #5c3917;
-  box-shadow: 0 2px 4px #b4872722;
+  background: linear-gradient(180deg, var(--mint-hi), var(--mint));
+  color: var(--mint-ink);
+  box-shadow:
+    inset 0 2px 0 #ffffff80,
+    0 3px 0 var(--mint-ledge);
 }
 .wish-list {
   display: grid;
-  gap: 12px;
+  gap: 16px;
 }
 .wish-card {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: #fffcf6;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 14px 10px;
+  gap: 10px;
+  background: var(--sand);
+  border: 3px solid var(--rim);
+  border-radius: 24px;
+  padding: 12px 12px 12px 10px;
   text-align: left;
   width: 100%;
+  box-shadow: var(--panel-shadow);
 }
 .wish-card > .art {
   flex: 0 0 77px;
@@ -1429,114 +1852,161 @@ button:hover:not(:disabled) {
 .wish-card strong {
   display: block;
   font-size: 16px;
+  font-weight: 900;
   line-height: 1.6;
   margin: 7px 0;
   overflow-wrap: anywhere;
 }
 .wish-card small {
-  font-size: 11px;
-  color: #aa967c;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
 }
 .wish-card > .art + span .tag {
-  padding: 3px 8px;
-  font-size: 10px;
+  padding: 1px 9px 2px;
+  font-size: 11px;
 }
-.wish-card > svg {
-  width: 16px;
-  color: #bca385;
+.wish-card > svg,
+.wish-practice-card svg,
+.settings-row > svg {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--mint-ink);
+  box-shadow: 0 3px 0 var(--mint-ledge);
+  stroke-width: 2.8;
+}
+/* Panels that are buttons sink into their ledge when pressed. */
+.wish-card:active,
+.wish-practice-card:active,
+.scene-card:active,
+.collection-card:active {
+  transform: translateY(4px);
+  box-shadow: var(--panel-shadow-pressed);
 }
 .empty {
   text-align: center;
-  background: #fffcf488;
-  border: 1px dashed #e1cfb4;
-  border-radius: 18px;
-  padding: 35px 18px;
+  background: var(--paper);
+  border: 3px dashed #d9c49b;
+  border-radius: var(--radius-panel);
+  padding: 32px 18px;
   margin: 16px 0;
 }
 .empty > svg {
-  width: 32px;
-  height: 32px;
-  color: #9eae80;
-  margin-bottom: 14px;
+  width: 46px;
+  height: 46px;
+  padding: 9px;
+  border-radius: 50%;
+  background: var(--leaf-tint);
+  color: var(--leaf-ledge);
+  box-shadow: 0 3px 0 #bfe3ad;
+  margin-bottom: 12px;
 }
 .empty h3 {
   font-size: 16px;
+  font-weight: 900;
   line-height: 1.8;
 }
 .empty p {
   font-size: 13px;
-  color: #a18b72;
-  margin: 9px 0 17px;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 9px 0 18px;
 }
 .privacy-note {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  color: #b49e83;
-  font-size: 10px;
-  margin: 25px 0 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 600;
+  margin: 26px 0 0;
 }
 .privacy-note svg {
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
 }
+/* 小天地 as an island room: dotted mint wallpaper, sky window, plank floor. */
 .room {
-  height: 245px;
-  border: 1px solid #e9d9bc;
-  border-radius: 23px;
-  background: linear-gradient(125deg, #f7efdd, #eee1c7);
+  height: 260px;
+  border: 4px solid var(--rim);
+  border-radius: var(--radius-panel);
+  background:
+    radial-gradient(#ffffffa6 2px, transparent 2.6px) 0 0 / 20px 20px,
+    linear-gradient(180deg, #dcf6ef, #c3ecdf);
   position: relative;
   overflow: hidden;
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 6px 0 2px var(--ledge);
 }
 .room-window {
   position: absolute;
-  top: 21px;
-  left: 26px;
-  width: 73px;
-  height: 90px;
-  border: 6px solid #d6c399;
-  border-radius: 40px 40px 0 0;
-  background: #fff9db;
-  box-shadow: 30px 20px 35px #fff5ca80;
+  top: 22px;
+  left: 24px;
+  width: 78px;
+  height: 92px;
+  border: 6px solid var(--rim);
+  border-radius: 40px 40px 8px 8px;
+  background:
+    radial-gradient(ellipse 16px 8px at 30% 66%, #ffffffe6 92%, transparent),
+    radial-gradient(ellipse 11px 6px at 44% 60%, #ffffffe6 92%, transparent),
+    linear-gradient(180deg, #9fd7f5, #d8f0fb);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 4px 0 2px #b8e2d8;
 }
 .room-window:before {
   content: "";
   position: absolute;
   left: 50%;
   height: 100%;
-  width: 4px;
-  background: #d6c399;
+  width: 5px;
+  margin-left: -2.5px;
+  background: var(--rim);
 }
 .room-window:after {
   content: "";
   position: absolute;
   top: 55%;
   width: 100%;
-  height: 4px;
-  background: #d6c399;
+  height: 5px;
+  background: var(--rim);
 }
+/* A little wall plaque, clear of the shelf so the whole line shows. */
 .room-caption {
   position: absolute;
-  right: 20px;
-  top: 50px;
+  right: 14px;
+  top: 16px;
+  z-index: 2;
   writing-mode: vertical-rl;
+  padding: 12px 4px;
+  border: 2.5px solid var(--rim);
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 3px 0 2px #b8e2d8;
   font-size: 12px;
-  color: #ac9470;
-  letter-spacing: 4px;
+  font-weight: 800;
+  color: var(--ink-soft);
+  letter-spacing: 3px;
 }
 .room-shelf {
   position: absolute;
-  bottom: 52px;
+  bottom: 56px;
   left: 15px;
-  right: 15px;
+  right: 58px;
   height: 90px;
-  border-bottom: 8px solid #bda079;
+  border-bottom: 10px solid #c98f5a;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   z-index: 1;
-  box-shadow: 0 7px 8px #a2876433;
+  box-shadow: 0 4px 0 #9c6a3d;
 }
 .room-shelf button {
   width: 30%;
@@ -1544,147 +2014,202 @@ button:hover:not(:disabled) {
   padding: 0;
 }
 .empty-shelf {
-  font-size: 11px;
-  color: #ac946d;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-soft);
   margin-bottom: 18px;
+  text-align: center;
 }
 .room-floor {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50px;
-  background: #e4ceaa;
+  height: 52px;
+  border-top: 4px solid #c98f5a;
+  background: repeating-linear-gradient(
+    90deg,
+    #e8b783 0 46px,
+    #d9a26c 46px 49px
+  );
+}
+/* A round rug on the planks. */
+.room-floor::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 9px;
+  width: 168px;
+  height: 28px;
+  margin-left: -84px;
+  border-radius: 50%;
+  border: 3px dashed var(--bubblegum-ledge);
+  background: var(--bubblegum-tint);
+  box-shadow: 0 0 0 4px var(--bubblegum-tint);
 }
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 .collection-card {
-  border: 1px solid var(--line);
-  border-radius: 17px;
-  background: #fffaf0;
+  border: 3px solid var(--rim);
+  border-radius: var(--radius-tile);
+  background: var(--sand);
   padding: 9px 6px 13px;
   min-width: 0;
+  box-shadow: var(--panel-shadow);
 }
 .collection-card strong,
 .collection-card small {
   display: block;
 }
 .collection-card strong {
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 800;
   margin-top: 6px;
 }
 .collection-card small {
-  font-size: 10px;
-  color: #b09a79;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
   margin-top: 5px;
 }
 .profile {
   text-align: center;
-  padding: 13px 0 25px;
+  padding: 8px 0 24px;
 }
 .avatar {
   display: grid;
   place-items: center;
-  width: 74px;
-  height: 74px;
-  border: 5px solid #fff4d4;
+  width: 86px;
+  height: 86px;
+  border: 5px solid var(--rim);
   border-radius: 50%;
-  background: #ffde77;
-  margin: 0 auto 14px;
-  box-shadow: 0 0 0 1px #ecd39d;
-  color: #806126;
+  background: radial-gradient(circle at 36% 30%, var(--leaf-hi), var(--leaf));
+  margin: 0 auto 16px;
+  box-shadow:
+    0 0 0 3px var(--edge),
+    0 6px 0 3px var(--leaf-ledge);
+  color: #24501a;
 }
 .avatar svg {
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
+  stroke-width: 2.2;
 }
 .profile h2 {
-  font-size: 21px;
-  font-weight: 750;
+  font-size: 22px;
+  font-weight: 900;
+  text-shadow: 0 3px 0 #ffffffb3;
 }
 .profile p {
-  font-size: 13px;
-  color: #a68b6e;
-  margin-top: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-top: 6px;
 }
+/* Three candy counters instead of one ruled box. */
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: #fffcf6;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 20px 0;
+  gap: 12px;
 }
 .stats > div {
   text-align: center;
-  border-right: 1px solid #ecdcc3;
+  padding: 14px 4px 12px;
+  border: 3px solid var(--rim);
+  border-radius: 24px;
+  background: var(--butter-tint);
+  box-shadow:
+    inset 0 3px 0 #ffffffd9,
+    0 0 0 2px #f2d98a,
+    0 5px 0 2px var(--butter-ledge);
 }
-.stats > div:last-child {
-  border: 0;
+.stats > div:nth-child(2) {
+  background: var(--peach-tint);
+  box-shadow:
+    inset 0 3px 0 #ffffffd9,
+    0 0 0 2px #f6c7b2,
+    0 5px 0 2px var(--peach-ledge);
+}
+.stats > div:nth-child(3) {
+  background: var(--sky-tint);
+  box-shadow:
+    inset 0 3px 0 #ffffffd9,
+    0 0 0 2px #b4dcf3,
+    0 5px 0 2px var(--sky-ledge);
 }
 .stats strong {
   display: block;
-  font-size: 29px;
-  font-weight: 800;
-  color: #765023;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.3;
+  color: var(--ink);
 }
 .stats span {
-  font-size: 11px;
-  color: #aa9274;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
   display: block;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .settings-card {
-  background: #fffcf6;
-  border: 1px solid var(--line);
-  border-radius: 18px;
+  background: var(--sand);
+  border: 3px solid var(--rim);
+  border-radius: var(--radius-panel);
   padding: 0 16px;
-  margin-top: 22px;
+  margin-top: 26px;
+  box-shadow: var(--panel-shadow);
 }
 .settings-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 73px;
-  border-bottom: 1px solid #efe3d1;
+  min-height: 70px;
+  /* Button rows and switch rows share one inset (no UA button padding). */
+  padding: 0 2px;
+  border-bottom: 2.5px dashed #e6d4ae;
   background: none;
   width: 100%;
   text-align: left;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
 }
 .settings-row:last-child {
   border: 0;
 }
 .settings-row small {
   display: block;
-  font-size: 11px;
-  color: #b09c80;
-  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-top: 4px;
 }
 .local-note {
   display: flex;
   gap: 11px;
-  color: #ad997d;
-  margin: 23px 2px;
+  color: var(--ink-soft);
+  margin: 26px 2px 22px;
 }
 .local-note > svg {
   width: 18px;
 }
 .local-note strong {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 800;
 }
 .local-note p {
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 600;
   margin-top: 5px;
   line-height: 1.8;
 }
 .footnote {
   text-align: center;
-  color: #b29b80;
-  font-size: 11px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 600;
   line-height: 2;
   margin: 22px 0 0;
 }
@@ -1694,50 +2219,57 @@ button:hover:not(:disabled) {
   margin: 20px 0;
 }
 .timeline li {
-  border-left: 1px solid #e1cfb2;
+  border-left: 3px dotted #8fcfbf;
   padding: 0 0 24px 21px;
   position: relative;
 }
 .timeline li:before {
   content: "";
-  width: 7px;
-  height: 7px;
-  background: #d3b278;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  background: var(--butter);
+  border: 2px solid var(--rim);
   position: absolute;
-  left: -4px;
-  top: 4px;
+  left: -8.5px;
+  top: 2px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--cream);
+  box-shadow: 0 2px 0 var(--butter-ledge);
 }
 .timeline li:last-child {
   border-color: transparent;
 }
 .timeline small {
-  font-size: 11px;
-  color: #b29979;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-soft);
 }
 .timeline h3 {
   margin-top: 7px;
 }
 .timeline p {
   font-size: 13px;
-  color: #9e8464;
+  color: var(--ink-soft);
   margin-top: 6px;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 .error-banner {
   margin: 8px 16px;
-  padding: 10px 12px;
-  border: 1px solid #e2b385;
-  border-radius: 12px;
-  background: #fff1df;
-  color: #90613a;
+  padding: 10px 14px;
+  border: 3px solid var(--rim);
+  border-radius: 20px;
+  background: var(--peach-tint);
+  color: #8a3b17;
   display: flex;
   gap: 8px;
   align-items: center;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 700;
   line-height: 1.7;
+  box-shadow:
+    0 0 0 2px #f6c7b2,
+    0 4px 0 2px var(--peach-ledge);
 }
 .error-banner span {
   flex: 1;
@@ -1747,24 +2279,31 @@ button:hover:not(:disabled) {
   white-space: nowrap;
   padding: 8px;
   text-decoration: underline;
+  font-weight: 800;
 }
 .loading-screen {
   min-height: 100dvh;
   max-width: 430px;
-  background: var(--cream);
+  background: var(--dots), var(--island);
   padding: 24vh 26px 40px;
   text-align: center;
   margin: auto;
 }
 .loading-screen > svg {
-  width: 45px;
-  height: 45px;
-  color: #a99155;
+  width: 56px;
+  height: 56px;
+  padding: 10px;
+  border: 3px solid var(--rim);
+  border-radius: 50%;
+  background: var(--leaf);
+  color: #24501a;
+  box-shadow: 0 4px 0 var(--leaf-ledge);
   margin-bottom: 25px;
 }
 .loading-screen .eyebrow {
   font-size: 13px;
-  color: #b2946b;
+  font-weight: 700;
+  color: var(--ink-soft);
   margin-bottom: 9px;
 }
 .loading-screen h1 {
@@ -1772,7 +2311,8 @@ button:hover:not(:disabled) {
 }
 .loading-screen > p:not(.eyebrow) {
   font-size: 13px;
-  color: #ab9274;
+  font-weight: 600;
+  color: var(--ink-soft);
   margin: 12px 0 23px;
 }
 .sr-only {
@@ -1826,54 +2366,72 @@ button:hover:not(:disabled) {
   }
 }
 @media (min-width: 1000px) {
+  /* The phone is a chunky handheld resting on the island table. */
   .app-shell {
     margin: 28px max(9%, calc((100vw - 1060px) / 2)) 28px auto;
     min-height: calc(100dvh - 56px);
-    border: 1px solid #e9dcc3;
-    outline: 8px solid #fcf6e9;
-    border-radius: 31px;
+    border: 6px solid var(--rim);
+    border-radius: 40px;
     overflow: hidden;
+    box-shadow:
+      0 0 0 3px var(--edge),
+      0 12px 0 3px #7fc4b3,
+      0 30px 60px #0b5a5240;
   }
   .bottom-nav {
-    width: 428px;
-    border-radius: 0 0 30px 30px;
-    bottom: 28px;
+    width: 394px;
+    margin-left: 12px;
+    bottom: 46px;
+    border-radius: 28px;
   }
   .desktop-note {
     display: block;
     position: fixed;
     left: max(9%, calc((100vw - 1060px) / 2));
     top: 29%;
-    color: #62421e;
+    color: var(--ink);
   }
   .desktop-note .brand-mark {
     display: grid;
     place-items: center;
-    width: 66px;
-    height: 66px;
-    font-size: 36px;
-    font-weight: 850;
-    border: 1px solid #e9c76d;
-    border-radius: 19px;
-    background: #ffe386;
-    margin-bottom: 23px;
+    width: 72px;
+    height: 72px;
+    font-size: 38px;
+    font-weight: 900;
+    border: 4px solid var(--rim);
+    border-radius: 24px;
+    background: linear-gradient(180deg, var(--butter-hi), var(--butter));
+    box-shadow:
+      inset 0 3px 0 #ffffff8c,
+      0 0 0 2px #f2d98a,
+      0 7px 0 2px var(--butter-ledge);
+    margin-bottom: 26px;
   }
   .desktop-note strong {
-    font-size: 36px;
-    font-weight: 850;
+    font-size: 38px;
+    font-weight: 900;
     letter-spacing: 3px;
+    text-shadow: 0 4px 0 #ffffffb3;
   }
   .desktop-note p {
     font-size: 18px;
-    color: #a48966;
+    font-weight: 700;
+    color: var(--ink-soft);
     line-height: 2;
     margin: 23px 0;
     letter-spacing: 2px;
   }
   .desktop-note > span:last-child {
-    font-size: 9px;
+    display: inline-block;
+    padding: 4px 14px;
+    border: 2.5px solid var(--rim);
+    border-radius: 999px;
+    background: var(--mint-tint);
+    font-size: 11px;
+    font-weight: 800;
     letter-spacing: 2px;
-    color: #b6a080;
+    color: var(--mint-ink);
+    box-shadow: 0 3px 0 #8fcfbf;
   }
   .save-status {
     right: max(10%, calc((100vw - 1060px) / 2));
@@ -1896,7 +2454,7 @@ button:hover:not(:disabled) {
     font-size: 27px;
   }
   .merit-pill {
-    padding: 6px 8px;
+    padding: 2px 8px 2px 2px;
     font-size: 11px;
   }
   .merit-pill b {
@@ -1925,7 +2483,7 @@ button:hover:not(:disabled) {
     gap: 8px;
   }
   .feedback-controls label {
-    padding: 8px 9px;
+    padding: 5px 8px 5px 5px;
     gap: 6px;
   }
   .completion > h1 {
@@ -1945,11 +2503,13 @@ button:hover:not(:disabled) {
   clip-path: polygon(0 8%, 42% 8%, 42% 0, 100% 0, 100% 100%, 0 100%);
 }
 .return-summary.method-ritual svg {
-  color: #8da271;
-  fill: #8da271;
+  color: var(--leaf-ledge);
+  fill: var(--leaf-ledge);
 }
 
-/* Shared scene interactions, including the Expo DOM host. */
+/* Shared scene interactions, including the Expo DOM host. The labels and
+   controls are island HUD pieces with their own grounds, so they read on the
+   day stage, the night stage and the older scenes' own dark canvas alike. */
 .scene-canvas {
   display: block;
   width: 100%;
@@ -1975,86 +2535,121 @@ button:hover:not(:disabled) {
   pointer-events: none;
 }
 
+/* A name plate. */
 .scene-title {
   position: absolute;
   left: 12px;
   top: 48px;
-  font-size: 18px;
-  font-weight: 600;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  max-width: calc(100% - 24px);
+  padding: 3px 14px 4px;
+  border: 2.5px solid var(--rim);
+  border-radius: 999px;
+  background: #fffcf2eb;
+  box-shadow: 0 3px 0 #0b5a5233;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 800;
   pointer-events: none;
 }
 
 .scene-step-dots {
   position: absolute;
   left: 50%;
-  bottom: 28px;
+  bottom: 16px;
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+  padding: 5px 9px;
+  border: 2px solid var(--rim);
+  border-radius: 999px;
+  background: #fffcf2d9;
   pointer-events: none;
 }
 
 .scene-step-dot {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: #3a4a5c;
-  border: 1px solid #6a7a8c;
-  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease,
-    transform 0.3s ease;
+  background: #efe2c6;
+  border: 2px solid #c4ad80;
+  transition:
+    background 0.3s var(--ease),
+    border-color 0.3s var(--ease),
+    box-shadow 0.3s var(--ease),
+    transform 0.3s var(--ease);
 }
 
 .scene-step-dot[data-state='active'] {
-  background: #7ec8ff;
-  border-color: #a8dcff;
-  box-shadow: 0 0 8px rgba(126, 200, 255, 0.7);
+  background: var(--peach);
+  border-color: var(--peach-ledge);
+  box-shadow: 0 0 0 3px #ffb08f59;
   transform: scale(1.15);
 }
 
 .scene-step-dot[data-state='done'] {
-  background: #5a8f6a;
-  border-color: #8fcf9f;
+  background: var(--leaf);
+  border-color: var(--leaf-ledge);
 }
 
+/* A speech bubble; two lines at 390px still clear the action button. */
 .scene-hint {
   position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: 56px;
+  left: 14px;
+  right: 14px;
+  bottom: 50px;
   text-align: center;
-  font-size: 14px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 6px 12px;
+  border: 2.5px solid var(--rim);
+  border-radius: 18px;
+  background: #fffcf2f0;
+  color: var(--ink-soft);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 4px 0 2px #0b5a5226;
   pointer-events: none;
-  animation: scene-fade-in 0.4s ease;
+  animation: scene-fade-in 0.4s var(--ease);
 }
 
+/* The scene's action is a chunky mint press button. */
 .scene-bow-tap {
   position: absolute;
   left: 50%;
-  bottom: 100px;
+  bottom: 116px;
   transform: translateX(-50%);
-  padding: 10px 18px;
-  border-radius: 8px;
-  border: 1px solid #3a7bd5;
-  background: #1a3a66;
-  color: #e8eef6;
+  min-height: 48px;
+  padding: 8px 24px;
+  border-radius: 999px;
+  border: 3px solid #d4f8f2;
+  background: linear-gradient(180deg, var(--mint-hi), var(--mint));
+  color: var(--mint-ink);
   font: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  white-space: nowrap;
   cursor: pointer;
-  box-shadow: 0 0 0 rgba(126, 200, 255, 0);
-  transition: background 0.2s ease, box-shadow 0.2s ease;
-  animation: scene-fade-in 0.4s ease;
+  box-shadow:
+    inset 0 3px 0 #ffffff8c,
+    0 5px 0 var(--mint-ledge),
+    0 8px 12px #0b5a5233;
+  transition:
+    filter 0.15s var(--ease),
+    box-shadow 0.15s var(--ease),
+    transform 0.15s var(--ease);
+  animation: scene-fade-in 0.4s var(--ease);
 }
 
 .scene-bow-tap:hover {
-  background: #24508a;
-  box-shadow: 0 0 14px rgba(126, 200, 255, 0.45);
+  filter: brightness(1.04);
 }
 
 .scene-bow-tap:active {
-  transform: translateX(-50%) scale(0.96);
+  transform: translateX(-50%) translateY(4px);
+  box-shadow:
+    inset 0 3px 0 #ffffff8c,
+    0 1px 0 var(--mint-ledge);
 }
 
 /* A step still under way (a crane fold): the button waits and taps are ignored. */
@@ -2082,11 +2677,11 @@ button:hover:not(:disabled) {
 .scene-wish-slot {
   position: absolute;
   left: 50%;
-  /* Above the action button (bottom: 100px) so both stay tappable. */
-  bottom: 152px;
+  /* Above the action button (bottom: 116px) so both stay tappable. */
+  bottom: 178px;
   transform: translateX(-50%);
   width: min(320px, calc(100% - 24px));
-  animation: scene-fade-in 0.4s ease;
+  animation: scene-fade-in 0.4s var(--ease);
 }
 
 .scene-wish-slot form {
@@ -2099,39 +2694,59 @@ button:hover:not(:disabled) {
   flex: 1;
   min-width: 0;
   min-height: 44px;
-  padding: 8px 14px;
-  border-radius: 22px;
-  border: 1px solid #3a4a5c;
-  background: #15202b;
-  color: #e8eef6;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 2.5px solid var(--edge);
+  background: var(--paper);
+  color: var(--ink);
   font: inherit;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  /* 16px or more: iOS zooms the page into smaller text fields on focus. */
+  font-size: 16px;
+  box-shadow: 0 3px 0 #d4c9b4;
+  transition:
+    border-color 0.2s var(--ease),
+    box-shadow 0.2s var(--ease);
 }
 
 .scene-wish-slot input:focus {
   outline: none;
-  border-color: #7ec8ff;
-  box-shadow: 0 0 10px rgba(126, 200, 255, 0.4);
+  border-color: var(--mint-ledge);
+  box-shadow:
+    0 3px 0 var(--mint-ledge),
+    0 0 0 3px var(--focus);
 }
 
 .scene-wish-slot button {
-  padding: 8px 18px;
-  border-radius: 22px;
-  font-weight: 650;
-  border: 1px solid #3a7bd5;
-  background: #1a3a66;
-  color: #e8eef6;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 3px solid #d4f8f2;
+  background: linear-gradient(180deg, var(--mint-hi), var(--mint));
+  color: var(--mint-ink);
   font: inherit;
+  font-weight: 800;
   cursor: pointer;
-  transition: background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow:
+    inset 0 3px 0 #ffffff8c,
+    0 4px 0 var(--mint-ledge);
+  transition:
+    filter 0.15s var(--ease),
+    box-shadow 0.15s var(--ease),
+    transform 0.15s var(--ease);
 }
 
 .scene-wish-slot button:hover {
-  background: #24508a;
-  box-shadow: 0 0 14px rgba(126, 200, 255, 0.45);
+  filter: brightness(1.04);
 }
 
-/* Under the box: the note (or a nudge after an empty submit) and n/40. */
+.scene-wish-slot button:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset 0 3px 0 #ffffff8c,
+    0 1px 0 var(--mint-ledge);
+}
+
+/* Under the box: the note (or a nudge after an empty submit) and n/40. This
+   text sits on the canvas itself: light on the dark scenes. */
 .scene-wish-slot .wish-write-meta {
   flex-basis: 100%;
   display: flex;
@@ -2139,118 +2754,134 @@ button:hover:not(:disabled) {
   gap: 8px;
   padding: 0 14px;
   font-size: 12px;
+  font-weight: 700;
   line-height: 1.5;
-  color: #c9d6e4;
+  color: #f6f1e4;
+  text-shadow:
+    0 1px 2px #0b2232,
+    0 0 6px #0b2232;
 }
 
 .scene-wish-slot .wish-write-meta [data-nudge] {
   color: #ffd38a;
-  font-weight: 600;
+  font-weight: 800;
 }
-.library-scene-stage { position: relative; height: min(65vh, 540px); min-height: 360px; border-radius: 22px; overflow: hidden; background: var(--cream); color: var(--ink); }
-.library-scene-stage + .feedback-controls { margin-top: 14px; }
-.scene-discovery { padding: 20px; border: 1px solid #dedecb; border-radius: 22px; margin-bottom: 20px; background: #f1f2e6; display: grid; gap: 10px; }
-.scene-discovery h2 { margin: 8px 0; font-size: 21px; }
+/* The older dark scenes (泉边一念, 花水位一倾) paint their own night canvas. */
+.scene-overlay:not(.scene-overlay--cream) {
+  color: #f6f1e4;
+}
+/* Day stage: a soft sky fading to warm sand, so the cel-lit scenes keep the
+   warm ground their lights were tuned for, framed as a HUD panel. */
+.library-scene-stage { position: relative; isolation: isolate; height: min(65vh, 540px); min-height: 360px; border: 4px solid var(--rim); border-radius: 30px; overflow: hidden; background: radial-gradient(#ffffff99 1.8px, transparent 2.3px) 0 0 / 22px 22px, linear-gradient(180deg, #d9f1fb 0%, #eaf7f3 42%, #fbf3dc 76%, #f5e5c0 100%); box-shadow: 0 0 0 2px var(--edge), 0 7px 0 2px var(--ledge); color: var(--ink); }
+/* Island at night for the lantern scenes (心愿灯, 燃灯): deep teal-navy, soft
+   star dots, a low sea glow and a moon behind the transparent canvas. */
+.library-scene-stage[data-scene="lantern"],
+.library-scene-stage[data-scene="yeondeunghoe"] {
+  border-color: #2e6170;
+  box-shadow:
+    0 0 0 2px #0e2a3c,
+    0 7px 0 2px #0b2232;
+  background:
+    radial-gradient(circle at 14% 16%, var(--star) 0 1.6px, transparent 2.4px),
+    radial-gradient(circle at 33% 7%, var(--star) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 56% 19%, var(--star) 0 1.8px, transparent 2.6px),
+    radial-gradient(circle at 70% 34%, var(--star) 0 1.1px, transparent 1.9px),
+    radial-gradient(circle at 9% 41%, var(--star) 0 1.3px, transparent 2.1px),
+    radial-gradient(circle at 92% 46%, var(--star) 0 1.5px, transparent 2.3px),
+    radial-gradient(circle at 24% 58%, var(--star) 0 1px, transparent 1.8px),
+    radial-gradient(#ffffff1f 1.6px, transparent 2.1px) 0 0 / 24px 24px,
+    radial-gradient(ellipse 75% 32% at 50% 100%, #2f8a80b3, transparent 72%),
+    linear-gradient(180deg, var(--night) 0%, #17405a 55%, var(--night-low) 100%);
+  color: #f6f1e4;
+}
+.library-scene-stage[data-scene="lantern"]::before,
+.library-scene-stage[data-scene="yeondeunghoe"]::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 26px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 36%, #fffdf0, var(--moon) 62%, #f3cf6f);
+  box-shadow:
+    0 0 0 8px #fff3c41f,
+    0 0 34px 10px #ffe9a640;
+}
+.library-scene-stage + .feedback-controls { margin-top: 18px; }
+.scene-discovery { padding: 18px 18px 12px; border: 3px solid var(--rim); border-radius: var(--radius-panel); margin-bottom: 22px; background: radial-gradient(#c3e4f7 2px, transparent 2.6px) 0 0 / 20px 20px, var(--sky-tint); box-shadow: inset 0 3px 0 #ffffffd9, 0 0 0 2px #bfe0f3, 0 6px 0 2px #93c6e6; display: grid; gap: 10px; }
+.scene-discovery .eyebrow { justify-self: start; display: inline-block; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--sky); box-shadow: 0 3px 0 var(--sky-ledge); font-size: 13px; font-weight: 800; color: var(--ink); }
+.scene-discovery h2 { margin: 8px 0; font-size: 21px; font-weight: 900; }
 .scene-discovery p, .cache-manager p { line-height: 1.8; }
+.scene-discovery p { color: var(--ink-soft); font-weight: 600; }
 .ritual-narrative { position: static; margin: 4px 0 12px; }
-.ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; }
-.ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; }
-.scene-catalog { display: grid; gap: 12px; margin: 20px 0; }
-.scene-card { display: grid; text-align: left; padding: 20px; gap: 8px; border-radius: 16px; border: 1px solid #e1ddcd; background: #fffdf6; color: #514837; cursor: pointer; }
-.scene-card small { color: #817965; }
-.scene-search, .cache-manager label { display: grid; gap: 12px; margin: 20px 0; }
-.scene-search input, .cache-manager select { min-height: 44px; border: 1px solid #c7c8b4; border-radius: 10px; padding: 8px; background: #fffdf6; color: #514837; font: inherit; }
-.cache-usage { display: block; font-size: 24px; margin-top: 24px; }
-.scene-download, .scene-load-error { padding: 24px; border: 1px solid #dedecb; border-radius: 18px; display: grid; gap: 20px; }
+.ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-weight: 800; color: var(--mint-text); }
+.ritual-narrative > summary::-webkit-details-marker { display: none; }
+/* A mint chevron bubble that turns when the story opens. */
+.ritual-narrative > summary::before { content: ""; width: 24px; height: 24px; border-radius: 50%; background: var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23064a43' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 5 7 7-7 7'/%3E%3C/svg%3E") center / 13px no-repeat; box-shadow: 0 3px 0 var(--mint-ledge); transition: transform 0.2s var(--ease); }
+.ritual-narrative[open] > summary::before { transform: rotate(90deg); }
+.ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; padding: 12px 14px; border: 3px solid var(--rim); border-radius: 20px; background: var(--paper); box-shadow: 0 0 0 2px var(--edge); color: var(--ink-soft); }
+.scene-catalog { display: grid; gap: 16px; margin: 20px 0; }
+.scene-card { display: grid; text-align: left; padding: 16px 20px; gap: 6px; border-radius: 24px; border: 3px solid var(--rim); background: var(--sand); color: var(--ink); cursor: pointer; box-shadow: var(--panel-shadow); }
+.scene-card small { color: var(--muted); font-weight: 600; }
+.scene-search, .cache-manager label { display: grid; gap: 12px; margin: 20px 0; font-weight: 700; }
+.scene-search input, .cache-manager select { min-height: 48px; border: 2.5px solid var(--edge); border-radius: 999px; padding: 8px 16px; background: var(--paper); color: var(--ink); font: inherit; font-size: 16px; box-shadow: 0 3px 0 #d4c9b4; }
+.cache-usage { display: block; font-size: 24px; font-weight: 900; margin-top: 24px; }
+.scene-download, .scene-load-error { padding: 24px; border: 3px solid var(--rim); border-radius: 24px; display: grid; gap: 20px; background: var(--sand); box-shadow: var(--panel-shadow); }
 /* A long detail (an English message, a URL) wraps inside the card instead of
    widening it, so 重试打开 stays on screen. */
 .scene-load-error { grid-template-columns: minmax(0, 1fr); overflow-wrap: anywhere; }
-.scene-load-error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13px; color: #817965; }
-.scene-download progress { width: 100%; }
+.scene-load-error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13px; color: var(--muted); }
+.scene-download progress { width: 100%; accent-color: var(--mint-ledge); }
 /* 已存进心愿 once a scene's wish box keeps a line: empty (no height) until then. */
-.scene-wish-saved { display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; margin: 0; color: #696d53; }
-.scene-experience h1 { font-size: 26px; }
-.scene-experience .woodfish-object { width: 100%; height: 340px; }
-.scene-progress { color: #696d53; }
+.scene-wish-saved { display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; margin: 0; color: var(--mint-text); font-weight: 700; }
+.scene-experience h1 { font-size: 26px; text-shadow: 0 3px 0 #ffffffb3; }
+.scene-experience .woodfish-object { width: 100%; height: 340px; border: 4px solid var(--rim); border-radius: 30px; background: radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px, var(--sand); box-shadow: 0 0 0 2px var(--edge), 0 7px 0 2px var(--ledge); }
+/* A small HUD counter. */
+.scene-progress { display: inline-block; margin: 2px 0 14px; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--butter-tint); box-shadow: 0 0 0 2px #f2d98a; color: var(--ink-soft); font-weight: 800; }
 .library-scene-stage [hidden] { display: none !important; }
 
-/* C-grade scenes: transparent canvas on the cream page (like the woodfish), so
-   the overlay is ink-on-paper instead of the dark-scene glass. */
+/* C-grade scenes: transparent canvas over the island stage (like the woodfish). */
 /* The page scrolls from empty stage areas; a touch that starts on the scene's
    object is claimed in JS (claimObjectTouches), so its gestures still work. */
 .scene-overlay--cream .scene-hit-layer {
   touch-action: manipulation;
 }
-.scene-overlay--cream .scene-title {
-  color: var(--ink);
-  text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);
-}
-.scene-overlay--cream .scene-step-dot {
-  background: #efe4d2;
-  border-color: #d9c7ad;
-}
-.scene-overlay--cream .scene-step-dot[data-state='active'] {
-  background: #f0a86c;
-  border-color: #d98a4e;
-  box-shadow: 0 0 0 3px #f0a86c33;
-}
-.scene-overlay--cream .scene-step-dot[data-state='done'] {
-  background: var(--green);
-  border-color: #6f8457;
-}
-.scene-overlay--cream .scene-hint {
-  color: #5a3a24;
-  background: #fffcf6e0;
-  border: 1px solid var(--line);
-  box-shadow: 0 3px 6px #97672d14;
-}
-.scene-overlay--cream .scene-bow-tap {
-  min-height: 44px;
-  border: 1px solid #e9ddca;
-  border-radius: 22px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: 0 3px 8px #97672d1f;
-}
-.scene-overlay--cream .scene-bow-tap:hover {
-  background: #fff6e4;
-  box-shadow: 0 4px 12px #97672d2e;
-}
-.scene-overlay--cream .scene-wish-slot input {
-  border-color: #e0d2bc;
-  background: var(--paper);
-  color: var(--ink);
-}
-.scene-overlay--cream .scene-wish-slot input:focus {
-  border-color: #f0a86c;
-  box-shadow: 0 0 0 3px #f0a86c33;
-}
-/* The submit capsule matches the app's primary button. */
-.scene-overlay--cream .scene-wish-slot button {
-  border-color: #ffc530;
-  background: linear-gradient(#ffe77a, #ffda4a);
-  box-shadow:
-    inset 0 1px 0 #fff4b7,
-    0 4px 6px #bc8a261a;
-  color: #352000;
-}
-.scene-overlay--cream .scene-wish-slot button:hover {
-  background: linear-gradient(#ffe98a, #ffdc58);
-  box-shadow:
-    inset 0 1px 0 #fff4b7,
-    0 4px 10px #bc8a2629;
-}
+/* On the bright day stage the note under the wish box is ink on paper. */
 .scene-overlay--cream .scene-wish-slot .wish-write-meta {
-  color: #8a6f57;
+  color: var(--ink-soft);
   text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);
 }
 .scene-overlay--cream .scene-wish-slot .wish-write-meta [data-nudge] {
-  color: #b0562b;
+  color: #a2471a;
+}
+/* …and light again on the night stage. */
+.library-scene-stage[data-scene="lantern"] .scene-wish-slot .wish-write-meta,
+.library-scene-stage[data-scene="yeondeunghoe"] .scene-wish-slot .wish-write-meta {
+  color: #f6f1e4;
+  text-shadow: 0 1px 2px #0b2232, 0 0 6px #0b2232;
+}
+.library-scene-stage[data-scene="lantern"] .scene-wish-slot .wish-write-meta [data-nudge],
+.library-scene-stage[data-scene="yeondeunghoe"] .scene-wish-slot .wish-write-meta [data-nudge] {
+  color: #ffd38a;
 }
 
 .practice-card {
-  background: linear-gradient(180deg, #f7f1e6 0%, #f3ebe0 100%);
-  border-color: #e8dcc8;
+  background:
+    radial-gradient(#ffd6c4 2px, transparent 2.6px) 0 0 / 18px 18px,
+    var(--peach-tint);
+  box-shadow:
+    inset 0 3px 0 #ffffffd9,
+    0 0 0 2px #f6c7b2,
+    0 6px 0 2px #eda98c;
+}
+.practice-card .tag {
+  background: var(--peach);
+  box-shadow: 0 3px 0 var(--peach-ledge);
+}
+.practice-card .daily-copy p {
+  color: var(--ink-soft);
 }
 .ritual-tile-glyph {
   display: grid;
@@ -2260,56 +2891,113 @@ button:hover:not(:disabled) {
   line-height: 1;
 }
 .wish-practice {
-  margin: 4px 0 18px;
+  margin: 8px 0 18px;
   display: grid;
   gap: 10px;
 }
 .wish-practice-blurb {
   margin: 0;
   font-size: 13px;
-  color: #8a7660;
+  font-weight: 600;
+  color: var(--ink-soft);
   line-height: 1.6;
 }
 .wish-practice-grid {
   display: grid;
-  gap: 10px;
+  gap: 16px;
 }
+/* Each practice gets a candy badge, like an app on the island phone. */
 .wish-practice-card {
+  --badge: var(--sky);
+  --badge-hi: var(--sky-hi);
+  --badge-ledge: var(--sky-ledge);
+  position: relative;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto;
   column-gap: 8px;
   align-items: center;
   text-align: left;
-  padding: 14px 16px;
-  border-radius: 16px;
-  border: 1px solid #e4d9c6;
-  background: #fffdf7;
-  color: #514837;
+  padding: 12px 14px 12px 64px;
+  border-radius: 24px;
+  border: 3px solid var(--rim);
+  background: var(--sand);
+  color: var(--ink);
   cursor: pointer;
+  box-shadow: var(--panel-shadow);
+}
+.wish-practice-card::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+  margin-top: -21px;
+  border: 2.5px solid var(--rim);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 50% 50%, #ffffffd9 0 5px, transparent 5.6px),
+    linear-gradient(180deg, var(--badge-hi), var(--badge));
+  box-shadow: 0 4px 0 var(--badge-ledge);
+}
+.wish-practice-card:nth-child(5n + 2) {
+  --badge: var(--butter);
+  --badge-hi: var(--butter-hi);
+  --badge-ledge: var(--butter-ledge);
+}
+.wish-practice-card:nth-child(5n + 3) {
+  --badge: var(--bubblegum);
+  --badge-hi: var(--bubblegum-hi);
+  --badge-ledge: var(--bubblegum-ledge);
+}
+.wish-practice-card:nth-child(5n + 4) {
+  --badge: var(--peach);
+  --badge-hi: var(--peach-hi);
+  --badge-ledge: var(--peach-ledge);
+}
+.wish-practice-card:nth-child(5n + 5) {
+  --badge: var(--leaf);
+  --badge-hi: var(--leaf-hi);
+  --badge-ledge: var(--leaf-ledge);
 }
 .wish-practice-card strong {
   grid-column: 1;
   font-size: 16px;
+  font-weight: 900;
 }
 .wish-practice-card small {
   grid-column: 1;
-  color: #817965;
+  color: var(--muted);
   font-size: 12px;
+  font-weight: 600;
 }
 .wish-practice-card svg {
   grid-column: 2;
   grid-row: 1 / span 2;
-  width: 18px;
-  height: 18px;
-  color: #815519;
 }
 .wish-practice-detail .wish-practice-actions {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   margin-top: 12px;
+}
+/* The same candy per practice as its badge on 心愿. */
+.wish-practice-actions .button:nth-child(5n + 1) {
+  --ledge-color: var(--sky-ledge);
+  background: linear-gradient(180deg, var(--sky-hi), var(--sky));
+}
+.wish-practice-actions .button:nth-child(5n + 3) {
+  --ledge-color: var(--bubblegum-ledge);
+  background: linear-gradient(180deg, var(--bubblegum-hi), var(--bubblegum));
+}
+.wish-practice-actions .button:nth-child(5n + 4) {
+  --ledge-color: var(--peach-ledge);
+  background: linear-gradient(180deg, var(--peach-hi), var(--peach));
+}
+.wish-practice-actions .button:nth-child(5n + 5) {
+  --ledge-color: var(--leaf-ledge);
+  background: linear-gradient(180deg, var(--leaf-hi), var(--leaf));
 }
 .wish-practice-detail .quiet {
   margin: 6px 0 0;
 }
-

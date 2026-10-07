@@ -77,7 +77,8 @@ function ProceduralScene({
     () => session.current?.setReducedMotion(state.settings.reducedMotion),
     [state.settings.reducedMotion],
   );
-  return <div className="library-scene-stage" ref={host} />;
+  // data-scene is a styling hook only (the night stage for the lantern scenes).
+  return <div className="library-scene-stage" data-scene={entry.id} ref={host} />;
 }
 /** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
 const sceneSteps = (entry: CatalogEntry) => (entry.engine === "woodfish@1" ? 12 : 3);

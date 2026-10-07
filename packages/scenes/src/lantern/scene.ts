@@ -4,9 +4,10 @@ import { createDebugRenderStyle } from '@wbr/scene-runtime/debug-render-style'
 import type { GestureHandle } from '@wbr/gestures'
 import type { SceneContext, SceneInstance } from '../contract'
 import {
-  addCelLights,
+  addStageLights,
   CEL_STYLE,
   claimObjectTouches,
+  createLampHalo,
   createPointerRay,
   createSceneFeedback,
   createStepOverlay,
@@ -98,7 +99,14 @@ export function createLantern(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Transparent over the cream page: honey key, peach rim, the lantern's own glow.
+  // Transparent over the host's stage. By day: honey key, peach rim and the
+  // lantern's own glow. The App shows this scene on its night stage, where it
+  // takes the moonlit rig and the lit lantern (glow, shade and halo, all
+  // brighter) is the one warm light, catching the frame near it.
+  const night = ctx.stage === 'night'
+  const litPeak = night
+    ? { glow: 3.2, shade: 1.05, halo: 0.75 }
+    : { glow: 2.2, shade: 0.7, halo: 0 }
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0.2, 1.3, 4.1)
@@ -110,7 +118,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
   })
   styleRenderer.setStyle(CEL_STYLE)
 
-  addCelLights(scene, {
+  addStageLights(scene, ctx.stage, {
     sky: 0xfff0dc,
     ground: 0xd8bea0,
     key: 0xffd6a4,
@@ -183,8 +191,10 @@ export function createLantern(ctx: SceneContext): SceneInstance {
     rim.position.y = y
     lantern.add(rim)
   }
-  const glow = new THREE.PointLight(0xffbe6a, 0, 4, 2)
+  const glow = new THREE.PointLight(0xffbe6a, 0, night ? 5 : 4, 2)
   lantern.add(glow)
+  const halo = night ? createLampHalo(0xffb45e, 1.9) : null
+  if (halo) lantern.add(halo.sprite)
 
   // Wish plaque: rests at the stand's foot, then hangs under the lantern.
   const plaque = new THREE.Group()
@@ -375,8 +385,9 @@ export function createLantern(ctx: SceneContext): SceneInstance {
       if (lit) litT = reduced ? 1 : Math.min(1, litT + dt / LIGHT_SECONDS)
       const e = litT * litT * (3 - 2 * litT)
       const flicker = reduced ? 0 : Math.sin(t * 7.3) * 0.04 + Math.sin(t * 3.1) * 0.03
-      glow.intensity = e * (2.2 + flicker * 4)
-      shadeMat.emissiveIntensity = 0.04 + e * (0.7 + flicker)
+      glow.intensity = e * (litPeak.glow + flicker * 4)
+      shadeMat.emissiveIntensity = 0.04 + e * (litPeak.shade + flicker)
+      if (halo) halo.material.opacity = e * (litPeak.halo + flicker * 2)
 
       // Damped pendulum: breeze sway plus the nudge when the plaque is hung.
       const breeze = reduced ? 0 : Math.sin(t * 0.8) * 0.02
@@ -424,6 +435,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
       styleRenderer.dispose()
       renderer.dispose()
       renderer.forceContextLoss()
+      halo?.dispose()
       disposeTree(world)
       overlay.replaceChildren()
       overlay.classList.remove('scene-overlay', 'scene-overlay--cream')

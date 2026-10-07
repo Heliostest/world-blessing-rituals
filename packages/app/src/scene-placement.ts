@@ -21,10 +21,18 @@ export const WISH_SCENE_IDS = [
   "slavic-wreath",
 ] as const;
 
+/**
+ * Scenes shown on the night stage (a navy sky and a moon) instead of the day
+ * stage. The stage element carries it as data-stage, and the scene is told
+ * through its context, so its lights match the sky behind it.
+ */
+export const NIGHT_STAGE_SCENE_IDS = ["lantern", "yeondeunghoe"] as const;
+
 export type TodaySceneId = (typeof TODAY_SCENE_IDS)[number];
 export type WishSceneId = (typeof WISH_SCENE_IDS)[number];
 
 const wishSet = new Set<string>(WISH_SCENE_IDS);
+const nightSet = new Set<string>(NIGHT_STAGE_SCENE_IDS);
 const todaySet = new Set<string>(TODAY_SCENE_IDS);
 
 export function isWishScene(id: string): boolean {
@@ -33,6 +41,11 @@ export function isWishScene(id: string): boolean {
 
 export function isTodayScene(id: string): boolean {
   return todaySet.has(id);
+}
+
+/** The stage a scene is shown on. */
+export function sceneStage(id: string): "day" | "night" {
+  return nightSet.has(id) ? "night" : "day";
 }
 
 export function findSceneEntry(
@@ -82,23 +95,21 @@ export function featuredTodayPractice(
   return recommendScene(todaySceneEntries(entries), day);
 }
 
+/** Copy only: each scene's icon is drawn, keyed by id, in scene-icons.tsx. */
 export const TODAY_PRACTICE_COPY = {
   tag: "今日小练习",
   action: "开始今日小练习",
   scenes: {
     "furin-wind-chime": {
       blurb: "轻拂听一声清凉（练习，非法效）。",
-      glyph: "🎐",
     },
     "shinto-torii": {
       blurb: "在鸟居前停步，轻轻一礼（致敬练习，不替代真实参拜）。",
-      glyph: "⛩️",
     },
     "tibetan-wheel": {
       blurb: "顺时针轻推转筒，静看它慢下来（练习，非法效）。",
-      glyph: "↻",
     },
-  } satisfies Record<TodaySceneId, { blurb: string; glyph: string }>,
+  } satisfies Record<TodaySceneId, { blurb: string }>,
 } as const;
 
 export function todayPracticeCopy(id: string) {
@@ -112,18 +123,26 @@ export const WISH_PRACTICE_COPY = {
   blurb: "把期待挂上竹枝、折进纸鹤、点进灯里，或随花环漂远（练习，非法效）。",
   detailHeading: "为这个心愿做个小练习",
   detailBlurb: "练习小品，不产生法效。",
+  /** The verb only: the catalog title is shown beside it. */
   actions: {
-    "tanzaku-tanabata": "短册系竹 · 系一念",
-    yeondeunghoe: "燃灯上浮 · 推一盏",
-    crane: "折一只纸鹤 · 折一念",
-    lantern: "点一盏心愿灯 · 点一盏",
-    "slavic-wreath": "火边花环 · 放一环",
+    "tanzaku-tanabata": "系一念",
+    yeondeunghoe: "推一盏",
+    crane: "折一念",
+    lantern: "点一盏",
+    "slavic-wreath": "放一环",
   } satisfies Record<WishSceneId, string>,
+  /** For a scene outside the wish set. */
+  otherAction: "做个小练习",
 } as const;
 
-/** Button label for a wish practice; falls back to the catalog title. */
+/** A wish practice's verb, under its title on the 心愿 card. */
 export function wishPracticeAction(entry: CatalogEntry): string {
   return isWishScene(entry.id)
     ? WISH_PRACTICE_COPY.actions[entry.id as WishSceneId]
-    : entry.title;
+    : WISH_PRACTICE_COPY.otherAction;
+}
+
+/** Title and verb, for a button that stands alone (心愿 detail). */
+export function wishPracticeLabel(entry: CatalogEntry): string {
+  return `${entry.title} · ${wishPracticeAction(entry)}`;
 }

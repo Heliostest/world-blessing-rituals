@@ -3,7 +3,9 @@ import { dailyRitual } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
 import { assertSafeCopy } from "@wbr/shared";
 import { builtInScenes } from "./scene-library";
+import { hasSceneIcon } from "./scene-icons";
 import {
+  NIGHT_STAGE_SCENE_IDS,
   TODAY_PRACTICE_COPY,
   TODAY_SCENE_IDS,
   WISH_PRACTICE_COPY,
@@ -12,8 +14,10 @@ import {
   isTodayScene,
   isWishScene,
   recommendTodayScene,
+  sceneStage,
   todayPracticeCopy,
   wishPracticeAction,
+  wishPracticeLabel,
   wishSceneEntries,
   todaySceneEntries,
 } from "./scene-placement";
@@ -91,6 +95,19 @@ describe("scene placement", () => {
     }
   });
 
+  it("shows the lantern scenes on the night stage, every other scene by day", () => {
+    expect([...NIGHT_STAGE_SCENE_IDS]).toEqual(["lantern", "yeondeunghoe"]);
+    for (const id of NIGHT_STAGE_SCENE_IDS) expect(sceneStage(id)).toBe("night");
+    for (const id of [...TODAY_SCENE_IDS, "crane", "tanzaku-tanabata", "woodfish"])
+      expect(sceneStage(id), id).toBe("day");
+  });
+
+  it("gives every placed scene a drawn icon, keyed by its id", () => {
+    for (const id of [...TODAY_SCENE_IDS, ...WISH_SCENE_IDS])
+      expect(hasSceneIcon(id), id).toBe(true);
+    expect(hasSceneIcon("no-such-scene")).toBe(false);
+  });
+
   it("lists catalog entries for each surface", () => {
     expect(todaySceneEntries(entries).map((e) => e.id)).toEqual([
       ...TODAY_SCENE_IDS,
@@ -103,20 +120,32 @@ describe("scene placement", () => {
   it("gives each surface's scenes their own safe copy", () => {
     for (const id of TODAY_SCENE_IDS) {
       const copy = todayPracticeCopy(id)!;
-      expect(copy.glyph).toBeTruthy();
+      // Icons are drawn and keyed by scene id, never carried in the copy.
+      expect(copy).not.toHaveProperty("glyph");
       expect(() => assertSafeCopy(copy.blurb)).not.toThrow();
     }
     expect(todayPracticeCopy("crane")).toBeUndefined();
     for (const entry of wishSceneEntries(entries)) {
-      const label = wishPracticeAction(entry);
-      expect(label.startsWith(entry.title)).toBe(true);
-      expect(() => assertSafeCopy(label)).not.toThrow();
+      // The 心愿 card shows the title already: its subtitle is the verb only.
+      const verb = wishPracticeAction(entry);
+      expect(verb).not.toContain(entry.title);
+      expect(() => assertSafeCopy(verb)).not.toThrow();
+      // A 心愿 detail button stands alone, so it names the scene too.
+      expect(wishPracticeLabel(entry)).toBe(`${entry.title} · ${verb}`);
     }
-    expect(wishPracticeAction(entries[0])).toBe("敲一敲木鱼");
+    expect(wishSceneEntries(entries).map((e) => wishPracticeAction(e))).toEqual([
+      "系一念",
+      "推一盏",
+      "折一念",
+      "点一盏",
+      "放一环",
+    ]);
+    expect(wishPracticeAction(entries[0])).toBe(WISH_PRACTICE_COPY.otherAction);
     for (const text of [
       TODAY_PRACTICE_COPY.tag,
       TODAY_PRACTICE_COPY.action,
       WISH_PRACTICE_COPY.blurb,
+      WISH_PRACTICE_COPY.otherAction,
     ]) {
       expect(() => assertSafeCopy(text)).not.toThrow();
     }

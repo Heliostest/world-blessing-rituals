@@ -22,7 +22,14 @@ vi.mock('three', async (importOriginal) => {
   return { ...actual, WebGLRenderer }
 })
 
-import { claimObjectTouches, createSceneFeedback, createWarmStage } from './procedural-kit'
+import * as THREE from 'three'
+import {
+  addStageLights,
+  claimObjectTouches,
+  createLampHalo,
+  createSceneFeedback,
+  createWarmStage,
+} from './procedural-kit'
 
 afterEach(() => {
   vi.unstubAllGlobals()
@@ -36,6 +43,39 @@ describe('createWarmStage', () => {
     expect(renderer.setClearColor).toHaveBeenCalledWith(0x000000, 0)
     expect(scene.background).toBeNull()
     expect(scene.fog).toBeNull()
+  })
+})
+
+describe('addStageLights', () => {
+  const day = { sky: 0xfff0dc, ground: 0xd8bea0, key: 0xffd6a4, rim: 0xffd2c0 }
+
+  it('keeps the warm day rig, and swaps in dim moonlight on the night stage', () => {
+    const byDay = addStageLights(new THREE.Scene(), undefined, day)
+    const atNight = addStageLights(new THREE.Scene(), 'night', day)
+    expect(byDay.key.color.getHex()).toBe(0xffd6a4)
+    const bounce = (rig: typeof byDay) => rig.ambient.intensity + rig.hemi.intensity
+    expect(bounce(atNight)).toBeLessThan(bounce(byDay) / 2)
+    expect(atNight.key.intensity).toBeLessThan(byDay.key.intensity)
+    // Cool moonlight, not the honey sun.
+    expect(atNight.key.color.b).toBeGreaterThan(atNight.key.color.r)
+    expect(atNight.hemi.color.b).toBeGreaterThan(atNight.hemi.color.r)
+  })
+})
+
+describe('createLampHalo', () => {
+  it('is an additive, see-through glow that starts dark and frees its texture', () => {
+    const halo = createLampHalo(0xffb45e, 2)
+    const { material } = halo
+    expect(halo.sprite).toBeInstanceOf(THREE.Sprite)
+    expect(halo.sprite.scale.x).toBe(2)
+    expect(material.transparent).toBe(true)
+    expect(material.blending).toBe(THREE.AdditiveBlending)
+    expect(material.depthWrite).toBe(false)
+    expect(material.opacity).toBe(0)
+    const freed = vi.fn()
+    material.map!.addEventListener('dispose', freed)
+    halo.dispose()
+    expect(freed).toHaveBeenCalledOnce()
   })
 })
 

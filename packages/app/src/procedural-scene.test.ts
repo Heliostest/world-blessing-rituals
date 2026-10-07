@@ -126,3 +126,21 @@ it("hands the scene the App's saveWish, so its wish box can keep a line", async 
   expect(saveWish).toHaveBeenCalledWith("愿家人平安");
   controller.dispose();
 });
+it("tells the scene which stage the App paints behind its canvas", async () => {
+  vi.stubGlobal("requestAnimationFrame", () => 1);
+  vi.stubGlobal("cancelAnimationFrame", () => {});
+  const engine = await proceduralEngine("lantern");
+  const controller = engine.create(
+    document.createElement("div"),
+    { progress: 0, sceneId: "lantern", checkpoint: () => {}, stage: "night" },
+    {
+      active: true,
+      reducedMotion: false,
+      signal: new AbortController().signal,
+      ready: () => {},
+      failed: () => {},
+    },
+  );
+  expect(fixture.context.stage).toBe("night");
+  controller.dispose();
+});

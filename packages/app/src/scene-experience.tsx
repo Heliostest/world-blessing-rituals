@@ -19,6 +19,7 @@ import { RitualNarrativeBlurb } from "./ritual-narrative";
 import { FeedbackControls } from "./feedback-controls";
 import { describeSceneLoadError } from "./scene-load-error";
 import { sceneWish } from "./scene-wish";
+import { sceneStage } from "./scene-placement";
 
 function ProceduralScene({
   entry,
@@ -39,6 +40,7 @@ function ProceduralScene({
   const callbacks = { checkpoint, saveWish, failed, prepareFeedback, haptic };
   const latest = useRef({ ...callbacks, state });
   latest.current = { ...callbacks, state };
+  const stage = sceneStage(entry.id);
   useEffect(() => {
     session.current = mountScene({
       host: host.current!,
@@ -52,6 +54,7 @@ function ProceduralScene({
         haptic: () => latest.current.haptic(),
         isSoundEnabled: () => latest.current.state.settings.sound,
         saveWish: (text: string) => latest.current.saveWish(text),
+        stage,
       },
       load: () =>
         sceneEngines.load(
@@ -77,8 +80,15 @@ function ProceduralScene({
     () => session.current?.setReducedMotion(state.settings.reducedMotion),
     [state.settings.reducedMotion],
   );
-  // data-scene is a styling hook only (the night stage for the lantern scenes).
-  return <div className="library-scene-stage" data-scene={entry.id} ref={host} />;
+  // data-scene and data-stage are styling hooks; the scene lights for the stage too.
+  return (
+    <div
+      className="library-scene-stage"
+      data-scene={entry.id}
+      data-stage={stage}
+      ref={host}
+    />
+  );
 }
 /** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
 const sceneSteps = (entry: CatalogEntry) => (entry.engine === "woodfish@1" ? 12 : 3);

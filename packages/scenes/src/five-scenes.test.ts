@@ -1,5 +1,6 @@
 // @vitest-environment jsdom
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import * as THREE from 'three'
 import * as Gestures from '@wbr/gestures'
 import * as Shared from '@wbr/shared'
 
@@ -18,12 +19,14 @@ vi.mock('three', async (importOriginal) => {
   }
   return { ...actual, WebGLRenderer }
 })
+/** Every scene graph handed to the render pass, newest last. */
+const built = vi.hoisted(() => ({ scenes: [] as unknown[] }))
 vi.mock('@wbr/scene-runtime/debug-render-style', () => ({
   createDebugRenderStyle: (
     _renderer: unknown,
     scene: { updateMatrixWorld(): void },
     camera: { updateMatrixWorld(): void },
-  ) => ({
+  ) => (built.scenes.push(scene), {
     setStyle: vi.fn(),
     resize: vi.fn(),
     // Like a real render, bring world matrices up to date so pointer rays hit
@@ -549,6 +552,53 @@ describe.each(WISH_BOXES)('$id wish box', ({ id, at, after }) => {
     expect(b.note()).toContain(Gestures.WISH_WRITE_COPY.unsaved)
     b.write('愿家人平安')
     expect(s.progress).toEqual([after])
+    s.instance.dispose()
+  })
+})
+
+describe.each(['lantern', 'yeondeunghoe'])('%s on the night stage', (id) => {
+  const lastScene = () => built.scenes.at(-1) as THREE.Scene
+  const all = <T extends THREE.Object3D>(scene: THREE.Scene, test: (o: THREE.Object3D) => boolean) => {
+    const found: T[] = []
+    scene.traverse((o) => {
+      if (test(o)) found.push(o as T)
+    })
+    return found
+  }
+  const hemi = (scene: THREE.Scene) =>
+    all<THREE.HemisphereLight>(scene, (o) => o instanceof THREE.HemisphereLight)[0]
+  const key = (scene: THREE.Scene) =>
+    all<THREE.DirectionalLight>(scene, (o) => o instanceof THREE.DirectionalLight)[0]
+  const halos = (scene: THREE.Scene) =>
+    all<THREE.Sprite>(scene, (o) => o.name === 'lamp-halo')
+  /** The scene's own lamp halo (the first lamp built). */
+  const lampGlow = (scene: THREE.Scene) => (halos(scene)[0].material as THREE.SpriteMaterial).opacity
+
+  it('takes dim, cool moonlight instead of the warm day rig', async () => {
+    const day = await mount(id)
+    const dayScene = lastScene()
+    const night = await mount(id, 0, { stage: 'night' })
+    const nightScene = lastScene()
+    expect(hemi(nightScene).intensity).toBeLessThan(hemi(dayScene).intensity / 2)
+    expect(key(nightScene).intensity).toBeLessThan(key(dayScene).intensity)
+    expect(key(nightScene).color.b).toBeGreaterThan(key(nightScene).color.r)
+    expect(key(dayScene).color.r).toBeGreaterThan(key(dayScene).color.b)
+    // By day nothing changes: no halos.
+    expect(halos(dayScene)).toHaveLength(0)
+    expect(halos(nightScene).length).toBeGreaterThan(0)
+    day.instance.dispose()
+    night.instance.dispose()
+  })
+
+  it('brings up a warm halo round its lamp as it is lit', async () => {
+    const s = await mount(id, 0, { stage: 'night' })
+    const scene = lastScene()
+    s.run(0.1)
+    const before = lampGlow(scene)
+    s.tap()
+    s.runUntil(1)
+    s.run(4)
+    expect(lampGlow(scene)).toBeGreaterThan(before + 0.3)
     s.instance.dispose()
   })
 })

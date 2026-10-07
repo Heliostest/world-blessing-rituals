@@ -1,5 +1,10 @@
 # 古拉格传统信仰与圣地—基督教／伊斯兰祈福（Gurage）
 
+![埃塞俄比亚古拉格传统舞蹈](./gurage-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Gurage_dance.jpg -->
+
+
 ## 概述
 
 **古拉格人（Gurage）** 主要分布于埃塞俄比亚南部高地，以精耕 **Enset culture**（恩塞特／假香蕉农业文化）与密集村社知名。大英百科等公开记述：宗教构成复杂，含埃塞俄比亚正教、伊斯兰教与地方传统信仰并存；公开节庆入口可见 **Gurage Meskel／Demera**（十字架节／篝火公开层）与 **Orthodox／Islamic public rites**（正教／伊斯兰公共礼仪）。本条目为教育概览；**不提供**入会、献牲操作或可冒充仪式专家的步骤。

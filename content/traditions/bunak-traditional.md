@@ -1,5 +1,9 @@
 # 布纳克传统信仰与帝汶山地习惯法祈福（Bunak）
 
+![东帝汶博博纳罗布纳克女性参与习惯法仪式（lia）](./bunak-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Feto_Bunak_ba_halo_Lia_iha_Lia_Kemak.jpg -->
+
 ## 概述
 
 **布纳克人（Bunak／Bunaq）** 分布于东帝汶与印尼西帝汶交界山地，语言属跨新几内亚／帝汶独特谱系公开讨论。公开概述记述：天主教在东帝汶侧占主导，同时 **lulik（神圣）** 观念、**Deu Lulik** 圣屋、祖先与习惯法（**Adat**）及 **Tarabandu** 等保育／约定伦理在土地与生命礼仪中仍关键；跨境分割使实践呈现国家—教会—习惯法多层。本条目为教育概览；**不提供**习惯法秘仪或可冒充神职的步骤。与德顿东帝汶、托拉查条目可比较而不可混同。

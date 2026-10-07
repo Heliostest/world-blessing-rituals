@@ -1,5 +1,9 @@
 # 科萨传统祖先敬拜与生命礼仪（Xhosa Traditional）
 
+![科萨传统女疗愈师（amagqirha）与舞蹈](./xhosa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Amaggqirha.jpg -->
+
 ## 概述
 
 **科萨人（Xhosa／amaXhosa）** 是南非南部恩古尼（Nguni）语族的重要一支，主要分布于东开普省等地，语言 isiXhosa 为南非官方语言之一；大英百科将其归为南部恩古尼诸氏族（Gcaleka、Rharhabe、Ngqika 等）的文化连续体。南非历史在线等公开材料概述：至高存在称 **uThixo** 或 **uQamata**，一般不直接介入日常，而透过祖先 **iminyanya（亦作 izinyanya）** 为中介；祖先常以梦境传达意愿，并以家畜奉献、宴饮与漫长生命礼仪获敬奉。家庭院落（homestead）与畜栏在传统上具有宗教空间意义。十九世纪以降基督宗教广泛进入，今日许多科萨人同时参与教会与祖先礼仪，或属于融合两者的独立教会。本条目与祖鲁／恩古尼条目区分南部恩古尼的科萨支系特征；**不提供**献牲操作、成丁／割礼步骤、疗愈或附体脚本。

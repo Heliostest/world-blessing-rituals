@@ -1,5 +1,9 @@
 # 塞浦路斯民间东正教与朝圣祈福（Cypriot）
 
+![塞浦路斯基科斯圣母修道院（Panagia tou Kykkou）庭院](./cypriot-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kykkos_Monastery_Courtyard_2.JPG -->
+
 ## 概述
 
 **塞浦路斯民间东正教** 在塞浦路斯正教会框架下，以修道院朝圣、圣井、村社主保节（**panegyri／πανηγύρι**）与圣母敬礼著称。公开文化记述中，**Panagia tou Kykkou（基科斯圣母修道院）**、马凯拉斯等圣地传统上吸引朝圣者；家庭与堂区层可见 **Agiasmos（圣水祝福）** 等公开实践。分裂政治语境使部分圣地访问受现实限制。本条目为教育概览；**不提供**可冒充神职的脚本，也不把地缘政治消费化。与希腊民间东正教、马龙派条目可比较。

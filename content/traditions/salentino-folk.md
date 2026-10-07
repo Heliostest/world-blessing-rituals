@@ -1,5 +1,9 @@
 # 萨伦托民间天主教与海岸朝圣祈福（Salentino）
 
+![萨伦托陆地尽头圣母堂（Santa Maria de Finibus Terrae）](./salentino-folk.jpg)
+
+<!-- 来源：CC0 1.0 | https://commons.wikimedia.org/wiki/File:Santa_Maria_de_finibus_terrae_02.jpg -->
+
 ## 概述
 
 **萨伦托（Salento）** 位于意大利普利亚半岛末端，公开天主教记述突出 **Santa Maria de Finibus Terrae**（陆地尽头圣母，圣玛丽亚迪莱乌卡一带）海岸朝圣、**诺沃利（Novoli）Fòcara** 巨大篝火节，以及 **San Rocco** 敬礼与 **Pizzica** 作为文化誓愿／节庆舞蹈层——后者常被旅游过度奇观化为「附体表演」，本卡明确拒绝该消费框架。希腊语岛（Griko）少数遗产并存。本条目为教育概览；**不提供**可冒充神职的脚本，亦**不提供**附体／疗愈舞操作化。

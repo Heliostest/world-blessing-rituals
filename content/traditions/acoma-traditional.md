@@ -1,5 +1,9 @@
 # 阿科马普韦布洛传统信仰与新墨西哥祈福（Acoma）
 
+![新墨西哥阿科马天城聚落（Sky City）](./acoma-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Acoma_Pueblo_Sky_City.jpg -->
+
 ## 概述
 
 **阿科马普韦布洛（Acoma Pueblo，Haak'u）** 位于美国新墨西哥，为西部普韦布洛社群之一。公开叙述涉及天台聚落、陶瓷与土地灵性、天主教接触与社区节庆——其中 **San Esteban（圣埃斯特万）** 瞻礼／主保节为访客可见公共层；陶器／大地灵性可作公开文化说明；**Katsina／Kiva** 等封闭知识**保持封存（stay sealed）**——**中高敏感**。本卡仅公开瞻礼／文化中心层；不提供卡奇纳或封闭仪轨细节。与霍皮、祖尼、纳瓦霍等条目区分。

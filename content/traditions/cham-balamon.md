@@ -1,5 +1,9 @@
 # 占族婆罗门／阿希埃传统（Cham Balamon／Ahier）
 
+![越南宁顺波克龙加莱（Po Klong Garai）占族砖塔](./cham-balamon.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Po_Klong_Garai_Temple.jpg -->
+
 ## 概述
 
 **占族（Cham）** 是中南半岛沿海的南岛语族后裔，历史上与 **占婆（Champa）** 王国相连；大英百科记述其印度化文化与砖塔艺术。今越南中南部（如宁顺、平顺）仍有延续本土化印度教传统的社群，官方／外文常称 **Balamon（婆罗门占族）**，许多研究者与社群更强调 **Ahier（阿希埃）** 表述：敬奉 *Po Yang* 诸神、神化先王与祖先，并在 **Po Klong Garai** 等古塔举行年节；**Katé（凯特节）** 已进入公开文化／UNESCO 相关遗产叙述；祭司层公开命名含 **Po Adhia** 与乐师／仪仗相关职分 **Kadhar**。其宇宙观常与伊斯兰影响下的 **Awal／Bani** 社群形成互补二元。本条目聚焦公开可查的祈福与节庆层面；祭司主持、用户仅观礼；**不提供**祭司职分仪式、火葬操作或神庙内秘仪步骤。

@@ -1,5 +1,9 @@
 # 索布民间基督教与卢萨蒂亚祈福（Sorbs／Wends）
 
+![下卢萨蒂亚索布族扎普斯特嘉年华](./sorbs-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:150._Zapust_(Fastnacht)_in_J%C3%A4nschwalde.jpg -->
+
 > **姊妹卡／分工说明（请先读）：** 本卡与 [`sorbian-folk`](sorbian-folk.md) 为姊妹条目。**天主教上卢萨蒂亚的 Osterreiten（复活节骑乘）**——礼帽、饰马、马背圣歌等——由 **sorbian-folk** 专卡覆盖。本卡**刻意区分**，聚焦 **路德宗／文德（Lutheran／Wendish）公共习俗**：Vogelhochzeit（鸟婚）、Zapust 嘉年华、索布语崇拜与文化节等。先前两卡内容重叠（存疑），本批已按此边界重写，**请勿删除本卡**。
 
 ## 概述

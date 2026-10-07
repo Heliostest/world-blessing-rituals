@@ -1,4 +1,8 @@
 # 凯特传统信仰与叶尼塞萨满祈福（Ket）
+![叶尼塞凯特人（Yenisei-Ostiak）船屋聚落历史照片](./ket-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:P258_The_houseboats_of_the_Yenisei-Ostiaks.jpg -->
+
 
 ## 概述
 

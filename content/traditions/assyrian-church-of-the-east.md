@@ -1,5 +1,9 @@
 # 东方亚述教会（Assyrian Church of the East）
 
+![芝加哥东方亚述教会圣乔治大教堂（Mar Gewargis）外观](./assyrian-church-of-the-east.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mar_Gewargis_Cathedral_Holy_Apostolic_Catholic_Assyrian_Church_Of_The_East_Chicago_2020-0234.jpg -->
+
 ## 概述
 
 东方亚述教会（正式常称 Holy Apostolic Catholic Assyrian Church of the East）是继承古代“东方教会”（Church of the East）传统的东叙利亚基督教会，礼仪语言以古典叙利亚语（东阿拉姆语支）为主，通行于伊拉克、伊朗、叙利亚、土耳其东南以及北美、欧洲、澳大利亚等地的亚述／迦勒底离散社群。它使用**东叙利亚礼**（亦称迦勒底礼／东叙利亚礼），核心圣餐礼为圣阿代与圣马里的神圣 *Qurbana*（奉献／圣祭）。历史上该教会曾被西方误称为“聂斯托利派”；当代教会与迦勒底天主教会于 1994 年签署共同基督论声明，承认共享礼仪与灵修遗产而教制仍分立。本条目聚焦其公开可查的祈祷与圣事生活，为教育性概览。

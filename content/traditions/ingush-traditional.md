@@ -1,5 +1,9 @@
 # 印古什民间伊斯兰与高加索塔楼祈福（Ingush）
 
+![印古什埃尔齐石砌塔楼群全景](./ingush-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Erzi,_Ingushetia,_Erzi_tower_complex,_panoramic_view.jpg -->
+
 ## 概述
 
 **印古什人（Ingush）** 为北高加索瓦伊纳赫语族民族，与车臣人近缘，主要分布于俄罗斯印古什共和国。公开概述记述：绝大多数为逊尼派穆斯林，苏菲传统在历史上影响深远；**Tkhaba-Erdy** 圣地／教堂遗址朝谒公开层、**Egikal／Erzi** 石砌塔楼景观、**Ezdanga** 好客伦理，以及 **Sufi Zikr viewing-only**（苏菲齐克尔仅观礼）构成文化—宗教公开叙述；驱逐与冲突创伤深刻影响集体纪念。本条目为教育概览；**不提供**教团秘仪或政治动员话术。与车臣瓦伊纳赫、阿瓦尔条目可比较。

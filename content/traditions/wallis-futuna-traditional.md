@@ -1,5 +1,9 @@
 # 瓦利斯与富图纳传统信仰与天主教—习惯法祈福（Wallis and Futuna）
 
+![瓦利斯主教祝圣时的宫廷卡托阿加仪式](./wallis-futuna-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Wallis_ordination_%C3%A9piscopale_devant_le_palais_royal.jpg -->
+
 ## 概述
 
 **瓦利斯与富图纳（Wallis and Futuna；ʻUvea 与 Futuna／Alofi）** 为南太平洋法属海外集体，波利尼西亚文化区。公开概述记述：自19世纪起**天主教**占绝对多数，教堂与主保瞻礼构成公共祈福主轴；同时习惯法（kastom／地方酋长制度）、卡瓦礼仪与互惠伦理仍标记社会尊严与祝福交换。本条目为教育概览；**不提供**酋长秘仪细节或可冒充神职／酋长的程序。

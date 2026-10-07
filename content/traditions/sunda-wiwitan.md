@@ -1,5 +1,9 @@
 # 巽他 Wiwitan（Sunda Wiwitan）
 
+![库宁安奇古古尔色棱陶恩丰收礼](./sunda-wiwitan.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Seren_Taun_Cigugur.jpg -->
+
 ## 概述
 
 **Sunda Wiwitan**（巽他语语境中常释为「最初／本源的巽他」）是印度尼西亚西爪哇与万丹一带巽他人社群中的**本土信仰与习惯法宇宙观**，亦称 Jatisunda 等。信众分布于万丹 **Kanekes（Baduy／Urang Kanekes）**、苏加武眉 Ciptagelar、塔西马来亚 Kampung Naga、库宁安 Cigugur（AKUR／Adat Karuhun Urang）等地。公开学术文献指出，其核心常包括对至高无形者 **Sang Hyang Kersa**（或相关称谓）的虔敬、对祖先（*karuhun*）与圣地的礼敬，以及维系人—自然—社群均衡的习惯法（如 Baduy 的 *pikukuh*）。大英百科全书在介绍巽他人时强调：历史上接受印度教—佛教与伊斯兰教之后，地方宗教要素仍存续。本条目为教育性概览；**不对**内区禁地仪轨、护符制作或限制性入会式修炼提供操作说明。

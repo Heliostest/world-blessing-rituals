@@ -1,5 +1,10 @@
 # 曼加雷瓦传统信仰与天主教—marae祈福余绪（Mangareva）
 
+![曼加雷瓦 Rikitea 圣弥额尔大教堂](./mangareva-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Saint-Michel_de_Rikitea.2014.jpg -->
+
+
 ## 概述
 
 **曼加雷瓦（Mangareva）** 为法属波利尼西亚甘比尔群岛主岛，属东波利尼西亚文化区。公开概述记述：前基督教时代有神祇、祭司与 **marae** 石砌圣所／平台体系；19 世纪起天主教占绝对多数，**St Michael Cathedral（Rikitea）** 等堂区与朝圣／瞻礼为当代公共祈福核心；神话、航海记忆与石砌遗迹仍标记族群历史；岛屿节庆见于公开文化层。本条目为教育概览；St Michael Cathedral Rikitea 朝圣公开；Marae 石砌平台历史层；岛屿节庆——**users don't officiate**。**不提供**历史献牲或可冒充祭司的步骤。与马克萨斯、塔希提、拉帕努伊条目可比较。

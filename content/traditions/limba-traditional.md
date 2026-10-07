@@ -1,5 +1,10 @@
 # 林巴传统信仰与伊斯兰—基督教祈福（Limba）
 
+![塞拉利昂林巴家庭（1968，Kamakumba）](./limba-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:LimbaFamily.jpg -->
+
+
 ## 概述
 
 **林巴人（Limba）** 主要分布于塞拉利昂北部，为该国重要本土族群之一，语言上常被描述为相对独立的大西洋语支社群。公开概述记述：传统宇宙以 **Kanu（Kanu Masala 等高神表述）** 为至高创造者；公共／慈善层可见 **Saraka** 一类社群供奉／施舍叙述；**Gbangbani** 为男性会社／防护性结社——**CONCEPT ONLY，无入会 how-to**。今日伊斯兰、基督教与祖先伦理并存；稻作与集市生活塑造公共祈福。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤——**users don't officiate**。与滕内、门德条目相邻但不可合并。

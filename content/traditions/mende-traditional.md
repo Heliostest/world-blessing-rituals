@@ -1,5 +1,10 @@
 # 门德传统信仰与波罗—桑德社祈福余绪（Mende）
 
+
+![门德邦杜／索韦头盔面具（桑德社相关公开博物馆藏品）](./mende-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File%3AMasque_Bundu_Mende-Mus%C3%A9e_de_la_Compagnie_des_Indes.jpg -->
+
 ## 概述
 
 **门德人（Mende）** 主要分布于塞拉利昂南部与东部，并有利比里亚等相关社群。公开概述记述：传统宇宙含祖先与地方灵力；历史上 **Poro／Sande** 等年龄—秘密会社在社会化与公共秩序中扮演关键角色（本卡**仅概念层**，不提供任何入会社细节）；今日并存基督教与伊斯兰。本条目为教育概览；**严禁**入会、割礼或可冒充会社权威的步骤。

@@ -1,5 +1,10 @@
 # 雷布查／Mun 信仰（Lepcha Mun／Bongthing）
 
+![19世纪锡金雷布查男子肖像](./lepcha-mun.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:An_aboriginal_man_from_the_Lepcha_people_of_Sikhim.jpg -->
+
+
 ## 概述
 
 **雷布查人（Lepcha，自称 Rong）** 是锡金及邻近尼泊尔、不丹、印度大吉岭一带的喜马拉雅族群，大英百科称其为锡金较早居民之一。传统民族宗教常称 **Mun**（亦见 Bongthingism 等说法），以祭司 **Bongthing** 与 **Mun** 沟通自然灵、祖灵与地方神，并与後来传入的藏传佛教长期并用；部分家庭亦与基督教并存。公共层突出圣山节 **Tendong Lho Rumfaat**（致敬 Tendong 圣山、纪念洪水救护叙事的公开节庆）；**Cherim** 等社群洁净／防病仪礼属限制性公共知识。圣地与宇宙观亦连结 **干城章嘉峰（Kangchenjunga）** 等山岳。本条目为教育概览；**Bongthing／Mun** 职分边界——**users don't officiate**；**Cherim** restricted；**不提供**牲礼操作、驱邪脚本或入会步骤。

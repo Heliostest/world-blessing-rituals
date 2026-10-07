@@ -1,5 +1,10 @@
 # 曼丁卡民间伊斯兰与地方灵祈福（Mandinka／Malinke）
 
+![曼丁卡 Kankurang（Kangkurang）神圣面具公开场面](./mandinka-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kangkurang.jpg -->
+
+
 ## 概述
 
 **曼丁卡人（Mandinka；亦作 Malinke／Manding 等）** 分布于西非冈比亚、塞内加尔、几内亚、马里等广大曼德语区，与中世纪马里帝国遗产相关。公开百科记述：今日绝大多数为逊尼派穆斯林，礼拜与斋月等伊斯兰框架明确；**Kankurang** 神圣面具传统列入非遗公开叙述（观礼须极度谨慎）；**Marabout／Karamoko** 为经学—护佑权威的公开称谓；**Jali／Griot** 口述史与音乐为广为人知的公共文化层。本条目为教育概览；**Kankurang** ICH viewing-only；Marabout／Karamoko CONCEPT；Jali／Griot 公共文化——**users don't officiate mask rites**。**不提供**护符制作配方、献牲操作、割礼／入会社程序或任何可冒充马拉布特的步骤。

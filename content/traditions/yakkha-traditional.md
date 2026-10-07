@@ -1,5 +1,9 @@
 # 雅克哈传统信仰与蒙图姆祈福（Yakkha）
 
+![基拉特雅克哈新年庆祝](./yakkha-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kirat_Yakkha_Group_Kirat_New_Year_Celebration_13_December_2018_Kent_Uk.jpg -->
+
 ## 概述
 
 **雅克哈人（Yakkha）** 分布于尼泊尔东部山区，属基拉特语支，介于赖族与林布之间的独立认同。公开民族志记述：口述传统常称 **Muntum／Mintum**，含家灵、地方灵与仪者实践；今日并存印度教、佛教与少数基督教。本条目为教育概览；**不提供**灵力操控脚本、献牲或可冒充祭司的步骤。与林布、苏努瓦尔条目对照阅读。

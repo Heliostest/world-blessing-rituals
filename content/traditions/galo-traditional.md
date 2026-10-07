@@ -1,5 +1,10 @@
 # 加洛传统信仰与东尼—波罗—基督教祈福（Galo）
 
+![阿鲁纳恰尔邦加洛族传统服饰少女](./galo-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Galo_tribe.jpg -->
+
+
 ## 概述
 
 **加洛人（Galo）** 分布于印度阿鲁纳恰尔邦，与阿迪等达尼语支社群相关但自有边界。公开研究记述：传统宇宙含地方灵（常称 *uyu* 等公开民族志用语）与仪者（***nyibu***）中介；岁时可见 **Mopin Festival**（公开收获／福祉节庆层）与 **Popir dance**（公开节庆舞蹈层）；近年并存基督教改宗与本土信仰复兴（含东尼—波罗／Kargu Gamgi 等公开运动叙述）。本条目为教育概览；**Nyibu viewing-only restricted**（仪者礼仪仅观礼／受限）；**不提供**占卜操作、献牲或可冒充 *nyibu* 的步骤。与阿迪、阿帕塔尼、尼希条目可比较。

@@ -1,5 +1,9 @@
 # 库纳马传统信仰与厄立特里亚—埃塞边境祈福（Kunama）
 
+![厄立特里亚库纳马青年历史肖像](./kunama-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:AO-Eritrea-giovane-Cunama.jpg -->
+
 ## 概述
 
 **库纳马人（Kunama）** 分布于厄立特里亚与埃塞俄比亚西部边境一带。公开叙述涉及农作、祖先与社区节庆，并与基督教／伊斯兰教接触并存——**中高敏感**。概念层突出高神 **Anna**；公共／限制观礼层提及 **Kudura** 雨／收获节与 **Sanger** 等节庆名称。教育概览；不提供祭祀操作——**Kudura viewing-only restricted**；**users don't officiate**。与纳拉、提格雷、阿法尔等条目区分。

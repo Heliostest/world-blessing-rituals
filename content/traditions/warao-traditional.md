@@ -1,5 +1,9 @@
 # 瓦劳传统信仰与奥里诺科三角洲祈福（Warao）
 
+![奥里诺科三角洲瓦劳人家庭与独木舟](./warao-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:A_Warao_family_in_their_canoe.jpg -->
+
 ## 概述
 
 **瓦劳人（Warao）** 为委内瑞拉奥里诺科三角洲（并及圭亚那、苏里南边境）的渔捞适应原住民族，人口约数万。公开宗教学条目（encyclopedia.com《Warao Religion》）与 everyculture 记述：宇宙观含大地圆盘、潮汐巨蛇、地下四头蛇女神与四方海神等宏大结构；祖先力量（kanobotuma／hebu）居于世界边缘，节庆时经烤棕榈髓桶等公开叙述进入圣所，并以木雕形象参与祈请舞蹈。萨满职分公开分为 **wisiratu**（中介祖先、守护圣石 kanobo）、**bahanarotu**、**hoarotu** 等类型；妇女可于停经后成为萨满。天主教与福音派有局部影响，多数仍坚持传统。本条目为教育概览；**不提供**萨满职分操作、致害魔法、圣石仪轨或任何可冒充萨满的程序。

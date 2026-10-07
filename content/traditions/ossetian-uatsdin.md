@@ -1,5 +1,9 @@
 # 奥塞梯乌茨金／传统祈宴（Uatsdin／Assianism）
 
+![北奥塞梯采伊峡谷雷科姆圣地（дзуар）外观](./ossetian-uatsdin.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC_2.JPG -->
+
 ## 概述
 
 **乌茨金（Uatsdin，亦称 Assianism／Atsag Din）** 指北高加索**奥塞梯人（Ossetians／Ossetes）** 以纳尔特史诗与民俗圣地为基础、在当代组织化程度提高的民族宗教与传统礼仪复合体。大英百科记述奥塞梯人为伊朗语支民族，与古代阿兰人相关。公开民俗与研究文献强调：家庭与节庆中的**祈宴（куывд／kuyvd，亦与桌宴 фынг／fyng 相连）**、对至高神 **Хуыцау（Khuytsau）** 与守护者 **Уастырджи（Uastyrdzhi，常与圣乔治形象交织）** 的祝祷，以及前往 **дзуар（dzuar）** 圣地／圣林的巡礼，是可见的核心实践。本条目为教育性概览；**不提供**献牲操作、完整祝酒词配方或可复现的祭司指引。

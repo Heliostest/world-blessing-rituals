@@ -1,5 +1,9 @@
 # 犹太教
 
+![安息日烛火祝福（Shabbat candles berakhah）](./judaism.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Shabbat-Candles_blessing.jpg -->
+
 ## 概述
 
 犹太教以圣约、托拉与社群生活为根基。寻求祝福、医治与社会修复时，关键实践包括**祈祷（tefillah）**、作为公义的施舍 **tzedakah**，以及在危难中诵读诗篇 **Tehillim**。会堂礼拜与家庭桌宴（尤其安息日）把祝福词嵌入时间。不同教派（正统、保守、改革等）在性别角色、乐器与祷文用语上差异显著，但“赞美—祈求—感谢”的结构广泛可辨。

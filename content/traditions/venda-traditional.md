@@ -1,5 +1,9 @@
 # 文达／瓦文达传统宗教（Venda / Vhavenda）
 
+![林波波文达传统服饰舞者](./venda-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Venda_dancer_in_traditional_clothing,_Mashovhela_Bush_Lodge,_Louis_Trichardt,_Limpopo,_South_Africa_(10185458853).jpg -->
+
 ## 概述
 
 **文达人（Venda／自称 Vhavenda）** 主要居住在南非林波波省北部苏特潘斯山（Soutpansberg）一带，并与津巴布韦南部绍纳文化带有历史联系。Encyclopedia.com「Venda」条目指出：今日多数人自称基督徒，但仍普遍敬拜祖先灵，并信仰至高神 **Raluvhimba**（常被视为与绍纳 **Mwali／Mwari** 等同），其显现关联雷电、山云与火光；酋长在祈雨与部落祖先礼仪中扮演关键角色。生命礼仪中，少女／少男系列入会（含 **domba**）与皇家舞乐 **tshikona** 是公开民族志中最常提及的文化标记。本条目与绍纳姆瓦里、祖鲁／恩古尼、茨瓦纳等区分林波波文达传统；**不提供**入会操作、割礼细节、献牲教程或可复现「请 Raluvhimba」步骤。

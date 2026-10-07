@@ -1,5 +1,10 @@
 # 豪萨博里灵力崇拜（Hausa Bori）
 
+![豪萨博里仪式服饰社群](./hausa-bori.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:The_Bori_people_in_ceremonial_Traditional_cultural_outfit.jpg -->
+
+
 ## 概述
 
 **博里（Bori）** 是西非豪萨（Hausa）社会中以灵体信仰与附体礼仪为核心的传统实践，分布于今尼日利亚西北部与尼日尔南部等地。大英百科在「Bori cult」与豪萨条目中指出：豪萨主体受伊斯兰教深刻影响，但仍有少数 **Maguzawa（或称 Bunjawa）** 长期保持对自然灵体的崇拜；博里亦指透过音乐、舞蹈与奉献安抚／咨问 **iskoki（不可见灵）** 的制度。学术与公开综述（如阿德琳·马斯克利耶《Prayer Has Spoiled Everything》等）强调：在伊斯兰城镇语境中，博里常与清真寺生活并存或竞争，灵媒以附体仪式处理疾病、边缘处境与社会矛盾；女性与被主流排斥者常在其中扮演关键角色。本条目与约鲁巴／沃敦、格纳瓦等区分豪萨博里；**不提供**附体诱导、入会、草药剂量、献牲操作或可复现「请灵」步骤。

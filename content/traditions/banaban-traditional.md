@@ -1,5 +1,10 @@
 # 巴纳巴人传统信仰与流散—基督教祈福（Banaban）
 
+![太空俯瞰巴纳巴岛（大洋岛）家园地貌](./banaban-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Kiribati_Banaba.jpg -->
+
+
 ## 概述
 
 **巴纳巴人（Banaban）** 原居太平洋巴纳巴岛（Ocean Island），因磷酸盐开采于二十世纪中叶大规模迁至斐济拉比岛（Rabi）等地，形成显著流散社群。公开记述：基督教主导公共崇拜；家园记忆、祖先与海洋伦理进入祈福与政治诉求。本条目为教育概览；**不提供**可冒充首领的步骤；**勿消费流离创伤**。与基里巴斯、斐济主流条目相关但巴纳巴认同独立。

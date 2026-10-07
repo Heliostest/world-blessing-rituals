@@ -1,5 +1,9 @@
 # 吉雷尔传统信仰与喜马拉雅祈福（Jirel）
 
+![吉雷尔本教祭司 Phonbo（多拉卡）](./jirel-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Phonbo%2C_Jirel_Bon_Priest.jpg -->
+
 ## 概述
 
 **吉雷尔人（Jirel）** 分布于尼泊尔多拉卡／吉里一带丘陵。公开概述记述：传统宇宙含佛教、本教影响与地方神山伦理；**Gomba** 寺院公开法会与 **Lhosar** 年节为公共／观礼层；神山—地方神 **Devithan／Yul-lha** 敬礼与 **Phombo** 萨满属 **CONCEPT ONLY**——**users don't officiate**。本条目为教育概览；**不提供**密续灌顶、献牲或可冒充喇嘛／萨满的步骤。

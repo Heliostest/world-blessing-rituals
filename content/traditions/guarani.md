@@ -1,5 +1,10 @@
 # 瓜拉尼祈祷与土地宇宙观（Guaraní）
 
+![巴西南马托格罗索州瓜拉尼核心家庭](./guarani.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Guarani_Family.JPG -->
+
+
 ## 概述
 
 **瓜拉尼（Guaraní）** 及相关分支（如 Mbyá、Kaiowá／Pai Tavytera、Ava Guaraní／Ñandeva 等）分布於南美洲巴拉圭、巴西、阿根廷与玻利维亚等地。联合国教科文组织在巴拉圭上巴拉那／Mbaracayú 生物圈保护区相关记述中强调：Ava Guaraní 将领地视为通往 **Yvy marã eỹ（「无恶之地」／Land Without Evil）** 之精神追寻的组成部分；水、土、森林与泉眼皆有其「主人」，须从发现之时起加以照料。民族志文献普遍指出：*ñembo’e*（祈祷／萨满性祷词与演说）是连接人与 *Nhanderu*／*Nhandexy* 等神圣存在、以及森林—水域—猎物之灵主的核心实践；*opy*（或 *óga pysy*，祈祷屋）是歌唱、舞蹈、命名与治疗交会的空间。本条目为教育性概览；**不提供**致幻植物用法、入会步骤、可复现祷词全文或命名礼操作手册。

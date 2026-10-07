@@ -1,5 +1,9 @@
 # 卡尔比传统信仰与洪哈里—祖灵祈福（Karbi）
 
+![卡尔比人敬神场景（阿萨姆）](./karbi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Dovan.jpg -->
+
 ## 概述
 
 **卡尔比人（Karbi；旧称 Mikir）** 主要分布于印度阿萨姆卡尔比昂朗等地。公开记述：本土信仰常称 **Honghari**，核心为祖先敬礼与 **Hemphu—Mukrang** 等主神叙事；村域净化／祝福节庆 **Rongker** 属公开岁时层；丧葬大礼 **Chomangkan** 为 **HIGH SENSITIVITY viewing-only**。官方统计多列印度教，亦有基督教与复兴运动。本条目为教育概览；**不提供**献牲操作或可冒充祭司的程序——**users don't officiate**。

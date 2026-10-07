@@ -1,5 +1,9 @@
 # 通布卡传统信仰与祖灵—基督教祈福（Tumbuka）
 
+![通布卡 Vimbuza 舞](./tumbuka-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:A_Tumbuka_young_woman_performing_Vimbuza_Dance_of_the_Tumbuka_people.jpg -->
+
 ## 概述
 
 **通布卡人（Tumbuka）** 主要分布于马拉维北部与赞比亚东部。公开概述记述：传统宇宙强调祖先与治疗—社群伦理；今日多数受基督教（含自由教会传统）影响；与恩戈尼等邻族互动见于区域史。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与切瓦、洛姆韦条目区分。

@@ -1,5 +1,9 @@
 # 本都希腊民间东正教与流散祈福（Pontic Greek）
 
+![本都希腊传统服饰游行](./pontic-greek-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Traditional_Pontic_costumes_during_a_parade_in_Greece.jpg -->
+
 ## 概述
 
 **本都希腊人（Pontic Greeks）** 原籍黑海南岸（本都）一带，20 世纪被迫迁徙后主要分布于希腊等地，并有全球流散。公开文化记述中，东正教礼仪、乡愁圣歌、村社主保记忆与对故乡圣地的怀念构成祈福—认同核心；热舞与音乐常出现在文化节，但礼拜本身仍守教会规范。本条目为教育概览；**不提供**可冒充神职的脚本，并避免把种族清洗创伤娱乐化。

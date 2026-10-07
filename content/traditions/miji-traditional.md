@@ -1,5 +1,10 @@
 # 米吉传统信仰与东尼—波罗—基督教祈福（Miji／Sajolang）
 
+
+![阿鲁纳恰尔邦米吉族妇女传统服饰](./miji-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Women_from_the_miji_tribe,_Arunachal_Pradesh.jpg -->
+
 ## 概述
 
 **米吉人（Miji；亦有 Sajolang 等公开自称叙述）** 分布于印度阿鲁纳恰尔邦西部，为人口较少的山地社群。公开概述记述：传统宇宙含地方灵与仪者中介；今日并存基督教与本土信仰／东尼—波罗相关影响。本条目为教育概览；**不提供**占卜、献牲或可冒充祭司的步骤。与布贡、门巴、Sherdukpen 相邻但不可合并。

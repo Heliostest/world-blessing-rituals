@@ -1,5 +1,10 @@
 # 马特拉钦卡民间天主教与托卢卡谷祈福（Matlatzinca）
 
+
+![马特拉钦卡社群圣弗朗西斯科·奥克斯托蒂尔潘主保节烟火场景](./matlatzinca-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AEl_Mundo_Ef%C3%ADmero_Escenario.jpg -->
+
 ## 概述
 
 **马特拉钦卡人（Matlatzinca）** 今日主要集中于墨西哥州 **San Francisco Oxtotilpan**（Temascaltepec）等地。公开宗教生活以民间天主教圣徒崇拜、**Mayordomía** 主保／职务节庆与对 **Nevado de Toluca／Xinantécatl** 圣山的敬意交织——**中高敏感**。草药疗愈属 HIGH SENSITIVITY CONCEPT。本卡聚焦可公开的教堂—节庆与圣山观礼层；不涉未公开的封闭仪轨。与奥托米、马萨瓦、普雷佩查等中部墨西哥条目区分。

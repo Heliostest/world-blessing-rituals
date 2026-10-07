@@ -1,5 +1,9 @@
 # 比南代雷传统信仰与巴布亚北岸祈福（Binandere）
 
+![巴布亚新几内亚奥罗省乡村圣公会教堂内景](./binandere-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Village_Anglican_church_in_Oro_Province.jpg -->
+
 ## 概述
 
 **比南代雷人（Binandere）** 分布于巴布亚新几内亚北部（奥罗省一带）相关语群社群。公开叙述涉及园艺、氏族与展示礼仪——**高度敏感，本卡仅概念层**。今日并存基督教与现金作物。教育概览；**严禁**入会／丧礼操作或可冒充仪者的步骤。与奥罗凯瓦等北岸条目区分。

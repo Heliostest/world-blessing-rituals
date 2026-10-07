@@ -1,5 +1,10 @@
 # 莫潘玛雅民间天主教与伯利兹—危地马拉祈福（Mopan）
 
+
+![伯利兹托莱多玛雅鹿舞（莫潘地区公开节庆）](./mopan-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Deer_dance_toledo_belize.jpg -->
+
 ## 概述
 
 **莫潘人（Mopan）** 为玛雅语系社群，分布于伯利兹与危地马拉毗邻地区。公开宗教生活常见民间天主教圣徒崇拜、农作节庆与社区伦理——**中高敏感**。本卡聚焦可公开的教堂—节庆层；不涉未公开的圣地仪轨。与尤卡坦、拉坎东、克奇等条目区分。

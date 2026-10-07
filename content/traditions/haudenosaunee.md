@@ -1,5 +1,10 @@
 # 豪德诺索尼／易洛魁感恩致辞与吊唁传统（Haudenosaunee）
 
+![加农达干州史迹复原长屋](./haudenosaunee.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:GanondaganRecreatedLonghouse.jpg -->
+
+
 ## 概述
 
 **豪德诺索尼（Haudenosaunee，意为「建长屋之人」）** 是北美东北部原住民族联盟，英语常称易洛魁联盟（Iroquois Confederacy）；原为莫霍克、奥奈达、奥农达加、卡尤加、塞内卡五族，1722 年图斯卡罗拉加入后称六族。大英百科记述其以**和平大法（Great Law of Peace）** 组织议事。公开教育材料强调 **Ohenton Kariwahtekwen**（Thanksgiving Address／感恩致辞；莫霍克语语境 *Ohén:ton Karihwatéhkwen*）；岁时可见 **Midwinter Ceremony naming**（仲冬礼仪公开命名层）；**Condolence structure-only CONCEPT**（吊唁仅结构概念）。本条目仅述公开教育层；**不提供**吊唁仪程操作、贝壳腰带教诵或氏族专属程序。

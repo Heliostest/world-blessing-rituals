@@ -1,5 +1,9 @@
 # 那乃／赫哲传统信仰与萨满祈福（Nanai／Hezhen）
 
+![那乃／戈尔迪萨满祭司与助手（历史摄影）](./nanai-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Goldi_shaman_priest_and_assistant_LCCN2004707519.jpg -->
+
 ## 概述
 
 **那乃人（Nanai；中国境内亲属群体常称赫哲；俄语旧称 Goldi 等）** 为通古斯—满语民族，主要分布于俄罗斯远东哈巴罗夫斯克边疆区等黑龙江／阿穆尔下游流域，与乌尔奇等邻居共享渔猎文化。公开百科（encyclopedia.com）记述传统宗教以**萨满（saman）** 为中心：火、山、星辰、森林与河流皆有须尊敬的灵（**endur**）；天空神有 **Sangiia／Boaendurni** 等名称；熊与东北虎等被视为具灵力的动物；较小灵／亡灵称 **seven／busyu**。萨满以鼓（ungchukhun）与祷歌沟通灵界，用于疗愈、祈运与预言；最强者（kasaty-saman）在文献中负责护送亡灵前往 **Buni**（死者世界）。东正教洗礼后，双信仰并存常见。本条目为教育概览；**不提供**萨满请神脚本、出神诱导、亡灵护送操作或任何可冒充萨满的程序。

@@ -1,5 +1,9 @@
 # 瓦隆民间天主教与朝圣祈福（Walloon）
 
+![佛斯拉维尔圣弗扬军乐护送游行（Entre-Sambre-et-Meuse）](./walloon-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:2019_Fosses-la-Ville_Saint-Feuillen_198.jpg -->
+
 ## 概述
 
 **瓦隆（Wallonia）** 为比利时法语区，民间天主教在世俗化社会中仍以圣母朝圣地、主保节与堂区还愿弥撒存续。公开记述重点包括：UNESCO 相关的 **Marches de l'Entre-Sambre-et-Meuse（桑布尔—默兹之间军乐／护送游行）**、**Banneux** 与 **Beauraing** 圣母显现朝圣地细节，以及堂区 **votive Masses（还愿弥撒）**。本条目为教育概览；**不提供**可替代圣事的配方，并与弗拉芒、法国北部、卢森堡民间天主教可比较。

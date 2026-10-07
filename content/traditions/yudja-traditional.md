@@ -1,5 +1,9 @@
 # 尤贾／朱鲁纳传统信仰与辛古祈福（Yudjá／Juruna）
 
+![帕拉苏泽尔圣弗朗西斯科村尤贾／朱鲁纳村景（Amazônia Real）](./yudja-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:AMAZONIA_REAL_ALDEIA_SAO_FRANCISCO_SOUZEL_PEDROSA_NETO-108_(49594446586).jpg -->
+
 ## 概述
 
 **尤贾人（Yudjá；亦称 Juruna）** 与巴西辛古河流域相关，语言—文化认同鲜明。公开概述记述：传统宇宙强调河流、祖先与村际网络；今日并存水电／土地压力语境——**勿消费抗争**。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。文件名用自称 **yudja**，并列出 Juruna 同义检索以避免重复建卡。

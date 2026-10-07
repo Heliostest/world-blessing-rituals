@@ -1,5 +1,9 @@
 # 喀拉拉特耶姆仪式祈福（Theyyam／Kaliyattam）
 
+![喀拉拉特耶姆仪式妆扮](./theyyam-kerala.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Theyyam_of_Kerala_3.jpg -->
+
 ## 概述
 
 **特耶姆（Theyyam；亦称 Kaliyattam）** 是印度西南喀拉拉邦北马拉巴尔（Kannur、Kasaragod 一带，并延伸至相邻卡纳塔克部分地区）的民间神灵附体仪式剧与村落崇拜传统。喀拉拉旅游局与 INTACH 非物质文化遗产文档等公开资料指出：特耶姆一词与“神／神显”相关；表演者经妆扮、唱诵与舞蹈进入神圣角色后，信众视其为神明／祖灵／英雄的临在，并求祝福、保护与排难。传统表演群体多属马拉扬（Malayan）、瓦南（Vannan）等社群，形式据说近四百种；季节多在马拉雅拉姆历约十月至四月。本条目为教育概览；**不提供**附体诱导、妆扮配方、秘传唱词或任何可复现的“成神”步骤。

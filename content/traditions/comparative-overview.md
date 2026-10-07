@@ -1,5 +1,9 @@
 # 比较总览：祈福、功德与祈祷的跨文化线索
 
+![跨信仰祈祷礼上的藏传僧侣诵经（路易斯维尔信仰节）](./comparative-overview.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Tibetan_Monks_chanting_at_the_interfaith_Prayer_Service._(8879533935).jpg -->
+
 ## 概述
 
 本比较文对照本档案各传统中“祝福如何被理解、如何被举行、如何被限制”。材料来自案头二手研究与既有条目综合，并与 Gemini Notebook 研究笔记相互参照（笔记本：https://notebook.google.com/notebook/5db6b6d0-efb3-418a-8cb8-a1bf161a1492）。目标是提供可教学的对照框架，而非价值排序或混合修行指南。

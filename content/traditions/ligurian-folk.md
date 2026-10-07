@@ -1,5 +1,10 @@
 # 利古里亚民间天主教与海岸朝圣祈福（Ligurian）
 
+![热那亚切拉内西守护圣母朝圣地](./ligurian-folk.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Shrine_of_Nostra_Signora_della_Guardia_(Ceranesi_-_Genoa)_01.jpg -->
+
+
 ## 概述
 
 **利古里亚（Liguria）** 位于意大利西北海岸，以热那亚圣母敬礼、海岸还愿教堂与村社主保节著称。公开天主教民俗记述：**Madonna della Guardia** 朝圣；萨沃纳 **Casacce** 重十字架苦路／游行传统；以及 **Cristo degli Abissi**（深渊基督）水下／海岸祝福纪念，构成航海护佑与海岸祈福层。本条目为教育概览；**不提供**可冒充神职的脚本。与科西嘉、诺曼底海岸、普罗旺斯条目可比较。

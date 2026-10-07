@@ -1,5 +1,9 @@
 # 帕佩尔传统信仰与稻作—祖灵祈福（Papel）
 
+![帕佩尔节庆服饰肖像](./papel-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:DC_-_Bissau_-_Papel_em_traje_de_festa.jpg -->
+
 ## 概述
 
 **帕佩尔人（Papel）** 主要分布于几内亚比绍比绍地区及周边沿海。公开概述记述：传统宇宙强调祖先与稻作—土地伦理；今日并存基督教、伊斯兰与本土实践。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤。与巴兰塔、曼雅克等几内亚比绍社群相邻但认同独立。

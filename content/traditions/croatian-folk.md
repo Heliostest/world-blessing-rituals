@@ -1,5 +1,9 @@
 # 克罗地亚民间天主教与朝圣—节庆祈福（Croatian）
 
+![克罗地亚玛丽亚比斯特里察圣母朝圣地露天弥撒](./croatian-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Marija_Bistrica_Crkva_na_otvorenom_2011-09-11.jpg -->
+
 ## 概述
 
 **克罗地亚民间天主教** 在罗马天主教框架下，以圣母朝圣地（尤以 **Marija Bistrica** 全国朝圣中心著称）、海岸／内陆主保节、辛伊 **Sinjska Alka** 历史感恩赛会，以及如 **Zvončari** 等嘉年华／驱冬民俗著称。公开文化记述中，家庭圣人敬礼、复活节食物祝福与朝圣行走构成日常—节庆祈福层。本条目为教育概览；**不提供**可冒充神职的脚本，并与斯洛伐克、波兰、匈牙利民间天主教可比较。

@@ -1,5 +1,10 @@
 # 列兹金民间伊斯兰与圣地祈福（Lezgin／Lezgi）
 
+![达吉斯坦列兹金卡民俗舞蹈表演](./lezgin-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:2114-_FOLCLORE_Lezginka_(Daguestan)_(5862847577).jpg -->
+
+
 ## 概述
 
 **列兹金人（Lezgin／Lezgi；亦作 Lezgian）** 主要分布于俄罗斯达吉斯坦东南与阿塞拜疆北部相邻山地，语言属东北高加索语族列兹金语支。公开民族志指出：列兹金人多数为**沙斐仪逊尼派穆斯林**，苏菲兄弟会在历史上曾提供互助网络。与此同时，大量**前伊斯兰余绪**仍见于圣地朝拜；公开材料常提及 **Mount Shalbuzdag** 与地方 **pir** 圣地 **ziyarat**。春季 **Yaran Suvar** 一类篝火／彩蛋节庆与农牧周期民俗属公共文化层。本条目为教育概览；**不提供**献牲操作、求雨魔法步骤、占卜或任何可冒充宗教专家的程序。

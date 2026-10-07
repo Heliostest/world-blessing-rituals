@@ -1,5 +1,9 @@
 # 上座部佛教（泰缅斯里等地）
 
+![上座部托钵（pindapata）](./theravada-buddhism.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:108_Pindapata_(9163962547).jpg -->
+
 ## 概述
 
 上座部佛教是斯里兰卡、缅甸、泰国、柬埔寨、老挝等地的主流佛教形态，以巴利三藏为权威。对广大在家众来说，宗教生活的主轴往往是持续**作福**（巴利 *puñña*；泰语常说 *tam bun*／*tham bun*）：借由 **Pindapata（托钵）**、**Grot Nam（浇水回向）**、持戒、**Kathina（功德衣）**、**Songkran 浴佛**，以及短期出家（**CONCEPT naming only**）积累福德并回向亲人。僧团被看作殊胜“福田”，物质供养与法的回馈彼此支撑社会伦理。

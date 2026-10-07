@@ -1,5 +1,10 @@
 # 列支敦士登民间天主教与莱茵朝圣祈福（Liechtenstein）
 
+![列支敦士登国庆日（Staatsfeiertag／亲王节）夜景欢庆](./liechtenstein-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Liechtenstein._Staatsfeiertag_2011._2011-08-15_21-29-34.jpg -->
+
+
 ## 概述
 
 **列支敦士登（Liechtenstein）** 为阿尔卑斯莱茵河畔微型公国，以天主教堂区、国庆与山地还愿传统著称。公开记述：**8 月 15 日 Staatsfeiertag（国庆）** 常与城堡／亲王府相关公开弥撒及国民欢庆相连；**Maria Trost** 一类圣母圣地朝圣；以及 **Alpabfahrt** 牧季下山民俗构成祈福与认同层。本条目为教育概览；**不提供**可冒充神职的脚本。与瑞士东都、奥地利福拉尔贝格民间天主教可比较但公国认同独立。

@@ -1,5 +1,10 @@
 # 马萨瓦民间天主教与山灵祈福（Mazahua）
 
+
+![马萨瓦《牧羊女舞》（Danza de las Pastoras，伊斯拉瓦卡）](./mazahua-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ADanza_de_las_pastoras.jpg -->
+
 ## 概述
 
 **马萨瓦人（Mazahua）** 分布于墨西哥中部墨西哥州与米却肯交界高地。公开概述记述：天主教圣徒与地方山灵、玉米—雨水伦理交织；**Romería al Señor de Chalma** 朝圣与 **Danza de las Pastoras** 等公开舞蹈构成公共祈福层；**Parakata**（帝王蝶）在地方叙述中可作生态／祖先象征。本条目为教育概览；**Curandero** HIGH SENSITIVITY CONCEPT——**users don't officiate**。**不提供**疗愈脚本、献牲或可冒充仪者的步骤。

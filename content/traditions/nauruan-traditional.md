@@ -1,5 +1,9 @@
 # 瑙鲁传统信仰与村社祈福余绪（Nauruan）
 
+![瑙鲁人历史合影](./nauruan-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Nauruan_people.jpg -->
+
 ## 概述
 
 **瑙鲁人（Nauruan）** 居住于密克罗尼西亚独立岛国瑙鲁。公开民族志（everyculture）记述：传统宇宙观含诸灵与神祇（如以石象征、后因采矿迁走的 **Tabuarik**），家户外祭坛向家族祖先献食；创世叙事中有蜘蛛 **Areop-Enap** 等。自伦敦传道会等抵达后，今日多数属瑙鲁公理会（约六成）或罗马天主教（约三分之一），另有五旬节等群体。独立日与「Angam Day」（人口危机后重生纪念）是重要公共节日。本条目为教育概览；**不提供**招魂、中介附体脚本或任何可冒充仪式专家的程序。

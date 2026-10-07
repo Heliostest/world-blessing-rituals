@@ -1,5 +1,10 @@
 # 格鲁吉亚正教会祈祷与点烛（Georgian Orthodox Church）
 
+![姆茨赫塔十字修道院点烛祈祷](./georgian-orthodox.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Mtskheta,_Jvari_Monastery,_Candlelight,_Georgia.jpg -->
+
+
 ## 概述
 
 **格鲁吉亚正教会**（Georgian Orthodox Church）是东正教共融中的**自主（autocephalous）**教会，也是世界上最古老的基督教共同体之一。大英百科全书记述：格鲁吉亚人约在四世纪经圣尼诺（St. Nino）的传道接受基督教；教会首领长期使用「卡托利科斯—牧首」等称号。礼拜传统使用格鲁吉亚语与字母书写的经文与圣咏，并以金口若望等圣餐礼仪为常见形式。首都第比利斯与古都**姆茨赫塔（Mtskheta）** 一带教堂是信仰生活与民族记忆的重心；姆茨赫塔历史古迹（含 Svetitskhoveli、Jvari 等）列入联合国教科文组织**世界遗产**。对访客而言，最可见的公开虔敬包括：在圣像前**点烛祈祷**、划十字、亲吻圣像，以及站立参与圣礼的氛围。本条目为教育性概览，说明公开实践与参观礼仪；**不提供**圣事成圣祷文或可复现的圣餐／告解操作。

@@ -1,5 +1,10 @@
 # 老挝上座部佛教与灵魂召唤／皮灵祈福（Lao Baci / Phi）
 
+![老挝村寨巴希（baci／sou khuan）祝福仪式](./lao-baci-phi.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:People_at_a_baci_ceremony_in_a_village.jpg -->
+
+
 ## 概述
 
 **老挝（Lao）低地社会**在宗教自我认同上几乎总是回答「佛教徒」，尤指 **上座部（Theravāda）**；寺院（vat）是村落公共生活的中心。与此同时，Encyclopedia of Religion 与大英百科均强调：所谓 **phī（皮／灵）** 信仰与佛教并非彼此取消，而是经数世纪融合后形成内在一致的宗教意识形态。与祈福最相关的公开实践之一是 **sū khwan／baci（召魂／巴希）**：以 **Pha Khuan** 托盘为视觉中心，并以白线 **Sai Sin** 系腕象征安住据传统叙述可达 **32 khwan** 的魂／精气。年度 **Boun That Luang**（塔銮节）为最重要的国家—佛教公共节庆之一；村灵／地方守护灵供养仅作 CONCEPT。本条目与《上座部佛教》《泰国神屋》区分老挝—伊桑文化圈的巴希与皮灵公共层；**不提供**萨满附体脚本、牲祭步骤、可复现咒词或医疗替代方案。

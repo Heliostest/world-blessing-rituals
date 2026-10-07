@@ -1,5 +1,9 @@
 # 爱尔兰民间天主教与圣井—朝圣祈福（Irish）
 
+![爱尔兰克罗帕特里克山脚圣帕特里克像](./irish-folk-catholic.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Croagh_Patrick,_Ireland.jpg -->
+
 ## 概述
 
 **爱尔兰民间天主教** 在罗马天主教框架下，长期并存圣井（holy wells）、地方圣人敬礼与山地／岛上朝圣等民俗层。公开记述中，**克罗帕特里克山（Croagh Patrick）** 于七月末 **Reek Sunday** 迎来大规模朝圣；**Lough Derg／Station Island（德格湖站岛）** 以多日补赎朝圣（penitential pilgrimage）闻名；各地 **Pattern Days** 则以地方圣人瞻礼、圣井绕行、**clootie**（布条还愿）等形成疗愈—许愿传统，常与圣帕特里克等圣人叙事相连，亦被学者讨论与更早神圣水点的连续性。本条目为教育概览；**不提供**可替代圣事的「魔法配方」，也不鼓励危险赤足登山盲从。

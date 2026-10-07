@@ -1,5 +1,9 @@
 # 卡纳马里传统信仰与朱鲁阿—普图马约祈福（Kanamari）
 
+![爪瓦里谷地马萨佩村卡纳马里人在园地劳作](./kanamari-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:TI_Vale_do_Javari_-_Kanamari_(39786662693).jpg -->
+
 ## 概述
 
 **卡纳马里人（Kanamari）** 分布于巴西亚马逊西部（朱鲁阿／普图马约相关流域）。公开叙述涉及村落礼仪与护佑观念——**极高敏感，本卡仅概念层**。教育概览；**严禁**药方、入会或可冒充仪者的步骤。与马鲁博、卡图基纳、马策斯等条目区分。

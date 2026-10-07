@@ -1,4 +1,8 @@
 # 金班古教会／金班古主义祈福（Kimbanguism）
+![恩坎巴（Nkamba）金班古教会圣殿外观](./kimbanguism.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Temple_de_Nkamba.JPG -->
+
 
 ## 概述
 

@@ -1,5 +1,9 @@
 # 丁卡传统宗教（Nhialic／矛师）
 
+![南苏丹朱巴附近的丁卡牛群](./dinka-nhialic.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Cattle_of_the_Dinka_people,_Juba,_South_Sudan_-_20101230-02.jpg -->
+
 ## 概述
 
 **丁卡人（Dinka；自称 Jieng）** 是南苏丹尼罗河中游沼泽周边的尼罗特牧民，与努埃尔人（Nuer）语言文化相近却自视为不同族群。大英百科强调其宗教信仰强烈：上帝 **Nhial／Nhialic** 与众多祖先灵在日常生活中居于中心；从谎言到谋杀都可能成为献祭和解的机缘。氏族中某些父系支系提供祭司首领 **「渔矛之主」（masters of the fishing spear）**，其权威由神话与「携带生命」的观念支撑。经典民族志以 Godfrey Lienhardt *Divinity and Experience* 等为重要参考。本条目为教育性概览；**不提供**牛牲屠宰、占卜识别附体灵、活埋祭司等任何可复现步骤。

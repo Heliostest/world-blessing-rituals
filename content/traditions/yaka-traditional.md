@@ -1,5 +1,9 @@
 # 雅卡传统信仰与面具—祖灵祈福（Yaka）
 
+![雅卡启蒙面具（图卢兹自然史博物馆藏）](./yaka-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:%28MHNT%29_Masque_d%27initiation_-_Culture_Yaka_-_R%C3%A9publique_d%C3%A9mocratique_du_Congo.jpg -->
+
 ## 概述
 
 **雅卡人（Yaka）** 分布于刚果民主共和国西南与安哥拉北部交界。公开概述记述：传统宇宙强调祖灵与面具—治疗／启蒙会社传统；今日并存基督教。本条目为教育概览；**严禁**入会、面具仪轨操作化或献牲步骤。与彭德、乔奎条目区分（面具传统各有谱系，不可合并）。

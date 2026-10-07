@@ -1,5 +1,9 @@
 # 维利传统信仰与海岸刚果祈福（Vili）
 
+![维利／卢安戈海岸 nkisi 力量像](./vili-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Nkisi_Vili_Loango_Coast_III_C_531_Berlin_Beyond_Compare_03052018_1.jpg -->
+
 ## 概述
 
 **维利人（Vili）** 分布于刚果（布）／加蓬沿海（卢安戈历史王国相关公开叙述）。公开概述记述：传统宇宙强调祖先与海岸贸易伦理余绪；今日多数为基督徒。本条目为教育概览；**不提供**法器操作、献牲或可冒充仪者的步骤。与巴刚果总览、永贝条目相关刚果大传统但维利／卢安戈海岸认同独立。

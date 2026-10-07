@@ -1,5 +1,10 @@
 # 毛利人祈福与马拉埃礼仪（Māori）
 
+![怀唐伊条约地毛利人 pōwhiri 欢迎礼](./maori.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Powhiri_at_the_Waitangi_Treaty_Grounds.jpg -->
+
+
 ## 概述
 
 **毛利人（Māori）** 是新西兰（Aotearoa）的原住民族。公开可见的祈福与礼仪生活常环绕 **Tikanga Māori**（正确做法）、*marae*／**Wharenui**（会堂）、*karakia*、*pōwhiri*／**Haka** 等公共文化展演，以及 *tangihanga* 展开。**Tohunga** 为礼仪／知识专家 CONCEPT；**Kaumātua** 与获授权者主持。官方百科 Te Ara 记述 *tangihanga* 与 *marae* 礼仪结构；公共机构亦说明 *karakia* 可用于祝福场所与状态转换。本条目为教育性概览；Pōwhiri／Haka 公共文化；Karakia／marae ethics；Tangihanga respect／viewing——**Kaumātua／Tohunga host, users don't officiate**。**不提供**特定 *iwi* 专属吟诵全文或可复现的 tohunga 操作。

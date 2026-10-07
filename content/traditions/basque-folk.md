@@ -1,5 +1,9 @@
 # 巴斯克民间信仰与玛丽女神传说（Basque folk／Mari）
 
+![巴斯克农舍门楣太阳蓟护符（Eguzkilore）](./basque-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Eguzkilore_protector_en_caser%C3%ADo_guipuzcoano.jpg -->
+
 ## 概述
 
 **巴斯克人（Basques）** 分布于西班牙北部与法国西南，语言 **Euskara** 为欧洲著名孤立语言。大英百科等概述其文化认同与天主教历史的同时，二十世纪民族志（尤其 **José Miguel Barandiarán** 的采集）保存了大量前基督教余绪的口头传统：山岳、洞穴与天气力量常人格化为 **Mari（玛丽／安博托之女主等地方称号）**，并与 **Sugaar** 等形象共同出现于传说。当代实践以天主教与世俗生活为主，Mari 更多作为民俗、地方认同与自然伦理象征存续，而非建制教会式崇拜。公开民俗层亦常见门楣／屋顶悬挂的太阳蓟护符 **Eguzkilore（「太阳之花」）** 叙事，以及 **Zugarramurdi** 等地与近代猎巫记忆相关的历史—文化纪念（博物馆／纪念空间），属记忆与警示层而非「重建仪式」。本条目为教育性民俗概览；**不提供**「重建异教祭仪」操作或洞穴献牲教程。

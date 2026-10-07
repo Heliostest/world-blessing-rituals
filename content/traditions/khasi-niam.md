@@ -1,4 +1,8 @@
 # 卡西传统信仰／尼阿姆卡西（Niam Khasi）
+![梅加拉亚马夫朗（Mawphlang）卡西圣林](./khasi-niam.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Sacred_forest,_Mawphlang,_Meghalaya.jpg -->
+
 
 ## 概述
 

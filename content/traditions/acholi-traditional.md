@@ -1,5 +1,9 @@
 # 阿乔利传统宗教与祖灵祈福（Acholi）
 
+![阿乔利 Bwola 舞传统服饰](./acholi-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Traditional_Attires,_Acholi_Culture_(Bwola_Dance).jpg -->
+
 ## 概述
 
 **阿乔利人（Acholi）** 分布于乌干达北部与南苏丹毗邻地带，属尼罗语族公开分类。公开概述记述：传统宗教强调祖灵、地方灵（公开叙述中的 **Jok** 等）与和解仪式在战后社会修复中的作用——其中 **Mato Oput** 和解叙事尤为知名；地方亦有 **Keno** 等圣所／圣地概念记述；今日广泛并存基督教（圣公会、天主教、五旬节等）与传统治疗—净化叙事。本条目为教育概览；**Mato Oput／Jok／Keno 均为 CONCEPT — non-operational**；**特别克制**涉及冲突创伤；**不提供**驱邪脚本、献牲操作或可冒充仪式专家的步骤。

@@ -1,5 +1,9 @@
 # 巴兰塔传统信仰与稻作祈福（Balanta）
 
+![几内亚比绍比绍军营区潮汐稻田（bolanha）](./balanta-traditional.jpg)
+
+<!-- 来源：CC0 1.0 | https://commons.wikimedia.org/wiki/File:Bolanha,_Bairro_Militar-_Bissau.jpg -->
+
 ## 概述
 
 **巴兰塔人（Balanta）** 主要分布于几内亚比绍，以潮汐稻作与相对平等的村社组织闻名于区域民族志。公开概述记述：传统宇宙强调祖先（公开叙述中的 **Nhala** 等）与潮汐稻田 **Bolanha** 伦理；成丁叙述 **Fanado** 属高度敏感概念层；今日并存基督教、伊斯兰与本土实践。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤。与曼雅克、帕佩尔等几内亚比绍社群区分。

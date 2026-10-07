@@ -1,5 +1,10 @@
 # 马库阿传统宗教与穆卢库—祖灵祈福（Makua）
 
+![莫桑比克伊博岛涂抹 musiro 面饰的马库阿妇女](./makua-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Woman_with_musiro_mask.jpg -->
+
+
 ## 概述
 
 **马库阿人（Makua／Makhuwa）** 为莫桑比克人口众多的班图语族群之一，亦分布于坦桑尼亚等邻近地区；与洛姆韦（Lomwe）等群体语言文化相关。公开百科记述：传统宗教尊至高神 **Muluku**，并有对立邪恶灵 Minepa 等叙事，祖先与自然灵受敬；**Mapiko／Midimu** 等面具舞作为文化表演见于公开层；沿海贸易区受斯瓦希里—阿拉伯影响较深，沙斐仪逊尼派伊斯兰可见，内陆亦有天主教等基督教。本条目为教育概览；**Muluku** 仅 CONCEPT；**Mapiko／Midimu** 作文化表演——**no how-to**；**users don't officiate**。**不提供**献牲操作、驱邪脚本或可冒充仪式专家的步骤。

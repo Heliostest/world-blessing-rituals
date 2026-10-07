@@ -1,5 +1,10 @@
 # 尼亚姆韦齐传统信仰与祖灵—贸易祈福（Nyamwezi）
 
+![尼亚姆韦齐十九世纪发型与头饰](./nyamwezi-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:NYAMWEZI_HAIR_STYLES_AND_HEAD_DRESSES.jpg -->
+
+
 ## 概述
 
 **尼亚姆韦齐人（Nyamwezi）** 分布于坦桑尼亚中西部（塔波拉一带），历史上以长途贸易与农牧复合生计闻名。公开概述记述：传统宇宙强调祖先与地方灵力；今日多数受基督教与伊斯兰影响。本条目为教育概览；**不提供**献牲、疗愈脚本或可冒充仪者的步骤。与苏库马条目有历史联系但当代认同与核心区域不同，不可合并。

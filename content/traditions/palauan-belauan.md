@@ -1,5 +1,9 @@
 # 帕劳／贝拉乌传统信仰与莫德肯盖（Palauan／Belauan／Modekngei）
 
+![帕劳梅莱凯奥克传统集会堂 Bai Melekeong](./palauan-belauan.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Bai_Melekeong.jpg -->
+
 ## 概述
 
 **帕劳（Palau；本地语境常称 Belau）** 位于西密克罗尼西亚，传统宗教以村社与亲族神灵体系为核心：公开民族志区分 **chelid（神祇）**、死者之灵与祖先灵（文献中作 delep／bladek 等拼写），以及与聚落、氏族和家宅绑定的守护神。村社神与亲族神各有职分，圣地与口述谱系维系地方秩序。20 世纪初兴起的 **Modekngei（莫德肯盖）** 是融合帕劳传统与基督教元素的本土复兴／综摄运动，以地方神 **Ngirchomkuul** 等为核心象征，强调净化、预言、圣歌（kesekes）与社群自足。联合国教科文组织世界遗产暂定名单中的 Imeong 保护区记载 **Ii ra Milad** 等圣地：传说女神 Milad 与帕劳祖先诞生相关，至今仍受社群敬重。本条目为教育概览，与泛密克罗尼西亚条目互补；**不提供**附体操作、可复现净化浴方或封闭神谕程序。

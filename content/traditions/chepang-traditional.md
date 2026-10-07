@@ -1,5 +1,9 @@
 # 切庞传统信仰与山林祈福（Chepang）
 
+![尼泊尔切庞人传统山居屋舍](./chepang-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Chepang_House.JPG -->
+
 ## 概述
 
 **切庞人（Chepang）** 分布于尼泊尔中部丘陵，传统上与山林采集—农耕边缘生计相关。公开概述记述：传统宇宙含自然灵与祖先伦理；首获祭／初穗礼仪公开命名含 **Nwagi／Chonam**；**Pande** 萨满职分属 **CONCEPT ONLY — no ops**。今日并存印度教、基督教影响与公民身份议题；语言与土地权利是当代核心。本条目为教育概览；**不提供**献牲、萨满脚本或可冒充仪者的步骤。与坦芒、切庞邻近的帕哈里社群区分，补喜马拉雅缺口。

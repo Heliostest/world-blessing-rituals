@@ -1,5 +1,9 @@
 # 嘉莱族传统信仰与高原祈福（Jarai／Giarai）
 
+![柬埔寨拉达那基里嘉莱人社区公屋](./jarai-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Community_Hall_of_Jarai_Indigenous_People.jpg -->
+
 ## 概述
 
 **嘉莱人（Jarai；越南语 Giarai 等）** 为越南西原与柬埔寨拉达那基里等地的南岛语民族。公开综述指出传统宗教为**泛灵／多神（Yang）**；精神「王」叙事中的 **Pơtao Pui（火王）／Pơtao Ia（水王）** 属 **CONCEPT**；二次葬 **Pa thi** 属 **CONCEPT ONLY**；新米／新屋等为公共节庆层——**users don't officiate**。本条目为教育概览；**不提供**献牲操作、弃墓内部步骤或可冒充精神王的程序。

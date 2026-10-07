@@ -1,5 +1,9 @@
 # 安第斯／印加余绪（despacho、pago a la tierra）
 
+![阿科拉狂欢节周一帕查玛玛供奉桌（pago／ofrenda）](./andean.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mesa_de_ofrenda_a_la_Pachamama.jpg -->
+
 ## 概述
 
 安第斯山脉社群（含克丘亚、艾马拉等）的宇宙观强调人类与大地母亲 **Pachamama**、山灵 **Apus** 之间的互惠（*ayni*）。祈福与感恩常透过献给大地的礼包仪式来表达，西班牙语地区广泛称为 **despacho** 或 **pago a la tierra**（付地／大地酬付）；公开叙述中由 **Paqo**（地方仪式专家）主持，**用户仅观礼**。公开概念亦包括 **Kintu**（古柯叶三叶组等供奉概念）、洒酒 **ch’alla**，以及 **Qoyllurit'i** 等高原朝圣命名。印加国家礼仪已成历史，但地方农牧周期中的供奉在殖民与天主教影响下继续以融合形式存在。联合国教科文组织登录的卡亚瓦亚安第斯宇宙观，展示了仪式、医药与神话的整体性。本条目为教育概览；**不提供** despacho 配置 how-to、迷幻植物线或用户主持操作。

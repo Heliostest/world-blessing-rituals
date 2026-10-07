@@ -1,5 +1,9 @@
 # 杜阿拉传统信仰与河口—基督教祈福（Duala）
 
+![杜阿拉 Ngondo 2024 水节](./duala-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:NGONDO_2024_Festival_01.jpg -->
+
 ## 概述
 
 **杜阿拉人（Duala）** 分布于喀麦隆滨海河口（杜阿拉一带），历史上以贸易酋长国与河口礼仪闻名。公开概述记述：传统宇宙含祖先与水灵伦理——**Miengu** 等水灵叙述见于公开文化层；**Ngondo**（Wouri 河水域节）为重要公开水节／文化节；**diving oracle**（潜水神谕）属 **HIGH SENSITIVITY CONCEPT ONLY**。今日多数为基督徒，城市与习俗并存。本条目为教育概览；**不提供**献牲、入会、神谕操作或可冒充仪者的步骤。与巴米累克草原王国、芳／布维蒂等条目核心不同。

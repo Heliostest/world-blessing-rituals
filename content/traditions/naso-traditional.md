@@ -1,5 +1,9 @@
 # 纳索传统信仰与王国—森林祈福（Naso／Tjër Di）
 
+![巴拿马纳索人于圣圣河畔炊煮（La Mochila）](./naso-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Hombres_cocinando_Pma_La_Mochila.jpg -->
+
 ## 概述
 
 **纳索人（Naso；亦称 Teribe／Tjër Di）** 分布于巴拿马西北，以独特的世袭国王制度与森林领地闻名于公开报道。公开概述记述：传统宇宙强调森林与祖先伦理；今日并存基督教；王权—自治与生态保护交织。本条目为教育概览；**不提供**献牲、入会或可冒充王室／仪者的步骤。与恩加贝、布里布里条目区分。

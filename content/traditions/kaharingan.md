@@ -1,5 +1,10 @@
 # 婆罗洲达雅克 Kaharingan／祖先与二次葬仪礼
 
+
+![达雅克 Ngaju 骨匣 Sandung（Kaharingan／二次葬 Tiwah 相关）](./kaharingan.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Sandung_101014-7588_mp.JPG -->
+
 ## 概述
 
 **Kaharingan** 是印度尼西亚加里曼丹等地达雅克族群——尤其中加里曼丹 Ngaju 人——的传统宗教自称。信仰包含高位创世神 **Ranying Hatalla Langit**、众灵与祖先；礼仪专家 **Basir** 属 **CONCEPT**——**users don't officiate**；家族骨匣 **Sandung** 与二次葬 **Tiwah** 为 **viewing-only restricted**。本条目为高层次概览；**不提供**献牲数量、掘骨操作或祭司祷词教程。

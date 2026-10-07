@@ -1,5 +1,9 @@
 # 马嘉尔传统信仰与自然神—萨满祈福（Magar）
 
+![身着传统服饰的尼泊尔马嘉尔女孩](./magar-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Girl_wearing_traditional_Magar_dress,_Nepal-070A0920.jpg -->
+
 ## 概述
 
 **马嘉尔人（Magar）** 为尼泊尔重要山地民族之一，支系与地方实践多样。公开民族志记述：宗教光谱含自然神／地方神崇拜、祖先礼仪、萨满（如 **Jhankri** 相关公开叙述）以及印度教、佛教影响；**Bhume Puja** 等土地／大地供奉与 **Maghe Sankranti** 等岁时丰收—新年礼仪见于公开文化层。本条目为教育概览；**Bhume Puja** 作大地供奉概念；**Maghe Sankranti** 作丰收／新年公共文化层；**Jhankri** 萨满仅 CONCEPT／viewing ONLY——**users don't officiate**。**不提供**萨满出神脚本、献牲操作或可冒充祭司的步骤。与古隆、塔芒、基拉特条目区分。

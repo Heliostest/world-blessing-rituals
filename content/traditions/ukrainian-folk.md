@@ -1,5 +1,9 @@
 # 乌克兰民间东正教与朝圣—节日祈福（Ukrainian）
 
+![乌克兰东正教圣诞报佳音（Koliada）](./ukrainian-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ukrainian_Orthodox_Christmas_in_Poland_-_Koliada.JPG -->
+
 ## 概述
 
 **乌克兰民间东正教** 在东正教礼仪年之外，广泛保留圣井、显灵圣像朝圣、家屋祝福与丰收—圣诞民俗（如圣诞歌 kolyadky、圣晚餐等公开记述）。波查伊夫等大修道院传统上为重要朝圣地。当代实践处于战争与流散语境中，祈福常与平安、逝者纪念紧密相连。本条目为教育概览；**不提供**可冒充神职的礼仪脚本，也不把战争创伤消费化。

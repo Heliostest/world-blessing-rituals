@@ -1,5 +1,9 @@
 # 乔尔蒂玛雅民间天主教与危地马拉—洪都拉斯祈福（Ch'orti'）
 
+![危地马拉埃斯基普拉斯黑基督（Cristo Negro）游行](./chorti-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Procesi%C3%B3n_del_Cristo_Negro_de_Esquipulas.JPG -->
+
 ## 概述
 
 **乔尔蒂人（Ch'orti'）** 为玛雅语系社群，分布于危地马拉东部与洪都拉斯西部。公开宗教生活常见民间天主教圣徒崇拜——区域朝圣网络常连结 **Esquipulas 黑基督**——与玉米生长／雨水伦理；**Padrinos de la Lluvia（雨神甫／雨水教父）** 属 **CONCEPT ONLY**。本卡聚焦可公开的教堂—节庆层。与乔尔（Chol）、约科坦、拉坎东等条目区分——Ch'orti' ≠ Chol。

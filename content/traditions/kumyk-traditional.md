@@ -1,5 +1,9 @@
 # 库梅克民间伊斯兰与达吉斯坦低地祈福（Kumyk）
 
+![库梅克村博伊纳克（Boynaq／Ullubiyaul）清真寺](./kumyk-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:19th_century_Mosque_in_Kumyk_village_of_Boynaq_(Ullubiyaul).jpg -->
+
 ## 概述
 
 **库梅克人（Kumyk）** 为达吉斯坦突厥语民族，多居于低地与山前地带，绝大多数为逊尼派穆斯林。公开概述记述：清真寺、经堂与苏菲传统在历史城镇中影响深远；岁时公共层突出 **Ebelzen／Navruz** 犁耕／新年节庆与 **Mawlid** 圣纪；**Ziyarat** 圣墓朝谒属 viewing／CONCEPT only。生命礼仪与地方圣地敬意构成民间祈福层；同时存在改革派与传统实践的张力。本条目为教育概览；**不提供**教团秘仪或政治动员话术——**users don't officiate**。与阿瓦尔、列兹金、诺盖条目可比较。

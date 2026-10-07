@@ -1,5 +1,9 @@
 # 苏鲁伊／派特尔传统信仰与雨林祈福（Paiter Suruí）
 
+![派特尔苏鲁伊羽冠博物馆藏](./surui-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Suru%C3%AD_headdresses_-_Memorial_dos_Povos_Ind%C3%ADgenas_-_Brasilia_-_DSC00564.JPG -->
+
 ## 概述
 
 **派特尔·苏鲁伊人（Paiter Suruí）** 分布于巴西朗多尼亚及相关地带。公开概述记述：传统宇宙强调祖先与森林伦理；今日以森林监护、碳项目争议与文化自治进入公共视野——**叙述须克制，勿消费**。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。同义检索含 Suruí／Paiter，避免重复建卡。

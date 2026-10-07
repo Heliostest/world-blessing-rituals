@@ -1,5 +1,9 @@
 # 耶姆特兰民间基督教与山林祈福（Jamtland）
 
+![耶姆特兰阿尔森村的圣奥拉夫朝圣道标](./jamtland-folk.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Alsen.StOlavsLeden.JPG -->
+
 ## 概述
 
 **耶姆特兰（Jämtland）** 位于瑞典中北部，历史上与特伦德拉格联系紧密，以路德宗堂区、山林牧季与湖泊渔猎民俗著称。公开记述：**St. Olavsleden（圣奥拉夫朝圣道）** 穿越本区；**Fäbod** 夏牧场季节伦理、**Kulning**（牧呼／山歌）与**仲夏**及 **St Olav** 瞻礼相关民俗，与教会节期共同构成祈福—岁时层。本条目为教育概览；**不提供**可冒充神职的脚本。与达拉纳、特伦德拉格／挪威中部民俗可比较但耶姆特兰认同独立。

@@ -1,5 +1,9 @@
 # 安本杜传统信仰与北部安哥拉祈福（Ambundu / Kimbundu）
 
+![安本杜（Mbundu）拇指琴／mbira，蒙特利尔雷德帕斯博物馆藏品](./ambundu-traditional.jpg)
+
+<!-- 来源：CC0 1.0 | https://commons.wikimedia.org/wiki/File:Mbira_thumb_piano,_Angola_(Mbundu),_wood,_leather,_metal_-_Redpath_Museum_-_McGill_University_-_Montreal,_Canada_-_DSC08249.jpg -->
+
 ## 概述
 
 **安本杜人（Ambundu，语言为 Kimbundu）** 分布于安哥拉北部（含罗安达腹地历史区域）。公开叙述涉及祖灵（常以 **Mukishi／Hamba** 等概念称述）、至高神 **Nzambi** 命名、社区伦理与基督教接触——**中高敏感**。公开文化层亦可见 **Dikanza**、**Semba** 等音乐／节奏传统。教育概览；**仅概念层**；不提供祭祀操作。与奥文本杜（Ovimbundu）、巴刚果等安哥拉条目区分——安本杜为独立民族史，不另开空洞 mbundu 混名卡。

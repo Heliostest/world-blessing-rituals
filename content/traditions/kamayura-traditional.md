@@ -1,5 +1,9 @@
 # 卡马尤拉传统信仰与辛古祈福（Kamayurá）
 
+![上辛古卡马尤拉村落与乌鲁阿笛（Uruá）礼仪场景](./kamayura-traditional.jpg)
+
+<!-- 来源：CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Kamaiur%C3%A1_village_in_Xingu_Indigenous_Park.jpg -->
+
 ## 概述
 
 **卡马尤拉人（Kamayurá）** 为巴西上辛古相关社群之一，以长笛、摔跤与复杂村社礼仪闻名于民族志。公开概述记述：多语族辛古互惠网络中的仪式交换；今日并存保护区语境。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。**非** `kuikuro-traditional.md` 的重复，强调卡马尤拉公开文化标识。

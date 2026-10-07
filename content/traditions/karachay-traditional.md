@@ -1,5 +1,9 @@
 # 卡拉恰伊民间伊斯兰与高加索山地祈福（Karachay）
 
+![卡拉恰伊民间舞蹈「阿别泽克」（Эльбрус 歌舞团）](./karachay-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%80%D0%B0%D1%87%D0%B0%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D1%82%D0%B0%D0%BD%D0%B5%D1%86_%22%D0%90%D0%B1%D0%B5%D0%B7%D0%B5%D0%BA%22_%D0%93%D0%90%D0%A2_%22%D0%AD%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81%22_(%D1%81%D0%BE%D0%BB%D0%B8%D1%81%D1%82_%D0%A1.%D0%A2%D0%B5%D0%BA%D0%B5%D0%B5%D0%B2).jpg -->
+
 ## 概述
 
 **卡拉恰伊人（Karachay）** 为北高加索突厥语民族，主要分布于俄罗斯卡拉恰伊—切尔克斯等地，常与巴尔卡尔人并提。公开概述记述：绝大多数为逊尼派穆斯林；**Adat／Nymys** 好客与荣誉伦理；**Nart** 史诗记忆；山地神灵／圣地记忆如 **Teyri／Eliya** 属 **CONCEPT**；雨／山水相关民俗亦属 **CONCEPT**。20 世纪流放创伤深刻影响集体记忆。本条目为教育概览；**不提供**教团秘仪——**users don't officiate**。

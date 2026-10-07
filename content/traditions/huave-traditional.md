@@ -1,5 +1,9 @@
 # 瓦韦民间天主教与潟湖祈福（Huave／Ikoots）
 
+![圣马特奥德尔马伊科茨织女与腰带织机](./huave-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:D%C3%A9bora_y_su_telar_de_cintura.jpg -->
+
 ## 概述
 
 **瓦韦人（Huave；自称常作 Ikoots）** 分布于墨西哥瓦哈卡太平洋岸特万特佩克地峡潟湖地带，语言 isolate 相关公开分类；**San Mateo del Mar** 等潟湖城镇为重要公开文化节点。公开概述记述：天主教圣徒与潟湖—渔捞伦理、地方灵力交织；**Danza de la Serpiente**（蛇舞，雨／风相关公开节庆舞蹈叙述）见于公开展演层；**Ikoot lagoon ethics**（潟湖伦理）；疗愈中介属 **Curandero CONCEPT ONLY**。本条目为教育概览；**不提供**献牲、疗愈脚本或可冒充仪者的步骤。与萨波特克、阿穆斯戈等邻族区分，补梅索美洲海岸缺口。

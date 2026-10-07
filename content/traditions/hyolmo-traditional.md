@@ -1,5 +1,9 @@
 # 约尔莫传统信仰与藏传佛教祈福（Hyolmo／Helambu）
 
+![尼泊尔约尔莫 Tsechu 节假面舞者](./hyolmo-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Festival_of_Hyolmo_Community_in_Nepal.jpg -->
+
 ## 概述
 
 **约尔莫人（Hyolmo；亦称 Helambu Sherpa 等相关公开称呼，社群常强调独立认同）** 分布于尼泊尔赫拉姆布山谷一带。公开概述记述：藏传佛教（宁玛等传承公开常见）与地方神山—土地伦理交织；可见 **Yangri Ri pilgrimage**（杨里日朝圣公开层）、**Guru Rinpoche caves**（莲花生相关山洞朝谒公开叙述）、**Sang smoke offering CONCEPT**（桑烟供概念）、**Lhosar monastery**（洛萨寺院节期）与 **prayer flags**（经幡）等公开文化层。语言文化与夏尔巴相关但不可简单等同。本条目为教育概览；**不提供**密续灌顶、仪轨操作或可冒充喇嘛的步骤。与 `sherpa-buddhist.md` 对照但保持边界。

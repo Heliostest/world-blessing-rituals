@@ -1,5 +1,9 @@
 # 提瓦传统信仰与印度教—山地祈福（Tiwa／Lalung）
 
+![提瓦人在琼比尔集市（Jonbeel Mela）备餐](./tiwa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tiwa_people_cooking_food_during_Jonbil_mela.jpg -->
+
 ## 概述
 
 **提瓦人（Tiwa；亦作 Lalung）** 分布于印度阿萨姆与梅加拉亚交界等地，分丘陵与平原群体。公开记述：多数实践与阿萨姆印度教交融的信仰，保留氏族、寮屋（shamadi）与祭司—首领（loro）相关礼仪中心；少数为基督徒。本条目为教育概览；**不提供**献牲操作或可冒充祭司的步骤。与卡西、卡尔比、迪马萨条目可比较。

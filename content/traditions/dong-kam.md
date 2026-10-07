@@ -1,5 +1,9 @@
 # 侗族／侗（Kam）萨岁信仰与鼓楼祈福（Dong／Kam）
 
+![广西三江程阳永济桥（风雨桥）](./dong-kam.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Chengyang_Yongji_Bridge,_Guangxi.jpg -->
+
 ## 概述
 
 **侗族（官方汉称；自称 Kam／侗）** 主要分布于中国贵州东南、广西北部与湖南毗邻山区，语言属侗水语支。大英百科概述其干栏木楼、鼓楼与风雨桥等村落景观；**moon ponds**（月沼）与 **wind-rain bridges**（风雨桥）为公开村落景观层。2009 年联合国教科文组织将**侗族大歌（Grand Song of the Dong ethnic group）**列入人类非物质文化遗产代表作名录。公开文化记述强调：村落守护女神 **萨岁／萨玛（Sa Sui／Sama）** 与 **Sam Tang Sa Sui** 祭坛；**Sa Sui led by designated women — outsiders don't officiate**（由指定女性主持——外人／用户不主持）。本条目为教育概览；**不提供**萨坛秘传祝词、占卜操作、牺牲屠宰或任何可复现的“请萨／成巫”步骤。

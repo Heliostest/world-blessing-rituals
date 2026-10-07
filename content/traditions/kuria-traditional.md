@@ -1,5 +1,9 @@
 # 库里亚传统信仰与湖区—祖灵祈福（Kuria）
 
+![肯尼亚库里亚男子歌唱与舞蹈](./kuria-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Kurias_singing_and_dancing.jpg -->
+
 ## 概述
 
 **库里亚人（Kuria）** 分布于肯尼亚—坦桑尼亚交界（维多利亚湖东侧）。公开概述记述：传统宇宙强调高神 **Weise／Esubha**、祖先与祝福礼仪；今日多数为基督徒；跨界农牧与矿业／土地议题显著。**Nyangi** 祝福礼仪属 CONCEPT；**Rika** 年龄组为历史表述——users don't officiate；**no initiation how-to**。本条目为教育概览；**不提供**入会、割礼操作或可冒充仪者的步骤。与卢奥、古西、苏库马条目区分。

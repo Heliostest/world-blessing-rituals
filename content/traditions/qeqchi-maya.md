@@ -1,5 +1,9 @@
 # 凯克奇玛雅民间天主教与山灵祈福（Qʼeqchiʼ）
 
+![科班凯克奇社群圣周五游行](./qeqchi-maya.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Comunidades_Qeqchi.jpg -->
+
 ## 概述
 
 **凯克奇人（Qʼeqchiʼ／Kekchi）** 为危地马拉高原—低地玛雅语族群，亦分布于伯利兹等地。公开百科记述：天主教圣徒与村社 fiesta 职分（mayordomo 等）与 **Tzuultaqʼa（山—谷守护神）** 信仰深度交织；Tzuultaqʼa 被认为居于山洞，维系自然秩序；传统专家含疗愈者、占卜者与施咒者等公开分类。本条目为教育概览；**不提供**疗愈／施咒脚本或可冒充仪者的步骤。与基切、佐齐尔、尤卡坦玛雅条目可比较。

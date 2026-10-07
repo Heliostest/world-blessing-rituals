@@ -1,5 +1,9 @@
 # 泰国神屋／土地灵（San phra phum / phi）
 
+![曼谷神屋／土地神龛](./thai-spirit-houses.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Spirit_house_in_Bangkok.jpg -->
+
 ## 概述
 
 在泰国城乡，住宅、商铺与公共建筑旁常见架于柱上的微型殿宇，泰语称 **ศาลพระภูมิ**（*san phra phum*，常译「神屋」或「土地神龛」）。它们被视为土地守护灵（*phra phum*）或地方灵（相关概念亦涉 *chao thi*／*jao tee* 等）的居所，与广泛的 **ผี**（*phi*，灵／鬼）信仰相连。多数泰国人同时自认上座部佛教徒：神屋供养并不取代寺院功德，而是处理「此地是否安居」的日常关系。公开可见供养常含 **น้ำแดง（Nam Daeng，红水／甜红饮）** 与 **พวงมาลัย（Phuang Malai，花环）**；新居／营业前的 **ขึ้นศาล（Khuen San）** 安放与 **หมอขวัญ（Mor Khwan）** 等礼俗顾问参与仅作 **CONCEPT ONLY**。曼谷 **Erawan／四面神** 等公共神社则是游客亦可旁观的城市地标礼敬。康奈尔大学等民族志指出，都市中常见的 *san phra phum* 与供奉地方／祖先灵的 *san chao thi* 不宜混为一谈。本条目为教育性概览，说明访客可见的供养结构，**不提供**安座、迁龛、请灵或 Khuen San／Mor Khwan 的可复现仪式步骤。

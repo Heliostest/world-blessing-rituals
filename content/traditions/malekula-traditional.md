@@ -1,5 +1,10 @@
 # 马莱库拉传统信仰与瓦努阿图祈福（Malekula）
 
+![瓦努阿图马莱库拉岛 Small Nambas kastom 村社舞蹈（公共展演层）](./malekula-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:A_dancer_as_part_of_a_small_nambas_kastom_village_tour_on_Malekula_Island,_Vanuatu._(10661588015).jpg -->
+
+
 ## 概述
 
 **马莱库拉（Malekula）** 为瓦努阿图大型岛屿，公开民族志以多样化语言社群、等级／入会与舞蹈传统著称——**极高敏感，本卡仅概念层**。今日并存基督教与旅游。教育概览；**严禁**入会操作或可冒充仪者的步骤。与安布里姆、坦纳、瓦努阿图总述（kastom）区分；亦勿与哥斯达黎加 Maleku 条目混淆。

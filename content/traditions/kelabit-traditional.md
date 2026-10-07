@@ -1,5 +1,9 @@
 # 克拉比特基督教与高地巨石记忆祈福（Kelabit）
 
+![沙捞越巴里奥／克拉比特高地村落](./kelabit-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Bario_Sarawak.JPG -->
+
 ## 概述
 
 **克拉比特人（Kelabit）** 分布于马来西亚沙捞越内陆高地（巴里奥等）及印尼北加里曼丹毗邻地带。公开研究记述：二战后大规模改宗基督教；**Mount Murud** prayer gatherings 属 **public Christian layer**；前基督教记忆中的 **Batu Ritong**、**Iraung** 与 megaliths 属 **CONCEPT**。本条目为教育概览；**不提供**前基督教献牲复原——**users don't officiate**。

@@ -1,5 +1,9 @@
 # 奎卡特克民间天主教与山灵祈福（Cuicatec）
 
+![墨西哥瓦哈卡夸卡特兰路边圣龛（民间天主教）](./cuicatec-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:San_Juan_Bautista_Cuicatlan-_shrine_at_bus_stop.jpg -->
+
 ## 概述
 
 **奎卡特克人（Cuicatec）** 分布于墨西哥瓦哈卡北部，与奇南特克、马萨特克邻近但语言—认同分立。公开概述记述：天主教圣徒——尤以 **San Juan Bautista Cuicatlán** 主保语境——与山灵、玉米—雨水伦理交织；洞穴自然灵叙事属 **CONCEPT**；**Curandero CONCEPT ONLY**。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。与奇南特克、马萨特克、查蒂诺条目区分。

@@ -1,5 +1,10 @@
 # 耶库阿纳／马基里塔雷传统信仰与上奥里诺科祈福（Ye'kuana / Makiritare）
 
+
+![委内瑞拉耶库阿纳女孩肖像](./yekuana-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Retrato_Yekuana_retusche_crop.jpg -->
+
 ## 概述
 
 **耶库阿纳人（Ye'kuana，亦称 Makiritare）** 分布于委内瑞拉—巴西上奥里诺科雨林。公开叙述涉及神话、舟楫伦理与仪式专家——**极高敏感，本卡仅概念层**。教育概览；**严禁**入会、迷幻旅游化操作或可冒充仪者的步骤。与皮亚罗亚、瓦劳等条目区分；不另开 makiritare 同义卡。

@@ -1,5 +1,9 @@
 # 比热戈斯传统信仰与岛屿—祖灵祈福（Bijagó／Bijago）
 
+![比热戈斯（Bijogo）水牛面具（大英博物馆藏）](./bijago-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mask_in_the_form_of_a_buffalo-Bijogo_(British_Museum)_(1).jpg -->
+
 ## 概述
 
 **比热戈斯人（Bijagó／Bijago）** 分布于几内亚比绍比热戈斯群岛。公开概述记述：传统宇宙强调祖先、海洋与年龄阶级伦理；今日并存基督教与本土实践；岛屿生态与女性仪式权威的公开民族志叙述使其在西非语境中相当独特。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。

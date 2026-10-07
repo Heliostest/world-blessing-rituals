@@ -1,5 +1,9 @@
 # 聪加传统宗教与祖灵祈福（Tsonga／Shangaan）
 
+![聪加／Shangaan Xibelani 传统舞者](./tsonga-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Xitsonga-Xibelani-Dancers.jpg -->
+
 ## 概述
 
 **聪加人（Tsonga；部分语境亦称 Shangaan／Ronga 等相关群体）** 主要分布于莫桑比克南部、南非林波波／姆普马兰加与津巴布韦东南。公开研究记述：传统宗教强调**祖灵**在健康、道德与丰饶中的作用，疾病常被联系到禁忌、祖灵不悦或巫术叙事；基督教广泛传播后，许多人维持 **ntumbuluko（传统之道）** 与教会生活的并行或多重归属。本条目为教育概览；**不提供**疗愈／驱邪脚本、献牲操作或可冒充传统医者的步骤。

@@ -1,5 +1,9 @@
 # 撒拉族伊斯兰与河湟民间祈福（Salar）
 
+![青海循化撒拉族盖子清真寺礼拜大殿](./salar-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:Prayer_hall_of_Salar_Gaizi_Mosque_in_Kehtsikung.jpg -->
+
 ## 概述
 
 **撒拉族（Salar）** 为中国甘肃、青海交界河湟地区突厥语穆斯林民族，信仰逊尼派伊斯兰，教派／门宦结构在公开研究中有记述。清真寺、经堂教育与开斋／宰牲等节日构成公共祈福核心；同时河湟多民族环境中可见与地方社会习俗的交织。本条目为教育概览；**不提供**门宦内部秘传、护符配方或政治动员话术。

@@ -1,5 +1,9 @@
 # 康索传统宗教与文化景观祈福（Konso）
 
+![康索文化景观中的石砌梯田（世界遗产）](./konso-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Agricultural_terraces_in_the_Konso_Cultural_Landscape.jpg -->
+
 ## 概述
 
 **康索人（Konso）** 为埃塞俄比亚西南部库希特语民族，以石砌梯田、堡寨聚落与世代等级组织著称。联合国教科文组织将 **康索文化景观（Konso Cultural Landscape）** 列入世界遗产：梯田农业、防御性村落、圣林、世代石碑（公开遗产叙述中的 **daga-diruma／mora** 等公共石／集会空间命名）与葬礼木雕 **waka（亦作 waga）** 等，体现人与陡坡环境的长期互惠。公开民族志记述传统宗教敬奉至高神 **Waaq／Waĝa**（与雨、道德与福祉相关），圣林与祈雨仅作**高度敏感概念层（CONCEPT ONLY）**；并包含祖灵、危险灵力、占卜与仪式专责者 **poqqalla** 等角色。基督教等亦有传播，信仰景观多元。本条目为教育概览；**不提供**献牲操作、占卜步骤、入会细节或任何可冒充 poqqalla 的程序。

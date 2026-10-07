@@ -1,5 +1,9 @@
 # 萨萨克韦图特卢／龙目岛地方伊斯兰传统（Sasak Wetu Telu）
 
+![龙目岛巴扬古清真寺（Bayan Beleq），韦图特卢地方伊斯兰地标](./wetu-telu-sasak.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Masjid_Bayan_Beleq,_Bayan_(1).jpg -->
+
 ## 概述
 
 **萨萨克人（Sasak）** 是印度尼西亚龙目岛主体民族。公开记述将 **Wetu Telu** 理解为萨萨克伊斯兰的地方变体：承认安拉与先知，同时交织祖先、圣地与习惯法（adat）。教育重点包括：**Pura Lingsar** 跨社群圣地、**Perang Topat** 公开节庆、**Segara Anak**（林贾尼火山湖）供奉概念（**CONCEPT ONLY，强尊重**）、北龙目 **Bayan** 古清真寺，以及祖先礼仪概念层。本条目为教育性概览；**不提供**可复现礼拜删减教程、入会秘仪或牲礼操作。

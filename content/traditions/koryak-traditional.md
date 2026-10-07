@@ -1,5 +1,9 @@
 # 科里亚克传统信仰与乌鸦—萨满祈福（Koryak）
 
+![科里亚克传统舞蹈表演](./koryak-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Koryak_traditional_dance.jpg -->
+
 ## 概述
 
 **科里亚克人（Koryak；亦作 Koriak）** 分布于俄罗斯堪察加半岛北部与极东北，分沿海渔猎与内陆驯鹿牧养群体。公开百科与原住民图集记述传统宗教为萨满—泛灵；公共岁时突出 **Kilvey** 驯鹿节与 **Khololo／Hololo** 海豹节等节庆。**Kilvikh** 火板、**Quikil** 乌鸦神话与 **shaman** 中介属 CONCEPT／高度敏感层——shaman CONCEPT ONLY。东正教与新教在部分沿海社区有影响。本条目为教育概览；**不提供**萨满咒语、出神诱导、献牲操作或任何可冒充萨满的程序——**users don't officiate**；atmosphere-only。

@@ -1,5 +1,10 @@
 # 锡达马传统信仰与菲切—尚巴拉拉新年祈福（Sidama）
 
+
+![锡达马菲切新年节（哈瓦萨古杜马勒）](./sidama-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Fichchee-_The_New_Year_of_Sidama-_The_Sidama_people_celebrate_the_festival_en_mass_in_their_sacred_place_called_Gudumale_which_is_located_on_the_beautiful_city_of_Hawassa-_2013-12-18_17-37.jpg -->
+
 ## 概述
 
 **锡达马人（Sidama；亦作 Sidāma／Sidaama）** 为埃塞俄比亚西南部库希特语民族之一，主要分布于奥莫河与裂谷一带相关高原；语言为锡达马语（Sidaamu Afoo）。大英百科记述：多数锡达马人历史上保有以**天神／天空神**崇拜为核心的传统宗教；公开学术材料常以 **Magano／Maganu** 指称创造主／天神。主食之一为恩塞特（ensete，假香蕉）——公开文化中的 **Qocho**（恩塞特食品）共享是节庆与邻里伦理的重要载体。联合国教科文组织于 2015 年将 **Fichee-Chambalaalla** 列入人类非物质文化遗产代表作名录。长老议事传统（公开材料中或以 **Woma** 等职分／长老层指称）对 Magano 的敬奉仅 **CONCEPT ONLY**。本条目为教育概览；**不提供**占星择日操作、献牲细则、附体脚本或任何可冒充长老／祭司的程序。

@@ -1,5 +1,9 @@
 # 加泰罗尼亚民间天主教与巨人巡游祈福（Catalan）
 
+![巴塞罗那圣梅尔塞节火跑（correfoc）](./catalan-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Correfoc_de_la_Merc%C3%A8_2017.jpg -->
+
 ## 概述
 
 **加泰罗尼亚（Catalonia）** 民间天主教与城市节庆高度发达：除弥撒与圣人敬礼外，公开文化以 **gegants（巨人偶）**、**correfoc（火跑／魔鬼火舞）**、人体城堡（**castells**）等著称，常在主保节与城市庆典中出现；蒙特塞拉特黑圣母 **La Moreneta** 圣地吸引朝圣；**La Patum de Berga** 等亦为广为人知的火与节庆公共遗产命名。本条目为教育概览；**不提供**可冒充神职的脚本，并注意火舞活动的安全与许可。

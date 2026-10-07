@@ -1,5 +1,9 @@
 # 奥温本杜传统信仰与基督教祈福（Ovimbundu）
 
+![安哥拉奥温本杜传统地方首领（soba）用乌姆本杜语交谈](./ovimbundu-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Sobas_talking_to_Dad.jpg -->
+
 ## 概述
 
 **奥温本杜人（Ovimbundu）** 主要分布于安哥拉中部高原。公开概述记述：传统宇宙含祖先与地方灵力；今日多数为基督徒（天主教与新教），教会生活主导公共祈福；内战与流散记忆要求叙述克制。本条目为教育概览；**不提供**献牲或可冒充仪者的步骤。与刚果／巴刚果、乔奎条目可比较但高原认同独立。

@@ -1,4 +1,8 @@
 # 克木传统信仰与魂灵—稻作祈福（Khmu／Kmhmu）
+![越南民族学博物馆克木（Khomu）葫芦火药容器展品](./khmu-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Calabash_for_gun_powder,_Khomu_-_Vietnam_Museum_of_Ethnology_-_Hanoi,_Vietnam_-_DSC03148.JPG -->
+
 
 ## 概述
 

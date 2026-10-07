@@ -1,5 +1,10 @@
 # 马耳他民间天主教与村社festa祈福（Maltese）
 
+![马耳他 Zabbar 村社主保节（festa）场面](./maltese-festa.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Zabbar_feast_01.jpg -->
+
+
 ## 概述
 
 **马耳他（Malta）** 为地中海岛国，天主教信仰与堂区认同极强。公开文化记述中，各村／各堂区的 **festa（主保节）** 以乐队、烟火、**Il-Vara**（圣人雕像台座／抬架巡游）与街头宴庆著称；**Ta' Pinu** 圣地以还愿（ex-voto）闻名；**圣保罗海难瞻礼（St Paul shipwreck feast）** 体现岛民与使徒叙事及海洋护佑的联结。本条目为教育概览；**不提供**可冒充神职的礼仪脚本。

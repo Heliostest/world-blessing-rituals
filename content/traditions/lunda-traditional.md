@@ -1,5 +1,9 @@
 # 伦达传统信仰与中非王国祈福（Lunda）
 
+![东伦达 Mwata Kazembe 在 Mtomboko 节庆王舞（2017）](./lunda-traditional.webp)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mwata_Kazembe_at_Mtomboko_2017_01.webp -->
+
 ## 概述
 
 **伦达人（Lunda）** 分布于刚果民主共和国、安哥拉与赞比亚一带，历史上与广阔的伦达政治—仪式网络相关。公开叙述涉及祖灵、酋长权威与丰产伦理——**高度敏感，本卡仅概念层**。今日并存基督教与民族国家政治。教育概览；**严禁**王位／入会仪轨操作或可冒充酋长的步骤。与乔奎（Chokwe）、卢巴等中非条目区分——伦达为独立政治—文化史。

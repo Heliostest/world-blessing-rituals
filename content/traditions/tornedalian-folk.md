@@ -1,5 +1,9 @@
 # 托尔内谷民间基督教与梅安基利祈福（Tornedalian／Meänkieli）
 
+![库科拉急流 lippous 渔捞（托尔内谷／梅安玛）](./tornedalian-folk.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Lippoaja_Kukkola_2006.jpg -->
+
 ## 概述
 
 **托尔内谷人（Tornedalians）** 分布于瑞典—芬兰边界托尔内河流域，语言常称梅安基利（Meänkieli）。公开文化记述：路德宗与 **Laestadian／莱斯塔迪乌斯派 Seurat（聚会）** 影响公共崇拜；**Kukkolaforsen** 一带 **lippous** 渔季祝福与 **Meänkieli 语言日** 构成可见的跨界认同层。本条目为教育概览；**不提供**可冒充神职的脚本。与克文、芬兰、瑞典主流民俗可比较但托尔内谷跨界认同独立。

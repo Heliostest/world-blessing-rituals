@@ -1,5 +1,9 @@
 # 奥罗凯瓦传统信仰与北海岸祈福（Orokaiva）
 
+![奥罗凯瓦人以蒸汽浴驱病（Wellcome／F.E. Williams 影像）](./orokaiva-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Steam_bath_to_drive_out_sickness,_Orokaiva_Papua,_New_Guinea._Wellcome_M0005701.jpg -->
+
 ## 概述
 
 **奥罗凯瓦人（Orokaiva）** 分布于巴布亚新几内亚北部（奥罗省一带）低地—丘陵。公开叙述涉及园艺、舞会／展示与祖先伦理——**中高敏感，本卡偏概念**。今日并存基督教与现金作物。教育概览；避免把丧礼或入会写成可操作剧本。与莫图、科利马等沿海／北部条目区分。

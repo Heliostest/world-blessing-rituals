@@ -1,5 +1,10 @@
 # 梅尔帕传统信仰与哈根山祈福（Melpa）
 
+
+![梅尔帕／西高地传统服饰舞者（哈根山文化展演）](./melpa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3AMale_dancers_from_Western_Highlands_in_traditional_costumes_performing_a_traditional_dance.jpg -->
+
 ## 概述
 
 **梅尔帕人（Melpa）** 分布于巴布亚新几内亚西部高地哈根山一带。公开民族志以大型礼物交换（如 moka 相关公开记述）、战争赔偿与展示礼仪闻名——**高度敏感，本卡仅概念提及**。今日并存基督教与现金经济。教育概览；**严禁**入会、赔偿仪轨操作或可冒充大人物的步骤。与恩加、门迪、钦布等高地条目区分。

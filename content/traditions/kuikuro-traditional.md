@@ -1,5 +1,9 @@
 # 库伊库罗传统信仰与辛古祈福（Kuikuro）
 
+![上辛古伊帕特塞（Ipatse）库伊库罗村社](./kuikuro-traditional.jpg)
+
+<!-- 来源：CC BY 3.0 br | https://commons.wikimedia.org/wiki/File:Parque_Indígena_do_Xingu.jpg -->
+
 ## 概述
 
 **库伊库罗人（Kuikuro）** 为巴西上辛古（Upper Xingu）相关社群之一，以复杂的村社礼仪、摔跤节庆与祖先—面具宇宙闻名于民族志影像。公开概述记述：多语族辛古网络中的互惠与仪式交换；今日并存国家保护区语境与文化自治。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。与卡亚波、沙万特等条目生态与礼仪核心不同。

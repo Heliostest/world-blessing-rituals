@@ -1,5 +1,9 @@
 # 科普特正教会（Coptic Orthodox Church of Alexandria）
 
+![埃及科普特正教司铎主持圣餐礼仪（弥撒）祈祷](./coptic-orthodox.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Egyptian_coptic_priests_praying_the_holy_mass.jpg -->
+
 ## 概述
 
 科普特正教会是埃及主要的基督教会，亦为东方正教会（Oriental Orthodox）共融成员之一。传统上以圣马可在公元一世纪上半叶将基督教传入亚历山大为起点；亚历山大主教座日后取得“教宗”（pope）称号，现任牧首驻开罗。451 年卡尔西顿公会议后，科普特教会与其他若干东方教会拒绝该会议关于基督“神人二性”表述的用语，转而坚持西里尔传统的**合一性论（miaphysitism）**：在道成肉身中，神性与人性同等临在于“同一”本性，而非否认基督的人性。阿拉伯征服后，科普特语逐渐退出日常，礼拜中圣经诵读与许多可变赞美诗改用阿拉伯语；礼仪书则以亚历山大方言科普特语（Bohairic）与阿拉伯文并列。七件圣事包括洗礼、坚振（chrismation）、圣餐、圣职、告解、病人傅油与婚姻。本条目为教育性概览，不提供礼仪全文或可复现的圣事操作细则。

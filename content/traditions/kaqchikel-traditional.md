@@ -1,5 +1,9 @@
 # 卡克奇克尔玛雅民间天主教与危地马拉高地祈福（Kaqchikel）
 
+![特克潘伊希姆切（Iximché）卡克奇克尔玛雅人节庆聚集](./kaqchikel-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Mayan_%22Fin_Del_Mundo%22_Celebration_December_21_2012_1.jpg -->
+
 ## 概述
 
 **卡克奇克尔人（Kaqchikel）** 为危地马拉高地玛雅语系社群。公开宗教生活常见民间天主教、**Cofradía（兄弟会）** 主保节庆，以及 **Maximón／San Simón** 等地方圣像／神龛——**shrine viewing-only**；日守者 **Ajq'ij** 属 **CONCEPT ONLY**——specific officiants，**users don't host**。本卡聚焦可公开的教堂—节庆层；不涉未公开圣地仪轨操作。

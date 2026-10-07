@@ -1,5 +1,9 @@
 # 奥罗克／乌伊尔塔传统信仰与库页—驯鹿祈福（Orok／Uilta）
 
+![德累斯顿民族学博物馆藏奥罗克／乌伊尔塔灵物承载器](./orok-traditional.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Orok_spirit_bearer_Museum_fuer_Voelkerkunde_Dresden_NAs_2322.jpg -->
+
 ## 概述
 
 **奥罗克人（Orok；自称常作 Uilta）** 分布于俄罗斯库页岛（萨哈林）及相关地带，通古斯小民族，传统驯鹿—渔猎生计。公开概述记述：萨满与山灵／海灵伦理见于民族志；今日语言文化濒危，并存东正教接触。本条目为教育概览；**不提供**萨满出神脚本、献牲或可冒充萨满的步骤。与那乃、奥罗奇、涅吉达尔条目区分；文件名用社群常用 Orok／Uilta 对应，避免与已有卡片同义重复。

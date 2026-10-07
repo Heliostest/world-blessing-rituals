@@ -1,5 +1,10 @@
 # 曼雅克传统信仰与稻作—祖灵祈福（Manjak／Manjaca）
 
+![曼雅克 batuque 鼓舞历史影像](./manjak-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:DC_-_Neogravura_-_Guin%C3%A9_Portuguesa_-_Batuque_de_Manjacas.jpg -->
+
+
 ## 概述
 
 **曼雅克人（Manjak／Manjaca）** 主要分布于几内亚比绍与塞内加尔卡萨芒斯一带。公开概述记述：传统宇宙强调祖先与稻作—土地伦理；**Napagol** 等祖先祠／圣地概念见于公开叙述；**Pano de Pente** 织布为重要物质文化遗产；**Bambo** 等成年礼概念属家庭—长者主持边界。今日并存基督教、伊斯兰与本土实践；侨汇与跨海移民深刻塑造当代社群。本条目为教育概览；**Napagol** 祖先祠 CONCEPT；Pano de Pente 织布遗产；**Bambo** 成年礼 CONCEPT——family elders host, users don't。**不提供**献牲、入会或可冒充仪者的步骤。与巴兰塔、帕佩尔等几内亚比绍社群相邻但认同独立。

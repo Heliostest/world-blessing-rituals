@@ -1,5 +1,10 @@
 # 明打威／阿拉特·萨布隆安（Mentawai／Arat Sabulungan）
 
+
+![明打威西比路河畔 sikerei 配制传统草药](./mentawai-arat-sabulungan.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File%3ASikerei_shaman_preparing_traditional_medicine_by_the_river%2C_Siberut.jpg -->
+
 ## 概述
 
 **明打威人（Mentawai）** 主要生活在苏门答腊西海岸外的明打威群岛；最大岛 **西比路（Siberut）** 于 1981 年被联合国教科文组织列入人与生物圈保护区。传统生活指引常称 **Arat Sabulungan**：公开人类学报道指出，它不仅是「宗教信仰」，更是知识系统与行为规范，强调人、灵力与自然须保持和谐。仪式与调解核心人物是 **sikerei**（传统知识／疗愈与礼仪专家）；公共聚集可见 **Punun／Pasituat** 等村寨聚会叙述；**Uma** 长屋为亲属与礼仪空间；文身与植物疗愈属 CONCEPT。本条目为教育概览；Sikerei HIGH SENSITIVITY CONCEPT——**users don't officiate**。**不提供**附体脚本、猎灵配方或 sikerei 授职操作。

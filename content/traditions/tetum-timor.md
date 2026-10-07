@@ -1,5 +1,9 @@
 # 东帝汶德顿民间天主教与乌卢克祈福余绪（Tetum／Timor-Leste）
 
+![帝力无原罪始胎主教座堂](./tetum-timor.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Immaculate_Conception_Cathedral_Dili_Timor_Leste.jpg -->
+
 ## 概述
 
 **东帝汶（Timor-Leste）** 以德顿语（Tetum）为官方语言之一，人口绝大多数为天主教徒；独立前后教会在社群凝聚中角色显著。公开概述记述：天主教弥撒、圣母敬礼与村社主保节构成公共祈福主轴；同时地方习惯法与祖先／乌卢克（lulik，神圣）观念在土地、婚约与和解中仍具分量。本条目为教育概览；**不提供**习惯法秘仪或可冒充神职的步骤。

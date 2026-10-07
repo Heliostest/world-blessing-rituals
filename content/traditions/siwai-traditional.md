@@ -1,5 +1,10 @@
 # 西瓦伊传统信仰与布干维尔祈福（Siwai）
 
+
+![西瓦伊联合教会乡村唱诗班](./siwai-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:A_United_Church_village_choir_in_Siwai.jpg -->
+
 ## 概述
 
 **西瓦伊人（Siwai）** 分布于巴布亚新几内亚布干维尔岛南部。公开叙述涉及氏族、土地与祖先伦理，并与采矿冲突、自治政治交织——**高度敏感，本卡仅概念层**。今日并存基督教与战后重建。教育概览；**严禁**入会操作或把武装冲突写成可玩关卡。与纳西奥伊、布因等布干维尔条目区分。

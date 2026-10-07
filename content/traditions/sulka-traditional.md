@@ -1,5 +1,9 @@
 # 苏尔卡传统信仰与面具—祖先祈福（Sulka）
 
+![苏尔卡西西乌面具柏林民族学博物馆藏](./sulka-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Mask,_sisiu,_Sulka,_New_Britain,_1906_-_Ethnological_Museum,_Berlin_-_DSC00945.JPG -->
+
 ## 概述
 
 **苏尔卡人（Sulka）** 分布于巴布亚新几内亚东新不列颠，语言文化独特，以大型彩饰面具与舞蹈礼仪闻名于民族志／博物馆叙述。公开概述记述：面具与祖先伦理交织；今日并存基督教；与托莱、拜宁邻近但认同独立。本条目为教育概览；**严禁**面具仪轨操作化或可冒充仪者的步骤。

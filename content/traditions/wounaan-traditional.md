@@ -1,5 +1,9 @@
 # 沃南传统信仰与雨林祈福（Wounaan）
 
+![巴拿马加通湖畔沃南（Wounaan）妇女](./wounaan-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Mujeres_Wounaan.JPG -->
+
 ## 概述
 
 **沃南人（Wounaan）** 分布于巴拿马与哥伦比亚太平洋侧雨林，与恩贝拉相关但语言—认同分立。公开概述记述：传统宇宙强调森林灵力、祖先与编织等物质文化；今日并存基督教接触与土地维权。本条目为教育概览；**不提供**疗愈脚本、献牲或可冒充仪者的步骤。**非** `embera-traditional.md` 的重复。

@@ -1,5 +1,9 @@
 # 桑达韦传统信仰与点击语—祖灵祈福（Sandawe）
 
+![坦桑尼亚 Kondoa Irangi 岩画（桑达韦人居地一带）](./sandawe-traditional.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File%3AKondoa_Irangi_Rock_Paintings_%2851506898147%29.jpg -->
+
 ## 概述
 
 **桑达韦人（Sandawe）** 分布于坦桑尼亚中部，语言以吸气音（点击音）特征闻名，与哈扎不同源。公开概述记述：传统宇宙含祖先与地方灵力；农牧与采集记忆交织；今日并存基督教。本条目为教育概览；**不提供**献牲或可冒充仪者的步骤。与伊拉克伍、哈扎条目邻近但语言—历史独立，不可当作「另一支哈扎」。

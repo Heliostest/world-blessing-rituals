@@ -1,5 +1,9 @@
 # 阿雷阿雷传统信仰与马莱塔祈福（Are'are）
 
+![所罗门群岛排笛（与阿雷阿雷‘Au 传统相关的公开博物馆藏品）](./areare-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Flute_de_Pan_Des_Salomon_MHNT_ETH_AC_NH_29_Roquemaurel.jpg -->
+
 ## 概述
 
 **阿雷阿雷人（Are'are）** 分布于所罗门群岛马莱塔岛南部。公开叙述涉及祖先（**Akalo CONCEPT**）、**Tafuli’e** 贝币交换与 **‘Au** 排笛／合唱传统——**中高敏感**。今日并存基督教与现金经济。教育概览；丧礼与密传止于概念。与夸拉阿埃、劳等马莱塔条目区分（本卡专写 Are'are，不开空泛 malaita 岛卡）。

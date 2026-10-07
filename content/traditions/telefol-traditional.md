@@ -1,5 +1,9 @@
 # 特莱福勒传统信仰与山地圣屋祈福（Telefol／Telefomin）
 
+![特莱福勒／Telefomin 门楣板（amitúng）](./telefol-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Papua_nuova_guinea,_abanfogop,_asse_di_porta_amitung,_da_telefomin,_1910_ca.jpg -->
+
 ## 概述
 
 **特莱福勒人（Telefol）** 分布于巴布亚新几内亚桑道恩／西部高地相关山地（Telefomin 一带公开地名）。公开概述记述：传统宇宙强调祖先、男性圣屋与启蒙会社伦理；今日并存基督教与采矿／发展压力。本条目为教育概览；**严禁**入会、圣屋仪轨操作化或可冒充仪者的步骤。与恩加、福雷等高地条目区分。

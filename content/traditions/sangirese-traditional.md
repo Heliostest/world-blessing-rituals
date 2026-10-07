@@ -1,5 +1,9 @@
 # 桑义赫基督教与海岛习惯法祈福（Sangirese）
 
+![桑义赫岛 Salurang Melombo 习惯法仪式](./sangirese-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ARitual_Adat_Melombo_Salurang_Sangihe_Island.jpg -->
+
 ## 概述
 
 **桑义赫人（Sangirese／Sangir）** 分布于印尼北苏拉威西至菲律宾南部之间的桑义赫—塔劳岛链，历史上航海贸易频繁。公开概述记述：多数为基督徒（新教传统显著），亦有穆斯林邻人；教会崇拜与地方习惯法（adat）在生命礼仪、和解中交织；火山与海洋风险塑造还愿与感恩叙事。本条目为教育概览；**不提供**可冒充神职的脚本。与米纳哈萨、安汶条目可比较。

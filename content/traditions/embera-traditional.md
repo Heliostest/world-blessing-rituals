@@ -1,5 +1,10 @@
 # 恩贝拉／乔科传统信仰与jaibanismo祈福（Emberá／Jaibanismo）
 
+![巴拿马达连省巴亚蒙村，恩贝拉妇女为少女绘制身体彩绘](./embera-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Bayamon_Darien_07_PinturaEmbera.jpg -->
+
+
 ## 概述
 
 **恩贝拉人（Emberá；文献中常与相关群体一并置于“乔科／Chocó”范畴）** 主要生活在巴拿马与哥伦比亚太平洋低地及达连等河谷雨林。大英百科“Chocó”条目概述其沿河桩屋聚落、刀耕火种园艺与弓矢／吹箭狩猎。公开民族志记述：宗教核心是 **jaibanismo**——萨满 **jaibaná** 与称为 **jai** 的不可见力量／存在互动；**Chicha harvest joy**（奇恰收获欢庆）为农作公开／概念层；**Jaibaná／Jai songs HIGH SENSITIVITY NO OPS**；生命礼仪与丧葬阴影观仅作叙事层。基督教传教在不同社区叠加深浅不一。本条目为教育概览；**不提供**萨满歌诀、致幻／烟草操作、草药剂量、附体或任何可复现的“控 jai”步骤。

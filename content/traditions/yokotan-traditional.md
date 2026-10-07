@@ -1,5 +1,10 @@
 # 约科坦／塔巴斯科琼塔尔玛雅民间天主教祈福（Yokot'an／Chontal de Tabasco）
 
+
+![塔巴斯科琼塔尔／约科坦诵经人（rezandero）](./yokotan-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Rezandero_Chontal_2.jpg -->
+
 ## 概述
 
 **约科坦人（Yokot'an；亦称塔巴斯科琼塔尔）** 分布于墨西哥塔巴斯科，为玛雅语支社群。公开概述记述：天主教圣徒与湿地—玉米伦理交织；主保节构成公共祈福层。本条目为教育概览；**不提供**日数占卜操作、献牲或可冒充日师的步骤。文件名用自称 **Yokot'an**，避免与瓦哈卡琼塔尔（Oaxaca Chontal）混淆，并在写作前确认目录无 `chontal-*` 同义卡。

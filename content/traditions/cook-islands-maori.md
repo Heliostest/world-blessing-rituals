@@ -1,5 +1,9 @@
 # 库克群岛毛利文化与 marae 祈福余绪（Cook Islands Māori／Māori Kūki ʻĀirani）
 
+![库克群岛拉罗汤加阿瓦鲁阿的民俗歌舞展演](./cook-islands-maori.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:00_4362_Rarotongo_Cookinseln_-_Fo%C3%B6klore.jpg -->
+
 ## 概述
 
 **库克群岛毛利人（Cook Islands Māori；亦称 Māori Kūki ʻĀirani）** 居住于南太平洋库克群岛（以拉罗汤加 Rarotonga 为行政与人口中心）。其文化属东波利尼西亚支系。大英百科记述：19 世纪伦敦传教会进入后基督教迅速普及；前基督教时期的信仰围绕 **atua**、祖先与 **mana**，并以 **marae**／**Ariki** 为礼仪—政治遗产中心。公开文化年历以 **Te Maeva Nui** 等节庆为核心；迎宾／口述传统常见 **Turou／Peʻe** 命名。本条目聚焦库克群岛自身传统余绪与公开文化层，**不与**新西兰毛利或塔希提条目混同；**不提供**家族谱系祭仪、祭司授职或任何可复现的“召神／开 marae”步骤。

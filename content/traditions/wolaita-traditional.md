@@ -1,5 +1,9 @@
 # 沃莱塔基督教与托萨传统祈福余绪（Wolaita／Wolaitta）
 
+![埃塞俄比亚沃莱塔（Welayta／Wolaita）女孩](./wolaita-traditional.jpg)
+
+<!-- 来源：CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Girl_of_the_Welayta_people.jpg -->
+
 ## 概述
 
 **沃莱塔人（Wolaita／Wolaitta）** 分布于埃塞俄比亚南部，有长久王国史记忆。公开研究记述：传统宗教尊至高神 **Ţossa**，并含 ayana（灵）与占卜等叙事；19 世纪末并入埃塞俄比亚国家后东正教扩张，20 世纪起更有大规模福音派／复临等新教增长，今日基督徒占绝大多数，传统层多以记忆与少数实践形式存在。本条目为教育概览；**不提供**占卜／巫术操作或可冒充祭司的步骤。

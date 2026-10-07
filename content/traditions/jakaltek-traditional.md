@@ -1,5 +1,9 @@
 # 哈卡尔特克玛雅民间天主教与跨界祈福（Jakaltek／Popti'）
 
+![雅卡尔特南戈天主教游行中的 chirimía 与鼓乐](./jakaltek-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:ChirimiaJacaltenango.jpg -->
+
 ## 概述
 
 **哈卡尔特克人（Jakaltek；自称常作 Popti'）** 分布于危地马拉韦韦特南戈与墨西哥恰帕斯交界。公开记述：玛雅宇宙观与天主教圣徒交织；主保节 **Fiesta Patronal de Candelaria** 为公开观礼层；山灵／玉米伦理与 **Ah'kin** 日师属 **CONCEPT ONLY**——**users don't officiate**。本条目为教育概览；**不提供**日数占卜操作、献牲或可冒充日师的步骤。

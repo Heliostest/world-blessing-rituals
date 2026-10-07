@@ -1,5 +1,9 @@
 # 伊捷尔缅传统信仰与乌鸦—家灵祈福（Itelmen）
 
+![伊捷尔缅舞团 Łucz 在堪察加彼得罗巴甫洛夫斯克鱼节演出前](./itelmen-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Itelmeni_1.JPG -->
+
 ## 概述
 
 **伊捷尔缅人（Itelmen；旧称 Kamchadal）** 为堪察加半岛原住民族，语言属楚科奇—堪察加语系。公开民族志记述与科里亚克等邻族共享**乌鸦（Kutx）** 创世—生命源头叙事与面具舞文化外观；当代公共／非物质文化遗产语境中可见 **Alkhalalalai** 秋季感恩节。萨满／东正教并存属 **CONCEPT**——**users don't officiate**。本条目为教育概览；**不提供**献牲操作、萨满脚本或任何可冒充仪式专家的程序。

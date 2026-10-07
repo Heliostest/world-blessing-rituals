@@ -1,5 +1,9 @@
 # 迪马萨传统信仰与代科神殿祈福（Dimasa）
 
+![迪马萨祭司 Hojai 主持传统仪礼](./dimasa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Maiyoapa_Garba.jpg -->
+
 ## 概述
 
 **迪马萨人（Dimasa）** 分布于印度阿萨姆丘陵与卡查尔等地，属卡查里相关族群公开分类。公开记述：传统信仰（Suaithai／Sowaithai 等公开称呼）强调祖先神与地方神殿 **Daikho** 体系——公开叙述有 **12 Daikho** 命名；**Hojai** 祭司传统上主持 Daikho——**users view**（用户观礼）；岁时收获可见 **Bushu Dima** 公开文化层。卡查尔等地可见与印度教的交融。本条目为教育概览；**不提供**献牲操作或可冒充祭司的步骤。与特里普里、博多、卡尔比条目可比较。

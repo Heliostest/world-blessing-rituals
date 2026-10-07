@@ -1,5 +1,9 @@
 # 天道教（Ch’ŏndogyo／Cheondoism）
 
+![首尔天道教中央大教堂（Cheondogyo Jungang Daegyodang）](./cheondoism.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Cheondogyo_Jungang_Daegyodang.jpg -->
+
 ## 概述
 
 天道教（韩语 Ch’ŏndogyo，亦作 Cheondoism）是朝鲜半岛本土宗教，前身为东学（Tonghak，“东方之学”），由崔济愚（Ch’oe Che-u）于 1860 年称受“天主”直接启示后创立，融合儒教、佛教、道教、萨满与部分天主教元素。教义视野聚焦于**在此世实现公义与和平**，并无“永恒奖赏”式来世结算的核心设定。第三任领袖孙秉熙于 1905 年提议改称“天道教”，以取代创始人所用的“东学”。核心命题是 **Innaecheon／In-Nae-Ch’ŏn（人乃天）**：人与神合一，须藉对自身身心统一及神之普遍性的真诚信仰来体认。东学信徒曾深度卷入 1894 年东学农民运动；创始人与第二任领袖崔时亨均因推动社会变革而遭当局处决。至二十世纪末，信徒约达数百万量级（百科记述）。本条目为教育性概览；**Sunday service viewing／daily devotion framing**；不提供咒文修炼口诀的操练手册。

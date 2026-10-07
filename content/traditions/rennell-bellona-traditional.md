@@ -1,5 +1,9 @@
 # 伦内尔—贝罗纳传统信仰与波利尼西亚外岛祈福（Rennell and Bellona）
 
+![东伦内尔特加诺湖（东伦内尔世界遗产）](./rennell-bellona-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:LakeTeganoRennell.jpg -->
+
 ## 概述
 
 **伦内尔与贝罗纳（Rennell and Bellona）** 为所罗门群岛南部两个波利尼西亚外岛，语言文化属波利尼西亚，与周围美拉尼西亚社群不同。公开记述：基督教占主导，同时祖先记忆、氏族与资源伦理维系岛社；伦内尔湖区生态独特。本条目将两岛作为**同一行政—文化省的关联传统**概述，并承认岛际差异；**不提供**历史献牲或可冒充祭司的步骤。与提科皮亚、阿努塔条目可比较但地理与历史独立。

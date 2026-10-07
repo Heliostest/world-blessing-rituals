@@ -1,5 +1,9 @@
 # 萨尔纳／桑塔尔阿迪瓦西信仰（Sarna／Santal Adivasi）
 
+![桑塔尔 Baha 春花节舞蹈](./sarna-santal.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File%3ABaha_Dance_by_Santhal_tribe.jpg -->
+
 ## 概述
 
 **桑塔尔人（Santal／Santhal）** 是印度人数较多的阿迪瓦西（Adivasi）群体之一，主要分布于贾坎德、西孟加拉、奥里萨（奥迪沙）及邻近孟加拉、尼泊尔低地。大英百科等记述其与森林、农耕生计及**圣林（sacred grove）**长期相连；桑塔尔村落边缘常见圣林，乔塔纳格普尔一带许多阿迪瓦西亦以 **Sarna（萨尔纳）** 称圣林崇拜场所。桑塔尔传统宇宙观强调创造者神（公开表述中的 **Thakur Jiu／Sin Bonga** 等）与众多 **bonga（灵）**，村祭司（**naeke／naike**）在圣林主持季节奉献。当代政治与认同语境中，Sarna／Sari Dharam 等表述亦用于争取将阿迪瓦西信仰登记为有别于印度教的独立宗教类别。本条目为教育性概览；**不提供**牲礼操作、巫蛊对抗脚本或可复现祭司教程。

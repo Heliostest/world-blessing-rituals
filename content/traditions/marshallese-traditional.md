@@ -1,5 +1,9 @@
 # 马绍尔群岛传统信仰与航海祈福余绪（Marshallese／Aelōñ Kein）
 
+![马绍尔群岛贾卢伊特棍图（导航教学模型）](./marshallese-traditional.jpg)
+
+<!-- 来源：CC0 | https://commons.wikimedia.org/wiki/File:Stick_chart,_Jaluit,_Marshall_Islands,_1884_-_Südseeabteilung_-_Ethnological_Museum,_Berlin_-_DSC00978.JPG -->
+
 ## 概述
 
 **马绍尔人（Marshallese）** 是中太平洋密克罗尼西亚东部马绍尔群岛（Majōl）的原住民族群。公开材料记述：传统事务上有 **Iroij／Iroijlaplap** 酋长层与 **Weto** 氏族土地习惯；**Kāāitōk／Wāwa** 等棍图（stick charts）为波浪—航路教学模型；自然灵 **Nonieb** 等见于民俗叙述；当代公共庆祝可见 **Kemem／Kamool** 等社区庆生／里程碑聚会。今日以基督教为主，密克罗尼西亚神学院等综述指出航海、造舟与收获曾伴有对守护灵的祈祷。本条目为教育概览；航海祝福 CONCEPT；棍图与酋长层 viewing／CONCEPT——**users don't host chiefly rites**。**不提供**附体诱导、占卜操作或唤灵步骤。

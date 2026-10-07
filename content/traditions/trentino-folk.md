@@ -1,5 +1,9 @@
 # 特伦蒂诺民间天主教与阿尔卑斯祈福（Trentino）
 
+![特伦蒂诺 San Romedio 悬崖圣地](./trentino-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Santuario_di_San_Romedio_1.jpg -->
+
 ## 概述
 
 **特伦蒂诺（Trentino）** 位于意大利北部阿尔卑斯，历史上与蒂罗尔紧密相连，以山村天主教、圣母朝圣地与牧季祝福著称。公开记述重点包括：**San Romedio** 悬崖圣地、**Madonna di Piné** 朝圣，以及 **Desmalaiar** 牧牛下山祝福。本条目为教育概览；**不提供**可冒充神职的脚本。与拉定、南蒂罗尔、萨瓦、瓦尔瑟条目可比较但特伦蒂诺认同独立。

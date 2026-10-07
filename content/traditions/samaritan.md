@@ -1,5 +1,9 @@
 # 撒玛利亚人信仰与基利心山礼仪（Samaritanism）
 
+![撒玛利亚人在基利心山庆祝逾越节](./samaritan.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Samaritans_marking_Passover_on_Mount_Gerizim,_West_Bank_-_20060418.jpg -->
+
 ## 概述
 
 **撒玛利亚人（Samaritans，自称 Shamerim／「谨守者」或 Bene Yisrael）** 是人数极少的以色列特族群与宗教共同体，主要分布于基利心山（Mount Gerizim）附近（如 Kiryat Luza）与以色列霍隆等地。大英百科记述：其唯一经典规范为**妥拉／摩西五经**（撒玛利亚五经传统），不以耶路撒冷锡安山为神所选圣所，而坚持 **基利心山** 为祝福与敬拜之地。祭司制度与逾越节宰羊筵席等实践被公开报道为现存最古老的以色列特礼仪连续体之一。本条目为教育性概览；**不提供**宰杀操作、血处理、祭司祝福全文可复现脚本，或任何可跟做的献祭指南。

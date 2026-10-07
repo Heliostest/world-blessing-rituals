@@ -1,5 +1,10 @@
 # 博恩霍尔姆民间基督教与岛屿祈福（Bornholm）
 
+![丹麦博恩霍尔姆岛奥斯特拉尔斯圆教堂](./bornholm-folk.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Denmark,_Bornholm,_%C3%98sterlars_Round_Church_150422-4.jpg -->
+
+
 ## 概述
 
 **博恩霍尔姆（Bornholm）** 为丹麦波罗的海岛屿，以圆教堂（round churches）——尤以 **Østerlars** 圆教堂最为知名——路德宗堂区与渔农还愿传统著称。公开记述：教会节期、航海感恩（含教堂内 **Kirkeskib** 还愿船悬挂意象）与岛屿民俗（如 **Sankt Hans** 仲夏篝火等公共层）交织。本条目为教育概览；**不提供**可冒充神职的脚本。与斯科讷、哥特兰、西兰岛民俗可比较但博恩霍尔姆岛屿认同独立。

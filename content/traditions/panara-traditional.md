@@ -1,5 +1,9 @@
 # 帕纳拉传统信仰与雨林祈福（Panará）
 
+![巴西帕纳拉村落中玩耍的儿童](./panara-traditional.jpg)
+
+<!-- 来源：CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Crian%C3%A7as_brincando_aldeia_panar%C3%A1.jpg -->
+
 ## 概述
 
 **帕纳拉人（Panará）** 分布于巴西中西部雨林／过渡地带，有被迫迁徙与回返叙事。公开概述记述：传统宇宙强调祖先与村社秩序；今日强调土地与健康权利——**勿消费创伤**。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。与卡亚波、沙万特等条目区分。

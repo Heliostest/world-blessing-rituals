@@ -1,5 +1,9 @@
 # 阿尔泰／白教布尔汗信仰（Ak Jang／Burkhanism）
 
+![阿尔泰布尔汗信仰仪礼者于圣迹地特伦（Tereng）](./altai-burkhanism.jpg)
+
+<!-- 来源：CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Burkhanist_workers_at_Tereng.jpg -->
+
 ## 概述
 
 **阿尔泰人（Altaians／Altai-kizhi 等）** 居住于俄罗斯阿尔泰共和国一带的突厥语族群。百科全书与学术综述指出：传统宗教长期以萨满（***kam***）、天／火与家宅灵观念为核心；1904 年前後兴起民族宗教运动 **Ak Jang（白教／白信仰）**，俄语文献常称 **Burkhanism（布尔汗教）**，融合阿尔泰民间信仰、腾格里宇宙观、藏传佛教要素与部分东正教接触经验，曾反对「黑信仰」式血腥献牲，强调乳品、香火等「白」奉献。公开文化符号包括系挂 **Jalama** 白丝带、**Sang** 杜松／乳品烟熏奉献概念，以及 **Kai／Kaichi** 喉音史诗演唱；***kam*** 鼓为限制性公共知识。苏联时期遭压制，後苏联以来有复兴与再诠释。本条目为教育性概览；**Kam 鼓 CONCEPT ONLY／restricted**；**不提供**萨满出神程序、献牲替代操作或祭司职分教程。

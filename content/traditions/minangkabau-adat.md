@@ -1,5 +1,10 @@
 # 米南加保习俗法与伊斯兰祈福传统（Minangkabau）
 
+
+![米南加保女子传统 adat 服饰](./minangkabau-adat.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Gadih_minang.jpg -->
+
 ## 概述
 
 **米南加保（Minangkabau）** 是印度尼西亚苏门答腊岛中西部高地的主要民族，以母系继嗣、水稻梯田与迁移经商（merantau）闻名。不列颠百科指出：虽为穆斯林，传统上按女系追溯血统与继承；婚姻后丈夫在妻方亲属大屋中更具「访客」色彩。核心社会组织单位是 **rumah gadang（大屋）**——由女性家长及其姐妹、女儿等构成的母系宅院，屋脊常呈水牛角形（gonjong）。习惯法称 **adat**；米南地区著名的 **Adat Perpateh** 强调群体责任与补偿伦理，并长期与伊斯兰教法对话。民间常概括原则为「adat bersendi syarak, syarak bersendi Kitabullah」（习俗以教法为基，教法以《古兰经》为基）。生命礼仪中，公开讨论较多的家庭祝福实践包括新生儿 **turun mandi（下河／初浴礼）** 等感恩与引入社区的仪式。西苏门答腊传统聚落（如 Sijunjung 一带）亦进入世界遗产预备清单讨论。本条目与爪哇克贾文、巽他 Wiwitan 等区分米南母系—伊斯兰交融；**不提供**完整 turun mandi 操作清单、献牲细节或可复现祷词。

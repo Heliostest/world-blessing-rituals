@@ -1,5 +1,9 @@
 # 达托加传统信仰与牧畜祈福（Datoga／Tatoga）
 
+![坦桑尼亚达托加女性传统装束](./datoga-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:A_typical_Datoga_tribe_woman.jpg -->
+
 ## 概述
 
 **达托加人（Datoga／Tatoga；亦有 Barabaig 等支系公开名称）** 分布于坦桑尼亚北中部，为牧畜生计突出的社群。公开概述记述：传统宇宙强调祖先、牲畜与地方灵力；今日并存基督教与本土实践；与伊拉克伍、哈扎等邻近社群互动复杂。本条目为教育概览；**不提供**献牲、战争或可冒充仪者的步骤；**非**马赛卡片的复制。

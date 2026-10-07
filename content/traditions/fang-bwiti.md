@@ -1,5 +1,10 @@
 # 芳人／布维蒂祖灵—基督交融传统（Fang／Bwiti）
 
+![加蓬芳人祖灵守护雕像（Byeri／reliquary guardian）](./fang-bwiti.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Reliquary_Guardian_Figure_Fang_People_Gabon_wood_meal_and_shell_late_19th_century_Dallas_Museum_of_Art.jpg -->
+
+
 ## 概述
 
 **芳人（Fang）** 主要分布于加蓬、赤道几内亚与喀麦隆南部雨林地带；大英百科指出，一种称为 **Bwiti（布维蒂）** 的交融宗教在 20 世纪初基于更早的秘密会社传统成形，并在芳人中促进社群团结。Bwiti 将祖先崇拜与基督教象征（如耶稣、圣母等公开叙述中的形象）及先知领导相结合，亦见于非洲宗教综述中的“新宗教／独立教会”类型。公开学术史亦讨论仪式中使用的 **iboga（Tabernanthe iboga）** 植物与异象传统——此属高度敏感的入会／医疗语境。本条目仅为教育概念概览；**绝不提供**入会程序、植物剂量、服用方法、通宵仪轨脚本或任何可复现的致幻／成巫师步骤。

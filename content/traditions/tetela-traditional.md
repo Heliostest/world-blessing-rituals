@@ -1,5 +1,9 @@
 # 特特拉传统信仰与祖灵—基督教祈福（Tetela）
 
+![特特拉 nkishi 权力像（布鲁克林博物馆）](./tetela-traditional.jpg)
+
+<!-- 来源：CC0 1.0 | https://commons.wikimedia.org/wiki/File:Power_figure_(Nkishi),_Tetela_people,_East_Kasai_province,_Democratic_Republic_of_the_Congo,_early_20th_century,_wood,_fur,_hide,_fiber,_antelope_horn_-_Brooklyn_Museum_-_Brooklyn,_NY_-_DSC08523.JPG -->
+
 ## 概述
 
 **特特拉人（Tetela）** 分布于刚果民主共和国中部桑库鲁／马涅马相关地带。公开概述记述：传统宇宙强调祖灵与村落权威伦理；今日多数受基督教影响；区域冲突史要求叙述克制。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤。与松格、卢巴、蒙古（刚果）等中非条目区分。

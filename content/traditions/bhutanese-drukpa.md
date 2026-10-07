@@ -1,5 +1,9 @@
 # 不丹竹巴噶举／宁玛佛教与策秋节祈福传统（Bhutanese Buddhism）
 
+![不丹贾卡尔策秋节Ging Tsholing假面舞](./bhutanese-drukpa.jpg)
+
+<!-- 来源：CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Jakar_tshechu,_Ging_Tsholing_Cham,_Ging_(15657676898).jpg -->
+
 ## 概述
 
 **不丹（Bhutan）** 以藏传金刚乘佛教为精神遗产主体：不列颠百科指出约四分之三人口信奉藏传佛教，主要流传 **宁玛（Nyingma）** 与 **噶举（Kagyu）** 一支中的 **竹巴噶举（Drukpa Kagyu）**；2008 年宪法将其表述为国家「精神遗产」而非单纯国教标签。日常景观中可见经幡（lung ta／风马旗）、转经筒、宗堡（dzong）与寺院。年度 **Tshechu（策秋，字面「初十日」）** 在各地宗堡／寺院举行，以纪念莲花生大士（Guru Rinpoche）相关神圣日期，核心公共展演为 **cham（宗教假面舞）**；观众以朝圣心态观看并求加持。教科文组织将东部 **Drametse** 社区的「鼓之假面舞」（Mask dance of the drums from Drametse）列入人类非物质文化遗产代表作名录，说明其宗教意义与全国文化认同象征。本条目与藏传佛教、苯教总览区分不丹国家—地方节庆与竹巴语境；**不提供**灌顶仪轨、密续修持次第、cham 动作谱或可复现加持步骤。

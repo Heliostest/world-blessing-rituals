@@ -1,5 +1,10 @@
 # 埃翁多传统信仰与森林—基督教祈福（Ewondo）
 
+![雅温得姆沃利耶使徒之后圣母大殿](./ewondo-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Basilique_Marie_-Reine_des_ap%C3%B4tres_de_Mvolye...JPG -->
+
+
 ## 概述
 
 **埃翁多人（Ewondo）** 分布于喀麦隆中部（雅温得一带相关），属贝蒂—帕胡因大族群中的重要支系。公开概述记述：传统宇宙强调祖先与森林伦理；今日多数为基督徒——**Basilique de Mvolyé** 等为公开朝圣／教会地标叙述；**Abeng** 竖琴属公共音乐／文化层；**Beti-Ewondo cultural festivals** 为公开认同展演；祖先敬礼为 **CONCEPT**。本条目为教育概览；**不提供**入会、献牲或可冒充仪者的步骤。与芳／布维蒂、杜阿拉、巴米累克条目区分；本卡聚焦埃翁多，不作「泛贝蒂」合并。

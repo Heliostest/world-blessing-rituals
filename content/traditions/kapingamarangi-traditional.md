@@ -1,5 +1,9 @@
 # 卡平加马朗吉传统信仰与基督教—环礁祈福（Kapingamarangi）
 
+![卡平加马朗吉环礁居民与访客会面（密克罗尼西亚联邦）](./kapingamarangi-traditional.jpg)
+
+<!-- 来源：Public domain | https://commons.wikimedia.org/wiki/File:USCGC_Oliver_Henry_crew_conducts_Operation_Rematau_patrol_in_FSM_(9346956).jpg -->
+
 ## 概述
 
 **卡平加马朗吉（Kapingamarangi）** 为密克罗尼西亚联邦境内的波利尼西亚外岛环礁，语言文化属波利尼西亚，与周围密克罗尼西亚社群不同。公开记述：基督教占主导，同时祖先记忆与严格资源伦理维系小岛生存；生态脆弱，外来访问须极度克制。本条目为教育概览；**不提供**历史献牲或可冒充酋长／祭司的步骤。与努库奥罗、提科皮亚、阿努塔条目可比较但地理位置与政治归属不同。

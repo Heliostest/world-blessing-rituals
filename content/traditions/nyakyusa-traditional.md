@@ -1,5 +1,10 @@
 # 尼亚库萨传统信仰与祖灵—基督教祈福（Nyakyusa）
 
+![坦桑尼亚尼亚库萨传统房屋模型（日本爱知小世界博物馆）](./nyakyusa-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Little_world,_Aichi_prefecture_-_Nyakyusa_House_in_Tanzania_-_House_of_First_Wife.jpg -->
+
+
 ## 概述
 
 **尼亚库萨人（Nyakyusa）** 分布于坦桑尼亚西南与马拉维北部交界的火山高原地带。公开概述记述：传统宇宙强调祖先与年龄村社伦理；今日多数受基督教影响；香蕉—农耕生计显著。本条目为教育概览；**不提供**献牲、入会或可冒充仪者的步骤。与恩戈尼、通布卡、赫赫条目区域交叠但认同独立。

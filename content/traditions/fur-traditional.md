@@ -1,5 +1,10 @@
 # 富尔传统信仰与达尔富尔祈福（Fur）
 
+![苏丹西达尔富尔杰贝尔马拉地区妇女顶筐（1961）](./fur-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:ASC_Leiden_-_NSAG_-_van_Dis_4_-_038_-_Four_women_are_carrying_wicker_baskets_-_Jebel_Marra_(Jabal_Marra),_West_Darfur,_Sudan_-_27_December_1961.tif -->
+
+
 ## 概述
 
 **富尔人（Fur）** 分布于苏丹达尔富尔一带。公开叙述涉及农牧、苏丹伊斯兰化历史与社区伦理——**极高敏感，本卡仅概念层**。当代与武装冲突、流离失所交织。教育概览；**严禁**把战争写成可玩关卡，不提供祭祀操作。与努巴、扎格哈瓦等条目区分。

@@ -1,5 +1,9 @@
 # 阿布鲁佐民间天主教与朝圣祈福（Abruzzese）
 
+![科库洛圣道明蛇节（Festa dei Serpari）游行](./abruzzese-folk.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Serpari-Cocullo-2025-Portfolio-1.jpg -->
+
 ## 概述
 
 **阿布鲁佐（Abruzzo）** 位于意大利中部亚平宁东侧，以山村圣母朝圣地、牧季祝福与主保节抬像著称。公开天主教民俗记述：还愿、圣周与地震纪念祈祷构成重要公共层；另有广为人知的公共节庆层——**科库洛（Cocullo）「蛇节」／圣道明蛇节（Festa dei Serpari／San Domenico）**（信众以无毒蛇环绕圣像游行，象征护佑与还愿），以及 **苏尔莫纳（Sulmona）复活节「奔跑的圣母」（Madonna che Scappa）**（广场上圣母像奔向复活基督像的戏剧性公共敬礼）。本条目为教育概览；**不提供**可冒充神职的脚本。与翁布里亚、马尔凯、拉齐奥条目可比较但阿布鲁佐山牧认同独立。

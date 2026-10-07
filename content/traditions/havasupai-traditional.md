@@ -1,5 +1,10 @@
 # 哈瓦苏派传统信仰与大峡谷祈福（Havasupai）
 
+![哈瓦苏派领地哈瓦苏瀑布](./havasupai-traditional.jpg)
+
+<!-- 来源：CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Havasu_Falls.jpg -->
+
+
 ## 概述
 
 **哈瓦苏派人（Havasupai，Havasu 'Baaja）** 分布于美国亚利桑那大峡谷南缘。公开叙述涉及峡谷蓝绿水、农作与社区—教会接触——**中高敏感**。公开文化入口含 **Yamaba／Peach Festival**（桃节／公开节庆层）与 **waterfall／canyon ethics**（瀑布／峡谷伦理）；**closed healing／songs CONCEPT**（封闭疗愈／歌曲仅概念）。本卡仅公开／旅游管理公开层；不提供未授权仪轨。与纳瓦霍、霍皮、阿帕奇、瓦拉派等西南条目区分。

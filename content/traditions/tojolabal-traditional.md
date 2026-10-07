@@ -1,5 +1,9 @@
 # 托霍拉瓦尔玛雅民间天主教与祖灵祈福（Tojolabal）
 
+![托霍拉瓦尔文化展示（墨西哥大众文化博物馆）](./tojolabal-traditional.jpg)
+
+<!-- 来源：CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:TojolabalDisplayMusCulPop.JPG -->
+
 ## 概述
 
 **托霍拉瓦尔人（Tojolabal）** 分布于墨西哥恰帕斯东南高地。公开记述：玛雅宇宙观与天主教圣徒交织；土地、尊严与社群自治常进入公共祈祷叙述。本条目为教育概览；**不提供**日数占卜操作、献牲或可冒充日师的步骤。与策尔塔尔、佐齐尔、丘赫条目可比较。

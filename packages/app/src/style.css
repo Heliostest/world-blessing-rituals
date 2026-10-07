@@ -82,11 +82,17 @@
   --radius-panel: 28px;
   --radius-tile: 22px;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
-  /* HUD panel: inner highlight, thin outline, solid ledge. */
+  /* A solid ledge means "tap me". A card that is a button: inner highlight,
+     thin outline, solid ledge; it sinks into the ledge when pressed. */
   --panel-shadow: inset 0 3px 0 #ffffffd9, 0 0 0 2px var(--edge),
     0 6px 0 2px var(--ledge);
   --panel-shadow-pressed: inset 0 3px 0 #ffffffd9, 0 0 0 2px var(--edge),
     0 2px 0 2px var(--ledge);
+  /* Containers and read-only pieces keep the rim and outline but rest on the
+     page with a soft drop, no ledge. */
+  --soft-drop: 0 6px 14px -4px #0b5a5233;
+  --panel-shadow-static: inset 0 3px 0 #ffffffd9, 0 0 0 2px var(--edge),
+    var(--soft-drop);
   --dots:
     radial-gradient(var(--island-dot) 2.6px, transparent 3.2px) 0 0 / 24px 24px,
     radial-gradient(#ffffffa6 1.6px, transparent 2.2px) 12px 12px / 24px 24px;
@@ -282,7 +288,8 @@ button:hover:not(:disabled) {
   border: 2px solid var(--rim);
   border-radius: 999px;
   background: var(--butter-tint);
-  box-shadow: 0 2px 0 var(--butter-ledge);
+  /* A status, not a button: ring only. */
+  box-shadow: 0 0 0 2px #f2d98a;
   padding: 3px 11px;
   font-size: 12px;
   font-weight: 700;
@@ -393,11 +400,12 @@ button:hover:not(:disabled) {
   font-size: 13px;
   color: var(--ink);
   font-weight: 800;
-  box-shadow: 0 3px 0 var(--butter-ledge);
+  /* A label, not a button: ring only (ledges mean "tap me"). */
+  box-shadow: 0 0 0 2px #f2d98a;
 }
 .tag.soft {
   background: var(--mint-tint);
-  box-shadow: 0 3px 0 #a9e5da;
+  box-shadow: 0 0 0 2px #a9e5da;
   color: var(--mint-ink);
 }
 .daily-card {
@@ -405,7 +413,7 @@ button:hover:not(:disabled) {
   border-radius: var(--radius-panel);
   background: var(--art-paper);
   padding: 16px 14px 18px;
-  box-shadow: var(--panel-shadow);
+  box-shadow: var(--panel-shadow-static);
 }
 .daily-card + .daily-card {
   margin-top: 22px;
@@ -516,7 +524,7 @@ button:hover:not(:disabled) {
   border: 3px solid var(--rim);
   border-radius: var(--radius-panel);
   background: var(--sand);
-  box-shadow: var(--panel-shadow);
+  box-shadow: var(--panel-shadow-static);
 }
 .achievement-card .section-heading {
   margin: 0 0 10px;
@@ -665,6 +673,12 @@ button:hover:not(:disabled) {
     0 0 0 2px #f2d98a,
     0 5px 0 2px var(--butter-ledge);
 }
+.resume-banner:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 2px #f2d98a,
+    0 2px 0 2px var(--butter-ledge);
+}
 .resume-banner small {
   display: block;
   font-size: 12px;
@@ -745,6 +759,12 @@ button:hover:not(:disabled) {
     0 4px 0 var(--tab-ledge);
   transform: translateY(-2px);
 }
+.bottom-nav button[aria-current]:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 0 3px 0 #ffffff8c,
+    0 1px 0 var(--tab-ledge);
+}
 .bottom-nav button[aria-current] svg {
   background: #ffffffb3;
   color: var(--ink);
@@ -802,7 +822,8 @@ button:hover:not(:disabled) {
   margin: 16px auto;
 }
 /* Large crops straight on the mint page get a postcard frame in their own
-   paper colour, so the crop's ground never shows as a box. */
+   paper colour, so the crop's ground never shows as a box. A picture, so no
+   ledge. */
 .app-content > .art,
 .new-wish-page > .art,
 .wish-detail-page > .art,
@@ -815,7 +836,7 @@ button:hover:not(:disabled) {
   background: var(--art-paper);
   box-shadow:
     0 0 0 2px var(--edge),
-    0 6px 0 2px var(--ledge);
+    var(--soft-drop);
 }
 .art-variant-home {
   margin-top: -1px;
@@ -842,7 +863,7 @@ button:hover:not(:disabled) {
   border: 3px solid var(--rim);
   border-radius: 24px;
   padding: 16px;
-  box-shadow: var(--panel-shadow);
+  box-shadow: var(--panel-shadow-static);
   margin: 0 0 18px;
 }
 .form-card h2,
@@ -921,6 +942,13 @@ button:hover:not(:disabled) {
   cursor: pointer;
   color: var(--ink-soft);
   box-shadow: 0 3px 0 #e2d3b3;
+  transition:
+    transform 0.15s var(--ease),
+    box-shadow 0.15s var(--ease);
+}
+.category-chips label:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #e2d3b3;
 }
 .category-chips .selected {
   background: linear-gradient(180deg, var(--mint-hi), var(--mint));
@@ -929,6 +957,12 @@ button:hover:not(:disabled) {
   box-shadow:
     inset 0 2px 0 #ffffff80,
     0 4px 0 var(--mint-ledge);
+}
+.category-chips .selected:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset 0 2px 0 #ffffff80,
+    0 1px 0 var(--mint-ledge);
 }
 .category-chips input {
   position: absolute;
@@ -967,11 +1001,21 @@ button:hover:not(:disabled) {
   min-height: 44px;
   cursor: pointer;
   box-shadow: 0 3px 0 #e2d3b3;
+  transition:
+    transform 0.15s var(--ease),
+    box-shadow 0.15s var(--ease);
+}
+.choice-row:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #e2d3b3;
 }
 .choice-row.chosen {
   border-color: var(--butter-ledge);
   background: var(--butter-tint);
   box-shadow: 0 3px 0 var(--butter-ledge);
+}
+.choice-row.chosen:active {
+  box-shadow: 0 1px 0 var(--butter-ledge);
 }
 .choice-row > span {
   flex: 1;
@@ -1050,18 +1094,20 @@ button:hover:not(:disabled) {
 .wish-detail-page {
   text-align: center;
 }
+/* A status chip, read-only like .count-pill: a flat tint and a ring, so it
+   never passes for a yellow button. */
 .status-pill {
   display: inline-flex;
   gap: 7px;
   align-items: center;
-  background: linear-gradient(180deg, var(--butter-hi), var(--butter));
+  background: var(--butter-tint);
   border: 2.5px solid var(--rim);
   border-radius: 999px;
   padding: 4px 16px 5px;
   font-size: 15px;
   font-weight: 800;
   color: var(--ink);
-  box-shadow: 0 4px 0 var(--butter-ledge);
+  box-shadow: 0 0 0 2px #f2d98a;
   margin: 0 auto 6px;
 }
 .status-pill svg {
@@ -1069,8 +1115,8 @@ button:hover:not(:disabled) {
   height: 20px;
 }
 .status-pill.fulfilled {
-  background: linear-gradient(180deg, var(--leaf-hi), var(--leaf));
-  box-shadow: 0 4px 0 var(--leaf-ledge);
+  background: var(--leaf-tint);
+  box-shadow: 0 0 0 2px #bfe3ad;
 }
 .wish-detail-page > .art-variant-wish-detail {
   max-width: 330px;
@@ -1118,6 +1164,10 @@ button:hover:not(:disabled) {
   min-height: 30px;
   position: relative;
   box-shadow: 0 3px 0 #e2d3b3;
+}
+.small-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #e2d3b3;
 }
 /* The pill stays small; an invisible margin around it makes a 44px target. */
 .small-button::before {
@@ -1176,7 +1226,7 @@ button:hover:not(:disabled) {
   text-align: left;
   font-size: 14px;
   margin: 8px 0 16px;
-  box-shadow: var(--panel-shadow);
+  box-shadow: var(--panel-shadow-static);
 }
 .return-summary svg {
   width: 23px;
@@ -1362,7 +1412,7 @@ button:hover:not(:disabled) {
   border: 4px solid var(--rim);
   border-radius: 32px;
   background: var(--art-paper);
-  box-shadow: var(--panel-shadow);
+  box-shadow: var(--panel-shadow-static);
 }
 /* The 3D woodfish is a transparent canvas, so its stage can carry dots. */
 .ritual-woodfish .ritual-stage {
@@ -1550,9 +1600,20 @@ button:hover:not(:disabled) {
   font-size: 14px;
   font-weight: 800;
   color: var(--ink-soft);
+  cursor: pointer;
   box-shadow:
     0 0 0 2px var(--edge),
     0 5px 0 2px var(--ledge);
+  transition:
+    transform 0.15s var(--ease),
+    box-shadow 0.15s var(--ease);
+}
+/* The whole pill toggles its switch, so it presses like a button. */
+.feedback-controls label:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 2px 0 2px var(--ledge);
 }
 .feedback-controls svg {
   width: 32px;
@@ -1677,9 +1738,10 @@ button:hover:not(:disabled) {
   color: #8a3b17;
   transform: rotate(-4deg);
   margin-bottom: 15px;
+  /* A sticker, not a button: ring and a soft drop. */
   box-shadow:
     0 0 0 2px #f6c7b2,
-    0 5px 0 2px var(--peach-ledge);
+    var(--soft-drop);
 }
 .completion-stats {
   display: grid;
@@ -1688,7 +1750,7 @@ button:hover:not(:disabled) {
   border: 3px solid var(--rim);
   border-radius: 24px;
   background: var(--sand);
-  box-shadow: var(--panel-shadow);
+  box-shadow: var(--panel-shadow-static);
   margin: 10px 0 20px;
 }
 .completion-stats > div + div {
@@ -1723,7 +1785,7 @@ button:hover:not(:disabled) {
   padding: 14px;
   text-align: left;
   margin-top: 12px;
-  box-shadow: var(--panel-shadow);
+  box-shadow: var(--panel-shadow-static);
 }
 .share-panel label {
   font-size: 13px;
@@ -1782,7 +1844,7 @@ button:hover:not(:disabled) {
   box-shadow:
     inset 0 3px 0 #ffffffd9,
     0 0 0 2px #f7c3d1,
-    0 6px 0 2px #f0a6bb;
+    var(--soft-drop);
 }
 .wish-hero > .art {
   flex: 0 0 82px;
@@ -1806,9 +1868,10 @@ button:hover:not(:disabled) {
   border: 3px solid var(--rim);
   border-radius: 999px;
   margin: 22px 0 18px;
+  /* The track holds the buttons; only the current one has a ledge. */
   box-shadow:
     0 0 0 2px var(--edge),
-    0 5px 0 2px var(--ledge);
+    var(--soft-drop);
 }
 .filter-row button {
   flex: 1;
@@ -1825,6 +1888,12 @@ button:hover:not(:disabled) {
   box-shadow:
     inset 0 2px 0 #ffffff80,
     0 3px 0 var(--mint-ledge);
+}
+.filter-row .selected:active {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 2px 0 #ffffff80,
+    0 1px 0 var(--mint-ledge);
 }
 .wish-list {
   display: grid;
@@ -1877,6 +1946,14 @@ button:hover:not(:disabled) {
   color: var(--mint-ink);
   box-shadow: 0 3px 0 var(--mint-ledge);
   stroke-width: 2.8;
+  transition:
+    transform 0.15s var(--ease),
+    box-shadow 0.15s var(--ease);
+}
+/* A settings row that is a button presses its chevron. */
+.settings-row:active > svg {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--mint-ledge);
 }
 /* Panels that are buttons sink into their ledge when pressed. */
 .wish-card:active,
@@ -1901,7 +1978,8 @@ button:hover:not(:disabled) {
   border-radius: 50%;
   background: var(--leaf-tint);
   color: var(--leaf-ledge);
-  box-shadow: 0 3px 0 #bfe3ad;
+  /* A picture, not a button: ring only. */
+  box-shadow: 0 0 0 2px #bfe3ad;
   margin-bottom: 12px;
 }
 .empty h3 {
@@ -1941,7 +2019,7 @@ button:hover:not(:disabled) {
   overflow: hidden;
   box-shadow:
     0 0 0 2px var(--edge),
-    0 6px 0 2px var(--ledge);
+    var(--soft-drop);
 }
 .room-window {
   position: absolute;
@@ -2087,9 +2165,8 @@ button:hover:not(:disabled) {
   border-radius: 50%;
   background: radial-gradient(circle at 36% 30%, var(--leaf-hi), var(--leaf));
   margin: 0 auto 16px;
-  box-shadow:
-    0 0 0 3px var(--edge),
-    0 6px 0 3px var(--leaf-ledge);
+  /* A portrait, not a button: ring only. */
+  box-shadow: 0 0 0 3px var(--edge);
   color: #24501a;
 }
 .avatar svg {
@@ -2108,7 +2185,8 @@ button:hover:not(:disabled) {
   color: var(--ink-soft);
   margin-top: 6px;
 }
-/* Three candy counters instead of one ruled box. */
+/* Three candy counters instead of one ruled box. Read-only, so a ring and no
+   ledge, like .count-pill: they must not pass for the tappable tiles. */
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2122,22 +2200,19 @@ button:hover:not(:disabled) {
   background: var(--butter-tint);
   box-shadow:
     inset 0 3px 0 #ffffffd9,
-    0 0 0 2px #f2d98a,
-    0 5px 0 2px var(--butter-ledge);
+    0 0 0 2px #f2d98a;
 }
 .stats > div:nth-child(2) {
   background: var(--peach-tint);
   box-shadow:
     inset 0 3px 0 #ffffffd9,
-    0 0 0 2px #f6c7b2,
-    0 5px 0 2px var(--peach-ledge);
+    0 0 0 2px #f6c7b2;
 }
 .stats > div:nth-child(3) {
   background: var(--sky-tint);
   box-shadow:
     inset 0 3px 0 #ffffffd9,
-    0 0 0 2px #b4dcf3,
-    0 5px 0 2px var(--sky-ledge);
+    0 0 0 2px #b4dcf3;
 }
 .stats strong {
   display: block;
@@ -2159,7 +2234,7 @@ button:hover:not(:disabled) {
   border-radius: var(--radius-panel);
   padding: 0 16px;
   margin-top: 26px;
-  box-shadow: var(--panel-shadow);
+  box-shadow: var(--panel-shadow-static);
 }
 .settings-row {
   display: flex;
@@ -2269,7 +2344,7 @@ button:hover:not(:disabled) {
   line-height: 1.7;
   box-shadow:
     0 0 0 2px #f6c7b2,
-    0 4px 0 2px var(--peach-ledge);
+    var(--soft-drop);
 }
 .error-banner span {
   flex: 1;
@@ -2297,7 +2372,7 @@ button:hover:not(:disabled) {
   border-radius: 50%;
   background: var(--leaf);
   color: #24501a;
-  box-shadow: 0 4px 0 var(--leaf-ledge);
+  box-shadow: 0 0 0 2px var(--leaf-ledge);
   margin-bottom: 25px;
 }
 .loading-screen .eyebrow {
@@ -2401,10 +2476,12 @@ button:hover:not(:disabled) {
     border: 4px solid var(--rim);
     border-radius: 24px;
     background: linear-gradient(180deg, var(--butter-hi), var(--butter));
+    /* A logo, not a button: inner shade and a soft drop, no ledge. */
     box-shadow:
       inset 0 3px 0 #ffffff8c,
+      inset 0 -5px 0 #e0aa2580,
       0 0 0 2px #f2d98a,
-      0 7px 0 2px var(--butter-ledge);
+      var(--soft-drop);
     margin-bottom: 26px;
   }
   .desktop-note strong {
@@ -2431,7 +2508,7 @@ button:hover:not(:disabled) {
     font-weight: 800;
     letter-spacing: 2px;
     color: var(--mint-ink);
-    box-shadow: 0 3px 0 #8fcfbf;
+    box-shadow: 0 0 0 2px #a9e5da;
   }
   .save-status {
     right: max(10%, calc((100vw - 1060px) / 2));
@@ -2772,7 +2849,7 @@ button:hover:not(:disabled) {
 }
 /* Day stage: a soft sky fading to warm sand, so the cel-lit scenes keep the
    warm ground their lights were tuned for, framed as a HUD panel. */
-.library-scene-stage { position: relative; isolation: isolate; height: min(65vh, 540px); min-height: 360px; border: 4px solid var(--rim); border-radius: 30px; overflow: hidden; background: radial-gradient(#ffffff99 1.8px, transparent 2.3px) 0 0 / 22px 22px, linear-gradient(180deg, #d9f1fb 0%, #eaf7f3 42%, #fbf3dc 76%, #f5e5c0 100%); box-shadow: 0 0 0 2px var(--edge), 0 7px 0 2px var(--ledge); color: var(--ink); }
+.library-scene-stage { position: relative; isolation: isolate; height: min(65vh, 540px); min-height: 360px; border: 4px solid var(--rim); border-radius: 30px; overflow: hidden; background: radial-gradient(#ffffff99 1.8px, transparent 2.3px) 0 0 / 22px 22px, linear-gradient(180deg, #d9f1fb 0%, #eaf7f3 42%, #fbf3dc 76%, #f5e5c0 100%); box-shadow: 0 0 0 2px var(--edge), var(--soft-drop); color: var(--ink); }
 /* Island at night for the lantern scenes (心愿灯, 燃灯): deep teal-navy, soft
    star dots, a low sea glow and a moon behind the transparent canvas. */
 .library-scene-stage[data-scene="lantern"],
@@ -2780,7 +2857,7 @@ button:hover:not(:disabled) {
   border-color: #2e6170;
   box-shadow:
     0 0 0 2px #0e2a3c,
-    0 7px 0 2px #0b2232;
+    var(--soft-drop);
   background:
     radial-gradient(circle at 14% 16%, var(--star) 0 1.6px, transparent 2.4px),
     radial-gradient(circle at 33% 7%, var(--star) 0 1.2px, transparent 2px),
@@ -2810,8 +2887,8 @@ button:hover:not(:disabled) {
     0 0 34px 10px #ffe9a640;
 }
 .library-scene-stage + .feedback-controls { margin-top: 18px; }
-.scene-discovery { padding: 18px 18px 12px; border: 3px solid var(--rim); border-radius: var(--radius-panel); margin-bottom: 22px; background: radial-gradient(#c3e4f7 2px, transparent 2.6px) 0 0 / 20px 20px, var(--sky-tint); box-shadow: inset 0 3px 0 #ffffffd9, 0 0 0 2px #bfe0f3, 0 6px 0 2px #93c6e6; display: grid; gap: 10px; }
-.scene-discovery .eyebrow { justify-self: start; display: inline-block; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--sky); box-shadow: 0 3px 0 var(--sky-ledge); font-size: 13px; font-weight: 800; color: var(--ink); }
+.scene-discovery { padding: 18px 18px 12px; border: 3px solid var(--rim); border-radius: var(--radius-panel); margin-bottom: 22px; background: radial-gradient(#c3e4f7 2px, transparent 2.6px) 0 0 / 20px 20px, var(--sky-tint); box-shadow: inset 0 3px 0 #ffffffd9, 0 0 0 2px #bfe0f3, var(--soft-drop); display: grid; gap: 10px; }
+.scene-discovery .eyebrow { justify-self: start; display: inline-block; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--sky); box-shadow: 0 0 0 2px #b4dcf3; font-size: 13px; font-weight: 800; color: var(--ink); }
 .scene-discovery h2 { margin: 8px 0; font-size: 21px; font-weight: 900; }
 .scene-discovery p, .cache-manager p { line-height: 1.8; }
 .scene-discovery p { color: var(--ink-soft); font-weight: 600; }
@@ -2828,7 +2905,7 @@ button:hover:not(:disabled) {
 .scene-search, .cache-manager label { display: grid; gap: 12px; margin: 20px 0; font-weight: 700; }
 .scene-search input, .cache-manager select { min-height: 48px; border: 2.5px solid var(--edge); border-radius: 999px; padding: 8px 16px; background: var(--paper); color: var(--ink); font: inherit; font-size: 16px; box-shadow: 0 3px 0 #d4c9b4; }
 .cache-usage { display: block; font-size: 24px; font-weight: 900; margin-top: 24px; }
-.scene-download, .scene-load-error { padding: 24px; border: 3px solid var(--rim); border-radius: 24px; display: grid; gap: 20px; background: var(--sand); box-shadow: var(--panel-shadow); }
+.scene-download, .scene-load-error { padding: 24px; border: 3px solid var(--rim); border-radius: 24px; display: grid; gap: 20px; background: var(--sand); box-shadow: var(--panel-shadow-static); }
 /* A long detail (an English message, a URL) wraps inside the card instead of
    widening it, so 重试打开 stays on screen. */
 .scene-load-error { grid-template-columns: minmax(0, 1fr); overflow-wrap: anywhere; }
@@ -2837,7 +2914,7 @@ button:hover:not(:disabled) {
 /* 已存进心愿 once a scene's wish box keeps a line: empty (no height) until then. */
 .scene-wish-saved { display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; margin: 0; color: var(--mint-text); font-weight: 700; }
 .scene-experience h1 { font-size: 26px; text-shadow: 0 3px 0 #ffffffb3; }
-.scene-experience .woodfish-object { width: 100%; height: 340px; border: 4px solid var(--rim); border-radius: 30px; background: radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px, var(--sand); box-shadow: 0 0 0 2px var(--edge), 0 7px 0 2px var(--ledge); }
+.scene-experience .woodfish-object { width: 100%; height: 340px; border: 4px solid var(--rim); border-radius: 30px; background: radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px, var(--sand); box-shadow: 0 0 0 2px var(--edge), var(--soft-drop); }
 /* A small HUD counter. */
 .scene-progress { display: inline-block; margin: 2px 0 14px; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--butter-tint); box-shadow: 0 0 0 2px #f2d98a; color: var(--ink-soft); font-weight: 800; }
 .library-scene-stage [hidden] { display: none !important; }
@@ -2874,11 +2951,11 @@ button:hover:not(:disabled) {
   box-shadow:
     inset 0 3px 0 #ffffffd9,
     0 0 0 2px #f6c7b2,
-    0 6px 0 2px #eda98c;
+    var(--soft-drop);
 }
 .practice-card .tag {
   background: var(--peach);
-  box-shadow: 0 3px 0 var(--peach-ledge);
+  box-shadow: 0 0 0 2px #f6c7b2;
 }
 .practice-card .daily-copy p {
   color: var(--ink-soft);

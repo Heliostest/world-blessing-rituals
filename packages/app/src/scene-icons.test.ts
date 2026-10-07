@@ -5,8 +5,9 @@ import { describe, expect, it } from "vitest";
 import { createState } from "@wbr/core";
 import { Context, type AppContext } from "./context";
 import { Today } from "./home";
+import { Wishes } from "./pages";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
-import { TODAY_SCENE_IDS } from "./scene-placement";
+import { TODAY_SCENE_IDS, WISH_SCENE_IDS } from "./scene-placement";
 
 /** Renders `node` in an App with the bundled scenes, as a parsed document. */
 function render(node: ReactNode) {
@@ -57,5 +58,27 @@ describe("今日 achievements grid", () => {
       "庭前一礼",
       "廊前轻转",
     ]);
+  });
+});
+
+describe("心愿 practice cards", () => {
+  const doc = render(createElement(Wishes));
+  const cards = [...doc.querySelectorAll(".wish-practice-card")];
+
+  it("lead with each scene's own drawn icon, keyed by scene id", () => {
+    expect(cards.map((card) => card.getAttribute("data-scene"))).toEqual([
+      ...WISH_SCENE_IDS,
+    ]);
+    for (const card of cards)
+      expect(card.querySelector(".practice-badge svg path")).not.toBeNull();
+  });
+
+  it("say the verb under the title, without repeating the title", () => {
+    for (const card of cards) {
+      const title = card.querySelector("strong")!.textContent!;
+      const verb = card.querySelector("small")!.textContent!;
+      expect(verb.length).toBeGreaterThan(0);
+      expect(verb).not.toContain(title);
+    }
   });
 });

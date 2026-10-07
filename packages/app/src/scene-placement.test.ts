@@ -15,6 +15,7 @@ import {
   recommendTodayScene,
   todayPracticeCopy,
   wishPracticeAction,
+  wishPracticeLabel,
   wishSceneEntries,
   todaySceneEntries,
 } from "./scene-placement";
@@ -116,15 +117,26 @@ describe("scene placement", () => {
     }
     expect(todayPracticeCopy("crane")).toBeUndefined();
     for (const entry of wishSceneEntries(entries)) {
-      const label = wishPracticeAction(entry);
-      expect(label.startsWith(entry.title)).toBe(true);
-      expect(() => assertSafeCopy(label)).not.toThrow();
+      // The 心愿 card shows the title already: its subtitle is the verb only.
+      const verb = wishPracticeAction(entry);
+      expect(verb).not.toContain(entry.title);
+      expect(() => assertSafeCopy(verb)).not.toThrow();
+      // A 心愿 detail button stands alone, so it names the scene too.
+      expect(wishPracticeLabel(entry)).toBe(`${entry.title} · ${verb}`);
     }
-    expect(wishPracticeAction(entries[0])).toBe("敲一敲木鱼");
+    expect(wishSceneEntries(entries).map((e) => wishPracticeAction(e))).toEqual([
+      "系一念",
+      "推一盏",
+      "折一念",
+      "点一盏",
+      "放一环",
+    ]);
+    expect(wishPracticeAction(entries[0])).toBe(WISH_PRACTICE_COPY.otherAction);
     for (const text of [
       TODAY_PRACTICE_COPY.tag,
       TODAY_PRACTICE_COPY.action,
       WISH_PRACTICE_COPY.blurb,
+      WISH_PRACTICE_COPY.otherAction,
     ]) {
       expect(() => assertSafeCopy(text)).not.toThrow();
     }

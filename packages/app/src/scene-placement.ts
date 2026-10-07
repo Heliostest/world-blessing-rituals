@@ -110,18 +110,26 @@ export const WISH_PRACTICE_COPY = {
   blurb: "把期待挂上竹枝、折进纸鹤、点进灯里，或随花环漂远（练习，非法效）。",
   detailHeading: "为这个心愿做个小练习",
   detailBlurb: "练习小品，不产生法效。",
+  /** The verb only: the catalog title is shown beside it. */
   actions: {
-    "tanzaku-tanabata": "短册系竹 · 系一念",
-    yeondeunghoe: "燃灯上浮 · 推一盏",
-    crane: "折一只纸鹤 · 折一念",
-    lantern: "点一盏心愿灯 · 点一盏",
-    "slavic-wreath": "火边花环 · 放一环",
+    "tanzaku-tanabata": "系一念",
+    yeondeunghoe: "推一盏",
+    crane: "折一念",
+    lantern: "点一盏",
+    "slavic-wreath": "放一环",
   } satisfies Record<WishSceneId, string>,
+  /** For a scene outside the wish set. */
+  otherAction: "做个小练习",
 } as const;
 
-/** Button label for a wish practice; falls back to the catalog title. */
+/** A wish practice's verb, under its title on the 心愿 card. */
 export function wishPracticeAction(entry: CatalogEntry): string {
   return isWishScene(entry.id)
     ? WISH_PRACTICE_COPY.actions[entry.id as WishSceneId]
-    : entry.title;
+    : WISH_PRACTICE_COPY.otherAction;
+}
+
+/** Title and verb, for a button that stands alone (心愿 detail). */
+export function wishPracticeLabel(entry: CatalogEntry): string {
+  return `${entry.title} · ${wishPracticeAction(entry)}`;
 }

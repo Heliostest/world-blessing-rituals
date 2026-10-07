@@ -3,6 +3,7 @@ import { rituals } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { formatDate, statusText, useApp } from "./context";
 import { useSceneLibrary } from "./scene-library";
+import { SceneIcon } from "./scene-icons";
 import {
   WISH_PRACTICE_COPY,
   wishPracticeAction,
@@ -94,12 +95,14 @@ export function Wishes() {
               <button
                 key={entry.id}
                 className="wish-practice-card"
+                data-scene={entry.id}
                 onClick={() => go({ page: "scene", id: entry.id, entry })}
               >
+                <span className="practice-badge" aria-hidden="true">
+                  <SceneIcon id={entry.id} />
+                </span>
                 <strong>{entry.title}</strong>
-                <small>
-                  {wishPracticeAction(entry)}
-                </small>
+                <small>{wishPracticeAction(entry)}</small>
                 <Icon name="arrow" />
               </button>
             ))}

@@ -1938,7 +1938,7 @@ button:hover:not(:disabled) {
   font-size: 11px;
 }
 .wish-card > svg,
-.wish-practice-card svg,
+.wish-practice-card > svg,
 .settings-row > svg {
   width: 30px;
   height: 30px;
@@ -2984,19 +2984,18 @@ button:hover:not(:disabled) {
   display: grid;
   gap: 16px;
 }
-/* Each practice gets a candy badge, like an app on the island phone. */
+/* Each practice leads with a badge holding its own drawn icon, like an app
+   on the island phone. The candy follows the scene, not its list position. */
 .wish-practice-card {
   --badge: var(--sky);
-  --badge-hi: var(--sky-hi);
-  --badge-ledge: var(--sky-ledge);
-  position: relative;
+  --badge-tint: var(--sky-tint);
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr auto;
   grid-template-rows: auto auto;
-  column-gap: 8px;
+  column-gap: 12px;
   align-items: center;
   text-align: left;
-  padding: 12px 14px 12px 64px;
+  padding: 12px 14px 12px 12px;
   border-radius: 24px;
   border: 3px solid var(--rim);
   background: var(--sand);
@@ -3004,54 +3003,54 @@ button:hover:not(:disabled) {
   cursor: pointer;
   box-shadow: var(--panel-shadow);
 }
-.wish-practice-card::before {
-  content: "";
-  position: absolute;
-  left: 13px;
-  top: 50%;
+.wish-practice-card[data-scene="yeondeunghoe"] {
+  --badge: var(--butter);
+  --badge-tint: var(--butter-tint);
+}
+.wish-practice-card[data-scene="crane"] {
+  --badge: var(--bubblegum);
+  --badge-tint: var(--bubblegum-tint);
+}
+.wish-practice-card[data-scene="lantern"] {
+  --badge: var(--peach);
+  --badge-tint: var(--peach-tint);
+}
+.wish-practice-card[data-scene="slavic-wreath"] {
+  --badge: var(--leaf);
+  --badge-tint: var(--leaf-tint);
+}
+/* A light tint keeps the icon's own colours readable; the candy is the ring. */
+.practice-badge {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 2.5px solid var(--rim);
+  border-radius: 16px;
+  background: var(--badge-tint);
+  box-shadow: 0 0 0 2px var(--badge);
+}
+.practice-badge .scene-icon {
   width: 38px;
   height: 38px;
-  margin-top: -21px;
-  border: 2.5px solid var(--rim);
-  border-radius: 14px;
-  background:
-    radial-gradient(circle at 50% 50%, #ffffffd9 0 5px, transparent 5.6px),
-    linear-gradient(180deg, var(--badge-hi), var(--badge));
-  box-shadow: 0 4px 0 var(--badge-ledge);
-}
-.wish-practice-card:nth-child(5n + 2) {
-  --badge: var(--butter);
-  --badge-hi: var(--butter-hi);
-  --badge-ledge: var(--butter-ledge);
-}
-.wish-practice-card:nth-child(5n + 3) {
-  --badge: var(--bubblegum);
-  --badge-hi: var(--bubblegum-hi);
-  --badge-ledge: var(--bubblegum-ledge);
-}
-.wish-practice-card:nth-child(5n + 4) {
-  --badge: var(--peach);
-  --badge-hi: var(--peach-hi);
-  --badge-ledge: var(--peach-ledge);
-}
-.wish-practice-card:nth-child(5n + 5) {
-  --badge: var(--leaf);
-  --badge-hi: var(--leaf-hi);
-  --badge-ledge: var(--leaf-ledge);
 }
 .wish-practice-card strong {
-  grid-column: 1;
+  grid-column: 2;
+  align-self: end;
   font-size: 16px;
   font-weight: 900;
 }
 .wish-practice-card small {
-  grid-column: 1;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 600;
-}
-.wish-practice-card svg {
   grid-column: 2;
+  align-self: start;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+.wish-practice-card > svg {
+  grid-column: 3;
   grid-row: 1 / span 2;
 }
 .wish-practice-detail .wish-practice-actions {
@@ -3059,20 +3058,21 @@ button:hover:not(:disabled) {
   gap: 12px;
   margin-top: 12px;
 }
-/* The same candy per practice as its badge on 心愿. */
-.wish-practice-actions .button:nth-child(5n + 1) {
+/* The same candy per practice as its badge on 心愿 (燃灯 keeps the butter
+   secondary). */
+.wish-practice-actions .button[data-scene="tanzaku-tanabata"] {
   --ledge-color: var(--sky-ledge);
   background: linear-gradient(180deg, var(--sky-hi), var(--sky));
 }
-.wish-practice-actions .button:nth-child(5n + 3) {
+.wish-practice-actions .button[data-scene="crane"] {
   --ledge-color: var(--bubblegum-ledge);
   background: linear-gradient(180deg, var(--bubblegum-hi), var(--bubblegum));
 }
-.wish-practice-actions .button:nth-child(5n + 4) {
+.wish-practice-actions .button[data-scene="lantern"] {
   --ledge-color: var(--peach-ledge);
   background: linear-gradient(180deg, var(--peach-hi), var(--peach));
 }
-.wish-practice-actions .button:nth-child(5n + 5) {
+.wish-practice-actions .button[data-scene="slavic-wreath"] {
   --ledge-color: var(--leaf-ledge);
   background: linear-gradient(180deg, var(--leaf-hi), var(--leaf));
 }

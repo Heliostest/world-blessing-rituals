@@ -1,0 +1,61 @@
+// @vitest-environment jsdom
+import { createElement, type ReactNode } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { describe, expect, it } from "vitest";
+import { createState } from "@wbr/core";
+import { Context, type AppContext } from "./context";
+import { Today } from "./home";
+import { SceneLibraryContext, builtInScenes } from "./scene-library";
+import { TODAY_SCENE_IDS } from "./scene-placement";
+
+/** Renders `node` in an App with the bundled scenes, as a parsed document. */
+function render(node: ReactNode) {
+  const html = renderToStaticMarkup(
+    createElement(
+      Context.Provider,
+      {
+        value: {
+          state: createState(),
+          dispatch: () => true,
+          go: () => {},
+        } as unknown as AppContext,
+      },
+      createElement(
+        SceneLibraryContext.Provider,
+        { value: { entries: builtInScenes } as never },
+        node,
+      ),
+    ),
+  );
+  return new DOMParser().parseFromString(html, "text/html");
+}
+
+describe("今日 achievements grid", () => {
+  const doc = render(createElement(Today, { day: "2026-10-07" }));
+  const tiles = [...doc.querySelectorAll(".ritual-tile")];
+
+  it("shows every tile's picture in the same item slot", () => {
+    expect(tiles).toHaveLength(6);
+    for (const tile of tiles)
+      expect(tile.querySelectorAll(":scope > .art.art-small")).toHaveLength(1);
+  });
+
+  it("draws the practice scenes' icons by scene id", () => {
+    const drawn = [...doc.querySelectorAll(".ritual-tile .scene-art")];
+    expect(drawn.map((el) => el.getAttribute("data-scene"))).toEqual([
+      ...TODAY_SCENE_IDS,
+    ]);
+    for (const art of drawn) expect(art.querySelector("svg path")).not.toBeNull();
+  });
+
+  it("labels tiles with words only: no emoji or symbol glyphs", () => {
+    expect(tiles.map((tile) => tile.textContent)).toEqual([
+      "千纸鹤",
+      "木鱼",
+      "小灯笼",
+      "风铃一响",
+      "庭前一礼",
+      "廊前轻转",
+    ]);
+  });
+});

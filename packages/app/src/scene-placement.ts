@@ -82,23 +82,21 @@ export function featuredTodayPractice(
   return recommendScene(todaySceneEntries(entries), day);
 }
 
+/** Copy only: each scene's icon is drawn, keyed by id, in scene-icons.tsx. */
 export const TODAY_PRACTICE_COPY = {
   tag: "今日小练习",
   action: "开始今日小练习",
   scenes: {
     "furin-wind-chime": {
       blurb: "轻拂听一声清凉（练习，非法效）。",
-      glyph: "🎐",
     },
     "shinto-torii": {
       blurb: "在鸟居前停步，轻轻一礼（致敬练习，不替代真实参拜）。",
-      glyph: "⛩️",
     },
     "tibetan-wheel": {
       blurb: "顺时针轻推转筒，静看它慢下来（练习，非法效）。",
-      glyph: "↻",
     },
-  } satisfies Record<TodaySceneId, { blurb: string; glyph: string }>,
+  } satisfies Record<TodaySceneId, { blurb: string }>,
 } as const;
 
 export function todayPracticeCopy(id: string) {

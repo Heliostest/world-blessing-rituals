@@ -3,6 +3,7 @@ import { dailyRitual } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
 import { assertSafeCopy } from "@wbr/shared";
 import { builtInScenes } from "./scene-library";
+import { hasSceneIcon } from "./scene-icons";
 import {
   TODAY_PRACTICE_COPY,
   TODAY_SCENE_IDS,
@@ -91,6 +92,12 @@ describe("scene placement", () => {
     }
   });
 
+  it("gives every placed scene a drawn icon, keyed by its id", () => {
+    for (const id of [...TODAY_SCENE_IDS, ...WISH_SCENE_IDS])
+      expect(hasSceneIcon(id), id).toBe(true);
+    expect(hasSceneIcon("no-such-scene")).toBe(false);
+  });
+
   it("lists catalog entries for each surface", () => {
     expect(todaySceneEntries(entries).map((e) => e.id)).toEqual([
       ...TODAY_SCENE_IDS,
@@ -103,7 +110,8 @@ describe("scene placement", () => {
   it("gives each surface's scenes their own safe copy", () => {
     for (const id of TODAY_SCENE_IDS) {
       const copy = todayPracticeCopy(id)!;
-      expect(copy.glyph).toBeTruthy();
+      // Icons are drawn and keyed by scene id, never carried in the copy.
+      expect(copy).not.toHaveProperty("glyph");
       expect(() => assertSafeCopy(copy.blurb)).not.toThrow();
     }
     expect(todayPracticeCopy("crane")).toBeUndefined();

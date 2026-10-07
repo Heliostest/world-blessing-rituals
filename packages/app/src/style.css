@@ -542,6 +542,8 @@ button:hover:not(:disabled) {
 .ritual-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* Crops and drawn icons share one slot size; rows match even if a label wraps. */
+  grid-auto-rows: 1fr;
   gap: 10px;
 }
 /* Candy tiles, one colour each, like island app icons. */
@@ -2960,12 +2962,11 @@ button:hover:not(:disabled) {
 .practice-card .daily-copy p {
   color: var(--ink-soft);
 }
-.ritual-tile-glyph {
-  display: grid;
-  place-items: center;
-  min-height: 42px;
-  font-size: 28px;
-  line-height: 1;
+/* A drawn scene icon (scene-icons.tsx) in the same item slot as the crops. */
+.scene-art .scene-icon {
+  width: 66px;
+  max-width: 88%;
+  height: auto;
 }
 .wish-practice {
   margin: 8px 0 18px;

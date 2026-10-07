@@ -2,6 +2,7 @@ import { dailyRitual, rituals, type RitualId } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { useApp } from "./context";
 import { SceneRecommendation, useSceneLibrary } from "./scene-library";
+import { SceneArt } from "./scene-icons";
 import {
   TODAY_PRACTICE_COPY,
   featuredTodayPractice,
@@ -125,9 +126,7 @@ export function Today({ day }: { day: string }) {
               key={entry.id}
               onClick={() => go({ page: "scene", id: entry.id, entry })}
             >
-              <span className="ritual-tile-glyph" aria-hidden="true">
-                {todayPracticeCopy(entry.id)?.glyph}
-              </span>
+              <SceneArt id={entry.id} />
               <strong>{entry.title}</strong>
             </button>
           ))}

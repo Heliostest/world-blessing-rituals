@@ -221,14 +221,20 @@ button:hover:not(:disabled) {
   justify-content: center;
   position: relative;
 }
-/* The page title is a swallowtail ribbon, as in the island Title. */
+/* The page title is a swallowtail ribbon, as in the island Title. Always one
+   line, 12px clear of the back button: the 7-8 character ritual titles fit
+   down to 320px (see the 360px block), and anything longer ends in an
+   ellipsis instead of folding into a two-line swallowtail. */
 .app-topbar h2 {
-  max-width: calc(100% - 120px);
+  max-width: calc(100% - 104px);
   padding: 6px 30px 8px;
   font-size: 19px;
   font-weight: 900;
   line-height: 1.4;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--mint-ink);
   background: linear-gradient(180deg, var(--mint-hi), var(--mint));
   box-shadow:
@@ -2543,6 +2549,11 @@ button:hover:not(:disabled) {
   }
 }
 @media (max-width: 360px) {
+  /* 折一份小小的期待 (8 characters) on one ribbon line at 320px. */
+  .app-topbar h2 {
+    padding-inline: 20px;
+    font-size: 17px;
+  }
   .app-content {
     padding-left: 13px;
     padding-right: 13px;

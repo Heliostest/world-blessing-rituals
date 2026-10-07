@@ -3,9 +3,10 @@ import { createDebugRenderStyle } from '@wbr/scene-runtime/debug-render-style'
 import type { GestureHandle } from '@wbr/gestures'
 import type { SceneContext, SceneInstance } from '../contract'
 import {
-  addCelLights,
+  addStageLights,
   CEL_STYLE,
   claimObjectTouches,
+  createLampHalo,
   createSceneFeedback,
   createStepOverlay,
   createWarmStage,
@@ -31,11 +32,16 @@ const COPY = {
 const RISE_SECONDS = 3.2
 const LOW_Y = 0.45
 const HIGH_Y = 2.3
+/** The lanterns' paper glow; on the night stage they glow brighter. */
+const SHELL_GLOW = 0.35
+const SHELL_GLOW_NIGHT = 0.6
 
 type Lantern = {
   group: THREE.Group
   light: THREE.PointLight
   shellMat: THREE.MeshStandardMaterial
+  /** Night stage only: the warm glow round the lantern. */
+  halo: ReturnType<typeof createLampHalo> | null
 }
 
 /** Lotus paper lantern: ring of petals around a glowing core. */
@@ -44,19 +50,20 @@ function buildLantern(
   coreGeo: THREE.BufferGeometry,
   color: number,
   lightIntensity: number,
+  night: boolean,
 ): Lantern {
   const group = new THREE.Group()
   const shellMat = new THREE.MeshStandardMaterial({
     color,
     emissive: 0xffa060,
-    emissiveIntensity: 0.35,
+    emissiveIntensity: night ? SHELL_GLOW_NIGHT : SHELL_GLOW,
     roughness: 0.9,
     side: THREE.DoubleSide,
   })
   const tipMat = new THREE.MeshStandardMaterial({
     color: 0xfbe4cf,
     emissive: 0xff9a70,
-    emissiveIntensity: 0.2,
+    emissiveIntensity: night ? 0.4 : 0.2,
     roughness: 0.9,
     side: THREE.DoubleSide,
   })
@@ -86,7 +93,12 @@ function buildLantern(
   const light = new THREE.PointLight(0xffb070, lightIntensity, 3.5, 2)
   light.position.y = 0.15
   group.add(light)
-  return { group, light, shellMat }
+  const halo = night ? createLampHalo(0xffa860, 1.25) : null
+  if (halo) {
+    halo.sprite.position.y = 0.12
+    group.add(halo.sprite)
+  }
+  return { group, light, shellMat, halo }
 }
 
 export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
@@ -133,7 +145,12 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Transparent over the cream page; lotus-pink accents on the lanterns.
+  // Transparent over the host's stage; lotus-pink accents on the lanterns.
+  // The App shows this scene on its night stage, where it takes the moonlit
+  // rig and the lanterns' own glow, lights and halos carry the warmth: lit
+  // lamps on a dark sky, not pale paper cut-outs.
+  const night = ctx.stage === 'night'
+  const glowScale = night ? 1.5 : 1
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.5, 4.6)
@@ -145,8 +162,9 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   })
   styleRenderer.setStyle(CEL_STYLE)
 
-  // Dusk rig: amber key from the upper left, rose-lilac rim behind the lanterns.
-  addCelLights(scene, {
+  // By day, a dusk rig: amber key from the upper left, rose-lilac rim behind
+  // the lanterns.
+  addStageLights(scene, ctx.stage, {
     sky: 0xffeadb,
     ground: 0xd4b4a4,
     key: 0xffcf9e,
@@ -172,7 +190,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   petalGeo.scale(1, 1.6, 0.5)
   const coreGeo = new THREE.SphereGeometry(0.09, 16, 12)
 
-  const main = buildLantern(petalGeo, coreGeo, 0xf5a4b8, 0.6)
+  const main = buildLantern(petalGeo, coreGeo, 0xf5a4b8, 0.6 * glowScale, night)
   main.group.position.set(0, LOW_Y, 0)
   world.add(main.group)
 
@@ -185,7 +203,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
     [2.2, 2.2, -1.2],
   ]
   companionSpots.forEach(([x, y, z], i) => {
-    const l = buildLantern(petalGeo, coreGeo, i % 2 ? 0xf8c795 : 0xf1adc6, 0.25)
+    const l = buildLantern(petalGeo, coreGeo, i % 2 ? 0xf8c795 : 0xf1adc6, night ? 0.5 : 0.25, night)
     l.group.position.set(x, y, z)
     l.group.scale.setScalar(0.7)
     world.add(l.group)
@@ -348,10 +366,13 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
       // Warm bloom grows as the lantern rises; pulses once resting.
       const glowBase = step === 'ready' ? 0.6 : 0.6 + eased * 1.4
       const pulse = step === 'rest' || step === 'done' ? Math.sin(t * 2.2) * 0.35 : 0
-      main.light.intensity = glowBase + pulse
-      main.shellMat.emissiveIntensity = 0.35 + eased * 0.35 + pulse * 0.2
+      main.light.intensity = (glowBase + pulse) * glowScale
+      main.shellMat.emissiveIntensity =
+        (night ? SHELL_GLOW_NIGHT : SHELL_GLOW) + eased * 0.35 + pulse * 0.2
+      if (main.halo) main.halo.material.opacity = 0.35 + eased * 0.45 + pulse * 0.15
 
       companions.forEach((l, i) => {
+        if (l.halo) l.halo.material.opacity = 0.4 + Math.sin(t * 1.3 + i * 1.7) * 0.06
         const [x, y, z] = companionSpots[i]
         l.group.position.set(x + Math.sin(t * 0.3 + i) * 0.1, y + Math.sin(t * 0.8 + i * 2) * 0.08, z)
         l.group.rotation.y += visualDt * 0.15
@@ -384,6 +405,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
       styleRenderer.dispose()
       renderer.dispose()
       renderer.forceContextLoss()
+      for (const l of [main, ...companions]) l.halo?.dispose()
       disposeTree(world)
       overlay.replaceChildren()
       overlay.classList.remove('scene-overlay', 'scene-overlay--cream')

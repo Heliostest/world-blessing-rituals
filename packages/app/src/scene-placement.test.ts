@@ -5,6 +5,7 @@ import { assertSafeCopy } from "@wbr/shared";
 import { builtInScenes } from "./scene-library";
 import { hasSceneIcon } from "./scene-icons";
 import {
+  NIGHT_STAGE_SCENE_IDS,
   TODAY_PRACTICE_COPY,
   TODAY_SCENE_IDS,
   WISH_PRACTICE_COPY,
@@ -13,6 +14,7 @@ import {
   isTodayScene,
   isWishScene,
   recommendTodayScene,
+  sceneStage,
   todayPracticeCopy,
   wishPracticeAction,
   wishPracticeLabel,
@@ -91,6 +93,13 @@ describe("scene placement", () => {
     for (const id of [...TODAY_SCENE_IDS, ...WISH_SCENE_IDS]) {
       expect(bundledIds).toContain(id);
     }
+  });
+
+  it("shows the lantern scenes on the night stage, every other scene by day", () => {
+    expect([...NIGHT_STAGE_SCENE_IDS]).toEqual(["lantern", "yeondeunghoe"]);
+    for (const id of NIGHT_STAGE_SCENE_IDS) expect(sceneStage(id)).toBe("night");
+    for (const id of [...TODAY_SCENE_IDS, "crane", "tanzaku-tanabata", "woodfish"])
+      expect(sceneStage(id), id).toBe("day");
   });
 
   it("gives every placed scene a drawn icon, keyed by its id", () => {

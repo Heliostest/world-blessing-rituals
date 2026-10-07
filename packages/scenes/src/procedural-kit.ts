@@ -91,13 +91,16 @@ export function createWarmStage(canvas: HTMLCanvasElement) {
   return { renderer, scene }
 }
 
-type CelLightOpts = {
+export type CelLightOpts = {
   sky: number
   ground: number
   key: number
   rim: number
   keyIntensity?: number
   keyPosition?: [number, number, number]
+  ambientIntensity?: number
+  hemiIntensity?: number
+  rimIntensity?: number
 }
 
 /**
@@ -107,16 +110,104 @@ type CelLightOpts = {
  */
 export function addCelLights(
   scene: THREE.Scene,
-  { sky, ground, key, rim, keyIntensity = 1.4, keyPosition = [2.5, 4, 3] }: CelLightOpts,
+  {
+    sky,
+    ground,
+    key,
+    rim,
+    keyIntensity = 1.4,
+    keyPosition = [2.5, 4, 3],
+    ambientIntensity = 0.35,
+    hemiIntensity = 0.75,
+    rimIntensity = 0.7,
+  }: CelLightOpts,
 ) {
-  const ambient = new THREE.AmbientLight(sky, 0.35)
-  const hemi = new THREE.HemisphereLight(sky, ground, 0.75)
+  const ambient = new THREE.AmbientLight(sky, ambientIntensity)
+  const hemi = new THREE.HemisphereLight(sky, ground, hemiIntensity)
   const keyLight = new THREE.DirectionalLight(key, keyIntensity)
   keyLight.position.set(...keyPosition)
-  const rimLight = new THREE.DirectionalLight(rim, 0.7)
+  const rimLight = new THREE.DirectionalLight(rim, rimIntensity)
   rimLight.position.set(-keyPosition[0] * 0.6, keyPosition[1] * 0.5, -3)
   scene.add(ambient, hemi, keyLight, rimLight)
   return { ambient, hemi, key: keyLight, rim: rimLight }
+}
+
+/**
+ * The cel rig for the host's night stage (navy sky, moon upper right): the
+ * bounce drops to under half and turns cool, the key becomes pale moonlight
+ * from the moon's side, and a cool rim keeps silhouettes reading against the
+ * navy. A scene's own lamps (warm emissive, a point light, a halo) are then
+ * the warmest, brightest things in frame, not the props they light.
+ * Art direction: 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有…
+ */
+export const NIGHT_CEL_LIGHTS: CelLightOpts = {
+  sky: 0x8fa6d6,
+  ground: 0x1f3446,
+  key: 0xc6d4ff,
+  rim: 0x9cc2ff,
+  keyIntensity: 0.6,
+  keyPosition: [2.5, 4, 2],
+  ambientIntensity: 0.16,
+  hemiIntensity: 0.36,
+  rimIntensity: 0.55,
+}
+
+/** The scene's own warm rig by day, the moonlit one on the night stage. */
+export function addStageLights(
+  scene: THREE.Scene,
+  stage: SceneContext['stage'],
+  day: CelLightOpts,
+) {
+  return addCelLights(scene, stage === 'night' ? NIGHT_CEL_LIGHTS : day)
+}
+
+/** A white radial falloff, in alpha only. */
+function glowTexture(size = 64) {
+  const data = new Uint8Array(size * size * 4)
+  for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+      const d = Math.hypot(x + 0.5 - size / 2, y + 0.5 - size / 2) / (size / 2)
+      const a = Math.max(0, 1 - d)
+      const i = (y * size + x) * 4
+      data[i] = data[i + 1] = data[i + 2] = 255
+      data[i + 3] = Math.round(a * a * 255)
+    }
+  }
+  const map = new THREE.DataTexture(data, size, size)
+  // Data textures sample nearest by default: blocky once the halo is scaled up.
+  map.magFilter = map.minFilter = THREE.LinearFilter
+  map.needsUpdate = true
+  return map
+}
+
+/**
+ * A soft halo for a lamp on the night stage: an additive, camera-facing sprite
+ * centred in the lamp, so the lamp's own front hides its middle and the glow
+ * spills round its edges. Transparent, so the toon pass leaves it as it is
+ * and draws no ink line round it. Drive `material.opacity` with the lamp;
+ * `dispose` also frees the texture, which disposeTree does not reach.
+ */
+export function createLampHalo(color: number, size: number) {
+  const map = glowTexture()
+  const material = new THREE.SpriteMaterial({
+    map,
+    color,
+    transparent: true,
+    opacity: 0,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+  })
+  const sprite = new THREE.Sprite(material)
+  sprite.name = 'lamp-halo'
+  sprite.scale.setScalar(size)
+  return {
+    sprite,
+    material,
+    dispose() {
+      material.dispose()
+      map.dispose()
+    },
+  }
 }
 
 /** Dispose every geometry/material reachable from `root`. */

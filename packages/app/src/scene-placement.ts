@@ -21,10 +21,18 @@ export const WISH_SCENE_IDS = [
   "slavic-wreath",
 ] as const;
 
+/**
+ * Scenes shown on the night stage (a navy sky and a moon) instead of the day
+ * stage. The stage element carries it as data-stage, and the scene is told
+ * through its context, so its lights match the sky behind it.
+ */
+export const NIGHT_STAGE_SCENE_IDS = ["lantern", "yeondeunghoe"] as const;
+
 export type TodaySceneId = (typeof TODAY_SCENE_IDS)[number];
 export type WishSceneId = (typeof WISH_SCENE_IDS)[number];
 
 const wishSet = new Set<string>(WISH_SCENE_IDS);
+const nightSet = new Set<string>(NIGHT_STAGE_SCENE_IDS);
 const todaySet = new Set<string>(TODAY_SCENE_IDS);
 
 export function isWishScene(id: string): boolean {
@@ -33,6 +41,11 @@ export function isWishScene(id: string): boolean {
 
 export function isTodayScene(id: string): boolean {
   return todaySet.has(id);
+}
+
+/** The stage a scene is shown on. */
+export function sceneStage(id: string): "day" | "night" {
+  return nightSet.has(id) ? "night" : "day";
 }
 
 export function findSceneEntry(

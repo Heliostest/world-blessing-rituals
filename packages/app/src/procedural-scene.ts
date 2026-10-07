@@ -12,6 +12,8 @@ export type ProceduralContext = {
   isSoundEnabled?(): boolean;
   /** Keeps a line from the scene's wish box as a new 心愿. */
   saveWish?(text: string): void;
+  /** The stage the App paints behind the canvas, so the scene lights for it. */
+  stage?: "day" | "night";
 };
 
 /** Adapts two independent interaction implementations to the shared lifecycle. */
@@ -44,6 +46,7 @@ export async function proceduralEngine(
         haptic: context.haptic,
         isSoundEnabled: context.isSoundEnabled,
         saveWish: context.saveWish,
+        stage: context.stage,
       });
       const dispose = () => {
         if (disposed) return;

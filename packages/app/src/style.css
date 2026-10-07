@@ -2880,10 +2880,10 @@ button:hover:not(:disabled) {
 .library-scene-stage:has(.scene-wish-slot:not([hidden])) {
   --wish-box: 80px;
 }
-/* Island at night for the lantern scenes (心愿灯, 燃灯): deep teal-navy, soft
-   star dots, a low sea glow and a moon behind the transparent canvas. */
-.library-scene-stage[data-scene="lantern"],
-.library-scene-stage[data-scene="yeondeunghoe"] {
+/* Island at night for the lantern scenes (心愿灯, 燃灯: NIGHT_STAGE_SCENE_IDS
+   in scene-placement.ts): deep teal-navy, soft star dots, a low sea glow and
+   a moon behind the transparent canvas. The scenes light for it too. */
+.library-scene-stage[data-stage="night"] {
   border-color: #2e6170;
   box-shadow:
     0 0 0 2px #0e2a3c,
@@ -2904,8 +2904,7 @@ button:hover:not(:disabled) {
     var(--night-low);
   color: #f6f1e4;
 }
-.library-scene-stage[data-scene="lantern"]::before,
-.library-scene-stage[data-scene="yeondeunghoe"]::before {
+.library-scene-stage[data-stage="night"]::before {
   content: "";
   position: absolute;
   z-index: -1;

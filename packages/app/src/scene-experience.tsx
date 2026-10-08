@@ -184,7 +184,9 @@ function LoadedScene({
             onInstruction={setInstruction}
             onFailure={lease ? failed : undefined}
           />
-          <p id="woodfish-instruction">{instruction}</p>
+          <p id="woodfish-instruction" className="scene-instruction">
+            {instruction}
+          </p>
         </>
       ) : (
         <ProceduralScene
@@ -217,7 +219,7 @@ function LoadedScene({
         <div className="feedback-controls">{favoriteChip}</div>
       )}
       {progress >= steps && (
-        <p>这次体验已经完成，记录已留下。</p>
+        <p className="scene-done">这次体验已经完成，记录已留下。</p>
       )}
     </>
   );
@@ -311,7 +313,7 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
         </div>
       ) : loaded ? (
         <>
-          <p>{loaded.caption}</p>
+          {loaded.caption && <p className="scene-caption">{loaded.caption}</p>}
           <LoadedScene
             key={attempt}
             entry={entry}

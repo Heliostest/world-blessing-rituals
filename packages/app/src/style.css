@@ -3206,6 +3206,30 @@ button:hover:not(:disabled) {
 /* 已存进心愿 once a scene's wish box keeps a line: empty (no height) until then. */
 .scene-wish-saved { display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; margin: 0; color: var(--mint-text); font-weight: 700; }
 .scene-experience h1 { font-size: 26px; text-shadow: 0 3px 0 #ffffffb3; }
+/* The scene page's own lines in the island body voice (ink-soft, 600, like
+   .lead): a remote scene's caption under its title, the woodfish's
+   instruction under its stage and the closing note. */
+.scene-caption,
+.scene-instruction,
+.scene-done {
+  color: var(--ink-soft);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.scene-caption {
+  margin: 2px 0 14px;
+}
+.scene-instruction,
+.scene-done {
+  margin: 14px 0 0;
+  text-align: center;
+}
+/* The download and load-error cards' lines, at body weight too. */
+.scene-download p,
+.scene-load-error p {
+  font-weight: 600;
+}
 .scene-experience .woodfish-object { width: 100%; height: 340px; border: 4px solid var(--rim); border-radius: 30px; background: radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px, var(--sand); box-shadow: 0 0 0 2px var(--edge), var(--soft-drop); }
 /* A small HUD counter. */
 .scene-progress { display: inline-block; margin: 2px 0 14px; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--butter-tint); box-shadow: 0 0 0 2px #f2d98a; color: var(--ink-soft); font-weight: 800; }

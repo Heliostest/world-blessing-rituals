@@ -165,6 +165,25 @@ describe("non-text contrast (WCAG 1.4.11)", () => {
   });
 });
 
+describe("scene page lines", () => {
+  /** Declarations of every rule whose selector list includes `selector`. */
+  const declaredFor = (selector: string) =>
+    rules
+      .filter((r) => r.selectorText.split(/\s*,\s*/).includes(selector))
+      .map((r) => r.style.cssText)
+      .join(" ");
+
+  it.each([".scene-caption", ".scene-instruction", ".scene-done"])(
+    "sets %s in the island body voice, with room around it",
+    (selector) => {
+      const rule = declaredFor(selector);
+      expect(rule).toMatch(/color: var\(--ink-soft\)/);
+      expect(rule).toMatch(/font-weight: 600/);
+      expect(rule).toMatch(/margin: /);
+    },
+  );
+});
+
 describe("了解此仪式 disclosure", () => {
   it("is a flat down chevron that flips open, not a ledged go-to chevron", () => {
     const closed = declared(".ritual-narrative > summary::before");

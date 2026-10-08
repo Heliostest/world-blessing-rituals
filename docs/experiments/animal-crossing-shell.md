@@ -7,12 +7,12 @@
 ## 改了什么
 
 - `packages/app/src/style.css`：`:root` 改成小岛 token，所有规则改用这些 token。
-  - 底：薄荷页面加两层波点。
+  - 底：薄荷页面加两层波点。波点只铺在底上（页面、场景舞台）；放在页面上的卡片用纯色 tint，不再波点叠波点（审计 P2-17）。
   - 面板：沙色 HUD 面板，有粗软白边、细描边、内高光和实心台阶。
   - 按钮：糖果色按压按钮。按下时面板沉进台阶，`translateY` 加上缩短的台阶阴影。只有可点的元素有台阶，只读计数（场景进度、珍藏数）是平的。
   - 主按钮改成薄荷色，次按钮奶油黄。另有桃、天蓝、泡泡糖粉、叶绿四种强调色，每色分 face / hi / ledge / tint 四档。
   - 底部导航：浮起的 HUD dock，四个 tab 各配一色（今日黄、心愿粉、小天地绿、我的蓝）。
-  - 组件：顶栏标题改为燕尾飘带；分段筛选；小岛开关（凹槽轨道，开启为叶绿）；圆角方形勾选单选框；小天地改成岛屋（波点墙纸、天窗、木地板、圆地毯）。
+  - 组件：顶栏标题改为燕尾飘带；分段筛选；小岛开关（凹槽轨道，开启为叶绿）；圆角方形勾选单选框；小天地改成岛屋（黄油色竖条纹墙纸、天窗、木地板、圆地毯）；墙纸用暖色而不是页面的薄荷波点，房间才像室内，而不是页面上挖的洞（审计 P2-17）。
   - 字体：只用系统圆体字体栈 `Nunito, Varela Round, M PLUS Rounded 1c, Yuanti SC, HarmonyOS Sans SC, PingFang SC, Blessing Sans…`，没有新增网络字体。
 - `packages/app/src/scene-experience.tsx`：场景舞台加了属性 `data-scene={entry.id}` 和 `data-stage`（`day` / `night`，由 `scene-placement.ts` 的 `NIGHT_STAGE_SCENE_IDS` 决定），作为样式钩子；`stage` 也经场景 context 传给场景，让布光和舞台一致（审计 P1-5）。
 - `apps/cyber-bless/index.html`：`theme-color` 改为薄荷 `#cdf1e6`。

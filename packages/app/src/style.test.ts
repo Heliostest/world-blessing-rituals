@@ -108,22 +108,22 @@ describe("scene load error", () => {
   });
 });
 
-describe("non-text contrast (WCAG 1.4.11)", () => {
-  /** A colour token's hex value, from :root in the stylesheet. */
-  const token = (name: string) =>
-    css.match(new RegExp(`${name}: (#[0-9a-f]{6});`))![1];
-  const luminance = (hex: string) => {
-    const [r, g, b] = [1, 3, 5].map((i) => {
-      const c = parseInt(hex.slice(i, i + 2), 16) / 255;
-      return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
-    });
-    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-  };
-  const ratio = (a: string, b: string) => {
-    const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
-    return (hi + 0.05) / (lo + 0.05);
-  };
+/** A colour token's hex value, from :root in the stylesheet. */
+const token = (name: string) =>
+  css.match(new RegExp(`${name}: (#[0-9a-f]{6});`))![1];
+const luminance = (hex: string) => {
+  const [r, g, b] = [1, 3, 5].map((i) => {
+    const c = parseInt(hex.slice(i, i + 2), 16) / 255;
+    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+};
+const ratio = (a: string, b: string) => {
+  const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
+  return (hi + 0.05) / (lo + 0.05);
+};
 
+describe("non-text contrast (WCAG 1.4.11)", () => {
   it("gives a field an outline of 3:1 or more on the mint page, sand and its paper fill", () => {
     for (const ground of ["--island", "--sand", "--paper"])
       expect(ratio(token("--field-edge"), token(ground)), ground).toBeGreaterThanOrEqual(3);
@@ -162,6 +162,41 @@ describe("non-text contrast (WCAG 1.4.11)", () => {
         .join(" "),
     ).toMatch(/border-color: var\(--leaf-ink\)/);
     expect(ratio(token("--leaf-ink"), token("--sand"))).toBeGreaterThanOrEqual(3);
+  });
+});
+
+describe("polka dots", () => {
+  /** A dot layer: the page's --dots, or a small hard-stopped radial gradient. */
+  const dotted = (rule: string) =>
+    /var\(--dots\)|radial-gradient\([^()]*px, transparent/.test(rule);
+
+  it("stay on the grounds: the page and a stage", () => {
+    expect(dotted(declared(".app-shell"))).toBe(true);
+    expect(dotted(declared(".library-scene-stage"))).toBe(true);
+  });
+
+  it.each([".wish-hero", ".practice-card"])(
+    "never sit on dots: %s, a card on the dotted page, is a solid tint",
+    (selector) => {
+      expect(dotted(declared(selector))).toBe(false);
+      expect(declared(selector)).toMatch(/background: var\(--[a-z]+-tint\);/);
+    },
+  );
+
+  it("leave 小天地's room: warm striped wallpaper, its line still AA", () => {
+    const room = declared(".room");
+    expect(dotted(room)).toBe(false);
+    expect(room).not.toMatch(/#dcf6ef|#c3ecdf/); // the page's mint
+    const stripes = room.match(/repeating-linear-gradient\(\s*90deg,((?:[^()]|\([^()]*\))*)\)/);
+    expect(stripes).not.toBeNull();
+    const colours = [...stripes![1].matchAll(/var\((--[a-z-]+)\)|(#[0-9a-f]{6})\b/g)].map(
+      (m) => (m[1] ? token(m[1]) : m[2]),
+    );
+    expect(colours).toContain(token("--butter-tint"));
+    // 留个位置… sits on the wall in --ink-soft.
+    expect(declared(".empty-shelf")).toMatch(/color: var\(--ink-soft\)/);
+    for (const colour of colours)
+      expect(ratio(token("--ink-soft"), colour), colour).toBeGreaterThanOrEqual(4.5);
   });
 });
 

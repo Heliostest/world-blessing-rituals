@@ -1906,13 +1906,13 @@ button:hover:not(:disabled) {
   /* A read-only counter: a ring, no ledge (ledges mean "tap me"). */
   box-shadow: 0 0 0 2px #f2d98a;
 }
+/* Polka dots belong to grounds (the page, a stage). A card on the dotted
+   page is a solid tint, so dots never sit on dots. */
 .wish-hero {
   display: flex;
   align-items: center;
   gap: 10px;
-  background:
-    radial-gradient(#ffcfdb 2px, transparent 2.6px) 0 0 / 18px 18px,
-    var(--bubblegum-tint);
+  background: var(--bubblegum-tint);
   border: 3px solid var(--rim);
   border-radius: var(--radius-panel);
   padding: 10px 14px 10px 10px;
@@ -2094,14 +2094,20 @@ button:hover:not(:disabled) {
   width: 15px;
   height: 15px;
 }
-/* 小天地 as an island room: dotted mint wallpaper, sky window, plank floor. */
+/* 小天地 as an island room: warm striped wallpaper, sky window, plank floor.
+   The wall is butter, not the page's dotted mint, so the room reads as an
+   interior rather than a hole cut in the page. */
 .room {
   height: 260px;
   border: 4px solid var(--rim);
   border-radius: var(--radius-panel);
   background:
-    radial-gradient(#ffffffa6 2px, transparent 2.6px) 0 0 / 20px 20px,
-    linear-gradient(180deg, #dcf6ef, #c3ecdf);
+    linear-gradient(180deg, #fffaf00d, #c9a0531a),
+    repeating-linear-gradient(
+      90deg,
+      var(--butter-tint) 0 18px,
+      #fdeab0 18px 26px
+    );
   position: relative;
   overflow: hidden;
   box-shadow:
@@ -2122,7 +2128,7 @@ button:hover:not(:disabled) {
     linear-gradient(180deg, #9fd7f5, #d8f0fb);
   box-shadow:
     0 0 0 2px var(--edge),
-    0 4px 0 2px #b8e2d8;
+    0 4px 0 2px #efd49a;
 }
 .room-window:before {
   content: "";
@@ -2154,7 +2160,7 @@ button:hover:not(:disabled) {
   background: var(--paper);
   box-shadow:
     0 0 0 2px var(--edge),
-    0 3px 0 2px #b8e2d8;
+    0 3px 0 2px #efd49a;
   font-size: 12px;
   font-weight: 800;
   color: var(--ink-soft);
@@ -3414,10 +3420,9 @@ button:hover:not(:disabled) {
   }
 }
 
+/* A solid tint on the dotted page (see .wish-hero). */
 .practice-card {
-  background:
-    radial-gradient(#ffd6c4 2px, transparent 2.6px) 0 0 / 18px 18px,
-    var(--peach-tint);
+  background: var(--peach-tint);
   box-shadow:
     inset 0 3px 0 #ffffffd9,
     0 0 0 2px #f6c7b2,

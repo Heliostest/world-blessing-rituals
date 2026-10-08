@@ -3019,6 +3019,30 @@ button:hover:not(:disabled) {
     0 0 0 8px #fff3c41f,
     0 0 34px 10px #ffe9a640;
 }
+/* Each night scene hangs its moon in its own open sky, smaller and higher
+   than the default. 月下一灯: top left, 20px or more clear of the crossbar's
+   left end at 320-430px (the default top right sat on its right end).
+   燃灯: in the gap between the two high companion lanterns, above where
+   they settle once the main lantern has risen. The lanterns sit at fixed
+   offsets from the canvas centre for a given canvas height, and 52% keeps
+   the moon in that gap from 320 to 430px. */
+.library-scene-stage[data-scene="lantern"]::before,
+.library-scene-stage[data-scene="yeondeunghoe"]::before {
+  top: 14px;
+  width: 34px;
+  height: 34px;
+  box-shadow:
+    0 0 0 6px #fff3c41f,
+    0 0 26px 7px #ffe9a640;
+}
+.library-scene-stage[data-scene="lantern"]::before {
+  right: auto;
+  left: 18px;
+}
+.library-scene-stage[data-scene="yeondeunghoe"]::before {
+  right: auto;
+  left: 52%;
+}
 .library-scene-stage + .feedback-controls { margin-top: 18px; }
 /* 今日's scene recommendation is quiet: a small heading with the catalog link
    and one scene row, no button of its own, so the daily ritual's mint

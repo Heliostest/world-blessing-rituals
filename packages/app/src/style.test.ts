@@ -221,6 +221,25 @@ describe("scene overlay", () => {
     expect(declared(".library-scene-stage")).toMatch(/border: 4px solid var\(--rim\)/);
   });
 
+  it("hangs each night scene's moon in its own sky, smaller than the default", () => {
+    const moon = (scene: string) =>
+      rules
+        .filter((r) =>
+          r.selectorText.split(/\s*,\s*/).includes(`.library-scene-stage[data-scene="${scene}"]::before`),
+        )
+        .map((r) => r.style.cssText)
+        .join(" ");
+    // 月下一灯: top left, off the crossbar's right end where the default sat.
+    expect(moon("lantern")).toMatch(/left: 18px/);
+    // 燃灯: in the gap between the two high companion lanterns.
+    expect(moon("yeondeunghoe")).toMatch(/left: 52%/);
+    for (const scene of ["lantern", "yeondeunghoe"]) {
+      expect(moon(scene), scene).toMatch(/right: auto/);
+      expect(moon(scene), scene).toMatch(/width: 34px/);
+    }
+    expect(declared('.library-scene-stage[data-stage="night"]::before')).toMatch(/width: 44px/);
+  });
+
   it("hides the name plate on the App's stage, where the page h1 names the scene", () => {
     expect(declared(".library-scene-stage .scene-title")).toMatch(/display: none/);
   });

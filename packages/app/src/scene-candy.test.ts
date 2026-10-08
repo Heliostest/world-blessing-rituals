@@ -81,7 +81,7 @@ describe("scene candy", () => {
         expect(rule.selectorText).not.toMatch(/ritual-tile|wish-practice|scene-card|scene-badge|button/);
   });
 
-  it("is what the tiles, badges and practice buttons are painted with", () => {
+  it("is what the tiles and badges are painted with", () => {
     const declared = (selector: string) =>
       rules
         .filter((r) => r.selectorText === selector)
@@ -90,7 +90,6 @@ describe("scene candy", () => {
     expect(declared(".ritual-tile")).toMatch(/var\(--candy-tint/);
     expect(declared(".scene-badge")).toMatch(/var\(--candy-tint/);
     expect(declared(".scene-badge")).toMatch(/var\(--candy,/);
-    expect(declared(".wish-practice-actions .button[data-scene]")).toMatch(/var\(--candy-hi\)/);
   });
 
   it("follows a scene from 今日 to 心愿 to a wish's detail by its id", () => {

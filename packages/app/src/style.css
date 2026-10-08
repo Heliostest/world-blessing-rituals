@@ -3378,15 +3378,83 @@ button:hover:not(:disabled) {
   grid-column: 3;
   grid-row: 1 / span 2;
 }
+/* A wish's practices are small tiles in two columns: the scene's badge (its
+   candy) and its title and verb on paper, with a small sand ledge. Five
+   full-width candy buttons weighed as much as 我的心愿实现了, which stays
+   the page's one big button. */
 .wish-practice-detail .wish-practice-actions {
   display: grid;
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 10px;
   margin-top: 12px;
 }
-/* Each practice's button wears its scene's candy, as its badge does. */
-.wish-practice-actions .button[data-scene] {
-  --ledge-color: var(--candy-ledge);
-  background: linear-gradient(180deg, var(--candy-hi), var(--candy));
+.practice-tile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 7px 8px 7px 7px;
+  border: 2.5px solid var(--rim);
+  border-radius: 18px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 4px 0 2px #e2d3b3;
+}
+.practice-tile:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 1px 0 2px #e2d3b3;
+}
+.practice-tile .scene-badge {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+}
+.practice-tile .scene-badge .scene-icon {
+  width: 32px;
+  height: 32px;
+}
+.practice-tile > span {
+  min-width: 0;
+}
+.practice-tile strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.4;
+  /* If a title must wrap, it splits evenly instead of leaving one glyph. */
+  text-wrap: balance;
+}
+.practice-tile small {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--muted);
+}
+/* Narrow phones: a smaller badge keeps a five-glyph title on one line. */
+@media (max-width: 360px) {
+  .practice-tile {
+    gap: 6px;
+    padding: 6px;
+  }
+  .practice-tile .scene-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+  }
+  .practice-tile .scene-badge .scene-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .practice-tile strong {
+    font-size: 13px;
+  }
 }
 .wish-practice-detail .quiet {
   margin: 6px 0 0;

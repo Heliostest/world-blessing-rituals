@@ -8,9 +8,10 @@ import { Art, Icon } from "./art";
 import { formatDate, now, uid, useApp } from "./context";
 import { Empty } from "./pages";
 import { useSceneLibrary } from "./scene-library";
+import { SceneBadge } from "./scene-icons";
 import {
   WISH_PRACTICE_COPY,
-  wishPracticeLabel,
+  wishPracticeAction,
   wishSceneEntries,
 } from "./scene-placement";
 
@@ -231,16 +232,21 @@ export function WishDetail({ id }: { id: string }) {
         <section className="form-card wish-practice-detail">
           <h2>{WISH_PRACTICE_COPY.detailHeading}</h2>
           <p className="quiet">{WISH_PRACTICE_COPY.detailBlurb}</p>
+          {/* Small tiles, so 我的心愿实现了 stays the page's one big button. */}
           <div className="wish-practice-actions">
             {practices.map((entry) => (
               <button
                 key={entry.id}
                 type="button"
-                className="button secondary full"
+                className="practice-tile"
                 data-scene={entry.id}
                 onClick={() => go({ page: "scene", id: entry.id, entry })}
               >
-                {wishPracticeLabel(entry)}
+                <SceneBadge id={entry.id} />
+                <span>
+                  <strong>{entry.title}</strong>
+                  <small>{wishPracticeAction(entry)}</small>
+                </span>
               </button>
             ))}
           </div>

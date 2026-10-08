@@ -17,7 +17,6 @@ import {
   sceneStage,
   todayPracticeCopy,
   wishPracticeAction,
-  wishPracticeLabel,
   wishSceneEntries,
   todaySceneEntries,
 } from "./scene-placement";
@@ -126,12 +125,10 @@ describe("scene placement", () => {
     }
     expect(todayPracticeCopy("crane")).toBeUndefined();
     for (const entry of wishSceneEntries(entries)) {
-      // The 心愿 card shows the title already: its subtitle is the verb only.
+      // The 心愿 card and detail tile show the title already: the verb only.
       const verb = wishPracticeAction(entry);
       expect(verb).not.toContain(entry.title);
       expect(() => assertSafeCopy(verb)).not.toThrow();
-      // A 心愿 detail button stands alone, so it names the scene too.
-      expect(wishPracticeLabel(entry)).toBe(`${entry.title} · ${verb}`);
     }
     expect(wishSceneEntries(entries).map((e) => wishPracticeAction(e))).toEqual([
       "系一念",

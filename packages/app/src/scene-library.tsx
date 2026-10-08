@@ -261,28 +261,35 @@ export function SceneLibraryProvider({ children }: { children: ReactNode }) {
     </Library.Provider>
   );
 }
+/** 今日's scene recommendation. */
+export const SCENE_DISCOVERY_COPY = {
+  heading: "今日场景推荐",
+  browse: "浏览场景目录",
+  note: "点开时准备内容，记录留在本机。",
+} as const;
+/** A small heading with the catalog link over one quiet scene row, so the
+ * daily ritual's mint 开始今日仪式 stays the first call to action. */
 export function SceneRecommendation({ day }: { day: string }) {
   const { entries } = useSceneLibrary(),
     { go } = useApp();
   const entry = recommendTodayScene(entries, day);
   return (
     <section className="scene-discovery">
-      <div>
-        <span className="eyebrow">今日场景推荐</span>
-        <h2>{entry?.title}</h2>
-        <p>点开时准备内容，记录会一直留在本机。</p>
+      <div className="section-heading">
+        <h2>{SCENE_DISCOVERY_COPY.heading}</h2>
+        <button className="text-button" onClick={() => go({ page: "scenes" })}>
+          {SCENE_DISCOVERY_COPY.browse} <Icon name="arrow" />
+        </button>
       </div>
       {entry && (
-        <button
-          className="button secondary"
+        <SceneCard
+          id={entry.id}
+          title={entry.title}
           onClick={() => go({ page: "scene", id: entry.id, entry })}
         >
-          体验推荐场景
-        </button>
+          <small>{SCENE_DISCOVERY_COPY.note}</small>
+        </SceneCard>
       )}
-      <button className="text-button" onClick={() => go({ page: "scenes" })}>
-        浏览场景目录
-      </button>
     </section>
   );
 }

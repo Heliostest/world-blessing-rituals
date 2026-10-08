@@ -2956,11 +2956,25 @@ button:hover:not(:disabled) {
     0 0 34px 10px #ffe9a640;
 }
 .library-scene-stage + .feedback-controls { margin-top: 18px; }
-.scene-discovery { padding: 18px 18px 12px; border: 3px solid var(--rim); border-radius: var(--radius-panel); margin-bottom: 22px; background: radial-gradient(#c3e4f7 2px, transparent 2.6px) 0 0 / 20px 20px, var(--sky-tint); box-shadow: inset 0 3px 0 #ffffffd9, 0 0 0 2px #bfe0f3, var(--soft-drop); display: grid; gap: 10px; }
-.scene-discovery .eyebrow { justify-self: start; display: inline-block; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--sky); box-shadow: 0 0 0 2px #b4dcf3; font-size: 13px; font-weight: 800; color: var(--ink); }
-.scene-discovery h2 { margin: 8px 0; font-size: 21px; font-weight: 900; }
-.scene-discovery p, .cache-manager p { line-height: 1.8; }
-.scene-discovery p { color: var(--ink-soft); font-weight: 600; }
+/* 今日's scene recommendation is quiet: a small heading with the catalog link
+   and one scene row, no button of its own, so the daily ritual's mint
+   开始今日仪式 is the first call to action and stays above the fold. */
+.scene-discovery {
+  margin-bottom: 22px;
+}
+.scene-discovery .section-heading {
+  margin: 0 0 10px;
+}
+.scene-discovery .section-heading h2 {
+  font-size: 16px;
+}
+/* A full 44px target that does not grow the heading row. */
+.scene-discovery .text-button {
+  margin: -12px 0;
+}
+.cache-manager p {
+  line-height: 1.8;
+}
 .ritual-narrative { position: static; margin: 4px 0 12px; }
 .ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-weight: 800; color: var(--mint-text); }
 .ritual-narrative > summary::-webkit-details-marker { display: none; }
@@ -3001,6 +3015,7 @@ button:hover:not(:disabled) {
   column-gap: 12px;
   row-gap: 3px;
   align-items: center;
+  width: 100%;
   padding: 12px 14px 12px 12px;
   border: 3px solid var(--rim);
   border-radius: 24px;

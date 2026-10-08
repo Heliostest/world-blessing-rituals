@@ -2,8 +2,8 @@ import { useState } from "react";
 import { rituals } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { formatDate, statusText, useApp } from "./context";
-import { useSceneLibrary } from "./scene-library";
-import { SceneIcon } from "./scene-icons";
+import { SceneCard, useSceneLibrary } from "./scene-library";
+import { SceneBadge } from "./scene-icons";
 import {
   WISH_PRACTICE_COPY,
   wishPracticeAction,
@@ -98,9 +98,7 @@ export function Wishes() {
                 data-scene={entry.id}
                 onClick={() => go({ page: "scene", id: entry.id, entry })}
               >
-                <span className="practice-badge" aria-hidden="true">
-                  <SceneIcon id={entry.id} />
-                </span>
+                <SceneBadge id={entry.id} />
                 <strong>{entry.title}</strong>
                 <small>{wishPracticeAction(entry)}</small>
                 <Icon name="arrow" />
@@ -344,9 +342,18 @@ export function History() {
   return (
     <>
       <PageHead eyebrow="你留给自己的每一分钟" title="仪式时光" />
-      <div className="scene-catalog">{state.sceneRecords.map(record => <button className="scene-card" key={record.id} onClick={() => go({ page: "scene", id: record.id, entry: record })}>
-        <strong>{record.title}{record.favorite ? " · 已收藏" : ""}</strong><small>已完成 {record.progress} 步 · 再次打开</small>
-      </button>)}</div>
+      <div className="scene-catalog">
+        {state.sceneRecords.map((record) => (
+          <SceneCard
+            key={record.id}
+            id={record.id}
+            title={`${record.title}${record.favorite ? " · 已收藏" : ""}`}
+            onClick={() => go({ page: "scene", id: record.id, entry: record })}
+          >
+            <small>已完成 {record.progress} 步 · 再次打开</small>
+          </SceneCard>
+        ))}
+      </div>
       {state.sessions.length ? (
         <ol className="timeline">
           {[...state.sessions].reverse().map((s) => (

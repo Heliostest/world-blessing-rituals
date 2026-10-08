@@ -1945,6 +1945,7 @@ button:hover:not(:disabled) {
 }
 .wish-card > svg,
 .wish-practice-card > svg,
+.scene-card > svg,
 .settings-row > svg {
   width: 30px;
   height: 30px;
@@ -2986,11 +2987,134 @@ button:hover:not(:disabled) {
   transform: rotate(180deg);
 }
 .ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; padding: 12px 14px; border: 3px solid var(--rim); border-radius: 20px; background: var(--paper); box-shadow: 0 0 0 2px var(--edge); color: var(--ink-soft); }
-.scene-catalog { display: grid; gap: 16px; margin: 20px 0; }
-.scene-card { display: grid; text-align: left; padding: 16px 20px; gap: 6px; border-radius: 24px; border: 3px solid var(--rim); background: var(--sand); color: var(--ink); cursor: pointer; box-shadow: var(--panel-shadow); }
-.scene-card small { color: var(--muted); font-weight: 600; }
-.scene-search, .cache-manager label { display: grid; gap: 12px; margin: 20px 0; font-weight: 700; }
-.scene-search input, .cache-manager select { min-height: 48px; border: 2.5px solid var(--edge); border-radius: 999px; padding: 8px 16px; background: var(--paper); color: var(--ink); font: inherit; font-size: 16px; box-shadow: 0 3px 0 #d4c9b4; }
+.scene-catalog {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0;
+}
+/* A scene row (SceneCard: 场景目录, 仪式时光): its badge, the title over a
+   status chip or a short line, and the settings rows' go-to chevron. */
+.scene-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  row-gap: 3px;
+  align-items: center;
+  padding: 12px 14px 12px 12px;
+  border: 3px solid var(--rim);
+  border-radius: 24px;
+  background: var(--sand);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--panel-shadow);
+}
+.scene-card > .scene-badge {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.scene-card > strong {
+  grid-column: 2;
+  align-self: end;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.scene-card > small,
+.scene-card > .scene-status {
+  grid-column: 2;
+  align-self: start;
+  justify-self: start;
+}
+.scene-card > small {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.scene-card > svg {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+/* Where a scene's content comes from. Read-only: a ring, no ledge. */
+.scene-status {
+  padding: 1px 10px 2px;
+  border: 2px solid var(--rim);
+  border-radius: 999px;
+  background: var(--mint-tint);
+  box-shadow: 0 0 0 2px #a9e5da;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--mint-ink);
+}
+.scene-status[data-status="cached"] {
+  background: var(--leaf-tint);
+  box-shadow: 0 0 0 2px #bfe3ad;
+  color: var(--leaf-ink);
+}
+.scene-status[data-status="download"] {
+  background: var(--butter-tint);
+  box-shadow: 0 0 0 2px #f2d98a;
+  color: var(--ink-soft);
+}
+.scene-status[data-status="update"] {
+  background: var(--peach-tint);
+  box-shadow: 0 0 0 2px #f6c7b2;
+  color: #8a3b17;
+}
+/* A search pill with a magnifier inside; its outline keeps 3:1 on the mint
+   page (#95805f, 3.1:1), where the sand edge was 1.1:1. */
+.scene-search {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+}
+.scene-search > svg {
+  position: absolute;
+  left: 17px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+  color: var(--ink-soft);
+  stroke-width: 2.4;
+  pointer-events: none;
+}
+.scene-search input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 8px 16px 8px 46px;
+  border: 2.5px solid #95805f;
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 3px 0 #d4c9b4;
+  appearance: none;
+}
+.scene-search input::placeholder {
+  color: var(--muted);
+}
+.cache-manager label {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.cache-manager select {
+  min-height: 48px;
+  border: 2.5px solid var(--edge);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  box-shadow: 0 3px 0 #d4c9b4;
+}
 .cache-usage { display: block; font-size: 24px; font-weight: 900; margin-top: 24px; }
 .scene-download, .scene-load-error { padding: 24px; border: 3px solid var(--rim); border-radius: 24px; display: grid; gap: 20px; background: var(--sand); box-shadow: var(--panel-shadow-static); }
 /* A long detail (an English message, a URL) wraps inside the card instead of
@@ -3183,22 +3307,32 @@ button:hover:not(:disabled) {
   --badge: var(--leaf);
   --badge-tint: var(--leaf-tint);
 }
-/* A light tint keeps the icon's own colours readable; the candy is the ring. */
-.practice-badge {
-  grid-column: 1;
-  grid-row: 1 / span 2;
+/* A scene's badge (SceneBadge in scene-icons.tsx). A light tint keeps the
+   icon's own colours readable; the candy, where a row sets one, is the ring. */
+.scene-badge {
   display: grid;
   place-items: center;
   width: 48px;
   height: 48px;
   border: 2.5px solid var(--rim);
   border-radius: 16px;
-  background: var(--badge-tint);
-  box-shadow: 0 0 0 2px var(--badge);
+  background: var(--badge-tint, var(--slot));
+  box-shadow: 0 0 0 2px var(--badge, var(--edge));
 }
-.practice-badge .scene-icon {
+.scene-badge .scene-icon {
   width: 38px;
   height: 38px;
+}
+/* A scene without a drawn icon shows a leaf. */
+.scene-badge > svg:not(.scene-icon) {
+  width: 24px;
+  height: 24px;
+  color: var(--leaf-ink);
+  stroke-width: 2;
+}
+.wish-practice-card > .scene-badge {
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 .wish-practice-card strong {
   grid-column: 2;

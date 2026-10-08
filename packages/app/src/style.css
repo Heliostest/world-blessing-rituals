@@ -2982,14 +2982,13 @@ button:hover:not(:disabled) {
 .library-scene-stage:has(.scene-wish-slot:not([hidden])) {
   --wish-box: 80px;
 }
-/* Island at night for the lantern scenes (心愿灯, 燃灯: NIGHT_STAGE_SCENE_IDS
+/* Island at night for the lantern scenes (月下一灯, 燃灯: NIGHT_STAGE_SCENE_IDS
    in scene-placement.ts): deep teal-navy, soft star dots, a low sea glow and
-   a moon behind the transparent canvas. The scenes light for it too. */
+   a moon behind the transparent canvas. The scenes light for it too. Only
+   the canvas is night: the stage keeps the white HUD rim, the edge and the
+   soft drop of every stage (as the older dark scenes do), so it reads as an
+   island panel, not a dark slab on the pastel page. */
 .library-scene-stage[data-stage="night"] {
-  border-color: #2e6170;
-  box-shadow:
-    0 0 0 2px #0e2a3c,
-    var(--soft-drop);
   background:
     radial-gradient(circle at 14% 16%, var(--star) 0 1.6px, transparent 2.4px),
     radial-gradient(circle at 33% 7%, var(--star) 0 1.2px, transparent 2px),

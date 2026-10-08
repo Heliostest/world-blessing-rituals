@@ -213,6 +213,14 @@ describe("scene overlay", () => {
   const events = (selector: string) =>
     getComputedStyle(document.querySelector(selector)!).pointerEvents;
 
+  it("frames the night stage like every stage: only its canvas is night", () => {
+    const night = declared('.library-scene-stage[data-stage="night"]');
+    expect(night).toMatch(/background/);
+    expect(night).not.toMatch(/border/);
+    expect(night).not.toMatch(/box-shadow/);
+    expect(declared(".library-scene-stage")).toMatch(/border: 4px solid var\(--rim\)/);
+  });
+
   it("hides the name plate on the App's stage, where the page h1 names the scene", () => {
     expect(declared(".library-scene-stage .scene-title")).toMatch(/display: none/);
   });

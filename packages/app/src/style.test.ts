@@ -165,6 +165,15 @@ describe("non-text contrast (WCAG 1.4.11)", () => {
   });
 });
 
+describe("type size", () => {
+  it("sets no text below 12px, so CJK stays legible; only the desktop note's Latin caps are 11px", () => {
+    const small = rules
+      .filter((r) => parseFloat(r.style.getPropertyValue("font-size")) < 12)
+      .map((r) => r.selectorText);
+    expect(small).toEqual([".desktop-note > span:last-child"]);
+  });
+});
+
 describe("scene page lines", () => {
   /** Declarations of every rule whose selector list includes `selector`. */
   const declaredFor = (selector: string) =>

@@ -1591,8 +1591,9 @@ button:hover:not(:disabled) {
   font-weight: 700;
   color: var(--muted);
 }
+/* 选填 keeps the label's 12px (no CJK below 12px) and steps back by weight. */
 .ritual-link label small {
-  font-size: 11px;
+  font-weight: 600;
 }
 .ritual-link select {
   width: 100%;
@@ -1993,7 +1994,7 @@ button:hover:not(:disabled) {
 }
 .wish-card > .art + span .tag {
   padding: 1px 9px 2px;
-  font-size: 11px;
+  font-size: 12px;
 }
 .wish-card > svg,
 .wish-practice-card > svg,
@@ -2218,7 +2219,7 @@ button:hover:not(:disabled) {
   margin-top: 6px;
 }
 .collection-card small {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--muted);
   margin-top: 5px;
@@ -2633,7 +2634,7 @@ button:hover:not(:disabled) {
   }
   .merit-pill {
     padding: 2px 8px 2px 2px;
-    font-size: 11px;
+    font-size: 12px;
   }
   .merit-pill b {
     font-size: 15px;
@@ -2651,8 +2652,9 @@ button:hover:not(:disabled) {
     padding: 9px;
     gap: 9px;
   }
+  /* CJK never goes below 12px: a long line wraps instead. */
   .choice-row small {
-    font-size: 11px;
+    font-size: 12px;
   }
   .badge-preview strong {
     font-size: 12px;
@@ -2674,7 +2676,7 @@ button:hover:not(:disabled) {
     font-size: 13px;
   }
   .wish-invitation {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .art-variant-home .reference-crop {

@@ -99,6 +99,17 @@ function Shell() {
         backRequest={backRequest}
         dom={{
           useExpoDOMWebView: false,
+          onMessage: __DEV__
+            ? (event) => {
+                try {
+                  const message = JSON.parse(event.nativeEvent.data);
+                  if (message.type === "wbr:dom-bootstrap")
+                    console.info("[BlessingDOM] bootstrap", message.data.status);
+                } catch {
+                  // Other WebView messages are handled by Expo's DOM wrapper.
+                }
+              }
+            : undefined,
           style: styles.webview,
           contentInsetAdjustmentBehavior: "never",
           onError: fail,

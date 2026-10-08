@@ -20,6 +20,12 @@ npm run mobile:verify
 
 `mobile:verify` 检查原生类型、Android/iOS 嵌入包、DOM HTML 引用的 JS/CSS，以及本地图片、字体和字体许可证的完整性。产物保留在忽略的 `apps/mobile-expo/.expo-export-check/` 中，便于检查。打包通过不等于真机验收。
 
+### Expo Go 只显示背景
+
+Android 的 `react-native-webview` 13.16 可能在 DOM HTML 已开始执行后才提供原生初始化对象，表现为 `Top OS ($$EXPO_DOM_HOST_OS) is not defined`；同手机浏览器直接打开 HTTP 则不经过这段桥接。相关上游记录见 [Expo #47373](https://github.com/expo/expo/issues/47373)。
+
+`scripts/expo-dom-bootstrap.cjs` 通过 Metro middleware 只处理开发服务的 `/_expo/@dom` HTML，等真实原生 OS 和初始 props 就绪后才加载应用脚本。等待上限 10 秒；超时显示重新打开提示，不伪造空存档或默认桥接数据。开发日志中的 `[BlessingDOM] bootstrap ready` 表示桥接初始化数据已接收；它不代表业务页面已完成加载。普通 Web 页面及生产嵌入模板保持原行为，独立安装包仍需另做真机验收。`mobile:verify` 同时执行延迟注入、异常数据、超时和 HTTP 路径范围测试。修改 Metro middleware 后需要重启 Expo 服务。
+
 ## 模块
 
 - `packages/core`：纯 TypeScript 状态与动作，心愿、日志、静态仪式进度、奖励和存档格式。

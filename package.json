@@ -13,7 +13,7 @@
     "mobile:remote": "npm run start -w @wbr/mobile -- --tunnel",
     "mobile:android": "npm run android -w @wbr/mobile",
     "mobile:ios": "npm run ios -w @wbr/mobile",
-    "mobile:verify": "npm run typecheck -w @wbr/mobile && node scripts/check-mobile-framework.mjs",
+    "mobile:verify": "npm run typecheck -w @wbr/mobile && node --test scripts/expo-dom-bootstrap.test.mjs && node scripts/check-mobile-framework.mjs",
     "verify": "npm test && npm run build && npm run mobile:verify",
     "content:publish": "node scripts/publish-scene-content.mjs"
   },

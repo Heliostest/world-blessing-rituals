@@ -1,8 +1,14 @@
 const { getDefaultConfig } = require("expo/metro-config");
 const path = require("path");
+const { createDomBootstrapMiddleware } = require("../../scripts/expo-dom-bootstrap.cjs");
 const projectRoot = __dirname;
 const workspaceRoot = path.resolve(projectRoot, "../..");
 const config = getDefaultConfig(projectRoot);
+const originalEnhanceMiddleware = config.server.enhanceMiddleware;
+config.server.enhanceMiddleware = (middleware, server) =>
+  createDomBootstrapMiddleware(
+    originalEnhanceMiddleware ? originalEnhanceMiddleware(middleware, server) : middleware,
+  );
 // Expo's DOM transform contains absolute entry paths. Do not reuse another
 // checkout's transformed module when moving between drives / Git worktrees.
 config.cacheVersion = `world-blessing:${workspaceRoot}`;

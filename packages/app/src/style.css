@@ -1619,6 +1619,7 @@ button:hover:not(:disabled) {
 }
 .feedback-controls {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
   margin: 22px 0 0;
@@ -1656,6 +1657,41 @@ button:hover:not(:disabled) {
   padding: 5px;
   border-radius: 50%;
   background: var(--sky-tint);
+}
+/* 收藏 on a scene page: a heart toggle chip in the toggles' row. A ring, no
+   ledge; while the scene is a favourite the heart fills and the chip takes
+   the pink tint (aria-pressed). The heart keeps 3:1 or more on both. */
+.favorite-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 5px 16px 5px 6px;
+  border: 3px solid var(--rim);
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow: 0 0 0 2px var(--edge);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink-soft);
+}
+.favorite-chip svg {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border-radius: 50%;
+  background: var(--bubblegum-tint);
+  color: #c24d6e;
+  stroke-width: 2.2;
+}
+.favorite-chip[aria-pressed="true"] {
+  background: var(--bubblegum-tint);
+  box-shadow: 0 0 0 2px #f7bfce;
+  color: var(--ink);
+}
+.favorite-chip[aria-pressed="true"] svg {
+  background: #ffffffb3;
+  fill: currentColor;
 }
 /* The island switch: a sunken track and a ringed handle, leaf green when on. */
 .switch {

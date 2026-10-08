@@ -12,6 +12,7 @@ import type {
 import { WISH_WRITE_COPY } from "@wbr/gestures";
 import type { WoodfishContext } from "./scene-engines";
 import { sceneEngines } from "./scene-engines";
+import { Icon } from "./art";
 import { now, uid, useApp } from "./context";
 import { supportsScene, useSceneLibrary, woodfishPack } from "./scene-library";
 import { Woodfish } from "./woodfish";
@@ -90,6 +91,26 @@ function ProceduralScene({
     />
   );
 }
+/** The scene page's favourite toggle. */
+export const SCENE_FAVORITE_LABEL = "收藏";
+/**
+ * 收藏 as a heart toggle chip beside the 音效／震动 toggles. Its state is the
+ * filled heart and aria-pressed, so its name stays the same either way.
+ */
+export function FavoriteChip({ id, favorite }: { id: string; favorite: boolean }) {
+  const { dispatch } = useApp();
+  return (
+    <button
+      type="button"
+      className="favorite-chip"
+      aria-pressed={favorite}
+      onClick={() => dispatch({ type: "scene.favorite", id, favorite: !favorite })}
+    >
+      <Icon name="heart" />
+      {SCENE_FAVORITE_LABEL}
+    </button>
+  );
+}
 /** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
 const sceneSteps = (entry: CatalogEntry) => (entry.engine === "woodfish@1" ? 12 : 3);
 function LoadedScene({
@@ -110,6 +131,9 @@ function LoadedScene({
   const [keptWish, setKeptWish] = useState<string>();
   const checkpoint = (n: number) =>
     dispatch({ type: "scene.progress", id: entry.id, progress: n });
+  const favoriteChip = (
+    <FavoriteChip id={entry.id} favorite={!!record?.favorite} />
+  );
   // Each line is a new 心愿, also when the scene was opened from a wish.
   const saveWish = (text: string) => {
     const wish = sceneWish(text, entry.id, uid(), now());
@@ -187,19 +211,11 @@ function LoadedScene({
           )}
         </p>
       )}
-      {entry.engine !== "woodfish@1" && <FeedbackControls />}
-      <button
-        className="text-button"
-        onClick={() =>
-          dispatch({
-            type: "scene.favorite",
-            id: entry.id,
-            favorite: !record?.favorite,
-          })
-        }
-      >
-        {record?.favorite ? "取消收藏" : "收藏场景"}
-      </button>
+      {entry.engine !== "woodfish@1" ? (
+        <FeedbackControls>{favoriteChip}</FeedbackControls>
+      ) : (
+        <div className="feedback-controls">{favoriteChip}</div>
+      )}
       {progress >= steps && (
         <p>这次体验已经完成，记录已留下。</p>
       )}

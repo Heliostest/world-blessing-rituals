@@ -1,11 +1,14 @@
+import type { ReactNode } from "react";
 import { Icon } from "./art";
 import { useApp } from "./context";
 
 /**
  * 音效／震动 toggles shared by the ritual page and procedural scenes. 震动 is
- * left out where the host cannot vibrate (iOS browsers).
+ * left out where the host cannot vibrate (iOS browsers). `children` join the
+ * same row (a scene's 收藏 chip), wrapping onto a centred line of their own
+ * when the toggles fill it.
  */
-export function FeedbackControls() {
+export function FeedbackControls({ children }: { children?: ReactNode }) {
   const { state, dispatch, canHaptic } = useApp();
   return (
     <div className="feedback-controls">
@@ -30,6 +33,7 @@ export function FeedbackControls() {
             />
           </label>
         ))}
+      {children}
     </div>
   );
 }

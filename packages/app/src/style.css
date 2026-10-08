@@ -2963,9 +2963,28 @@ button:hover:not(:disabled) {
 .ritual-narrative { position: static; margin: 4px 0 12px; }
 .ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-weight: 800; color: var(--mint-text); }
 .ritual-narrative > summary::-webkit-details-marker { display: none; }
-/* A mint chevron bubble that turns when the story opens. */
-.ritual-narrative > summary::before { content: ""; width: 24px; height: 24px; border-radius: 50%; background: var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23064a43' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 5 7 7-7 7'/%3E%3C/svg%3E") center / 13px no-repeat; box-shadow: 0 3px 0 var(--mint-ledge); transition: transform 0.2s var(--ease); }
-.ritual-narrative[open] > summary::before { transform: rotate(90deg); }
+/* A disclosure, not a link: a down chevron on a flat mint-tint disc with a
+   rim and a ring, no ledge, so it never passes for the ledged "go to"
+   chevrons on list rows. It flips up while the story is open. */
+.ritual-narrative > summary::before {
+  content: "";
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--rim);
+  border-radius: 50%;
+  background-color: var(--mint-tint);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a5f58' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 2px #a9e5da;
+  transition: transform 0.2s var(--ease);
+}
+.ritual-narrative[open] > summary::before {
+  transform: rotate(180deg);
+}
 .ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; padding: 12px 14px; border: 3px solid var(--rim); border-radius: 20px; background: var(--paper); box-shadow: 0 0 0 2px var(--edge); color: var(--ink-soft); }
 .scene-catalog { display: grid; gap: 16px; margin: 20px 0; }
 .scene-card { display: grid; text-align: left; padding: 16px 20px; gap: 6px; border-radius: 24px; border: 3px solid var(--rim); background: var(--sand); color: var(--ink); cursor: pointer; box-shadow: var(--panel-shadow); }

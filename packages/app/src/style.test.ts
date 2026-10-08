@@ -108,6 +108,20 @@ describe("scene load error", () => {
   });
 });
 
+describe("了解此仪式 disclosure", () => {
+  it("is a flat down chevron that flips open, not a ledged go-to chevron", () => {
+    const closed = declared(".ritual-narrative > summary::before");
+    expect(closed).toMatch(/m6 9 6 6 6-6/);
+    expect(closed).not.toMatch(/m9 5 7 7-7 7/);
+    expect(closed).not.toMatch(/ledge/);
+    // Ring only: every shadow sits flat (no y offset), unlike a ledge.
+    expect(closed).toMatch(/box-shadow: 0(px)? 0(px)? 0(px)? 2px/);
+    expect(declared(".ritual-narrative[open] > summary::before")).toMatch(
+      /rotate\(180deg\)/,
+    );
+  });
+});
+
 describe("scene overlay", () => {
   const overlay = (cream: boolean) =>
     `<div class="scene-overlay${cream ? " scene-overlay--cream" : ""}"><div class="scene-hit-layer"></div><div class="scene-title">t</div><div class="scene-step-dots"></div><div class="scene-hint">h</div><button class="scene-bow-tap">b</button><div class="scene-wish-slot"></div></div>`;

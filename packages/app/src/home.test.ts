@@ -5,7 +5,7 @@ import { describe, expect, it } from "vitest";
 import { createState } from "@wbr/core";
 import { assertSafeCopy } from "@wbr/shared";
 import { Context, type AppContext } from "./context";
-import { Today } from "./home";
+import { Today, ritualTitle } from "./home";
 import {
   SCENE_DISCOVERY_COPY,
   SceneLibraryContext,
@@ -66,5 +66,32 @@ describe("今日 scene recommendation", () => {
   it("keeps its copy safe", () => {
     for (const text of Object.values(SCENE_DISCOVERY_COPY))
       expect(() => assertSafeCopy(text)).not.toThrow();
+  });
+});
+
+/** Edits (insert, delete, replace) between two titles, by character. */
+function distance(a: string, b: string) {
+  const [x, y] = [[...a], [...b]];
+  let row = y.map((_, j) => j + 1);
+  for (let i = 0; i < x.length; i++) {
+    const next = [i + 1];
+    for (let j = 0; j < y.length; j++)
+      next.push(
+        Math.min(row[j] + 1, next[j] + 1, (j ? row[j - 1] : i) + (x[i] === y[j] ? 0 : 1)),
+      );
+    row = next.slice(1);
+  }
+  return row[y.length - 1] ?? x.length;
+}
+
+describe("2D ritual and 3D scene names", () => {
+  it("never pass for each other: they differ by three characters or more", () => {
+    expect(distance("点亮一盏心愿灯", "点一盏心愿灯")).toBe(1);
+    for (const ritual of Object.values(ritualTitle))
+      for (const scene of builtInScenes)
+        expect(
+          distance(ritual, scene.title),
+          `${ritual} / ${scene.title}`,
+        ).toBeGreaterThanOrEqual(3);
   });
 });

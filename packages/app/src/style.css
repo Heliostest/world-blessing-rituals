@@ -249,10 +249,6 @@ button:hover:not(:disabled) {
     14px 50%
   );
 }
-/* 完成页 has no title: no empty ribbon. */
-.app-topbar h2:empty {
-  display: none;
-}
 .back-button {
   position: absolute;
   left: 14px;

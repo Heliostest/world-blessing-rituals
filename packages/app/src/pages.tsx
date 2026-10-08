@@ -2,6 +2,7 @@ import { useState } from "react";
 import { rituals } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { formatDate, statusText, useApp } from "./context";
+import { ritualTitle } from "./home";
 import { SceneCard, useSceneLibrary } from "./scene-library";
 import { SceneBadge } from "./scene-icons";
 import {
@@ -290,7 +291,7 @@ export function Me() {
           className="settings-row"
           onClick={() => go({ page: "history" })}
         >
-          <span>我的仪式记录</span>
+          <span>仪式时光</span>
           <Icon name="arrow" />
         </button>
         {(
@@ -359,7 +360,9 @@ export function History() {
           {[...state.sessions].reverse().map((s) => (
             <li key={s.id}>
               <small>{formatDate(s.completedAt!)}</small>
-              <h3>{rituals[s.ritual].name}</h3>
+              {/* The title the ritual has everywhere else, not the core
+                  name, which a 3D scene in the list above may share. */}
+              <h3>{ritualTitle[s.ritual]}</h3>
               <p>功德 +10 · 收藏了{rituals[s.ritual].object}</p>
               <button className="text-button" onClick={() => go({ page: "ritual", id: s.ritual })}>再次体验</button>
             </li>

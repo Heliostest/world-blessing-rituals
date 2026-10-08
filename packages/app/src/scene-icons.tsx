@@ -206,7 +206,7 @@ const sceneIcons: Record<string, ReactNode> = {
       </Part>
     </>
   ),
-  // 点一盏心愿灯: a lit paper lantern with its wish plaque.
+  // 月下一灯: a lit paper lantern with its wish plaque.
   lantern: (
     <>
       <path d="M24 2v6" stroke="#c8453a" strokeWidth={2} />

@@ -62,7 +62,7 @@ const entries: CatalogEntry[] = [
   bundled("shinto-torii", "庭前一礼"),
   bundled("tibetan-wheel", "廊前轻转"),
   bundled("crane", "折一只纸鹤"),
-  bundled("lantern", "点一盏心愿灯"),
+  bundled("lantern", "月下一灯"),
   bundled("slavic-wreath", "火边花环"),
 ];
 

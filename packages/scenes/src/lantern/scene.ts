@@ -24,7 +24,7 @@ type Step = 'light' | 'wish' | 'rest' | 'done'
 const STEP_ORDER: Step[] = ['light', 'wish', 'rest']
 
 const COPY = {
-  title: '点一盏心愿灯',
+  title: '月下一灯',
   hintLight: '点按灯笼，把它慢慢点亮（练习）。',
   hintWish: '可写一句心愿，或把木牌拖到灯下挂好。',
   hintRest: '灯留在眼前，点按下方结束（练习，非法效）。',

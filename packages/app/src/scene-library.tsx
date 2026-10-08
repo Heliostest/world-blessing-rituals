@@ -126,7 +126,7 @@ export const builtInScenes: BuiltInSceneEntry[] = [
   },
   {
     id: "lantern",
-    title: "点一盏心愿灯",
+    title: "月下一灯",
     engine: "lantern@1",
     revision: "bundled",
     manifestUrl: "",

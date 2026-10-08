@@ -128,6 +128,10 @@ describe("scene overlay", () => {
   const events = (selector: string) =>
     getComputedStyle(document.querySelector(selector)!).pointerEvents;
 
+  it("hides the name plate on the App's stage, where the page h1 names the scene", () => {
+    expect(declared(".library-scene-stage .scene-title")).toMatch(/display: none/);
+  });
+
   it.each([false, true])("lets taps through title, dots and hint (cream: %s)", (cream) => {
     place(overlay(cream), ".scene-overlay");
     for (const label of [".scene-title", ".scene-step-dots", ".scene-hint"])

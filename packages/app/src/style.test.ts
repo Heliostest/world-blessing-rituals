@@ -200,6 +200,26 @@ describe("2D ritual stage", () => {
   });
 });
 
+describe("completion page", () => {
+  it("fades the sunburst on every side, on its own layer under the reward", () => {
+    // A mask on .celebration itself would fade the number, postcard and badge.
+    expect(declared(".celebration")).not.toMatch(/mask/);
+    expect(declared(".celebration")).toMatch(/isolation: isolate/);
+    const rays = declared(".celebration::before");
+    expect(rays).toMatch(/repeating-conic-gradient/);
+    expect(rays).toMatch(/mask-image: radial-gradient\(closest-side/);
+    expect(rays).toMatch(/z-index: -1/);
+  });
+
+  it("puts the close button in the 68px bar, level with every page's back button", () => {
+    const bar = place(
+      `<header class="app-topbar completion-topbar"><button class="back-button"></button></header>`,
+      "header",
+    );
+    expect(getComputedStyle(bar).height).toBe("68px");
+  });
+});
+
 describe("了解此仪式 disclosure", () => {
   it("is a flat down chevron that flips open, not a ledged go-to chevron", () => {
     const closed = declared(".ritual-narrative > summary::before");

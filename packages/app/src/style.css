@@ -330,9 +330,8 @@ button:hover:not(:disabled) {
   height: 22px;
   stroke-width: 2.8;
 }
-.completion-topbar {
-  height: 48px;
-}
+/* The completion page keeps the 68px bar, so its close button sits where
+   every other page has its back button, only on the right. */
 .completion-topbar .back-button {
   left: auto;
   right: 14px;
@@ -1764,14 +1763,25 @@ button:hover:not(:disabled) {
 }
 .celebration {
   position: relative;
+  isolation: isolate;
   margin-top: 12px;
   padding-top: 15px;
+}
+/* The sunburst is its own layer behind the reward, faded by a radial mask so
+   it dissolves on every side instead of ending in a box. A mask on
+   .celebration itself would fade the number, postcard and badge with it. */
+.celebration::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: repeating-conic-gradient(
     from -18deg at 50% 90%,
     #ffe58f80 0 8deg,
     #ffffff4d 8deg 17deg
   );
-  mask-image: linear-gradient(transparent, #000 15%, #000 94%, transparent);
+  mask-image: radial-gradient(closest-side, #000 70%, transparent);
+  pointer-events: none;
 }
 .reward-number {
   color: #a2471a;

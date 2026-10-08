@@ -1481,6 +1481,11 @@ button:hover:not(:disabled) {
   width: calc(100% + 16px);
   margin: 0 -8px;
 }
+/* The lantern's string runs up to the top edge of its picture: the air the
+   crane's picture has (16px) keeps the feedback lines off the string. */
+.ritual-lantern .ritual-object {
+  margin-top: 16px;
+}
 .woodfish-visual {
   position: relative;
   display: block;

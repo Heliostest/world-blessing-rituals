@@ -193,6 +193,13 @@ describe("scene page lines", () => {
   );
 });
 
+describe("2D ritual stage", () => {
+  it("keeps the lantern's string clear of the feedback lines, as the crane's", () => {
+    expect(declared(".ritual-lantern .ritual-object")).toMatch(/margin-top: 16px/);
+    expect(declared(".art-variant-default:not(.art-small)")).toMatch(/margin: 16px auto/);
+  });
+});
+
 describe("了解此仪式 disclosure", () => {
   it("is a flat down chevron that flips open, not a ledged go-to chevron", () => {
     const closed = declared(".ritual-narrative > summary::before");

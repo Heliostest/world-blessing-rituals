@@ -108,6 +108,63 @@ describe("scene load error", () => {
   });
 });
 
+describe("non-text contrast (WCAG 1.4.11)", () => {
+  /** A colour token's hex value, from :root in the stylesheet. */
+  const token = (name: string) =>
+    css.match(new RegExp(`${name}: (#[0-9a-f]{6});`))![1];
+  const luminance = (hex: string) => {
+    const [r, g, b] = [1, 3, 5].map((i) => {
+      const c = parseInt(hex.slice(i, i + 2), 16) / 255;
+      return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+    });
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  const ratio = (a: string, b: string) => {
+    const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
+    return (hi + 0.05) / (lo + 0.05);
+  };
+
+  it("gives a field an outline of 3:1 or more on the mint page, sand and its paper fill", () => {
+    for (const ground of ["--island", "--sand", "--paper"])
+      expect(ratio(token("--field-edge"), token(ground)), ground).toBeGreaterThanOrEqual(3);
+  });
+
+  /** Declarations of every rule whose selector list includes `selector`. */
+  const declaredFor = (selector: string) =>
+    rules
+      .filter((r) => r.selectorText.split(/\s*,\s*/).includes(selector))
+      .map((r) => r.style.cssText)
+      .join(" ");
+
+  it.each([
+    ["the wish and note text areas", ".form-card textarea"],
+    ["the share text", ".share-panel textarea"],
+    ["the 场景目录 search", ".scene-search input"],
+    ["the cache limit", ".cache-manager select"],
+    ["a scene's wish box", ".scene-wish-slot input"],
+    ["a 还愿 choice's radio box", ".choice-row input"],
+    ["a switch", ".switch"],
+    ["a step still to come", ".scene-step-dot"],
+  ])("outlines %s with it", (_name, selector) => {
+    expect(declaredFor(selector)).toMatch(/border: 2(\.5)?px solid var\(--field-edge\)/);
+  });
+
+  it("rings the ritual's wish picker, a field on the mint page, with it", () => {
+    expect(declared(".ritual-link")).toMatch(/0(px)? 0(px)? 0(px)? 2px var\(--field-edge\)/);
+  });
+
+  it("draws a switch that is on in leaf ink, 3:1 or more on sand", () => {
+    expect(declared(".switch:checked")).toMatch(/border-color: var\(--leaf-ink\)/);
+    expect(
+      rules
+        .filter((r) => /^\.switch:checked::?before$/.test(r.selectorText))
+        .map((r) => r.style.cssText)
+        .join(" "),
+    ).toMatch(/border-color: var\(--leaf-ink\)/);
+    expect(ratio(token("--leaf-ink"), token("--sand"))).toBeGreaterThanOrEqual(3);
+  });
+});
+
 describe("了解此仪式 disclosure", () => {
   it("is a flat down chevron that flips open, not a ledged go-to chevron", () => {
     const closed = declared(".ritual-narrative > summary::before");

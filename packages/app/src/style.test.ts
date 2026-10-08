@@ -240,6 +240,20 @@ describe("scene overlay", () => {
     expect(declared('.library-scene-stage[data-stage="night"]::before')).toMatch(/width: 44px/);
   });
 
+  it("opens the day stage on a clear blue sky, so pale subjects part from it", () => {
+    expect(declared(".library-scene-stage")).toMatch(/--day-sky: linear-gradient\(\s*180deg,\s*#bfe6f7 0%/);
+    expect(declared(".library-scene-stage")).toMatch(/background: .*var\(--day-sky\)/s);
+  });
+
+  it("grounds the floating crane on the stage: its own sky and a shadow under it", () => {
+    const crane = '.library-scene-stage[data-scene="crane"]';
+    expect(declared(crane)).toMatch(/--day-sky: linear-gradient/);
+    // Behind the canvas, below the paper's lowest point (84% of the canvas).
+    const shadow = declared(`${crane}::before`);
+    expect(shadow).toMatch(/z-index: -1/);
+    expect(shadow).toMatch(/top: calc\(var\(--canvas-h\) \* 0\.9\)/);
+  });
+
   it("hides the name plate on the App's stage, where the page h1 names the scene", () => {
     expect(declared(".library-scene-stage .scene-title")).toMatch(/display: none/);
   });

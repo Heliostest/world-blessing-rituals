@@ -2957,12 +2957,22 @@ button:hover:not(:disabled) {
    action button and the wish box sit in the tray and never on the subject or
    a drag target. The canvas keeps one height; when the wish box opens, the
    tray (and the stage) grows under it, so the hint and its 练习 note stay
-   in view. Day stage: a soft sky fading to warm sand behind the canvas, so
-   the cel-lit scenes keep the warm ground their lights were tuned for. */
+   in view. Day stage: a clear sky fading to warm sand behind the canvas, so
+   the cel-lit scenes keep the warm ground their lights were tuned for, and
+   a pale subject's upper half (the crane's neck and wings, the furin's
+   glass) parts from a sky blue enough to set it off. */
 .library-scene-stage {
   --tray: 132px;
   --wish-box: 0px;
   --canvas-h: max(228px, min(65vh, 540px) - 132px);
+  --day-sky: linear-gradient(
+    180deg,
+    #bfe6f7 0%,
+    #d6eff7 30%,
+    #eaf7f3 50%,
+    #fbf3dc 76%,
+    #f5e5c0 100%
+  );
   position: relative;
   isolation: isolate;
   height: calc(var(--canvas-h) + var(--tray) + var(--wish-box));
@@ -2971,13 +2981,41 @@ button:hover:not(:disabled) {
   overflow: hidden;
   background:
     radial-gradient(#ffffff99 1.8px, transparent 2.3px) 0 0 / 22px 22px,
-    linear-gradient(180deg, #d9f1fb 0%, #eaf7f3 42%, #fbf3dc 76%, #f5e5c0 100%)
-      0 0 / 100% var(--canvas-h) no-repeat,
+    var(--day-sky) 0 0 / 100% var(--canvas-h) no-repeat,
     var(--sand);
   box-shadow:
     0 0 0 2px var(--edge),
     var(--soft-drop);
   color: var(--ink);
+}
+/* 折一只纸鹤 floats: pale sakura paper with no ground of its own (the other
+   day scenes stand on the sand). Its sky stays cool down past the paper's
+   lowest point (84% of the canvas, flat, folded or lifted), so the paper
+   sits on blue, not on the cream it matches; the sand begins under it,
+   where a soft contact shadow anchors the figure. Stage only: the crane's
+   volume comes from its folds alone, never from drawn shading.
+   Art direction: 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有… */
+.library-scene-stage[data-scene="crane"] {
+  --day-sky: linear-gradient(
+    180deg,
+    #bfe6f7 0%,
+    #d6eff7 30%,
+    #e4f5f4 58%,
+    #f6f2df 78%,
+    #f3e3bf 100%
+  );
+}
+.library-scene-stage[data-scene="crane"]::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: calc(var(--canvas-h) * 0.9);
+  width: 54%;
+  height: calc(var(--canvas-h) * 0.08);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, #c8a26a66 0 38%, #c8a26a2e 70%, transparent);
 }
 .library-scene-stage:has(.scene-wish-slot:not([hidden])) {
   --wish-box: 80px;

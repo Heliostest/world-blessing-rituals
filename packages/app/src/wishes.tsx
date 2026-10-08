@@ -5,6 +5,7 @@ import {
   type WishCategory,
 } from "@wbr/core";
 import { Art, Icon } from "./art";
+import { useAutoGrow } from "./auto-grow";
 import { formatDate, now, uid, useApp } from "./context";
 import { Empty } from "./pages";
 import { useSceneLibrary } from "./scene-library";
@@ -60,6 +61,7 @@ function ReturnChoices({
 export function NewWish() {
   const { go, dispatch } = useApp();
   const [title, setTitle] = useState("");
+  const titleField = useAutoGrow(title);
   const [category, setCategory] = useState<WishCategory>("work");
   const [method, setMethod] = useState<ReturnMethod>("kindness");
   function submit(e: FormEvent) {
@@ -89,6 +91,7 @@ export function NewWish() {
             <span>{title.length} / 60</span>
           </div>
           <textarea
+            ref={titleField}
             id="wish-title"
             placeholder="希望这次面试顺利"
             rows={2}
@@ -123,10 +126,10 @@ export function NewWish() {
           <h2>实现后，我想…</h2>
           <ReturnChoices value={method} onChange={setMethod} />
           <p className="quiet centered">不设期限，慢慢来。</p>
-          <div className="private-row">
-            <Icon name="lock" />
-            <span>仅自己可见</span>
-          </div>
+          {/* A fact, not an option: a flat note, not a boxed row. */}
+          <p className="privacy-note">
+            <Icon name="lock" /> 仅自己可见
+          </p>
         </section>
         <button
           className="button primary full"
@@ -303,6 +306,7 @@ export function WishDetail({ id }: { id: string }) {
 export function WishNote({ id }: { id: string }) {
   const { dispatch, go, state } = useApp();
   const [text, setText] = useState("");
+  const noteField = useAutoGrow(text);
   const wish = state.wishes.find((w) => w.id === id);
   if (!wish) return <Empty title="没找到这个心愿" body="回到心愿页看看吧。" />;
   return (
@@ -323,6 +327,7 @@ export function WishNote({ id }: { id: string }) {
           <span>{text.length} / 500</span>
         </div>
         <textarea
+          ref={noteField}
           id="wish-note"
           required
           maxLength={500}
@@ -354,6 +359,7 @@ export function FulfillWish({ id }: { id: string }) {
   const setMethod = (method: ReturnMethod) =>
     setFulfillmentDraft(id, { ...draft, method });
   const setText = (text: string) => setFulfillmentDraft(id, { ...draft, text });
+  const noteField = useAutoGrow(text);
   if (!wish || wish.archived || wish.status !== "realized")
     return (
       <Empty
@@ -426,6 +432,7 @@ export function FulfillWish({ id }: { id: string }) {
               <span>{text.length} / 60</span>
             </div>
             <textarea
+              ref={noteField}
               id="return-note"
               rows={2}
               maxLength={60}

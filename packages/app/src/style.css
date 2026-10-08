@@ -928,7 +928,9 @@ button:hover:not(:disabled) {
   border: 2.5px solid var(--field-edge);
   border-radius: 18px;
   padding: 10px 14px;
-  resize: vertical;
+  /* No native grip on the rounded field: it grows with its text instead
+     (useAutoGrow in auto-grow.ts). */
+  resize: none;
   background: var(--paper);
   color: var(--ink);
   /* 16px or more: iOS zooms the page into smaller text fields on focus. */
@@ -1102,22 +1104,6 @@ button:hover:not(:disabled) {
 }
 .centered {
   text-align: center;
-}
-.private-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  border: 2.5px solid var(--edge);
-  border-radius: 18px;
-  background: var(--paper);
-  padding: 10px 12px;
-  font-size: 14px;
-  font-weight: 700;
-}
-.private-row svg {
-  width: 19px;
-  height: 19px;
-  fill: #6b4a2b26;
 }
 .new-wish-page .primary {
   margin-top: 0;
@@ -2081,6 +2067,16 @@ button:hover:not(:disabled) {
 .privacy-note svg {
   width: 14px;
   height: 14px;
+}
+/* The same note inside the new-wish form, under 不设期限，慢慢来。 */
+.form-card .privacy-note {
+  margin: 2px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+.form-card .privacy-note svg {
+  width: 15px;
+  height: 15px;
 }
 /* 小天地 as an island room: dotted mint wallpaper, sky window, plank floor. */
 .room {

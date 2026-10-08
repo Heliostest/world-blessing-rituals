@@ -465,12 +465,16 @@ button:hover:not(:disabled) {
   box-shadow: 0 0 0 2px #a9e5da;
   color: var(--mint-ink);
 }
+/* 今日's feature cards (今日随机仪式, 今日小练习) are centred compositions, the
+   tag on top included; list rows (the scene recommendation, the tiles) keep
+   to the left. */
 .daily-card {
   border: 3px solid var(--rim);
   border-radius: var(--radius-panel);
   background: var(--art-paper);
   padding: 16px 14px 18px;
   box-shadow: var(--panel-shadow-static);
+  text-align: center;
 }
 .daily-card + .daily-card {
   margin-top: 22px;
@@ -478,9 +482,6 @@ button:hover:not(:disabled) {
 .daily-card > .art {
   margin: 0 -4px;
   width: calc(100% + 8px);
-}
-.daily-copy {
-  text-align: center;
 }
 .daily-copy h2 {
   font-size: 25px;

@@ -1,4 +1,7 @@
 // @vitest-environment jsdom
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
@@ -93,5 +96,23 @@ describe("2D ritual and 3D scene names", () => {
           distance(ritual, scene.title),
           `${ritual} / ${scene.title}`,
         ).toBeGreaterThanOrEqual(3);
+  });
+});
+
+describe("今日 card alignment", () => {
+  const css = readFileSync(
+    join(dirname(fileURLToPath(import.meta.url)), "style.css"),
+    "utf8",
+  );
+
+  it("centres a feature card whole, its tag included", () => {
+    const doc = renderToday();
+    const cards = [...doc.querySelectorAll(".daily-card")];
+    expect(cards.length).toBeGreaterThanOrEqual(2);
+    // The tag is an inline chip straight in the card, so the card's
+    // alignment is its alignment.
+    for (const card of cards) expect(card.firstElementChild!.className).toBe("tag");
+    expect(css.match(/\n\.daily-card \{[^}]*\}/)![0]).toMatch(/text-align: center;/);
+    expect(css).toMatch(/\n\.tag \{[^}]*display: inline-flex;/);
   });
 });

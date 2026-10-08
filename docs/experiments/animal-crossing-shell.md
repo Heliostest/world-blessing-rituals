@@ -13,7 +13,7 @@
   - 主按钮改成薄荷色，次按钮奶油黄。另有桃、天蓝、泡泡糖粉、叶绿四种强调色，每色分 face / hi / ledge / tint 四档。
   - 底部导航：浮起的 HUD dock，四个 tab 各配一色（今日黄、心愿粉、小天地绿、我的蓝）。
   - 组件：顶栏标题改为燕尾飘带；分段筛选；小岛开关（凹槽轨道，开启为叶绿）；圆角方形勾选单选框；小天地改成岛屋（黄油色竖条纹墙纸、天窗、木地板、圆地毯）；墙纸用暖色而不是页面的薄荷波点，房间才像室内，而不是页面上挖的洞（审计 P2-17）。
-  - 字体：只用系统圆体字体栈 `Nunito, Varela Round, M PLUS Rounded 1c, Yuanti SC, HarmonyOS Sans SC, PingFang SC, Blessing Sans…`，没有新增网络字体。
+  - 字体：圆体字体栈 `Nunito, Varela Round, M PLUS Rounded 1c, Yuanti SC, HarmonyOS Sans SC, PingFang SC, Blessing Sans…`。Nunito 的拉丁子集（500 / 700 / 900，三个共约 48KB，`unicode-range: U+0000-00FF`）随 App 打包，数字和拉丁字母在所有设备上都是圆体；中文照常落到后面的系统字体（审计 P2-20，来源和授权见 `assets/README.md`）。没有网络字体。
 - `packages/app/src/scene-experience.tsx`：场景舞台加了属性 `data-scene={entry.id}` 和 `data-stage`（`day` / `night`，由 `scene-placement.ts` 的 `NIGHT_STAGE_SCENE_IDS` 决定），作为样式钩子；`stage` 也经场景 context 传给场景，让布光和舞台一致（审计 P1-5）。
 - `apps/cyber-bless/index.html`：`theme-color` 改为薄荷 `#cdf1e6`。
 - 没有改动的部分：业务逻辑、路由、四个 tab、全部中文文案、`assertSafeCopy`，以及所有 Three.js 场景代码（几何、纸鹤折叠运动学、灯光、相机）。
@@ -60,7 +60,7 @@ C 级场景的画布是透明的（`setClearColor(0, 0)`），舞台底色就是
 
 ## 已知缺口
 
-- **圆体中文**：只用系统字体。Nunito / Varela Round 只在装了的设备上生效（截图机装了，所以数字和拉丁字母是圆体）；没有系统圆体时中文落到 PingFang 或内置 Blessing Sans（思源黑体），不是圆体。要稳定的圆体需要打包字体，本次没有做。
+- **圆体中文**：数字和拉丁字母用打包的 Nunito（见上）。中文仍只用系统字体，没有系统圆体时落到 PingFang 或内置 Blessing Sans（思源黑体），不是圆体；中文圆体字体动辄数 MB，没有打包。
 - **插画素材**是奶油底位图裁切（`.art` 做了隔离，`multiply` 不会和底混合）。目前靠插画同色纸底、明信片相框和道具格子遮掩；放到糖果色上必须加格子。
 - ~~场景布光~~：夜间舞台的两个场景已改用月光布光和暖色光晕（见上）。
 - ~~今日小练习的 emoji 字形~~：已改为手绘场景图标（`packages/app/src/scene-icons.tsx`，按场景 id 取图，三渲二平涂加墨线），放进和插画裁切同尺寸的 76px 道具格；文案对象不再带图标。

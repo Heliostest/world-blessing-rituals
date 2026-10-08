@@ -7,8 +7,9 @@
  * Old cream token → island token: docs/experiments/animal-crossing-shell.md.
  */
 :root {
-  /* Rounded system fonts only, first installed wins; the bundled Blessing
-     Sans still covers CJK where no rounded face is installed. */
+  /* Nunito's latin subset is bundled (fontStyles in assets.ts, U+0000-00FF),
+     so digits and Latin are rounded on every device. CJK falls through to
+     the first installed rounded system face, then the bundled Blessing Sans. */
   --font-round: "Nunito", "Varela Round", "M PLUS Rounded 1c", "Yuanti SC",
     "HarmonyOS Sans SC", "HarmonyOS Sans", "PingFang SC", "Blessing Sans",
     "Microsoft YaHei", system-ui, sans-serif;

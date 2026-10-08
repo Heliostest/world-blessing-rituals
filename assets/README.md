@@ -15,6 +15,16 @@
 python -m fontTools.subset NotoSansSC.ttf --output-file=noto-sans-sc.woff2 --flavor=woff2 --unicodes="U+0000-00FF,U+2000-206F,U+3000-303F,U+4E00-9FFF,U+FF00-FFEF" --layout-features="*" --name-IDs="*" --name-legacy --name-languages="*"
 ```
 
+`fonts/nunito-latin-{500,700,900}-normal.woff2` 是 Nunito 圆体的拉丁子集，让「000」「0 / 12」「+10」这类数字和拉丁字母在所有设备上都是圆体，不再取决于设备有没有装 Nunito（审计 P2-20）。三个文件原样取自 `@fontsource/nunito` 5.2.7（与参考库 animal-island-ui 打包的文件逐字节相同），上游为 Google Fonts 的 Nunito（The Nunito Project Authors，https://github.com/googlefonts/nunito）；授权见同目录 `fonts/nunito-OFL.txt`（SIL Open Font License 1.1，即该包自带的 LICENSE）。
+
+| 文件 | 字节 | SHA-256 |
+| --- | --- | --- |
+| `nunito-latin-500-normal.woff2` | 16,428 | `23ae3083dbdaeabf3b9969a3947ddf5d5614683516e28ffa110ca4eb6192a9ff` |
+| `nunito-latin-700-normal.woff2` | 16,228 | `fa89300b9bbb3bd0f60d6991aa055965d98e2ccca27bf8688fe0c39cdc796846` |
+| `nunito-latin-900-normal.woff2` | 16,676 | `9ca32f5d8334579387361096944286df451272a557bb09bd906254a623aba99e` |
+
+`packages/app/src/assets.ts` 的 `fontStyles` 以 `font-family: 'Nunito'` 声明这三个字重，`unicode-range: U+0000-00FF`、`font-display: swap`，排在 `--font-round` 字体栈首位；中文和其他字符照常落到后面的系统圆体，最后是 Blessing Sans。界面用到的其他字重按浏览器的字重匹配取最近一档（400 → 500、600 → 700、800 → 900），`font-synthesis: none` 不会伪造粗体。
+
 Vite 使用此目录作为 publicDir；Expo 启动/构建前由 `scripts/prepare-app-assets.mjs` 复制所需文件到其 public 目录，`EXPO_BASE_URL` 解析嵌入资源位置。所有图片与字体在运行时无需外部网络。`npm run mobile:verify` 校验两端导出资源与源文件的长度和 SHA-256。
 
 ## 当前 Blender 木鱼（2026-09-21）

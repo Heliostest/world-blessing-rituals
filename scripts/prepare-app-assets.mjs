@@ -9,6 +9,10 @@ export const assetFiles = [
   "reference-ui/rituals.png",
   "fonts/noto-sans-sc.woff2",
   "fonts/OFL.txt",
+  "fonts/nunito-latin-500-normal.woff2",
+  "fonts/nunito-latin-700-normal.woff2",
+  "fonts/nunito-latin-900-normal.woff2",
+  "fonts/nunito-OFL.txt",
   "woodfish/bundled-v1/woodfish.glb",
 ];
 export async function prepareAppAssets() {

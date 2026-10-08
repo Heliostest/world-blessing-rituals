@@ -103,6 +103,7 @@ export function Today({ day }: { day: string }) {
             <button
               className="ritual-tile"
               key={kind}
+              data-scene={kind}
               onClick={() => go({ page: "ritual", id: kind })}
             >
               <Art kind={kind} small />
@@ -124,6 +125,7 @@ export function Today({ day }: { day: string }) {
             <button
               className="ritual-tile"
               key={entry.id}
+              data-scene={entry.id}
               onClick={() => go({ page: "scene", id: entry.id, entry })}
             >
               <SceneArt id={entry.id} />

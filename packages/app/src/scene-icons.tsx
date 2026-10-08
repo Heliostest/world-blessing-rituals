@@ -273,12 +273,12 @@ export function SceneIcon({ id }: { id: string }) {
 
 /**
  * A scene's badge in a list row (场景目录, 心愿): its drawn icon on a light tint,
- * ringed in the scene's candy. A scene without a drawn icon (a new remote one)
- * shows a leaf, so no row is left blank.
+ * ringed in the scene's candy (keyed by data-scene in style.css). A scene
+ * without a drawn icon (a new remote one) shows a leaf, so no row is blank.
  */
 export function SceneBadge({ id }: { id: string }) {
   return (
-    <span className="scene-badge" aria-hidden="true">
+    <span className="scene-badge" data-scene={id} aria-hidden="true">
       {hasSceneIcon(id) ? <SceneIcon id={id} /> : <Icon name="leaf" />}
     </span>
   );

@@ -106,6 +106,58 @@
   --yellow: var(--butter);
   --green: var(--leaf-ledge);
 }
+/* One candy per scene, keyed by its id (data-scene), so a scene wears the
+   same colour on 今日, 心愿, a wish's detail and 场景目录, whatever order a
+   list (or a remote catalog) puts it in. The 2D rituals share their
+   scene's id (crane, woodfish, lantern). Each candy: face, highlight,
+   ledge, tint and the ring drawn on the tint. A scene not listed here
+   (木鱼, 燃灯, a new remote one) gets the butter of the secondary buttons. */
+[data-scene] {
+  --candy: var(--butter);
+  --candy-hi: var(--butter-hi);
+  --candy-ledge: var(--butter-ledge);
+  --candy-tint: var(--butter-tint);
+  --candy-ring: #f2d98a;
+}
+[data-scene="crane"] {
+  --candy: var(--bubblegum);
+  --candy-hi: var(--bubblegum-hi);
+  --candy-ledge: var(--bubblegum-ledge);
+  --candy-tint: var(--bubblegum-tint);
+  --candy-ring: #f7bfce;
+}
+[data-scene="lantern"],
+[data-scene="theravada-water"] {
+  --candy: var(--peach);
+  --candy-hi: var(--peach-hi);
+  --candy-ledge: var(--peach-ledge);
+  --candy-tint: var(--peach-tint);
+  --candy-ring: #f6c7b2;
+}
+[data-scene="tanzaku-tanabata"],
+[data-scene="furin-wind-chime"] {
+  --candy: var(--sky);
+  --candy-hi: var(--sky-hi);
+  --candy-ledge: var(--sky-ledge);
+  --candy-tint: var(--sky-tint);
+  --candy-ring: #b4dcf3;
+}
+[data-scene="slavic-wreath"],
+[data-scene="shinto-torii"] {
+  --candy: var(--leaf);
+  --candy-hi: var(--leaf-hi);
+  --candy-ledge: var(--leaf-ledge);
+  --candy-tint: var(--leaf-tint);
+  --candy-ring: #bfe3ad;
+}
+[data-scene="tibetan-wheel"],
+[data-scene="celtic-folk-spring"] {
+  --candy: var(--mint);
+  --candy-hi: var(--mint-hi);
+  --candy-ledge: var(--mint-ledge);
+  --candy-tint: var(--mint-tint);
+  --candy-ring: #a9e5da;
+}
 * {
   box-sizing: border-box;
 }
@@ -551,45 +603,19 @@ button:hover:not(:disabled) {
   grid-auto-rows: 1fr;
   gap: 10px;
 }
-/* Candy tiles, one colour each, like island app icons. */
+/* Candy tiles, like island app icons: each in its scene's candy. */
 .ritual-tile {
-  --tile: var(--sand);
-  --tile-ledge: var(--edge);
-  background: var(--tile);
+  background: var(--candy-tint, var(--sand));
   border: 3px solid var(--rim);
   border-radius: var(--radius-tile);
   padding: 6px 5px 8px;
   position: relative;
   min-width: 0;
-  box-shadow: 0 4px 0 var(--tile-ledge);
-}
-.ritual-tile:nth-child(6n + 1) {
-  --tile: var(--leaf-tint);
-  --tile-ledge: #bfe3ad;
-}
-.ritual-tile:nth-child(6n + 2) {
-  --tile: var(--peach-tint);
-  --tile-ledge: #f6c7b2;
-}
-.ritual-tile:nth-child(6n + 3) {
-  --tile: var(--butter-tint);
-  --tile-ledge: #f2d98a;
-}
-.ritual-tile:nth-child(6n + 4) {
-  --tile: var(--sky-tint);
-  --tile-ledge: #b4dcf3;
-}
-.ritual-tile:nth-child(6n + 5) {
-  --tile: var(--bubblegum-tint);
-  --tile-ledge: #f7bfce;
-}
-.ritual-tile:nth-child(6n + 6) {
-  --tile: var(--mint-tint);
-  --tile-ledge: #a9e5da;
+  box-shadow: 0 4px 0 var(--candy-ring, var(--edge));
 }
 .ritual-tile:active {
   transform: translateY(3px);
-  box-shadow: 0 1px 0 var(--tile-ledge);
+  box-shadow: 0 1px 0 var(--candy-ring, var(--edge));
 }
 .ritual-tile strong {
   display: block;
@@ -3292,10 +3318,8 @@ button:hover:not(:disabled) {
   gap: 16px;
 }
 /* Each practice leads with a badge holding its own drawn icon, like an app
-   on the island phone. The candy follows the scene, not its list position. */
+   on the island phone, in its scene's candy. */
 .wish-practice-card {
-  --badge: var(--sky);
-  --badge-tint: var(--sky-tint);
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto auto;
@@ -3310,24 +3334,8 @@ button:hover:not(:disabled) {
   cursor: pointer;
   box-shadow: var(--panel-shadow);
 }
-.wish-practice-card[data-scene="yeondeunghoe"] {
-  --badge: var(--butter);
-  --badge-tint: var(--butter-tint);
-}
-.wish-practice-card[data-scene="crane"] {
-  --badge: var(--bubblegum);
-  --badge-tint: var(--bubblegum-tint);
-}
-.wish-practice-card[data-scene="lantern"] {
-  --badge: var(--peach);
-  --badge-tint: var(--peach-tint);
-}
-.wish-practice-card[data-scene="slavic-wreath"] {
-  --badge: var(--leaf);
-  --badge-tint: var(--leaf-tint);
-}
 /* A scene's badge (SceneBadge in scene-icons.tsx). A light tint keeps the
-   icon's own colours readable; the candy, where a row sets one, is the ring. */
+   icon's own colours readable; the scene's candy is the ring. */
 .scene-badge {
   display: grid;
   place-items: center;
@@ -3335,8 +3343,8 @@ button:hover:not(:disabled) {
   height: 48px;
   border: 2.5px solid var(--rim);
   border-radius: 16px;
-  background: var(--badge-tint, var(--slot));
-  box-shadow: 0 0 0 2px var(--badge, var(--edge));
+  background: var(--candy-tint, var(--slot));
+  box-shadow: 0 0 0 2px var(--candy, var(--edge));
 }
 .scene-badge .scene-icon {
   width: 38px;
@@ -3375,23 +3383,10 @@ button:hover:not(:disabled) {
   gap: 12px;
   margin-top: 12px;
 }
-/* The same candy per practice as its badge on 心愿 (燃灯 keeps the butter
-   secondary). */
-.wish-practice-actions .button[data-scene="tanzaku-tanabata"] {
-  --ledge-color: var(--sky-ledge);
-  background: linear-gradient(180deg, var(--sky-hi), var(--sky));
-}
-.wish-practice-actions .button[data-scene="crane"] {
-  --ledge-color: var(--bubblegum-ledge);
-  background: linear-gradient(180deg, var(--bubblegum-hi), var(--bubblegum));
-}
-.wish-practice-actions .button[data-scene="lantern"] {
-  --ledge-color: var(--peach-ledge);
-  background: linear-gradient(180deg, var(--peach-hi), var(--peach));
-}
-.wish-practice-actions .button[data-scene="slavic-wreath"] {
-  --ledge-color: var(--leaf-ledge);
-  background: linear-gradient(180deg, var(--leaf-hi), var(--leaf));
+/* Each practice's button wears its scene's candy, as its badge does. */
+.wish-practice-actions .button[data-scene] {
+  --ledge-color: var(--candy-ledge);
+  background: linear-gradient(180deg, var(--candy-hi), var(--candy));
 }
 .wish-practice-detail .quiet {
   margin: 6px 0 0;

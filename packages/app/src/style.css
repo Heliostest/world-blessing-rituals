@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*
- * Cozy-island shell (experiment/animal-crossing-shell, a visual preview).
- * Tokens and patterns are ported from animal-island-ui: mint primary, candy
- * accents, chunky press buttons on a solid ledge, thick soft HUD panels and
- * polka-dot grounds. Values are re-tuned so every text tier stays WCAG AA.
- * Old cream token → island token: docs/experiments/animal-crossing-shell.md.
+ * Cozy-island shell, the App's UI. Tokens and patterns are ported from
+ * animal-island-ui: mint primary, candy accents, chunky press buttons on a
+ * solid ledge, thick soft HUD panels and polka-dot grounds. Values are
+ * re-tuned so every text tier stays WCAG AA. Design notes and the old cream
+ * token → island token map: docs/design/island-shell.md.
  */
 :root {
   /* Nunito's latin subset is bundled (fontStyles in assets.ts, U+0000-00FF),
@@ -100,12 +100,6 @@
   --dots:
     radial-gradient(var(--island-dot) 2.6px, transparent 3.2px) 0 0 / 24px 24px,
     radial-gradient(#ffffffa6 1.6px, transparent 2.2px) 12px 12px / 24px 24px;
-
-  /* Cream-era names, kept as aliases so nothing resolves to nothing. */
-  --cream: var(--island);
-  --line: var(--edge);
-  --yellow: var(--butter);
-  --green: var(--leaf-ledge);
 }
 /* One candy per scene, keyed by its id (data-scene), so a scene wears the
    same colour on 今日, 心愿, a wish's detail and 场景目录, whatever order a
@@ -2972,7 +2966,7 @@ button:hover:not(:disabled) {
   font-weight: 800;
 }
 /* The older dark scenes (泉边一念, 花水位一倾) paint their own night canvas. */
-.scene-overlay:not(.scene-overlay--cream) {
+.scene-overlay:not(.scene-overlay--stage) {
   color: #f6f1e4;
 }
 /* The scene stage is a canvas over a HUD tray: the hint, the step dots, the
@@ -3103,7 +3097,9 @@ button:hover:not(:disabled) {
   right: auto;
   left: 52%;
 }
-.library-scene-stage + .feedback-controls { margin-top: 18px; }
+.library-scene-stage + .feedback-controls {
+  margin-top: 18px;
+}
 /* 今日's scene recommendation is quiet: a small heading with the catalog link
    and one scene row, no button of its own, so the daily ritual's mint
    开始今日仪式 is the first call to action and stays above the fold. */
@@ -3123,9 +3119,23 @@ button:hover:not(:disabled) {
 .cache-manager p {
   line-height: 1.8;
 }
-.ritual-narrative { position: static; margin: 4px 0 12px; }
-.ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-weight: 800; color: var(--mint-text); }
-.ritual-narrative > summary::-webkit-details-marker { display: none; }
+.ritual-narrative {
+  position: static;
+  margin: 4px 0 12px;
+}
+.ritual-narrative > summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 800;
+  color: var(--mint-text);
+}
+.ritual-narrative > summary::-webkit-details-marker {
+  display: none;
+}
 /* A disclosure, not a link: a down chevron on a flat mint-tint disc with a
    rim and a ring, no ledge, so it never passes for the ledged "go to"
    chevrons on list rows. It flips up while the story is open. */
@@ -3148,7 +3158,19 @@ button:hover:not(:disabled) {
 .ritual-narrative[open] > summary::before {
   transform: rotate(180deg);
 }
-.ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; padding: 12px 14px; border: 3px solid var(--rim); border-radius: 20px; background: var(--paper); box-shadow: 0 0 0 2px var(--edge); color: var(--ink-soft); }
+.ritual-narrative > p {
+  max-height: 40vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  line-height: 1.8;
+  margin: 0;
+  padding: 12px 14px;
+  border: 3px solid var(--rim);
+  border-radius: 20px;
+  background: var(--paper);
+  box-shadow: 0 0 0 2px var(--edge);
+  color: var(--ink-soft);
+}
 .scene-catalog {
   display: grid;
   gap: 14px;
@@ -3278,16 +3300,53 @@ button:hover:not(:disabled) {
   font-size: 16px;
   box-shadow: 0 3px 0 #d4c9b4;
 }
-.cache-usage { display: block; font-size: 24px; font-weight: 900; margin-top: 24px; }
-.scene-download, .scene-load-error { padding: 24px; border: 3px solid var(--rim); border-radius: 24px; display: grid; gap: 20px; background: var(--sand); box-shadow: var(--panel-shadow-static); }
+.cache-usage {
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 24px;
+}
+.scene-download,
+.scene-load-error {
+  padding: 24px;
+  border: 3px solid var(--rim);
+  border-radius: 24px;
+  display: grid;
+  gap: 20px;
+  background: var(--sand);
+  box-shadow: var(--panel-shadow-static);
+}
 /* A long detail (an English message, a URL) wraps inside the card instead of
    widening it, so 重试打开 stays on screen. */
-.scene-load-error { grid-template-columns: minmax(0, 1fr); overflow-wrap: anywhere; }
-.scene-load-error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13px; color: var(--muted); }
-.scene-download progress { width: 100%; accent-color: var(--mint-ledge); }
+.scene-load-error {
+  grid-template-columns: minmax(0, 1fr);
+  overflow-wrap: anywhere;
+}
+.scene-load-error code {
+  display: block;
+  margin-top: 8px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  color: var(--muted);
+}
+.scene-download progress {
+  width: 100%;
+  accent-color: var(--mint-ledge);
+}
 /* 已存进心愿 once a scene's wish box keeps a line: empty (no height) until then. */
-.scene-wish-saved { display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; margin: 0; color: var(--mint-text); font-weight: 700; }
-.scene-experience h1 { font-size: 26px; text-shadow: 0 3px 0 #ffffffb3; }
+.scene-wish-saved {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 12px;
+  margin: 0;
+  color: var(--mint-text);
+  font-weight: 700;
+}
+.scene-experience h1 {
+  font-size: 26px;
+  text-shadow: 0 3px 0 #ffffffb3;
+}
 /* The scene page's own lines in the island body voice (ink-soft, 600, like
    .lead): a remote scene's caption under its title, the woodfish's
    instruction under its stage and the closing note. */
@@ -3312,23 +3371,48 @@ button:hover:not(:disabled) {
 .scene-load-error p {
   font-weight: 600;
 }
-.scene-experience .woodfish-object { width: 100%; height: 340px; border: 4px solid var(--rim); border-radius: 30px; background: radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px, var(--sand); box-shadow: 0 0 0 2px var(--edge), var(--soft-drop); }
+.scene-experience .woodfish-object {
+  width: 100%;
+  height: 340px;
+  border: 4px solid var(--rim);
+  border-radius: 30px;
+  background:
+    radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px,
+    var(--sand);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    var(--soft-drop);
+}
 /* A small HUD counter. */
-.scene-progress { display: inline-block; margin: 2px 0 14px; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--butter-tint); box-shadow: 0 0 0 2px #f2d98a; color: var(--ink-soft); font-weight: 800; }
-.library-scene-stage [hidden] { display: none !important; }
+.scene-progress {
+  display: inline-block;
+  margin: 2px 0 14px;
+  padding: 2px 14px 3px;
+  border: 2.5px solid var(--rim);
+  border-radius: 999px;
+  background: var(--butter-tint);
+  box-shadow: 0 0 0 2px #f2d98a;
+  color: var(--ink-soft);
+  font-weight: 800;
+}
+.library-scene-stage [hidden] {
+  display: none !important;
+}
 
-/* C-grade scenes: transparent canvas over the island stage (like the woodfish). */
+/* C-grade scenes: transparent canvas over the island stage (like the woodfish).
+   The scene kit's createStepOverlay marks their overlay scene-overlay--stage. */
 /* The page scrolls from empty stage areas; a touch that starts on the scene's
    object is claimed in JS (claimObjectTouches), so its gestures still work. */
-.scene-overlay--cream .scene-hit-layer {
+.scene-overlay--stage .scene-hit-layer {
   touch-action: manipulation;
 }
-/* On the bright day stage the note under the wish box is ink on paper. */
-.scene-overlay--cream .scene-wish-slot .wish-write-meta {
+/* On the island stage (the App's sand tray, day or night) the note under the
+   wish box is ink on paper. */
+.scene-overlay--stage .scene-wish-slot .wish-write-meta {
   color: var(--ink-soft);
   text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);
 }
-.scene-overlay--cream .scene-wish-slot .wish-write-meta [data-nudge] {
+.scene-overlay--stage .scene-wish-slot .wish-write-meta [data-nudge] {
   color: #a2471a;
 }
 

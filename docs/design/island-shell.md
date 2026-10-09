@@ -1,8 +1,8 @@
-# 实验：动森 / animal-island「小岛」壳层预览
+# 小岛壳层：动森 / animal-island 风格的 App 界面
 
-分支 `experiment/animal-crossing-shell`，只做视觉预览，用来和 master 的奶油风并排比较，**不打算合并**。参考库是 animal-island-ui，只移植了 token 和 CSS 写法，没有把它作为依赖引入。
+App 的正式界面（PR #16 `a216ae9` 起）：薄荷波点页面、沙色 HUD 面板、糖果色按压按钮。它先在分支 `experiment/animal-crossing-shell` 上做视觉预览，和当时 master 的奶油风并排比较，后来定为正式 UI；审计修正见 PR #17（P1）和之后的 P2 提交。参考库是 animal-island-ui，只移植了 token 和 CSS 写法，没有把它作为依赖引入。下文的「改了什么」和 token 对照都是相对旧奶油风而言。
 
-![master（奶油）与小岛风对比：今日、心愿、木鱼、燃灯](animal-crossing-shell-compare.png)
+![旧奶油风与小岛风对比：今日、心愿、木鱼、燃灯](island-shell-compare.png)
 
 ## 改了什么
 
@@ -20,11 +20,11 @@
 
 ## Token 对照（旧奶油 → 新小岛）
 
-旧 token 名都保留为别名（`--cream`、`--line`、`--yellow`、`--green`），不会有规则解析为空值。
+旧 token 名（`--cream`、`--line`、`--yellow`、`--green`）一度保留为别名，免得有规则解析为空值；所有规则改用新 token 之后已删除（审计 P2-22）。
 
 | 旧 token | 旧值 | 新 token | 新值 | 说明 |
 | --- | --- | --- | --- | --- |
-| `--cream`（页面底） | `#fcf8ef` + 4px 细点 | `--island` + `--dots` | `#cdf1e6`，点 `#b3e7d9` 和白点 | `--cream` 现在等于 `var(--island)` |
+| `--cream`（页面底） | `#fcf8ef` + 4px 细点 | `--island` + `--dots` | `#cdf1e6`，点 `#b3e7d9` 和白点 | 别名已删除；用 `--island` / `--dots` |
 | 卡片底（多处字面量 `#fffcf7bb`…） | — | `--sand` / `--art-paper` | `#fbf3dc` / `#fdf8ee` | HUD 面板；插画所在面板用插画本身的纸色 |
 | `--paper` | `#fffcf6` | `--paper` | `#fffcf2` | 输入框、chip、dock |
 | `--line` | `#eee3d1` | `--edge`，外加粗边 `--rim` | `#ecdcb8` / `#fffdf7` | 细描边加粗软边 |
@@ -53,7 +53,7 @@ C 级场景的画布是透明的（`setClearColor(0, 0)`），舞台底色就是
 
 ## 测试与无障碍
 
-- `style.test.ts` **没有修改**。它只断言行为：44px 触控、16px 输入框、加载错误换行、叠层的 pointer-events，不检查旧 token 的值；新样式全部满足。`assertSafeCopy` 和其他文案测试也没有动。
+- 切换壳层时 `style.test.ts` 没有改：它只断言行为（44px 触控、16px 输入框、加载错误换行、叠层的 pointer-events），不检查旧 token 的值，新样式全部满足。之后审计 P1 / P2 又加了按 token 计算的对比度、中文不小于 12px、舞台、波点、完成页等断言。`assertSafeCopy` 和其他文案测试没有动。
 - AA：运行时逐个检查可见文字，取「实底、渐变色标、波点」里最差的一档计算对比度。390px 下 12 个状态（四个 tab、场景目录、资源缓存、仪式时光、木鱼、2D 纸鹤、白天和夜间舞台、新建心愿）加桌面今日，全部达到 AA。
 - `prefers-reduced-motion` 和应用内「减少动态效果」仍会关掉所有过渡和动画，按压变成瞬时，台阶效果保留。
 - 用真实指针点击验证了纸鹤（9 次点击走完折叠、托起、写愿望，到 3/3）和心愿灯的动作按钮：按钮始终在最上层，场景照常推进。
@@ -67,16 +67,15 @@ C 级场景的画布是透明的（`setClearColor(0, 0)`），舞台底色就是
 - Expo 原生外壳（`apps/mobile-expo/App.tsx`）的安全区和加载底色已改为薄荷 `#cdf1e6`，失败页改用沙色底、墨色字和薄荷胶囊重试按钮（审计 P2-1）。`/dev` 工具页（`apps/cyber-bless/src/styles.css`）没有改。
 - 没有验证：真机、读屏软件、系统高对比度模式。截图用的是 SwiftShader 软件渲染，Three.js 画面以真机为准。
 
-## 如何对比
+## 本地查看与对比
 
 ```sh
-# 小岛风（本分支）
-git switch experiment/animal-crossing-shell
+# 小岛壳层（master）
 npm run dev -- --port 5310 --strictPort
 
-# 奶油风（master），另开一个 worktree 并排看
-git worktree add ../wbr-master master
-cd ../wbr-master && npm ci && npm run dev -- --port 5311 --strictPort
+# 旧奶油风（PR #16 之前的 master），另开一个 worktree 并排看
+git worktree add ../wbr-cream a216ae9^
+cd ../wbr-cream && npm ci && npm run dev -- --port 5311 --strictPort
 ```
 
 截图（headless Chrome + SwiftShader，390×844 @2x，桌面 1280×800）只保存在本地 `/workspace/toon-shots/`，没有提交。`acnh-before-*` 拍摄于改动之前，`acnh-after-*` 是同样的状态：

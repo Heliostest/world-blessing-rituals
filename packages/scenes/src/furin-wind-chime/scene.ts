@@ -83,7 +83,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Transparent over the cream page, sun-warm key light.
+  // Transparent over the island stage, sun-warm key light.
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.5, 3.4)
@@ -425,7 +425,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
       renderer.forceContextLoss()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--stage')
     },
   }
 }

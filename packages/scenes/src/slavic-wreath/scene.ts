@@ -124,7 +124,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Transparent over the cream page: midsummer dusk — amber key from the far
+  // Transparent over the island stage: midsummer dusk — amber key from the far
   // bonfire side, lilac rim, soft sky bounce.
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(44, 1, 0.1, 100)
@@ -589,7 +589,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
       renderer.forceContextLoss()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--stage')
     },
   }
 }

@@ -120,7 +120,7 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Transparent over the cream page: high-altitude sun key, cool rim, warm bounce.
+  // Transparent over the island stage: high-altitude sun key, cool rim, warm bounce.
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.5, 3.5)
@@ -449,7 +449,7 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
       renderer.forceContextLoss()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--stage')
     },
   }
 }

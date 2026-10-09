@@ -270,8 +270,8 @@ describe("了解此仪式 disclosure", () => {
 });
 
 describe("scene overlay", () => {
-  const overlay = (cream: boolean) =>
-    `<div class="scene-overlay${cream ? " scene-overlay--cream" : ""}"><div class="scene-hit-layer"></div><div class="scene-title">t</div><div class="scene-step-dots"></div><div class="scene-hint">h</div><button class="scene-bow-tap">b</button><div class="scene-wish-slot"></div></div>`;
+  const overlay = (stage: boolean) =>
+    `<div class="scene-overlay${stage ? " scene-overlay--stage" : ""}"><div class="scene-hit-layer"></div><div class="scene-title">t</div><div class="scene-step-dots"></div><div class="scene-hint">h</div><button class="scene-bow-tap">b</button><div class="scene-wish-slot"></div></div>`;
   const events = (selector: string) =>
     getComputedStyle(document.querySelector(selector)!).pointerEvents;
 
@@ -320,8 +320,18 @@ describe("scene overlay", () => {
     expect(declared(".library-scene-stage .scene-title")).toMatch(/display: none/);
   });
 
-  it.each([false, true])("lets taps through title, dots and hint (cream: %s)", (cream) => {
-    place(overlay(cream), ".scene-overlay");
+  it("styles the scene kit's island-stage overlay: scroll from empty stage, the wish note in ink", () => {
+    // createStepOverlay (packages/scenes procedural-kit) adds scene-overlay--stage.
+    expect(declared(".scene-overlay--stage .scene-hit-layer")).toMatch(/touch-action: manipulation/);
+    expect(declared(".scene-overlay--stage .scene-wish-slot .wish-write-meta")).toMatch(
+      /color: var\(--ink-soft\)/,
+    );
+    // The older dark scenes build their own overlay and keep light text.
+    expect(declared(".scene-overlay:not(.scene-overlay--stage)")).toMatch(/color: #f6f1e4/);
+  });
+
+  it.each([false, true])("lets taps through title, dots and hint (island stage: %s)", (stage) => {
+    place(overlay(stage), ".scene-overlay");
     for (const label of [".scene-title", ".scene-step-dots", ".scene-hint"])
       expect(events(label), label).toBe("none");
     for (const control of [".scene-hit-layer", ".scene-bow-tap", ".scene-wish-slot"])

@@ -438,7 +438,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
       halo?.dispose()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--stage')
     },
   }
 }

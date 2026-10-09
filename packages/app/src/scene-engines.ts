@@ -10,6 +10,8 @@ export type WoodfishContext = {
 };
 export interface WoodfishController extends SceneController {
   strike(): void;
+  /** Resolves once the strike queue is empty and no swing is running. */
+  whenIdle(): Promise<void>;
   movePointer(x: number, y: number, immediate?: boolean): void;
   stopFollowing(): void;
   inspect(view: string): void;

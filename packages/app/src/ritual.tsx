@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { localDay, rituals, type RitualId } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { now, uid, useApp } from "./context";
@@ -7,13 +7,17 @@ import { ritualTitle } from "./home";
 import { Woodfish } from "./woodfish";
 import { RitualNarrativeBlurb } from "./ritual-narrative";
 import { FeedbackControls } from "./feedback-controls";
+import { rectOf } from "./reward-flight";
 
 export function Ritual({
   id,
   wishId: linkedWishId,
+  whenIdleRef,
 }: {
   id?: string;
   wishId?: string;
+  /** The woodfish scene's idle signal, so the beat can wait out the mallet. */
+  whenIdleRef?: { current: (() => Promise<void>) | null };
 }) {
   const { state, dispatch, go, feedback, prepareFeedback, active } = useApp();
   const [wishId, setWishId] = useState(linkedWishId ?? "");
@@ -52,6 +56,37 @@ export function Ritual({
       go({ page: "complete", id: r.id });
     }
   }
+  // The last strike settles the session by itself: hold a short beat — the
+  // woodfish waits for its mallet to rest — then commit and open the reward
+  // card. No second confirm; finish() is idempotent, so a 12/12 session left
+  // unsettled settles the same way the moment this page opens.
+  useEffect(() => {
+    if (!ready || !r) return;
+    let settled = false;
+    let timer = 0;
+    const settle = () => {
+      if (!settled) {
+        settled = true;
+        finish();
+      }
+    };
+    if (kind === "woodfish" && whenIdleRef) {
+      // The queue can never stall the beat for longer than the cap.
+      timer = window.setTimeout(settle, 3000);
+      void whenIdleRef.current?.().then(() => {
+        window.clearTimeout(timer);
+        timer = window.setTimeout(settle, 400);
+      });
+    } else {
+      timer = window.setTimeout(settle, 600);
+    }
+    return () => {
+      // Leaving during the beat cancels it; the session settles on return.
+      settled = true;
+      window.clearTimeout(timer);
+    };
+    // r?.id, not r: each strike replaces the session object.
+  }, [ready, r?.id, kind, whenIdleRef]);
   return (
     <div className={`ritual-page ritual-${kind}`}>
       {kind === "woodfish" && <RitualNarrativeBlurb sceneId="woodfish" />}
@@ -88,6 +123,7 @@ export function Ritual({
             onStrike={step}
             onImpact={feedback}
             onInstruction={setInstruction}
+            whenIdleRef={whenIdleRef}
           />
         ) : (
           <button
@@ -124,6 +160,9 @@ export function Ritual({
       <p
         className="tap-instruction"
         id={kind === "woodfish" ? "woodfish-instruction" : undefined}
+        // The beat line speaks the settle moment; while steps remain, the
+        // prompts change too often to announce.
+        aria-live={ready ? "polite" : "off"}
       >
         {paused
           ? "停一会儿，也很好。"
@@ -133,32 +172,26 @@ export function Ritual({
               ? instruction
               : meta.prompts[Math.min(progress, meta.prompts.length - 1)]}
       </p>
-      {ready ? (
-        <button className="button primary full" onClick={finish}>
-          完成仪式 · 收下小美好
-        </button>
-      ) : (
-        !r && (
-          <div className="ritual-link">
-            <label htmlFor="ritual-wish">
-              为一个心愿留一分钟 <small>选填</small>
-            </label>
-            <select
-              id="ritual-wish"
-              value={wishId}
-              onChange={(e) => setWishId(e.target.value)}
-            >
-              <option value="">此刻的自己</option>
-              {state.wishes
-                .filter((w) => !w.archived && w.status !== "fulfilled")
-                .map((w) => (
-                  <option key={w.id} value={w.id}>
-                    {w.title}
-                  </option>
-                ))}
-            </select>
-          </div>
-        )
+      {!r && (
+        <div className="ritual-link">
+          <label htmlFor="ritual-wish">
+            为一个心愿留一分钟 <small>选填</small>
+          </label>
+          <select
+            id="ritual-wish"
+            value={wishId}
+            onChange={(e) => setWishId(e.target.value)}
+          >
+            <option value="">此刻的自己</option>
+            {state.wishes
+              .filter((w) => !w.archived && w.status !== "fulfilled")
+              .map((w) => (
+                <option key={w.id} value={w.id}>
+                  {w.title}
+                </option>
+              ))}
+          </select>
+        </div>
       )}
       <FeedbackControls />
       {kind === "woodfish" && !ready && (
@@ -181,9 +214,10 @@ export function Ritual({
   );
 }
 export function Complete({ id }: { id: string }) {
-  const { state, go } = useApp();
+  const { state, go, launchReward } = useApp();
   const [shareText, setShareText] = useState("");
   const [copied, setCopied] = useState(false);
+  const sticker = useRef<HTMLDivElement>(null);
   const r = state.sessions.find((s) => s.id === id);
   if (!r)
     return (
@@ -211,6 +245,23 @@ export function Complete({ id }: { id: string }) {
   const wish = state.wishes.find(
     (w) => w.id === r.wishId && w.status === "realized" && !w.archived,
   );
+  // A linked wish still in progress gets a note; the card says so.
+  const activeWish = state.wishes.find(
+    (w) => w.id === r.wishId && w.status === "active" && !w.archived,
+  );
+  // The one confirm: measure the sticker, hand its rect to the flight,
+  // then navigate. go() scrolls, so the rect must come first.
+  function collect() {
+    launchReward({
+      kind: r!.ritual,
+      from: rectOf(sticker.current),
+      collectibleId: `ritual:${r!.id}`,
+      wishId: activeWish?.id,
+      tab: "world",
+      announce: `${rituals[r!.ritual].object}已放进小天地`,
+    });
+    go({ page: "world" });
+  }
   async function share() {
     const text = `今天${ritualTitle[r!.ritual]}，功德 +${earned}。把小仪式过成好心情。`;
     if (navigator.share) {
@@ -248,6 +299,17 @@ export function Complete({ id }: { id: string }) {
           </span>
         )}
       </div>
+      {!wish && (
+        <div className="reward-slot">
+          <div className="reward-sticker" data-reward-sticker ref={sticker}>
+            <Art kind={r.ritual} small />
+          </div>
+          <p className="reward-destination">它会住进你的小天地</p>
+          {activeWish && (
+            <p className="reward-wish-note">也为「{activeWish.title}」记了一笔</p>
+          )}
+        </div>
+      )}
       <div className="completion-stats">
         <div>
           <span>今日互动</span>
@@ -266,11 +328,9 @@ export function Complete({ id }: { id: string }) {
       </div>
       <button
         className="button primary full"
-        onClick={() =>
-          go(wish ? { page: "fulfill", id: wish.id } : { page: "world" })
-        }
+        onClick={wish ? () => go({ page: "fulfill", id: wish.id }) : collect}
       >
-        {wish ? "继续还愿 · 留下这份心情" : "收下这份好心情"}
+        {wish ? "继续还愿 · 留下这份心情" : `收下${rituals[r.ritual].object}`}
       </button>
       <button className="button outline full" onClick={() => void share()}>
         <Icon name="share" />

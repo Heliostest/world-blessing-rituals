@@ -55,7 +55,7 @@ export function Empty({
   );
 }
 export function Wishes() {
-  const { state, go } = useApp();
+  const { state, go, arrival } = useApp();
   const { entries } = useSceneLibrary();
   const [filter, setFilter] = useState("active");
   const practices = wishSceneEntries(entries);
@@ -126,28 +126,38 @@ export function Wishes() {
       </div>
       {wishes.length ? (
         <div className="wish-list">
-          {wishes.map((w) => (
-            <button
-              key={w.id}
-              className="wish-card"
-              onClick={() => go({ page: "wish", id: w.id })}
-            >
-              <Art
-                kind={w.status === "fulfilled" ? "badge" : "lantern"}
-                small
-              />
-              <span>
-                <span className="tag soft">
-                  {w.archived ? "暂时放下" : statusText[w.status]}
+          {wishes.map((w) => {
+            // A scene's kept wish lands on its card: hidden while the slip
+            // flies, popped and rung with 新 once it lands.
+            const flying =
+              arrival?.wishId === w.id && arrival.phase === "flying";
+            const isNew = arrival?.wishId === w.id && arrival.phase === "landed";
+            return (
+              <button
+                key={w.id}
+                className={`wish-card${isNew ? " reward-landed" : ""}`}
+                data-wish-id={w.id}
+                data-arriving={flying ? "" : undefined}
+                onClick={() => go({ page: "wish", id: w.id })}
+              >
+                <Art
+                  kind={w.status === "fulfilled" ? "badge" : "lantern"}
+                  small
+                />
+                <span>
+                  <span className="tag soft">
+                    {w.archived ? "暂时放下" : statusText[w.status]}
+                  </span>
+                  <strong>{w.title}</strong>
+                  <small>
+                    {formatDate(w.createdAt)}点亮 · {w.notes.length} 条记录
+                  </small>
                 </span>
-                <strong>{w.title}</strong>
-                <small>
-                  {formatDate(w.createdAt)}点亮 · {w.notes.length} 条记录
-                </small>
-              </span>
-              <Icon name="arrow" />
-            </button>
-          ))}
+                <Icon name="arrow" />
+                {isNew && <span className="new-mark">新</span>}
+              </button>
+            );
+          })}
         </div>
       ) : (
         <Empty
@@ -170,11 +180,25 @@ export function Wishes() {
   );
 }
 export function World() {
-  const { state, go } = useApp();
+  const { state, go, arrival } = useApp();
+  // This room's landing states: the newest slot is hidden while its sticker
+  // flies, then pops in with a 新 ring, and the count pill bumps.
+  const slotState = (id: string) =>
+    arrival?.collectibleId === id
+      ? arrival.phase === "flying"
+        ? "flying"
+        : "landed"
+      : null;
+  const bumped = arrival?.collectibleId && arrival.phase === "landed";
   return (
     <>
       <PageHead eyebrow="把每一份小美好，都留在这里" title="我的小天地">
-        <span className="count-pill">{state.collectibles.length} 件珍藏</span>
+        <span
+          className={`count-pill${bumped ? " pill-bump" : ""}`}
+          key={bumped ? arrival!.key : "count"}
+        >
+          {state.collectibles.length} 件珍藏
+        </span>
       </PageHead>
       <div className="room">
         <div className="room-window">
@@ -183,15 +207,31 @@ export function World() {
         </div>
         <div className="room-caption">一隅安静，慢慢丰盛。</div>
         <div className="room-shelf">
-          {state.collectibles.slice(-3).map((c) => (
-            <button
-              key={c.id}
-              aria-label={`查看${c.title}`}
-              onClick={() => go({ page: "collection", id: c.id })}
-            >
-              <Art kind={c.kind} small />
-            </button>
-          ))}
+          {state.collectibles.slice(-3).map((c) => {
+            const slot = slotState(c.id);
+            return (
+              <button
+                key={c.id}
+                aria-label={`查看${c.title}`}
+                data-collectible-id={c.id}
+                data-arriving={slot === "flying" ? "" : undefined}
+                className={slot === "landed" ? "reward-landed" : undefined}
+                onClick={() => go({ page: "collection", id: c.id })}
+              >
+                <Art kind={c.kind} small />
+                {slot === "landed" && (
+                  <>
+                    <span className="new-mark">新</span>
+                    <span className="reward-sparks" aria-hidden="true">
+                      <i />
+                      <i />
+                      <i />
+                    </span>
+                  </>
+                )}
+              </button>
+            );
+          })}
           {!state.collectibles.length && (
             <span className="empty-shelf">留个位置，给即将到来的美好</span>
           )}
@@ -204,17 +244,22 @@ export function World() {
       </div>
       {state.collectibles.length ? (
         <div className="collection-grid">
-          {[...state.collectibles].reverse().map((c) => (
-            <button
-              key={c.id}
-              className="collection-card"
-              onClick={() => go({ page: "collection", id: c.id })}
-            >
-              <Art kind={c.kind} small />
-              <strong>{c.title}</strong>
-              <small>{formatDate(c.at)}</small>
-            </button>
-          ))}
+          {[...state.collectibles].reverse().map((c) => {
+            const slot = slotState(c.id);
+            return (
+              <button
+                key={c.id}
+                className={`collection-card${slot === "landed" ? " reward-landed" : ""}`}
+                data-collectible-id={c.id}
+                data-arriving={slot === "flying" ? "" : undefined}
+                onClick={() => go({ page: "collection", id: c.id })}
+              >
+                <Art kind={c.kind} small />
+                <strong>{c.title}</strong>
+                <small>{formatDate(c.at)}</small>
+              </button>
+            );
+          })}
         </div>
       ) : (
         <Empty

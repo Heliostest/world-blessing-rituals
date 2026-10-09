@@ -1,6 +1,7 @@
 import { createContext, useContext } from "react";
 import type { Action, State, ReturnMethod } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
+import type { RewardFlight, RewardArrival } from "./reward-flight";
 export type FulfillmentDraft = { method: ReturnMethod; text: string };
 export type Route = {
   page:
@@ -36,6 +37,12 @@ export type AppContext = {
   active: boolean;
   fulfillmentDrafts: Record<string, FulfillmentDraft>;
   setFulfillmentDraft(id: string, draft?: FulfillmentDraft): void;
+  /** Starts one reward's trip home; the next navigation skips page-in. */
+  launchReward(flight: RewardFlight): void;
+  /** The reward on its way (flying) or just landed (新 mark, tab badge). */
+  arrival: RewardArrival | null;
+  /** Speaks once through the App's single polite live region. */
+  announce(status: string): void;
 };
 export const Context = createContext<AppContext>(null!);
 export const useApp = () => useContext(Context);

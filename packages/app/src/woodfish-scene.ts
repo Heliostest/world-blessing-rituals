@@ -110,6 +110,12 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
   let following = false;
   type StrikeTarget = { point: THREE.Vector3; normal: THREE.Vector3 };
   const strikes: StrikeTarget[] = [];
+  // whenIdle() waiters, woken when the last queued swing has settled.
+  const idleWaiters: (() => void)[] = [];
+  function settleIdle() {
+    if (strikeAnimation || strikes.length || !idleWaiters.length) return;
+    idleWaiters.splice(0).forEach((wake) => wake());
+  }
   const inspectMode = new URLSearchParams(window.location.search).has(
     "inspectWoodfish",
   );
@@ -369,6 +375,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
         bodyGroup.rotation.z = 0;
         phase = "idle";
         requestRender();
+        settleIdle();
         if (strikes.length) queueMicrotask(nextStrike);
         else if (following) followTarget();
       },
@@ -482,6 +489,15 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
       strikes.push({ point: hit.point.clone(), normal });
       nextStrike();
     },
+    whenIdle() {
+      return new Promise<void>((resolve) => {
+        if (disposed || (!strikeAnimation && !strikes.length)) {
+          resolve();
+          return;
+        }
+        idleWaiters.push(resolve);
+      });
+    },
     movePointer(x: number, y: number, immediate = false) {
       if (!active || document.hidden || view !== "front") return;
       raycaster.setFromCamera(new THREE.Vector2(x, y), camera);
@@ -554,6 +570,7 @@ export function createWoodfishScene(host: HTMLDivElement, options: Options) {
       strikeAnimation?.cancel();
       strikeAnimation = null;
       strikes.length = 0;
+      idleWaiters.splice(0).forEach((wake) => wake());
       modelAsset?.dispose();
       modelAsset = null;
       cancelAnimationFrame(frame);

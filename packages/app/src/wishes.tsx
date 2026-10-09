@@ -348,8 +348,14 @@ export function WishNote({ id }: { id: string }) {
   );
 }
 export function FulfillWish({ id }: { id: string }) {
-  const { state, go, dispatch, fulfillmentDrafts, setFulfillmentDraft } =
-    useApp();
+  const {
+    state,
+    go,
+    dispatch,
+    fulfillmentDrafts,
+    setFulfillmentDraft,
+    arrival,
+  } = useApp();
   const wish = state.wishes.find((w) => w.id === id);
   const draft = fulfillmentDrafts[id] ?? {
     method: wish?.returnMethod ?? "kindness",
@@ -402,7 +408,20 @@ export function FulfillWish({ id }: { id: string }) {
           {method === "ritual" && (
             <div className="linked-ritual">
               {completed ? (
-                <p>
+                /* A return-ritual's sticker can land on this row. */
+                <p
+                  data-wish-id={id}
+                  data-arriving={
+                    arrival?.wishId === id && arrival.phase === "flying"
+                      ? ""
+                      : undefined
+                  }
+                  className={
+                    arrival?.wishId === id && arrival.phase === "landed"
+                      ? "reward-landed"
+                      : undefined
+                  }
+                >
                   <Icon name="check" />
                   已为这个心愿完成小仪式
                 </p>

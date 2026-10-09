@@ -21,6 +21,7 @@ import { FeedbackControls } from "./feedback-controls";
 import { describeSceneLoadError } from "./scene-load-error";
 import { sceneWish } from "./scene-wish";
 import { sceneStage } from "./scene-placement";
+import { rectOf } from "./reward-flight";
 
 function ProceduralScene({
   entry,
@@ -113,6 +114,10 @@ export function FavoriteChip({ id, favorite }: { id: string; favorite: boolean }
 }
 /** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
 const sceneSteps = (entry: CatalogEntry) => (entry.engine === "woodfish@1" ? 12 : 3);
+/** The closing line and the two exits shown when a scene's steps are done. */
+export const SCENE_DONE_COPY = "这次体验已经完成，记录已留下。";
+export const SCENE_DONE_WISH_CTA = "去心愿看看";
+export const SCENE_DONE_CTA = "完成";
 function LoadedScene({
   entry,
   lease,
@@ -122,13 +127,23 @@ function LoadedScene({
   lease?: SceneLease;
   failed(error?: unknown): void;
 }) {
-  const { state, dispatch, active, feedback, prepareFeedback, go } = useApp();
+  const {
+    state,
+    dispatch,
+    active,
+    feedback,
+    prepareFeedback,
+    go,
+    launchReward,
+    back,
+  } = useApp();
   const record = state.sceneRecords.find((r) => r.id === entry.id);
   const progress = record?.progress ?? 0;
   const steps = sceneSteps(entry);
   const [instruction, setInstruction] = useState("轻敲木鱼，让心慢下来");
   /** The wish this visit kept from the scene's wish box, if any. */
   const [keptWish, setKeptWish] = useState<string>();
+  const doneCta = useRef<HTMLButtonElement>(null);
   const checkpoint = (n: number) =>
     dispatch({ type: "scene.progress", id: entry.id, progress: n });
   const favoriteChip = (
@@ -138,6 +153,19 @@ function LoadedScene({
   const saveWish = (text: string) => {
     const wish = sceneWish(text, entry.id, uid(), now());
     if (wish && dispatch(wish)) setKeptWish(wish.id);
+  };
+  // One exit at done: to the kept wish, with the slip flying into its new
+  // card, or simply back. No merit and no collectible ever: the scene's
+  // red line.
+  const goSeeWish = () => {
+    launchReward({
+      kind: "leaf",
+      from: rectOf(doneCta.current),
+      wishId: keptWish,
+      tab: "wishes",
+      announce: WISH_WRITE_COPY.saved,
+    });
+    go({ page: "wishes" });
   };
   const client = useMemo<WoodfishContext["content"] | undefined>(
     () =>
@@ -197,6 +225,25 @@ function LoadedScene({
           failed={failed}
         />
       )}
+      {progress >= steps && (
+        <div className="scene-done-row">
+          <p className="scene-done">{SCENE_DONE_COPY}</p>
+          {keptWish ? (
+            <button
+              type="button"
+              className="button primary"
+              ref={doneCta}
+              onClick={goSeeWish}
+            >
+              {SCENE_DONE_WISH_CTA}
+            </button>
+          ) : (
+            <button type="button" className="button secondary" onClick={back}>
+              {SCENE_DONE_CTA}
+            </button>
+          )}
+        </div>
+      )}
       {entry.engine !== "woodfish@1" && (
         // Present from the start (empty), so the confirmation is announced.
         <p className="scene-wish-saved" role="status">
@@ -217,9 +264,6 @@ function LoadedScene({
         <FeedbackControls>{favoriteChip}</FeedbackControls>
       ) : (
         <div className="feedback-controls">{favoriteChip}</div>
-      )}
-      {progress >= steps && (
-        <p className="scene-done">这次体验已经完成，记录已留下。</p>
       )}
     </>
   );

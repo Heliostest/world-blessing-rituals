@@ -235,6 +235,35 @@ describe("2D ritual stage", () => {
   });
 });
 
+describe("page ribbon", () => {
+  it("stays on one line, 12px clear of the back button, with an ellipsis when too long", () => {
+    const ribbon = declared(".app-topbar h2");
+    expect(ribbon).toMatch(/max-width: calc\(100% - 104px\)/);
+    expect(ribbon).toMatch(/white-space: nowrap/);
+    expect(ribbon).toMatch(/overflow: hidden/);
+    expect(ribbon).toMatch(/text-overflow: ellipsis/);
+  });
+
+  it("folds its tails under a front tilted back, as the island Title does", () => {
+    expect(declared(".app-topbar h2::after")).toMatch(
+      /transform: perspective\(11\.5em\) rotateX\(3deg\)/,
+    );
+    // The folds are darker than the tails, the tails darker than the front.
+    const back = declared(".app-topbar h2::before");
+    expect(back).toMatch(/var\(--mint-ledge\)/);
+    const fold = back.match(/#[0-9a-f]{6}/)![0];
+    expect(luminance(fold)).toBeLessThan(luminance(token("--mint-ledge")));
+    expect(luminance(token("--mint-ledge"))).toBeLessThan(luminance(token("--mint")));
+  });
+
+  it("hangs the tails inside the h2 and takes the drop back, so the front stays level with the back button", () => {
+    const ribbon = declared(".app-topbar h2");
+    expect(ribbon).toMatch(/isolation: isolate/);
+    expect(ribbon).toMatch(/margin-bottom: calc\(-1 \* var\(--drop\)\)/);
+    expect(ribbon).toMatch(/padding: 6px 30px calc\(8px \+ var\(--drop\)\)/);
+  });
+});
+
 describe("completion page", () => {
   it("fades the sunburst on every side, on its own layer under the reward", () => {
     // A mask on .celebration itself would fade the number, postcard and badge.

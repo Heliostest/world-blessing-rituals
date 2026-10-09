@@ -12,7 +12,7 @@ App 的正式界面（PR #16 `a216ae9` 起）：薄荷波点页面、沙色 HUD 
   - 按钮：糖果色按压按钮。按下时面板沉进台阶，`translateY` 加上缩短的台阶阴影。只有可点的元素有台阶，只读计数（场景进度、珍藏数）是平的。
   - 主按钮改成薄荷色，次按钮奶油黄。另有桃、天蓝、泡泡糖粉、叶绿四种强调色，每色分 face / hi / ledge / tint 四档。
   - 底部导航：浮起的 HUD dock，四个 tab 各配一色（今日黄、心愿粉、小天地绿、我的蓝）。
-  - 组件：顶栏标题改为燕尾飘带；分段筛选；小岛开关（凹槽轨道，开启为叶绿）；圆角方形勾选单选框；小天地改成岛屋（黄油色竖条纹墙纸、天窗、木地板、圆地毯）；墙纸用暖色而不是页面的薄荷波点，房间才像室内，而不是页面上挖的洞（审计 P2-17）。
+  - 组件：顶栏标题改为燕尾飘带，和参考库的 Title 一样：正面微微后仰，两条燕尾藏在后面、垂得低一点，转折处是深一号的折角；整条飘带画在标题自己的框里，文字可用的宽度不变，仍只占一行（审计 P2-21）；分段筛选；小岛开关（凹槽轨道，开启为叶绿）；圆角方形勾选单选框；小天地改成岛屋（黄油色竖条纹墙纸、天窗、木地板、圆地毯）；墙纸用暖色而不是页面的薄荷波点，房间才像室内，而不是页面上挖的洞（审计 P2-17）。
   - 字体：圆体字体栈 `Nunito, Varela Round, M PLUS Rounded 1c, Yuanti SC, HarmonyOS Sans SC, PingFang SC, Blessing Sans…`。Nunito 的拉丁子集（500 / 700 / 900，三个共约 48KB，`unicode-range: U+0000-00FF`）随 App 打包，数字和拉丁字母在所有设备上都是圆体；中文照常落到后面的系统字体（审计 P2-20，来源和授权见 `assets/README.md`）。没有网络字体。
 - `packages/app/src/scene-experience.tsx`：场景舞台加了属性 `data-scene={entry.id}` 和 `data-stage`（`day` / `night`，由 `scene-placement.ts` 的 `NIGHT_STAGE_SCENE_IDS` 决定），作为样式钩子；`stage` 也经场景 context 传给场景，让布光和舞台一致（审计 P1-5）。
 - `apps/cyber-bless/index.html`：`theme-color` 改为薄荷 `#cdf1e6`。

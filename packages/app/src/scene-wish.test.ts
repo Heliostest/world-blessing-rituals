@@ -7,12 +7,17 @@ import { WISH_WRITE_COPY } from "@wbr/gestures";
 import { assertSafeCopy } from "@wbr/shared";
 import { Context, type AppContext } from "./context";
 import { builtInScenes, SceneLibraryContext } from "./scene-library";
-import { SceneExperience } from "./scene-experience";
+import {
+  SceneExperience,
+  SCENE_DONE_COPY,
+  SCENE_DONE_CTA,
+  SCENE_DONE_WISH_CTA,
+} from "./scene-experience";
 import { sceneWish } from "./scene-wish";
 import { clickOn, renderUI, settle } from "./dom-test-utils";
 
 // The 3D scene is not under test: keep the context it would be given.
-type Given = { saveWish?(text: string): void };
+type Given = { saveWish?(text: string): void; checkpoint?(n: number): void };
 const scene = vi.hoisted(() => ({ context: undefined as Given | undefined }));
 vi.mock("@wbr/scene-runtime", async (importOriginal) => ({
   ...(await importOriginal<typeof import("@wbr/scene-runtime")>()),
@@ -79,6 +84,8 @@ describe("a line written in a scene", () => {
     });
     await store.load();
     const go = vi.fn();
+    const launchReward = vi.fn();
+    const announce = vi.fn();
     const entry = builtInScenes.find((e) => e.id === sceneId)!;
     // Stable, like the provider's memoized library.
     const library = { library: {}, ready: true } as never;
@@ -96,6 +103,9 @@ describe("a line written in a scene", () => {
         decodeSound: vi.fn(),
         fulfillmentDrafts: {},
         setFulfillmentDraft() {},
+        launchReward,
+        arrival: null,
+        announce,
         dispatch(action: Action) {
           try {
             const before = store.getSnapshot().state;
@@ -126,6 +136,8 @@ describe("a line written in a scene", () => {
       ...ui,
       store,
       go,
+      launchReward,
+      announce,
       writes,
       write,
       status: () => ui.host.querySelector(".scene-wish-saved[role=status]")!,
@@ -190,5 +202,60 @@ describe("a line written in a scene", () => {
     ]);
     expect(new Set(s.wishes().map((w) => w.id)).size).toBe(2);
     s.unmount();
+  });
+
+  it("offers one exit at done: 去心愿看看 with a slip flight when a wish was kept", async () => {
+    const s = await open("crane", JSON.stringify(createState()));
+    s.write("希望家人平安");
+    const kept = s.wishes()[0].id;
+    // Before done, there is no exit row.
+    expect(s.host.querySelector(".scene-done-row")).toBeNull();
+    act(() => {
+      scene.context!.checkpoint!(3);
+    });
+    await settle();
+    const row = s.host.querySelector(".scene-done-row")!;
+    expect(row.querySelector(".scene-done")?.textContent).toBe(SCENE_DONE_COPY);
+    const cta = [...row.querySelectorAll("button")].find(
+      (b) => b.textContent === SCENE_DONE_WISH_CTA,
+    )!;
+    expect(cta).toBeDefined();
+    clickOn(cta);
+    // The slip flies into the new wish's card, and 心愿 opens.
+    expect(s.launchReward).toHaveBeenCalledWith(
+      expect.objectContaining({
+        kind: "leaf",
+        wishId: kept,
+        tab: "wishes",
+        announce: WISH_WRITE_COPY.saved,
+      }),
+    );
+    expect(s.go).toHaveBeenCalledWith({ page: "wishes" });
+    s.unmount();
+  });
+
+  it("offers plain 完成 when nothing was kept, and writes no merit or collectible", async () => {
+    const s = await open("lantern", JSON.stringify(createState()));
+    act(() => {
+      scene.context!.checkpoint!(3);
+    });
+    await settle();
+    const row = s.host.querySelector(".scene-done-row")!;
+    const cta = [...row.querySelectorAll("button")].find(
+      (b) => b.textContent === SCENE_DONE_CTA,
+    )!;
+    expect(cta).toBeDefined();
+    expect(s.host.textContent).not.toContain("功德");
+    const state = s.store.getSnapshot().state!;
+    expect(state.collectibles).toHaveLength(0);
+    expect(state.ledger).toHaveLength(0);
+    s.unmount();
+  });
+});
+
+describe("scene exit copy", () => {
+  it("keeps the closing line and both CTAs safe", () => {
+    for (const text of [SCENE_DONE_COPY, SCENE_DONE_WISH_CTA, SCENE_DONE_CTA])
+      expect(() => assertSafeCopy(text)).not.toThrow();
   });
 });

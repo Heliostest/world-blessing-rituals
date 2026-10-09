@@ -1,17 +1,12 @@
-import { dailyRitual, rituals, type RitualId } from "@wbr/core";
-import { Art, Icon } from "./art";
+import { dailyCollectibleId, rituals } from "@wbr/core";
+import { Icon } from "./art";
 import { useApp } from "./context";
+import { useOpenScene, useSceneLibrary } from "./scene-library";
+import { SceneBadge } from "./scene-icons";
 import {
-  SceneRecommendation,
-  useOpenRitual,
-  useSceneLibrary,
-} from "./scene-library";
-import { SceneArt } from "./scene-icons";
-import {
-  TODAY_PRACTICE_COPY,
-  featuredTodayPractice,
-  todayPracticeCopy,
-  todaySceneEntries,
+  DAILY_SET_COPY,
+  dailySceneSet,
+  isWishScene,
 } from "./scene-placement";
 
 export const ritualTitle = {
@@ -22,12 +17,9 @@ export const ritualTitle = {
 export function Today({ day }: { day: string }) {
   const { state, go } = useApp();
   const { entries } = useSceneLibrary();
-  const openRitual = useOpenRitual();
-  const id = dailyRitual(day);
+  const openScene = useOpenScene();
   const merit = state.ledger.reduce((n, l) => n + l.amount, 0);
-  const collected = new Set(state.collectibles.map((c) => c.kind));
-  const featured = featuredTodayPractice(entries, day);
-  const todayPractices = todaySceneEntries(entries);
+  const set = dailySceneSet(entries, day);
   return (
     <div className="today-page">
       <header className="home-heading">
@@ -41,7 +33,6 @@ export function Today({ day }: { day: string }) {
         </button>
       </header>
       <p className="lead">今天，也给自己一点好运。</p>
-      <SceneRecommendation day={day} />
       {/* The one way left onto the 2D ritual page: a session begun there
           before rituals opened as scenes still settles where it started. */}
       {state.activeSession && (
@@ -59,88 +50,49 @@ export function Today({ day }: { day: string }) {
           <Icon name="arrow" />
         </button>
       )}
-      <section className="daily-card">
-        <span className="tag">今日随机仪式</span>
-        <Art
-          kind={id}
-          variant={
-            id === "woodfish" ? "home" : id === "lantern" ? "wish" : "default"
-          }
-        />
-        <div className="daily-copy">
-          <h2>{ritualTitle[id]}</h2>
-          <p>
-            {id === "woodfish" ? "30 秒，轻松一下。" : rituals[id].subtitle}
-          </p>
-          <button
-            className="button primary"
-            onClick={() => openRitual(id)}
-          >
-            开始今日仪式
-          </button>
-        </div>
-      </section>
-      {featured && (
-        <section className="daily-card practice-card">
-          <span className="tag">{TODAY_PRACTICE_COPY.tag}</span>
-          <div className="daily-copy">
-            <h2>{featured.title}</h2>
-            <p>{todayPracticeCopy(featured.id)?.blurb}</p>
-            <button
-              className="button secondary"
-              onClick={() =>
-                go({ page: "scene", id: featured.id, entry: featured })
-              }
-            >
-              {TODAY_PRACTICE_COPY.action}
+      {set.length > 0 && (
+        <section className="daily-set" aria-label={DAILY_SET_COPY.heading}>
+          <div className="section-heading">
+            <h2>{DAILY_SET_COPY.heading}</h2>
+            <button className="text-button" onClick={() => go({ page: "scenes" })}>
+              {DAILY_SET_COPY.browse} <Icon name="arrow" />
             </button>
+          </div>
+          <p className="quiet daily-set-blurb">{DAILY_SET_COPY.sub}</p>
+          <div className="daily-set-grid">
+            {set.map((entry) => {
+              const collected = state.collectibles.some(
+                (c) => c.id === dailyCollectibleId(day, entry.id),
+              );
+              return (
+                <button
+                  key={entry.id}
+                  className="daily-set-card"
+                  data-scene={entry.id}
+                  data-type={isWishScene(entry.id) ? "wish" : "blessing"}
+                  onClick={() => openScene(entry, { daily: day })}
+                >
+                  <SceneBadge id={entry.id} />
+                  <strong>{entry.title}</strong>
+                  <small>
+                    {collected
+                      ? DAILY_SET_COPY.collected
+                      : isWishScene(entry.id)
+                        ? DAILY_SET_COPY.wishNote
+                        : DAILY_SET_COPY.blessingNote}
+                  </small>
+                  {collected && (
+                    <span className="collected-dot" aria-label="今天已收下">
+                      <Icon name="check" />
+                    </span>
+                  )}
+                  <Icon name="arrow" />
+                </button>
+              );
+            })}
           </div>
         </section>
       )}
-      <section className="achievement-card">
-        <div className="section-heading">
-          <h2>我的小小成就</h2>
-          <button className="text-button" onClick={() => go({ page: "world" })}>
-            已收集 <b>{state.collectibles.length}</b> 个小物{" "}
-            <Icon name="arrow" />
-          </button>
-        </div>
-        <div className="ritual-grid">
-          {(["crane", "woodfish", "lantern"] as RitualId[]).map((kind) => (
-            <button
-              className="ritual-tile"
-              key={kind}
-              data-scene={kind}
-              onClick={() => openRitual(kind)}
-            >
-              <Art kind={kind} small />
-              <strong>
-                {kind === "lantern"
-                  ? "小灯笼"
-                  : kind === "woodfish"
-                    ? "木鱼"
-                    : rituals[kind].object}
-              </strong>
-              {collected.has(kind) && (
-                <span className="collected-dot" aria-label="已收藏">
-                  <Icon name="check" />
-                </span>
-              )}
-            </button>
-          ))}
-          {todayPractices.map((entry) => (
-            <button
-              className="ritual-tile"
-              key={entry.id}
-              data-scene={entry.id}
-              onClick={() => go({ page: "scene", id: entry.id, entry })}
-            >
-              <SceneArt id={entry.id} />
-              <strong>{entry.title}</strong>
-            </button>
-          ))}
-        </div>
-      </section>
       <button className="wish-invitation" onClick={() => go({ page: "new" })}>
         <Icon name="wishes" />
         <span>小小心愿，也值得发光。</span>

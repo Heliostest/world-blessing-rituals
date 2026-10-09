@@ -237,11 +237,14 @@ describe("the settle beat (P0)", () => {
       "1 件珍藏",
     );
 
-    // With the session settled, a ritual tile opens that ritual's 3D scene
+    // With the session settled, the 场景目录 opens that ritual's 3D scene
     // from its first step: not the 2D page, nor a hijacked woodfish.
     clickOn(ui.host.querySelector('[data-tab="today"]')!);
     await settle();
-    clickOn(ui.host.querySelector('.ritual-tile[data-scene="crane"]')!);
+    clickOn(ui.host.querySelector(".daily-set .text-button")!);
+    await settle();
+    expect(pageOf(ui)).toBe("scenes");
+    clickOn(ui.host.querySelector('.scene-card[data-scene="crane"]')!);
     await settle();
     expect(pageOf(ui)).toBe("scene");
     expect(

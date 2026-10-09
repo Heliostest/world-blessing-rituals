@@ -288,7 +288,7 @@ export function SceneBadge({ id }: { id: string }) {
 export function SceneArt({ id }: { id: string }) {
   return (
     <div className="art art-small scene-art" data-scene={id} aria-hidden="true">
-      <SceneIcon id={id} />
+      {hasSceneIcon(id) ? <SceneIcon id={id} /> : <Icon name="leaf" />}
     </div>
   );
 }

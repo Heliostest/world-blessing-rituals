@@ -3,8 +3,8 @@ import {
   createState,
   reduce,
   restore,
-  dailyRitual,
   hasReturnRitual,
+  dailyCollectibleId,
 } from "./index";
 
 const at = "2026-09-20T08:00:00.000Z";
@@ -207,8 +207,217 @@ describe("personal ritual loop", () => {
       restore(JSON.stringify({ ...createState(), wishes: [{ id: "bad" }] })),
     ).toThrow();
   });
-  it("uses a stable daily recommendation", () => {
-    expect(dailyRitual("2026-09-20")).toBe(dailyRitual("2026-09-20"));
+  it("still restores saves from before scene keepsakes existed", () => {
+    const old = createState();
+    old.collectibles.push({ id: "keep-1", kind: "crane", title: "折一只纸鹤", at });
+    expect(restore(JSON.stringify(old)).collectibles).toEqual([
+      { id: "keep-1", kind: "crane", title: "折一只纸鹤", at },
+    ]);
+  });
+});
+
+describe("the daily set (daily.scene)", () => {
+  const later = "2026-09-21T08:00:00.000Z";
+  const walk = {
+    type: "daily.scene",
+    id: "visit-1",
+    sceneId: "tanzaku-tanabata",
+    title: "短册系竹",
+    wishScene: true,
+    day: "2026-09-20",
+    startedAt: at,
+    at,
+  } as const;
+
+  it("grants the keepsake and the day's merit once per scene per day", () => {
+    const s = reduce(createState(), walk);
+    expect(s.collectibles).toEqual([
+      {
+        id: dailyCollectibleId("2026-09-20", "tanzaku-tanabata"),
+        kind: "scene",
+        title: "短册系竹",
+        at,
+        sceneId: "tanzaku-tanabata",
+        wishScene: true,
+      },
+    ]);
+    expect(s.ledger).toEqual([{ id: "visit-1", amount: 10, at }]);
+    // A re-fired last step, or a second walk of the same day, settles nothing.
+    expect(reduce(s, walk)).toBe(s);
+    expect(reduce(s, { ...walk, id: "visit-2", at: later })).toBe(s);
+    expect(restore(JSON.stringify(s))).toEqual(s);
+  });
+
+  it("collects a blessing scene without the wish flag, and the same scene again another day", () => {
+    const blessing = reduce(createState(), {
+      ...walk,
+      sceneId: "woodfish",
+      title: "敲一敲木鱼",
+      wishScene: false,
+    });
+    expect("wishScene" in blessing.collectibles[0]).toBe(false);
+    const next = reduce(blessing, {
+      ...walk,
+      id: "visit-2",
+      day: "2026-09-21",
+      at: later,
+    });
+    expect(next.collectibles).toHaveLength(2);
+    expect(next.ledger).toHaveLength(2);
+  });
+
+  it("rejects an invalid record, and an unspendable keepsake in a save", () => {
+    expect(() => reduce(createState(), { ...walk, id: "" })).toThrow();
+    expect(() => reduce(createState(), { ...walk, sceneId: "" })).toThrow();
+    expect(() => reduce(createState(), { ...walk, title: " " })).toThrow();
+    expect(() => reduce(createState(), { ...walk, day: "2026-9-20" })).toThrow();
+    expect(() =>
+      reduce(createState(), { ...walk, startedAt: "soon" }),
+    ).toThrow();
+    expect(() =>
+      reduce(createState(), { ...walk, wishScene: "yes" as never }),
+    ).toThrow();
+    const corrupt = JSON.parse(JSON.stringify(createState()));
+    corrupt.collectibles.push({
+      id: "s1",
+      kind: "scene",
+      title: "短册系竹",
+      at,
+      wishId: "w9",
+    });
+    expect(() => restore(JSON.stringify(corrupt))).toThrow();
+  });
+});
+
+describe("a wish-type keepsake spent on a wish (collectible.spend)", () => {
+  const later = "2026-09-21T08:00:00.000Z";
+  const vessel = dailyCollectibleId("2026-09-20", "tanzaku-tanabata");
+  /** Grants one 许愿 keepsake for 2026-09-20 on top of `base`. */
+  const grant = (base = createState()) =>
+    reduce(base, {
+      type: "daily.scene",
+      id: "visit-1",
+      sceneId: "tanzaku-tanabata",
+      title: "短册系竹",
+      wishScene: true,
+      day: "2026-09-20",
+      startedAt: at,
+      at,
+    });
+
+  it("marks the keepsake spent exactly once, and the save restores", () => {
+    const s = reduce(grant(), {
+      type: "collectible.spend",
+      id: vessel,
+      at: later,
+    });
+    expect(s.collectibles[0]).toMatchObject({ spentAt: later });
+    expect(
+      reduce(s, { type: "collectible.spend", id: vessel, at: later }),
+    ).toBe(s);
+    expect(restore(JSON.stringify(s))).toEqual(s);
+  });
+
+  it("notes the wish it was spent for, which counts as its return ritual", () => {
+    let s = grant(
+      reduce(reduce(createState(), add), { type: "wish.realize", id: "w1", at }),
+    );
+    s = reduce(s, {
+      type: "collectible.spend",
+      id: vessel,
+      wishId: "w1",
+      at: later,
+    });
+    expect(s.wishes[0].notes).toEqual([
+      { id: `vessel:${vessel}`, text: "为这个心愿，短册系竹", at: later },
+    ]);
+    expect(s.collectibles[0]).toMatchObject({ spentAt: later, wishId: "w1" });
+    expect(hasReturnRitual(s, s.wishes[0])).toBe(true);
+  });
+
+  it("does not count a keepsake spent before the wish came true", () => {
+    let s = grant(reduce(createState(), add));
+    s = reduce(s, {
+      type: "collectible.spend",
+      id: vessel,
+      wishId: "w1",
+      at,
+    });
+    s = reduce(s, { type: "wish.realize", id: "w1", at: later });
+    expect(hasReturnRitual(s, s.wishes[0])).toBe(false);
+  });
+
+  it("rejects a missing keepsake, a non-wish one, or a closed wish", () => {
+    expect(() =>
+      reduce(createState(), { type: "collectible.spend", id: "nope", at }),
+    ).toThrow();
+    const blessing = reduce(createState(), {
+      type: "daily.scene",
+      id: "visit-1",
+      sceneId: "woodfish",
+      title: "敲一敲木鱼",
+      wishScene: false,
+      day: "2026-09-20",
+      startedAt: at,
+      at,
+    });
+    expect(() =>
+      reduce(blessing, {
+        type: "collectible.spend",
+        id: dailyCollectibleId("2026-09-20", "woodfish"),
+        at,
+      }),
+    ).toThrow();
+    const archived = grant(
+      reduce(reduce(createState(), add), {
+        type: "wish.archive",
+        id: "w1",
+        archived: true,
+      }),
+    );
+    expect(() =>
+      reduce(archived, {
+        type: "collectible.spend",
+        id: vessel,
+        wishId: "w1",
+        at,
+      }),
+    ).toThrow();
+    let s = grant(
+      reduce(reduce(createState(), add), { type: "wish.realize", id: "w1", at }),
+    );
+    s = reduce(s, {
+      type: "collectible.spend",
+      id: vessel,
+      wishId: "w1",
+      at,
+    });
+    s = reduce(s, {
+      type: "wish.fulfill",
+      id: "w1",
+      noteId: "n",
+      text: "谢谢",
+      method: "kindness",
+      at: later,
+    });
+    const fresh = reduce(s, {
+      type: "daily.scene",
+      id: "visit-2",
+      sceneId: "tanzaku-tanabata",
+      title: "短册系竹",
+      wishScene: true,
+      day: "2026-09-21",
+      startedAt: later,
+      at: later,
+    });
+    expect(() =>
+      reduce(fresh, {
+        type: "collectible.spend",
+        id: dailyCollectibleId("2026-09-21", "tanzaku-tanabata"),
+        wishId: "w1",
+        at: later,
+      }),
+    ).toThrow();
   });
 });
 

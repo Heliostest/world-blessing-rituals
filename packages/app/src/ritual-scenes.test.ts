@@ -4,10 +4,9 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   createState,
-  dailyRitual,
+  dailyCollectibleId,
   localDay,
   reduce,
-  type RitualId,
   type State,
 } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
@@ -16,14 +15,29 @@ import { BlessingApp } from "./App";
 import { Context, type AppContext } from "./context";
 import { HISTORY_SCENE_LINE } from "./pages";
 import {
+  SCENE_DAILY_CAPTION,
+  SCENE_DAILY_CTA,
+  SCENE_DISCARD_CTA,
+  SCENE_DISCARDED_COPY,
+  SCENE_DONE_COPY,
+  SCENE_DONE_CTA,
+  SCENE_DONE_WISH_CTA,
+  SCENE_KEEP_CTA,
+  SCENE_KEEP_QUESTION,
   SCENE_RETURN_CTA,
   SCENE_RETURN_DONE_COPY,
+  SCENE_VESSEL_DONE_COPY,
+  sceneDailyAnnounce,
+  sceneDailyDoneCopy,
 } from "./scene-experience";
 import {
   SceneLibraryContext,
   builtInScenes,
+  useOpenScene,
   useOpenRitual,
 } from "./scene-library";
+import { dailySceneSet, isWishScene } from "./scene-placement";
+import { FULFILL_VESSEL_COPY, VESSEL_COPY } from "./vessels";
 import { clickOn, renderUI, settle, typeInto } from "./dom-test-utils";
 
 // The 3D scenes are not under test: keep the context the last one was given.
@@ -55,6 +69,7 @@ vi.mock("@wbr/scene-runtime", async (importOriginal) => ({
 }));
 
 const AT = "2026-10-05T08:00:00.000Z";
+const DAY = localDay();
 const entryOf = (id: string) => builtInScenes.find((e) => e.id === id)!;
 
 /** `state` with each named scene's record saved `progress` steps in. */
@@ -87,6 +102,18 @@ function withRealizedWish(returnMethod: "kindness" | "ritual" = "ritual") {
     at: AT,
   });
   return reduce(state, { type: "wish.realize", id: "w1", at: AT });
+}
+/** One collected daily keepsake for `sceneId`, spent for a wish when `spent`. */
+function keepsake(sceneId: string, day: string, spent?: string) {
+  return {
+    id: dailyCollectibleId(day, sceneId),
+    kind: "scene" as const,
+    title: entryOf(sceneId).title,
+    at: `${day}T08:00:00.000Z`,
+    sceneId,
+    ...(isWishScene(sceneId) ? { wishScene: true } : {}),
+    ...(spent ? { spentAt: spent } : {}),
+  };
 }
 
 beforeEach(() => {
@@ -137,51 +164,74 @@ async function openApp(state: State) {
   };
 }
 
-describe("今日's ritual entries", () => {
-  it("开始今日仪式 opens the day's ritual as its 3D scene", async () => {
+describe("今日's daily set", () => {
+  it("collects the day's keepsake once: a walk, a sticker, a flight to 小天地", async () => {
+    const sceneId = dailySceneSet(builtInScenes, DAY).find((e) =>
+      isWishScene(e.id),
+    )!.id;
     const ui = await openApp(createState());
-    await ui.tap(ui.host.querySelector(".daily-card .button.primary")!);
+    const card = ui.host.querySelector(
+      `.daily-set-card[data-scene="${sceneId}"]`,
+    )!;
+    await ui.tap(card);
     expect(ui.page()).toBe("scene");
-    expect(ui.sceneTitle()).toBe(entryOf(dailyRitual(localDay())).title);
-    ui.unmount();
-  });
-
-  it("opens each 成就 tile as its ritual's scene", async () => {
-    const ui = await openApp(createState());
-    for (const ritual of ["crane", "woodfish", "lantern"]) {
-      await ui.tap(ui.host.querySelector(`.ritual-tile[data-scene="${ritual}"]`)!);
-      expect(ui.page(), ritual).toBe("scene");
-      expect(ui.sceneTitle(), ritual).toBe(entryOf(ritual).title);
-      await ui.tap(ui.host.querySelector(".back-button")!);
-    }
-    ui.unmount();
-  });
-
-  it("starts a finished scene over, and picks a half-walked one up where it was", async () => {
-    const ui = await openApp(withRecords({ crane: 3, lantern: 1, woodfish: 12 }));
-    const tile = (id: string) =>
-      ui.host.querySelector(`.ritual-tile[data-scene="${id}"]`)!;
-    await ui.tap(tile("crane"));
-    expect(ui.sceneProgress()).toBe("已完成 0 / 3");
-    expect(scene.context?.progress).toBe(0);
-    await ui.tap(ui.host.querySelector(".back-button")!);
-    await ui.tap(tile("lantern"));
-    expect(ui.sceneProgress()).toBe("已完成 1 / 3");
-    expect(scene.context?.progress).toBe(1);
-    await ui.tap(ui.host.querySelector(".back-button")!);
-    // The woodfish would otherwise stand disabled at 12.
-    await ui.tap(tile("woodfish"));
-    expect(ui.sceneProgress()).toBe("已完成 0 / 12");
-    ui.unmount();
-  });
-
-  it("keeps a finished scene as it is when opened as a practice, not a ritual", async () => {
-    const ui = await openApp(withRecords({ crane: 3 }));
-    await ui.tap(ui.host.querySelector('[data-tab="wishes"]')!);
-    await ui.tap(
-      ui.host.querySelector('.wish-practice-card[data-scene="crane"]')!,
+    expect(ui.sceneTitle()).toBe(entryOf(sceneId).title);
+    expect(ui.host.querySelector(".scene-caption")?.textContent).toBe(
+      SCENE_DAILY_CAPTION,
     );
-    expect(ui.sceneProgress()).toBe("已完成 3 / 3");
+
+    await ui.walk();
+    expect(ui.host.querySelector(".scene-done")?.textContent).toBe(
+      sceneDailyDoneCopy(entryOf(sceneId).title),
+    );
+    expect(ui.doneButtons()).toEqual([SCENE_DAILY_CTA]);
+    expect(
+      ui.host.querySelector("[data-reward-sticker] .scene-art"),
+    ).not.toBeNull();
+
+    await ui.tap(ui.button(SCENE_DAILY_CTA, ".scene-done-row"));
+    expect(ui.page()).toBe("world");
+    // The sticker landed on its new shelf slot.
+    expect(
+      ui.host.querySelector(
+        `[data-collectible-id="${dailyCollectibleId(DAY, sceneId)}"]`,
+      ),
+    ).not.toBeNull();
+    const saved = await ui.saved();
+    expect(saved.collectibles).toHaveLength(1);
+    expect(saved.collectibles[0]).toMatchObject({
+      id: dailyCollectibleId(DAY, sceneId),
+      kind: "scene",
+      sceneId,
+      ...(isWishScene(sceneId) ? { wishScene: true } : {}),
+    });
+    expect(saved.ledger).toHaveLength(1);
+    expect(saved.ledger[0].amount).toBe(10);
+    ui.unmount();
+  });
+
+  it("settles the day only once: a second walk of the same scene collects nothing", async () => {
+    const sceneId = dailySceneSet(builtInScenes, DAY).find((e) =>
+      isWishScene(e.id),
+    )!.id;
+    const ui = await openApp(createState());
+    await ui.tap(ui.host.querySelector(`.daily-set-card[data-scene="${sceneId}"]`)!);
+    await ui.walk();
+    await ui.tap(ui.button(SCENE_DAILY_CTA, ".scene-done-row"));
+    await ui.tap(ui.host.querySelector('[data-tab="today"]')!);
+    const card = ui.host.querySelector(`.daily-set-card[data-scene="${sceneId}"]`)!;
+    expect(card.querySelector("small")!.textContent!.trim()).toBe("今天已收下");
+    await ui.tap(card);
+    // A flagged visit starts the scene over.
+    expect(ui.sceneProgress()).toBe("已完成 0 / 3");
+    await ui.walk();
+    expect(ui.host.querySelector(".scene-done")?.textContent).toBe(
+      SCENE_DONE_COPY,
+    );
+    expect(ui.doneButtons()).toEqual([SCENE_DONE_CTA]);
+    const saved = await ui.saved();
+    expect(saved.collectibles).toHaveLength(1);
+    expect(saved.ledger).toHaveLength(1);
     ui.unmount();
   });
 
@@ -192,6 +242,189 @@ describe("今日's ritual entries", () => {
     });
     await ui.tap(ui.host.querySelector(".resume-banner")!);
     expect(ui.page()).toBe("ritual");
+    ui.unmount();
+  });
+});
+
+describe("许愿 through a keepsake", () => {
+  async function openVessel(sceneId: string, state = createState()) {
+    state.collectibles.push(keepsake(sceneId, "2026-10-05"));
+    const ui = await openApp(state);
+    await ui.tap(ui.host.querySelector('[data-tab="wishes"]')!);
+    const card = ui.host.querySelector(
+      `.wish-practice-card[data-scene="${sceneId}"]`,
+    )!;
+    expect(card.querySelector("small")!.textContent).toBe(VESSEL_COPY.use);
+    await ui.tap(card);
+    expect(ui.page()).toBe("scene");
+    // A 许愿 walk carries no caption: it is not for a wish.
+    expect(ui.host.querySelector(".scene-caption")).toBeNull();
+    return ui;
+  }
+
+  it("spends the keepsake by the walk, then keeps the line as a new 心愿", async () => {
+    const ui = await openVessel("crane");
+    act(() => scene.context!.saveWish!("面试顺利"));
+    await ui.walk();
+    expect(ui.host.querySelector(".scene-done")?.textContent).toBe(
+      SCENE_VESSEL_DONE_COPY,
+    );
+    expect(ui.host.querySelector(".scene-keep-line")?.textContent).toBe(
+      "「面试顺利」",
+    );
+    expect(ui.host.querySelector(".scene-keep-question")?.textContent).toBe(
+      SCENE_KEEP_QUESTION,
+    );
+    expect(ui.doneButtons()).toEqual([SCENE_KEEP_CTA, SCENE_DISCARD_CTA]);
+    // The keepsake is spent whichever way the line goes; no wish yet.
+    let saved = await ui.saved();
+    expect(saved.collectibles[0]).toMatchObject({ spentAt: expect.any(String) });
+    expect(saved.wishes).toHaveLength(0);
+
+    await ui.tap(ui.button(SCENE_KEEP_CTA, ".scene-done-row"));
+    expect(ui.doneButtons()).toEqual([SCENE_DONE_WISH_CTA]);
+    await ui.tap(ui.button(SCENE_DONE_WISH_CTA, ".scene-done-row"));
+    expect(ui.page()).toBe("wishes");
+    expect(ui.host.querySelector(".wish-card strong")?.textContent).toBe(
+      "面试顺利",
+    );
+    saved = await ui.saved();
+    expect(saved.wishes[0]).toMatchObject({ title: "面试顺利", status: "active" });
+    ui.unmount();
+  });
+
+  it("keeps nothing when the line is not kept", async () => {
+    const ui = await openVessel("tanzaku-tanabata");
+    act(() => scene.context!.saveWish!("希望家人平安"));
+    await ui.walk();
+    await ui.tap(ui.button(SCENE_DISCARD_CTA, ".scene-done-row"));
+    expect(ui.host.querySelector(".scene-done")?.textContent).toBe(
+      SCENE_DISCARDED_COPY,
+    );
+    expect(ui.doneButtons()).toEqual([SCENE_DONE_CTA]);
+    const saved = await ui.saved();
+    expect(saved.wishes).toHaveLength(0);
+    expect(saved.collectibles[0]).toMatchObject({ spentAt: expect.any(String) });
+    ui.unmount();
+  });
+
+  it("offers its own line for a scene with no wish box", async () => {
+    const ui = await openVessel("yeondeunghoe");
+    await ui.walk();
+    expect(ui.host.querySelector(".scene-done")?.textContent).toBe(
+      SCENE_VESSEL_DONE_COPY,
+    );
+    typeInto(ui.host.querySelector("#scene-keep-line")!, "家人平安");
+    await ui.tap(ui.host.querySelector(".scene-keep-form button[type='submit']")!);
+    expect(ui.doneButtons()).toEqual([SCENE_DONE_WISH_CTA]);
+    const saved = await ui.saved();
+    expect(saved.wishes[0]).toMatchObject({ title: "家人平安" });
+    expect(saved.collectibles[0]).toMatchObject({ spentAt: expect.any(String) });
+    ui.unmount();
+  });
+});
+
+describe("还愿 through a keepsake", () => {
+  it("spends the keepsake for the wish: a note, no merit, the badge only", async () => {
+    const state = withRecords({ crane: 2 }, withRealizedWish());
+    state.collectibles.push(keepsake("crane", "2026-10-05"));
+    const ui = await openApp(state);
+    await ui.tap(ui.host.querySelector('[data-tab="wishes"]')!);
+    await ui.tap(ui.host.querySelector('.wish-card[data-wish-id="w1"]')!);
+    await ui.tap(ui.button("来还个愿", ".wish-detail-page"));
+    expect(ui.page()).toBe("fulfill");
+    expect(ui.host.querySelector(".linked-ritual")!.textContent).toContain(
+      FULFILL_VESSEL_COPY.pick,
+    );
+    // The crane record stands half-walked: a 还愿 visit still starts at 0.
+    await ui.tap(ui.host.querySelector('.vessel-card[data-scene="crane"]')!);
+    expect(ui.page()).toBe("scene");
+    expect(ui.sceneProgress()).toBe("已完成 0 / 3");
+    expect(scene.context?.progress).toBe(0);
+    expect(ui.host.querySelector(".scene-caption")!.textContent).toBe(
+      "这一次，为「面试顺利」还愿。",
+    );
+    // A 还愿 walk keeps nothing from its box: the box says so itself.
+    expect(scene.context?.saveWish).toBeUndefined();
+
+    await ui.walk();
+    expect(ui.host.querySelector(".scene-done")?.textContent).toBe(
+      SCENE_RETURN_DONE_COPY,
+    );
+    expect(ui.doneButtons()).toEqual([SCENE_RETURN_CTA]);
+    let saved = await ui.saved();
+    // The vessel path leaves no session: the spent keepsake is the record.
+    expect(saved.sessions).toHaveLength(0);
+    expect(saved.collectibles[0]).toMatchObject({
+      spentAt: expect.any(String),
+      wishId: "w1",
+    });
+    expect(saved.wishes[0].notes.map((n) => n.text)).toEqual([
+      "为这个心愿，折一只纸鹤",
+    ]);
+    expect(saved.ledger).toEqual([]);
+
+    await ui.tap(ui.button(SCENE_RETURN_CTA, ".scene-done-row"));
+    expect(ui.page()).toBe("fulfill");
+    expect(ui.host.querySelector(".linked-ritual")?.textContent).toContain(
+      "已为这个心愿完成小仪式",
+    );
+    typeInto(ui.host.querySelector("#return-note")!, "谢谢一直努力的自己");
+    await ui.tap(ui.button("完成还愿", "form"));
+    expect(ui.page()).toBe("collection");
+    saved = await ui.saved();
+    expect(saved.wishes[0]).toMatchObject({
+      status: "fulfilled",
+      returnMethod: "ritual",
+    });
+    // The 如愿 badge joins the spent keepsake, and no merit was ever given.
+    expect(saved.collectibles.map((c) => c.kind)).toEqual(["scene", "badge"]);
+    expect(saved.ledger).toEqual([]);
+    ui.unmount();
+  });
+
+  it("points back to 今日 when no keepsake is usable yet", async () => {
+    const ui = await openApp(withRealizedWish());
+    await ui.tap(ui.host.querySelector('[data-tab="wishes"]')!);
+    await ui.tap(ui.host.querySelector('.wish-card[data-wish-id="w1"]')!);
+    await ui.tap(ui.button("来还个愿", ".wish-detail-page"));
+    const linked = ui.host.querySelector(".linked-ritual")!;
+    expect(linked.textContent).toContain(FULFILL_VESSEL_COPY.none);
+    await ui.tap(ui.button(FULFILL_VESSEL_COPY.noneAction, ".linked-ritual"));
+    expect(ui.page()).toBe("today");
+    ui.unmount();
+  });
+});
+
+describe("小天地's 回看", () => {
+  it("reopens the collected scene from its start, and says where a spent keepsake went", async () => {
+    const state = withRecords({ crane: 3 });
+    state.collectibles.push(
+      keepsake("crane", "2026-10-05", "2026-10-06T08:00:00.000Z"),
+      keepsake("woodfish", "2026-10-06"),
+    );
+    const ui = await openApp(state);
+    await ui.tap(ui.host.querySelector('[data-tab="world"]')!);
+    // A collected scene shows its drawn icon, in the shelf and the grid.
+    expect(ui.host.querySelectorAll(".room-shelf .scene-art")).toHaveLength(2);
+    expect(ui.host.querySelectorAll(".collection-grid .scene-art")).toHaveLength(2);
+    await ui.tap(
+      ui.host.querySelector(
+        `[data-collectible-id="${dailyCollectibleId("2026-10-05", "crane")}"]`,
+      )!,
+    );
+    expect(ui.page()).toBe("collection");
+    expect(ui.host.querySelector(".form-card .tag")?.textContent).toBe(
+      "许愿小物",
+    );
+    const spent = ui.host.querySelector(".vessel-spent-line")!.textContent!;
+    expect(spent).toBe("已拿去许过愿");
+    expect(() => assertSafeCopy(spent)).not.toThrow();
+
+    await ui.tap(ui.button("回看这场仪式", ".form-card"));
+    expect(ui.page()).toBe("scene");
+    expect(ui.sceneTitle()).toBe(entryOf("crane").title);
+    expect(ui.sceneProgress()).toBe("已完成 0 / 3");
     ui.unmount();
   });
 });
@@ -232,102 +465,8 @@ describe("仪式时光", () => {
   });
 });
 
-describe("还愿 through the crane scene", () => {
-  it("folds from the start, counts for the wish without merit, and leads back to 来还个愿", async () => {
-    // A half-folded crane, and a 2D woodfish session left open.
-    const ui = await openApp({
-      ...withRecords({ crane: 2 }, withRealizedWish()),
-      activeSession: { id: "open", ritual: "woodfish", progress: 5, startedAt: AT },
-    });
-    await ui.tap(ui.host.querySelector('[data-tab="wishes"]')!);
-    await ui.tap(ui.host.querySelector('.wish-card[data-wish-id="w1"]')!);
-    await ui.tap(ui.button("来还个愿", ".wish-detail-page"));
-    expect(ui.page()).toBe("fulfill");
-    // The open 2D session is not this ritual: no 继续未完成的仪式.
-    const start = ui.button("去完成还愿小仪式", ".linked-ritual");
-    expect(start.textContent).toBe("去完成还愿小仪式");
-    expect(ui.host.textContent).not.toContain("继续未完成的仪式");
-
-    await ui.tap(start);
-    expect(ui.page()).toBe("scene");
-    expect(ui.sceneTitle()).toBe(entryOf("crane").title);
-    expect(ui.sceneProgress()).toBe("已完成 0 / 3");
-    expect(scene.context?.progress).toBe(0);
-    const forWish = ui.host.querySelector(".scene-caption")!.textContent!;
-    expect(forWish).toBe("这一次，为「面试顺利」还愿。");
-    expect(() => assertSafeCopy(forWish)).not.toThrow();
-
-    await ui.walk();
-    expect(ui.host.querySelector(".scene-done")?.textContent).toBe(
-      SCENE_RETURN_DONE_COPY,
-    );
-    expect(ui.doneButtons()).toEqual([SCENE_RETURN_CTA]);
-    let saved = await ui.saved();
-    expect(saved.sessions).toHaveLength(1);
-    expect(saved.sessions[0]).toMatchObject({
-      ritual: "crane",
-      wishId: "w1",
-      progress: 4,
-    });
-    expect(saved.wishes[0].notes.map((n) => n.text)).toEqual([
-      "为这个心愿，折一只纸鹤",
-    ]);
-    expect(saved.ledger).toEqual([]);
-    expect(saved.collectibles).toEqual([]);
-    expect(saved.activeSession).toMatchObject({ id: "open", progress: 5 });
-
-    await ui.tap(ui.button(SCENE_RETURN_CTA, ".scene-done-row"));
-    expect(ui.page()).toBe("fulfill");
-    expect(ui.host.querySelector(".linked-ritual")?.textContent).toContain(
-      "已为这个心愿完成小仪式",
-    );
-    typeInto(ui.host.querySelector("#return-note")!, "谢谢一直努力的自己");
-    await ui.tap(ui.button("完成还愿", "form"));
-    expect(ui.page()).toBe("collection");
-    saved = await ui.saved();
-    expect(saved.wishes[0]).toMatchObject({
-      status: "fulfilled",
-      returnMethod: "ritual",
-    });
-    // The 如愿 badge is the only keepsake, and no merit was ever given.
-    expect(saved.collectibles.map((c) => c.kind)).toEqual(["badge"]);
-    expect(saved.ledger).toEqual([]);
-    ui.unmount();
-  });
-
-  it("keeps the wish on a crane scene already open lower in the stack", async () => {
-    const ui = await openApp(createState());
-    // 心愿 → the crane practice, whose wish box keeps a new wish…
-    await ui.tap(ui.host.querySelector('[data-tab="wishes"]')!);
-    await ui.tap(
-      ui.host.querySelector('.wish-practice-card[data-scene="crane"]')!,
-    );
-    act(() => scene.context!.saveWish!("面试顺利"));
-    // …which comes true, to be fulfilled by ritual.
-    await ui.tap(ui.button("去看看", ".scene-wish-saved"));
-    expect(ui.page()).toBe("wish");
-    await ui.tap(ui.button("我的心愿实现了"));
-    expect(ui.page()).toBe("fulfill");
-    await ui.tap(ui.host.querySelector('input[name="return-method"][value="ritual"]')!);
-    // Back to the crane route below: it now carries the wish.
-    await ui.tap(ui.button("去完成还愿小仪式"));
-    expect(ui.page()).toBe("scene");
-    expect(ui.host.querySelector(".scene-caption")?.textContent).toBe(
-      "这一次，为「面试顺利」还愿。",
-    );
-    await ui.walk();
-    expect(ui.doneButtons()).toEqual([SCENE_RETURN_CTA]);
-    await ui.tap(ui.button(SCENE_RETURN_CTA));
-    expect(ui.page()).toBe("fulfill");
-    expect(ui.host.querySelector(".linked-ritual")?.textContent).toContain(
-      "已为这个心愿完成小仪式",
-    );
-    ui.unmount();
-  });
-});
-
 describe("useOpenRitual", () => {
-  /** The hook as 今日 holds it, over `state` and a catalog of `entries`. */
+  /** The hook as 仪式时光 holds it, over `state` and a catalog of `entries`. */
   function opener(state: State, entries: CatalogEntry[] = builtInScenes) {
     const go = vi.fn();
     const dispatch = vi.fn(() => true);
@@ -349,7 +488,7 @@ describe("useOpenRitual", () => {
     );
     return { open, go, dispatch };
   }
-  const reset = (id: RitualId) => ({ type: "scene.progress", id, progress: 0 });
+  const reset = (id: string) => ({ type: "scene.progress", id, progress: 0 });
 
   it("opens the scene as it stands, unless it is done", () => {
     const fresh = opener(createState());
@@ -400,13 +539,97 @@ describe("useOpenRitual", () => {
   });
 });
 
+describe("useOpenScene", () => {
+  /** The hook as 今日/心愿/小天地 hold it, over `state` and a catalog. */
+  function opener(state: State) {
+    const go = vi.fn();
+    const dispatch = vi.fn(() => true);
+    let open!: ReturnType<typeof useOpenScene>;
+    function Probe() {
+      open = useOpenScene();
+      return null;
+    }
+    renderToStaticMarkup(
+      createElement(
+        Context.Provider,
+        { value: { state, go, dispatch } as unknown as AppContext },
+        createElement(
+          SceneLibraryContext.Provider,
+          { value: { entries: builtInScenes } as never },
+          createElement(Probe),
+        ),
+      ),
+    );
+    return { open, go, dispatch };
+  }
+  const reset = (id: string) => ({ type: "scene.progress", id, progress: 0 });
+
+  it("opens a scene as it stands; a flagged visit always starts over", () => {
+    const fresh = opener(createState());
+    fresh.open(entryOf("lantern"));
+    expect(fresh.dispatch).not.toHaveBeenCalled();
+    expect(fresh.go).toHaveBeenCalledWith({
+      page: "scene",
+      id: "lantern",
+      entry: entryOf("lantern"),
+      daily: undefined,
+      vessel: undefined,
+      wishId: undefined,
+    });
+    // A done scene, unflagged: opened as it stands.
+    const done = opener(withRecords({ woodfish: 12 }));
+    done.open(entryOf("woodfish"));
+    expect(done.dispatch).not.toHaveBeenCalled();
+    // Any flagged visit — daily, vessel, 还愿, 回看 — resets first.
+    const half = opener(withRecords({ crane: 1 }));
+    half.open(entryOf("crane"), { vessel: "v1" });
+    expect(half.dispatch).toHaveBeenCalledWith(reset("crane"));
+    const walked = opener(withRecords({ crane: 3 }));
+    walked.open(entryOf("crane"), { replay: true });
+    expect(walked.dispatch).toHaveBeenCalledWith(reset("crane"));
+  });
+
+  it("passes the visit's flags on to the scene route", () => {
+    const { open, go } = opener(createState());
+    open(entryOf("tanzaku-tanabata"), {
+      daily: DAY,
+      vessel: "v1",
+      wishId: "w1",
+    });
+    expect(go).toHaveBeenCalledWith({
+      page: "scene",
+      id: "tanzaku-tanabata",
+      entry: entryOf("tanzaku-tanabata"),
+      daily: DAY,
+      vessel: "v1",
+      wishId: "w1",
+    });
+  });
+});
+
 describe("ritual scene copy", () => {
-  it("keeps the 还愿 lines and the 仪式时光 line safe", () => {
+  it("keeps the daily, vessel and 还愿 lines safe", () => {
     for (const text of [
       SCENE_RETURN_DONE_COPY,
       SCENE_RETURN_CTA,
-      HISTORY_SCENE_LINE,
-      "去完成还愿小仪式",
+      SCENE_VESSEL_DONE_COPY,
+      SCENE_KEEP_QUESTION,
+      SCENE_KEEP_CTA,
+      SCENE_DISCARD_CTA,
+      SCENE_DISCARDED_COPY,
+      SCENE_DAILY_CTA,
+      SCENE_DAILY_CAPTION,
+      sceneDailyDoneCopy("短册系竹"),
+      sceneDailyAnnounce("短册系竹"),
+      VESSEL_COPY.blurb,
+      VESSEL_COPY.emptyTitle,
+      VESSEL_COPY.emptyBody,
+      VESSEL_COPY.emptyAction,
+      FULFILL_VESSEL_COPY.pick,
+      FULFILL_VESSEL_COPY.none,
+      FULFILL_VESSEL_COPY.noneAction,
+      "已拿去许过愿",
+      "回看这场仪式",
     ])
       expect(() => assertSafeCopy(text)).not.toThrow();
   });

@@ -5,13 +5,14 @@ import { fileURLToPath } from "node:url";
 import { createElement, type ReactNode } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { beforeAll, describe, expect, it } from "vitest";
-import { createState, type Wish } from "@wbr/core";
+import { createState, dailyCollectibleId, type State } from "@wbr/core";
 import { Context, type AppContext } from "./context";
 import { Today } from "./home";
 import { Wishes } from "./pages";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
-import { WISH_SCENE_IDS } from "./scene-placement";
-import { WishDetail } from "./wishes";
+import { dailySceneSet, isWishScene, WISH_SCENE_IDS } from "./scene-placement";
+
+const day = "2026-10-07";
 
 const css = readFileSync(
   join(dirname(fileURLToPath(import.meta.url)), "style.css"),
@@ -27,19 +28,8 @@ beforeAll(() => {
   );
 });
 
-const wish: Wish = {
-  id: "w1",
-  title: "希望这次面试顺利",
-  intention: "",
-  status: "active",
-  archived: false,
-  createdAt: "2026-10-07T08:00:00.000Z",
-  notes: [],
-};
-
-/** Renders `node` in an App with the bundled scenes and one active wish. */
-function render(node: ReactNode) {
-  const state = { ...createState(), wishes: [wish] };
+/** Renders `node` in an App with the bundled scenes, as a parsed document. */
+function render(node: ReactNode, state: State = createState()) {
   const html = renderToStaticMarkup(
     createElement(
       Context.Provider,
@@ -62,7 +52,7 @@ describe("scene candy", () => {
 
   it("colours no list by position", () => {
     for (const rule of rules)
-      if (/ritual-tile|wish-practice|scene-card|scene-badge/.test(rule.selectorText))
+      if (/ritual-tile|wish-practice|daily-set|scene-card|scene-badge/.test(rule.selectorText))
         expect(rule.selectorText).not.toMatch(/nth-(child|of-type)/);
   });
 
@@ -78,32 +68,46 @@ describe("scene candy", () => {
     // No tile, card, badge or button picks a candy for one scene by itself.
     for (const rule of rules)
       if (!rule.selectorText.startsWith("[data-scene") && /\[data-scene="/.test(rule.selectorText))
-        expect(rule.selectorText).not.toMatch(/ritual-tile|wish-practice|scene-card|scene-badge|button/);
+        expect(rule.selectorText).not.toMatch(/ritual-tile|wish-practice|daily-set|scene-card|scene-badge|button/);
   });
 
-  it("is what the tiles and badges are painted with", () => {
+  it("is what the cards and badges are painted with", () => {
     const declared = (selector: string) =>
       rules
         .filter((r) => r.selectorText === selector)
         .map((r) => r.style.cssText)
         .join(" ");
-    expect(declared(".ritual-tile")).toMatch(/var\(--candy-tint/);
     expect(declared(".scene-badge")).toMatch(/var\(--candy-tint/);
     expect(declared(".scene-badge")).toMatch(/var\(--candy,/);
   });
 
-  it("follows a scene from 今日 to 心愿 to a wish's detail by its id", () => {
-    const today = render(createElement(Today, { day: "2026-10-07" }));
-    const wishes = render(createElement(Wishes));
-    const detail = render(createElement(WishDetail, { id: wish.id }));
+  it("follows a scene from 今日 to 心愿 by its id", () => {
+    const today = render(createElement(Today, { day }));
+    // One usable keepsake for every wish scene, so the whole shelf is up.
+    const state = createState();
+    for (const id of WISH_SCENE_IDS)
+      state.collectibles.push({
+        id: dailyCollectibleId(day, id),
+        kind: "scene",
+        title: builtInScenes.find((e) => e.id === id)!.title,
+        at: `${day}T08:00:00.000Z`,
+        sceneId: id,
+        ...(isWishScene(id) ? { wishScene: true } : {}),
+      });
+    const wishes = render(createElement(Wishes), state);
     expect(
-      [...today.querySelectorAll(".ritual-tile")].map((t) => t.getAttribute("data-scene")),
-    ).toEqual(["crane", "woodfish", "lantern", "furin-wind-chime", "shinto-torii", "tibetan-wheel"]);
+      [...today.querySelectorAll(".daily-set-card")].map((t) => t.getAttribute("data-scene")),
+    ).toEqual(dailySceneSet(builtInScenes, day).map((e) => e.id));
     for (const id of WISH_SCENE_IDS) {
       expect(wishes.querySelector(`.wish-practice-card[data-scene="${id}"] .scene-badge[data-scene="${id}"]`), id).not.toBeNull();
-      expect(detail.querySelector(`.wish-practice-actions [data-scene="${id}"]`), id).not.toBeNull();
     }
-    // The 2D crane on 今日 and the crane practice on 心愿 are one candy.
-    expect(today.querySelector('.ritual-tile[data-scene="crane"]')).not.toBeNull();
+    // The day's wish scene is the same candy on both surfaces: one id, one map.
+    const shared = dailySceneSet(builtInScenes, day).find((e) => isWishScene(e.id))!.id;
+    expect(
+      today.querySelector(`.daily-set-card[data-scene="${shared}"] .scene-badge[data-scene="${shared}"]`),
+    ).not.toBeNull();
+    expect(
+      wishes.querySelector(`.wish-practice-card[data-scene="${shared}"] .scene-badge[data-scene="${shared}"]`),
+    ).not.toBeNull();
   });
 });

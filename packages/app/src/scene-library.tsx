@@ -19,11 +19,7 @@ import { Icon } from "./art";
 import { contentIO, useContent } from "./content";
 import { useApp } from "./context";
 import { SceneBadge } from "./scene-icons";
-import {
-  recommendTodayScene,
-  ritualSceneEntry,
-  sceneSteps,
-} from "./scene-placement";
+import { ritualSceneEntry, sceneSteps } from "./scene-placement";
 
 export type BuiltInSceneEntry = CatalogEntry & {
   /** 一段 80–120 汉字：起源 + 历史脉络 + 基本意涵；练习／致敬语气。缺省 → 隐藏折叠块。 */
@@ -184,8 +180,7 @@ const Library = createContext<LibraryContext>(null!);
 export { Library as SceneLibraryContext };
 export const useSceneLibrary = () => useContext(Library);
 /**
- * Opens a core ritual as its 3D scene, the way a wish practice opens: 今日's
- * daily card and tiles, 仪式时光's 再次体验 and 还愿 all come through here.
+ * Opens a core ritual as its 3D scene: 仪式时光's 再次体验 comes through here.
  * A scene keeps its progress, so a ritual whose scene is done starts over,
  * and a 还愿 visit always starts at 0: it is walked after the wish came true.
  */
@@ -205,6 +200,39 @@ export function useOpenRitual() {
     if (progress > 0 && (wishId || progress >= sceneSteps(entry)))
       dispatch({ type: "scene.progress", id: entry.id, progress: 0 });
     go({ page: "scene", id: entry.id, entry, wishId });
+  };
+}
+/** What a walk is for; each flag makes it a fresh scene (progress to 0). */
+export type SceneVisit = {
+  /** 今日's daily set: the local day the keepsake is collected for. */
+  daily?: string;
+  /** A wish-type keepsake being used: its collectible id. */
+  vessel?: string;
+  /** A walk for this realized wish (还愿). */
+  wishId?: string;
+  /** 小天地's 回看, or 仪式时光's 再次体验: a plain fresh replay. */
+  replay?: boolean;
+};
+/**
+ * Opens a scene for a walk. A flagged visit (the daily set, a vessel use, a
+ * 还愿, a replay) always starts the scene over; an unflagged one opens it as
+ * it stands. No 2D fallback here: these ids come from the live catalog.
+ */
+export function useOpenScene() {
+  const { state, dispatch, go } = useApp();
+  return (entry: CatalogEntry, visit?: SceneVisit) => {
+    const progress =
+      state.sceneRecords.find((r) => r.id === entry.id)?.progress ?? 0;
+    if (progress > 0 && visit)
+      dispatch({ type: "scene.progress", id: entry.id, progress: 0 });
+    go({
+      page: "scene",
+      id: entry.id,
+      entry,
+      daily: visit?.daily,
+      vessel: visit?.vessel,
+      wishId: visit?.wishId,
+    });
   };
 }
 export function SceneLibraryProvider({ children }: { children: ReactNode }) {
@@ -291,37 +319,6 @@ export function SceneLibraryProvider({ children }: { children: ReactNode }) {
   );
 }
 /** 今日's scene recommendation. */
-export const SCENE_DISCOVERY_COPY = {
-  heading: "今日场景推荐",
-  browse: "浏览场景目录",
-  note: "点开时准备内容，记录留在本机。",
-} as const;
-/** A small heading with the catalog link over one quiet scene row, so the
- * daily ritual's mint 开始今日仪式 stays the first call to action. */
-export function SceneRecommendation({ day }: { day: string }) {
-  const { entries } = useSceneLibrary(),
-    { go } = useApp();
-  const entry = recommendTodayScene(entries, day);
-  return (
-    <section className="scene-discovery">
-      <div className="section-heading">
-        <h2>{SCENE_DISCOVERY_COPY.heading}</h2>
-        <button className="text-button" onClick={() => go({ page: "scenes" })}>
-          {SCENE_DISCOVERY_COPY.browse} <Icon name="arrow" />
-        </button>
-      </div>
-      {entry && (
-        <SceneCard
-          id={entry.id}
-          title={entry.title}
-          onClick={() => go({ page: "scene", id: entry.id, entry })}
-        >
-          <small>{SCENE_DISCOVERY_COPY.note}</small>
-        </SceneCard>
-      )}
-    </section>
-  );
-}
 export const formatBytes = (bytes: number) =>
   `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
 /** When a search in 场景目录 finds nothing. */

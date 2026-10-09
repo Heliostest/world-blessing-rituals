@@ -21,6 +21,10 @@ export type Route = {
   id?: string;
   wishId?: string;
   entry?: CatalogEntry;
+  /** A walk of 今日's daily set: the local day, so the keepsake lands once. */
+  daily?: string;
+  /** A wish-type keepsake being used (许愿 or 还愿): its collectible id. */
+  vessel?: string;
 };
 export type AppContext = {
   state: State;

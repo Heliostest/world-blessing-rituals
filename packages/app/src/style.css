@@ -978,6 +978,15 @@ button:hover:not(:disabled) {
   font-size: 17px;
   font-weight: 800;
 }
+/* A keepsake's own buttons stack, full-width, like the island's big exits. */
+.form-card > .button {
+  width: 100%;
+  margin-top: 10px;
+}
+.form-card > .vessel-spent-line {
+  margin: 6px 0 0;
+  color: var(--leaf-ink);
+}
 .field-heading {
   display: flex;
   align-items: center;
@@ -1439,6 +1448,10 @@ button:hover:not(:disabled) {
   margin-top: 8px;
   min-height: 40px;
   font-size: 13px;
+}
+/* A vessel row on 来还个愿: the same card as on 心愿, spaced from the pick line. */
+.linked-ritual .vessel-card {
+  margin-top: 8px;
 }
 .linked-ritual svg {
   width: 16px;
@@ -2145,6 +2158,7 @@ button:hover:not(:disabled) {
 }
 .wish-card > svg,
 .wish-practice-card > svg,
+.daily-set-card > svg,
 .scene-card > svg,
 .settings-row > svg {
   width: 30px;
@@ -2167,6 +2181,7 @@ button:hover:not(:disabled) {
 /* Panels that are buttons sink into their ledge when pressed. */
 .wish-card:active,
 .wish-practice-card:active,
+.daily-set-card:active,
 .scene-card:active,
 .collection-card:active {
   transform: translateY(4px);
@@ -2708,6 +2723,11 @@ button:hover:not(:disabled) {
 .reward-ghost .art-small .reference-crop {
   width: 100%;
   max-width: none;
+}
+/* A scene keepsake flies as its drawn icon, filling the ghost's box. */
+.reward-ghost .scene-art .scene-icon {
+  width: 78%;
+  height: 78%;
 }
 /* The leaf note that flies to 心愿: a small paper chip in leaf ink. */
 .reward-ghost--leaf .reward-ghost-arc {
@@ -3694,6 +3714,58 @@ button:hover:not(:disabled) {
 .scene-done-row .scene-done {
   margin: 0;
 }
+/* A 许愿 vessel's held line, quoted on paper, and the keep-or-not choice. */
+.scene-keep-line {
+  max-width: 100%;
+  margin: 0;
+  padding: 8px 16px;
+  background: var(--paper);
+  border: 2.5px solid var(--leaf-ledge);
+  border-radius: 14px;
+  box-shadow: 0 0 0 2px #bfe3ad;
+  color: var(--leaf-ink);
+  font-weight: 800;
+  font-size: 15px;
+}
+.scene-keep-question {
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 700;
+}
+.scene-keep-choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+/* A box-less vessel scene offers one line of its own at done instead. */
+.scene-keep-form {
+  display: grid;
+  gap: 8px;
+  width: min(360px, 100%);
+  margin: 0 auto;
+}
+.scene-keep-form label {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink-soft);
+}
+.scene-keep-form input {
+  width: 100%;
+  border: 2.5px solid var(--field-edge);
+  border-radius: 18px;
+  padding: 10px 14px;
+  background: var(--paper);
+  color: var(--ink);
+  /* 16px or more: iOS zooms the page into smaller text fields on focus. */
+  font-size: 16px;
+  font-weight: 600;
+}
+.scene-keep-form input:focus {
+  border-color: var(--mint);
+  outline-offset: 2px;
+  box-shadow: 0 3px 0 var(--mint-ledge);
+}
 /* The download and load-error cards' lines, at body weight too. */
 .scene-download p,
 .scene-load-error p {
@@ -3853,6 +3925,87 @@ button:hover:not(:disabled) {
   width: 66px;
   max-width: 88%;
   height: auto;
+}
+/* A scene without a drawn icon shows a leaf, like the badge does. */
+.scene-art > svg:not(.scene-icon) {
+  width: 34px;
+  height: 34px;
+  color: var(--leaf-ink);
+  stroke-width: 2;
+}
+/* 今日's daily set: three scene cards, badge first like the 心愿 rows. */
+.daily-set {
+  margin: 8px 0 18px;
+  display: grid;
+  gap: 10px;
+}
+.daily-set-blurb {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.daily-set-grid {
+  display: grid;
+  gap: 16px;
+}
+.daily-set-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  align-items: center;
+  text-align: left;
+  padding: 12px 14px 12px 12px;
+  border-radius: 24px;
+  border: 3px solid var(--rim);
+  background: var(--sand);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: var(--panel-shadow);
+}
+.daily-set-card > .scene-badge {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.daily-set-card strong {
+  grid-column: 2;
+  align-self: end;
+  font-size: 16px;
+  font-weight: 900;
+}
+.daily-set-card small {
+  grid-column: 2;
+  align-self: start;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+.daily-set-card > svg {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+/* The day's keepsake, already collected: a small mint check on the corner. */
+.collected-dot {
+  position: absolute;
+  top: -8px;
+  right: 46px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2.5px solid var(--rim);
+  background: var(--leaf-tint);
+  color: var(--leaf-ink);
+  box-shadow: 0 2px 0 var(--leaf-ledge);
+}
+.collected-dot > svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 3;
 }
 .wish-practice {
   margin: 8px 0 18px;

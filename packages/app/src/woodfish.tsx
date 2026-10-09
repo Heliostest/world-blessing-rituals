@@ -22,6 +22,7 @@ export function Woodfish({
   contentClient,
   sceneId,
   onFailure,
+  whenIdleRef,
 }: {
   pulse: number;
   active: boolean;
@@ -34,6 +35,8 @@ export function Woodfish({
   contentClient?: WoodfishContext["content"];
   sceneId?: string;
   onFailure?(error?: unknown): void;
+  /** Set while the scene lives, so a ritual can wait out the mallet. */
+  whenIdleRef?: { current: (() => Promise<void>) | null };
 }) {
   const host = useRef<HTMLDivElement>(null);
   const scene = useRef<SceneSession<WoodfishController> | null>(null);
@@ -77,8 +80,13 @@ export function Woodfish({
         if (!disposed) onFailure?.(error);
       },
     });
+    // The controller arrives once the engine loads; read it lazily each call.
+    if (whenIdleRef)
+      whenIdleRef.current = () =>
+        scene.current?.controller?.whenIdle?.() ?? Promise.resolve();
     return () => {
       disposed = true;
+      if (whenIdleRef) whenIdleRef.current = null;
       scene.current?.dispose();
       scene.current = null;
     };

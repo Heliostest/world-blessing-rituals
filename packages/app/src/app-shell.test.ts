@@ -64,3 +64,19 @@ it("names a page in its ribbon only when the page has no title of its own", asyn
   expect(ribbon()).toBe("许个小心愿");
   ui.unmount();
 });
+
+it("marks every dock tab with data-tab, so reward flights can land on one", async () => {
+  vi.spyOn(window, "scrollTo").mockImplementation(() => {});
+  const ui = renderUI(
+    createElement(BlessingApp, {
+      host: { read: async () => null, write: async () => {} },
+    }),
+  );
+  await settle();
+  expect(
+    [...ui.host.querySelectorAll(".bottom-nav button")].map(
+      (b) => b.dataset.tab,
+    ),
+  ).toEqual(["today", "wishes", "world", "me"]);
+  ui.unmount();
+});

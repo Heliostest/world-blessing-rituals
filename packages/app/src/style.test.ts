@@ -282,6 +282,89 @@ describe("completion page", () => {
     );
     expect(getComputedStyle(bar).height).toBe("68px");
   });
+
+  it("enters in stages, not all at once, with the confirm last", () => {
+    expect(declared(".completion > *")).toMatch(
+      /animation: completion-in 0\.3s var\(--ease\) backwards/,
+    );
+    expect(declared(".completion > .celebration")).toMatch(/animation-delay: 0\.08s/);
+    expect(declared(".completion > .button")).toMatch(/animation-delay: 0\.3s/);
+    expect(declared(".completion .reward-number")).toMatch(/animation: completion-pop/);
+    expect(declared(".completion .title-badge")).toMatch(/animation: completion-stamp/);
+  });
+
+  it("shows the item's own sticker in an inventory slot, named with its destination", () => {
+    const sticker = declared(".reward-sticker");
+    expect(sticker).toMatch(/background: var\(--slot\)/);
+    expect(sticker).toMatch(/border: 3px solid var\(--rim\)/);
+    expect(declared(".reward-destination")).toMatch(/color: var\(--ink-soft\)/);
+    expect(declared(".reward-wish-note")).toMatch(/color: var\(--muted\)/);
+  });
+});
+
+describe("reward flight", () => {
+  it("fixes the ghost layer above the dock and the save pill, touching nothing", () => {
+    const layer = declared(".reward-flight-layer");
+    expect(layer).toMatch(/position: fixed/);
+    expect(layer).toMatch(/inset: 0/);
+    expect(layer).toMatch(/pointer-events: none/);
+    expect(layer).toMatch(/z-index: 30/);
+    // The dock (10) and the save pill (20) both sit below it.
+    expect(px(declared(".bottom-nav").match(/z-index: (\d+)/)![1])).toBeLessThan(30);
+  });
+
+  it("styles the tab badge as a 12px butter bubble with a ring, never a ledge", () => {
+    const badge = place(
+      `<nav class="bottom-nav"><button><span>今日</span><i>+1</i></button></nav>`,
+      ".bottom-nav i",
+    );
+    const style = getComputedStyle(badge);
+    expect(px(style.fontSize)).toBeGreaterThanOrEqual(12);
+    const rule = declared(".bottom-nav i");
+    expect(rule).toMatch(/background: var\(--butter\)/);
+    // Ring only: the shadow sits flat (no y offset), unlike a ledge.
+    expect(rule).toMatch(/box-shadow: 0(px)? 0(px)? 0(px)? 2px var\(--butter-ledge\)/);
+    expect(rule).not.toMatch(/box-shadow:[^;]*\b0 [1-9]\d*px 0\b/);
+    expect(ratio(token("--ink"), token("--butter"))).toBeGreaterThanOrEqual(4.5);
+  });
+
+  it.each(["reward-land", "tab-hop", "badge-pop", "sparkle", "completion-in"])(
+    "defines the %s keyframes",
+    (name) => {
+      expect(css).toMatch(new RegExp(`@keyframes ${name} \\{`));
+    },
+  );
+
+  it("hides an arriving slot by opacity, so it stays in the accessibility tree", () => {
+    const rule = declared("[data-arriving]");
+    expect(rule).toMatch(/opacity: 0/);
+    expect(rule).not.toMatch(/visibility/);
+    expect(rule).not.toMatch(/display/);
+  });
+
+  it("rings a landed slot with a static 新 mark, and lets sparks end invisible", () => {
+    const mark = declared(".new-mark");
+    expect(mark).toMatch(/background: var\(--leaf\)/);
+    expect(mark).toMatch(/box-shadow: 0(px)? 0(px)? 0(px)? 2px var\(--leaf-ledge\)/);
+    expect(declared(".reward-landed")).toMatch(/animation: reward-land/);
+    // Base opacity 0, so with animations off the sparks never show.
+    expect(declared(".reward-sparks i")).toMatch(/opacity: 0/);
+    expect(declared(".reward-sparks i:nth-child(1)")).toMatch(/--spark-x: -24px/);
+  });
+
+  it("bumps the count pill and hops the tab at landing", () => {
+    expect(declared(".count-pill.pill-bump")).toMatch(/animation: badge-pop/);
+    expect(declared(".bottom-nav button.tab-hop")).toMatch(/animation: tab-hop/);
+  });
+
+  it("keeps the kill switch total, so none of the new motion runs reduced", () => {
+    const kill = rules
+      .filter((r) => r.selectorText.split(/\s*,\s*/).includes(".reduce-motion *"))
+      .map((r) => r.style.cssText)
+      .join(" ");
+    expect(kill).toMatch(/animation: none !important/);
+    expect(kill).toMatch(/transition: none !important/);
+  });
 });
 
 describe("了解此仪式 disclosure", () => {

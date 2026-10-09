@@ -850,8 +850,35 @@ button:hover:not(:disabled) {
   color: var(--ink);
   fill: #ffffff;
 }
+.bottom-nav button {
+  position: relative;
+}
+/* The tab's +1 badge: a read-only butter bubble, so a ring, never a ledge. */
 .bottom-nav i {
+  position: absolute;
+  top: 0;
+  right: 8%;
   display: none;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--butter);
+  border: 2px solid var(--rim);
+  box-shadow: 0 0 0 2px var(--butter-ledge);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1;
+}
+.bottom-nav i:not(:empty) {
+  display: grid;
+  place-items: center;
+  animation: badge-pop 0.3s var(--ease);
+}
+.bottom-nav button.tab-hop {
+  animation: tab-hop 0.35s var(--ease);
 }
 /* Original-image crops are masked only at the cream perimeter. Image pixels stay intact. */
 .art {
@@ -1901,6 +1928,61 @@ button:hover:not(:disabled) {
 .completion .leaf-footer {
   margin-top: 13px;
 }
+/* The card enters in stages — number, postcard, badge, then the confirm —
+   instead of everything at once. */
+.completion > * {
+  animation: completion-in 0.3s var(--ease) backwards;
+}
+.completion > .celebration {
+  animation-delay: 0.08s;
+}
+.completion > .reward-slot {
+  animation-delay: 0.16s;
+}
+.completion > .completion-stats {
+  animation-delay: 0.24s;
+}
+.completion > .button {
+  animation-delay: 0.3s;
+}
+.completion > .leaf-footer {
+  animation-delay: 0.38s;
+}
+.completion .reward-number {
+  animation: completion-pop 0.32s 0.12s var(--ease) backwards;
+}
+.completion .title-badge {
+  animation: completion-stamp 0.3s 0.3s var(--ease) backwards;
+}
+/* The item's own sticker, the same inventory slot the 小天地 shelf shows;
+   the flight ghost is measured from exactly this box. */
+.reward-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 14px;
+}
+.reward-sticker {
+  display: inline-flex;
+  padding: 7px;
+  background: var(--slot);
+  border: 3px solid var(--rim);
+  border-radius: 16px;
+  box-shadow:
+    0 0 0 2px var(--edge),
+    var(--soft-drop);
+}
+.reward-destination {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.reward-wish-note {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
 .share-panel {
   background: var(--sand);
   border: 3px solid var(--rim);
@@ -1952,6 +2034,9 @@ button:hover:not(:disabled) {
   white-space: nowrap;
   /* A read-only counter: a ring, no ledge (ledges mean "tap me"). */
   box-shadow: 0 0 0 2px #f2d98a;
+}
+.count-pill.pill-bump {
+  animation: badge-pop 0.3s var(--ease);
 }
 /* Polka dots belong to grounds (the page, a stage). A card on the dotted
    page is a solid tint, so dots never sit on dots. */
@@ -2230,6 +2315,69 @@ button:hover:not(:disabled) {
   width: 30%;
   background: transparent;
   padding: 0;
+}
+.room-shelf button,
+.collection-card,
+.wish-card,
+.linked-ritual p {
+  position: relative;
+}
+/* A reward still in the air: hidden by opacity, so it stays in the
+   accessibility tree and is revealed, not replaced, on landing. */
+[data-arriving] {
+  opacity: 0;
+}
+.reward-landed {
+  animation: reward-land 0.3s var(--ease);
+}
+/* The static 新 mark: a leaf chip, still shown when motion is reduced. */
+.new-mark {
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--leaf);
+  border: 2px solid var(--rim);
+  box-shadow: 0 0 0 2px var(--leaf-ledge);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+  animation: badge-pop 0.3s var(--ease);
+}
+/* Landing garnish: three leaf sparks that scatter and fade. Base opacity 0,
+   so with animations off they never show. */
+.reward-sparks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.reward-sparks i {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--leaf);
+  border: 2px solid var(--leaf-ledge);
+  opacity: 0;
+  animation: sparkle 0.5s var(--ease) 0.05s forwards;
+}
+.reward-sparks i:nth-child(1) {
+  --spark-x: -24px;
+  --spark-y: -18px;
+}
+.reward-sparks i:nth-child(2) {
+  --spark-x: 2px;
+  --spark-y: -28px;
+  animation-delay: 0.12s;
+}
+.reward-sparks i:nth-child(3) {
+  --spark-x: 24px;
+  --spark-y: -14px;
+  animation-delay: 0.19s;
 }
 .empty-shelf {
   font-size: 12px;
@@ -2538,6 +2686,40 @@ button:hover:not(:disabled) {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
 }
+/* The flying sticker's own layer: fixed above the dock and the save pill,
+   outside <main> so no route remount or page-in transform offsets it. */
+.reward-flight-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+}
+.reward-ghost {
+  position: fixed;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  will-change: transform;
+}
+.reward-ghost .art {
+  width: 100%;
+  height: 100%;
+}
+.reward-ghost .art-small .reference-crop {
+  width: 100%;
+  max-width: none;
+}
+/* The leaf note that flies to 心愿: a small paper chip in leaf ink. */
+.reward-ghost--leaf .reward-ghost-arc {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--leaf-tint);
+  border: 2px solid var(--leaf-ledge);
+  border-radius: 8px;
+  color: var(--leaf-ink);
+}
 @keyframes page-in {
   from {
     opacity: 0;
@@ -2564,6 +2746,88 @@ button:hover:not(:disabled) {
   to {
     transform: none;
     opacity: 1;
+  }
+}
+@keyframes completion-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes completion-pop {
+  0% {
+    opacity: 0;
+    transform: rotate(-5deg) scale(0.6);
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(-5deg) scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+}
+@keyframes completion-stamp {
+  from {
+    opacity: 0;
+    transform: rotate(-12deg) scale(1.3);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-4deg);
+  }
+}
+/* Squash and stretch as the sticker settles into its slot. */
+@keyframes reward-land {
+  0% {
+    transform: scale(1.15);
+  }
+  55% {
+    transform: scale(0.94);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes tab-hop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes badge-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.4);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--spark-x, 0), var(--spark-y, -20px)) scale(1);
   }
 }
 .reduce-motion *,
@@ -3417,6 +3681,18 @@ button:hover:not(:disabled) {
 .scene-done {
   margin: 14px 0 0;
   text-align: center;
+}
+/* At done, the exit CTA sits with the closing line, in view right under
+   the stage instead of below the fold. */
+.scene-done-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 4px;
+}
+.scene-done-row .scene-done {
+  margin: 0;
 }
 /* The download and load-error cards' lines, at body weight too. */
 .scene-download p,

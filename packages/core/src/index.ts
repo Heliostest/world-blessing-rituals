@@ -115,6 +115,19 @@ export type Action =
     }
   | { type: "ritual.step" }
   | { type: "ritual.finish"; id: string; at: string }
+  /**
+   * A ritual walked as its 3D scene for a wish (还愿): one completed session
+   * and a note on the wish, at once. Never merit or a collectible (the
+   * scene red line), and any 2D session in progress is left alone.
+   */
+  | {
+      type: "ritual.scene";
+      id: string;
+      ritual: RitualId;
+      wishId: string;
+      startedAt: string;
+      at: string;
+    }
   | { type: "settings"; key: keyof State["settings"]; value: boolean };
 
 /** A fresh state; `settings` overrides defaults (e.g. the system's motion preference). */
@@ -142,6 +155,14 @@ function wishOf(s: State, id: string) {
 }
 function updateWish(s: State, w: Wish): State {
   return { ...s, wishes: s.wishes.map((old) => (old.id === w.id ? w : old)) };
+}
+/** The note a completed ritual leaves on its linked wish. */
+function ritualNote(sessionId: string, ritual: RitualId, at: string): Note {
+  return {
+    id: `ritual:${sessionId}`,
+    text: `为这个心愿，${rituals[ritual].name}`,
+    at,
+  };
 }
 export function reduce(s: State, a: Action): State {
   switch (a.type) {
@@ -283,14 +304,7 @@ export function reduce(s: State, a: Action): State {
         const w = wishOf(s, r.wishId);
         next = updateWish(s, {
           ...w,
-          notes: [
-            ...w.notes,
-            {
-              id: `ritual:${r.id}`,
-              text: `为这个心愿，${rituals[r.ritual].name}`,
-              at: a.at,
-            },
-          ],
+          notes: [...w.notes, ritualNote(r.id, r.ritual, a.at)],
         });
       }
       return {
@@ -306,6 +320,40 @@ export function reduce(s: State, a: Action): State {
             title: rituals[r.ritual].object,
             at: a.at,
             wishId: r.wishId,
+          },
+        ],
+      };
+    }
+    case "ritual.scene": {
+      if (s.sessions.some((r) => r.id === a.id)) return s;
+      // Checked like a save is on restore, so a record can never break one;
+      // nor may it take the 2D session's id, which could then never settle.
+      if (
+        !id(a.id) ||
+        a.id === s.activeSession?.id ||
+        !kind(a.ritual) ||
+        !date(a.startedAt) ||
+        !date(a.at)
+      )
+        throw new Error("这次仪式的记录无效");
+      const w = wishOf(s, a.wishId);
+      if (w.archived || w.status === "fulfilled")
+        throw new Error("请选择进行中的心愿");
+      const next = updateWish(s, {
+        ...w,
+        notes: [...w.notes, ritualNote(a.id, a.ritual, a.at)],
+      });
+      return {
+        ...next,
+        sessions: [
+          ...s.sessions,
+          {
+            id: a.id,
+            ritual: a.ritual,
+            progress: rituals[a.ritual].steps,
+            startedAt: a.startedAt,
+            wishId: a.wishId,
+            completedAt: a.at,
           },
         ],
       };

@@ -7,6 +7,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import type { RitualId } from "@wbr/core";
 import { CACHE_BUDGET, parsePack, type Pack } from "@wbr/content";
 import {
   createSceneLibrary,
@@ -18,7 +19,11 @@ import { Icon } from "./art";
 import { contentIO, useContent } from "./content";
 import { useApp } from "./context";
 import { SceneBadge } from "./scene-icons";
-import { recommendTodayScene } from "./scene-placement";
+import {
+  recommendTodayScene,
+  ritualSceneEntry,
+  sceneSteps,
+} from "./scene-placement";
 
 export type BuiltInSceneEntry = CatalogEntry & {
   /** 一段 80–120 汉字：起源 + 历史脉络 + 基本意涵；练习／致敬语气。缺省 → 隐藏折叠块。 */
@@ -114,7 +119,7 @@ export const builtInScenes: BuiltInSceneEntry[] = [
       "乌克兰与波兰部分地区的仲夏习俗中，可以见到花环、歌唱、火光与水上放环，各地做法与节期有所不同。这里借这些公开的民俗意象，让一圈花叶载着祝愿缓缓漂远。本体验为产品改编的致敬练习，不代表所有斯拉夫传统，也不以花环预测命运。",
   },
   // Product-original practices: no traditionSlug, so no tradition is implied.
-  // They share ids with the 2D crane/lantern rituals but live on the scene route.
+  // They share ids with the crane/lantern rituals, which open them (useOpenRitual).
   {
     id: "crane",
     title: "折一只纸鹤",
@@ -178,6 +183,30 @@ const Library = createContext<LibraryContext>(null!);
 /** What `SceneLibraryProvider` provides; tests stand in their own. */
 export { Library as SceneLibraryContext };
 export const useSceneLibrary = () => useContext(Library);
+/**
+ * Opens a core ritual as its 3D scene, the way a wish practice opens: 今日's
+ * daily card and tiles, 仪式时光's 再次体验 and 还愿 all come through here.
+ * A scene keeps its progress, so a ritual whose scene is done starts over,
+ * and a 还愿 visit always starts at 0: it is walked after the wish came true.
+ */
+export function useOpenRitual() {
+  const { state, dispatch, go } = useApp(),
+    { entries } = useSceneLibrary();
+  return (ritual: RitualId, wishId?: string) => {
+    const entry = ritualSceneEntry(entries, ritual);
+    if (!entry || !supportsScene(entry.engine)) {
+      // TODO: every ritual ships a bundled scene, so this is only reached if
+      // a remote catalog drops one or needs a newer App for it.
+      go({ page: "ritual", id: ritual, wishId });
+      return;
+    }
+    const progress =
+      state.sceneRecords.find((r) => r.id === entry.id)?.progress ?? 0;
+    if (progress > 0 && (wishId || progress >= sceneSteps(entry)))
+      dispatch({ type: "scene.progress", id: entry.id, progress: 0 });
+    go({ page: "scene", id: entry.id, entry, wishId });
+  };
+}
 export function SceneLibraryProvider({ children }: { children: ReactNode }) {
   const environment = useContent(),
     { active } = useApp();

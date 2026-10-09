@@ -1,4 +1,4 @@
-import { dailyRitual } from "@wbr/core";
+import { dailyRitual, rituals, type RitualId } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
 import { recommendScene } from "@wbr/content/catalog";
 
@@ -55,6 +55,26 @@ export function findSceneEntry(
   return entries.find((e) => e.id === id);
 }
 
+/** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
+export const sceneSteps = (entry: CatalogEntry) =>
+  entry.engine === "woodfish@1" ? 12 : 3;
+
+/**
+ * The 3D scene a core ritual opens. Each ritual (woodfish, crane, lantern)
+ * has one, under the ritual's own id.
+ */
+export function ritualSceneEntry(
+  entries: CatalogEntry[],
+  ritual: RitualId,
+): CatalogEntry | undefined {
+  return findSceneEntry(entries, ritual);
+}
+
+/** The core ritual a scene is walked as, by their shared id, if any. */
+export function sceneRitual(id: string): RitualId | undefined {
+  return Object.keys(rituals).includes(id) ? (id as RitualId) : undefined;
+}
+
 export function wishSceneEntries(entries: CatalogEntry[]): CatalogEntry[] {
   return WISH_SCENE_IDS.map((id) => findSceneEntry(entries, id)).filter(
     (e): e is CatalogEntry => !!e,
@@ -70,9 +90,9 @@ export function todaySceneEntries(entries: CatalogEntry[]): CatalogEntry[] {
 /**
  * Daily recommendation on 今日: a scene the page does not already offer that
  * day. Never a wish-practice scene (those live on 心愿), nor today's featured
- * practice, nor the scene of today's random ritual (a 2D ritual and its scene
- * share an id, e.g. woodfish). If that leaves nothing, the wish-free pool,
- * then the full list.
+ * practice, nor the scene of today's random ritual, which the daily card
+ * opens (a ritual and its scene share an id, e.g. woodfish). If that leaves
+ * nothing, the wish-free pool, then the full list.
  */
 export function recommendTodayScene(
   entries: CatalogEntry[],

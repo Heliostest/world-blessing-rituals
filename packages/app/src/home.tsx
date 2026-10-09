@@ -1,7 +1,11 @@
 import { dailyRitual, rituals, type RitualId } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { useApp } from "./context";
-import { SceneRecommendation, useSceneLibrary } from "./scene-library";
+import {
+  SceneRecommendation,
+  useOpenRitual,
+  useSceneLibrary,
+} from "./scene-library";
 import { SceneArt } from "./scene-icons";
 import {
   TODAY_PRACTICE_COPY,
@@ -18,6 +22,7 @@ export const ritualTitle = {
 export function Today({ day }: { day: string }) {
   const { state, go } = useApp();
   const { entries } = useSceneLibrary();
+  const openRitual = useOpenRitual();
   const id = dailyRitual(day);
   const merit = state.ledger.reduce((n, l) => n + l.amount, 0);
   const collected = new Set(state.collectibles.map((c) => c.kind));
@@ -37,6 +42,8 @@ export function Today({ day }: { day: string }) {
       </header>
       <p className="lead">今天，也给自己一点好运。</p>
       <SceneRecommendation day={day} />
+      {/* The one way left onto the 2D ritual page: a session begun there
+          before rituals opened as scenes still settles where it started. */}
       {state.activeSession && (
         <button
           className="resume-banner"
@@ -67,7 +74,7 @@ export function Today({ day }: { day: string }) {
           </p>
           <button
             className="button primary"
-            onClick={() => go({ page: "ritual", id })}
+            onClick={() => openRitual(id)}
           >
             开始今日仪式
           </button>
@@ -104,7 +111,7 @@ export function Today({ day }: { day: string }) {
               className="ritual-tile"
               key={kind}
               data-scene={kind}
-              onClick={() => go({ page: "ritual", id: kind })}
+              onClick={() => openRitual(kind)}
             >
               <Art kind={kind} small />
               <strong>

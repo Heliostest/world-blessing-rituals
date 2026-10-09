@@ -3,7 +3,7 @@ import { rituals } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { formatDate, statusText, useApp } from "./context";
 import { ritualTitle } from "./home";
-import { SceneCard, useSceneLibrary } from "./scene-library";
+import { SceneCard, useOpenRitual, useSceneLibrary } from "./scene-library";
 import { SceneBadge } from "./scene-icons";
 import {
   WISH_PRACTICE_COPY,
@@ -383,8 +383,14 @@ export function Me() {
     </>
   );
 }
+/**
+ * 仪式时光's line for a ritual walked as its scene: it left a note on its
+ * wish, and never merit or a keepsake.
+ */
+export const HISTORY_SCENE_LINE = "场景体验";
 export function History() {
   const { state, go } = useApp();
+  const openRitual = useOpenRitual();
   return (
     <>
       <PageHead eyebrow="你留给自己的每一分钟" title="仪式时光" />
@@ -402,16 +408,27 @@ export function History() {
       </div>
       {state.sessions.length ? (
         <ol className="timeline">
-          {[...state.sessions].reverse().map((s) => (
-            <li key={s.id}>
-              <small>{formatDate(s.completedAt!)}</small>
-              {/* The title the ritual has everywhere else, not the core
-                  name, which a 3D scene in the list above may share. */}
-              <h3>{ritualTitle[s.ritual]}</h3>
-              <p>功德 +10 · 收藏了{rituals[s.ritual].object}</p>
-              <button className="text-button" onClick={() => go({ page: "ritual", id: s.ritual })}>再次体验</button>
-            </li>
-          ))}
+          {[...state.sessions].reverse().map((s) => {
+            // Only a 2D ritual settled with merit (and its keepsake).
+            const merit = state.ledger.find((l) => l.id === s.id);
+            const wish = state.wishes.find((w) => w.id === s.wishId);
+            return (
+              <li key={s.id}>
+                <small>{formatDate(s.completedAt!)}</small>
+                {/* The title the ritual has everywhere else, not the core
+                    name, which a 3D scene in the list above may share. */}
+                <h3>{ritualTitle[s.ritual]}</h3>
+                <p>
+                  {merit
+                    ? `功德 +${merit.amount} · 收藏了${rituals[s.ritual].object}`
+                    : wish
+                      ? `${HISTORY_SCENE_LINE} · 为「${wish.title}」记了一笔`
+                      : HISTORY_SCENE_LINE}
+                </p>
+                <button className="text-button" onClick={() => openRitual(s.ritual)}>再次体验</button>
+              </li>
+            );
+          })}
         </ol>
       ) : state.sceneRecords.length ? null : (
         <Empty title="故事才刚刚开始" body="完成的小仪式，会一一记在这里。" />

@@ -9,6 +9,7 @@ import type {
   SceneLease,
   SceneProgress,
 } from "@wbr/content/catalog";
+import { hasReturnRitual } from "@wbr/core";
 import { WISH_WRITE_COPY } from "@wbr/gestures";
 import type { WoodfishContext } from "./scene-engines";
 import { sceneEngines } from "./scene-engines";
@@ -20,7 +21,7 @@ import { RitualNarrativeBlurb } from "./ritual-narrative";
 import { FeedbackControls } from "./feedback-controls";
 import { describeSceneLoadError } from "./scene-load-error";
 import { sceneWish } from "./scene-wish";
-import { sceneStage } from "./scene-placement";
+import { sceneRitual, sceneStage, sceneSteps } from "./scene-placement";
 import { rectOf } from "./reward-flight";
 
 function ProceduralScene({
@@ -112,19 +113,23 @@ export function FavoriteChip({ id, favorite }: { id: string; favorite: boolean }
     </button>
   );
 }
-/** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
-const sceneSteps = (entry: CatalogEntry) => (entry.engine === "woodfish@1" ? 12 : 3);
 /** The closing line and the two exits shown when a scene's steps are done. */
 export const SCENE_DONE_COPY = "这次体验已经完成，记录已留下。";
 export const SCENE_DONE_WISH_CTA = "去心愿看看";
 export const SCENE_DONE_CTA = "完成";
+/** A 还愿 visit's closing line, and its one exit, back to 来还个愿. */
+export const SCENE_RETURN_DONE_COPY = "还愿小仪式已完成，也为这个心愿记了一笔。";
+export const SCENE_RETURN_CTA = "继续还愿 · 留下这份心情";
 function LoadedScene({
   entry,
   lease,
+  wishId,
   failed,
 }: {
   entry: CatalogEntry;
   lease?: SceneLease;
+  /** On a 还愿 visit: the realized wish the ritual is walked for. */
+  wishId?: string;
   failed(error?: unknown): void;
 }) {
   const {
@@ -144,8 +149,32 @@ function LoadedScene({
   /** The wish this visit kept from the scene's wish box, if any. */
   const [keptWish, setKeptWish] = useState<string>();
   const doneCta = useRef<HTMLButtonElement>(null);
-  const checkpoint = (n: number) =>
+  // A 还愿 visit: a ritual's scene, for a wish still waiting on its 还愿.
+  const ritual = sceneRitual(entry.id);
+  const returnWish = ritual
+    ? state.wishes.find(
+        (w) => w.id === wishId && w.status === "realized" && !w.archived,
+      )
+    : undefined;
+  // One record per visit, however often the last step reports.
+  const [visit] = useState(() => ({ id: uid(), startedAt: now() }));
+  const checkpoint = (n: number) => {
     dispatch({ type: "scene.progress", id: entry.id, progress: n });
+    // The last step of a 还愿 visit counts for the wish: a session and a
+    // note on it, never merit or a collectible (the scene red line).
+    if (ritual && returnWish && n >= steps)
+      dispatch({
+        type: "ritual.scene",
+        id: visit.id,
+        ritual,
+        wishId: returnWish.id,
+        startedAt: visit.startedAt,
+        at: now(),
+      });
+  };
+  /** The wish to go on fulfilling, once this ritual counts for it. */
+  const returnedFor =
+    returnWish && hasReturnRitual(state, returnWish) ? returnWish.id : undefined;
   const favoriteChip = (
     <FavoriteChip id={entry.id} favorite={!!record?.favorite} />
   );
@@ -154,9 +183,9 @@ function LoadedScene({
     const wish = sceneWish(text, entry.id, uid(), now());
     if (wish && dispatch(wish)) setKeptWish(wish.id);
   };
-  // One exit at done: to the kept wish, with the slip flying into its new
-  // card, or simply back. No merit and no collectible ever: the scene's
-  // red line.
+  // One exit at done: back to 来还个愿 on a 还愿 visit, else to the kept
+  // wish, with the slip flying into its new card, or simply back. No merit
+  // and no collectible ever: the scene's red line.
   const goSeeWish = () => {
     launchReward({
       kind: "leaf",
@@ -190,6 +219,9 @@ function LoadedScene({
   );
   return (
     <>
+      {returnWish && (
+        <p className="scene-caption">这一次，为「{returnWish.title}」还愿。</p>
+      )}
       <p className="scene-progress" role="status">
         已完成 {progress} / {steps}
       </p>
@@ -227,8 +259,20 @@ function LoadedScene({
       )}
       {progress >= steps && (
         <div className="scene-done-row">
-          <p className="scene-done">{SCENE_DONE_COPY}</p>
-          {keptWish ? (
+          <p className="scene-done">
+            {returnedFor ? SCENE_RETURN_DONE_COPY : SCENE_DONE_COPY}
+          </p>
+          {returnedFor ? (
+            // No flight: the note is on the wish already, and the ritual
+            // shows as done on 来还个愿.
+            <button
+              type="button"
+              className="button primary"
+              onClick={() => go({ page: "fulfill", id: returnedFor })}
+            >
+              {SCENE_RETURN_CTA}
+            </button>
+          ) : keptWish ? (
             <button
               type="button"
               className="button primary"
@@ -268,7 +312,14 @@ function LoadedScene({
     </>
   );
 }
-export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
+export function SceneExperience({
+  entry,
+  wishId,
+}: {
+  entry?: CatalogEntry;
+  /** Set when the scene is walked as a 还愿 ritual for this wish. */
+  wishId?: string;
+}) {
   const { library, ready } = useSceneLibrary(),
     { dispatch, back } = useApp();
   const [attempt, setAttempt] = useState(0),
@@ -362,6 +413,7 @@ export function SceneExperience({ entry }: { entry?: CatalogEntry }) {
             key={attempt}
             entry={entry}
             lease={loaded.lease}
+            wishId={wishId}
             failed={fail}
           />
         </>

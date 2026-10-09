@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { createState, reduce, restore, dailyRitual } from "./index";
+import {
+  createState,
+  reduce,
+  restore,
+  dailyRitual,
+  hasReturnRitual,
+} from "./index";
 
 const at = "2026-09-20T08:00:00.000Z";
 const add = {
@@ -203,5 +209,114 @@ describe("personal ritual loop", () => {
   });
   it("uses a stable daily recommendation", () => {
     expect(dailyRitual("2026-09-20")).toBe(dailyRitual("2026-09-20"));
+  });
+});
+
+describe("a ritual walked as its scene (ritual.scene)", () => {
+  const later = "2026-09-21T08:00:00.000Z";
+  const realized = () =>
+    reduce(reduce(createState(), add), { type: "wish.realize", id: "w1", at });
+  const walked = {
+    type: "ritual.scene",
+    id: "scene-visit",
+    ritual: "crane",
+    wishId: "w1",
+    startedAt: at,
+    at: later,
+  } as const;
+
+  it("records one completed session and a wish note, never merit or a collectible", () => {
+    const s = reduce(realized(), walked);
+    expect(s.sessions).toEqual([
+      {
+        id: "scene-visit",
+        ritual: "crane",
+        progress: 4,
+        startedAt: at,
+        wishId: "w1",
+        completedAt: later,
+      },
+    ]);
+    expect(s.wishes[0].notes).toEqual([
+      { id: "ritual:scene-visit", text: "为这个心愿，折一只纸鹤", at: later },
+    ]);
+    expect(s.ledger).toEqual([]);
+    expect(s.collectibles).toEqual([]);
+    // Once per visit, and the save it makes restores.
+    expect(reduce(s, walked)).toBe(s);
+    expect(restore(JSON.stringify(s))).toEqual(s);
+  });
+
+  it("counts as the return ritual, so the wish can be fulfilled by ritual", () => {
+    let s = reduce(realized(), walked);
+    expect(hasReturnRitual(s, s.wishes[0])).toBe(true);
+    s = reduce(s, {
+      type: "wish.fulfill",
+      id: "w1",
+      noteId: "thanks",
+      text: "谢谢自己",
+      method: "ritual",
+      at: later,
+    });
+    expect(s.wishes[0]).toMatchObject({ status: "fulfilled", returnMethod: "ritual" });
+    // The 如愿 badge is the only keepsake.
+    expect(s.collectibles.map((c) => c.kind)).toEqual(["badge"]);
+    expect(s.ledger).toEqual([]);
+  });
+
+  it("leaves a 2D session in progress alone, which still settles later", () => {
+    let s = reduce(realized(), {
+      type: "ritual.start",
+      id: "r2d",
+      ritual: "woodfish",
+      at,
+    });
+    s = reduce(s, walked);
+    expect(s.activeSession).toMatchObject({ id: "r2d", ritual: "woodfish" });
+    for (let i = 0; i < 12; i++) s = reduce(s, { type: "ritual.step" });
+    s = reduce(s, { type: "ritual.finish", id: "r2d", at: later });
+    expect(s.sessions.map((r) => r.id)).toEqual(["scene-visit", "r2d"]);
+    expect(s.ledger.map((l) => l.id)).toEqual(["r2d"]);
+  });
+
+  it("does not count a scene walked before the wish came true", () => {
+    // Linked to the wish while it was still active: a note, but no 还愿.
+    let s = reduce(reduce(createState(), add), {
+      ...walked,
+      startedAt: "2026-09-19T08:00:00.000Z",
+    });
+    s = reduce(s, { type: "wish.realize", id: "w1", at });
+    expect(hasReturnRitual(s, s.wishes[0])).toBe(false);
+  });
+
+  it("rejects a record for an archived, fulfilled or missing wish, or an unknown ritual", () => {
+    const archived = reduce(realized(), {
+      type: "wish.archive",
+      id: "w1",
+      archived: true,
+    });
+    expect(() => reduce(archived, walked)).toThrow();
+    const fulfilled = reduce(realized(), {
+      type: "wish.fulfill",
+      id: "w1",
+      noteId: "n",
+      text: "谢谢",
+      at,
+    });
+    expect(() => reduce(fulfilled, walked)).toThrow();
+    expect(() => reduce(realized(), { ...walked, wishId: "nope" })).toThrow();
+    expect(() =>
+      reduce(realized(), { ...walked, ritual: "torii" as never }),
+    ).toThrow();
+    expect(() => reduce(realized(), { ...walked, at: "soon" })).toThrow();
+    expect(() => reduce(realized(), { ...walked, id: "" })).toThrow();
+    // Nor the id of the 2D session in progress, whose finish it would block.
+    const open = reduce(realized(), {
+      type: "ritual.start",
+      id: "scene-visit",
+      ritual: "woodfish",
+      at,
+    });
+    expect(() => reduce(open, walked)).toThrow();
   });
 });

@@ -8,7 +8,7 @@ import { Art, Icon } from "./art";
 import { useAutoGrow } from "./auto-grow";
 import { formatDate, now, uid, useApp } from "./context";
 import { Empty } from "./pages";
-import { useSceneLibrary } from "./scene-library";
+import { useOpenRitual, useSceneLibrary } from "./scene-library";
 import { SceneBadge } from "./scene-icons";
 import {
   WISH_PRACTICE_COPY,
@@ -356,6 +356,7 @@ export function FulfillWish({ id }: { id: string }) {
     setFulfillmentDraft,
     arrival,
   } = useApp();
+  const openRitual = useOpenRitual();
   const wish = state.wishes.find((w) => w.id === id);
   const draft = fulfillmentDrafts[id] ?? {
     method: wish?.returnMethod ?? "kindness",
@@ -428,16 +429,14 @@ export function FulfillWish({ id }: { id: string }) {
               ) : (
                 <>
                   <p>折一只纸鹤，留下这份心情。</p>
+                  {/* The crane scene, from its first fold; a 2D session
+                      left open elsewhere is not this ritual. */}
                   <button
                     type="button"
                     className="button secondary full"
-                    onClick={() =>
-                      go({ page: "ritual", id: "crane", wishId: id })
-                    }
+                    onClick={() => openRitual("crane", id)}
                   >
-                    {state.activeSession
-                      ? "继续未完成的仪式"
-                      : "去完成还愿小仪式"}
+                    去完成还愿小仪式
                   </button>
                 </>
               )}

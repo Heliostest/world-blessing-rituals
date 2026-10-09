@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { dailyRitual } from "@wbr/core";
+import { dailyRitual, rituals, type RitualId } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
 import { assertSafeCopy } from "@wbr/shared";
-import { builtInScenes } from "./scene-library";
+import { builtInScenes, supportsScene } from "./scene-library";
 import { hasSceneIcon } from "./scene-icons";
 import {
   NIGHT_STAGE_SCENE_IDS,
@@ -14,7 +14,10 @@ import {
   isTodayScene,
   isWishScene,
   recommendTodayScene,
+  ritualSceneEntry,
+  sceneRitual,
   sceneStage,
+  sceneSteps,
   todayPracticeCopy,
   wishPracticeAction,
   wishSceneEntries,
@@ -92,6 +95,21 @@ describe("scene placement", () => {
     for (const id of [...TODAY_SCENE_IDS, ...WISH_SCENE_IDS]) {
       expect(bundledIds).toContain(id);
     }
+  });
+
+  it("opens every core ritual as the bundled scene of the same id", () => {
+    for (const ritual of Object.keys(rituals) as RitualId[]) {
+      const entry = ritualSceneEntry(builtInScenes, ritual)!;
+      expect(entry.id, ritual).toBe(ritual);
+      expect(supportsScene(entry.engine), ritual).toBe(true);
+      expect(sceneRitual(entry.id)).toBe(ritual);
+    }
+    expect(ritualSceneEntry([], "crane")).toBeUndefined();
+    for (const id of ["tanzaku-tanabata", "toString", ""])
+      expect(sceneRitual(id), id).toBeUndefined();
+    expect(sceneSteps(ritualSceneEntry(builtInScenes, "woodfish")!)).toBe(12);
+    expect(sceneSteps(ritualSceneEntry(builtInScenes, "crane")!)).toBe(3);
+    expect(sceneSteps(ritualSceneEntry(builtInScenes, "lantern")!)).toBe(3);
   });
 
   it("shows the lantern scenes on the night stage, every other scene by day", () => {

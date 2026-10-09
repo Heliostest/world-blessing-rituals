@@ -237,15 +237,18 @@ describe("the settle beat (P0)", () => {
       "1 件珍藏",
     );
 
-    // With the session settled, a different ritual tile opens that ritual,
-    // not a hijacked woodfish.
+    // With the session settled, a ritual tile opens that ritual's 3D scene
+    // from its first step: not the 2D page, nor a hijacked woodfish.
     clickOn(ui.host.querySelector('[data-tab="today"]')!);
     await settle();
     clickOn(ui.host.querySelector('.ritual-tile[data-scene="crane"]')!);
     await settle();
-    expect(pageOf(ui)).toBe("ritual");
-    expect(ui.host.querySelector(".ritual-goal")?.textContent).toContain(
-      "0 / 4",
+    expect(pageOf(ui)).toBe("scene");
+    expect(
+      ui.host.querySelector(".library-scene-stage")?.getAttribute("data-scene"),
+    ).toBe("crane");
+    expect(ui.host.querySelector(".scene-progress")?.textContent).toContain(
+      "0 / 3",
     );
     ui.unmount();
   });

@@ -9,6 +9,11 @@ import { RitualNarrativeBlurb } from "./ritual-narrative";
 import { FeedbackControls } from "./feedback-controls";
 import { rectOf } from "./reward-flight";
 
+/**
+ * The 2D ritual page. Rituals open as their 3D scenes (useOpenRitual), so it
+ * is reached only to settle a session begun here (今日's resume banner), or
+ * when the catalog has no playable scene for a ritual.
+ */
 export function Ritual({
   id,
   wishId: linkedWishId,

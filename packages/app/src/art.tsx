@@ -102,6 +102,12 @@ export function Icon({ name }: { name: string }) {
     arrow: <path d="m9 5 7 7-7 7" />,
     back: <path d="m15 5-7 7 7 7" />,
     plus: <path d="M12 5v14M5 12h14" />,
+    search: (
+      <>
+        <circle cx="10.5" cy="10.5" r="6.5" />
+        <path d="m15.5 15.5 5 5" />
+      </>
+    ),
     check: <path d="m5 12 4 4L19 6" />,
     close: <path d="m6 6 12 12M6 18 18 6" />,
     lock: (

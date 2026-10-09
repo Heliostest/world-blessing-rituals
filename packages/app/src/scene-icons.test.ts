@@ -7,6 +7,7 @@ import { Context, type AppContext } from "./context";
 import { Today } from "./home";
 import { Wishes } from "./pages";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
+import { SceneBadge, hasSceneIcon } from "./scene-icons";
 import { TODAY_SCENE_IDS, WISH_SCENE_IDS } from "./scene-placement";
 
 /** Renders `node` in an App with the bundled scenes, as a parsed document. */
@@ -70,7 +71,7 @@ describe("心愿 practice cards", () => {
       ...WISH_SCENE_IDS,
     ]);
     for (const card of cards)
-      expect(card.querySelector(".practice-badge svg path")).not.toBeNull();
+      expect(card.querySelector(".scene-badge svg path")).not.toBeNull();
   });
 
   it("say the verb under the title, without repeating the title", () => {
@@ -80,5 +81,24 @@ describe("心愿 practice cards", () => {
       expect(verb.length).toBeGreaterThan(0);
       expect(verb).not.toContain(title);
     }
+  });
+});
+
+describe("scene badges", () => {
+  it("have a drawn icon for every built-in scene", () => {
+    for (const entry of builtInScenes)
+      expect(hasSceneIcon(entry.id), entry.id).toBe(true);
+  });
+
+  it("show a leaf for a scene without one, so no row is left blank", () => {
+    const html = renderToStaticMarkup(
+      createElement(SceneBadge, { id: "a-new-remote-scene" }),
+    );
+    const badge = new DOMParser()
+      .parseFromString(html, "text/html")
+      .querySelector(".scene-badge")!;
+    expect(badge.getAttribute("aria-hidden")).toBe("true");
+    expect(badge.querySelector("svg path")).not.toBeNull();
+    expect(badge.querySelector(".scene-icon")).toBeNull();
   });
 });

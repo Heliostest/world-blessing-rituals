@@ -5,7 +5,7 @@ import { createLantern } from './scene'
 
 export const meta: SceneMeta = {
   id: 'lantern',
-  title: '点一盏心愿灯',
+  title: '月下一灯',
   traditionSlug: PRODUCT_ORIGINAL,
   grade: 'C',
   sensitivity: '低',

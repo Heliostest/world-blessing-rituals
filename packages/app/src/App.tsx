@@ -207,6 +207,28 @@ export function BlessingApp({
           : roots.includes(route.page)
             ? route.page
             : "today";
+  // The ribbon names a page that has no title of its own: none on 完成页, nor
+  // on pages whose h1 already says it (场景目录, 资源缓存, 仪式时光). On the
+  // others it is a category word above the page's own heading.
+  const ribbon = (
+    {
+      new: "许个小心愿",
+      wish: "我的心愿",
+      fulfill: "来还个愿",
+      note: "记一笔",
+      collection: "我的小收藏",
+      scene: "场景体验",
+      ritual:
+        ritualTitle[
+          state.activeSession?.ritual ??
+            (route.id === "crane"
+              ? "crane"
+              : route.id === "lantern"
+                ? "lantern"
+                : "woodfish")
+        ],
+    } as Record<string, string>
+  )[route.page];
   const page =
     route.page === "scenes" ? <SceneCatalog /> : route.page === "cache" ? <CacheManager /> : route.page === "scene" ? <SceneExperience entry={route.entry ?? state.sceneRecords.find(r => r.id === route.id)} /> : route.page === "today" ? (
       <Today key={day} day={day} />
@@ -301,30 +323,7 @@ export function BlessingApp({
                 >
                   <Icon name={route.page === "complete" ? "close" : "back"} />
                 </button>
-                <h2>
-                  {
-                    (
-                      {
-                        new: "许个小心愿",
-                        wish: "我的心愿",
-                        fulfill: "来还个愿",
-                        note: "记一笔",
-                        collection: "我的小收藏",
-                        history: "仪式时光",
-                        scenes: "场景目录", scene: "场景体验", cache: "资源缓存",
-                        ritual:
-                          ritualTitle[
-                            state.activeSession?.ritual ??
-                              (route.id === "crane"
-                                ? "crane"
-                                : route.id === "lantern"
-                                  ? "lantern"
-                                  : "woodfish")
-                          ],
-                      } as Record<string, string>
-                    )[route.page]
-                  }
-                </h2>
+                {ribbon && <h2>{ribbon}</h2>}
               </header>
             )}
             <span

@@ -124,7 +124,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Transparent over the cream page: clear morning key, pale sky rim on the vermilion.
+  // Transparent over the island stage: clear morning key, pale sky rim on the vermilion.
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100)
   const EYE_Y = 1.45
@@ -458,7 +458,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
       renderer.forceContextLoss()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--stage')
     },
   }
 }

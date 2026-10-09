@@ -140,7 +140,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
     } else setHint(COPY.done)
   }
 
-  // Transparent over the cream page: morning key, soft rim along the paper edges.
+  // Transparent over the island stage: morning key, soft rim along the paper edges.
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 1.75, 2.6)
@@ -442,7 +442,7 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       renderer.forceContextLoss()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--stage')
     },
   }
 }

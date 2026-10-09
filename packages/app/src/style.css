@@ -1,14 +1,15 @@
 @charset "UTF-8";
 /*
- * Cozy-island shell (experiment/animal-crossing-shell, a visual preview).
- * Tokens and patterns are ported from animal-island-ui: mint primary, candy
- * accents, chunky press buttons on a solid ledge, thick soft HUD panels and
- * polka-dot grounds. Values are re-tuned so every text tier stays WCAG AA.
- * Old cream token → island token: docs/experiments/animal-crossing-shell.md.
+ * Cozy-island shell, the App's UI. Tokens and patterns are ported from
+ * animal-island-ui: mint primary, candy accents, chunky press buttons on a
+ * solid ledge, thick soft HUD panels and polka-dot grounds. Values are
+ * re-tuned so every text tier stays WCAG AA. Design notes and the old cream
+ * token → island token map: docs/design/island-shell.md.
  */
 :root {
-  /* Rounded system fonts only, first installed wins; the bundled Blessing
-     Sans still covers CJK where no rounded face is installed. */
+  /* Nunito's latin subset is bundled (fontStyles in assets.ts, U+0000-00FF),
+     so digits and Latin are rounded on every device. CJK falls through to
+     the first installed rounded system face, then the bundled Blessing Sans. */
   --font-round: "Nunito", "Varela Round", "M PLUS Rounded 1c", "Yuanti SC",
     "HarmonyOS Sans SC", "HarmonyOS Sans", "PingFang SC", "Blessing Sans",
     "Microsoft YaHei", system-ui, sans-serif;
@@ -33,6 +34,9 @@
   --art-paper: #fdf8ee; /* the large crops' own paper, so they sit seamlessly */
   --rim: #fffdf7; /* the thick soft panel border */
   --edge: #ecdcb8; /* thin outline outside the rim */
+  /* A field's own outline (text fields, selects, radio boxes, switch tracks):
+     3:1 or more on the mint page (3.1), sand (3.4) and its paper fill (3.7). */
+  --field-edge: #95805f;
   --ledge: #a2d9ca; /* solid ledge under panels on the mint ground */
 
   /* Ink tiers, AA on --sand, --paper and --island */
@@ -96,12 +100,58 @@
   --dots:
     radial-gradient(var(--island-dot) 2.6px, transparent 3.2px) 0 0 / 24px 24px,
     radial-gradient(#ffffffa6 1.6px, transparent 2.2px) 12px 12px / 24px 24px;
-
-  /* Cream-era names, kept as aliases so nothing resolves to nothing. */
-  --cream: var(--island);
-  --line: var(--edge);
-  --yellow: var(--butter);
-  --green: var(--leaf-ledge);
+}
+/* One candy per scene, keyed by its id (data-scene), so a scene wears the
+   same colour on 今日, 心愿, a wish's detail and 场景目录, whatever order a
+   list (or a remote catalog) puts it in. The 2D rituals share their
+   scene's id (crane, woodfish, lantern). Each candy: face, highlight,
+   ledge, tint and the ring drawn on the tint. A scene not listed here
+   (木鱼, 燃灯, a new remote one) gets the butter of the secondary buttons. */
+[data-scene] {
+  --candy: var(--butter);
+  --candy-hi: var(--butter-hi);
+  --candy-ledge: var(--butter-ledge);
+  --candy-tint: var(--butter-tint);
+  --candy-ring: #f2d98a;
+}
+[data-scene="crane"] {
+  --candy: var(--bubblegum);
+  --candy-hi: var(--bubblegum-hi);
+  --candy-ledge: var(--bubblegum-ledge);
+  --candy-tint: var(--bubblegum-tint);
+  --candy-ring: #f7bfce;
+}
+[data-scene="lantern"],
+[data-scene="theravada-water"] {
+  --candy: var(--peach);
+  --candy-hi: var(--peach-hi);
+  --candy-ledge: var(--peach-ledge);
+  --candy-tint: var(--peach-tint);
+  --candy-ring: #f6c7b2;
+}
+[data-scene="tanzaku-tanabata"],
+[data-scene="furin-wind-chime"] {
+  --candy: var(--sky);
+  --candy-hi: var(--sky-hi);
+  --candy-ledge: var(--sky-ledge);
+  --candy-tint: var(--sky-tint);
+  --candy-ring: #b4dcf3;
+}
+[data-scene="slavic-wreath"],
+[data-scene="shinto-torii"] {
+  --candy: var(--leaf);
+  --candy-hi: var(--leaf-hi);
+  --candy-ledge: var(--leaf-ledge);
+  --candy-tint: var(--leaf-tint);
+  --candy-ring: #bfe3ad;
+}
+[data-scene="tibetan-wheel"],
+[data-scene="celtic-folk-spring"] {
+  --candy: var(--mint);
+  --candy-hi: var(--mint-hi);
+  --candy-ledge: var(--mint-ledge);
+  --candy-tint: var(--mint-tint);
+  --candy-ring: #a9e5da;
 }
 * {
   box-sizing: border-box;
@@ -221,13 +271,24 @@ button:hover:not(:disabled) {
   justify-content: center;
   position: relative;
 }
-/* The page title is a swallowtail ribbon, as in the island Title. Always one
-   line, 12px clear of the back button: the 7-8 character ritual titles fit
-   down to 320px (see the 360px block), and anything longer ends in an
-   ellipsis instead of folding into a two-line swallowtail. */
+/* The page title is a swallowtail ribbon, as in the island Title: a front
+   tilted back a touch, two notched tails behind it and a darker fold where
+   each tail tucks under. Always one line, 12px clear of the back button: the
+   7-8 character ritual titles fit down to 320px (see the 360px block), and
+   anything longer ends in an ellipsis instead of folding into a two-line
+   swallowtail. The ellipsis needs overflow: hidden, so the whole ribbon is
+   drawn inside the h2: the tails reach only into its side padding (the text
+   keeps all of its room), and the negative margin takes back the drop below
+   the front, so the front stays level with the back button. */
 .app-topbar h2 {
+  --reach: 0.6em; /* tails past the front's sides */
+  --tuck: 0.9em; /* tails under the front: the width of a fold */
+  --drop: 0.4em; /* tails and folds below the front */
+  position: relative;
+  isolation: isolate;
   max-width: calc(100% - 104px);
-  padding: 6px 30px 8px;
+  margin-bottom: calc(-1 * var(--drop));
+  padding: 6px 30px calc(8px + var(--drop));
   font-size: 19px;
   font-weight: 900;
   line-height: 1.4;
@@ -236,22 +297,59 @@ button:hover:not(:disabled) {
   overflow: hidden;
   text-overflow: ellipsis;
   color: var(--mint-ink);
+}
+.app-topbar h2::before,
+.app-topbar h2::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+/* The back: one swallowtail band, cut away between the folds from just
+   behind the front's lower edge, so below the front only the tails and
+   their folds show. A 0.6px ramp smooths each fold's diagonal. */
+.app-topbar h2::before {
+  inset: 0.7em 0 0;
+  background:
+    linear-gradient(
+        to top right,
+        transparent calc(50% - 0.3px),
+        #0d6e66 calc(50% + 0.3px)
+      )
+      left var(--reach) bottom 0 / var(--tuck) var(--drop),
+    linear-gradient(
+        to top left,
+        transparent calc(50% - 0.3px),
+        #0d6e66 calc(50% + 0.3px)
+      )
+      right var(--reach) bottom 0 / var(--tuck) var(--drop),
+    var(--mint-ledge);
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    calc(100% - 0.4em) 50%,
+    100% 100%,
+    calc(100% - var(--reach) - var(--tuck)) 100%,
+    calc(100% - var(--reach) - var(--tuck)) calc(100% - var(--drop) - 2px),
+    calc(var(--reach) + var(--tuck)) calc(100% - var(--drop) - 2px),
+    calc(var(--reach) + var(--tuck)) 100%,
+    0 100%,
+    0.4em 50%
+  );
+}
+/* The front, over the back and under the text. Longhands, not inset: the
+   build spells inset out for Safari 14, but not one that holds var(). */
+.app-topbar h2::after {
+  top: 0;
+  right: var(--reach);
+  bottom: var(--drop);
+  left: var(--reach);
+  border-radius: 0.2em;
   background: linear-gradient(180deg, var(--mint-hi), var(--mint));
   box-shadow:
     inset 0 3px 0 #ffffff80,
     inset 0 -4px 0 #17a09359;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    calc(100% - 14px) 50%,
-    100% 100%,
-    0 100%,
-    14px 50%
-  );
-}
-/* 完成页 has no title: no empty ribbon. */
-.app-topbar h2:empty {
-  display: none;
+  transform: perspective(11.5em) rotateX(3deg);
 }
 .back-button {
   position: absolute;
@@ -279,9 +377,8 @@ button:hover:not(:disabled) {
   height: 22px;
   stroke-width: 2.8;
 }
-.completion-topbar {
-  height: 48px;
-}
+/* The completion page keeps the 68px bar, so its close button sits where
+   every other page has its back button, only on the right. */
 .completion-topbar .back-button {
   left: auto;
   right: 14px;
@@ -414,12 +511,16 @@ button:hover:not(:disabled) {
   box-shadow: 0 0 0 2px #a9e5da;
   color: var(--mint-ink);
 }
+/* 今日's feature cards (今日随机仪式, 今日小练习) are centred compositions, the
+   tag on top included; list rows (the scene recommendation, the tiles) keep
+   to the left. */
 .daily-card {
   border: 3px solid var(--rim);
   border-radius: var(--radius-panel);
   background: var(--art-paper);
   padding: 16px 14px 18px;
   box-shadow: var(--panel-shadow-static);
+  text-align: center;
 }
 .daily-card + .daily-card {
   margin-top: 22px;
@@ -427,9 +528,6 @@ button:hover:not(:disabled) {
 .daily-card > .art {
   margin: 0 -4px;
   width: calc(100% + 8px);
-}
-.daily-copy {
-  text-align: center;
 }
 .daily-copy h2 {
   font-size: 25px;
@@ -552,45 +650,19 @@ button:hover:not(:disabled) {
   grid-auto-rows: 1fr;
   gap: 10px;
 }
-/* Candy tiles, one colour each, like island app icons. */
+/* Candy tiles, like island app icons: each in its scene's candy. */
 .ritual-tile {
-  --tile: var(--sand);
-  --tile-ledge: var(--edge);
-  background: var(--tile);
+  background: var(--candy-tint, var(--sand));
   border: 3px solid var(--rim);
   border-radius: var(--radius-tile);
   padding: 6px 5px 8px;
   position: relative;
   min-width: 0;
-  box-shadow: 0 4px 0 var(--tile-ledge);
-}
-.ritual-tile:nth-child(6n + 1) {
-  --tile: var(--leaf-tint);
-  --tile-ledge: #bfe3ad;
-}
-.ritual-tile:nth-child(6n + 2) {
-  --tile: var(--peach-tint);
-  --tile-ledge: #f6c7b2;
-}
-.ritual-tile:nth-child(6n + 3) {
-  --tile: var(--butter-tint);
-  --tile-ledge: #f2d98a;
-}
-.ritual-tile:nth-child(6n + 4) {
-  --tile: var(--sky-tint);
-  --tile-ledge: #b4dcf3;
-}
-.ritual-tile:nth-child(6n + 5) {
-  --tile: var(--bubblegum-tint);
-  --tile-ledge: #f7bfce;
-}
-.ritual-tile:nth-child(6n + 6) {
-  --tile: var(--mint-tint);
-  --tile-ledge: #a9e5da;
+  box-shadow: 0 4px 0 var(--candy-ring, var(--edge));
 }
 .ritual-tile:active {
   transform: translateY(3px);
-  box-shadow: 0 1px 0 var(--tile-ledge);
+  box-shadow: 0 1px 0 var(--candy-ring, var(--edge));
 }
 .ritual-tile strong {
   display: block;
@@ -899,10 +971,12 @@ button:hover:not(:disabled) {
 .share-panel textarea {
   display: block;
   width: 100%;
-  border: 2.5px solid var(--edge);
+  border: 2.5px solid var(--field-edge);
   border-radius: 18px;
   padding: 10px 14px;
-  resize: vertical;
+  /* No native grip on the rounded field: it grows with its text instead
+     (useAutoGrow in auto-grow.ts). */
+  resize: none;
   background: var(--paper);
   color: var(--ink);
   /* 16px or more: iOS zooms the page into smaller text fields on focus. */
@@ -1057,7 +1131,7 @@ button:hover:not(:disabled) {
   flex: 0 0 22px;
   width: 22px;
   height: 22px;
-  border: 2.5px solid #95805f;
+  border: 2.5px solid var(--field-edge);
   border-radius: 8px;
   margin: 0;
   background: var(--paper);
@@ -1076,22 +1150,6 @@ button:hover:not(:disabled) {
 }
 .centered {
   text-align: center;
-}
-.private-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  border: 2.5px solid var(--edge);
-  border-radius: 18px;
-  background: var(--paper);
-  padding: 10px 12px;
-  font-size: 14px;
-  font-weight: 700;
-}
-.private-row svg {
-  width: 19px;
-  height: 19px;
-  fill: #6b4a2b26;
 }
 .new-wish-page .primary {
   margin-top: 0;
@@ -1469,6 +1527,11 @@ button:hover:not(:disabled) {
   width: calc(100% + 16px);
   margin: 0 -8px;
 }
+/* The lantern's string runs up to the top edge of its picture: the air the
+   crane's picture has (16px) keeps the feedback lines off the string. */
+.ritual-lantern .ritual-object {
+  margin-top: 16px;
+}
 .woodfish-visual {
   position: relative;
   display: block;
@@ -1562,6 +1625,8 @@ button:hover:not(:disabled) {
   margin: 2px 0 19px;
   color: var(--ink-soft);
 }
+/* The wish picker is a field on the mint page: the field outline, not the
+   panels' sand edge (1.1:1 there). */
 .ritual-link {
   background: var(--paper);
   border: 3px solid var(--rim);
@@ -1569,7 +1634,7 @@ button:hover:not(:disabled) {
   padding: 9px 14px 4px;
   margin: 0 0 16px;
   box-shadow:
-    0 0 0 2px var(--edge),
+    0 0 0 2px var(--field-edge),
     0 5px 0 2px var(--ledge);
 }
 .ritual-link label {
@@ -1577,8 +1642,9 @@ button:hover:not(:disabled) {
   font-weight: 700;
   color: var(--muted);
 }
+/* 选填 keeps the label's 12px (no CJK below 12px) and steps back by weight. */
 .ritual-link label small {
-  font-size: 11px;
+  font-weight: 600;
 }
 .ritual-link select {
   width: 100%;
@@ -1592,6 +1658,7 @@ button:hover:not(:disabled) {
 }
 .feedback-controls {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
   margin: 22px 0 0;
@@ -1630,6 +1697,41 @@ button:hover:not(:disabled) {
   border-radius: 50%;
   background: var(--sky-tint);
 }
+/* 收藏 on a scene page: a heart toggle chip in the toggles' row. A ring, no
+   ledge; while the scene is a favourite the heart fills and the chip takes
+   the pink tint (aria-pressed). The heart keeps 3:1 or more on both. */
+.favorite-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 5px 16px 5px 6px;
+  border: 3px solid var(--rim);
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow: 0 0 0 2px var(--edge);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink-soft);
+}
+.favorite-chip svg {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border-radius: 50%;
+  background: var(--bubblegum-tint);
+  color: #c24d6e;
+  stroke-width: 2.2;
+}
+.favorite-chip[aria-pressed="true"] {
+  background: var(--bubblegum-tint);
+  box-shadow: 0 0 0 2px #f7bfce;
+  color: var(--ink);
+}
+.favorite-chip[aria-pressed="true"] svg {
+  background: #ffffffb3;
+  fill: currentColor;
+}
 /* The island switch: a sunken track and a ringed handle, leaf green when on. */
 .switch {
   appearance: none;
@@ -1637,7 +1739,7 @@ button:hover:not(:disabled) {
   height: 30px;
   border-radius: 999px;
   background: #e8dcc3;
-  border: 2.5px solid #95805f;
+  border: 2.5px solid var(--field-edge);
   box-shadow: inset 0 2px 4px #725d4226;
   position: relative;
   cursor: pointer;
@@ -1657,19 +1759,21 @@ button:hover:not(:disabled) {
   height: 22px;
   border-radius: 50%;
   background: var(--paper);
-  border: 2.5px solid #95805f;
+  border: 2.5px solid var(--field-edge);
   transform: translateY(-50%);
   transition:
     transform 0.25s var(--ease),
     border-color 0.25s var(--ease);
 }
+/* On: the track's edge and the handle's ring in leaf ink, 5.7:1 on sand
+   (the leaf ledge was 2.7:1). */
 .switch:checked {
   background: #86d67a;
-  border-color: var(--leaf-ledge);
+  border-color: var(--leaf-ink);
   box-shadow: inset 0 2px 4px #5a9e1e33;
 }
 .switch:checked:before {
-  border-color: var(--leaf-ledge);
+  border-color: var(--leaf-ink);
   transform: translate(22px, -50%);
 }
 .ritual-footer {
@@ -1706,14 +1810,25 @@ button:hover:not(:disabled) {
 }
 .celebration {
   position: relative;
+  isolation: isolate;
   margin-top: 12px;
   padding-top: 15px;
+}
+/* The sunburst is its own layer behind the reward, faded by a radial mask so
+   it dissolves on every side instead of ending in a box. A mask on
+   .celebration itself would fade the number, postcard and badge with it. */
+.celebration::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: repeating-conic-gradient(
     from -18deg at 50% 90%,
     #ffe58f80 0 8deg,
     #ffffff4d 8deg 17deg
   );
-  mask-image: linear-gradient(transparent, #000 15%, #000 94%, transparent);
+  mask-image: radial-gradient(closest-side, #000 70%, transparent);
+  pointer-events: none;
 }
 .reward-number {
   color: #a2471a;
@@ -1838,13 +1953,13 @@ button:hover:not(:disabled) {
   /* A read-only counter: a ring, no ledge (ledges mean "tap me"). */
   box-shadow: 0 0 0 2px #f2d98a;
 }
+/* Polka dots belong to grounds (the page, a stage). A card on the dotted
+   page is a solid tint, so dots never sit on dots. */
 .wish-hero {
   display: flex;
   align-items: center;
   gap: 10px;
-  background:
-    radial-gradient(#ffcfdb 2px, transparent 2.6px) 0 0 / 18px 18px,
-    var(--bubblegum-tint);
+  background: var(--bubblegum-tint);
   border: 3px solid var(--rim);
   border-radius: var(--radius-panel);
   padding: 10px 14px 10px 10px;
@@ -1941,10 +2056,11 @@ button:hover:not(:disabled) {
 }
 .wish-card > .art + span .tag {
   padding: 1px 9px 2px;
-  font-size: 11px;
+  font-size: 12px;
 }
 .wish-card > svg,
 .wish-practice-card > svg,
+.scene-card > svg,
 .settings-row > svg {
   width: 30px;
   height: 30px;
@@ -2015,14 +2131,30 @@ button:hover:not(:disabled) {
   width: 14px;
   height: 14px;
 }
-/* 小天地 as an island room: dotted mint wallpaper, sky window, plank floor. */
+/* The same note inside the new-wish form, under 不设期限，慢慢来。 */
+.form-card .privacy-note {
+  margin: 2px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+.form-card .privacy-note svg {
+  width: 15px;
+  height: 15px;
+}
+/* 小天地 as an island room: warm striped wallpaper, sky window, plank floor.
+   The wall is butter, not the page's dotted mint, so the room reads as an
+   interior rather than a hole cut in the page. */
 .room {
   height: 260px;
   border: 4px solid var(--rim);
   border-radius: var(--radius-panel);
   background:
-    radial-gradient(#ffffffa6 2px, transparent 2.6px) 0 0 / 20px 20px,
-    linear-gradient(180deg, #dcf6ef, #c3ecdf);
+    linear-gradient(180deg, #fffaf00d, #c9a0531a),
+    repeating-linear-gradient(
+      90deg,
+      var(--butter-tint) 0 18px,
+      #fdeab0 18px 26px
+    );
   position: relative;
   overflow: hidden;
   box-shadow:
@@ -2043,7 +2175,7 @@ button:hover:not(:disabled) {
     linear-gradient(180deg, #9fd7f5, #d8f0fb);
   box-shadow:
     0 0 0 2px var(--edge),
-    0 4px 0 2px #b8e2d8;
+    0 4px 0 2px #efd49a;
 }
 .room-window:before {
   content: "";
@@ -2075,7 +2207,7 @@ button:hover:not(:disabled) {
   background: var(--paper);
   box-shadow:
     0 0 0 2px var(--edge),
-    0 3px 0 2px #b8e2d8;
+    0 3px 0 2px #efd49a;
   font-size: 12px;
   font-weight: 800;
   color: var(--ink-soft);
@@ -2155,7 +2287,7 @@ button:hover:not(:disabled) {
   margin-top: 6px;
 }
 .collection-card small {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--muted);
   margin-top: 5px;
@@ -2570,7 +2702,7 @@ button:hover:not(:disabled) {
   }
   .merit-pill {
     padding: 2px 8px 2px 2px;
-    font-size: 11px;
+    font-size: 12px;
   }
   .merit-pill b {
     font-size: 15px;
@@ -2588,8 +2720,9 @@ button:hover:not(:disabled) {
     padding: 9px;
     gap: 9px;
   }
+  /* CJK never goes below 12px: a long line wraps instead. */
   .choice-row small {
-    font-size: 11px;
+    font-size: 12px;
   }
   .badge-preview strong {
     font-size: 12px;
@@ -2611,7 +2744,7 @@ button:hover:not(:disabled) {
     font-size: 13px;
   }
   .wish-invitation {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .art-variant-home .reference-crop {
@@ -2683,12 +2816,13 @@ button:hover:not(:disabled) {
   pointer-events: none;
 }
 
+/* A step still to come keeps a 3:1 ring on its bubble (#c4ad80 was 2.1:1). */
 .scene-step-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: #efe2c6;
-  border: 2px solid #c4ad80;
+  border: 2px solid var(--field-edge);
   transition:
     background 0.3s var(--ease),
     border-color 0.3s var(--ease),
@@ -2813,7 +2947,7 @@ button:hover:not(:disabled) {
   min-height: 44px;
   padding: 8px 16px;
   border-radius: 999px;
-  border: 2.5px solid var(--edge);
+  border: 2.5px solid var(--field-edge);
   background: var(--paper);
   color: var(--ink);
   font: inherit;
@@ -2884,19 +3018,29 @@ button:hover:not(:disabled) {
   font-weight: 800;
 }
 /* The older dark scenes (泉边一念, 花水位一倾) paint their own night canvas. */
-.scene-overlay:not(.scene-overlay--cream) {
+.scene-overlay:not(.scene-overlay--stage) {
   color: #f6f1e4;
 }
 /* The scene stage is a canvas over a HUD tray: the hint, the step dots, the
    action button and the wish box sit in the tray and never on the subject or
    a drag target. The canvas keeps one height; when the wish box opens, the
    tray (and the stage) grows under it, so the hint and its 练习 note stay
-   in view. Day stage: a soft sky fading to warm sand behind the canvas, so
-   the cel-lit scenes keep the warm ground their lights were tuned for. */
+   in view. Day stage: a clear sky fading to warm sand behind the canvas, so
+   the cel-lit scenes keep the warm ground their lights were tuned for, and
+   a pale subject's upper half (the crane's neck and wings, the furin's
+   glass) parts from a sky blue enough to set it off. */
 .library-scene-stage {
   --tray: 132px;
   --wish-box: 0px;
   --canvas-h: max(228px, min(65vh, 540px) - 132px);
+  --day-sky: linear-gradient(
+    180deg,
+    #bfe6f7 0%,
+    #d6eff7 30%,
+    #eaf7f3 50%,
+    #fbf3dc 76%,
+    #f5e5c0 100%
+  );
   position: relative;
   isolation: isolate;
   height: calc(var(--canvas-h) + var(--tray) + var(--wish-box));
@@ -2905,25 +3049,52 @@ button:hover:not(:disabled) {
   overflow: hidden;
   background:
     radial-gradient(#ffffff99 1.8px, transparent 2.3px) 0 0 / 22px 22px,
-    linear-gradient(180deg, #d9f1fb 0%, #eaf7f3 42%, #fbf3dc 76%, #f5e5c0 100%)
-      0 0 / 100% var(--canvas-h) no-repeat,
+    var(--day-sky) 0 0 / 100% var(--canvas-h) no-repeat,
     var(--sand);
   box-shadow:
     0 0 0 2px var(--edge),
     var(--soft-drop);
   color: var(--ink);
 }
+/* 折一只纸鹤 floats: pale sakura paper with no ground of its own (the other
+   day scenes stand on the sand). Its sky stays cool down past the paper's
+   lowest point (84% of the canvas, flat, folded or lifted), so the paper
+   sits on blue, not on the cream it matches; the sand begins under it,
+   where a soft contact shadow anchors the figure. Stage only: the crane's
+   volume comes from its folds alone, never from drawn shading.
+   Art direction: 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有… */
+.library-scene-stage[data-scene="crane"] {
+  --day-sky: linear-gradient(
+    180deg,
+    #bfe6f7 0%,
+    #d6eff7 30%,
+    #e4f5f4 58%,
+    #f6f2df 78%,
+    #f3e3bf 100%
+  );
+}
+.library-scene-stage[data-scene="crane"]::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: calc(var(--canvas-h) * 0.9);
+  width: 54%;
+  height: calc(var(--canvas-h) * 0.08);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, #c8a26a66 0 38%, #c8a26a2e 70%, transparent);
+}
 .library-scene-stage:has(.scene-wish-slot:not([hidden])) {
   --wish-box: 80px;
 }
-/* Island at night for the lantern scenes (心愿灯, 燃灯: NIGHT_STAGE_SCENE_IDS
+/* Island at night for the lantern scenes (月下一灯, 燃灯: NIGHT_STAGE_SCENE_IDS
    in scene-placement.ts): deep teal-navy, soft star dots, a low sea glow and
-   a moon behind the transparent canvas. The scenes light for it too. */
+   a moon behind the transparent canvas. The scenes light for it too. Only
+   the canvas is night: the stage keeps the white HUD rim, the edge and the
+   soft drop of every stage (as the older dark scenes do), so it reads as an
+   island panel, not a dark slab on the pastel page. */
 .library-scene-stage[data-stage="night"] {
-  border-color: #2e6170;
-  box-shadow:
-    0 0 0 2px #0e2a3c,
-    var(--soft-drop);
   background:
     radial-gradient(circle at 14% 16%, var(--star) 0 1.6px, transparent 2.4px),
     radial-gradient(circle at 33% 7%, var(--star) 0 1.2px, transparent 2px),
@@ -2954,51 +3125,346 @@ button:hover:not(:disabled) {
     0 0 0 8px #fff3c41f,
     0 0 34px 10px #ffe9a640;
 }
-.library-scene-stage + .feedback-controls { margin-top: 18px; }
-.scene-discovery { padding: 18px 18px 12px; border: 3px solid var(--rim); border-radius: var(--radius-panel); margin-bottom: 22px; background: radial-gradient(#c3e4f7 2px, transparent 2.6px) 0 0 / 20px 20px, var(--sky-tint); box-shadow: inset 0 3px 0 #ffffffd9, 0 0 0 2px #bfe0f3, var(--soft-drop); display: grid; gap: 10px; }
-.scene-discovery .eyebrow { justify-self: start; display: inline-block; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--sky); box-shadow: 0 0 0 2px #b4dcf3; font-size: 13px; font-weight: 800; color: var(--ink); }
-.scene-discovery h2 { margin: 8px 0; font-size: 21px; font-weight: 900; }
-.scene-discovery p, .cache-manager p { line-height: 1.8; }
-.scene-discovery p { color: var(--ink-soft); font-weight: 600; }
-.ritual-narrative { position: static; margin: 4px 0 12px; }
-.ritual-narrative > summary { min-height: 44px; display: flex; align-items: center; gap: 8px; cursor: pointer; list-style: none; font-weight: 800; color: var(--mint-text); }
-.ritual-narrative > summary::-webkit-details-marker { display: none; }
-/* A mint chevron bubble that turns when the story opens. */
-.ritual-narrative > summary::before { content: ""; width: 24px; height: 24px; border-radius: 50%; background: var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23064a43' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 5 7 7-7 7'/%3E%3C/svg%3E") center / 13px no-repeat; box-shadow: 0 3px 0 var(--mint-ledge); transition: transform 0.2s var(--ease); }
-.ritual-narrative[open] > summary::before { transform: rotate(90deg); }
-.ritual-narrative > p { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; line-height: 1.8; margin: 0; padding: 12px 14px; border: 3px solid var(--rim); border-radius: 20px; background: var(--paper); box-shadow: 0 0 0 2px var(--edge); color: var(--ink-soft); }
-.scene-catalog { display: grid; gap: 16px; margin: 20px 0; }
-.scene-card { display: grid; text-align: left; padding: 16px 20px; gap: 6px; border-radius: 24px; border: 3px solid var(--rim); background: var(--sand); color: var(--ink); cursor: pointer; box-shadow: var(--panel-shadow); }
-.scene-card small { color: var(--muted); font-weight: 600; }
-.scene-search, .cache-manager label { display: grid; gap: 12px; margin: 20px 0; font-weight: 700; }
-.scene-search input, .cache-manager select { min-height: 48px; border: 2.5px solid var(--edge); border-radius: 999px; padding: 8px 16px; background: var(--paper); color: var(--ink); font: inherit; font-size: 16px; box-shadow: 0 3px 0 #d4c9b4; }
-.cache-usage { display: block; font-size: 24px; font-weight: 900; margin-top: 24px; }
-.scene-download, .scene-load-error { padding: 24px; border: 3px solid var(--rim); border-radius: 24px; display: grid; gap: 20px; background: var(--sand); box-shadow: var(--panel-shadow-static); }
+/* Each night scene hangs its moon in its own open sky, smaller and higher
+   than the default. 月下一灯: top left, 20px or more clear of the crossbar's
+   left end at 320-430px (the default top right sat on its right end).
+   燃灯: in the gap between the two high companion lanterns, above where
+   they settle once the main lantern has risen. The lanterns sit at fixed
+   offsets from the canvas centre for a given canvas height, and 52% keeps
+   the moon in that gap from 320 to 430px. */
+.library-scene-stage[data-scene="lantern"]::before,
+.library-scene-stage[data-scene="yeondeunghoe"]::before {
+  top: 14px;
+  width: 34px;
+  height: 34px;
+  box-shadow:
+    0 0 0 6px #fff3c41f,
+    0 0 26px 7px #ffe9a640;
+}
+.library-scene-stage[data-scene="lantern"]::before {
+  right: auto;
+  left: 18px;
+}
+.library-scene-stage[data-scene="yeondeunghoe"]::before {
+  right: auto;
+  left: 52%;
+}
+.library-scene-stage + .feedback-controls {
+  margin-top: 18px;
+}
+/* 今日's scene recommendation is quiet: a small heading with the catalog link
+   and one scene row, no button of its own, so the daily ritual's mint
+   开始今日仪式 is the first call to action and stays above the fold. */
+.scene-discovery {
+  margin-bottom: 22px;
+}
+.scene-discovery .section-heading {
+  margin: 0 0 10px;
+}
+.scene-discovery .section-heading h2 {
+  font-size: 16px;
+}
+/* A full 44px target that does not grow the heading row. */
+.scene-discovery .text-button {
+  margin: -12px 0;
+}
+.cache-manager p {
+  line-height: 1.8;
+}
+.ritual-narrative {
+  position: static;
+  margin: 4px 0 12px;
+}
+.ritual-narrative > summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 800;
+  color: var(--mint-text);
+}
+.ritual-narrative > summary::-webkit-details-marker {
+  display: none;
+}
+/* A disclosure, not a link: a down chevron on a flat mint-tint disc with a
+   rim and a ring, no ledge, so it never passes for the ledged "go to"
+   chevrons on list rows. It flips up while the story is open. */
+.ritual-narrative > summary::before {
+  content: "";
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--rim);
+  border-radius: 50%;
+  background-color: var(--mint-tint);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a5f58' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 2px #a9e5da;
+  transition: transform 0.2s var(--ease);
+}
+.ritual-narrative[open] > summary::before {
+  transform: rotate(180deg);
+}
+.ritual-narrative > p {
+  max-height: 40vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  line-height: 1.8;
+  margin: 0;
+  padding: 12px 14px;
+  border: 3px solid var(--rim);
+  border-radius: 20px;
+  background: var(--paper);
+  box-shadow: 0 0 0 2px var(--edge);
+  color: var(--ink-soft);
+}
+.scene-catalog {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0;
+}
+/* A scene row (SceneCard: 场景目录, 仪式时光): its badge, the title over a
+   status chip or a short line, and the settings rows' go-to chevron. */
+.scene-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  row-gap: 3px;
+  align-items: center;
+  width: 100%;
+  padding: 12px 14px 12px 12px;
+  border: 3px solid var(--rim);
+  border-radius: 24px;
+  background: var(--sand);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--panel-shadow);
+}
+.scene-card > .scene-badge {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.scene-card > strong {
+  grid-column: 2;
+  align-self: end;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.scene-card > small,
+.scene-card > .scene-status {
+  grid-column: 2;
+  align-self: start;
+  justify-self: start;
+}
+.scene-card > small {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.scene-card > svg {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+/* Where a scene's content comes from. Read-only: a ring, no ledge. */
+.scene-status {
+  padding: 1px 10px 2px;
+  border: 2px solid var(--rim);
+  border-radius: 999px;
+  background: var(--mint-tint);
+  box-shadow: 0 0 0 2px #a9e5da;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--mint-ink);
+}
+.scene-status[data-status="cached"] {
+  background: var(--leaf-tint);
+  box-shadow: 0 0 0 2px #bfe3ad;
+  color: var(--leaf-ink);
+}
+.scene-status[data-status="download"] {
+  background: var(--butter-tint);
+  box-shadow: 0 0 0 2px #f2d98a;
+  color: var(--ink-soft);
+}
+.scene-status[data-status="update"] {
+  background: var(--peach-tint);
+  box-shadow: 0 0 0 2px #f6c7b2;
+  color: #8a3b17;
+}
+/* A search pill with a magnifier inside; the field outline keeps 3:1 on the
+   mint page, where the sand edge was 1.1:1. */
+.scene-search {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+}
+.scene-search > svg {
+  position: absolute;
+  left: 17px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+  color: var(--ink-soft);
+  stroke-width: 2.4;
+  pointer-events: none;
+}
+.scene-search input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 8px 16px 8px 46px;
+  border: 2.5px solid var(--field-edge);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 3px 0 #d4c9b4;
+  appearance: none;
+}
+.scene-search input::placeholder {
+  color: var(--muted);
+}
+.cache-manager label {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.cache-manager select {
+  min-height: 48px;
+  border: 2.5px solid var(--field-edge);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  box-shadow: 0 3px 0 #d4c9b4;
+}
+.cache-usage {
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 24px;
+}
+.scene-download,
+.scene-load-error {
+  padding: 24px;
+  border: 3px solid var(--rim);
+  border-radius: 24px;
+  display: grid;
+  gap: 20px;
+  background: var(--sand);
+  box-shadow: var(--panel-shadow-static);
+}
 /* A long detail (an English message, a URL) wraps inside the card instead of
    widening it, so 重试打开 stays on screen. */
-.scene-load-error { grid-template-columns: minmax(0, 1fr); overflow-wrap: anywhere; }
-.scene-load-error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13px; color: var(--muted); }
-.scene-download progress { width: 100%; accent-color: var(--mint-ledge); }
+.scene-load-error {
+  grid-template-columns: minmax(0, 1fr);
+  overflow-wrap: anywhere;
+}
+.scene-load-error code {
+  display: block;
+  margin-top: 8px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  color: var(--muted);
+}
+.scene-download progress {
+  width: 100%;
+  accent-color: var(--mint-ledge);
+}
 /* 已存进心愿 once a scene's wish box keeps a line: empty (no height) until then. */
-.scene-wish-saved { display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; margin: 0; color: var(--mint-text); font-weight: 700; }
-.scene-experience h1 { font-size: 26px; text-shadow: 0 3px 0 #ffffffb3; }
-.scene-experience .woodfish-object { width: 100%; height: 340px; border: 4px solid var(--rim); border-radius: 30px; background: radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px, var(--sand); box-shadow: 0 0 0 2px var(--edge), var(--soft-drop); }
+.scene-wish-saved {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 12px;
+  margin: 0;
+  color: var(--mint-text);
+  font-weight: 700;
+}
+.scene-experience h1 {
+  font-size: 26px;
+  text-shadow: 0 3px 0 #ffffffb3;
+}
+/* The scene page's own lines in the island body voice (ink-soft, 600, like
+   .lead): a remote scene's caption under its title, the woodfish's
+   instruction under its stage and the closing note. */
+.scene-caption,
+.scene-instruction,
+.scene-done {
+  color: var(--ink-soft);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.scene-caption {
+  margin: 2px 0 14px;
+}
+.scene-instruction,
+.scene-done {
+  margin: 14px 0 0;
+  text-align: center;
+}
+/* The download and load-error cards' lines, at body weight too. */
+.scene-download p,
+.scene-load-error p {
+  font-weight: 600;
+}
+.scene-experience .woodfish-object {
+  width: 100%;
+  height: 340px;
+  border: 4px solid var(--rim);
+  border-radius: 30px;
+  background:
+    radial-gradient(#efe1bf 1.6px, transparent 2.1px) 0 0 / 18px 18px,
+    var(--sand);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    var(--soft-drop);
+}
 /* A small HUD counter. */
-.scene-progress { display: inline-block; margin: 2px 0 14px; padding: 2px 14px 3px; border: 2.5px solid var(--rim); border-radius: 999px; background: var(--butter-tint); box-shadow: 0 0 0 2px #f2d98a; color: var(--ink-soft); font-weight: 800; }
-.library-scene-stage [hidden] { display: none !important; }
+.scene-progress {
+  display: inline-block;
+  margin: 2px 0 14px;
+  padding: 2px 14px 3px;
+  border: 2.5px solid var(--rim);
+  border-radius: 999px;
+  background: var(--butter-tint);
+  box-shadow: 0 0 0 2px #f2d98a;
+  color: var(--ink-soft);
+  font-weight: 800;
+}
+.library-scene-stage [hidden] {
+  display: none !important;
+}
 
-/* C-grade scenes: transparent canvas over the island stage (like the woodfish). */
+/* C-grade scenes: transparent canvas over the island stage (like the woodfish).
+   The scene kit's createStepOverlay marks their overlay scene-overlay--stage. */
 /* The page scrolls from empty stage areas; a touch that starts on the scene's
    object is claimed in JS (claimObjectTouches), so its gestures still work. */
-.scene-overlay--cream .scene-hit-layer {
+.scene-overlay--stage .scene-hit-layer {
   touch-action: manipulation;
 }
-/* On the bright day stage the note under the wish box is ink on paper. */
-.scene-overlay--cream .scene-wish-slot .wish-write-meta {
+/* On the island stage (the App's sand tray, day or night) the note under the
+   wish box is ink on paper. */
+.scene-overlay--stage .scene-wish-slot .wish-write-meta {
   color: var(--ink-soft);
   text-shadow: 0 1px 0 var(--paper), 0 0 6px var(--paper);
 }
-.scene-overlay--cream .scene-wish-slot .wish-write-meta [data-nudge] {
+.scene-overlay--stage .scene-wish-slot .wish-write-meta [data-nudge] {
   color: #a2471a;
 }
 
@@ -3091,10 +3557,9 @@ button:hover:not(:disabled) {
   }
 }
 
+/* A solid tint on the dotted page (see .wish-hero). */
 .practice-card {
-  background:
-    radial-gradient(#ffd6c4 2px, transparent 2.6px) 0 0 / 18px 18px,
-    var(--peach-tint);
+  background: var(--peach-tint);
   box-shadow:
     inset 0 3px 0 #ffffffd9,
     0 0 0 2px #f6c7b2,
@@ -3130,10 +3595,8 @@ button:hover:not(:disabled) {
   gap: 16px;
 }
 /* Each practice leads with a badge holding its own drawn icon, like an app
-   on the island phone. The candy follows the scene, not its list position. */
+   on the island phone, in its scene's candy. */
 .wish-practice-card {
-  --badge: var(--sky);
-  --badge-tint: var(--sky-tint);
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto auto;
@@ -3148,38 +3611,32 @@ button:hover:not(:disabled) {
   cursor: pointer;
   box-shadow: var(--panel-shadow);
 }
-.wish-practice-card[data-scene="yeondeunghoe"] {
-  --badge: var(--butter);
-  --badge-tint: var(--butter-tint);
-}
-.wish-practice-card[data-scene="crane"] {
-  --badge: var(--bubblegum);
-  --badge-tint: var(--bubblegum-tint);
-}
-.wish-practice-card[data-scene="lantern"] {
-  --badge: var(--peach);
-  --badge-tint: var(--peach-tint);
-}
-.wish-practice-card[data-scene="slavic-wreath"] {
-  --badge: var(--leaf);
-  --badge-tint: var(--leaf-tint);
-}
-/* A light tint keeps the icon's own colours readable; the candy is the ring. */
-.practice-badge {
-  grid-column: 1;
-  grid-row: 1 / span 2;
+/* A scene's badge (SceneBadge in scene-icons.tsx). A light tint keeps the
+   icon's own colours readable; the scene's candy is the ring. */
+.scene-badge {
   display: grid;
   place-items: center;
   width: 48px;
   height: 48px;
   border: 2.5px solid var(--rim);
   border-radius: 16px;
-  background: var(--badge-tint);
-  box-shadow: 0 0 0 2px var(--badge);
+  background: var(--candy-tint, var(--slot));
+  box-shadow: 0 0 0 2px var(--candy, var(--edge));
 }
-.practice-badge .scene-icon {
+.scene-badge .scene-icon {
   width: 38px;
   height: 38px;
+}
+/* A scene without a drawn icon shows a leaf. */
+.scene-badge > svg:not(.scene-icon) {
+  width: 24px;
+  height: 24px;
+  color: var(--leaf-ink);
+  stroke-width: 2;
+}
+.wish-practice-card > .scene-badge {
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 .wish-practice-card strong {
   grid-column: 2;
@@ -3198,28 +3655,83 @@ button:hover:not(:disabled) {
   grid-column: 3;
   grid-row: 1 / span 2;
 }
+/* A wish's practices are small tiles in two columns: the scene's badge (its
+   candy) and its title and verb on paper, with a small sand ledge. Five
+   full-width candy buttons weighed as much as 我的心愿实现了, which stays
+   the page's one big button. */
 .wish-practice-detail .wish-practice-actions {
   display: grid;
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 10px;
   margin-top: 12px;
 }
-/* The same candy per practice as its badge on 心愿 (燃灯 keeps the butter
-   secondary). */
-.wish-practice-actions .button[data-scene="tanzaku-tanabata"] {
-  --ledge-color: var(--sky-ledge);
-  background: linear-gradient(180deg, var(--sky-hi), var(--sky));
+.practice-tile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 7px 8px 7px 7px;
+  border: 2.5px solid var(--rim);
+  border-radius: 18px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 4px 0 2px #e2d3b3;
 }
-.wish-practice-actions .button[data-scene="crane"] {
-  --ledge-color: var(--bubblegum-ledge);
-  background: linear-gradient(180deg, var(--bubblegum-hi), var(--bubblegum));
+.practice-tile:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 0 0 2px var(--edge),
+    0 1px 0 2px #e2d3b3;
 }
-.wish-practice-actions .button[data-scene="lantern"] {
-  --ledge-color: var(--peach-ledge);
-  background: linear-gradient(180deg, var(--peach-hi), var(--peach));
+.practice-tile .scene-badge {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
 }
-.wish-practice-actions .button[data-scene="slavic-wreath"] {
-  --ledge-color: var(--leaf-ledge);
-  background: linear-gradient(180deg, var(--leaf-hi), var(--leaf));
+.practice-tile .scene-badge .scene-icon {
+  width: 32px;
+  height: 32px;
+}
+.practice-tile > span {
+  min-width: 0;
+}
+.practice-tile strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.4;
+  /* If a title must wrap, it splits evenly instead of leaving one glyph. */
+  text-wrap: balance;
+}
+.practice-tile small {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--muted);
+}
+/* Narrow phones: a smaller badge keeps a five-glyph title on one line. */
+@media (max-width: 360px) {
+  .practice-tile {
+    gap: 6px;
+    padding: 6px;
+  }
+  .practice-tile .scene-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+  }
+  .practice-tile .scene-badge .scene-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .practice-tile strong {
+    font-size: 13px;
+  }
 }
 .wish-practice-detail .quiet {
   margin: 6px 0 0;

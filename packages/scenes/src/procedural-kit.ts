@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import type { SceneContext } from './contract'
 
-/** Shared helpers for the cream/warm C-grade procedural scenes (Design A). */
+/** Shared helpers for the warm C-grade procedural scenes on the island stage (Design A). */
 
 export function setSafeText(
   el: HTMLElement,
@@ -28,7 +28,7 @@ export function createStepOverlay(
   assertSafeCopy: (t: string) => void,
 ): StepOverlay {
   overlay.replaceChildren()
-  overlay.classList.add('scene-overlay', 'scene-overlay--cream')
+  overlay.classList.add('scene-overlay', 'scene-overlay--stage')
 
   const hitLayer = document.createElement('div')
   hitLayer.className = 'scene-hit-layer'
@@ -76,9 +76,9 @@ export function createStepOverlay(
 export const CEL_STYLE = 'toon-ink' as const
 
 /**
- * Renderer + scene for the cream/warm palette. Like the woodfish, the canvas
- * clears fully transparent so the subject sits on the cream page itself — no
- * painted background, fog or fake stage.
+ * Renderer + scene for the warm palette. Like the woodfish, the canvas clears
+ * fully transparent so the subject sits on the host's island stage itself —
+ * no painted background, fog or fake stage in the canvas.
  */
 export function createWarmStage(canvas: HTMLCanvasElement) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
@@ -348,10 +348,10 @@ export function createPointerRay(canvas: HTMLCanvasElement, camera: THREE.Camera
 }
 
 /**
- * Lets the page scroll from the empty parts of the stage: the cream hit layer
- * allows panning (touch-action: manipulation), and only a touch that starts
- * where `onObject` is true is kept from scrolling, so taps and drags on the
- * object stay with the scene. Returns a remover.
+ * Lets the page scroll from the empty parts of the stage: the stage overlay's
+ * hit layer allows panning (touch-action: manipulation), and only a touch
+ * that starts where `onObject` is true is kept from scrolling, so taps and
+ * drags on the object stay with the scene. Returns a remover.
  */
 export function claimObjectTouches(
   hitLayer: HTMLElement,

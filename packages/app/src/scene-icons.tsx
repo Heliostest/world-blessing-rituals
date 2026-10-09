@@ -1,8 +1,9 @@
 import type { ReactNode } from "react";
+import { Icon } from "./art";
 
 /**
- * Drawn scene icons, keyed by scene id, so a scene looks the same on 今日 and
- * 心愿. Flat cel fills with one shade band, then the ink line on top, in the
+ * Drawn scene icons, keyed by scene id, so a scene looks the same on 今日, 心愿
+ * and 场景目录. Flat cel fills with one shade band, then the ink line on top, in the
  * ink colour the 3D scenes' toon pass draws (0x584235). No emoji or Unicode
  * symbols: they render differently on every platform.
  */
@@ -41,6 +42,62 @@ function Cord({ d, color, width = 2 }: { d: string; color: string; width?: numbe
 }
 
 const sceneIcons: Record<string, ReactNode> = {
+  // 敲一敲木鱼: a round wooden fish drum on its cushion, the mallet leaning on it.
+  woodfish: (
+    <>
+      <Part d="M5.5 41a17.5 4.5 0 1 0 35 0a17.5 4.5 0 1 0-35 0Z" fill="#e8604f">
+        <path d="M5.5 41a17.5 4.5 0 0 0 35 0c-2 2-9.4 3.2-17.5 3.2S7.5 43 5.5 41Z" fill="#c9442d" />
+      </Part>
+      <Part d="M4 30.5a4.5 4 0 1 0 9 0a4.5 4 0 1 0-9 0Z" fill="#eebd84" />
+      <Part d="M7.5 25.5C7.5 16.8 14.4 10.5 23 10.5s15.5 6.3 15.5 15S31.6 40 23 40 7.5 34.2 7.5 25.5Z" fill="#eebd84">
+        <path d="M31.5 13.2c4.3 2.7 7 7.1 7 12.3 0 8.5-6.6 14.4-15 14.5 6.7-2.6 10.5-8.2 10.5-14.6 0-4.6-.9-8.7-2.5-12.2Z" fill="#d39a5e" />
+        <path d="M12.8 20.5c1.5-3.6 4.6-6.1 8.4-6.8" fill="none" stroke="#fff3df" strokeWidth={2.4} />
+        <path d="M12.5 29.5Q23.5 34.5 35.5 28" fill="none" stroke={INK} strokeWidth={2.2} />
+        <ellipse cx="12.6" cy="29.4" rx="2.7" ry="2" fill="#5a3a26" />
+      </Part>
+      <Cord d="M37.6 20.5 44.5 40" color="#c98f5a" width={2.6} />
+      <circle cx="36.4" cy="17.4" r="4.4" fill="#e0a96a" stroke={INK} strokeWidth={2.2} />
+    </>
+  ),
+  // 泉边一念: a stone-ringed spring, a golden token falling into it.
+  "celtic-folk-spring": (
+    <>
+      <Part d="M3.5 32c0-6.1 9.2-11 20.5-11s20.5 4.9 20.5 11-9.2 11-20.5 11S3.5 38.1 3.5 32Z" fill="#b5bfa6">
+        <path d="M4 34.7C6.5 39.7 14.6 43 24 43s17.5-3.3 20-8.3c-3.6 3.6-11.2 5.9-20 5.9S7.6 38.3 4 34.7Z" fill="#8e9b80" />
+        <path d="M9.5 24.2l3.9 2.4M24 21v3.5M38.5 24.2l-3.9 2.4M9.5 39.8l3.9-3.4M38.5 39.8l-3.9-3.4M24 43v-4.5" stroke={INK} strokeWidth={1.4} />
+      </Part>
+      <Part d="M9 31.5c0-3.9 6.7-7 15-7s15 3.1 15 7-6.7 7-15 7-15-3.1-15-7Z" fill="#4fb3d0">
+        <path d="M9.4 33.2c1.6 3.2 7.5 5.3 14.6 5.3s13-2.1 14.6-5.3c-2.9 2-8.4 3.3-14.6 3.3S12.3 35.2 9.4 33.2Z" fill="#2a8fb0" />
+        <ellipse cx="24" cy="31.5" rx="7" ry="2.6" fill="none" stroke="#d9f2fc" strokeWidth={1.6} />
+      </Part>
+      <path d="M19.4 3.5v3.4M28.6 3.5v3.4" stroke="#e0aa25" strokeWidth={1.8} />
+      <circle cx="24" cy="13" r="4.8" fill="#f6c453" stroke={INK} strokeWidth={2} />
+      <path d="M21.6 11.4a2.6 2.6 0 0 1 2.4-1.6" fill="none" stroke="#fff3cf" strokeWidth={1.4} />
+    </>
+  ),
+  // 花水位一倾: a silver jug pouring a thin stream into a bowl, a petal afloat.
+  "theravada-water": (
+    <>
+      <Part d="M5 30h38c-.9 7.6-8.8 12.8-19 12.8S5.9 37.6 5 30Z" fill="#e8c89a">
+        <path d="M34.8 30H43c-.9 7.6-8.8 12.8-19 12.8 6.1-1.8 10.2-6.6 10.8-12.8Z" fill="#c4a882" />
+      </Part>
+      <Part d="M5 30c0-2 8.5-3.7 19-3.7s19 1.7 19 3.7-8.5 3.7-19 3.7S5 32 5 30Z" fill="#4fb3d0">
+        <ellipse cx="28" cy="30.2" rx="4.6" ry="1.4" fill="none" stroke="#d9f2fc" strokeWidth={1.4} />
+      </Part>
+      {/* A small petal: a finer ink line than the larger parts. */}
+      <path d="M12.6 31.4c-2-.4-2.8-2.7-1.4-4 1.4-1.2 3.3-.6 4.2.7.9-1.3 2.8-1.9 4.2-.7 1.4 1.3.6 3.6-1.4 4-1.8.4-3.8.4-5.6 0Z" fill="#ffc4d3" />
+      <path d="M15.4 28.1c.9-1.3 2.8-1.9 4.2-.7 1.4 1.3.6 3.6-1.4 4-.9.2-1.9.3-2.8.3Z" fill="#ff9fb8" />
+      <path d="M12.6 31.4c-2-.4-2.8-2.7-1.4-4 1.4-1.2 3.3-.6 4.2.7.9-1.3 2.8-1.9 4.2-.7 1.4 1.3.6 3.6-1.4 4-1.8.4-3.8.4-5.6 0Z" fill="none" stroke={INK} strokeWidth={1.4} />
+      <Cord d="M29.9 16.8C29.4 21.4 28.8 25.6 28.4 30" color="#8ad0e8" />
+      <g transform="rotate(40 17 12)">
+        <Part d="M23 8l6.5-1.2-6.5 5.7Z" fill="#c7d1db" />
+        <Part d="M11 5.5h12v11a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4Z" fill="#e4eaf0">
+          <path d="M19.4 5.5H23v11a4 4 0 0 1-3.6 4Z" fill="#aab7c3" />
+        </Part>
+        <Part d="M9.8 3.2h14.4a1 1 0 0 1 1 1v1.3H8.8V4.2a1 1 0 0 1 1-1Z" fill="#c7d1db" />
+      </g>
+    </>
+  ),
   // 风铃一响: a glass bell with a painted bloom and its paper strip.
   "furin-wind-chime": (
     <>
@@ -149,7 +206,7 @@ const sceneIcons: Record<string, ReactNode> = {
       </Part>
     </>
   ),
-  // 点一盏心愿灯: a lit paper lantern with its wish plaque.
+  // 月下一灯: a lit paper lantern with its wish plaque.
   lantern: (
     <>
       <path d="M24 2v6" stroke="#c8453a" strokeWidth={2} />
@@ -211,6 +268,19 @@ export function SceneIcon({ id }: { id: string }) {
     >
       {art}
     </svg>
+  );
+}
+
+/**
+ * A scene's badge in a list row (场景目录, 心愿): its drawn icon on a light tint,
+ * ringed in the scene's candy (keyed by data-scene in style.css). A scene
+ * without a drawn icon (a new remote one) shows a leaf, so no row is blank.
+ */
+export function SceneBadge({ id }: { id: string }) {
+  return (
+    <span className="scene-badge" data-scene={id} aria-hidden="true">
+      {hasSceneIcon(id) ? <SceneIcon id={id} /> : <Icon name="leaf" />}
+    </span>
   );
 }
 

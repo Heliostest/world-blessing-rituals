@@ -408,7 +408,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
       for (const l of [main, ...companions]) l.halo?.dispose()
       disposeTree(world)
       overlay.replaceChildren()
-      overlay.classList.remove('scene-overlay', 'scene-overlay--cream')
+      overlay.classList.remove('scene-overlay', 'scene-overlay--stage')
     },
   }
 }

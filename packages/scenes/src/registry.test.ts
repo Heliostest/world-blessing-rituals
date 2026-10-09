@@ -99,7 +99,7 @@ describe('loadScene', () => {
     ['tibetan-wheel', '廊前轻转', 'tibetan-buddhism'],
     ['slavic-wreath', '火边花环', 'slavic-folk'],
     ['crane', '折一只纸鹤', PRODUCT_ORIGINAL],
-    ['lantern', '点一盏心愿灯', PRODUCT_ORIGINAL],
+    ['lantern', '月下一灯', PRODUCT_ORIGINAL],
   ])('resolves %s module whose meta matches the registry', async (id, title, slug) => {
     const mod = await loadScene(id)
     expect(mod.meta).toEqual(sceneRegistry.find((m) => m.id === id))

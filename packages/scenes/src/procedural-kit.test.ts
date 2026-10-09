@@ -28,12 +28,23 @@ import {
   claimObjectTouches,
   createLampHalo,
   createSceneFeedback,
+  createStepOverlay,
   createWarmStage,
 } from './procedural-kit'
 
 afterEach(() => {
   vi.unstubAllGlobals()
   vi.clearAllMocks()
+})
+
+describe('createStepOverlay', () => {
+  it('marks its overlay as an island-stage one, the class the App styles it by', () => {
+    // packages/app/src/style.css keys page scroll from empty stage areas and
+    // the wish note's ink on scene-overlay--stage.
+    const overlay = document.createElement('div')
+    createStepOverlay(overlay, { title: 't', stepsAria: 's', action: 'a' }, () => {})
+    expect([...overlay.classList]).toEqual(['scene-overlay', 'scene-overlay--stage'])
+  })
 })
 
 describe('createWarmStage', () => {

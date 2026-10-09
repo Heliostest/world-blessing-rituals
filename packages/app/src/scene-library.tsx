@@ -17,6 +17,7 @@ import type { CacheOptions, CacheStats } from "@wbr/content/cache";
 import { Icon } from "./art";
 import { contentIO, useContent } from "./content";
 import { useApp } from "./context";
+import { SceneBadge } from "./scene-icons";
 import { recommendTodayScene } from "./scene-placement";
 
 export type BuiltInSceneEntry = CatalogEntry & {
@@ -125,7 +126,7 @@ export const builtInScenes: BuiltInSceneEntry[] = [
   },
   {
     id: "lantern",
-    title: "点一盏心愿灯",
+    title: "月下一灯",
     engine: "lantern@1",
     revision: "bundled",
     manifestUrl: "",
@@ -260,28 +261,35 @@ export function SceneLibraryProvider({ children }: { children: ReactNode }) {
     </Library.Provider>
   );
 }
+/** 今日's scene recommendation. */
+export const SCENE_DISCOVERY_COPY = {
+  heading: "今日场景推荐",
+  browse: "浏览场景目录",
+  note: "点开时准备内容，记录留在本机。",
+} as const;
+/** A small heading with the catalog link over one quiet scene row, so the
+ * daily ritual's mint 开始今日仪式 stays the first call to action. */
 export function SceneRecommendation({ day }: { day: string }) {
   const { entries } = useSceneLibrary(),
     { go } = useApp();
   const entry = recommendTodayScene(entries, day);
   return (
     <section className="scene-discovery">
-      <div>
-        <span className="eyebrow">今日场景推荐</span>
-        <h2>{entry?.title}</h2>
-        <p>点开时准备内容，记录会一直留在本机。</p>
+      <div className="section-heading">
+        <h2>{SCENE_DISCOVERY_COPY.heading}</h2>
+        <button className="text-button" onClick={() => go({ page: "scenes" })}>
+          {SCENE_DISCOVERY_COPY.browse} <Icon name="arrow" />
+        </button>
       </div>
       {entry && (
-        <button
-          className="button secondary"
+        <SceneCard
+          id={entry.id}
+          title={entry.title}
           onClick={() => go({ page: "scene", id: entry.id, entry })}
         >
-          体验推荐场景
-        </button>
+          <small>{SCENE_DISCOVERY_COPY.note}</small>
+        </SceneCard>
       )}
-      <button className="text-button" onClick={() => go({ page: "scenes" })}>
-        浏览场景目录
-      </button>
     </section>
   );
 }
@@ -293,6 +301,54 @@ export const CATALOG_EMPTY_COPY = {
   body: "换个字词试试，或清空搜索，看看全部场景。",
   clear: "清空搜索",
 } as const;
+/** 场景目录's search field. */
+export const CATALOG_SEARCH_COPY = {
+  label: "搜索场景",
+  placeholder: "搜索场景名",
+} as const;
+/** The status chip on a 场景目录 row: where the scene's content comes from. */
+export const SCENE_STATUS_COPY = {
+  bundled: "内置",
+  cached: "已缓存",
+  download: "需下载",
+  update: "需更新 App",
+} as const;
+export type SceneStatus = keyof typeof SCENE_STATUS_COPY;
+/** A row's chip, from the library's cache status for a remote scene. */
+export function sceneStatus(entry: CatalogEntry, cache?: string): SceneStatus {
+  if (!supportsScene(entry.engine)) return "update";
+  if (!entry.manifestUrl || cache === "bundled") return "bundled";
+  return cache === "cached" ? "cached" : "download";
+}
+/** A scene as a list row (场景目录, 仪式时光): its badge, its title over a
+ * short line, and the go-to chevron of the settings rows. */
+export function SceneCard({
+  id,
+  title,
+  disabled,
+  onClick,
+  children,
+}: {
+  id: string;
+  title: string;
+  disabled?: boolean;
+  onClick(): void;
+  children: ReactNode;
+}) {
+  return (
+    <button
+      className="scene-card"
+      data-scene={id}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      <SceneBadge id={id} />
+      <strong>{title}</strong>
+      {children}
+      <Icon name="arrow" />
+    </button>
+  );
+}
 export function SceneCatalog() {
   const { entries, library, stats, error, ready } = useSceneLibrary(),
     { go } = useApp();
@@ -325,9 +381,12 @@ export function SceneCatalog() {
       </header>
       {error && <p role="status">{error}</p>}
       <label className="scene-search">
-        搜索场景
+        <span className="sr-only">{CATALOG_SEARCH_COPY.label}</span>
+        <Icon name="search" />
         <input
           ref={search}
+          type="search"
+          placeholder={CATALOG_SEARCH_COPY.placeholder}
           value={query}
           onChange={(e) => {
             setQuery(e.target.value);
@@ -336,28 +395,22 @@ export function SceneCatalog() {
         />
       </label>
       <div className="scene-catalog">
-        {visible.map((entry) => (
-          <button
-            disabled={!ready}
-            className="scene-card"
-            key={entry.id}
-            onClick={() => go({ page: "scene", id: entry.id, entry })}
-          >
-            <strong>{entry.title}</strong>
-            <small>
-              {!supportsScene(entry.engine)
-                ? "需要更新 App"
-                : ((
-                    {
-                      bundled: "内置内容",
-                      cached: "已缓存 · 打开时校验",
-                      missing: "资源已清理 · 点开重新下载",
-                      unknown: "点开下载",
-                    } as Record<string, string>
-                  )[statuses[entry.id]] ?? "点开下载")}
-            </small>
-          </button>
-        ))}
+        {visible.map((entry) => {
+          const status = sceneStatus(entry, statuses[entry.id]);
+          return (
+            <SceneCard
+              key={entry.id}
+              id={entry.id}
+              title={entry.title}
+              disabled={!ready}
+              onClick={() => go({ page: "scene", id: entry.id, entry })}
+            >
+              <span className="scene-status" data-status={status}>
+                {SCENE_STATUS_COPY[status]}
+              </span>
+            </SceneCard>
+          );
+        })}
       </div>
       {query.trim() !== "" && matches.length === 0 && (
         <div className="empty" role="status">

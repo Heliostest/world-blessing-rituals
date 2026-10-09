@@ -135,14 +135,10 @@ export const WISH_PRACTICE_COPY = {
   otherAction: "做个小练习",
 } as const;
 
-/** A wish practice's verb, under its title on the 心愿 card. */
+/** A wish practice's verb, under its title on the 心愿 card and on a wish's
+ * detail. */
 export function wishPracticeAction(entry: CatalogEntry): string {
   return isWishScene(entry.id)
     ? WISH_PRACTICE_COPY.actions[entry.id as WishSceneId]
     : WISH_PRACTICE_COPY.otherAction;
-}
-
-/** Title and verb, for a button that stands alone (心愿 detail). */
-export function wishPracticeLabel(entry: CatalogEntry): string {
-  return `${entry.title} · ${wishPracticeAction(entry)}`;
 }

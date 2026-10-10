@@ -1,4 +1,9 @@
 import { reduce, restore, type Action, type State } from "@wbr/core";
+/**
+ * The one save: the whole State (keepsakes included) as JSON, written on every
+ * dispatch. The web host keeps it in localStorage; the phone App keeps it in
+ * AsyncStorage under the same key (apps/mobile-expo/App.tsx).
+ */
 export const SAVE_KEY = "cyber-bless:personal:v1";
 export type Storage = {
   read(): Promise<string | null>;

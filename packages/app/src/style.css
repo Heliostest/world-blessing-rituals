@@ -3884,7 +3884,7 @@ button:hover:not(:disabled) {
   color: var(--leaf-ink);
   stroke-width: 2;
 }
-/* 今日's daily set: three scene cards, badge first like the 心愿 rows. */
+/* 今日's daily set: the day's main walk, then picks from 小天地, badge first like the 心愿 rows. */
 .daily-set {
   margin: 8px 0 18px;
   display: grid;
@@ -3937,6 +3937,67 @@ button:hover:not(:disabled) {
 .daily-set-card > svg {
   grid-column: 3;
   grid-row: 1 / span 2;
+}
+/* The day's main walk: the featured card, a size up from the picks below. */
+.daily-set-primary {
+  padding: 16px 16px 16px 14px;
+  column-gap: 14px;
+}
+.daily-set-primary > .scene-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+.daily-set-primary > .scene-badge .scene-icon {
+  width: 48px;
+  height: 48px;
+}
+.daily-set-primary strong {
+  font-size: 18px;
+}
+/* 今日's picks from 小天地: three smaller cards to a row, badge on top. */
+.daily-collected-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.daily-collected-grid > .daily-set-card {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  row-gap: 6px;
+  padding: 12px 6px 10px;
+  border-radius: var(--radius-tile);
+  text-align: center;
+}
+.daily-collected-grid > .daily-set-card > * {
+  grid-column: 1;
+  grid-row: auto;
+}
+.daily-collected-grid > .daily-set-card strong {
+  font-size: 14px;
+}
+.daily-collected-grid > .daily-set-card small {
+  font-size: 12px;
+}
+/* Nothing to pick yet: a calm dashed slot where the row will be. */
+.daily-collected-empty {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 3px dashed #d9c49b;
+  border-radius: var(--radius-tile);
+  background: var(--paper);
+  text-align: center;
+}
+.daily-collected-empty strong {
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--ink);
+}
+.daily-collected-empty small {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  line-height: 1.6;
 }
 /* The day's keepsake, already collected: a small mint check on the corner. */
 .collected-dot {

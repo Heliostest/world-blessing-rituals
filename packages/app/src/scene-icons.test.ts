@@ -9,11 +9,18 @@ import { Today } from "./home";
 import { Wishes } from "./pages";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
 import { SceneBadge, hasSceneIcon } from "./scene-icons";
-import { DAILY_SET_COPY, dailySceneSet, isWishScene } from "./scene-placement";
+import {
+  BLESSING_SCENE_IDS,
+  DAILY_COLLECTED_COPY,
+  DAILY_SET_COPY,
+  WISH_SCENE_IDS,
+  dailyCollectedPicks,
+  dailyPrimaryScene,
+  isWishScene,
+} from "./scene-placement";
 import { VESSEL_COPY } from "./vessels";
 
 const day = "2026-10-07";
-const set = dailySceneSet(builtInScenes, day);
 
 /** Renders `node` in an App with the bundled scenes, as a parsed document. */
 function render(node: ReactNode, state: State = createState()) {
@@ -75,12 +82,22 @@ function keepsake(day: string, sceneId: string, spent?: string) {
 }
 
 describe("今日's daily set badges", () => {
-  const doc = render(createElement(Today, { day }));
+  // An earlier keepsake of every placed scene: the day's walk, then three picks.
+  const state = createState();
+  state.collectibles.push(
+    ...[...BLESSING_SCENE_IDS, ...WISH_SCENE_IDS].map((id) =>
+      keepsake("2026-10-01", id),
+    ),
+  );
+  const primary = dailyPrimaryScene(builtInScenes, day)!;
+  const picks = dailyCollectedPicks(builtInScenes, state.collectibles, day);
+  const doc = render(createElement(Today, { day }), state);
   const cards = [...doc.querySelectorAll(".daily-set-card")];
 
   it("leads every card with its scene's drawn icon, keyed by scene id", () => {
+    expect(picks).toHaveLength(3);
     expect(cards.map((c) => c.getAttribute("data-scene"))).toEqual(
-      set.map((e) => e.id),
+      [primary, ...picks].map((e) => e.id),
     );
     for (const card of cards) {
       expect(card.firstElementChild!.className).toBe("scene-badge");
@@ -89,11 +106,12 @@ describe("今日's daily set badges", () => {
   });
 
   it("labels cards with words only: no emoji or symbol glyphs", () => {
-    expect(cards.map((card) => card.textContent)).toEqual(
-      set.map((entry) =>
-        `${entry.title}${isWishScene(entry.id) ? DAILY_SET_COPY.wishNote : DAILY_SET_COPY.blessingNote}`,
-      ),
-    );
+    const note = (entry: { id: string }, copy: { wishNote: string; blessingNote: string }) =>
+      isWishScene(entry.id) ? copy.wishNote : copy.blessingNote;
+    expect(cards.map((card) => card.textContent)).toEqual([
+      `${primary.title}${note(primary, DAILY_SET_COPY)}`,
+      ...picks.map((entry) => `${entry.title}${note(entry, DAILY_COLLECTED_COPY)}`),
+    ]);
   });
 });
 

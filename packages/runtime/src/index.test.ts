@@ -1,4 +1,5 @@
 import { afterEach, expect, it, vi } from "vitest";
+import { dailyCollectibleId } from "@wbr/core";
 import { browserHost, createStore } from "./index";
 
 afterEach(() => {
@@ -72,4 +73,45 @@ it("gives a brand-new save the initial settings, and leaves a saved one alone", 
   );
   await saved.load();
   expect(saved.getSnapshot().state?.settings.reducedMotion).toBe(false);
+});
+it("keeps the collected keepsakes across a restart: saved on dispatch, restored on load", async () => {
+  // One storage outliving the store, as localStorage / AsyncStorage outlive the App.
+  let raw: string | null = null;
+  const storage = {
+    read: async () => raw,
+    write: async (next: string) => {
+      raw = next;
+    },
+  };
+  const at = "2026-10-10T08:00:00.000Z";
+  const first = createStore(storage);
+  await first.load();
+  for (const [day, sceneId, title, wishScene] of [
+    ["2026-10-10", "tanzaku-tanabata", "短册系竹", true],
+    ["2026-10-11", "woodfish", "敲一敲木鱼", false],
+  ] as const)
+    first.dispatch({
+      type: "daily.scene",
+      id: `visit-${day}`,
+      sceneId,
+      title,
+      wishScene,
+      day,
+      startedAt: at,
+      at,
+    });
+  first.dispatch({
+    type: "collectible.spend",
+    id: dailyCollectibleId("2026-10-10", "tanzaku-tanabata"),
+    at,
+  });
+  await first.flush();
+  const kept = first.getSnapshot().state!.collectibles;
+  expect(kept).toHaveLength(2);
+  expect(kept[0]).toMatchObject({ wishScene: true, spentAt: at });
+
+  const second = createStore(storage);
+  await second.load();
+  expect(second.getSnapshot().status).toBe("saved");
+  expect(second.getSnapshot().state!.collectibles).toEqual(kept);
 });

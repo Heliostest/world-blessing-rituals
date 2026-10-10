@@ -3938,33 +3938,41 @@ button:hover:not(:disabled) {
   grid-column: 3;
   grid-row: 1 / span 2;
 }
-/* The day's main walk: the featured card, a size up from the picks below. */
+/* The day's main walk: the featured card, well above the picks below in
+   badge, title and go arrow. */
 .daily-set-primary {
-  padding: 16px 16px 16px 14px;
-  column-gap: 14px;
+  padding: 20px 18px 20px 16px;
+  column-gap: 16px;
 }
 .daily-set-primary > .scene-badge {
-  width: 60px;
-  height: 60px;
-  border-radius: 20px;
+  width: 72px;
+  height: 72px;
+  border-radius: 24px;
 }
 .daily-set-primary > .scene-badge .scene-icon {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 58px;
 }
 .daily-set-primary strong {
-  font-size: 18px;
+  font-size: 22px;
 }
-/* 今日's picks from 小天地: three smaller cards to a row, badge on top. */
+.daily-set-primary > svg {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+}
+/* 今日's picks from 小天地: three small tiles side by side, badge on top,
+   one row even at 320px. Fewer picks keep the same column width. */
 .daily-collected-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+  gap: 10px;
 }
 .daily-collected-grid > .daily-set-card {
   grid-template-columns: minmax(0, 1fr);
+  align-content: center;
   justify-items: center;
-  row-gap: 6px;
-  padding: 12px 6px 10px;
+  row-gap: 4px;
+  padding: 10px 4px 8px;
   border-radius: var(--radius-tile);
   text-align: center;
 }
@@ -3972,8 +3980,19 @@ button:hover:not(:disabled) {
   grid-column: 1;
   grid-row: auto;
 }
+.daily-collected-grid > .daily-set-card > .scene-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+}
+.daily-collected-grid > .daily-set-card > .scene-badge .scene-icon {
+  width: 32px;
+  height: 32px;
+}
 .daily-collected-grid > .daily-set-card strong {
-  font-size: 14px;
+  font-size: 13px;
+  /* A longer title splits evenly instead of leaving one glyph. */
+  text-wrap: balance;
 }
 .daily-collected-grid > .daily-set-card small {
   font-size: 12px;
@@ -3999,11 +4018,12 @@ button:hover:not(:disabled) {
   color: var(--muted);
   line-height: 1.6;
 }
-/* The day's keepsake, already collected: a small mint check on the corner. */
+/* The day's keepsake, already collected: a small mint check on the corner,
+   just left of the main walk's arrow (18px padding + 36px arrow). */
 .collected-dot {
   position: absolute;
   top: -8px;
-  right: 46px;
+  right: 54px;
   display: grid;
   place-items: center;
   width: 26px;

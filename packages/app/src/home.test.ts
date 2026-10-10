@@ -215,4 +215,27 @@ describe("今日 card layout", () => {
     expect(css).toMatch(/\n\.daily-collected-grid \{/);
     expect(css).toMatch(/\n\.daily-collected-empty \{/);
   });
+
+  it("sets the day's walk well above the picks, three to one row", () => {
+    const style = document.createElement("style");
+    style.textContent = css;
+    document.head.append(style);
+    /** Declarations of the rule for exactly `selector`. */
+    const rule = (selector: string) =>
+      [...style.sheet!.cssRules].find(
+        (r): r is CSSStyleRule => r instanceof CSSStyleRule && r.selectorText === selector,
+      )!.style;
+    const px = (selector: string, prop: string) =>
+      parseFloat(rule(selector).getPropertyValue(prop));
+    const pick = ".daily-collected-grid > .daily-set-card";
+    expect(rule(".daily-collected-grid").cssText).toMatch(
+      /grid-template-columns: repeat\(3, minmax\(0(px)?, 1fr\)\)/,
+    );
+    expect(px(".daily-set-primary > .scene-badge", "width")).toBeGreaterThanOrEqual(
+      1.5 * px(`${pick} > .scene-badge`, "width"),
+    );
+    expect(px(".daily-set-primary strong", "font-size")).toBeGreaterThanOrEqual(
+      1.5 * px(`${pick} strong`, "font-size"),
+    );
+  });
 });

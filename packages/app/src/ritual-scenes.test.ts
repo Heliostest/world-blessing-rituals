@@ -36,7 +36,7 @@ import {
   useOpenScene,
   useOpenRitual,
 } from "./scene-library";
-import { dailySceneSet, isWishScene } from "./scene-placement";
+import { dailyPrimaryScene, isWishScene } from "./scene-placement";
 import { FULFILL_VESSEL_COPY, VESSEL_COPY } from "./vessels";
 import { clickOn, renderUI, settle, typeInto } from "./dom-test-utils";
 
@@ -165,13 +165,25 @@ async function openApp(state: State) {
 }
 
 describe("今日's daily set", () => {
+  // A day whose main walk is a 许愿 scene, walked by its three checkpoints;
+  // the App reads the day off the clock, so the clock is set to it.
+  const WISH_DAY = Array.from(
+    { length: 28 },
+    (_, i) => `2026-10-${String(i + 1).padStart(2, "0")}`,
+  ).find((d) => isWishScene(dailyPrimaryScene(builtInScenes, d)!.id))!;
+  const sceneId = dailyPrimaryScene(builtInScenes, WISH_DAY)!.id;
+  beforeEach(() => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date(`${WISH_DAY}T12:00:00`));
+  });
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
   it("collects the day's keepsake once: a walk, a sticker, a flight to 小天地", async () => {
-    const sceneId = dailySceneSet(builtInScenes, DAY).find((e) =>
-      isWishScene(e.id),
-    )!.id;
     const ui = await openApp(createState());
     const card = ui.host.querySelector(
-      `.daily-set-card[data-scene="${sceneId}"]`,
+      `.daily-set-primary[data-scene="${sceneId}"]`,
     )!;
     await ui.tap(card);
     expect(ui.page()).toBe("scene");
@@ -194,16 +206,16 @@ describe("今日's daily set", () => {
     // The sticker landed on its new shelf slot.
     expect(
       ui.host.querySelector(
-        `[data-collectible-id="${dailyCollectibleId(DAY, sceneId)}"]`,
+        `[data-collectible-id="${dailyCollectibleId(WISH_DAY, sceneId)}"]`,
       ),
     ).not.toBeNull();
     const saved = await ui.saved();
     expect(saved.collectibles).toHaveLength(1);
     expect(saved.collectibles[0]).toMatchObject({
-      id: dailyCollectibleId(DAY, sceneId),
+      id: dailyCollectibleId(WISH_DAY, sceneId),
       kind: "scene",
       sceneId,
-      ...(isWishScene(sceneId) ? { wishScene: true } : {}),
+      wishScene: true,
     });
     expect(saved.ledger).toHaveLength(1);
     expect(saved.ledger[0].amount).toBe(10);
@@ -211,16 +223,15 @@ describe("今日's daily set", () => {
   });
 
   it("settles the day only once: a second walk of the same scene collects nothing", async () => {
-    const sceneId = dailySceneSet(builtInScenes, DAY).find((e) =>
-      isWishScene(e.id),
-    )!.id;
     const ui = await openApp(createState());
-    await ui.tap(ui.host.querySelector(`.daily-set-card[data-scene="${sceneId}"]`)!);
+    await ui.tap(ui.host.querySelector(`.daily-set-primary[data-scene="${sceneId}"]`)!);
     await ui.walk();
     await ui.tap(ui.button(SCENE_DAILY_CTA, ".scene-done-row"));
     await ui.tap(ui.host.querySelector('[data-tab="today"]')!);
-    const card = ui.host.querySelector(`.daily-set-card[data-scene="${sceneId}"]`)!;
+    const card = ui.host.querySelector(`.daily-set-primary[data-scene="${sceneId}"]`)!;
     expect(card.querySelector("small")!.textContent!.trim()).toBe("今天已收下");
+    // Today's keepsake joins the picks from 小天地 tomorrow, not today.
+    expect(ui.host.querySelector(".daily-collected .daily-set-card")).toBeNull();
     await ui.tap(card);
     // A flagged visit starts the scene over.
     expect(ui.sceneProgress()).toBe("已完成 0 / 3");
@@ -232,6 +243,35 @@ describe("今日's daily set", () => {
     const saved = await ui.saved();
     expect(saved.collectibles).toHaveLength(1);
     expect(saved.ledger).toHaveLength(1);
+    ui.unmount();
+  });
+
+  it("walks a pick from 小天地 again as a 回看: nothing collected, nothing spent", async () => {
+    const kept = [
+      keepsake("tanzaku-tanabata", "2026-09-30"),
+      keepsake("furin-wind-chime", "2026-09-29"),
+      keepsake("shinto-torii", "2026-09-28"),
+    ];
+    const ui = await openApp({ ...createState(), collectibles: kept });
+    const picks = [...ui.host.querySelectorAll(".daily-collected .daily-set-card")];
+    expect(picks.map((c) => c.getAttribute("data-scene")).sort()).toEqual(
+      ["furin-wind-chime", "shinto-torii", "tanzaku-tanabata"],
+    );
+    await ui.tap(
+      ui.host.querySelector('.daily-collected [data-scene="tanzaku-tanabata"]')!,
+    );
+    expect(ui.page()).toBe("scene");
+    expect(ui.sceneTitle()).toBe(entryOf("tanzaku-tanabata").title);
+    // Not the day's walk: no daily caption, and the plain done row.
+    expect(ui.host.querySelector(".scene-caption")).toBeNull();
+    await ui.walk();
+    expect(ui.host.querySelector(".scene-done")?.textContent).toBe(
+      SCENE_DONE_COPY,
+    );
+    expect(ui.doneButtons()).toEqual([SCENE_DONE_CTA]);
+    const saved = await ui.saved();
+    expect(saved.collectibles).toEqual(kept);
+    expect(saved.ledger).toEqual([]);
     ui.unmount();
   });
 

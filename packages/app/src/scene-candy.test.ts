@@ -11,7 +11,12 @@ import { clickOn, renderUI } from "./dom-test-utils";
 import { Today } from "./home";
 import { Wishes } from "./pages";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
-import { dailySceneSet, isWishScene, WISH_SCENE_IDS } from "./scene-placement";
+import {
+  dailyCollectedPicks,
+  dailyPrimaryScene,
+  isWishScene,
+  WISH_SCENE_IDS,
+} from "./scene-placement";
 
 const day = "2026-10-07";
 
@@ -83,18 +88,21 @@ describe("scene candy", () => {
   });
 
   it("follows a scene from 今日 to 心愿 by its id", () => {
-    const today = render(createElement(Today, { day }));
-    // One usable keepsake for every wish scene, so 祈愿's whole picker is up.
+    // One usable keepsake, from yesterday, for every wish scene, so 祈愿's
+    // whole picker is up and 今日 picks one of them.
+    const yesterday = "2026-10-06";
     const state = createState();
     for (const id of WISH_SCENE_IDS)
       state.collectibles.push({
-        id: dailyCollectibleId(day, id),
+        id: dailyCollectibleId(yesterday, id),
         kind: "scene",
         title: builtInScenes.find((e) => e.id === id)!.title,
-        at: `${day}T08:00:00.000Z`,
+        at: `${yesterday}T08:00:00.000Z`,
         sceneId: id,
         ...(isWishScene(id) ? { wishScene: true } : {}),
       });
+    const today = render(createElement(Today, { day }), state);
+    const picks = dailyCollectedPicks(builtInScenes, state.collectibles, day);
     const ui = renderUI(
       createElement(
         Context.Provider,
@@ -110,12 +118,12 @@ describe("scene candy", () => {
     const wishes = ui.host;
     expect(
       [...today.querySelectorAll(".daily-set-card")].map((t) => t.getAttribute("data-scene")),
-    ).toEqual(dailySceneSet(builtInScenes, day).map((e) => e.id));
+    ).toEqual([dailyPrimaryScene(builtInScenes, day)!, ...picks].map((e) => e.id));
     for (const id of WISH_SCENE_IDS) {
       expect(wishes.querySelector(`.wish-practice-card[data-scene="${id}"] .scene-badge[data-scene="${id}"]`), id).not.toBeNull();
     }
-    // The day's wish scene is the same candy on both surfaces: one id, one map.
-    const shared = dailySceneSet(builtInScenes, day).find((e) => isWishScene(e.id))!.id;
+    // The day's 许愿 pick is the same candy on both surfaces: one id, one map.
+    const shared = picks.find((e) => isWishScene(e.id))!.id;
     expect(
       today.querySelector(`.daily-set-card[data-scene="${shared}"] .scene-badge[data-scene="${shared}"]`),
     ).not.toBeNull();

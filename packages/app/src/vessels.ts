@@ -22,8 +22,12 @@ export function usableVessels(
     .reverse();
 }
 
-/** 心愿's 许愿小物 shelf: keepsakes gathered from 今日, spent on a wish. */
+/**
+ * 心愿's 祈愿: the button at the page's foot opens a picker of the 许愿小物
+ * gathered from 今日, each spent on a new wish.
+ */
 export const VESSEL_COPY = {
+  pray: "祈愿",
   heading: "许愿小物",
   blurb: "今日仪式里收来的许愿小物，可以拿去许个愿。",
   use: "拿去许愿",

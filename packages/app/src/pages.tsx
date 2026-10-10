@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { rituals, type Collectible } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { formatDate, statusText, useApp } from "./context";
@@ -57,10 +57,9 @@ export function Empty({
 }
 export function Wishes() {
   const { state, go, arrival } = useApp();
-  const { entries } = useSceneLibrary();
-  const openScene = useOpenScene();
   const [filter, setFilter] = useState("active");
-  const vessels = usableVessels(state, entries);
+  // 祈愿 unfolds the 许愿小物 picker under it; the page opens folded.
+  const [praying, setPraying] = useState(false);
   const wishes = state.wishes.filter((w) =>
     filter === "archived"
       ? w.archived
@@ -87,41 +86,6 @@ export function Wishes() {
           <p>每一份认真期待，都值得被记住。</p>
         </div>
       </div>
-      <section className="wish-practice" aria-label={VESSEL_COPY.heading}>
-        <div className="section-heading">
-          <h2>{VESSEL_COPY.heading}</h2>
-          {vessels.length > 0 && <span>{vessels.length} 个可用</span>}
-        </div>
-        <p className="quiet wish-practice-blurb">{VESSEL_COPY.blurb}</p>
-        {vessels.length ? (
-          <div className="wish-practice-grid">
-            {vessels.map((c) => {
-              const entry = entries.find((e) => e.id === c.sceneId);
-              if (!entry) return null;
-              return (
-                <button
-                  key={c.id}
-                  className="wish-practice-card vessel-card"
-                  data-scene={entry.id}
-                  onClick={() => openScene(entry, { vessel: c.id })}
-                >
-                  <SceneBadge id={entry.id} />
-                  <strong>{entry.title}</strong>
-                  <small>{VESSEL_COPY.use}</small>
-                  <Icon name="arrow" />
-                </button>
-              );
-            })}
-          </div>
-        ) : (
-          <Empty
-            title={VESSEL_COPY.emptyTitle}
-            body={VESSEL_COPY.emptyBody}
-            action={VESSEL_COPY.emptyAction}
-            onClick={() => go({ page: "today" })}
-          />
-        )}
-      </section>
       <div className="filter-row" role="group" aria-label="心愿筛选">
         {[
           ["active", "心愿灯"],
@@ -187,10 +151,80 @@ export function Wishes() {
           onClick={() => go({ page: "new" })}
         />
       )}
+      <button
+        className="button primary full pray-button"
+        aria-expanded={praying}
+        aria-controls="vessel-picker"
+        onClick={() => setPraying(!praying)}
+      >
+        <Icon name="wishes" />
+        {VESSEL_COPY.pray}
+      </button>
+      {praying && <VesselPicker />}
       <p className="privacy-note">
         <Icon name="lock" /> 心愿仅保存在这台设备上，只有你能看见。
       </p>
     </>
+  );
+}
+/**
+ * 祈愿's picker: the usable 许愿小物, newest first. Picking one opens its
+ * scene as a vessel visit, which spends it and keeps the line as a new wish.
+ */
+function VesselPicker() {
+  const { state, go } = useApp();
+  const { entries } = useSceneLibrary();
+  const openScene = useOpenScene();
+  const vessels = usableVessels(state, entries);
+  // It unfolds under a button at the page's foot: bring it into view.
+  const picker = useRef<HTMLElement>(null);
+  useEffect(() => {
+    picker.current?.scrollIntoView?.({
+      block: "nearest",
+      behavior: state.settings.reducedMotion ? "auto" : "smooth",
+    });
+  }, []);
+  return (
+    <section
+      id="vessel-picker"
+      className="vessel-picker"
+      aria-label={VESSEL_COPY.heading}
+      ref={picker}
+    >
+      <div className="section-heading">
+        <h2>{VESSEL_COPY.heading}</h2>
+        {vessels.length > 0 && <span>{vessels.length} 个可用</span>}
+      </div>
+      <p className="quiet vessel-picker-blurb">{VESSEL_COPY.blurb}</p>
+      {vessels.length ? (
+        <div className="wish-practice-grid">
+          {vessels.map((c) => {
+            const entry = entries.find((e) => e.id === c.sceneId);
+            if (!entry) return null;
+            return (
+              <button
+                key={c.id}
+                className="wish-practice-card vessel-card"
+                data-scene={entry.id}
+                onClick={() => openScene(entry, { vessel: c.id })}
+              >
+                <SceneBadge id={entry.id} />
+                <strong>{entry.title}</strong>
+                <small>{VESSEL_COPY.use}</small>
+                <Icon name="arrow" />
+              </button>
+            );
+          })}
+        </div>
+      ) : (
+        <Empty
+          title={VESSEL_COPY.emptyTitle}
+          body={VESSEL_COPY.emptyBody}
+          action={VESSEL_COPY.emptyAction}
+          onClick={() => go({ page: "today" })}
+        />
+      )}
+    </section>
   );
 }
 /** A keepsake's own art: a collected scene shows its drawn icon, not a crop. */

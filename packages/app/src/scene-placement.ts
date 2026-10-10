@@ -79,8 +79,6 @@ export const DAILY_SET_COPY = {
   blessingNote: "祈福 · 完成后收进小天地",
   wishNote: "许愿 · 完成后可拿去许愿",
   collected: "今天已收下",
-  /** A scene whose collectible for today already exists, walked again. */
-  browse: "浏览全部场景",
 } as const;
 
 /** The day's char-sum: one stable number a day, reused across both picks. */

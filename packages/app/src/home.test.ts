@@ -53,14 +53,21 @@ describe("今日's daily set", () => {
   const cards = [...section.querySelectorAll(".daily-set-card")];
   const collected = cards.find((c) => c.querySelector(".collected-dot"))!;
 
+  it("is all the page holds: no wish invitation, no scene-catalog link", () => {
+    expect(
+      [...doc.querySelector(".today-page")!.children].map((el) => el.className),
+    ).toEqual(["home-heading", "lead", "daily-set"]);
+    expect(doc.querySelector(".wish-invitation")).toBeNull();
+    // The 功德 pill and the day's three cards are its only buttons.
+    expect(
+      [...doc.querySelectorAll("button")].map((b) => b.className),
+    ).toEqual(["merit-pill", ...set.map(() => "daily-set-card")]);
+  });
+
   it("offers three scene cards under the heading: two 祈福, one 许愿", () => {
     expect(section.querySelector("h2")!.textContent).toBe(
       DAILY_SET_COPY.heading,
     );
-    const links = [...section.querySelectorAll(".text-button")];
-    expect(links.map((b) => b.textContent!.trim())).toEqual([
-      DAILY_SET_COPY.browse,
-    ]);
     const cards = [...section.querySelectorAll(".daily-set-card")];
     expect(cards.map((c) => c.getAttribute("data-scene"))).toEqual(
       set.map((e) => e.id),
@@ -96,7 +103,6 @@ describe("今日's daily set", () => {
       DAILY_SET_COPY.blessingNote,
       DAILY_SET_COPY.wishNote,
       DAILY_SET_COPY.collected,
-      DAILY_SET_COPY.browse,
     ])
       expect(() => assertSafeCopy(text)).not.toThrow();
   });

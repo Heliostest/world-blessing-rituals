@@ -22,7 +22,15 @@ import {
   dailyCollectedPicks,
   dailyPrimaryScene,
   isWishScene,
+  sceneStage,
 } from "./scene-placement";
+
+/* jsdom ships no WebGL2 interfaces, and the preview's first gate is whether
+   they exist at all: pose as a browser that can draw, so the static markup
+   below shows the waiting stage. Effects — and with them real WebGL — only
+   run in a live document, never in renderToStaticMarkup. */
+(globalThis as { WebGL2RenderingContext?: unknown }).WebGL2RenderingContext ??=
+  class WebGL2RenderingContext {};
 
 const day = "2026-10-07";
 const primary = dailyPrimaryScene(builtInScenes, day)!;
@@ -107,6 +115,27 @@ describe("今日's daily set", () => {
       isWishScene(primary.id) ? DAILY_SET_COPY.wishNote : DAILY_SET_COPY.blessingNote,
     );
     expect(fresh.querySelector(".collected-dot")).toBeNull();
+  });
+
+  it("carries the day's walk live on its primary card only", () => {
+    // One canvas a page: the primary hosts the live scene, the picks stay pictures.
+    const previews = [...doc.querySelectorAll(".daily-set-preview")];
+    expect(previews).toHaveLength(1);
+    expect(previews[0]!.closest(".daily-set-card")).toBe(main);
+    expect(row.querySelector(".daily-set-preview")).toBeNull();
+    // Static markup shows the host waiting; effects mount WebGL only live.
+    const preview = previews[0]!;
+    expect(preview.getAttribute("data-status")).toBe("loading");
+    // Look, don't touch: taps fall through to the card, which opens the walk.
+    expect(preview.getAttribute("inert")).not.toBeNull();
+    expect(preview.getAttribute("aria-hidden")).toBe("true");
+    // data-scene and data-stage paint the scene page's own sky for the stage.
+    const stage = preview.querySelector(".daily-set-preview-stage")!;
+    expect(stage.className).toBe("library-scene-stage daily-set-preview-stage");
+    expect(stage.getAttribute("data-scene")).toBe(primary.id);
+    expect(stage.getAttribute("data-stage")).toBe(sceneStage(primary.id));
+    // While the scene mounts, its icon floats on the sky.
+    expect(preview.querySelector(".daily-set-preview-icon .scene-icon")).not.toBeNull();
   });
 
   it("then offers three kept scenes: exactly one 许愿, two 祈福", () => {
@@ -204,14 +233,20 @@ describe("今日 card layout", () => {
     "utf8",
   );
 
-  it("leads each card with its scene badge, laid out by grid rules", () => {
+  it("leads the picks with their scene badges; the primary with its live stage", () => {
     const doc = renderToday();
-    for (const card of doc.querySelectorAll(".daily-set-card"))
+    for (const card of doc.querySelectorAll(".daily-collected-grid .daily-set-card"))
       expect(card.firstElementChild!.className).toBe("scene-badge");
+    // The primary's live scene spans its top; the badge leads the row under it.
+    const main = doc.querySelector(".daily-set-primary")!;
+    expect(main.firstElementChild!.className).toBe("daily-set-preview");
+    expect(main.children[1]!.className).toBe("scene-badge");
     expect(css).toMatch(/\n\.daily-set \{/);
     expect(css).toMatch(/\n\.daily-set-grid \{/);
     expect(css).toMatch(/\n\.daily-set-card \{/);
     expect(css).toMatch(/\n\.daily-set-primary \{/);
+    expect(css).toMatch(/\n\.daily-set-preview \{/);
+    expect(css).toMatch(/\n\.daily-set-preview-stage > canvas \{/);
     expect(css).toMatch(/\n\.daily-collected-grid \{/);
     expect(css).toMatch(/\n\.daily-collected-empty \{/);
   });
@@ -237,5 +272,44 @@ describe("今日 card layout", () => {
     expect(px(".daily-set-primary strong", "font-size")).toBeGreaterThanOrEqual(
       1.5 * px(`${pick} strong`, "font-size"),
     );
+  });
+
+  it("spans the primary's top with the live stage, above the old row", () => {
+    const style = document.createElement("style");
+    style.textContent = css;
+    document.head.append(style);
+    const rule = (selector: string) =>
+      [...style.sheet!.cssRules].find(
+        (r): r is CSSStyleRule => r instanceof CSSStyleRule && r.selectorText === selector,
+      )!.style;
+    const px = (selector: string, prop: string) =>
+      parseFloat(rule(selector).getPropertyValue(prop));
+    const pick = ".daily-collected-grid > .daily-set-card";
+    const preview = rule(".daily-set-preview");
+    // A 16:10 window across the whole card, never itself the tap target.
+    expect(preview.getPropertyValue("grid-column")).toBe("1 / -1");
+    expect(preview.getPropertyValue("aspect-ratio")).toBe("16 / 10");
+    expect(px(".daily-set-preview", "min-height")).toBeGreaterThanOrEqual(220);
+    expect(preview.getPropertyValue("pointer-events")).toBe("none");
+    // The live window dwarfs anything on a pick card: several times its badge.
+    expect(px(".daily-set-preview", "min-height")).toBeGreaterThanOrEqual(
+      3 * px(`${pick} > .scene-badge`, "width"),
+    );
+    // The row the card had sits under the stage, badge and arrow spanning it.
+    expect(
+      rule(".daily-set-primary > .daily-set-preview ~ strong").getPropertyValue("grid-row"),
+    ).toBe("2");
+    expect(
+      rule(".daily-set-primary > .daily-set-preview ~ small").getPropertyValue("grid-row"),
+    ).toBe("3");
+    // Until the scene is ready, only its icon shows: the canvas fades in then.
+    expect(
+      rule('.daily-set-preview[data-status="ready"] .daily-set-preview-stage > canvas')
+        .getPropertyValue("opacity"),
+    ).toBe("1");
+    expect(
+      rule('.daily-set-preview[data-status="ready"] .daily-set-preview-icon')
+        .getPropertyValue("opacity"),
+    ).toBe("0");
   });
 });

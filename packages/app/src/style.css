@@ -3961,6 +3961,79 @@ button:hover:not(:disabled) {
   height: 36px;
   padding: 8px;
 }
+/* The day's walk, live (DailyScenePreview): its 3D scene on a small island
+   stage across the top of the card, the row under it. The stage is the
+   scene page's own (.library-scene-stage: the day sky, the crane's, or the
+   night and its moon) filled to the frame; the scene's HUD stays on the
+   scene page. Look, don't touch: taps fall through to the card. While the
+   scene mounts, its icon floats on the sky; without a stage (no WebGL2, or
+   the scene failed) the card is the plain row above. */
+.daily-set-preview {
+  position: relative;
+  display: block;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  /* A grid item with a ratio starts, not stretches, by default: shrunk to
+     fit, min-height would set its width (352px), past the card's rim. */
+  justify-self: stretch;
+  aspect-ratio: 16 / 10;
+  min-height: 220px;
+  /* 12px in from the card's rim all round, the row 16px under it. */
+  margin: -8px -6px 16px -4px;
+  border: 3px solid var(--rim);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px var(--edge);
+  pointer-events: none;
+}
+.daily-set-preview > .library-scene-stage {
+  --canvas-h: 100%;
+  position: absolute;
+  inset: 0;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.daily-set-preview > .library-scene-stage > .scene-overlay-host {
+  display: none;
+}
+/* The scene kit's canvas and the woodfish's (which has no class). */
+.daily-set-preview-stage > canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s var(--ease);
+}
+.daily-set-preview-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transition: opacity 0.3s var(--ease);
+}
+.daily-set-preview-icon .scene-icon {
+  width: 72px;
+  height: 72px;
+}
+.daily-set-preview[data-status="ready"] .daily-set-preview-stage > canvas {
+  opacity: 1;
+}
+.daily-set-preview[data-status="ready"] .daily-set-preview-icon {
+  opacity: 0;
+}
+/* Under the stage, the row as it was. */
+.daily-set-primary > .daily-set-preview ~ .scene-badge,
+.daily-set-primary > .daily-set-preview ~ svg {
+  grid-row: 2 / span 2;
+}
+.daily-set-primary > .daily-set-preview ~ strong {
+  grid-row: 2;
+}
+.daily-set-primary > .daily-set-preview ~ small {
+  grid-row: 3;
+}
 /* 今日's picks from 小天地: three small tiles side by side, badge on top,
    one row even at 320px. Fewer picks keep the same column width. */
 .daily-collected-grid {

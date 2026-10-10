@@ -4,6 +4,8 @@
 
 本仓库同时包含娱乐向祈福 App 框架：今日仪式、许愿还愿、小天地和个人记录。网页运行 `npm run dev`；Expo 手机预览运行 `npm run mobile:start`，异地手机运行 `npm run mobile:remote`。架构、验证命令和图片素材接入说明见 [App 框架文档](docs/app-framework.md)。旧场景实验保留在网页 `/dev/gallery`。
 
+移动打包和商店发布已实际实施：见 [移动应用文档](docs/mobile-app.md) 和 [发布状态与安装步骤](docs/store-release.md)。已完成 APK、AAB、Ad Hoc IPA 和商店 IPA 构建，iOS 已上传并处理成功；正式审核和 Play 上传的真实剩余条件均在发布记录中列出。
+
 以下为独立的文化研究资料说明。
 大型场景与频繁素材更新的架构、内容发布及回滚说明见 [场景内容分发](docs/scene-content.md)。
 正式 App 构建、Three.js 资源部署、云服务选型与上线验收见 [正式上线部署手册](docs/production-deployment.md)。

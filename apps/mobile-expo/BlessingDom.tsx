@@ -1,5 +1,5 @@
 "use dom";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { BlessingApp } from "@wbr/app";
 import {
   createNativeContentIO,
@@ -35,6 +35,12 @@ export default function BlessingDom({
   catalogUrl: string;
   dom?: import("expo/dom").DOMProps;
 }) {
+  useEffect(() => {
+    const meta = document.querySelector('meta[name="viewport"]') ?? document.createElement('meta');
+    meta.setAttribute('name', 'viewport');
+    meta.setAttribute('content', 'width=device-width, initial-scale=1, viewport-fit=cover');
+    if (!meta.parentNode) document.head.appendChild(meta);
+  }, []);
   // DOM bridge proxies can change when native props update; keep a stable host.
   const actions = useMemo(() => ({ readSave, writeSave, haptic }), []);
   actions.readSave = readSave;

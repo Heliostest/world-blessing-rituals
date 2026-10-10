@@ -5,7 +5,7 @@ import type { RewardFlight, RewardArrival } from "./reward-flight";
 export type FulfillmentDraft = { method: ReturnMethod; text: string };
 export type Route = {
   page:
-    | "scenes" | "scene" | "cache"
+    | "scenes" | "scene" | "cache" | "privacy" | "support"
     | "today"
     | "wishes"
     | "world"

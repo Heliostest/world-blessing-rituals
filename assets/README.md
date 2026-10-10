@@ -25,11 +25,11 @@ python -m fontTools.subset NotoSansSC.ttf --output-file=noto-sans-sc.woff2 --fla
 
 `packages/app/src/assets.ts` 的 `fontStyles` 以 `font-family: 'Nunito'` 声明这三个字重，`unicode-range: U+0000-00FF`、`font-display: swap`，排在 `--font-round` 字体栈首位；中文和其他字符照常落到后面的系统圆体，最后是 Blessing Sans。界面用到的其他字重按浏览器的字重匹配取最近一档（400 → 500、600 → 700、800 → 900），`font-synthesis: none` 不会伪造粗体。
 
-Vite 使用此目录作为 publicDir；Expo 启动/构建前由 `scripts/prepare-app-assets.mjs` 复制所需文件到其 public 目录，`EXPO_BASE_URL` 解析嵌入资源位置。所有图片与字体在运行时无需外部网络。`npm run mobile:verify` 校验两端导出资源与源文件的长度和 SHA-256。
+Web 和 Expo 启动/构建前由 `scripts/prepare-app-assets.mjs` 复制实际使用的九个图片、字体、许可证和模型文件到各自生成的 public 目录，`EXPO_BASE_URL` 解析嵌入资源位置。基础资源无需外部网络。`npm run mobile:verify` 校验两端导出资源与源文件的长度和 SHA-256。两张用户提供的 UI 图片用于当前产品；商业发行权仍须由提供者确认，字体 OFL 许可证已经随包保存。
 
 ## 当前 Blender 木鱼（2026-09-21）
 
-运行时读取 `woodfish/blender-v2/woodfish.glb`，两个独立网格、真实 UV 与切线、内嵌颜色/法线/打包粗糙度和 AO，约 6.90 MiB、93,816 三角面。Blender 5.2.1 中建模、展开 UV，内置 image_gen 参考 UV 布局细化基色，再从同一来源在 Blender 烘焙对应法线和粗糙度。`.blend`、UV 图、生成原图和制作过程见 `design/woodfish/README.md`。GLB 纳入 Expo 复制及 SHA-256 完整性检查，`node scripts/check-woodfish-glb.mjs` 检查实际导出网格的封闭性、绕序、UV、切线、材质与离线资源。
+当前运行时通过 `content/woodfish/bundled.json` 读取 `woodfish/bundled-v1/woodfish.glb`，约 1.68 MiB、21,962 三角面，内嵌贴图，随包离线提供并校验哈希。`woodfish/blender-v2/woodfish.glb` 是约 6.90 MiB、93,816 三角面的制作源版本，排除在移动云构建包之外。Blender 5.2.1 中建模、展开 UV，内置 image_gen 参考 UV 布局细化基色，再从同一来源在 Blender 烘焙对应法线和粗糙度。`.blend`、UV 图、生成原图和制作过程见 `design/woodfish/README.md`。
 
 ## 旧版木鱼资产（保留，不再用于仪式页运行时）
 
@@ -39,6 +39,6 @@ Vite 使用此目录作为 publicDir；Expo 启动/构建前由 `scripts/prepare
 
 三张图均为 512 × 512 RGB、周期木纹，同一个高度场导出颜色、OpenGL (+Y) 法线和粗糙度。颜色图无烘焙光照/投影；颜色采用 sRGB，数据贴图保持线性。通过同一组物体空间三向投射和权重覆盖正面、背面、顶部、底部、开口边缘及内腔。避免球体 UV 极点和裸露背面；交叉投射的过渡仍属于临时材质的视觉局限。内腔遮蔽由几何位置计算，不写入颜色贴图。
 
-用 `node scripts/generate-woodfish.mjs` 重建模型与程序化原版，不覆盖生成图；`node scripts/check-woodfish-assets.mjs` 检查闭合性、绕序、法线和两套贴图尺寸。该旧版加载生成版（1254px × 3，PNG 合计 6.23 MB，含 mipmaps 约 24 MiB GPU 内存），模型与生成贴图纳入 Expo 复制和 SHA-256 完整性检查；原始 UI 参考图保留原样。
+用 `node scripts/generate-woodfish.mjs` 重建模型与程序化原版，不覆盖生成图；`node scripts/check-woodfish-assets.mjs` 检查闭合性、绕序、法线和两套贴图尺寸。旧版生成贴图和 body.bin 保留为制作资料，已不进入当前移动运行时资源清单；原始 UI 参考图保留原样。
 
 未来指定模型可用时的材质指令：以参考原图的温润浅棕木质为色彩和木种参考，生成可平铺的纯木材基色贴图，正交平面、均匀无方向照明、细长自然纤维，不画木鱼物体、孔洞、边缘、环境、投影、强高光、文字。法线图需严格对应同一基色纤维，切线空间 OpenGL +Y，克制微表面起伏；粗糙度图也需严格对应同一纤维，灰度、无方向光照、主体约 0.65–0.8。必须逐张检查对齐与周期边缘，并在当前 PBR 场景验证，不能把三次独立随机生成的纹理当作对应贴图。

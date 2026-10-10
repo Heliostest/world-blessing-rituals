@@ -1,0 +1,80 @@
+{
+  "capturedAt": "2026-10-10",
+  "source": "Chrome browser production Web product, no device frame or native OS status bar",
+  "ios": [
+    {
+      "file": "01-today-medium.png",
+      "bytes": 819392,
+      "sha256": "d8630a7fc00c49cfd0b01602e97d2ce04969c393111ec60ad1976979652000b5",
+      "width": 1206,
+      "height": 2622,
+      "hasAlpha": false
+    },
+    {
+      "file": "02-wishes-medium.png",
+      "bytes": 396592,
+      "sha256": "9622eedd5e103e4ac45bf89c2a1023afd82c5b258d7d26aba70b486d7cc45f1e",
+      "width": 1206,
+      "height": 2622,
+      "hasAlpha": false
+    },
+    {
+      "file": "03-woodfish-medium.png",
+      "bytes": 651963,
+      "sha256": "0dd903bd30b20b6c5366a61ed9d7c6085a3aa8551282eb0f952d66a15aa85b31",
+      "width": 1206,
+      "height": 2622,
+      "hasAlpha": false
+    },
+    {
+      "file": "04-world-medium.png",
+      "bytes": 347623,
+      "sha256": "0d5999dadb16b90f6d8b37151b074b78d84cc89bba121837618a24c36b6a683f",
+      "width": 1206,
+      "height": 2622,
+      "hasAlpha": false
+    },
+    {
+      "file": "05-privacy-medium.png",
+      "bytes": 487201,
+      "sha256": "bd576d8ed02e12e0dd5fe9d6dde51106e00a68bb2418fc55e31510520a5773ba",
+      "width": 1206,
+      "height": 2622,
+      "hasAlpha": false
+    }
+  ],
+  "android": [
+    {
+      "file": "01-today.png",
+      "bytes": 595882,
+      "sha256": "984f3957c7ab257d44a7571027ec67f0dcbd6352146d190613f249b337d355d1",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "file": "02-wishes.png",
+      "bytes": 302082,
+      "sha256": "b3581042395404eb7f901ae9ff21b5a62392524c093e04f9c45cb8ffebeb806f",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "file": "03-woodfish.png",
+      "bytes": 681312,
+      "sha256": "c751c70c3611e7f76d3b7bc44714afddb5c2aae1e96d590a6205142de8847598",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "file": "04-world.png",
+      "bytes": 311883,
+      "sha256": "d7f4175baf429f666125e98cfbcf6ef49cb43e4e0dbd5f6e6e8d9403ec86eb25",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    }
+  ]
+}

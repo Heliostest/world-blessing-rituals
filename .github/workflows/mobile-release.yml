@@ -1,0 +1,40 @@
+name: Mobile build or submit (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        type: choice
+        options: [ios, android]
+        required: true
+      profile:
+        type: choice
+        options: [preview, production]
+        default: preview
+      build_id:
+        description: Existing production build UUID to submit; empty creates a build
+        type: string
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    environment: mobile-release
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+      PLATFORM: ${{ inputs.platform }}
+      PROFILE: ${{ inputs.profile }}
+      BUILD_ID: ${{ inputs.build_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run mobile:verify
+      - name: Build using existing EAS remote credentials
+        if: inputs.build_id == ''
+        run: node scripts/run-mobile-eas.mjs build -p "$PLATFORM" --profile "$PROFILE" --non-interactive
+      - name: Submit the specified verified build
+        if: inputs.build_id != ''
+        run: node scripts/submit-mobile.mjs "$PLATFORM" "$BUILD_ID" --non-interactive

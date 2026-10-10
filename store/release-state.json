@@ -1,0 +1,31 @@
+{
+  "recordedOn": "2026-10-10",
+  "easProjectId": "8bd96afd-5d35-4c3c-8ccc-3735696a4973",
+  "ascAppId": "6821271597",
+  "version": "1.0.0",
+  "ios": {
+    "productionEasBuildId": "c62983e4-f64e-420d-8175-a7f36f029c6d",
+    "submissionId": "5cd5aac3-1748-48e9-8ec4-63b140ccd0c9",
+    "appleBuildId": "5f5a12fb-7cb7-4256-a20f-228b85ba1c40",
+    "buildNumber": "4",
+    "processingState": "VALID",
+    "versionState": "PREPARE_FOR_SUBMISSION",
+    "releaseType": "MANUAL",
+    "betaReviewSubmitted": false,
+    "appReviewSubmitted": false,
+    "publiclyReleased": false,
+    "testerCount": 0,
+    "publicTestLink": null
+  },
+  "android": {
+    "productionEasBuildId": "e48070df-7315-47c1-b014-fc07cf76fb4d",
+    "previewEasBuildId": "19fdef42-3a5f-4103-875a-9bc96891d51a",
+    "versionCode": "3",
+    "buildStatus": "FINISHED",
+    "playRecordCreated": false,
+    "uploadedToInternal": false,
+    "publiclyReleased": false,
+    "internalTestLink": null,
+    "blocker": "Personal Play developer identity verification incomplete; create-app disabled."
+  }
+}

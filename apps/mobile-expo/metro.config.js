@@ -4,6 +4,10 @@ const { createDomBootstrapMiddleware } = require("../../scripts/expo-dom-bootstr
 const projectRoot = __dirname;
 const workspaceRoot = path.resolve(projectRoot, "../..");
 const config = getDefaultConfig(projectRoot);
+if (process.env.WBR_METRO_CACHE) {
+  const { FileStore } = require('metro-cache');
+  config.cacheStores = [new FileStore({ root: process.env.WBR_METRO_CACHE })];
+}
 const originalEnhanceMiddleware = config.server.enhanceMiddleware;
 config.server.enhanceMiddleware = (middleware, server) =>
   createDomBootstrapMiddleware(

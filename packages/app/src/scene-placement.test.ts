@@ -175,7 +175,6 @@ describe("今日's daily set", () => {
       DAILY_SET_COPY.blessingNote,
       DAILY_SET_COPY.wishNote,
       DAILY_SET_COPY.collected,
-      DAILY_SET_COPY.browse,
     ]) {
       expect(() => assertSafeCopy(text)).not.toThrow();
     }

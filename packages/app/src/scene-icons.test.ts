@@ -1,9 +1,10 @@
 // @vitest-environment jsdom
 import { createElement, type ReactNode } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { createState, dailyCollectibleId, type State } from "@wbr/core";
 import { Context, type AppContext } from "./context";
+import { clickOn, renderUI } from "./dom-test-utils";
 import { Today } from "./home";
 import { Wishes } from "./pages";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
@@ -34,6 +35,29 @@ function render(node: ReactNode, state: State = createState()) {
     ),
   );
   return new DOMParser().parseFromString(html, "text/html");
+}
+
+/** 心愿, live over `state`; `go` records where each tap leads. */
+function openWishes(state: State = createState()) {
+  const go = vi.fn();
+  const ui = renderUI(
+    createElement(
+      Context.Provider,
+      { value: { state, dispatch: () => true, go } as unknown as AppContext },
+      createElement(
+        SceneLibraryContext.Provider,
+        { value: { entries: builtInScenes } as never },
+        createElement(Wishes),
+      ),
+    ),
+  );
+  return {
+    ...ui,
+    go,
+    pray: ui.host.querySelector<HTMLButtonElement>(".pray-button")!,
+    picker: () => ui.host.querySelector("#vessel-picker"),
+    cards: () => [...ui.host.querySelectorAll(".wish-practice-card")],
+  };
 }
 
 /** One collected daily keepsake for `sceneId`, spent for a wish when `spent`. */
@@ -73,8 +97,8 @@ describe("今日's daily set badges", () => {
   });
 });
 
-describe("心愿's 许愿小物 shelf", () => {
-  // One spent vessel, then two usable ones: the shelf shows the usable two,
+describe("心愿's 祈愿 picker", () => {
+  // One spent vessel, then two usable ones: the picker offers the usable two,
   // newest first, and never the spent one or a 祈福 keepsake.
   const state = createState();
   state.collectibles.push(
@@ -83,20 +107,63 @@ describe("心愿's 许愿小物 shelf", () => {
     keepsake("2026-10-07", "crane"),
     keepsake("2026-10-07", "woodfish"),
   );
-  const doc = render(createElement(Wishes), state);
-  const cards = [...doc.querySelectorAll(".wish-practice-card")];
+  let ui: ReturnType<typeof openWishes>;
+  afterEach(() => {
+    ui.unmount();
+    // jsdom has no scrollIntoView; a test may stand one in.
+    delete (Element.prototype as Partial<Element>).scrollIntoView;
+  });
+
+  it("opens folded: no 许愿小物 shelf, one 祈愿 button under the list", () => {
+    ui = openWishes(state);
+    expect(ui.host.querySelector(".wish-practice")).toBeNull();
+    expect(ui.picker()).toBeNull();
+    expect(ui.cards()).toHaveLength(0);
+    expect(ui.pray.textContent).toBe(VESSEL_COPY.pray);
+    expect(ui.pray.getAttribute("aria-expanded")).toBe("false");
+    expect(ui.pray.previousElementSibling!.matches(".wish-list, .empty")).toBe(
+      true,
+    );
+    expect(ui.pray.nextElementSibling!.className).toBe("privacy-note");
+  });
+
+  it("unfolds the picker under its button, into view, and folds it again", () => {
+    const scrolled = vi.fn();
+    Element.prototype.scrollIntoView = scrolled;
+    ui = openWishes(state);
+    clickOn(ui.pray);
+    const picker = ui.picker()!;
+    expect(ui.pray.getAttribute("aria-expanded")).toBe("true");
+    expect(ui.pray.getAttribute("aria-controls")).toBe(picker.id);
+    expect(ui.pray.nextElementSibling).toBe(picker);
+    expect(picker.querySelector("h2")!.textContent).toBe(VESSEL_COPY.heading);
+    expect(picker.querySelector(".section-heading span")!.textContent).toBe(
+      "2 个可用",
+    );
+    expect(scrolled).toHaveBeenCalledWith({
+      block: "nearest",
+      behavior: "smooth",
+    });
+    clickOn(ui.pray);
+    expect(ui.pray.getAttribute("aria-expanded")).toBe("false");
+    expect(ui.picker()).toBeNull();
+  });
 
   it("offers the unspent wish-type keepsakes only, newest first", () => {
-    expect(cards.map((card) => card.getAttribute("data-scene"))).toEqual([
+    ui = openWishes(state);
+    clickOn(ui.pray);
+    expect(ui.cards().map((card) => card.getAttribute("data-scene"))).toEqual([
       "crane",
       "tanzaku-tanabata",
     ]);
-    for (const card of cards)
+    for (const card of ui.cards())
       expect(card.querySelector(".scene-badge svg path")).not.toBeNull();
   });
 
   it("says the one action under the title, without repeating it", () => {
-    for (const card of cards) {
+    ui = openWishes(state);
+    clickOn(ui.pray);
+    for (const card of ui.cards()) {
       const title = card.querySelector("strong")!.textContent!;
       const action = card.querySelector("small")!.textContent!;
       expect(action).toBe(VESSEL_COPY.use);
@@ -104,12 +171,27 @@ describe("心愿's 许愿小物 shelf", () => {
     }
   });
 
-  it("explains the shelf when no keepsake is usable yet", () => {
-    const empty = render(createElement(Wishes));
-    const shelf = empty.querySelector(".wish-practice")!;
-    expect(shelf.querySelector("h2")!.textContent).toBe(VESSEL_COPY.heading);
+  it("opens the picked keepsake's scene as a vessel visit", () => {
+    ui = openWishes(state);
+    clickOn(ui.pray);
+    clickOn(ui.host.querySelector('.vessel-card[data-scene="crane"]')!);
+    expect(ui.go).toHaveBeenCalledWith({
+      page: "scene",
+      id: "crane",
+      entry: builtInScenes.find((e) => e.id === "crane"),
+      daily: undefined,
+      vessel: dailyCollectibleId("2026-10-07", "crane"),
+      wishId: undefined,
+    });
+  });
+
+  it("explains the picker when no keepsake is usable yet, and points to 今日", () => {
+    ui = openWishes();
+    clickOn(ui.pray);
+    const picker = ui.picker()!;
+    expect(picker.querySelector("h2")!.textContent).toBe(VESSEL_COPY.heading);
     expect(
-      [...shelf.querySelectorAll(".empty h3, .empty p, .empty button")].map(
+      [...picker.querySelectorAll(".empty h3, .empty p, .empty button")].map(
         (el) => el.textContent!.trim(),
       ),
     ).toEqual([
@@ -117,7 +199,9 @@ describe("心愿's 许愿小物 shelf", () => {
       VESSEL_COPY.emptyBody,
       VESSEL_COPY.emptyAction,
     ]);
-    expect(empty.querySelectorAll(".wish-practice-card")).toHaveLength(0);
+    expect(ui.cards()).toHaveLength(0);
+    clickOn(picker.querySelector(".empty button")!);
+    expect(ui.go).toHaveBeenCalledWith({ page: "today" });
   });
 });
 

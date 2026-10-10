@@ -690,52 +690,6 @@ button:hover:not(:disabled) {
   height: 12px;
   stroke-width: 3;
 }
-.wish-invitation {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--paper);
-  width: 100%;
-  margin-top: 24px;
-  padding: 6px 16px 6px 6px;
-  border: 3px solid var(--rim);
-  border-radius: 999px;
-  box-shadow:
-    0 0 0 2px var(--edge),
-    0 5px 0 2px var(--ledge);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--ink-soft);
-  text-align: left;
-}
-.wish-invitation:active {
-  transform: translateY(3px);
-  box-shadow:
-    0 0 0 2px var(--edge),
-    0 2px 0 2px var(--ledge);
-}
-.wish-invitation > svg {
-  width: 36px;
-  height: 36px;
-  padding: 7px;
-  border-radius: 50%;
-  background: var(--bubblegum);
-  color: var(--ink);
-  box-shadow: inset 0 -3px 0 var(--bubblegum-ledge);
-}
-.invitation-action {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  margin-left: auto;
-  color: var(--mint-text);
-  font-weight: 800;
-  white-space: nowrap;
-}
-.invitation-action svg {
-  width: 12px;
-  stroke-width: 2.6;
-}
 .resume-banner {
   display: flex;
   justify-content: space-between;
@@ -3027,9 +2981,6 @@ button:hover:not(:disabled) {
   .category-chips label {
     font-size: 13px;
   }
-  .wish-invitation {
-    font-size: 12px;
-  }
 }
 .art-variant-home .reference-crop {
   clip-path: polygon(0 8%, 42% 8%, 42% 0, 100% 0, 100% 100%, 0 100%);
@@ -4007,12 +3958,18 @@ button:hover:not(:disabled) {
   height: 16px;
   stroke-width: 3;
 }
-.wish-practice {
-  margin: 8px 0 18px;
+/* 心愿's 祈愿: a candy button at the foot of the list unfolds the picker. */
+.pray-button {
+  display: flex;
+  margin-top: 24px;
+}
+.vessel-picker {
   display: grid;
   gap: 10px;
+  /* Scrolled into view clear of the floating dock, as the tab pages are. */
+  scroll-margin-bottom: 128px;
 }
-.wish-practice-blurb {
+.vessel-picker-blurb {
   margin: 0;
   font-size: 13px;
   font-weight: 600;

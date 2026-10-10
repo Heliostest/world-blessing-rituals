@@ -57,9 +57,9 @@ it("names a page in its ribbon only when the page has no title of its own", asyn
     clickOn(ui.host.querySelector(".back-button")!);
     await settle();
   }
-  tap(".bottom-nav button", "今日");
+  tap(".bottom-nav button", "心愿");
   await settle();
-  tap(".wish-invitation", "许个愿");
+  clickOn(ui.host.querySelector('.round-button[aria-label="许个心愿"]')!);
   await settle();
   expect(ribbon()).toBe("许个小心愿");
   ui.unmount();

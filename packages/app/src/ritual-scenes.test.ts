@@ -251,8 +251,10 @@ describe("许愿 through a keepsake", () => {
     state.collectibles.push(keepsake(sceneId, "2026-10-05"));
     const ui = await openApp(state);
     await ui.tap(ui.host.querySelector('[data-tab="wishes"]')!);
+    // 祈愿 unfolds the picker of 许愿小物 under the list.
+    await ui.tap(ui.button(VESSEL_COPY.pray, ".app-content"));
     const card = ui.host.querySelector(
-      `.wish-practice-card[data-scene="${sceneId}"]`,
+      `#vessel-picker .wish-practice-card[data-scene="${sceneId}"]`,
     )!;
     expect(card.querySelector("small")!.textContent).toBe(VESSEL_COPY.use);
     await ui.tap(card);
@@ -621,10 +623,7 @@ describe("ritual scene copy", () => {
       SCENE_DAILY_CAPTION,
       sceneDailyDoneCopy("短册系竹"),
       sceneDailyAnnounce("短册系竹"),
-      VESSEL_COPY.blurb,
-      VESSEL_COPY.emptyTitle,
-      VESSEL_COPY.emptyBody,
-      VESSEL_COPY.emptyAction,
+      ...Object.values(VESSEL_COPY),
       FULFILL_VESSEL_COPY.pick,
       FULFILL_VESSEL_COPY.none,
       FULFILL_VESSEL_COPY.noneAction,

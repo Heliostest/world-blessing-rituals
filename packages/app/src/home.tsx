@@ -54,9 +54,6 @@ export function Today({ day }: { day: string }) {
         <section className="daily-set" aria-label={DAILY_SET_COPY.heading}>
           <div className="section-heading">
             <h2>{DAILY_SET_COPY.heading}</h2>
-            <button className="text-button" onClick={() => go({ page: "scenes" })}>
-              {DAILY_SET_COPY.browse} <Icon name="arrow" />
-            </button>
           </div>
           <p className="quiet daily-set-blurb">{DAILY_SET_COPY.sub}</p>
           <div className="daily-set-grid">
@@ -93,13 +90,6 @@ export function Today({ day }: { day: string }) {
           </div>
         </section>
       )}
-      <button className="wish-invitation" onClick={() => go({ page: "new" })}>
-        <Icon name="wishes" />
-        <span>小小心愿，也值得发光。</span>
-        <span className="invitation-action">
-          许个愿 <Icon name="arrow" />
-        </span>
-      </button>
     </div>
   );
 }

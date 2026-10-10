@@ -7,6 +7,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { beforeAll, describe, expect, it } from "vitest";
 import { createState, dailyCollectibleId, type State } from "@wbr/core";
 import { Context, type AppContext } from "./context";
+import { clickOn, renderUI } from "./dom-test-utils";
 import { Today } from "./home";
 import { Wishes } from "./pages";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
@@ -83,7 +84,7 @@ describe("scene candy", () => {
 
   it("follows a scene from 今日 to 心愿 by its id", () => {
     const today = render(createElement(Today, { day }));
-    // One usable keepsake for every wish scene, so the whole shelf is up.
+    // One usable keepsake for every wish scene, so 祈愿's whole picker is up.
     const state = createState();
     for (const id of WISH_SCENE_IDS)
       state.collectibles.push({
@@ -94,7 +95,19 @@ describe("scene candy", () => {
         sceneId: id,
         ...(isWishScene(id) ? { wishScene: true } : {}),
       });
-    const wishes = render(createElement(Wishes), state);
+    const ui = renderUI(
+      createElement(
+        Context.Provider,
+        { value: { state, dispatch: () => true, go: () => {} } as unknown as AppContext },
+        createElement(
+          SceneLibraryContext.Provider,
+          { value: { entries: builtInScenes } as never },
+          createElement(Wishes),
+        ),
+      ),
+    );
+    clickOn(ui.host.querySelector(".pray-button")!);
+    const wishes = ui.host;
     expect(
       [...today.querySelectorAll(".daily-set-card")].map((t) => t.getAttribute("data-scene")),
     ).toEqual(dailySceneSet(builtInScenes, day).map((e) => e.id));
@@ -109,5 +122,6 @@ describe("scene candy", () => {
     expect(
       wishes.querySelector(`.wish-practice-card[data-scene="${shared}"] .scene-badge[data-scene="${shared}"]`),
     ).not.toBeNull();
+    ui.unmount();
   });
 });

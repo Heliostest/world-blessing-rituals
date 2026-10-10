@@ -2,22 +2,43 @@
   "expo": {
     "name": "一日一念",
     "slug": "cyber-bless",
-    "version": "0.1.0",
+    "version": "1.0.0",
+    "owner": "cheblito",
+    "scheme": "cyber-bless",
+    "icon": "./assets/icon.png",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.helio.cyberbless"
+      "bundleIdentifier": "com.helio.cyberbless",
+      "appleTeamId": "6PG2WW6L6N",
+      "infoPlist": { "ITSAppUsesNonExemptEncryption": false }
     },
     "android": {
-      "package": "com.helio.cyberbless"
+      "package": "com.helio.cyberbless",
+      "softwareKeyboardLayoutMode": "resize",
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#cdf1e6" },
+      "predictiveBackGestureEnabled": false
     },
     "web": {
       "bundler": "metro"
     },
     "plugins": [
       "expo-asset",
-      "expo-status-bar"
-    ]
+      "expo-status-bar",
+      ["expo-splash-screen", { "image": "./assets/adaptive-icon.png", "imageWidth": 180, "backgroundColor": "#cdf1e6" }]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8bd96afd-5d35-4c3c-8ccc-3735696a4973"
+      }
+    }
   }
 }

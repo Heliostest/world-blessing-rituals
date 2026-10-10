@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readFile, rm } from "node:fs/promises";
+import { copyFile, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -39,6 +39,9 @@ export async function prepareAppAssets() {
       bytes: bytes.length,
       sha256: createHash("sha256").update(bytes).digest("hex"),
     });
+  }
+  for (const target of destinations) {
+    await writeFile(path.join(root, target, 'wbr-assets.json'), JSON.stringify(assets, null, 2) + '\n');
   }
   return assets;
 }

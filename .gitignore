@@ -5,6 +5,17 @@ dist/
 .expo-export-check/
 *.tsbuildinfo
 artifacts/
+sites/
+.env*
+*.p8
+*.p12
+*.mobileprovision
+*.jks
+*.keystore
+credentials.json
+*service-account*.json
+apps/mobile-expo/ios/
+apps/mobile-expo/android/
 apps/mobile-expo/public/
 apps/cyber-bless/public/
 design/woodfish/*.blend[0-9]

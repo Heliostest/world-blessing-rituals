@@ -1,0 +1,39 @@
+{
+  "source": "本项目生产Web界面，Chrome浏览器360x640 CSS像素、3x实际截图；不是Android真机或模拟器截图。",
+  "screenshots": [
+    {
+      "file": "01-today.png",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "file": "02-wishes.png",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "file": "03-woodfish.png",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "file": "04-world.png",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    }
+  ],
+  "icon": {
+    "file": "icon-512.png",
+    "width": 512,
+    "height": 512
+  },
+  "featureGraphic": {
+    "file": "feature-graphic-1024x500.png",
+    "width": 1024,
+    "height": 500
+  }
+}

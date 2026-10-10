@@ -1,0 +1,21 @@
+{
+  "language": "zh-CN",
+  "title": "一日一念",
+  "shortDescription": "写下心愿，完成一段轻松小仪式，把日常收获珍藏在自己的小天地。",
+  "categoryProposal": "LIFESTYLE",
+  "appAccess": "No login or account required. All shipped core features are available without credentials.",
+  "containsAds": false,
+  "dataSafetyDraft": {
+    "developerCollectsUserData": false,
+    "developerSharesUserData": false,
+    "tracking": false,
+    "notes": "当前发行配置未开启在线目录；心愿和进度仅本机。用户主动系统分享/复制及平台TestFlight/商店/系统备份须按各自范围说明。以后开启服务、分析或诊断须重审问卷。"
+  },
+  "privacyPolicyUrl": null,
+  "supportEmail": null,
+  "targetAudience": null,
+  "iarcRating": null,
+  "screenshots": ["01-today.png", "02-wishes.png", "03-woodfish.png", "04-world.png"],
+  "screenCaptureSource": "本项目生产Web界面，Chrome浏览器360x640 CSS像素、3x实际截图；不是Android真机或模拟器截图。",
+  "status": "Prepared locally. No Play application record or uploaded listing yet."
+}

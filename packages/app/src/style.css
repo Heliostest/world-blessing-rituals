@@ -4122,3 +4122,7 @@ button:hover:not(:disabled) {
 .wish-practice-detail .quiet {
   margin: 6px 0 0;
 }
+:root .legal-information { padding: 12px 0 28px; color: #064a43; }
+:root .legal-information h1 { font-size: 28px; margin: 16px 0; }
+:root .legal-information h2 { font-size: 19px; margin: 26px 0 10px; }
+:root .legal-information p { font-size: 15px; line-height: 1.8; margin: 12px 0; overflow-wrap: anywhere; }

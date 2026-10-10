@@ -1,6 +1,6 @@
 {
   "name": "@wbr/mobile",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "main": "index.ts",
   "scripts": {
@@ -23,10 +23,11 @@
     "@wbr/content": "*",
     "@wbr/core": "*",
     "@wbr/runtime": "*",
-    "expo": "~57.0.24",
-    "expo-asset": "~57.0.18",
+    "expo": "~57.0.27",
+    "expo-asset": "~57.0.19",
     "expo-file-system": "~57.0.7",
     "expo-haptics": "~57.0.3",
+    "expo-splash-screen": "~57.0.9",
     "expo-status-bar": "~57.0.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -38,6 +39,7 @@
   "devDependencies": {
     "@expo/ngrok": "npm:expo-cloudflared@^4.2.2",
     "@types/react": "~19.2.4",
+    "eas-cli": "24.12.1",
     "typescript": "~6.0.3"
   }
 }

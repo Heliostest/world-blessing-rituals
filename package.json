@@ -13,11 +13,32 @@
     "mobile:remote": "npm run start -w @wbr/mobile -- --tunnel",
     "mobile:android": "npm run android -w @wbr/mobile",
     "mobile:ios": "npm run ios -w @wbr/mobile",
-    "mobile:verify": "npm run typecheck -w @wbr/mobile && node --test scripts/expo-dom-bootstrap.test.mjs && node scripts/check-mobile-framework.mjs",
+    "mobile:go": "npm run start -w @wbr/mobile -- --host lan",
+    "mobile:go:tunnel": "npm run start -w @wbr/mobile -- --host tunnel",
+    "mobile:verify": "npm run typecheck -w @wbr/mobile && npm exec -w @wbr/mobile -- expo install --check && node --test scripts/expo-dom-bootstrap.test.mjs scripts/validate-mobile-embed.test.mjs scripts/mobile-build-guard.test.mjs && node scripts/check-mobile-framework.mjs",
+    "mobile:archive:verify": "node scripts/verify-eas-archive.mjs",
+    "mobile:eas:android:preview": "node scripts/run-mobile-eas.mjs build -p android --profile preview",
+    "mobile:eas:ios:preview": "node scripts/run-mobile-eas.mjs build -p ios --profile preview",
+    "mobile:eas:android": "node scripts/run-mobile-eas.mjs build -p android --profile production",
+    "mobile:eas:ios": "node scripts/run-mobile-eas.mjs build -p ios --profile production",
+    "mobile:eas:ios:testflight": "node scripts/run-mobile-eas.mjs build -p ios --profile production --auto-submit",
+    "mobile:eas:android:internal": "node scripts/run-mobile-eas.mjs build -p android --profile production --auto-submit",
+    "mobile:eas:submit:ios": "node scripts/submit-mobile.mjs ios",
+    "mobile:eas:submit:android": "node scripts/submit-mobile.mjs android",
     "verify": "npm test && npm run build && npm run mobile:verify",
-    "content:publish": "node scripts/publish-scene-content.mjs"
+    "content:publish": "node scripts/publish-scene-content.mjs",
+    "mobile:eas:status": "node scripts/mobile-build-status.mjs",
+    "mobile:eas:submissions": "node scripts/mobile-submission-status.mjs",
+    "mobile:store:status": "node scripts/app-store-status.mjs",
+    "mobile:store:prepare": "node scripts/prepare-app-store.mjs",
+    "mobile:testflight:prepare": "node scripts/prepare-testflight.mjs",
+    "mobile:play:assets": "node scripts/prepare-play-assets.mjs",
+    "mobile:legal:prepare": "node scripts/prepare-legal-site.mjs"
   },
   "engines": {
     "node": ">=22.18.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }

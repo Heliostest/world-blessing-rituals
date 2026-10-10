@@ -422,6 +422,8 @@ export function Me() {
         ))}
       </div>
       <div className="settings-card">
+        <button className="settings-row" onClick={() => go({ page: 'privacy' })}><span>隐私政策</span><Icon name="arrow" /></button>
+        <button className="settings-row" onClick={() => go({ page: 'support' })}><span>技术支持</span><Icon name="arrow" /></button>
         <button className="settings-row" onClick={() => go({ page: "scenes" })}><span>场景目录</span><Icon name="arrow" /></button>
         <button className="settings-row" onClick={() => go({ page: "cache" })}><span>资源缓存</span><Icon name="arrow" /></button>
         <button

@@ -58,9 +58,10 @@ function Shell() {
     canGoBack.current = value;
   }, []);
   useEffect(() => {
-    const app = AppState.addEventListener("change", (next) =>
-      setActive(next === "active"),
-    );
+    const app = AppState.addEventListener("change", (next) => {
+      setActive(next === "active");
+      if (next !== 'active') void queue.current.catch(() => {});
+    });
     const back = BackHandler.addEventListener("hardwareBackPress", () => {
       if (!canGoBack.current) return false;
       setBackRequest((n) => n + 1);
@@ -112,6 +113,8 @@ function Shell() {
             : undefined,
           style: styles.webview,
           contentInsetAdjustmentBehavior: "never",
+          bounces: false,
+          keyboardDisplayRequiresUserAction: true,
           onError: fail,
           onContentProcessDidTerminate: fail,
           ...(Platform.OS === "android" ? { onRenderProcessGone: fail } : {}),

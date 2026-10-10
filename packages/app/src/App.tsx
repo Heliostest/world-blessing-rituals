@@ -15,6 +15,7 @@ import { Today, ritualTitle } from "./home";
 import { NewWish, WishDetail, WishNote, FulfillWish } from "./wishes";
 import { fontStyles } from "./assets";
 import { Complete, Ritual } from "./ritual";
+import { LegalInformation } from './legal';
 import { ContentContext, type ContentEnvironment } from "./content";
 import { InvalidContentError } from "@wbr/content";
 import { SceneLibraryProvider, SceneCatalog, CacheManager } from "./scene-library";
@@ -329,6 +330,7 @@ export function BlessingApp({
       : "";
   };
   const page =
+    route.page === 'privacy' || route.page === 'support' ? <LegalInformation kind={route.page} /> :
     route.page === "scenes" ? <SceneCatalog /> : route.page === "cache" ? <CacheManager /> : route.page === "scene" ? <SceneExperience entry={route.entry ?? state.sceneRecords.find(r => r.id === route.id)} wishId={route.wishId} daily={route.daily} vessel={route.vessel} /> : route.page === "today" ? (
       <Today key={day} day={day} />
     ) : route.page === "wishes" ? (

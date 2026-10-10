@@ -1,13 +1,47 @@
 {
-  "cli": { "version": ">= 16.0.0", "appVersionSource": "remote" },
+  "cli": {
+    "version": "24.12.1",
+    "appVersionSource": "remote"
+  },
   "build": {
     "preview": {
       "distribution": "internal",
-      "android": { "buildType": "apk" }
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "SHARP_IGNORE_GLOBAL_LIBVIPS": "1",
+        "EXPO_APPLE_TEAM_ID": "6PG2WW6L6N",
+        "EXPO_APPLE_TEAM_TYPE": "INDIVIDUAL"
+      }
     },
     "production": {
       "autoIncrement": true,
-      "android": { "buildType": "app-bundle" }
+      "distribution": "store",
+      "ios": {},
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "SHARP_IGNORE_GLOBAL_LIBVIPS": "1",
+        "EXPO_APPLE_TEAM_ID": "6PG2WW6L6N",
+        "EXPO_APPLE_TEAM_TYPE": "INDIVIDUAL"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6821271597",
+        "appleTeamId": "6PG2WW6L6N",
+        "bundleIdentifier": "com.helio.cyberbless",
+        "appName": "一日一念",
+        "sku": "cyber-bless-ios",
+        "language": "zh-Hans"
+      },
+      "android": {
+        "track": "internal"
+      }
     }
   }
 }

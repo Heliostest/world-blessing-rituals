@@ -5,8 +5,10 @@ export type Rect = { x: number; y: number; width: number; height: number };
 
 /** One item's trip from the completion card to its home. */
 export type RewardFlight = {
-  /** The sticker that flies: an inventory crop, or the small leaf note. */
-  kind: RitualId | "leaf";
+  /** The sticker that flies: an inventory crop, a scene icon, or the leaf note. */
+  kind: RitualId | "leaf" | "scene";
+  /** kind "scene": which scene's keepsake is flying home. */
+  sceneId?: string;
   /** Measured before go(): go() scrolls to the top. */
   from: Rect;
   /** Lands on [data-collectible-id] (小天地 shelf), then [data-wish-id]. */

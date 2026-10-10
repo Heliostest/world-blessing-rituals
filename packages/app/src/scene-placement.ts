@@ -1,18 +1,20 @@
-import { dailyRitual } from "@wbr/core";
+import { rituals, type RitualId } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
-import { recommendScene } from "@wbr/content/catalog";
 
 /**
- * Scenes that belong on 今日 as daily homage / quiet practices (not wish flow):
- * listening, an entrance bow, a clockwise turn.
+ * Scenes that can come up on 今日's daily set as 祈福 (blessing) practices:
+ * quiet listening, an entrance bow, a slow turn, a strike, a pour.
  */
-export const TODAY_SCENE_IDS = [
+export const BLESSING_SCENE_IDS = [
+  "woodfish",
   "furin-wind-chime",
   "shinto-torii",
   "tibetan-wheel",
+  "celtic-folk-spring",
+  "theravada-water",
 ] as const;
 
-/** Scenes that belong on 心愿 as wish practices (each can carry a written wish). */
+/** Scenes that can come up on 今日's daily set as 许愿 (wish-making) practices. */
 export const WISH_SCENE_IDS = [
   "tanzaku-tanabata",
   "yeondeunghoe",
@@ -28,19 +30,14 @@ export const WISH_SCENE_IDS = [
  */
 export const NIGHT_STAGE_SCENE_IDS = ["lantern", "yeondeunghoe"] as const;
 
-export type TodaySceneId = (typeof TODAY_SCENE_IDS)[number];
+export type BlessingSceneId = (typeof BLESSING_SCENE_IDS)[number];
 export type WishSceneId = (typeof WISH_SCENE_IDS)[number];
 
 const wishSet = new Set<string>(WISH_SCENE_IDS);
 const nightSet = new Set<string>(NIGHT_STAGE_SCENE_IDS);
-const todaySet = new Set<string>(TODAY_SCENE_IDS);
 
 export function isWishScene(id: string): boolean {
   return wishSet.has(id);
-}
-
-export function isTodayScene(id: string): boolean {
-  return todaySet.has(id);
 }
 
 /** The stage a scene is shown on. */
@@ -55,90 +52,66 @@ export function findSceneEntry(
   return entries.find((e) => e.id === id);
 }
 
-export function wishSceneEntries(entries: CatalogEntry[]): CatalogEntry[] {
-  return WISH_SCENE_IDS.map((id) => findSceneEntry(entries, id)).filter(
-    (e): e is CatalogEntry => !!e,
-  );
-}
-
-export function todaySceneEntries(entries: CatalogEntry[]): CatalogEntry[] {
-  return TODAY_SCENE_IDS.map((id) => findSceneEntry(entries, id)).filter(
-    (e): e is CatalogEntry => !!e,
-  );
-}
+/** Checkpoints a scene reports: woodfish strikes, or the three steps of a procedural scene. */
+export const sceneSteps = (entry: CatalogEntry) =>
+  entry.engine === "woodfish@1" ? 12 : 3;
 
 /**
- * Daily recommendation on 今日: a scene the page does not already offer that
- * day. Never a wish-practice scene (those live on 心愿), nor today's featured
- * practice, nor the scene of today's random ritual (a 2D ritual and its scene
- * share an id, e.g. woodfish). If that leaves nothing, the wish-free pool,
- * then the full list.
+ * The 3D scene a core ritual opens. Each ritual (woodfish, crane, lantern)
+ * has one, under the ritual's own id.
  */
-export function recommendTodayScene(
+export function ritualSceneEntry(
   entries: CatalogEntry[],
-  day: string,
+  ritual: RitualId,
 ): CatalogEntry | undefined {
-  const wishFree = entries.filter((e) => !isWishScene(e.id));
-  const shown = new Set([featuredTodayPractice(entries, day)?.id, dailyRitual(day)]);
-  const pool = wishFree.filter((e) => !shown.has(e.id));
-  return recommendScene(
-    pool.length ? pool : wishFree.length ? wishFree : entries,
-    day,
-  );
+  return findSceneEntry(entries, ritual);
 }
 
-/** Today's featured practice card: one of the 今日 scenes, rotated by day. */
-export function featuredTodayPractice(
-  entries: CatalogEntry[],
-  day: string,
-): CatalogEntry | undefined {
-  return recommendScene(todaySceneEntries(entries), day);
+/** The core ritual a scene is walked as, by their shared id, if any. */
+export function sceneRitual(id: string): RitualId | undefined {
+  return Object.keys(rituals).includes(id) ? (id as RitualId) : undefined;
 }
 
-/** Copy only: each scene's icon is drawn, keyed by id, in scene-icons.tsx. */
-export const TODAY_PRACTICE_COPY = {
-  tag: "今日小练习",
-  action: "开始今日小练习",
-  scenes: {
-    "furin-wind-chime": {
-      blurb: "轻拂听一声清凉（练习，非法效）。",
-    },
-    "shinto-torii": {
-      blurb: "在鸟居前停步，轻轻一礼（致敬练习，不替代真实参拜）。",
-    },
-    "tibetan-wheel": {
-      blurb: "顺时针轻推转筒，静看它慢下来（练习，非法效）。",
-    },
-  } satisfies Record<TodaySceneId, { blurb: string }>,
+/** Copy for 今日's daily set. */
+export const DAILY_SET_COPY = {
+  heading: "今日随机仪式",
+  sub: "每天三场 · 完成后收进小天地",
+  blessingNote: "祈福 · 完成后收进小天地",
+  wishNote: "许愿 · 完成后可拿去许愿",
+  collected: "今天已收下",
+  /** A scene whose collectible for today already exists, walked again. */
+  browse: "浏览全部场景",
 } as const;
 
-export function todayPracticeCopy(id: string) {
-  return isTodayScene(id)
-    ? TODAY_PRACTICE_COPY.scenes[id as TodaySceneId]
-    : undefined;
-}
+/** The day's char-sum: one stable number a day, reused across both picks. */
+const dayNumber = (day: string) =>
+  Array.from(day).reduce((n, c) => n + c.charCodeAt(0), 0);
 
-export const WISH_PRACTICE_COPY = {
-  heading: "心愿小练习",
-  blurb: "把期待挂上竹枝、折进纸鹤、点进灯里，或随花环漂远（练习，非法效）。",
-  detailHeading: "为这个心愿做个小练习",
-  detailBlurb: "练习小品，不产生法效。",
-  /** The verb only: the catalog title is shown beside it. */
-  actions: {
-    "tanzaku-tanabata": "系一念",
-    yeondeunghoe: "推一盏",
-    crane: "折一念",
-    lantern: "点一盏",
-    "slavic-wreath": "放一环",
-  } satisfies Record<WishSceneId, string>,
-  /** For a scene outside the wish set. */
-  otherAction: "做个小练习",
-} as const;
-
-/** A wish practice's verb, under its title on the 心愿 card and on a wish's
- * detail. */
-export function wishPracticeAction(entry: CatalogEntry): string {
-  return isWishScene(entry.id)
-    ? WISH_PRACTICE_COPY.actions[entry.id as WishSceneId]
-    : WISH_PRACTICE_COPY.otherAction;
+/**
+ * 今日's daily set: two 祈福 scenes and one 许愿 scene, rotated by day, so
+ * every day offers a random mix that stays put all day. Only scenes the
+ * catalog can open come up; a day always yields the full set while the
+ * bundled catalog is in place.
+ */
+export function dailySceneSet(
+  entries: CatalogEntry[],
+  day: string,
+): CatalogEntry[] {
+  const pool = (ids: readonly string[]) =>
+    ids
+      .map((id) => findSceneEntry(entries, id))
+      .filter((e): e is CatalogEntry => !!e);
+  const blessings = pool(BLESSING_SCENE_IDS);
+  const wishes = pool(WISH_SCENE_IDS);
+  if (!blessings.length && !wishes.length) return [];
+  const n = dayNumber(day);
+  // Rotate each pool by the day, then take the front: a stable, varied mix.
+  const rotate = (list: CatalogEntry[]) => [
+    ...list.slice(n % list.length),
+    ...list.slice(0, n % list.length),
+  ];
+  return [
+    ...rotate(blessings).slice(0, 2),
+    ...rotate(wishes).slice(0, 1),
+  ];
 }

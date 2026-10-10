@@ -79,7 +79,9 @@ export function BlessingApp({
       const existing = old.findIndex(
         (r) => r.page === next.page && r.id === next.id,
       );
-      if (existing >= 0) return old.slice(0, existing + 1);
+      // Back to a page already open: what was above it goes, and the new
+      // route stands in for the old one, so a 还愿 wishId is not dropped.
+      if (existing >= 0) return [...old.slice(0, existing), next];
       if (
         (old.at(-1)?.page === "new" && next.page === "wish") ||
         next.page === "complete"
@@ -129,7 +131,7 @@ export function BlessingApp({
   // settled, so nothing is lost — the sticker still flies, into the 小天地
   // tab, and 今日 opens with its +1.
   function closeComplete() {
-    const session = state.sessions.find((s) => s.id === route.id);
+    const session = state?.sessions.find((s) => s.id === route.id);
     if (session)
       launchReward({
         kind: session.ritual,
@@ -327,7 +329,7 @@ export function BlessingApp({
       : "";
   };
   const page =
-    route.page === "scenes" ? <SceneCatalog /> : route.page === "cache" ? <CacheManager /> : route.page === "scene" ? <SceneExperience entry={route.entry ?? state.sceneRecords.find(r => r.id === route.id)} /> : route.page === "today" ? (
+    route.page === "scenes" ? <SceneCatalog /> : route.page === "cache" ? <CacheManager /> : route.page === "scene" ? <SceneExperience entry={route.entry ?? state.sceneRecords.find(r => r.id === route.id)} wishId={route.wishId} daily={route.daily} vessel={route.vessel} /> : route.page === "today" ? (
       <Today key={day} day={day} />
     ) : route.page === "wishes" ? (
       <Wishes />

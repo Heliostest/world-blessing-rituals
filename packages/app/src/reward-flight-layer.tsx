@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Art, Icon } from "./art";
+import { SceneArt } from "./scene-icons";
 import {
   flightKeyframes,
   rectOf,
@@ -153,6 +154,8 @@ export function RewardFlightLayer({
         <div className="reward-ghost-arc" ref={inner}>
           {flight.kind === "leaf" ? (
             <Icon name="leaf" />
+          ) : flight.kind === "scene" ? (
+            <SceneArt id={flight.sceneId!} />
           ) : (
             <Art kind={flight.kind} small />
           )}

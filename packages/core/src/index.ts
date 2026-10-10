@@ -62,11 +62,20 @@ export type Session = {
 };
 export type Collectible = {
   id: string;
-  kind: RitualId | "badge";
+  kind: RitualId | "badge" | "scene";
   title: string;
   at: string;
   wishId?: string;
+  /** kind "scene": the scene this keepsake opens again from 小天地 (回看). */
+  sceneId?: string;
+  /** kind "scene": this one can be used in 心愿 for 许愿/还愿. */
+  wishScene?: boolean;
+  /** kind "scene": when it was used for a wish; a spent keepsake stays for 回看. */
+  spentAt?: string;
 };
+/** The one keepsake a day's walk of a scene leaves in 小天地. */
+export const dailyCollectibleId = (day: string, sceneId: string) =>
+  `daily:${day}:${sceneId}`;
 export type SceneRecord = {
   id: string; title: string; engine: string; revision: string; manifestUrl: string;
   progress: number; favorite: boolean; lastOpened: string;
@@ -115,6 +124,40 @@ export type Action =
     }
   | { type: "ritual.step" }
   | { type: "ritual.finish"; id: string; at: string }
+  /**
+   * A ritual walked as its 3D scene for a wish (还愿): one completed session
+   * and a note on the wish, at once. Never merit or a collectible (the
+   * scene red line), and any 2D session in progress is left alone.
+   */
+  | {
+      type: "ritual.scene";
+      id: string;
+      ritual: RitualId;
+      wishId: string;
+      startedAt: string;
+      at: string;
+    }
+  /**
+   * A scene walked on 今日's daily set: one keepsake in 小天地 and the day's
+   * merit, once per scene per day. Idempotent: a scene already collected
+   * today (or a last step reported again) settles nothing.
+   */
+  | {
+      type: "daily.scene";
+      id: string;
+      sceneId: string;
+      title: string;
+      wishScene: boolean;
+      day: string;
+      startedAt: string;
+      at: string;
+    }
+  /**
+   * Uses a wish-type keepsake from 小天地: for 许愿 (nothing kept here — the
+   * App asks first) or for 还愿 (`wishId`: the keepsake is marked spent and
+   * the wish gets its note, so the wish can be fulfilled by ritual).
+   */
+  | { type: "collectible.spend"; id: string; wishId?: string; at: string }
   | { type: "settings"; key: keyof State["settings"]; value: boolean };
 
 /** A fresh state; `settings` overrides defaults (e.g. the system's motion preference). */
@@ -142,6 +185,14 @@ function wishOf(s: State, id: string) {
 }
 function updateWish(s: State, w: Wish): State {
   return { ...s, wishes: s.wishes.map((old) => (old.id === w.id ? w : old)) };
+}
+/** The note a completed ritual leaves on its linked wish. */
+function ritualNote(sessionId: string, ritual: RitualId, at: string): Note {
+  return {
+    id: `ritual:${sessionId}`,
+    text: `为这个心愿，${rituals[ritual].name}`,
+    at,
+  };
 }
 export function reduce(s: State, a: Action): State {
   switch (a.type) {
@@ -283,14 +334,7 @@ export function reduce(s: State, a: Action): State {
         const w = wishOf(s, r.wishId);
         next = updateWish(s, {
           ...w,
-          notes: [
-            ...w.notes,
-            {
-              id: `ritual:${r.id}`,
-              text: `为这个心愿，${rituals[r.ritual].name}`,
-              at: a.at,
-            },
-          ],
+          notes: [...w.notes, ritualNote(r.id, r.ritual, a.at)],
         });
       }
       return {
@@ -310,6 +354,107 @@ export function reduce(s: State, a: Action): State {
         ],
       };
     }
+    case "ritual.scene": {
+      if (s.sessions.some((r) => r.id === a.id)) return s;
+      // Checked like a save is on restore, so a record can never break one;
+      // nor may it take the 2D session's id, which could then never settle.
+      if (
+        !id(a.id) ||
+        a.id === s.activeSession?.id ||
+        !kind(a.ritual) ||
+        !date(a.startedAt) ||
+        !date(a.at)
+      )
+        throw new Error("这次仪式的记录无效");
+      const w = wishOf(s, a.wishId);
+      if (w.archived || w.status === "fulfilled")
+        throw new Error("请选择进行中的心愿");
+      const next = updateWish(s, {
+        ...w,
+        notes: [...w.notes, ritualNote(a.id, a.ritual, a.at)],
+      });
+      return {
+        ...next,
+        sessions: [
+          ...s.sessions,
+          {
+            id: a.id,
+            ritual: a.ritual,
+            progress: rituals[a.ritual].steps,
+            startedAt: a.startedAt,
+            wishId: a.wishId,
+            completedAt: a.at,
+          },
+        ],
+      };
+    }
+    case "daily.scene": {
+      // One per scene per day: a re-fired last step, or a second walk the
+      // same day, settles nothing further.
+      if (s.collectibles.some((c) => c.id === dailyCollectibleId(a.day, a.sceneId)))
+        return s;
+      if (
+        !id(a.id) ||
+        !id(a.sceneId) ||
+        !str(a.title) ||
+        a.title.trim().length < 1 ||
+        a.title.length > 100 ||
+        !/^\d{4}-\d{2}-\d{2}$/.test(a.day) ||
+        !date(a.startedAt) ||
+        !date(a.at) ||
+        typeof a.wishScene !== "boolean"
+      )
+        throw new Error("这次仪式的记录无效");
+      return {
+        ...s,
+        ledger: [...s.ledger, { id: a.id, amount: 10, at: a.at }],
+        collectibles: [
+          ...s.collectibles,
+          {
+            id: dailyCollectibleId(a.day, a.sceneId),
+            kind: "scene",
+            title: a.title,
+            at: a.at,
+            sceneId: a.sceneId,
+            ...(a.wishScene ? { wishScene: true } : {}),
+          },
+        ],
+      };
+    }
+    case "collectible.spend": {
+      if (!id(a.id) || !date(a.at) || !optionalId(a.wishId))
+        throw new Error("这次祈愿的记录无效");
+      const c = s.collectibles.find((c) => c.id === a.id);
+      if (!c || c.kind !== "scene" || !c.wishScene)
+        throw new Error("没有找到这个许愿小物");
+      // Spent once: a re-fired last step settles nothing further.
+      if (c.spentAt) return s;
+      let next = s;
+      if (a.wishId) {
+        const w = wishOf(s, a.wishId);
+        if (w.archived || w.status === "fulfilled")
+          throw new Error("请选择进行中的心愿");
+        next = updateWish(s, {
+          ...w,
+          notes: [
+            ...w.notes,
+            { id: `vessel:${c.id}`, text: `为这个心愿，${c.title}`, at: a.at },
+          ],
+        });
+      }
+      return {
+        ...next,
+        collectibles: next.collectibles.map((old) =>
+          old.id === a.id
+            ? {
+                ...c,
+                spentAt: a.at,
+                ...(a.wishId ? { wishId: a.wishId } : {}),
+              }
+            : old,
+        ),
+      };
+    }
     case "settings":
       return { ...s, settings: { ...s.settings, [a.key]: a.value } };
   }
@@ -320,18 +465,19 @@ export function localDay(date = new Date()): string {
 export function hasReturnRitual(state: State, wish: Wish): boolean {
   return Boolean(
     wish.realizedAt &&
-      state.sessions.some(
+      (state.sessions.some(
         (s) =>
           s.wishId === wish.id &&
           s.completedAt &&
           s.startedAt >= wish.realizedAt!,
-      ),
+      ) ||
+        // A wish-type keepsake spent for the wish (the vessel 还愿) counts
+        // the same way a recorded scene session does.
+        state.collectibles.some(
+          (c) =>
+            c.wishId === wish.id && c.spentAt && c.spentAt >= wish.realizedAt!,
+        )),
   );
-}
-export function dailyRitual(day: string): RitualId {
-  return (Object.keys(rituals) as RitualId[])[
-    Array.from(day).reduce((n, c) => n + c.charCodeAt(0), 0) % 3
-  ];
 }
 
 // Validate before mounting the UI. Invalid saves stay untouched for recovery.
@@ -343,6 +489,25 @@ const id = (v: unknown) => str(v) && v.length > 0;
 const optionalId = (v: unknown) => v === undefined || id(v);
 const kind = (v: unknown): v is RitualId =>
   v === "woodfish" || v === "crane" || v === "lantern";
+/** One keepsake in 小天地: a ritual object, a 如愿 badge, or a collected
+ * scene (which carries its scene, and may be a spent wish vessel). */
+const collectible = (v: unknown) =>
+  obj(v) &&
+  id(v.id) &&
+  (kind(v.kind) || v.kind === "badge" || v.kind === "scene") &&
+  str(v.title) &&
+  date(v.at) &&
+  optionalId(v.wishId) &&
+  (v.kind === "scene"
+    ? id(v.sceneId) &&
+      (v.wishScene === undefined || typeof v.wishScene === "boolean") &&
+      // A scene keepsake carries a wish only once it has been spent for one.
+      (v.spentAt === undefined
+        ? v.wishId === undefined
+        : date(v.spentAt))
+    : v.sceneId === undefined &&
+      v.wishScene === undefined &&
+      v.spentAt === undefined);
 const list = (v: unknown, valid: (x: unknown) => boolean) =>
   Array.isArray(v) &&
   v.every(valid) &&
@@ -404,16 +569,7 @@ export function restore(
         kind(r.ritual) &&
         r.progress === rituals[r.ritual].steps,
     ) &&
-    list(
-      v.collectibles,
-      (c) =>
-        obj(c) &&
-        id(c.id) &&
-        (kind(c.kind) || c.kind === "badge") &&
-        str(c.title) &&
-        date(c.at) &&
-        optionalId(c.wishId),
-    ) &&
+    list(v.collectibles, collectible) &&
     list(
       v.ledger,
       (l) =>

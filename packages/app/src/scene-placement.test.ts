@@ -1,24 +1,20 @@
 import { describe, expect, it } from "vitest";
-import { dailyRitual } from "@wbr/core";
+import { rituals, type RitualId } from "@wbr/core";
 import type { CatalogEntry } from "@wbr/content/catalog";
 import { assertSafeCopy } from "@wbr/shared";
-import { builtInScenes } from "./scene-library";
+import { builtInScenes, supportsScene } from "./scene-library";
 import { hasSceneIcon } from "./scene-icons";
 import {
+  BLESSING_SCENE_IDS,
+  DAILY_SET_COPY,
   NIGHT_STAGE_SCENE_IDS,
-  TODAY_PRACTICE_COPY,
-  TODAY_SCENE_IDS,
-  WISH_PRACTICE_COPY,
   WISH_SCENE_IDS,
-  featuredTodayPractice,
-  isTodayScene,
+  dailySceneSet,
   isWishScene,
-  recommendTodayScene,
+  ritualSceneEntry,
+  sceneRitual,
   sceneStage,
-  todayPracticeCopy,
-  wishPracticeAction,
-  wishSceneEntries,
-  todaySceneEntries,
+  sceneSteps,
 } from "./scene-placement";
 
 const bundled = (id: string, title: string): CatalogEntry => ({
@@ -60,17 +56,22 @@ const entries: CatalogEntry[] = [
   },
   bundled("shinto-torii", "庭前一礼"),
   bundled("tibetan-wheel", "廊前轻转"),
+  bundled("celtic-folk-spring", "泉边一念"),
+  bundled("theravada-water", "花水位一倾"),
   bundled("crane", "折一只纸鹤"),
   bundled("lantern", "月下一灯"),
   bundled("slavic-wreath", "火边花环"),
 ];
 
 describe("scene placement", () => {
-  it("splits today vs wish scene ids", () => {
-    expect([...TODAY_SCENE_IDS]).toEqual([
+  it("splits blessing vs wish scene ids", () => {
+    expect([...BLESSING_SCENE_IDS]).toEqual([
+      "woodfish",
       "furin-wind-chime",
       "shinto-torii",
       "tibetan-wheel",
+      "celtic-folk-spring",
+      "theravada-water",
     ]);
     expect([...WISH_SCENE_IDS]).toEqual([
       "tanzaku-tanabata",
@@ -79,105 +80,104 @@ describe("scene placement", () => {
       "lantern",
       "slavic-wreath",
     ]);
-    expect(isTodayScene("furin-wind-chime")).toBe(true);
-    expect(isTodayScene("shinto-torii")).toBe(true);
     expect(isWishScene("tanzaku-tanabata")).toBe(true);
     expect(isWishScene("slavic-wreath")).toBe(true);
     expect(isWishScene("furin-wind-chime")).toBe(false);
   });
 
   it("places every placed scene on exactly one surface, and all are bundled", () => {
-    for (const id of TODAY_SCENE_IDS) expect(isWishScene(id)).toBe(false);
+    for (const id of BLESSING_SCENE_IDS) expect(isWishScene(id)).toBe(false);
     const bundledIds = builtInScenes.map((e) => e.id);
-    for (const id of [...TODAY_SCENE_IDS, ...WISH_SCENE_IDS]) {
+    for (const id of [...BLESSING_SCENE_IDS, ...WISH_SCENE_IDS]) {
       expect(bundledIds).toContain(id);
     }
+  });
+
+  it("opens every core ritual as the bundled scene of the same id", () => {
+    for (const ritual of Object.keys(rituals) as RitualId[]) {
+      const entry = ritualSceneEntry(builtInScenes, ritual)!;
+      expect(entry.id, ritual).toBe(ritual);
+      expect(supportsScene(entry.engine), ritual).toBe(true);
+      expect(sceneRitual(entry.id)).toBe(ritual);
+    }
+    expect(ritualSceneEntry([], "crane")).toBeUndefined();
+    for (const id of ["tanzaku-tanabata", "toString", ""])
+      expect(sceneRitual(id), id).toBeUndefined();
+    expect(sceneSteps(ritualSceneEntry(builtInScenes, "woodfish")!)).toBe(12);
+    expect(sceneSteps(ritualSceneEntry(builtInScenes, "crane")!)).toBe(3);
+    expect(sceneSteps(ritualSceneEntry(builtInScenes, "lantern")!)).toBe(3);
   });
 
   it("shows the lantern scenes on the night stage, every other scene by day", () => {
     expect([...NIGHT_STAGE_SCENE_IDS]).toEqual(["lantern", "yeondeunghoe"]);
     for (const id of NIGHT_STAGE_SCENE_IDS) expect(sceneStage(id)).toBe("night");
-    for (const id of [...TODAY_SCENE_IDS, "crane", "tanzaku-tanabata", "woodfish"])
+    for (const id of [
+      ...BLESSING_SCENE_IDS,
+      "crane",
+      "tanzaku-tanabata",
+      "slavic-wreath",
+    ])
       expect(sceneStage(id), id).toBe("day");
   });
 
   it("gives every placed scene a drawn icon, keyed by its id", () => {
-    for (const id of [...TODAY_SCENE_IDS, ...WISH_SCENE_IDS])
+    for (const id of [...BLESSING_SCENE_IDS, ...WISH_SCENE_IDS])
       expect(hasSceneIcon(id), id).toBe(true);
     expect(hasSceneIcon("no-such-scene")).toBe(false);
   });
+});
 
-  it("lists catalog entries for each surface", () => {
-    expect(todaySceneEntries(entries).map((e) => e.id)).toEqual([
-      ...TODAY_SCENE_IDS,
-    ]);
-    expect(wishSceneEntries(entries).map((e) => e.id)).toEqual([
-      ...WISH_SCENE_IDS,
-    ]);
-  });
-
-  it("gives each surface's scenes their own safe copy", () => {
-    for (const id of TODAY_SCENE_IDS) {
-      const copy = todayPracticeCopy(id)!;
-      // Icons are drawn and keyed by scene id, never carried in the copy.
-      expect(copy).not.toHaveProperty("glyph");
-      expect(() => assertSafeCopy(copy.blurb)).not.toThrow();
-    }
-    expect(todayPracticeCopy("crane")).toBeUndefined();
-    for (const entry of wishSceneEntries(entries)) {
-      // The 心愿 card and detail tile show the title already: the verb only.
-      const verb = wishPracticeAction(entry);
-      expect(verb).not.toContain(entry.title);
-      expect(() => assertSafeCopy(verb)).not.toThrow();
-    }
-    expect(wishSceneEntries(entries).map((e) => wishPracticeAction(e))).toEqual([
-      "系一念",
-      "推一盏",
-      "折一念",
-      "点一盏",
-      "放一环",
-    ]);
-    expect(wishPracticeAction(entries[0])).toBe(WISH_PRACTICE_COPY.otherAction);
-    for (const text of [
-      TODAY_PRACTICE_COPY.tag,
-      TODAY_PRACTICE_COPY.action,
-      WISH_PRACTICE_COPY.blurb,
-      WISH_PRACTICE_COPY.otherAction,
-    ]) {
-      expect(() => assertSafeCopy(text)).not.toThrow();
-    }
-  });
-
-  it("features a different 今日 practice across days, never a wish scene", () => {
-    const seen = new Set<string>();
-    for (let i = 1; i <= 28; i++) {
-      const pick = featuredTodayPractice(entries, `2026-10-${String(i).padStart(2, "0")}`);
-      expect(pick && isTodayScene(pick.id)).toBe(true);
-      seen.add(pick!.id);
-    }
-    expect(seen.size).toBeGreaterThan(1);
-    expect(featuredTodayPractice([entries[0]], "2026-10-01")).toBeUndefined();
-  });
-
-  it("never recommends a wish scene on 今日", () => {
-    for (let i = 0; i < 32; i++) {
-      const day = `2026-09-${String((i % 28) + 1).padStart(2, "0")}`;
-      const pick = recommendTodayScene(entries, day);
-      expect(pick).toBeDefined();
-      expect(isWishScene(pick!.id)).toBe(false);
-    }
-  });
-
-  it("dedupes 今日 recommendation from featured practice and daily ritual", () => {
+describe("今日's daily set", () => {
+  it("offers two 祈福 scenes and one 许愿 scene each day", () => {
     for (let i = 1; i <= 28; i++) {
       const day = `2026-10-${String(i).padStart(2, "0")}`;
-      const featured = featuredTodayPractice(entries, day);
-      const ritual = dailyRitual(day);
-      const pick = recommendTodayScene(entries, day);
-      expect(pick).toBeDefined();
-      expect(isWishScene(pick!.id)).toBe(false);
-      if (featured) expect(pick!.id).not.toBe(featured.id);
-      expect(pick!.id).not.toBe(ritual);
+      const set = dailySceneSet(entries, day);
+      expect(set).toHaveLength(3);
+      expect(set.filter((e) => isWishScene(e.id))).toHaveLength(1);
+      for (const entry of set)
+        expect(
+          BLESSING_SCENE_IDS.includes(entry.id as never) ||
+            WISH_SCENE_IDS.includes(entry.id as never),
+          `${day} ${entry.id}`,
+        ).toBe(true);
+    }
+  });
+
+  it("stays put all day, and changes across days", () => {
+    const a = dailySceneSet(entries, "2026-10-01");
+    expect(dailySceneSet(entries, "2026-10-01").map((e) => e.id)).toEqual(
+      a.map((e) => e.id),
+    );
+    const seen = new Set<string>();
+    for (let i = 1; i <= 28; i++)
+      for (const e of dailySceneSet(entries, `2026-10-${String(i).padStart(2, "0")}`))
+        seen.add(e.id);
+    expect(seen.size).toBeGreaterThan(3);
+  });
+
+  it("skips scenes the catalog cannot open, without failing the day", () => {
+    const partial = entries.filter((e) => e.id !== "woodfish");
+    for (let i = 1; i <= 14; i++) {
+      const set = dailySceneSet(partial, `2026-10-${String(i).padStart(2, "0")}`);
+      expect(set.map((e) => e.id)).not.toContain("woodfish");
+      expect(set.filter((e) => isWishScene(e.id))).toHaveLength(1);
+    }
+    expect(dailySceneSet([entries[1]], "2026-10-01").map((e) => e.id)).toEqual([
+      "tanzaku-tanabata",
+    ]);
+    expect(dailySceneSet([], "2026-10-01")).toEqual([]);
+  });
+
+  it("keeps its copy safe", () => {
+    for (const text of [
+      DAILY_SET_COPY.heading,
+      DAILY_SET_COPY.sub,
+      DAILY_SET_COPY.blessingNote,
+      DAILY_SET_COPY.wishNote,
+      DAILY_SET_COPY.collected,
+      DAILY_SET_COPY.browse,
+    ]) {
+      expect(() => assertSafeCopy(text)).not.toThrow();
     }
   });
 });

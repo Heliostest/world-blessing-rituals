@@ -1,14 +1,10 @@
 // @vitest-environment jsdom
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { createState, type Wish } from "@wbr/core";
 import { Context, type AppContext } from "./context";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
-import { WISH_SCENE_IDS } from "./scene-placement";
 import { WishDetail } from "./wishes";
 
 const wish: Wish = {
@@ -43,31 +39,15 @@ function renderDetail() {
 describe("a wish's detail", () => {
   const doc = renderDetail();
 
-  it("offers its practices as small tiles: the scene's badge, title and verb", () => {
-    const tiles = [...doc.querySelectorAll(".wish-practice-actions > .practice-tile")];
-    expect(tiles.map((t) => t.getAttribute("data-scene"))).toEqual([...WISH_SCENE_IDS]);
-    for (const tile of tiles) {
-      const id = tile.getAttribute("data-scene")!;
-      expect(tile.querySelector(".scene-badge svg path"), id).not.toBeNull();
-      expect(tile.querySelector("strong")!.textContent).toBe(
-        builtInScenes.find((e) => e.id === id)!.title,
-      );
-      expect(tile.querySelector("small")!.textContent!.length, id).toBeGreaterThan(0);
-    }
+  it("offers no practice tiles: scenes come through a 许愿小物 on 心愿", () => {
+    expect(doc.querySelector(".wish-practice-detail")).toBeNull();
+    expect(doc.querySelectorAll(".practice-tile")).toHaveLength(0);
+    expect(doc.querySelectorAll(".wish-practice-card")).toHaveLength(0);
   });
 
   it("keeps 我的心愿实现了 as its one big button", () => {
     expect([...doc.querySelectorAll(".button")].map((b) => b.textContent)).toEqual([
       "我的心愿实现了",
     ]);
-  });
-
-  it("lays the tiles out in two columns", () => {
-    const css = readFileSync(
-      join(dirname(fileURLToPath(import.meta.url)), "style.css"),
-      "utf8",
-    );
-    const rule = css.match(/\.wish-practice-detail \.wish-practice-actions \{[^}]*\}/)![0];
-    expect(rule).toMatch(/grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
   });
 });

@@ -1,15 +1,16 @@
 import { useState } from "react";
-import { rituals } from "@wbr/core";
+import { rituals, type Collectible } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { formatDate, statusText, useApp } from "./context";
 import { ritualTitle } from "./home";
-import { SceneCard, useSceneLibrary } from "./scene-library";
-import { SceneBadge } from "./scene-icons";
 import {
-  WISH_PRACTICE_COPY,
-  wishPracticeAction,
-  wishSceneEntries,
-} from "./scene-placement";
+  SceneCard,
+  useOpenRitual,
+  useOpenScene,
+  useSceneLibrary,
+} from "./scene-library";
+import { SceneArt, SceneBadge } from "./scene-icons";
+import { usableVessels, VESSEL_COPY } from "./vessels";
 
 export function PageHead({
   eyebrow,
@@ -57,8 +58,9 @@ export function Empty({
 export function Wishes() {
   const { state, go, arrival } = useApp();
   const { entries } = useSceneLibrary();
+  const openScene = useOpenScene();
   const [filter, setFilter] = useState("active");
-  const practices = wishSceneEntries(entries);
+  const vessels = usableVessels(state, entries);
   const wishes = state.wishes.filter((w) =>
     filter === "archived"
       ? w.archived
@@ -85,29 +87,41 @@ export function Wishes() {
           <p>每一份认真期待，都值得被记住。</p>
         </div>
       </div>
-      {practices.length > 0 && (
-        <section className="wish-practice" aria-label={WISH_PRACTICE_COPY.heading}>
-          <div className="section-heading">
-            <h2>{WISH_PRACTICE_COPY.heading}</h2>
-          </div>
-          <p className="quiet wish-practice-blurb">{WISH_PRACTICE_COPY.blurb}</p>
+      <section className="wish-practice" aria-label={VESSEL_COPY.heading}>
+        <div className="section-heading">
+          <h2>{VESSEL_COPY.heading}</h2>
+          {vessels.length > 0 && <span>{vessels.length} 个可用</span>}
+        </div>
+        <p className="quiet wish-practice-blurb">{VESSEL_COPY.blurb}</p>
+        {vessels.length ? (
           <div className="wish-practice-grid">
-            {practices.map((entry) => (
-              <button
-                key={entry.id}
-                className="wish-practice-card"
-                data-scene={entry.id}
-                onClick={() => go({ page: "scene", id: entry.id, entry })}
-              >
-                <SceneBadge id={entry.id} />
-                <strong>{entry.title}</strong>
-                <small>{wishPracticeAction(entry)}</small>
-                <Icon name="arrow" />
-              </button>
-            ))}
+            {vessels.map((c) => {
+              const entry = entries.find((e) => e.id === c.sceneId);
+              if (!entry) return null;
+              return (
+                <button
+                  key={c.id}
+                  className="wish-practice-card vessel-card"
+                  data-scene={entry.id}
+                  onClick={() => openScene(entry, { vessel: c.id })}
+                >
+                  <SceneBadge id={entry.id} />
+                  <strong>{entry.title}</strong>
+                  <small>{VESSEL_COPY.use}</small>
+                  <Icon name="arrow" />
+                </button>
+              );
+            })}
           </div>
-        </section>
-      )}
+        ) : (
+          <Empty
+            title={VESSEL_COPY.emptyTitle}
+            body={VESSEL_COPY.emptyBody}
+            action={VESSEL_COPY.emptyAction}
+            onClick={() => go({ page: "today" })}
+          />
+        )}
+      </section>
       <div className="filter-row" role="group" aria-label="心愿筛选">
         {[
           ["active", "心愿灯"],
@@ -179,6 +193,19 @@ export function Wishes() {
     </>
   );
 }
+/** A keepsake's own art: a collected scene shows its drawn icon, not a crop. */
+function CollectibleArt({
+  kind,
+  sceneId,
+  small,
+}: {
+  kind: Collectible["kind"];
+  sceneId?: string;
+  small?: boolean;
+}) {
+  if (kind === "scene") return <SceneArt id={sceneId ?? ""} />;
+  return <Art kind={kind} small={small} />;
+}
 export function World() {
   const { state, go, arrival } = useApp();
   // This room's landing states: the newest slot is hidden while its sticker
@@ -218,7 +245,7 @@ export function World() {
                 className={slot === "landed" ? "reward-landed" : undefined}
                 onClick={() => go({ page: "collection", id: c.id })}
               >
-                <Art kind={c.kind} small />
+                <CollectibleArt kind={c.kind} sceneId={c.sceneId} small />
                 {slot === "landed" && (
                   <>
                     <span className="new-mark">新</span>
@@ -254,7 +281,7 @@ export function World() {
                 data-arriving={slot === "flying" ? "" : undefined}
                 onClick={() => go({ page: "collection", id: c.id })}
               >
-                <Art kind={c.kind} small />
+                <CollectibleArt kind={c.kind} sceneId={c.sceneId} small />
                 <strong>{c.title}</strong>
                 <small>{formatDate(c.at)}</small>
               </button>
@@ -274,24 +301,55 @@ export function World() {
 }
 export function CollectionDetail({ id }: { id: string }) {
   const { state, go } = useApp();
+  const { entries } = useSceneLibrary();
+  const openScene = useOpenScene();
   const item = state.collectibles.find((c) => c.id === id);
   if (!item)
     return <Empty title="这件收藏还没到家" body="先去完成一个小仪式吧。" />;
   const wish = state.wishes.find((w) => w.id === item.wishId);
+  const sceneEntry =
+    item.kind === "scene" && item.sceneId
+      ? entries.find((e) => e.id === item.sceneId)
+      : undefined;
+  // A spent vessel remembers the wish it 还愿-ed for through its note.
+  const spentFor = item.spentAt
+    ? state.wishes.find((w) => w.notes.some((n) => n.id === `vessel:${item.id}`))
+    : undefined;
   return (
     <>
       <PageHead eyebrow="属于你的独一份记忆" title={item.title} />
-      <Art kind={item.kind} />
+      <CollectibleArt kind={item.kind} sceneId={item.sceneId} />
       <div className="form-card">
         <span className="tag">
-          {item.kind === "badge" ? "还愿纪念" : "仪式收藏"}
+          {item.kind === "badge"
+            ? "还愿纪念"
+            : item.kind === "scene"
+              ? item.wishScene
+                ? "许愿小物"
+                : "祈福小物"
+              : "仪式收藏"}
         </span>
         <h2>{formatDate(item.at)}，留住一点美好。</h2>
         <p className="quiet">
           {item.kind === "badge"
             ? "曾经认真许下的愿望，如今成为了生活的一部分。"
-            : `这件${item.title}，来自你为自己留下的一段安静时光。`}
+            : item.kind === "scene"
+              ? `这枚小物，来自你完成的「${item.title}」仪式。`
+              : `这件${item.title}，来自你为自己留下的一段安静时光。`}
         </p>
+        {item.kind === "scene" && item.wishScene && item.spentAt && (
+          <p className="quiet vessel-spent-line">
+            {spentFor ? `已替「${spentFor.title}」还过愿` : "已拿去许过愿"}
+          </p>
+        )}
+        {sceneEntry && (
+          <button
+            className="button secondary"
+            onClick={() => openScene(sceneEntry, { replay: true })}
+          >
+            回看这场仪式 <Icon name="arrow" />
+          </button>
+        )}
         {wish && (
           <button
             className="button secondary"
@@ -383,8 +441,14 @@ export function Me() {
     </>
   );
 }
+/**
+ * 仪式时光's line for a ritual walked as its scene: it left a note on its
+ * wish, and never merit or a keepsake.
+ */
+export const HISTORY_SCENE_LINE = "场景体验";
 export function History() {
   const { state, go } = useApp();
+  const openRitual = useOpenRitual();
   return (
     <>
       <PageHead eyebrow="你留给自己的每一分钟" title="仪式时光" />
@@ -402,16 +466,27 @@ export function History() {
       </div>
       {state.sessions.length ? (
         <ol className="timeline">
-          {[...state.sessions].reverse().map((s) => (
-            <li key={s.id}>
-              <small>{formatDate(s.completedAt!)}</small>
-              {/* The title the ritual has everywhere else, not the core
-                  name, which a 3D scene in the list above may share. */}
-              <h3>{ritualTitle[s.ritual]}</h3>
-              <p>功德 +10 · 收藏了{rituals[s.ritual].object}</p>
-              <button className="text-button" onClick={() => go({ page: "ritual", id: s.ritual })}>再次体验</button>
-            </li>
-          ))}
+          {[...state.sessions].reverse().map((s) => {
+            // Only a 2D ritual settled with merit (and its keepsake).
+            const merit = state.ledger.find((l) => l.id === s.id);
+            const wish = state.wishes.find((w) => w.id === s.wishId);
+            return (
+              <li key={s.id}>
+                <small>{formatDate(s.completedAt!)}</small>
+                {/* The title the ritual has everywhere else, not the core
+                    name, which a 3D scene in the list above may share. */}
+                <h3>{ritualTitle[s.ritual]}</h3>
+                <p>
+                  {merit
+                    ? `功德 +${merit.amount} · 收藏了${rituals[s.ritual].object}`
+                    : wish
+                      ? `${HISTORY_SCENE_LINE} · 为「${wish.title}」记了一笔`
+                      : HISTORY_SCENE_LINE}
+                </p>
+                <button className="text-button" onClick={() => openRitual(s.ritual)}>再次体验</button>
+              </li>
+            );
+          })}
         </ol>
       ) : state.sceneRecords.length ? null : (
         <Empty title="故事才刚刚开始" body="完成的小仪式，会一一记在这里。" />

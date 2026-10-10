@@ -1,20 +1,12 @@
 import { useState, type FormEvent } from "react";
-import {
-  hasReturnRitual,
-  type ReturnMethod,
-  type WishCategory,
-} from "@wbr/core";
+import { hasReturnRitual, type ReturnMethod, type WishCategory } from "@wbr/core";
 import { Art, Icon } from "./art";
 import { useAutoGrow } from "./auto-grow";
 import { formatDate, now, uid, useApp } from "./context";
 import { Empty } from "./pages";
-import { useSceneLibrary } from "./scene-library";
+import { useOpenScene, useSceneLibrary } from "./scene-library";
 import { SceneBadge } from "./scene-icons";
-import {
-  WISH_PRACTICE_COPY,
-  wishPracticeAction,
-  wishSceneEntries,
-} from "./scene-placement";
+import { FULFILL_VESSEL_COPY, usableVessels } from "./vessels";
 
 function ReturnChoices({
   value,
@@ -42,7 +34,7 @@ function ReturnChoices({
               <small>
                 {method === "kindness"
                   ? "帮助别人，或表达一次感谢"
-                  : "折一只纸鹤，留住这份心情"}
+                  : "完成一场许愿小仪式"}
               </small>
             )}
           </span>
@@ -144,8 +136,6 @@ export function NewWish() {
 }
 export function WishDetail({ id }: { id: string }) {
   const { state, go, dispatch } = useApp();
-  const { entries } = useSceneLibrary();
-  const practices = wishSceneEntries(entries);
   const wish = state.wishes.find((w) => w.id === id);
   const [showAll, setShowAll] = useState(false);
   if (!wish)
@@ -231,30 +221,6 @@ export function WishDetail({ id }: { id: string }) {
           </button>
         )}
       </section>
-      {!wish.archived && wish.status !== "fulfilled" && practices.length > 0 && (
-        <section className="form-card wish-practice-detail">
-          <h2>{WISH_PRACTICE_COPY.detailHeading}</h2>
-          <p className="quiet">{WISH_PRACTICE_COPY.detailBlurb}</p>
-          {/* Small tiles, so 我的心愿实现了 stays the page's one big button. */}
-          <div className="wish-practice-actions">
-            {practices.map((entry) => (
-              <button
-                key={entry.id}
-                type="button"
-                className="practice-tile"
-                data-scene={entry.id}
-                onClick={() => go({ page: "scene", id: entry.id, entry })}
-              >
-                <SceneBadge id={entry.id} />
-                <span>
-                  <strong>{entry.title}</strong>
-                  <small>{wishPracticeAction(entry)}</small>
-                </span>
-              </button>
-            ))}
-          </div>
-        </section>
-      )}
       <div className={`return-summary method-${method}`}>
         <Icon name={method === "kindness" ? "heart" : "leaf"} />
         <span>
@@ -356,6 +322,9 @@ export function FulfillWish({ id }: { id: string }) {
     setFulfillmentDraft,
     arrival,
   } = useApp();
+  const openScene = useOpenScene();
+  const { entries } = useSceneLibrary();
+  const vessels = usableVessels(state, entries);
   const wish = state.wishes.find((w) => w.id === id);
   const draft = fulfillmentDrafts[id] ?? {
     method: wish?.returnMethod ?? "kindness",
@@ -425,19 +394,39 @@ export function FulfillWish({ id }: { id: string }) {
                   <Icon name="check" />
                   已为这个心愿完成小仪式
                 </p>
+              ) : vessels.length ? (
+                <>
+                  <p>{FULFILL_VESSEL_COPY.pick}</p>
+                  {vessels.map((c) => {
+                    const entry = entries.find((e) => e.id === c.sceneId);
+                    if (!entry) return null;
+                    return (
+                      <button
+                        key={c.id}
+                        type="button"
+                        className="wish-practice-card vessel-card"
+                        data-scene={entry.id}
+                        onClick={() =>
+                          openScene(entry, { vessel: c.id, wishId: id })
+                        }
+                      >
+                        <SceneBadge id={entry.id} />
+                        <strong>{entry.title}</strong>
+                        <small>{FULFILL_VESSEL_COPY.use}</small>
+                        <Icon name="arrow" />
+                      </button>
+                    );
+                  })}
+                </>
               ) : (
                 <>
-                  <p>折一只纸鹤，留下这份心情。</p>
+                  <p>{FULFILL_VESSEL_COPY.none}</p>
                   <button
                     type="button"
                     className="button secondary full"
-                    onClick={() =>
-                      go({ page: "ritual", id: "crane", wishId: id })
-                    }
+                    onClick={() => go({ page: "today" })}
                   >
-                    {state.activeSession
-                      ? "继续未完成的仪式"
-                      : "去完成还愿小仪式"}
+                    {FULFILL_VESSEL_COPY.noneAction}
                   </button>
                 </>
               )}

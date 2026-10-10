@@ -1,6 +1,7 @@
 import { dailyCollectibleId, rituals } from "@wbr/core";
 import { Icon } from "./art";
 import { useApp } from "./context";
+import { DailyScenePreview } from "./daily-scene-preview";
 import { useOpenScene, useSceneLibrary } from "./scene-library";
 import { SceneBadge } from "./scene-icons";
 import {
@@ -69,6 +70,12 @@ export function Today({ day }: { day: string }) {
               data-type={isWishScene(primary.id) ? "wish" : "blessing"}
               onClick={() => openScene(primary, { daily: day })}
             >
+              {/* The day's scene, live above its row; the whole card opens
+                  the walk. The picks below stay pictures: one canvas a page. */}
+              <DailyScenePreview
+                key={`${primary.id}:${primary.engine}`}
+                entry={primary}
+              />
               <SceneBadge id={primary.id} />
               <strong>{primary.title}</strong>
               <small>

@@ -139,11 +139,11 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   styleRenderer.setStyle(CEL_STYLE)
 
   addCelLights(scene, {
-    sky: 0xfff3e4,
-    ground: 0xd8c4a8,
-    key: 0xffe4c0,
-    rim: 0xcfe4ff,
-    keyIntensity: 1.35,
+    sky: 0xfff6ec,
+    ground: 0xe0d0b8,
+    key: 0xffeccc,
+    rim: 0xd6ecff,
+    keyIntensity: 1.45,
     keyPosition: [3, 5, 4],
   })
 
@@ -154,7 +154,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   // Proportions are an art choice, not a survey of any one shrine.
   const torii = new THREE.Group()
   world.add(torii)
-  const vermilion = new THREE.MeshStandardMaterial({ color: 0xe25a32, roughness: 0.9 })
+  const vermilion = new THREE.MeshStandardMaterial({ color: 0xf06a3c, roughness: 0.9 })
   const ink = new THREE.MeshStandardMaterial({ color: 0x2f2a2a, roughness: 0.85 })
   const pillarGeo = new THREE.CylinderGeometry(0.1, 0.115, 2.4, 24)
   const baseGeo = new THREE.CylinderGeometry(0.135, 0.14, 0.26, 24)
@@ -184,7 +184,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   torii.add(kasagiTop)
 
   // A few approach-path stones (参道) mark entrance → path; no hall is modelled.
-  const stoneMat = new THREE.MeshStandardMaterial({ color: 0xcfc5b6, roughness: 0.95 })
+  const stoneMat = new THREE.MeshStandardMaterial({ color: 0xdcd4c6, roughness: 0.95 })
   const stoneGeo = new RoundedBoxGeometry(0.72, 0.05, 0.42, 2, 0.02)
   for (let i = 0; i < 6; i++) {
     const stone = new THREE.Mesh(stoneGeo, stoneMat)
@@ -197,7 +197,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   rack.position.set(1.95, 0, -1.1)
   rack.rotation.y = -0.5
   world.add(rack)
-  const rackWood = new THREE.MeshStandardMaterial({ color: 0x8e6444, roughness: 0.95 })
+  const rackWood = new THREE.MeshStandardMaterial({ color: 0x9e7452, roughness: 0.95 })
   for (const x of [-0.45, 0.45]) {
     const post = new THREE.Mesh(new RoundedBoxGeometry(0.06, 1.3, 0.06, 2, 0.015), rackWood)
     post.position.set(x, 0.65, 0)
@@ -209,7 +209,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
     rack.add(bar)
   }
   const emaGeo = emaGeometry()
-  const emaMat = new THREE.MeshStandardMaterial({ color: 0xe8cda2, roughness: 0.9 })
+  const emaMat = new THREE.MeshStandardMaterial({ color: 0xf0dab4, roughness: 0.9 })
   const emaSpots: [number, number][] = [
     [-0.3, 1.1], [-0.08, 1.1], [0.2, 1.1], [-0.2, 0.8], [0.3, 0.8],
   ]
@@ -222,7 +222,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
   }
   // The visitor's own board: appears on the rack once written.
   const ownEmaMat = new THREE.MeshStandardMaterial({
-    color: 0xf0d8ae,
+    color: 0xf6e2c0,
     emissive: 0xffb060,
     emissiveIntensity: 0,
     roughness: 0.9,
@@ -437,7 +437,7 @@ export function createShintoTorii(ctx: SceneContext): SceneInstance {
         ema.rotation.z = reduced ? 0 : Math.sin(t * 1.3 + i * 1.9) * 0.06
       })
       emaGlow = Math.max(0, emaGlow - dt * (reduced ? 3 : 0.6))
-      ownEmaMat.emissiveIntensity = emaGlow * 0.6
+      ownEmaMat.emissiveIntensity = emaGlow * 0.75
       ownEma.rotation.z = reduced ? 0 : Math.sin(t * 1.5) * 0.08
 
       styleRenderer.render()

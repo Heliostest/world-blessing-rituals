@@ -103,12 +103,14 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
   renderer.toneMapping = THREE.ACESFilmicToneMapping
-  renderer.toneMappingExposure = 1.05
+  renderer.toneMappingExposure = 1.18
   renderer.outputColorSpace = THREE.SRGBColorSpace
   const scene = new THREE.Scene()
-  const bgColor = new THREE.Color(0x150f1c)
+  // Soft twilight lavender, not near-black plum: dusk mood kept, shade lifted.
+  // 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有…
+  const bgColor = new THREE.Color(0x5e548c)
   scene.background = bgColor
-  scene.fog = new THREE.FogExp2(bgColor.getHex(), 0.085)
+  scene.fog = new THREE.FogExp2(bgColor.getHex(), 0.07)
 
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 2.4, 4.1)
@@ -119,11 +121,11 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
     id: ctx.sceneId ?? 'theravada-water', label: '花水位一倾',
   })
 
-  const ambient = new THREE.AmbientLight(0x6a5468, 0.4)
-  const hemi = new THREE.HemisphereLight(0xd8b8ff, 0x120a18, 0.45)
-  const key = new THREE.DirectionalLight(0xfff0e0, 0.95)
+  const ambient = new THREE.AmbientLight(0xbca2d8, 0.55)
+  const hemi = new THREE.HemisphereLight(0xe8d6ff, 0x50406a, 0.65)
+  const key = new THREE.DirectionalLight(0xfff2e4, 1.2)
   key.position.set(2.2, 4.2, 2.5)
-  const fill = new THREE.PointLight(0x8ac8e0, 0.6, 6, 2)
+  const fill = new THREE.PointLight(0x9ed8ee, 0.75, 6, 2)
   fill.position.set(-1.6, 1.4, 0.6)
   scene.add(ambient, hemi, key, fill)
 
@@ -131,7 +133,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   const basin = new THREE.Mesh(
     new THREE.CylinderGeometry(1.2, 1.35, 0.35, 48, 1, true),
     new THREE.MeshStandardMaterial({
-      color: 0xc4a882,
+      color: 0xd8bc94,
       metalness: 0.35,
       roughness: 0.45,
       side: THREE.DoubleSide,
@@ -143,9 +145,9 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   const water = new THREE.Mesh(
     new THREE.CircleGeometry(1.1, 48),
     new THREE.MeshStandardMaterial({
-      color: 0x3a8aaa,
-      emissive: 0x123a4a,
-      emissiveIntensity: 0.4,
+      color: 0x58b6d0,
+      emissive: 0x2a8298,
+      emissiveIntensity: 0.45,
       metalness: 0.25,
       roughness: 0.3,
       transparent: true,
@@ -156,7 +158,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   water.position.y = 0.22
   scene.add(water)
 
-  const anjaliGlow = new THREE.PointLight(0xffd9a0, 0, 5, 2)
+  const anjaliGlow = new THREE.PointLight(0xffdca8, 0, 5, 2)
   anjaliGlow.position.set(0, 0.9, 0)
   scene.add(anjaliGlow)
 
@@ -168,7 +170,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   const pitcher = new THREE.Mesh(
     new THREE.CylinderGeometry(0.22, 0.28, 0.7, 24),
     new THREE.MeshStandardMaterial({
-      color: 0xb8c4d0,
+      color: 0xd6e2ec,
       metalness: 0.5,
       roughness: 0.35,
     }),
@@ -178,7 +180,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
 
   const spout = new THREE.Mesh(
     new THREE.ConeGeometry(0.08, 0.28, 12),
-    new THREE.MeshStandardMaterial({ color: 0xa0aeb8, metalness: 0.45, roughness: 0.4 }),
+    new THREE.MeshStandardMaterial({ color: 0xc0cdd8, metalness: 0.45, roughness: 0.4 }),
   )
   spout.rotation.z = Math.PI / 2
   spout.position.set(0.35, 0.15, 0)
@@ -187,8 +189,8 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   // Stream (stretches from the spout tip down to the water surface while pouring)
   const streamBaseHeight = 0.9
   const streamMat = new THREE.MeshStandardMaterial({
-    color: 0x8ad0e8,
-    emissive: 0x3a90b0,
+    color: 0xa0e0f2,
+    emissive: 0x5cbad6,
     emissiveIntensity: 0.6,
     transparent: true,
     opacity: 0,
@@ -204,8 +206,8 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   const petal = new THREE.Mesh(
     new THREE.SphereGeometry(0.16, 16, 12),
     new THREE.MeshStandardMaterial({
-      color: 0xe8a0b8,
-      emissive: 0x6a2a40,
+      color: 0xf2bcca,
+      emissive: 0xa85a78,
       emissiveIntensity: 0.35,
       metalness: 0.15,
       roughness: 0.55,
@@ -228,10 +230,10 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
   const moteGeometry = new THREE.BufferGeometry()
   moteGeometry.setAttribute('position', new THREE.BufferAttribute(motePositions, 3))
   const moteMaterial = new THREE.PointsMaterial({
-    color: 0xe0b8ff,
+    color: 0xeccfff,
     size: 0.028,
     transparent: true,
-    opacity: 0.5,
+    opacity: 0.6,
     depthWrite: false,
     blending: THREE.AdditiveBlending,
   })
@@ -395,7 +397,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
       const visualDt = reduced ? 0 : dt
       water.position.y = 0.22 + Math.sin(t * 1.4) * 0.008
       ;(water.material as THREE.MeshStandardMaterial).emissiveIntensity =
-        0.35 + Math.sin(t * 0.9) * 0.1
+        0.45 + Math.sin(t * 0.9) * 0.1
       motes.rotation.y += visualDt * 0.02
 
       if (step !== 'tilt') {
@@ -430,7 +432,7 @@ export function createTheravadaWater(ctx: SceneContext): SceneInstance {
 
       anjaliGlow.intensity =
         step === 'anjali'
-          ? THREE.MathUtils.lerp(anjaliGlow.intensity, 1.1 + Math.sin(t * 3) * 0.25, 1 - Math.exp(-dt * 6))
+          ? THREE.MathUtils.lerp(anjaliGlow.intensity, 1.3 + Math.sin(t * 3) * 0.25, 1 - Math.exp(-dt * 6))
           : THREE.MathUtils.lerp(anjaliGlow.intensity, 0, 1 - Math.exp(-dt * 6))
 
       camera.position.set(

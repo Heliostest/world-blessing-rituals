@@ -33,8 +33,8 @@ const RISE_SECONDS = 3.2
 const LOW_Y = 0.45
 const HIGH_Y = 2.3
 /** The lanterns' paper glow; on the night stage they glow brighter. */
-const SHELL_GLOW = 0.35
-const SHELL_GLOW_NIGHT = 0.6
+const SHELL_GLOW = 0.45
+const SHELL_GLOW_NIGHT = 0.7
 
 type Lantern = {
   group: THREE.Group
@@ -61,9 +61,9 @@ function buildLantern(
     side: THREE.DoubleSide,
   })
   const tipMat = new THREE.MeshStandardMaterial({
-    color: 0xfbe4cf,
-    emissive: 0xff9a70,
-    emissiveIntensity: night ? 0.4 : 0.2,
+    color: 0xfce8d6,
+    emissive: 0xffa478,
+    emissiveIntensity: night ? 0.5 : 0.28,
     roughness: 0.9,
     side: THREE.DoubleSide,
   })
@@ -165,18 +165,18 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   // By day, a dusk rig: amber key from the upper left, rose-lilac rim behind
   // the lanterns.
   addStageLights(scene, ctx.stage, {
-    sky: 0xffeadb,
-    ground: 0xd4b4a4,
-    key: 0xffcf9e,
-    rim: 0xf2c4e0,
-    keyIntensity: 1.15,
+    sky: 0xfff0e6,
+    ground: 0xdcc4b6,
+    key: 0xffd8ae,
+    rim: 0xf6d0e6,
+    keyIntensity: 1.25,
     keyPosition: [-2, 4, 3],
   })
 
   const world = new THREE.Group()
   scene.add(world)
 
-  const plinthMat = new THREE.MeshStandardMaterial({ color: 0xcaa580, roughness: 0.95 })
+  const plinthMat = new THREE.MeshStandardMaterial({ color: 0xd8b894, roughness: 0.95 })
   const plinth = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.5, 0.3, 40), plinthMat)
   plinth.position.y = 0.15
   world.add(plinth)
@@ -190,7 +190,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
   petalGeo.scale(1, 1.6, 0.5)
   const coreGeo = new THREE.SphereGeometry(0.09, 16, 12)
 
-  const main = buildLantern(petalGeo, coreGeo, 0xf5a4b8, 0.6 * glowScale, night)
+  const main = buildLantern(petalGeo, coreGeo, 0xf8b4c8, 0.6 * glowScale, night)
   main.group.position.set(0, LOW_Y, 0)
   world.add(main.group)
 
@@ -203,7 +203,7 @@ export function createYeondeunghoe(ctx: SceneContext): SceneInstance {
     [2.2, 2.2, -1.2],
   ]
   companionSpots.forEach(([x, y, z], i) => {
-    const l = buildLantern(petalGeo, coreGeo, i % 2 ? 0xf8c795 : 0xf1adc6, night ? 0.5 : 0.25, night)
+    const l = buildLantern(petalGeo, coreGeo, i % 2 ? 0xfbd6aa : 0xf6bcd2, night ? 0.5 : 0.25, night)
     l.group.position.set(x, y, z)
     l.group.scale.setScalar(0.7)
     world.add(l.group)

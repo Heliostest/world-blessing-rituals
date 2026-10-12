@@ -153,11 +153,11 @@ export function createCrane(ctx: SceneContext): SceneInstance {
   styleRenderer.setStyle(CEL_STYLE)
 
   addCelLights(scene, {
-    sky: 0xfff6e6,
-    ground: 0xd6c8ae,
-    key: 0xffe6c0,
-    rim: 0xb8d4e8,
-    keyIntensity: 1.55,
+    sky: 0xfff8ec,
+    ground: 0xe0d4bc,
+    key: 0xffecc8,
+    rim: 0xc2dcf0,
+    keyIntensity: 1.65,
     keyPosition: [1.5, 4, 2.5],
   })
   const glow = new THREE.PointLight(0xffe2b0, 0, 2.5, 2)
@@ -405,8 +405,8 @@ export function createCrane(ctx: SceneContext): SceneInstance {
       // A slow idle turn, so the folded layers catch the light.
       paper.rotation.y = reduced ? 0 : Math.sin(t * 0.4) * 0.1
       const lifted = step === 'wish' || step === 'done' ? liftT : 0
-      glow.intensity = lifted * 0.9
-      sheet.setGlow(lifted * 0.1)
+      glow.intensity = lifted * 1.1
+      sheet.setGlow(lifted * 0.12)
       // Subtle breathing scale when complete, gentle grab scale during drag
       let targetScale = 1.0
       if (grabbed) targetScale = 1.08

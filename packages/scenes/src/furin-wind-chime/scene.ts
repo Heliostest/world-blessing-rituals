@@ -97,11 +97,11 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
 
   // Summer afternoon: sun-warm key, cool sky-blue rim off the glass.
   addCelLights(scene, {
-    sky: 0xfff4e2,
-    ground: 0xdcc6a6,
-    key: 0xffe2b2,
-    rim: 0xc4e6ff,
-    keyIntensity: 1.3,
+    sky: 0xfff8ec,
+    ground: 0xe4d2b8,
+    key: 0xffe8c4,
+    rim: 0xcceeff,
+    keyIntensity: 1.4,
     keyPosition: [2, 4, 3],
   })
   const glint = new THREE.PointLight(0xbfe4ff, 0, 2.5, 2)
@@ -114,7 +114,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   // Wooden eave beam the chime hangs from; soft bevel catches a cel highlight.
   const beam = new THREE.Mesh(
     new RoundedBoxGeometry(3.6, 0.14, 0.3, 2, 0.025),
-    new THREE.MeshStandardMaterial({ color: 0xb98c60, roughness: 0.95 }),
+    new THREE.MeshStandardMaterial({ color: 0xcaa473, roughness: 0.95 }),
   )
   beam.position.set(0, 2.45, -0.1)
   world.add(beam)
@@ -126,19 +126,19 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
 
   const cord = new THREE.Mesh(
     new THREE.CylinderGeometry(0.006, 0.006, 0.3, 6),
-    new THREE.MeshStandardMaterial({ color: 0xd2574d, roughness: 0.95 }),
+    new THREE.MeshStandardMaterial({ color: 0xe06a5c, roughness: 0.95 }),
   )
   cord.position.y = -0.15
   pivot.add(cord)
 
   const bellMat = new THREE.MeshStandardMaterial({
-    color: 0xd2efff,
-    emissive: 0x7ab8d8,
-    emissiveIntensity: 0.15,
+    color: 0xdcf4ff,
+    emissive: 0x8ecbe8,
+    emissiveIntensity: 0.2,
     metalness: 0.1,
     roughness: 0.08,
     transparent: true,
-    opacity: 0.55,
+    opacity: 0.6,
     side: THREE.DoubleSide,
   })
   const bell = new THREE.Mesh(
@@ -150,7 +150,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
 
   // Opaque lip and crown on the clear glass: the ink pass only outlines opaque
   // surfaces, so these give the bell a crisp drawn mouth and top.
-  const rimMat = new THREE.MeshStandardMaterial({ color: 0xb4e0f2, roughness: 0.9 })
+  const rimMat = new THREE.MeshStandardMaterial({ color: 0xc0e8f8, roughness: 0.9 })
   const lip = new THREE.Mesh(
     new THREE.TorusGeometry(BELL_RADIUS * Math.sin(BELL_SWEEP), 0.009, 8, 48),
     rimMat,
@@ -165,7 +165,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   // Painted band on the glass (goldfish-red summer stripe).
   const band = new THREE.Mesh(
     new THREE.TorusGeometry(0.235, 0.012, 8, 32),
-    new THREE.MeshStandardMaterial({ color: 0xea5a4c, roughness: 0.9 }),
+    new THREE.MeshStandardMaterial({ color: 0xf26c58, roughness: 0.9 }),
   )
   band.rotation.x = Math.PI / 2
   band.position.y = -0.62
@@ -177,20 +177,20 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
   pivot.add(clapperPivot)
   const clapperString = new THREE.Mesh(
     new THREE.CylinderGeometry(0.004, 0.004, 0.42, 4),
-    new THREE.MeshStandardMaterial({ color: 0xf2efe8, roughness: 0.9 }),
+    new THREE.MeshStandardMaterial({ color: 0xf7f4ee, roughness: 0.9 }),
   )
   clapperString.position.y = -0.21
   clapperPivot.add(clapperString)
   const clapper = new THREE.Mesh(
     new THREE.CylinderGeometry(0.03, 0.03, 0.05, 12),
-    new THREE.MeshStandardMaterial({ color: 0x94704c, roughness: 0.9 }),
+    new THREE.MeshStandardMaterial({ color: 0xa8825c, roughness: 0.9 }),
   )
   clapper.position.y = -0.2
   clapperPivot.add(clapper)
 
   // Paper ribbon (tanzaku-style) as a chain of segments for flutter.
   const ribbonMat = new THREE.MeshStandardMaterial({
-    color: 0xf7cf6c,
+    color: 0xf9dc84,
     roughness: 0.95,
     side: THREE.DoubleSide,
   })
@@ -396,7 +396,7 @@ export function createFurinWindChime(ctx: SceneContext): SceneInstance {
 
       const energy = Math.min(1, Math.abs(swingVel) * 0.5 + Math.abs(swing))
       glint.intensity = energy * 1.2
-      bellMat.emissiveIntensity = 0.15 + energy * 0.4
+      bellMat.emissiveIntensity = 0.2 + energy * 0.4
 
       camera.position.set(
         cameraHome.x + Math.sin(t * 0.12) * 0.08,

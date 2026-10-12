@@ -138,11 +138,11 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   styleRenderer.setStyle(CEL_STYLE)
 
   addCelLights(scene, {
-    sky: 0xfff0e0,
-    ground: 0xcdb8a0,
-    key: 0xffcf98,
-    rim: 0xe0d0ff,
-    keyIntensity: 1.2,
+    sky: 0xfff4e8,
+    ground: 0xd8c8b2,
+    key: 0xffd8a8,
+    rim: 0xe8dcff,
+    keyIntensity: 1.3,
     keyPosition: [-2.5, 3.5, -2],
   })
 
@@ -156,8 +156,8 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   const waterPos = waterGeo.attributes.position
   const waterBase = Float32Array.from(waterPos.array as ArrayLike<number>)
   const waterColors = new Float32Array(waterPos.count * 4)
-  const shallow = new THREE.Color(0xa8dade)
-  const deep = new THREE.Color(0x7ab4c6)
+  const shallow = new THREE.Color(0xbce8ec)
+  const deep = new THREE.Color(0x8cc8dc)
   const c = new THREE.Color()
   for (let i = 0; i < waterPos.count; i++) {
     const x = waterPos.getX(i)
@@ -185,7 +185,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   world.add(water)
 
   // Reeds along both banks.
-  const reedMat = new THREE.MeshStandardMaterial({ color: 0x7ea156, roughness: 0.9 })
+  const reedMat = new THREE.MeshStandardMaterial({ color: 0x8cb46a, roughness: 0.9 })
   const reedGeo = new THREE.ConeGeometry(0.018, 0.7, 5)
   for (let i = 0; i < 18; i++) {
     const side = i % 2 ? 1 : -1
@@ -206,11 +206,11 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   world.add(fire)
   const mound = new THREE.Mesh(
     new THREE.SphereGeometry(0.9, 20, 10, 0, Math.PI * 2, 0, Math.PI / 2),
-    new THREE.MeshStandardMaterial({ color: 0x9aa865, roughness: 0.95 }),
+    new THREE.MeshStandardMaterial({ color: 0xa8b678, roughness: 0.95 }),
   )
   mound.scale.y = 0.25
   fire.add(mound)
-  const logMat = new THREE.MeshStandardMaterial({ color: 0x6b4630, roughness: 0.95 })
+  const logMat = new THREE.MeshStandardMaterial({ color: 0x7c563c, roughness: 0.95 })
   for (let i = 0; i < 4; i++) {
     const log = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.05, 0.6, 8), logMat)
     const a = (i / 4) * Math.PI * 2
@@ -220,7 +220,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   }
   const flameMats = [0xffb24a, 0xffd36e].map(
     (color) =>
-      new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 0.9, roughness: 1 }),
+      new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 1.0, roughness: 1 }),
   )
   const flames: THREE.Mesh[] = []
   ;[
@@ -233,7 +233,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
     fire.add(flame)
     flames.push(flame)
   })
-  const fireLight = new THREE.PointLight(0xff9a50, 3, 14, 1.6)
+  const fireLight = new THREE.PointLight(0xff9a50, 3.4, 14, 1.6)
   fireLight.position.set(0, 0.9, 0.3)
   fire.add(fireLight)
 
@@ -243,7 +243,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   wreath.rotation.x = 0.45
   world.add(wreath)
   const strands: THREE.Mesh[] = []
-  ;[0x6f9f4a, 0x86b35a, 0x5d8a3e].forEach((color, i) => {
+  ;[0x7cb456, 0x94c46c, 0x6a9e4a].forEach((color, i) => {
     const strand = new THREE.Mesh(
       new THREE.TubeGeometry(new WovenStrand((i / 3) * Math.PI * 2, 9, 0.028), 180, 0.016, 5, true),
       new THREE.MeshStandardMaterial({ color, roughness: 0.9 }),
@@ -259,7 +259,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
   }
 
   const leafMat = new THREE.MeshStandardMaterial({
-    color: 0x80b95c,
+    color: 0x8ec66c,
     roughness: 0.9,
     side: THREE.DoubleSide,
   })
@@ -277,9 +277,9 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
 
   const daisyPetalGeo = new THREE.CircleGeometry(0.022, 8).scale(1, 0.4, 1).translate(0.028, 0, 0)
   const petalWhite = new THREE.MeshStandardMaterial({ color: 0xfbf6ea, roughness: 0.9, side: THREE.DoubleSide })
-  const centerYellow = new THREE.MeshStandardMaterial({ color: 0xf2c14e, roughness: 0.8 })
-  const poppyRed = new THREE.MeshStandardMaterial({ color: 0xe0503c, roughness: 0.85, side: THREE.DoubleSide })
-  const cornflowerBlue = new THREE.MeshStandardMaterial({ color: 0x6f8fe0, roughness: 0.85 })
+  const centerYellow = new THREE.MeshStandardMaterial({ color: 0xf6cc5e, roughness: 0.8 })
+  const poppyRed = new THREE.MeshStandardMaterial({ color: 0xea6050, roughness: 0.85, side: THREE.DoubleSide })
+  const cornflowerBlue = new THREE.MeshStandardMaterial({ color: 0x80a0ea, roughness: 0.85 })
   const centerGeo = new THREE.SphereGeometry(0.018, 10, 8)
   const poppyGeo = new THREE.SphereGeometry(0.045, 14, 8, 0, Math.PI * 2, 0, Math.PI / 2.2)
   const cornGeo = new THREE.ConeGeometry(0.012, 0.045, 6)
@@ -561,7 +561,7 @@ export function createSlavicWreath(ctx: SceneContext): SceneInstance {
         const s = reduced ? 1 : 1 + Math.sin(t * (6 + i * 1.7) + i) * 0.1 + Math.sin(t * 11 + i * 2) * 0.05
         f.scale.set(1, s, 1)
       })
-      fireLight.intensity = reduced ? 3 : 3 + Math.sin(t * 7.1) * 0.4 + Math.sin(t * 12.3) * 0.2
+      fireLight.intensity = reduced ? 3.4 : 3.4 + Math.sin(t * 7.1) * 0.4 + Math.sin(t * 12.3) * 0.2
 
       camera.position.set(
         cameraHome.x + Math.sin(t * 0.12) * 0.08,

@@ -133,24 +133,24 @@ export function createTibetanWheel(ctx: SceneContext): SceneInstance {
   styleRenderer.setStyle(CEL_STYLE)
 
   addCelLights(scene, {
-    sky: 0xfff2e0,
-    ground: 0xd6b894,
-    key: 0xffdcaa,
-    rim: 0xd6e6ff,
-    keyIntensity: 1.3,
+    sky: 0xfff6ea,
+    ground: 0xe0caa8,
+    key: 0xffe4bc,
+    rim: 0xdeeeff,
+    keyIntensity: 1.4,
     keyPosition: [2.5, 4.5, 3],
   })
 
   const world = new THREE.Group()
   scene.add(world)
 
-  const frameMat = new THREE.MeshStandardMaterial({ color: 0xa3442f, roughness: 0.9 })
-  const eaveMat = new THREE.MeshStandardMaterial({ color: 0x5b3526, roughness: 0.9 })
-  const axleMat = new THREE.MeshStandardMaterial({ color: 0x6d5a45, metalness: 0.3, roughness: 0.6 })
-  const goldMat = new THREE.MeshStandardMaterial({ color: 0xe0ac4c, metalness: 0.35, roughness: 0.45 })
-  const copperMat = new THREE.MeshStandardMaterial({ color: 0xc97a45, metalness: 0.3, roughness: 0.5 })
-  const lacquerMat = new THREE.MeshStandardMaterial({ color: 0xb2402f, roughness: 0.7 })
-  const bronzeMat = new THREE.MeshStandardMaterial({ color: 0x9f6f3a, metalness: 0.3, roughness: 0.55 })
+  const frameMat = new THREE.MeshStandardMaterial({ color: 0xc2563c, roughness: 0.9 })
+  const eaveMat = new THREE.MeshStandardMaterial({ color: 0x7c4e38, roughness: 0.9 })
+  const axleMat = new THREE.MeshStandardMaterial({ color: 0x8a7458, metalness: 0.3, roughness: 0.6 })
+  const goldMat = new THREE.MeshStandardMaterial({ color: 0xecc060, metalness: 0.35, roughness: 0.45 })
+  const copperMat = new THREE.MeshStandardMaterial({ color: 0xd88e58, metalness: 0.3, roughness: 0.5 })
+  const lacquerMat = new THREE.MeshStandardMaterial({ color: 0xcc5040, roughness: 0.7 })
+  const bronzeMat = new THREE.MeshStandardMaterial({ color: 0xb28048, metalness: 0.3, roughness: 0.55 })
 
   const beamGeo = new RoundedBoxGeometry(1.1, 0.12, 0.3, 2, 0.03)
   const postGeo = new RoundedBoxGeometry(0.1, 2.05, 0.1, 2, 0.02)

@@ -79,13 +79,15 @@ export const CEL_STYLE = 'toon-ink' as const
  * Renderer + scene for the warm palette. Like the woodfish, the canvas clears
  * fully transparent so the subject sits on the host's island stage itself —
  * no painted background, fog or fake stage in the canvas.
+ * Art direction: 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有…
+ * Exposure sits slightly above neutral so pastel albedo reads bright, not milky.
  */
 export function createWarmStage(canvas: HTMLCanvasElement) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
   renderer.setClearColor(0x000000, 0)
   renderer.toneMapping = THREE.ACESFilmicToneMapping
-  renderer.toneMappingExposure = 1.0
+  renderer.toneMappingExposure = 1.15
   renderer.outputColorSpace = THREE.SRGBColorSpace
   const scene = new THREE.Scene()
   return { renderer, scene }
@@ -107,6 +109,8 @@ export type CelLightOpts = {
  * Anime cel light rig: one clear key sets the lit/shade split, a warm sky/ground
  * bounce keeps shade bands soft (toon gradients step only direct light), and a
  * pale backlight draws a rim along silhouettes.
+ * Art direction: 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有…
+ * The bounce floors are kept high so shade bands stay pastel-bright, never muddy.
  */
 export function addCelLights(
   scene: THREE.Scene,
@@ -115,11 +119,11 @@ export function addCelLights(
     ground,
     key,
     rim,
-    keyIntensity = 1.4,
+    keyIntensity = 1.5,
     keyPosition = [2.5, 4, 3],
-    ambientIntensity = 0.35,
-    hemiIntensity = 0.75,
-    rimIntensity = 0.7,
+    ambientIntensity = 0.5,
+    hemiIntensity = 1.0,
+    rimIntensity = 0.8,
   }: CelLightOpts,
 ) {
   const ambient = new THREE.AmbientLight(sky, ambientIntensity)
@@ -133,23 +137,25 @@ export function addCelLights(
 }
 
 /**
- * The cel rig for the host's night stage (navy sky, moon upper right): the
- * bounce drops to under half and turns cool, the key becomes pale moonlight
- * from the moon's side, and a cool rim keeps silhouettes reading against the
- * navy. A scene's own lamps (warm emissive, a point light, a halo) are then
- * the warmest, brightest things in frame, not the props they light.
+ * The cel rig for the host's night stage (periwinkle sky, moon upper right):
+ * the bounce still drops well under half and turns cool, but the floors stay
+ * high enough that shade bands read as soft blue-lilac pastel instead of
+ * crushed black. The key stays pale moonlight from the moon's side, and a cool
+ * rim keeps silhouettes reading against the sky. A scene's own lamps (warm
+ * emissive, a point light, a halo) are then the warmest, brightest things in
+ * frame, not the props they light.
  * Art direction: 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有…
  */
 export const NIGHT_CEL_LIGHTS: CelLightOpts = {
-  sky: 0x8fa6d6,
-  ground: 0x1f3446,
-  key: 0xc6d4ff,
-  rim: 0x9cc2ff,
-  keyIntensity: 0.6,
+  sky: 0xa9bfe8,
+  ground: 0x3d5a78,
+  key: 0xd8e2ff,
+  rim: 0xaeccff,
+  keyIntensity: 0.85,
   keyPosition: [2.5, 4, 2],
-  ambientIntensity: 0.16,
-  hemiIntensity: 0.36,
-  rimIntensity: 0.55,
+  ambientIntensity: 0.3,
+  hemiIntensity: 0.4,
+  rimIntensity: 0.7,
 }
 
 /** The scene's own warm rig by day, the moonlit one on the night stage. */

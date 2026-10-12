@@ -30,7 +30,7 @@ const COPY = {
 } as const
 
 // Soft but saturated washi: coral, mint, marigold, lavender, sakura.
-const STRIP_COLORS = [0xf0876f, 0x74c3aa, 0xf6cc58, 0xa293de, 0xf5a0bd]
+const STRIP_COLORS = [0xf59a84, 0x84d2ba, 0xf8d672, 0xafa4e8, 0xf8b2cc]
 
 export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   const { canvas, overlay, gestures, shared } = ctx
@@ -95,8 +95,8 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   })
   styleRenderer.setStyle(CEL_STYLE)
 
-  addCelLights(scene, { sky: 0xfff0dc, ground: 0xd9c2b0, key: 0xffd9ad, rim: 0xd8ccff })
-  const fill = new THREE.PointLight(0xc8b4ff, 0.45, 8, 2)
+  addCelLights(scene, { sky: 0xfff4e6, ground: 0xe4d0c0, key: 0xffe0b8, rim: 0xe2d8ff })
+  const fill = new THREE.PointLight(0xcdbcff, 0.55, 8, 2)
   fill.position.set(-2, 2.2, 1)
   scene.add(fill)
 
@@ -107,10 +107,10 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
   const bamboo = new THREE.Group()
   world.add(bamboo)
   // Flat, matte greens read as painted cel bands; darker nodes mark the rhythm.
-  const stalkMat = new THREE.MeshStandardMaterial({ color: 0x9cc66e, roughness: 0.9 })
-  const nodeMat = new THREE.MeshStandardMaterial({ color: 0x5f9147, roughness: 0.9 })
+  const stalkMat = new THREE.MeshStandardMaterial({ color: 0xa6d47e, roughness: 0.9 })
+  const nodeMat = new THREE.MeshStandardMaterial({ color: 0x6caa52, roughness: 0.9 })
   const leafMat = new THREE.MeshStandardMaterial({
-    color: 0x7fbc5c,
+    color: 0x8ecb6c,
     roughness: 0.9,
     side: THREE.DoubleSide,
   })
@@ -172,8 +172,8 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
 
   const looseMat = new THREE.MeshStandardMaterial({
     color: STRIP_COLORS[4],
-    emissive: 0x6a2a3a,
-    emissiveIntensity: 0.15,
+    emissive: 0xa86070,
+    emissiveIntensity: 0.2,
     roughness: 0.95,
     side: THREE.DoubleSide,
   })
@@ -406,7 +406,7 @@ export function createTanzakuTanabata(ctx: SceneContext): SceneInstance {
           reduced ? 1 : 1 - Math.exp(-dt * 3),
         )
       } else {
-        looseMat.emissiveIntensity = 0.15 + Math.sin(t * 2.4) * 0.1
+        looseMat.emissiveIntensity = 0.2 + Math.sin(t * 2.4) * 0.1
       }
       const scaleTarget = grabbed ? 1.2 : 1
       loose.scale.setScalar(

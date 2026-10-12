@@ -105,8 +105,8 @@ export function createLantern(ctx: SceneContext): SceneInstance {
   // brighter) is the one warm light, catching the frame near it.
   const night = ctx.stage === 'night'
   const litPeak = night
-    ? { glow: 3.2, shade: 1.05, halo: 0.75 }
-    : { glow: 2.2, shade: 0.7, halo: 0 }
+    ? { glow: 3.4, shade: 1.15, halo: 0.8 }
+    : { glow: 2.4, shade: 0.8, halo: 0 }
   const { renderer, scene } = createWarmStage(canvas)
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0.2, 1.3, 4.1)
@@ -119,11 +119,11 @@ export function createLantern(ctx: SceneContext): SceneInstance {
   styleRenderer.setStyle(CEL_STYLE)
 
   addStageLights(scene, ctx.stage, {
-    sky: 0xfff0dc,
-    ground: 0xd8bea0,
-    key: 0xffd6a4,
-    rim: 0xffd2c0,
-    keyIntensity: 1.2,
+    sky: 0xfff4e6,
+    ground: 0xe0caa8,
+    key: 0xffe0b4,
+    rim: 0xffdacb,
+    keyIntensity: 1.3,
     keyPosition: [-2, 4, 3],
   })
 
@@ -131,7 +131,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
   scene.add(world)
 
   // Wooden stand: two posts, a top beam and feet — a product-original frame.
-  const woodMat = new THREE.MeshStandardMaterial({ color: 0x9b6a45, roughness: 0.95 })
+  const woodMat = new THREE.MeshStandardMaterial({ color: 0xab7a55, roughness: 0.95 })
   const postGeo = new RoundedBoxGeometry(0.08, 2.3, 0.08, 2, 0.02)
   const footGeo = new RoundedBoxGeometry(0.12, 0.07, 0.55, 2, 0.02)
   for (const x of [-0.62, 0.62]) {
@@ -150,7 +150,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
   const pivot = new THREE.Group()
   pivot.position.set(0, 2.22, 0)
   world.add(pivot)
-  const cordMat = new THREE.MeshStandardMaterial({ color: 0xc8453a, roughness: 0.95 })
+  const cordMat = new THREE.MeshStandardMaterial({ color: 0xd85548, roughness: 0.95 })
   const cordLen = 2.22 - (LANTERN_Y + LANTERN_HALF_H + 0.04)
   const cord = new THREE.Mesh(new THREE.CylinderGeometry(0.007, 0.007, cordLen, 6), cordMat)
   cord.position.y = -cordLen / 2
@@ -167,7 +167,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
     profile.push(new THREE.Vector2(shadeRadius(y), y))
   }
   const shadeMat = new THREE.MeshStandardMaterial({
-    color: 0xf0c464,
+    color: 0xf4cc70,
     emissive: 0xff9530,
     emissiveIntensity: 0.04,
     roughness: 0.95,
@@ -176,7 +176,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
   lantern.add(new THREE.Mesh(new THREE.LatheGeometry(profile, 32), shadeMat))
 
   // Thin bamboo ribs ring the shade, drawn as crisp ink bands.
-  const ribMat = new THREE.MeshStandardMaterial({ color: 0xc48d45, roughness: 0.9 })
+  const ribMat = new THREE.MeshStandardMaterial({ color: 0xd09c58, roughness: 0.9 })
   for (let i = 1; i < 8; i++) {
     const y = -LANTERN_HALF_H + (i / 8) * LANTERN_HALF_H * 2
     const rib = new THREE.Mesh(new THREE.TorusGeometry(shadeRadius(y) + 0.003, 0.005, 6, 40), ribMat)
@@ -185,7 +185,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
     lantern.add(rib)
   }
   // Dark lacquered top and bottom rims hold the shade.
-  const rimMat = new THREE.MeshStandardMaterial({ color: 0x5a3a26, roughness: 0.85 })
+  const rimMat = new THREE.MeshStandardMaterial({ color: 0x6a4830, roughness: 0.85 })
   for (const y of [-LANTERN_HALF_H - 0.02, LANTERN_HALF_H + 0.02]) {
     const rim = new THREE.Mesh(new THREE.CylinderGeometry(0.215, 0.215, 0.05, 32), rimMat)
     rim.position.y = y
@@ -200,9 +200,9 @@ export function createLantern(ctx: SceneContext): SceneInstance {
   const plaque = new THREE.Group()
   world.add(plaque)
   const plaqueMat = new THREE.MeshStandardMaterial({
-    color: 0xe8c89a,
-    emissive: 0x6a4020,
-    emissiveIntensity: 0.12,
+    color: 0xf0d0a8,
+    emissive: 0x8a5830,
+    emissiveIntensity: 0.16,
     roughness: 0.9,
   })
   const board = new THREE.Mesh(new RoundedBoxGeometry(0.2, 0.28, 0.025, 2, 0.01), plaqueMat)
@@ -408,7 +408,7 @@ export function createLantern(ctx: SceneContext): SceneInstance {
       } else if (step === 'wish') {
         plaque.position.lerp(grabbed ? dragTarget : plaqueHome, follow)
         plaque.rotation.z = THREE.MathUtils.lerp(plaque.rotation.z, grabbed ? 0 : -0.25, follow)
-        plaqueMat.emissiveIntensity = 0.12 + (reduced ? 0 : Math.sin(t * 2.4) * 0.08)
+        plaqueMat.emissiveIntensity = 0.16 + (reduced ? 0 : Math.sin(t * 2.4) * 0.08)
       }
 
       camera.position.set(

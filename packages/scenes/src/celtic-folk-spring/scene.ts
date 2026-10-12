@@ -101,12 +101,15 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
   renderer.toneMapping = THREE.ACESFilmicToneMapping
-  renderer.toneMappingExposure = 1.05
+  renderer.toneMappingExposure = 1.18
   renderer.outputColorSpace = THREE.SRGBColorSpace
   const scene = new THREE.Scene()
-  const bgColor = new THREE.Color(0x081420)
+  // Soft dusk pastel, not crushed navy: the pool still reads as evening, but
+  // the frame stays bright enough for pastel cel bands.
+  // 画面风格为三渲二，强调浓厚的日式二次元动画氛围，材质表现干净，轮廓明确，色彩柔和但富有…
+  const bgColor = new THREE.Color(0x4a7da6)
   scene.background = bgColor
-  scene.fog = new THREE.FogExp2(bgColor.getHex(), 0.09)
+  scene.fog = new THREE.FogExp2(bgColor.getHex(), 0.07)
 
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100)
   const cameraHome = new THREE.Vector3(0, 2.2, 3.9)
@@ -117,20 +120,20 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
     id: ctx.sceneId ?? 'celtic-folk-spring', label: '泉边一念',
   })
 
-  const ambient = new THREE.AmbientLight(0x4a6a8a, 0.4)
-  const hemi = new THREE.HemisphereLight(0x8fd0ff, 0x0a1420, 0.5)
-  const key = new THREE.DirectionalLight(0xdcefff, 0.95)
+  const ambient = new THREE.AmbientLight(0xa6c8e2, 0.55)
+  const hemi = new THREE.HemisphereLight(0xbce2ff, 0x3c6a8c, 0.7)
+  const key = new THREE.DirectionalLight(0xeaf6ff, 1.2)
   key.position.set(2, 4, 3)
-  const rim = new THREE.PointLight(0xffc98a, 0.9, 6, 2)
+  const rim = new THREE.PointLight(0xffd2a0, 1.1, 6, 2)
   rim.position.set(0, 1.1, 0)
   scene.add(ambient, hemi, key, rim)
 
   const water = new THREE.Mesh(
     new THREE.CircleGeometry(1.35, 48),
     new THREE.MeshStandardMaterial({
-      color: 0x2a7f9f,
-      emissive: 0x0c3a4a,
-      emissiveIntensity: 0.4,
+      color: 0x55b8d8,
+      emissive: 0x1a7e9a,
+      emissiveIntensity: 0.45,
       metalness: 0.25,
       roughness: 0.3,
       transparent: true,
@@ -143,7 +146,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
 
   const bank = new THREE.Mesh(
     new THREE.RingGeometry(1.35, 2.1, 48),
-    new THREE.MeshStandardMaterial({ color: 0x394a3a, roughness: 0.95 }),
+    new THREE.MeshStandardMaterial({ color: 0x76ba86, roughness: 0.95 }),
   )
   bank.rotation.x = -Math.PI / 2
   scene.add(bank)
@@ -151,8 +154,8 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
   const token = new THREE.Mesh(
     new THREE.SphereGeometry(0.18, 24, 16),
     new THREE.MeshStandardMaterial({
-      color: 0xc9a46a,
-      emissive: 0x8a5a1e,
+      color: 0xe8c07a,
+      emissive: 0xc88a3a,
       emissiveIntensity: 0.5,
       metalness: 0.4,
       roughness: 0.35,
@@ -173,10 +176,10 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
   const moteGeometry = new THREE.BufferGeometry()
   moteGeometry.setAttribute('position', new THREE.BufferAttribute(motePositions, 3))
   const moteMaterial = new THREE.PointsMaterial({
-    color: 0x9fd8ff,
+    color: 0xb4e4ff,
     size: 0.028,
     transparent: true,
-    opacity: 0.55,
+    opacity: 0.65,
     depthWrite: false,
     blending: THREE.AdditiveBlending,
   })
@@ -353,7 +356,7 @@ export function createCelticFolkSpring(ctx: SceneContext): SceneInstance {
       const visualDt = reduced ? 0 : dt
       water.position.y = 0.02 + Math.sin(t * 1.5) * 0.01
       ;(water.material as THREE.MeshStandardMaterial).emissiveIntensity =
-        0.35 + Math.sin(t * 0.9) * 0.1
+        0.45 + Math.sin(t * 0.9) * 0.1
       motes.rotation.y += visualDt * 0.02
 
       const followRate = 1 - Math.exp(-dt * 14)

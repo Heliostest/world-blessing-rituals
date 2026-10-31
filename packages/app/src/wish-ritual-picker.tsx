@@ -5,8 +5,8 @@ import { Icon } from "./art";
 import { useApp } from "./context";
 import { useOpenScene, useSceneLibrary } from "./scene-library";
 import { SceneBadge } from "./scene-icons";
-import { isWishCollectionScene, pendingVessels, usableVessels, VESSEL_COPY } from "./vessels";
-/** The same completed-scene writing flow, with or without a collected object. */
+import { isWishCollectionScene, isWishSceneUnlocked, pendingVessels, usableVessels, VESSEL_COPY } from "./vessels";
+/** Collected objects and the matching unlocked rituals share the completed-scene writing flow. */
 export function WishRitualPicker() {
     const { state } = useApp();
     const { entries } = useSceneLibrary();
@@ -39,14 +39,18 @@ export function WishRitualPicker() {
       <h2>{tr(VESSEL_COPY.heading)}</h2>
       {vesselRows(vessels)}
     </section>}
-    {scenes.length > 0 && <section aria-label={tr("\u5F00\u59CB\u4E00\u573A\u5C0F\u4EEA\u5F0F")}>
-      {(pending.length > 0 || vessels.length > 0) && <h2>{tr("\u4E5F\u53EF\u4EE5\u4ECE\u8FD9\u91CC\u5F00\u59CB")}</h2>}
+    {scenes.length > 0 && <section aria-label={tr("在今日收下对应小物后解锁")}>
+      <h2>{tr("在今日收下对应小物后解锁")}</h2>
       <div className="wish-practice-grid">
-        {scenes.map(entry => <button key={entry.id} type="button" className="wish-practice-card wish-scene-choice" data-scene={entry.id} onClick={() => openScene(entry)}>
+        {scenes.map(entry => {
+          const unlocked = isWishSceneUnlocked(state, entry.id);
+          return <button key={entry.id} type="button" className="wish-practice-card wish-scene-choice" data-scene={entry.id}
+            data-unlocked={unlocked} disabled={!unlocked} onClick={() => openScene(entry, { wishPicker: true })}>
           <SceneBadge id={entry.id}/>
           <strong>{localizedTitle(entry)}</strong>
-          <Icon name="arrow"/>
-        </button>)}
+          <small className="wish-scene-access"><Icon name={unlocked ? 'check' : 'lock'}/>{tr(unlocked ? '已解锁' : '未解锁')}</small>
+        </button>;
+        })}
       </div>
     </section>}
     {!pending.length && !vessels.length && !scenes.length &&

@@ -953,6 +953,29 @@ describe("useOpenScene", () => {
   }
   const reset = (id: string) => ({ type: "scene.progress", id, progress: 0 });
 
+  it("blocks a direct wish-picker call without the matching keepsake before resetting progress", () => {
+    const state = withRecords({ "tanzaku-tanabata": 3 });
+    state.sceneRecords.find(record => record.id === "tanzaku-tanabata")!.favorite = true;
+    state.collectibles.push(keepsake("crane", "2026-10-05"));
+    const before = JSON.stringify(state), target = opener(state);
+    target.open(entryOf("tanzaku-tanabata"), { wishPicker: true });
+    expect(target.go).not.toHaveBeenCalled();
+    expect(target.dispatch).not.toHaveBeenCalled();
+    expect(JSON.stringify(state)).toBe(before);
+  });
+
+  it("allows a matching collected scene through the wish-picker guard after its keepsake was spent", () => {
+    const state = withRecords({ "tanzaku-tanabata": 3 });
+    state.collectibles.push(keepsake("tanzaku-tanabata", "2026-10-05", AT));
+    const target = opener(state);
+    target.open(entryOf("tanzaku-tanabata"), { wishPicker: true });
+    expect(target.go).toHaveBeenCalledWith(expect.objectContaining({
+      page: "scene", id: "tanzaku-tanabata", vessel: undefined,
+    }));
+    expect(target.dispatch).toHaveBeenCalledWith(reset("tanzaku-tanabata"));
+    expect(target.dispatch).toHaveBeenCalledTimes(1);
+  });
+
   it("opens a scene as it stands, unless it is done; the daily set resumes a half-walked scene", () => {
     const fresh = opener(createState());
     fresh.open(entryOf("crane"));

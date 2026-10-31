@@ -7,6 +7,13 @@ export function isWishCollectionScene(sceneId: string): boolean {
   return isWishScene(sceneId);
 }
 
+/** Collection unlocks the matching picker ritual; spending a copy keeps it unlocked. */
+export function isWishSceneUnlocked(state: Pick<State, 'collectibles'>, sceneId: string): boolean {
+  return isWishCollectionScene(sceneId) && state.collectibles.some(
+    item => item.kind === 'scene' && item.sceneId === sceneId,
+  );
+}
+
 /**
  * A wish-type keepsake (a 许愿小物): collected from 今日's daily set, spent
  * in 心愿 on a wish. A spent one stays in 小天地 for 回看, but is never

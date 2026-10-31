@@ -8,7 +8,7 @@ import { Art, Icon } from "./art";
 import { formatDate, statusText, useApp } from "./context";
 import { ritualTitle } from "./home";
 import { SceneCard, useOpenRitual, useOpenScene, useSceneLibrary, } from "./scene-library";
-import { SceneArt } from "./scene-icons";
+import { SceneArt, hasSceneIcon } from "./scene-icons";
 import { PageHead } from "./page-heading";
 import { WishRitualRack } from "./wish-ritual-rack";
 export function Empty({ title, body, action, onClick, }: {
@@ -43,6 +43,7 @@ export function Wishes() {
                 const flying = arrival?.wishId === w.id && arrival.phase === "flying";
                 const isNew = arrival?.wishId === w.id && arrival.phase === "landed";
                 return <button key={w.id} className={`wish-card${isNew ? " reward-landed" : ""}`} data-wish-id={w.id} data-arriving={flying ? "" : undefined} onClick={() => go({ page: "wish", id: w.id })}>
+              {w.sourceSceneId && hasSceneIcon(w.sourceSceneId) && <SceneArt id={w.sourceSceneId}/>}
               <span className="wish-card-copy">
                 <span className="tag soft wish-row-status">{w.archived ? tr("\u6682\u65F6\u653E\u4E0B") : tr(statusText[w.status])}</span>
                 <strong>{w.title}</strong>

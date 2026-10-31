@@ -14,13 +14,13 @@
   "catalogs": {
     "zh-Hans": {
       "app": {
-        "sourceHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "targetHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "messages": 470,
-        "reviewedAt": "2026-10-31T10:06:36.901Z",
+        "sourceHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "targetHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "messages": 473,
+        "reviewedAt": "2026-10-31T14:11:35.849Z",
         "review": "agent-self-review",
-        "reviewer": "Codex /root/debug_entry (opening button translation self-review)",
-        "reviewScope": "Incremental agent self-review of app.opening.a46780d15b only: opening button changed to an invitation to try the experience. Unchanged messages retain their prior review. Completeness and ICU checked; no native-speaker or device-layout certification."
+        "reviewer": "Codex /root/cue_review (translations); /root (final five-message scope review)",
+        "reviewScope": "Incremental agent self-review of app.pages.9abb584eeb, app.collection.legacyRitualLabel, app.wish-ritual-picker.c04ef5899a, app.wishPicker.locked and app.wishPicker.unlocked: prayer-ritual heading, unchanged legacy collection wording, and collection-based picker access. Other app messages retain their prior review. Completeness and ICU checked; no purchase requirements, native-speaker certification or new cultural claims."
       },
       "common": {
         "sourceHash": "4be875fa9f67bda76044db7de888700f5e8e39ade251c45778f1356c8b38cc0f",
@@ -74,13 +74,13 @@
     },
     "zh-Hant": {
       "app": {
-        "sourceHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "targetHash": "f54bbe7d1a3ff6de7a2e0e29739febfd6d6d840f0bb77999fcfc354847e51857",
-        "messages": 470,
-        "reviewedAt": "2026-10-31T10:06:36.901Z",
+        "sourceHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "targetHash": "bc67a6ca1fc79fa8af24a9c00a29d3f6274a377adaea22f9abef7e5e0e5fb1c6",
+        "messages": 473,
+        "reviewedAt": "2026-10-31T14:11:35.849Z",
         "review": "agent-self-review",
-        "reviewer": "Codex /root/debug_entry (opening button translation self-review)",
-        "reviewScope": "Incremental agent self-review of app.opening.a46780d15b only: opening button changed to an invitation to try the experience. Unchanged messages retain their prior review. Completeness and ICU checked; no native-speaker or device-layout certification."
+        "reviewer": "Codex /root/cue_review (translations); /root (final five-message scope review)",
+        "reviewScope": "Incremental agent self-review of app.pages.9abb584eeb, app.collection.legacyRitualLabel, app.wish-ritual-picker.c04ef5899a, app.wishPicker.locked and app.wishPicker.unlocked: prayer-ritual heading, unchanged legacy collection wording, and collection-based picker access. Other app messages retain their prior review. Completeness and ICU checked; no purchase requirements, native-speaker certification or new cultural claims."
       },
       "common": {
         "sourceHash": "4be875fa9f67bda76044db7de888700f5e8e39ade251c45778f1356c8b38cc0f",
@@ -134,13 +134,13 @@
     },
     "en": {
       "app": {
-        "sourceHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "targetHash": "f2811278a28101758efa8717301ae13a91820a1ba5451b34a77f325219ea308a",
-        "messages": 470,
-        "reviewedAt": "2026-10-31T10:06:36.901Z",
+        "sourceHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "targetHash": "584d7b5548f7033ab61597f30676207b7f2a73828c7aa8dfbc7fdba6b5e61907",
+        "messages": 473,
+        "reviewedAt": "2026-10-31T14:11:35.849Z",
         "review": "agent-self-review",
-        "reviewer": "Codex /root/debug_entry (opening button translation self-review)",
-        "reviewScope": "Incremental agent self-review of app.opening.a46780d15b only: opening button changed to an invitation to try the experience. Unchanged messages retain their prior review. Completeness and ICU checked; no native-speaker or device-layout certification."
+        "reviewer": "Codex /root/cue_review (translations); /root (final five-message scope review)",
+        "reviewScope": "Incremental agent self-review of app.pages.9abb584eeb, app.collection.legacyRitualLabel, app.wish-ritual-picker.c04ef5899a, app.wishPicker.locked and app.wishPicker.unlocked: prayer-ritual heading, unchanged legacy collection wording, and collection-based picker access. Other app messages retain their prior review. Completeness and ICU checked; no purchase requirements, native-speaker certification or new cultural claims."
       },
       "common": {
         "sourceHash": "4be875fa9f67bda76044db7de888700f5e8e39ade251c45778f1356c8b38cc0f",
@@ -194,13 +194,13 @@
     },
     "ja": {
       "app": {
-        "sourceHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "targetHash": "0c1faffcded897da0cd56d6a28c1f8f9be1b3d93f4333c8ef93628ee41756656",
-        "messages": 470,
-        "reviewedAt": "2026-10-31T10:06:36.901Z",
+        "sourceHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "targetHash": "5d8300b8be0c2e69bd58ff70126916ac9562901758cdeb7f4ddd8411dcc5f24e",
+        "messages": 473,
+        "reviewedAt": "2026-10-31T14:11:35.849Z",
         "review": "agent-self-review",
-        "reviewer": "Codex /root/debug_entry (opening button translation self-review)",
-        "reviewScope": "Incremental agent self-review of app.opening.a46780d15b only: opening button changed to an invitation to try the experience. Unchanged messages retain their prior review. Completeness and ICU checked; no native-speaker or device-layout certification."
+        "reviewer": "Codex /root/cue_review (translations); /root (final five-message scope review)",
+        "reviewScope": "Incremental agent self-review of app.pages.9abb584eeb, app.collection.legacyRitualLabel, app.wish-ritual-picker.c04ef5899a, app.wishPicker.locked and app.wishPicker.unlocked: prayer-ritual heading, unchanged legacy collection wording, and collection-based picker access. Other app messages retain their prior review. Completeness and ICU checked; no purchase requirements, native-speaker certification or new cultural claims."
       },
       "common": {
         "sourceHash": "4be875fa9f67bda76044db7de888700f5e8e39ade251c45778f1356c8b38cc0f",
@@ -254,13 +254,13 @@
     },
     "ko": {
       "app": {
-        "sourceHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "targetHash": "8ba971cc04da05fb5753b30da38c6cff89920de07a0627265946c914942b37de",
-        "messages": 470,
-        "reviewedAt": "2026-10-31T10:06:36.901Z",
+        "sourceHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "targetHash": "fe5e1995fd5f148c31ba352a2f4dc15c35e98c3eec51e72eb025dd850ee7a34a",
+        "messages": 473,
+        "reviewedAt": "2026-10-31T14:11:35.849Z",
         "review": "agent-self-review",
-        "reviewer": "Codex /root/debug_entry (opening button translation self-review)",
-        "reviewScope": "Incremental agent self-review of app.opening.a46780d15b only: opening button changed to an invitation to try the experience. Unchanged messages retain their prior review. Completeness and ICU checked; no native-speaker or device-layout certification."
+        "reviewer": "Codex /root/cue_review (translations); /root (final five-message scope review)",
+        "reviewScope": "Incremental agent self-review of app.pages.9abb584eeb, app.collection.legacyRitualLabel, app.wish-ritual-picker.c04ef5899a, app.wishPicker.locked and app.wishPicker.unlocked: prayer-ritual heading, unchanged legacy collection wording, and collection-based picker access. Other app messages retain their prior review. Completeness and ICU checked; no purchase requirements, native-speaker certification or new cultural claims."
       },
       "common": {
         "sourceHash": "4be875fa9f67bda76044db7de888700f5e8e39ade251c45778f1356c8b38cc0f",
@@ -314,13 +314,13 @@
     },
     "es": {
       "app": {
-        "sourceHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "targetHash": "f24519cb6adf471acb6f0bc820a54c869502da15a50542550958096a45a0428d",
-        "messages": 470,
-        "reviewedAt": "2026-10-31T10:06:36.901Z",
+        "sourceHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "targetHash": "e627ab8bf777fea06ea6d389f573aac5e2b57b59056ac0da147051eac806bbf5",
+        "messages": 473,
+        "reviewedAt": "2026-10-31T14:11:35.849Z",
         "review": "agent-self-review",
-        "reviewer": "Codex /root/debug_entry (opening button translation self-review)",
-        "reviewScope": "Incremental agent self-review of app.opening.a46780d15b only: opening button changed to an invitation to try the experience. Unchanged messages retain their prior review. Completeness and ICU checked; no native-speaker or device-layout certification."
+        "reviewer": "Codex /root/cue_review (translations); /root (final five-message scope review)",
+        "reviewScope": "Incremental agent self-review of app.pages.9abb584eeb, app.collection.legacyRitualLabel, app.wish-ritual-picker.c04ef5899a, app.wishPicker.locked and app.wishPicker.unlocked: prayer-ritual heading, unchanged legacy collection wording, and collection-based picker access. Other app messages retain their prior review. Completeness and ICU checked; no purchase requirements, native-speaker certification or new cultural claims."
       },
       "common": {
         "sourceHash": "4be875fa9f67bda76044db7de888700f5e8e39ade251c45778f1356c8b38cc0f",
@@ -374,13 +374,13 @@
     },
     "pt": {
       "app": {
-        "sourceHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "targetHash": "2655df2db7d958681288d852c22c9c042e33aa7a18bdb9beee11bd388c664146",
-        "messages": 470,
-        "reviewedAt": "2026-10-31T10:06:36.901Z",
+        "sourceHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "targetHash": "54720ffc4b58dc5353c34c6cbdd5bce85c788373f858f52a85654d359535b203",
+        "messages": 473,
+        "reviewedAt": "2026-10-31T14:11:35.849Z",
         "review": "agent-self-review",
-        "reviewer": "Codex /root/debug_entry (opening button translation self-review)",
-        "reviewScope": "Incremental agent self-review of app.opening.a46780d15b only: opening button changed to an invitation to try the experience. Unchanged messages retain their prior review. Completeness and ICU checked; no native-speaker or device-layout certification."
+        "reviewer": "Codex /root/cue_review (translations); /root (final five-message scope review)",
+        "reviewScope": "Incremental agent self-review of app.pages.9abb584eeb, app.collection.legacyRitualLabel, app.wish-ritual-picker.c04ef5899a, app.wishPicker.locked and app.wishPicker.unlocked: prayer-ritual heading, unchanged legacy collection wording, and collection-based picker access. Other app messages retain their prior review. Completeness and ICU checked; no purchase requirements, native-speaker certification or new cultural claims."
       },
       "common": {
         "sourceHash": "4be875fa9f67bda76044db7de888700f5e8e39ade251c45778f1356c8b38cc0f",
@@ -434,13 +434,13 @@
     },
     "fr": {
       "app": {
-        "sourceHash": "11e7b933592bfcdd7be326ea4ad5178eafe52e48956cf07631f76e9bfafa99ad",
-        "targetHash": "5cc2e4df9bfedf741d34dcf0a081e0d8d1a8ba704ab4553339ecc3406e08c6cb",
-        "messages": 470,
-        "reviewedAt": "2026-10-31T10:06:36.901Z",
+        "sourceHash": "6ec0659ca5f46b2ed4dbb7f6bc275b4d1f33fcd7c7c858f556f4d7c5f602b548",
+        "targetHash": "7f79619fa49d77fd5a00e2a82cf8797c84a6521d656df6a5290df0d64fe6d92c",
+        "messages": 473,
+        "reviewedAt": "2026-10-31T14:11:35.849Z",
         "review": "agent-self-review",
-        "reviewer": "Codex /root/debug_entry (opening button translation self-review)",
-        "reviewScope": "Incremental agent self-review of app.opening.a46780d15b only: opening button changed to an invitation to try the experience. Unchanged messages retain their prior review. Completeness and ICU checked; no native-speaker or device-layout certification."
+        "reviewer": "Codex /root/cue_review (translations); /root (final five-message scope review)",
+        "reviewScope": "Incremental agent self-review of app.pages.9abb584eeb, app.collection.legacyRitualLabel, app.wish-ritual-picker.c04ef5899a, app.wishPicker.locked and app.wishPicker.unlocked: prayer-ritual heading, unchanged legacy collection wording, and collection-based picker access. Other app messages retain their prior review. Completeness and ICU checked; no purchase requirements, native-speaker certification or new cultural claims."
       },
       "common": {
         "sourceHash": "4be875fa9f67bda76044db7de888700f5e8e39ade251c45778f1356c8b38cc0f",

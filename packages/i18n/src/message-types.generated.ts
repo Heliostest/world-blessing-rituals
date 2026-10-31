@@ -146,6 +146,7 @@ export interface MessageArguments {
   "app.pages.ceab9bbf72": {  };
   "app.pages.137981659a": {  };
   "app.pages.9abb584eeb": {  };
+  "app.collection.legacyRitualLabel": {  };
   "app.pages.356798c968": {  };
   "app.pages.ed8914ec36": {  };
   "app.pages.058163ec2f": { "p0": string | number | boolean | Date | null | undefined };
@@ -319,6 +320,8 @@ export interface MessageArguments {
   "app.widget-navigation.be81d68b05": {  };
   "app.wish-ritual-picker.2408402a1f": {  };
   "app.wish-ritual-picker.c04ef5899a": {  };
+  "app.wishPicker.locked": {  };
+  "app.wishPicker.unlocked": {  };
   "app.wish-ritual-picker.fb99ff3f7f": {  };
   "app.wish-ritual-picker.ed482c4c70": {  };
   "app.wish-ritual-rack.025fdb7d81": {  };

@@ -1,4 +1,5 @@
 import { localizedTitle } from './localization';
+import { useEffect, useId, useRef, useState } from 'react';
 import { translate as tr, message } from '@wbr/i18n';
 import { dailyCollectibleId, rituals, openingExclusions } from "@wbr/core";
 import { isSceneVisibleInApp } from '@wbr/core/daily-scenes';
@@ -14,6 +15,40 @@ export const ritualTitle = {
     crane: "折一份小小的期待",
     lantern: "点亮一盏心愿灯",
 };
+function DailyCollectedInfo({ copy }: { copy: string }) {
+    const [open, setOpen] = useState(false);
+    const shell = useRef<HTMLDivElement>(null), trigger = useRef<HTMLButtonElement>(null);
+    const panelId = useId();
+    useEffect(() => {
+        if (!open) return;
+        const close = () => {
+            setOpen(false);
+            trigger.current?.focus({ preventScroll: true });
+        };
+        const outside = (event: Event) => {
+            if (event.target instanceof Node && !shell.current?.contains(event.target)) close();
+        };
+        const escape = (event: KeyboardEvent) => {
+            if (event.key !== 'Escape') return;
+            event.preventDefault();
+            close();
+        };
+        document.addEventListener('click', outside);
+        document.addEventListener('keydown', escape);
+        return () => {
+            document.removeEventListener('click', outside);
+            document.removeEventListener('keydown', escape);
+        };
+    }, [open]);
+    return <div className="daily-collected-info" ref={shell}>
+      <button type="button" className="daily-collected-info-button" ref={trigger}
+        aria-label={tr(DAILY_COLLECTED_COPY.heading)} aria-expanded={open} aria-controls={panelId}
+        aria-describedby={open ? panelId : undefined} onClick={() => setOpen(value => !value)}>
+        <span aria-hidden="true"><svg viewBox="0 0 12 16" focusable="false"><circle cx="6" cy="3" r="1"/><path d="M5 6h2v8H5z"/></svg></span>
+      </button>
+      {open && <p className="daily-collected-info-panel" id={panelId} role="note">{tr(copy)}</p>}
+    </div>;
+}
 export function Today({ day }: {
     day: string;
 }) {
@@ -25,11 +60,7 @@ export function Today({ day }: {
     const collected = !!primary &&
         state.collectibles.some((c) => c.id === dailyCollectibleId(day, primary.id));
     return (<div className="today-page">
-      <PageHead title={tr("\u4ECA\u65E5\u4EEA\u5F0F")} eyebrow={tr("\u4ECA\u5929\uFF0C\u4E5F\u7ED9\u81EA\u5DF1\u4E00\u70B9\u597D\u8FD0\u3002")}>
-        <button className="round-button history-link" aria-label={tr("\u4EEA\u5F0F\u8BB0\u5F55")} title={tr("\u4EEA\u5F0F\u8BB0\u5F55")} onClick={() => go({ page: "history" })}>
-          <Icon name="clock"/>
-        </button>
-      </PageHead>
+      <PageHead title={tr("\u4ECA\u65E5\u4EEA\u5F0F")} eyebrow={tr("\u4ECA\u5929\uFF0C\u4E5F\u7ED9\u81EA\u5DF1\u4E00\u70B9\u597D\u8FD0\u3002")}/>
       {/* Old sessions retain their settlement ID and resume with 3D interaction. */}
       {state.activeSession && isSceneVisibleInApp({ id: state.activeSession.ritual }) && (<button className="resume-banner" onClick={() => go({ page: "ritual" })}>
           <span>{message('app.home.resume', { ritual: tr(rituals[state.activeSession.ritual].short) })}
@@ -59,12 +90,10 @@ export function Today({ day }: {
           <section className="daily-set daily-collected" aria-label={tr(DAILY_COLLECTED_COPY.heading)}>
             <div className="section-heading">
               <h2>{tr(DAILY_COLLECTED_COPY.heading)}</h2>
+              {picks.length > 0 && <DailyCollectedInfo copy={picks.length === 3 && picks.some(e => isWishScene(e.id))
+                ? DAILY_COLLECTED_COPY.sub : DAILY_COLLECTED_COPY.partial}/>}
             </div>
             {picks.length ? (<>
-                <p className="quiet daily-set-blurb">
-                  {picks.length === 3 && picks.some((e) => isWishScene(e.id))
-                    ? tr(DAILY_COLLECTED_COPY.sub) : tr(DAILY_COLLECTED_COPY.partial)}
-                </p>
                 <div className="daily-set-grid daily-collected-grid">
                   {/* A 回看: no daily flag, so the walk collects nothing new. */}
                   {picks.map((entry) => (<button key={entry.id} className="daily-set-card" data-scene={entry.id} data-type={isWishScene(entry.id) ? "wish" : "blessing"} onClick={() => openScene(entry, { replay: true })}>

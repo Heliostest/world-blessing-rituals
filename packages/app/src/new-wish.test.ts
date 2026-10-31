@@ -27,15 +27,17 @@ function vessel(state: State, sceneId: string, spent = false) {
   return id;
 }
 describe("start a wish through a real ritual", () => {
-  it("lets a first-time visitor start an eligible scene without a keepsake or a save form", () => {
+  it("shows eligible scenes to a first-time visitor but requires a collected object before starting", () => {
     const ui = open();
     expect(ui.host.querySelector("form, textarea, input")).toBeNull();
     expect(ui.host.querySelectorAll(".wish-scene-choice")).toHaveLength(18);
-    const card = ui.host.querySelector('.wish-practice-card[data-scene="tanzaku-tanabata"]');
+    const card = ui.host.querySelector<HTMLButtonElement>('.wish-practice-card[data-scene="tanzaku-tanabata"]');
     expect(card).not.toBeNull();
+    expect(card!.disabled).toBe(true);
     clickOn(card!);
-    expect(ui.go).toHaveBeenCalledWith(expect.objectContaining({ page: "scene", id: "tanzaku-tanabata", vessel: undefined }));
-    expect(ui.dispatch.mock.calls.some(([action]) => (action as { type?: string })?.type === "wish.create")).toBe(false);
+    expect(ui.go).not.toHaveBeenCalled();
+    expect(ui.dispatch).not.toHaveBeenCalled();
+    expect(ui.host.querySelector("form, textarea, input")).toBeNull();
   });
   it("does not offer hidden scenes, non-writing wishes or gratitude as new wishes", () => {
     const ui = open();

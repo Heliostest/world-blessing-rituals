@@ -11,6 +11,7 @@ import { useApp } from "./context";
 import { SceneBadge } from "./scene-icons";
 import { ritualSceneEntry, sceneSteps } from "./scene-placement";
 import { PageHead } from "./page-heading";
+import { isWishSceneUnlocked } from './vessels';
 export { builtInScenes, type BuiltInSceneEntry } from '@wbr/core/daily-scenes';
 import { builtInScenes, isSceneVisibleInApp } from '@wbr/core/daily-scenes';
 export const supportsScene = (engine: string) => builtInScenes.some((e) => e.engine === engine);
@@ -82,6 +83,8 @@ export function useOpenRitual() {
 /** What a walk is for. The daily set resumes a half-walked scene; each other
  * flag makes it a fresh scene (progress to 0). */
 export type SceneVisit = {
+    /** A direct wish-picker entry requires an already collected scene object. */
+    wishPicker?: boolean;
     opening?: boolean;
     /** 今日's daily set: the local day the keepsake is collected for. */
     daily?: string;
@@ -105,6 +108,8 @@ export function useOpenScene() {
     const { state, dispatch, go } = useApp();
     return (entry: CatalogEntry, visit?: SceneVisit) => {
         if (!isSceneVisibleInApp(entry))
+            return;
+        if (visit?.wishPicker && !isWishSceneUnlocked(state, entry.id))
             return;
         const record = state.sceneRecords.find((r) => r.id === entry.id);
         const progress = record ? sceneProgress(record) : 0;

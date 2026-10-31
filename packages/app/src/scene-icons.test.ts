@@ -2,7 +2,7 @@
 import { act, createElement, type ReactNode } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { createState, dailyCollectibleId, sceneIntention, type State } from "@wbr/core";
+import { createState, dailyCollectibleId, sceneIntention, type State, type Wish } from "@wbr/core";
 import { isSceneVisibleInApp } from "@wbr/core/daily-scenes";
 import { Context, type AppContext } from "./context";
 import { clickOn, renderUI } from "./dom-test-utils";
@@ -49,10 +49,11 @@ function render(node: ReactNode, state: State = createState()) {
 /** A wish page, live over `state`; `go` records where each tap leads. */
 function openWishes(state: State = createState(), component = Wishes) {
   const go = vi.fn();
+  const dispatch = vi.fn(() => true);
   const ui = renderUI(
     createElement(
       Context.Provider,
-      { value: { state, dispatch: () => true, go } as unknown as AppContext },
+      { value: { state, dispatch, go } as unknown as AppContext },
       createElement(
         SceneLibraryContext.Provider,
         { value: { entries: builtInScenes } as never },
@@ -63,6 +64,7 @@ function openWishes(state: State = createState(), component = Wishes) {
   return {
     ...ui,
     go,
+    dispatch,
     pray: ui.host.querySelector<HTMLButtonElement>(".pray-button")!,
     picker: () => ui.host.querySelector("#vessel-picker"),
     cards: () => [...ui.host.querySelectorAll(".vessel-card")],
@@ -185,10 +187,10 @@ describe("心愿's ritual picker", () => {
     });
   });
 
-  it("offers drawn ritual choices without a keepsake and opens one directly", () => {
+  it("shows drawn ritual choices without a keepsake but keeps them locked", () => {
     ui = openPicker();
     const picker = ui.picker()!;
-    const cards = [...picker.querySelectorAll(".wish-practice-card")];
+    const cards = [...picker.querySelectorAll<HTMLButtonElement>(".wish-practice-card")];
     const eligible = builtInScenes.filter((entry) => {
       const intention = sceneIntention(entry.id);
       return isSceneVisibleInApp(entry) && isWishScene(entry.id) && intention?.kind === "wish" && intention.optionalWish;
@@ -197,15 +199,82 @@ describe("心愿's ritual picker", () => {
       eligible.map((entry) => entry.id).sort(),
     );
     expect(cards.length).toBeGreaterThan(0);
-    for (const card of cards)
+    for (const card of cards) {
       expect(card.querySelector(".scene-badge img.scene-icon")).not.toBeNull();
+      expect(card.disabled).toBe(true);
+    }
     expect(ui.cards()).toHaveLength(0);
     clickOn(cards[0]);
-    expect(ui.go).toHaveBeenCalledWith(expect.objectContaining({
-      page: "scene",
-      id: cards[0].getAttribute("data-scene"),
-      vessel: undefined,
-    }));
+    expect(ui.go).not.toHaveBeenCalled();
+  });
+});
+
+describe("a wish's source object in the wish list", () => {
+  let ui: ReturnType<typeof openWishes> | undefined;
+  afterEach(() => { ui?.unmount(); ui = undefined; });
+  function wish(id: string, sourceSceneId?: string, options: Partial<Pick<Wish, "status" | "archived">> = {}): Wish {
+    return { id, title: `心愿 ${id}`, intention: "", status: "active", archived: false,
+      createdAt: "2026-10-07T08:00:00.000Z", notes: [], ...options,
+      ...(sourceSceneId ? { sourceSceneId } : {}) };
+  }
+  const card = (id: string) => ui!.host.querySelector<HTMLButtonElement>(`.wish-card[data-wish-id="${id}"]`)!;
+  function expectSource(id: string, sceneId: string) {
+    const row = card(id), art = row.querySelector<HTMLElement>(".scene-art")!;
+    expect(art, id).not.toBeNull();
+    expect(art.dataset.scene).toBe(sceneId);
+    expect(art.querySelector("img.scene-icon")?.getAttribute("src")).toBe(image(sceneId, SceneArt).getAttribute("src"));
+    expect(art.getAttribute("aria-hidden")).toBe("true");
+    expect(art.compareDocumentPosition(row.querySelector(".wish-card-copy")!) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  }
+
+  it("shows each wish's own object before its text and clicking the image only opens that wish", () => {
+    const state = createState();
+    state.wishes.push(wish("crane-wish", "crane"), wish("strip-wish", "tanzaku-tanabata"));
+    state.collectibles.push(keepsake(day, "crane"));
+    const before = JSON.stringify(state);
+    ui = openWishes(state);
+    expectSource("crane-wish", "crane");
+    expectSource("strip-wish", "tanzaku-tanabata");
+    expect(card("crane-wish").querySelector("img.scene-icon")?.getAttribute("src"))
+      .not.toBe(card("strip-wish").querySelector("img.scene-icon")?.getAttribute("src"));
+    for (const id of ["crane-wish", "strip-wish"]) {
+      ui.go.mockClear();
+      clickOn(card(id).querySelector("img.scene-icon")!);
+      expect(ui.go).toHaveBeenCalledTimes(1);
+      expect(ui.go).toHaveBeenCalledWith({ page: "wish", id });
+      expect(ui.dispatch).not.toHaveBeenCalled();
+    }
+    expect(JSON.stringify(state)).toBe(before);
+  });
+
+  it("retains the matching objects across active, realized, fulfilled and archived filters", () => {
+    const state = createState();
+    state.wishes.push(wish("active", "crane"), wish("realized", "tanzaku-tanabata", { status: "realized" }),
+      wish("fulfilled", "daruma-eye-painting", { status: "fulfilled" }), wish("archived", "omamori-cycle", { archived: true }));
+    ui = openWishes(state);
+    expectSource("active", "crane");
+    expectSource("realized", "tanzaku-tanabata");
+    const filter = (label: string) => [...ui!.host.querySelectorAll(".filter-row button")].find(button => button.textContent === label)!;
+    clickOn(filter("已如愿"));
+    expect([...ui.host.querySelectorAll(".wish-card")].map(row => row.getAttribute("data-wish-id"))).toEqual(["fulfilled"]);
+    expectSource("fulfilled", "daruma-eye-painting");
+    clickOn(filter("先放下"));
+    expect([...ui.host.querySelectorAll(".wish-card")].map(row => row.getAttribute("data-wish-id"))).toEqual(["archived"]);
+    expectSource("archived", "omamori-cycle");
+    clickOn(filter("进行中"));
+    expectSource("active", "crane");
+    expectSource("realized", "tanzaku-tanabata");
+  });
+
+  it("does not guess an object for old wishes or map an unknown source to another scene", () => {
+    const state = createState(), legacy = wish("legacy"), unknown = "removed-ritual";
+    legacy.title = "纸鹤带来平安";
+    state.wishes.push(legacy, wish("unknown", unknown));
+    // A keepsake linked later can be a return ritual, rather than the origin.
+    state.collectibles.push({ ...keepsake(day, "crane", "2026-10-08T08:00:00.000Z"), wishId: legacy.id });
+    ui = openWishes(state);
+    expect(card("legacy").querySelector(".scene-art, img.scene-icon")).toBeNull();
+    expect(card("unknown").querySelector(".scene-art, img.scene-icon")).toBeNull();
   });
 });
 

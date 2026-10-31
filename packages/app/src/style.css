@@ -470,11 +470,10 @@ button:hover:not(:disabled) {
   margin: 0 0 16px;
 }
 .daily-collected > .section-heading {
+  position: relative;
+  justify-content: flex-start;
+  gap: 4px;
   margin: 0;
-}
-.history-link {
-  white-space: nowrap;
-  flex-shrink: 0;
 }
 /* First play stays in the same island, with one short lesson between walks. */
 .app-shell[data-opening] .app-content {
@@ -4136,12 +4135,46 @@ img.scene-icon {
   display: grid;
   gap: 10px;
 }
-.daily-set-blurb {
-  margin: 0;
+.daily-collected-info { flex: 0 0 auto; }
+.daily-collected-info-button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  padding: 0;
+  background: transparent;
+  color: #5c8074b3;
+}
+.daily-collected-info-button > span {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6a95854d;
+  border-radius: 50%;
+  background: transparent;
   font-size: 13px;
   font-weight: 600;
+  line-height: 1;
+}
+.daily-collected-info-button[aria-expanded='true'] > span { background: #fffaf04d; }
+.daily-collected-info-button svg { width: 8px; height: 12px; fill: currentColor; stroke: none; }
+.daily-collected-info-panel {
+  position: absolute;
+  z-index: 8;
+  inset-block-start: calc(100% + 4px);
+  inset-inline-start: 0;
+  width: min(300px, 100%);
+  margin: 0;
+  padding: 12px 14px;
+  border: 2px solid var(--rim);
+  border-radius: 14px;
+  background: var(--paper);
+  box-shadow: 0 0 0 1px var(--edge), var(--soft-drop);
+  font-size: 13px;
+  font-weight: 500;
   color: var(--ink-soft);
-  line-height: 1.6;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
 }
 .daily-set-grid {
   display: grid;

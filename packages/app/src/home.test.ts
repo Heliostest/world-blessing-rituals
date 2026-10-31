@@ -2,9 +2,9 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { createElement } from "react";
+import { act, createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   dailyCollectibleId,
   createState,
@@ -14,6 +14,7 @@ import { assertSafeCopy } from "@wbr/shared";
 import { Context, type AppContext } from "./context";
 import { Today, ritualTitle } from "./home";
 import { SceneLibraryContext, builtInScenes } from "./scene-library";
+import { clickOn, renderUI } from "./dom-test-utils";
 import {
   BLESSING_SCENE_IDS,
   DAILY_COLLECTED_COPY,
@@ -50,18 +51,17 @@ const kept = [
   keepsake(primary.id, day),
 ];
 
-/** 今日 with the bundled scenes and `collectibles`, as a document. */
-function renderToday(collectibles: Collectible[] = kept) {
+/** 今日 with the bundled scenes and `collectibles`. */
+function todayElement(collectibles: Collectible[] = kept, go = vi.fn(), dispatch = vi.fn(() => true)) {
   const state = createState();
   state.collectibles.push(...collectibles);
-  const html = renderToStaticMarkup(
-    createElement(
+  return createElement(
       Context.Provider,
       {
         value: {
           state,
-          dispatch: () => true,
-          go: () => {},
+          dispatch,
+          go,
         } as unknown as AppContext,
       },
       createElement(
@@ -69,8 +69,11 @@ function renderToday(collectibles: Collectible[] = kept) {
         { value: { entries: builtInScenes } as never },
         createElement(Today, { day }),
       ),
-    ),
-  );
+    );
+}
+/** The static document keeps the preview's effects from starting WebGL. */
+function renderToday(collectibles: Collectible[] = kept) {
+  const html = renderToStaticMarkup(todayElement(collectibles));
   return new DOMParser().parseFromString(html, "text/html");
 }
 const scenesOf = (cards: Element[]) =>
@@ -89,12 +92,13 @@ describe("今日's daily set", () => {
     expect(doc.querySelector(".wish-invitation")).toBeNull();
     expect(doc.querySelector('h1')?.textContent).toBe('今日仪式');
     expect(doc.body.textContent).not.toContain('功德');
-    // History, the day's walk and the three picks are its only buttons.
+    expect(doc.querySelector(".history-link")).toBeNull();
+    // The day's walk, the explanation trigger and three picks are its buttons.
     expect(
       [...doc.querySelectorAll("button")].map((b) => b.className),
     ).toEqual([
-      "round-button history-link",
       "daily-set-card daily-set-primary",
+      "daily-collected-info-button",
       "daily-set-card",
       "daily-set-card",
       "daily-set-card",
@@ -142,9 +146,8 @@ describe("今日's daily set", () => {
 
   it("then offers three kept scenes: exactly one 许愿, two 祈福", () => {
     expect(row.querySelector("h2")!.textContent).toBe(DAILY_COLLECTED_COPY.heading);
-    expect(row.querySelector(".daily-set-blurb")!.textContent).toBe(
-      DAILY_COLLECTED_COPY.sub,
-    );
+    expect(row.querySelector(".daily-set-blurb")).toBeNull();
+    expect(row.querySelector(".daily-collected-info-button")?.getAttribute("aria-expanded")).toBe("false");
     const cards = [...row.querySelectorAll(".daily-set-card")];
     expect(scenesOf(cards)).toEqual(picks.map((e) => e.id));
     const types = cards.map((c) => c.getAttribute("data-type"));
@@ -168,18 +171,17 @@ describe("今日's daily set", () => {
       expect(doc.querySelector(".daily-set-primary")).not.toBeNull();
       const row = doc.querySelector(".daily-collected")!;
       expect(row.querySelector(".daily-set-card")).toBeNull();
+      expect(row.querySelector(".daily-collected-info-button")).toBeNull();
       expect(row.querySelector(".daily-collected-empty")!.textContent).toBe(
         DAILY_COLLECTED_COPY.emptyTitle + DAILY_COLLECTED_COPY.emptyBody,
       );
     }
   });
 
-  it("shows only what is kept, one 许愿 at most, under the shorter line", () => {
+  it("shows only what is kept, one 许愿 at most, without a fixed explanation", () => {
     const partial = (collectibles: Collectible[]) => {
       const row = renderToday(collectibles).querySelector(".daily-collected")!;
-      expect(row.querySelector(".daily-set-blurb")!.textContent).toBe(
-        DAILY_COLLECTED_COPY.partial,
-      );
+      expect(row.querySelector(".daily-set-blurb")).toBeNull();
       return [...row.querySelectorAll(".daily-set-card")];
     };
     const two = partial([keepsake("crane"), keepsake("lantern"), keepsake("woodfish")]);
@@ -199,6 +201,93 @@ describe("今日's daily set", () => {
       ...Object.values(DAILY_COLLECTED_COPY),
     ])
       expect(() => assertSafeCopy(text)).not.toThrow();
+  });
+});
+
+describe("今日's collected explanation", () => {
+  const mounted: ReturnType<typeof renderUI>[] = [];
+  afterEach(() => {
+    mounted.splice(0).forEach(ui => ui.unmount());
+    document.body.replaceChildren();
+    vi.unstubAllGlobals();
+  });
+
+  function mount(collectibles: Collectible[] = kept) {
+    // The popover uses the real Today and navigation handlers; no GPU is needed.
+    vi.stubGlobal("WebGL2RenderingContext", undefined);
+    const go = vi.fn(), dispatch = vi.fn(() => true);
+    const ui = renderUI(todayElement(collectibles, go, dispatch));
+    mounted.push(ui);
+    const button = ui.host.querySelector<HTMLButtonElement>(".daily-collected-info-button");
+    expect(button, "the collected heading offers its explanation").not.toBeNull();
+    const panel = () => {
+      const note = ui.host.querySelector<HTMLElement>(".daily-collected-info-panel");
+      return note && !note.hidden && note.getAttribute("aria-hidden") !== "true" ? note : null;
+    };
+    return { ...ui, go, dispatch, button: button!, panel };
+  }
+
+  it("starts closed, toggles the full explanation and never opens a scene", () => {
+    const s = mount();
+    expect(s.host.querySelector(".history-link")).toBeNull();
+    expect(s.host.querySelector(".daily-set-blurb")).toBeNull();
+    expect(s.button.getAttribute("aria-label")).toBe(DAILY_COLLECTED_COPY.heading);
+    expect(s.button.getAttribute("aria-expanded")).toBe("false");
+    expect(s.panel()).toBeNull();
+    s.button.focus();
+    clickOn(s.button);
+    const note = s.panel()!;
+    expect(note).not.toBeNull();
+    expect(note.getAttribute("role")).toBe("note");
+    expect(note.id).toBeTruthy();
+    expect(s.button.getAttribute("aria-controls")).toBe(note.id);
+    expect(s.button.getAttribute("aria-expanded")).toBe("true");
+    expect(note.textContent).toBe(DAILY_COLLECTED_COPY.sub);
+    clickOn(s.button);
+    expect(s.panel()).toBeNull();
+    expect(s.button.getAttribute("aria-expanded")).toBe("false");
+    expect(document.activeElement).toBe(s.button);
+    expect(s.go).not.toHaveBeenCalled();
+    expect(s.dispatch).not.toHaveBeenCalled();
+  });
+
+  it.each([
+    ["a partial set", [keepsake("crane"), keepsake("lantern"), keepsake("woodfish")]],
+    ["three blessings without a wish", BLESSING_SCENE_IDS.map(id => keepsake(id))],
+  ] as const)("shows the original shorter explanation for %s", (_label, collectibles) => {
+    const s = mount([...collectibles]);
+    clickOn(s.button);
+    expect(s.panel()?.textContent).toBe(DAILY_COLLECTED_COPY.partial);
+    expect(s.go).not.toHaveBeenCalled();
+  });
+
+  it("closes on an outside click and restores focus to the trigger", () => {
+    const s = mount(), outside = document.createElement("button");
+    document.body.append(outside);
+    clickOn(s.button);
+    expect(s.panel()).not.toBeNull();
+    act(() => outside.dispatchEvent(new MouseEvent("pointerdown", { bubbles: true })));
+    // A browser focuses a clicked control after pointerdown, before click.
+    act(() => {
+      outside.focus();
+      outside.click();
+    });
+    expect(s.panel()).toBeNull();
+    expect(s.button.getAttribute("aria-expanded")).toBe("false");
+    expect(document.activeElement).toBe(s.button);
+    expect(s.go).not.toHaveBeenCalled();
+  });
+
+  it("closes on Escape and restores focus to the trigger", () => {
+    const s = mount(), outside = document.createElement("button");
+    document.body.append(outside);
+    clickOn(s.button);
+    outside.focus();
+    act(() => document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape", bubbles: true })));
+    expect(s.panel()).toBeNull();
+    expect(s.button.getAttribute("aria-expanded")).toBe("false");
+    expect(document.activeElement).toBe(s.button);
+    expect(s.go).not.toHaveBeenCalled();
   });
 });
 

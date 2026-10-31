@@ -20,6 +20,7 @@ export function WishRitualRack() {
     const drag = useRef<{ id: number; x: number; y: number; left: number } | null>(null);
     const suppressClick = useRef(false);
     const [edges, setEdges] = useState({ start: true, end: false });
+    const [hintVisible, setHintVisible] = useState(false);
     const items = [...state.collectibles].reverse().flatMap(item => {
         if (item.kind !== "scene" || !item.sceneId) return [];
         const entry = entries.find(entry => entry.id === item.sceneId);
@@ -33,6 +34,39 @@ export function WishRitualRack() {
         const rank = { pending: 0, unused: 1, used: 2, kept: 3 };
         return rank[a.status] - rank[b.status];
     });
+    useEffect(() => {
+        setHintVisible(false);
+        if (!items.length) return;
+        let timer: number | undefined, alive = true, focused = document.hasFocus();
+        const cancel = () => {
+            window.clearTimeout(timer);
+            timer = undefined;
+        };
+        const restart = () => {
+            cancel();
+            setHintVisible(false);
+            if (!focused || document.hidden) return;
+            timer = window.setTimeout(() => {
+                if (alive && focused && !document.hidden) setHintVisible(true);
+            }, 3000);
+        };
+        const blur = () => { focused = false; restart(); };
+        const focus = () => { focused = true; restart(); };
+        const events = ['pointerdown', 'pointermove', 'pointerup', 'pointercancel', 'click', 'keydown', 'input', 'wheel', 'scroll'];
+        for (const event of events) document.addEventListener(event, restart, { capture: true, passive: true });
+        document.addEventListener('visibilitychange', restart);
+        window.addEventListener('blur', blur);
+        window.addEventListener('focus', focus);
+        restart();
+        return () => {
+            alive = false;
+            cancel();
+            for (const event of events) document.removeEventListener(event, restart, true);
+            document.removeEventListener('visibilitychange', restart);
+            window.removeEventListener('blur', blur);
+            window.removeEventListener('focus', focus);
+        };
+    }, [items.length]);
     const reducedMotion = state.settings.reducedMotion ||
         (typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches);
     useEffect(() => {
@@ -66,16 +100,17 @@ export function WishRitualRack() {
     }
     if (!items.length) return null;
     const unused = items.filter(({ status }) => status === "unused").length;
-    return <section className="wish-ritual-rack" aria-label={tr("仪式收藏")}>
+    return <section className="wish-ritual-rack" aria-label={tr("祈愿仪式")}>
       <header className="wish-rack-heading">
-        <h2>{tr("仪式收藏")}</h2>
+        <h2>{tr("祈愿仪式")}</h2>
         <span className="wish-rack-count">{message('app.vessels.unused.count', { n: unused })}</span>
         {items.length > 3 && <span className="wish-rack-navigation">
           <button type="button" aria-label={tr("向前浏览小物")} aria-controls={rackId} disabled={edges.start} onClick={() => browse(-1)}><Icon name="back"/></button>
           <button type="button" aria-label={tr("向后浏览小物")} aria-controls={rackId} disabled={edges.end} onClick={() => browse(1)}><Icon name="arrow"/></button>
         </span>}
       </header>
-      <p className="wish-rack-hint" id={hintId}>{tr("点按小物，听听回应")}</p>
+      <p className="wish-rack-hint" id={hintId} data-visible={hintVisible} aria-hidden={!hintVisible}
+        data-reduced-motion={reducedMotion ? 'true' : undefined}>{tr("点按小物，听听回应")}</p>
       <div id={rackId} ref={strip} className="wish-rack-row" onScroll={updateEdges}
         onPointerDown={event => {
             if (event.button !== 0) return;
@@ -118,7 +153,7 @@ export function WishRitualRack() {
                 (status === "pending" || (status === "unused" && sceneIntention(entry.id)?.optionalWish));
             return <article className="wish-rack-slot" key={item.id} data-rack-status={status}>
               <button type="button" className="wish-rack-item" data-scene={entry.id} data-collectible-id={item.id} data-rack-status={status}
-                aria-label={localizedTitle(entry)} aria-describedby={hintId} onClick={event => {
+                aria-label={localizedTitle(entry)} aria-describedby={hintVisible ? hintId : undefined} onClick={event => {
                     prepareFeedback();
                     const response = wishObjectFeedback(entry.id);
                     feedback(response.sound);
